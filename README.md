@@ -6,6 +6,7 @@ V1はUSB-C充電、充電なし連続16時間以上の録音、36時間以上の
 
 **まだ発注不可・実機未検証です。** 回路図、実フットプリント配置、配線試行、ケース収納案までの設計成果物であり、16時間動作や無加工組立を達成した製品ではありません。
 
+- [最新D0：25.5mm角の配置・構造検討と稼働時間の計算](mechanical/structure-d0/README.md) — 未配線・発注不可
 - [V1の範囲・合格条件](docs/v1-scope.md) / [現行要件](docs/requirements.md)
 - [Rev C回路・PCB・BOM](hardware/rev-c/README.md) / [回路図PDF](hardware/rev-c/pendant-rev-c.pdf)
 - [発注可否と残件](hardware/rev-c/order-status.json)
