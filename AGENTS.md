@@ -7,7 +7,7 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 ## 要件（2026-10-24 Naoki確定, docs/requirements.md）
 1. 有線通信のみ（BLE/Wi-Fiは一切なし）
 2. USB-C 1本で充電のみ／充電＋同期（USB MSC）。接続直後は充電のみ、録音状態を維持。同期は明示操作時のみ
-3. 2日充電不要。連続48時間録音を設計目標とする。150mAh/平均2.0mA以下を本命、210mAh/28mm径を比較（docs/two-day-runtime.md）。未実測
+3. 連続24時間録音を設計目標とする。平均2.0mA以下を目指し、100mAh級を初期配置候補、80〜150mAhを比較する（docs/runtime-target.md）。未実測
 4. できるだけコンパクト（ペンダント）。カスタム基板OK
 5. 電池残量・充電・録音・同期・異常の本体インジケーター必須。暫定は残量3点＋録音1点＋状態1点。短押しで状態確認、表示操作で録音/SD所有権を変更しない
 
@@ -27,7 +27,8 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 
 ## 情報の場所
 - docs/density-study.md — 最新の非円形・高密度配置方針。旧円形制約より優先
-- docs/two-day-runtime.md — 最新の48時間目標、電池・サイズ比較。旧16時間/100mAh見積りより優先
+- docs/runtime-target.md — 最新の連続24時間目標。旧16時間・48時間の目標より優先
+- docs/two-day-runtime.md — 旧48時間の電池・サイズ比較（履歴）
 - docs/v1-build.md — 最新のv1範囲、実装難度、製作・小型化方針
 - docs/omi-reference.md — Omiの全調査（部品・ファイルパス・ファーム・出典URL）
 - docs/requirements.md — 確定要件と導出仕様

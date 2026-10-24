@@ -13,7 +13,7 @@
 - `bom.csv`: 値と候補型番。TBD部品を含むため注文用ではない
 - 再生成: `python3 hardware/tools/generate_schematic.py`
 
-> 録音目標は[連続48時間](../../docs/two-day-runtime.md)へ更新。150mAhを本命、210mAhを比較する。以下の100mAh/16時間は既存回路ドラフト時の条件で、電池BOMの更新・実測は未完了。
+> 最新録音目標は[連続24時間](../../docs/runtime-target.md)。100mAh級を初期候補、80〜150mAhを比較する。以下の16時間は旧条件。電池型番確定・実測は未完了。
 
 ## 既存案からの必須修正
 
