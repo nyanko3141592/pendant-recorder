@@ -11,6 +11,8 @@
 - `bom.csv`: 値と候補型番。TBD部品を含むため注文用ではない
 - 再生成: `python3 hardware/tools/generate_schematic.py`
 
+> 録音目標は[連続48時間](../../docs/two-day-runtime.md)へ更新。150mAhを本命、210mAhを比較する。以下の100mAh/16時間は既存回路ドラフト時の条件で、電池BOMの更新・実測は未完了。
+
 ## 既存案からの必須修正
 
 1. **STM32U535CBU6ではSDMMCを接続できない。** ST公式のUFQFPN48端子データにSDMMC信号がない。試作は **STM32U535RCT6 / LQFP64、内部LDO版**。PC8/9/10/11/12、PD2を使用する。22mm円形の量産候補はUFBGA64等を別途選定し、端子表と配置をやり直す。LQFP64案が22mmに収まるとは主張しない。
