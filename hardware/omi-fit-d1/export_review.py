@@ -18,11 +18,11 @@ assert len(population)==69
 groups={}
 for x in population.values():groups.setdefault((x['mpn_candidate'],x['footprint'],x['catalog_code']),[]).append(x['ref'])
 with (O/'BOM-CANDIDATE-NOT-RELEASED.csv').open('w') as f:
- w=csv.writer(f);w.writerow(['Comment','Designator','Footprint','LCSC Part #'])
+ w=csv.writer(f,lineterminator="\n");w.writerow(['Comment','Designator','Footprint','LCSC Part #'])
  for (mpn,fp,code),refs in groups.items():w.writerow([mpn,','.join(refs),fp,code])
 rows=list(csv.DictReader(open(O/'kicad-positions.csv')));seen=set()
 with (O/'CPL-CANDIDATE-NOT-RELEASED.csv').open('w') as f:
- w=csv.writer(f);w.writerow(['Designator','Mid X','Mid Y','Layer','Rotation'])
+ w=csv.writer(f,lineterminator="\n");w.writerow(['Designator','Mid X','Mid Y','Layer','Rotation'])
  for r in rows:
   ref=r['Ref']
   if ref not in population:continue
