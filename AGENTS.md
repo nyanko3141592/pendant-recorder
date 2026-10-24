@@ -6,7 +6,7 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 
 ## 要件（2026-10-24 Naoki確定, docs/requirements.md）
 1. 有線通信のみ（BLE/Wi-Fiは一切なし）
-2. USB-C 1本で充電＋同期（USB MSC）
+2. USB-C 1本で充電のみ／充電＋同期（USB MSC）。接続直後は充電のみ、録音状態を維持。同期は明示操作時のみ
 3. 1日使える（16時間録音）
 4. できるだけコンパクト（ペンダント）。カスタム基板OK
 
@@ -36,7 +36,7 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 
 ## 次の作業（docs/custom-pcb.md §7）
 1. ST NUCLEO（U545等）＋T5838＋SD NAND/microSDで ADF→ADPCM→SDMMC→FAT の最小ファーム
-2. VBUS検知で録音停止→USB MSC、`TIME.TXT`でRTC設定
+2. VBUS検知は充電のみ。同期要求時に録音停止→USB MSC、切断後`TIME.TXT`でRTC設定して同期前の録音状態へ戻す
 3. PPK2で平均電流を実測（XIAO nRF52840 試作とも比較）→ MCUと電池容量を確定
 4. 1次カスタム基板（30mm角、テストパッド多め）→ 円形22mm基板＋筐体
 5. host/ のマウント検知→コピー→文字起こしを仕上げる

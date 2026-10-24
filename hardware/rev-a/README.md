@@ -63,9 +63,10 @@ VDD 19/32/64はそれぞれ100nF、共通10µF。VCAP 30は4.7µFで他負荷禁
 
 ### USBとSDの所有権
 
-1. VBUS検出後、録音DMA停止→WAVヘッダ確定→flush/sync→FAT unmount。
+1. VBUS検出だけでは充電のみ。録音ON/OFFを維持し、SDはファームが所有する。同期要求（暫定: USB接続中にボタン2回押し）を受けて初めて録音DMA停止→WAVヘッダ確定→flush/sync→FAT unmount。
 2. USB用電源を検証してPHY/MSC開始。MSC中はホストからのブロック要求だけがSDを使用し、ファームのファイル処理は動かさない。
-3. USB切断後はMSC処理を停止してからFATをmount。`TIME.TXT`を検査してRTC設定、録音再開。Macは安全な取り外しを行う。
+3. USB切断後はMSC処理を停止してからFATをmount。`TIME.TXT`を検査してRTC設定、同期前の録音ON/OFFへ戻す。Macは安全な取り外しを行う。充電のみでの切断はSDを再mountしない。
+   - データ接続のない充電器で同期操作をした場合、未接続タイムアウト後にMSCを停止し、ファームがSDを安全に再取得して元の録音状態へ戻す。
 4. USB suspendでは充電禁止、SD停止、USB規定内への低消費電力化が必要。起動・未列挙時は総入力100mA以内を設計予算とし、50mA充電＋システムの最悪値を実測する。
 5. SD電源OFFはsync/unmount後。CMD/DAT/CLKをHi-ZにしてプルアップはSD_V3のみ。再起動時は低速初期化とACMD6による4bit設定を行う。
 6. 電圧低下で新規録音を開始しない。BORで突然切れる前にファイルを閉じる閾値と残時間を実測する。録音ファイルの自動削除は実装しない。
@@ -93,3 +94,5 @@ VDD 19/32/64はそれぞれ100nF、共通10µF。VCAP 30は4.7µFで他負荷禁
 - TI TPS22916: https://www.ti.com/lit/ds/symlink/tps22916.pdf
 - ADI MAX17048: https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf
 - Omi固定commitと各ファイル: ../../docs/omi-reference.md
+
+充電のみの追加はファームの状態遷移で対応する設計。現在の回路では給電経路とUSBデータ線が分かれているため、現時点で回路図の変更は不要。ファーム実装と電源状態別の試験は未完了。

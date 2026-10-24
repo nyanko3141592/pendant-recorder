@@ -15,6 +15,9 @@ void setup() {
 }
 
 void loop() {
+  // TODO: Legacy stub, not the current product behavior. VBUS alone must
+  // preserve recording state (charge-only). Enter MSC only on explicit sync
+  // request, after DMA stop, file sync and FAT unmount. See requirements.md.
   if (usb_vbus_present()) {
     if (!inMsc) { wav_close(); usb_msc_enter(); inMsc = true; }
     delay(200);
