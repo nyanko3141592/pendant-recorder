@@ -26,3 +26,5 @@
 候補のメーカー一次情報：https://www.grepow.com/button-cell-battery/grp1654.html （2026-10-24確認、150mAh/16mm径/5.4mm厚は裸セルの掲載値）。完成パックがこの厚さになるという意味ではない。メーカーへの送信・発注・支払いは実施していない。
 
 2026-10-25追記：充電ICの45〜60℃におけるJEITA動作と完成電池の許容条件、USBの専用GNDランド（長さ1.12mm）、6層0.8mm/0.35mmビア・0.15mm穴、部品の実効容量/水晶/USB配線品質をレビューする。[電気レビュー](d1-electrical-review.md)、[品番候補](../hardware/omi-fit-d1/sourcing-candidates.json)。照会文はdocs/sourcingに準備済み、送信未承認・未送信。
+
+2026-10-25 費用・準備台帳追記: [発注準備台帳](procurement/preorder.md)、[5台試作の費用](procurement/cost.md)。正式見積り未取得、電池MOQ/加工費未確定。発注可否は引き続きfalse。

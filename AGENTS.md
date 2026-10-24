@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## 発注準備・費用（2026-10-25追記）
+docs/procurement/preorder.mdにリリース判定表、cost.md/budget.json/calculate_budget.pyに5台予算を記録。製作59,864〜131,864円、道具含む81,909〜181,909円は仮置き（USD換算160円は予算用）。正式見積り未取得、電池NRE/MOQ増分・再試作を除く。照会文の現行ビア寸法を0.35/0.15へ統一し5台/10台の内訳見積り要求を追加。メール未送信、発注不可false維持。
+
 ## D1.1 全接続配線・DFM照会準備（最新、発注不可）
 2026-10-25。D23mm/0.8mmを維持し6層化。MCU180°回転、デカップリング/水晶配置、R4移動、MIC_ENをPB1/19番→PB5/41番へ変更。0.10mm線幅/間隔、0.35mmビア/0.15mm穴。ERC0/DRC0/未接続0/回路図等価性0、1202配線/ビア。GCT USB4105 B4図面を視認し、GNDランドのみ長さ1.15→1.12mmの専用PendantD1.prettyへ変更（信号パッド/穴は維持、業者DFM受理は未確認）。69実装参照すべてに品番/カタログ候補をsourcing-candidates.json/csvへ記録したが調達確保・適合性は未確定。export_review.pyでGerber/drill/BOM/CPL照会用ZIPを生成、製造リリースではない。order-status.jsonはfalse維持。place.py/route.pyは--discard-routing必須の旧破壊的ツール。試行はplacement-refinementへ保存。
 D2ケースを最新配置へ再生成しUSB高さ包絡3.56mm/蓋裏逃げ、マイクPCB穴0.6mmへ訂正。完成電池の最大寸法/コネクタ/極性/充電温度、BQ25101 JEITA温度適合、実効容量/水晶/USBと電源配線品質、ケース公差/組立材/完成治具が未完了。docs/d1-electrical-review.md参照。Grepow/JLCへの照会文はdocs/sourcingに作成済み、送信許可の質問は未回答でメール未送信。発注・支払い未実施。
