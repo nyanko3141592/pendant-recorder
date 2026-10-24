@@ -6,6 +6,9 @@
 ## 最新追加要件: 紛失保護・初期外観設計
 登録Macの秘密鍵がないと録音を復号できない保存時暗号化をv1要件に追加。公開鍵のみ本体に恒久保存、秘密鍵はMac Keychain、平文保存フォールバック禁止を第一案とする（未実装）。MSCは暗号化ファイル、復号後にWAV。docs/decisions/0002-encryption-and-industrial-design.md参照。外観後回しを撤回し、動作試作と装着用外観を初期から並行設計。v1は樹脂3Dプリント、将来金属外装を見据えて内部保持/絶縁と外装を分離検討する。
 
+## 最新追加: OS非依存の相互運用
+macOS/Windows/Linuxを対象とし、USB・暗号化形式・鍵移行・CLI契約を公開する。docs/protocol/README.md参照（Draft 0、未実装）。CLI/共通ライブラリを先行しGUIは任意。Mac Keychainに形式を依存させずOSごとの鍵保管を分離。Homebrew導入を候補にするが、公開済みパッケージではない。
+
 ## ゴール
 Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、ただし BLE送信・アプリ・クラウドを外し、
 「本体のmicroSDに1日録音 → 帰宅後USB-CでMacにつなぐと充電＋USBドライブ（MSC）で吸い出し → Macでローカル文字起こし（kotoba-whisper/mlx-whisper）→ 要約してNotion」にする。
