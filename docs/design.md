@@ -98,3 +98,25 @@ ESP32S3で電力を下げる案:
 2. `~/Lifelog/raw/日付/` にコピーし、ハッシュが一致したらSD側を消すかはユーザー設定（初期値は消さない）
 3. mlx-whisper（kotoba-whisperのMLX版など）で文字起こし
 4. ローカルのLLMで日ごとに要約し、Notion APIで保存（未実装）
+
+## 10. Omi-cloneパス（2026-10-24追加）と推奨
+詳細と出典は `docs/omi-reference.md`。Omiは「XIAO nRF52840 Sense＋Zephyr」（DevKit）→「nRF5340＋T5838×2＋150mAh＋BQ25101」（Consumer）と進化している。
+
+| 項目 | A: ESP32S3パス（従来） | B: Omi-clone 試作（DevKit2を真似る） | C: Omi-clone 本番（Consumerを真似る） |
+|---|---|---|---|
+| MCU | XIAO ESP32S3 Sense | XIAO nRF52840 Sense | nRF52840モジュール or nRF5340（自作基板） |
+| マイク | 基板上PDM | 基板上PDM | TDK T5838（AADで無音時スリープ） |
+| 保存 | microSD（拡張ボード） | microSD SPI（DK2と同じ `sdhc-spi-slot`）＋FAT/exFAT | microSD or SD NAND（CSNP系）＋FAT |
+| USB | TinyUSB MSC | Zephyr USB MSC | Zephyr USB MSC、USB-C直結（Omiの磁気ポゴはやめる） |
+| 充電 | 基板上 | 基板上 | BQ25101（Omiと同じ）＋保護IC |
+| 電池 | 740〜1,300mAh（試算） | 250mAh（DK2と同じ502030）から実測で調整 | 150〜300mAh |
+| ファーム | Arduino/PlatformIO（`firmware/` の骨組み） | Zephyr/NCS。Omi `firmware/devkit` のoverlay・SD・PDMを流用 | Omi `firmware/omi` の mic/AAD/電源制御を流用 |
+| 難易度 | 低 | 中（NCSの環境構築） | 高（WLCSPはリフロー必須） |
+
+**推奨**: 本命をB（Omi DevKit2クローン）に切り替える。
+- 理由1: ESP32S3は公式値で録音時64.5mA。電池が重くなりペンダントにならない
+- 理由2: Omiが同じボードでSD保存（実験的）まで実装済み。差分は「BLE送信を消す」「USB MSCを足す」「保存をFATの普通のファイルにする」の3点
+- 理由3: 将来Cへ進むとき、同じZephyrのコードがそのまま使える
+- Aは捨てずに「1日で動く確認用」として残す（`firmware/` = PlatformIO）。B用は `firmware-zephyr/` を新設予定
+
+B の保存形式の候補（未決）: (1) WAV 16kHz/16bit（115MB/h, 実装が簡単, 書き込み電力大）(2) Omiと同じOpus 32kbps（約14MB/h, nRF52840でエンコード可能な実績あり, Ogg/Opusコンテナにすればffmpeg/whisperで直接読める）。まずWAVで動かし、電力実測後にOpusへ。

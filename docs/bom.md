@@ -14,3 +14,25 @@
 | 比較用: XIAO nRF52840 Sense | 1 | 約3,000〜4,000円（未確認） | スイッチサイエンス、Amazon | 2台目の候補 |
 | 比較用: microSDモジュール（SPI） | 1 | 約300〜800円（未確認） | 秋月電子、Amazon | nRF52840用 |
 | 計測用: USB電流計またはPPK2 | 1 | 約2,000円〜（PPK2は約15,000円前後、未確認） | Amazon、マウザー | 電力の実測に必須 |
+
+## Omi-cloneパス（B: DevKit2クローン）の部品
+出典は `docs/omi-reference.md`（Omi DK2 README / Buying Guide）。価格は未確認。
+| 部品 | 数量 | 備考 |
+|---|---|---|
+| Seeed XIAO nRF52840 Sense | 1 | Omi DK1/DK2と同じ。Seeed直販 $15（Omi Buying Guide記載） |
+| Adafruit 5769 Audio BFF（microSDスロット付き） | 1 | DK2と同じ。スピーカーは不要なので、代わりに小型SPI microSDモジュールでも可 |
+| 502030 250mAh LiPo | 1 | DK2と同じ。実測で足りなければ 402535 / 503035 などに上げる |
+| タクトスイッチ 4×4×1.5mm | 1 | DK2と同じ |
+| 28〜30AWG 単線 | 少々 | DK2と同じ |
+| 筐体 | 1 | Omi `hardware/triangle v2 w memory/3d_printing_files` を改造（USB-C口とSD口） |
+| 書き込み・デバッグ | 1 | XIAOはUF2で書ける。デバッグにはJ-Link or nRF DK（任意） |
+
+## 本番パス（C: Consumerクローン）で参考にする主要部品（Omi BOMより）
+| 役割 | 型番 |
+|---|---|
+| SoC | nRF5340-CLAA（BLE不要なら nRF52840 モジュールで代替を検討） |
+| マイク | TDK MMICT5838-00-012（T5838）×1〜2 |
+| 記憶 | CS CSNP4GCR01-DPW（SD NAND 512MB）→ 容量不足。16時間WAVなら microSD、Opusなら 1〜2GB級 SD NAND |
+| 充電 | TI BQ25101YFPR、保護IC GLF73910-BD01 |
+| 電源 | TI TPS628438（降圧）, SGM2036 LDO, TPS22916 ロードスイッチ |
+| 電池 | GERUIPU GRP1654M1 150mAh（D16×H6.1）カスタム |

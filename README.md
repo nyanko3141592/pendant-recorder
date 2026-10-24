@@ -10,6 +10,9 @@
 - `docs/design.md` 設計書（構成、ボード比較、電力の見積もり、音声フォーマット、時刻、USB、省電力、ケース）
 - `docs/bom.md` 部品表（価格は概算・要確認）
 - `docs/open-questions.md` 未決事項
+- `docs/omi-reference.md` Omiのハード／ファーム調査（出典つき）
+- `reference/omi/` Omiの参照ファイル（MIT）
+- `AGENTS.md` Cursorエージェント向けの要約
 - `firmware/` PlatformIO の骨組み（XIAO ESP32S3 Sense 向け、スタブ）
 - `host/` Mac側スクリプトのスタブ（マウント検出、コピー、ローカル文字起こし）
 

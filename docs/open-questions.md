@@ -10,3 +10,12 @@
 9. 録音の同意とプライバシー: 職場・家族・外出先での扱い、録音中を示す表示
 10. SDのデータの暗号化をするか（落としたときの対策）
 11. Mac側: どの要約モデルを使うか、Notionのどのデータベースに保存するか
+
+## Omi-cloneパス追加分（2026-10-24）
+12. Bパス（XIAO nRF52840 Sense）で録音＋SD書き込み時の平均電流（Omiに公開の実測値なし）
+13. 保存形式: WAV か Opus（Omiは32kbps CELT）か。Opusならコンテナ（Ogg）をどうするか
+14. Zephyr USB MSC と SPI SD の組み合わせのコピー速度（DK2はSPI 24MHz）
+15. T5838のAAD（音で起動）をXIAO構成に後付けするか
+16. DK2の「offline storage は実験的」部分の安定性（Omi firmware/readme.md の注意書き）
+17. Omi DK1の電池容量・XIAO内蔵マイクの型番（Omi側資料に記載なし）
+18. 本番基板: nRF5340を使うか nRF52840 で十分か（BLE/Wi-Fiは不要）
