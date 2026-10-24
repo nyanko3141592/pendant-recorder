@@ -1,5 +1,7 @@
 # pendant-recorder
 
+> 最新: [ハード中心のv1仕様](docs/decisions/0004-hardware-first-v1.md)を優先。Bluetooth対応MCUへ新回路設計、v1通信はUSB。検証済み同期後の対象録音は自動削除へ変更。無音区切りは音声保存省略とは別。新Rev Bは設計開始段階、旧Rev Aは発注不可。
+
 > 最新のv1ホスト範囲: 3 OSで同期・復号し、通常WAVをPCへ保存するところまでを必須とする。[同期の完了条件](docs/protocol/README.md)参照。文字起こし・要約・Notionは任意の後段で、必須依存にしない。未実装。
 
 > 最新: macOS・Windows・Linux向けに[相互運用仕様とCLI契約](docs/protocol/README.md)を設計。CLIを先行、GUIは任意。仕様はDraft 0で未実装、既存Macスタブとは区別します。
