@@ -1,5 +1,7 @@
 # SolidCraftによる寸法検討
 
+> v1の外観検討は保留。基板配置と電池確定後に、シンプルな角丸・ネジ留めケースを作る。以下の26mmモデルは将来用の寸法検討として保持する。 詳細: [v1製作方針](../docs/v1-build.md)
+
 SolidCraft公式 v0.21.0 を `/Applications/SolidCraft.app` に導入。CLIは `~/.local/bin/solidcraft-cli`。ダウンロードは https://github.com/tangency-labs/solidcraft/releases/tag/v0.21.0 。APIのSHA-256とローカルファイルが一致した。
 
 - macOS DMG: `f6d0b02e3142e4a966114467c89824a1a42e7042bf92a0f3d1299634244cf68c`

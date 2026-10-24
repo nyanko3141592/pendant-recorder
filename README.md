@@ -8,6 +8,8 @@
 
 ## 回路と筐体（2026-10-24）
 
+**v1は個人製作と基板密度を優先**。小ロットの基板実装を外注して自分で組み立てる方針です。外観4案は保留し、基板に合わせたシンプルなケースにします。[v1の製作方針と未確定事項](docs/v1-build.md)。
+
 - [Rev A0 回路設計](hardware/rev-a/README.md): Omiの実回路を参照したKiCad回路図、92部品のBOM、全端子接続表。製造前のドラフトです。
 - [SolidCraft寸法検討](mechanical/README.md): 26×12mmの編集可能モデルとSTEP。基板・電池のダミーを含みます。
 - 公開リポジトリ: https://github.com/nyanko3141592/pendant-recorder
