@@ -2,13 +2,15 @@
 """Generate a self-contained KiCad schematic and review tables from design.json.
 Rectangular symbols deliberately show every pin. Footprints are NOT manufacturing-ready.
 """
-import csv,json,math,uuid
+import csv,json,math,uuid,sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]/'rev-a'
+REV=sys.argv[1] if len(sys.argv)>1 else 'rev-a'
+assert REV in ('rev-a','rev-b')
+ROOT=Path(__file__).resolve().parents[1]/REV
 d=json.loads((ROOT/'design.json').read_text()); parts=list(d['parts'])
-for i,net in enumerate(['GND','VDDA','VBUS','SYS'],1):
+for i,net in enumerate((['GND','VDDA','VBUS','SYS'] if REV=='rev-a' else ['GND','VBUS','SYS']),1):
  parts.append(dict(ref=f'#FLG0{i}',value='PWR_FLAG',pins=[dict(number='1',name='pwr',net=net,type='power_out')],section=1,note='Supply declaration after connector/passive path',footprint=''))
-def uid(key):return str(uuid.uuid5(uuid.NAMESPACE_URL,'pendant-recorder/rev-a/'+key))
+def uid(key):return str(uuid.uuid5(uuid.NAMESPACE_URL,'pendant-recorder/'+REV+'/'+key))
 def q(s):return json.dumps(str(s))
 def effects(size=1,extra=''):return f'(effects (font (size {size} {size})) {extra})'
 root=uid('root'); libs=[]; items=[]; rows=[]; positions={s:45.72 for s in range(4)}
@@ -39,14 +41,14 @@ for part in parts:
  (property "Value" {q(part['value'])} (at {x} {y-h/2-2.54} 0) {effects(1.27)})
  (property "Footprint" {q(part['footprint'])} (at {x} {y} 0) {effects(1,'hide')})
  {''.join(placement)}
- (instances (project "pendant-rev-a" (path "/{root}" (reference {q(ref)}) (unit 1)))))''')
+ (instances (project "pendant-{REV}" (path "/{root}" (reference {q(ref)}) (unit 1)))))''')
 for s,title in enumerate(['01 MCU / RTC / UI','02 USB-C / CHARGER','03 POWER / FUEL GAUGE','04 AUDIO / SD / INDICATORS']):
  items.append(f'(text {q(title)} (at {150+275*s} 25 0) {effects(3)} (uuid {uid(title)}))')
-items.append(f'(text "A1 ENGINEERING DRAFT - NOT FOR FABRICATION - See hardware/rev-a/README.md" (at 580 12 0) {effects(3)} (uuid {uid("warning")}))')
+items.append(f'(text "ENGINEERING DRAFT - NOT FOR FABRICATION - See hardware/{REV}/README.md" (at 580 12 0) {effects(3)} (uuid {uid("warning")}))')
 text=f'''(kicad_sch (version 20250114) (generator "eeschema") (uuid {root}) (paper "A0")
- (title_block (title "Pendant Recorder - Omi-derived electrical design") (date "2026-10-24") (rev "A1 DRAFT") (comment 1 "Unrouted PCB / no manufacturing release"))
+ (title_block (title "Pendant Recorder - Omi-derived electrical design") (date "2026-10-24") (rev "{REV} DRAFT") (comment 1 "Unrouted PCB / no manufacturing release"))
  (lib_symbols {''.join(libs)}) {''.join(items)})'''
-(ROOT/'pendant-rev-a.kicad_sch').write_text(text)
+(ROOT/f'pendant-{REV}.kicad_sch').write_text(text)
 (ROOT/'Pendant.kicad_sym').write_text('(kicad_symbol_lib (version 20241209) (generator \"kicad_symbol_editor\") '+''.join(libs).replace('Pendant:','')+')')
 (ROOT/'sym-lib-table').write_text('(sym_lib_table (version 7) (lib (name \"Pendant\") (type \"KiCad\") (uri \"${KIPRJMOD}/Pendant.kicad_sym\") (options \"\") (descr \"Project pin-level symbols\")))\n')
 with (ROOT/'connections.csv').open('w') as f:

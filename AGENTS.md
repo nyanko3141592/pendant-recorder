@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## Rev B0の実作業（2026-10-24）
+回路図/PCB/接続表はhardware/rev-b/へ作成。68部品、MDBT50Q-1MV2、SPI SD、TXS0104EPWR（旧DSBGAからTSSOPへ）。22×43.5mmの配線試行で、発注可否はorder-status.jsonとdrc.jsonを優先。発注不可の残件を消さず追跡する。mechanical/structure-b0に24.8×46.5×12.8mmのSolidCraft構造案とレンダリング。ケース固定・音道・NTC・実寸収納は未完了。旧Rev Aは比較原本。
+
 ## 最優先の最新決定（0004）
 ユーザーがBluetooth対応MCUへの変更を許可。nRF52840を第一候補にRev Bを新設計、現Rev Aは比較原本。アンテナ内蔵Bluetoothモジュールをv1から業者実装する（決定0005）。ソフトv1は無線停止・USB同期、ソフトv2でBluetooth同期を目指す。アンテナ省略は撤回。docs/decisions/0004-hardware-first-v1.mdを優先。同期後はPC保存・復号・完全性検証と永続化の確認が済んだ一致録音だけ自動削除する（過去の自動削除オフをこの範囲で置換）。未同期の上書き/満杯時循環削除は不可。無音区切りは保存省略と区別し、録音欠落防止を優先。表示は簡潔な状態/概算残量でよくLED5点固定は解除。ハード販売が中心、公式は最低限の音声取出しのみ。
 

@@ -1,0 +1,176 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-24T20:17:49",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-rev-b.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 100.3,
+                        "y": 104.8
+                    },
+                    "uuid": "ff3ff819-39fb-48b9-9537-7824496f0966"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 100.3,
+                        "y": 104.8
+                    },
+                    "uuid": "ff3ff819-39fb-48b9-9537-7824496f0966"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド A1 [BAT] - U3 ( F.Cu 上)",
+                    "pos": {
+                        "x": 118.7,
+                        "y": 129.1
+                    },
+                    "uuid": "ca2acd16-9b3a-41a1-a7c9-1043e8da2ab9"
+                },
+                {
+                    "description": "配線 [BAT] ( F.Cu 上、長さ: 0.1725 mm )",
+                    "pos": {
+                        "x": 119.386,
+                        "y": 132.165
+                    },
+                    "uuid": "0d1d83b9-c573-4a6a-aad7-25387b4ed085"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1944 mm)",
+            "items": [
+                {
+                    "description": "パッド A1 [GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 135.71
+                    },
+                    "uuid": "64f3b5ec-13ea-456b-b70a-de37136d55ab"
+                },
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 113.11,
+                        "y": 136.785
+                    },
+                    "uuid": "540405f9-4209-4be9-92cc-c36aa767739e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1944 mm)",
+            "items": [
+                {
+                    "description": "パッド B12 [GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 135.71
+                    },
+                    "uuid": "b8a026ed-a5d1-43f5-b26a-3ff4e60c4205"
+                },
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 113.11,
+                        "y": 136.785
+                    },
+                    "uuid": "540405f9-4209-4be9-92cc-c36aa767739e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1944 mm)",
+            "items": [
+                {
+                    "description": "パッド A12 [GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 119.2,
+                        "y": 135.71
+                    },
+                    "uuid": "0da43d48-92fc-49f3-b762-308dada7667d"
+                },
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 118.89,
+                        "y": 136.785
+                    },
+                    "uuid": "fea4b37f-0e10-4e80-981f-0f3f3faef0ac"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1944 mm)",
+            "items": [
+                {
+                    "description": "パッド B1 [GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 119.2,
+                        "y": 135.71
+                    },
+                    "uuid": "014b0b9d-0498-4c79-adc8-7364844f6f5e"
+                },
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 118.89,
+                        "y": 136.785
+                    },
+                    "uuid": "fea4b37f-0e10-4e80-981f-0f3f3faef0ac"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        }
+    ]
+}

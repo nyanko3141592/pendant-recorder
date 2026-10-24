@@ -1,0 +1,69 @@
+Reference,Part/value,Footprint,Design note
+U1,MDBT50Q-1MV2,RF_Module:Raytac_MDBT50Q,"Raytac Ver L p40: normal voltage, VDD=VDDH=3V, DCCH NC; Reg1 DCDC inside. RF clearance required."
+C1,100n,Capacitor_SMD:C_0402_1005Metric,
+C4,10u,Capacitor_SMD:C_0603_1608Metric,10u VDD/VDDH decoupling per Raytac p40; effective capacitance review pending.
+C9,100n,Capacitor_SMD:C_0402_1005Metric,
+R2,10k,Resistor_SMD:R_0402_1005Metric,
+Y1,32.768kHz CL=7pF TBD,Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm,
+C11,10p tentative,Capacitor_SMD:C_0402_1005Metric,
+C12,10p tentative,Capacitor_SMD:C_0402_1005Metric,
+J3,TC2030 SWD target pads,Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical,"VTref,SWDIO,nRESET,SWCLK,GND,NC; use nRF-compatible completed J-Link probe/cable, not STM32 STLINK assumption."
+SW1,B3U-1000P (candidate),Button_Switch_SMD:SW_SPST_B3U-1000P,
+R4,100k,Resistor_SMD:R_0402_1005Metric,
+R5,3.3k,Resistor_SMD:R_0402_1005Metric,
+D1,red LED,LED_SMD:LED_0402_1005Metric,
+J1,USB4105-GF-A (candidate),Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,Exact footprint and shield pad numbering pending connector selection
+R6,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+R7,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+R8,27R 1%,Resistor_SMD:R_0402_1005Metric,Raytac reference p40 USB series resistor; signal integrity validation pending.
+R9,27R 1%,Resistor_SMD:R_0402_1005Metric,Raytac reference p40 USB series resistor; signal integrity validation pending.
+U2,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,Verify footprint; short path to connector ground
+C13,2.2u 10V,Capacitor_SMD:C_0402_1005Metric,
+U3,BQ25101YFPR,Pendant:BQ25101_YFP6,"BQ25101, 21.81mA nominal with 6.19k 1%; TS NTC must contact cell. Temperature/timeout validation pending."
+R10,6.19k 1%,Resistor_SMD:R_0402_1005Metric,BQ25101: nominal 21.81mA; KISET max145 / (6190*0.99)=23.66mA < DTP max55mA. Standard pack charging approximately22mA.
+R11,100k,Resistor_SMD:R_0402_1005Metric,
+C14,2.2u,Capacitor_SMD:C_0402_1005Metric,
+J2,S2B-PH-SM4-TB(LF)(SN) / DTP401525 110mAh,Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal,"Two-pin PH pack connection. Confirm delivered polarity. TH1 is PCB-mounted thermal contact, no third battery wire."
+TH1,NCP15XH103F03RC 10k NTC,Resistor_SMD:R_0402_1005Metric,PCB-mounted NTC thermally coupled to pack through insulation. Position/contact/thermal response require validation; no hand-soldered harness.
+Q2,2N7002 (charge inhibit),Package_TO_SOT_SMD:SOT-23,High disables charging by pulling TS low; USB suspend policy required
+R12,100k,Resistor_SMD:R_0402_1005Metric,
+D2,BAT54WS (candidate; leakage/forward drop review pending),Diode_SMD:D_SOD-323,USB path; characterize leakage and input inrush
+Q1,DMP2035U (candidate; power path review pending),Package_TO_SOT_SMD:SOT-23,"S=SYS, D=BAT intentionally; body diode BAT -> SYS; exact MPN/pinout pending"
+R16,100k,Resistor_SMD:R_0402_1005Metric,
+C15,4.7u,Capacitor_SMD:C_0603_1608Metric,
+U4,TPS7A0230PDBVR,Package_TO_SOT_SMD:SOT-23-5,DBV / SOT23-5 prototype; miniaturization later
+U6,TPS7A0218PDBVR,Package_TO_SOT_SMD:SOT-23-5,DBV / SOT23-5 prototype; miniaturization later
+C16,1u,Capacitor_SMD:C_0402_1005Metric,
+C18,1u,Capacitor_SMD:C_0402_1005Metric,
+C19,1u,Capacitor_SMD:C_0402_1005Metric,
+C20,10u 10V,Capacitor_SMD:C_0603_1608Metric,Raytac reference p40 VBUS capacitor; USB total input capacitance/inrush validation REQUIRED before release.
+R17,100k,Resistor_SMD:R_0402_1005Metric,
+U7,MAX17048G+T10,Package_DFN_QFN:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm,EP pad number 9 is footprint convention; verify footprint
+C21,100n,Capacitor_SMD:C_0402_1005Metric,
+R18,4.7k,Resistor_SMD:R_0402_1005Metric,
+R19,4.7k,Resistor_SMD:R_0402_1005Metric,
+R20,100k,Resistor_SMD:R_0402_1005Metric,
+U8,T5838,Pendant:T5838_LGA7_BottomPort,BOTTOM port; 1.62..1.98V only; SELECT low = right channel
+U9,TXS0104EPWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,TI SCES651K table 5-3; JLC C44955 exact TSSOP-14 catalog match. Avoid 0.4mm DSBGA central-pad escape requirement.
+R21,22R tentative,Resistor_SMD:R_0402_1005Metric,
+C22,100n,Capacitor_SMD:C_0402_1005Metric,
+C23,100n,Capacitor_SMD:C_0402_1005Metric,
+C24,100n,Capacitor_SMD:C_0402_1005Metric,
+U10,TPS22916CYFPR,Pendant:TPS22916_YFP4,Omi SD switch; power-off sequence must tristate ALL SD signals
+R22,100k,Resistor_SMD:R_0402_1005Metric,
+C25,1u,Capacitor_SMD:C_0402_1005Metric,
+U11,CSNP32GCR01-BOW,Pendant:CSNP32GCR01_LGA8,SPI mode per manufacturer p2; unused DAT1/DAT2 reserved; verify power-up and interrupted-write behavior.
+R23,22R tentative,Resistor_SMD:R_0402_1005Metric,
+R24,47k,Resistor_SMD:R_0402_1005Metric,
+R25,47k,Resistor_SMD:R_0402_1005Metric,
+R28,47k,Resistor_SMD:R_0402_1005Metric,
+C26,100n,Capacitor_SMD:C_0402_1005Metric,
+C27,22u effective TBD,Capacitor_SMD:C_0603_1608Metric,
+TP1,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP2,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP3,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP4,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP5,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP6,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+R32,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D6,amber LED 0402 TBD,LED_SMD:LED_0402_1005Metric,Battery level by blink count; shared charging/error indication; exact LED MPN pending.
