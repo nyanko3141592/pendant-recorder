@@ -69,3 +69,6 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 
 ## 発注準備の最新進捗
 J3は標準TC2030-NL/CTX結線（1 VTref,2 SWDIO,3 NRST,4 SWCLK,5 GND,6 NC）へ更新。docs/solderless-programming.md参照。ERC0、DRC19、未接続221で発注不可。sourcing-review.jsonに品番照合を記録。音声はdocs/protocol/audio-profile.mdのIMA-ADPCM 1024byte/2041samplesを候補にし、通常sync出力は有効サンプル長に切り戻したPCM16 WAV。ホスト合成音の形式試験のみ完了。
+
+## 保存形式・電源断の最新要件
+独自音声形式/暗号化コンテナの新設禁止。docs/protocol/power-loss-recovery.md参照。短区間の標準IMA-WAVを標準age v1の独立ファイルで逐次確定する案を評価（未実装）。確定済み区間の回収、途中区間の認証失敗検出、実機ランダム電源断試験をv1に含める。10秒等の損失上限を未検証で保証しない。平文のSD一時保存と不完全録音の自動削除は禁止。

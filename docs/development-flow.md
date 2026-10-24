@@ -43,3 +43,7 @@
 ## 発注準備チェックの実行
 
 `python3 hardware/tools/preflight_order.py --output hardware/rev-a/order-preflight.json`で回路/基板の現状と部品照合の未完了項目を記録する。現状は意図通り非ゼロ終了（発注不可）。製造レビュー、治具、機構の確認は別途証拠を要し、このツールだけで注文承認しない。圧縮形式のホスト試験は`tools/check_audio_profile.py`、MCU/暗号化/電力試験とは区別する。
+
+## 電源断回収の追加ゲート
+
+[既存形式と電源断回収](protocol/power-loss-recovery.md)を適用。独自コンテナは新設せず既存形式で相互運用試験。短い独立区間の確定とランダム電源断後の回収を検証し、FS/媒体内部の破損と末尾欠落を区別して実測値を記録する。
