@@ -1,0 +1,286 @@
+{
+  "method": "Arithmetic and axis-aligned envelope checks, NOT SPICE, battery discharge simulation or measurements",
+  "assumptions": {
+    "capacity_mah": 110,
+    "nominal_usable_fraction": 0.7,
+    "target_battery_current_ma": 4,
+    "height_tolerance_mm": 0.2,
+    "case_tolerance_mm": 0.2,
+    "continuous_recording": true
+  },
+  "storage": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "ima_block_bytes": 1024,
+    "samples_per_block": 2041,
+    "segment_seconds_assumed": 10,
+    "age_header_budget_bytes": 512,
+    "allocated_bytes_per_segment_4k": 81920,
+    "hours36_bytes": 1061683200,
+    "capacity_4GB_hours_before_reserve": 135.63368055555554,
+    "note": "Header size and allocation are budget assumptions. Firmware/crypto integration not implemented; no silence omission."
+  },
+  "workload_sensitivity": [
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 1.8000000000000003,
+      "runtime_h": 42.77777777777777
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 2.7,
+      "runtime_h": 28.518518518518515
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 4.8,
+      "runtime_h": 16.041666666666668
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 2.2,
+      "runtime_h": 35.0
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 3.1,
+      "runtime_h": 24.838709677419356
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 5.199999999999999,
+      "runtime_h": 14.80769230769231
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 3.0000000000000004,
+      "runtime_h": 25.666666666666664
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 3.9000000000000004,
+      "runtime_h": 19.74358974358974
+    },
+    {
+      "base_ma_assumed": 0.8,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 6.0,
+      "runtime_h": 12.833333333333334
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 2.2,
+      "runtime_h": 35.0
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 3.1,
+      "runtime_h": 24.838709677419356
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 5.199999999999999,
+      "runtime_h": 14.80769230769231
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 2.6,
+      "runtime_h": 29.615384615384613
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 3.5,
+      "runtime_h": 22.0
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 5.6,
+      "runtime_h": 13.75
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 3.4,
+      "runtime_h": 22.647058823529413
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 4.3,
+      "runtime_h": 17.906976744186046
+    },
+    {
+      "base_ma_assumed": 1.2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 6.3999999999999995,
+      "runtime_h": 12.031250000000002
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 3.0,
+      "runtime_h": 25.666666666666668
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 3.9,
+      "runtime_h": 19.743589743589745
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.05,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 6.0,
+      "runtime_h": 12.833333333333334
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 3.4,
+      "runtime_h": 22.647058823529413
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 4.3,
+      "runtime_h": 17.906976744186046
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.1,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 6.3999999999999995,
+      "runtime_h": 12.031250000000002
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.02,
+      "average_ma": 4.2,
+      "runtime_h": 18.333333333333332
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.05,
+      "average_ma": 5.1,
+      "runtime_h": 15.098039215686276
+    },
+    {
+      "base_ma_assumed": 2,
+      "cpu_extra_ma_assumed": 8,
+      "cpu_duty": 0.2,
+      "sd_extra_ma_assumed": 30,
+      "sd_duty": 0.12,
+      "average_ma": 7.199999999999999,
+      "runtime_h": 10.694444444444445
+    }
+  ],
+  "a": {
+    "usb_to_lid_nominal_mm": 0.64,
+    "usb_to_lid_after_assumed_tolerances_mm": 0.24,
+    "duct_envelope_conflicts": [],
+    "battery_top_mm": 5.5,
+    "pcb_bottom_mm": 2.9,
+    "mic_hole_position": "Registered to KiCad U8 NPTH pad, 0.6mm",
+    "fit_status": "NOT_QUALIFIED"
+  },
+  "b": {
+    "usb_to_lid_nominal_mm": 0.54,
+    "usb_to_lid_after_assumed_tolerances_mm": 0.14,
+    "duct_envelope_conflicts": [],
+    "battery_top_mm": 5.5,
+    "pcb_bottom_mm": 8.6,
+    "mic_hole_position": "Registered to KiCad U8 NPTH pad, 0.6mm",
+    "fit_status": "NOT_QUALIFIED"
+  }
+}

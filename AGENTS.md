@@ -1,3 +1,7 @@
+# Compact A/B検討（2026-10-25、最新・発注不可）
+
+`docs/compact-ab-review.md`を参照。A薄型38×39×8.9mm、B小型20×39×14.5mmの検討モデル。確定寸法ではない。18×33×0.8mm共通6層基板、75部品、各1264配線/ビア、ERC0・等価性0・DRC9・未接続10。`hardware/compact-a,b`と`mechanical/compact-ab`。全75部品の仮高さ包絡、紐穴/蓋爪/ボタン/LED/音道。持続時間は算術のみ。BQ25101温度適合、実ハーネス、配線品質、製造公差、STM32実装と16h実測未達。生成スクリプトは配線を上書きするため注意。旧D/E原本保持。
+
 # AGENTS.md — pendant-recorder
 
 ## Rev E0回路・構造ドラフト（最新、未配線）
