@@ -1,0 +1,41 @@
+import json
+from pathlib import Path
+P=Path(__file__).resolve().parent
+commands=[]
+def cmd(n,**p):commands.append({'command':n,'params':p})
+for folder,prefix,x,y in [('structure-a2','A2_',-34,20.75),('structure-b0','B0_',34,23.25)]:
+ src=json.loads((P.parent/folder/'assembled.json').read_text())['commands']
+ names=set()
+ bodies=[]
+ for c in src:
+  p=c['params']
+  for k in ['name','body_name']:
+   if k in p:names.add(p[k])
+  if c['command']=='solid.extrude' and p.get('operation')=='new':bodies.append(p['body_name'])
+ def replace(v):
+  if isinstance(v,str):return prefix+v if v in names else v
+  if isinstance(v,list):return [replace(i) for i in v]
+  if isinstance(v,dict):return {k:replace(i) for k,i in v.items()}
+  return v
+ commands.extend(replace(c) for c in src)
+ cmd('solid.move',bodies=[prefix+n for n in bodies],translate=[x,y,0])
+def disk(name,r,z,h,color,inner=None):
+ cmd('sketch.create',plane='XY',offset=z,name=name+'_sketch')
+ cmd('sketch.circle.center',center=[0,13.25],radius=r)
+ if inner:cmd('sketch.circle.center',center=[0,13.25],radius=inner)
+ cmd('sketch.finish');cmd('solid.extrude',distance=h,operation='new',body_name=name)
+ cmd('appearance.assign',bodies=[name],color=color)
+def text(name,s,x,y,z,size,color='#28394a'):
+ cmd('sketch.create',plane='XY',offset=z,name=name+'_sketch')
+ cmd('sketch.text',text=s,at=[x,y],height=size,align="center")
+ cmd('sketch.finish');cmd('solid.extrude',distance=.06,operation='new',body_name=name)
+ cmd('appearance.assign',bodies=[name],color=color)
+disk('Coin_outer',13.25,0,1.8,'#c1a568',9.5)
+disk('Coin_center',9.5,0,1.8,'#c9cbd0')
+disk('Coin_rim',13.25,1.8,.12,'#d2b87a',12.7)
+text('Coin_500','500',0,11,1.8,5,'#797c80')
+for name,x,title,dim in [('Old',-34,'A2','24.8 x 41.5'),('New',34,'Rev B','24.8 x 46.5'),('Yen',0,'500 YEN','D 26.5 mm')]:
+ text(name+'_title',title,x,-6,0,2.6)
+ text(name+'_dim',dim,x,-11,0,1.8)
+ if name!='Yen':text(name+'_thickness','T 12.8 mm',x,-15,0,1.8)
+(P/'comparison.json').write_text(json.dumps({'commands':commands},ensure_ascii=False))
