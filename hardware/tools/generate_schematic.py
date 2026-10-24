@@ -5,17 +5,17 @@ Rectangular symbols deliberately show every pin. Footprints are NOT manufacturin
 import csv,json,math,uuid,sys
 from pathlib import Path
 REV=sys.argv[1] if len(sys.argv)>1 else 'rev-a'
-assert REV in ('rev-a','rev-b','rev-c')
+assert REV in ('rev-a','rev-b','rev-c','omi-fit-d1')
 ROOT=Path(__file__).resolve().parents[1]/REV
 d=json.loads((ROOT/'design.json').read_text()); parts=list(d['parts'])
-for i,net in enumerate((['GND','VDDA','VBUS','SYS'] if REV in ('rev-a','rev-c') else ['GND','VBUS','SYS']),1):
+for i,net in enumerate((['GND','VDDA','VBUS','SYS'] if REV in ('rev-a','rev-c','omi-fit-d1') else ['GND','VBUS','SYS']),1):
  parts.append(dict(ref=f'#FLG0{i}',value='PWR_FLAG',pins=[dict(number='1',name='pwr',net=net,type='power_out')],section=1,note='Supply declaration after connector/passive path',footprint=''))
 def uid(key):return str(uuid.uuid5(uuid.NAMESPACE_URL,'pendant-recorder/'+REV+'/'+key))
 def q(s):return json.dumps(str(s))
 def effects(size=1,extra=''):return f'(effects (font (size {size} {size})) {extra})'
 root=uid('root'); libs=[]; items=[]; rows=[]; positions={s:45.72 for s in range(4)}
 for part in parts:
- ref=part['ref']; physical=not ref.startswith('#'); bom_item=physical and not (REV=='rev-c' and (ref=='J3' or ref.startswith('TP'))); pins=part['pins']; n=math.ceil(len(pins)/2); h=max(10.16,(n+1)*3.81); w=66.04
+ ref=part['ref']; physical=not ref.startswith('#'); bom_item=physical and not (REV in ('rev-c','omi-fit-d1') and (ref=='J3' or ref.startswith('TP'))); pins=part['pins']; n=math.ceil(len(pins)/2); h=max(10.16,(n+1)*3.81); w=66.04
  x=152.4+274.32*part['section']; y=positions[part['section']]+h/2; positions[part['section']]+=h+12.7
  name='Part_'+ref; libid='Pendant:'+name
  geometry=[]; placement=[]
@@ -48,7 +48,7 @@ items.append(f'(text "ENGINEERING DRAFT - NOT FOR FABRICATION - See hardware/{RE
 text=f'''(kicad_sch (version 20250114) (generator "eeschema") (uuid {root}) (paper "A0")
  (title_block (title "Pendant Recorder - Omi-derived electrical design") (date "2026-10-24") (rev "{REV} DRAFT") (comment 1 "Unrouted PCB / no manufacturing release"))
  (lib_symbols {''.join(libs)}) {''.join(items)})'''
-(ROOT/f'pendant-{REV}.kicad_sch').write_text(text)
+(ROOT/(f'{REV}.kicad_sch' if REV=='omi-fit-d1' else f'pendant-{REV}.kicad_sch')).write_text(text)
 (ROOT/'Pendant.kicad_sym').write_text('(kicad_symbol_lib (version 20241209) (generator \"kicad_symbol_editor\") '+''.join(libs).replace('Pendant:','')+')')
 (ROOT/'sym-lib-table').write_text('(sym_lib_table (version 7) (lib (name \"Pendant\") (type \"KiCad\") (uri \"${KIPRJMOD}/Pendant.kicad_sym\") (options \"\") (descr \"Project pin-level symbols\")))\n')
 with (ROOT/'connections.csv').open('w') as f:
