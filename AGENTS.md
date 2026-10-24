@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## Rev E0回路・構造ドラフト（最新、未配線）
+2026-10-25。hardware/rev-eへXE電池3ピンJ2（BAT/BAT_TS/GND）とTH1削除を反映した回路図/25×31mm基板初期配置。ERC0、配線以外のDRC0、未配線あり。充電IC温度適合は未解決。mechanical/structure-eへ28×34×13.8mmのSolidCraft/STEP/分解画像。配線・蓋/紐固定・音道・公差未完、発注不可。D1.1/D2原本保持。E生成スクリプトはEの配線を上書きするため再実行注意。
+
 ## 次版E設計基準・感度計算（0008）
 2026-10-25。docs/decisions/0008-selection-e.md。DTP401525-XE/EZ3 110mAh完成保護・NTC付き品を次版設計基準に選定。Molex0781710003へ変更が必要だが未実装。MCU/録音系維持、充電ICの最終選定とJLC調達は未完。hardware/power-study/selection-eは算術感度分析（SPICE/実測ではない）。110mAh/70%/4mA=19.25h、5mA=15.4h。設計目標平均4mA。D1.1/D2原本は未変更、発注不可。
 
