@@ -36,3 +36,21 @@
 | 充電 | TI BQ25101YFPR、保護IC GLF73910-BD01 |
 | 電源 | TI TPS628438（降圧）, SGM2036 LDO, TPS22916 ロードスイッチ |
 | 電池 | GERUIPU GRP1654M1 150mAh（D16×H6.1）カスタム |
+
+## カスタム基板（推奨構成, 2026-10-24）— 詳細は docs/custom-pcb.md
+価格は未確認。LCSC番号は LCSC の商品ページで確認したもののみ記載。
+| 役割 | 型番 | パッケージ | LCSC | 備考 |
+|---|---|---|---|---|
+| MCU | ST STM32U535CBU6 | UFQFPN-48 7×7 | C26442222 | 無線なし、USB FS / SDMMC / ADF |
+| マイク | TDK MMICT5838-00-012（T5838） | 3.5×2.65mm | 未確認 | Omi Consumerと同じ |
+| ストレージ | CS CSNP32GCR01-BOW（SD NAND 4GB） | LGA-8 6.2×8 | C5440134 | SDMMC 4bit |
+| 充電 | TI BQ25101YFPR | DSBGA-6 | C478468 | Omiと同じ |
+| 残量計 | Analog Devices MAX17048G+T10 | DFN-8 | C2682616 | |
+| LDO 3.0V | 低Iq LDO（例 TI TPS7A02 系） | 小型 | 未確認 | 型番選定中 |
+| ロードスイッチ | TI TPS22916 | WCSP | 未確認 | Omiと同じ、SD NAND電源断用 |
+| 水晶 | 32.768kHz | 2012等 | 未確認 | RTC |
+| USB-C | USB2.0 16ピン ミッドマウント | — | 未確認 | CC 5.1k×2 |
+| ESD | USBLC6-2 相当 | SOT-23-6 | 未確認 | |
+| 電池 | 1S LiPo 80〜100mAh（保護付き、ボタン型が理想） | — | — | 実測後に決定 |
+| ボタン/LED | 4×4mm タクト / 0402 LED | — | 未確認 | |
+| 試作用評価ボード | ST NUCLEO（STM32U545等） | — | — | 型番は要確認 |
