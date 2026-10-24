@@ -1,0 +1,85 @@
+Reference,Part/value,Footprint,Design note
+U1,STM32U535RCT6,Package_QFP:LQFP-64_10x10mm_P0.5mm,"LQFP64, LDO-only; 48-pin CBU6 rejected: no SDMMC pins"
+C1,100n,,
+C2,100n,,
+C3,100n,,
+C4,10u,,
+C5,4.7u,,
+C6,100n,,
+C7,1u,,
+C8,100n,,
+C9,100n,,
+C10,100n,,
+R1,0R,,
+R2,10k,,
+R3,100k,,
+Y1,32.768kHz CL=7pF TBD,,
+C11,10p tentative,,
+C12,10p tentative,,
+J3,SWD pads,,VTref only; programmer must not drive V3
+SW1,REC button,,
+R4,100k,,
+R5,3.3k,,
+D1,red LED,,
+J1,USB-C USB2 receptacle TBD,,Exact footprint and shield pad numbering pending connector selection
+R6,5.1k 1%,,
+R7,5.1k 1%,,
+R8,22R tentative,,
+R9,22R tentative,,
+U2,USBLC6-2SC6,,Verify footprint; short path to connector ground
+C13,2.2u 10V,,
+U3,BQ25101YFPR,,Omi charger retained; 50mA nominal; TS NTC must touch cell
+R10,2.7k 1%,,
+R11,100k,,
+C14,2.2u,,
+J2,Protected 1S 100mAh pack + NTC,,4.2V cell; protection in pack; NTC return PACK-; exact pack not selected
+TH1,NCP15XH103F03RC 10k NTC,,"Mount thermally on cell; if pack has NTC, omit TH1"
+Q2,2N7002 (charge inhibit),,High disables charging by pulling TS low; USB suspend policy required
+R12,100k,,
+Q3,2N7002 (VBUS detect),,
+R13,100k,,
+R14,1M,,
+R15,100k,,
+D2,Schottky 20V >=200mA TBD,,USB path; characterize leakage and input inrush
+Q1,P-MOS low Vth TBD,,"S=SYS, D=BAT intentionally; body diode BAT -> SYS; exact MPN/pinout pending"
+R16,100k,,
+C15,4.7u,,
+U4,TPS7A0230PDBVR,,DBV / SOT23-5 prototype; miniaturization later
+U5,TPS7A0233PDBVR,,DBV / SOT23-5 prototype; miniaturization later
+U6,TPS7A0218PDBVR,,DBV / SOT23-5 prototype; miniaturization later
+C16,1u,,
+C17,1u,,
+C18,1u,,
+C19,1u,,
+C20,1u 10V,,
+R17,100k,,
+U7,MAX17048G+T10,,EP pad number 9 is footprint convention; verify footprint
+C21,100n,,
+R18,4.7k,,
+R19,4.7k,,
+R20,100k,,
+U8,T5838,,BOTTOM port; 1.62..1.98V only; SELECT low = right channel
+U9,TXS0104EYZTR,,Omi MIC1 level translator and ball mapping; validate PDM waveform/loading
+R21,22R tentative,,
+C22,100n,,
+C23,100n,,
+C24,100n,,
+U10,TPS22916CYFPR,,Omi SD switch; power-off sequence must tristate ALL SD signals
+R22,100k,,
+C25,1u,,
+U11,CSNP32GCR01-BOW,,"4GB; LGA8 8x6.2mm; SD mode, NOT raw NAND"
+R23,22R tentative,,
+R24,47k,,
+R25,47k,,
+R26,47k,,
+R27,47k,,
+R28,47k,,
+C26,100n,,
+C27,22u effective TBD,,
+TP1,TestPoint,,
+TP2,TestPoint,,
+TP3,TestPoint,,
+TP4,TestPoint,,
+TP5,TestPoint,,
+TP6,TestPoint,,
+TP7,TestPoint,,

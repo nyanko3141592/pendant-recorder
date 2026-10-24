@@ -17,7 +17,7 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 - MSC中はファームがSDに触らない（FS破壊防止）
 
 ## 決定事項
-- 本番は **カスタム基板: STM32U535CBU6 + T5838 + SD NAND 4GB(CSNP32GCR01, SDMMC 4bit) + BQ25101 + MAX17048 + LDO 3.0V + LiPo 100mAh級**。理由は docs/custom-pcb.md
+- **回路原本は hardware/rev-a/README.md / design.json / pendant-rev-a.kicad_sch**。試作MCUはSTM32U535RCT6（LQFP64）。旧CBU6（48ピン）にはSDMMC端子がない。T5838は底面音孔・1.8V専用＋TXS0104E、SD NAND 4GB（SDMMC 4bit）、BQ25101（50mA）＋USB負荷分離、MAX17048、3.0V本体電源＋3.3V USB電源、保護付きLiPo 100mAh級。22mm版のMCUパッケージは未確定。Rev A0は回路ドラフトで発注不可。
 - 第2候補は nRF52840 カスタム基板（Omiコード流用）。実測で差が小さければ切替
 - XIAO nRF52840 Sense（Omi DK2クローン）と ESP32S3（`firmware/`）は動作確認用
 - 保存はFAT/exFATの通常ファイル（Omi Consumerの生セクタ形式は使わない）。本命は IMA-ADPCM WAV、PCM WAV切替可
@@ -26,6 +26,8 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 ## 情報の場所
 - docs/omi-reference.md — Omiの全調査（部品・ファイルパス・ファーム・出典URL）
 - docs/requirements.md — 確定要件と導出仕様
+- hardware/rev-a/ — 最新回路ドラフト、接続表、BOM、訂正と発注前の未検証項目
+- mechanical/ — SolidCraftの26×12mm寸法検討モデル（製造用ではない）
 - docs/custom-pcb.md — カスタム基板の比較・電力見積り・ブロック図・段階計画（最新の推奨）
 - docs/design.md — 初期設計（§10はOmi-clone比較。custom-pcb.mdが優先）
 - docs/bom.md / docs/open-questions.md

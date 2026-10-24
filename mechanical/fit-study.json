@@ -1,0 +1,191 @@
+{
+  "commands": [
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 0,
+        "name": "Lower_shell_profile"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "diameter": 26
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 10.8,
+        "operation": "new",
+        "body_name": "Lower_shell"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 1.2,
+        "name": "Cavity"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "diameter": 23.6
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 12,
+        "operation": "cut",
+        "targets": [
+          "Lower_shell"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 10.8,
+        "name": "Top_lid_profile"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "diameter": 26
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 1.2,
+        "operation": "new",
+        "body_name": "Top_lid"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XZ",
+        "name": "USB_opening_tentative"
+      }
+    },
+    {
+      "command": "sketch.rectangle.rounded",
+      "params": {
+        "p0": [
+          -4.8,
+          -10.2
+        ],
+        "p1": [
+          4.8,
+          -6.4
+        ],
+        "radius": 0.6
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 16,
+        "operation": "cut",
+        "targets": [
+          "Lower_shell"
+        ]
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 1.5,
+        "name": "Battery_placeholder_profile"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "diameter": 16
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 4.5,
+        "operation": "new",
+        "body_name": "Battery_placeholder"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 6.2,
+        "name": "PCB_placeholder_profile"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          0,
+          0
+        ],
+        "diameter": 22
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 0.8,
+        "operation": "new",
+        "body_name": "PCB_placeholder"
+      }
+    }
+  ]
+}
