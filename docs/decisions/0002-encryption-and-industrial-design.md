@@ -54,3 +54,7 @@ v1は樹脂3Dプリント製ケース。内部保持部（基板/電池/絶縁/N
 - https://libsodium.gitbook.io/doc/secret-key_cryptography/secretstream
 - https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes
 - https://developer.apple.com/documentation/security/keychain-services
+
+## 後続決定: ホストの最小範囲
+
+ユーザーが公式ツールの責務を同期して音声を取得するまでに限定したため、通常syncは登録鍵で復号したWAVを指定PCフォルダへ保存する仕様に更新。上記の「平文の恒久保存は初期値オフ」の案は、この明示同期によるWAV出力について置き換える。本体は暗号化保存を維持し、PC上の平文音声の保存先を説明する。文字起こし・要約は必須機能から外す。

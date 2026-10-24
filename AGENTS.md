@@ -9,6 +9,9 @@
 ## 最新追加: OS非依存の相互運用
 macOS/Windows/Linuxを対象とし、USB・暗号化形式・鍵移行・CLI契約を公開する。docs/protocol/README.md参照（Draft 0、未実装）。CLI/共通ライブラリを先行しGUIは任意。Mac Keychainに形式を依存させずOSごとの鍵保管を分離。Homebrew導入を候補にするが、公開済みパッケージではない。
 
+## 公式v1ホストツールの最小範囲（最新）
+macOS/Windows/Linuxで本体から同期し、登録鍵で復号して通常WAVをPCへ保存するところまでを必須とする。文字起こし・要約・Notion連携は必須範囲外の任意後段。syncは復号済みWAVと機械可読な保存先/結果を返す。暗号文をコピーしただけで完了としない。PCへの平文WAV保存はこの明示的な同期操作で許可、本体の平文保存禁止と自動削除禁止は維持。
+
 ## ゴール
 Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、ただし BLE送信・アプリ・クラウドを外し、
 「本体のmicroSDに1日録音 → 帰宅後USB-CでMacにつなぐと充電＋USBドライブ（MSC）で吸い出し → Macでローカル文字起こし（kotoba-whisper/mlx-whisper）→ 要約してNotion」にする。
