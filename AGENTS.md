@@ -20,7 +20,7 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 - MSC中はファームがSDに触らない（FS破壊防止）
 
 ## 決定事項
-- **回路原本は hardware/rev-a/README.md / design.json / pendant-rev-a.kicad_sch**。試作MCUはSTM32U535RCT6（LQFP64）。旧CBU6（48ピン）にはSDMMC端子がない。T5838は底面音孔・1.8V専用＋TXS0104E、SD NAND 4GB（SDMMC 4bit）、BQ25101（50mA）＋USB負荷分離、MAX17048、3.0V本体電源＋3.3V USB電源、保護付きLiPo 100mAh級。22mm版のMCUパッケージは未確定。Rev A0は回路ドラフトで発注不可。
+- **回路原本は hardware/rev-a/README.md / design.json / pendant-rev-a.kicad_sch**。試作MCUはSTM32U535RCT6（LQFP64）。旧CBU6（48ピン）にはSDMMC端子がない。T5838は底面音孔・1.8V専用＋TXS0104E、SD NAND 4GB（SDMMC 4bit）、BQ25101（約21.8mA、6.19kΩ）＋USB負荷分離、MAX17048、3.0V本体電源＋3.3V USB電源、保護付きLiPo 100mAh級。22mm版のMCUパッケージは未確定。Rev A1は20×34mmの未配線配置ドラフトで発注不可。hardware/rev-a/layout-review.md参照。
 - 第2候補は nRF52840 カスタム基板（Omiコード流用）。実測で差が小さければ切替
 - XIAO nRF52840 Sense（Omi DK2クローン）と ESP32S3（`firmware/`）は動作確認用
 - 保存はFAT/exFATの通常ファイル（Omi Consumerの生セクタ形式は使わない）。本命は IMA-ADPCM WAV、PCM WAV切替可

@@ -42,9 +42,9 @@ for part in parts:
  (instances (project "pendant-rev-a" (path "/{root}" (reference {q(ref)}) (unit 1)))))''')
 for s,title in enumerate(['01 MCU / RTC / UI','02 USB-C / CHARGER','03 POWER / FUEL GAUGE','04 AUDIO / SD / INDICATORS']):
  items.append(f'(text {q(title)} (at {150+275*s} 25 0) {effects(3)} (uuid {uid(title)}))')
-items.append(f'(text "A0 ENGINEERING DRAFT - NOT FOR FABRICATION - See hardware/rev-a/README.md" (at 580 12 0) {effects(3)} (uuid {uid("warning")}))')
+items.append(f'(text "A1 ENGINEERING DRAFT - NOT FOR FABRICATION - See hardware/rev-a/README.md" (at 580 12 0) {effects(3)} (uuid {uid("warning")}))')
 text=f'''(kicad_sch (version 20250114) (generator "eeschema") (uuid {root}) (paper "A0")
- (title_block (title "Pendant Recorder - Omi-derived electrical design") (date "2026-10-24") (rev "A0 DRAFT") (comment 1 "No PCB / no manufacturing release"))
+ (title_block (title "Pendant Recorder - Omi-derived electrical design") (date "2026-10-24") (rev "A1 DRAFT") (comment 1 "Unrouted PCB / no manufacturing release"))
  (lib_symbols {''.join(libs)}) {''.join(items)})'''
 (ROOT/'pendant-rev-a.kicad_sch').write_text(text)
 (ROOT/'Pendant.kicad_sym').write_text('(kicad_symbol_lib (version 20241209) (generator \"kicad_symbol_editor\") '+''.join(libs).replace('Pendant:','')+')')

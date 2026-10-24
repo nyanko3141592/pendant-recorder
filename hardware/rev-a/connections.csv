@@ -100,31 +100,31 @@ J3,SWD pads,2,SWDIO,SWDIO,passive
 J3,SWD pads,3,GND,GND,passive
 J3,SWD pads,4,SWCLK,SWCLK,passive
 J3,SWD pads,5,NRST,NRST,passive
-SW1,REC button,1,1,BUTTON_N,passive
-SW1,REC button,2,2,GND,passive
+SW1,B3U-1000P (candidate),1,1,BUTTON_N,passive
+SW1,B3U-1000P (candidate),2,2,GND,passive
 R4,100k,1,1,V3,passive
 R4,100k,2,2,BUTTON_N,passive
 R5,3.3k,1,1,REC_LED,passive
 R5,3.3k,2,2,LED_A,passive
-D1,red LED,1,A,LED_A,passive
-D1,red LED,2,K,GND,passive
-J1,USB-C USB2 receptacle TBD,A1,GND,GND,passive
-J1,USB-C USB2 receptacle TBD,A4,VBUS,VBUS,passive
-J1,USB-C USB2 receptacle TBD,A5,CC1,CC1,passive
-J1,USB-C USB2 receptacle TBD,A6,D+,USB_DP,passive
-J1,USB-C USB2 receptacle TBD,A7,D-,USB_DM,passive
-J1,USB-C USB2 receptacle TBD,A8,SBU1,NC,passive
-J1,USB-C USB2 receptacle TBD,A9,VBUS,VBUS,passive
-J1,USB-C USB2 receptacle TBD,A12,GND,GND,passive
-J1,USB-C USB2 receptacle TBD,B1,GND,GND,passive
-J1,USB-C USB2 receptacle TBD,B4,VBUS,VBUS,passive
-J1,USB-C USB2 receptacle TBD,B5,CC2,CC2,passive
-J1,USB-C USB2 receptacle TBD,B6,D+,USB_DP,passive
-J1,USB-C USB2 receptacle TBD,B7,D-,USB_DM,passive
-J1,USB-C USB2 receptacle TBD,B8,SBU2,NC,passive
-J1,USB-C USB2 receptacle TBD,B9,VBUS,VBUS,passive
-J1,USB-C USB2 receptacle TBD,B12,GND,GND,passive
-J1,USB-C USB2 receptacle TBD,S1,SHIELD,GND,passive
+D1,red LED,2,A,LED_A,passive
+D1,red LED,1,K,GND,passive
+J1,USB4105-GF-A (candidate),A1,GND,GND,passive
+J1,USB4105-GF-A (candidate),A4,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),A5,CC1,CC1,passive
+J1,USB4105-GF-A (candidate),A6,D+,USB_DP,passive
+J1,USB4105-GF-A (candidate),A7,D-,USB_DM,passive
+J1,USB4105-GF-A (candidate),A8,SBU1,NC,passive
+J1,USB4105-GF-A (candidate),A9,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),A12,GND,GND,passive
+J1,USB4105-GF-A (candidate),B1,GND,GND,passive
+J1,USB4105-GF-A (candidate),B4,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),B5,CC2,CC2,passive
+J1,USB4105-GF-A (candidate),B6,D+,USB_DP,passive
+J1,USB4105-GF-A (candidate),B7,D-,USB_DM,passive
+J1,USB4105-GF-A (candidate),B8,SBU2,NC,passive
+J1,USB4105-GF-A (candidate),B9,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),B12,GND,GND,passive
+J1,USB4105-GF-A (candidate),SH,SHIELD,GND,passive
 R6,5.1k 1%,1,1,CC1,passive
 R6,5.1k 1%,2,2,GND,passive
 R7,5.1k 1%,1,1,CC2,passive
@@ -147,15 +147,14 @@ U3,BQ25101YFPR,B2,ISET,ISET,input
 U3,BQ25101YFPR,B1,TS,BAT_TS,input
 U3,BQ25101YFPR,C1,CHG,CHG_N,open_collector
 U3,BQ25101YFPR,C2,VSS,GND,power_in
-R10,2.7k 1%,1,1,ISET,passive
-R10,2.7k 1%,2,2,GND,passive
+R10,6.19k 1%,1,1,ISET,passive
+R10,6.19k 1%,2,2,GND,passive
 R11,100k,1,1,V3,passive
 R11,100k,2,2,CHG_N,passive
 C14,2.2u,1,1,BAT,passive
 C14,2.2u,2,2,GND,passive
-J2,Protected 1S 100mAh pack + NTC,1,PACK+,BAT,passive
-J2,Protected 1S 100mAh pack + NTC,2,PACK-,GND,passive
-J2,Protected 1S 100mAh pack + NTC,3,NTC,BAT_TS,passive
+J2,S2B-PH-SM4-TB(LF)(SN) / DTP401525 110mAh,1,PACK+,BAT,passive
+J2,S2B-PH-SM4-TB(LF)(SN) / DTP401525 110mAh,2,PACK-,GND,passive
 TH1,NCP15XH103F03RC 10k NTC,1,1,BAT_TS,passive
 TH1,NCP15XH103F03RC 10k NTC,2,2,GND,passive
 Q2,2N7002 (charge inhibit),1,G,CHG_DISABLE,input
@@ -172,11 +171,11 @@ R14,1M,1,1,VBUS_GATE,passive
 R14,1M,2,2,GND,passive
 R15,100k,1,1,V3,passive
 R15,100k,2,2,VBUS_N,passive
-D2,Schottky 20V >=200mA TBD,1,A,VBUS,passive
-D2,Schottky 20V >=200mA TBD,2,K,SYS,passive
-Q1,P-MOS low Vth TBD,1,G,VBUS,input
-Q1,P-MOS low Vth TBD,2,S,SYS,passive
-Q1,P-MOS low Vth TBD,3,D,BAT,passive
+D2,BAT54WS (candidate; leakage/forward drop review pending),2,A,VBUS,passive
+D2,BAT54WS (candidate; leakage/forward drop review pending),1,K,SYS,passive
+Q1,DMP2035U (candidate; power path review pending),1,G,VBUS,input
+Q1,DMP2035U (candidate; power path review pending),2,S,SYS,passive
+Q1,DMP2035U (candidate; power path review pending),3,D,BAT,passive
 R16,100k,1,1,VBUS,passive
 R16,100k,2,2,GND,passive
 C15,4.7u,1,1,SYS,passive
@@ -293,17 +292,17 @@ TP6,TestPoint,1,GND,GND,passive
 TP7,TestPoint,1,VBUS_N,VBUS_N,passive
 R29,6.8k tentative,1,1,BAT_LED_1,passive
 R29,6.8k tentative,2,2,BAT_LED_1_A,passive
-D3,amber LED 0402 TBD,1,A,BAT_LED_1_A,passive
-D3,amber LED 0402 TBD,2,K,GND,passive
+D3,amber LED 0402 TBD,2,A,BAT_LED_1_A,passive
+D3,amber LED 0402 TBD,1,K,GND,passive
 R30,6.8k tentative,1,1,BAT_LED_2,passive
 R30,6.8k tentative,2,2,BAT_LED_2_A,passive
-D4,amber LED 0402 TBD,1,A,BAT_LED_2_A,passive
-D4,amber LED 0402 TBD,2,K,GND,passive
+D4,amber LED 0402 TBD,2,A,BAT_LED_2_A,passive
+D4,amber LED 0402 TBD,1,K,GND,passive
 R31,6.8k tentative,1,1,BAT_LED_3,passive
 R31,6.8k tentative,2,2,BAT_LED_3_A,passive
-D5,amber LED 0402 TBD,1,A,BAT_LED_3_A,passive
-D5,amber LED 0402 TBD,2,K,GND,passive
+D5,amber LED 0402 TBD,2,A,BAT_LED_3_A,passive
+D5,amber LED 0402 TBD,1,K,GND,passive
 R32,6.8k tentative,1,1,STATUS_LED,passive
 R32,6.8k tentative,2,2,STATUS_LED_A,passive
-D6,amber LED 0402 TBD,1,A,STATUS_LED_A,passive
-D6,amber LED 0402 TBD,2,K,GND,passive
+D6,amber LED 0402 TBD,2,A,STATUS_LED_A,passive
+D6,amber LED 0402 TBD,1,K,GND,passive

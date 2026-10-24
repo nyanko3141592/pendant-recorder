@@ -1,93 +1,93 @@
 Reference,Part/value,Footprint,Design note
 U1,STM32U535RCT6,Package_QFP:LQFP-64_10x10mm_P0.5mm,"LQFP64, LDO-only; 48-pin CBU6 rejected: no SDMMC pins"
-C1,100n,,
-C2,100n,,
-C3,100n,,
-C4,10u,,
-C5,4.7u,,
-C6,100n,,
-C7,1u,,
-C8,100n,,
-C9,100n,,
-C10,100n,,
-R1,0R,,
-R2,10k,,
-R3,100k,,
-Y1,32.768kHz CL=7pF TBD,,
-C11,10p tentative,,
-C12,10p tentative,,
-J3,SWD pads,,VTref only; programmer must not drive V3
-SW1,REC button,,
-R4,100k,,
-R5,3.3k,,
-D1,red LED,,
-J1,USB-C USB2 receptacle TBD,,Exact footprint and shield pad numbering pending connector selection
-R6,5.1k 1%,,
-R7,5.1k 1%,,
-R8,22R tentative,,
-R9,22R tentative,,
-U2,USBLC6-2SC6,,Verify footprint; short path to connector ground
-C13,2.2u 10V,,
-U3,BQ25101YFPR,,Omi charger retained; 50mA nominal; TS NTC must touch cell
-R10,2.7k 1%,,
-R11,100k,,
-C14,2.2u,,
-J2,Protected 1S 100mAh pack + NTC,,4.2V cell; protection in pack; NTC return PACK-; exact pack not selected
-TH1,NCP15XH103F03RC 10k NTC,,"Mount thermally on cell; if pack has NTC, omit TH1"
-Q2,2N7002 (charge inhibit),,High disables charging by pulling TS low; USB suspend policy required
-R12,100k,,
-Q3,2N7002 (VBUS detect),,
-R13,100k,,
-R14,1M,,
-R15,100k,,
-D2,Schottky 20V >=200mA TBD,,USB path; characterize leakage and input inrush
-Q1,P-MOS low Vth TBD,,"S=SYS, D=BAT intentionally; body diode BAT -> SYS; exact MPN/pinout pending"
-R16,100k,,
-C15,4.7u,,
-U4,TPS7A0230PDBVR,,DBV / SOT23-5 prototype; miniaturization later
-U5,TPS7A0233PDBVR,,DBV / SOT23-5 prototype; miniaturization later
-U6,TPS7A0218PDBVR,,DBV / SOT23-5 prototype; miniaturization later
-C16,1u,,
-C17,1u,,
-C18,1u,,
-C19,1u,,
-C20,1u 10V,,
-R17,100k,,
-U7,MAX17048G+T10,,EP pad number 9 is footprint convention; verify footprint
-C21,100n,,
-R18,4.7k,,
-R19,4.7k,,
-R20,100k,,
-U8,T5838,,BOTTOM port; 1.62..1.98V only; SELECT low = right channel
-U9,TXS0104EYZTR,,Omi MIC1 level translator and ball mapping; validate PDM waveform/loading
-R21,22R tentative,,
-C22,100n,,
-C23,100n,,
-C24,100n,,
-U10,TPS22916CYFPR,,Omi SD switch; power-off sequence must tristate ALL SD signals
-R22,100k,,
-C25,1u,,
-U11,CSNP32GCR01-BOW,,"4GB; LGA8 8x6.2mm; SD mode, NOT raw NAND"
-R23,22R tentative,,
-R24,47k,,
-R25,47k,,
-R26,47k,,
-R27,47k,,
-R28,47k,,
-C26,100n,,
-C27,22u effective TBD,,
-TP1,TestPoint,,
-TP2,TestPoint,,
-TP3,TestPoint,,
-TP4,TestPoint,,
-TP5,TestPoint,,
-TP6,TestPoint,,
-TP7,TestPoint,,
-R29,6.8k tentative,,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
-D3,amber LED 0402 TBD,,Battery segment 1
-R30,6.8k tentative,,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
-D4,amber LED 0402 TBD,,Battery segment 2
-R31,6.8k tentative,,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
-D5,amber LED 0402 TBD,,Battery segment 3
-R32,6.8k tentative,,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
-D6,amber LED 0402 TBD,,Charge / sync / fault status; separate from recording LED
+C1,100n,Capacitor_SMD:C_0402_1005Metric,
+C2,100n,Capacitor_SMD:C_0402_1005Metric,
+C3,100n,Capacitor_SMD:C_0402_1005Metric,
+C4,10u,Capacitor_SMD:C_0603_1608Metric,
+C5,4.7u,Capacitor_SMD:C_0603_1608Metric,
+C6,100n,Capacitor_SMD:C_0402_1005Metric,
+C7,1u,Capacitor_SMD:C_0402_1005Metric,
+C8,100n,Capacitor_SMD:C_0402_1005Metric,
+C9,100n,Capacitor_SMD:C_0402_1005Metric,
+C10,100n,Capacitor_SMD:C_0402_1005Metric,
+R1,0R,Resistor_SMD:R_0402_1005Metric,
+R2,10k,Resistor_SMD:R_0402_1005Metric,
+R3,100k,Resistor_SMD:R_0402_1005Metric,
+Y1,32.768kHz CL=7pF TBD,Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm,
+C11,10p tentative,Capacitor_SMD:C_0402_1005Metric,
+C12,10p tentative,Capacitor_SMD:C_0402_1005Metric,
+J3,SWD pads,Pendant:SWD_5Pad_Pogo,VTref only; programmer must not drive V3
+SW1,B3U-1000P (candidate),Button_Switch_SMD:SW_SPST_B3U-1000P,
+R4,100k,Resistor_SMD:R_0402_1005Metric,
+R5,3.3k,Resistor_SMD:R_0402_1005Metric,
+D1,red LED,LED_SMD:LED_0402_1005Metric,
+J1,USB4105-GF-A (candidate),Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,Exact footprint and shield pad numbering pending connector selection
+R6,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+R7,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+R8,22R tentative,Resistor_SMD:R_0402_1005Metric,
+R9,22R tentative,Resistor_SMD:R_0402_1005Metric,
+U2,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,Verify footprint; short path to connector ground
+C13,2.2u 10V,Capacitor_SMD:C_0402_1005Metric,
+U3,BQ25101YFPR,Pendant:BQ25101_YFP6,Omi charger retained; 50mA nominal; TS NTC must touch cell
+R10,6.19k 1%,Resistor_SMD:R_0402_1005Metric,BQ25101: nominal 21.81mA; KISET max145 / (6190*0.99)=23.66mA < DTP max55mA. Standard pack charging approximately22mA.
+R11,100k,Resistor_SMD:R_0402_1005Metric,
+C14,2.2u,Capacitor_SMD:C_0402_1005Metric,
+J2,S2B-PH-SM4-TB(LF)(SN) / DTP401525 110mAh,Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal,"Two-pin PH pack connection. Confirm delivered polarity. TH1 is PCB-mounted thermal contact, no third battery wire."
+TH1,NCP15XH103F03RC 10k NTC,Resistor_SMD:R_0402_1005Metric,PCB-mounted NTC thermally coupled to pack through insulation. Position/contact/thermal response require validation; no hand-soldered harness.
+Q2,2N7002 (charge inhibit),Package_TO_SOT_SMD:SOT-23,High disables charging by pulling TS low; USB suspend policy required
+R12,100k,Resistor_SMD:R_0402_1005Metric,
+Q3,2N7002 (VBUS detect),Package_TO_SOT_SMD:SOT-23,
+R13,100k,Resistor_SMD:R_0402_1005Metric,
+R14,1M,Resistor_SMD:R_0402_1005Metric,
+R15,100k,Resistor_SMD:R_0402_1005Metric,
+D2,BAT54WS (candidate; leakage/forward drop review pending),Diode_SMD:D_SOD-323,USB path; characterize leakage and input inrush
+Q1,DMP2035U (candidate; power path review pending),Package_TO_SOT_SMD:SOT-23,"S=SYS, D=BAT intentionally; body diode BAT -> SYS; exact MPN/pinout pending"
+R16,100k,Resistor_SMD:R_0402_1005Metric,
+C15,4.7u,Capacitor_SMD:C_0603_1608Metric,
+U4,TPS7A0230PDBVR,Package_TO_SOT_SMD:SOT-23-5,DBV / SOT23-5 prototype; miniaturization later
+U5,TPS7A0233PDBVR,Package_TO_SOT_SMD:SOT-23-5,DBV / SOT23-5 prototype; miniaturization later
+U6,TPS7A0218PDBVR,Package_TO_SOT_SMD:SOT-23-5,DBV / SOT23-5 prototype; miniaturization later
+C16,1u,Capacitor_SMD:C_0402_1005Metric,
+C17,1u,Capacitor_SMD:C_0402_1005Metric,
+C18,1u,Capacitor_SMD:C_0402_1005Metric,
+C19,1u,Capacitor_SMD:C_0402_1005Metric,
+C20,1u 10V,Capacitor_SMD:C_0402_1005Metric,
+R17,100k,Resistor_SMD:R_0402_1005Metric,
+U7,MAX17048G+T10,Package_DFN_QFN:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm,EP pad number 9 is footprint convention; verify footprint
+C21,100n,Capacitor_SMD:C_0402_1005Metric,
+R18,4.7k,Resistor_SMD:R_0402_1005Metric,
+R19,4.7k,Resistor_SMD:R_0402_1005Metric,
+R20,100k,Resistor_SMD:R_0402_1005Metric,
+U8,T5838,Pendant:T5838_LGA7_BottomPort,BOTTOM port; 1.62..1.98V only; SELECT low = right channel
+U9,TXS0104EYZTR,Pendant:TXS0104E_YZT12,Omi MIC1 level translator and ball mapping; validate PDM waveform/loading
+R21,22R tentative,Resistor_SMD:R_0402_1005Metric,
+C22,100n,Capacitor_SMD:C_0402_1005Metric,
+C23,100n,Capacitor_SMD:C_0402_1005Metric,
+C24,100n,Capacitor_SMD:C_0402_1005Metric,
+U10,TPS22916CYFPR,Pendant:TPS22916_YFP4,Omi SD switch; power-off sequence must tristate ALL SD signals
+R22,100k,Resistor_SMD:R_0402_1005Metric,
+C25,1u,Capacitor_SMD:C_0402_1005Metric,
+U11,CSNP32GCR01-BOW,Pendant:CSNP32GCR01_LGA8,"4GB; LGA8 8x6.2mm; SD mode, NOT raw NAND"
+R23,22R tentative,Resistor_SMD:R_0402_1005Metric,
+R24,47k,Resistor_SMD:R_0402_1005Metric,
+R25,47k,Resistor_SMD:R_0402_1005Metric,
+R26,47k,Resistor_SMD:R_0402_1005Metric,
+R27,47k,Resistor_SMD:R_0402_1005Metric,
+R28,47k,Resistor_SMD:R_0402_1005Metric,
+C26,100n,Capacitor_SMD:C_0402_1005Metric,
+C27,22u effective TBD,Capacitor_SMD:C_0603_1608Metric,
+TP1,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP2,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP3,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP4,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP5,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP6,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP7,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+R29,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D3,amber LED 0402 TBD,LED_SMD:LED_0402_1005Metric,Battery segment 1
+R30,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D4,amber LED 0402 TBD,LED_SMD:LED_0402_1005Metric,Battery segment 2
+R31,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D5,amber LED 0402 TBD,LED_SMD:LED_0402_1005Metric,Battery segment 3
+R32,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D6,amber LED 0402 TBD,LED_SMD:LED_0402_1005Metric,Charge / sync / fault status; separate from recording LED

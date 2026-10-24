@@ -12,7 +12,7 @@
 
 **v1は個人製作と基板密度を優先**。[JLCPCBで基板製造・両面の部品実装まで依頼](docs/jlcpcb-assembly.md)し、自分で最終組立する方針です（実装受理は未確認）。外観4案は保留し、Omi相当の小ささを目指し、円形に限定せず内部配置を優先します。[既製電池の調達から決める最小サイズ](docs/battery-sourcing.md)（未配置・未検証、30mm角基板は電気検証用）。[v1の製作方針と未確定事項](docs/v1-build.md)。
 
-- [Rev A0 回路設計](hardware/rev-a/README.md): Omiの実回路を参照したKiCad回路図、92部品のBOM、全端子接続表。製造前のドラフトです。
+- [Rev A1 回路・基板配置](hardware/rev-a/README.md): Omiの実回路を参照したKiCad回路図、92部品のBOM、全端子接続表、20×34mmの未配線KiCad基板。DRC未合格で発注不可です。
 - [SolidCraft寸法検討](mechanical/README.md): 26×12mmの編集可能モデルとSTEP。基板・電池のダミーを含みます。
 - 公開リポジトリ: https://github.com/nyanko3141592/pendant-recorder
 
