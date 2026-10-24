@@ -45,3 +45,11 @@ age等の短区間暗号化と頻繁なFAT確定の追加で以前の電力予�
 - https://docs.nordicsemi.com/r/bundle/ps_nrf52840/page/keyfeatures_html5.html
 - https://www.st.com/en/microcontrollers-microprocessors/stm32u535rc.html
 - ../battery-sourcing.md / ../runtime-target.md（電池容量・終止条件）
+
+## 相談後の更新: 保存36時間・Bluetoothを優先検討
+
+ユーザーは充電可能性を踏まえ、電池持ちは24時間超、保存容量は少なくとも36時間分を希望。36時間は充電なし録音時間の必須化ではない。この条件を満たすなら後の基板変更を避けるためBluetooth回路をv1から載せたいという意向。nRF52840等のBluetooth/USB対応SoCを優先評価候補へ上げるが、24時間超の実測・機構・調達成立前に採用確定しない。現STM32回路は比較原本として保持する。
+
+16kHz mono IMA-ADPCM（1024byte/2041samples）の36時間は1,040,356,352byte（約1.04GB）。短区間WAV・age・FS管理分を含めて36時間枠を1.2GBと仮置きしても4GBには余裕がある。1.2GBは実形式と分割長による検証前の設計予算で保証上限ではない。PCM16は4,147,200,000byteで、公称4GBに36時間分は入らない。よって36時間保存の標準は圧縮録音とする。
+
+110mAh、使用可能率70%の仮定では平均3.208mAが24hの閾値。24h超と余裕を狙い2〜2.5mAを目標に維持（計算上38.5〜30.8h）。nRFの電流をこの目標値と同一視しない。無線は初期無効、USB取出し優先。後日のBluetooth同期にはv1でアンテナ/RF/クロック/更新経路を成立させ、無線実装・通信試験・適用要件の確認も必要。単にSoCを交換しただけでは将来対応を保証しない。
