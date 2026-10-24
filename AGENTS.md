@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## 最新: 非丸形・既製小型電池を許可（0007）
+2026-10-25。ユーザーが調達性重視で丸形制約を解除。docs/decisions/0007-off-the-shelf-battery.mdを優先。国内DTP401525(EZ3)110mAhとTinyCircuits150mAh SH完成品を比較、採用未確定。110mAhは平均5mA/容量70%仮定では15.4hで未達、16h条件を緩めない。D1.1/D2は未変更・発注不可。
+
 ## 発注準備・費用（2026-10-25追記）
 docs/procurement/preorder.mdにリリース判定表、cost.md/budget.json/calculate_budget.pyに5台予算を記録。製作59,864〜131,864円、道具含む81,909〜181,909円は仮置き（USD換算160円は予算用）。正式見積り未取得、電池NRE/MOQ増分・再試作を除く。照会文の現行ビア寸法を0.35/0.15へ統一し5台/10台の内訳見積り要求を追加。メール未送信、発注不可false維持。
 
