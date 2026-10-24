@@ -40,7 +40,7 @@ for part in parts:
  (property "Footprint" {q(part['footprint'])} (at {x} {y} 0) {effects(1,'hide')})
  {''.join(placement)}
  (instances (project "pendant-rev-a" (path "/{root}" (reference {q(ref)}) (unit 1)))))''')
-for s,title in enumerate(['01 MCU / RTC / UI','02 USB-C / CHARGER','03 POWER / FUEL GAUGE','04 OMI AUDIO / SD NAND']):
+for s,title in enumerate(['01 MCU / RTC / UI','02 USB-C / CHARGER','03 POWER / FUEL GAUGE','04 AUDIO / SD / INDICATORS']):
  items.append(f'(text {q(title)} (at {150+275*s} 25 0) {effects(3)} (uuid {uid(title)}))')
 items.append(f'(text "A0 ENGINEERING DRAFT - NOT FOR FABRICATION - See hardware/rev-a/README.md" (at 580 12 0) {effects(3)} (uuid {uid("warning")}))')
 text=f'''(kicad_sch (version 20250114) (generator "eeschema") (uuid {root}) (paper "A0")

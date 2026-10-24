@@ -122,26 +122,26 @@
         {
           "number": "20",
           "name": "PA4",
-          "net": null,
-          "type": "bidirectional"
+          "net": "BAT_LED_1",
+          "type": "output"
         },
         {
           "number": "21",
           "name": "PA5",
-          "net": null,
-          "type": "bidirectional"
+          "net": "BAT_LED_2",
+          "type": "output"
         },
         {
           "number": "22",
           "name": "PA6",
-          "net": null,
-          "type": "bidirectional"
+          "net": "BAT_LED_3",
+          "type": "output"
         },
         {
           "number": "23",
           "name": "PA7",
-          "net": null,
-          "type": "bidirectional"
+          "net": "STATUS_LED",
+          "type": "output"
         },
         {
           "number": "24",
@@ -2507,6 +2507,174 @@
       ],
       "section": 2,
       "note": "",
+      "footprint": ""
+    },
+    {
+      "ref": "R29",
+      "value": "6.8k tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BAT_LED_1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "BAT_LED_1_A",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits",
+      "footprint": ""
+    },
+    {
+      "ref": "D3",
+      "value": "amber LED 0402 TBD",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "net": "BAT_LED_1_A",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "K",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "Battery segment 1",
+      "footprint": ""
+    },
+    {
+      "ref": "R30",
+      "value": "6.8k tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BAT_LED_2",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "BAT_LED_2_A",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits",
+      "footprint": ""
+    },
+    {
+      "ref": "D4",
+      "value": "amber LED 0402 TBD",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "net": "BAT_LED_2_A",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "K",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "Battery segment 2",
+      "footprint": ""
+    },
+    {
+      "ref": "R31",
+      "value": "6.8k tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BAT_LED_3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "BAT_LED_3_A",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits",
+      "footprint": ""
+    },
+    {
+      "ref": "D5",
+      "value": "amber LED 0402 TBD",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "net": "BAT_LED_3_A",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "K",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "Battery segment 3",
+      "footprint": ""
+    },
+    {
+      "ref": "R32",
+      "value": "6.8k tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "STATUS_LED",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "STATUS_LED_A",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits",
+      "footprint": ""
+    },
+    {
+      "ref": "D6",
+      "value": "amber LED 0402 TBD",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "net": "STATUS_LED_A",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "K",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "Charge / sync / fault status; separate from recording LED",
       "footprint": ""
     }
   ]

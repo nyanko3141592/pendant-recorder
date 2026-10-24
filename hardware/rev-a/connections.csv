@@ -18,10 +18,10 @@ U1,STM32U535RCT6,16,PA2,MIC_WAKE,bidirectional
 U1,STM32U535RCT6,17,PA3,MIC_THSEL,bidirectional
 U1,STM32U535RCT6,18,VSS,GND,power_in
 U1,STM32U535RCT6,19,VDD,V3,power_in
-U1,STM32U535RCT6,20,PA4,NC,bidirectional
-U1,STM32U535RCT6,21,PA5,NC,bidirectional
-U1,STM32U535RCT6,22,PA6,NC,bidirectional
-U1,STM32U535RCT6,23,PA7,NC,bidirectional
+U1,STM32U535RCT6,20,PA4,BAT_LED_1,output
+U1,STM32U535RCT6,21,PA5,BAT_LED_2,output
+U1,STM32U535RCT6,22,PA6,BAT_LED_3,output
+U1,STM32U535RCT6,23,PA7,STATUS_LED,output
 U1,STM32U535RCT6,24,PC4,NC,bidirectional
 U1,STM32U535RCT6,25,PC5,NC,bidirectional
 U1,STM32U535RCT6,26,PB0,SD_EN,bidirectional
@@ -291,3 +291,19 @@ TP4,TestPoint,1,V1V8,V1V8,passive
 TP5,TestPoint,1,SD_V3,SD_V3,passive
 TP6,TestPoint,1,GND,GND,passive
 TP7,TestPoint,1,VBUS_N,VBUS_N,passive
+R29,6.8k tentative,1,1,BAT_LED_1,passive
+R29,6.8k tentative,2,2,BAT_LED_1_A,passive
+D3,amber LED 0402 TBD,1,A,BAT_LED_1_A,passive
+D3,amber LED 0402 TBD,2,K,GND,passive
+R30,6.8k tentative,1,1,BAT_LED_2,passive
+R30,6.8k tentative,2,2,BAT_LED_2_A,passive
+D4,amber LED 0402 TBD,1,A,BAT_LED_2_A,passive
+D4,amber LED 0402 TBD,2,K,GND,passive
+R31,6.8k tentative,1,1,BAT_LED_3,passive
+R31,6.8k tentative,2,2,BAT_LED_3_A,passive
+D5,amber LED 0402 TBD,1,A,BAT_LED_3_A,passive
+D5,amber LED 0402 TBD,2,K,GND,passive
+R32,6.8k tentative,1,1,STATUS_LED,passive
+R32,6.8k tentative,2,2,STATUS_LED_A,passive
+D6,amber LED 0402 TBD,1,A,STATUS_LED_A,passive
+D6,amber LED 0402 TBD,2,K,GND,passive

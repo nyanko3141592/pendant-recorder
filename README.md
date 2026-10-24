@@ -8,7 +8,7 @@
 
 ## 回路と筐体（2026-10-24）
 
-- [Rev A0 回路設計](hardware/rev-a/README.md): Omiの実回路を参照したKiCad回路図、84部品のBOM、全端子接続表。製造前のドラフトです。
+- [Rev A0 回路設計](hardware/rev-a/README.md): Omiの実回路を参照したKiCad回路図、92部品のBOM、全端子接続表。製造前のドラフトです。
 - [SolidCraft寸法検討](mechanical/README.md): 26×12mmの編集可能モデルとSTEP。基板・電池のダミーを含みます。
 - 公開リポジトリ: https://github.com/nyanko3141592/pendant-recorder
 
@@ -21,6 +21,8 @@
 - `AGENTS.md` Cursorエージェント向けの要約
 - `firmware/` PlatformIO の骨組み（XIAO ESP32S3 Sense 向け、スタブ）
 - `host/` Mac側スクリプトのスタブ（マウント検出、コピー、ローカル文字起こし）
+
+- 電池残量・充電・録音・同期・異常を本体で確認できるインジケーターは必須。回路追加済み、表示ファームと筐体への反映は未実装。
 
 ## 状態
 設計のたたき台です。数値のうち「推定」「要検証」と書いたものは、まだ実測していません。
