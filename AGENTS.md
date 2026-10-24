@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## 最優先: 小ささ・16hへの変更（0006）
+最新ユーザー指示はUSB-C充電、連続録音16時間以上、その範囲で小ささ最優先。BluetoothはNice to haveへ変更し、内蔵アンテナ/無線必須を解除。docs/decisions/0006-size-first-16h.mdを優先する。圧縮音声36h保存、鍵による暗号化、USB取出し、無はんだ組立は維持。表示器は提案のみで最小案へ追加しない。22×34×12mm/20×32×12mmは未配線の検討枠で保証寸法ではない。Rev A/Bは比較原本として保持し発注不可残件を維持。MCU/電池変更の確定は比較後に相談。
+
 ## Rev B0の実作業（2026-10-24）
 回路図/PCB/接続表はhardware/rev-b/へ作成。68部品、MDBT50Q-1MV2、SPI SD、TXS0104EPWR（旧DSBGAからTSSOPへ）。22×43.5mmの配線試行で、発注可否はorder-status.jsonとdrc.jsonを優先。発注不可の残件を消さず追跡する。mechanical/structure-b0に24.8×46.5×12.8mmのSolidCraft構造案とレンダリング。ケース固定・音道・NTC・実寸収納は未完了。旧Rev Aは比較原本。
 
