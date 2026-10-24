@@ -3,7 +3,7 @@ from pathlib import Path
 P=Path(__file__).resolve().parent
 commands=[]
 def cmd(n,**p):commands.append({'command':n,'params':p})
-for folder,prefix,x,y in [('structure-a2','A2_',-34,20.75),('structure-b0','B0_',34,23.25)]:
+for folder,prefix,x,y in [('structure-a2','A2_',-54,20.75),('structure-b0','B0_',-18,23.25)]:
  src=json.loads((P.parent/folder/'assembled.json').read_text())['commands']
  names=set()
  bodies=[]
@@ -19,10 +19,10 @@ for folder,prefix,x,y in [('structure-a2','A2_',-34,20.75),('structure-b0','B0_'
   return v
  commands.extend(replace(c) for c in src)
  cmd('solid.move',bodies=[prefix+n for n in bodies],translate=[x,y,0])
-def disk(name,r,z,h,color,inner=None):
+def disk(name,r,z,h,color,inner=None,center=(54,13.25)):
  cmd('sketch.create',plane='XY',offset=z,name=name+'_sketch')
- cmd('sketch.circle.center',center=[0,13.25],radius=r)
- if inner:cmd('sketch.circle.center',center=[0,13.25],radius=inner)
+ cmd('sketch.circle.center',center=list(center),radius=r)
+ if inner:cmd('sketch.circle.center',center=list(center),radius=inner)
  cmd('sketch.finish');cmd('solid.extrude',distance=h,operation='new',body_name=name)
  cmd('appearance.assign',bodies=[name],color=color)
 def text(name,s,x,y,z,size,color='#28394a'):
@@ -33,9 +33,11 @@ def text(name,s,x,y,z,size,color='#28394a'):
 disk('Coin_outer',13.25,0,1.8,'#c1a568',9.5)
 disk('Coin_center',9.5,0,1.8,'#c9cbd0')
 disk('Coin_rim',13.25,1.8,.12,'#d2b87a',12.7)
-text('Coin_500','500',0,11,1.8,5,'#797c80')
-for name,x,title,dim in [('Old',-34,'A2','24.8 x 41.5'),('New',34,'Rev B','24.8 x 46.5'),('Yen',0,'500 YEN','D 26.5 mm')]:
+text('Coin_500','500',54,11,1.8,5,'#797c80')
+disk('Omi_envelope',12.5,0,15,'#eceae5',center=(18,12.5))
+text('Omi_mark','omi',18,11,15,3,'#777777')
+for name,x,title,dim in [('Old',-54,'A2','24.8 x 41.5'),('New',-18,'Rev B','24.8 x 46.5'),('Omi',18,'Omi*','D 25 mm'),('Yen',54,'500 YEN','D 26.5 mm')]:
  text(name+'_title',title,x,-6,0,2.6)
  text(name+'_dim',dim,x,-11,0,1.8)
- if name!='Yen':text(name+'_thickness','T 12.8 mm',x,-15,0,1.8)
+ if name!='Yen':text(name+'_thickness','T 15 mm' if name=='Omi' else 'T 12.8 mm',x,-15,0,1.8)
 (P/'comparison.json').write_text(json.dumps({'commands':commands},ensure_ascii=False))
