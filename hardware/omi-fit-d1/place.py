@@ -1,3 +1,6 @@
+import sys
+if '--discard-routing' not in sys.argv:
+ raise SystemExit('Historical placement/router utility. Refusing to overwrite routed D1; use an isolated copy or explicitly pass --discard-routing.')
 """Actual KiCad footprint packing study. No routing/manufacturing release."""
 import json, math, random
 from pathlib import Path

@@ -1,8 +1,8 @@
 # D1 円形基板・回路ドラフト
 
-2026-10-24。ユーザーの再設計指示によりD0角丸案を比較原本へ戻し、**直径23mm、厚さ0.8mm、4層・両面実装**の円形基板へ全76参照を再配置した。69実装部品＋7接点群。部分配線まで進めたが発注不可。
+2026-10-24。ユーザーの再設計指示によりD0角丸案を比較原本へ戻し、**直径23mm、厚さ0.8mm、6層・両面実装**の円形基板へ全76参照を再配置した。69実装部品＋7接点群。全接続を配線したが、調達・電気設計の適合性・業者DFMが未完了で発注不可。
 
-最新検査：DRC8、未接続53、回路図等価性0。配線ルール変更と試行の詳細は[routing/README.md](routing/README.md)、発注条件は[発注残件](../../docs/d1-order-gates.md)を参照。以下の初期配置検証は配線前の履歴。
+2026-10-25最新検査：DRC0、未接続0、ERC0、回路図等価性0。マイコンを180°回転し、デカップリング/水晶配置とR4位置を改良。MIC_ENはPB1（19番）からPB5（41番）へ変更。0.10mm線幅/間隔、0.35mmビア/0.15mm穴。USBはメーカー寸法図を確認した専用GNDランド1.12mmへ変更し、DFM受理は未確認。配線ルール変更と試行の詳細は[routing/README.md](routing/README.md)、発注条件は[発注残件](../../docs/d1-order-gates.md)を参照。以下の初期配置検証は配線前の履歴。
 
 ## 回路の変更
 
@@ -26,7 +26,7 @@ USB-Cの金属/樹脂ボディは基板外へ張り出せるが、全銅箔パ�
 
 これらは配置と接続定義の整合性であり、配線性、電源品質、音声性能、16h録音、実物の収容を保証しない。最新結果は `order-status.json` / `drc.json` / `erc.json`。
 
-## 再現
+## 初期配置の再現（最新配線を破棄するため通常実行しない）
 
 1. KiCad 10 pcbnewのPythonで `place.py`（未配線PCB/部品表）。
 2. `parts.json` を `design.json` のpartsへ反映し、リポジトリルートで `python3 hardware/tools/generate_schematic.py omi-fit-d1`。
@@ -37,3 +37,9 @@ USB-Cの金属/樹脂ボディは基板外へ張り出せるが、全銅箔パ�
 [TI TXS0104Eデータシート](https://www.ti.com/lit/ds/symlink/txs0104e.pdf)、[JST SH資料](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf)。標準KiCadフットプリントを利用し、独自フットプリントはRev Cを参照。
 
 [円形ケース/比較画像/STEP](../../mechanical/structure-d1/README.md)
+
+## 業者照会用成果物
+
+[Gerber・BOM・CPLのDFM照会ZIP](DFM-REVIEW-NOT-FOR-ORDER.zip)は製造承認済みではない。[manifest](manufacturing-review/manifest.json)に基板ハッシュと未完了条件を記録。[品番候補CSV](sourcing-candidates.csv)は69参照を照合済みだが、調達確保・代替適合性・実効容量等は別途確認する。
+
+最新PCBを直接検査するにはKiCad CLIのDRC/ERCとverify.pyを使用。place.py/route.pyは旧試行を再現する破壊的ツールとして--discard-routingガードを追加した。export_review.pyはDRC/未接続/等価性0を必須として照会パッケージを作るが、発注可にはしない。

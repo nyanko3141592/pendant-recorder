@@ -1,0 +1,27 @@
+SUPPLIER DFM REVIEW ONLY — NOT A PURCHASE ORDER OR MANUFACTURING RELEASE
+
+Board: D1.1, 23 mm circular, nominal 0.8 mm, six copper layers.
+Track/clearance: 0.10 / 0.10 mm. Through via: 0.35 mm pad / 0.15 mm drill.
+No blind/buried vias requested. Exact stackup, panel, solder mask and assembly process require supplier acceptance.
+
+The BOM contains catalog candidates, not qualified/reserved components.
+The CPL uses KiCad's absolute XY coordinates, millimetres, and native rotations.
+All 69 populated reference designators match the BOM and CPL. J3 and TP1–6 are bare PCB contacts and are intentionally omitted.
+Bottom rotations and every polarized component must be checked in the supplier's assembly preview.
+Do not infer assembly approval from a catalog number.
+
+USB footprint: signal lands and locating holes retain their original geometry.
+The two physical GND lands (four overlapping logical pad identifiers) are 0.60 x 1.12 mm rather than 0.60 x 1.15 mm.
+GCT drawing USB4105 B4 gives 1.15 mm with PCB-layout tolerance ±0.05 mm.
+This adjustment passes the project's 0.20 mm copper-to-hole rule, but supplier solderability/tolerance acceptance remains required.
+See docs/d1-electrical-review.md and hardware/omi-fit-d1/usb-landpattern-review.json.
+
+Critical unresolved items:
+- Completed protected 150 mAh round battery with factory-finished SH harness, polarity, maximum dimensions and charging temperature profile.
+- BQ25101 warm-temperature charging profile compatibility with that exact battery.
+- Component sourcing, effective capacitance, crystal oscillator qualification and power/USB layout review.
+- Manufacturer-approved stackup, panelization/tooling, microphone handling and complete factory assembly.
+- Actual package heights, enclosure fit/tolerances, button/light interfaces and solderless programming/measurement setup.
+
+Firmware, recording duration and random power-loss recovery have NOT been tested on hardware.
+The v1 order is intended to start that engineering validation cycle; no production-product qualification is claimed.

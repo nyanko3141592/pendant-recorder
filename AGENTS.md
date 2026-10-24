@@ -1,5 +1,10 @@
 # AGENTS.md — pendant-recorder
 
+## D1.1 全接続配線・DFM照会準備（最新、発注不可）
+2026-10-25。D23mm/0.8mmを維持し6層化。MCU180°回転、デカップリング/水晶配置、R4移動、MIC_ENをPB1/19番→PB5/41番へ変更。0.10mm線幅/間隔、0.35mmビア/0.15mm穴。ERC0/DRC0/未接続0/回路図等価性0、1202配線/ビア。GCT USB4105 B4図面を視認し、GNDランドのみ長さ1.15→1.12mmの専用PendantD1.prettyへ変更（信号パッド/穴は維持、業者DFM受理は未確認）。69実装参照すべてに品番/カタログ候補をsourcing-candidates.json/csvへ記録したが調達確保・適合性は未確定。export_review.pyでGerber/drill/BOM/CPL照会用ZIPを生成、製造リリースではない。order-status.jsonはfalse維持。place.py/route.pyは--discard-routing必須の旧破壊的ツール。試行はplacement-refinementへ保存。
+D2ケースを最新配置へ再生成しUSB高さ包絡3.56mm/蓋裏逃げ、マイクPCB穴0.6mmへ訂正。完成電池の最大寸法/コネクタ/極性/充電温度、BQ25101 JEITA温度適合、実効容量/水晶/USBと電源配線品質、ケース公差/組立材/完成治具が未完了。docs/d1-electrical-review.md参照。Grepow/JLCへの照会文はdocs/sourcingに作成済み、送信許可の質問は未回答でメール未送信。発注・支払い未実施。
+
+
 ## D1部分配線・D2ケース（最新、発注不可）
 2026-10-24。D1に4層配線試行を追加し、最小線幅/間隔0.10mmへ変更（JLC公開能力に基づくが個別受理未確認）。DRC8（USB穴間隔4・末端配線4）、未接続53、回路図等価性0、876配線/ビアオブジェクト。hardware/omi-fit-d1/order-status.jsonが正本。place.py/route.pyの再実行は配線を上書きするので注意。mechanical/structure-d2へ外径内蔵紐通し・3支持座・2点バヨネット蓋・音道のSolidCraft/STEPを追加。D25.5×14.5mmは予約寸法。完成電池・印刷公差/保持強度・接着材・ボタン延長・音道シール等は未完了。docs/d1-order-gates.mdに発注残件と電池RFQ草案（未送信）。Gerber製造リリース/発注/実機試験は未実施。
 

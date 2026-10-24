@@ -1,0 +1,19 @@
+{
+  "status": "CUSTOM_LANDPATTERN_DFM_ACCEPTANCE_PENDING",
+  "checked_on": "2026-10-25",
+  "source": "https://gct.co/files/drawings/usb4105.pdf",
+  "source_revision": "B4, 18/12/23, sheet 1",
+  "manufacturer_recommended_ground_land_mm": [0.60, 1.15],
+  "manufacturer_pcb_layout_tolerance_mm": 0.05,
+  "custom_ground_land_mm": [0.60, 1.12],
+  "delta_length_mm": -0.03,
+  "unchanged": ["signal lands", "0.65mm locating holes", "shell plated slots", "connector centre and pin mapping"],
+  "logical_pads_changed": ["A1", "A12", "B1", "B12"],
+  "physical_ground_lands_changed": 2,
+  "review_basis": "Keep width, centres and hole geometry; shorten land length by 0.03mm within the drawing's stated layout dimension range. Supplier must review solder land/tolerance suitability.",
+  "nominal_contact_ground_tail_width_mm": 0.45,
+  "kicad_hole_clearance_rule_mm": 0.20,
+  "drc_after_change": 0,
+  "supplier_accepted": false,
+  "assembly_tested": false
+}

@@ -1,0 +1,25 @@
+To: info@grepow.com
+Subject: Prototype inquiry: protected GRP1654M1 150mAh pack with factory JST SH harness (5 samples)
+Status: DRAFT, NOT SENT
+
+Hello Grepow team,
+
+I am designing a small open-source USB voice recorder in Japan and would like to check availability of five completed rechargeable battery packs for engineering prototypes. This is an inquiry, not a purchase order.
+
+The Omi open-source BOM lists GERUIPU GRP1654M1-1C-1S1P-3.7V-150mAh, with a custom D16 x H6.1mm assembly and 6mm leads. Can you supply this pack or a comparable 150mAh, 3.7V nominal, 4.2V-charge protected assembly in small quantities? Please identify the manufacturer and exact orderable pack part number.
+
+We need factory-installed protection, insulation and a mating two-position JST SH 1.0mm harness, with no soldering, crimping or lead modification by the end user. Board header: JST SM02B-SRSS-TB; pin 1 BAT+, pin 2 GND. Please provide a connector mating/polarity drawing; we will confirm it before purchase. Lead length and exit direction can be finalized against your proposed assembly drawing.
+
+Please provide:
+- Maximum finished dimensions, including protection circuit, insulation, tabs, lead exit and allowable swelling; dimensioned drawing or STEP if available.
+- Minimum guaranteed capacity and its test conditions; discharge cutoff, continuous/peak current limits, and protection thresholds.
+- Allowed charge voltage/current and temperature range, including whether reduced-voltage charging at 45–60C is allowed. Our current candidate charger is BQ25101, approximately 22mA, 4.2V normal charge; charger choice will be revised if its JEITA profile does not match your pack.
+- Suitable insulated surface for an externally coupled 10k NTC, thermal constraints, and your recommended retention method.
+- Sample MOQ, pricing, lead time and shipping availability to Japan, plus UN38.3 documentation and shipping restrictions.
+
+Our provisional cavity reserves a D17 x H6.1mm cell-side envelope, with a separate lateral protection-circuit/wire area. This is not a claim that a finished pack must already fit that envelope. Please propose your actual available assembly dimensions first; we will adapt the mechanical design before ordering.
+
+Public design: https://github.com/nyanko3141592/pendant-recorder
+Omi BOM reference: https://github.com/BasedHardware/omi/blob/main/omi/hardware/consumer/bom/README.md
+
+Thank you.

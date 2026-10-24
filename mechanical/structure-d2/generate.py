@@ -13,7 +13,7 @@ for p in parts:
  if r=='U9':t=.55
  if r=='U11':t=1
  if r=='U8':t=1;color='#b5c3ce'
- if r=='J1':w,h,t=9,7.5,3.2;color='#b8c7d0'
+ if r=='J1':w,h,t=9,7.5,3.56;color='#b8c7d0'
  if r=='J2':t=2.95;color='#eadfc9' # Conservative envelope includes mating/wire reservation.
  if r=='SW1':t=1.6;color='#657a8a'
  if r.startswith('Q'):t=1.1
@@ -43,6 +43,8 @@ for mode in ['assembled','exploded','interior']:
   # Open slot accommodates USB plug recess; dimensions remain provisional.
   rect('USB_opening',0,11.5,9.6,10.8,4.0,3.9,'#000000',r=.35,op='cut',target='Case_lower')
   disk('Case_lid',0,0,13.5+lo,12.75,1,'#8496a3')
+  # GCT B4 3.31mm height +0.15 general tolerance +0.10 solder allowance.
+  rect('USB_lid_relief',0,7.5,13.3+lo,9.8,7.8,.4,'#000000',r=.25,op='cut',target='Case_lid')
   for r in ['D1','D6','SW1']:
    v=d['placements'][r];disk(r+'_access',v['x'],v['y'],13.4+lo,.55 if r!='SW1' else 1.1,1.3,'#000000',op='cut',target='Case_lid')
  # This entire orange envelope is an UNSOURCED completed-pack target, not a manufacturer STEP.
@@ -93,7 +95,7 @@ for mode in ['assembled','exploded','interior']:
    sector('Bayonet_track_'+str(a),11.65,12.1,a-20,a+5,11.9,.75,'cut','Case_lower')
    sector('Bayonet_lug_'+str(a),11.4,12.0,a-4,a+4,12.05+lo,.45,'join','Case_lid')
  # Actual microphone acoustic via through the PCB model.
- disk('Mic_pcb_hole',3,-7.39,9.0+po,.25,1.0,'#000000',op='cut',target='PCB_D23')
+ disk('Mic_pcb_hole',3,-7.39,9.0+po,.3,1.0,'#000000',op='cut',target='PCB_D23')
  (P/(mode+'.json')).write_text(json.dumps(dict(commands=c),ensure_ascii=False))
-(P/'dimensions.json').write_text(json.dumps(dict(status='MECHANICAL_ENVELOPE_STUDY_NOT_MANUFACTURING_RELEASE',case_mm=[25.5,25.5,14.5],case_shape='cylinder',strap_hole_diameter_mm=1.6,strap_attachment_within_case_envelope=True,cord_and_knot_included_in_dimensions=False,bayonet_lugs=2,bayonet_rotation_degrees=15,pcb_support_count=3,case_diameter_mm=25.5,pcb_mm=[23,23,.8],pcb_shape='circle',pcb_diameter_mm=23,pack_target_diameter_mm=17,pack_target_height_mm=6.1,pack_target_is_unsourced=True,battery_to_bottom_component_nominal_gap_mm=.3,usb_to_lid_nominal_gap_mm=.4,unresolved=['Final protected pack outline and harness','All body heights are simplified envelopes; supplier STEP/tolerances pending','Bayonet retention/cord load/duct acoustics untested; adhesive seat material not selected','Complete solder fillet and wire bending validation','NTC thermal response','PCB routing, power integrity, firmware and measured runtime']),indent=2))
+(P/'dimensions.json').write_text(json.dumps(dict(status='MECHANICAL_ENVELOPE_STUDY_NOT_MANUFACTURING_RELEASE',case_mm=[25.5,25.5,14.5],case_shape='cylinder',strap_hole_diameter_mm=1.6,strap_attachment_within_case_envelope=True,cord_and_knot_included_in_dimensions=False,bayonet_lugs=2,bayonet_rotation_degrees=15,pcb_support_count=3,case_diameter_mm=25.5,pcb_mm=[23,23,.8],pcb_shape='circle',pcb_diameter_mm=23,pack_target_diameter_mm=17,pack_target_height_mm=6.1,pack_target_is_unsourced=True,battery_to_bottom_component_nominal_gap_mm=.3,usb_to_lid_nominal_gap_mm=.24,usb_body_allowance_height_mm=3.56,usb_lid_relief_ceiling_mm=13.7,mic_pcb_hole_mm=.6,copper_layers=6,unresolved=['Final protected pack outline and harness','All body heights are simplified envelopes; supplier STEP/tolerances pending','Bayonet retention/cord load/duct acoustics untested; adhesive seat material not selected','Complete solder fillet and wire bending validation','NTC thermal response','Electrical layout quality, power integrity, firmware and measured runtime']),indent=2))
 print('Generated D25.5 x 14.5 mm circular study; 76 reference locations')

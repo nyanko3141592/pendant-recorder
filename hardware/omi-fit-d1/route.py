@@ -1,3 +1,6 @@
+import sys
+if '--discard-routing' not in sys.argv:
+ raise SystemExit('Historical placement/router utility. Refusing to overwrite routed D1; use an isolated copy or explicitly pass --discard-routing.')
 from pathlib import Path
 import math,sys
 import pcbnew as p

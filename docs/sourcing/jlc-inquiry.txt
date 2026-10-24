@@ -1,0 +1,31 @@
+To: support@jlcpcb.com
+Subject: Pre-order feasibility: 23mm circular double-sided PCBA, STM32U535CEU6 and T5838
+Status: DRAFT, NOT SENT
+
+Hello JLCPCB team,
+
+I am preparing five engineering prototypes of an open-source USB voice recorder. Please advise on component sourcing and assembly feasibility before we release fabrication files. This is an inquiry, not a purchase order; the layout has zero KiCad unconnected items, DRC violations and schematic parity errors, but has not been qualified for manufacture.
+
+The board is circular, 23mm diameter, provisionally 0.8mm thick, with components on both sides. The current routed candidate has six layers. Target signal track/spacing is 0.10/0.10mm and through vias 0.40mm pad/0.20mm drill or 0.35mm pad/0.15mm drill (routing comparison). Please confirm suitable stackup, Standard PCBA availability, and panel/tooling/fixture requirements.
+
+Please confirm sourcing options and lead times for these exact parts:
+- STM32U535CEU6, catalog C22454224 (listed stock was zero when checked).
+- TDK InvenSense MMICT5838-00-012 (T5838), C7230692, bottom-port PDM microphone. Please use the manufacturer land pattern, not the catalog pin-count label.
+- Texas Instruments BQ25101YFPR, DSBGA-6.
+- Texas Instruments TXS0104ERUTR, catalog C22430532, UQFN-12.
+- CS Semiconductor CSNP32GCR01-BOW, LCSC C5440134, LGA-8.
+- TPS7A0233PDBVR, C2887324; TPS7A0218PDBVR; TPS22916CYFPR.
+- GCT USB4105-GF-A, C3020560, and JST SM02B-SRSS-TB, C160402.
+
+Are global sourcing or consigned components available in these prototype quantities, and what attrition/spare quantities are required? Please distinguish component catalog entries from assembly-only placeholders such as C990-series entries.
+
+The T5838 acoustic port must not be obstructed by paste, cleaning fluid or adhesive; its manufacturer prohibits ultrasonic cleaning and blowing air through the port. Please confirm the supported assembly/cleaning process and any required fixture. Please also advise on board-level functional testing or programming services using TC2030 SWD pads.
+
+All electronic components, USB connector, battery header, LEDs and button must be factory assembled. No battery is to be installed by JLCPCB in this inquiry. The user will connect a separately supplied finished protected pack, without soldering.
+
+Public draft design: https://github.com/nyanko3141592/pendant-recorder
+Review-only Gerber/drill/BOM/CPL: https://github.com/nyanko3141592/pendant-recorder/blob/main/hardware/omi-fit-d1/DFM-REVIEW-NOT-FOR-ORDER.zip
+Please review the custom USB GND land length (1.12mm versus the drawing nominal 1.15mm +/-0.05mm); signal lands and locating holes are unchanged.
+No fabrication authorization is attached. BOM candidates, placement rotations and the stackup still require review.
+
+Thank you.

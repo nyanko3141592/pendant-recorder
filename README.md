@@ -4,12 +4,13 @@
 
 V1はUSB-C充電、充電なし連続16時間以上の録音、36時間以上の圧縮音声保存、登録鍵によるローカル復号・WAV取出しに集中します。無線と画面を外した円形D1を設計中（Rev Cから派生）。文字起こし・要約・クラウド・課金はV1必須外です。
 
-**まだ発注不可・実機未検証です。** 回路図、実フットプリント配置、配線試行、ケース収納案までの設計成果物であり、16時間動作や無加工組立を達成した製品ではありません。
+**まだ発注不可・実機未検証です。** 回路図、実フットプリント配置、6層全接続配線、ケース収納案までの設計成果物であり、16時間動作や無加工組立を達成した製品ではありません。
 
 - [D2：紐通し・蓋固定・音道を追加したケース](mechanical/structure-d2/README.md) — 強度/公差未検証
-- [最新D1：直径25.5mmの円形ケース・円形基板・比較モデル](mechanical/structure-d1/README.md) / [D1回路図](hardware/omi-fit-d1/schematic.pdf) — 部分配線・発注不可
+- [最新D1：直径25.5mmの円形ケース・円形基板・比較モデル](mechanical/structure-d1/README.md) / [D1回路図](hardware/omi-fit-d1/schematic.pdf) — ERC/DRC/未接続/回路図等価性すべて0・発注不可
 - [V1の範囲・合格条件](docs/v1-scope.md) / [現行要件](docs/requirements.md)
 - [Rev C回路・PCB・BOM](hardware/rev-c/README.md) / [回路図PDF](hardware/rev-c/pendant-rev-c.pdf)
+- [業者DFM照会用データ（発注禁止）](hardware/omi-fit-d1/DFM-REVIEW-NOT-FOR-ORDER.zip) / [69実装部品の品番候補](hardware/omi-fit-d1/sourcing-candidates.csv)
 - [現行D1の発注可否](hardware/omi-fit-d1/order-status.json) / [発注までの残件・電池確認仕様](docs/d1-order-gates.md)
 - [旧Rev B・Rev C・Omi・500円玉のサイズ比較](mechanical/size-comparison-c0/top.png)
 - [ケース内部の分解表示](mechanical/structure-c0/exploded.png)
@@ -39,7 +40,7 @@ JLC等へ基板製造と両面部品実装を依頼し、完成電池・治具�
 
 販売の軸は組立・動作確認済みデバイス。ソースを公開し、自分で作る人も完成品を購入する人も使える形にします。アプリ課金/API代理販売は当面行わず、寄付は任意の将来項目です。
 
-**v1は「業者実装済み基板を発注 → ファーム実装 → はんだなしで組立・実機検証 → 改版」の最初のサイクルです。販売完成版ではありません。** 現在は未配線で発注不可。必要品を買って電池を挿し、完成治具で書込み・検査できる状態を目指します。
+**v1は「業者実装済み基板を発注 → ファーム実装 → はんだなしで組立・実機検証 → 改版」の最初のサイクルです。販売完成版ではありません。** 現在は全接続配線済みですが、部品適合性・完成電池・製造/組立条件が未確定で発注不可。必要品を買って電池を挿し、完成治具で書込み・検査できる状態を目指します。
 
 - [製品方針の決定記録](docs/decisions/0001-product-and-v1.md)
 - [発注・実装・試験・販売候補までの開発フロー](docs/development-flow.md)

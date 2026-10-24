@@ -6,7 +6,7 @@ import csv,json,math,uuid,sys
 from pathlib import Path
 REV=sys.argv[1] if len(sys.argv)>1 else 'rev-a'
 assert REV in ('rev-a','rev-b','rev-c','omi-fit-d1')
-ROOT=Path(__file__).resolve().parents[1]/REV
+ROOT=Path(sys.argv[2]).resolve() if len(sys.argv)>2 else Path(__file__).resolve().parents[1]/REV
 d=json.loads((ROOT/'design.json').read_text()); parts=list(d['parts'])
 for i,net in enumerate((['GND','VDDA','VBUS','SYS'] if REV in ('rev-a','rev-c','omi-fit-d1') else ['GND','VBUS','SYS']),1):
  parts.append(dict(ref=f'#FLG0{i}',value='PWR_FLAG',pins=[dict(number='1',name='pwr',net=net,type='power_out')],section=1,note='Supply declaration after connector/passive path',footprint=''))

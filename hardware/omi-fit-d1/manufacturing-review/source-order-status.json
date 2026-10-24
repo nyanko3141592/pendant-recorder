@@ -1,0 +1,26 @@
+{
+  "order_ready": false,
+  "status": "ROUTED_CONNECTIVITY_VERIFIED_NOT_FOR_ORDER",
+  "copper_layers": 6,
+  "footprints": 76,
+  "populated_parts": 69,
+  "pcb_contact_groups": 7,
+  "net_or_boundary_issues": [],
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "tracks": 1202,
+  "schematic_parity_checked": true,
+  "schematic_parity_issues": 0,
+  "source_circuit": "hardware/rev-c/design.json; J2 SH; U9 RUT remapped using TI table 5-4; TP1..6 1mm; MIC_EN PB1 -> PB5",
+  "limitations": [
+    "Actual component body height not audited",
+    "Protected round pack unavailable/unconfirmed",
+    "Draft schematic and BOM present; no manufacturing release",
+    "Custom USB ground-land length 1.12mm requires fabrication/assembly DFM review",
+    "Connectivity is complete but electrical/layout quality review remains",
+    "6-layer 0.8mm stackup and 0.35/0.15mm vias require supplier DFM acceptance; USB differential and power integrity not validated",
+    "Charger JEITA warm-temperature operation must match final pack limits",
+    "No SPICE/thermal/firmware/hardware runtime simulation performed"
+  ],
+  "pcb_sha256": "5b2f2107bbda66e54acdb76373fb0515ec2ff13852d1bb557ceb21d2a0867928"
+}
