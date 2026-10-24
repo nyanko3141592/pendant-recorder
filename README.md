@@ -6,10 +6,11 @@ V1はUSB-C充電、充電なし連続16時間以上の録音、36時間以上の
 
 **まだ発注不可・実機未検証です。** 回路図、実フットプリント配置、配線試行、ケース収納案までの設計成果物であり、16時間動作や無加工組立を達成した製品ではありません。
 
-- [最新D1：直径25.5mmの円形ケース・円形基板・比較モデル](mechanical/structure-d1/README.md) / [D1回路図](hardware/omi-fit-d1/schematic.pdf) — 未配線・発注不可
+- [D2：紐通し・蓋固定・音道を追加したケース](mechanical/structure-d2/README.md) — 強度/公差未検証
+- [最新D1：直径25.5mmの円形ケース・円形基板・比較モデル](mechanical/structure-d1/README.md) / [D1回路図](hardware/omi-fit-d1/schematic.pdf) — 部分配線・発注不可
 - [V1の範囲・合格条件](docs/v1-scope.md) / [現行要件](docs/requirements.md)
 - [Rev C回路・PCB・BOM](hardware/rev-c/README.md) / [回路図PDF](hardware/rev-c/pendant-rev-c.pdf)
-- [発注可否と残件](hardware/rev-c/order-status.json)
+- [現行D1の発注可否](hardware/omi-fit-d1/order-status.json) / [発注までの残件・電池確認仕様](docs/d1-order-gates.md)
 - [旧Rev B・Rev C・Omi・500円玉のサイズ比較](mechanical/size-comparison-c0/top.png)
 - [ケース内部の分解表示](mechanical/structure-c0/exploded.png)
 

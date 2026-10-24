@@ -1,13 +1,13 @@
 {
   "order_ready": false,
-  "status": "UNROUTED_FIT_STUDY",
+  "status": "PARTIALLY_ROUTED_NOT_FOR_ORDER",
   "footprints": 76,
   "populated_parts": 69,
   "pcb_contact_groups": 7,
   "net_or_boundary_issues": [],
-  "drc_violations": 4,
-  "unconnected_items": 182,
-  "tracks": 0,
+  "drc_violations": 8,
+  "unconnected_items": 53,
+  "tracks": 876,
   "schematic_parity_checked": true,
   "schematic_parity_issues": 0,
   "source_circuit": "hardware/rev-c/design.json; J2 SH; U9 RUT remapped using TI table 5-4; TP1..6 1mm",
@@ -16,8 +16,9 @@
     "Protected round pack unavailable/unconfirmed",
     "Draft schematic and BOM present; no manufacturing release",
     "USB through-hole clearance violations remain",
-    "PCB is wholly unrouted",
+    "PCB is partially routed; unconnected nets and dangling track ends remain",
+    "0.10mm trace/clearance rules require supplier DFM acceptance; USB differential and power integrity not validated",
     "No SPICE/thermal/firmware/hardware runtime simulation performed"
   ],
-  "pcb_sha256": "d9be7325e9e924760bf142388234f1f34e51e74cf4300e32451eeeb8ace87fff"
+  "pcb_sha256": "d6c43f173c694a795b2af6b4eded3e39f9fa0c3ee8c8af9d19d0a861b0308b9f"
 }
