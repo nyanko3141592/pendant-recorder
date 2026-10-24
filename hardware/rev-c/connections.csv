@@ -1,0 +1,255 @@
+Reference,Part,Pin,Signal,Net,Electrical type
+U1,STM32U535CEU6,1,VBAT,V3V3,power_in
+U1,STM32U535CEU6,2,PC13,NC,bidirectional
+U1,STM32U535CEU6,3,PC14,LSE_IN,bidirectional
+U1,STM32U535CEU6,4,PC15,LSE_OUT,bidirectional
+U1,STM32U535CEU6,5,PH0,NC,bidirectional
+U1,STM32U535CEU6,6,PH1,NC,bidirectional
+U1,STM32U535CEU6,7,NRST,NRST,input
+U1,STM32U535CEU6,8,VSSA,GND,power_in
+U1,STM32U535CEU6,9,VDDA,VDDA,power_in
+U1,STM32U535CEU6,10,PA0,VBUS_N,bidirectional
+U1,STM32U535CEU6,11,PA1,BAT_ADC,bidirectional
+U1,STM32U535CEU6,12,PA2,MIC_WAKE,bidirectional
+U1,STM32U535CEU6,13,PA3,MIC_THSEL,bidirectional
+U1,STM32U535CEU6,14,PA4,SD_CS_N,bidirectional
+U1,STM32U535CEU6,15,PA5,SD_CLK_MCU,bidirectional
+U1,STM32U535CEU6,16,PA6,SD_MISO,bidirectional
+U1,STM32U535CEU6,17,PA7,SD_MOSI,bidirectional
+U1,STM32U535CEU6,18,PB0,SD_EN,bidirectional
+U1,STM32U535CEU6,19,PB1,MIC_EN,bidirectional
+U1,STM32U535CEU6,20,PB2,CHG_DISABLE,bidirectional
+U1,STM32U535CEU6,21,PB10,NC,bidirectional
+U1,STM32U535CEU6,22,VCAP,VCAP,power_out
+U1,STM32U535CEU6,23,VSS,GND,power_in
+U1,STM32U535CEU6,24,VDD,V3V3,power_in
+U1,STM32U535CEU6,25,PB12,REC_LED,bidirectional
+U1,STM32U535CEU6,26,PB13,BUTTON_N,bidirectional
+U1,STM32U535CEU6,27,PB14,CHG_N,bidirectional
+U1,STM32U535CEU6,28,PB15,NC,bidirectional
+U1,STM32U535CEU6,29,PA8,STATUS_LED,bidirectional
+U1,STM32U535CEU6,30,PA9,NC,bidirectional
+U1,STM32U535CEU6,31,PA10,NC,bidirectional
+U1,STM32U535CEU6,32,PA11,USB_DM_MCU,bidirectional
+U1,STM32U535CEU6,33,PA12,USB_DP_MCU,bidirectional
+U1,STM32U535CEU6,34,PA13,SWDIO,bidirectional
+U1,STM32U535CEU6,35,VSS,GND,passive
+U1,STM32U535CEU6,36,VDD,V3V3,power_in
+U1,STM32U535CEU6,37,PA14,SWCLK,bidirectional
+U1,STM32U535CEU6,38,PA15,NC,bidirectional
+U1,STM32U535CEU6,39,PB3,PDM_CLK_MCU,bidirectional
+U1,STM32U535CEU6,40,PB4,PDM_DATA,bidirectional
+U1,STM32U535CEU6,41,PB5,NC,bidirectional
+U1,STM32U535CEU6,42,PB6,NC,bidirectional
+U1,STM32U535CEU6,43,PB7,NC,bidirectional
+U1,STM32U535CEU6,44,PH3,BOOT0,bidirectional
+U1,STM32U535CEU6,45,PB8,NC,bidirectional
+U1,STM32U535CEU6,46,PB9,NC,bidirectional
+U1,STM32U535CEU6,47,VSS,GND,passive
+U1,STM32U535CEU6,48,VDD,V3V3,power_in
+U1,STM32U535CEU6,49,VSS,GND,passive
+C1,100n,1,1,V3V3,passive
+C1,100n,2,2,GND,passive
+C4,10u,1,1,V3V3,passive
+C4,10u,2,2,GND,passive
+C9,100n,1,1,NRST,passive
+C9,100n,2,2,GND,passive
+R2,10k,1,1,V3V3,passive
+R2,10k,2,2,NRST,passive
+Y1,32.768kHz CL=7pF TBD,1,1,LSE_IN,passive
+Y1,32.768kHz CL=7pF TBD,2,2,LSE_OUT,passive
+C11,10p tentative,1,1,LSE_IN,passive
+C11,10p tentative,2,2,GND,passive
+C12,10p tentative,1,1,LSE_OUT,passive
+C12,10p tentative,2,2,GND,passive
+J3,TC2030 SWD target pads,1,VTref,V3V3,passive
+J3,TC2030 SWD target pads,2,SWDIO,SWDIO,passive
+J3,TC2030 SWD target pads,3,nRESET,NRST,passive
+J3,TC2030 SWD target pads,4,SWCLK,SWCLK,passive
+J3,TC2030 SWD target pads,5,GND,GND,passive
+J3,TC2030 SWD target pads,6,SWO unused,NC,no_connect
+SW1,B3U-1000P (candidate),1,1,BUTTON_N,passive
+SW1,B3U-1000P (candidate),2,2,GND,passive
+R4,100k,1,1,V3V3,passive
+R4,100k,2,2,BUTTON_N,passive
+R5,3.3k,1,1,REC_LED,passive
+R5,3.3k,2,2,LED_A,passive
+D1,red LED,2,A,LED_A,passive
+D1,red LED,1,K,GND,passive
+J1,USB4105-GF-A (candidate),A1,GND,GND,passive
+J1,USB4105-GF-A (candidate),A4,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),A5,CC1,CC1,passive
+J1,USB4105-GF-A (candidate),A6,D+,USB_DP,passive
+J1,USB4105-GF-A (candidate),A7,D-,USB_DM,passive
+J1,USB4105-GF-A (candidate),A8,SBU1,NC,passive
+J1,USB4105-GF-A (candidate),A9,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),A12,GND,GND,passive
+J1,USB4105-GF-A (candidate),B1,GND,GND,passive
+J1,USB4105-GF-A (candidate),B4,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),B5,CC2,CC2,passive
+J1,USB4105-GF-A (candidate),B6,D+,USB_DP,passive
+J1,USB4105-GF-A (candidate),B7,D-,USB_DM,passive
+J1,USB4105-GF-A (candidate),B8,SBU2,NC,passive
+J1,USB4105-GF-A (candidate),B9,VBUS,VBUS,passive
+J1,USB4105-GF-A (candidate),B12,GND,GND,passive
+J1,USB4105-GF-A (candidate),SH,SHIELD,GND,passive
+R6,5.1k 1%,1,1,CC1,passive
+R6,5.1k 1%,2,2,GND,passive
+R7,5.1k 1%,1,1,CC2,passive
+R7,5.1k 1%,2,2,GND,passive
+R8,0R tuning,1,1,USB_DP,passive
+R8,0R tuning,2,2,USB_DP_MCU,passive
+R9,0R tuning,1,1,USB_DM,passive
+R9,0R tuning,2,2,USB_DM_MCU,passive
+U2,USBLC6-2P6,1,IO1,USB_DP,passive
+U2,USBLC6-2P6,2,GND,GND,power_in
+U2,USBLC6-2P6,3,IO2,USB_DM,passive
+U2,USBLC6-2P6,4,IO2,USB_DM,passive
+U2,USBLC6-2P6,5,VBUS,VBUS,passive
+U2,USBLC6-2P6,6,IO1,USB_DP,passive
+C13,2.2u 10V,1,1,VBUS,passive
+C13,2.2u 10V,2,2,GND,passive
+U3,BQ25101YFPR,A2,IN,VBUS,power_in
+U3,BQ25101YFPR,A1,OUT,BAT,power_out
+U3,BQ25101YFPR,B2,ISET,ISET,input
+U3,BQ25101YFPR,B1,TS,BAT_TS,input
+U3,BQ25101YFPR,C1,CHG,CHG_N,open_collector
+U3,BQ25101YFPR,C2,VSS,GND,power_in
+R10,6.19k 1%,1,1,ISET,passive
+R10,6.19k 1%,2,2,GND,passive
+R11,100k,1,1,V3V3,passive
+R11,100k,2,2,CHG_N,passive
+C14,2.2u,1,1,BAT,passive
+C14,2.2u,2,2,GND,passive
+J2,S2B-PH-SM4-TB(LF)(SN) / DTP401525 110mAh,1,PACK+,BAT,passive
+J2,S2B-PH-SM4-TB(LF)(SN) / DTP401525 110mAh,2,PACK-,GND,passive
+TH1,NCP15XH103F03RC 10k NTC,1,1,BAT_TS,passive
+TH1,NCP15XH103F03RC 10k NTC,2,2,GND,passive
+Q2,2N7002 (charge inhibit),1,G,CHG_DISABLE,input
+Q2,2N7002 (charge inhibit),2,S,GND,passive
+Q2,2N7002 (charge inhibit),3,D,BAT_TS,passive
+R12,100k,1,1,CHG_DISABLE,passive
+R12,100k,2,2,GND,passive
+D2,BAT54WS (candidate; leakage/forward drop review pending),2,A,VBUS,passive
+D2,BAT54WS (candidate; leakage/forward drop review pending),1,K,SYS,passive
+Q1,DMP2035U (candidate; power path review pending),1,G,VBUS,input
+Q1,DMP2035U (candidate; power path review pending),2,S,SYS,passive
+Q1,DMP2035U (candidate; power path review pending),3,D,BAT,passive
+R16,100k,1,1,VBUS,passive
+R16,100k,2,2,GND,passive
+C15,4.7u,1,1,SYS,passive
+C15,4.7u,2,2,GND,passive
+U4,TPS7A0233PDBVR,1,IN,SYS,power_in
+U4,TPS7A0233PDBVR,2,GND,GND,power_in
+U4,TPS7A0233PDBVR,3,EN,SYS,input
+U4,TPS7A0233PDBVR,4,NC,NC,no_connect
+U4,TPS7A0233PDBVR,5,OUT,V3V3,power_out
+U6,TPS7A0218PDBVR,1,IN,V3V3,power_in
+U6,TPS7A0218PDBVR,2,GND,GND,power_in
+U6,TPS7A0218PDBVR,3,EN,MIC_EN,input
+U6,TPS7A0218PDBVR,4,NC,NC,no_connect
+U6,TPS7A0218PDBVR,5,OUT,V1V8,power_out
+C16,1u,1,1,V3V3,passive
+C16,1u,2,2,GND,passive
+C18,1u,1,1,V1V8,passive
+C18,1u,2,2,GND,passive
+C19,1u,1,1,V3V3,passive
+C19,1u,2,2,GND,passive
+R17,100k,1,1,MIC_EN,passive
+R17,100k,2,2,GND,passive
+U8,T5838,1,DATA,MIC_DATA_1V8,output
+U8,T5838,2,SELECT,GND,input
+U8,T5838,3,GND,GND,power_in
+U8,T5838,4,WAKE,MIC_WAKE_1V8,output
+U8,T5838,5,THSEL,MIC_THSEL_1V8,bidirectional
+U8,T5838,6,CLK,MIC_CLK_1V8,input
+U8,T5838,7,VDD,V1V8,power_in
+U9,TXS0104EPWR,1,VCCA,V1V8,power_in
+U9,TXS0104EPWR,2,A1,MIC_WAKE_1V8,bidirectional
+U9,TXS0104EPWR,3,A2,MIC_THSEL_1V8,bidirectional
+U9,TXS0104EPWR,4,A3,MIC_DATA_1V8,bidirectional
+U9,TXS0104EPWR,5,A4,MIC_CLK_1V8,bidirectional
+U9,TXS0104EPWR,6,NC,NC,passive
+U9,TXS0104EPWR,7,GND,GND,power_in
+U9,TXS0104EPWR,8,OE,V1V8,input
+U9,TXS0104EPWR,9,NC,NC,passive
+U9,TXS0104EPWR,10,B4,PDM_CLK,bidirectional
+U9,TXS0104EPWR,11,B3,PDM_DATA,bidirectional
+U9,TXS0104EPWR,12,B2,MIC_THSEL,bidirectional
+U9,TXS0104EPWR,13,B1,MIC_WAKE,bidirectional
+U9,TXS0104EPWR,14,VCCB,V3V3,power_in
+R21,22R tentative,1,1,PDM_CLK_MCU,passive
+R21,22R tentative,2,2,PDM_CLK,passive
+C22,100n,1,1,V1V8,passive
+C22,100n,2,2,GND,passive
+C23,100n,1,1,V1V8,passive
+C23,100n,2,2,GND,passive
+C24,100n,1,1,V3V3,passive
+C24,100n,2,2,GND,passive
+U10,TPS22916CYFPR,A2,VIN,V3V3,power_in
+U10,TPS22916CYFPR,A1,VOUT,SD_V3,power_out
+U10,TPS22916CYFPR,B2,ON,SD_EN,input
+U10,TPS22916CYFPR,B1,GND,GND,power_in
+R22,100k,1,1,SD_EN,passive
+R22,100k,2,2,GND,passive
+C25,1u,1,1,V3V3,passive
+C25,1u,2,2,GND,passive
+U11,CSNP32GCR01-BOW,1,RSV,NC,bidirectional
+U11,CSNP32GCR01-BOW,2,CS_N,SD_CS_N,bidirectional
+U11,CSNP32GCR01-BOW,3,CLK,SD_CLK,input
+U11,CSNP32GCR01-BOW,4,VSS,GND,power_in
+U11,CSNP32GCR01-BOW,5,DI,SD_MOSI,bidirectional
+U11,CSNP32GCR01-BOW,6,DO,SD_MISO,bidirectional
+U11,CSNP32GCR01-BOW,7,RSV,NC,bidirectional
+U11,CSNP32GCR01-BOW,8,VCC,SD_V3,power_in
+R23,22R tentative,1,1,SD_CLK_MCU,passive
+R23,22R tentative,2,2,SD_CLK,passive
+R24,47k,1,1,SD_V3,passive
+R24,47k,2,2,SD_MOSI,passive
+R25,47k,1,1,SD_V3,passive
+R25,47k,2,2,SD_MISO,passive
+R28,47k,1,1,SD_V3,passive
+R28,47k,2,2,SD_CS_N,passive
+C26,100n,1,1,SD_V3,passive
+C26,100n,2,2,GND,passive
+C27,22u effective TBD,1,1,SD_V3,passive
+C27,22u effective TBD,2,2,GND,passive
+TP1,TestPoint,1,BAT,BAT,passive
+TP2,TestPoint,1,SYS,SYS,passive
+TP3,TestPoint,1,V3,V3V3,passive
+TP4,TestPoint,1,V1V8,V1V8,passive
+TP5,TestPoint,1,SD_V3,SD_V3,passive
+TP6,TestPoint,1,GND,GND,passive
+R32,6.8k tentative,1,1,STATUS_LED,passive
+R32,6.8k tentative,2,2,STATUS_LED_A,passive
+D6,amber LED 0402 TBD,2,A,STATUS_LED_A,passive
+D6,amber LED 0402 TBD,1,K,GND,passive
+C2,100n,1,1,V3V3,passive
+C2,100n,2,2,GND,passive
+C3,100n,1,1,V3V3,passive
+C3,100n,2,2,GND,passive
+C5,4.7u,1,1,VCAP,passive
+C5,4.7u,2,2,GND,passive
+C6,100n,1,1,VDDA,passive
+C6,100n,2,2,GND,passive
+C7,1u,1,1,VDDA,passive
+C7,1u,2,2,GND,passive
+R1,0R,1,1,V3V3,passive
+R1,0R,2,2,VDDA,passive
+R3,100k,1,1,BOOT0,passive
+R3,100k,2,2,GND,passive
+Q3,2N7002 (VBUS detect),1,G,VBUS_GATE,input
+Q3,2N7002 (VBUS detect),2,S,GND,passive
+Q3,2N7002 (VBUS detect),3,D,VBUS_N,passive
+R13,100k,1,1,VBUS,passive
+R13,100k,2,2,VBUS_GATE,passive
+R14,1M,1,1,VBUS_GATE,passive
+R14,1M,2,2,GND,passive
+R15,100k,1,1,V3V3,passive
+R15,100k,2,2,VBUS_N,passive
+R33,1M 1%,1,1,BAT,passive
+R33,1M 1%,2,2,BAT_ADC,passive
+R34,1M 1%,1,1,BAT_ADC,passive
+R34,1M 1%,2,2,GND,passive
+C28,10n,1,1,BAT_ADC,passive
+C28,10n,2,2,GND,passive

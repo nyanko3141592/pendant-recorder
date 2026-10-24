@@ -5,17 +5,17 @@ Rectangular symbols deliberately show every pin. Footprints are NOT manufacturin
 import csv,json,math,uuid,sys
 from pathlib import Path
 REV=sys.argv[1] if len(sys.argv)>1 else 'rev-a'
-assert REV in ('rev-a','rev-b')
+assert REV in ('rev-a','rev-b','rev-c')
 ROOT=Path(__file__).resolve().parents[1]/REV
 d=json.loads((ROOT/'design.json').read_text()); parts=list(d['parts'])
-for i,net in enumerate((['GND','VDDA','VBUS','SYS'] if REV=='rev-a' else ['GND','VBUS','SYS']),1):
+for i,net in enumerate((['GND','VDDA','VBUS','SYS'] if REV in ('rev-a','rev-c') else ['GND','VBUS','SYS']),1):
  parts.append(dict(ref=f'#FLG0{i}',value='PWR_FLAG',pins=[dict(number='1',name='pwr',net=net,type='power_out')],section=1,note='Supply declaration after connector/passive path',footprint=''))
 def uid(key):return str(uuid.uuid5(uuid.NAMESPACE_URL,'pendant-recorder/'+REV+'/'+key))
 def q(s):return json.dumps(str(s))
 def effects(size=1,extra=''):return f'(effects (font (size {size} {size})) {extra})'
 root=uid('root'); libs=[]; items=[]; rows=[]; positions={s:45.72 for s in range(4)}
 for part in parts:
- ref=part['ref']; physical=not ref.startswith('#'); pins=part['pins']; n=math.ceil(len(pins)/2); h=max(10.16,(n+1)*3.81); w=66.04
+ ref=part['ref']; physical=not ref.startswith('#'); bom_item=physical and not (REV=='rev-c' and (ref=='J3' or ref.startswith('TP'))); pins=part['pins']; n=math.ceil(len(pins)/2); h=max(10.16,(n+1)*3.81); w=66.04
  x=152.4+274.32*part['section']; y=positions[part['section']]+h/2; positions[part['section']]+=h+12.7
  name='Part_'+ref; libid='Pendant:'+name
  geometry=[]; placement=[]
@@ -36,7 +36,7 @@ for part in parts:
  (property "Value" {q(part['value'])} (at 0 {h/2+2.54} 0) {effects(1.27)})
  (symbol {q(name+'_0_1')} (rectangle (start {-w/2} {h/2}) (end {w/2} {-h/2}) (stroke (width .254) (type default)) (fill (type background))))
  (symbol {q(name+'_1_1')} {''.join(geometry)}))''')
- items.append(f'''(symbol (lib_id {q(libid)}) (at {x} {y} 0) (unit 1) (in_bom {"yes" if physical else "no"}) (on_board {"yes" if physical else "no"}) (dnp no) (uuid {uid(ref)})
+ items.append(f'''(symbol (lib_id {q(libid)}) (at {x} {y} 0) (unit 1) (in_bom {"yes" if bom_item else "no"}) (on_board {"yes" if physical else "no"}) (dnp no) (uuid {uid(ref)})
  (property "Reference" {q(ref)} (at {x} {y-h/2-5.08} 0) {effects(1.27)})
  (property "Value" {q(part['value'])} (at {x} {y-h/2-2.54} 0) {effects(1.27)})
  (property "Footprint" {q(part['footprint'])} (at {x} {y} 0) {effects(1,'hide')})

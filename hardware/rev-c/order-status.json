@@ -1,0 +1,49 @@
+{
+  "revision": "C0",
+  "order_ready": false,
+  "erc_violations": 0,
+  "drc_violations": 5,
+  "drc_types": {
+    "hole_clearance": 4,
+    "track_dangling": 1
+  },
+  "unconnected_items": 67,
+  "schematic_parity_issues": 0,
+  "pcb_net_audit": {
+    "status": "PASS_NET_MEMBERSHIP_ONLY",
+    "physical_pad_count": 260,
+    "logical_pin_count": 254,
+    "parts": 76,
+    "tracks_and_vias": 580,
+    "via_count": 82
+  },
+  "board_mm": [
+    21,
+    31,
+    0.8
+  ],
+  "enclosure_study_mm": [
+    23.8,
+    34,
+    14.0
+  ],
+  "runtime_required_h": 16,
+  "runtime_measured_h": null,
+  "storage_required_h": 36,
+  "blockers": [
+    "Incomplete routing / DRC; USB pair/return path and decoupling review",
+    "Independent complete pin/AF/land pattern audit",
+    "Exact MPN/JLC stock and PCBA acceptance; unresolved BOM TBDs",
+    "USB input/inrush and power-path transient validation",
+    "3.3V LDO battery capacity, ADC calibration, 16h real recording",
+    "Mated PH, uncut 100mm leads, NTC thermal contact, microphone duct, fastening, wearing attachment and fixture",
+    "Firmware, standard encrypted storage and power-loss recovery, 3 OS sync not implemented"
+  ],
+  "hashes": {
+    "design.json": "6c6862a210918b797ab7fafb8888b260b7dbfcfc18fe3303d2bbbf0978289d42",
+    "pendant-rev-c.kicad_sch": "9348f49c90ad96baa410d3d6193671082d9230241de5506122b14c505976de58",
+    "pendant-rev-c.kicad_pcb": "920716a2689f0615c1f2a4b49b1e4bd2f626551ea3f4c2b8652b8d6afbf24123",
+    "erc.json": "11b57ea3c6fa22c41b99fa603d5a1eb854408e726155371d1a622c7a9b56ce77",
+    "drc.json": "9efac1812134f03f3802271b8387a8363377a789c4f8bbee97aba773e223ffb3"
+  }
+}

@@ -59,3 +59,7 @@
 - ST STM32U535データシート: https://www.st.com/resource/en/datasheet/stm32u535nc.pdf （48ピン系USB/ADF/SPI、SDMMCなし）
 - TDK ICS-41350: https://www.invensense.tdk.com/en-us/products/microphone/ics-41350 （EOL、新規非推奨）
 - 完成電池の既存調査: ../battery-sourcing.md。今回、小型60/80mAhの国内調達・JLC実装受理の成立は確認できていない。
+
+## 再設計指示後のRev C0
+
+ユーザーが回路・サイズ比較までの再設計を指示。STM32U535CEU6を使う無線なし回路をhardware/rev-cへ新設した。110mAhは維持。実フットプリント配置は21×31mm、収納モデルは23.8×34×14mm。目標22×34×12mmは未達で、PHと裏面部品の積層による厚さ増を明記する。採用品の調達/16h実測/収納/配線合格は未確定。V1の現行仕様は../v1-scope.md、発注状態は../../hardware/rev-c/order-status.jsonを参照。

@@ -1,31 +1,22 @@
 # pendant-recorder
 
-> 2026-10-24: [Rev B回路・PCB](hardware/rev-b/README.md)と[SolidCraftケース構造案・画像](mechanical/structure-b0/README.md)を作成。[発注可否](hardware/rev-b/order-status.json)は未達。製造用リリースではありません。
+**小さく身につけて録音し、USBで自分のPCへ音声を取り出すOSS録音機。**
 
-> 最新: [ハード中心のv1仕様](docs/decisions/0004-hardware-first-v1.md)を優先。Bluetooth対応MCUへ新回路設計、v1通信はUSB。検証済み同期後の対象録音は自動削除へ変更。無音区切りは音声保存省略とは別。新Rev Bは設計開始段階、旧Rev Aは発注不可。
+V1はUSB-C充電、充電なし連続16時間以上の録音、36時間以上の圧縮音声保存、登録鍵によるローカル復号・WAV取出しに集中します。無線と画面を外したRev Cを設計中。文字起こし・要約・クラウド・課金はV1必須外です。
 
-> 最新のv1ホスト範囲: 3 OSで同期・復号し、通常WAVをPCへ保存するところまでを必須とする。[同期の完了条件](docs/protocol/README.md)参照。文字起こし・要約・Notionは任意の後段で、必須依存にしない。未実装。
+**まだ発注不可・実機未検証です。** 回路図、実フットプリント配置、配線試行、ケース収納案までの設計成果物であり、16時間動作や無加工組立を達成した製品ではありません。
 
-> 最新: macOS・Windows・Linux向けに[相互運用仕様とCLI契約](docs/protocol/README.md)を設計。CLIを先行、GUIは任意。仕様はDraft 0で未実装、既存Macスタブとは区別します。
+- [V1の範囲・合格条件](docs/v1-scope.md) / [現行要件](docs/requirements.md)
+- [Rev C回路・PCB・BOM](hardware/rev-c/README.md) / [回路図PDF](hardware/rev-c/pendant-rev-c.pdf)
+- [発注可否と残件](hardware/rev-c/order-status.json)
+- [旧Rev B・Rev C・Omi・500円玉のサイズ比較](mechanical/size-comparison-c0/top.png)
+- [ケース内部の分解表示](mechanical/structure-c0/exploded.png)
 
-> 最新追加: [保存時暗号化と初期外観設計](docs/decisions/0002-encryption-and-industrial-design.md)を優先。登録PCの鍵で復号する暗号化保存をv1要件に追加（未実装）。従来の平文WAV直読・外観後回しの記述は旧仕様。樹脂3Dプリントから始め、金属外装への移行を考慮する。
+Rev Cの収納案は23.8×34×14mm。旧Rev Bの24.8×46.5×12.8mmより長さ12.5mm減、厚さ1.2mm増。配線・実際の電池線材・ケース固定・音道・公差の成立確認は未完了です。Rev A/Bは比較原本として保持します。
 
-ペンダント型で24時間連続録音することを目指す、自作の音声ライフログ録音機です（連続24時間は未達成の設計目標）。
+USB-C接続直後は充電のみで録音状態を維持。明示同期時だけ録音を止め、macOS/Windows/Linuxへ暗号化音声をコピー・復号し、通常WAVとして保存します。検証・永続化済みの一致録音だけ本体から削除する仕様です。ファームと本番CLIは未実装。
 
-- 本体は有線のみ。専用スマホアプリ・クラウド・サブスクに依存しません
-- Mac同期アプリもオープンソースで開発し、コピー・ローカル文字起こし・ローカル要約を提供する方針です（未実装）
-- USB-Cを挿すとまず充電のみ。録音状態を維持します。Mac接続中に同期を選ぶと録音を止め、充電しながらUSBドライブからファイルをコピーできます（設計仕様、ファーム未実装）
-- モデル導入後の基本処理はMac内で完結させます。Notionなど外部連携は任意・初期値オフです（設計方針、未検証）
-
-## 回路と筐体（2026-10-24）
-
-[連続24時間録音の設計目標](docs/runtime-target.md): 平均2.0mA以下を目指し、国内単品販売のDTP401525(PHR) 110mAhを第一候補にする。
-
-**v1は個人製作と基板密度を優先**。[JLCPCBで基板製造・両面の部品実装まで依頼](docs/jlcpcb-assembly.md)し、自分で最終組立する方針です（実装受理は未確認）。外観4案は保留し、Omi相当の小ささを目指し、円形に限定せず内部配置を優先します。[既製電池の調達から決める最小サイズ](docs/battery-sourcing.md)（未配置・未検証、30mm角基板は電気検証用）。[v1の製作方針と未確定事項](docs/v1-build.md)。
-
-- [Rev A1 回路・基板配置](hardware/rev-a/README.md): Omiの実回路を参照したKiCad回路図、92部品のBOM、全端子接続表、20×34mmの未配線KiCad基板。DRC未合格で発注不可です。
-- [薄型構造モデル](mechanical/structure-a2/README.md): 24.8×41.5×12.8mmの機械配置案。実PCBへの反映・配線・製造検証は未完了。
-- 公開リポジトリ: https://github.com/nyanko3141592/pendant-recorder
+JLC等へ基板製造と両面部品実装を依頼し、完成電池・治具で手はんだなしに組み立てることを発注条件にします。実装受理・治具・付属電池収納の確認はこれからです。
 
 ## 構成
 - `docs/design.md` 設計書（構成、ボード比較、電力の見積もり、音声フォーマット、時刻、USB、省電力、ケース）

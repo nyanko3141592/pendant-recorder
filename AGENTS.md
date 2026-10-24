@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## Rev C0（最優先の現行作業）
+ユーザーの再設計指示を受けhardware/rev-cを新設。無線なしSTM32U535CEU6、SPI SD、3.3V本体電源、ADC概算残量、110mAhを維持した76部品案。基板21×31mm、収納23.8×34×14mmは検討値、発注不可。現行コンセプト/合格条件はdocs/v1-scope.mdとdocs/requirements.md。発注状態はhardware/rev-c/order-status.json。旧Rev A/Bは比較原本。最新指示により比較用回路変更は許可済みだが実機/調達/収納成立は未確定。
+
 ## 最優先: 小ささ・16hへの変更（0006）
 最新ユーザー指示はUSB-C充電、連続録音16時間以上、その範囲で小ささ最優先。BluetoothはNice to haveへ変更し、内蔵アンテナ/無線必須を解除。docs/decisions/0006-size-first-16h.mdを優先する。圧縮音声36h保存、鍵による暗号化、USB取出し、無はんだ組立は維持。表示器は提案のみで最小案へ追加しない。22×34×12mm/20×32×12mmは未配線の検討枠で保証寸法ではない。Rev A/Bは比較原本として保持し発注不可残件を維持。MCU/電池変更の確定は比較後に相談。
 

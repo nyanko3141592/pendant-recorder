@@ -1,0 +1,47 @@
+2026-10-24 22:03:31.522 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-24 22:03:31.778 INFO   Hardware: 8 CPU cores, 463 CPU score, 4096 MB RAM
+2026-10-24 22:03:31.779 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-24 22:03:31.779 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-24 22:03:32.822 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-24 22:03:33.094 INFO   [B5DBCF\656A2A] Loading board file 'input.dsn'...
+2026-10-24 22:03:33.215 INFO   Layer 'F.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-24 22:03:33.215 INFO   Layer 'In1.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-24 22:03:33.215 INFO   Layer 'B.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-24 22:03:33.215 WARN   DSN file 'input.dsn' was loaded with 5 warning(s).
+2026-10-24 22:03:33.232 INFO   [B5DBCF\656A2A] Job 'B5DBCF\656A2A' started at 2026-10-24T13:03:33.232548Z.
+2026-10-24 22:03:33.443 WARN   Design Warning: Board has 8 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 8 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 8 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#1190 [net GND] <-> ObstacleArea#626
+          - FixedVia#1190 [net GND] <-> ObstacleArea#622
+          - FixedVia#1190 [net GND] <-> ObstacleArea#625
+          - FixedVia#1190 [net GND] <-> ObstacleArea#621
+          - FixedVia#1190 [net GND] <-> ObstacleArea#624
+          ... and 3 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 8 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-24 22:03:33.471 INFO   [B5DBCF\656A2A] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=7.
+2026-10-24 22:03:33.752 INFO   [B5DBCF\656A2A] Fanout stage started on board '3fb939d5c1dd9fcf6aca3b496b3b5f36' with 165 of 259 SMD pins needing fanout (91 already connected, 3 netless).
+2026-10-24 22:03:36.137 INFO   [B5DBCF\656A2A] Fanout pass #1 on board '88010a793091a7970082bf0b33413d0f' completed in 2.27 seconds with 72 SMD pins fanouted, 39 not routed, 0 insert errors, +9 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-24 22:03:37.656 INFO   [B5DBCF\656A2A] Fanout pass #2 on board '3efaba6d7a8aa7fd5da0ddd392ada6cb' completed in 1.51 seconds with 40 SMD pins fanouted, 30 not routed, 0 insert errors, +5 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-24 22:03:38.747 INFO   [B5DBCF\656A2A] Fanout pass #3 on board '12107329fdb07269a7c2810ef76f1420' completed in 1.08 seconds with 35 SMD pins fanouted, 24 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-24 22:03:39.866 INFO   [B5DBCF\656A2A] Fanout pass #4 on board 'dc279d883bddfa4d9c17974b3672c151' completed in 1.11 seconds with 35 SMD pins fanouted, 24 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-24 22:03:40.945 INFO   [B5DBCF\656A2A] Fanout pass #5 on board 'deeaeea32f82b709db812810b793e6da' completed in 1.07 seconds with 33 SMD pins fanouted, 25 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-10-24 22:03:42.066 INFO   [B5DBCF\656A2A] Fanout pass #6 on board '8235954eb039750ac701155678fd7970' completed in 1.11 seconds with 33 SMD pins fanouted, 26 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=600).
+2026-10-24 22:03:43.179 INFO   [B5DBCF\656A2A] Fanout pass #7 on board '56ade9c435b93ed427ae4cde5fb011d1' completed in 1.10 seconds with 33 SMD pins fanouted, 26 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=700).
+2026-10-24 22:03:44.310 INFO   [B5DBCF\656A2A] Fanout pass #8 on board 'a05e16e7ea2c43be4bea822d6dddfd4b' completed in 1.12 seconds with 33 SMD pins fanouted, 26 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=800).
+2026-10-24 22:03:45.441 INFO   [B5DBCF\656A2A] Fanout pass #9 on board 'dfca5d31d1d95b283db7c5c7ec2cd2c5' completed in 1.12 seconds with 33 SMD pins fanouted, 26 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=900).
+2026-10-24 22:03:45.441 INFO   Fanout stopped after 9 passes: no progress for 3 consecutive passes.
+2026-10-24 22:03:45.543 INFO   [B5DBCF\656A2A] Fanout stage completed: started with 256 total SMD pins, completed in 11.69 seconds, escaped pins: 180/256 (70.3%), using 11.77 total CPU seconds, 11.70 GB total allocated, and 200.4 MB peak heap usage.
+2026-10-24 22:03:45.893 INFO   [B5DBCF\656A2A] Auto-routing stage started on board 'dfca5d31d1d95b283db7c5c7ec2cd2c5' with baseline score 492.57 for 73 unrouted items.
+2026-10-24 22:03:54.658 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net 'V1V8' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-24 22:04:12.359 INFO   [B5DBCF\656A2A] Auto-routing pass #1 on board 'dfca5d31d1d95b283db7c5c7ec2cd2c5' was completed in 26.33 seconds with score 582.85 (60 unrouted and 8 violations), using 37.57 CPU seconds and the job allocated 50.83 GB of memory so far.
+2026-10-24 22:04:29.464 INFO   [B5DBCF\656A2A] Auto-routing pass #2 on board '304973a522974632c6e8385f45cc2c9b' was completed in 16.97 seconds with score 562.01 (63 unrouted and 8 violations), using 54.47 CPU seconds and the job allocated 76.61 GB of memory so far.
+2026-10-24 22:04:48.064 INFO   [B5DBCF\656A2A] Auto-routing pass #3 on board 'b765848bb6eaff867a65c4779b2a0954' was completed in 18.47 seconds with score 541.18 (66 unrouted and 8 violations), using 73.37 CPU seconds and the job allocated 105.98 GB of memory so far.
+2026-10-24 22:05:08.386 INFO   [B5DBCF\656A2A] Auto-routing pass #4 on board 'fcc9b460376fab079892f48dc8168216' was completed in 20.20 seconds with score 499.51 (72 unrouted and 8 violations), using 93.29 CPU seconds and the job allocated 137.80 GB of memory so far.
+2026-10-24 22:05:09.001 INFO   [B5DBCF\656A2A] Auto-routing stage completed: started with 96 unrouted nets, completed in 95.42 seconds, final score: 582.85 (60 unrouted and 8 violations), using 94.29 total CPU seconds, 138.93 GB total allocated, and 285.5 MB peak heap usage.
+2026-10-24 22:05:09.135 INFO   [B5DBCF\656A2A] Skipping optimization stage: the board has 60 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-24 22:05:09.150 INFO   [B5DBCF\656A2A] Job 'B5DBCF\656A2A' finished with state: COMPLETED (elapsed: 1 minute 35.92 seconds, finished at UTC: 2026-10-24T13:05:09.149610Z).
+2026-10-24 22:05:09.207 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/rev-c/routing/refined.ses' (SES)...
+2026-10-24 22:05:09.209 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/rev-c/routing/refined.ses' (107145 bytes).
