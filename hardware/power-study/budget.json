@@ -1,0 +1,49 @@
+{
+  "status": "feasibility_only_not_measured",
+  "usable_capacity_fraction_assumption": 0.7,
+  "measurement_boundary": "battery terminals; includes all rails and conversion losses",
+  "capacity_note": "70% is an assumption, not verified margin against temperature, aging or LDO cutoff",
+  "candidates": [
+    {
+      "nominal_mAh": 74,
+      "usable_mAh": 51.8,
+      "max_average_mA_for_16h": 3.2375,
+      "max_average_mA_for_20h": 2.59
+    },
+    {
+      "nominal_mAh": 108,
+      "usable_mAh": 75.6,
+      "max_average_mA_for_16h": 4.725,
+      "max_average_mA_for_20h": 3.78
+    },
+    {
+      "nominal_mAh": 110,
+      "usable_mAh": 77.0,
+      "max_average_mA_for_16h": 4.8125,
+      "max_average_mA_for_20h": 3.85
+    },
+    {
+      "nominal_mAh": 145,
+      "usable_mAh": 101.5,
+      "max_average_mA_for_16h": 6.3438,
+      "max_average_mA_for_20h": 5.075
+    },
+    {
+      "nominal_mAh": 150,
+      "usable_mAh": 105.0,
+      "max_average_mA_for_16h": 6.5625,
+      "max_average_mA_for_20h": 5.25
+    }
+  ],
+  "150mAh_runtime_sensitivity_hours": {
+    "3": 35.0,
+    "4": 26.25,
+    "5": 21.0,
+    "6": 17.5,
+    "7": 15.0,
+    "8": 13.12
+  },
+  "ima_adpcm_payload_bytes_per_second": 8027.437530622244,
+  "ima_adpcm_36h_payload_bytes": 1040355903.9686427,
+  "storage_note": "Excludes WAV headers, age overhead and filesystem allocation; 4GB nominal retains ample budget."
+}

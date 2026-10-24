@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## Omiサイズ再検討（最新）
+ファームの省電力化を含めOmiサイズを再検討する許可あり。docs/omi-size-feasibility.mdに電池形状・PH廃止・150mAh候補・平均5mA開発目標を記録。25〜25.5mm径/15mm厚は未成立の収納目標、150mAh完成パック調達も未確認。Rev C原本/発注不可状態は維持。16h連続録音の条件を無音省略で緩めない。
+
 ## Rev C0（最優先の現行作業）
 ユーザーの再設計指示を受けhardware/rev-cを新設。無線なしSTM32U535CEU6、SPI SD、3.3V本体電源、ADC概算残量、110mAhを維持した76部品案。基板21×31mm、収納23.8×34×14mmは検討値、発注不可。現行コンセプト/合格条件はdocs/v1-scope.mdとdocs/requirements.md。発注状態はhardware/rev-c/order-status.json。旧Rev A/Bは比較原本。最新指示により比較用回路変更は許可済みだが実機/調達/収納成立は未確定。
 
