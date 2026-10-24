@@ -1,5 +1,8 @@
 # AGENTS.md — pendant-recorder
 
+## 次版E設計基準・感度計算（0008）
+2026-10-25。docs/decisions/0008-selection-e.md。DTP401525-XE/EZ3 110mAh完成保護・NTC付き品を次版設計基準に選定。Molex0781710003へ変更が必要だが未実装。MCU/録音系維持、充電ICの最終選定とJLC調達は未完。hardware/power-study/selection-eは算術感度分析（SPICE/実測ではない）。110mAh/70%/4mA=19.25h、5mA=15.4h。設計目標平均4mA。D1.1/D2原本は未変更、発注不可。
+
 ## 最新: 非丸形・既製小型電池を許可（0007）
 2026-10-25。ユーザーが調達性重視で丸形制約を解除。docs/decisions/0007-off-the-shelf-battery.mdを優先。国内DTP401525(EZ3)110mAhとTinyCircuits150mAh SH完成品を比較、採用未確定。110mAhは平均5mA/容量70%仮定では15.4hで未達、16h条件を緩めない。D1.1/D2は未変更・発注不可。
 

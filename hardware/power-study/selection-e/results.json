@@ -1,0 +1,34 @@
+{
+  "status": "ASSUMPTION_SWEEP_NOT_HARDWARE_SIMULATION",
+  "scenarios": {
+    "target": {
+      "base_mA": 0.8,
+      "cpu_increment_mA": 8,
+      "cpu_duty": 0.1,
+      "sd_increment_mA": 30,
+      "sd_duty": 0.05,
+      "average_mA": 3.1,
+      "110mAh_70pct_hours": 24.838709677419356
+    },
+    "sd_busy": {
+      "base_mA": 0.8,
+      "cpu_increment_mA": 8,
+      "cpu_duty": 0.1,
+      "sd_increment_mA": 30,
+      "sd_duty": 0.12,
+      "average_mA": 5.199999999999999,
+      "110mAh_70pct_hours": 14.80769230769231
+    },
+    "cpu_and_sd_busy": {
+      "base_mA": 0.8,
+      "cpu_increment_mA": 8,
+      "cpu_duty": 0.2,
+      "sd_increment_mA": 30,
+      "sd_duty": 0.12,
+      "average_mA": 6.0,
+      "110mAh_70pct_hours": 12.833333333333334
+    }
+  },
+  "storage_36h_ADPCM_payload_bytes": 1040355903.9686427,
+  "note": "base and incremental currents are budget scenarios at battery terminals, not component datasheet claims. No measured duty cycles, voltage curve, LDO dropout, temperature or firmware timing model."
+}
