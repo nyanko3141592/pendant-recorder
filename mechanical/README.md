@@ -12,3 +12,7 @@ SolidCraft公式 v0.21.0 を `/Applications/SolidCraft.app` に導入。CLIは `
 ```sh
 solidcraft-cli run mechanical/fit-study.json --save mechanical/pendant-fit-study.solidcraft --out mechanical/pendant-fit-study.step
 ```
+
+## 外観デザインの候補
+
+Mori/Limitless/Omiを参照した[4案の比較と画像](concepts/README.md)。全案で本体直挿しUSB-Cを維持。まだCADへ反映していない外観コンセプト。
