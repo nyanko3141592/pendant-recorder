@@ -49,7 +49,7 @@ mapping={
  'U3':'Pendant:BQ25101_YFP6','U4':'Package_TO_SOT_SMD:SOT-23-5','U5':'Package_TO_SOT_SMD:SOT-23-5','U6':'Package_TO_SOT_SMD:SOT-23-5',
  'U7':'Package_DFN_QFN:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm','U8':'Pendant:T5838_LGA7_BottomPort','U9':'Pendant:TXS0104E_YZT12','U10':'Pendant:TPS22916_YFP4','U11':'Pendant:CSNP32GCR01_LGA8',
  'J1':'Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal',
- 'J2':'Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal','J3':'Pendant:SWD_5Pad_Pogo',
+ 'J2':'Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal','J3':'Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical',
  'Y1':'Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm','SW1':'Button_Switch_SMD:SW_SPST_B3U-1000P',
  'Q1':'Package_TO_SOT_SMD:SOT-23','Q2':'Package_TO_SOT_SMD:SOT-23','Q3':'Package_TO_SOT_SMD:SOT-23',
  'D2':'Diode_SMD:D_SOD-323','TH1':'Resistor_SMD:R_0402_1005Metric'}
@@ -70,6 +70,11 @@ for p in data['parts']:
   p['value']='S2B-PH-SM4-TB(LF)(SN) / DTP401525 110mAh'
   p['pins']=[x for x in p['pins'] if x['number']!='3']
   p['note']='Two-pin PH pack connection. Confirm delivered polarity. TH1 is PCB-mounted thermal contact, no third battery wire.'
+ if r=='J3':
+  p['value']='TC2030-CTX-NL-STDC14 target pads'
+  p['pins']=[{'number':str(i),'name':name,'net':net,'type':'passive' if net else 'no_connect'} for i,name,net in [(1,'VTref','V3'),(2,'SWDIO','SWDIO'),(3,'nRESET','NRST'),(4,'SWCLK','SWCLK'),(5,'GND','GND'),(6,'SWO unused',None)]]
+  p['note']='TC2030 CTX mapping from vendor. SWO unused: PB3 reserved for ADF. VTref sense only. Reserve probe and rear retaining clip access; program before battery/case assembly.'
+ if r=='U3':p['note']='BQ25101, 21.81mA nominal with 6.19k 1%; TS NTC must contact cell. Temperature/timeout validation pending.'
  if r=='R10':
   p['value']='6.19k 1%';p['note']='BQ25101: nominal 21.81mA; KISET max145 / (6190*0.99)=23.66mA < DTP max55mA. Standard pack charging approximately22mA.'
  if r=='TH1':p['note']='PCB-mounted NTC thermally coupled to pack through insulation. Position/contact/thermal response require validation; no hand-soldered harness.'

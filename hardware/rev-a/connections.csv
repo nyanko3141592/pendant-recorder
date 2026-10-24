@@ -95,11 +95,12 @@ C11,10p tentative,1,1,LSE_IN,passive
 C11,10p tentative,2,2,GND,passive
 C12,10p tentative,1,1,LSE_OUT,passive
 C12,10p tentative,2,2,GND,passive
-J3,SWD pads,1,V3,V3,passive
-J3,SWD pads,2,SWDIO,SWDIO,passive
-J3,SWD pads,3,GND,GND,passive
-J3,SWD pads,4,SWCLK,SWCLK,passive
-J3,SWD pads,5,NRST,NRST,passive
+J3,TC2030-CTX-NL-STDC14 target pads,1,VTref,V3,passive
+J3,TC2030-CTX-NL-STDC14 target pads,2,SWDIO,SWDIO,passive
+J3,TC2030-CTX-NL-STDC14 target pads,3,nRESET,NRST,passive
+J3,TC2030-CTX-NL-STDC14 target pads,4,SWCLK,SWCLK,passive
+J3,TC2030-CTX-NL-STDC14 target pads,5,GND,GND,passive
+J3,TC2030-CTX-NL-STDC14 target pads,6,SWO unused,NC,no_connect
 SW1,B3U-1000P (candidate),1,1,BUTTON_N,passive
 SW1,B3U-1000P (candidate),2,2,GND,passive
 R4,100k,1,1,V3,passive

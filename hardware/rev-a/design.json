@@ -749,11 +749,11 @@
     },
     {
       "ref": "J3",
-      "value": "SWD pads",
+      "value": "TC2030-CTX-NL-STDC14 target pads",
       "pins": [
         {
           "number": "1",
-          "name": "V3",
+          "name": "VTref",
           "net": "V3",
           "type": "passive"
         },
@@ -765,8 +765,8 @@
         },
         {
           "number": "3",
-          "name": "GND",
-          "net": "GND",
+          "name": "nRESET",
+          "net": "NRST",
           "type": "passive"
         },
         {
@@ -777,14 +777,20 @@
         },
         {
           "number": "5",
-          "name": "NRST",
-          "net": "NRST",
+          "name": "GND",
+          "net": "GND",
           "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "SWO unused",
+          "net": null,
+          "type": "no_connect"
         }
       ],
       "section": 0,
-      "note": "VTref only; programmer must not drive V3",
-      "footprint": "Pendant:SWD_5Pad_Pogo",
+      "note": "TC2030 CTX mapping from vendor. SWO unused: PB3 reserved for ADF. VTref sense only. Reserve probe and rear retaining clip access; program before battery/case assembly.",
+      "footprint": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
       "assembly_status": "UNCONFIRMED - JLC matching and stock required"
     },
     {
@@ -1185,7 +1191,7 @@
         }
       ],
       "section": 1,
-      "note": "Omi charger retained; 50mA nominal; TS NTC must touch cell",
+      "note": "BQ25101, 21.81mA nominal with 6.19k 1%; TS NTC must contact cell. Temperature/timeout validation pending.",
       "footprint": "Pendant:BQ25101_YFP6",
       "assembly_status": "UNCONFIRMED - JLC matching and stock required"
     },

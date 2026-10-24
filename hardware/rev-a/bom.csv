@@ -16,7 +16,7 @@ R3,100k,Resistor_SMD:R_0402_1005Metric,
 Y1,32.768kHz CL=7pF TBD,Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm,
 C11,10p tentative,Capacitor_SMD:C_0402_1005Metric,
 C12,10p tentative,Capacitor_SMD:C_0402_1005Metric,
-J3,SWD pads,Pendant:SWD_5Pad_Pogo,VTref only; programmer must not drive V3
+J3,TC2030-CTX-NL-STDC14 target pads,Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical,TC2030 CTX mapping from vendor. SWO unused: PB3 reserved for ADF. VTref sense only. Reserve probe and rear retaining clip access; program before battery/case assembly.
 SW1,B3U-1000P (candidate),Button_Switch_SMD:SW_SPST_B3U-1000P,
 R4,100k,Resistor_SMD:R_0402_1005Metric,
 R5,3.3k,Resistor_SMD:R_0402_1005Metric,
@@ -28,7 +28,7 @@ R8,22R tentative,Resistor_SMD:R_0402_1005Metric,
 R9,22R tentative,Resistor_SMD:R_0402_1005Metric,
 U2,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,Verify footprint; short path to connector ground
 C13,2.2u 10V,Capacitor_SMD:C_0402_1005Metric,
-U3,BQ25101YFPR,Pendant:BQ25101_YFP6,Omi charger retained; 50mA nominal; TS NTC must touch cell
+U3,BQ25101YFPR,Pendant:BQ25101_YFP6,"BQ25101, 21.81mA nominal with 6.19k 1%; TS NTC must contact cell. Temperature/timeout validation pending."
 R10,6.19k 1%,Resistor_SMD:R_0402_1005Metric,BQ25101: nominal 21.81mA; KISET max145 / (6190*0.99)=23.66mA < DTP max55mA. Standard pack charging approximately22mA.
 R11,100k,Resistor_SMD:R_0402_1005Metric,
 C14,2.2u,Capacitor_SMD:C_0402_1005Metric,

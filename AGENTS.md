@@ -66,3 +66,6 @@ Omi（BasedHardware/omi）のペンダントを**できるだけ真似て**、�
 ## 注意
 - 推定値・未確認値はそう書く。出典URLを残す
 - データ（録音）を消す処理は初期値オフ（ユーザー方針：戻せない削除はしない）
+
+## 発注準備の最新進捗
+J3は標準TC2030-NL/CTX結線（1 VTref,2 SWDIO,3 NRST,4 SWCLK,5 GND,6 NC）へ更新。docs/solderless-programming.md参照。ERC0、DRC19、未接続221で発注不可。sourcing-review.jsonに品番照合を記録。音声はdocs/protocol/audio-profile.mdのIMA-ADPCM 1024byte/2041samplesを候補にし、通常sync出力は有効サンプル長に切り戻したPCM16 WAV。ホスト合成音の形式試験のみ完了。

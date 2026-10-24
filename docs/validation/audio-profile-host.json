@@ -1,0 +1,33 @@
+{
+  "status": "PASS_HOST_FORMAT_ONLY",
+  "ffmpeg": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+  "profile": {
+    "format": "WAVE_FORMAT_IMA_ADPCM",
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "bits_per_code": 4,
+    "block_align_bytes": 1024,
+    "samples_per_block": 2041
+  },
+  "synthetic_test": {
+    "source_samples": 160000,
+    "decoded_samples": 161239,
+    "trimmed_valid_samples": 160000,
+    "encoded_file_bytes": 80990,
+    "encoded_sha256": "f43f0ca596c2144c2418881cb5259aa51145ce82db58a643b99f3e642bd8ff70"
+  },
+  "budget": {
+    "data_bytes_per_24h": 693571584,
+    "effective_bits_per_second": 64219.50024497795,
+    "pcm16_bytes_per_24h": 2764800000,
+    "chunk_encryption_example": "4096 plaintext bytes + 17-byte secretstream tag + 4-byte framing length; candidate only",
+    "example_chunk_overhead_fraction": 0.005126953125
+  },
+  "not_tested": [
+    "MCU codec implementation",
+    "Encryption implementation",
+    "Speech recognition accuracy",
+    "Power use",
+    "Windows/Linux decoder execution"
+  ]
+}

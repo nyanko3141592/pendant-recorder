@@ -45,8 +45,13 @@ def attempt(W,H):
  stack=['J2','U1','J1'];y=margin
  for r in stack:
   w,h=dims[r][2:]
-  if not put(r,(W-w)/2,y,'F'):return None
+  if not put(r,W-margin-w if r=='J2' else (W-w)/2,y,'F'):return None
   y+=h+gap
+ # The programming probe needs a through-board corridor for alignment holes.
+ if not put('J3',margin,margin,'B'):return None
+ probe=used['B'][-1]
+ if any(overlap(probe,b) for b in used['F']):return None
+ used['F'].append(probe)
  # High-priority audio and memory on rear; all others fitted around.
  # Reserve a through-board acoustic corridor on both faces.
  if not put('U8',margin,H-margin-dims['U8'][3],'B'):return None

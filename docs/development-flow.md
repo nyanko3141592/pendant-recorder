@@ -39,3 +39,7 @@
 ## 追加ゲート: OS間互換性
 
 [相互運用契約](protocol/README.md)を適用。Mac専用GUIより、公開プロトコル・共通ライブラリ・CLI・OS別鍵ストアを先行する。正式な形式固定には3 OS共通のテストベクトルと誤鍵/改ざん/切断試験、鍵バックアップのOS間復元を要求。パッケージ配布はバイナリと再現手順が揃ってから行う。
+
+## 発注準備チェックの実行
+
+`python3 hardware/tools/preflight_order.py --output hardware/rev-a/order-preflight.json`で回路/基板の現状と部品照合の未完了項目を記録する。現状は意図通り非ゼロ終了（発注不可）。製造レビュー、治具、機構の確認は別途証拠を要し、このツールだけで注文承認しない。圧縮形式のホスト試験は`tools/check_audio_profile.py`、MCU/暗号化/電力試験とは区別する。
