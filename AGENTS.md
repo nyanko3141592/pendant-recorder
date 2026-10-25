@@ -1,3 +1,7 @@
+# 充電ガードv4（2026-10-25、発注不可）
+
+`hardware/charge-guard-v4/README.md`と`order-status.json`を参照。BQ25101を保持し、独立NTC窓比較TLV7032＋MCU許可の直列MOSで充電を初期停止する87部品案。18×33×0.8mm/6層、ERC0/DRC0/未接続0/等価性0。NTC断線/短絡・リセット時停止は論理/DC解析のみ、実機未検証。温度抵抗値は仮、XEのB値/公差・過渡/電圧/終止/DFM/ファーム残件あり。ケース別チャットはv3をスナップショット使用中なので、そのhardware/compact-b/electrical-placement-v3やmechanicalを上書きしない。v4生成・配置・importはv4配線を破壊する。
+
 # A/B印刷用データ・XE再確認（2026-10-25）
 
 `docs/compact-order-refinement.md`を優先。A38×39×8.9/B20×39×14.5mmのサイズ確認STL/3MF/ZIPは`mechanical/compact-ab/print-size`、メッシュ検証済み・Drive格納済み。部品収納ケースではない。XE固有PDFで充電0〜45℃、NTC B値不明、リード15±3mmを確認。BQ25101温度制御不適合、発注不可。`hardware/compact-b/electrical-placement-v3`はERC0/DRC0/未接続0/等価性0の電気配置改善試行で既存A/Bモデルへ未反映。生成スクリプト再実行は試行基板を破壊するので要注意。

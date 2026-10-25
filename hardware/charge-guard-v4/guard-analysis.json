@@ -1,0 +1,86 @@
+{
+  "status": "CONDITIONAL_ANALYTICAL_PASS_NOT_RELEASE",
+  "truth_table": [
+    {
+      "mcu_allow": 0,
+      "cold_ok": 0,
+      "hot_ok": 0,
+      "charge_permitted": false
+    },
+    {
+      "mcu_allow": 0,
+      "cold_ok": 0,
+      "hot_ok": 1,
+      "charge_permitted": false
+    },
+    {
+      "mcu_allow": 0,
+      "cold_ok": 1,
+      "hot_ok": 0,
+      "charge_permitted": false
+    },
+    {
+      "mcu_allow": 0,
+      "cold_ok": 1,
+      "hot_ok": 1,
+      "charge_permitted": false
+    },
+    {
+      "mcu_allow": 1,
+      "cold_ok": 0,
+      "hot_ok": 0,
+      "charge_permitted": false
+    },
+    {
+      "mcu_allow": 1,
+      "cold_ok": 0,
+      "hot_ok": 1,
+      "charge_permitted": false
+    },
+    {
+      "mcu_allow": 1,
+      "cold_ok": 1,
+      "hot_ok": 0,
+      "charge_permitted": false
+    },
+    {
+      "mcu_allow": 1,
+      "cold_ok": 1,
+      "hot_ok": 1,
+      "charge_permitted": true
+    }
+  ],
+  "corners": {
+    "cold": {
+      "resistance_ohms_min": 11418.030407891558,
+      "resistance_ohms_max": 12823.745858813672,
+      "temperature_c_sensitivity": [
+        10.051604179875937,
+        24.338354233167706
+      ]
+    },
+    "hot": {
+      "resistance_ohms_min": 7783.5653570551285,
+      "resistance_ohms_max": 8741.910621335792,
+      "temperature_c_sensitivity": [
+        25.518184178023603,
+        41.20903574276025
+      ]
+    }
+  },
+  "faults": {
+    "ntc_open": "cold comparator low => inhibit",
+    "ntc_short": "hot comparator low => inhibit",
+    "mcu_reset": "R36 low => inhibit",
+    "comparator_por": "TLV7032 outputs low => inhibit",
+    "usb_absent": "charger has no input"
+  },
+  "assumptions": [
+    "NTC R25 9..11kohm, beta2000..5000K are exploratory bounds NOT supplier specs",
+    "Resistance1%; comparator effective error allowance33mV NOT a certified bound",
+    "VBUS4.75..5.25V; comparator table limits characterized1.8..5V, extend only after manufacturer confirmation",
+    "DC ideal switch logic only; off leakage, gate thresholds, startup timing and hardware failures require bench tests",
+    "Sensor thermal lag and self-heating not modeled"
+  ],
+  "order_ready": false
+}
