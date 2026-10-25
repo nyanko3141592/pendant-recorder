@@ -2,12 +2,11 @@
   "order_ready": false,
   "status": "ROUTED_CHARGE_GUARD_PROTOTYPE_NOT_FOR_ORDER",
   "blockers": [
-    "Pack NTC beta/R-T/tolerances unknown; thresholds provisional",
-    "MOS gate/leakage and comparator error under all supply conditions not qualified",
-    "Charge voltage/termination acceptance unresolved",
-    "Startup/brownout/temperature/fault bench tests pending",
-    "Final sourcing/DFM, USB/power-return review and firmware incomplete",
-    "Mechanical integration awaits separate fit-check; do not alter its v3 snapshot"
+    "Pack NTC beta/R-T/tolerances and current-lot charge voltage/termination acceptance unresolved",
+    "Comparator/MOS error and leakage design qualification, USB/power-return review incomplete",
+    "Exact part availability/price, CPL rotation and vendor DFM/stackup acceptance pending",
+    "Fully assembled programming/test fixture and first-power-on firmware not ready",
+    "Final landed quotation and user purchase approval pending"
   ],
   "footprints": 87,
   "pcb_mm": [
@@ -21,5 +20,13 @@
   "schematic_parity": 0,
   "erc_violations": 0,
   "tracks_and_vias": 1426,
-  "pcb_sha256": "9758fb8b405eecda8f270cb1b91db7711a44f54cabb8c324d86431239e55ce24"
+  "pcb_sha256": "9758fb8b405eecda8f270cb1b91db7711a44f54cabb8c324d86431239e55ce24",
+  "post_prototype_tests": [
+    "Current-limited battery-simulator tests: startup, brownout, MCU reset/fault, NTC open/short and trip hysteresis",
+    "Charge voltage/current/termination, thermal coupling and actual temperature trip qualification before real-pack charging",
+    "USB insertion continuity, 16h continuous recording and 36h encrypted storage/decryption verification",
+    "Physical fit, lead strain, microphone acoustic path and case retention"
+  ],
+  "release_policy": "Post-prototype measurements are not prerequisites for ordering the first engineering prototype. Pre-order design/sourcing/DFM/fixture/price gates still apply. Real-pack charging and product release require separate qualification.",
+  "quotation_manifest": "quotation/manifest.json"
 }

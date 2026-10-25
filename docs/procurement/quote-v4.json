@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-25",
+  "status": "PARTIAL_NON_BINDING_QUOTE_NOT_PURCHASE_TOTAL",
+  "currency": "USD",
+  "source": "https://cart.jlcpcb.com/quote",
+  "gerber_uploaded": false,
+  "pcba_quoted": false,
+  "parameters": {
+    "board_mm": [
+      18,
+      33,
+      0.8
+    ],
+    "layers": 6,
+    "finish": "ENIG 1u inch",
+    "material": "FR4 TG155",
+    "min_via_hole_mm": 0.15,
+    "stackup": "No requirement; acceptance pending",
+    "production_file_confirmation": true,
+    "automatic_confirmation": false,
+    "build_days": "8-9"
+  },
+  "scenarios": [
+    {
+      "quantity": 5,
+      "bare_pcb": 102.98,
+      "shipping_estimate_japan_ups": 9.75,
+      "known_usd_subtotal": 112.73
+    },
+    {
+      "quantity": 10,
+      "bare_pcb": 118.29,
+      "shipping_estimate_japan_ups": 9.75,
+      "known_usd_subtotal": 128.04
+    }
+  ],
+  "exclusions": [
+    "All component costs and assembly, setup, feeders, panelization and extra parts",
+    "Final shipping based on assembled weight/destination",
+    "Import taxes/duties/brokerage and payment FX fees",
+    "Programming/test fixture, battery shipping, case consumables"
+  ],
+  "battery_retail": {
+    "part": "DTP401525-XE",
+    "supplier": "Sengoku",
+    "source": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5VAC",
+    "unit_jpy_tax_included": 1500,
+    "five_jpy": 7500,
+    "ten_jpy": 15000,
+    "quantity_stock_confirmed": false,
+    "shipping_included": false
+  },
+  "total_payable": null
+}

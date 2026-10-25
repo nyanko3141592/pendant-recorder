@@ -1,3 +1,7 @@
+# v4発注準備・部分価格（2026-10-25）
+
+`docs/procurement/preorder-v4.md`と`quote-v4.json`を優先。80点/40SKUの見積りGerber/BOM/CPLを生成。JLC公開画面の基板単体5枚$102.98/10枚$118.29、日本向けUPS送料表示$9.75（部品・実装・税等別、支払総額未確定）。NTC B値/公差/現行ロットは未確認。メーカー英文照会は未送信、JLCアップロードも許可待ち。実機試験をorder-statusのpost_prototype_testsへ分離、発注前の仕様・調達・DFM・治具・総額承認は未完。ケース/v3は不変更。
+
 # 充電ガードv4（2026-10-25、発注不可）
 
 `hardware/charge-guard-v4/README.md`と`order-status.json`を参照。BQ25101を保持し、独立NTC窓比較TLV7032＋MCU許可の直列MOSで充電を初期停止する87部品案。18×33×0.8mm/6層、ERC0/DRC0/未接続0/等価性0。NTC断線/短絡・リセット時停止は論理/DC解析のみ、実機未検証。温度抵抗値は仮、XEのB値/公差・過渡/電圧/終止/DFM/ファーム残件あり。ケース別チャットはv3をスナップショット使用中なので、そのhardware/compact-b/electrical-placement-v3やmechanicalを上書きしない。v4生成・配置・importはv4配線を破壊する。
