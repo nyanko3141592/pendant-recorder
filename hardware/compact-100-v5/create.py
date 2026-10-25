@@ -10,5 +10,7 @@ for p in d['parts']:
 s=(S/'generate_schematic.py').read_text().replace('charge-guard-v4','compact-100-v5');(P/'generate_schematic.py').write_text(s)
 for name in ['fp-lib-table']:shutil.copy(S/name,P/name)
 shutil.copytree(S/'PendantD1.pretty',P/'PendantD1.pretty',dirs_exist_ok=True)
+shutil.copytree(R/'hardware/rev-c/Pendant.pretty',P/'Pendant.pretty',dirs_exist_ok=True)
+f=P/'fp-lib-table';f.write_text(f.read_text().replace('${KIPRJMOD}/../rev-c/Pendant.pretty','${KIPRJMOD}/Pendant.pretty'))
 shutil.copy(S/'pendant-charge-guard-v4.kicad_pro',P/'pendant-compact-100-v5.kicad_pro')
 subprocess.run([sys.executable,str(P/'generate_schematic.py'),'compact-100-v5',str(P)],check=True)
