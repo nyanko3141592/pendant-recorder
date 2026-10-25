@@ -1,3 +1,7 @@
+# 最新: 辺も丸めた外観印刷モデル v6（2026-10-25）
+
+`mechanical/rounded-v6`。ユーザー要求で四隅R5/表裏の縁R3、外形26×31×14mmを維持。中実の外観・持ち心地確認用で収納ケースではない。全体と印刷面を下にした前後7mm半体2点のSTL/3MF/STEP、メッシュ検証済み。簡易0.8mm壁包絡では現行PCB角が最大1.46mm侵入、USBは開口要。その他部品/電池の仮包絡は内側だが厳密収納保証ではない。基板角丸化と再配線・再DRCは未実施。v5回路/収納モデル原本は保持。Drive: https://drive.google.com/file/d/1Q_jF6jL815IgSJPW3YVgnwYbk33WGP3x/view 。
+
 # 最新: 100mAh v5回路・サイズモデル（2026-10-25）
 
 `hardware/compact-100-v5` / `mechanical/compact-100-v5`。実87フットプリント・80実装点、24×27×0.8mm6層。回路ERC0、クリアランス等DRC0、等価性0、未接続0（PDM_DATAと周辺信号を再配線して検査済み）。外形26×31×14mm、当初24×29×14は今回配置では未成立。旧Bより短いが体積ほぼ同じ。組立/分解STEP、比較画像、6種個別STL/3MFの閉メッシュ検証済み。YDL601515 100mAh標準品はPH2pinであり、必要な3pin NTC短尺完成ハーネスは未調達。電池/部品高さ/USB余裕/蓋固定/音道/16hは未資格化。発注不可。Drive ZIP: https://drive.google.com/file/d/1EY0JHSZ8Rmxvf8OrDpNZ-vrrVPeccvC-/view 。v3と旧mechanicalは保持。v5 layout/finalize再実行は配線を破壊する。小型化の達成度を誇張しない。
