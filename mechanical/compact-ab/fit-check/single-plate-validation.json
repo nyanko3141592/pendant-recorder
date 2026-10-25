@@ -1,0 +1,288 @@
+{
+  "file": "Pendant_AB_FC1_Bambu_single-plate.3mf",
+  "objects": 13,
+  "unit": "millimeter",
+  "layout_bed_mm": [
+    180,
+    180
+  ],
+  "all_on_bed": true,
+  "minimum_xy_bbox_gap_mm": 5,
+  "printer_profile_embedded": false,
+  "gcode_included": false,
+  "parts": [
+    {
+      "object": "A_body",
+      "source": "A/body.3mf",
+      "source_sha256": "f08af6bcc92213b780421be27deecf6eab6bbe090b6a843cae5d22c865ba4260",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          20.0,
+          60.0
+        ],
+        [
+          20.0,
+          61.00000000000001
+        ],
+        [
+          0.0,
+          9.600000000000003
+        ]
+      ],
+      "triangles": 1158
+    },
+    {
+      "object": "A_lid",
+      "source": "A/lid.3mf",
+      "source_sha256": "771a2556e84c77b3273ac5e256d447eb4f1c3ec24814f8a30772606d727c245b",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          65.0,
+          105.0
+        ],
+        [
+          20.0,
+          61.0
+        ],
+        [
+          0.0,
+          2.4
+        ]
+      ],
+      "triangles": 260
+    },
+    {
+      "object": "A_battery",
+      "source": "A/battery.3mf",
+      "source_sha256": "a4daf88b40986add34b42326a795593c57b78ac3601d015496cdf76bacd83f64",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          115.0,
+          130.5
+        ],
+        [
+          20.0,
+          47.0
+        ],
+        [
+          0.0,
+          4.2
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "object": "A_pcb_components",
+      "source": "A/pcb_components.3mf",
+      "source_sha256": "ad7fd30bbeb700934af39e6059e28e2ead7978f3bd2423c9a46ee0d5b0b01e89",
+      "rotation_x_deg": 90,
+      "bounds_mm": [
+        [
+          145.0,
+          163.0
+        ],
+        [
+          20.0,
+          25.86
+        ],
+        [
+          0.0,
+          33.5
+        ]
+      ],
+      "triangles": 2318
+    },
+    {
+      "object": "A_harness_reservation",
+      "source": "A/harness_reservation.3mf",
+      "source_sha256": "11f746bd34ac0d04107a9ddcea818ba92e8f63ed4836bd764ab0ed5504a9777d",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          115.0,
+          130.075
+        ],
+        [
+          60.0,
+          63.2
+        ],
+        [
+          0.0,
+          1.2
+        ]
+      ],
+      "triangles": 28
+    },
+    {
+      "object": "B_body",
+      "source": "B/body.3mf",
+      "source_sha256": "32fbd329df2cb355278b085f8c9ce9113ad40f38a3de8ca23f37e37f85639ed5",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          20.0,
+          42.0
+        ],
+        [
+          85.0,
+          126.0
+        ],
+        [
+          0.0,
+          15.200000000000003
+        ]
+      ],
+      "triangles": 1520
+    },
+    {
+      "object": "B_lid",
+      "source": "B/lid.3mf",
+      "source_sha256": "c4e481d6fcfa35b21c9f6b796df273663456d5491b6f063ac0b7dd8656ed9c7b",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          65.0,
+          87.0
+        ],
+        [
+          85.0,
+          126.0
+        ],
+        [
+          0.0,
+          2.4000000000000004
+        ]
+      ],
+      "triangles": 260
+    },
+    {
+      "object": "B_battery",
+      "source": "B/battery.3mf",
+      "source_sha256": "9d9e5dd34c68a2154bbdcb83fef06c2db36116014aac5532ca4c820d4b3a4f47",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          115.0,
+          130.5
+        ],
+        [
+          85.0,
+          112.0
+        ],
+        [
+          0.0,
+          4.2
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "object": "B_pcb_components",
+      "source": "B/pcb_components.3mf",
+      "source_sha256": "b84fae77307a7fd484198ee24e05bb63a47c9578705c20dcad3c1b3ac48a3799",
+      "rotation_x_deg": 90,
+      "bounds_mm": [
+        [
+          145.0,
+          163.0
+        ],
+        [
+          85.0,
+          90.86
+        ],
+        [
+          0.0,
+          33.5
+        ]
+      ],
+      "triangles": 2318
+    },
+    {
+      "object": "B_harness_reservation",
+      "source": "B/harness_reservation.3mf",
+      "source_sha256": "78e88be5d58551268493e7c26a04f44042a403edd303a8fa6f35ec766504229c",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          115.0,
+          121.575
+        ],
+        [
+          125.0,
+          128.2
+        ],
+        [
+          0.0,
+          1.2
+        ]
+      ],
+      "triangles": 28
+    },
+    {
+      "object": "lead_12mm",
+      "source": "gauges/lead_12mm.3mf",
+      "source_sha256": "f1b8816dd9c237b244483017126d5e2674dc08c595b915abac547db8565f0689",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          20.0,
+          32.0
+        ],
+        [
+          145.0,
+          147.0
+        ],
+        [
+          0.0,
+          0.8
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "object": "lead_15mm",
+      "source": "gauges/lead_15mm.3mf",
+      "source_sha256": "2ee82f0b649d8ad5b215bf50a546704d374ab4d24d3ab99eb961c00d63faafd8",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          50.0,
+          65.0
+        ],
+        [
+          145.0,
+          147.0
+        ],
+        [
+          0.0,
+          0.8
+        ]
+      ],
+      "triangles": 12
+    },
+    {
+      "object": "lead_18mm",
+      "source": "gauges/lead_18mm.3mf",
+      "source_sha256": "55f2adc07c811b37e4d4464072fadad3f34691cf1b07ae3e358314c7630c5e35",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        [
+          80.0,
+          98.0
+        ],
+        [
+          145.0,
+          147.0
+        ],
+        [
+          0.0,
+          0.8
+        ]
+      ],
+      "triangles": 12
+    }
+  ]
+}
