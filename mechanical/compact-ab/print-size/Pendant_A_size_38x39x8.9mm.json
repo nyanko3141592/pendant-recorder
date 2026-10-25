@@ -1,0 +1,74 @@
+{
+  "commands": [
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 0,
+        "name": "outline"
+      }
+    },
+    {
+      "command": "sketch.rectangle.rounded",
+      "params": {
+        "p0": [
+          0,
+          0
+        ],
+        "p1": [
+          38,
+          39
+        ],
+        "radius": 2
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 8.9,
+        "operation": "new",
+        "body_name": "size_mockup"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "offset": 0,
+        "name": "cord_slot"
+      }
+    },
+    {
+      "command": "sketch.rectangle.rounded",
+      "params": {
+        "p0": [
+          16.0,
+          0.95
+        ],
+        "p1": [
+          22.0,
+          2.45
+        ],
+        "radius": 0.6
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": 8.9,
+        "operation": "cut",
+        "targets": [
+          "size_mockup"
+        ]
+      }
+    }
+  ]
+}

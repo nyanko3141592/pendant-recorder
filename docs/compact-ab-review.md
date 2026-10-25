@@ -1,5 +1,7 @@
 # A/B二案の配置・配線・構造比較
 
+追記: 印刷用STLと充電回路の新しい制約は[発注準備記録](compact-order-refinement.md)を参照。下記の基板数値は元のA/B配置の記録。
+
 2026-10-25。発注不可。これは実部品フットプリントを使った配置・部分配線と、全75部品の包絡を含むSolidCraft収納検討である。電気動作、量産寸法、16時間実動作の成立を保証しない。A/Bの2案のみ。旧Rev A/Bと混同しないよう `compact-a` / `compact-b` に保存した。
 
 ![同一CADシーンの比較](../mechanical/compact-ab/comparison.png)

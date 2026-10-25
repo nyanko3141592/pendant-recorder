@@ -1,3 +1,7 @@
+# A/B印刷用データ・XE再確認（2026-10-25）
+
+`docs/compact-order-refinement.md`を優先。A38×39×8.9/B20×39×14.5mmのサイズ確認STL/3MF/ZIPは`mechanical/compact-ab/print-size`、メッシュ検証済み・Drive格納済み。部品収納ケースではない。XE固有PDFで充電0〜45℃、NTC B値不明、リード15±3mmを確認。BQ25101温度制御不適合、発注不可。`hardware/compact-b/electrical-placement-v3`はERC0/DRC0/未接続0/等価性0の電気配置改善試行で既存A/Bモデルへ未反映。生成スクリプト再実行は試行基板を破壊するので要注意。
+
 # Compact A/B検討（2026-10-25、最新・発注不可）
 
 `docs/compact-ab-review.md`を参照。A薄型38×39×8.9mm、B小型20×39×14.5mmの検討モデル。確定寸法ではない。18×33×0.8mm共通6層基板、75部品、各1264配線/ビア、ERC0・等価性0・DRC9・未接続10。`hardware/compact-a,b`と`mechanical/compact-ab`。全75部品の仮高さ包絡、紐穴/蓋爪/ボタン/LED/音道。持続時間は算術のみ。BQ25101温度適合、実ハーネス、配線品質、製造公差、STM32実装と16h実測未達。生成スクリプトは配線を上書きするため注意。旧D/E原本保持。

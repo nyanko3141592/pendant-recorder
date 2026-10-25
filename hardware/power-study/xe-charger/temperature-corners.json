@@ -1,0 +1,23 @@
+{
+  "status": "NOT_QUALIFIED",
+  "assumptions": [
+    "10k NTC, beta3435K hypothetical; XE beta not specified",
+    "Illustrative R25 +/-1%, beta +/-1%; not confirmed pack tolerances",
+    "Independent worst-case IC limits; no SPICE or measurements"
+  ],
+  "source": "https://www.ti.com/lit/ds/symlink/bq25170.pdf",
+  "cold_trip_c": {
+    "min": -1.31,
+    "max": 3.4
+  },
+  "hot_trip_c": {
+    "min": 40.97,
+    "max": 48.05
+  },
+  "charge_ma_with_13k7_1pct": {
+    "min": 19.513,
+    "typ": 21.898,
+    "max": 24.331
+  },
+  "conclusion": "Direct NTC connection does not establish a guaranteed 0..45C charging window. Need confirmed NTC curve and margin design."
+}

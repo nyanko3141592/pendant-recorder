@@ -1,0 +1,367 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T10:40:25",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "compact-b.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 41 [/MIC_EN] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.655,
+                        "y": 0.9675
+                    },
+                    "uuid": "c346d34c-8f66-4f40-9583-fee957871827"
+                },
+                {
+                    "description": "配線 [/MIC_EN] ( In3.Cu 上、長さ: 2.0810 mm )",
+                    "pos": {
+                        "x": 11.83,
+                        "y": 0.8492
+                    },
+                    "uuid": "26ef66d3-9f1a-4d17-82a2-1c0478dafa0c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 34 [/SWDIO] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 0.9675,
+                        "y": 2.655
+                    },
+                    "uuid": "c1bbf3f8-c132-4e2f-8a37-77bad76312cb"
+                },
+                {
+                    "description": "パッド 2 [/SWDIO] - J3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.41,
+                        "y": 12.045
+                    },
+                    "uuid": "8069a371-842d-4213-add6-ab05ebfcebcc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 40 [/PDM_DATA] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.155,
+                        "y": 0.9675
+                    },
+                    "uuid": "34994939-6d94-4655-9cde-0c2b6070ff3e"
+                },
+                {
+                    "description": "パッド 8 [/PDM_DATA] - U9 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 9.325
+                    },
+                    "uuid": "a81f9cd8-a95c-4e30-947a-03621e551a13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 29 [/STATUS_LED] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 0.9675,
+                        "y": 5.155
+                    },
+                    "uuid": "aa54ba24-48f5-4f24-abbe-23b7466df88a"
+                },
+                {
+                    "description": "パッド 1 [/STATUS_LED] - R32 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.695,
+                        "y": 14.745
+                    },
+                    "uuid": "a4af874d-d260-4ded-99de-d88ab16e8227"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 27 [/CHG_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 0.9675,
+                        "y": 6.155
+                    },
+                    "uuid": "bd8be896-52c0-43ba-bda6-d87bd389ad19"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( In4.Cu 上、長さ: 1.1394 mm )",
+                    "pos": {
+                        "x": 5.9429,
+                        "y": 14.1193
+                    },
+                    "uuid": "517bfc51-46e2-440a-9104-001a23dd411a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 32 [/USB_DM_MCU] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 0.9675,
+                        "y": 3.655
+                    },
+                    "uuid": "acb1fcba-9202-4e18-8ade-31e64b96eab8"
+                },
+                {
+                    "description": "配線 [/USB_DM_MCU] ( B.Cu 上、長さ: 0.4015 mm )",
+                    "pos": {
+                        "x": 16.995,
+                        "y": 15.945
+                    },
+                    "uuid": "3d94e8fa-e5c3-4933-855b-cbbe243cfdad"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0905 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.2588 mm )",
+                    "pos": {
+                        "x": 8.3358,
+                        "y": 4.9205
+                    },
+                    "uuid": "39fc8ba4-7b26-48b7-8f5e-85c9619c1533"
+                },
+                {
+                    "description": "パッド 7 [/NRST] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 7.8425,
+                        "y": 4.655
+                    },
+                    "uuid": "cd5f2e35-f796-4cc8-91a1-c17ec7437f3b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0905 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.3316 mm )",
+                    "pos": {
+                        "x": 8.077,
+                        "y": 4.9205
+                    },
+                    "uuid": "3b81e9a2-d172-44ae-81ff-3ea6a10b6da2"
+                },
+                {
+                    "description": "パッド 7 [/NRST] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 7.8425,
+                        "y": 4.655
+                    },
+                    "uuid": "cd5f2e35-f796-4cc8-91a1-c17ec7437f3b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0909 mm)",
+            "items": [
+                {
+                    "description": "配線 [/LSE_IN] ( B.Cu 上、長さ: 0.0967 mm )",
+                    "pos": {
+                        "x": 8.712,
+                        "y": 2.362
+                    },
+                    "uuid": "81d5e724-e41f-4173-9a21-598c4a49802c"
+                },
+                {
+                    "description": "ビア [/SD_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 8.842,
+                        "y": 2.6762
+                    },
+                    "uuid": "e3cf24b5-c52a-482b-ac22-4c4150bb0246"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0909 mm)",
+            "items": [
+                {
+                    "description": "配線 [/LSE_IN] ( B.Cu 上、長さ: 0.5765 mm )",
+                    "pos": {
+                        "x": 8.6436,
+                        "y": 2.4304
+                    },
+                    "uuid": "4f65c2bc-ddfe-4394-b710-eea23fc80a24"
+                },
+                {
+                    "description": "ビア [/SD_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 8.842,
+                        "y": 2.6762
+                    },
+                    "uuid": "e3cf24b5-c52a-482b-ac22-4c4150bb0246"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "配線 [/LSE_IN] ( B.Cu 上、長さ: 0.2938 mm )",
+                    "pos": {
+                        "x": 9.0058,
+                        "y": 2.362
+                    },
+                    "uuid": "882a43b5-7678-4376-b94d-57576ebe614b"
+                },
+                {
+                    "description": "ビア [/SD_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 8.842,
+                        "y": 2.6762
+                    },
+                    "uuid": "e3cf24b5-c52a-482b-ac22-4c4150bb0246"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0989 mm)",
+            "items": [
+                {
+                    "description": "パッド B8 [unconnected-(J1-SBU2-PadB8)] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 7.25,
+                        "y": 25.615
+                    },
+                    "uuid": "3db1b06f-76f5-4ce2-9073-13ccf750f408"
+                },
+                {
+                    "description": "配線 [/CC1] ( F.Cu 上、長さ: 0.0620 mm )",
+                    "pos": {
+                        "x": 7.3883,
+                        "y": 24.9002
+                    },
+                    "uuid": "e447eb1a-79f4-496e-87d5-5f25d38f9020"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0989 mm)",
+            "items": [
+                {
+                    "description": "パッド B8 [unconnected-(J1-SBU2-PadB8)] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 7.25,
+                        "y": 25.615
+                    },
+                    "uuid": "3db1b06f-76f5-4ce2-9073-13ccf750f408"
+                },
+                {
+                    "description": "配線 [/CC1] ( F.Cu 上、長さ: 0.1591 mm )",
+                    "pos": {
+                        "x": 7.2758,
+                        "y": 24.7877
+                    },
+                    "uuid": "de11d3b9-f38c-4449-8f1e-d14b61ca97bd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( B.Cu 上、長さ: 1.2145 mm )",
+                    "pos": {
+                        "x": 15.4017,
+                        "y": 9.2544
+                    },
+                    "uuid": "3433a16a-1bda-4546-9781-be1aac525b2d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM_MCU] ( B.Cu 上、長さ: 0.2061 mm )",
+                    "pos": {
+                        "x": 16.995,
+                        "y": 15.5435
+                    },
+                    "uuid": "2d896545-ba19-4a30-ab18-515e6c410a1f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

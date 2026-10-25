@@ -20,7 +20,7 @@ R9,0R tuning,Resistor_SMD:R_0402_1005Metric,STM32 integrated USB termination; ex
 U2,USBLC6-2P6,Package_TO_SOT_SMD:SOT-666,"ST DS4260 same 6-pin function diagram; smaller package, LCSC C15999 catalog; orientation/land pattern final audit pending."
 C13,2.2u 10V,Capacitor_SMD:C_0402_1005Metric,
 U3,BQ25101YFPR,Pendant:BQ25101_YFP6,"BQ25101, 21.81mA nominal with 6.19k 1%; TS NTC must contact cell. Temperature/timeout validation pending."
-R10,6.19k 1%,Resistor_SMD:R_0402_1005Metric,BQ25101: nominal 21.81mA; KISET max145 / (6190*0.99)=23.66mA < DTP max55mA. Standard pack charging approximately22mA.
+R10,6.19k 1%,Resistor_SMD:R_0402_1005Metric,BQ25101 nominal 21.81mA; upper estimate 23.66mA. XE-specific specification lists 110mA max; standard-charge text is inconsistent (0.2C versus 2mA). Temperature compatibility FAIL; not released.
 R11,100k,Resistor_SMD:R_0402_1005Metric,
 C14,2.2u,Capacitor_SMD:C_0402_1005Metric,
 J2,0781710003 / DTP401525-XE,Connector_Molex:Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical,"Completed battery: 1 BAT+, 2 NTC, 3 GND. Charger temperature compatibility unresolved. Factory assembly required."

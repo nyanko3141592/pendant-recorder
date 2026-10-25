@@ -1,0 +1,2265 @@
+{
+  "revision": "E0 stocked XE battery placement draft",
+  "parts": [
+    {
+      "ref": "U1",
+      "value": "STM32U535CEU6",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VBAT",
+          "net": "V3V3",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "PC13",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "3",
+          "name": "PC14",
+          "net": "LSE_IN",
+          "type": "bidirectional"
+        },
+        {
+          "number": "4",
+          "name": "PC15",
+          "net": "LSE_OUT",
+          "type": "bidirectional"
+        },
+        {
+          "number": "5",
+          "name": "PH0",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "PH1",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "7",
+          "name": "NRST",
+          "net": "NRST",
+          "type": "input"
+        },
+        {
+          "number": "8",
+          "name": "VSSA",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "9",
+          "name": "VDDA",
+          "net": "VDDA",
+          "type": "power_in"
+        },
+        {
+          "number": "10",
+          "name": "PA0",
+          "net": "VBUS_N",
+          "type": "bidirectional"
+        },
+        {
+          "number": "11",
+          "name": "PA1",
+          "net": "BAT_ADC",
+          "type": "bidirectional"
+        },
+        {
+          "number": "12",
+          "name": "PA2",
+          "net": "MIC_WAKE",
+          "type": "bidirectional"
+        },
+        {
+          "number": "13",
+          "name": "PA3",
+          "net": "MIC_THSEL",
+          "type": "bidirectional"
+        },
+        {
+          "number": "14",
+          "name": "PA4",
+          "net": "SD_CS_N",
+          "type": "bidirectional"
+        },
+        {
+          "number": "15",
+          "name": "PA5",
+          "net": "SD_CLK_MCU",
+          "type": "bidirectional"
+        },
+        {
+          "number": "16",
+          "name": "PA6",
+          "net": "SD_MISO",
+          "type": "bidirectional"
+        },
+        {
+          "number": "17",
+          "name": "PA7",
+          "net": "SD_MOSI",
+          "type": "bidirectional"
+        },
+        {
+          "number": "18",
+          "name": "PB0",
+          "net": "SD_EN",
+          "type": "bidirectional"
+        },
+        {
+          "number": "19",
+          "name": "PB1",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "20",
+          "name": "PB2",
+          "net": "CHG_DISABLE",
+          "type": "bidirectional"
+        },
+        {
+          "number": "21",
+          "name": "PB10",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "22",
+          "name": "VCAP",
+          "net": "VCAP",
+          "type": "power_out"
+        },
+        {
+          "number": "23",
+          "name": "VSS",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "24",
+          "name": "VDD",
+          "net": "V3V3",
+          "type": "power_in"
+        },
+        {
+          "number": "25",
+          "name": "PB12",
+          "net": "REC_LED",
+          "type": "bidirectional"
+        },
+        {
+          "number": "26",
+          "name": "PB13",
+          "net": "BUTTON_N",
+          "type": "bidirectional"
+        },
+        {
+          "number": "27",
+          "name": "PB14",
+          "net": "CHG_N",
+          "type": "bidirectional"
+        },
+        {
+          "number": "28",
+          "name": "PB15",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "29",
+          "name": "PA8",
+          "net": "STATUS_LED",
+          "type": "bidirectional"
+        },
+        {
+          "number": "30",
+          "name": "PA9",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "31",
+          "name": "PA10",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "32",
+          "name": "PA11",
+          "net": "USB_DM_MCU",
+          "type": "bidirectional"
+        },
+        {
+          "number": "33",
+          "name": "PA12",
+          "net": "USB_DP_MCU",
+          "type": "bidirectional"
+        },
+        {
+          "number": "34",
+          "name": "PA13",
+          "net": "SWDIO",
+          "type": "bidirectional"
+        },
+        {
+          "number": "35",
+          "name": "VSS",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "36",
+          "name": "VDD",
+          "net": "V3V3",
+          "type": "power_in"
+        },
+        {
+          "number": "37",
+          "name": "PA14",
+          "net": "SWCLK",
+          "type": "bidirectional"
+        },
+        {
+          "number": "38",
+          "name": "PA15",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "39",
+          "name": "PB3",
+          "net": "PDM_CLK_MCU",
+          "type": "bidirectional"
+        },
+        {
+          "number": "40",
+          "name": "PB4",
+          "net": "PDM_DATA",
+          "type": "bidirectional"
+        },
+        {
+          "number": "41",
+          "name": "PB5",
+          "net": "MIC_EN",
+          "type": "bidirectional"
+        },
+        {
+          "number": "42",
+          "name": "PB6",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "43",
+          "name": "PB7",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "44",
+          "name": "PH3",
+          "net": "BOOT0",
+          "type": "bidirectional"
+        },
+        {
+          "number": "45",
+          "name": "PB8",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "46",
+          "name": "PB9",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "47",
+          "name": "VSS",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "48",
+          "name": "VDD",
+          "net": "V3V3",
+          "type": "power_in"
+        },
+        {
+          "number": "49",
+          "name": "VSS",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "512KB Flash/274KB RAM; non-SMPS UFQFPN48. PB3/PB4 ADF AF3; PA5/6/7 SPI1 AF5. VDD USB shared 3.3V. JLC acceptance and pin review pending.",
+      "footprint": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm"
+    },
+    {
+      "ref": "C1",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C4",
+      "value": "10u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "Main bulk capacitor; check startup and effective capacitance.",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C9",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "NRST",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R2",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "NRST",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "Y1",
+      "value": "32.768kHz CL=7pF TBD",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LSE_IN",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LSE_OUT",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C11",
+      "value": "10p tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LSE_IN",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C12",
+      "value": "10p tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LSE_OUT",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "J3",
+      "value": "TC2030 SWD target pads",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VTref",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "SWDIO",
+          "net": "SWDIO",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "nRESET",
+          "net": "NRST",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "SWCLK",
+          "net": "SWCLK",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "SWO unused",
+          "net": null,
+          "type": "no_connect"
+        }
+      ],
+      "section": 0,
+      "note": "TC2030-NL/CTX standard; completed STM32-compatible probe/cable; access with battery disconnected.",
+      "footprint": "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "SW1",
+      "value": "B3U-1000P (candidate)",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUTTON_N",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R4",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "BUTTON_N",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R5",
+      "value": "3.3k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "REC_LED",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LED_A",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "D1",
+      "value": "red LED",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "net": "LED_A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "K",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "LED_SMD:LED_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "J1",
+      "value": "USB4105-GF-A (candidate)",
+      "pins": [
+        {
+          "number": "A1",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "A4",
+          "name": "VBUS",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "A5",
+          "name": "CC1",
+          "net": "CC1",
+          "type": "passive"
+        },
+        {
+          "number": "A6",
+          "name": "D+",
+          "net": "USB_DP",
+          "type": "passive"
+        },
+        {
+          "number": "A7",
+          "name": "D-",
+          "net": "USB_DM",
+          "type": "passive"
+        },
+        {
+          "number": "A8",
+          "name": "SBU1",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "number": "A9",
+          "name": "VBUS",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "A12",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "B1",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "B4",
+          "name": "VBUS",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "B5",
+          "name": "CC2",
+          "net": "CC2",
+          "type": "passive"
+        },
+        {
+          "number": "B6",
+          "name": "D+",
+          "net": "USB_DP",
+          "type": "passive"
+        },
+        {
+          "number": "B7",
+          "name": "D-",
+          "net": "USB_DM",
+          "type": "passive"
+        },
+        {
+          "number": "B8",
+          "name": "SBU2",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "number": "B9",
+          "name": "VBUS",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "B12",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "SH",
+          "name": "SHIELD",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "Exact footprint and shield pad numbering pending connector selection",
+      "footprint": "PendantD1:USB_C_GCT_USB4105_GroundLand112",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R6",
+      "value": "5.1k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "CC1",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R7",
+      "value": "5.1k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "CC2",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R8",
+      "value": "0R tuning",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "USB_DP",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "USB_DP_MCU",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "STM32 integrated USB termination; external series value validate against ST USB layout guidance.",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R9",
+      "value": "0R tuning",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "USB_DM",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "USB_DM_MCU",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "STM32 integrated USB termination; external series value validate against ST USB layout guidance.",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U2",
+      "value": "USBLC6-2P6",
+      "pins": [
+        {
+          "number": "1",
+          "name": "IO1",
+          "net": "USB_DP",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "3",
+          "name": "IO2",
+          "net": "USB_DM",
+          "type": "passive"
+        },
+        {
+          "number": "4",
+          "name": "IO2",
+          "net": "USB_DM",
+          "type": "passive"
+        },
+        {
+          "number": "5",
+          "name": "VBUS",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "6",
+          "name": "IO1",
+          "net": "USB_DP",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "ST DS4260 same 6-pin function diagram; smaller package, LCSC C15999 catalog; orientation/land pattern final audit pending.",
+      "footprint": "Package_TO_SOT_SMD:SOT-666",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C13",
+      "value": "2.2u 10V",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U3",
+      "value": "BQ25101YFPR",
+      "pins": [
+        {
+          "number": "A2",
+          "name": "IN",
+          "net": "VBUS",
+          "type": "power_in"
+        },
+        {
+          "number": "A1",
+          "name": "OUT",
+          "net": "BAT",
+          "type": "power_out"
+        },
+        {
+          "number": "B2",
+          "name": "ISET",
+          "net": "ISET",
+          "type": "input"
+        },
+        {
+          "number": "B1",
+          "name": "TS",
+          "net": "BAT_TS",
+          "type": "input"
+        },
+        {
+          "number": "C1",
+          "name": "CHG",
+          "net": "CHG_N",
+          "type": "open_collector"
+        },
+        {
+          "number": "C2",
+          "name": "VSS",
+          "net": "GND",
+          "type": "power_in"
+        }
+      ],
+      "section": 1,
+      "note": "BQ25101, 21.81mA nominal with 6.19k 1%; TS NTC must contact cell. Temperature/timeout validation pending.",
+      "footprint": "Pendant:BQ25101_YFP6",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R10",
+      "value": "6.19k 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "ISET",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "BQ25101 nominal 21.81mA; upper estimate 23.66mA. XE-specific specification lists 110mA max; standard-charge text is inconsistent (0.2C versus 2mA). Temperature compatibility FAIL; not released.",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R11",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "CHG_N",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C14",
+      "value": "2.2u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BAT",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "J2",
+      "value": "0781710003 / DTP401525-XE",
+      "pins": [
+        {
+          "number": "1",
+          "name": "PACK+",
+          "net": "BAT",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "PACK_NTC",
+          "net": "BAT_TS",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "PACK-",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "Completed battery: 1 BAT+, 2 NTC, 3 GND. Charger temperature compatibility unresolved. Factory assembly required.",
+      "footprint": "Connector_Molex:Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "Q2",
+      "value": "2N7002 (charge inhibit)",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "net": "CHG_DISABLE",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "net": "BAT_TS",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "High disables charging by pulling TS low; USB suspend policy required",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R12",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "CHG_DISABLE",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "D2",
+      "value": "BAT54WS (candidate; leakage/forward drop review pending)",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "K",
+          "net": "SYS",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "USB path; characterize leakage and input inrush",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "Q1",
+      "value": "DMP2035U (candidate; power path review pending)",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "net": "VBUS",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "net": "SYS",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "net": "BAT",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "S=SYS, D=BAT intentionally; body diode BAT -> SYS; exact MPN/pinout pending",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R16",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C15",
+      "value": "4.7u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SYS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U4",
+      "value": "TPS7A0233PDBVR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "IN",
+          "net": "SYS",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "3",
+          "name": "EN",
+          "net": "SYS",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "NC",
+          "net": null,
+          "type": "no_connect"
+        },
+        {
+          "number": "5",
+          "name": "OUT",
+          "net": "V3V3",
+          "type": "power_out"
+        }
+      ],
+      "section": 2,
+      "note": "3.3V main rail: 48-pin MCU has no separate USB supply; dropout/capacity measurement required.",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U6",
+      "value": "TPS7A0218PDBVR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "IN",
+          "net": "V3V3",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "3",
+          "name": "EN",
+          "net": "MIC_EN",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "NC",
+          "net": null,
+          "type": "no_connect"
+        },
+        {
+          "number": "5",
+          "name": "OUT",
+          "net": "V1V8",
+          "type": "power_out"
+        }
+      ],
+      "section": 2,
+      "note": "DBV / SOT23-5 prototype; miniaturization later",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C16",
+      "value": "1u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C18",
+      "value": "1u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V1V8",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C19",
+      "value": "1u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R17",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "MIC_EN",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U8",
+      "value": "T5838",
+      "pins": [
+        {
+          "number": "1",
+          "name": "DATA",
+          "net": "MIC_DATA_1V8",
+          "type": "output"
+        },
+        {
+          "number": "2",
+          "name": "SELECT",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "4",
+          "name": "WAKE",
+          "net": "MIC_WAKE_1V8",
+          "type": "output"
+        },
+        {
+          "number": "5",
+          "name": "THSEL",
+          "net": "MIC_THSEL_1V8",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "CLK",
+          "net": "MIC_CLK_1V8",
+          "type": "input"
+        },
+        {
+          "number": "7",
+          "name": "VDD",
+          "net": "V1V8",
+          "type": "power_in"
+        }
+      ],
+      "section": 3,
+      "note": "BOTTOM port; 1.62..1.98V only; SELECT low = right channel",
+      "footprint": "Pendant:T5838_LGA7_BottomPort",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U9",
+      "value": "TXS0104ERUTR",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VCCA",
+          "net": "V1V8",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "A1",
+          "net": "MIC_WAKE_1V8",
+          "type": "bidirectional"
+        },
+        {
+          "number": "3",
+          "name": "A2",
+          "net": "MIC_THSEL_1V8",
+          "type": "bidirectional"
+        },
+        {
+          "number": "4",
+          "name": "A3",
+          "net": "MIC_DATA_1V8",
+          "type": "bidirectional"
+        },
+        {
+          "number": "5",
+          "name": "A4",
+          "net": "MIC_CLK_1V8",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "12",
+          "name": "OE",
+          "net": "V1V8",
+          "type": "input"
+        },
+        {
+          "number": "7",
+          "name": "B4",
+          "net": "PDM_CLK",
+          "type": "bidirectional"
+        },
+        {
+          "number": "8",
+          "name": "B3",
+          "net": "PDM_DATA",
+          "type": "bidirectional"
+        },
+        {
+          "number": "9",
+          "name": "B2",
+          "net": "MIC_THSEL",
+          "type": "bidirectional"
+        },
+        {
+          "number": "10",
+          "name": "B1",
+          "net": "MIC_WAKE",
+          "type": "bidirectional"
+        },
+        {
+          "number": "11",
+          "name": "VCCB",
+          "net": "V3V3",
+          "type": "power_in"
+        }
+      ],
+      "section": 3,
+      "note": "TI SCES651K Table 5-4 RUT pinout. UQFN procurement and PCBA acceptance pending.",
+      "footprint": "Package_DFN_QFN:Texas_R-PUQFN-N12",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R21",
+      "value": "22R tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "PDM_CLK_MCU",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "PDM_CLK",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C22",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V1V8",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C23",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V1V8",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C24",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U10",
+      "value": "TPS22916CYFPR",
+      "pins": [
+        {
+          "number": "A2",
+          "name": "VIN",
+          "net": "V3V3",
+          "type": "power_in"
+        },
+        {
+          "number": "A1",
+          "name": "VOUT",
+          "net": "SD_V3",
+          "type": "power_out"
+        },
+        {
+          "number": "B2",
+          "name": "ON",
+          "net": "SD_EN",
+          "type": "input"
+        },
+        {
+          "number": "B1",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        }
+      ],
+      "section": 3,
+      "note": "Omi SD switch; power-off sequence must tristate ALL SD signals",
+      "footprint": "Pendant:TPS22916_YFP4",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R22",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SD_EN",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C25",
+      "value": "1u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "U11",
+      "value": "CSNP32GCR01-BOW",
+      "pins": [
+        {
+          "number": "1",
+          "name": "RSV",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "2",
+          "name": "CS_N",
+          "net": "SD_CS_N",
+          "type": "bidirectional"
+        },
+        {
+          "number": "3",
+          "name": "CLK",
+          "net": "SD_CLK",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "VSS",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "5",
+          "name": "DI",
+          "net": "SD_MOSI",
+          "type": "bidirectional"
+        },
+        {
+          "number": "6",
+          "name": "DO",
+          "net": "SD_MISO",
+          "type": "bidirectional"
+        },
+        {
+          "number": "7",
+          "name": "RSV",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "number": "8",
+          "name": "VCC",
+          "net": "SD_V3",
+          "type": "power_in"
+        }
+      ],
+      "section": 3,
+      "note": "SPI mode per manufacturer p2; unused DAT1/DAT2 reserved; verify power-up and interrupted-write behavior.",
+      "footprint": "Pendant:CSNP32GCR01_LGA8",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R23",
+      "value": "22R tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SD_CLK_MCU",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SD_CLK",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R24",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SD_V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SD_MOSI",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R25",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SD_V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SD_MISO",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R28",
+      "value": "47k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SD_V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SD_CS_N",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C26",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SD_V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C27",
+      "value": "22u effective TBD",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SD_V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "TP1",
+      "value": "TestPoint",
+      "pins": [
+        {
+          "number": "1",
+          "name": "BAT",
+          "net": "BAT",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "TP2",
+      "value": "TestPoint",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SYS",
+          "net": "SYS",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "TP3",
+      "value": "TestPoint",
+      "pins": [
+        {
+          "number": "1",
+          "name": "V3",
+          "net": "V3V3",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "TP4",
+      "value": "TestPoint",
+      "pins": [
+        {
+          "number": "1",
+          "name": "V1V8",
+          "net": "V1V8",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "TP5",
+      "value": "TestPoint",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SD_V3",
+          "net": "SD_V3",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "TP6",
+      "value": "TestPoint",
+      "pins": [
+        {
+          "number": "1",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R32",
+      "value": "6.8k tentative",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "STATUS_LED",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "STATUS_LED_A",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "D6",
+      "value": "amber LED 0402 TBD",
+      "pins": [
+        {
+          "number": "2",
+          "name": "A",
+          "net": "STATUS_LED_A",
+          "type": "passive"
+        },
+        {
+          "number": "1",
+          "name": "K",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "Battery level by blink count; shared charging/error indication; exact LED MPN pending.",
+      "footprint": "LED_SMD:LED_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C3",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C5",
+      "value": "4.7u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VCAP",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VDDA",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "C7",
+      "value": "1u",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VDDA",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R1",
+      "value": "0R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "VDDA",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R3",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BOOT0",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 0,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "Q3",
+      "value": "2N7002 (VBUS detect)",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "net": "VBUS_GATE",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "net": "VBUS_N",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R13",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VBUS",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "VBUS_GATE",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R14",
+      "value": "1M",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "VBUS_GATE",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R15",
+      "value": "100k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "V3V3",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "VBUS_N",
+          "type": "passive"
+        }
+      ],
+      "section": 1,
+      "note": "",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "assembly_status": "UNCONFIRMED - JLC matching and stock required"
+    },
+    {
+      "ref": "R33",
+      "value": "1M 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BAT",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "BAT_ADC",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting.",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "R34",
+      "value": "1M 1%",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BAT_ADC",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting.",
+      "footprint": "Resistor_SMD:R_0402_1005Metric"
+    },
+    {
+      "ref": "C28",
+      "value": "10n",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BAT_ADC",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting.",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric"
+    }
+  ],
+  "sources": {
+    "mcu": "https://www.st.com/resource/en/datasheet/stm32u535ce.pdf",
+    "mcu_product": "https://www.st.com/en/microcontrollers-microprocessors/stm32u535ce.html",
+    "pin_reference": "KiCad 10 MCU_ST_STM32U5 STM32U535CEUx; ST DS14217 tables 26-28 require final independent audit"
+  },
+  "release_status": "NOT_FOR_ORDER_UNROUTED",
+  "status": "CIRCULAR_D1_DRAFT_UNROUTED_NOT_FOR_ORDER",
+  "source": "Rev C circuit; J2 SH, U9 RUT and TP footprint changes; see README"
+}
