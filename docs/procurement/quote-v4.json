@@ -3,7 +3,7 @@
   "status": "PARTIAL_NON_BINDING_QUOTE_NOT_PURCHASE_TOTAL",
   "currency": "USD",
   "source": "https://cart.jlcpcb.com/quote",
-  "gerber_uploaded": false,
+  "gerber_uploaded": true,
   "pcba_quoted": false,
   "parameters": {
     "board_mm": [
@@ -50,5 +50,33 @@
     "quantity_stock_confirmed": false,
     "shipping_included": false
   },
-  "total_payable": null
+  "total_payable": null,
+  "jlc_upload_authorized": true,
+  "supplier_email_authorized": false,
+  "upload_result": {
+    "detected_mm": [
+      18,
+      33
+    ],
+    "detected_layers": 6,
+    "assembly": "Standard both sides",
+    "top_refs": 37,
+    "bottom_refs": 43,
+    "quantity": 10,
+    "vendor_expanded_mm": [
+      70,
+      71
+    ],
+    "depanel_before_delivery": true,
+    "confirm_placement": true,
+    "auto_confirm_placement": false,
+    "bom_uploaded": false,
+    "cpl_uploaded": false,
+    "pending": [
+      "Explicit assembly service terms consent",
+      "JLC account login",
+      "BOM/CPL upload and part matching",
+      "Full PCBA quotation"
+    ]
+  }
 }

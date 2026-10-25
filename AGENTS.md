@@ -1,6 +1,6 @@
 # v4発注準備・部分価格（2026-10-25）
 
-`docs/procurement/preorder-v4.md`と`quote-v4.json`を優先。80点/40SKUの見積りGerber/BOM/CPLを生成。JLC公開画面の基板単体5枚$102.98/10枚$118.29、日本向けUPS送料表示$9.75（部品・実装・税等別、支払総額未確定）。NTC B値/公差/現行ロットは未確認。メーカー英文照会は未送信、JLCアップロードも許可待ち。実機試験をorder-statusのpost_prototype_testsへ分離、発注前の仕様・調達・DFM・治具・総額承認は未完。ケース/v3は不変更。
+`docs/procurement/preorder-v4.md`と`quote-v4.json`を優先。80点/40SKUの見積りGerber/BOM/CPLを生成。JLC公開画面の基板単体5枚$102.98/10枚$118.29、日本向けUPS送料表示$9.75（部品・実装・税等別、支払総額未確定）。NTC B値/公差/現行ロットは未確認。メーカー英文照会は未送信。JLCアップロードは許可済み・Gerber認識成功、両面Standard実装で製造余白70×71mm/分割納品を選択。BOM/CPL未投入、規約同意確認とログイン待ち、実装総額は未取得。実機試験をorder-statusのpost_prototype_testsへ分離、発注前の仕様・調達・DFM・治具・総額承認は未完。ケース/v3は不変更。
 
 # 充電ガードv4（2026-10-25、発注不可）
 
