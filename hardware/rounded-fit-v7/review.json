@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-25",
+  "release": false,
+  "scope": "Rounded 26x31x14mm case, 24x27x0.8mm six-layer PCB; 100mAh candidate pack; continuous 16h target",
+  "reviewed": [
+    {
+      "item": "T5838 pinout",
+      "result": "Seven pins agree with TDK DS-000383 rev1.1. JLC description incorrectly/ambiguously says SMD-5P: supplier package confirmation required.",
+      "source": "https://invensense.tdk.com/wp-content/uploads/2023/06/DS-000383-T5838-Datasheet-v1.1.pdf"
+    },
+    {
+      "item": "TLV7032 charge gate",
+      "result": "Push-pull variant and pin mapping agree with TI. Do not substitute TLV7042 open-drain without redesign.",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv7032.pdf"
+    },
+    {
+      "item": "BQ25101 TS",
+      "result": "10kohm fixed TS with independent temperature monitoring is supported; TS low disables charging. External NTC window and MCU enable are present. This is not qualification of battery temperature limits.",
+      "source": "https://www.ti.com/lit/ds/symlink/bq25101.pdf"
+    },
+    {
+      "item": "TPS7A02 rails",
+      "result": "Pin mapping consistent. 200mA regulator and battery dropout require peak-current budget and effective-capacitance check.",
+      "source": "https://www.ti.com/lit/gpn/tps7a02"
+    },
+    {
+      "item": "Layout",
+      "result": "Old board has no copper zones and excessive USB detours; C16/U4 and C22/U8 decoupling distances approximately17/19mm. Passives relocated and U2/U10 moved; rerouting underway. DRC alone does not validate return paths."
+    },
+    {
+      "item": "TXS0104E",
+      "result": "OE tied to V1V8 means power-up high-impedance timing is not independently controlled. Review with rail ramp and GPIO state; TI recommends OE low until rails stable. Short signal paths required.",
+      "source": "https://www.ti.com/lit/ds/symlink/txs0104e.pdf"
+    }
+  ],
+  "pre_order_conditions": [
+    "Finish routed-board DRC/ERC/parity and review USB return paths, power loops, clock routes and copper zones",
+    "JLC BOM includes all80 populated references; resolve stock shortages, inspect actual package/rotation and complete final CPL preview",
+    "Confirm exact six-layer0.8mm stackup,0.10mm trace/clearance,0.35/0.15mm vias and custom USB ground-land DFM",
+    "Confirm finished100mAh protected pack max dimensions,3pin connector polarity/lead length,NTC R25/B/tolerances,charge voltage/current/termination and temperature limits",
+    "Calculate NTC thresholds using confirmed pack tolerances; current resistors provisional",
+    "Check effective MLCC capacitance,SD write-current peaks against200mA LDO and100mA BAT54WS diode ratings; USB load current budget",
+    "Confirm landed quote with allparts,assembly,shipping,taxes and battery/harness; no payment authorized"
+  ],
+  "requires_hardware": [
+    "Continuous16h recording at required audio quality; average current,usable capacity and dropout cutoff",
+    "Charging voltage/current/termination,warm/cold cutoff,NTC open/short,MCU reset and USB plug/unplug transients",
+    "USB enumeration/transfer stability and PDM/SPI waveform integrity across battery range",
+    "SD write-current transients and brownout/power-loss recovery without corrupting completed recordings",
+    "Acoustic port/seal,handling noise,component heights,pack tolerance,case closure and thermal behavior"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "status": "HOST_MOCK_TESTS_PASS_NOT_HARDWARE_QUALIFIED",
+  "variant_define": "PENDANT_FIXED_USB_LIMIT=1",
+  "descriptor_mA": 100,
+  "charging": "Requires separate PENDANT_EXPERIMENTAL_USB_CHARGING=1 bench opt-in; default remains disabled",
+  "default_variant_changed": false,
+  "policy_matrix": [
+    "switched 100 charging off",
+    "switched 500 charging off",
+    "switched 500 charging on",
+    "fixed 100 charging off",
+    "fixed 100 charging on"
+  ],
+  "driver_matrix": [
+    "switched",
+    "fixed"
+  ],
+  "instrumentation": "Clang AddressSanitizer and UndefinedBehaviorSanitizer; mock HAL/TinyUSB",
+  "covered": [
+    "suspend/resume retention",
+    "detach and stale grant revocation",
+    "interrupt interleaving",
+    "charge settling and tick rollover",
+    "fixed variant makes no PB6 writes",
+    "invalid fixed 500mA descriptor rejected at compile time"
+  ],
+  "not_proven": [
+    "physical current limits",
+    "voltage droop",
+    "thermal behavior",
+    "runtime",
+    "target cross-build and factory configuration integration"
+  ],
+  "source_sha256": {
+    "usb/usb_power_budget.h": "63ab39323cc134851c7a494f6a8e70e1d1144ad0e6f9f75a7c730759fed29e90",
+    "usb/usb_input_policy.c": "4e6ea274fc341311ee03a8722055f0f16e757e62ee6da1c7228d94edfce1131e",
+    "board/usb_input_v15.c": "a136941aff8c6fe33874e44d49c51127eb6620d665b6ca77de320d34ad9133e2",
+    "tests/check_usb_input_policy.sh": "debda8e442dce4cc08fef446365ca2a6cc52c2da204b0c7bfbd781b9cb31afd9",
+    "tests/check_usb_input_v15.sh": "035eded4b64dcec178d86d47ebfb580a52f83a6916c52f484c1e988dbe2a6049",
+    "tests/test_usb_input_policy.c": "c76c570a6559a63a28c6b94722ddc31999c03654a61d570196933591f8485397",
+    "tests/test_usb_input_v15.c": "3c21a909575cd9eb717b63888e6d16a70f0a70fcc76eb246943fec291e22e151"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-26",
+  "status": "SUPERSEDED_SIZE_REJECTED_COMPARISON_ONLY",
+  "preferred_redesign_candidate": null,
+  "reason": "Domestic single-unit finished protected pack; 300mA continuous rating and 300mAh capacity remove the former 50mA custom-pack bottleneck. Requires larger case, PH connector and independent contact temperature sensor. Not yet electrically qualified.",
+  "manufacturer_evidence": {
+    "url": "https://www.sengoku.co.jp/item/pdf/SPE-DTP502035%28PHR%29-3.7V-300mAh-en-2.0ver.pdf",
+    "sha256": "28e39893977c372b556a9ab3c34ecd2628a2be164665eb9c677dc1df92a7ed9e",
+    "revision": "E-SPE-0307-01 Ver2.0, 2023-04-24",
+    "pages_visually_read": [
+      2,
+      4,
+      9
+    ],
+    "capacity_nominal_mAh": 300,
+    "capacity_minimum_mAh": 300,
+    "charge_voltage_V": 4.2,
+    "discharge_cutoff_V": 3.0,
+    "standard_charge_mA": 60,
+    "maximum_charge_mA": 150,
+    "charge_termination_mA": 3,
+    "maximum_continuous_discharge_mA": 300,
+    "charge_temperature_C": [
+      0,
+      45
+    ],
+    "discharge_temperature_C": [
+      -20,
+      60
+    ],
+    "completed_pack_maximum_mm": [
+      20.5,
+      37,
+      5.2
+    ],
+    "lead_length_mm": 100,
+    "lead_tolerance_mm": 3,
+    "wire": "UL3302 AWG24",
+    "connector": "JST PHR-2P",
+    "polarity": "Drawing shows red positive and black negative; mating header pad numbering requires separate manufacturer drawing alignment.",
+    "drawing_error": "Pack illustration says 3000mAh; section 3.1 and 3.2 both say 300mAh. Do not use label typo as capacity."
+  },
+  "retail_evidence": [
+    {
+      "url": "https://www.marutsu.co.jp/GoodsDetail.jsp?salesGoodsCode=1559500",
+      "sku": "M1559-500",
+      "listed_unit_tax_included_JPY": 1087,
+      "listed_stock": 83,
+      "stock_timestamp": "2026-09-11 06:35",
+      "current_stock_confirmed": false
+    },
+    {
+      "url": "https://www.inedenki.co.jp/category/lithium/Lipobattery/DTP-502035.html",
+      "listed_unit_tax_included_JPY": 1100,
+      "minimum_quantity": 1,
+      "protection_and_finished_connector_listed": true,
+      "current_stock_confirmed": false
+    },
+    {
+      "url": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5GHG",
+      "minimum_quantity": 1,
+      "current_stock_confirmed": false
+    }
+  ],
+  "alternatives": [
+    {
+      "model": "DTP401525-XE / EZ3",
+      "decision": "Smaller fallback;110mA ceiling, undocumented NTC R-T and tighter runtime budget remain. Existing3pin header fits nominal pinout but not current tiny case.",
+      "source": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5VAC"
+    },
+    {
+      "model": "DTP502535(PHR)",
+      "decision": "400mAh fallback, larger25.5x37x5.2 pack; retail800mA claim must be checked against latest manufacturer revision.",
+      "source": "https://eleshop.jp/shop/g/gH4H31G/"
+    }
+  ],
+  "runtime_scenarios": [
+    {
+      "name": "typical_assumption_not_measurement",
+      "usable_fraction": 0.8,
+      "average_battery_mA": 8,
+      "hours": 30
+    },
+    {
+      "name": "conservative_assumption_not_guaranteed_worst_case",
+      "usable_fraction": 0.6,
+      "average_battery_mA": 11,
+      "hours": 16.363636363636363
+    }
+  ],
+  "runtime_caveat": "Assumed battery-side whole-system currents. Exact card/CPU duty cycle and capacity above LDO dropout not measured; 16h remains a target. At60% usable capacity the16h budget is11.25mA.",
+  "required_changes": [
+    "New revision preserving V13 and r10; PH2 connector matched to actual battery drawing, reverse-polarity protection review",
+    "Known-R-T board-mounted NTC coupled to pouch through electrically insulating thermal pad; retained analog fail-safe temperature window; no reliance on ambient-only sensor",
+    "Re-evaluate TPS7A02 200mA limit independently: larger battery does not fix a >200mA card load",
+    "Choose exact storage card, then C27 and ramp/inrush design",
+    "Redesign enclosure around37mm battery plus100mm unmodified lead storage and PH connector; separate microphone channel; wall/closure thickness and swelling allowance",
+    "Set charge termination and tolerance against3mA specification; do not simply enable present disabled firmware"
+  ],
+  "orders_payments_emails": false,
+  "order_ready": false,
+  "user_size_correction": "User rejected300mAh case35x47mm; maximum approximately30x30mm and thickness15mm. DTP502035 no longer preferred. Preserve for comparison only."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "EXPERIMENTAL_NOT_RELEASED",
+  "via_change": "CHG_ALLOW via (12.8422,3.6978) moved +0.05mm X; DRC0/remaining5",
+  "obstruction": "B layer SD_EN route also traps MCU resume exit",
+  "resume_first": "Removing SD_EN copper and routing resume first succeeds with DRC0",
+  "partial_sd_route": "resume-first-rejected-SD_EN is DRC0 with GND4+MCU18 SD_EN missing; useful despite equal total unconnected count",
+  "signal_complete_trial": "Same DRC0/remaining5; SD_EN existing PB0 pin18 no path",
+  "sd_pin_scan": {
+    "session": 17329,
+    "source": "signal-complete-trial.kicad_pcb",
+    "pins": [
+      "43",
+      "41",
+      "45",
+      "46",
+      "13",
+      "30",
+      "31",
+      "28",
+      "25",
+      "38",
+      "21"
+    ],
+    "status": "RUNNING",
+    "warning": "Design and firmware not synchronized until accepted candidate pin is known"
+  },
+  "firmware_unchanged": "PA2 suspend/PB6 budget/PB7 resume; SD power still PB0"
+}

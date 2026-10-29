@@ -1,0 +1,81 @@
+{
+  "version": "XE-PROTOTYPE-V1",
+  "date": "2026-10-28",
+  "status": "PACK_NTC_27P5X27P5_CANONICAL_PCB_AND_CASE_V4_SYNCHRONIZED_PHYSICAL_QUALIFICATION_REQUIRED",
+  "canonical_circuit": "hardware/xe-minimal/prototype-architecture-v1.json",
+  "pcb": {
+    "source": "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb",
+    "sha256": "88c8de8b93d381bebcbaff40389bf0d45dbb30cb603bd6cb336945f068493c63",
+    "step": "mechanical/xe-minimal/prototype-v1/pcb-assembly-pack-ntc.step",
+    "step_sha256": "930fcc6d438784596ee807fc457653c22c2ca3a19708c54a1944d3e705923993",
+    "outline_mm": [27.5, 27.5],
+    "step_geometry_note": "Board top edge extended 0.5mm for an ordinary B.Cu route from the fixed pack NTC; TH1 removed"
+  },
+  "step_export_missing_models": [
+    {
+      "reference": "U1",
+      "part": "STM32U585CIU6",
+      "required_action": "Add datasheet maximum body and solder-standoff envelope"
+    },
+    {
+      "reference": "U8",
+      "part": "IM69D130V01XTSA1",
+      "required_action": "Add datasheet maximum body envelope and preserve bottom acoustic port keepout"
+    },
+    {
+      "reference": "J2",
+      "part": "Molex 781710003",
+      "required_action": "Add header maximum envelope plus plug mating/removal access envelope"
+    }
+  ],
+  "excluded_as_final_baselines": [
+    {
+      "artifact": "mechanical/xe-minimal/film-integration-integrated-board.step",
+      "sha256": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+      "reason": "Generated from older film-integration-trial PCB, not canonical XE-PROTOTYPE-V1 board"
+    },
+    {
+      "artifact": "mechanical/xe-minimal/ntcaflex-expanded-right-lower-trial.step",
+      "reason": "NTCAFLEX not selected; prior local placement exploration is historical only"
+    },
+    {
+      "artifact": "mechanical/xe-minimal/film-sensor-body-bridge-separator-trial.step",
+      "reason": "Old shoulder-stop retention is infeasible at the selected insulation clearance"
+    },
+    {
+      "artifact": "mechanical/xe-minimal/film-wide350-integration-candidate.json",
+      "reason": "Uses stale PCB and does not provide the newly selected separate sensor-body support and wire strain relief"
+    }
+  ],
+  "adopted_case_candidate": {
+    "assembly": "mechanical/xe-minimal/prototype-v1/case-pebble-v5-assembly.step",
+    "assembly_sha256": "7b162a5c564c5b17b356f8d644b9bc84c532a04b711159bb4f5f167f46654951",
+    "review": "mechanical/xe-minimal/prototype-v1/case-pebble-v5-review.json",
+    "nominal_internal_intersections_mm3": 0.0,
+    "physical_status": "UNPRINTED_UNMEASURED",
+    "usb_local_bezel": "Aligned to modeled connector mating face; 14 x 7.5 mm overmold bay, physical six-cable fit still required"
+  },
+  "retained_inputs": {
+    "battery_max_body_mm": [15.5, 27.0, 4.2],
+    "battery_lead_length_mm": "15 +/-3",
+    "battery_plug": "Molex 781720003; full battery harness envelope still requires physical receiving inspection",
+    "temperature_sensor": "DTP401525-XE internal 10k NTC on factory P2 white lead; no thermal pad",
+    "case_process": "case-pebble-v5-print-profile.json: PETG, 0.4mm nozzle, lower X-axis/upper Z-axis build orientation; physical qualification required",
+    "closure": "Initial prototype may glue case mating seam; do not glue battery, leads or sensor to battery",
+    "shape": "Rounded corners and edges; neck-cord feature and microphone opening included in final envelope"
+  },
+  "next_model_contract": [
+    "Use the canonical PCB STEP plus explicit maximum envelopes for every missing/uncertain tall component",
+    "Model battery body, original three-wire leads, plug, header mating/removal motion, strain relief and insulation",
+    "Provide one assembly coordinate system shared by PCB, lower, upper, internal carrier and exploded model",
+    "Do not add a case thermal bridge or local pouch-pressure feature; temperature comes from the pack NTC",
+    "Report complete exterior dimensions including cord feature and all protrusions",
+    "Export editable source, STEP, STL/3MF and same-scale identified Omi comparison only after the assembly model passes"
+  ],
+  "not_proven": [
+    "Case v4 is the synchronized CAD candidate, not a physically qualified production case",
+    "The STEP export success is not a complete component-envelope or fit proof",
+    "Pure CAD clearance will not prove print tolerance, harness bend, pouch pressure or thermal response",
+    "No print, purchase or order was made"
+  ]
+}

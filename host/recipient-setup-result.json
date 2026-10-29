@@ -1,0 +1,15 @@
+{
+  "status": "HELPER_TESTED_NOT_USER_PROVISIONED",
+  "test": "AGE_BIN=/tmp/pendant-host-tools/age AGE_KEYGEN_BIN=/tmp/pendant-host-tools/age-keygen python3 -m unittest discover -s host -p test_prepare_recipient.py",
+  "result": "PASS standardage encrypt/decrypt with generatedidentity;publicheader;0700/0600;overwrite/symlinkrefusal",
+  "user_keys_created": false,
+  "test_keys": "temporary fixture removed by test",
+  "sha256": {
+    "host/prepare_recipient.py": "3abe5ee8d86bc714c01ee4ffda40c1d858a103e5ac98ff4e8b8f89fcddd05252",
+    "host/test_prepare_recipient.py": "ac89333acdb8404c2a93407d8969a12c82ea6660dcbbbd6a44ed32b45a3d1c27",
+    "host/RECIPIENT_SETUP.txt": "3aa3a89a6ec2c2b3d4906f781aebff111515877faf8e1db9e30d4ff1d5dbc493",
+    "host/README.md": "17065a6a250e7b3cc81dcdba8efedc15587c58bf5cd7bf098608133c2973a7cd"
+  },
+  "latest_check": "PASS 2026-10-27 with explicit /tmp/pendant-host-tools age binaries; initial PATH-only test skipped, not counted as pass",
+  "windows_status": "Implementation added; see windows-recipient-validation.json. POSIX test does not validate Windows."
+}

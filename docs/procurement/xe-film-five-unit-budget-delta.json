@@ -1,0 +1,86 @@
+{
+  "status": "CURRENT_FILM_BUDGET_DELTA_NOT_COMPLETE_QUOTE",
+  "prototype_count": 5,
+  "source_sha256": {
+    "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/candidate-mpn-review.csv": "60cdf408e202de65d9617261bc2336600b42a8e5f31b693b33bfcb01716b09d7",
+    "hardware/xe-minimal/film-integration-trial/candidate-mpn-review.csv": "c27f52552614e7dd432c69cdef4c3f280f85c9385c1d25c939b38666e9c43449",
+    "docs/procurement/xe-five-unit-budget-review.json": "76fc0148bf9db7fe7605854b527620254537832f5e77f828754cf922d2ec1a79",
+    "docs/procurement/xe-film-sensor-joining-materials.json": "5e15af987403525fc4994b2d4e1d02f4446cc05fe630ed38452685f4025c7548"
+  },
+  "changed_mpn_references": [
+    {
+      "reference": "R13",
+      "previous_mpn": "RC0402FR-07100KL",
+      "current_candidate_mpn": "RC0201FR-07100KL",
+      "installed_quantity_five": 5,
+      "price_delta": null
+    },
+    {
+      "reference": "TH1",
+      "previous_mpn": "NCU18XH103F60RB",
+      "current_candidate_mpn": "103JT-025",
+      "installed_quantity_five": 5,
+      "price_delta": null
+    }
+  ],
+  "unchanged_mpn_references": 73,
+  "cost_transfer_policy": "Do not label historical whole-budget subtotals as current-film totals. Unchanged MPN does not imply unchanged procurement quantity, availability, assembly or price.",
+  "historical_material_purchase_scenario": {
+    "wire": {
+      "quantity": 1,
+      "package_m": 2,
+      "JPY_including_tax": 1050,
+      "observation_date": "2026-10-27"
+    },
+    "tape": {
+      "quantity": 1,
+      "width_mm": 6.35,
+      "length_m": 32.9,
+      "JPY_including_tax": 7339.2,
+      "observation_date": "2026-10-27"
+    },
+    "subtotal_JPY_including_tax": 8389.2,
+    "scope": "Full package cash outlay for candidate materials, not five-device consumption cost; excludes shipping and price changes; material process remains unqualified. Not added to old subtotal."
+  },
+  "required_recalculation": [
+    "Remove historical NCU18XH103F60RB line, add5 installed103JT-025 plus process spares.",
+    "Split R13 from100k0402 purchase group into100k0201; other0402 resistors remain.",
+    "Remove TH1 from automated placement and SMT feeder count; add seller wire cutting/stripping/soldering/insulation/inspection labor.",
+    "Recalculate actual per-side SMT feeder and attrition categories;39 grouped BOM rows are not39 feeders.",
+    "Add current six-layer panel fabrication, filled/capped vias, inspection and seller depanelization.",
+    "Add case material/print time, adhesives, fixtures/programming/test labor, shipping and taxes."
+  ],
+  "complete_five_unit_total": null,
+  "order_ready": false,
+  "current_assembly_counts": "docs/procurement/xe-film-assembly-counts.json",
+  "current_assembly_summary": {
+    "pcb_assembly_components_per_unit": 74,
+    "seller_external_sensors_per_unit": 1,
+    "pcb_assembly_components_five": 370,
+    "sides": {
+      "top": 24,
+      "bottom": 50
+    },
+    "pcb_assembly_unique_mpn": 38,
+    "pcb_assembly_unique_mpn_side_pairs": 46,
+    "pcb_assembly_pad_counts_per_unit": {
+      "smd_pads": 300,
+      "plated_through_pads": 4,
+      "other_pads": 3
+    },
+    "seller_sensor_attachment_pad_counts_per_unit": {
+      "smd_pads": 2,
+      "plated_through_pads": 0,
+      "other_pads": 0
+    }
+  },
+  "case_resource_estimate": {
+    "path": "docs/procurement/xe-wide350-case-resource-estimate.json",
+    "scope": "Wide350 review candidate; 15 repeated single-part jobs, slicer estimates only. Complete five-unit price still unknown."
+  },
+  "changed_part_retail_observation": "docs/procurement/xe-film-r13-th1-retail-prices.json",
+  "consignment_route_review": "docs/procurement/xe-film-consignment-route-review.json",
+  "r13_assembler_route": "docs/procurement/xe-r13-jlc-availability.json",
+  "current_demand_reference_parts_cost": "docs/procurement/xe-film-reference-parts-cost.json",
+  "nonoverlapping_mixed_currency_reference": "docs/procurement/xe-film-combined-reference-cost.json"
+}

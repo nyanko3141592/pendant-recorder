@@ -1,0 +1,35 @@
+{
+  "status": "PUBLIC_STACKUP_MATCH_USB_AND_SERVICE_PENDING",
+  "checked_date": "2026-10-29",
+  "source": "https://jlcpcb.com/impedance",
+  "method": "Rendered public page: select four-layer 0.8mm; read JLC04081H-3313 row, outer1oz/inner0.5oz",
+  "pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "stackup_name": "JLC04081H-3313",
+  "copper_and_dielectric_thickness_mm": [
+    0.035,
+    0.0994,
+    0.0152,
+    0.5,
+    0.0152,
+    0.0994,
+    0.035
+  ],
+  "sum_mm": 0.7992,
+  "prepreg_er": 4.1,
+  "core_er": 4.6,
+  "matches_packaged_pcb": true,
+  "mask_parameters_mil": {
+    "above_substrate": 1.2,
+    "above_trace": 0.6,
+    "between_traces": 1.2,
+    "er": 3.8
+  },
+  "remaining": [
+    "Public impedance page minimum via 0.2mm conflicts with six 0.15mm drilled vias accepted by separate general dimensional screen; service applicability unresolved, not presumed acceptance",
+    "USB 90ohm requires actual differential spacing, mask, neck and transitions; layer-stack match alone does not prove impedance",
+    "Finished thickness tolerance, supplier DFM and cost not certified"
+  ],
+  "legacy_page_not_authoritative": "cart.jlcpcb.com/client/template/placeOrder/impedance.html reports different Er/core values; use current rendered main page for this selected named stackup",
+  "board_changed": false,
+  "order_allowed": false
+}

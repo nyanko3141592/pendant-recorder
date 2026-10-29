@@ -1,0 +1,106 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T13:51:59",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "input-final-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_RESUME_PULSE] ( F.Cu 上、長さ: 0.9775 mm )",
+                    "pos": {
+                        "x": 21.49,
+                        "y": 2.4775
+                    },
+                    "uuid": "5dc3881e-b06b-4293-8754-5434634d0c90"
+                },
+                {
+                    "description": "パッド 43 [/USB_RESUME_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "593c7cd6-e14b-4fc6-bd52-2e394d9fec73"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( F.Cu 上、長さ: 0.0849 mm )",
+                    "pos": {
+                        "x": 10.49,
+                        "y": 17.4975
+                    },
+                    "uuid": "a2ea48cc-78b5-4508-baae-70f285630ab0"
+                },
+                {
+                    "description": "パッド 42 [/USB_HIGH_BUDGET] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.405,
+                        "y": 11.3425
+                    },
+                    "uuid": "69a4e4be-91c9-4dde-b3b8-3c89550ff4f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_SUSPEND_PULSE] ( B.Cu 上、長さ: 1.2906 mm )",
+                    "pos": {
+                        "x": 22.0625,
+                        "y": 4.45
+                    },
+                    "uuid": "4acae404-8d62-4220-b077-bf75387d4659"
+                },
+                {
+                    "description": "パッド 41 [/USB_SUSPEND_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

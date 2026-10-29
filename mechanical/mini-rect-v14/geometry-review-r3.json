@@ -1,0 +1,30 @@
+{
+  "status": "GEOMETRY_STUDY_NOT_PRINT_OR_MANUFACTURING_RELEASE",
+  "source_handoff_sha256": "9c2a32ab65c6ff9e4d9ce00c1e9a9e86a4155276df5498a7e9663050ddd4fae6",
+  "source_board_sha256": "9ac538cc7bea1d975036c040e6fa845b0720aca846614b1566919d882d739c2e",
+  "case_mm": [
+    35,
+    47,
+    14.8
+  ],
+  "pcb_bottom_z_mm": 8.6,
+  "battery_max_mm": [
+    20.5,
+    37,
+    5.2
+  ],
+  "intersections": [],
+  "case_valid": true,
+  "lid_valid": true,
+  "case_lid_overlap_mm3": 0.0,
+  "limitations": [
+    "Placement matches acoustic-clearance electrical candidate; DRC pass alone is not design approval",
+    "Three PCB support ledges added; retention and lid closure unqualified",
+    "No100mm harness or matedPH housing solid; room must be checked next",
+    "Sensor bottom8.0mm versus pouch top6.7mm leaves1.3mm thermal-interface gap; pad not selected",
+    "Side acoustic channel0.8mm bore with0.4mm minimum walls; rigid PCB contact has no compliant gasket yet; response and printability unqualified",
+    "Rectangular part envelopes include courtyards and are not detailed solids",
+    "No swelling tolerance, manufacturing tolerance or strength validation",
+    "No slicing or physical printing performed;3MF contains mesh only"
+  ]
+}

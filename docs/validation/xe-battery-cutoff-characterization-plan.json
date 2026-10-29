@@ -1,0 +1,54 @@
+{
+  "plan_id": "XE-DTP401525-XE-CUTOFF-CHAR1",
+  "status": "READY_FOR_PHYSICAL_CHARACTERIZATION_NOT_RUN",
+  "battery_mpn": "DTP401525-XE",
+  "capacity_mAh": 110,
+  "pack_ids": ["P1", "P2", "P3", "P4", "P5"],
+  "purpose": "Select a safe recorder stop threshold before building the common EVT image without circularly requiring that image to have already passed EVT C.",
+  "load_profile": {
+    "average_mA_min": 4.4,
+    "peak_mA": 110,
+    "peak_duration_ms_min": 200,
+    "peak_repetition_s_max": 5,
+    "must_reproduce_peak_timing_from_current_budget_or_worse": true,
+    "continuous_discharge_no_pause": true
+  },
+  "measurements": [
+    "pack_terminal_voltage_and_current",
+    "integrated_discharge_mAh",
+    "SYS_and_V3V3_rails_under_average_and_peak_load",
+    "MCU_ADC_readback_error_against_calibrated_DMM",
+    "storage_write_and_finalize_success_near_candidate_threshold",
+    "pack_protection_trip_or_recovery_behavior",
+    "low_battery_PA0_WKUP1_low_standby_entry_and_battery_current",
+    "USB_insertion_wakeup_reset_latency_and_9_to_11mA_charge_recovery",
+    "temperature_and_elapsed_time"
+  ],
+  "selection_rule": [
+    "For every pack, derive the minimum terminal voltage at which SYS, V3V3, MCU, storage writes and file finalization remain inside their qualified limits under the 110mA peak.",
+    "Add measured ADC error, rail transient and repeatability margin; selected_cutoff_mv must be at or above the worst-pack resulting minimum_safe_cutoff_mv.",
+    "At 25C every pack must deliver at least 70.4mAh before reaching selected_cutoff_mv under the conservative load profile.",
+    "After controlled finalization every pack must enter Standby with charge request and LED off; completed-device battery current must be <=150uA. This is a prototype acceptance ceiling, not a measured result or an indefinite-storage guarantee.",
+    "With PA0 VBUS_N configured as active-low WKUP1, USB insertion must reset-wake within 1000ms and recover 9-11mA charging without corrupting completed files.",
+    "The selected threshold is only a build input. The final common image must then pass EVT C on all five complete devices for at least 57600 seconds; failure requires a new image and complete Gate C restart."
+  ],
+  "required_result_evidence_schema": {
+    "status": "BATTERY_CUTOFF_SELECTED_FROM_FIVE_PACK_PHYSICAL_CHARACTERIZATION",
+    "battery_mpn": "DTP401525-XE",
+    "capacity_mAh": 110,
+    "tested_pack_ids": ["P1", "P2", "P3", "P4", "P5"],
+    "selected_cutoff_mv": "integer_3000_to_4200",
+    "minimum_safe_cutoff_mv": "integer_3000_to_4200_and_le_selected",
+    "minimum_usable_capacity_to_selected_cutoff_mAh": "number_ge_70.4",
+    "load_average_mA": "number_ge_4.4",
+    "load_peak_mA": "number_ge_110",
+    "standby_current_uA_max": "number_le_150",
+    "wake_to_charge_ms_max": "number_le_1000",
+    "post_wake_charge_current_mA_min_max": "9_to_11",
+    "all_packs_passed": true,
+    "raw_evidence_manifest_sha256": "lowercase_sha256"
+  },
+  "result": "NOT_RUN",
+  "release_rule": "Characterization alone never proves 16h runtime. It only authorizes building the EVT image; EVT C remains mandatory on all five completed units.",
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

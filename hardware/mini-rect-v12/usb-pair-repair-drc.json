@@ -1,0 +1,152 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:02:57",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-pair-repair.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( In2.Cu 上、長さ: 4.5010 mm )",
+                    "pos": {
+                        "x": 9.3123,
+                        "y": 7.673
+                    },
+                    "uuid": "13b18e1f-2e92-4784-83d5-31eaedbe2fe8"
+                },
+                {
+                    "description": "パッド 37 [/SWCLK] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "f048dcc7-b4c3-464d-a0a0-7a3c29384f12"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In3.Cu 上、長さ: 1.0167 mm )",
+                    "pos": {
+                        "x": 10.3033,
+                        "y": 14.7774
+                    },
+                    "uuid": "331935bb-537c-437c-ad42-a0f8d0343361"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( F.Cu 上、長さ: 0.3054 mm )",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "d63d5fdb-93f0-46e8-baa9-b3d66b00484a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0937 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 1.2728 mm )",
+                    "pos": {
+                        "x": 7.1,
+                        "y": 13.4
+                    },
+                    "uuid": "04238e20-22a7-47f3-80ba-97060ef82fda"
+                },
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.2022,
+                        "y": 13.9529
+                    },
+                    "uuid": "c5caec8e-e09e-47cc-8522-5bfd8e2ba761"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 0.9569 mm )",
+                    "pos": {
+                        "x": 8.0244,
+                        "y": 12.0624
+                    },
+                    "uuid": "92f87e29-ef9d-4129-a4f5-6b732d6286eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.2022,
+                        "y": 13.9529
+                    },
+                    "uuid": "c5caec8e-e09e-47cc-8522-5bfd8e2ba761"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In3.Cu 上、長さ: 1.0167 mm )",
+                    "pos": {
+                        "x": 10.3033,
+                        "y": 14.7774
+                    },
+                    "uuid": "331935bb-537c-437c-ad42-a0f8d0343361"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

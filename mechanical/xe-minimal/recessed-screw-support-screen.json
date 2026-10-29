@@ -1,0 +1,62 @@
+{
+  "status": "RECESSED_SCREW_SUPPORT_SCREEN_NOT_ADOPTED",
+  "center": [
+    18.1,
+    -26
+  ],
+  "hypothesis": {
+    "screw_length_mm": 5,
+    "head_diameter_mm": 1.8,
+    "head_height_mm": 0.45,
+    "seat_z_mm": 1.7,
+    "nut_z_mm": [
+      -3.2,
+      -2.4
+    ],
+    "lower_support_radius_mm": 1.9
+  },
+  "cases": [
+    {
+      "upper_support_radius_mm": 1.2,
+      "upper_components_collision_mm3": 0.0,
+      "upper_case_attachment_mm3": 0.8354209079588402,
+      "lower_components_collision_mm3": 0.0,
+      "lower_battery_collision_mm3": 0.0,
+      "lower_case_attachment_mm3": 11.949293675159586
+    },
+    {
+      "upper_support_radius_mm": 1.4,
+      "upper_components_collision_mm3": 0.0,
+      "upper_case_attachment_mm3": 2.0847116392559117,
+      "lower_components_collision_mm3": 0.0,
+      "lower_battery_collision_mm3": 0.0,
+      "lower_case_attachment_mm3": 11.949293675159586
+    },
+    {
+      "upper_support_radius_mm": 1.6,
+      "upper_components_collision_mm3": 0.0,
+      "upper_case_attachment_mm3": 3.7541020053127543,
+      "lower_components_collision_mm3": 0.0,
+      "lower_battery_collision_mm3": 0.0,
+      "lower_case_attachment_mm3": 11.949293675159586
+    },
+    {
+      "upper_support_radius_mm": 1.9,
+      "upper_components_collision_mm3": 0.3466629880877183,
+      "upper_case_attachment_mm3": 8.098248533748697,
+      "lower_components_collision_mm3": 0.0,
+      "lower_battery_collision_mm3": 0.0,
+      "lower_case_attachment_mm3": 11.949293675159586
+    }
+  ],
+  "limitations": [
+    "Nut supporting roof thickness and complete thread engagement not yet reconciled; screen alone is not a usable screw joint",
+    "Nut pocket and assembly retention not cut",
+    "Nominal models only; screw and case tolerances absent",
+    "Uses component model from pre-hole PCB; hole excluded by z ranges",
+    "Driver access and second fixing point unresolved"
+  ],
+  "screw_source": "https://www.nbk1560.com/products/specialscrew/nedzicom/miniaturescrew/SNZS-M/SNZS-M1/SNZS-M1-5/",
+  "screw_candidate": "SNZS-M1-5",
+  "procurement": "Manufacturer catalog lists 5mm SKU; current delivery/stock not live verified"
+}

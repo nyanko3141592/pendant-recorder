@@ -1,0 +1,194 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T06:14:43",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "chg-r11-escape-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.295,
+                        "y": 9.245
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - Q3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.3175,
+                        "y": 23.475
+                    },
+                    "uuid": "80905ce2-b930-431a-9044-931160fed9bc"
+                },
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                },
+                {
+                    "description": "パッド 2 [/VBUS_GATE] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.77,
+                        "y": 3.0
+                    },
+                    "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 10 [/VBUS_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 6.0175
+                    },
+                    "uuid": "3a7f0ffb-7b79-4334-a26d-02755372c753"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 1.3392 mm )",
+                    "pos": {
+                        "x": 14.1925,
+                        "y": 22.525
+                    },
+                    "uuid": "6625262b-ec63-4024-a6c6-14d5e46190dc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 12 [/USB_SUSPEND_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.0175
+                    },
+                    "uuid": "416e95a4-97f8-4ab5-b554-3ed6e6f90a13"
+                },
+                {
+                    "description": "配線 [/USB_SUSPEND_PULSE] ( B.Cu 上、長さ: 3.3784 mm )",
+                    "pos": {
+                        "x": 9.3175,
+                        "y": 2.975
+                    },
+                    "uuid": "dae4ed7d-5da9-4149-930f-cad76f1f1506"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 6.85,
+                        "y": 23.3
+                    },
+                    "uuid": "13307ae0-4e8e-44dd-9467-f0d7d6528366"
+                },
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "パッド 27 [/CHG_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 6.0175
+                    },
+                    "uuid": "59f8625a-35e8-4d8f-b79a-b9608e272ce7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 6.85,
+                        "y": 23.3
+                    },
+                    "uuid": "13307ae0-4e8e-44dd-9467-f0d7d6528366"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

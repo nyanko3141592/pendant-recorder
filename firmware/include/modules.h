@@ -1,11 +1,11 @@
 #pragma once
+// HISTORICAL / NON-PRODUCTION: initial XIAO ESP32S3 evaluation stub.
+// The current product firmware authority is firmware/stm32/.
 #include <stdint.h>
 #include <stddef.h>
 // 録音: PDMマイク -> PCM
 bool audio_begin();
 size_t audio_read(int16_t* buf, size_t samples);
-// VAD
-bool vad_is_voice(const int16_t* buf, size_t samples);
 // WAV -> SD
 bool wav_begin();
 bool wav_open_new();          // YYYYMMDD_HHMMSS.wav

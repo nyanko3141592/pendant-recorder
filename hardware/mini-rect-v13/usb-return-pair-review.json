@@ -1,0 +1,33 @@
+{
+  "status": "PARTIAL_RETURN_COVERAGE_GAIN_NOT_RELEASED",
+  "candidate_sha256": "5ca3a0e143c8c8b2834b4492afbcd29e5e5cb0bfd65c6bee5e2626fe46650af8",
+  "drc": 0,
+  "unconnected": 0,
+  "change": "Combined qualified-DRC SD_V3 corridor/GND via with DP andDM inner-layer doglegs",
+  "coverage_B_Cu": {
+    "DP": [
+      0,
+      69
+    ],
+    "DM": [
+      9,
+      87
+    ]
+  },
+  "baseline_coverage_B_Cu": {
+    "DP": [
+      0,
+      69
+    ],
+    "DM": [
+      0,
+      87
+    ]
+  },
+  "limitations": [
+    "All B.Cu trace samples include USB connector stubs/fanout; no whole-pair reference guarantee",
+    "DP reference remains absent at sampled B.Cu positions",
+    "Extra pair length/spacing and final impedance unqualified",
+    "Original power-width candidate remains baseline; no final Gerber release"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PROVISIONAL_STACK_NOT_FINISHED_PRODUCT",
+  "source_step_sha256": "174dc3ed85513977b7002a7b362c44bd9ee7dfab60f11169c3be24ea174aff48",
+  "output_sha256": "7d63d254d487d652bd99a6fb00db6b604f3ca50c0582968c7069ff7ecfd81c34",
+  "selected_geometric_candidate": {
+    "side": "B",
+    "pack_x_min_mm": 0.5,
+    "pack_y_range_mm": [
+      -27,
+      0
+    ],
+    "pack_z_range_mm": [
+      -6.12,
+      -1.9200000000000002
+    ],
+    "assumed_clearance_mm": 0.2,
+    "total_z_extent_without_case_mm": 10.271400100000001,
+    "limiting_solid_indices": [
+      115
+    ]
+  },
+  "selection_reason": "Pack shifted to x0.5 to reduce hypothetical lead reach; pre-mate connector before seating pack. Increased thickness and unverified housing/support prevent final selection.",
+  "limitations": [
+    "Bounding-box overlap is conservative; not exact solid collision.",
+    "No lead path, connector mating, assembly access, swelling, insulation thickness, retention, acoustic seal or case walls.",
+    "0.2mm gap is a study assumption, not qualified clearance.",
+    "Package geometries include provisional envelopes; this cannot establish final product size.",
+    "Connector access and uncut lead reach not yet verified.",
+    "Unverified package/library geometries retained."
+  ]
+}

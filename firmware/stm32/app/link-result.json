@@ -1,0 +1,56 @@
+{
+  "status": "LINK_CHECK_ONLY_NOT_FOR_FLASH",
+  "elf": "/tmp/pendant-sd-chunk-link/candidate-NOT-FOR-FLASH.elf",
+  "sha256": "180d800aff8c406203508dc35371b7b72cf5400374b3151516346a145f5a1273",
+  "flash_allocated_bytes": 110731,
+  "main_ram_data_bss_bytes": 192125,
+  "reserved_stack_bytes": 24576,
+  "reserved_heap_bytes": 512,
+  "sram4_lpbam_bytes": 4192,
+  "main_ram_capacity_bytes": 262144,
+  "sram4_capacity_bytes": 16384,
+  "garbage_collection": true,
+  "scope": "Actual app entry wires boot/runtime plus periodic battery ADC and button LED; no physical execution.",
+  "missing": [
+    "Allocated USB IDs and persistent user recipient provisioning",
+    "Real audio/USB/current/ADC/latency tests",
+    "Charging qualification and low-power clock/Stop2 policy"
+  ],
+  "limitations": [
+    "NOT FOR FLASH: synthetic USB IDs and disposable recipient",
+    "24KiB stack reservation still requires indirect-call/library/IRQ bounds and physical high-water tests",
+    "Encryption direct known-frame sum3328bytes; dedicated65552byte static workspace wiped on every exit and serialized by age_writer"
+  ],
+  "build_script_sha256": "6bc94a3327334d672eddfd85d1525ddb572a38e0e5729e9366c85ae5d0204253",
+  "stack_screen": "stack-screen.json",
+  "symbol_verification": {
+    "present": [
+      "main",
+      "recorder_boot_start",
+      "recorder_runtime_poll",
+      "age_write_recording",
+      "plencrypt",
+      "board_battery_measure_mv",
+      "tud_msc_read10_cb",
+      "tud_msc_write10_cb",
+      "f_write",
+      "LPDMA1_Channel0_IRQHandler"
+    ],
+    "absent": [
+      "pldecrypt",
+      "age_decipher"
+    ]
+  },
+  "allocation_test": "check_age_writer.py intercepts vendor/adapter malloc/realloc; zero calls across successful encryption and RNG/writer failure/retry cases,0..131072bytes. Does not prove libc or whole firmware allocation-free.",
+  "stack_guard": {
+    "scope": "Privileged MSP thread mode only; main initializes MSPLIM and verifies readback",
+    "lower_address": "0x2003a000",
+    "upper_address": "0x20040000",
+    "verified": "Linked symbols and generated MSR/MRS MSPLIM, DSB/ISB inspected",
+    "not_verified": "Physical overflow trapping, fault recovery, IRQ-stack margin; no claim to catch arbitrary buffer overwrite"
+  },
+  "rng_context_guard": "ISR or interrupt-masked RNG requests fail before HAL access, wipe output, and latch failure; mock sanitizer tests and ARM app link passed.",
+  "shared_clock_manager": "Per-request RNG lease; HAL init/health validation, random generation, deinit/reset/clock-off and lease release. USB lease prevents shared oscillator shutdown.",
+  "queue_telemetry": "Producer high_water added for debugger/bench evaluation; no physical latency guarantee.",
+  "sd_payload_transfer": "32-byte chunks, 16 exchanges per512byte payload; no physical throughput/power claim"
+}

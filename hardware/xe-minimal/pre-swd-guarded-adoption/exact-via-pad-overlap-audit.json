@@ -1,0 +1,131 @@
+{
+  "status": "OPEN_MANUFACTURING_REVIEW_REQUIRED",
+  "board_sha256": "76f5fd66d108494a84fe8955031bceb2027f6cad1f88f7d9be3ff5a11014fb78",
+  "method": "KiCad effective copper pad shape collision vs via radius and additional0.025mm; F/B layers",
+  "flagged_vias": 7,
+  "vias": [
+    {
+      "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de",
+      "xy_mm": [
+        20.7,
+        10.6
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "36",
+          "net": "/V3V3",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "f56b75e3-cbac-43f7-87aa-2ed403ecea9f",
+      "xy_mm": [
+        12.35,
+        10.2
+      ],
+      "hits": [
+        {
+          "ref": "R45",
+          "pad": "1",
+          "net": "/USB_ILIM_SET",
+          "layer": "F.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "e71d5545-68b9-4075-892a-e0c29c1aae7b",
+      "xy_mm": [
+        15.0125,
+        3.0
+      ],
+      "hits": [
+        {
+          "ref": "U13",
+          "pad": "4",
+          "net": "/USB_INPUT_ON",
+          "layer": "F.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "b8753f4c-af58-4502-81f5-f6fe262a24ad",
+      "xy_mm": [
+        17.15,
+        4.35
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "19",
+          "net": "/USB_RESUME_PULSE",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "f1ae5096-e5b3-444d-a732-8c82734bbb32",
+      "xy_mm": [
+        0.745,
+        0.795
+      ],
+      "hits": [
+        {
+          "ref": "R50",
+          "pad": "1",
+          "net": "/USB_RESUME_PULSE",
+          "layer": "F.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "2820b8d9-5a9b-42ba-8cab-faa32ec27372",
+      "xy_mm": [
+        8.25,
+        4.5
+      ],
+      "hits": [
+        {
+          "ref": "R48",
+          "pad": "2",
+          "net": "/USB_LATCH_CLEAR_N",
+          "layer": "F.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e",
+      "xy_mm": [
+        18.1,
+        11.5
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "40",
+          "net": "/PDM_DATA",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Solder mask openings, actual drill registration and fabrication capability not qualified.",
+    "Resolve by geometry changes or qualified filled/capped process before release."
+  ]
+}

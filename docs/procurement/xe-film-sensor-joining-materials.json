@@ -1,0 +1,142 @@
+{
+  "status": "SENSOR_JOINING_MATERIAL_SCREEN_NOT_SELECTED",
+  "date": "2026-10-27",
+  "wire_candidate": {
+    "manufacturer": "Nikko Densen",
+    "mpn": "1001-08B",
+    "manufacturer_source": "https://www.nikko-densen.co.jp/pdf/etfe.pdf",
+    "AWG": 32,
+    "strands": "7/0.08mm",
+    "conductor_diameter_mm": 0.24,
+    "finished_diameter_mm": 0.54,
+    "insulation": "ETFE",
+    "diameter_tolerance": null,
+    "retail_lead": "https://shop.oyaide.com/products/p-3916.html?options=cart",
+    "retail_status": "Canonical URL opened once, but subsequent body/price retrieval405. Exact price and available color/quantity not verified."
+  },
+  "tape_candidate": {
+    "manufacturer": "3M",
+    "mpn": "92",
+    "manufacturer_source": "https://multimedia.3m.com/mws/media/37434O/3m-polyimide-film-electrical-tape-92-data-sheet-78-8124-4760-1-f.pdf",
+    "revision": "May2021",
+    "construction": "Polyimide electrical tape with silicone adhesive",
+    "described_thickness_mil": 2.75,
+    "converted_typical_thickness_mm": 0.06985,
+    "thickness_tolerance": null,
+    "limits": "Manufacturer product-description excerpt obtained; full property table retrieval timed out and localdownload403. Do not substitute distributor0.076mm as exact spec.",
+    "retail_observation": {
+      "url": "https://shimojima.jp/shop/g/g2500200899292/",
+      "seller": "Shimojima / TRUSCO direct shipment",
+      "date": "2026-10-27",
+      "item_code": "2500200899292",
+      "JAN": "4562434370273",
+      "product": "3M92 12mm x32.9m",
+      "minimum_rolls": 1,
+      "price_JPY_including_tax": 22075,
+      "stock_text": "あり",
+      "stock_quantity": null,
+      "not_reserved": true,
+      "supplier_stock_cancellation_possible": true,
+      "listed_thickness_mm": 0.08,
+      "thickness_warning": "Retail thickness differs from2.75mil manufacturer-description conversion; do not treat either as maximum thickness without exact supplied-product specification.",
+      "excluded_from_adopted_budget": true
+    },
+    "alternative_retail_observation": {
+      "url": "https://www.digikey.jp/en/products/detail/3m/92-AMBER-1-4-X36YD/1819613",
+      "date": "2026-10-27",
+      "mpn": "92-AMBER-1/4\"X36YD",
+      "width_mm": 6.35,
+      "length_m": 32.9,
+      "minimum_rolls": 1,
+      "stock_rolls": 50,
+      "price_JPY_excluding_tax": 6672,
+      "displayed_price_JPY_including_tax": 7339.2,
+      "listed_thickness_mm": 0.076,
+      "qualification": "Stock and price observation only; thickness is distributor nominal, not maximum. Shipping excluded. Not selected or added to adopted budget."
+    }
+  },
+  "packaging_sensitivity": {
+    "wire_plus_three_tape_layers_mm": 0.74955,
+    "uninsulated_joint_height_budget_for_0p8mm_finish_mm": 0.59045,
+    "assumption": "Three tape thicknesses across joint section including overlap seam; illustrative wrap geometry only.",
+    "result": "Nominal arithmetic fits0.8mm budget, but wire/tape tolerances, solder, wrinkles and transition geometry remain unknown.",
+    "retail_0p08mm_three_layer_case": {
+      "wire_plus_layers_mm": 0.78,
+      "raw_joint_budget_mm": 0.56,
+      "remaining_to_0p8_wire_case_mm": 0.020000000000000018,
+      "qualification": "Only0.02mm nominal headroom before manufacturing variation; insufficient basis for0.8mm acceptance."
+    }
+  },
+  "assembly_constraints": [
+    "Seller prepares joints before battery installation.",
+    "Both sensor conductors need independent insulation and strain relief; no exposed lead may touch cell or other conductor.",
+    "Finished joint envelope must be measured rather than inferred solely from nominal material thickness.",
+    "Do not require buyer to strip, solder, tape-wrap wires or replace connector."
+  ],
+  "next_work": [
+    "Compare smaller/less expensive standard tape packages;22075JPY roll is a procurement observation, not a chosen purchase.",
+    "Verify ordinary retail quantity and price for exact wire/tape.",
+    "Select insulating wrap or sleeve with controlled maximum build and retention.",
+    "Route two wires to board and qualify soldering heat at film boundary."
+  ],
+  "no_design_substitution_or_order": true,
+  "alternative_wire_catalog": {
+    "source": "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/harmonet_UL3417-32L2X7.pdf",
+    "family": "UL3417 AWG32",
+    "insulation": "Cross-linked polyethylene",
+    "strands": "7/0.08mm",
+    "conductor_diameter_mm": 0.24,
+    "approximate_finished_diameter_mm": 0.54,
+    "rated_temperature_C": 125,
+    "rated_voltage_V": 30,
+    "catalog_package": "2m x7 colors",
+    "JAN": "4930393100741",
+    "qualification": "Catalog text exact family verified; retail price/stock and diameter tolerance not verified. Different insulation from Nikko ETFE; no substitution adopted.",
+    "retail_url": "https://www.marutsu.co.jp/pc/i/162975/",
+    "retail_status": "Product body verified, but price and stock not present in retrieved body."
+  },
+  "fine_wire_candidate": {
+    "product": "Harmonet PTFE AWG36 2m (BK), GT01A040",
+    "catalog_source": "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/harmonet_UL3417-32L2X7.pdf",
+    "specification_reference_manufacturer": "Junkosha",
+    "strands": "7/0.05mm",
+    "conductor_diameter_mm": 0.15,
+    "approximate_finished_diameter_mm": 0.31,
+    "insulation": "PTFE",
+    "diameter_tolerance_mm": null,
+    "conductor_resistance_ohm_per_km_at_20C": 1400,
+    "retail": {
+      "url": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5854",
+      "date": "2026-10-27",
+      "seller": "Sengoku",
+      "item_code": "EEHD-5854",
+      "length_m": 2,
+      "minimum_packages": 1,
+      "price_JPY_including_tax": 1050,
+      "stock_locations_listed": [
+        "Akihabara",
+        "Osaka"
+      ],
+      "stock_quantity": null,
+      "reservation": false
+    },
+    "packaging_sensitivity": {
+      "wire_plus_three_0p08mm_tape_layers_mm": 0.55,
+      "headroom_to_0p8mm_before_solder_and_tolerances_mm": 0.25,
+      "qualification": "Diameter alone is not completed joint size. Film lead width, solder fillet, tape wrinkles, wire and tape tolerance remain unqualified."
+    },
+    "electrical_sensitivity": {
+      "assumed_each_wire_length_mm": 30,
+      "two_wire_loop_ohm_at_20C": 0.084,
+      "fraction_of_10kohm_NTC_percent": 0.00084,
+      "qualification": "Illustrative 30mm each, not routed length or maximum resistance. Joint/contact resistance and temperature effects excluded."
+    },
+    "status": "PREFERRED_FOR_NEXT_GEOMETRY_TRIAL_NOT_ADOPTED",
+    "remaining_checks": [
+      "Complete two-wire route and joint geometry",
+      "Strain relief and solder process for fine strands",
+      "Finished insulation dimensions and continuity/short test",
+      "Catalog tolerances and supplied wire verification"
+    ]
+  }
+}

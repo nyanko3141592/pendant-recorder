@@ -1,0 +1,42 @@
+{
+  "accepted": true,
+  "visited": 75,
+  "paths": [
+    {
+      "layer": 10,
+      "points": [
+        [
+          12.2,
+          4.4
+        ],
+        [
+          12.100000000000001,
+          3.0
+        ],
+        [
+          11.7,
+          2.7
+        ]
+      ]
+    }
+  ],
+  "switches": [],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.75,
+            "y": 3.2
+          },
+          "uuid": "9fe0e486-3e63-4ed4-9e44-aa851844a6b4"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 18
+}

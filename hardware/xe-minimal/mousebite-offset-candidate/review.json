@@ -1,0 +1,41 @@
+{
+  "status": "ISOLATED_HOLE_FEASIBILITY_NOT_ADOPTED",
+  "source_pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "candidate_pcb_sha256": "98ed4918b43fe27884b4fc05a6c54843fa70b48c4757bca50704bde2f9931b02",
+  "added_holes": 12,
+  "hole_center_y_mm": 26.9,
+  "hole_center_inset_mm": 0.1,
+  "change": "Hole centers moved outward by 0.15 mm; original profile unchanged",
+  "violations": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "items": [
+        {
+          "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 MP_PANEL",
+          "pos": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "uuid": "411e32ca-8e69-4592-a323-83e4edea327a"
+        }
+      ],
+      "severity": "warning",
+      "type": "missing_courtyard"
+    }
+  ],
+  "unconnected_items": [],
+  "limitations": [
+    "Added holes on original profile only; no panel tabs, supporting rails or routing slots.",
+    "No schematic parity check: temporary mechanical footprint is intentionally absent from schematic.",
+    "No mechanical stress or assembly process qualification."
+  ],
+  "nominal_perforation_geometry": {
+    "drill_radius_mm": 0.25,
+    "inward_notch_depth_mm": 0.35,
+    "drill_extent_outside_nominal_profile_mm": 0.15,
+    "hole_chord_at_nominal_edge_mm": 0.458257569495584,
+    "remaining_material_between_holes_at_edge_mm": 0.291742430504416,
+    "note": "Ideal circular geometry only. Broken edge and burr envelope are not predicted; tabs and panel material have not been modeled."
+  },
+  "interpretation": "Eight prior hole-to-copper clearance violations resolved without moving electrical tracks. One missing-courtyard finding remains for the temporary mechanical footprint. This is not a fabrication-ready panel."
+}

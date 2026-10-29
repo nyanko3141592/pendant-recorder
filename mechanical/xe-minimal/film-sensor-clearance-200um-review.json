@@ -1,0 +1,36 @@
+{
+  "separator_down_1um_overlap_proxy_mm3": 0.008284038276660735,
+  "status": "EXPLORATORY_SENSOR_CLEARANCE_NOT_ADOPTED",
+  "clearance_budget_mm": 0.2,
+  "parts": [
+    {
+      "nominal_insulation_gap_mm": 0.199999999999427,
+      "part": "lower",
+      "source": "film-battery-end-wide-350um-lower-trial.step",
+      "source_sha256": "1a936dd64f53216e5f578304f2455dec28cffa0fec21106dcbd63720a528096a",
+      "output": "film-sensor-clearance-200um-lower-trial.step",
+      "output_sha256": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97",
+      "removed_mm3": 2.314200000004803,
+      "single_valid_solid": true,
+      "same_outer_bounds": true
+    },
+    {
+      "nominal_insulation_gap_mm": 0.19999999999942664,
+      "part": "separator",
+      "source": "film-roomier-joint-separator-trial.step",
+      "source_sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+      "output": "film-sensor-clearance-200um-separator-trial.step",
+      "output_sha256": "69dbd7dcedd2c4b0f85c3339cb82fb253a16aa2a17e269174d81429b5aec0342",
+      "removed_mm3": 0.8886474042826222,
+      "single_valid_solid": true,
+      "same_outer_bounds": true
+    }
+  ],
+  "limits": [
+    "Expanded conservative rectangular insulation envelopes, not actual solder/tape geometry.",
+    "Wall thickness, support seating, sensor retention and thermal contact require checks.",
+    "Slicing and printed bead clearance not yet checked.",
+    "0.2mm is an engineering trial allowance, not measured A1 mini tolerance.",
+    "Original battery harness and plug remain excluded."
+  ]
+}

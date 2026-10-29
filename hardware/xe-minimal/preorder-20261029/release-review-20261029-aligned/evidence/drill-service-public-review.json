@@ -1,0 +1,23 @@
+{
+  "status": "PUBLIC_CAPABILITY_SUPPORTS_015_DRILL_COMBINED_SERVICE_NOT_CONFIRMED",
+  "date": "2026-10-29",
+  "source": "https://jlcpcb.com/capabilities/pcb-capabilities",
+  "facts": {
+    "multilayer_minimum_via_drill_mm": 0.15,
+    "multilayer_minimum_via_diameter_mm": 0.25,
+    "preferred_minimum_drill_mm": 0.2,
+    "surcharge_rule": "0.1/0.15mm holes at any diameter; 0.2/0.25mm holes with diameter below0.45mm incur additional cost",
+    "controlled_impedance_layers_include_4": true,
+    "standard_impedance_tolerance_percent": 10
+  },
+  "current_candidate": {
+    "small_vias": 6,
+    "small_drill_mm": 0.15,
+    "small_diameter_mm": 0.35,
+    "general_public_dimensional_screen": "PASS",
+    "additional_drilling_cost_expected": true
+  },
+  "interpretation": "0.15mm through holes are an explicitly published multilayer capability, not inherently unsupported or HDI. The separate impedance page lists0.2mm minimum; combined ordering applicability is still not explicitly reconciled by public text. Do not certify supplier acceptance or require a redesign solely from the conflict.",
+  "design_decision": "Retain electrically clean current candidate. Fixed-center0.2/.45 expansion rejected separately. No further blind local rerouting. Include small-hole surcharge in eventual quote and keep combined service acceptance open.",
+  "order_allowed": false
+}

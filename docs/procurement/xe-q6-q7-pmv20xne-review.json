@@ -1,0 +1,71 @@
+{
+  "status": "ALTERNATIVE_CANDIDATE_NOT_ADOPTED",
+  "part_family": "PMV20XNE",
+  "manufacturer": "Nexperia",
+  "lifecycle_observed": "Production",
+  "sources": {
+    "datasheet": "https://assets.nexperia.com/documents/data-sheet/PMV20XNE.pdf",
+    "lifecycle": "https://www.nexperia.com/product/PMV20XNE"
+  },
+  "datasheet_date": "2014-11-10",
+  "package": "SOT23",
+  "pins": {
+    "1": "G",
+    "2": "S",
+    "3": "D"
+  },
+  "board_sha256": "10f561cc51b6607472c4707a498bdfe15dab6a2218a55a7aa12a6c14edf36e5c",
+  "board_check": {
+    "Q6": [
+      "/USB_SUSPEND_PULSE",
+      "/GND",
+      "/USB_LATCH_CLOCK"
+    ],
+    "Q7": [
+      "/USB_RESUME_PULSE",
+      "/GND",
+      "/USB_LATCH_CLEAR_N"
+    ],
+    "footprint": "SOT-23",
+    "pad_size_mm": [
+      1.475,
+      0.6
+    ],
+    "result": "Pin functions match; dimensional solder-land qualification not performed"
+  },
+  "specs": {
+    "RDSon_max_ohm": 0.038,
+    "RDSon_conditions": "VGS1.8V ID1.9A Tj25C",
+    "IDSS_max_uA": 1,
+    "IDSS_conditions": "VDS30V VGS0 Tj25C",
+    "IGSS_max_abs_uA": 10,
+    "IGSS_conditions": "VGS +/-8V VDS0 Tj25C",
+    "Qg_max_nC": 18.6,
+    "Qg_conditions": "VDS10V ID5A VGS4.5V Tj25C",
+    "Ciss_typ_pF": 1150
+  },
+  "screen": {
+    "minimum_mcu_supply_V_using_VOH_minus_0_4": 2.2,
+    "BOR4_falling_min_V": 2.67,
+    "static_supply_margin_V": 0.47,
+    "drain_low_V_using_25C_RDSon": 2.015143780256197e-05,
+    "supply_scope_correction": "The VDDIO-.4 row cited by the related review only covers2.7..3.6V. Calculated2.2V supply and.47V BOR margin are historical extrapolations, not guaranteed coverage.",
+    "minimum_mcu_supply_V_qualified": null,
+    "BOR4_static_margin_V_qualified": null
+  },
+  "limitations": [
+    "BOR4 must be programmed and verified; dynamic fall time and reset behavior unqualified",
+    "1.8V RDSon bound is at25C and1.9A; full temperature and low-current switching qualification pending",
+    "High-temperature off leakage not bounded by the listed25C IDSS value",
+    "Gate capacitance larger than BSS138BK; pulldown release time and retainedOFF must be re-evaluated",
+    "Exact ordering suffix, assembly stock, price and solder footprint pending",
+    "No BOM/PCB substitution made"
+  ],
+  "procurement": {
+    "ordering_mpn": "PMV20XNER",
+    "source": "https://www.digikey.com/en/products/detail/nexperia-usa-inc/PMV20XNER/5395604",
+    "observed_stock": 0,
+    "observed_lead_weeks": 30,
+    "decision": "Deprioritize for prototype; production status alone does not establish availability"
+  }
+}

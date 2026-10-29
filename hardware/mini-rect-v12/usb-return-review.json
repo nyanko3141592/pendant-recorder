@@ -1,0 +1,15 @@
+{
+  "candidate": "usb-return-candidate.kicad_pcb",
+  "source": "pofv-final-trial.kicad_pcb",
+  "change": "Add one GND through via at12.65,16.7mm,outer0.4/drill0.2 connecting reference planes near USB ESD branches",
+  "drc_violations": 0,
+  "unconnected": 0,
+  "schematic_parity_violations": 0,
+  "sha256": "5301a71d3f24f3a8c6e0866951df4ea6a907f44368ec58c36f5a431298136a1b",
+  "adopted_for_manufacture": false,
+  "limitations": [
+    "A nearby ground via does not remove signal-via antipads or prove90ohm differential impedance.",
+    "Need verify connected GND fills on both reference layers and refresh via audit/manufacturing bundle before release.",
+    "JLC uploaded Gerber remains previous candidate."
+  ]
+}

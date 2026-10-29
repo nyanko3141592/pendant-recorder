@@ -1,0 +1,129 @@
+{
+  "status": "LOCAL_CANDIDATE_DIMENSION_REVIEWED_NOT_RELEASED",
+  "drawing": "reference/hirose-dm3d-engineering.pdf",
+  "drawing_id": "EDC3-156814 sheet1 revision3 2007-08-27",
+  "drawing_sha256": "ea2cf1d30b80504654f23bd3facc30b8ab2783a5a5172952a8a1b0249e69d395",
+  "signal_and_detection_pads": {
+    "1": [
+      3.175,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "2": [
+      2.075,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "3": [
+      0.975,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "4": [
+      -0.125,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "5": [
+      -1.225,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "6": [
+      -2.325,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "7": [
+      -3.425,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "8": [
+      -4.525,
+      5.35,
+      0.7,
+      1.75
+    ],
+    "9": [
+      -5.65,
+      -3.875,
+      1.45,
+      1.0
+    ],
+    "10": [
+      5.575,
+      -5.45,
+      1.0,
+      1.55
+    ]
+  },
+  "shell_pads": [
+    [
+      -5.975,
+      -2.375,
+      0.8,
+      1.5
+    ],
+    [
+      -5.725,
+      5.225,
+      1.3,
+      1.5
+    ],
+    [
+      5.625,
+      5.225,
+      1.5,
+      1.5
+    ],
+    [
+      5.975,
+      -3.025,
+      0.8,
+      1.4
+    ]
+  ],
+  "signal_width_mm": 0.7,
+  "signal_gap_mm": 0.55,
+  "signal_pitch_mm": 1.1,
+  "correction_to_previous_audit": "0.55 dimension is the gap. Previous claim of0.15mm excessive land width was incorrect; lands match drawing.",
+  "upper_keepout_before_mm": [
+    -1.975,
+    -5.725,
+    0.525,
+    -3.875
+  ],
+  "upper_keepout_after_mm": [
+    -1.975,
+    -5.725,
+    0.525,
+    -3.725
+  ],
+  "lower_keepout_mm": [
+    -4.925,
+    -1.525,
+    3.575,
+    0.475
+  ],
+  "dimensions_verified": [
+    "8 signal pads",
+    "2 detection pads",
+    "4 shell pads",
+    "2 keepout rectangles"
+  ],
+  "source_sha256": "59f4e884b32fcf675e26126635e6bad5c9b3dfc308d14b4fa9812c4f807bcfcf",
+  "output_sha256": "a00637015f1280da1bbc975eece25ec5d9b81c9486e77929387e5a3ac69df7c3",
+  "limitations": [
+    "Exact orderable suffix/current drawing revision still needs supplier confirmation.",
+    "Fab/courtyard and stock3D model retained as conservative envelopes, not accurate body model.",
+    "No physical solder or fit test."
+  ]
+}

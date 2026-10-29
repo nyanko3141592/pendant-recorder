@@ -1,0 +1,66 @@
+{
+  "status": "EXPERIMENTAL_POLICY_INTEGRATED_DEFAULT_DISABLED",
+  "date": "2026-10-28",
+  "api": "board_usb_input_v15_charge_request(expected_epoch)",
+  "conditions": [
+    "initialized task context with interrupts enabled",
+    "successful active canonical fixed-100mA hardware grant, including before enumeration or from a power-only adapter; independent TPS2552DBVR-1 input limit remains within its guaranteed 50..100mA range and latches off on overcurrent",
+    "matching non-saturated revoke epoch",
+    "not suspended and VBUS present"
+  ],
+  "revocation": "ISR/task revoke clears active grant and charge GPIO; pending IRQ on PRIMASK restore invalidates return value",
+  "checks": {
+    "driver_ASan_UBSan": "PASS",
+    "policy_100_500": "PASS",
+    "board_adapter": "PASS",
+    "historical_STM32U535_HAL_ARM_object": "PASS /tmp/pendant-charge-request.o; superseded MCU evidence, not U585 physical validation",
+    "renewal_ASan_UBSan": "PASS no output writes during valid renewal; pending IRQ clears charge/budget and returns false",
+    "policy_100_off_500_off_500_on_ASan_UBSan": "PASS including fixed-100mA preconfiguration and power-only charge, non-fixed ACK gate, race between grant and charge, queue pending, detach, suspend and no charge calls in disabled configurations",
+    "recording_and_low_battery_export_power_only_integration_ASan_UBSan": "PASS with charging disabled and fixed-100mA charging enabled; unconfigured power-only attachment keeps recording and requests charge, while export-only recovery requests charge before enumeration",
+    "unprovisioned_recipient_power_only_integration_ASan_UBSan": "PASS with the real fixed-100mA policy in both charging-disabled and charging-enabled builds; pre-enumeration charge request does not bypass public-recipient commit/readback, unplug, USB stop or reset",
+    "session_and_actual_event_queue": "PASS"
+  },
+  "limitations": [
+    "Canonical source default keeps charging disabled; EVT opt-in and fixed-100mA preconfiguration/power-only charging are not qualified for production flashing",
+    "Battery, thermal guard, input-current and physical USB timing remain unqualified",
+    "Host tests use mocked board or HAL; no end-to-end physical USB/charging test"
+  ],
+  "source_sha256": {
+    "firmware/stm32/board/usb_input_v15.c": "6a2224a818d38d83d0ffe38f6793ce42988b4401fb1e3d2565f612faf2a07eb8",
+    "firmware/stm32/board/usb_input_v15.h": "63a17b92eb7822d9578fe6016990da6821d5b18b31c67bea32473ff1de9093df",
+    "firmware/stm32/tests/test_usb_input_v15.c": "a1e5055458906d04b2c24b490d866aa1a5ac8e3f98625770196d3aaee248597f",
+    "firmware/stm32/usb/usb_power_budget.h": "0e4547fd98430b544bb6e3431414982b2fbff4dc166a41e75eb6543196914c4f",
+    "firmware/stm32/usb/usb_input_policy.c": "42646fa595e60a831e5058751818f9671255f87cb9e4d08f25c60bdb26bccc6e",
+    "firmware/stm32/tests/test_usb_input_policy.c": "43cc93e614046aaf7ee8a0b54cf0fd44123095655634261697bfe7fa6e822706",
+    "firmware/stm32/tests/check_usb_input_policy.sh": "77ebdd8fd080e55a0f3a1f3ca0c6da1feaebdc4f19350efe3a35acb21417e7be",
+    "firmware/stm32/tests/check_recorder_runtime.sh": "62019b65ed3b33bf92ce0e241ba8dfcbee0e058430b354c2f43626942cf3a126",
+    "firmware/stm32/tests/test_recorder_runtime.c": "6f43d52a467a68117cf79dad6dd0bc6745ee029c381849a68fa0f12989fd6028",
+    "firmware/stm32/tests/check_export_runtime.sh": "297cfe880c52536670554287816a3aaedfcd51c9f3bb27ba007d6cc57fd3bfa0",
+    "firmware/stm32/tests/test_export_runtime.c": "f712cfc3e95d44b1cf9cc8e7b85375843b22514b34fd02c46e00603a88885249",
+    "firmware/stm32/tests/usb_input_policy_runtime_stub.c": "5a4775427a4a36a4c0d1dade6e4e8c4095a92f7731c4993151942fd3bf3dacb2",
+    "firmware/stm32/tests/check_recipient_provisioning.sh": "db40c14aa73bcd69cd0b3f15f9d70b814371b000983388a8df2692de7133b6ab",
+    "firmware/stm32/tests/test_recipient_provisioning.c": "512c6e5cea360263baea42cc1fd9e99f64092d5110c2982e92b6334a9c323d39"
+  },
+  "renewal": "Same active valid grant returns without GPIO writes or inhibit initialization; pending revoke on IRQ restore rejects renewal.",
+  "full_link": {
+    "path": "/tmp/pendant-usb-charge-link/candidate-NOT-FOR-FLASH.elf",
+    "sha256": "1d365d0b4aca8cd622a3e0e07c047e38c1b617711bcd5935c01bc85db2515e0a",
+    "result": "HISTORICAL_LINK_PASS_SOURCE_MISMATCH",
+    "configuration": "historical experimental 500mA + charging opt-in, NEVER FLASH; not canonical XE evidence",
+    "text": 106548,
+    "data": 2573,
+    "bss": 194852,
+    "charge_request_symbol": "strong T verified"
+  },
+  "policy": {
+    "option": "PENDANT_EXPERIMENTAL_USB_CHARGING",
+    "default": 0,
+    "canonical_descriptor_ma": 100,
+    "canonical_independent_input_limit_guaranteed_min_ma": 50,
+    "canonical_independent_input_limit_guaranteed_max_ma": 100,
+    "canonical_input_limit_mode": "TPS2552DBVR-1_ACTIVE_LOW_LATCH_OFF",
+    "gate": "fixed-100mA canonical path requires VBUS, non-suspended state and empty event queue but not mount/configuration ACK; non-fixed 500mA path still requires mount and configuration ACK; charge request uses the same epoch",
+    "invalid_nonfixed_100ma_charging_build": "rejected as tested",
+    "canonical_default_charging_enabled": false
+  }
+}

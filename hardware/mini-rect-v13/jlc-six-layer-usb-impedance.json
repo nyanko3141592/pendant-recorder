@@ -1,0 +1,37 @@
+{
+  "status": "OFFICIAL_CALCULATOR_TARGETS_NOT_APPLIED",
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "observed_date": "2026-10-26",
+  "input": {
+    "layers": 6,
+    "nominal_thickness_mm": 0.8,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "stackup": "JLC06081H-2116",
+    "signal": "L3",
+    "top_reference": "L2",
+    "bottom_reference": "L4",
+    "target_differential_ohm": 90,
+    "requested_pair_gap_mm": 0.12
+  },
+  "results": [
+    {
+      "type": "Differential Pair (Non coplanar)",
+      "width_mm": 0.1171,
+      "pair_gap_mm": 0.1199
+    },
+    {
+      "type": "Coplanar Differential Pair",
+      "width_mm": 0.1135,
+      "pair_gap_mm": 0.1199,
+      "coplanar_ground_gap_mm": 0.1501
+    }
+  ],
+  "limitations": [
+    "Uniform coupled geometry with continuous references assumed",
+    "Actual 0.127 mm width and variable spacing have not been solved or approved",
+    "Coplanar result assumes ground alongside pair; interrupted islands/unequal gap invalidate direct adoption",
+    "Outer-layer fanouts and via transitions require separate review",
+    "Manufacturing tolerance is not the calculator numerical convergence tolerance"
+  ]
+}

@@ -1,0 +1,914 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T09:28:55",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-minimal.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.954999,
+                        "y": 8.5675
+                    },
+                    "uuid": "dddef57c-83b7-45cc-8f01-db96b5d33807"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.505,
+                        "y": 8.255
+                    },
+                    "uuid": "87dbbb16-d878-4bf8-8a37-a3500ef2207f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.0925
+                    },
+                    "uuid": "eb0b72c9-1c16-45d2-9110-d99c3da3845b"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 2.4600 mm )",
+                    "pos": {
+                        "x": 10.954999,
+                        "y": 7.0175
+                    },
+                    "uuid": "4e1a1b63-3c62-4755-b2d2-a2799104c94e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/GND] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 7.0925
+                    },
+                    "uuid": "65de8afd-3fac-4a05-8c42-ce334517684a"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 11.975,
+                        "y": 7.1925
+                    },
+                    "uuid": "be74a202-425e-434e-a9f7-e1eaf190213d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                },
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 1.2166 mm )",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 3.8
+                    },
+                    "uuid": "29257683-16cd-41a9-b9ea-4af98723929f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.545,
+                        "y": 8.255
+                    },
+                    "uuid": "2e327e33-51c1-40c7-9126-e29da24885d4"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_HIGH_BUDGET_DRAIN] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 7.0925
+                    },
+                    "uuid": "ec433f3d-a032-4157-83a2-13d10b40f054"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( F.Cu 上、長さ: 0.9990 mm )",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "853b0b3b-2838-401f-9e25-80498b321ad6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/USB_HIGH_BUDGET] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 5.4175
+                    },
+                    "uuid": "bcef95b3-1c6d-4ea1-a6f7-4c4850c31c98"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( In1.Cu 上、長さ: 5.2000 mm )",
+                    "pos": {
+                        "x": 9.9,
+                        "y": 6.8
+                    },
+                    "uuid": "b722bf16-650f-4273-9dbf-26a2bfe40d89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0750 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_HIGH_BUDGET_DRAIN] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 7.0925
+                    },
+                    "uuid": "ec433f3d-a032-4157-83a2-13d10b40f054"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( F.Cu 上、長さ: 0.4297 mm )",
+                    "pos": {
+                        "x": 10.075,
+                        "y": 7.1925
+                    },
+                    "uuid": "fef15f09-e223-4bab-bef2-392e77221122"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BAT と /VBUS)",
+            "items": [
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4,
+                        "y": 5.6
+                    },
+                    "uuid": "0163a565-0d6a-4aa5-b495-e278397515f1"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /USB_HIGH_BUDGET_DRAIN)",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( F.Cu 上、長さ: 0.9990 mm )",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "853b0b3b-2838-401f-9e25-80498b321ad6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BAT_ADC と /USB_HIGH_BUDGET)",
+            "items": [
+                {
+                    "description": "ビア [/BAT_ADC] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.815,
+                        "y": 5.5175
+                    },
+                    "uuid": "6a509a31-8d50-43d6-9600-5422a7efbaf2"
+                },
+                {
+                    "description": "パッド 4 [/USB_HIGH_BUDGET] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 5.4175
+                    },
+                    "uuid": "bcef95b3-1c6d-4ea1-a6f7-4c4850c31c98"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BAT_ADC と /USB_HIGH_BUDGET)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 1.1380 mm )",
+                    "pos": {
+                        "x": 11.6,
+                        "y": 4.4
+                    },
+                    "uuid": "0eba4212-fef0-4783-add9-9e4a7e882f08"
+                },
+                {
+                    "description": "パッド 4 [/USB_HIGH_BUDGET] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 5.4175
+                    },
+                    "uuid": "bcef95b3-1c6d-4ea1-a6f7-4c4850c31c98"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /GND)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.545,
+                        "y": 8.255
+                    },
+                    "uuid": "2e327e33-51c1-40c7-9126-e29da24885d4"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.954999,
+                        "y": 8.5675
+                    },
+                    "uuid": "dddef57c-83b7-45cc-8f01-db96b5d33807"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /GND)",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.205,
+                        "y": 4.795
+                    },
+                    "uuid": "b6b9e6c7-0614-41e1-8ccd-c096ff87b022"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0515 mm)",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1442 mm )",
+                    "pos": {
+                        "x": 9.64,
+                        "y": 3.8
+                    },
+                    "uuid": "f47b2c54-17b5-4743-993c-32846ec795fe"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_MOSI)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.505,
+                        "y": 8.255
+                    },
+                    "uuid": "87dbbb16-d878-4bf8-8a37-a3500ef2207f"
+                },
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.6,
+                        "y": 8.4
+                    },
+                    "uuid": "a2242cc9-c5a8-4613-a5fe-c44ba504e6f0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0903 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.545,
+                        "y": 8.255
+                    },
+                    "uuid": "2e327e33-51c1-40c7-9126-e29da24885d4"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.954999,
+                        "y": 8.5675
+                    },
+                    "uuid": "dddef57c-83b7-45cc-8f01-db96b5d33807"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.505,
+                        "y": 8.255
+                    },
+                    "uuid": "87dbbb16-d878-4bf8-8a37-a3500ef2207f"
+                },
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.6,
+                        "y": 8.4
+                    },
+                    "uuid": "a2242cc9-c5a8-4613-a5fe-c44ba504e6f0"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 4 [/USB_HIGH_BUDGET] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 5.4175
+                    },
+                    "uuid": "bcef95b3-1c6d-4ea1-a6f7-4c4850c31c98"
+                },
+                {
+                    "description": "ビア [/BAT_ADC] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.815,
+                        "y": 5.5175
+                    },
+                    "uuid": "6a509a31-8d50-43d6-9600-5422a7efbaf2"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                },
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4,
+                        "y": 5.6
+                    },
+                    "uuid": "0163a565-0d6a-4aa5-b495-e278397515f1"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0515 mm)",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.205,
+                        "y": 4.795
+                    },
+                    "uuid": "b6b9e6c7-0614-41e1-8ccd-c096ff87b022"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/BAT_ADC] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.815,
+                        "y": 5.5175
+                    },
+                    "uuid": "6a509a31-8d50-43d6-9600-5422a7efbaf2"
+                },
+                {
+                    "description": "パッド 4 [/USB_HIGH_BUDGET] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 5.4175
+                    },
+                    "uuid": "bcef95b3-1c6d-4ea1-a6f7-4c4850c31c98"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( F.Cu 上、長さ: 0.9990 mm )",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "853b0b3b-2838-401f-9e25-80498b321ad6"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4,
+                        "y": 5.6
+                    },
+                    "uuid": "0163a565-0d6a-4aa5-b495-e278397515f1"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.205,
+                        "y": 4.795
+                    },
+                    "uuid": "b6b9e6c7-0614-41e1-8ccd-c096ff87b022"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 5.4175
+                    },
+                    "uuid": "40a64f03-cdd4-4930-98bd-9674112818fb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.6,
+                        "y": 8.4
+                    },
+                    "uuid": "a2242cc9-c5a8-4613-a5fe-c44ba504e6f0"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.505,
+                        "y": 8.255
+                    },
+                    "uuid": "87dbbb16-d878-4bf8-8a37-a3500ef2207f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.954999,
+                        "y": 8.5675
+                    },
+                    "uuid": "dddef57c-83b7-45cc-8f01-db96b5d33807"
+                },
+                {
+                    "description": "パッド 1 [/VBUS] - C34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.545,
+                        "y": 8.255
+                    },
+                    "uuid": "2e327e33-51c1-40c7-9126-e29da24885d4"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 1.1380 mm )",
+                    "pos": {
+                        "x": 11.6,
+                        "y": 4.4
+                    },
+                    "uuid": "0eba4212-fef0-4783-add9-9e4a7e882f08"
+                },
+                {
+                    "description": "パッド 4 [/USB_HIGH_BUDGET] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 5.4175
+                    },
+                    "uuid": "bcef95b3-1c6d-4ea1-a6f7-4c4850c31c98"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 11.975,
+                        "y": 7.1925
+                    },
+                    "uuid": "be74a202-425e-434e-a9f7-e1eaf190213d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( F.Cu 上、長さ: 0.9990 mm )",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "853b0b3b-2838-401f-9e25-80498b321ad6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( F.Cu 上、長さ: 0.4297 mm )",
+                    "pos": {
+                        "x": 10.075,
+                        "y": 7.1925
+                    },
+                    "uuid": "fef15f09-e223-4bab-bef2-392e77221122"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "ポリゴン of U16 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 9.935,
+                        "y": 7.435
+                    },
+                    "uuid": "0fb7e322-e9e0-414b-8f2a-afaf5f961a57"
+                },
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "ポリゴン of U16 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 9.935,
+                        "y": 7.435
+                    },
+                    "uuid": "0fb7e322-e9e0-414b-8f2a-afaf5f961a57"
+                },
+                {
+                    "description": "U16のリファレンスフィールド",
+                    "pos": {
+                        "x": 9.225,
+                        "y": 6.255
+                    },
+                    "uuid": "297280ea-c824-4be9-a2f6-49d5879925b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of U16 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 12.135,
+                        "y": 5.52
+                    },
+                    "uuid": "34a8a09a-f4a8-4ff9-8896-9f4d870db553"
+                },
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of U16 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 12.135,
+                        "y": 6.99
+                    },
+                    "uuid": "49fa0e5d-aa46-4d40-851a-520da4d32e03"
+                },
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "U16のリファレンスフィールド",
+                    "pos": {
+                        "x": 9.225,
+                        "y": 6.255
+                    },
+                    "uuid": "297280ea-c824-4be9-a2f6-49d5879925b0"
+                },
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                },
+                {
+                    "description": "セグメント of U16 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 9.915,
+                        "y": 6.99
+                    },
+                    "uuid": "e9fb6bbf-65ae-4a3b-aa99-9bd30b48aa3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                },
+                {
+                    "description": "パッド 1 [/USB_HIGH_BUDGET_DRAIN] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.375,
+                        "y": 7.0925
+                    },
+                    "uuid": "ec433f3d-a032-4157-83a2-13d10b40f054"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                },
+                {
+                    "description": "パッド 2 [/GND] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.0925
+                    },
+                    "uuid": "eb0b72c9-1c16-45d2-9110-d99c3da3845b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "C34のリファレンスフィールド",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 7.095
+                    },
+                    "uuid": "d7186556-7a84-4e88-a30a-2499cf8f8ac5"
+                },
+                {
+                    "description": "パッド 3 [/GND] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.675,
+                        "y": 7.0925
+                    },
+                    "uuid": "65de8afd-3fac-4a05-8c42-ce334517684a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

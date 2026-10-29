@@ -1,0 +1,32 @@
+{
+  "status": "BQ25185_PROTOTYPE_INTERFACE_SELECTED_NOT_RELEASED",
+  "battery": "DTP401525-XE",
+  "charger": "BQ25185DLHR",
+  "selection_record": "charger-selection.json",
+  "pins": {
+    "1": "SYS",
+    "2": "BAT",
+    "3": null,
+    "4": "CHG_INHIBIT_GATE",
+    "5": "GND",
+    "6": "CHARGER_TS",
+    "7": "ILIM_VSET",
+    "8": "ISET",
+    "9": "CHG_N",
+    "10": "VBUS_LIMITED",
+    "11": "GND"
+  },
+  "programming_parts": {
+    "R10": "6.8k 1%",
+    "R42": "130k 1%",
+    "C30": "50p 50V C0G"
+  },
+  "no_i2c_charger_bus": true,
+  "remaining": [
+    "Complete independent battery-contact temperature sensing and hardware charge-inhibit qualification; R35 fixed TS resistor alone does not monitor battery temperature",
+    "Verify external USB pre-enumeration limiter and suspend controls; internal 500mA mode alone is insufficient",
+    "Measure deliverable energy after this exact charge profile and run continuous 16h recording test",
+    "Confirm maximum battery discharge, regulator/storage peak current and undervoltage behavior",
+    "Complete power routing, BOM sourcing and enclosure contact sensor retention"
+  ]
+}

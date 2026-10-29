@@ -1,0 +1,33 @@
+{
+  "status": "NOMINAL_PRINT_MATING_SCREEN_NOT_TOLERANCE_QUALIFICATION",
+  "sources": {
+    "lower": {
+      "source_sha256": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+      "gcode_sha256": "5b64304bf126c3ecf1c600f7a568f433a00ec4fc3f5a575bd9fca6725f332349",
+      "3mf_sha256": "cd38e0f9828cb37067ad2524ee5c208180f570061bfca4f3d9fb2f857d1143c1"
+    },
+    "separator": {
+      "source_sha256": "6a46f6a9cd1d6c8dd7416ece8ba3f0160735c4ede691c44ca1e371945cf5c4ad",
+      "gcode_sha256": "c405e910f25f182beb2a201ed1d6fe875f2ac119fb00c08c14f47d740d088245",
+      "3mf_sha256": "d65b01c804575a7bd848a5c09a8862ad8c1d9a92c41aab0f49e8c3e4c179e789"
+    }
+  },
+  "roi": "CAD cap convex-hull XY only",
+  "separator_lowest_part_bottom_in_roi_mm": -1.2800000000000002,
+  "contacts": [
+    {
+      "lower_layer": 6.44,
+      "separator_layer": 1.1,
+      "contact_area_mm2": 1.7749017498092763,
+      "assembly_z_mm": -1.2800000000000002
+    }
+  ],
+  "overlaps": [],
+  "limits": [
+    "Rectangular bead cross-section is an approximation, not measured deposited geometry.",
+    "Excludes support; support removal residue and sag are unknown.",
+    "Assembly positioning uses CAD origin; mounting datum tolerances are not characterized.",
+    "Zero nominal gap does not establish fit or seating force.",
+    "ROI-limited: not a full printed assembly collision check."
+  ]
+}

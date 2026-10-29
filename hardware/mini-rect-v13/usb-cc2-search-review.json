@@ -1,0 +1,44 @@
+{
+  "source_sha256": "5ca3a0e143c8c8b2834b4492afbcd29e5e5cb0bfd65c6bee5e2626fe46650af8",
+  "via_mm": [
+    12.0,
+    16.2
+  ],
+  "step_mm": 0.01,
+  "width_mm": 0.127,
+  "bounds_mm": [
+    [
+      10.8,
+      15.4
+    ],
+    [
+      13.200000000000001,
+      18.0
+    ]
+  ],
+  "endpoint_blocked": [
+    false,
+    false
+  ],
+  "limitations": [
+    "Conservative pad bounding boxes may reject viable paths",
+    "Single layer and single original segment only",
+    "Grid search is not proof of global impossibility"
+  ],
+  "visited": 9688,
+  "violations": 0,
+  "unconnected": 0,
+  "status": "DRC_PASS_LOCAL_GROUND_DISTANCE_GAIN_NOT_RELEASED",
+  "route_points": 28,
+  "candidate_sha256": "d2940a9b7339d1a9f005554630e1c2e19241d668e386f9c9ba650dbb1acc9033",
+  "reference_result": {
+    "B_DP_covered_samples": 0,
+    "B_DP_total_samples": 69,
+    "B_DM_covered_samples": 9,
+    "B_DM_total_samples": 87,
+    "coverage_change": 0,
+    "connector_DM_nearest_ground_via_before_mm": 1.81,
+    "connector_DM_nearest_ground_via_after_mm": 1.599
+  },
+  "release_limit": "Ground-plane coverage remains unchanged. Do not promote as a completed USB reference-path repair. Source and baseline remain intact."
+}

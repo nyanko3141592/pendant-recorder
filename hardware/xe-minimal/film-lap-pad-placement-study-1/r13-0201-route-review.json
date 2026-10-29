@@ -1,0 +1,126 @@
+{
+  "status": "0201_GEOMETRY_TRIAL_BAT_TS_UNCONNECTED_NOT_ADOPTED",
+  "results": [
+    {
+      "net": "/SD_MISO",
+      "start": [
+        15.7,
+        2.3
+      ],
+      "end": [
+        13.7,
+        1.7
+      ],
+      "visited": 575,
+      "found": true,
+      "path_mm": [
+        [
+          15.7,
+          2.3
+        ],
+        [
+          15.05,
+          2.6
+        ],
+        [
+          13.8,
+          2.6
+        ],
+        [
+          13.55,
+          2.45
+        ],
+        [
+          13.45,
+          2.2
+        ],
+        [
+          13.55,
+          1.95
+        ],
+        [
+          13.7,
+          1.7
+        ]
+      ]
+    },
+    {
+      "net": "/SD_MOSI",
+      "start": [
+        15.5,
+        1.6
+      ],
+      "end": [
+        12.1,
+        2.6
+      ],
+      "visited": 1742,
+      "found": true,
+      "path_mm": [
+        [
+          15.5,
+          1.6
+        ],
+        [
+          15.1,
+          0.45
+        ],
+        [
+          15.05,
+          0.4
+        ],
+        [
+          12.2,
+          0.4
+        ],
+        [
+          12.15,
+          0.45
+        ],
+        [
+          12.1,
+          2.6
+        ]
+      ]
+    },
+    {
+      "net": "/BAT_TS",
+      "start": [
+        12.75,
+        1.5
+      ],
+      "end": [
+        16.13,
+        1.055
+      ],
+      "visited": 976,
+      "found": false
+    }
+  ],
+  "limits": [
+    "Single-layer bounded search failure does not prove all routing impossible.",
+    "Full DRC and electrical/assembly qualification required.",
+    "Failed routes remain open in this explicitly separate study candidate."
+  ],
+  "r13_trial": {
+    "value_ohms": 100000,
+    "package": "0201 (0603 metric)",
+    "footprint_library": "Resistor_SMD:R_0201_0603Metric",
+    "center_mm": [
+      12.94,
+      3.25
+    ],
+    "mpn": null,
+    "electrical_ratings_verified": false
+  },
+  "drc": {
+    "unconnected_items": 1,
+    "types": {
+      "track_dangling": 1,
+      "missing_courtyard": 1,
+      "silk_edge_clearance": 1,
+      "silk_overlap": 1,
+      "silk_over_copper": 2
+    }
+  }
+}

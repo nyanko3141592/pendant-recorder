@@ -1,0 +1,4866 @@
+[
+  {
+    "angle": 0,
+    "pad1_mm": [
+      13.5,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 3,
+    "details": [
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.01,
+              "y": 4.5
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.875
+            },
+            "uuid": "51edb437-dce4-40df-8861-4986c2863700"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.856359,
+              "y": 4.88
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.575
+            },
+            "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.52,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 90,
+    "pad1_mm": [
+      13.5,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 13,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.1414 mm )",
+            "pos": {
+              "x": 13.7,
+              "y": 3.6
+            },
+            "uuid": "87aaa357-8960-410c-8d1d-5d7da1440033"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.5,
+              "y": 3.99
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.5,
+              "y": 3.99
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.1414 mm )",
+            "pos": {
+              "x": 13.7,
+              "y": 3.6
+            },
+            "uuid": "87aaa357-8960-410c-8d1d-5d7da1440033"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.12,
+              "y": 4.143641
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.88,
+              "y": 4.143641
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 180,
+    "pad1_mm": [
+      13.5,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 9,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.8774 mm )",
+            "pos": {
+              "x": 13.5,
+              "y": 4.5
+            },
+            "uuid": "e990631d-f905-47e9-b9b0-cfa59216af19"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.99,
+              "y": 4.5
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.8774 mm )",
+            "pos": {
+              "x": 13.5,
+              "y": 4.5
+            },
+            "uuid": "e990631d-f905-47e9-b9b0-cfa59216af19"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ]
+  },
+  {
+    "angle": 270,
+    "pad1_mm": [
+      13.5,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 4,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 5.52
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.5,
+              "y": 5.01
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 5.52
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.88,
+              "y": 4.856359
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 0,
+    "pad1_mm": [
+      13.5,
+      4
+    ],
+    "accepted": false,
+    "violations": 5,
+    "details": [
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.01,
+              "y": 4.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.01,
+              "y": 4.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.709999
+            },
+            "uuid": "d7fe2ea4-9164-4542-ba31-479b8b0355be"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.52,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.52,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 4.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 90,
+    "pad1_mm": [
+      13.5,
+      4
+    ],
+    "accepted": false,
+    "violations": 10,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 2.98
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 2.98
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.5,
+              "y": 3.49
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.5,
+              "y": 3.49
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 2.98
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 2.98
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.12,
+              "y": 3.643641
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.88,
+              "y": 3.643641
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 4.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.12,
+              "y": 3.643641
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 180,
+    "pad1_mm": [
+      13.5,
+      4
+    ],
+    "accepted": false,
+    "violations": 11,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.9026 mm )",
+            "pos": {
+              "x": 13.5,
+              "y": 4.0
+            },
+            "uuid": "997819c0-aedc-484d-bbd3-ffd019cd44d9"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.99,
+              "y": 4.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.99,
+              "y": 4.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.9026 mm )",
+            "pos": {
+              "x": 13.5,
+              "y": 4.0
+            },
+            "uuid": "997819c0-aedc-484d-bbd3-ffd019cd44d9"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.48,
+              "y": 4.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.143641,
+              "y": 3.62
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.965,
+              "y": 3.759999
+            },
+            "uuid": "ce258db2-1dc4-4512-908a-bc3e03583f83"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 4.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 270,
+    "pad1_mm": [
+      13.5,
+      4
+    ],
+    "accepted": false,
+    "violations": 5,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 5.02
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.5,
+              "y": 4.51
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.5,
+              "y": 4.51
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 5.02
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.5,
+              "y": 4.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 0,
+    "pad1_mm": [
+      12.6,
+      4.7
+    ],
+    "accepted": false,
+    "violations": 6,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "0d18e11b-8385-48d3-b500-9e96aec7b322"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.11,
+              "y": 4.7
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "0d18e11b-8385-48d3-b500-9e96aec7b322"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "warning",
+        "type": "track_not_centered_on_via"
+      }
+    ]
+  },
+  {
+    "angle": 90,
+    "pad1_mm": [
+      12.6,
+      4.7
+    ],
+    "accepted": false,
+    "violations": 12,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "3e948fc3-3de7-491e-abae-071ae6045a2f"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.68
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.68
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.6,
+              "y": 4.19
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.68
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.68
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "3e948fc3-3de7-491e-abae-071ae6045a2f"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "warning",
+        "type": "track_not_centered_on_via"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.965,
+              "y": 3.759999
+            },
+            "uuid": "ce258db2-1dc4-4512-908a-bc3e03583f83"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.68
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.68
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 180,
+    "pad1_mm": [
+      12.6,
+      4.7
+    ],
+    "accepted": false,
+    "violations": 12,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BAT_ADC \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/BAT_ADC] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.1414 mm )",
+            "pos": {
+              "x": 11.5,
+              "y": 4.3
+            },
+            "uuid": "ee24fb9a-ae2b-4a2f-b7f9-f44b0eeb843b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 4.7
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0050 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/BAT_ADC] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0296 mm )",
+            "pos": {
+              "x": 10.6,
+              "y": 3.8
+            },
+            "uuid": "e066a0da-89f3-4ae7-9b52-c6bac539a5fe"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 4.7
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BAT_ADC \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/BAT_ADC] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.1380 mm )",
+            "pos": {
+              "x": 11.6,
+              "y": 4.4
+            },
+            "uuid": "0eba4212-fef0-4783-add9-9e4a7e882f08"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 4.7
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "95e62603-e7e3-425d-8a8b-f5d3222465db"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.025,
+              "y": 5.3175
+            },
+            "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 4.7
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.09,
+              "y": 4.7
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q5",
+            "pos": {
+              "x": 11.025,
+              "y": 6.255
+            },
+            "uuid": "d5d094d1-d2f0-457c-a2d1-485e9f8c78d4"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.025,
+              "y": 5.3175
+            },
+            "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 4.7
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/BAT_ADC] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.1380 mm )",
+            "pos": {
+              "x": 11.6,
+              "y": 4.4
+            },
+            "uuid": "0eba4212-fef0-4783-add9-9e4a7e882f08"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 4.7
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/BAT_ADC] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.1414 mm )",
+            "pos": {
+              "x": 11.5,
+              "y": 4.3
+            },
+            "uuid": "ee24fb9a-ae2b-4a2f-b7f9-f44b0eeb843b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 4.7
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "95e62603-e7e3-425d-8a8b-f5d3222465db"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "warning",
+        "type": "track_not_centered_on_via"
+      }
+    ]
+  },
+  {
+    "angle": 270,
+    "pad1_mm": [
+      12.6,
+      4.7
+    ],
+    "accepted": false,
+    "violations": 8,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "02cb430e-51d6-4927-b822-04efef332647"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.6,
+              "y": 5.21
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q5",
+            "pos": {
+              "x": 11.025,
+              "y": 6.255
+            },
+            "uuid": "d5d094d1-d2f0-457c-a2d1-485e9f8c78d4"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.4077 mm )",
+            "pos": {
+              "x": 12.6,
+              "y": 4.7
+            },
+            "uuid": "02cb430e-51d6-4927-b822-04efef332647"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "warning",
+        "type": "track_not_centered_on_via"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q5 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.585,
+              "y": 5.495
+            },
+            "uuid": "02661988-e9d7-4a6e-9530-c825942a3d09"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 5.72
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q5 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.585,
+              "y": 5.495
+            },
+            "uuid": "1d17d147-75e3-43e8-8398-5af30edfc328"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 5.72
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 0,
+    "pad1_mm": [
+      14.2,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 6,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 4.4124 mm )",
+            "pos": {
+              "x": 14.9,
+              "y": 6.2
+            },
+            "uuid": "9d794e01-0f8c-488c-b5b1-cc29c5b9cae6"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.22,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.71,
+              "y": 4.5
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 4.4124 mm )",
+            "pos": {
+              "x": 14.9,
+              "y": 6.2
+            },
+            "uuid": "9d794e01-0f8c-488c-b5b1-cc29c5b9cae6"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.22,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.575
+            },
+            "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.575
+            },
+            "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.22,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.875
+            },
+            "uuid": "51edb437-dce4-40df-8861-4986c2863700"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 90,
+    "pad1_mm": [
+      14.2,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 12,
+    "details": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0550 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.1414 mm )",
+            "pos": {
+              "x": 13.7,
+              "y": 3.6
+            },
+            "uuid": "87aaa357-8960-410c-8d1d-5d7da1440033"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 4 [/USB_INPUT_ON] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0125,
+              "y": 3.149999
+            },
+            "uuid": "1405c6b4-873d-456f-b095-f27e817a349e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.2,
+              "y": 3.99
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.2,
+              "y": 3.99
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 4 [/USB_INPUT_ON] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0125,
+              "y": 3.149999
+            },
+            "uuid": "1405c6b4-873d-456f-b095-f27e817a349e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.82,
+              "y": 4.143641
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.58,
+              "y": 4.143641
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 3.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.575
+            },
+            "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.875
+            },
+            "uuid": "51edb437-dce4-40df-8861-4986c2863700"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 180,
+    "pad1_mm": [
+      14.2,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 7,
+    "details": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0886 mm)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.18,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.5665 mm )",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "4c148473-f04b-411c-9a8a-b9bc7ff45775"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.18,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1886 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.18,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.69,
+              "y": 4.5
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.5665 mm )",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "4c148473-f04b-411c-9a8a-b9bc7ff45775"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.18,
+              "y": 4.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.575
+            },
+            "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.875
+            },
+            "uuid": "51edb437-dce4-40df-8861-4986c2863700"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 270,
+    "pad1_mm": [
+      14.2,
+      4.5
+    ],
+    "accepted": false,
+    "violations": 6,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 5.52
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.2,
+              "y": 5.01
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 5.52
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.82,
+              "y": 4.856359
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.575
+            },
+            "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.875
+            },
+            "uuid": "51edb437-dce4-40df-8861-4986c2863700"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.2,
+              "y": 4.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 0,
+    "pad1_mm": [
+      12.6,
+      3.8
+    ],
+    "accepted": false,
+    "violations": 10,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.1414 mm )",
+            "pos": {
+              "x": 13.7,
+              "y": 3.6
+            },
+            "uuid": "87aaa357-8960-410c-8d1d-5d7da1440033"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.62,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.62,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.62,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0300 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.11,
+              "y": 3.8
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0770 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 2.6
+            },
+            "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.62,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.62,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.1414 mm )",
+            "pos": {
+              "x": 13.7,
+              "y": 3.6
+            },
+            "uuid": "87aaa357-8960-410c-8d1d-5d7da1440033"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.62,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.956359,
+              "y": 3.42
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 13.62,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 90,
+    "pad1_mm": [
+      12.6,
+      3.8
+    ],
+    "accepted": false,
+    "violations": 9,
+    "details": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0800 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0100 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 2.199999
+            },
+            "uuid": "3b18688b-6fb5-4c1c-81fd-445b6c69a0a8"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 2.78
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 2.78
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.6,
+              "y": 3.29
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 2.78
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.22,
+              "y": 3.443641
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.98,
+              "y": 3.443641
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.965,
+              "y": 3.759999
+            },
+            "uuid": "ce258db2-1dc4-4512-908a-bc3e03583f83"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 180,
+    "pad1_mm": [
+      12.6,
+      3.8
+    ],
+    "accepted": false,
+    "violations": 8,
+    "details": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0386 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/BAT_ADC] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.0296 mm )",
+            "pos": {
+              "x": 10.6,
+              "y": 3.8
+            },
+            "uuid": "e066a0da-89f3-4ae7-9b52-c6bac539a5fe"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.4318 mm )",
+            "pos": {
+              "x": 11.8,
+              "y": 3.7
+            },
+            "uuid": "f2e26131-56a7-4928-aa47-2cd42ce28048"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0300 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.09,
+              "y": 3.8
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8000 mm )",
+            "pos": {
+              "x": 13.6,
+              "y": 3.7
+            },
+            "uuid": "4bdad978-365b-492a-9c0f-38b17b91233a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.4318 mm )",
+            "pos": {
+              "x": 11.8,
+              "y": 3.7
+            },
+            "uuid": "f2e26131-56a7-4928-aa47-2cd42ce28048"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 11.58,
+              "y": 3.8
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.243641,
+              "y": 3.42
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 270,
+    "pad1_mm": [
+      12.6,
+      3.8
+    ],
+    "accepted": false,
+    "violations": 9,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.82
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0800 mm)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.82
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0800 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_ILIM_SET] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.7375,
+              "y": 3.149999
+            },
+            "uuid": "ab255ae9-d59a-4d19-a4a3-f254d0fe606d"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.82
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1800 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.82
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 12.6,
+              "y": 4.31
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U13",
+            "pos": {
+              "x": 13.875,
+              "y": 2.199999
+            },
+            "uuid": "1e68d5fc-444c-49e7-98a7-5b26c83604bf"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.8
+            },
+            "uuid": "55ecd7e2-a363-4d44-a269-f861e82fe17d"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 4.82
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.965,
+              "y": 3.759999
+            },
+            "uuid": "ce258db2-1dc4-4512-908a-bc3e03583f83"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.785,
+              "y": 3.759999
+            },
+            "uuid": "4dabd09f-393d-4396-8fb6-4adf16e2550c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 12.6,
+              "y": 3.8
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 0,
+    "pad1_mm": [
+      14,
+      5.5
+    ],
+    "accepted": false,
+    "violations": 9,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 4.4124 mm )",
+            "pos": {
+              "x": 14.9,
+              "y": 6.2
+            },
+            "uuid": "9d794e01-0f8c-488c-b5b1-cc29c5b9cae6"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.02,
+              "y": 5.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /BUTTON_N)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "09aaa2fa-54ec-4348-8b6b-0d15431b9915"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.51,
+              "y": 5.5
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "09aaa2fa-54ec-4348-8b6b-0d15431b9915"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 4.4124 mm )",
+            "pos": {
+              "x": 14.9,
+              "y": 6.2
+            },
+            "uuid": "9d794e01-0f8c-488c-b5b1-cc29c5b9cae6"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.02,
+              "y": 5.5
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.356359,
+              "y": 5.12
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.356359,
+              "y": 5.88
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 90,
+    "pad1_mm": [
+      14,
+      5.5
+    ],
+    "accepted": false,
+    "violations": 9,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "5e9ff4a1-53ba-42bf-bfc5-c0b98b69741c"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.0,
+              "y": 4.99
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "5e9ff4a1-53ba-42bf-bfc5-c0b98b69741c"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.62,
+              "y": 5.143641
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.38,
+              "y": 5.143641
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.575
+            },
+            "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 4.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of SW1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.075,
+              "y": 4.875
+            },
+            "uuid": "51edb437-dce4-40df-8861-4986c2863700"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 4.48
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 180,
+    "pad1_mm": [
+      14,
+      5.5
+    ],
+    "accepted": false,
+    "violations": 8,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "9715e80f-258b-4ca1-ba0e-a3b56ff45db5"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.49,
+              "y": 5.5
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.49,
+              "y": 5.5
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q5",
+            "pos": {
+              "x": 11.025,
+              "y": 6.255
+            },
+            "uuid": "d5d094d1-d2f0-457c-a2d1-485e9f8c78d4"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "9715e80f-258b-4ca1-ba0e-a3b56ff45db5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.643641,
+              "y": 5.88
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.643641,
+              "y": 5.12
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  },
+  {
+    "angle": 270,
+    "pad1_mm": [
+      14,
+      5.5
+    ],
+    "accepted": false,
+    "violations": 9,
+    "details": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "5f46965b-3c24-44be-bbe5-2053faec0b58"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 6.52
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BUTTON_N \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 14.0,
+              "y": 6.01
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 SW1",
+            "pos": {
+              "x": 15.725,
+              "y": 5.975
+            },
+            "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.8119 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "5f46965b-3c24-44be-bbe5-2053faec0b58"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 5.5
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.0,
+              "y": 6.52
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.62,
+              "y": 5.856359
+            },
+            "uuid": "b9403ce5-3b56-4f91-b92e-7e917eea3d81"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 14.38,
+              "y": 5.856359
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/BUTTON_N] - SW1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 14.025,
+              "y": 5.975
+            },
+            "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  }
+]

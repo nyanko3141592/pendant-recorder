@@ -1,0 +1,79 @@
+{
+  "status": "INDEPENDENT_PARSE_AND_DIMENSION_SCREEN_PASS_NOT_DFM_APPROVAL",
+  "parser_version": "1.6.3",
+  "outline_loops": 1,
+  "outline_segments": 365,
+  "centerline_extent_mm": [
+    21,
+    23
+  ],
+  "copper_layers": [
+    [
+      "top",
+      "copper"
+    ],
+    [
+      "bottom",
+      "copper"
+    ],
+    [
+      "inner_1",
+      "copper"
+    ],
+    [
+      "inner_2",
+      "copper"
+    ],
+    [
+      "inner_4",
+      "copper"
+    ],
+    [
+      "inner_3",
+      "copper"
+    ]
+  ],
+  "drills": [
+    {
+      "file": "mic-jlc-overlap-candidate-PTH.drl",
+      "objects": 114,
+      "file_function_header": "#@! TF.FileFunction,Plated,1,6,PTH",
+      "parser_plating": null
+    },
+    {
+      "file": "mic-jlc-overlap-candidate-NPTH.drl",
+      "objects": 6,
+      "file_function_header": "#@! TF.FileFunction,NonPlated,1,6,NPTH",
+      "parser_plating": null
+    }
+  ],
+  "warnings": [
+    "hardware/mini-rect-v13/fabrication-mic-jlc-review/gerber/mic-jlc-overlap-candidate-NPTH.drl:16 \"G90\": G90 header statement found after end of header",
+    "hardware/mini-rect-v13/fabrication-mic-jlc-review/gerber/mic-jlc-overlap-candidate-PTH.drl:14 \"G90\": G90 header statement found after end of header",
+    "Aperture definition using macro RoundRect has more parameters than the macro uses."
+  ],
+  "inputs": {
+    "mic-jlc-overlap-candidate-F_Cu.gtl": "08ca729d773537f01af0b48c0b287c8436e57b19321546fd504b3ad8ae51f93e",
+    "mic-jlc-overlap-candidate-NPTH.drl": "37ce47e95733e1407e57e7f8ed755d3f7d4f6d8f7350fb33c1d708c0f7906baf",
+    "mic-jlc-overlap-candidate-B_Cu.gbl": "173aa292e457d83fafa7f63527d6ab80399e12922ffd703c43660ee967a9d148",
+    "mic-jlc-overlap-candidate-In1_Cu.g1": "889c37633a02d58127ad81eda61357e0c33d76d669d2cec2cf8dca5d5e88bf15",
+    "mic-jlc-overlap-candidate-F_Mask.gts": "80766cd8899de1c9cb87cba1ac65ebf0ff0c042250208fb9af572a73d7d89a48",
+    "mic-jlc-overlap-candidate-F_Paste.gtp": "bf5a224443cfdc3bcfb2d5ca39246865bb21113f7210947d15e8510df32a7bce",
+    "mic-jlc-overlap-candidate-job.gbrjob": "f25b8818a45857929aadbe7549ff35c07b33989688bd77667d526648fcd9e47a",
+    "mic-jlc-overlap-candidate-B_Paste.gbp": "984149728f2caa85f60c2a17b025056bc10e23f0703b26a3005ddedd0c0031f0",
+    "mic-jlc-overlap-candidate-In2_Cu.g2": "fecae282a0b2e507ababf1bf94ddd46ccc89893865bcd60d42f1fa7e7b531d9e",
+    "mic-jlc-overlap-candidate-In4_Cu.g4": "82c48bde347df114fd8e3b916b4ca98d94d062b228605f6c7e6373b3e71a0f3c",
+    "mic-jlc-overlap-candidate-B_Mask.gbs": "2377df76dbb495f9496615270755c391754baac0d50ea4136aca0130bbb2dd8d",
+    "mic-jlc-overlap-candidate-PTH.drl": "cc28205cad2946312da3cee9a6e7f95213138ed766a24a662c0916512ea7b3fa",
+    "mic-jlc-overlap-candidate-In3_Cu.g3": "44a0db2345d8a8c5e765afcd8e1b998e83bacdceb4316c4bdb74796d76e0e329",
+    "mic-jlc-overlap-candidate-F_Silkscreen.gto": "4a11077c300374b94e837b5dd64e21f3b1ac89bbc5fb18bc68904ca9fdb120f0",
+    "mic-jlc-overlap-candidate-B_Silkscreen.gbo": "1b36b15e8d83b93bb2996981ce95b241c7b33cfb695eb50691547eb991d8a9ee",
+    "mic-jlc-overlap-candidate-Edge_Cuts.gm1": "94766c73a8927d44d761f617fefb734a9734868e13f73492f48cb9bd4748d0c1"
+  },
+  "limitations": [
+    "Drill plating parser returns unknown; explicit KiCad file-function header recorded separately",
+    "Rounded aperture macro warns about unused parameters; rendered output still requires fabricator verification",
+    "No pad-to-drill registration metric, connectivity, impedance or paste inspection claim",
+    "Preview files generated only; this script does not perform visual inspection"
+  ]
+}

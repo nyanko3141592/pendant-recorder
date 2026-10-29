@@ -1,0 +1,55 @@
+{
+  "status": "LEAD_EXIT_REVIEW_NOT_ROUTING_APPROVAL",
+  "source": "dtp401525-xe-source.pdf",
+  "sha256": "757689c6906ce62184e0f271ce908d6234ce503de70e19c43037fc7b4f342a57",
+  "drawing_page": 9,
+  "visually_checked": true,
+  "lead_length_mm": {
+    "nominal": 15,
+    "minimum": 12,
+    "maximum": 18
+  },
+  "length_datum": "Pack top edge to connector lower edge in straight drawing.",
+  "exit_observation": "Three leads drawn near middle of short edge; lateral exit coordinate and tolerance are not dimensioned.",
+  "important": [
+    "Do not infer exact lead exit coordinate from drawing pixels.",
+    "Mated connector wire-exit pose still required for reach and bend check."
+  ],
+  "center_exit_hypothesis_only": [
+    {
+      "pack_left_x_mm": 6.5,
+      "hypothetical_exit_x_mm": 14.25,
+      "distance_to_header_center_in_xy_mm": 11.2495177674423,
+      "header_side_gap_mm": 0.17499999999999982
+    },
+    {
+      "pack_left_x_mm": 7,
+      "hypothetical_exit_x_mm": 14.75,
+      "distance_to_header_center_in_xy_mm": 11.727175704320286,
+      "header_side_gap_mm": 0.6749999999999998
+    },
+    {
+      "pack_left_x_mm": 7.5,
+      "hypothetical_exit_x_mm": 15.25,
+      "distance_to_header_center_in_xy_mm": 12.206623202180037,
+      "header_side_gap_mm": 1.1749999999999998
+    },
+    {
+      "pack_left_x_mm": 8,
+      "hypothetical_exit_x_mm": 15.75,
+      "distance_to_header_center_in_xy_mm": 12.687657388186363,
+      "header_side_gap_mm": 1.6749999999999998
+    },
+    {
+      "pack_left_x_mm": 8.5,
+      "hypothetical_exit_x_mm": 16.25,
+      "distance_to_header_center_in_xy_mm": 13.170104403534545,
+      "header_side_gap_mm": 2.175
+    }
+  ],
+  "limitations": [
+    "Header center is not the actual mated wire exit.",
+    "These distances are comparative hypotheses, not proof a12mm lead fits or fails.",
+    "Vertical offset, bends, strain relief, assembly movement and wire insulation diameter remain unresolved."
+  ]
+}

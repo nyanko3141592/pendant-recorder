@@ -1,10 +1,11 @@
+// HISTORICAL / NON-PRODUCTION: initial XIAO ESP32S3 evaluation stub.
+// The current product firmware authority is firmware/stm32/.
 #include <Arduino.h>
 #include "config.h"
 #include "modules.h"
 
 static int16_t buf[1024];
 static bool inMsc = false;
-static uint32_t lastVoiceMs = 0;
 
 void setup() {
   Serial.begin(115200);
@@ -26,9 +27,8 @@ void loop() {
   if (inMsc) { usb_msc_exit(); inMsc = false; }
 
   size_t n = audio_read(buf, 1024);
-  if (vad_is_voice(buf, n)) lastVoiceMs = millis();
-  if (millis() - lastVoiceMs < VAD_HANGOVER_MS) {
-    wav_write(buf, n);  // TODO: プリロール用リングバッファ
-  }
-  // TODO: 電池残量の低下でファイルを閉じて deep sleep
+  // Product requirement: preserve continuous audio, including silence.
+  // Never use VAD to suppress samples or extend the apparent runtime.
+  if (n) wav_write(buf, n);
+  // TODO: 電池残量低下時はファイルを確定して安全停止する。
 }

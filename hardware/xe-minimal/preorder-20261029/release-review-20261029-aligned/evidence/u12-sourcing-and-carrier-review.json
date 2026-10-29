@@ -1,0 +1,109 @@
+{
+  "status": "NO_QUALIFIED_PACKAGING_ONLY_SUBSTITUTE_FOUND_IN_BOUNDED_SEARCH",
+  "selected_mpn": "TLV7042DDFR",
+  "selected_jlc": "C2867856",
+  "scope": "TI ordering/package records and indexed JLC/LCSC exact-name searches for DDFT and QDDFRQ1. Search absence is not proof of unavailable inventory.",
+  "decision": "Keep current U12; no speculative MPN or package substitution. Existing stock0/preorder observation remains a supply timing gate.",
+  "candidates": [
+    {
+      "mpn": "TLV7042DDFT",
+      "result": "No manufacturer orderable or JLC listing established; do not invent suffix."
+    },
+    {
+      "mpn": "TLV7042QDDFRQ1",
+      "result": "TI automotive DDF8 orderable exists; not merely a reel-size change. No JLC indexed supply route established, electrical/thermal threshold equivalence not qualified."
+    }
+  ],
+  "carrier_evidence": {
+    "source": "https://www.ti.com/packaging/docs/carriermaterial/downloadCarrierReport?OPN=TLV7042DDFR",
+    "package": "DDF",
+    "pins": 8,
+    "spq": 3000,
+    "pin1_quadrant": "Q3",
+    "cavity_A0_B0_K0_mm": [
+      3.2,
+      3.2,
+      1.4
+    ],
+    "pitch_P1_mm": 4,
+    "tape_width_mm": 8,
+    "scope": "Manufacturer tape data, not assembler CPL zero-angle approval. Screenshot request timed out; table text inspected."
+  },
+  "board_terminal_evidence": {
+    "reference": "U12",
+    "value": "TLV7042DDFR",
+    "side": "bottom",
+    "x_mm": 21.525,
+    "y_board_mm": 20.8525,
+    "y_position_csv_mm": -20.8525,
+    "kicad_orientation_degrees": 90.0,
+    "terminals": [
+      {
+        "number": "1",
+        "net": "/CHG_GUARD_GATE",
+        "x_mm": 22.5,
+        "y_board_mm": 21.99,
+        "y_position_csv_mm": -21.99
+      },
+      {
+        "number": "2",
+        "net": "/BAT_TS",
+        "x_mm": 21.85,
+        "y_board_mm": 21.99,
+        "y_position_csv_mm": -21.99
+      },
+      {
+        "number": "3",
+        "net": "/TS_COLD_REF",
+        "x_mm": 21.2,
+        "y_board_mm": 21.99,
+        "y_position_csv_mm": -21.99
+      },
+      {
+        "number": "4",
+        "net": "/GND",
+        "x_mm": 20.55,
+        "y_board_mm": 21.99,
+        "y_position_csv_mm": -21.99
+      },
+      {
+        "number": "5",
+        "net": "/BAT_TS",
+        "x_mm": 20.55,
+        "y_board_mm": 19.715,
+        "y_position_csv_mm": -19.715
+      },
+      {
+        "number": "6",
+        "net": "/TS_HOT_REF",
+        "x_mm": 21.2,
+        "y_board_mm": 19.715,
+        "y_position_csv_mm": -19.715
+      },
+      {
+        "number": "7",
+        "net": "/CHG_GUARD_GATE",
+        "x_mm": 21.85,
+        "y_board_mm": 19.715,
+        "y_position_csv_mm": -19.715
+      },
+      {
+        "number": "8",
+        "net": "/V3V3",
+        "x_mm": 22.5,
+        "y_board_mm": 19.715,
+        "y_position_csv_mm": -19.715
+      }
+    ],
+    "orientation_anchor": {
+      "number": "1",
+      "net": "/CHG_GUARD_GATE",
+      "x_mm": 22.5,
+      "y_board_mm": 21.99,
+      "y_position_csv_mm": -21.99
+    }
+  },
+  "board_source_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "board_or_bom_changed": false,
+  "order_allowed": false
+}

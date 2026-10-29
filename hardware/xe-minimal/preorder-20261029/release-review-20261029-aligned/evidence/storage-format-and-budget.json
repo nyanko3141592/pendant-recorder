@@ -1,0 +1,49 @@
+{
+  "status": "DESIGN_ALLOCATION_BUDGET_FIXED_PHYSICAL_ACCEPTANCE_PENDING",
+  "format": {
+    "filesystem": "FAT32",
+    "sector_bytes": 512,
+    "cluster_bytes": 4096,
+    "exclusive_device_filesystem_access": true
+  },
+  "profile": {
+    "recording_seconds": 108000,
+    "maximum_normal_sessions_in_qualification": 3,
+    "maximum_files_including_session_rounding": 10802,
+    "ciphertext_budget_per_file": 82180,
+    "allocated_clusters_per_file": 21
+  },
+  "budget": {
+    "recording_clusters": 226842,
+    "REC_directory_clusters": 85,
+    "root_and_identity_clusters": 2,
+    "maximum_TMP_plus_next_file_and_growth_clusters": 70,
+    "minimum_total_data_clusters": 226999,
+    "minimum_total_data_bytes": 929787904,
+    "post_30h_free_clusters_minimum_for_recovery_and_next_file": 70,
+    "post_30h_free_bytes_minimum": 286720
+  },
+  "derivation": [
+    "Sum ceil(session_samples/160000) <= 10800 + 3 - 1 for exactly 30h across three sessions",
+    "Recorder uses uppercase 8.3 AGE/TMP names; 32 bytes per REC entry; include dot entries and two reserve files",
+    "PENDANT.JSON is limited to 4096 bytes by storage_handoff_identity; root gets one cluster including its long-name entries",
+    "FAT tables/reserved sectors are excluded from data-cluster count, not mistaken for usable capacity",
+    "Maximum TMP and next recording each 131072 bytes; six further clusters cover per-begin growth reserves"
+  ],
+  "acceptance": [
+    "After factory formatting and identity setup, record actual FAT32 type, sector size, cluster size, data-cluster count, free-cluster count and all existing file sizes. Do not infer usable capacity from 1GB marketing size.",
+    "Total data clusters must be at least the budget; unbudgeted files must be charged separately. No imported host metadata may be silently ignored.",
+    "After exactly 30h across three normal sessions, verify complete decryption/sample totals and at least 70 free clusters before separate recovery test.",
+    "More sessions or retained incomplete files require recalculation; no automatic deletion of user recordings to pass."
+  ],
+  "limits": [
+    "Factory formatter and physical readback still unexecuted",
+    "Does not certify power-loss integrity, media wear, latency or 16h battery life",
+    "Budget assumes selected current ten-second codec and single age recipient; rebuild on source/profile changes"
+  ],
+  "source_sha256": {
+    "firmware/stm32/crypto/fatfs_recording.c": "c0821b2d525f9740d1a13f3b5b0d6955c484d93e4045e80771ea6412b214d1b5",
+    "firmware/stm32/crypto/fatfs_recording.h": "b1d62a1d7741cedb29adcb0431169e3ab16b53eb6164e1972df36c5bcce938d3",
+    "firmware/stm32/board/storage_handoff.c": "febbd8f10f8999efabe2d196fc15d9c8d5870b99c357778300f430b65a9a30af"
+  }
+}

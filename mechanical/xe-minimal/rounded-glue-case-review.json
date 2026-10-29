@@ -1,0 +1,52 @@
+{
+  "status": "USER_AUTHORIZED_ADHESIVE_CLOSURE_GEOMETRY_STUDY",
+  "outer_size_mm": [
+    26.200000000000003,
+    29.6,
+    12.9714001
+  ],
+  "external_plan_radius_mm": 1.5,
+  "external_top_bottom_edge_radius_mm": 0.4,
+  "closure": "Adhesive after user connects battery and verifies operation",
+  "removed_requirements": [
+    "Screw and nut closure",
+    "Nut keeper",
+    "Sliding closure hooks"
+  ],
+  "checks": {
+    "upper": {
+      "valid": true,
+      "solids": 1,
+      "intersections_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "pack": 0.0
+      }
+    },
+    "lower": {
+      "valid": true,
+      "solids": 1,
+      "intersections_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "pack": 0.0
+      }
+    }
+  },
+  "sources": {
+    "retained-upper-case-study.step": "8c33cedac3c34c3deb94799332f0e416154523d4bf8cca553dba8dd6409effbe",
+    "retained-lower-case-study.step": "05c7f92960bfab469b2026331f3f68b1c0a2262bf460e1a8a68547b105a27cd2",
+    "glue-case-candidate-integrated-board.step": "079cfcb77528a869830eb697bf7d1084a74bf5438cfa79259fe7f29f5f0b49d9",
+    "battery-separator-study.step": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+    "dtp401525-xe-pack-max.step": "e4c9bb308a5120fcc3943aa438e41ea36d7462cdcddac260d87ced0f222285d3"
+  },
+  "remaining": [
+    "Adhesive and case material selection, bond land and bond-line tolerance",
+    "Minimum wall thickness and strength after rounding",
+    "Original battery leads and mating housing",
+    "Microphone seal and adhesive exclusion zone",
+    "Battery temperature contact",
+    "Omi size and 16h runtime unresolved"
+  ],
+  "orders_performed": false
+}

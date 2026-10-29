@@ -1,0 +1,50 @@
+{
+  "status": "CURRENT_PLACEMENT_MECHANICAL_CANDIDATE_NOT_RELEASED",
+  "pcb": "hardware/xe-minimal/preorder-20261029/l3-ground-011-trial.kicad_pcb",
+  "pcb_sha256": "d64e60a6290d90dc344157f867ef617c2f95d880290294fa0b9c7988d86a0c1d",
+  "native_export_log": "step-export.log",
+  "native_export_missing_models": [
+    "U1",
+    "U8",
+    "J2"
+  ],
+  "additional_absent_model": "U11",
+  "supplements": [
+    "U1",
+    "U11",
+    "U8",
+    "J2"
+  ],
+  "envelope_review": "current-pcba-envelope-review.json",
+  "print_gauge_review": "connected-gauge-review.json",
+  "slice_review": "fit-kit-a1mini/review.json",
+  "instructions": "fit-kit-a1mini/FIT-CHECK-INSTRUCTIONS.txt",
+  "previous_kit_preserved": true,
+  "release_allowed": false,
+  "remaining": [
+    "U8/J2 model dimensional provenance",
+    "Assembly XY and solder standoff tolerances",
+    "Battery retention, expansion clearance and impact protection",
+    "Mated connector and original harness routing",
+    "USB signal integrity and power qualification",
+    "Full BOM availability and manufacturing outputs synchronization",
+    "All physical tests unmeasured"
+  ],
+  "artifact_sha256": {
+    "u11-max-body.step": "212b5d5d9d2564dd8362a06939dcc664a215e52a72c4a989e70b6ed707bf3623",
+    "u1-max-body.step": "da31aa345632a35c15b67c94edf7205faf196f756091e4a4bce714aa7394fd54",
+    "current-pcba-envelope.step": "661e253a389b525c3a46f656d0625687498741725c49179d3b5e90f253ba7f88",
+    "current-populated-native.step": "047d76d22b36ae10e54c742813c43c2cef67805e9ce3dcfe7824669dd42735e8",
+    "pcba-max-thickness-connected-gauge.step": "6aab063b844d7010fb55f09663e71dc9eb5111203b16e00ae66209a47f2f3bec",
+    "board-envelope-max.step": "27a2b343cb8f35b90969bca09a13b9f264da10a545b90ea165abe1afd4131290",
+    "pcba-max-thickness-connected-gauge.stl": "1857acce7350cbbf4db45780e11a5996d9a43d83b3dc17b927b8b5ecb14507e1",
+    "current-pcba-envelope.stl": "d491f8a19aaac6d00a766f1c50de56caea8de5545772e402e235ed03aa5f4bc4",
+    "fit-kit-a1mini/case-upper.stl": "0d2a5bd4842123a1cd09752961d49f68ce69319ef7055fcf199bf9fe8f838006",
+    "fit-kit-a1mini/case-lower.stl": "b9aa74c12dd70f071be19a2b58e164aeb134e4492f437e24a5c1c64304536aae",
+    "fit-kit-a1mini/battery-max.stl": "4a1027d4e8fbbdb8fb1f0a96341389147f7958b798f4d076ac434fd4e14980fa",
+    "fit-kit-a1mini/pcba-max-gauge.stl": "a0b5812006152a4a19d1c888b810511f4c17b9197432c708010b6a294860e1ca",
+    "fit-kit-a1mini/current-fit-kit.3mf": "e616928af003b3b526ccc7d49b20c6e0175593d1cd4156f4bb4cfb50ae389e22"
+  },
+  "supplement_pose_audit": "supplement-pose-audit.json",
+  "j2_land_geometry_audit": "j2-land-geometry-audit.json"
+}

@@ -1,0 +1,145 @@
+{
+  "status": "VBUS_LOCAL_ESCAPE_NOT_FOUND_CANONICAL_UNCHANGED",
+  "tested_direct": [
+    {
+      "connector_pin": "A9",
+      "resistor": [
+        "U2",
+        "5"
+      ],
+      "tested": 42
+    }
+  ],
+  "tested_orthogonal": [
+    {
+      "connector_pin": "A9",
+      "resistor": [
+        "U2",
+        "5"
+      ],
+      "tested": 42
+    }
+  ],
+  "last_trial_violations": [
+    {
+      "description": "Tracks crossing",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/CC2] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.3002 mm )",
+          "pos": {
+            "x": 13.975,
+            "y": 18.014999
+          },
+          "uuid": "68529ceb-458a-4959-a8e4-70e6763fd824"
+        },
+        {
+          "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0375 mm )",
+          "pos": {
+            "x": 13.525,
+            "y": 18.814999
+          },
+          "uuid": "9f020951-7151-442d-8e01-8bf02e0b974a"
+        }
+      ],
+      "severity": "error",
+      "type": "tracks_crossing"
+    },
+    {
+      "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CC2 \u3068 /VBUS)",
+      "items": [
+        {
+          "description": "\u30d1\u30c3\u30c9 1 [/CC2] - R7 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 15.0,
+            "y": 18.814999
+          },
+          "uuid": "8c2c290a-c0e4-432c-9b8b-1d5557817b94"
+        },
+        {
+          "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0375 mm )",
+          "pos": {
+            "x": 13.525,
+            "y": 18.814999
+          },
+          "uuid": "9f020951-7151-442d-8e01-8bf02e0b974a"
+        }
+      ],
+      "severity": "error",
+      "type": "shorting_items"
+    },
+    {
+      "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1000 mm)",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.1625 mm )",
+          "pos": {
+            "x": 14.4,
+            "y": 20.414999
+          },
+          "uuid": "a3c7da16-27e3-4b56-9486-44875e0dd251"
+        },
+        {
+          "description": "J1\u306eNPTH\u30d1\u30c3\u30c9",
+          "pos": {
+            "x": 14.89,
+            "y": 19.889999
+          },
+          "uuid": "4f37318d-0957-48d5-9f92-173210863760"
+        }
+      ],
+      "severity": "error",
+      "type": "hole_clearance"
+    },
+    {
+      "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0650 mm)",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.6000 mm )",
+          "pos": {
+            "x": 14.4,
+            "y": 18.814999
+          },
+          "uuid": "1460456f-a7df-4a7a-b0cb-3c6fc286aa3c"
+        },
+        {
+          "description": "J1\u306eNPTH\u30d1\u30c3\u30c9",
+          "pos": {
+            "x": 14.89,
+            "y": 19.889999
+          },
+          "uuid": "4f37318d-0957-48d5-9f92-173210863760"
+        }
+      ],
+      "severity": "error",
+      "type": "hole_clearance"
+    },
+    {
+      "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0375 mm )",
+          "pos": {
+            "x": 13.525,
+            "y": 18.814999
+          },
+          "uuid": "9f020951-7151-442d-8e01-8bf02e0b974a"
+        },
+        {
+          "description": "\u30d1\u30c3\u30c9 1 [/CC2] - R7 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 15.0,
+            "y": 18.814999
+          },
+          "uuid": "8c2c290a-c0e4-432c-9b8b-1d5557817b94"
+        }
+      ],
+      "severity": "error",
+      "type": "solder_mask_bridge"
+    }
+  ],
+  "next_action": "Review USB local component placement or separate surface fanout vias and join on In4; do not narrow traces or waive clearance solely to reduce unrouted count.",
+  "limits": [
+    "84 failed candidates are not a proof of routing impossibility",
+    "Charger architecture is not frozen; finish power decision before routing charger-specific control nets"
+  ]
+}

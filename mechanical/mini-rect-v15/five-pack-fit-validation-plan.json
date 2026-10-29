@@ -1,0 +1,109 @@
+{
+  "status": "PLANNED_NOT_EXECUTED",
+  "board_sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+  "measurement_template": "mechanical/mini-rect-v15/five-pack-fit-measurements.csv",
+  "samples": 5,
+  "coordinate_system": {
+    "case_origin": "Outer bottom corner corresponding to PCB origin offset; X along30mm, Y along32mm, Z upward through thickness",
+    "pcb_xy_to_case": "caseX=pcbX+2.0; caseY=pcbY+1.5",
+    "pcb_bottom_case_Z_mm": 8.6,
+    "connector_side": "B, facing toward battery",
+    "wire_exit_definition": "Center of insulated wire at connector housing wire-exit plane, not header Fab/courtyard edge",
+    "free_length_definition": "Completed battery pack top edge to connector wire-exit housing face; no housing length subtraction, no tension",
+    "pack_exit_datum": "Unmated pack coordinates: origin at lower-left-bottom corner of completed pack; X across width, Y toward wire exit along length, Z through thickness. Measure each wire center separately.",
+    "housing_exit_datum": "Unmated housing coordinates: origin at pin-1-side outer corner on housing bottom and wire-exit face. X across pin row, Y inward toward mating body, Z above housing bottom; photo must identify origin and axes.",
+    "legacy_exit_fields": "Existing exit_case_* fields refer to assembled case. Shared Y/Z are legacy summaries only; do not infer equal wire coordinates from them."
+  },
+  "procedure": [
+    "Before energizing or mating, identify pin1 from housing datum and compare red+/black- with J2 pin assignment; photograph battery label, lot and orientation.",
+    "Measure pack W/L/T and each exposed lead length with no tension. Record wire OD gently without flattening insulation. Leave unmeasurable fields blank and explain in notes.",
+    "Before a PCB is available, record battery-side exit coordinates in pack-local axes and connector-side exits in housing-local axes for each of the three wires separately, with unmated top/side photos, instrument and measurement uncertainty. Do not populate assembled-case fields from these local coordinates.",
+    "With PCB fixed at the documented case datum, seat connector vertically using the housing. Measure wire-center exit X/Y/Z using calibrated optical or height measurement; do not infer Z from mated connector overall height.",
+    "Photograph the assembled lead route with a scale in both top and side views. Record any extra loop, terminal loading, interference or necessary forced deformation.",
+    "Close and reopen the lid without forcing it. Inspect all three leads and housing for pinch/contact damage. Check assembled external dimensions including protrusions.",
+    "Repeat for all5 purchased packs unmodified; do not cut, reterminate or solder leads to make a fit pass."
+  ],
+  "acceptance": {
+    "pack_envelope_max_mm": [
+      15.5,
+      27,
+      4.2
+    ],
+    "drawing_free_length_range_mm": [
+      12,
+      18
+    ],
+    "case_envelope_max_mm": [
+      30,
+      32,
+      15
+    ],
+    "required_for_each_sample": [
+      "polarity_verified",
+      "unmodified_leads",
+      "fully_seated",
+      "lid_closes_without_force",
+      "no_wire_pinched",
+      "no_terminal_tension"
+    ],
+    "required_evidence": [
+      "All measurements or explicit unresolved reason",
+      "Before-close and closed photos",
+      "Measured exit datums compared to regenerated CAD route"
+    ],
+    "unknown_is_pass": false,
+    "allowable_wire_bend_radius": "Must come from applicable wire/assembly specification or validated assembly process; visual fit alone does not establish allowable radius."
+  },
+  "decision_rules": [
+    "A failed or missing item prevents fit approval for that sample; never average away one failed pack.",
+    "Five samples characterize those packs only and do not prove all manufacturer length tolerances.",
+    "Use observed exit coordinates to update CAD, then separately assess tolerance extremes and insertion/removal paths.",
+    "Physical test execution remains pending purchased prototypes; this document is the plan, not permission to purchase.",
+    "Unmated measurements can reduce CAD uncertainty before board fabrication; empty mated/closure fields stay pending and never count as a failed or passed pre-board measurement stage."
+  ],
+  "cad_acquisition": {
+    "date": "2026-10-26",
+    "result": "Manufacturer CAD download not obtained",
+    "sources_checked": [
+      "DigiKey2769883 page has no returned3D link",
+      "Farnell3864070 timeout",
+      "Kynix5576914 timeout",
+      "ConnectICC78171-0003 HTTP403; no bypass",
+      "Mouser search lists STEP files but no downloaded model"
+    ],
+    "next": "Obtain actual manufacturer header and mating housing CAD or dimensioned wire-exit drawing; do not promote search listing to CAD evidence"
+  },
+  "measurement_stages": [
+    {
+      "stage": "UNMATED_PACK_BEFORE_BOARD_ORDER",
+      "requires": [
+        "Existing unmodified battery sample",
+        "Dimension measurement and scaled top/side photos"
+      ],
+      "measure": [
+        "Pack W/L/T and each free lead length/OD",
+        "Each battery-side wire-center exit X/Y/Z",
+        "Housing W/D/H and each housing-side exit X/Y/Z",
+        "Instrument and uncertainty"
+      ],
+      "does_not_require": [
+        "PCB prototype",
+        "Powered circuit",
+        "Case closure"
+      ],
+      "decision": "Update CAD assumptions only; does not approve final assembly or permissible bend radius."
+    },
+    {
+      "stage": "MATED_ASSEMBLY_AFTER_PROTOTYPE",
+      "requires": [
+        "Board and case prototypes",
+        "Verified pin assignment"
+      ],
+      "measure": [
+        "Mated case-coordinate wire exits",
+        "Insertion/closure/retention and external dimensions"
+      ],
+      "decision": "Apply original per-sample acceptance and tolerance rules."
+    }
+  ]
+}

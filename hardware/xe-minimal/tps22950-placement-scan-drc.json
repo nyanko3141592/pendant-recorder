@@ -1,0 +1,906 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T05:03:46",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "tps22950-placement-scan.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( In2.Cu 上、長さ: 3.8184 mm )",
+                    "pos": {
+                        "x": 11.7,
+                        "y": 2.7
+                    },
+                    "uuid": "4c676a8c-0834-46e5-90fc-59ff934ce38f"
+                },
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.9025,
+                        "y": 2.825
+                    },
+                    "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_CHARGER] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4175,
+                        "y": 1.075
+                    },
+                    "uuid": "c1c68fa4-3620-4ef7-9c44-431d3a9da43e"
+                },
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( In2.Cu 上、長さ: 11.1376 mm )",
+                    "pos": {
+                        "x": 11.5375,
+                        "y": 1.249999
+                    },
+                    "uuid": "f616461d-aa39-4133-b775-7282e8c1e14d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.5117 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.05
+                    },
+                    "uuid": "38e59295-cc7a-4844-87ed-131c27a6a927"
+                },
+                {
+                    "description": "ビア [/VBUS_CHARGER] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.68,
+                        "y": 1.055
+                    },
+                    "uuid": "f10b0927-97b8-4e70-89e7-423423607212"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS_CHARGER] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 1.45
+                    },
+                    "uuid": "bb9f1c57-cff4-4183-bf2c-5cf07cc19a4f"
+                },
+                {
+                    "description": "ビア [/VBUS_CHARGER] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.68,
+                        "y": 1.055
+                    },
+                    "uuid": "f10b0927-97b8-4e70-89e7-423423607212"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.3025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                },
+                {
+                    "description": "パッド 3 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 0.5
+                    },
+                    "uuid": "89e95035-6596-4331-9b8e-4bfb0e68db59"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.2000 mm )",
+                    "pos": {
+                        "x": 16.7625,
+                        "y": 2.199999
+                    },
+                    "uuid": "832c5e2d-1607-48e9-941c-834179ec6598"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_EN と /VBUS)",
+            "items": [
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.3,
+                        "y": 1.5
+                    },
+                    "uuid": "6b5c403d-dbae-4335-925e-6b6a5cf2cc31"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /CHG_ALLOW)",
+            "items": [
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                },
+                {
+                    "description": "ビア [/CHG_ALLOW] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.826043,
+                        "y": 1.432223
+                    },
+                    "uuid": "ecf7743f-36bd-45c9-b856-3e70411e1717"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "パッド 3 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 0.5
+                    },
+                    "uuid": "89e95035-6596-4331-9b8e-4bfb0e68db59"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.4243 mm )",
+                    "pos": {
+                        "x": 17.7,
+                        "y": 0.9
+                    },
+                    "uuid": "99ca3c42-6ae8-4cec-a4c0-8cb19182a904"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0250 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 2.9634 mm )",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 3.715
+                    },
+                    "uuid": "e64e0c5e-9b2e-452e-8b53-1e8c3298f1b0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0300 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.3000 mm )",
+                    "pos": {
+                        "x": 17.7,
+                        "y": 1.2
+                    },
+                    "uuid": "3b8c515a-4319-4913-9af2-43f7fcba6547"
+                },
+                {
+                    "description": "パッド 3 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 0.5
+                    },
+                    "uuid": "89e95035-6596-4331-9b8e-4bfb0e68db59"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_DATA と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.2828 mm )",
+                    "pos": {
+                        "x": 17.9,
+                        "y": 1.4
+                    },
+                    "uuid": "351fc41e-5bc2-4ef8-91d8-a8050fcdb89e"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_DATA と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 5.2010 mm )",
+                    "pos": {
+                        "x": 17.4,
+                        "y": 0.6
+                    },
+                    "uuid": "393caa2d-deae-4e5d-aa84-f5d37884e69c"
+                },
+                {
+                    "description": "パッド 3 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 0.5
+                    },
+                    "uuid": "89e95035-6596-4331-9b8e-4bfb0e68db59"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット <ネットなし> と /VBUS)",
+            "items": [
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.7614 mm )",
+                    "pos": {
+                        "x": 16.7625,
+                        "y": 2.199999
+                    },
+                    "uuid": "f8a3e172-77f9-4909-ba6f-1c262cc4a90a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット <ネットなし> と /VBUS)",
+            "items": [
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.4160 mm )",
+                    "pos": {
+                        "x": 15.0125,
+                        "y": 2.0
+                    },
+                    "uuid": "de744f04-ef7e-4580-b4ae-90a506864413"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と <ネットなし>)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.9000 mm )",
+                    "pos": {
+                        "x": 14.1,
+                        "y": 3.5
+                    },
+                    "uuid": "67f37989-9b58-4890-93f9-79b453ae6a38"
+                },
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と <ネットなし>)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.0770 mm )",
+                    "pos": {
+                        "x": 14.1,
+                        "y": 2.6
+                    },
+                    "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+                },
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /GND)",
+            "items": [
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.3025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0450 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.3025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                },
+                {
+                    "description": "ビア [/CHG_ALLOW] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.826043,
+                        "y": 1.432223
+                    },
+                    "uuid": "ecf7743f-36bd-45c9-b856-3e70411e1717"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.3,
+                        "y": 1.5
+                    },
+                    "uuid": "6b5c403d-dbae-4335-925e-6b6a5cf2cc31"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0900 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 3.715
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                },
+                {
+                    "description": "パッド 1 [/PDM_DATA] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 3.715
+                    },
+                    "uuid": "d18d6bbe-de4a-4076-b642-3eecffc370fd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0900 mm)",
+            "items": [
+                {
+                    "description": "パッド 4 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 5.415
+                    },
+                    "uuid": "5bba1861-3b94-4c6f-822b-8a0d96b28073"
+                },
+                {
+                    "description": "パッド 3 [/PDM_CLK] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 5.415
+                    },
+                    "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.0770 mm )",
+                    "pos": {
+                        "x": 14.1,
+                        "y": 2.6
+                    },
+                    "uuid": "38a7e118-bb68-4f0c-838f-93d71625ffff"
+                },
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.9000 mm )",
+                    "pos": {
+                        "x": 14.1,
+                        "y": 3.5
+                    },
+                    "uuid": "67f37989-9b58-4890-93f9-79b453ae6a38"
+                },
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/CHG_ALLOW] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.826043,
+                        "y": 1.432223
+                    },
+                    "uuid": "ecf7743f-36bd-45c9-b856-3e70411e1717"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.4160 mm )",
+                    "pos": {
+                        "x": 15.0125,
+                        "y": 2.0
+                    },
+                    "uuid": "de744f04-ef7e-4580-b4ae-90a506864413"
+                },
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.7614 mm )",
+                    "pos": {
+                        "x": 16.7625,
+                        "y": 2.199999
+                    },
+                    "uuid": "f8a3e172-77f9-4909-ba6f-1c262cc4a90a"
+                },
+                {
+                    "description": "パッド 6 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 2.4
+                    },
+                    "uuid": "d8ab1998-40c7-4b2b-9807-3e33a17f302c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.3025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.3,
+                        "y": 1.5
+                    },
+                    "uuid": "6b5c403d-dbae-4335-925e-6b6a5cf2cc31"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.2828 mm )",
+                    "pos": {
+                        "x": 17.9,
+                        "y": 1.4
+                    },
+                    "uuid": "351fc41e-5bc2-4ef8-91d8-a8050fcdb89e"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 5.2010 mm )",
+                    "pos": {
+                        "x": 17.4,
+                        "y": 0.6
+                    },
+                    "uuid": "393caa2d-deae-4e5d-aa84-f5d37884e69c"
+                },
+                {
+                    "description": "パッド 3 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 0.5
+                    },
+                    "uuid": "89e95035-6596-4331-9b8e-4bfb0e68db59"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 5.2010 mm )",
+                    "pos": {
+                        "x": 17.4,
+                        "y": 0.6
+                    },
+                    "uuid": "393caa2d-deae-4e5d-aa84-f5d37884e69c"
+                },
+                {
+                    "description": "パッド 4 [<no net>] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 0.5
+                    },
+                    "uuid": "8e8b3670-cebd-402b-8954-e76d9868b793"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.3000 mm )",
+                    "pos": {
+                        "x": 17.7,
+                        "y": 1.2
+                    },
+                    "uuid": "3b8c515a-4319-4913-9af2-43f7fcba6547"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 1.45
+                    },
+                    "uuid": "6dbc80e6-1160-4ea5-8722-a83d43fdeba8"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.4243 mm )",
+                    "pos": {
+                        "x": 17.7,
+                        "y": 0.9
+                    },
+                    "uuid": "99ca3c42-6ae8-4cec-a4c0-8cb19182a904"
+                },
+                {
+                    "description": "パッド 3 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.1375,
+                        "y": 0.5
+                    },
+                    "uuid": "89e95035-6596-4331-9b8e-4bfb0e68db59"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.9025,
+                        "y": 2.825
+                    },
+                    "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 0.6294 mm )",
+                    "pos": {
+                        "x": 12.55,
+                        "y": 2.55
+                    },
+                    "uuid": "45c24f75-7f6f-4f16-a597-fc1a9be1e7f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_CHARGER] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4175,
+                        "y": 1.075
+                    },
+                    "uuid": "c1c68fa4-3620-4ef7-9c44-431d3a9da43e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_CHARGER] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.68,
+                        "y": 1.055
+                    },
+                    "uuid": "f10b0927-97b8-4e70-89e7-423423607212"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "U13のリファレンスフィールド",
+                    "pos": {
+                        "x": 16.0,
+                        "y": 3.85
+                    },
+                    "uuid": "70899a8f-e5ab-4850-afa3-273071acf40c"
+                },
+                {
+                    "description": "ポリゴン of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 17.45,
+                        "y": 2.96
+                    },
+                    "uuid": "8421611e-14f6-4c9d-9e55-cdcb37dd2538"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

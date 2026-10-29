@@ -1,3 +1,5 @@
+// HISTORICAL / NON-PRODUCTION: initial XIAO ESP32S3 evaluation stub.
+// The current product firmware authority is firmware/stm32/.
 #include "modules.h"
 #include "config.h"
 // TODO: SD + FAT32、PSRAMにためてまとめ書き、5分で分割、RIFFヘッダ更新

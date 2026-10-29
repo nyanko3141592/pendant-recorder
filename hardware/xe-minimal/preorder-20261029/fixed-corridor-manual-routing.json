@@ -1,0 +1,156 @@
+{
+  "source_sha256": "f8f2d754bb588a0fb507cb8191e4c11730feaa3827768163ec30bf5afb85bca1",
+  "routes": [
+    {
+      "net": "/STATUS_LED",
+      "start": [
+        21.733,
+        1.7947
+      ],
+      "end": [
+        21.0544,
+        6.8744
+      ],
+      "attempts": [
+        {
+          "layer": "F.Cu",
+          "visited": 110654,
+          "found": false
+        },
+        {
+          "layer": "B.Cu",
+          "visited": 64472,
+          "found": false
+        },
+        {
+          "layer": "In2.Cu",
+          "visited": 1,
+          "found": false
+        }
+      ]
+    },
+    {
+      "net": "/STATUS_LED_A",
+      "start": [
+        21.0887,
+        1.0036
+      ],
+      "end": [
+        12.8836,
+        4.1112
+      ],
+      "attempts": [
+        {
+          "layer": "F.Cu",
+          "visited": 110787,
+          "found": false
+        },
+        {
+          "layer": "B.Cu",
+          "visited": 76266,
+          "found": false
+        },
+        {
+          "layer": "In2.Cu",
+          "visited": 16505,
+          "found": false
+        }
+      ]
+    },
+    {
+      "net": "/BAT",
+      "start": [
+        8.3618,
+        2.0352
+      ],
+      "end": [
+        11.745,
+        9.255
+      ],
+      "attempts": [
+        {
+          "layer": "F.Cu",
+          "visited": 8185,
+          "found": false
+        }
+      ]
+    },
+    {
+      "net": "/VBUS_CHARGER",
+      "start": [
+        9.0372,
+        4.5263
+      ],
+      "end": [
+        20.7895,
+        16.0791
+      ],
+      "attempts": [
+        {
+          "layer": "F.Cu",
+          "visited": 710,
+          "found": false
+        }
+      ]
+    },
+    {
+      "net": "/BAT_TS",
+      "start": [
+        22.6974,
+        11.1185
+      ],
+      "end": [
+        22.6974,
+        1.9999
+      ],
+      "attempts": [
+        {
+          "layer": "F.Cu",
+          "visited": 123337,
+          "found": false
+        },
+        {
+          "layer": "B.Cu",
+          "visited": 1,
+          "found": false
+        },
+        {
+          "layer": "In2.Cu",
+          "visited": 465,
+          "found": true
+        }
+      ],
+      "route": {
+        "layer": "In2.Cu",
+        "length_mm": 9.16002135623731,
+        "path": [
+          [
+            22.6974,
+            11.1185
+          ],
+          [
+            22.6974,
+            5.968499
+          ],
+          [
+            22.7474,
+            5.918499
+          ],
+          [
+            22.7474,
+            2.118499
+          ],
+          [
+            22.6974,
+            2.068499
+          ],
+          [
+            22.6974,
+            1.9999
+          ]
+        ]
+      }
+    }
+  ],
+  "release_allowed": false
+}

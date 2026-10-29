@@ -1,0 +1,106 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:52:49",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "ldo-repair.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5585 mm )",
+                    "pos": {
+                        "x": 3.8551,
+                        "y": 11.8849
+                    },
+                    "uuid": "0b90d9a0-3a64-4d31-9ad9-c236713b6868"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.3294 mm )",
+                    "pos": {
+                        "x": 1.3209,
+                        "y": 15.4779
+                    },
+                    "uuid": "36051797-c0d6-419d-b83e-53bcbfe0cb66"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( B.Cu 上、長さ: 0.5742 mm )",
+                    "pos": {
+                        "x": 1.0164,
+                        "y": 13.6494
+                    },
+                    "uuid": "71701b57-705e-44e8-afa3-7ba23a467585"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( In2.Cu 上、長さ: 2.8827 mm )",
+                    "pos": {
+                        "x": 1.0164,
+                        "y": 13.6494
+                    },
+                    "uuid": "5702e709-0a6a-41f9-b0da-dee4a6f3013e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

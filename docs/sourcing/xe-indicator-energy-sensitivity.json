@@ -1,0 +1,89 @@
+{
+  "status": "SENSITIVITY_NOT_ADOPTED_POWER_BUDGET",
+  "source_sha256": {
+    "hardware/xe-minimal/recording-current-budget.json": "1a97988fb333291125ab20e0be9711a384ec8ad64fbbe1e54e567fbde07ebb10",
+    "hardware/xe-minimal/fixed-usb-limit-trial/led-land-trial/indicator-current-budget.json": "e3687b6562909a476a90fa73881b58b1884f52f15354f3e1ed79b1ffbc4ad18d"
+  },
+  "rows": [
+    {
+      "usable_capacity_fraction_hypothesis": 0.6,
+      "LED_duty_hypothesis": 1,
+      "nonstorage_allocation_mA": 3.398348097942489,
+      "storage_budget_mA": 0.726651902057511,
+      "max_storage_active_ms_per_5s_hypothesis": 106.17981896320784,
+      "remaining_after_payload_only_ms": 23.235818963207834
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.6,
+      "LED_duty_hypothesis": 0.1,
+      "nonstorage_allocation_mA": 2.9504871353756443,
+      "storage_budget_mA": 1.174512864624356,
+      "max_storage_active_ms_per_5s_hypothesis": 196.4743678678137,
+      "remaining_after_payload_only_ms": 113.5303678678137
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.6,
+      "LED_duty_hypothesis": 0.01,
+      "nonstorage_allocation_mA": 2.9057010391189597,
+      "storage_budget_mA": 1.2192989608810403,
+      "max_storage_active_ms_per_5s_hypothesis": 205.50382275827425,
+      "remaining_after_payload_only_ms": 122.55982275827425
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.7,
+      "LED_duty_hypothesis": 1,
+      "nonstorage_allocation_mA": 3.398348097942489,
+      "storage_budget_mA": 1.4141519020575108,
+      "max_storage_active_ms_per_5s_hypothesis": 244.78868993094977,
+      "remaining_after_payload_only_ms": 161.84468993094976
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.7,
+      "LED_duty_hypothesis": 0.1,
+      "nonstorage_allocation_mA": 2.9504871353756443,
+      "storage_budget_mA": 1.862012864624356,
+      "max_storage_active_ms_per_5s_hypothesis": 335.0832388355556,
+      "remaining_after_payload_only_ms": 252.1392388355556
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.7,
+      "LED_duty_hypothesis": 0.01,
+      "nonstorage_allocation_mA": 2.9057010391189597,
+      "storage_budget_mA": 1.9067989608810403,
+      "max_storage_active_ms_per_5s_hypothesis": 344.1126937260162,
+      "remaining_after_payload_only_ms": 261.16869372601616
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.8,
+      "LED_duty_hypothesis": 1,
+      "nonstorage_allocation_mA": 3.398348097942489,
+      "storage_budget_mA": 2.101651902057511,
+      "max_storage_active_ms_per_5s_hypothesis": 383.3975608986917,
+      "remaining_after_payload_only_ms": 300.4535608986917
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.8,
+      "LED_duty_hypothesis": 0.1,
+      "nonstorage_allocation_mA": 2.9504871353756443,
+      "storage_budget_mA": 2.5495128646243557,
+      "max_storage_active_ms_per_5s_hypothesis": 473.6921098032975,
+      "remaining_after_payload_only_ms": 390.7481098032975
+    },
+    {
+      "usable_capacity_fraction_hypothesis": 0.8,
+      "LED_duty_hypothesis": 0.01,
+      "nonstorage_allocation_mA": 2.9057010391189597,
+      "storage_budget_mA": 2.5942989608810403,
+      "max_storage_active_ms_per_5s_hypothesis": 482.72156469375807,
+      "remaining_after_payload_only_ms": 399.77756469375805
+    }
+  ],
+  "saved_16h_charge_1percent_vs_continuous_LED_mAh": 7.88235294117647,
+  "limits": [
+    "The existing conservative screen remains unchanged.",
+    "1% duty is a scenario informed by periodic indicator simulations, not a guarantee for every terminal/fault/scheduling state.",
+    "2.8 mA base remains unmeasured; startup and storage busy energy unqualified.",
+    "Usable fraction after 4.1 V charge and 3.6 V stop is unknown.",
+    "No runtime or battery capacity claim follows from this sensitivity."
+  ]
+}

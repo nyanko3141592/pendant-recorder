@@ -1,0 +1,93 @@
+{
+  "status": "SLICED_NOT_PRINTED_OR_FIT_QUALIFIED",
+  "parts": [
+    {
+      "part": "film-axial-stop-seat-clearance-lower",
+      "source": "film-axial-stop-seat-clearance-lower-trial.step",
+      "source_sha256": "53d63eef6437679eeb17338ea7464a2f98084a4add5ae08450ad5dcf48b22ca1",
+      "stl_sha256": "e8aa01d1e11942489f9ded25d66367c507a6134a9bd2fb50d75d49172069fdab",
+      "3mf_sha256": "10a9ca7ed9a0fbf8a509e18a8f1250a0ee496c0c43d61213fa5a32ee1bd99ff1",
+      "first_layer_mm": 0.28,
+      "regular_layer_mm": 0.08,
+      "CAD_height_mm": 8.120000000000001,
+      "translation_mm": [
+        1.1000000000000014,
+        28.3,
+        7.720000000000001
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 381,
+        "layer_height": 0.07999999821186066,
+        "plate_index": 0,
+        "prepare_time": 20,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 31.248031616210938,
+              "Custom": 34.718021392822266,
+              "Gap infill": 0.8424617052078247,
+              "Inner wall": 71.28401947021484,
+              "Internal solid infill": 63.3167610168457,
+              "Outer wall": 655.8469848632812,
+              "Overhang wall": 1.5174469947814941,
+              "Top surface": 17.656402587890625,
+              "Travel": 118.5134506225586,
+              "Undefined": 102.9232406616211
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.6748591661453247,
+                "total_used_g": 1.6748591661453247
+              }
+            ],
+            "generate_support_material_time": 15,
+            "id": 1,
+            "infill_time": 16,
+            "layer_filament_change": 0,
+            "main_predication": 960.2545776367188,
+            "make_perimeters_time": 97,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 29.60000228881836,
+                  "height": 8.119999885559082,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 75.19999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "film-axial-stop-seat-clearance-lower.stl",
+                "triangle_count": 10912
+              }
+            ],
+            "sliced_time": 306,
+            "sliced_time_with_cache": 173,
+            "total_predication": 979.3521728515625,
+            "triangle_count": 10912,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 2
+      },
+      "profile_sha256": {
+        "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+        "process": "4d1014d71dc6c2612ac0336a1c5c584c89861455ac803587d43745e34ba118be",
+        "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+      }
+    }
+  ],
+  "limits": [
+    "Toolpath review still required",
+    "Tray pedestal overhang and 0.074mm internal slit not physically verified",
+    "Current plug and original lead fit unresolved",
+    "No print job sent"
+  ]
+}

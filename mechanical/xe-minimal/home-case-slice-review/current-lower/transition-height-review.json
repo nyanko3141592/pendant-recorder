@@ -1,0 +1,117 @@
+{
+  "status": "SLICE_HEIGHT_SENSITIVITY_NOT_PRINT_APPROVAL",
+  "rows": [
+    {
+      "layer_top_mm": 7.64,
+      "samples": [
+        {
+          "z_mm": 7.481,
+          "section_area_mm2": 93.26561033858444,
+          "outside_bead_area_mm2": 0.17351584789469712,
+          "uncovered_mm2": 0.18240923535420125
+        },
+        {
+          "z_mm": 7.52,
+          "section_area_mm2": 93.26561060471983,
+          "outside_bead_area_mm2": 0.17351556683518768,
+          "uncovered_mm2": 0.18240922042875135
+        },
+        {
+          "z_mm": 7.56,
+          "section_area_mm2": 93.2656109146898,
+          "outside_bead_area_mm2": 0.17351526792776192,
+          "uncovered_mm2": 0.18240923149249288
+        },
+        {
+          "z_mm": 7.6,
+          "section_area_mm2": 91.50704809365016,
+          "outside_bead_area_mm2": 1.930736029774232,
+          "uncovered_mm2": 0.18106717229939312
+        },
+        {
+          "z_mm": 7.638999999999999,
+          "section_area_mm2": 91.50704840693163,
+          "outside_bead_area_mm2": 1.930735749372682,
+          "uncovered_mm2": 0.18106720517844807
+        }
+      ]
+    },
+    {
+      "layer_top_mm": 7.8,
+      "samples": [
+        {
+          "z_mm": 7.641,
+          "section_area_mm2": 91.50704839555056,
+          "outside_bead_area_mm2": 0.011359856483876966,
+          "uncovered_mm2": 0.654300219350672
+        },
+        {
+          "z_mm": 7.68,
+          "section_area_mm2": 91.50704874930398,
+          "outside_bead_area_mm2": 0.011359560684580312,
+          "uncovered_mm2": 0.6543002773044441
+        },
+        {
+          "z_mm": 7.72,
+          "section_area_mm2": 85.20704934412004,
+          "outside_bead_area_mm2": 5.964221078917316,
+          "uncovered_mm2": 0.3071623903536352
+        },
+        {
+          "z_mm": 7.76,
+          "section_area_mm2": 85.20704966819858,
+          "outside_bead_area_mm2": 5.964220762953171,
+          "uncovered_mm2": 0.30716239846843113
+        },
+        {
+          "z_mm": 7.7989999999999995,
+          "section_area_mm2": 85.20705000361875,
+          "outside_bead_area_mm2": 5.964220451455206,
+          "uncovered_mm2": 0.3071624223896949
+        }
+      ]
+    },
+    {
+      "layer_top_mm": 7.96,
+      "samples": [
+        {
+          "z_mm": 7.801,
+          "section_area_mm2": 21.52699235352087,
+          "outside_bead_area_mm2": 0.01635230744167589,
+          "uncovered_mm2": 0.1864669111495333
+        },
+        {
+          "z_mm": 7.84,
+          "section_area_mm2": 21.526992680704645,
+          "outside_bead_area_mm2": 0.016352005060567092,
+          "uncovered_mm2": 0.18646693595221076
+        },
+        {
+          "z_mm": 7.88,
+          "section_area_mm2": 21.5269930269036,
+          "outside_bead_area_mm2": 0.01635169423089143,
+          "uncovered_mm2": 0.18646697132147536
+        },
+        {
+          "z_mm": 7.92,
+          "section_area_mm2": 21.526993338244683,
+          "outside_bead_area_mm2": 0.016351379983406994,
+          "uncovered_mm2": 0.1864669684150813
+        },
+        {
+          "z_mm": 7.959,
+          "section_area_mm2": 21.526993706107593,
+          "outside_bead_area_mm2": 0.01635105489359056,
+          "uncovered_mm2": 0.18646701118818085
+        }
+      ]
+    }
+  ],
+  "interpretation": "Variation across one layer distinguishes shape transitions from simple path mismatch; does not prove deposited shape",
+  "sources_sha256": {
+    "plate_1.gcode": "53296761aa3942ef88cb6cdeb1f7c4f994c55fe98710cb2c0c196f46ad320796",
+    "current-lower.3mf": "5617c3ac2f2daf1176448f4c8bc64981e02759ad2fe476b6b15ee6fad0c4afe9"
+  },
+  "finding": "Layer top7.80mm nominal beads agree closely with lower within-layer sections at7.641/7.68mm (outside0.01136mm2), but not7.72mm section(outside5.96422mm2). Mesh area changes91.50705to85.20705mm2 inside the layer. Prior difference is height-dependent at a modeled transition, not evidence of a wholly missing wall.",
+  "remaining": "Locate affected support/adhesive region and evaluate vertical layer quantization against assembly clearance. Do not dismiss overbuild solely because it is slice-height dependent."
+}

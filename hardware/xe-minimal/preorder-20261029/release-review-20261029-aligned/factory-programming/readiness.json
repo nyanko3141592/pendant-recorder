@@ -1,0 +1,31 @@
+{
+  "status": "HOLD_FACTORY_IMAGE_INPUTS_INCOMPLETE",
+  "target_mpn": "STM32U585CIU6",
+  "pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "j3_interface": "current-j3-interface.json",
+  "template": "evt-programming-manifest.template.json",
+  "flashable_image": null,
+  "missing_inputs": [
+    "Allocated/authorized USB VID/PID and evidence",
+    "Battery stop threshold with required pack characterization evidence",
+    "JLC automatic factory programming workflow acceptance",
+    "New current-source build and readback records after inputs resolve"
+  ],
+  "legacy_source_lock_audit": {
+    "examined_files": 343,
+    "changed": [
+      "firmware/stm32/tests/check_recording_end_to_end.py",
+      "firmware/stm32/tests/check_storage_36h.sh",
+      "firmware/stm32/tests/test_storage_36h.c"
+    ],
+    "missing": [],
+    "meaning": "Legacy lock cannot certify current source tree if any entry differs; no old regression pass is transferred."
+  },
+  "buyer_flashing_required": false,
+  "private_key_in_factory_inputs": false,
+  "buyer_public_key_in_factory_inputs": false,
+  "source_template_sha256": "5cbf6d6290c5bf63b1d3b76c2077afc2fdba4ab35c3b2e27a9d9d4da0e861e83",
+  "order_allowed": false,
+  "current_regression_evidence": "../evidence/current-firmware-regression/result.json",
+  "current_regression_checks_passed": 40
+}

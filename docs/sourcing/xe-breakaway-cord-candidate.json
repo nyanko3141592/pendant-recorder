@@ -1,0 +1,61 @@
+{
+  "status": "SINGLE_RETAIL_CANDIDATE_SELECTED_NOT_ADOPTED_PHYSICAL_FIT_AND_BREAKAWAY_EVT_PENDING",
+  "observed_date": "2026-10-28",
+  "candidate": {
+    "manufacturer": "RastaBanana / Telephone Lease Co., Ltd.",
+    "model": "RNST04BK",
+    "jan": "4988075710436",
+    "description": "round neck strap with length adjustment and safety breakaway part, black",
+    "finished_product": true,
+    "buyer_cut_crimp_or_terminal_work_required": false,
+    "published_mass_g": 9,
+    "published_length_adjustment_cm": "30_to_45",
+    "published_materials": ["polyester", "EVA", "polyacetal", "ABS", "zinc alloy"],
+    "published_breakaway_description": "safety part automatically separates at approximately 3 kg load",
+    "published_nominal_breakaway_kgf": 3.0,
+    "published_nominal_breakaway_N_calculated": 29.41995,
+    "published_nominal_is_not_a_verified_distribution_or_guaranteed_range": true
+  },
+  "normal_japan_retail_observations": [
+    {
+      "retailer": "Yodobashi Camera",
+      "status": "in_stock_observed",
+      "public_price_JPY_tax_included": 393,
+      "url": "https://www.yodobashi.com/category/174101/174180/174181/m0000002239/"
+    },
+    {
+      "retailer": "Yamada Webcom",
+      "status": "delivery_listing_observed",
+      "public_price_JPY_tax_included": 382,
+      "url": "https://www.yamada-denkiweb.com/category/209/002/009/?maker=50&page=1&stock=0"
+    },
+    {
+      "retailer": "MonotaRO",
+      "status": "single_unit_listing_observed",
+      "public_price_JPY_tax_included": 581,
+      "url": "https://www.monotaro.com/s/b-16162/q-%E4%B8%B8%E7%B4%90%E3%83%8D%E3%83%83%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E3%83%83%E3%83%97/"
+    }
+  ],
+  "fit_boundary": {
+    "case_hole_diameter_mm": 3.2,
+    "device_attachment_loop_diameter_or_flattened_width_mm": null,
+    "main_neck_cord_diameter_mm": null,
+    "physical_threading_without_cutting_or_terminal_removal": "NOT_VERIFIED",
+    "worn_orientation_with_candidate": "NOT_RUN"
+  },
+  "safety_boundary": {
+    "public_product_claim_source_available": true,
+    "manufacturer_guaranteed_min_max_release_force": null,
+    "approved_product_risk_window_N": null,
+    "new_sweat_and_10000_slide_release_tests": "NOT_RUN",
+    "small_part_sharp_edge_and_conductive_exposure_after_release": "NOT_RUN",
+    "children_sleep_and_machinery_use": "PROHIBITED_WITHOUT_SEPARATE_QUALIFICATION"
+  },
+  "decision": "Use RNST04BK as the only first physical cord candidate. Do not call it adopted or release-safe until the exact retail article threads through the 3.2 mm hole without modification and Gate F establishes a documented acceptable release-force window and repeatability.",
+  "alternatives_not_selected": [
+    "RNST04NV and RNST04RD are color variants, not independent second-source mechanisms",
+    "bulk NPS-M3F requires cord assembly and a 500-set minimum, violating no-processing and prototype procurement priorities",
+    "unbranded marketplace breakaway cords lack a traceable release claim"
+  ],
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

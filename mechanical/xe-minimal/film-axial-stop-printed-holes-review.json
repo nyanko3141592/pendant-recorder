@@ -1,0 +1,85 @@
+{
+  "status": "NOMINAL_BEAD_PRISM_SCREEN_NOT_PRINT_QUALIFICATION",
+  "source_sha256": "e5a67760508904f7676e777dcaa31afcdb36a576700876a86d0678532b6a6f2f",
+  "gcode_sha256": "59de64bc901482320efdb75fd348ebcc54ddc059f52356e31f427a463592349c",
+  "rows": [
+    {
+      "layer_top_mm": 0.46,
+      "assembly_bottom_mm": -2.119999990395355,
+      "assembly_top_mm": -1.9599999903953549,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.14974979388423715,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.46,
+      "assembly_bottom_mm": -2.119999990395355,
+      "assembly_top_mm": -1.9599999903953549,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.14974979388423715,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.54,
+      "assembly_bottom_mm": -1.9599999903953549,
+      "assembly_top_mm": -1.8799999903953548,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.54,
+      "assembly_bottom_mm": -1.9599999903953549,
+      "assembly_top_mm": -1.8799999903953548,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.62,
+      "assembly_bottom_mm": -1.9599999903953547,
+      "assembly_top_mm": -1.7999999903953547,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.62,
+      "assembly_bottom_mm": -1.9599999903953547,
+      "assembly_top_mm": -1.7999999903953547,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.78,
+      "assembly_bottom_mm": -1.7999999903953547,
+      "assembly_top_mm": -1.6399999903953548,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.09810707260378869,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.78,
+      "assembly_bottom_mm": -1.7999999903953547,
+      "assembly_top_mm": -1.6399999903953548,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.09810707260378869,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    }
+  ],
+  "limits": [
+    "Wire nominal OD .31 mm; no manufacturing tolerances.",
+    "Per-layer maximum cylinder section is conservative: positive overlap is a screen finding, not exact physical collision.",
+    "Commanded bead width and rectangular layer section are approximations.",
+    "Support must be removed; sag, residue, hole size and pull strength require physical validation."
+  ]
+}

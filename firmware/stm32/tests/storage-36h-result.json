@@ -1,0 +1,34 @@
+{
+  "status": "PASS_SYNTHETIC_CAPACITY_ONLY",
+  "command": "sh firmware/stm32/tests/check_storage_36h.sh",
+  "volume_bytes": 963999744,
+  "filesystem": "FAT32 4KiB clusters",
+  "files": 10800,
+  "represented_seconds": 108000,
+  "bytes_per_file": 82180,
+  "observed_full_ciphertext_bytes": 81172,
+  "payload_bytes": 887544000,
+  "free_bytes_after": 32710656,
+  "checks": [
+    "Canonical cooperative ten-second profile and all 10,800 generated file IDs",
+    "Production begin/write/commit API for every file",
+    "Unmount/remount and production recovery next_id=10800",
+    "Open and read every full file; exact payload comparison",
+    "ASan and UBSan enabled"
+  ],
+  "limitations": [
+    "Synthetic conservative payload, not 30 hours of real encrypted audio",
+    "RAM disk; does not validate physical SD capacity, latency, endurance or power",
+    "Single cluster size/format; actual factory formatting still to be qualified",
+    "No USB transfer or power-loss simulation"
+  ],
+  "source_sha256": {
+    "tests/test_storage_36h.c": "c638bc6724128e30c2f60f22935da13acb5e8261bd7775968ee0a619f7e1af64",
+    "tests/check_storage_36h.sh": "cdb8b89871697277c40cdfa55c9515ee86aba98c733a753380bf16ae955ae966",
+    "crypto/fatfs_recording.c": "c0821b2d525f9740d1a13f3b5b0d6955c484d93e4045e80771ea6412b214d1b5",
+    "crypto/fatfs_recording.h": "b1d62a1d7741cedb29adcb0431169e3ab16b53eb6164e1972df36c5bcce938d3",
+    "vendor/fatfs/ff.c": "3c30280ffe2d0fb19a5241d9ed9f20a2c3911c2861652ebf6ad57f74fb369250",
+    "vendor/fatfs/ffconf.h": "4d749bb39f33216d9e4c0945e58ad36ced561db3dbe335a87ebcfeb224f995f3",
+    "board/storage_diskio.c": "01f5eb995cba9736820912f0ca37966ac1aaf4272c0bb7699c6fbe0e2af29158"
+  }
+}

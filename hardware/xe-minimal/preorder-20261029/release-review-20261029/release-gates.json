@@ -1,0 +1,42 @@
+{
+  "status": "HOLD_DO_NOT_ORDER",
+  "issues": [
+    {
+      "id": "FAB",
+      "stage": "before_order",
+      "issue": "PCB general thickness .8264mm disagrees with stackup copper+dielectric sum .7992mm; nominal .8mm supplier stackup and 90ohm geometry not finalized.",
+      "next": "Align project thickness with approved supplier stackup and regenerate hash-bound outputs; confirm .15mm through drill acceptance/cost."
+    },
+    {
+      "id": "BOM",
+      "stage": "before_order",
+      "issue": "U1 stock is not numerically verified; U11 is Standard-only/preorder. Historical counts in sourcing BOM are not current guaranteed supply.",
+      "next": "Verify exact full-BOM catalog route and availability; no reservation or purchase."
+    },
+    {
+      "id": "ASSEMBLY",
+      "stage": "before_order",
+      "issue": "68 placements match PCB/BOM, but JLC rotation/pin1 interpretation and 74 library footprint provenance warnings remain unreviewed.",
+      "next": "Review physical pad numbering and package orientation against manufacturer and assembler conventions; do not upload raw CPL."
+    },
+    {
+      "id": "MECHANICAL",
+      "stage": "before_order",
+      "issue": "Kit lacks completed battery retention, swelling protection and verified original harness/mated connector envelope; J2 longitudinal datum provisional.",
+      "next": "Finish integrated mechanical design using applicable dimensional evidence; preserve current kit as preliminary fit gauge."
+    },
+    {
+      "id": "ELECTRICAL",
+      "stage": "before_order_design_review",
+      "issue": "DRC-clean geometry does not certify USB impedance/return quality, power transient margins or charging safety; trace-resistance estimate excludes component and return losses.",
+      "next": "Complete bounded datasheet-based circuit/layout review and document physical EVT criteria; no repeated unconstrained local search."
+    },
+    {
+      "id": "EVT",
+      "stage": "after_prototype_physical",
+      "issue": "16h battery recording, actual-media >=30h encrypted storage, thermal/NTC/abnormal USB input, three-OS USB, acoustic, drop and cord tests are unmeasured.",
+      "next": "Use explicit assembly/test protocol; never replace physical results with CAD or host tests."
+    }
+  ],
+  "order_allowed": false
+}

@@ -1,0 +1,28 @@
+{
+  "status": "FACTORY_EMPTY_IMAGE_GENERATOR_AND_FIRMWARE_FATFS_COMPATIBILITY_PASS",
+  "host_tests_passed": 7,
+  "firmware_test": "sh firmware/stm32/tests/check_storage_36h.sh /tmp/pendant-factory-empty-20261029.img",
+  "fixture_sectors": 1882812,
+  "fixture_size_is_measured_hardware_capacity": false,
+  "files": 10800,
+  "ciphertext_fixture_bytes_per_file": 82180,
+  "real_audio": false,
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "identity_provisioned": false,
+  "physical_write_or_readback_performed": false,
+  "limits": [
+    "Measured medium sector count still required; example capacity is synthetic.",
+    "Generated empty image excludes product identity and recipient provisioning.",
+    "Full medium image programming and physical readback not performed.",
+    "Three-session endpoint rounding remains allocation budget, not this single-stream test."
+  ],
+  "source_sha256": {
+    "host/create_factory_storage_image.py": "e444a26fa0433ca4a65571246e088739119006d65bfbf1ad12cef9db9977ebae",
+    "host/verify_factory_storage.py": "ae3ca36b144248d41cc04d556c19a33d55b2e468bc81cea6f73f3a09e919c134",
+    "firmware/stm32/tests/test_storage_36h.c": "2371c86409852622c3e6e2eba232725a62424d600631fdc0c887aaf1bfd33138",
+    "firmware/stm32/tests/check_storage_36h.sh": "5584f0465710f576fa8baff94d9e9878416e4cf28ef6a46d547ba60e070b5224"
+  }
+}

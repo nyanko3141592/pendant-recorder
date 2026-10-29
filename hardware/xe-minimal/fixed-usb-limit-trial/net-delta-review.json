@@ -1,0 +1,30 @@
+{
+  "status": "PASS_EXPECTED_NET_AND_TRACK_DELTA_ONLY",
+  "source_sha256": {
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/pendant-xe-minimal.kicad_pcb": "0753b2e85892a530bba429b7b49dae4a322f1b8d5d0805760657e1b43a72a44d",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/fixed-usb-limit-trial/pendant-xe-minimal.kicad_pcb": "1d560d5371d6d0da7020b720c3da4811a601f9a60c1d49964f7dc0f00b6f672d"
+  },
+  "removed_pad_count": 7,
+  "changed_retained_pads": [
+    {
+      "ref": "U1",
+      "pad": "42",
+      "before": "/USB_HIGH_BUDGET",
+      "after": "unconnected-(U1-PB6-Pad42)"
+    }
+  ],
+  "SETI_pad_members": [
+    [
+      "U13",
+      "3"
+    ],
+    [
+      "R44",
+      "1"
+    ]
+  ],
+  "retained_track_or_via_attribute_changes": [],
+  "removed_track_or_via_count": 40,
+  "erc_violations": 0,
+  "scope": "Net assignment and retained track geometry comparison, not transient simulation, pin-function qualification or mechanical validation."
+}

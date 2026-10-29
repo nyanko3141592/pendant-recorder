@@ -1,0 +1,39 @@
+{
+  "status": "PUBLISHED_PROCESS_REVIEW_NOT_CONFIRMED_MCU_PROCUREMENT",
+  "checked": "2026-10-27",
+  "sources": [
+    "https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction",
+    "https://jlcpcb.com/help/article/consignment-part-terms-conditions"
+  ],
+  "source_updated": "2026-09-09",
+  "preferred_next_check": "Exact STM32U535CEU6 global sourcing availability and landed procurement charge, without placing order",
+  "published_routes": {
+    "global_sourcing": {
+      "lead_time_days_reference": [
+        9,
+        15
+      ],
+      "exact_MCU_availability": null
+    },
+    "preorder": {
+      "usable_for_assembly": "After warehouse receipt",
+      "exact_MCU_delivery_date": null
+    },
+    "overseas_consignment": {
+      "service_USD_for_1_to_50_part_numbers": 85,
+      "shipping_duties_tax": "Additional, not included",
+      "eligibility_for_MCU": null
+    }
+  },
+  "same_part_mixing_rule": "Consignment/global sourcing may mix with each other for one SKU; public stock/private preorder are another group. Different SKUs can use different sourcing routes within one order.",
+  "additional_conditions": [
+    "Provide attrition quantity; installed count alone is insufficient",
+    "Check actual carrier and moisture handling before applying loose-part or baking fees",
+    "Exact MCU eligibility not established; consignment terms mention restricted materials without enough part-specific detail"
+  ],
+  "product_requirement": "All electronics assembled and flashed before sale; buyer only connects original battery. Consignment would be a manufacturing operation, not buyer soldering.",
+  "cost_consequence": "Do not treat overseas consignment as a free route; 85 USD service fee alone exceeds the MCU installed-parts subtotal in some scenarios. Do not add fee unless this route is chosen.",
+  "orders_or_supplier_messages": false,
+  "MCU_retail_evidence": "docs/procurement/xe-mcu-retail-availability.json",
+  "MCU_route_status": "Retail same-part stock found; exact assembler sourcing/receipt and fees unresolved"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "OFFICIAL_STACKUP_OBSERVED_NOT_APPLIED",
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "observed_date": "2026-10-26",
+  "input": {
+    "layers": 6,
+    "nominal_thickness_mm": 0.8,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5
+  },
+  "recommended": "JLC06081H-2116",
+  "finished_thickness_mm": 0.83,
+  "thickness_tolerance_mm": 0.1,
+  "layers_top_to_bottom_mm": [
+    0.035,
+    0.1164,
+    0.0152,
+    0.13,
+    0.0152,
+    0.2028,
+    0.0152,
+    0.13,
+    0.0152,
+    0.1164,
+    0.035
+  ],
+  "materials_between_copper": [
+    "2116 RC54%",
+    "core 0.13 mm",
+    "7628 RC49%",
+    "core 0.13 mm",
+    "2116 RC54%"
+  ],
+  "limitations": [
+    "Read from standard recommended calculator tab; not a quote or reservation",
+    "50 ohm single-ended default used only to expose stackup; USB 90 ohm differential geometry not calculated",
+    "Nominal case model assumed .8 mm; actual .83 +/- .10 must be included in fit tolerance",
+    "No board stackup applied yet"
+  ]
+}

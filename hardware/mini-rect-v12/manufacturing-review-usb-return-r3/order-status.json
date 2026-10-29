@@ -1,0 +1,143 @@
+{
+  "requirements": {
+    "usb": "USB-C data and charging; automatic host import after USB data connection and safe recording finalization",
+    "recording_hours_min": 16,
+    "storage_hours_min": 36,
+    "wireless": false,
+    "case_baseline_mm": [
+      23,
+      25,
+      14
+    ],
+    "thickness_limit_mm": 15,
+    "average_battery_current_target_mA": 4,
+    "battery_candidate_mAh": 100
+  },
+  "prototype_only_validation": [
+    "16h continuous encrypted recording",
+    "USB throughput and reconnect/power-loss recovery",
+    "acoustic response and clothing noise",
+    "charging thermal and NTC fault injection",
+    "fit, retention and lanyard strength"
+  ],
+  "storage": {
+    "part": "CSNP16GCR01-AOW",
+    "jlc": "C7527488",
+    "required_36h_bytes_with_reserve": 1131544576,
+    "conservative_nominal_bytes": 2000000000,
+    "hours_after_16MiB_reserve": 64.04566798941799,
+    "package_max_mm": [
+      8.1,
+      6.3,
+      0.9
+    ],
+    "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/994e28355d17ba74bc25089be28d0050.pdf?productCode=C7527488",
+    "standby_typ_mA": 0.18,
+    "standby_max_mA": 0.25,
+    "write_50MHz_typ_mA": 15,
+    "write_50MHz_max_mA": 50,
+    "stock_confirmed": false
+  },
+  "purchase_authorized": false,
+  "revision": "mini-rect-v12",
+  "status": "CONNECTED_LAYOUT_CANDIDATE_NOT_RELEASED",
+  "order_ready": false,
+  "baseline": "mini-rect-v11/plane6-fixedvia-repair.kicad_pcb",
+  "changes": [
+    "Remove USB0ohm tuning resistorsR8/R9; STM32U535 integrates driver termination",
+    "U2 moved next to USB connector onB.Cu",
+    "TP1/TP3/R14/R6 moved to make room; connector/MCU/microphone/battery geometry unchanged"
+  ],
+  "checks": {
+    "erc": 0,
+    "placement_violations": 0,
+    "schematic_parity": 0,
+    "unconnected": 170,
+    "scope": "Initial placement-stage checks; current routed results are in routing.best_drc"
+  },
+  "routing": {
+    "session": null,
+    "status": "One GND stitching via added near USB ESD layer transitions; both reference fills verified around annulus. DRC/unconnected/parity0; electrical qualification pending.",
+    "log": "routing.log",
+    "dsn": "route-trial.dsn",
+    "ses": "route-trial.ses",
+    "repair_session": null,
+    "repair_log": "repair-ground.log",
+    "drc": "route-trial-drc.json",
+    "initial_unconnected": 27,
+    "initial_violations": 1,
+    "best_candidate": "usb-return-candidate.kicad_pcb",
+    "best_drc": "usb-return-candidate-drc.json",
+    "unconnected": 0,
+    "violations": 0,
+    "schematic_parity": 0,
+    "evidence_sha256": {
+      "usb-return-candidate.kicad_pcb": "5301a71d3f24f3a8c6e0866951df4ea6a907f44368ec58c36f5a431298136a1b",
+      "usb-return-candidate.kicad_pro": "520d3d3553fc0ef353299ddbc117341b0cf941ea938472cee5bc440424fb09fb",
+      "usb-return-candidate.kicad_sch": "a0c4d3a1e1206eca4490670835f6aed17da45e844b689b366dea71e2f3677694",
+      "usb-return-candidate-drc.json": "684e429c03327c7503e1375f4f51d5fa284b37d5254331beb815d22c54d05902"
+    }
+  },
+  "release_gates": {
+    "routing": "Connected candidate passes DRC and explicit schematic parity; not released pending quality/DFM review",
+    "usb": "Paired F.Cu main route implemented, one ESD-branch via per net; actual90ohm stackup/gap/return path and connector stubs pending.",
+    "power": "153 segments/19.397mm widened to0.25mm. VBUS and BAT all routed segments0.25mm; narrow V3V3/SYS/SD_V3 and decoupling paths still need review. See power-width-review.json and power-width-geometry.json.",
+    "firmware": "Partial modules and native tests; no linked/flashable firmware",
+    "sourcing": "BatteryNTC/harness, JLC parts/DFM and shipping-inclusive total pending",
+    "mechanical": "Latest routed candidate reflected in v12 fit models; 5 closed STL/3MF pairs and 2 envelope collision checks pass. Harness, retention, printing and acoustic qualification pending.",
+    "battery_peak_current": "YDL lists0.5C maximum=50mA; SD worst-case plusMCU may exceed this. Vendor pulse limits or power/storage redesign required before battery qualification.",
+    "clock": "LSE_IN rerouted with inset MCU-pad via; oscillator remains across MCU with long routes. Oscillator component/load/drive margin and layout review required, not only prototype frequency testing.",
+    "via_process": "18 conservatively screened pad-overlap vias now0.4mm outer/0.2mm hole, annular0.1mm. DRC0. Remaining tented vias0.15mm; selective epoxy-fill acceptance and actual Gerber mask overlap review pending.",
+    "stackup": "Current JLC calculator accepts6layer0.8mm options but calculation errors; no specific stackup or90ohm width qualified.",
+    "procurement": "36 groups processed,6 shortage groups D6/J1/U1/U8/U12/Y1; Q3/Q4 unselected. U11 5pcs216.467USD; cost review needed. No complete delivered quote.",
+    "usb_reference": "Stored-zone sample screen:88 centerline and211 corridor sample gaps across USB branches/short segments;7 affected centerline tracks (max1.033mm). Not exact electrical return-path proof. Inspect ESD/connector via antipads and add/relocate ground stitching or reroute before qualification."
+  },
+  "reference": {
+    "url": "https://www.st.com/resource/en/datasheet/stm32u535ce.pdf",
+    "revision": "DS14217Rev5",
+    "table": "136 USB_FS characteristics",
+    "page": 262,
+    "finding": "No external termination series resistors required; matching driver impedance internal"
+  },
+  "notes": [
+    "Published source establishes resistor omission; does not qualify board impedance or USB performance",
+    "Not adopted over connectedv11 candidate until routed and reviewed"
+  ],
+  "battery_review": "battery-review.json",
+  "usb_geometry_trial": {
+    "source": "usb-pair-geometry.json",
+    "DP_total_trace_mm": 12.5621,
+    "DM_total_trace_mm": 12.344,
+    "DP_vias": 1,
+    "DM_vias": 1,
+    "qualified": false,
+    "note": "Main MCU-to-connector routes both F.Cu, explicitly adjacent; existing ESD branches B.Cu. Total copper length includes branches and is not propagation skew. Width/gap/stackup/reference continuity not qualified."
+  },
+  "local_trials": {
+    "ldo-shift": "U4 movedleft0.9mm:10violations/6unconnected,not adopted; collidesCHARGER_TS/ILIM_VSETvias",
+    "R2": "best clock-repair candidate movesR2 to14.6,0.75B",
+    "manufacturing": "Via-in-pad present at MCU SD_CLK, SWCLK, PDM_CLK, LSE_IN and charger CHG_N; filled/capped via process and solder qualification required.",
+    "connected_candidate": "R2 B14.6,0.75; U4 shifted left0.9mm; SD_CLK_MCU/U3 CHG_N via-in-pad; affected SD_EN, power and charge signals rerouted. Base placement and models not yet updated.",
+    "power_width": "Clearance-aware widening retained153segments and reverted constrained segments; exact old widths retained. No net/component/board changes.",
+    "usb_front": "usb-routing-review.json: four bounded F.Cu trials; no fully connected paired route. All rejected; best candidate unchanged.",
+    "usb_pair": "lse-inset-repair now fully connected, DRC/parity0; prior power-width-candidate preserved as comparison.",
+    "lse_placement": "Six relocation probes rejected for component/courtyard interference; mic remains unchanged. Inset LSE_IN via at MCU pad solved connectivity; SD_MISO locally rerouted.",
+    "pofv": "pofv-final-trial fully connected. Local trace reroutes; V3V3 via movedup0.06mm; new SD_MISO via identified by repeat audit and enlarged. Previous candidates preserved."
+  },
+  "manufacturing_review_bundle": {
+    "path": "manufacturing-review-usb-return-r3",
+    "zip": "manufacturing-review-usb-return-r3-NOT-RELEASED.zip",
+    "released": false,
+    "assembly_refs": 66,
+    "bom_groups": 36,
+    "all_refs_have_candidate_codes": true,
+    "live_jlc_matching_done": false,
+    "quote_total_confirmed": false,
+    "live_jlc_matching_started": false,
+    "note": "r3 not uploaded; live JLC quote still uses r2 copper, same BOM/CPL component placement."
+  },
+  "mechanical_review": "mechanical-review.json",
+  "live_quote": "jlc-live-quote.json",
+  "usb_reference_screen": "usb-reference-screen.json",
+  "usb_return_connection": "usb-return-connection.json"
+}

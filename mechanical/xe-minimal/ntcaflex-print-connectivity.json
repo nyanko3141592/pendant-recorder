@@ -1,0 +1,61 @@
+{
+  "status": "NOMINAL_BEAD_CONNECTIVITY_NOT_STRENGTH",
+  "sources": {
+    "lower": {
+      "source_sha256": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+      "gcode_sha256": "6b679a13543d4b44b6fc3dd5afb543230246a85cca6dcf5c9deb81e9ffedb332",
+      "3mf_sha256": "bd6c35878d7d6b10f449b3fe0ce06c87ececd66f08659c038d008c00245b1685"
+    },
+    "separator": {
+      "source_sha256": "2d7278a71ea77f64c7da3be1778877f0283de4ad60236574c8cfa6cf9591ca17",
+      "gcode_sha256": "dcd0a7db1100b23a53d02b0a314ba8719f526c7113d5866aebaade536cd24ebe",
+      "3mf_sha256": "5bc6a50350232567c9323962a9741abb5566bc4af4884d52de8a138644e19306"
+    }
+  },
+  "node_count": 29,
+  "edge_count": 27,
+  "connected_components": [
+    {
+      "prism_count": 24,
+      "summed_prism_volume_mm3": 115.18168877942777,
+      "bounds_mm": [
+        0.28512999999999245,
+        -27.215508221964946,
+        -2.1799999999999993,
+        21.409008662005032,
+        0.34837141227181667,
+        -1.0599999999999994
+      ]
+    },
+    {
+      "prism_count": 3,
+      "summed_prism_volume_mm3": 1.6417594369113866,
+      "bounds_mm": [
+        15.741346499999995,
+        -6.163508004411264,
+        -1.3799999999999992,
+        20.427129781063268,
+        -3.514508702426698,
+        -0.9199999999999992
+      ]
+    },
+    {
+      "prism_count": 2,
+      "summed_prism_volume_mm3": 0.4789265540356,
+      "bounds_mm": [
+        14.913756118355138,
+        -4.109430394982784,
+        -2.1799999999999993,
+        16.21513,
+        -2.2395082233479915,
+        -1.8599999999999997
+      ]
+    }
+  ],
+  "limits": [
+    "Requires positive XY overlap between prisms with touching/overlapping Z; point contacts excluded.",
+    "Commanded rectangular bead model, not actual fusion or adhesion.",
+    "Removable supports excluded.",
+    "Finite geometric precision can create small disconnected slivers; all are reported without silently discarding them."
+  ]
+}

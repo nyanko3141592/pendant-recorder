@@ -1,0 +1,46 @@
+{
+  "status": "NO_PATH_IN_CONSERVATIVE_GRID",
+  "source": "vbus-offset.kicad_pcb",
+  "from_mm": [
+    8.199999,
+    9.65
+  ],
+  "trials": [
+    {
+      "to_mm": [
+        10.5,
+        3.2
+      ],
+      "layers": [
+        "In1.Cu",
+        "In2.Cu",
+        "In3.Cu",
+        "In4.Cu",
+        "B.Cu"
+      ],
+      "visited": [
+        177,
+        416,
+        33878,
+        7252,
+        1361
+      ]
+    },
+    {
+      "to_mm": [
+        12.5,
+        3.8
+      ],
+      "layers": [
+        "In3.Cu"
+      ],
+      "visited": [
+        33878
+      ]
+    }
+  ],
+  "grid_mm": 0.1,
+  "obstacle_inflation_mm": 0.19,
+  "limits": "Conservative endpoint reachability and bounding shapes may reject legal routes. Not proof of impossibility. No source-board modification.",
+  "next": "Inspect exact endpoint clearance/reachable cells; use actual pad geometry and 0.175 mm required trace-halfwidth plus clearance before more whole-board searches."
+}

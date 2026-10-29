@@ -1,0 +1,88 @@
+{
+  "accepted": {
+    "pad1_mm": [
+      10.6,
+      3.8
+    ],
+    "angle": 180,
+    "ground_via_mm": [
+      9.64,
+      3.8
+    ],
+    "violations": 0,
+    "types": [],
+    "unconnected": 71,
+    "accepted": true
+  },
+  "trials": [
+    {
+      "pad1_mm": [
+        10.7,
+        3.8
+      ],
+      "angle": 180,
+      "ground_via_mm": [
+        9.74,
+        3.8
+      ],
+      "violations": 1,
+      "types": [
+        "clearance"
+      ],
+      "unconnected": 71,
+      "accepted": false
+    },
+    {
+      "pad1_mm": [
+        10.7,
+        3.9
+      ],
+      "angle": 180,
+      "ground_via_mm": [
+        9.74,
+        3.9
+      ],
+      "violations": 1,
+      "types": [
+        "courtyards_overlap"
+      ],
+      "unconnected": 71,
+      "accepted": false
+    },
+    {
+      "pad1_mm": [
+        10.7,
+        3.7
+      ],
+      "angle": 180,
+      "ground_via_mm": [
+        9.74,
+        3.7
+      ],
+      "violations": 2,
+      "types": [
+        "shorting_items",
+        "solder_mask_bridge"
+      ],
+      "unconnected": 71,
+      "accepted": false
+    },
+    {
+      "pad1_mm": [
+        10.6,
+        3.8
+      ],
+      "angle": 180,
+      "ground_via_mm": [
+        9.64,
+        3.8
+      ],
+      "violations": 0,
+      "types": [],
+      "unconnected": 71,
+      "accepted": true
+    }
+  ],
+  "qualification": "Layout candidate only; ADC settling, noise, accuracy and mechanical clearance require verification.",
+  "note": "ground_via_mm in placement-only trials is the ground pad coordinate; no new via added by placement."
+}

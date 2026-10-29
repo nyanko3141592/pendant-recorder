@@ -1,0 +1,18 @@
+{
+  "status": "NOT_ADOPTED",
+  "pin": "U1.6 PH1",
+  "pin_source": "https://www.st.com/resource/en/datasheet/stm32u535vc.pdf",
+  "verified": "STM32U535xx pin table lists non-SMPS UFQFPN48 pin6 PH1 OSC_OUT, I/O FT.",
+  "remaining": [
+    "Reference-manual GPIO use conditions with HSE disabled",
+    "Explicit firmware HSE-disable and GPIOH initialization if adopted",
+    "Full electrical/errata review and routing closure"
+  ],
+  "routing": {
+    "coarse_visited": 139,
+    "fine_visited": 563,
+    "found": false,
+    "obstacle_report": "button-ph1-via-site-obstacles.json"
+  },
+  "firmware_observation": "Board oscillator initialization references HSI/HSI48/MSIK; no HSEState or GPIOH matches found in board sources. Absence of matches is not full HSE-off proof."
+}

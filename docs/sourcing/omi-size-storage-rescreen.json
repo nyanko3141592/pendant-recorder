@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-26",
+  "status": "ARCHITECTURE_SCREEN_NOT_SELECTED",
+  "capacity": {
+    "file_bytes": 41220,
+    "files_36h": 25920,
+    "payload_bytes": 1068422400,
+    "minimum_sector_allocation_bytes": 1074954240,
+    "one_GiB_bytes": 1073741824,
+    "one_GiB_shortfall_before_metadata_bytes": 1212416,
+    "current_16KiB_cluster_allocation_bytes": 1274019840,
+    "decision": "512MiB and 1GiB insufficient for current 5s age/IMA-WAV files. Compare >=2GB usable managed storage. No codec/36h requirement relaxation.",
+    "scope": "Arithmetic using source-hash-verified host test output, not physical36h recording."
+  },
+  "candidates": [
+    {
+      "part": "CSNP16GCR01-AOW",
+      "capacity_GB": 2,
+      "body_mm": [
+        6.2,
+        8,
+        0.75
+      ],
+      "interface": "SD/SPI managed NAND",
+      "source": "https://longsto.com/product/53.html",
+      "datasheet_local": "hardware/mini-rect-v11/reference/csnp16gcr01-aow.txt",
+      "published_current_mA": {
+        "write_max_at_3v3_50MHz": 50,
+        "read_max_at_3v3_50MHz": 60,
+        "standby_max_clock_stopped": 0.25
+      },
+      "cost": "Historical2026-10-25 JLC216.467USD/5, excludesassembly/tax/shipping; not refreshed quote",
+      "remaining": [
+        "SPI4/8MHz busy/peak/energy not established by50MHz table",
+        "battery discharge rating unresolved",
+        "small-batch cost incompatible with low-cost goal unless sourcing improves",
+        "pad/electrical redesign required"
+      ],
+      "decision": "Geometry/electrical candidate, not adopted"
+    },
+    {
+      "part": "CSNP32GCR01-BOW",
+      "capacity_GB": 4,
+      "cost": "Historical2026-10-25 JLC200.7895USD/5",
+      "decision": "Retain comparison; AOW official page is NOT exact BOW datasheet; do not transfer AOW parameters"
+    },
+    {
+      "part": "HHW32GS90C-F2",
+      "capacity_GB": 4,
+      "body_xy_mm": [
+        9,
+        12.5
+      ],
+      "source": "https://www.hanhai-tech.com/product.html",
+      "decision": "Manufacturer catalogue lead only; current/SPI timing/price/supply unknown. Larger than CS6.2x8 but no removable socket."
+    },
+    {
+      "part": "W25N04KV single device",
+      "capacity_GiB": 0.5,
+      "source": "https://www.winbond.com/hq/new-online-purchasing-guide/?__locale=ja&pLine=%2Fproduct%2Fcode-storage-flash%2Fqspi-nand%2F&pNo=W25N04KV",
+      "decision": "Reject single device capacity. Two also fail1GiB minimum sector calculation. RawNAND would additionally require bad-block/wear/ECC integration; SD driver cannot be reused directly."
+    },
+    {
+      "part": "Longsto small4GB eMMC unspecified MPN",
+      "body_mm": [
+        9,
+        7.5,
+        0.8
+      ],
+      "source": "https://longsto.com/product/51.html",
+      "decision": "Do not dismiss all eMMC as large: small package exists, but this listing lacks exactpart/current/supply. SD SPI driver is not eMMC driver."
+    }
+  ],
+  "area_comparison": {
+    "existing_J4_envelope_mm": [
+      17.15,
+      13.85
+    ],
+    "existing_envelope_area_mm2": 237.52749999999997,
+    "CS_body_area_mm2": 49.6,
+    "note": "Courtyard/socket envelope versus chip body only: not a PCB area reduction guarantee. Pads, routing, bypass parts and battery determine final size."
+  },
+  "next_action": "Resolve exact affordable managed >=2GB storage and501520 electrical/connector drawing before committing a new compact board. Preserve V15 as comparison.",
+  "source_sha256": {
+    "firmware/stm32/tests/five-second-import-result.json": "199e1d6ae523644d1b05056f02a8d8c07e7f15a786ed2051c3e0db6f50a421b5",
+    "hardware/mini-rect-v11/reference/csnp16gcr01-aow.txt": "c7ee91e7cc4061a62bc98c1c9d4ba5fa4bdca48cc2e00113f494838fab3826bb",
+    "docs/sourcing/storage-live-price-review.json": "0b532bd7524d75bae3208cf19413c994e921fee1b1f2d8a1e40b215fc4664a55"
+  },
+  "release_allowed": false,
+  "price_recheck": {
+    "date": "2026-10-26",
+    "result": "Old indexed LCSC pages show6.59-6.61USD but crawled1.2-1.3years ago; recent imagepage shows43.444USD and4stock. Canonical livewebread did not provide usable stock/price. Do not replace existing historicalquote with cheap staleindex.",
+    "canonical_url": "https://www.lcsc.com/product-detail/C7527488.html",
+    "current_five_unit_quote_confirmed": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "GPIO_LAYOUT_TRIAL_DRC0_THREE_UNCONNECTED",
+  "board": "input-boot-underpass.kicad_pcb",
+  "board_sha256": "fce3a90b3652e573a5cd40bb2cbf71654def3e7275b1fcec8c88a56f87ef527b",
+  "GPIO_map": {
+    "PB5_pin41": "USB_SUSPEND_PULSE",
+    "PB6_pin42": "USB_HIGH_BUDGET",
+    "PB7_pin43": "USB_RESUME_PULSE"
+  },
+  "ERC": 0,
+  "DRC": 0,
+  "unconnected": 3,
+  "pad_value_footprint_parity": 308,
+  "USB_geometry_preserved_items": 48,
+  "completed": [
+    "VBUS_LIMITED connected byremoving0.0229mm danglingstubfromotherwisevalid rejectedroute",
+    "BOOT0Bbarrier replacedwithvia11.6,12.15 andIn4underpass tooldvia12.9639,12.1492",
+    "Ideal latcheventtestagainstnewactualpinmappingpasses"
+  ],
+  "findings": [
+    "Allthree newGPIOpads have accessible center butno gridroute",
+    "Probe12.2,12.4 via forbidden byUSB_DP/DM In2 tracks, SD_EN Btrack,BOOT0In4track; no pad/via obstacle atthatpoint",
+    "OriginalfullBOOT0viarelocation24simplepaths allfailedDRC;underpass8thtrialpassed",
+    "MovingremainingBOOT0via toward14..14.7,11.95..12.4 withstraight endpointupdates all9failedDRC"
+  ],
+  "firmware_matches_this_trial": false,
+  "firmware_note": "usb_input_v15.c stillPA2/PA3/PB1 forpreservedoriginalcandidate. Do notflash orlink forPB5/PB6/PB7trial untilmappedandtested.",
+  "remaining": [
+    "RoutethreeMCUGPIOescapes withlocalvia/trackdetours orchooseotheraccessiblepins basedonactualclearance",
+    "Avoiddamaging preservedUSBgeometry; do notclaimSIvalidated",
+    "SyncFWmap onlywhenroutingcandidateaccepted andintegrateUSBpolicy",
+    "Remaining batteryharness/storage/power/manufacturing/costrequirementsunchanged"
+  ],
+  "release_allowed": false
+}

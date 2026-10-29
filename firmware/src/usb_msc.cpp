@@ -1,3 +1,5 @@
+// HISTORICAL / NON-PRODUCTION: initial XIAO ESP32S3 evaluation stub.
+// The current product firmware authority is firmware/stm32/.
 #include "modules.h"
 #include "config.h"
 // TODO: USBMSC (TinyUSB) の onRead/onWrite で SD のセクタを読み書き

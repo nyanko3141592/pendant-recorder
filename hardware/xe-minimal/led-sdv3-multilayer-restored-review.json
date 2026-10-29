@@ -1,0 +1,89 @@
+{
+  "accepted": true,
+  "visited": 11459,
+  "paths": [
+    {
+      "layer": 10,
+      "points": [
+        [
+          20.6,
+          6.6
+        ],
+        [
+          21.5,
+          6.4
+        ]
+      ]
+    },
+    {
+      "layer": 2,
+      "points": [
+        [
+          21.5,
+          6.4
+        ],
+        [
+          23.200000000000003,
+          7.2
+        ]
+      ]
+    },
+    {
+      "layer": 10,
+      "points": [
+        [
+          23.200000000000003,
+          7.2
+        ],
+        [
+          22.8,
+          7.6000000000000005
+        ],
+        [
+          22.8,
+          8.9
+        ],
+        [
+          22.5,
+          9.200000000000001
+        ],
+        [
+          21.700000000000003,
+          9.0
+        ],
+        [
+          20.8,
+          8.2
+        ]
+      ]
+    }
+  ],
+  "switches": [
+    [
+      21.5,
+      6.4
+    ],
+    [
+      23.200000000000003,
+      7.2
+    ]
+  ],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/STATUS_LED] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 21.5,
+            "y": 7.85
+          },
+          "uuid": "5179db6c-b8d3-475e-a276-6e6fb1fa8c73"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 14
+}

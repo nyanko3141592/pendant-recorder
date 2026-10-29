@@ -1,0 +1,42 @@
+{
+  "status": "LEGACY_APPLICATION_GUIDANCE_REQUIRES_CURRENT_REVISION_CONFIRMATION",
+  "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationspecificationspdf/781/78172/AS-78172-006-001.pdf",
+  "document_body": "AS-78172-007, revision1,2007; filename differs from document body",
+  "source_warning": "Document page1 explicitly tentative release; not current guaranteed limit",
+  "applicable_drawing_references": [
+    "SD-78171-008",
+    "SD-78172-007"
+  ],
+  "text_findings": [
+    {
+      "section": "3.1",
+      "finding": "Align and press at specified area; loaded sideways insertion is not supported"
+    },
+    {
+      "section": "3.1.1",
+      "finding": "Legacy guidance gives5degree limit for angled mating toward specified straight entrance; figure orientation not visually verified"
+    },
+    {
+      "section": "3.1.2",
+      "finding": "Verify full engagement; incomplete engagement may damage contacts"
+    },
+    {
+      "section": "3.3.1",
+      "finding": "Provide clear space to prevent wire overstress"
+    }
+  ],
+  "design_decisions": [
+    "No angled or side-sliding shortcut to avoid separator/pack interference",
+    "Evaluate mating battery and PCB before placing pack into case",
+    "Provide access to housing press area and support PCB beneath connector; do not require force through mounted components",
+    "Verify full seating before adhesive closure"
+  ],
+  "unresolved": [
+    "Press-area figure visual review",
+    "Current application specification",
+    "Exact housing protrusion maxima",
+    "Original wire slack and strain after seating",
+    "Premated assembly insertion path"
+  ],
+  "retrieval": "Web text read; screenshots returned no visible pixels;curlHTTP2exit92; no localPDF"
+}

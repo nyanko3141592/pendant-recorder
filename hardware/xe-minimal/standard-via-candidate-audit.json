@@ -1,0 +1,29 @@
+{
+  "status": "OPEN_MANUFACTURING_REVIEW_REQUIRED",
+  "board_sha256": "8cade939386821bc9fd9d3ffa50a03a199d67a0225f708ea755ba4b1c8864f6e",
+  "method": "KiCad effective copper pad collision with via annulus plus 0.025 mm on F/B copper",
+  "flagged_vias": 1,
+  "vias": [
+    {
+      "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158",
+      "xy_mm": [
+        22.05,
+        15.2
+      ],
+      "hits": [
+        {
+          "ref": "U3",
+          "pad": "9",
+          "net": "/CHG_N",
+          "layer": "B.Cu",
+          "copper_overlap": false,
+          "hole_overlaps_pad": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "This geometric audit does not qualify drill registration, annular ring or solder-mask fabrication capability.",
+    "Any hole-over-pad result must be moved off-pad or use a separately qualified filled/capped process."
+  ]
+}

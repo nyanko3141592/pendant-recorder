@@ -1,0 +1,54 @@
+{
+  "accepted": true,
+  "visited": 4030,
+  "paths": [
+    {
+      "layer": 8,
+      "points": [
+        [
+          8.2,
+          2.7
+        ],
+        [
+          11.4,
+          3.9000000000000004
+        ],
+        [
+          12.200000000000001,
+          3.6
+        ],
+        [
+          12.5,
+          3.4000000000000004
+        ],
+        [
+          12.8,
+          3.6
+        ],
+        [
+          13.15,
+          4.6
+        ]
+      ]
+    }
+  ],
+  "switches": [],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/USB_SUSPEND_PULSE] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 13.0,
+            "y": 5.05
+          },
+          "uuid": "45327421-6b9d-4216-bcf4-ce4fe1a82d95"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 6
+}

@@ -1,0 +1,41 @@
+{
+  "status": "CONDITIONAL_JLC_SENSOR_MEMORY_MOSFET_SCENARIO_NOT_QUOTE",
+  "sources_sha256": {
+    "docs/procurement/xe-jlc-memory-mosfet-cost-scenario.json": "efe4f908de66df4c0e889f7ad78b462ad5943fc38bc6a5b6f740d9998024d74e",
+    "docs/procurement/xe-ncu-jlc-availability.json": "064765e1e31dd07f02eacb30e979c2a60e0fe86e20ea48309d757da2471c865a",
+    "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/five-unit-cost-delta.json": "c5c34662cc3dad2294a058b9606ac222eb94a6c4414a9fa3a0c894cf4b98ded3"
+  },
+  "sensor_replacement": {
+    "mpn": "NCU18XH103F60RB",
+    "installed_quantity": 5,
+    "removed_retail_JPY": 102.0,
+    "added_PCBA_USD": 0.2685,
+    "price_observed_date": "2026-10-27",
+    "purchase_quantity_including_attrition": null
+  },
+  "subtotals": {
+    "mixed_date_parts_reference_subtotals_by_currency": {
+      "JPY": 19426.7,
+      "USD": 203.075
+    },
+    "mixed_date_quantity_proposal_reference_subtotals_by_currency": {
+      "JPY": 19347.7,
+      "USD": 203.075
+    }
+  },
+  "complete_five_unit_total_JPY": null,
+  "limits": [
+    "Availability is observed, not allocated or a binding quotation",
+    "This does not qualify the MOSFET circuit or whole BOM procurement",
+    "Do not substitute ElecSuper DMN2056U-7(ES)",
+    "All other historical mixed-date source limitations remain; no blanket current availability claim.",
+    "JLC assembly of the entire mixed-source BOM has not been confirmed.",
+    "Stock not allocated; no purchase or upload",
+    "PCBA inventory only; not a standalone shipment",
+    "Attrition, process, feeder, inspection, shipping and tax charges excluded",
+    "C9900196853 is a separate consignment/assembly-service entry, not equivalent component pricing",
+    "Full BOM, assembly process and footprint approval remain pending",
+    "Five sensors price only; assembler attrition and purchasing quantity remain unknown",
+    "Stock and prices are recorded observations, not freshly reserved or quoted"
+  ]
+}

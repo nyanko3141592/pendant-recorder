@@ -1,0 +1,117 @@
+{
+  "status": "THICK_DUCT_CLEARANCE_SCREEN_NOT_ACOUSTIC_APPROVAL",
+  "sources": {
+    "rounded-glue-reinforced-lower-study.step": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+    "glue-case-candidate-integrated-board.step": "079cfcb77528a869830eb697bf7d1084a74bf5438cfa79259fe7f29f5f0b49d9",
+    "battery-separator-study.step": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+    "dtp401525-xe-pack-max.step": "e4c9bb308a5120fcc3943aa438e41ea36d7462cdcddac260d87ced0f222285d3"
+  },
+  "candidates": [
+    {
+      "top_z_mm": -0.15,
+      "wall_mm": 0.8,
+      "outer_diameter_mm": 2.6,
+      "bore_diameter_mm": 1.0,
+      "obstacles": {
+        "board": {
+          "overlap_mm3": 0.08619017678891217,
+          "distance_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 3.3953301268387954
+        },
+        "pack": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 4.629999999999999
+        }
+      }
+    },
+    {
+      "top_z_mm": -0.35,
+      "wall_mm": 0.8,
+      "outer_diameter_mm": 2.6,
+      "bore_diameter_mm": 1.0,
+      "obstacles": {
+        "board": {
+          "overlap_mm3": 0.04530807966090665,
+          "distance_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 3.3953301268387954
+        },
+        "pack": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 4.629999999999999
+        }
+      }
+    },
+    {
+      "top_z_mm": -0.55,
+      "wall_mm": 0.8,
+      "outer_diameter_mm": 2.6,
+      "bore_diameter_mm": 1.0,
+      "obstacles": {
+        "board": {
+          "overlap_mm3": 0.004426613527263962,
+          "distance_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 3.3953301268387954
+        },
+        "pack": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 4.629999999999999
+        }
+      }
+    },
+    {
+      "top_z_mm": -0.75,
+      "wall_mm": 0.8,
+      "outer_diameter_mm": 2.6,
+      "bore_diameter_mm": 1.0,
+      "obstacles": {
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.16500000000000004
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 3.3953301268387954
+        },
+        "pack": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 4.629999999999999
+        }
+      }
+    },
+    {
+      "top_z_mm": -1.0,
+      "wall_mm": 0.8,
+      "outer_diameter_mm": 2.6,
+      "bore_diameter_mm": 1.0,
+      "obstacles": {
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.4074386456879124
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 3.3953301268387954
+        },
+        "pack": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 4.629999999999999
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Lower duct top creates larger unsealed gap, not an acoustic solution",
+    "Original leads omitted",
+    "Distances based on component model envelopes, not manufactured tolerances",
+    "DMM PA12 wall guideline alone does not qualify dimensional fit"
+  ]
+}

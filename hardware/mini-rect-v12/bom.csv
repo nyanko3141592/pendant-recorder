@@ -1,0 +1,73 @@
+Reference,Part/value,Footprint,Design note
+U1,STM32U535CEU6,Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm,512KB Flash/274KB RAM; non-SMPS UFQFPN48. PB3/PB4 ADF AF3; PA5/6/7 SPI1 AF5. VDD USB shared 3.3V. JLC acceptance and pin review pending.
+C1,100n,Capacitor_SMD:C_0402_1005Metric,
+C4,10u,Capacitor_SMD:C_0603_1608Metric,Main bulk capacitor; check startup and effective capacitance.
+C9,100n,Capacitor_SMD:C_0402_1005Metric,
+R2,10k,Resistor_SMD:R_0402_1005Metric,
+Y1,32.768kHz CL=7pF TBD,Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm,
+C11,10p tentative,Capacitor_SMD:C_0402_1005Metric,
+C12,10p tentative,Capacitor_SMD:C_0402_1005Metric,
+J3,TC2030 SWD target pads,Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical,TC2030-NL/CTX standard; completed STM32-compatible probe/cable; access with battery disconnected.
+SW1,B3U-1000P (candidate),Button_Switch_SMD:SW_SPST_B3U-1000P,
+R4,100k,Resistor_SMD:R_0402_1005Metric,
+J1,USB4105-GF-A (candidate),PendantD1:USB_C_GCT_USB4105_GroundLand112,Exact footprint and shield pad numbering pending connector selection
+R6,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+R7,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+U2,USBLC6-2P6,Package_TO_SOT_SMD:SOT-666,"ST DS4260 same 6-pin function diagram; smaller package, LCSC C15999 catalog; orientation/land pattern final audit pending."
+C13,2.2u 10V,Capacitor_SMD:C_0402_1005Metric,
+U3,BQ25185DLHR,Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm,Integrated power path; 4.2V/100mA input via24k; 20mA charge via15k. Independent U12/Q4 battery NTC guard retained; internal TS biased10k is NOT battery temperature sensing.
+R10,15k 1%,Resistor_SMD:R_0402_1005Metric,Approx22mA nominal versus listed100mAh pack max50mA; voltage/termination acceptance and actual pack datasheet remain unresolved.
+R11,20k 1%,Resistor_SMD:R_0402_1005Metric,
+C14,2.2u,Capacitor_SMD:C_0402_1005Metric,
+J2,0781710003 / 100mAh protected NTC pack TBD,Connector_Molex:Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical,15x17x6 pack envelope retained; vendor NTC/finished connector and harness unqualified.
+R12,100k,Resistor_SMD:R_0402_1005Metric,100k VBUS pull-up defaults Q2 to charge inhibited; no MCU GPIO connection to5V.
+C15,10u 10V effective >=1u,Capacitor_SMD:C_0603_1608Metric,SYS cap per TI; DC-bias capacitance must be qualified.
+U4,TPS7A0233PDBVR,Package_TO_SOT_SMD:SOT-23-5,3.3V main rail: 48-pin MCU has no separate USB supply; dropout/capacity measurement required.
+C16,1u,Capacitor_SMD:C_0402_1005Metric,
+U8,IM69D130V01XTSA1,Sensor_Audio:Infineon_PG-LLGA-5-1,"Direct 3.3V PDM, bottom port; no AAD. 0.768MHz/decimation48 candidate for 16kHz; acoustic validation required."
+R21,22R tentative,Resistor_SMD:R_0402_1005Metric,
+C22,100n,Capacitor_SMD:C_0402_1005Metric,
+U10,TPS22916CYFPR,Pendant:TPS22916_YFP4,Omi SD switch; power-off sequence must tristate ALL SD signals
+R22,100k,Resistor_SMD:R_0402_1005Metric,
+C25,1u,Capacitor_SMD:C_0402_1005Metric,
+U11,CSNP16GCR01-AOW,Pendant:CSNP16GCR01_AOW_LGA8,"2GB class SPI SD NAND; C7527488. Datasheet pinout and max height0.90mm checked. Actual CSD capacity and busy current require qualification. 36h storage allocation budget1,131,544,576bytes including16MiB reserve."
+R23,22R tentative,Resistor_SMD:R_0402_1005Metric,
+R24,47k,Resistor_SMD:R_0402_1005Metric,
+R25,47k,Resistor_SMD:R_0402_1005Metric,
+R28,47k,Resistor_SMD:R_0402_1005Metric,
+C26,100n,Capacitor_SMD:C_0402_1005Metric,
+C27,22u effective TBD,Capacitor_SMD:C_0603_1608Metric,
+TP1,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP2,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP3,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP5,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP6,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+R32,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D6,amber LED 0402 TBD,LED_SMD:LED_0402_1005Metric,"Single status/battery indicator; firmware blinks on demand, normally dark."
+C2,100n,Capacitor_SMD:C_0402_1005Metric,
+C3,100n,Capacitor_SMD:C_0402_1005Metric,
+C5,4.7u,Capacitor_SMD:C_0603_1608Metric,
+C6,100n,Capacitor_SMD:C_0402_1005Metric,
+C7,1u,Capacitor_SMD:C_0402_1005Metric,
+R1,0R,Resistor_SMD:R_0402_1005Metric,
+R3,100k,Resistor_SMD:R_0402_1005Metric,
+Q3,2N7002 (VBUS detect),Package_TO_SOT_SMD:SOT-23,
+R13,100k,Resistor_SMD:R_0402_1005Metric,
+R14,1M,Resistor_SMD:R_0402_1005Metric,
+R15,100k,Resistor_SMD:R_0402_1005Metric,
+R33,1M 1%,Resistor_SMD:R_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+R34,1M 1%,Resistor_SMD:R_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+C28,10n,Capacitor_SMD:C_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+R35,10k 1%,Resistor_SMD:R_0402_1005Metric,Holds normal TS level when released; no floating TS/TTDM in intended circuit.
+R36,100k,Resistor_SMD:R_0402_1005Metric,MCU reset/high-Z defaults to no charging permission.
+R37,10k 1%,Resistor_SMD:R_0402_1005Metric,Ratiometric NTC excitation only while USB present; self-heating must be verified.
+R38,10k 1%,Resistor_SMD:R_0402_1005Metric,
+R39,12.1k 1%,Resistor_SMD:R_0402_1005Metric,Provisional external temperature window; requires actual supplied NTC R-T and tolerance. Do not authorize charging from this design alone.
+R40,10k 1%,Resistor_SMD:R_0402_1005Metric,
+R41,8.25k 1%,Resistor_SMD:R_0402_1005Metric,Provisional external temperature window; requires actual supplied NTC R-T and tolerance. Do not authorize charging from this design alone.
+U12,TLV7042DDFR,Package_TO_SOT_SMD:SOT-23-8,Open-drain outputs wired together. Either temperature fault pulls Q4 gate low; no firmware override. 10k/B3370 pack assumption remains unqualified.
+Q4,2N7002,Package_TO_SOT_SMD:SOT-23,Series pull-down permission chain. All three must conduct to release Q2. Body diodes oppose pull-down when off. Verify stack/leakage/transients.
+C29,100n 10V,Capacitor_SMD:C_0402_1005Metric,Place adjacent to U12 supply pins.
+R42,24k 1%,Resistor_SMD:R_0402_1005Metric,BQ25185 reference application; verify tolerance and low-current startup RC.
+C30,10n tentative,Capacitor_SMD:C_0402_1005Metric,BQ25185 reference application; verify tolerance and low-current startup RC.
+R43,10k 1%,Resistor_SMD:R_0402_1005Metric,MCU permission series resistor; limits current into comparator fault clamp.

@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T12:23:10",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "ground-escape-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 11.005,
+                        "y": 4.795
+                    },
+                    "uuid": "08391b1c-1b48-408e-9686-87117468974c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.6079 mm )",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 6.46
+                    },
+                    "uuid": "2a0921e4-1cc3-4e82-8f28-3f6683a26017"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.775,
+                        "y": 7.1925
+                    },
+                    "uuid": "9a12d74f-1fe6-4885-a58c-819fb313e6a3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2500 mm; 現状 0.0055 mm)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.775,
+                        "y": 7.1925
+                    },
+                    "uuid": "9a12d74f-1fe6-4885-a58c-819fb313e6a3"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.65,
+                        "y": 7.1
+                    },
+                    "uuid": "f00dd27d-247b-4646-899a-fa76e7ec9b1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        }
+    ]
+}

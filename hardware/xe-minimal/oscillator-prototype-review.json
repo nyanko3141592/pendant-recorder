@@ -1,0 +1,23 @@
+{
+  "status": "PROTOTYPE_PARTS_ADOPTED_NOT_HARDWARE_QUALIFIED",
+  "source_sha256": "19512d8988392c4dccd0976b976d8fda7bbaf958870d902a56202557abeb75fb",
+  "candidate_sha256": "6c322ad03af1838aa59451b09b28a2f57bba38d0a2d764e4c9b15b5f41673f7b",
+  "violations": [],
+  "parity": [],
+  "unconnected_items": 20,
+  "parts": {
+    "Y1": "ABS06-32.768KHZ-7-T",
+    "C11": "5.6p C0G prototype",
+    "C12": "5.6p C0G prototype"
+  },
+  "caps": "Murata GRM1555C1H5R6CA01D candidate;5.6pF +/-0.25pF C0G50V0402",
+  "cap_basis": "3pF internal typical +1.2pF assumed PCB +2.8pF equal-cap series=7pF. PCB1.2pF is an assumption, not measured.",
+  "remaining": [
+    "Oscillator drive/startup/accuracy/PCB parasitic qualification",
+    "PCBA part matching and stock",
+    "Firmware LSE drive setup"
+  ],
+  "adopted": true,
+  "capacitor_primary_source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C1H5R6CA01-01A.pdf",
+  "cap_spec_source_catalog": "https://www.murata.com/-/media/webrenewal/tool/library/common-pdf/static-model/component-list-s-mlcc-2506.ashx?cvid=20250805040438000000&la=ko-kr"
+}

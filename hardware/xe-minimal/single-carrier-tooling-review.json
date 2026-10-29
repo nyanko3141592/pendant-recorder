@@ -1,0 +1,106 @@
+{
+  "status": "STANDARD_TOOLING_LAYOUT_STUDY_NOT_RELEASE",
+  "checked_date": "2026-10-27",
+  "source_step_sha256": "6724c6396e35f5e523d6560bfc358e87314007e62fb1c5c60bd55ad1b58f830c",
+  "output_sha256": "061dffdd8e5f8333cc179d8bf1d2189848f42dac7e83e259ffe02e737404f405",
+  "fiducials": [
+    {
+      "id": "FID1",
+      "center_mm": [
+        6,
+        6
+      ],
+      "copper_diameter_mm": 1,
+      "mask_opening_diameter_mm": 2,
+      "clearance_envelope_diameter_mm": 3,
+      "sides": [
+        "F",
+        "B"
+      ]
+    },
+    {
+      "id": "FID2",
+      "center_mm": [
+        64,
+        6
+      ],
+      "copper_diameter_mm": 1,
+      "mask_opening_diameter_mm": 2,
+      "clearance_envelope_diameter_mm": 3,
+      "sides": [
+        "F",
+        "B"
+      ]
+    },
+    {
+      "id": "FID3",
+      "center_mm": [
+        6,
+        64
+      ],
+      "copper_diameter_mm": 1,
+      "mask_opening_diameter_mm": 2,
+      "clearance_envelope_diameter_mm": 3,
+      "sides": [
+        "F",
+        "B"
+      ]
+    }
+  ],
+  "tooling_holes": [
+    {
+      "id": "TOOL1",
+      "center_mm": [
+        12,
+        6
+      ],
+      "drill_mm": 2,
+      "plated": false,
+      "copper_clearance_radial_mm": 0.5
+    },
+    {
+      "id": "TOOL2",
+      "center_mm": [
+        58,
+        6
+      ],
+      "drill_mm": 2,
+      "plated": false,
+      "copper_clearance_radial_mm": 0.5
+    },
+    {
+      "id": "TOOL3",
+      "center_mm": [
+        12,
+        64
+      ],
+      "drill_mm": 2,
+      "plated": false,
+      "copper_clearance_radial_mm": 0.5
+    }
+  ],
+  "all_envelopes_in_frame_and_disjoint": true,
+  "fiducial_envelope_to_outer_edge_min_mm": 4.5,
+  "sources": [
+    {
+      "url": "https://jlcpcb.com/help/article/specifications-for-adding-process-edges-and-positioning-holes",
+      "supports": "General SMT recommendation: 2mm holes, 1mm fiducials, 5mm process edges."
+    },
+    {
+      "url": "https://jlcpcb.com/help/article/how-to-add-edge-rails-fiducials-for-pcb-assembly-order",
+      "supports": "Standard requires rails/fiducials; 1mm copper/2mm mask; three or four markers. Rails ship attached by default; removal is requested at order and incurs extra processing fees."
+    },
+    {
+      "url": "https://jlcpcb.com/help/article/how-to-add-tooling-holes-for-pcb-assembly-order",
+      "supports": "1.152mm NPTH with .148mm mask expansion; opening paragraph scopes mandatory holes to Economic PCBA. Do not replace Standard study diameter based solely on this page."
+    }
+  ],
+  "manufacturing_responsibility": "Seller must supply separated, finished assembled boards. Buyer only plugs battery and closes case. Depanelization must not be shifted to buyer.",
+  "limits": [
+    "Fiducial copper and mask geometry specified in JSON, not included in substrate STEP.",
+    "No PCB merge, CAM approval, tooling tolerance or fixture validation.",
+    "2mm tooling holes are provisional under general SMT recommendation; exact Standard acceptance not confirmed.",
+    "Depanelization fee is not yet in the five-unit total.",
+    "Original sharp-slot nominal carrier retained; finite router geometry remains a separate study."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "HYPOTHETICAL_SEPARATOR_DOWNSHIFT_NOT_ADOPTED",
+  "shift_z_mm": -0.06,
+  "sources_sha256": {
+    "film-roomier-joint-separator-trial.step": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+    "film-battery-side-support-lower-trial.step": "1acfa30bbc85f201200025342cb6ce4dd85a5da171ad36eb009bbee594409660",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "film-sensor-insulation-transition.step": "c3d95b41f5f8b74af75778323f8cb78a8f033463595cbd812fb3c58d4be6a5b4"
+  },
+  "checks": {
+    "lower": {
+      "overlap_mm3": 0.5494823356826132,
+      "gap_mm": 0.0
+    },
+    "battery": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.13999999999999968
+    },
+    "board": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.08000000000000007
+    },
+    "insulation": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.040000000000000036
+    }
+  },
+  "limits": [
+    "CAD downshift intersects nominal supports; this is not an instruction to force parts together.",
+    "Printed bead seating does not uniquely determine actual pose.",
+    "Sensor body, bare leads, solder joints and original battery harness excluded; insulation is only a provisional envelope."
+  ]
+}

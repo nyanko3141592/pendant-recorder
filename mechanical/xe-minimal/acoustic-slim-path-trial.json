@@ -1,0 +1,53 @@
+{
+  "status": "ACOUSTIC_GEOMETRY_TRIAL_NOT_QUALIFIED",
+  "board_sha256": "b4082e2163e932a5e32fa1cb915eccc1bcdbaac505a7c0a80982274db1b40aba",
+  "pcb_acoustic_hole": {
+    "center_pcb_mm": [
+      21.93,
+      4.565
+    ],
+    "drill_diameter_mm": 0.8,
+    "evidence": "Read U8 NPTH from candidate KiCad board"
+  },
+  "engineering_assumptions": {
+    "bore_diameter_mm": 1.0,
+    "duct_outer_diameter_mm": 1.8,
+    "duct_top_z_mm": -0.15,
+    "duct_bottom_z_mm": -7.72,
+    "pcb_seal_gap_mm": 0.15
+  },
+  "checks": [
+    {
+      "object": "board",
+      "duct_intersection_mm3": 0.0,
+      "duct_distance_mm": 0.10000000000000142
+    },
+    {
+      "object": "separator",
+      "duct_intersection_mm3": 0.0,
+      "duct_distance_mm": 3.7953301268387962
+    },
+    {
+      "object": "battery",
+      "duct_intersection_mm3": 0.0,
+      "duct_distance_mm": 5.030000000000001
+    }
+  ],
+  "output": "acoustic-slim-lower-case-trial.step",
+  "shape_valid": true,
+  "solid_count": 1,
+  "limitations": [
+    "Duct and housing are trial geometry, not adopted case",
+    "Acoustic resonance, sensitivity and frequency response must be evaluated",
+    "Gasket material, compression, sealing land and board tolerances unresolved",
+    "Dust/water membrane and its acoustic loss not selected",
+    "No wire path or full assembly sequence validation",
+    "Only0.1mm nominal clearance to C25; no tolerance budget, not production clearance approval",
+    "0.4mm duct wall over7.57mm length requires process/stiffness review"
+  ],
+  "source_sha256": {
+    "retained-lower-case-study.step": "05c7f92960bfab469b2026331f3f68b1c0a2262bf460e1a8a68547b105a27cd2",
+    "tmux-candidate-integrated-board.step": "cb9fe5974afeb5bed5dba6a2cb542430b592ab98ef1424a1530665a7f1150a5d"
+  },
+  "decision": "GEOMETRY_CANDIDATE_ONLY"
+}

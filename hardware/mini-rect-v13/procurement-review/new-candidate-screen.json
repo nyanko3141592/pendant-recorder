@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-26",
+  "status": "CATALOG_IDENTITIES_ONLY_NOT_RELEASED",
+  "candidates": [
+    {
+      "refs": [
+        "J4"
+      ],
+      "mpn": "DM3D-SF",
+      "jlc_id": "C719027",
+      "source": "https://jlcpcb.com/partdetail/HRS_Hirose-DM3DSF/C719027",
+      "pending": [
+        "Exact supplied drawing revision and packaging confirmation",
+        "Assembly rotation in final JLC placement preview",
+        "Final assembly quote and inventory reservation at order time"
+      ],
+      "geometry_evidence": "placed-socket-verification.json",
+      "catalog_conflict_resolution": "Manufacturer catalog p9 has detection switch; JLC No attribute conflicts. Both detection pads intentionally NC; all14 placed lands match reviewed drawing.",
+      "live_catalog_observation": {
+        "date": "2026-10-26",
+        "method": "JLC product detail browser AX visible stock/price",
+        "stock_display": 360,
+        "available_order_qty": 313,
+        "minimum_qty": 1,
+        "full_reel_qty": 2000,
+        "unit_usd_at_qty_1_to_9": 1.1652,
+        "five_parts_usd_calculated": 5.826,
+        "currency": "USD",
+        "reserved": false,
+        "limitations": [
+          "Not an assembly quote",
+          "Assembly attrition/setup/shipping/tax excluded",
+          "Availability can change before ordering"
+        ]
+      }
+    },
+    {
+      "refs": [
+        "R29",
+        "R30"
+      ],
+      "mpn": "RC0402FR-0747KL",
+      "jlc_id": "C93943",
+      "source": "https://jlcpcb.com/partdetail/Yageo-RC0402FR0747KL/C93943",
+      "pending": [
+        "Live JLC stock and quote",
+        "Exact selected microSD pullup requirements remain unqualified"
+      ],
+      "status": "VALUE_PACKAGE_MATCHED_CANDIDATE_NOT_LIVE_QUOTED",
+      "manufacturer_source": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+      "verified": {
+        "resistance_ohm": 47000,
+        "tolerance_percent": 1,
+        "package": "0402",
+        "standard_power_W": 0.0625,
+        "worst_static_power_at_3V3_W": 0.00023404255319148934
+      }
+    },
+    {
+      "refs": [
+        "C27"
+      ],
+      "mpn": "CL10A475KP8NNNC",
+      "jlc_id": "C1705",
+      "source": "https://jlcpcb.com/partdetail/2057-CL10A475KP8NNNC/C1705",
+      "pending": [
+        "Effective capacitance at 3.3V including tolerance and temperature",
+        "Live stock/quote"
+      ],
+      "manufacturer_source": "https://product.samsungsem.com/mlcc/CL10A475KP8NNN.do",
+      "nominal_verified": {
+        "capacitance_uF": 4.7,
+        "tolerance_percent": 10,
+        "rated_V": 10,
+        "dielectric": "X5R",
+        "package": "0603",
+        "max_body_height_mm": 0.9
+      },
+      "decision": "Do not interpret nominal4.7uF as minimum effective4.7uF. Tolerance alone allows4.23uF before DC bias, temperature and aging. Effective requirement must be tied to selected card and transient design."
+    },
+    {
+      "refs": [
+        "C30"
+      ],
+      "mpn": "CC0402JRNPO9BN500",
+      "jlc_id": "C576707",
+      "status": "VALUE_PACKAGE_MATCHED_CANDIDATE_NOT_LIVE_QUOTED",
+      "pending": [
+        "Live JLC stock and quote",
+        "Charger low-current transient behavior requires hardware test"
+      ],
+      "source": "https://jlcpcb.com/partdetail/YAGEO-CC0402JRNPO9BN500/C576707",
+      "manufacturer_source": "https://yageogroup.com/download/specsheet/CC0402JRNPO9BN500",
+      "verified": {
+        "capacitance_pF": 50,
+        "tolerance_percent": 5,
+        "voltage_V": 50,
+        "dielectric": "C0G",
+        "package": "0402",
+        "max_body_height_mm": 0.55
+      }
+    }
+  ],
+  "limitations": [
+    "No live prices or inventory quantities established by these public pages",
+    "Do not copy candidates into released BOM until qualification is complete",
+    "No circuit or PCB changes made",
+    "Storage power compatibility remains unresolved; socket availability does not qualify a card"
+  ]
+}

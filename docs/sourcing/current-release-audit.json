@@ -1,0 +1,1641 @@
+{
+  "status": "SUPERSEDED_HISTORICAL_V15_AUDIT_DO_NOT_USE_FOR_CURRENT_XE",
+  "date": "2026-10-26",
+  "superseded_by": {
+    "candidate": "XE-PROTOTYPE-V1-27P5-PACK-NTC-CASE-V5-1GB-OVP-LATCH",
+    "requirements": "docs/requirements.md",
+    "order_decision": "docs/prototype-v1-order-decision.json",
+    "release_evidence": "docs/validation/xe-release-evidence-matrix.json",
+    "runtime_budget": "docs/sourcing/xe-integrated-16h-budget.json"
+  },
+  "current_board": {
+    "path": "hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb",
+    "sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "layers": 6,
+    "board_mm": [
+      26,
+      29
+    ],
+    "status": "ENGINEERING_CANDIDATE_NOT_RELEASED"
+  },
+  "requirements": {
+    "rounded_compact_models": "User limit30x32x15mm. Latest rounded/lanyard comparison nominal29.6x31.6x14.6mm; no adopted production case. Harness, tolerances, closure, acoustic behavior, finish and pendant pull/tilt qualification remain unresolved.",
+    "circuit_layout": "V15 PA2/PB1/PB5/PB6 candidate; existing ERC/DRC/parity checks are engineering evidence. Supplier DFM, electrical component qualification and approved stackup still required.",
+    "record16h": "Required.110mAh x assumed70% usable yields4.8125mA allocation, not runtime proof. Exact SD and pack compatibility must be qualified; physical runtime is a post-prototype acceptance test.",
+    "storage36h": "Synthetic RAM FAT32 test covers25920 files at65536bytes. Five-second actual codec/age output41220bytes, cooperative injection and host waveform-reference tests pass. Physical card and long-run test outstanding.",
+    "usb_auto_import": "Host importer and synthetic end-to-end tests exist. Physical USB, provisioning and on-device integration validation remain.",
+    "charging": "Default disabled. Experimental charge-request/500mA profile is bench-only, not a release image. Current limit/NTC/thermal/pack review and test required.",
+    "jlc_parts": "85 assembly refs,38 candidateMPNs. Supplier SKU matching, rotations, stock/attrition, substitutions and component electrical qualification not finalized.",
+    "landed_quote": "No complete matchingV15 five-unit shipping/tax-inclusive quote. PartialJPY/USD/material observations are not a total.",
+    "product_price": "5000JPY product target not demonstrated; distinct from five-unit prototype expenditure.",
+    "no_user_soldering": "Connectorized purchased battery and supplier assembly required; harness fit/thermal contact/final assembly instructions not finished."
+  },
+  "artifacts": {
+    "fit_models": "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge",
+    "fit_status": "COMPARISON_NOT_ADOPTED_RIGID_INSERTION_CLEAR_HARNESS_MISSING",
+    "fit_report": "mechanical/mini-rect-v15/removable-ledge-fit-review.json",
+    "fabrication_review": "hardware/mini-rect-v15/input-control-pa2-pb5/manufacturing-review",
+    "fabrication_zip": "hardware/mini-rect-v15/input-control-pa2-pb5/ENGINEERING-REVIEW-NOT-FOR-ORDER.zip",
+    "procurement_review": "docs/procurement/v15-five-unit-cost-review.json",
+    "cash_review": "docs/procurement/v15-five-unit-cash-review.json",
+    "rigid_fit_archive": "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/RIGID-FIT-REVIEW-NOT-FOR-ORDER.zip",
+    "usb_relief_comparison": "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief"
+  },
+  "external_actions": [
+    "FinalV15 DFM/matching/landed quote unavailable; previous upload rejection must not be bypassed.",
+    "Japan destination/postcode is needed for exact shipping; interim assumptions must be explicit.",
+    "No supplier inquiries or orders sent; drafted questions do not count as answers."
+  ],
+  "browser_observation": "No current V13 upload/quote established; old R6 browser observation archived, not used as current state",
+  "hardware_only": [
+    "16h real runtime and usable battery capacity",
+    "Peak current, rail droop, charge temperature/NTC behavior",
+    "Acoustic seal, microphone quality and recording continuity",
+    "Physical USB transfer, disconnect and power-loss behavior",
+    "Printer tolerances, retention strength and assembled fit"
+  ],
+  "release_allowed": false,
+  "orders_payments_emails_sent_this_work": false,
+  "newer_review_candidate": {
+    "path": "hardware/mini-rect-v13/mic-jlc-overlap-candidate.kicad_pcb",
+    "sha256": "8c98180835f975a3c1ba9a2a7714d9da121132c44831814c5668da0da8915fed",
+    "fabrication_review": "hardware/mini-rect-v13/fabrication-mic-jlc-review",
+    "verified": [
+      "DRC 0/unconnected 0 with U8-only 0.09mm rule for 1oz multilayer",
+      "254 pad-net parity",
+      "120 drill registration",
+      "68 assembly positions unchanged"
+    ],
+    "not_adopted_as_release": true
+  },
+  "newer_case_trial": {
+    "path": "mechanical/mini-rect-v13/captive-nut-balanced-trial/ASSEMBLY-NOT-RELEASED.step",
+    "status": "Nominal geometry and nut path reviewed; production tolerance/strength and print model update pending"
+  },
+  "decision_dependencies": [
+    "Obtain XE sample or reliable dimensions for each wire exit, OD and bend allowance; finish connector/harness fit within30x32x15.",
+    "Qualify exactSD revision with peak/current/latency evidence and price before final power/component freeze.",
+    "Resolve case closure, pad/adhesive stack, thermal contact, rounded finish and pendant attachment into one adopted assembly.",
+    "Freeze matchingBOM/board/assembly and obtain authorized supplier DFM and landed5-unit quote; do not reuse oldV13/V14 quote.",
+    "Run planned electrical/runtime/USB/acoustic/mechanical hardware acceptance after prototypes; do not demand physical16h proof before first prototype or claim it achieved."
+  ],
+  "waiting_for_user": {
+    "shipping_postcode_provided": false,
+    "battery_supplier_email_required": false
+  },
+  "latest_battery_sales_direction": {
+    "date": "2026-10-26",
+    "policy_file": "docs/sourcing/user-supplied-battery-policy.json",
+    "candidate": "DTP401525-XE110mAh",
+    "status": "ENGINEERING_BASELINE_NOT_QUALIFIED",
+    "battery_sold_separately": true,
+    "v14_300mAh": "SIZE_REJECTED_COMPARISON_ONLY",
+    "order_ready": false
+  },
+  "domestic_battery_redesign": {
+    "revision": "mini-rect-v14",
+    "review": "hardware/mini-rect-v14/electrical-review.json",
+    "status": "USB edge cluster candidate31x43mm DRC0/unconnected0/pad-net255PASS; USB moved with U2/R6/R7; In4 extension needs SI/impedance review. Existing V14 r1 case is stale for new placement.",
+    "routing_review": "hardware/mini-rect-v14/routing-review.json",
+    "fit_models": "/Users/takahashinaoki/Downloads/Pendant-v14-domestic-pack-fit-r1",
+    "mechanical_status": "35x45.5x14.8mm four-part models STEP/STL/3MF, no modeled case/component/battery interference;J1 moved20mm/J2TH1 flipped toB so fit placement needs rerouting; no harness/closure/acoustic seal qualification",
+    "newer_board": "hardware/mini-rect-v14/usb-edge-cluster-candidate.kicad_pcb"
+  },
+  "v14_mechanical_r2": {
+    "path": "/Users/takahashinaoki/Downloads/Pendant-v14-domestic-pack-fit-r2",
+    "report": "mechanical/mini-rect-v14/geometry-review-r2.json",
+    "case_mm": [
+      35,
+      47,
+      14.8
+    ],
+    "pcb_mm": [
+      31,
+      43,
+      0.93
+    ],
+    "board_sha256": "2249c4769947ee2a28f78074a52c18e11601578259ce60dd8b4fda6e7c89100a",
+    "mesh_check": "4 STL: zero nonmanifold edges/orientation mismatches; not sliced",
+    "remaining": [
+      "TP3 acoustic duct overlap0.0015mm3",
+      "Acoustic wall minimum0.2mm unqualified",
+      "Closure/PCB supports/harness/matedPH/thermal pad/swelling/tolerances"
+    ],
+    "release_allowed": false
+  },
+  "v14_mechanical_r3": {
+    "path": "/Users/takahashinaoki/Downloads/Pendant-v14-domestic-pack-fit-r3",
+    "report": "mechanical/mini-rect-v14/geometry-review-r3.json",
+    "board": "hardware/mini-rect-v14/acoustic-clearance-candidate.kicad_pcb",
+    "board_sha256": "9ac538cc7bea1d975036c040e6fa845b0720aca846614b1566919d882d739c2e",
+    "changes": [
+      "TP3 moved0.6mm left with one track endpoint",
+      "Acoustic wall minimum0.4mm; PCB bore sourced from actual NPTH",
+      "Three case-connected PCB support ledges"
+    ],
+    "checks": {
+      "drc_violations": 0,
+      "unconnected": 0,
+      "pad_parity": 255,
+      "tested_envelope_intersections": 0,
+      "mesh_errors": 0
+    },
+    "remaining": [
+      "Lid closure and PCB retention",
+      "Compliant acoustic gasket and printability",
+      "100mm harness and mated PH body",
+      "Thermal pad and swelling/tolerance allowances",
+      "Full electrical/FW/production and cost review"
+    ],
+    "release_allowed": false
+  },
+  "v14_charge_prototype": {
+    "selection": "hardware/mini-rect-v14/charger-prototype-selection.json",
+    "board": "hardware/mini-rect-v14/charge-prototype-candidate.kicad_pcb",
+    "sha256": "90b122839dbaad92ba98db1a1a500697958bcb6eea1874739af31a027761a329",
+    "change": "R10 only15k to3.32k1%; PCB file diff confirms only value line changed from acoustic candidate",
+    "validation": "ERC0, DRC0, unconnected0,255pad net parityPASS",
+    "mechanical": "r3 geometry unchanged; report hash still correctly references previous board snapshot",
+    "firmware": "charge_inhibit.h deliberately has no enable API; unchanged",
+    "remaining": "Input/SYS budget,4.2V tolerance, early termination usable capacity, timer and contactNTC qualification",
+    "release_allowed": false
+  },
+  "active_design_direction": {
+    "case_limit_mm": [
+      30,
+      32,
+      15
+    ],
+    "user_confirmed": true,
+    "v14_300mAh_status": "SIZE_REJECTED_COMPARISON_ONLY",
+    "candidate": "DTP401525-XE selected engineering baseline; not qualified",
+    "runtime_target_h": 16,
+    "battery_average_limit_mA_at_70percent_110mAh": 4.8125,
+    "runtime_status": "Allocation only, not measured",
+    "do_not_reuse": "V14 charge90mA, PH placement and35x47case are not automatically suitable for smaller battery",
+    "screen": "mechanical/mini-rect-v15/pack-screen.json",
+    "battery_selection_report": "docs/sourcing/battery-first-selection.json",
+    "new_PCB_or_case_design_allowed": true,
+    "battery_qualification_complete": false
+  },
+  "v15_packing_study": {
+    "report": "mechanical/mini-rect-v15/pack-layout-review.json",
+    "step": "/Users/takahashinaoki/Downloads/Pendant-v15-XE-packing-study/XE-packing-NOT-MANUFACTURING.step",
+    "case_mm": [
+      30,
+      32,
+      14.8
+    ],
+    "qualification": "Envelope only; board blank, assumed wire radius/OD/exit, no complete assembly approval"
+  },
+  "v15_electrical_and_placement": {
+    "status": "INCOMPLETE_NOT_RELEASED",
+    "case_limit_mm": [
+      30,
+      32,
+      15
+    ],
+    "board_mm": [
+      26,
+      29
+    ],
+    "battery": "DTP401525-XE",
+    "schematic_erc_violations": 0,
+    "charge_current_nominal_mA": 44.11765,
+    "charging_enabled": false,
+    "board": "hardware/mini-rect-v15/acoustic-clearance-candidate.kicad_pcb",
+    "pad_net_parity_checked": 256,
+    "pad_net_parity": "PASS",
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "remaining": [
+      "J2 collision relocation and USB cluster move/routing",
+      "4.2V charger tolerance versus battery limit",
+      "NTC thermal contact and reverse polarity review",
+      "16h runtime and storage peak/average power",
+      "Final mechanical closure and manufacturing cost/data"
+    ],
+    "moved_part_bbox_overlaps": [],
+    "drc_types": {},
+    "placement_status": "ROUTED_DRC_PASS_NOT_RELEASED; USB/reference/power/mechanical review pending",
+    "values_and_footprint_ids_parity": "PASS",
+    "board_sha256": "ffaa8985aafb49e5c47cae81555b2e0ec26f9f5ba91b16d313473127851a4cbf",
+    "usb_review": {
+      "status": "REWORK_REQUIRED",
+      "DP_total_track_mm": 23.018,
+      "DM_total_track_mm": 30.132,
+      "DP_vias": 3,
+      "DM_vias": 2,
+      "uncovered_reference_samples": 184,
+      "note": "Whole-net copper length, not verified end-to-end path; sampled zone coverage is not SI approval"
+    }
+  },
+  "v15_populated_fit": {
+    "report": "mechanical/mini-rect-v15/populated-fit-review.json",
+    "case_mm": [
+      30,
+      32,
+      14.8
+    ],
+    "parts": 75,
+    "component_vs_body_lid_battery_intersections": 0,
+    "thermal_contact_gap_mm": 2.3,
+    "status": "ENVELOPE_ONLY_NOT_ASSEMBLY_APPROVAL"
+  },
+  "v15_supported_fit": {
+    "report": "mechanical/mini-rect-v15/supported-fit-review.json",
+    "status": "SUPPORTED_FIT_DRAFT_NOT_RELEASED",
+    "case_mm": [
+      30,
+      32,
+      14.8
+    ],
+    "support_count": 3,
+    "body_lid_valid": true,
+    "checked_intersections": 0,
+    "thermal_pad_allocation_mm": [
+      3,
+      3,
+      2.3
+    ],
+    "remaining": [
+      "USB plug insertion and closure",
+      "Acoustic passage",
+      "Battery and harness retention, tolerance and swelling",
+      "Thermal pad material/contact pressure/thermal response"
+    ]
+  },
+  "v15_acoustic_fit": {
+    "report": "mechanical/mini-rect-v15/acoustic-fit-review.json",
+    "status": "DRAFT_NOT_RELEASED",
+    "inlet": "straight bottom inlet beside XE battery",
+    "bore_mm": 0.8,
+    "wall_mm": 0.4,
+    "gasket_allocation_mm": [
+      1.8,
+      0.8,
+      0.4
+    ],
+    "checked_component_intersections": 0,
+    "remaining": [
+      "Acoustic response and bore printability",
+      "Gasket material, seal and compression",
+      "Debris protection, assembly tolerances",
+      "Closure and battery/harness retention"
+    ]
+  },
+  "v15_closure_fit": {
+    "report": "mechanical/mini-rect-v15/closure-fit-review.json",
+    "status": "SNAP_CLOSURE_DRAFT_NOT_RELEASED",
+    "snap_count": 4,
+    "battery_guide_gap_mm": 0.3,
+    "closed_state_checked_intersections": 0,
+    "remaining": [
+      "Printed-material elastic strain, assembly force and cycling",
+      "Snap insertion tolerance and deflected sweep",
+      "Battery vertical retention and swelling",
+      "Harness and mating connector sweep"
+    ]
+  },
+  "v15_harness_review": {
+    "status": "ROUTE_REDESIGN_REQUIRED",
+    "report": "mechanical/mini-rect-v15/harness-curvature-review.json",
+    "assumed_min_radius_mm": 1.4,
+    "12mm_radius_mm": 2.48867,
+    "15mm_radius_mm": 0.6798,
+    "18mm_radius_mm": 0.4464,
+    "scope": "Specified tangent-continuous planar family only; no full fit qualification",
+    "previous_CAD_run": "Stopped after discovering a non-tangent path construction; no interference result claimed"
+  },
+  "v15_usb_pair_trial": {
+    "board": "hardware/mini-rect-v15/usb-return-candidate.kicad_pcb",
+    "status": "DRC_AND_CONNECTIVITY_PASS_NOT_RELEASED",
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "pair_layer": "In2.Cu",
+    "width_mm": 0.1171,
+    "edge_gap_mm": 0.1199,
+    "uncovered_reference_samples": 95,
+    "remaining": [
+      "Via transition and impedance assessment; sampled antipads are expected and are not blanket SI approval",
+      "Fanout/path length review",
+      "Power-current paths including new0.1mm segments"
+    ],
+    "board_sha256": "96511bf18c498021e2e352b13e4e7fc6dad6015ed1ac51466be5e849cec94da6",
+    "reference_screen_interpretation": "95 uncovered centerline samples all coincide with USB signal via antipads; no non-USB obstacle found in sampled centers",
+    "return_via_mm": [
+      9.4,
+      22.4
+    ],
+    "connector_ground_via_distance_mm": [
+      1.068,
+      1.018
+    ],
+    "MCU_ground_via_distance_mm": [
+      1.055,
+      1.556
+    ]
+  },
+  "v15_charger_4v1": {
+    "board": "hardware/mini-rect-v15/charger-4v1-candidate.kicad_pcb",
+    "status": "HARDWARE_USB_INPUT_CONTROL_REQUIRED",
+    "R42_ohms": 130000,
+    "voltage_upper_screen_V": 4.1205,
+    "input_current_range_mA": [
+      450,
+      498
+    ],
+    "charge_enabled": false,
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "notes": [
+      "Previous100mA USB descriptor is not a completed power policy for this candidate",
+      "4.1V/early termination usable capacity requires qualification"
+    ],
+    "USB_input_control_review": "docs/sourcing/v15-usb-input-power-review.json"
+  },
+  "v15_usb_input_switch": {
+    "status": "GPIO_LAYOUT_TRIAL_DRC0_THREE_UNCONNECTED",
+    "part": "MAX4995CAUT+T",
+    "review": "hardware/mini-rect-v15/input-control/electrical-review.json",
+    "proposal": "hardware/mini-rect-v15/input-control-proposal.json",
+    "screen": "hardware/mini-rect-v15/input-limiter-screen.json",
+    "next": "Resolve3GPIOescapes. No liveprocess. Firmware remains oldpinmap untilvariantaccepted.",
+    "charge_enabled": false,
+    "candidate": "hardware/mini-rect-v15/input-control/design.json",
+    "placement": "hardware/mini-rect-v15/input-control/input-placement-v2.kicad_pcb",
+    "routing_source": "hardware/mini-rect-v15/input-control/input-route-pruned.kicad_pcb",
+    "routing_source_DRC": 0,
+    "routing_source_unconnected": 42,
+    "pad_value_footprint_parity": 308,
+    "USB_preserved_copper_items": 48,
+    "mechanical_review": "mechanical/mini-rect-v15/input-control-fit-review.json",
+    "mechanical_component_intersections": 0,
+    "routing_session": null,
+    "routing_log": "/tmp/pendant-input-connect.log",
+    "router_session_finished": 33592,
+    "stable_candidate": "hardware/mini-rect-v15/input-control-gpio/input-boot-underpass.kicad_pcb",
+    "stable_candidate_DRC": 0,
+    "stable_candidate_unconnected": 3,
+    "work_in_progress": "hardware/mini-rect-v15/input-control/input-connected-candidate.kicad_pcb",
+    "firmware_driver_review": "hardware/mini-rect-v15/input-control/firmware-driver-review.json",
+    "layout_review": "hardware/mini-rect-v15/input-control-gpio/routing-review.json",
+    "firmware_matches_trial": false
+  },
+  "v15_global_route_progress": {
+    "status": "NOT_RELEASED",
+    "stable_board": "hardware/mini-rect-v15/input-control-gpio/global-ground-pads.kicad_pcb",
+    "board_sha256": "c0a21f75bec868b19d0d8378b7d07854948c5270e57a9738bf3a0432636e5f66",
+    "drc_violations": 0,
+    "unconnected_items": 7,
+    "added_ground_vias": 7,
+    "pad_net_value_footprint_parity": "PASS 308 pads",
+    "usb_copper_preserved": "PASS 48 items; reference planes require separate review",
+    "signal_route_tighter_mask": "No path for SD_EN and USB_SUSPEND_PULSE; process80770 exit0",
+    "finer_ground_search": {
+      "session": 66264,
+      "output": "hardware/mini-rect-v15/input-control-gpio/global-ground2.kicad_pcb",
+      "status": "COMPLETE_EXIT0"
+    },
+    "firmware_pinmap": "PB5/PB6/PB7 matched to actual design by test; mock HAL driver test PASS",
+    "firmware_application_integration": false,
+    "ground_pad_route": "C30 pad2 connected to inner GND plane; DRC0",
+    "extra_trials": {
+      "ground3": "0.4mm diameter/0.2mm drill via scan, first200 candidates: no improvement; not adopted",
+      "via40_signal": "No path for both signals; exit0",
+      "pb10_variant": "No path; not adopted; firmware unchanged",
+      "pin_scan_session": 17197
+    }
+  },
+  "v15_pa2_input_candidate": {
+    "status": "NOT_RELEASED",
+    "board": "hardware/mini-rect-v15/input-control-pa2/input-gpio-source.kicad_pcb",
+    "board_sha256": "ccc3c737f68a048cc1904226c8935bf212139e212cc956ed24e4db0d9b4a4544",
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "unconnected_items": 6,
+    "parity": "PASS 308 pads",
+    "usb_geometry": "PASS 48 items",
+    "pinmap": {
+      "suspend": "PA2",
+      "budget": "PB6",
+      "resume": "PB7"
+    },
+    "firmware_tests": "pinmap checker and ASan/UBSan mock HAL PASS; ARM Cortex-M33 actual HAL compile -Werror PASS",
+    "application_integration": false,
+    "route_fix": "Via keepout expansion corrected to 0.206mm; earlier textual replacement accidentally left 0.15225mm. No board keepout or clearance rule removed."
+  },
+  "v15_pb1_routing_trial": {
+    "status": "EXPERIMENTAL_NOT_RELEASED",
+    "board": "hardware/mini-rect-v15/input-control-pa2-pb1/ground-island-routes.kicad_pcb",
+    "sha256": "1078450e8092ccfba019f0e571f66e9980dc99456dd60b950f1905869b62b595",
+    "drc_violations": 0,
+    "unconnected_items": 5,
+    "missing": "GND4 and USB_RESUME_PULSE1",
+    "parity": "PASS 308 pads",
+    "usb_geometry": "PASS 48 items",
+    "firmware_map_matches": false,
+    "resume_pin_scans": "Ordinary unused pins and .35/.15 vias found no accepted route",
+    "pc13_trial": "Connected all signals but split ground; not adopted due to PC13 output restrictions and unqualified Q7 gate load",
+    "pc13_source": "https://www.st.com/resource/en/datasheet/stm32u535je.pdf",
+    "pc13_source_detail": "DS14217 Rev5 p113 note2: 3mA VSW, max30pF/2MHz, no current-source use",
+    "next_trial": "In3 signal routing outside 1mm USB corridor; In1 remains ground-only",
+    "active_session": 17803
+  },
+  "v15_all_signal_candidate": {
+    "status": "NOT_RELEASED",
+    "board": "hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb",
+    "sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "unconnected_ground": 0,
+    "unconnected_signals": 0,
+    "parity": "PASS 308 pads",
+    "usb_copper_geometry": "PASS 48 items",
+    "pinmap": {
+      "suspend": "PA2",
+      "budget": "PB6",
+      "resume": "PB1",
+      "SD_EN": "PB5"
+    },
+    "firmware_pinmap_matches": true,
+    "firmware_tests": "USB input + storage sequencing mock HAL ASan/UBSan PASS; actual ARM HAL compile -Werror both drivers PASS",
+    "usb_input_application_integration": "Startup/fault + 100mA suspend/resume/reset-state policy integrated and ARM-linked; high-current/charging policy not complete",
+    "reference_planes_and_power_widths": "Require review after reroute",
+    "reference_review": {
+      "status": "OWN_USB_TRANSITION_CLEARANCES_ONLY_IN_POINT_SCREEN",
+      "uncovered_samples": 95,
+      "unexplained_samples": 0,
+      "foreign_obstacle_samples": 0,
+      "scope": "Point sampling only; laminate, full corridor, impedance and physical SI not qualified"
+    },
+    "manufacturing_review": {
+      "directory": "hardware/mini-rect-v15/input-control-pa2-pb5/manufacturing-review",
+      "zip": "hardware/mini-rect-v15/input-control-pa2-pb5/ENGINEERING-REVIEW-NOT-FOR-ORDER.zip",
+      "assembly_references": 85,
+      "pcb_only_references": 6,
+      "exact_supplier_skus": "Not yet completed; engineering BOM explicitly marks unresolved",
+      "order_ready": false
+    },
+    "case_fit_review": "mechanical/mini-rect-v15/routed-input-fit-review.json"
+  },
+  "v15_usb_input_policy": {
+    "status": "BENCH_INTEGRATION_NOT_RELEASED",
+    "declared_usb_budget_ma": 100,
+    "high_current_grants": false,
+    "charging_enabled": false,
+    "behavior": [
+      "Session init, mount, unmount and unconfigured state revoke input budget without clearing retained OFF",
+      "Task-context suspend callback and suspended-state fallback apply hardware OFF",
+      "Only real resume callback may clear OFF; stale suspended or detached resume is ignored",
+      "Suspend arriving during resume pulse is reapplied afterward",
+      "Driver failure is sticky and reaches ACT_REPORT_FAULT, runtime shutdown and app halt"
+    ],
+    "tests_passed": [
+      "check_usb_input_policy.sh ASan/UBSan: retained OFF, reset/configuration, stale resume, pulse interleavings, sticky failures",
+      "check_usb_session.sh ASan/UBSan: owner reset/deconfiguration/recovery plus sticky power fault propagation",
+      "check_export_runtime.sh",
+      "check_recorder_runtime.sh normal and cooperative",
+      "check_usb_descriptors.sh actual descriptor bytes",
+      "check_usb_input_v15.sh actual driver mock HAL and schematic pinmap",
+      "check_application_export.sh actual app entry mocks"
+    ],
+    "link": {
+      "elf": "/tmp/pendant-usb-policy-link/candidate-NOT-FOR-FLASH.elf",
+      "sha256": "349c3314b9b3ae6b72b26bf1ad1596d11ab9b846eacc9001777821abff458d52",
+      "strong_symbols_verified": [
+        "tud_mount_cb",
+        "tud_umount_cb",
+        "tud_suspend_cb",
+        "tud_resume_cb",
+        "usb_input_policy_poll",
+        "board_usb_input_v15_suspend",
+        "board_usb_input_v15_resume"
+      ],
+      "high_current_grant_symbol_absent": true,
+      "text_bytes": 105900,
+      "data_bytes": 2573,
+      "bss_bytes": 194844,
+      "fixture": "Disposable public recipient, synthetic VID/PID, cooperative mode, provisional bench3600mV threshold; NEVER FLASH"
+    },
+    "source_sha256": {
+      "firmware/stm32/usb/usb_input_policy.c": "24877661cbf2010c10817d89a3feb15f02aac2bcf72ff89d90e1d46bb1cdcaac",
+      "firmware/stm32/usb/usb_session.c": "3104196dc399ec2f7cb9a0b6aec7d6500bbfaf790bf9be01e841d9663c74ab6a",
+      "firmware/stm32/usb/usb_power_budget.h": "91363f36c7b9d80e499f4e9d9d8c041320f713ed30b574ead6d6e02833092f22",
+      "firmware/stm32/usb/usb_descriptors.c": "491f1f5833186c5ed0180ef30f24fb2366efa22216505a3c4455df5d3ca0f275",
+      "firmware/stm32/board/usb_input_v15.c": "c665150ce11475a20ee648cd4f02889e6f2ffddc2408c302178d143f803c85a4"
+    },
+    "limitations": [
+      "100mA-only policy; compile-time guard blocks raising descriptor until high-current configuration grants and IRQ-safe revocation are implemented",
+      "No physical USB enumeration/current/suspend timing or voltage qualification",
+      "HAL pulse callbacks run in task context; task latency and interrupt interleavings require measured suspend-current timing",
+      "Charge enable and thermal/voltage qualification remain incomplete"
+    ],
+    "tinyusb_evidence": "vendored device/usbd.c callbacks execute in task switch; bus reset clears mounted state; usb_session processes one event per service"
+  },
+  "v15_harness_arc_screen": {
+    "status": "REJECTED_CURVE_FAMILY_NOT_PACK_REJECTION",
+    "report": "mechanical/mini-rect-v15/harness-arc-screen.json",
+    "finding": "Four tangent circular arcs meet assumed 1.4mm bend radius, but all screened phase arrangements collide at 15 and 18mm with assumed 0.6mm OD. No harness fit approval.",
+    "next": "Verify mated exit datum; explore distinct lateral routes or controlled 3D separation, not translated copies."
+  },
+  "v15_connector_datum_review": {
+    "report": "mechanical/mini-rect-v15/connector-datum-review.json",
+    "status": "DRAWING_DATUM_REVIEW_NOT_FIT_APPROVAL",
+    "mated_height_is_reference_not_maximum": true
+  },
+  "v15_harness_tolerance_screen": {
+    "report": "mechanical/mini-rect-v15/harness-tolerance-screen.json",
+    "case_count": 81,
+    "definite_collisions_at_each_OD_0_6_0_7_0_8": 78,
+    "status": "CURVE_FAMILY_REJECTED",
+    "next": "Stop translating the same planar meander; evaluate distinct paths or revise connector placement using verified exit datums."
+  },
+  "v15_pack_length_datum": {
+    "report": "mechanical/mini-rect-v15/pack-length-datum-review.json",
+    "free_wire_length_mm": [
+      12,
+      18
+    ],
+    "housing_included": false,
+    "status": "PACK_LENGTH_DATUM_VISUALLY_VERIFIED_NOT_COMPLETE_HARNESS_FIT"
+  },
+  "v15_five_unit_quantities": {
+    "report": "docs/procurement/v15-five-unit-quantity-review.json",
+    "generator": "docs/procurement/build_v15_quantity_review.py",
+    "assembly_refs_per_board": 85,
+    "installed_quantity": 425,
+    "grouped_lines": 48,
+    "candidate_mpn_refs": 85,
+    "unresolved_mpn_refs": 0,
+    "status": "RECONCILED_QUANTITIES_NOT_COST_QUOTE",
+    "unknown_prices_are_null": true,
+    "qualification_complete": false
+  },
+  "v15_resistor_candidates": {
+    "report": "docs/procurement/v15-resistor-candidates.json",
+    "mapped_references": 38,
+    "distinct_mpns": 11,
+    "source": "YAGEO individual manufacturer specsheets",
+    "status": "CANDIDATES_NOT_FULLY_QUALIFIED",
+    "remaining": "R42 130k specsheet unavailable; temperature drift, dissipation, jumper current, supplier SKU and price pending"
+  },
+  "v15_capacitor_candidates": {
+    "report": "docs/procurement/v15-capacitor-candidates.json",
+    "mapped_refs": 24,
+    "distinct_mpns": 8,
+    "mechanical_refresh": "mechanical/mini-rect-v15/routed-input-fit-review.json",
+    "max_height_updates_mm": {
+      "C4": 1.0,
+      "C15": 1.0,
+      "C5": 0.9,
+      "C27": 0.9
+    },
+    "case_envelope_intersections": 0,
+    "remaining": "Effective capacitance under bias/aging/temperature; supplier price/stock and assembly approval"
+  },
+  "v15_mosfet_selection": {
+    "report": "docs/procurement/v15-mosfet-selection-review.json",
+    "status": "MOSFET_QUALIFICATION_GAP_IDENTIFIED_NO_SUBSTITUTION",
+    "requires_low_voltage_drive_qualification": true
+  },
+  "v15_mosfet_alternative": {
+    "report": "docs/procurement/v15-mosfet-candidates.json",
+    "mpn": "BSS138BK,215",
+    "status": "CANDIDATE_NOT_ADOPTED",
+    "manufacturer_production_verified": true,
+    "pin_map_matches": true,
+    "RDSon_2_5V_25C_max_ohm": 6.5,
+    "remaining": "minVOH/temperature/leak/reset/SETI dynamics and price"
+  },
+  "v15_final_mpn_candidates": {
+    "report": "docs/procurement/v15-final-mpn-candidates.json",
+    "status": "ALL_REFS_HAVE_CANDIDATES_NOT_RELEASED",
+    "parts": {
+      "R42": "ERJ2RKF1303X",
+      "Y1": "ABS06-32.768KHZ-7-T",
+      "D6": "APHHS1005LSYCK/J3-PF"
+    }
+  },
+  "v15_current_cost_reference": {
+    "report": "docs/procurement/v15-five-unit-cost-review.json",
+    "status": "PARTIAL_DISTRIBUTOR_REFERENCE_NOT_PROTOTYPE_TOTAL",
+    "priced_mpns": 37,
+    "unique_candidate_mpns": 38,
+    "priced_installed_units": 420,
+    "known_parts_subtotal_ex_tax_JPY": 29217.7,
+    "complete_prototype_total_JPY": null,
+    "stock_shortfall_mpns": [
+      "CC0603KRX5R6BB106",
+      "CC0603KRX5R6BB475",
+      "SN74HCS74DYYR"
+    ],
+    "limitations": [
+      "Public price observation is not a quotation, reservation or purchase.",
+      "Distributor retail sourcing does not prove assembler consignment acceptance.",
+      "Aggregate identicalMPNs before applying quantity tiers even when design values have different annotations.",
+      "Stock status describes the retrieved page only. Cached source crawl labels may predate observation; all stock and price require recheck before procurement.",
+      "Known subtotal includes out-of-stock reference prices; stock checks cover installed demand only, not attrition, reservation or assembly availability."
+    ]
+  },
+  "v15_connector_visual_datum_review": {
+    "report": "mechanical/mini-rect-v15/connector-datum-review.json",
+    "status": "ORIENTATION_CONFIRMED_FROM_HISTORICAL_DRAWING_EXIT_YZ_UNQUALIFIED",
+    "actual_header_fab_edge_case_Y_mm": 21.97,
+    "assumed_harness_endpoint_case_Y_mm": 22.02
+  },
+  "v15_five_pack_fit_validation": {
+    "plan": "mechanical/mini-rect-v15/five-pack-fit-validation-plan.json",
+    "measurement_template": "mechanical/mini-rect-v15/five-pack-fit-measurements.csv",
+    "status": "PLANNED_NOT_EXECUTED",
+    "completed_samples": 0
+  },
+  "v15_usb_irq_revoke_primitive": {
+    "review": "firmware/stm32/usb/input-policy-review.json",
+    "status": "EVENT_HOOK_QUEUE_OVERFLOW_COVERED_HOST_TESTED",
+    "declared_usb_budget_ma": 100,
+    "charging_enabled": false
+  },
+  "v15_usb_grant_epoch_driver": {
+    "review": "firmware/stm32/usb/input-policy-review.json",
+    "status": "DRIVER_TESTED_POLICY_NOT_ENABLED",
+    "declared_usb_budget_ma": 100,
+    "charging_enabled": false
+  },
+  "v15_usb_latest_full_link": {
+    "review": "firmware/stm32/usb/input-policy-review.json",
+    "elf": "/tmp/pendant-usb-overflow-link/candidate-NOT-FOR-FLASH.elf",
+    "sha256": "c73ea6268749551e34fea485d72e15030df449eb8c4bf7cded90715c9daa7343",
+    "status": "FULL_APPLICATION_LINK_PASS_NOT_FOR_FLASH",
+    "high_current_grants": false,
+    "charging_enabled": false,
+    "queue_loss_fault_integrated": true,
+    "current_source_match": false
+  },
+  "v15_usb_experimental_500ma": {
+    "review": "firmware/stm32/usb/input-policy-review.json",
+    "status": "IMPLEMENTED_HOST_TESTED_FULL_LINK_NOT_FOR_FLASH",
+    "elf": "/tmp/pendant-usb-500-ack-link/candidate-NOT-FOR-FLASH.elf",
+    "sha256": "dcdd4ab635240d803dde1708a6e1aa8eab071bad3504e091d97a596988137e43",
+    "default_budget_ma": 100,
+    "charging_enabled": false,
+    "configuration_status_ack_required": true,
+    "current_source_match": false
+  },
+  "v15_charge_request_primitive": {
+    "status": "EXPERIMENTAL_POLICY_INTEGRATED_DEFAULT_DISABLED",
+    "date": "2026-10-26",
+    "api": "board_usb_input_v15_charge_request(expected_epoch)",
+    "conditions": [
+      "initialized task context with interrupts enabled",
+      "successful active 500mA grant",
+      "matching non-saturated revoke epoch",
+      "not suspended and VBUS present"
+    ],
+    "revocation": "ISR/task revoke clears active grant and charge GPIO; pending IRQ on PRIMASK restore invalidates return value",
+    "checks": {
+      "driver_ASan_UBSan": "PASS",
+      "policy_100_500": "PASS",
+      "board_adapter": "PASS",
+      "real_STM32U535_HAL_ARM_object": "PASS /tmp/pendant-charge-request.o",
+      "renewal_ASan_UBSan": "PASS no output writes during valid renewal; pending IRQ clears charge/budget and returns false",
+      "policy_100_off_500_off_500_on_ASan_UBSan": "PASS including race between grant and charge, queue pending, ACK absent, detach and no charge calls in disabled configurations",
+      "session_and_actual_event_queue": "PASS"
+    },
+    "limitations": [
+      "Default 100mA with charging disabled; experimental opt-in is not qualified for flashing",
+      "Battery, thermal guard, input-current and physical USB timing remain unqualified",
+      "Host tests use mocked board or HAL; no end-to-end physical USB/charging test"
+    ],
+    "source_sha256": {
+      "firmware/stm32/board/usb_input_v15.c": "3fe206db5b87b9ab3cc39ce75ecad7e6a6dd5de1dabae5abe3916c14ec35d9a2",
+      "firmware/stm32/board/usb_input_v15.h": "615b43ec4f5e51f6c3ea9ff5322cea2593e7983c8c87739dfe29b7901c7412a5",
+      "firmware/stm32/tests/test_usb_input_v15.c": "957db2e6bd517b5387dfcf80773054f55ed84ea2b33daa50bf96427c632947ec",
+      "firmware/stm32/usb/usb_power_budget.h": "8c4669df2f9416b7150e260892bc7414efff8377b9824c6fd5d0cc7e26995688",
+      "firmware/stm32/usb/usb_input_policy.c": "e09036543d11759b6e7da8ca30dbd70933bfc40e87e479c8c120d27b8e13e0ef",
+      "firmware/stm32/tests/test_usb_input_policy.c": "393d4f3136b2f74dd6baed6bca322108fd909811db0edeec7cf23ae7494a835b",
+      "firmware/stm32/tests/check_usb_input_policy.sh": "3c5898047176b24c898e5d77d4c3cd60c633dd3746d14ff25719f6368b18dae3"
+    },
+    "renewal": "Same active valid grant returns without GPIO writes or inhibit initialization; pending revoke on IRQ restore rejects renewal.",
+    "full_link": {
+      "path": "/tmp/pendant-usb-charge-link/candidate-NOT-FOR-FLASH.elf",
+      "sha256": "1d365d0b4aca8cd622a3e0e07c047e38c1b617711bcd5935c01bc85db2515e0a",
+      "result": "PASS",
+      "configuration": "experimental 500mA + charging opt-in, NEVER FLASH",
+      "text": 106548,
+      "data": 2573,
+      "bss": 194852,
+      "charge_request_symbol": "strong T verified"
+    },
+    "policy": {
+      "option": "PENDANT_EXPERIMENTAL_USB_CHARGING",
+      "default": 0,
+      "requires_power_ma": 500,
+      "gate": "successful board grant after mounted/non-suspended/VBUS, empty event queue and configuration status ACK; charge request uses same epoch",
+      "invalid_100ma_charging_build": "rejected as tested"
+    }
+  },
+  "v15_ntc_lifecycle_review": {
+    "observed_date": "2026-10-26",
+    "status": "REPLACEMENT_REVIEW_REQUIRED",
+    "reference": "TH1",
+    "current_candidate_mpn": "NCP18XH103F03RB",
+    "observations": [
+      {
+        "url": "https://www.digikey.jp/ja/products/detail/murata-electronics/NCP18XH103F03RB/1644681",
+        "crawl_label": "today",
+        "status": "Not for new designs",
+        "current_price": null,
+        "replacement_list": "NCU18XH103F60RB described as manufacturer recommended; listing is not equivalence proof"
+      },
+      {
+        "url": "https://akizukidenshi.com/catalog/g/g105252/",
+        "crawl_label": "2 days ago",
+        "status": "Sales ended, both 20 and 4000 piece packages",
+        "historical_pack_20_price_including_tax_JPY": 200,
+        "excluded_from_cost": true
+      }
+    ],
+    "replacement_candidate": "NCU18XH103F60RB",
+    "adopted": false,
+    "required_checks": [
+      "Manufacturer lifecycle and replacement documentation",
+      "Full resistance-temperature table and tolerance across charge cutoff range, not only nominal 10k/B25-50",
+      "Footprint, height and soldering compatibility",
+      "Recalculate comparator trip temperatures and worst-case tolerances",
+      "Thermal attachment and response validation",
+      "Current supplier price and assembly availability"
+    ],
+    "cost_effect": "No new current price verified; subtotal remains partial, unchanged",
+    "board_change": false,
+    "replacement_datasheet_review": {
+      "url": "https://www.mouser.com/datasheet/3/76/1/NCU18XH103F60RB.pdf",
+      "author": "Murata",
+      "document_date_printed": "05/02/2025",
+      "source_kind": "manufacturer-authored distributor mirror; direct manufacturer API redirects to inaccessible PIM",
+      "page_2": {
+        "resistance_25_ohm": 10000,
+        "resistance_tolerance_percent": 1,
+        "B25_50_K": 3380,
+        "B_tolerance_percent": 1,
+        "maximum_voltage_V": 5,
+        "maximum_operating_current_at_25_uA": 100,
+        "typical_dissipation_mW_per_C": 1,
+        "operating_temperature_C": [
+          -55,
+          125
+        ],
+        "size_mm": [
+          1.6,
+          0.8
+        ],
+        "MSL": 1
+      },
+      "scalar_comparison": "R25/B25-50 and their tolerances match existing calculation inputs; not full R-T equivalence",
+      "bias_screen": {
+        "source": "hardware/mini-rect-v15/input-control-pa2-pb5/design.json",
+        "source_sha256": "95a52149ac9cddfc5ac284a7be7107c2167514c39c6dd5dd053d7f036cf8ce40",
+        "assumed_supply_max_V": 5.25,
+        "R37_min_ohm": 99000,
+        "NTC_25_min_ohm": 9900,
+        "maximum_25C_current_uA": 48.209366391184574,
+        "maximum_25C_voltage_V": 0.48602199816681946,
+        "result": "Within listed 25C current and voltage values under assumed 5.25V supply; supply transient and full-temperature derating not qualified"
+      },
+      "not_verified": [
+        "Page3 graph pixels unavailable after screenshot timeout; no graph values inferred",
+        "Full R-T tolerance table and current/voltage derating versus temperature",
+        "Current manufacturer lifecycle status and definitive replacement notice",
+        "Land pattern/height and thermal coupling"
+      ],
+      "adopted": false
+    },
+    "visual_review_legacy_mirror": {
+      "url": "https://store.comet.bg/download-file.php?id=28326",
+      "printed_date": "12/04/2023",
+      "local_pdf": "hardware/power-study/xe-charger/evidence/NCU18XH103F60RB-2023-mirror.pdf",
+      "sha256": "e7836f1ee7cefe86bc6839f4b55d9fbe1be90797ead4c3b0096b201ebb111375",
+      "pages_inspected": [
+        1,
+        3
+      ],
+      "render_warning": "Poppler flate block warnings; visible dimensions/axes inspected, do not assume all embedded content intact",
+      "dimensions_mm": {
+        "length": [
+          1.45,
+          1.75
+        ],
+        "width": [
+          0.65,
+          0.95
+        ],
+        "height": [
+          0.65,
+          0.95
+        ],
+        "terminal_length_each": [
+          0.2,
+          0.6
+        ]
+      },
+      "page3_findings": [
+        "Max operating current is temperature-dependent, declining below 25C; 100uA is not a full-temperature limit",
+        "Max operating voltage and absolute max voltage are separate curves",
+        "Absolute max voltage drops above 100C toward zero at 125C in this legacy graph",
+        "Temperature error graph has separate F 1% and other tolerance curves; numerical guaranteed table remains unavailable"
+      ],
+      "decision": "Do not adopt from scalar equality; obtain detailed limits or qualify full-temperature excitation and thermal thresholds",
+      "current_manufacturer_revision_verified": false
+    },
+    "reproducible_sensitivity": {
+      "script": "hardware/mini-rect-v15/check_temperature.py",
+      "report": "hardware/mini-rect-v15/input-control-pa2-pb5/ncu-temperature-screen.json",
+      "source_design_sha256": "95a52149ac9cddfc5ac284a7be7107c2167514c39c6dd5dd053d7f036cf8ce40",
+      "status": "MODEL_ONLY_NOT_SUBSTITUTION_APPROVAL",
+      "cold_trip_model_C": [
+        5.585330892074637,
+        10.117603351919229
+      ],
+      "hot_trip_model_C": [
+        28.875332476528172,
+        37.22583847372573
+      ],
+      "verification": "source hash matched; 25C matches direct divider arithmetic; every sweep point below analytic maximum power bound",
+      "remaining": "Guaranteed R-T/derating, actual VBUS bounds, comparator errors at actual common-mode and cell-to-sensor thermal behavior"
+    }
+  },
+  "v15_r42_discontinuation_notice_check": {
+    "source": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7121/PDN.PG13324.06.03.2025.pdf",
+    "page": 23,
+    "affected_old_part": "ERJ2RKF134X",
+    "suggested_replacement": "ERJ2RKF1303X",
+    "conclusion": "Chosen candidate appears in replacement column; this notice is not evidence that candidate is discontinued",
+    "price_status": "English Japan product table observed 2026-10-26: 1+16 JPY, 10+5.1 JPY ex tax; supplier spelling ERJ-2RKF1303X; reference only."
+  },
+  "v15_supplemental_cost_reference": {
+    "report": "docs/procurement/v15-supplemental-cost-review.json",
+    "battery_five_JPY_tax_included": 7500,
+    "remaining_resistor_five_USD": 0.55,
+    "all_candidate_mpns_have_price_observation": true,
+    "JPY_priced_mpns": 37,
+    "USD_priced_mpns": 1,
+    "prototype_total": null,
+    "status": "PARTIAL_MIXED_CURRENCY_REFERENCE_NOT_QUOTE"
+  },
+  "v15_mirrored_harness_screen": {
+    "report": "mechanical/mini-rect-v15/harness-mirrored-screen.json",
+    "status": "MIRRORED_LOBE_REJECTION_SCREEN_NOT_FIT_APPROVAL",
+    "collision_length_sets": 18,
+    "total_length_sets": 27,
+    "configurations_per_length_set": 216,
+    "conclusion": "Mirroring and independent phase selection do not resolve all sampled lead-length cases; no PCB connector relocation or wire-fit approval.",
+    "release_allowed": false
+  },
+  "v15_tilted_harness_screen": {
+    "report": "mechanical/mini-rect-v15/harness-tilted-screen.json",
+    "status": "TILTED_LOBE_REJECTION_SCREEN_NOT_FIT_APPROVAL",
+    "collision_length_sets": 18,
+    "total_length_sets": 27,
+    "maximum_configurations_per_length_set": 27000,
+    "kept_path_count": 216,
+    "worst_best_sampled_center_distance_mm": 0.23625219446823947,
+    "conclusion": "Tilting lobes within assumed pack-to-PCB height does not eliminate sampled wire interference. This rejects this family only, not all possible 3D paths.",
+    "release_allowed": false
+  },
+  "v15_connector_relocation_screen": {
+    "report": "mechanical/mini-rect-v15/connector-relocation-screen.json",
+    "status": "NECESSARY_RELOCATION_SCREEN_NOT_PLACEMENT_APPROVAL",
+    "passing_necessary_screen_count": 39,
+    "source_sha256": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "conclusion": "At unchanged Y, necessary X shift bound is +/-2.129 mm under fixed U-turn assumptions. 39 grid positions pass chord and body-envelope screens only; actual wire paths and PCB routing remain unqualified.",
+    "release_allowed": false
+  },
+  "v15_connector_tangent_screen": {
+    "report": "mechanical/mini-rect-v15/connector-tangent-screen.json",
+    "status": "PLANAR_TANGENT_LENGTH_SCREEN_NOT_3D_IMPOSSIBILITY_PROOF",
+    "initial_candidates": 39,
+    "passing_planar_candidates": 27,
+    "validation": "Generated endpoint position/heading and independently integrated exact segment endpoints; straight baseline 6.88 mm checked.",
+    "release_allowed": false
+  },
+  "v15_connector_route_collision_screen": {
+    "report": "mechanical/mini-rect-v15/connector-route-collision-screen.json",
+    "status": "SHORTEST_PATH_SAMPLE_SCREEN_NOT_HARNESS_FIT",
+    "positions_without_sampled_hits": 27,
+    "positions_tested": 27,
+    "source_sha256": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "conclusion": "Shortest return routes avoid sampled B-side part and wire interference, including unchanged position. Unrouted excess lead length remains the principal geometric issue; this result alone does not justify connector relocation.",
+    "release_allowed": false
+  },
+  "v15_preboard_battery_measurement_plan": {
+    "report": "mechanical/mini-rect-v15/five-pack-fit-validation-plan.json",
+    "template": "mechanical/mini-rect-v15/five-pack-fit-measurements.csv",
+    "status": "PLANNED_NOT_EXECUTED",
+    "change": "Added independent pack-local and unmated housing-local XYZ exits for every wire, metrology uncertainty and photos; separated pre-board measurement from post-prototype fit.",
+    "samples_measured": 0,
+    "user_question_pending": "Whether an existing DTP401525-XE sample is available",
+    "release_allowed": false
+  },
+  "v15_storage_energy_allocation": {
+    "report": "docs/sourcing/xe-storage-energy-screen.json",
+    "status": "MEASUREMENT_ALLOCATION_NOT_RUNTIME_PROOF",
+    "storage_charge_per_5s_mC": 9.558875968992249,
+    "whole_system_charge_per_5s_mC": 24.0625,
+    "scope": "Cooperative five-second profile; data plus metadata/sync/close/rename/final sync. Current levels and usable capacity are hypotheses.",
+    "runtime_16h_proven": false,
+    "current_XE_guard_and_BOR_reserve_included": true
+  },
+  "v15_spi_energy_screen": {
+    "report": "docs/sourcing/xe-spi-energy-screen.json",
+    "status": "IDEAL_WIRE_TIME_SCREEN_NOT_CURRENT_MEASUREMENT",
+    "nominal_SPI_hz": 4000000,
+    "plaintext_only_wire_time_ms": 82.04,
+    "finding": "Current XE allocation includes guard/BOR reserve. 80mA/0.2mA hypothesis leaves25.214ms after plaintext payload,24.310ms after encrypted sector payload at4MHz.60mA/1.05mA exceeds allocation. Hypotheses, not a measured part rejection.",
+    "firmware_changed": "Optional8MHz bench profile added; default4MHz unchanged and energy report regenerated with current source hashes.",
+    "runtime_16h_proven": false
+  },
+  "v15_spi_bench_profiles": {
+    "report": "firmware/stm32/board/storage-spi-profile-review.json",
+    "status": "BENCH_PROFILE_COMPILED_NOT_HARDWARE_QUALIFIED",
+    "default_MHz": 4,
+    "optional_MHz": 8,
+    "full_link_8MHz_passed": true,
+    "hardware_qualified": false
+  },
+  "v15_assembly_public_rate_review": {
+    "report": "docs/procurement/v15-assembly-rate-review.json",
+    "status": "PUBLIC_RATE_CONDITIONAL_SCENARIOS_NOT_QUOTE",
+    "conditional_partial_assembly_USD": [
+      148.584,
+      162.354
+    ],
+    "board_sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "complete_prototype_total": null,
+    "xray_conditional_addition_USD": [
+      16.4,
+      32.8
+    ],
+    "xray_classification": "4 candidate refs x5 boards; aggregation and supplier classification unconfirmed"
+  },
+  "v15_case_printability_review": {
+    "report": "mechanical/mini-rect-v15/printability-review.json",
+    "status": "CURRENT_CASE_NOT_QUALIFIED_FOR_SELECTED_SERVICE",
+    "blockers": [
+      "Thin snap below recommendation",
+      "Deep narrow acoustic bore outside published combinations",
+      "Nominal max envelope lacks positive tolerance margin"
+    ],
+    "release_allowed": false
+  },
+  "v15_tape_case_candidate": {
+    "report": "mechanical/mini-rect-v15/tape-case-fit-review.json",
+    "status": "TAPE_CLOSURE_STUDY_NOT_RELEASED",
+    "nominal_case_mm": [
+      29.6,
+      31.6,
+      14.6
+    ],
+    "valid_solids": true,
+    "component_envelope_intersections": 0,
+    "source_board_sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "adopted": false,
+    "remaining": [
+      "Replace unsupported deep narrow acoustic bore",
+      "Specify PCB top retention after removing thin fingers",
+      "Select tape and quantify overlap/alignment/durability",
+      "Complete wire/connector envelope and fit qualification"
+    ]
+  },
+  "v15_split_duct_candidate": {
+    "report": "mechanical/mini-rect-v15/split-duct-fit-review.json",
+    "status": "REJECT_CURRENT_4MM_SQUARE_DUCT_ENVELOPE_COMPONENT_INTERFERENCE",
+    "collision_refs": [
+      "C28",
+      "Q3",
+      "R13"
+    ],
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_tube_duct_candidate": {
+    "report": "mechanical/mini-rect-v15/tube-duct-fit-review.json",
+    "sourcing": "docs/procurement/v15-acoustic-tube-candidate.json",
+    "status": "PURCHASED_TUBE_DUCT_STUDY_NOT_RELEASED",
+    "nominal_component_intersections": 0,
+    "min_nominal_clearance_mm": 0.105,
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_tube_tolerance_review": {
+    "report": "mechanical/mini-rect-v15/tube-tolerance-review.json",
+    "status": "UNLOCATED_TUBE_RETENTION_REJECTED",
+    "nominal_fit_is_not_tolerance_fit": true,
+    "affected_refs": [
+      "R13",
+      "Q3"
+    ],
+    "release_allowed": false
+  },
+  "v15_open_acoustic_candidate": {
+    "report": "mechanical/mini-rect-v15/open-acoustic-fit-review.json",
+    "status": "OPEN_CAVITY_ACOUSTIC_COMPARISON_NOT_RELEASED",
+    "nominal_case_mm": [
+      29.6,
+      31.6,
+      14.6
+    ],
+    "inlet_diameter_mm": 1.5,
+    "inlet_depth_mm": 1.2,
+    "dedicated_duct": false,
+    "component_envelope_intersections": 0,
+    "acoustic_tested": false,
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_pcb_retention_sites": {
+    "report": "mechanical/mini-rect-v15/pcb-retention-sites.json",
+    "status": "RETENTION_CONTACT_SITE_SCREEN_NOT_CLAMP_DESIGN",
+    "two_mm_square_grid_candidates": 299,
+    "front_half_two_mm_candidates": 24,
+    "source_sha256": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "retention_qualified": false,
+    "both_side_two_mm_sites": 76,
+    "earliest_board_Y_mm": 15.5,
+    "floor_post_pack_clear_count": 46,
+    "conclusion": "Top-only contacts are not sufficient: paired2mm sites occur toward rear and some are above battery. No new support adopted."
+  },
+  "v15_padded_retention_candidate": {
+    "report": "mechanical/mini-rect-v15/retention-fit-review.json",
+    "status": "PADDED_THREE_POINT_RETENTION_STUDY_NOT_RELEASED",
+    "nominal_case_mm": [
+      29.6,
+      31.6,
+      14.6
+    ],
+    "component_envelope_intersections": 0,
+    "valid_body_lid": true,
+    "pad_material_selected": false,
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_retention_tolerance_screen": {
+    "report": "mechanical/mini-rect-v15/retention-tolerance-review.json",
+    "sha256": "149f903a9eeeae5f76af5d260b4c90aadaf882a0e04603526f9597f645fd0848",
+    "status": "FIXED_1MM_PAD_NOT_ROBUST_IN_TOLERANCE_SENSITIVITY",
+    "gap_range_mm": [
+      0.27,
+      1.2
+    ],
+    "signed_compression_range": [
+      -0.2,
+      0.73
+    ],
+    "adopted": false,
+    "release_allowed": false,
+    "next_action": "Specify and measure assembled support-to-post gap at all three sites before selecting pad thickness and force curve; use measured fitted shims/pads for prototypes if required. Recheck R37 clearance and enclosure limits after adjustment."
+  },
+  "v15_poron_retention_sensitivity": {
+    "report": "mechanical/mini-rect-v15/poron-retention-review.json",
+    "sha256": "8658d2bb772e06447c9ec9d825680aa688b6657787a173066011b38af4f454f0",
+    "status": "THICKER_PORON_RETENTION_SENSITIVITY_NOT_ADOPTED",
+    "candidate": {
+      "nominal_pad_mm": 3.18,
+      "nominal_gap_mm": 2.05,
+      "post_tip_Z_mm": 11.45,
+      "compression_min": 0.14395527603074765,
+      "compression_max": 0.5654659805603204,
+      "pad_thickness_tolerance_fraction": 0.1
+    },
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_retention_pad_procurement": {
+    "report": "docs/procurement/v15-retention-pad-candidates.json",
+    "sha256": "d0dc813d0cd7deaf687991e5d1baf30d91e0eb500796c08bc4cacd14153f8dcd",
+    "selected": null,
+    "release_allowed": false
+  },
+  "v15_poron236_case_candidate": {
+    "report": "mechanical/mini-rect-v15/poron236-fit-review.json",
+    "sha256": "bfd05b0ecb45467d155a920e8fcef0e983a78d37e7b3fb421118769837c7acd3",
+    "status": "PORON_236_NOMINAL_CAD_STUDY_NOT_ADOPTED",
+    "minimum_lateral_clearance_mm": 0.3800000000000012,
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_poron236_shifted_case_candidate": {
+    "report": "mechanical/mini-rect-v15/poron236-shifted-fit-review.json",
+    "sha256": "28583ea217af99c432a157f5c7a5ccbb410b2d00a91211d40eb22b29c08fab19",
+    "site_search": "mechanical/mini-rect-v15/retention-local-clearance-review.json",
+    "sites": [
+      {
+        "center_board_mm": [
+          1.8,
+          20.7
+        ],
+        "F_margin_mm": 0.8499999999999985,
+        "F_nearest": "SW1",
+        "B_margin_mm": 0.8050000000000007,
+        "B_nearest": "R6",
+        "board_edge_margin_mm": 0.8,
+        "usable_lateral_margin_mm": 0.8,
+        "distance_from_original_mm": 0.36055512754639857
+      },
+      {
+        "center_board_mm": [
+          20.7,
+          25.0
+        ],
+        "F_margin_mm": 1.4924141516348612,
+        "F_nearest": "C16",
+        "B_margin_mm": 0.2750000000000008,
+        "B_nearest": "TP6",
+        "board_edge_margin_mm": 3.0,
+        "usable_lateral_margin_mm": 1.4924141516348612,
+        "distance_from_original_mm": 1.6552945357246847
+      },
+      {
+        "center_board_mm": [
+          18.5,
+          26.3
+        ],
+        "F_margin_mm": 1.6550000000000002,
+        "F_nearest": "J1",
+        "B_margin_mm": 2.475,
+        "B_nearest": "TP6",
+        "board_edge_margin_mm": 1.6999999999999993,
+        "usable_lateral_margin_mm": 1.6550000000000002,
+        "distance_from_original_mm": 1.2206555615733699
+      }
+    ],
+    "minimum_pad_pair_separation_mm": 0.1999999999999993,
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_poron236_balanced_case_candidate": {
+    "report": "mechanical/mini-rect-v15/poron236-balanced-fit-review.json",
+    "sha256": "2f73ddba8433af4e35f68ff92f9feb744c437a44edcfbdac50d0b8a86d555b30",
+    "sites": [
+      {
+        "center_board_mm": [
+          1.8,
+          20.7
+        ],
+        "F_margin_mm": 0.8499999999999985,
+        "F_nearest": "SW1",
+        "B_margin_mm": 0.8050000000000007,
+        "B_nearest": "R6",
+        "board_edge_margin_mm": 0.8,
+        "usable_lateral_margin_mm": 0.8,
+        "distance_from_original_mm": 0.36055512754639857
+      },
+      {
+        "center_board_mm": [
+          20.2,
+          24.4
+        ],
+        "F_margin_mm": 0.7220110802473878,
+        "F_nearest": "C16",
+        "B_margin_mm": 0.7750000000000008,
+        "B_nearest": "TP6",
+        "board_edge_margin_mm": 3.6000000000000014,
+        "usable_lateral_margin_mm": 0.7220110802473878,
+        "distance_from_original_mm": 0.9219544457292872
+      },
+      {
+        "center_board_mm": [
+          17.6,
+          27.2
+        ],
+        "F_margin_mm": 0.7550000000000017,
+        "F_nearest": "J1",
+        "B_margin_mm": 3.3749999999999987,
+        "B_nearest": "TP6",
+        "board_edge_margin_mm": 0.8000000000000007,
+        "usable_lateral_margin_mm": 0.7550000000000017,
+        "distance_from_original_mm": 0.22360679774997896
+      }
+    ],
+    "expanded_pad_space_screen": {
+      "envelope_xy_mm": [
+        3,
+        3
+      ],
+      "assumed_placement_mm": 0.2,
+      "assumed_bulge_per_edge_mm": 0.3,
+      "material_deformation_verified": false,
+      "intersections": []
+    },
+    "minimum_pad_pair_separation_mm": 0.9999999999999993,
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_retention_adhesive_screen": {
+    "report": "mechanical/mini-rect-v15/retention-adhesive-review.json",
+    "sha256": "8b12ba49be5a3d6e69987a3976466cc910ef37fc0ba657dee7ded597a9bc23cf",
+    "candidate": "3M Adhesive Transfer Tape 950",
+    "cases": [
+      {
+        "post_tip_shift_mm": 0,
+        "post_tip_Z_mm": 10.9,
+        "foam_compression_min": 0.16666666666666674,
+        "foam_compression_max": 0.6764252696456081
+      },
+      {
+        "post_tip_shift_mm": 0.13,
+        "post_tip_Z_mm": 11.030000000000001,
+        "foam_compression_min": 0.10546139359698625,
+        "foam_compression_max": 0.6263482280431426
+      }
+    ],
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_poron236_bonded_case_candidate": {
+    "report": "mechanical/mini-rect-v15/poron236-bonded-fit-review.json",
+    "sha256": "bceefac700b39d0fd2ac49e6fe09fdb0df826a1a5f8d2a746bff96c5407e9211",
+    "measurements_template": "mechanical/mini-rect-v15/poron236-bonded-measurements.csv",
+    "nominal_stack_verified": true,
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_five_second_import_validation": {
+    "report": "firmware/stm32/tests/five-second-import-result.json",
+    "sha256": "199e1d6ae523644d1b05056f02a8d8c07e7f15a786ed2051c3e0db6f50a421b5",
+    "status": "PASS_FIVE_SECOND_CODEC_STORE_IMPORT_RAM_FAT32",
+    "ciphertext_bytes_per_full_chunk": 41220,
+    "release_allowed": false
+  },
+  "v15_encrypted_spi_energy_screen": {
+    "report": "docs/sourcing/xe-spi-energy-screen.json",
+    "sha256": "14d18743a6a3937e9a0850eed5f9b6dae57ed1669e57f7a959492e2fffed40ff",
+    "profiles": {
+      "evidence_path": "firmware/stm32/tests/five-second-import-result.json",
+      "evidence_sha256": "199e1d6ae523644d1b05056f02a8d8c07e7f15a786ed2051c3e0db6f50a421b5",
+      "ciphertext_bytes": 41220,
+      "sector_bytes": 41472,
+      "profiles": [
+        {
+          "nominal_SPI_MHz": 4,
+          "bench_only": false,
+          "ciphertext_byte_only_wire_ms": 82.44,
+          "sector_payload_only_wire_ms": 82.944,
+          "rows": [
+            {
+              "active_mA": 34.0,
+              "idle_mA": 0.06,
+              "allowed_active_ms": 272.8012954918164,
+              "remaining_other_active_ms": 189.8572954918164,
+              "sector_payload_only_average_mA": 0.623023872,
+              "wire_time_alone_exceeds_allocation": false
+            },
+            {
+              "active_mA": 60.0,
+              "idle_mA": 1.05,
+              "allowed_active_ms": 73.09373993201439,
+              "remaining_other_active_ms": -9.850260067985616,
+              "sector_payload_only_average_mA": 2.02790976,
+              "wire_time_alone_exceeds_allocation": true
+            },
+            {
+              "active_mA": 80.0,
+              "idle_mA": 0.2,
+              "allowed_active_ms": 107.25408482446427,
+              "remaining_other_active_ms": 24.31008482446427,
+              "sector_payload_only_average_mA": 1.5237862400000002,
+              "wire_time_alone_exceeds_allocation": false
+            },
+            {
+              "active_mA": 90.0,
+              "idle_mA": 0.2,
+              "allowed_active_ms": 95.31042281728563,
+              "remaining_other_active_ms": 12.366422817285624,
+              "sector_payload_only_average_mA": 1.68967424,
+              "wire_time_alone_exceeds_allocation": false
+            }
+          ]
+        },
+        {
+          "nominal_SPI_MHz": 8,
+          "bench_only": true,
+          "ciphertext_byte_only_wire_ms": 41.22,
+          "sector_payload_only_wire_ms": 41.472,
+          "rows": [
+            {
+              "active_mA": 34.0,
+              "idle_mA": 0.06,
+              "allowed_active_ms": 272.8012954918164,
+              "remaining_other_active_ms": 231.3292954918164,
+              "sector_payload_only_average_mA": 0.34151193599999996,
+              "wire_time_alone_exceeds_allocation": false
+            },
+            {
+              "active_mA": 60.0,
+              "idle_mA": 1.05,
+              "allowed_active_ms": 73.09373993201439,
+              "remaining_other_active_ms": 31.621739932014385,
+              "sector_payload_only_average_mA": 1.53895488,
+              "wire_time_alone_exceeds_allocation": false
+            },
+            {
+              "active_mA": 80.0,
+              "idle_mA": 0.2,
+              "allowed_active_ms": 107.25408482446427,
+              "remaining_other_active_ms": 65.78208482446428,
+              "sector_payload_only_average_mA": 0.8618931200000001,
+              "wire_time_alone_exceeds_allocation": false
+            },
+            {
+              "active_mA": 90.0,
+              "idle_mA": 0.2,
+              "allowed_active_ms": 95.31042281728563,
+              "remaining_other_active_ms": 53.838422817285625,
+              "sector_payload_only_average_mA": 0.9448371200000001,
+              "wire_time_alone_exceeds_allocation": false
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "Observed ciphertext size comes from host execution, not physical SD timing.",
+        "Sector payload excludes command/token/CRC, FAT and directory traffic, read-modify-write, busy and HAL gaps.",
+        "8MHz is a compile-checked comparison profile, not adopted operational speed.",
+        "Both speed cases reuse identical hypothetical current; frequency-dependent actual current is unknown."
+      ]
+    },
+    "release_allowed": false
+  },
+  "v15_current_trace_analysis": {
+    "report": "docs/sourcing/current-trace-analysis-review.json",
+    "status": "ANALYZER_TESTED_NO_HARDWARE_TRACE",
+    "actual_trace_available": false,
+    "release_allowed": false
+  },
+  "v15_cooperative_import_validation": {
+    "report": "firmware/stm32/tests/cooperative-import-result.json",
+    "sha256": "2213e123540772ff15a93bcd773f9e568d8c5d7c07b1f682ae1d6a68dee4465f",
+    "status": "PASS_COOPERATIVE_ENCRYPTION_CAPTURE_INJECTION_RAM_FAT32",
+    "release_allowed": false
+  },
+  "v15_cactus_exact_sku_sourcing": {
+    "report": "docs/procurement/v15-cactus-sd-sourcing-review.json",
+    "status": "EXACT_SD_SKUS_IDENTIFIED_PRICING_UNRESOLVED",
+    "price_confirmed": false,
+    "release_allowed": false
+  },
+  "v15_delkin_lifecycle": {
+    "report": "docs/procurement/v15-delkin-lifecycle-review.json",
+    "excluded_mpn": "S302MMZU8-C1000-4",
+    "replacement_qualified": false,
+    "release_allowed": false
+  },
+  "historical_v13_overview_before_v15_reconciliation": {
+    "current_board": {
+      "path": "hardware/mini-rect-v13/usb-ground-plane-candidate.kicad_pcb",
+      "sha256": "ad5ef8ccfe065424df59368025efdfcf99418fb3c71aebe2e62ae01f7108357b",
+      "layers": 6
+    },
+    "requirements": {
+      "rounded_compact_models": "23x25x14.81mm r10 four-part models exported, meshchecked; nominal nut insertion and sampled lid lift checked. Slicing, manufacturing tolerance, thin retention strength, harness and swelling unresolved.",
+      "circuit_layout": "Current V13 six-layer candidate, DRC/unconnected/pad parity reviewed; final supplier DFM, full electrical review and approved stackup still required",
+      "record16h": "Design allocation only.100mAh/70% usable requires<=4.375mA average; battery/card qualification and physical measurements outstanding",
+      "storage36h": "Capacity/format software work exists; selected exact physical card and recording integrity/latency validation outstanding",
+      "usb_auto_import": "Host/mock tests and ARM build exist; physical USB and provisioning remain",
+      "charging": "Disabled pending qualified batteryNTC/pack and charge parameters; charging requirement not achieved",
+      "jlc_parts": "68-row review BOM/CPL; U8/C27/J4 IDs not final. Position/rotation supplier match and inventory reservation not complete",
+      "landed_quote": "No final V13 five-unit shipping/tax-inclusive quote; previous design prices cannot be reused",
+      "product_price": "5000JPY target not demonstrated; prototype cost tracked separately"
+    },
+    "artifacts": {
+      "fit_models": "/Users/takahashinaoki/Downloads/Pendant-v13-captive-nut-fit-r10",
+      "fabrication_review": "hardware/mini-rect-v13/fabrication-review",
+      "procurement_review": "hardware/mini-rect-v13/procurement-review"
+    },
+    "decision_dependencies": [
+      "Select a domestic finished protected pack using published specifications; prototype a known-R-T contact sensor rather than waiting for custom-pack or undocumented NTC supplier replies.",
+      "Selected card and battery power envelope are required before selecting C27 or changing the storage load switch.",
+      "Final BOM and board freeze plus accessible JLC matching workflow and destination are required for a final landed quote.",
+      "Bambu connection or user slicing result is needed to qualify the exported thin-wall print model."
+    ],
+    "latest_battery_sales_direction": {
+      "date": "2026-10-26",
+      "policy_file": "docs/sourcing/user-supplied-battery-policy.json",
+      "supplier_email_required": false,
+      "battery_selection": "standard_domestic_user_purchased_pack_pending",
+      "order_ready": false,
+      "redesign_screen": "docs/sourcing/domestic-pack-redesign-screen.json",
+      "preferred_redesign_candidate": "DTP502035(PHR), not yet qualified"
+    }
+  },
+  "v15_rounded_lanyard_case_candidate": {
+    "report": "mechanical/mini-rect-v15/rounded-lanyard-fit-review.json",
+    "sha256": "1ac06eaddb011f09e5d0734922cdfdc1273bfa6525b2df663541eada984ddb5e",
+    "status": "ROUNDED_LANYARD_CAD_STUDY_NOT_ADOPTED",
+    "adopted": false,
+    "release_allowed": false
+  },
+  "v15_rounded_assembly_path": {
+    "report": "mechanical/mini-rect-v15/rounded-assembly-path-review.json",
+    "status": "TWO_SAMPLED_PACK_INSERTION_PATHS_REJECTED",
+    "straight_vertical_colliding_samples": 12,
+    "offset_descent_colliding_samples": 23,
+    "other_paths_ruled_out": false,
+    "release_allowed": false
+  },
+  "v15_removable_ledge_candidate": {
+    "fit_report": "mechanical/mini-rect-v15/removable-ledge-fit-review.json",
+    "fit_sha256": "eb0c735e236b55cc56d699e94472a885fe6790ab14fba6cd47b76d126a4c5e99",
+    "path_report": "mechanical/mini-rect-v15/removable-ledge-path-review.json",
+    "status": "RIGID_ASSEMBLY_PATH_SCREEN_HARNESS_AND_HANDLING_UNRESOLVED",
+    "adopted": false,
+    "release_allowed": false,
+    "path_sha256": "e0f23ed8523ddd55b1990f44bbabb6622190bd7ee48076dbd11c505d0b226b83",
+    "board_sweep_xy_sensitivity_mm": 0.2,
+    "horizontal_key_insertion": {
+      "travel_mm": 14,
+      "static_envelopes": 94,
+      "collisions": 0,
+      "nominal_geometry_only": true,
+      "full_assembly_verified": false
+    },
+    "assembly_open_items": [
+      "Final mated housing and wire routing",
+      "Independent support during simultaneous pack/PCB descent",
+      "Thermal interface handling",
+      "Outward key retention and manufacturing tolerance",
+      "Fixture must hold the pack/PCB together 0.4mm above final seats and guide the key at nominal height; dimensions not yet designed"
+    ],
+    "alignment_sensitivity": {
+      "key_y_offsets_mm": [
+        -0.2,
+        0.2
+      ],
+      "key_y_offset_collisions": 0,
+      "key_z_minus_0_2_collision": "body",
+      "key_z_plus_0_2_collision": "PCB",
+      "interpretation": "Assembly misalignment sensitivity, not production tolerance qualification"
+    },
+    "raised_group_insertion": {
+      "group_raise_mm": 0.4,
+      "key_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "collisions": [],
+      "nominal_geometry_only": true,
+      "independent_support_fixture_required": true
+    }
+  },
+  "v15_consolidated_cash_review": {
+    "report": "docs/procurement/v15-five-unit-cash-review.json",
+    "sha256": "132220655be30a2be85abdaafad08e7034f05272606a8ae6a79b41d1be8b31a8",
+    "status": "INCOMPLETE_CASH_REQUIREMENT_SAVED_PRICE_SNAPSHOT_NOT_QUOTE",
+    "complete_total_JPY": null,
+    "price_break_proposal_JPY_ex_tax": 29025.7,
+    "price_break_extra_components": 25,
+    "missing_items_added": [
+      "Five removable shelf keys",
+      "15 support pads and15 adhesive pieces",
+      "Closure tape",
+      "Pendant cord",
+      "Assembly support fixture",
+      "Debug probe and USB data cable ownership check"
+    ],
+    "note": "No live-price refresh. No mixed-currency/tax sum. Entire sheets/rolls and one-time tools must be included."
+  },
+  "v15_cactus_inquiry_preparation": {
+    "report": "docs/procurement/v15-cactus-sd-sourcing-review.json",
+    "report_sha256": "ee94e3c1448c5a57eef9e36ee3aac9aaa8cfe2d7a4ec75228d99531b44356efd",
+    "draft": "docs/procurement/v15-cactus-inquiry-UNSENT.txt",
+    "draft_sha256": "22dbdff083752ec62debf3187c592bd39f302a93cc69dd590ff5c6da98aca50a",
+    "sent": false,
+    "price_confirmed": false,
+    "card_selected": false
+  },
+  "v15_storage_arrivals_import_validation": {
+    "report": "firmware/stm32/tests/storage-arrivals-import-result.json",
+    "sha256": "3fe3cbbbe3db8baacc932efd25b82994d53786e8e84d66fde2e83566809b961d",
+    "status": "PASS_COOPERATIVE_STORAGE_BOUNDARY_ARRIVALS_RAM_FAT32",
+    "release_allowed": false
+  },
+  "v15_capacitance_network_review": {
+    "report": "docs/procurement/v15-capacitance-network-review.json",
+    "sha256": "0c353bd4cd94c1b1f0b1a20d981fd1156078057c2f2af9f221355f0eb26051fe",
+    "status": "CAPACITANCE_REQUIREMENTS_SCREEN_NOT_QUALIFICATION",
+    "new_checks": [
+      "C5 VCAP ESR below20mOhm at3MHz,10V minimum",
+      "TPS7A02 total effective output0.5..22uF; enabledSD board-only nominal18.3uF",
+      "Connected card capacitance and bias/temperature/ESR not yet bounded"
+    ],
+    "board_changed": false,
+    "release_allowed": false
+  },
+  "v15_temperature_resistance_window": {
+    "report": "hardware/mini-rect-v15/input-control-pa2-pb5/temperature-resistance-window.json",
+    "sha256": "472b1ca2d27555d690f04455f0a93807dfd7733fc017c899897505010623ac2e",
+    "status": "CONDITIONAL_RESISTANCE_WINDOW_NOT_THERMAL_QUALIFICATION",
+    "candidate_25C_within_conditional_window": true,
+    "thermal_qualified": false,
+    "charging_enabled": false
+  },
+  "v15_rigid_fit_dummies": {
+    "report": "mechanical/mini-rect-v15/fit-dummies-review.json",
+    "sha256": "912ed2581e93dda43c7f3a5f188cb7d4dd7bdb7b958a6b5e8fd1ae80146179e3",
+    "archive": "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/RIGID-FIT-REVIEW-NOT-FOR-ORDER.zip",
+    "archive_sha256": "d51095b0b5e6c7e1087ed33e93f586317aefad4d1e00bcba2fc4d067b6f77d3a",
+    "status": "RIGID_FIT_DUMMIES_NOT_MANUFACTURING",
+    "individual_models": [
+      "bare-board-envelope",
+      "populated-board-envelope",
+      "XE-max-pack-envelope"
+    ],
+    "validation": "Three STEP reimports valid single solids with matching bounds; three binarySTLs have paired oppositely directed edges at1e-5mm quantization, minimumXYZzero;13 archive entriesCRCpass.",
+    "full_harness_fit_verified": false,
+    "release_allowed": false
+  },
+  "v15_usb_mating_recess": {
+    "report": "mechanical/mini-rect-v15/usb-mating-recess-review.json",
+    "sha256": "56331e76cb7f877e054507994d9430813b1716331d0a4f73c69ee71650f0babd",
+    "status": "NOMINAL_RECESS_SCREEN_POSITION_TOLERANCE_UNRESOLVED",
+    "nominal_shoulder_gap_mm": 0.21500000000000208,
+    "qualification": "0.3mm additional recess exceeds nominal clearance. Complete tolerance stack/cable selection or case relief required before mechanical release.",
+    "release_allowed": false
+  },
+  "v15_usb_relief_candidate": {
+    "report": "mechanical/mini-rect-v15/usb-relief-fit-review.json",
+    "sha256": "c931c4a9b87f67c806f5486affad38213290dfd7ce055996aa72fa829dee0fe5",
+    "models": "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief",
+    "status": "USB_RELIEF_COMPARISON_BOUNDED_CABLE_ENVELOPE_CLEAR",
+    "sensitivity_cases": 36,
+    "original_colliding_cases": 18,
+    "relieved_colliding_cases": 0,
+    "adopted": false,
+    "release_allowed": false,
+    "remaining": [
+      "Actual cable shoulder selection and tolerances",
+      "Rear lid-edge stiffness, tape routing and acoustic/debris opening",
+      "Parent unresolved harness, key retention, assembly fixture and thermal interface"
+    ]
+  },
+  "v15_inserted_sd_review": {
+    "report": "mechanical/mini-rect-v15/inserted-sd-review.json",
+    "sha256": "cae787878c8cc3d635c51e0d825e5d39c7e7436fbf168f68b739cf28362192da",
+    "inserted_envelope_contained": true,
+    "straight_insertion_before_case_qualified": false,
+    "uppermost_card_conflicting_refs": [
+      "U15",
+      "Q7"
+    ],
+    "next_action": "Check actual package solids and connector card height, then resolve placement/access before assembly release. A seated-card collision pass is not insertion proof.",
+    "release_allowed": false
+  },
+  "v15_sd_obstruction_relocation": {
+    "report": "mechanical/mini-rect-v15/sd-obstruction-relocation-review.json",
+    "sha256": "bceabfed64249200d80881f93f817c588bdc844a6ccf6b8d03ef2d46db56b120",
+    "status": "GEOMETRY_ONLY_RELOCATION_SCREEN_NOT_ROUTED",
+    "trial_positions_board_mm": {
+      "Q7": [
+        23,
+        14.5
+      ],
+      "U15": [
+        23,
+        18
+      ]
+    },
+    "geometry_collisions": 0,
+    "routed": false,
+    "board_changed": false,
+    "release_allowed": false,
+    "next_action": "Confirm card vertical datum and low-component clearance, then implement and reroute a separate placement candidate."
+  },
+  "latest_size_direction": {
+    "status": "REOPENED_NOT_RELEASE_READY",
+    "evidence": "docs/sourcing/omi-size-battery-rescreen.json",
+    "note": "User requests Omi size; existing V15 is comparison baseline, not accepted final size.",
+    "storage_screen": "docs/sourcing/omi-size-storage-rescreen.json",
+    "design_target_mm": [
+      25,
+      25,
+      15
+    ],
+    "battery_selected": false
+  },
+  "authoritative_requirements": "docs/requirements.md",
+  "user_battery_policy": "No battery sale; user buys listed retail battery and assembles without modifications or supplier inquiry.",
+  "latest_battery_decision": {
+    "selected": true,
+    "model": "DTP401525-XE",
+    "capacity_mAh": 110,
+    "record": "docs/sourcing/battery-first-selection.json",
+    "order_ready": false
+  },
+  "energy_sections_update_scope": "Only storage/SPI allocations refreshed from current XE budget; this edit is not a new full release audit.",
+  "current_xe_review_index": {
+    "path": "docs/validation/xe-current-design-state.json",
+    "status": "INCOMPLETE_CROSS_DISCIPLINE_CANDIDATES_NOT_A_RELEASE",
+    "scope": "Locator for current XE candidates; older sections retained as historical evidence, no release approval."
+  }
+}

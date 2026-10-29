@@ -1,0 +1,166 @@
+{
+  "status": "ROOF_PROFILE_AND_BRIDGE_SCREEN_NOT_CAD_APPROVAL",
+  "assumptions": {
+    "outer_top_mm": 14.81,
+    "top_edge_radius_mm": 2,
+    "head_seat_mm": 14.11,
+    "head_height_mm": 0.5,
+    "boss_bottom_mm": 11.6,
+    "boss_top_mm": 13.2,
+    "screw_length_mm": 2,
+    "engagement_mm": 1.09,
+    "tip_to_boss_bottom_mm": 0.51
+  },
+  "rows": [
+    {
+      "xy_mm": [
+        1.4,
+        5
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.132875655532295,
+      "nominal_head_clearance_mm": -0.477124344467704,
+      "boss_bridge_component_conflicts": []
+    },
+    {
+      "xy_mm": [
+        1.4,
+        9
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.132875655532295,
+      "nominal_head_clearance_mm": -0.477124344467704,
+      "boss_bridge_component_conflicts": []
+    },
+    {
+      "xy_mm": [
+        1.4,
+        13
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.132875655532295,
+      "nominal_head_clearance_mm": -0.477124344467704,
+      "boss_bridge_component_conflicts": []
+    },
+    {
+      "xy_mm": [
+        2.4,
+        5
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.746491673103709,
+      "nominal_head_clearance_mm": 0.13649167310370913,
+      "boss_bridge_component_conflicts": [
+        "J4"
+      ]
+    },
+    {
+      "xy_mm": [
+        2.4,
+        9
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.746491673103709,
+      "nominal_head_clearance_mm": 0.13649167310370913,
+      "boss_bridge_component_conflicts": [
+        "J4"
+      ]
+    },
+    {
+      "xy_mm": [
+        2.4,
+        13
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.746491673103709,
+      "nominal_head_clearance_mm": 0.13649167310370913,
+      "boss_bridge_component_conflicts": [
+        "J4"
+      ]
+    },
+    {
+      "xy_mm": [
+        20.6,
+        5
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.746491673103709,
+      "nominal_head_clearance_mm": 0.13649167310370913,
+      "boss_bridge_component_conflicts": [
+        "J4"
+      ]
+    },
+    {
+      "xy_mm": [
+        20.6,
+        9
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.746491673103709,
+      "nominal_head_clearance_mm": 0.13649167310370913,
+      "boss_bridge_component_conflicts": [
+        "J4"
+      ]
+    },
+    {
+      "xy_mm": [
+        20.6,
+        13
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.746491673103709,
+      "nominal_head_clearance_mm": 0.13649167310370913,
+      "boss_bridge_component_conflicts": [
+        "J4"
+      ]
+    },
+    {
+      "xy_mm": [
+        21.6,
+        5
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.132875655532294,
+      "nominal_head_clearance_mm": -0.4771243444677058,
+      "boss_bridge_component_conflicts": []
+    },
+    {
+      "xy_mm": [
+        21.6,
+        9
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.132875655532294,
+      "nominal_head_clearance_mm": -0.4771243444677058,
+      "boss_bridge_component_conflicts": []
+    },
+    {
+      "xy_mm": [
+        21.6,
+        13
+      ],
+      "head_radius_mm": 0.9,
+      "head_top_z_mm": 14.61,
+      "edge_surface_z_mm": 14.132875655532294,
+      "nominal_head_clearance_mm": -0.4771243444677058,
+      "boss_bridge_component_conflicts": []
+    }
+  ],
+  "decision": "Old x1.4/21.6 heads protrude through curved exterior; inward x2.4/20.6 is candidate only if bridge component screen passes",
+  "limitations": [
+    "Straight-side circular edge approximation, not full corner CAD surface",
+    "Lid roof wall and pocket support still need actual solid design",
+    "No manufacturing tolerances or thread retention qualification"
+  ]
+}

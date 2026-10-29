@@ -1,0 +1,42 @@
+{
+  "status": "SIDE_SUPPORT_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "film-battery-end-wide-250um-lower-trial.step": "07f4e244fee276965a1ff7a48b5e9235b98efe8c061252ecaf21684238372af4",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "film-roomier-joint-separator-trial.step": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "film-sensor-insulation-transition.step": "c3d95b41f5f8b74af75778323f8cb78a8f033463595cbd812fb3c58d4be6a5b4"
+  },
+  "output_sha256": "1acfa30bbc85f201200025342cb6ce4dd85a5da171ad36eb009bbee594409660",
+  "added_volume_mm3": 17.86,
+  "checks": {
+    "battery": {
+      "added_overlap_mm3": 0.0,
+      "added_gap_mm": 0.25
+    },
+    "separator": {
+      "added_overlap_mm3": 0.0,
+      "added_gap_mm": 4.440892098500626e-16
+    },
+    "board": {
+      "added_overlap_mm3": 0.0,
+      "added_gap_mm": 1.3199999999999998
+    },
+    "insulation": {
+      "added_overlap_mm3": 0.0,
+      "added_gap_mm": 16.69821401791008
+    },
+    "support_proxy": {
+      "old_mm3": 0.008484038276670594,
+      "new_mm3": 0.00988403827668291,
+      "downshift_mm": 0.001
+    }
+  },
+  "provisional_27_pose_battery_collisions": 0,
+  "limits": [
+    "Posts reach from floor to CAD separator seating plane; adhesion, stress and printed dimensions unqualified.",
+    "Battery displacement assumptions are exploratory, not validated printer tolerances.",
+    "Board model is not a guaranteed maximum component envelope; original harness and insertion path excluded.",
+    "Existing front/rear support loss is not repaired; new side supports require toolpath comparison and stable seating assessment."
+  ]
+}

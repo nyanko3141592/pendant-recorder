@@ -1,0 +1,93 @@
+{
+  "status": "SLICED_NOT_PRINTED_OR_FIT_QUALIFIED",
+  "parts": [
+    {
+      "part": "diagonal-recessed-cap-lower",
+      "source": "diagonal-recessed-cap-lower-trial.step",
+      "source_sha256": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+      "stl_sha256": "e2055bbaa5849d05b8421a9ba0f3a56eb1925dc49527acb7750124949388740a",
+      "3mf_sha256": "cd38e0f9828cb37067ad2524ee5c208180f570061bfca4f3d9fb2f857d1143c1",
+      "first_layer_mm": 0.28,
+      "regular_layer_mm": 0.08,
+      "CAD_height_mm": 8.120000000000001,
+      "translation_mm": [
+        1.1000000000000014,
+        28.3,
+        7.720000000000001
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 347,
+        "layer_height": 0.07999999821186066,
+        "plate_index": 0,
+        "prepare_time": 19,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 31.24803352355957,
+              "Custom": 34.717987060546875,
+              "Gap infill": 0.8424792289733887,
+              "Inner wall": 71.27658081054688,
+              "Internal solid infill": 63.31318283081055,
+              "Outer wall": 656.18408203125,
+              "Overhang wall": 1.5173863172531128,
+              "Top surface": 17.656461715698242,
+              "Travel": 117.37239837646484,
+              "Undefined": 101.78218841552734
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.6765867471694946,
+                "total_used_g": 1.6765867471694946
+              }
+            ],
+            "generate_support_material_time": 14,
+            "id": 1,
+            "infill_time": 16,
+            "layer_filament_change": 0,
+            "main_predication": 959.433349609375,
+            "make_perimeters_time": 94,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 29.60000228881836,
+                  "height": 8.119999885559082,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 75.19999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "diagonal-recessed-cap-lower.stl",
+                "triangle_count": 10866
+              }
+            ],
+            "sliced_time": 288,
+            "sliced_time_with_cache": 159,
+            "total_predication": 978.5308837890625,
+            "triangle_count": 10866,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 2
+      },
+      "profile_sha256": {
+        "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+        "process": "4d1014d71dc6c2612ac0336a1c5c584c89861455ac803587d43745e34ba118be",
+        "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+      }
+    }
+  ],
+  "limits": [
+    "Toolpath review still required",
+    "Tray pedestal overhang and 0.074mm internal slit not physically verified",
+    "Current plug and original lead fit unresolved",
+    "No print job sent"
+  ]
+}

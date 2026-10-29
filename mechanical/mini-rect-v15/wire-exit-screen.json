@@ -1,0 +1,162 @@
+{
+  "status": "WIRE_EXIT_CONSTRAINT_SCREEN_NOT_FIT_APPROVAL",
+  "battery": "DTP401525-XE",
+  "source_pack_max_length_mm": 27,
+  "source_wire_length_mm": [
+    12,
+    18
+  ],
+  "case_limit_mm": [
+    30,
+    30,
+    15
+  ],
+  "model": "Leads initially leave pack along its long axis;180degree semicircular turn folds them above pack. Additional connector approach length and3D crossings excluded.",
+  "assumptions": [
+    "Wire outer diameter0.6mm is assumed, not established by AWG30 conductor size",
+    "Front clearance0.3mm, rear clearance0.2mm are design allocations",
+    "No manufacturer minimum bend radius established; passing rows are not permissible-radius approvals",
+    "No swelling/thickness tolerance or full connector insertion verification"
+  ],
+  "rows": [
+    {
+      "wall_mm": 0.8,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 0.5,
+      "pack_end_clearance_required_mm": 1.0,
+      "required_case_length_mm": 29.9,
+      "within30mm": true,
+      "uturn_wire_length_mm": 1.571,
+      "wire_length_remaining_at12mm_min_mm": 10.429
+    },
+    {
+      "wall_mm": 0.8,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 0.75,
+      "pack_end_clearance_required_mm": 1.25,
+      "required_case_length_mm": 30.15,
+      "within30mm": false,
+      "uturn_wire_length_mm": 2.356,
+      "wire_length_remaining_at12mm_min_mm": 9.644
+    },
+    {
+      "wall_mm": 0.8,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 1,
+      "pack_end_clearance_required_mm": 1.5,
+      "required_case_length_mm": 30.4,
+      "within30mm": false,
+      "uturn_wire_length_mm": 3.142,
+      "wire_length_remaining_at12mm_min_mm": 8.858
+    },
+    {
+      "wall_mm": 0.8,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 1.5,
+      "pack_end_clearance_required_mm": 2.0,
+      "required_case_length_mm": 30.9,
+      "within30mm": false,
+      "uturn_wire_length_mm": 4.712,
+      "wire_length_remaining_at12mm_min_mm": 7.288
+    },
+    {
+      "wall_mm": 1,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 0.5,
+      "pack_end_clearance_required_mm": 1.0,
+      "required_case_length_mm": 30.3,
+      "within30mm": false,
+      "uturn_wire_length_mm": 1.571,
+      "wire_length_remaining_at12mm_min_mm": 10.429
+    },
+    {
+      "wall_mm": 1,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 0.75,
+      "pack_end_clearance_required_mm": 1.25,
+      "required_case_length_mm": 30.55,
+      "within30mm": false,
+      "uturn_wire_length_mm": 2.356,
+      "wire_length_remaining_at12mm_min_mm": 9.644
+    },
+    {
+      "wall_mm": 1,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 1,
+      "pack_end_clearance_required_mm": 1.5,
+      "required_case_length_mm": 30.8,
+      "within30mm": false,
+      "uturn_wire_length_mm": 3.142,
+      "wire_length_remaining_at12mm_min_mm": 8.858
+    },
+    {
+      "wall_mm": 1,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 1.5,
+      "pack_end_clearance_required_mm": 2.0,
+      "required_case_length_mm": 31.3,
+      "within30mm": false,
+      "uturn_wire_length_mm": 4.712,
+      "wire_length_remaining_at12mm_min_mm": 7.288
+    },
+    {
+      "wall_mm": 1.2,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 0.5,
+      "pack_end_clearance_required_mm": 1.0,
+      "required_case_length_mm": 30.7,
+      "within30mm": false,
+      "uturn_wire_length_mm": 1.571,
+      "wire_length_remaining_at12mm_min_mm": 10.429
+    },
+    {
+      "wall_mm": 1.2,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 0.75,
+      "pack_end_clearance_required_mm": 1.25,
+      "required_case_length_mm": 30.95,
+      "within30mm": false,
+      "uturn_wire_length_mm": 2.356,
+      "wire_length_remaining_at12mm_min_mm": 9.644
+    },
+    {
+      "wall_mm": 1.2,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 1,
+      "pack_end_clearance_required_mm": 1.5,
+      "required_case_length_mm": 31.2,
+      "within30mm": false,
+      "uturn_wire_length_mm": 3.142,
+      "wire_length_remaining_at12mm_min_mm": 8.858
+    },
+    {
+      "wall_mm": 1.2,
+      "wire_outer_diameter_assumed_mm": 0.6,
+      "bend_centerline_radius_assumed_mm": 1.5,
+      "pack_end_clearance_required_mm": 2.0,
+      "required_case_length_mm": 31.7,
+      "within30mm": false,
+      "uturn_wire_length_mm": 4.712,
+      "wire_length_remaining_at12mm_min_mm": 7.288
+    }
+  ],
+  "finding": "With1.2mm walls even assumed0.5mm radius requires30.7mm. At0.8mm walls only0.5mm radius screen passes29.9mm, a tight bend not qualified. Need actual lead exit geometry/OD/bend evidence before declaring30mm fit; do not force tight bend or enlarge case silently.",
+  "new_alternative_lead": {
+    "model": "TinyCircuitsASR00003",
+    "source": "https://tinycircuits.com/products/lithium-ion-polymer-battery-3-7v-150mah",
+    "capacity_mAh": 150,
+    "published_size_max_mm": [
+      23,
+      22,
+      5.5
+    ],
+    "wire_length_mm": [
+      15,
+      35
+    ],
+    "connector": "JST SHR-02V-S-B",
+    "max_charge_discharge_mA": 150,
+    "decision": "Unselected contingency only; domestic single-unit availability and full datasheet not verified. XE baseline preserved."
+  },
+  "release_allowed": false
+}

@@ -1,0 +1,65 @@
+{
+  "status": "PASS_U12_PIN_AND_IDEAL_WINDOW_POLARITY_NOT_THERMAL_QUALIFICATION",
+  "source_pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "visually_checked": "TLV7042 SLVSE13J page4 Fig4-5/Table4-2 DDF top view",
+  "pin_to_net": {
+    "1": "/CHG_GUARD_GATE",
+    "2": "/BAT_TS",
+    "3": "/TS_COLD_REF",
+    "4": "/GND",
+    "5": "/BAT_TS",
+    "6": "/TS_HOT_REF",
+    "7": "/CHG_GUARD_GATE",
+    "8": "/V3V3"
+  },
+  "nominal_ratios": {
+    "hot": 0.06976744186046512,
+    "cold": 0.16666666666666666
+  },
+  "ntc_resistance_thresholds": {
+    "hot": {
+      "nominal_ntc_ohms": 7500,
+      "resistor_1pct_only_min_ohms": 7277.970297029703,
+      "resistor_1pct_only_max_ohms": 7728.030303030303
+    },
+    "cold": {
+      "nominal_ntc_ohms": 20000,
+      "resistor_1pct_only_min_ohms": 19407.920792079207,
+      "resistor_1pct_only_max_ohms": 20608.08080808081
+    }
+  },
+  "ideal_cases": [
+    {
+      "condition": "NTC short / BAT_TS below hot reference",
+      "output": "OUTB sinks gate; Q4 off; R12 pulls CE high; charging inhibited"
+    },
+    {
+      "condition": "NTC open / BAT_TS above cold reference",
+      "output": "OUTA sinks gate; Q4 off; R12 pulls CE high; charging inhibited"
+    },
+    {
+      "condition": "BAT_TS between references",
+      "output": "Both outputs released; CHG_ALLOW permission still required; not automatic charging authorization"
+    }
+  ],
+  "physical_pin1": {
+    "number": "1",
+    "net": "/CHG_GUARD_GATE",
+    "x_mm": 22.5,
+    "y_board_mm": 21.99,
+    "y_position_csv_mm": -21.99
+  },
+  "scope": "Board coordinates are top-view frame even for bottom assembly; no supplier rotation approval inferred.",
+  "limits": [
+    "NTC R-T/Beta and lot tolerances unknown: do not translate7.5k/20k into certified temperature limits",
+    "Resistor-only corner range excludes comparator offset/hysteresis/bias/common-mode, supply transients and NTC tolerance",
+    "Unpowered output behavior, Q4 drive/leakage, gate clamp margins, startup/brownout and actual thermal response remain unqualified",
+    "CHARGER_TS fixed resistor means pack-temperature safety depends on external U12/Q4 path; physical fault testing remains required"
+  ],
+  "sources": {
+    "hardware/xe-minimal/evidence/TLV7042-SLVSE13J.pdf": "9d53a63c34e9ca14f68d3fb60bdd4ae81bbc91c101db01df985ed245d99fcacc",
+    "hardware/mini-usb-v9/reference/bq25185.pdf": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+    "hardware/xe-minimal/evidence/DMN63D8L.pdf": "c673cd0d1ed8a489f18db0b231c9d1570571ba265870a8c0841206701b38c3a1"
+  },
+  "release_allowed": false
+}

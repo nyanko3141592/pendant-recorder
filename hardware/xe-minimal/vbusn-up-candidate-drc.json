@@ -1,0 +1,201 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:25:31",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "vbusn-up-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_GUARD_GATE と /VBUS_N)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( In4.Cu 上、長さ: 1.2806 mm )",
+                    "pos": {
+                        "x": 12.564671,
+                        "y": 6.668838
+                    },
+                    "uuid": "2ef9d949-0d56-43ad-b696-c70bb392cd22"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 6.8
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 1.1570 mm )",
+                    "pos": {
+                        "x": 13.15,
+                        "y": 5.95
+                    },
+                    "uuid": "197af790-fb4c-4611-9a00-02e9b0d070f3"
+                },
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 1.5000 mm )",
+                    "pos": {
+                        "x": 11.914999,
+                        "y": 6.5175
+                    },
+                    "uuid": "7781b8e8-5e6b-41bc-bc20-4e14861bfed3"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0325 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 1.5000 mm )",
+                    "pos": {
+                        "x": 11.914999,
+                        "y": 6.5175
+                    },
+                    "uuid": "7781b8e8-5e6b-41bc-bc20-4e14861bfed3"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 6.8
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0148 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VDDA] - C6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.915,
+                        "y": 6.5175
+                    },
+                    "uuid": "74fd3cba-087a-4aed-9275-bff0b485fcc8"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 6.8
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /CHG_GUARD_GATE)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 6.8
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( In4.Cu 上、長さ: 1.0000 mm )",
+                    "pos": {
+                        "x": 13.47703,
+                        "y": 7.078229
+                    },
+                    "uuid": "cb38c8b3-2a35-4b3e-a34d-82551e826da7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /STATUS_LED_A と /VBUS_N)",
+            "items": [
+                {
+                    "description": "配線 [/STATUS_LED_A] ( In3.Cu 上、長さ: 11.0776 mm )",
+                    "pos": {
+                        "x": 17.4,
+                        "y": 4.6
+                    },
+                    "uuid": "06ae18c2-4846-4070-b377-decaead58c5e"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 6.8
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /VBUS_N)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 2.4600 mm )",
+                    "pos": {
+                        "x": 10.954999,
+                        "y": 7.0175
+                    },
+                    "uuid": "4e1a1b63-3c62-4755-b2d2-a2799104c94e"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 6.8
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1148 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VDDA] - C6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.915,
+                        "y": 6.5175
+                    },
+                    "uuid": "74fd3cba-087a-4aed-9275-bff0b485fcc8"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 6.8
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        }
+    ]
+}

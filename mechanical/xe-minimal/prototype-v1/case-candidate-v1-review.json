@@ -1,0 +1,39 @@
+{
+  "version": "XE-PROTOTYPE-V1",
+  "status": "COHERENT_CASE_CANDIDATE_EXPORTED_NOT_RELEASED",
+  "complete_exterior_bbox_mm": [
+    26.200000000000003,
+    29.6,
+    12.9714001
+  ],
+  "complete_exterior_bounds_mm": [
+    -1.1,
+    25.1,
+    -28.3,
+    1.3,
+    -7.720000000000001,
+    5.251400100000001
+  ],
+  "closure": "Initial prototype glue at case mating seam only",
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/case-assembly-candidate-v1.step": "90681024515510b031fc65d3d4e91d29fe2d31ed1dd946facf059ea62afbb3d6",
+    "mechanical/xe-minimal/prototype-v1/case-exploded-candidate-v1.step": "da89c64cefa6fdd1a5ffbdadcdb392d23979f34c0af8ba3c6bd62a3af492096f",
+    "mechanical/xe-minimal/prototype-v1/case-lower-candidate-v1.step": "c3418a63bde6d2aa7264d628472fe0d662f70c400dfa16de3861f7edc550a797",
+    "mechanical/xe-minimal/prototype-v1/case-upper-candidate-v1.step": "0bc5bf5dbcd41ba4c0f6839c54ea2c4184fe58d2e33173df1f913dffe245654b",
+    "mechanical/xe-minimal/prototype-v1/case-lower-candidate-v1.stl": "9aed993c347d3a72624d4a983bcc2f4fca132d1674da1fe545c5142c2e23791d",
+    "mechanical/xe-minimal/prototype-v1/case-upper-candidate-v1.stl": "560d373fcbb1ccd011a185d981ca8c113a1240b6084bde412f426310c1067011",
+    "mechanical/xe-minimal/prototype-v1/sensor-carrier-v1.step": "1ee3a31c1f44078daadde946802a194c01060a5015c0e8a4fc0004b5a49849e3"
+  },
+  "sources_sha256": {
+    "mechanical/xe-minimal/rounded-glue-reinforced-lower-study.step": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+    "mechanical/xe-minimal/rounded-glue-reinforced-upper-study.step": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7",
+    "mechanical/xe-minimal/prototype-v1/integrated-assembly-v1.step": "f4c41bef13ac79b336eef7b44ddc193677a3f791613bc30f6cac977a490bf347"
+  },
+  "limitations": [
+    "Rounded shell geometry is reused only after the canonical nominal collision screen; it is not physically printed or adopted for ordering.",
+    "Battery harness corridor is provisional and plug removal motion is not verified.",
+    "Sensor pad material/compression, thermal lag and pouch pressure remain unqualified.",
+    "STL generation does not prove A1 mini printability, strength, mating tolerance or acoustic performance.",
+    "No neck-cord feature is included in this candidate, so this is not the final complete exterior model."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "source": "https://jlcpcb.com/impedance",
+  "method": "Rendered official UI selected 4layer thickness0.8mm outer1oz inner0.5oz",
+  "date": "2026-10-29",
+  "copper_mm": [
+    0.035,
+    0.0152,
+    0.0152,
+    0.035
+  ],
+  "options": [
+    {
+      "code": "JLC04081H-7628",
+      "prepreg_each_mm": 0.2104,
+      "core_dielectric_mm": 0.25,
+      "er": 4.4
+    },
+    {
+      "code": "JLC04081H-3313",
+      "prepreg_each_mm": 0.0994,
+      "core_dielectric_mm": 0.5,
+      "er": 4.1
+    },
+    {
+      "code": "JLC04081H-2116B",
+      "prepreg_each_mm": 0.1164,
+      "core_dielectric_mm": 0.45,
+      "er": 4.16
+    },
+    {
+      "code": "JLC04081H-1080",
+      "prepreg_each_mm": 0.0764,
+      "core_dielectric_mm": 0.55,
+      "er": 3.91
+    }
+  ],
+  "current_assumption": {
+    "prepreg_each_mm": 0.1164,
+    "core_dielectric_mm": 0.4932,
+    "board_thickness_mm": 0.8264
+  },
+  "decision": "Current core thickness does not match the published 2116B recipe. Do not call current stackup supplier-qualified. Select impedance geometry then update board thickness and mechanical tolerance consistently.",
+  "release_allowed": false
+}

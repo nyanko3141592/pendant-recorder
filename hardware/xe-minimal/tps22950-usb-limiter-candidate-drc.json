@@ -1,0 +1,385 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T05:38:09",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "tps22950-usb-limiter-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_CHARGER と /GND)",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS_CHARGER] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.1625,
+                        "y": 0.95
+                    },
+                    "uuid": "53336dce-0777-4cb6-8740-a4b57a823e51"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4175,
+                        "y": 1.075
+                    },
+                    "uuid": "c1c68fa4-3620-4ef7-9c44-431d3a9da43e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0229 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.4375,
+                        "y": 1.9
+                    },
+                    "uuid": "6adb5d94-2347-4c63-b0ee-9c118f526d75"
+                },
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.5117 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.05
+                    },
+                    "uuid": "f5561074-4815-4fe4-a38c-02b7a1c6057f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_CHARGER と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.2166 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.049999
+                    },
+                    "uuid": "cc309b04-bbaf-47b9-9011-5f21e0611d5b"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.4375,
+                        "y": 0.95
+                    },
+                    "uuid": "ff64964d-54c8-41bd-a163-0176e4fee6dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0229 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.5117 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.05
+                    },
+                    "uuid": "38e59295-cc7a-4844-87ed-131c27a6a927"
+                },
+                {
+                    "description": "パッド 1 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.4375,
+                        "y": 1.9
+                    },
+                    "uuid": "6adb5d94-2347-4c63-b0ee-9c118f526d75"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0900 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 3.715
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                },
+                {
+                    "description": "パッド 1 [/PDM_DATA] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 3.715
+                    },
+                    "uuid": "d18d6bbe-de4a-4076-b642-3eecffc370fd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0900 mm)",
+            "items": [
+                {
+                    "description": "パッド 4 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 5.415
+                    },
+                    "uuid": "5bba1861-3b94-4c6f-822b-8a0d96b28073"
+                },
+                {
+                    "description": "パッド 3 [/PDM_CLK] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 5.415
+                    },
+                    "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0075 mm)",
+            "items": [
+                {
+                    "description": "パッド 5 [/VBUS_CHARGER] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.1625,
+                        "y": 0.95
+                    },
+                    "uuid": "53336dce-0777-4cb6-8740-a4b57a823e51"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4175,
+                        "y": 1.075
+                    },
+                    "uuid": "c1c68fa4-3620-4ef7-9c44-431d3a9da43e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント U13",
+                    "pos": {
+                        "x": 12.3,
+                        "y": 0.95
+                    },
+                    "uuid": "f54fe3c6-1fab-4434-a356-ce302dd96812"
+                },
+                {
+                    "description": "フットプリント U13",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 0.95
+                    },
+                    "uuid": "f744f036-ebbd-4ec0-925d-2be225aaf3da"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.5117 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.05
+                    },
+                    "uuid": "38e59295-cc7a-4844-87ed-131c27a6a927"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.4375,
+                        "y": 0.95
+                    },
+                    "uuid": "ff64964d-54c8-41bd-a163-0176e4fee6dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4175,
+                        "y": 1.075
+                    },
+                    "uuid": "c1c68fa4-3620-4ef7-9c44-431d3a9da43e"
+                },
+                {
+                    "description": "パッド 5 [/VBUS_CHARGER] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.1625,
+                        "y": 0.95
+                    },
+                    "uuid": "53336dce-0777-4cb6-8740-a4b57a823e51"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.2166 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.049999
+                    },
+                    "uuid": "cc309b04-bbaf-47b9-9011-5f21e0611d5b"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.4375,
+                        "y": 0.95
+                    },
+                    "uuid": "ff64964d-54c8-41bd-a163-0176e4fee6dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.5117 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.05
+                    },
+                    "uuid": "f5561074-4815-4fe4-a38c-02b7a1c6057f"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.4375,
+                        "y": 0.95
+                    },
+                    "uuid": "ff64964d-54c8-41bd-a163-0176e4fee6dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 13.21,
+                        "y": 2.46
+                    },
+                    "uuid": "471b2ac5-5619-4cc0-9307-5731c51d08ec"
+                },
+                {
+                    "description": "セグメント of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 13.41,
+                        "y": 2.51
+                    },
+                    "uuid": "e7922813-c396-4080-8185-c53270039d3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 11.59,
+                        "y": 2.51
+                    },
+                    "uuid": "6e8b6a70-ed62-4da9-bd27-efb2ef094ac5"
+                },
+                {
+                    "description": "セグメント of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 13.21,
+                        "y": 2.51
+                    },
+                    "uuid": "e4a520d8-640b-400c-9058-1acd35763f42"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 13.21,
+                        "y": 2.51
+                    },
+                    "uuid": "e4a520d8-640b-400c-9058-1acd35763f42"
+                },
+                {
+                    "description": "セグメント of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 13.41,
+                        "y": 2.51
+                    },
+                    "uuid": "e7922813-c396-4080-8185-c53270039d3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "ポリゴン of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 13.95,
+                        "y": 2.46
+                    },
+                    "uuid": "15c141d3-85fc-48ef-b095-b7291befe699"
+                },
+                {
+                    "description": "ポリゴン of U13 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 13.75,
+                        "y": 2.46
+                    },
+                    "uuid": "734932c7-79dc-402f-9d24-ba476fc071b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

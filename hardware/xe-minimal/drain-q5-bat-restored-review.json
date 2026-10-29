@@ -1,0 +1,42 @@
+{
+  "accepted": true,
+  "visited": 369,
+  "paths": [
+    {
+      "layer": 10,
+      "points": [
+        [
+          6.656851,
+          1.767638
+        ],
+        [
+          9.5,
+          5.2
+        ],
+        [
+          10.4,
+          5.6
+        ]
+      ]
+    }
+  ],
+  "switches": [],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 9.4,
+            "y": 4.45
+          },
+          "uuid": "05b00199-f636-4586-9c73-51b5e102bda0"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 3
+}

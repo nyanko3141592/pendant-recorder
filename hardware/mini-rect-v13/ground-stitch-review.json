@@ -1,0 +1,24 @@
+{
+  "status": "GROUND_STITCHED_CANDIDATE_NOT_RELEASED",
+  "board": "ground-stitched.kicad_pcb",
+  "sha256": "36510f04e8b1bfab1c2542c9ce11bfd0fa6e579afb9090cdb95a90cb65b1fedb",
+  "added_ground_vias": 6,
+  "drc_types": [
+    "track_dangling",
+    "track_dangling"
+  ],
+  "unconnected": 6,
+  "remaining_ground": 2,
+  "remaining_signals": 4,
+  "rejected": [
+    {
+      "board": "mic-ground-candidate.kicad_pcb",
+      "reason": "Restored original microphone ground branch crosses newly routed SWCLK;26DRC violations, do not adopt"
+    },
+    {
+      "search": "mic-via-search.json",
+      "reason": "No legal0.45/0.20 via site within2mm square search around microphone ground on0.1mm grid. Not proof against rerouting or placement change."
+    }
+  ],
+  "next": "Move/re-route nearby signal or microphone support parts to open a short ground escape; retain stitched candidate baseline"
+}

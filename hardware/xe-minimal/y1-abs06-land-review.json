@@ -1,0 +1,149 @@
+{
+  "status": "LAND_SCREEN_ONLY_NOT_PART_ADOPTION",
+  "source_sha256": "337d9c5c6121f58c9a47e0f14d5fa4b0e18af633092b8fa4dbd73ebde4142c34",
+  "changes": [
+    {
+      "pad": "1",
+      "old_xy_mm": [
+        11.615,
+        9.7675
+      ],
+      "new_xy_mm": [
+        11.64,
+        9.7675
+      ],
+      "size_mm": [
+        0.75,
+        1.4
+      ]
+    },
+    {
+      "pad": "2",
+      "old_xy_mm": [
+        10.215,
+        9.7675
+      ],
+      "new_xy_mm": [
+        10.19,
+        9.7675
+      ],
+      "size_mm": [
+        0.75,
+        1.4
+      ]
+    }
+  ],
+  "violations": [
+    {
+      "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /LSE_OUT \u3068 /LSE_IN)",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/LSE_OUT] ( B.Cu \u4e0a\u3001\u9577\u3055: 3.2000 mm )",
+          "pos": {
+            "x": 10.215,
+            "y": 9.0175
+          },
+          "uuid": "a3aa0267-9c39-4669-8251-0f65a0dd07a2"
+        },
+        {
+          "description": "\u30d1\u30c3\u30c9 1 [/LSE_IN] - Y1 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.64,
+            "y": 9.7675
+          },
+          "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+        }
+      ],
+      "severity": "error",
+      "type": "shorting_items"
+    },
+    {
+      "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0900 mm)",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/BAT] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.0,
+            "y": 10.0
+          },
+          "uuid": "7cec3496-d7d9-43e7-a01d-a563455b9414"
+        },
+        {
+          "description": "\u30d1\u30c3\u30c9 1 [/LSE_IN] - Y1 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.64,
+            "y": 9.7675
+          },
+          "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1900 mm)",
+      "items": [
+        {
+          "description": "\u30d1\u30c3\u30c9 1 [/LSE_IN] - Y1 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.64,
+            "y": 9.7675
+          },
+          "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+        },
+        {
+          "description": "\u30d3\u30a2 [/BAT] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.0,
+            "y": 10.0
+          },
+          "uuid": "7cec3496-d7d9-43e7-a01d-a563455b9414"
+        }
+      ],
+      "severity": "error",
+      "type": "hole_clearance"
+    },
+    {
+      "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/LSE_OUT] ( B.Cu \u4e0a\u3001\u9577\u3055: 3.2000 mm )",
+          "pos": {
+            "x": 10.215,
+            "y": 9.0175
+          },
+          "uuid": "a3aa0267-9c39-4669-8251-0f65a0dd07a2"
+        },
+        {
+          "description": "\u30d1\u30c3\u30c9 1 [/LSE_IN] - Y1 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.64,
+            "y": 9.7675
+          },
+          "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+        }
+      ],
+      "severity": "error",
+      "type": "solder_mask_bridge"
+    },
+    {
+      "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 'Crystal_SMD_2012-2Pin_2.0x1.2mm' \u304c\u3001\u30e9\u30a4\u30d6\u30e9\u30ea 'Crystal' \u306e\u30b3\u30d4\u30fc\u3068\u4e00\u81f4\u3057\u307e\u305b\u3093",
+      "items": [
+        {
+          "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Y1",
+          "pos": {
+            "x": 10.915,
+            "y": 9.7675
+          },
+          "uuid": "90d0966d-1c86-4664-a2e2-0159dd9ad8e4"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    }
+  ],
+  "parity": [],
+  "unconnected_items": 21,
+  "adopted": false,
+  "note": "Value and library name deliberately unchanged pending electrical/footprint library adoption. Candidate only."
+}

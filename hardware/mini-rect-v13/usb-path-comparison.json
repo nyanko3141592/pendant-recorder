@@ -1,0 +1,23 @@
+{
+  "status": "COPPER_PATH_COMPARISON_NOT_SI_APPROVAL",
+  "method": "trace_usb_paths.py splits copper segments at junctions, joins pad copper and via layers; Dijkstra shortest connector-to-MCU path, no silicon shortcuts",
+  "existing": {
+    "board": "usb-esd-ground",
+    "DP_mm": 14.971,
+    "DM_mm": 12.471,
+    "vias_each": 2,
+    "MCU_back_segment_mm": [
+      0.768,
+      0.707
+    ]
+  },
+  "surface_alternative": {
+    "board": "usb-surface-planes",
+    "DP_mm": 9.441,
+    "DM_mm": 14.827,
+    "DP_vias": 1,
+    "DM_vias": 3
+  },
+  "decision": "Keep existing connected placement as lead. Surface alternative has larger path and transition asymmetry, is not adopted. Improve existing In2 pair and short B escapes; ESD branch review separately.",
+  "correction": "Earlier B.Cu3.286/4.438mm values included branches, not all series path. Reference defects remain but must not be conflated with series path length."
+}

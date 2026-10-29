@@ -1,0 +1,52 @@
+{
+  "status": "VERTICAL_ACCESS_SCREEN_NOT_CONNECTED_ROUTE",
+  "sources_sha256": {
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e",
+    "separator": "b7d1f4d2b4356a497543c208831ebac07a7ef0b1f5e6204a5e49904d07d3b649",
+    "lower": "e4d0bde292b5a6c517542001bf5fd13c179a215cac58bfc973c4273bb5ee9887",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10"
+  },
+  "rows": [
+    {
+      "pad_center_mm": [
+        14.48,
+        -1.055
+      ],
+      "net": "GND",
+      "insulated_corridor_z_mm": [
+        -1.45,
+        -0.2
+      ],
+      "overlap_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "board_clearance_mm": 0.19999999999999996
+    },
+    {
+      "pad_center_mm": [
+        16.13,
+        -1.055
+      ],
+      "net": "BAT_TS",
+      "insulated_corridor_z_mm": [
+        -1.45,
+        -0.2
+      ],
+      "overlap_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "board_clearance_mm": 0.19999999999999996
+    }
+  ],
+  "limits": [
+    "Vertical cylinders omit bend transition from horizontal wire; do not combine as completed wire.",
+    "Last0.2mm to copper and solder joint not modeled.",
+    "Pad net mapping from existing TH1; independent PCB verification needed before electrical change."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "status": "PLANNED_NOT_EXECUTED",
+  "decision": "Retain current TLV7042 wired guard as engineering evaluation candidate, not qualified circuit. Defer push-pull/AND redesign until measured deficiency or a demonstrably better qualified design warrants extra area.",
+  "source_pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "preconditions": [
+    "Exact Q4 manufacturer part must be selected before assembly; generic2N7002 is not a procurement specification.",
+    "Begin with current-limited supplies and a battery emulator; no lithium cell connected during fault injection.",
+    "Use charge-enable-limits.json and measure actual supply envelope; pull-up domain qualification remains required before release.",
+    "Use appropriate high-impedance probes; record probe loading on CHG_GUARD_GATE."
+  ],
+  "measurements": [
+    "V3V3",
+    "VBUS_LIMITED",
+    "CHG_ALLOW",
+    "CHG_GUARD_GATE",
+    "CHG_INHIBIT_GATE at U3 CE",
+    "BAT_TS",
+    "TS_COLD_REF",
+    "TS_HOT_REF",
+    "battery emulator current",
+    "independent stimulus resistance or calibrated surrogate temperature"
+  ],
+  "cases": [
+    {
+      "id": "GUARD-01",
+      "stimulus": "Normal-window sensor emulator",
+      "condition": "Both comparator outputs released; MCU allow low",
+      "required_behavior": "Charging inhibited"
+    },
+    {
+      "id": "GUARD-02",
+      "stimulus": "Normal-window sensor emulator",
+      "condition": "MCU allow high after valid USB power state",
+      "required_behavior": "Charging enabled only after permission"
+    },
+    {
+      "id": "GUARD-03",
+      "stimulus": "Slow sweep sensor resistance both directions",
+      "condition": "MCU allow high",
+      "required_behavior": "Record cold/hot trip and recovery; no charge outside qualified window"
+    },
+    {
+      "id": "GUARD-04",
+      "stimulus": "Sensor open circuit",
+      "condition": "MCU allow high",
+      "required_behavior": "Charging inhibited"
+    },
+    {
+      "id": "GUARD-05",
+      "stimulus": "Sensor short to ground",
+      "condition": "MCU allow high",
+      "required_behavior": "Charging inhibited"
+    },
+    {
+      "id": "GUARD-06",
+      "stimulus": "MCU reset and high-impedance CHG_ALLOW",
+      "condition": "Normal sensor",
+      "required_behavior": "Charging inhibited"
+    },
+    {
+      "id": "GUARD-07",
+      "stimulus": "V3V3 startup, ramp-down and brownout",
+      "condition": "VBUS present; repeat each sensor fault",
+      "required_behavior": "No unintended charge-enable pulse"
+    },
+    {
+      "id": "GUARD-08",
+      "stimulus": "VBUS attach, detach and suspend",
+      "condition": "Normal sensor; low battery emulator",
+      "required_behavior": "USB current state respected"
+    },
+    {
+      "id": "GUARD-09",
+      "stimulus": "Independent hot/cold comparator fault stimulus",
+      "condition": "Force each channel separately",
+      "required_behavior": "Either channel inhibits"
+    },
+    {
+      "id": "GUARD-10",
+      "stimulus": "Final mechanical contact assembly",
+      "condition": "Calibrated cell-surface surrogate thermal ramp",
+      "required_behavior": "Cell/sensor temperature lag within allocated trip margin"
+    }
+  ],
+  "acceptance_rules": [
+    "No PASS without raw waveform and instrument metadata.",
+    "CE level margins must use charger datasheet limits and measured rail levels; logic state labels alone are insufficient.",
+    "Observe both stable levels and transient enable pulses during power sequencing.",
+    "Thermal thresholds must include sensor R-T tolerances, electrical trip error and measured sensor-to-cell lag; beta-only calculation cannot authorize actual charging.",
+    "If the candidate fails, redesign before actual-cell charge testing.",
+    "Five sample results do not establish full-lot/full-temperature production qualification.",
+    "Proposed bench margins: intended enabled CE <=0.30V; intended inhibited CE >=1.40V. Any indeterminate interval requires waveform review, not automatic PASS."
+  ],
+  "actual_cell_charge_authorized": false,
+  "tests_executed": 0,
+  "charge_enable_limits": "charge-enable-limits.json",
+  "current_engineering_selection": {
+    "Q4": "DMN63D8L-7",
+    "R43": "4.7k 1% YAGEO RC0402FR-074K7L",
+    "source_pcb_sha256": "0753b2e85892a530bba429b7b49dae4a322f1b8d5d0805760657e1b43a72a44d",
+    "scope": "Engineering selection made; all physical results remain NOT_RUN"
+  }
+}

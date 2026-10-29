@@ -1,0 +1,32 @@
+{
+  "status": "BOM_CPL_REFS_AND_SOURCE_COORDINATES_PASS_ROTATIONS_UNAPPROVED",
+  "rows": 68,
+  "excluded_pcb_features": [
+    "J3",
+    "TP1",
+    "TP2",
+    "TP3",
+    "TP5",
+    "TP6"
+  ],
+  "unresolved_part_ids": [
+    "U8",
+    "C27",
+    "J4"
+  ],
+  "coordinate_units": "mm",
+  "transform": "Header rename only; retain exported KiCad signed coordinates, angles and board side",
+  "source": "https://jlcpcb.com/help/article/how-to-generate-the-bom-and-centroid-file-from-kicad",
+  "board_sha256": "ad5ef8ccfe065424df59368025efdfcf99418fb3c71aebe2e62ae01f7108357b",
+  "input_sha256": {
+    "RAW-KICAD-POSITIONS-NOT-JLC-APPROVED.csv": "34c2dadfbee7386ef2fa0f6f5a328f8fe91a9f687a1da028474cbbcb8d8f57d1",
+    "BOM-JLC-REVIEW-ONLY.csv": "b7959355a4418da733b921487986c991fd05e44c1364f8c99d4c288fb092fb1e"
+  },
+  "output_sha256": "ae21f2d1006b00f20135df4d317dd8bf10c63a66e647ddae4678b5efb9635b1d",
+  "limitations": [
+    "BOM identities and stock not fully approved",
+    "Footprint origins may need package centroid offsets; no offset inferred",
+    "Part rotations need JLC model/pin1 preview review before ordering",
+    "No uploaded assembly preview or manufacturing approval"
+  ]
+}

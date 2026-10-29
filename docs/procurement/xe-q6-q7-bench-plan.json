@@ -1,0 +1,79 @@
+{
+  "status": "PROPOSED_TEST_PLAN_NOT_EXECUTED",
+  "candidate": "Diodes Incorporated DMN2056U-7, Q6/Q7",
+  "purpose": "Resolve switching, leakage and reset behavior before approving the USB input latch circuit.",
+  "setup": {
+    "dut": "Latest DMN land candidate, exact BOM revision and firmware hash recorded",
+    "power": "Current-limited bench sources or battery emulator; isolate any externally driven rail from regulator outputs. No attached lithium battery during electronics temperature testing.",
+    "signals": [
+      "VBUS",
+      "MCU VDD",
+      "NRST",
+      "Q6 gate",
+      "USB_LATCH_CLOCK",
+      "Q7 gate",
+      "USB_LATCH_CLEAR_N",
+      "U14 latch output",
+      "USB input switch enable",
+      "USB input current"
+    ],
+    "instrumentation": "Oscilloscope with low-capacitance probes; record probe loading, sampling rate and measurement uncertainty. Capture actual gate/drain/latch waveforms, not just firmware timestamps.",
+    "prerequisite": "Read back BOR option bytes and confirm BOR4. Record GPIO configuration, HAL timebase, interrupt load and actual MCU supply. Confirm drain pullups and gate pulldowns against schematic. Resolve GPIO VOH guarantee for the 2.67..2.7 V supply interval; do not treat VDDIO-.4 extrapolation as a guaranteed bound. Follow-up: applicable4mA GPIO row located in DS14217 Rev5 table94; verify actual load and capture dynamic behavior, see xe-q6-q7-dmn2056u-review.json low_supply_gpio_evidence."
+  },
+  "provisional_matrix": {
+    "electronics_temperature_C": [
+      0,
+      25,
+      60
+    ],
+    "VBUS_V": [
+      4.5,
+      5.0,
+      5.25
+    ],
+    "MCU_VDD_tests": "Nominal regulated supply; slow downward/upward ramps through the actual BOR thresholds; rapid interruptions within and beyond specified supply fall-rate limits, reported separately.",
+    "samples": "All five prototype units if available; record exact actual count and part lots. This is engineering evidence, not statistical production qualification.",
+    "cycles": "Initially 1000 suspend/resume cycles per unit at nominal conditions, followed by each voltage/temperature corner and phase sweep. This count is a proposed engineering screen.",
+    "scope": "Electronics test temperatures are not adopted product or battery operating limits. Final operating range remains tied to battery and complete product qualification."
+  },
+  "tests": [
+    {
+      "id": "Q67-DC",
+      "procedure": "At each corner measure both gate-high voltages and drain low/high levels with the actual pull resistors and supervisor connected. Measure off-state leakage including U15 on the Q7 node.",
+      "pass": "At VBUS4.5V, drain low plus uncertainty is below0.9V and drain high minus uncertainty above3.15V, using the reviewed U14 guaranteed thresholds. Use an engineering margin rather than equality. At5.0/5.25V, derive guaranteed threshold bounds from an applicable manufacturer specification before claiming DC margin; do not interpolate the4.5/6V rows as guaranteed data.",
+      "limitation": "DMN2056U RDSon and leakage limits reviewed so far are25C conditions. Temperature samples do not create a new manufacturer's guarantee."
+    },
+    {
+      "id": "Q67-PULSE",
+      "procedure": "Execute production firmware suspend/resume with idle and maximum expected interrupt load. Measure complete drain transitions and latch state changes.",
+      "pass": "Every suspend drives the latch to OFF, every authorized resume clears OFF, and no unintended extra clock/reset transition occurs. At4.5V, valid clock and clear pulse widths exceed the applicable12ns and11ns minima after threshold crossing and uncertainty. Firmware HAL_Delay(1) alone is not acceptance evidence."
+    },
+    {
+      "id": "Q67-RESET",
+      "procedure": "Keep VBUS present and inject MCU reset or supply loss before, during and after each pulse, including before the drain has reached a valid low. Sweep phase across gate rise, hold, fall and CLR release; capture event ordering.",
+      "pass": "Previously latched OFF survives MCU reset/reboot without a genuine host resume. A completed valid suspend clock must leave OFF retained. A pulse interrupted before valid drain low is explicitly classified as incomplete; it must not be reported as successfully completed merely because GPIO was released.",
+      "failure_action": "If USB suspend current compliance depends on an incomplete pulse during brownout, redesign the latch/fail-safe path; do not solve by labeling the test passed."
+    },
+    {
+      "id": "Q67-STARTUP",
+      "procedure": "Exercise battery-first, VBUS-first, VBUS reconnect, MCU-only reset with retained latch power, and near-simultaneous rail ramps. Include USB reset/configuration callbacks separately from genuine host resume.",
+      "pass": "No boot/reset/configuration event clears retained OFF. Observe supervisor action, switch enable and current, and confirm each behavior against the intended state table."
+    }
+  ],
+  "required_results": [
+    "Unit and lot identifiers",
+    "PCB/BOM/firmware hashes",
+    "Option-byte readback",
+    "Instrument settings and uncertainty",
+    "Raw traces with event phase",
+    "Corner results and failures",
+    "Signed-off interpretation of current limits and latch truth table"
+  ],
+  "not_proven_by_this_plan": [
+    "16-hour recording runtime",
+    "Whole-device thermal/battery safety",
+    "36-hour encrypted storage",
+    "USB certification",
+    "Production reliability"
+  ]
+}

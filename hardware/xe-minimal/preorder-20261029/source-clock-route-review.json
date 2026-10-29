@@ -1,0 +1,27 @@
+{
+  "status": "REJECTED_INCOMPLETE_NOT_ADOPTED",
+  "sha256": "1f9491098ebf40354743e594e2230b6cbd469d9a1e0b7e387ee90f4a29557cb4",
+  "types": {
+    "clearance": 1,
+    "via_dangling": 4,
+    "track_dangling": 1,
+    "lib_footprint_issues": 74
+  },
+  "geometric": 6,
+  "unconnected": 9,
+  "parity": 0,
+  "vias": 120,
+  "release_allowed": false,
+  "placement_evidence": {
+    "R23_trial_center_mm": [
+      15.1,
+      2.7
+    ],
+    "angle_deg": 90,
+    "MCU_to_resistor_mm": 1.1200027901750962,
+    "initial_short_source_connection_geometric_drc_violations": 0,
+    "initial_clearance_precondition": "Other SPI routes removed for rerouting; not a drop-in move",
+    "source_clock_net_connected_after_router": true
+  },
+  "next_design_issue": "SPI pullups R24/R25/R28 are dispersed; review whole storage placement/branches plus power route corridors. R23 alone did not make current fixed layout routable."
+}

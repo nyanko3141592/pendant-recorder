@@ -1,0 +1,90 @@
+Reference,Part/value,Footprint,Design note
+U1,STM32U535CEU6,Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm,512KB Flash/274KB RAM; non-SMPS UFQFPN48. PB3/PB4 ADF AF3; PA5/6/7 SPI1 AF5. VDD USB shared 3.3V. JLC acceptance and pin review pending.
+C1,100n,Capacitor_SMD:C_0402_1005Metric,
+C4,10u,Capacitor_SMD:C_0603_1608Metric,Main bulk capacitor; check startup and effective capacitance.
+C9,100n,Capacitor_SMD:C_0402_1005Metric,
+R2,10k,Resistor_SMD:R_0402_1005Metric,
+Y1,ABS06-32.768KHZ-7-T,PendantMinimal:Crystal_ABS06_2012_RecommendedLand,Prototype selected ABS06-32.768KHZ-7-T; recommended land; LSE drive/startup/accuracy qualification pending.
+C11,5.6p C0G prototype,Capacitor_SMD:C_0402_1005Metric,Prototype GRM1555C1H5R6CA01D;5.6pF C0G50V +/-0.25pF. Assumes PCB stray1.2pF plus internal3pF typical; tune on prototype.
+C12,5.6p C0G prototype,Capacitor_SMD:C_0402_1005Metric,Prototype GRM1555C1H5R6CA01D;5.6pF C0G50V +/-0.25pF. Assumes PCB stray1.2pF plus internal3pF typical; tune on prototype.
+J3,Factory SWD pogo candidate,PendantMinimal:SWD_Pogo_5Pad_P1.27mm,Five exposed pads; factory fixture required; VTref sense only. No buyer flashing.
+SW1,B3U-1000P (candidate),Button_Switch_SMD:SW_SPST_B3U-1000P,
+R4,100k,Resistor_SMD:R_0402_1005Metric,
+J1,USB4105-GF-A (candidate),PendantD1:USB_C_GCT_USB4105_GroundLand112,Exact footprint and shield pad numbering pending connector selection
+R6,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+R7,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+U2,USBLC6-2P6,Package_TO_SOT_SMD:SOT-666,"ST DS4260 same 6-pin function diagram; smaller package, LCSC C15999 catalog; orientation/land pattern final audit pending."
+C13,2.2u 10V,Capacitor_SMD:C_0402_1005Metric,
+U3,BQ25185DLHR,Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm,XE candidate4.1V ±0.5% =>4.1205V upper;44.12mA nominal charging. ILIM500 requires host power policy; thermal contact and battery capacity at4.1V unqualified; charge inhibited.
+R10,6.8k 1%,Resistor_SMD:R_0402_1005Metric,XE prototype44.12mA nominal;10%IC/1%R screen39.31..49.02mA below110mA pack maximum. Nominal4.41mA termination exceeds manufacturer1.1mA reference; capacity/16h not guaranteed. No charge enable.
+R11,20k 1%,Resistor_SMD:R_0402_1005Metric,
+C14,2.2u,Capacitor_SMD:C_0402_1005Metric,
+J2,Molex781710003 / DTP401525-XE,Connector_Molex:Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical,"Pack manufacturer p9:1red+,2NTC,3black-. Header mating-view pad alignment still requires validation. Built-in NTC has no identified R-T curve; pin2 deliberately NC. Independent factory-mountedTH1 contact sensor is mandatory; no user soldering. Reverse polarity protection review pending."
+R12,100k,Resistor_SMD:R_0402_1005Metric,100k VBUS pull-up defaults Q2 to charge inhibited; no MCU GPIO connection to5V.
+C15,10u 10V effective >=1u,Capacitor_SMD:C_0603_1608Metric,SYS cap per TI; DC-bias capacitance must be qualified.
+U4,TPS7A0233PDBVR,Package_TO_SOT_SMD:SOT-23-5,3.3V main rail: 48-pin MCU has no separate USB supply; dropout/capacity measurement required.
+C16,1u,Capacitor_SMD:C_0402_1005Metric,
+U8,IM69D130V01XTSA1,Pendant:IM69D130_JLC_SMD_trial,"Direct 3.3V PDM, bottom port; no AAD. 0.768MHz/decimation48 candidate for 16kHz; acoustic validation required."
+R21,22R tentative,Resistor_SMD:R_0402_1005Metric,
+C22,100n,Capacitor_SMD:C_0402_1005Metric,
+U10,TPS22916CYFPR,Pendant:TPS22916_YFP4,Omi SD switch; power-off sequence must tristate ALL SD signals
+R22,100k,Resistor_SMD:R_0402_1005Metric,
+C25,1u,Capacitor_SMD:C_0402_1005Metric,
+R23,22R tentative,Resistor_SMD:R_0402_1005Metric,
+R24,47k,Resistor_SMD:R_0402_1005Metric,
+R25,47k,Resistor_SMD:R_0402_1005Metric,
+R28,47k,Resistor_SMD:R_0402_1005Metric,
+C26,100n,Capacitor_SMD:C_0402_1005Metric,
+C27,4.7u effective TBD,Capacitor_SMD:C_0603_1608Metric,
+TP1,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP2,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP3,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP5,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP6,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+R32,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D6,amber LED 0402 TBD,LED_SMD:LED_0402_1005Metric,"Single status/battery indicator; firmware blinks on demand, normally dark."
+C2,100n,Capacitor_SMD:C_0402_1005Metric,
+C3,100n,Capacitor_SMD:C_0402_1005Metric,
+C5,4.7u,Capacitor_SMD:C_0603_1608Metric,
+C6,100n,Capacitor_SMD:C_0402_1005Metric,
+C7,1u,Capacitor_SMD:C_0402_1005Metric,
+R1,0R,Resistor_SMD:R_0402_1005Metric,
+R3,100k,Resistor_SMD:R_0402_1005Metric,
+Q3,2N7002 (VBUS detect),Package_TO_SOT_SMD:SOT-23,
+R13,100k,Resistor_SMD:R_0402_1005Metric,
+R14,1M,Resistor_SMD:R_0402_1005Metric,
+R15,100k,Resistor_SMD:R_0402_1005Metric,
+R33,1M 1%,Resistor_SMD:R_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+R34,1M 1%,Resistor_SMD:R_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+C28,10n,Capacitor_SMD:C_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+R35,10k 1%,Resistor_SMD:R_0402_1005Metric,Holds normal TS level when released; no floating TS/TTDM in intended circuit.
+R36,100k,Resistor_SMD:R_0402_1005Metric,MCU reset/high-Z defaults to no charging permission.
+R37,100k 1%,Resistor_SMD:R_0402_1005Metric,Reduce thermistor excitation; 5.25V and99k gives52.99uA maximum branch current and69.60uW maximum thermistor power. Only powered from USB. Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R38,100k 1%,Resistor_SMD:R_0402_1005Metric, Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R39,20k 1%,Resistor_SMD:R_0402_1005Metric,Cold threshold candidate. Beta-model sensitivity is not full manufacturer R-T qualification. See temperature-screen.json.
+R40,100k 1%,Resistor_SMD:R_0402_1005Metric, Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R41,7.5k 1%,Resistor_SMD:R_0402_1005Metric,Hot threshold candidate. Reserve margin for contact sensor lag; physical thermal qualification required.
+U12,TLV7042DDFR,Package_TO_SOT_SMD:SOT-23-8,"Open-drain wired-AND temperature permission. Either fault pulls Q4 gate low. Board NTC replaces undocumented pack NTC; exact R-T, common-mode error and thermal contact not qualified. Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required."
+Q4,2N7002,Package_TO_SOT_SMD:SOT-23,"Pulls BQ25185 CE_N low only when MCU and wired-AND comparator outputs permit. R36 defaults gate low. Startup, leakage and gate-voltage behavior need review."
+C29,100n 10V,Capacitor_SMD:C_0402_1005Metric,Place adjacent to U12 supply pins. Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R42,130k 1%,Resistor_SMD:R_0402_1005Metric,BQ25185 Table6-1:4.1V / ILIM500. Input450/475/498mA. Requires USB preconfiguration/suspend power management; charge stays disabled pending qualification.
+C30,50p 50V C0G,Capacitor_SMD:C_0402_1005Metric,BQ25185 SLUSF65B6.1.1.4 low-current <50mA recommendation; final transient behavior requires hardware test.
+R43,10k 1%,Resistor_SMD:R_0402_1005Metric,MCU permission series resistor; limits current into comparator fault clamp.
+TH1,NCP18XH103F03RB 10k 1% B3380 candidate,Resistor_SMD:R_0603_1608Metric,Independent factory-mounted contactNTC required because pack NTC exactR-T unspecified. Electrically insulated compliant contact to pouch and retention must be engineered and tested; no ambient-only charging approval.
+U13,MAX4995CAUT+T,Package_TO_SOT_SMD:SOT-23-6,Continuous input limiter; DC screen3.3V only; FLAG explicitlyNC. Not charging qualification.
+U14,SN74HCS74DYYR,Pendant_Input:Texas_DYY0014A,RawVBUS retainedOFF latch; Schmitt inputs. POR/resume clearQ=0 =>Q_N enables input. Suspend clocksD=1 =>Q_N disables. UnusedFF heldclear; PRE alwayshigh.
+U15,TLV803EB29DBZR,Package_TO_SOT_SMD:SOT-23,"2.93V supervisor;B40us nominal/80us maxunderdatasheetcondition. StandardDBZ pinout, NOT RDBZ or VDBZ. Initializes latch before chargerUVLO; analog startup still needs validation."
+R44,390k 1%,Resistor_SMD:R_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+R45,100k 1%,Resistor_SMD:R_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+Q5,2N7002,Package_TO_SOT_SMD:SOT-23,Ground-referenced gate; verify exact vendor leakage/capacitance and low-current sink at3.3V
+R46,100k 1%,Resistor_SMD:R_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+R47,10k 1%,Resistor_SMD:R_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+R48,10k 1%,Resistor_SMD:R_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+Q6,2N7002,Package_TO_SOT_SMD:SOT-23,Ground-referenced gate; verify exact vendor leakage/capacitance and low-current sink at3.3V
+Q7,2N7002,Package_TO_SOT_SMD:SOT-23,Ground-referenced gate; verify exact vendor leakage/capacitance and low-current sink at3.3V
+R49,100k 1%,Resistor_SMD:R_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+R50,100k 1%,Resistor_SMD:R_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+C31,1u 10V,Capacitor_SMD:C_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+C32,100n 10V,Capacitor_SMD:C_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+C33,100n 10V,Capacitor_SMD:C_0402_1005Metric,Input control candidate; tolerance/assembly/physical layout pending
+U11,CSNP32GCR01-BOW candidate,Pendant:CSNP32GCR01_LGA8,"SPI managed storage comparison; supply, auxiliary land and peak energy not qualified."

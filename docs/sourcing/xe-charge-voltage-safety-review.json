@@ -1,0 +1,80 @@
+{
+  "status": "4P1V_10MA_AND_TPS2552_50_TO_100MA_LATCH_OFF_WITH_LOCAL_CAPS_INTEGRATED_PHYSICAL_EVT_ORDER_HOLD",
+  "date": "2026-10-28",
+  "battery": {
+    "model": "DTP401525-XE",
+    "published_charge_limited_voltage_V": 4.2,
+    "published_end_of_charge": "0.01C = 1.1mA for 110mAh",
+    "published_max_continuous_charge_mA": 110,
+    "published_charge_temperature_C": [0, 45],
+    "source": "https://www.sengoku.co.jp/item/pdf/Spe-01-401525-XE-NTC-110mah-3.7V-en-1.pdf",
+    "source_location": "product specification pages 4 and 7",
+    "important_limit": "The document gives 4.20V as the charge limited voltage but does not publish an allowed charger regulation tolerance above 4.20V. The pack protection threshold is not permission to exceed the charge limit."
+  },
+  "current_charger": {
+    "mpn": "BQ25185DLHR",
+    "R42_ohm": 130000,
+    "selected_mode": "VBATREG 4.1V and internal ILIM500",
+    "regulation_accuracy_percent": [-0.5, 0.5],
+    "calculated_regulation_range_V": [4.0795, 4.1205],
+    "internal_input_limit_mA": 500,
+    "R10_ohm": 30000,
+    "nominal_fast_charge_mA": 10.0,
+    "screened_fast_charge_range_mA": [9.0, 11.0],
+    "screened_termination_range_mA": [0.765, 1.1],
+    "source": "hardware/mini-usb-v9/reference/bq25185.pdf",
+    "source_location": "Rev B electrical characteristics and Table 6-1",
+    "safety_conflict": "The BQ25185 internal input mode remains 500mA, but canonical U13 now bounds the upstream USB input before the charger. Physical current-limit, thermal and recovery behavior remain unmeasured, so ordering remains prohibited."
+  },
+  "usb_input_limiter": {
+    "mpn": "TPS2552DBVR-1",
+    "jlc_part": "C140331",
+    "RILIM_connection": "ILIM shorted to IN through filled/capped U13.5 POFV",
+    "guaranteed_output_limit_min_mA": 50.0,
+    "guaranteed_output_limit_typ_mA": 75.0,
+    "guaranteed_output_limit_max_mA": 100.0,
+    "guaranteed_total_input_max_mA": 100.0,
+    "enable_connection": "active-low EN tied to GND",
+    "overcurrent_behavior": "latch-off until USB input power cycle",
+    "reverse_current_blocking": true,
+    "thermal_shutdown": true,
+    "local_bypass": {
+      "C31_VIN_uF": 1.0,
+      "C32_VOUT_uF": 1.0,
+      "placement": "C31 adjacent on F.Cu; C32 directly below U13 on B.Cu with short connections",
+      "datasheet_basis": "TI TPS2552 datasheet requires at least 0.1uF at IN; retained 1uF C31/C32 provide local input/output bypass",
+      "physical_effective_capacitance_and_transient_verification": "NOT_RUN"
+    },
+    "source": "https://www.ti.com/lit/ds/symlink/tps2552.pdf",
+    "verification": "calculated from guaranteed electrical limits; physical EVT not run"
+  },
+  "decision": {
+    "current_24k_setting_adopted": false,
+    "corrected_130k_setting_adopted": true,
+    "pcb_order_allowed": false,
+    "charging_enable_allowed": false,
+    "runtime_claim_allowed": false,
+    "why_runtime_is_affected": "The 16h test must start after the final approved on-board charge. External laboratory charging or an unsafe 4.2V setting cannot establish usable capacity.",
+    "required_replacement_contract": [
+      "Guaranteed maximum battery regulation voltage does not exceed 4.20V over IC, resistor, supply, load and qualified temperature tolerances.",
+      "Total USB input current is hardware bounded to the applicable pre-configuration/suspend/active limits; firmware alone is not the safety bound.",
+      "Fast-charge and precharge maxima do not exceed the pack limits and termination behavior is included in usable-capacity testing.",
+      "Pack NTC open/short and actual 0C/45C boundaries inhibit charge independently of normal firmware execution.",
+      "The part is an ordinary catalog component that JLCPCB can source and assemble without buyer-supplied parts or a special inquiry."
+    ]
+  },
+  "screened_direction": {
+    "BQ25185_4p1V_mode": "Adopted for voltage and low-current charging. R42=130k gives 4.1V nominal and 4.1205V guaranteed maximum; R10=30k gives the characterized 9..11mA range and no more than 1.1mA screened termination. An upstream limiter is still required.",
+    "BQ24079QW_Q1": "Official TI documentation provides fixed 4.1V regulation and selectable USB100 input limit, but the JLC public catalog returned 0 results on 2026-10-28; not adopted.",
+    "TPS2552DBVR-1": "Adopted upstream latch-off limiter. ILIM shorted to IN gives a guaranteed 50..100mA threshold; active-low EN is tied to GND. Its 7.0V absolute input maximum provides 1.1V margin from the NCP360 guaranteed 5.9V OVLO maximum. C31/C32 provide local 1uF bypass. JLC C140331 showed 2,443 in stock on 2026-10-28.",
+    "MAX4995C_external_limiter": "Historical screen lacks guaranteed 5V current-limit extrema and JLC ordinary sourcing; not adopted.",
+    "rule": "Do not release PCB manufacturing until physical current-limit, USB suspend behavior, dead-battery recovery, charge-temperature boundaries, ERC/DRC and EVT all pass."
+  },
+  "not_claimed": [
+    "The upstream USB limiter is integrated in CAD but is not physically verified.",
+    "Pack overcharge protection is a last-resort fault layer, not a normal regulation tolerance allowance.",
+    "A typical bench voltage below 4.20V does not qualify production tolerance.",
+    "TPS2552 current limiting and latch-off are specified from guaranteed limits but not yet measured on assembled hardware.",
+    "C31/C32 nominal values and placement are verified in CAD; effective capacitance, transient response and absence of oscillation are not yet measured."
+  ]
+}

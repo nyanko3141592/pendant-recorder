@@ -1,0 +1,132 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T06:24:04",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-minimal.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.295,
+                        "y": 9.245
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - Q3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.3175,
+                        "y": 23.475
+                    },
+                    "uuid": "80905ce2-b930-431a-9044-931160fed9bc"
+                },
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                },
+                {
+                    "description": "パッド 2 [/VBUS_GATE] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.77,
+                        "y": 3.0
+                    },
+                    "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/CHG_N] - R11 ( B.Cu 上)",
+                    "pos": {
+                        "x": 6.265,
+                        "y": 23.295
+                    },
+                    "uuid": "309ee24f-5040-4dc2-8318-5b1279f76949"
+                },
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "パッド 27 [/CHG_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 6.0175
+                    },
+                    "uuid": "59f8625a-35e8-4d8f-b79a-b9608e272ce7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

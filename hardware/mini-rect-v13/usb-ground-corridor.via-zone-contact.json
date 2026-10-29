@@ -1,0 +1,35 @@
+{
+  "status": "VIA_ZONE_CONTACT_GEOMETRIC_SCREEN",
+  "board_sha256": "580125c4b9824b7b19f30e17345c3f5c3f45ea4d5ea5b40244b551cf27aed1bd",
+  "via_xy_mm": [
+    16.5,
+    8.055
+  ],
+  "rows": [
+    {
+      "layer": "F.Cu",
+      "via_annulus_radius_mm": 0.2,
+      "filled_ground_samples": 14,
+      "sample_count": 16
+    },
+    {
+      "layer": "In1.Cu",
+      "via_annulus_radius_mm": 0.2,
+      "filled_ground_samples": 14,
+      "sample_count": 16
+    },
+    {
+      "layer": "In2.Cu",
+      "via_annulus_radius_mm": 0.2,
+      "filled_ground_samples": 14,
+      "sample_count": 16
+    },
+    {
+      "layer": "B.Cu",
+      "via_annulus_radius_mm": 0.2,
+      "filled_ground_samples": 14,
+      "sample_count": 16
+    }
+  ],
+  "limitation": "Annulus point overlap with filled ground proves local geometric contact only; no continuous reference or impedance claim. DRC separately reports no unconnected items."
+}

@@ -1,0 +1,87 @@
+{
+  "scope": "0.25mm grid,0/90degree, conservative XY envelopes; existing layout except removed U11. Not a proof against a full redesign.",
+  "socket": "Hirose DM3D-SF",
+  "envelope_mm": [
+    11.95,
+    15.8,
+    1.55
+  ],
+  "source": "https://www.hirose.com/product/document?clcode=CL0609-0033-6-00&documentid=D49662_en&documenttype=Catalog&lang=en&productname=DM3AT-SF-PEJ2M5&series=DM3",
+  "placement_sha256": "c1ffc504cd7dd7af5a678934c463a838433052cb857b3e00d6843eaea6e750ad",
+  "results": [
+    {
+      "side": "F",
+      "tested": 1802,
+      "collision_free": 0,
+      "best": {
+        "side": "F",
+        "angle": 0,
+        "center_mm": [
+          9.5,
+          8.0
+        ],
+        "rect_mm": [
+          3.5250000000000004,
+          0.09999999999999964,
+          15.475,
+          15.9
+        ],
+        "collision_refs": [
+          "J1",
+          "J2",
+          "J3",
+          "U1",
+          "U4",
+          "Y1"
+        ],
+        "overlap_area_sum_mm2": 153.4042625
+      }
+    },
+    {
+      "side": "B",
+      "tested": 1802,
+      "collision_free": 0,
+      "best": {
+        "side": "B",
+        "angle": 0,
+        "center_mm": [
+          8.75,
+          15.0
+        ],
+        "rect_mm": [
+          2.7750000000000004,
+          7.1,
+          14.725,
+          22.9
+        ],
+        "collision_refs": [
+          "C11",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C2",
+          "C25",
+          "C26",
+          "C4",
+          "R11",
+          "R6",
+          "R7",
+          "TP6",
+          "U10",
+          "U2",
+          "U3",
+          "BATTERY"
+        ],
+        "overlap_area_sum_mm2": 197.641125
+      }
+    }
+  ],
+  "adopted": false,
+  "remaining": [
+    "Actual socket landpattern and no-copper areas",
+    "Full component rearrangement/routing",
+    "Card current peaks and standby",
+    "Card insertion/retention and qualified card procurement"
+  ]
+}

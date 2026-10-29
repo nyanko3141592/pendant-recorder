@@ -1,0 +1,153 @@
+{
+  "status": "TRIAL_NOT_ADOPTED",
+  "source_sha256": "dedfe7ece3be60342a13023ee30e0ee2e45b1eb0313b1e58c96e3a74ef89ef4c",
+  "output_sha256": "bc837247949fea3452df74300f151c34d57227881caef5b22824159a617afd95",
+  "changes": [
+    {
+      "uuid": "338c66e3-7933-4afd-b2f4-01325a85229b",
+      "from": [
+        15.687076,
+        15.645503
+      ],
+      "to": [
+        14.987075999999998,
+        16.545503
+      ]
+    },
+    {
+      "uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0",
+      "from": [
+        15.687076,
+        15.645503
+      ],
+      "to": [
+        14.987075999999998,
+        16.545503
+      ]
+    },
+    {
+      "uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0",
+      "from": [
+        19.187076,
+        11.145503
+      ],
+      "to": [
+        19.712076,
+        10.470502999999999
+      ]
+    },
+    {
+      "uuid": "cd543976-b9a2-40c9-bae5-b76d8336c2f1",
+      "from": [
+        19.187076,
+        11.145503
+      ],
+      "to": [
+        19.712076,
+        10.470502999999999
+      ]
+    },
+    {
+      "uuid": "1fd3a811-f21b-4177-b010-f981762dcccb",
+      "from": [
+        15.5,
+        15.5
+      ],
+      "to": [
+        14.8,
+        16.4
+      ]
+    },
+    {
+      "uuid": "63739360-e6c3-4b80-83e9-4dd74a8cbe0a",
+      "from": [
+        19.0,
+        11.0
+      ],
+      "to": [
+        19.525,
+        10.325
+      ]
+    },
+    {
+      "uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d",
+      "from": [
+        15.5,
+        15.5
+      ],
+      "to": [
+        14.8,
+        16.4
+      ]
+    },
+    {
+      "uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d",
+      "from": [
+        19.0,
+        11.0
+      ],
+      "to": [
+        19.525,
+        10.325
+      ]
+    }
+  ],
+  "coupled_straight_length_mm": 7.696184119419182,
+  "checks": {
+    "violations": 2,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "violations": [
+    {
+      "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'USB_FS_PAIR' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0629 mm)",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/CC2] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 13.975,
+            "y": 18.014999
+          },
+          "uuid": "02c2326c-3b01-4e6c-b9de-fc24784970d4"
+        },
+        {
+          "description": "\u914d\u7dda [/USB_DP] ( In2.Cu \u4e0a\u3001\u9577\u3055: 4.6500 mm )",
+          "pos": {
+            "x": 11.75,
+            "y": 19.883749
+          },
+          "uuid": "338c66e3-7933-4afd-b2f4-01325a85229b"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'USB_FS_PAIR' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0921 mm)",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/USB_DP] ( In2.Cu \u4e0a\u3001\u9577\u3055: 4.6500 mm )",
+          "pos": {
+            "x": 11.75,
+            "y": 19.883749
+          },
+          "uuid": "338c66e3-7933-4afd-b2f4-01325a85229b"
+        },
+        {
+          "description": "\u30d3\u30a2 [/SD_V3] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 15.0,
+            "y": 17.0
+          },
+          "uuid": "a3797021-23bd-4a3a-9631-899d28a9944f"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    }
+  ],
+  "limits": [
+    "Only geometric extension; reference copper, bend coupling and fanouts still unqualified",
+    "Parent PCB unchanged"
+  ]
+}

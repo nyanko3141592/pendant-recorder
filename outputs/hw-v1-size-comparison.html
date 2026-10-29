@@ -1,0 +1,64 @@
+<div id="hw-v1-size-comparison" aria-label="HW-V1.0と過去案・Omiの同一縮尺寸法比較">
+  <style>
+    #hw-v1-size-comparison { color: var(--foreground); font-family: inherit; }
+    #hw-v1-size-comparison h2 { margin: 0 0 12px; font-weight: 500; }
+    #hw-v1-size-comparison .legend { display:flex; flex-wrap:wrap; gap:14px; margin:0 0 12px; color:var(--muted-foreground); }
+    #hw-v1-size-comparison .key { display:flex; align-items:center; gap:6px; }
+    #hw-v1-size-comparison .swatch { width:14px; height:14px; border-radius:3px; background:var(--viz-series-1); }
+    #hw-v1-size-comparison .swatch.ref { background:var(--muted); border:1px solid var(--border); box-sizing:border-box; }
+    #hw-v1-size-comparison svg { width:100%; height:auto; display:block; }
+    #hw-v1-size-comparison .current { fill:color-mix(in srgb, var(--viz-series-1) 28%, transparent); stroke:var(--viz-series-1); stroke-width:2; }
+    #hw-v1-size-comparison .reference { fill:var(--muted); stroke:var(--border); stroke-width:1.5; }
+    #hw-v1-size-comparison .hole { fill:var(--background); stroke:var(--viz-series-1); stroke-width:1.5; }
+    #hw-v1-size-comparison .datum { stroke:var(--border); stroke-width:1; stroke-dasharray:3 3; }
+    #hw-v1-size-comparison text { fill:var(--foreground); font-size:12px; }
+    #hw-v1-size-comparison .sub { fill:var(--muted-foreground); }
+    #hw-v1-size-comparison .dim { fill:var(--foreground); font-weight:500; }
+  </style>
+  <h2>同一縮尺の外形比較</h2>
+  <div class="legend"><span class="key"><span class="swatch"></span>HW-V1.0 v5</span><span class="key"><span class="swatch ref"></span>比較対象</span></div>
+  <svg viewBox="0 0 920 430" role="img" aria-labelledby="size-title size-desc">
+    <title id="size-title">ペンダントレコーダー外形の同一縮尺比較</title>
+    <desc id="size-desc">正面は1ミリメートルあたり6ピクセル。HW-V1.0 v5は29.9×36.35×12.98ミリメートル。Omi近似、旧Compact A、旧Compact Bと比較。</desc>
+    <line class="datum" x1="26" y1="285" x2="894" y2="285"/>
+
+    <g transform="translate(45 40)">
+      <rect class="current" x="0" y="15" width="179.45" height="203.1" rx="18"/>
+      <rect class="current" x="75.3" y="0" width="28.8" height="42" rx="14.4"/>
+      <circle class="hole" cx="89.7" cy="21" r="9.6"/>
+      <rect class="hole" x="62" y="201" width="56" height="17" rx="7"/>
+      <text class="dim" x="89.7" y="246" text-anchor="middle">HW-V1.0 v5</text>
+      <text class="sub" x="89.7" y="264" text-anchor="middle">29.9 × 36.35 mm</text>
+      <text class="sub" x="89.7" y="282" text-anchor="middle">厚さ 12.98 mm</text>
+    </g>
+
+    <g transform="translate(272 70)">
+      <circle class="reference" cx="75" cy="75" r="75"/>
+      <text class="dim" x="75" y="216" text-anchor="middle">Omi 寸法近似</text>
+      <text class="sub" x="75" y="234" text-anchor="middle">Ø25 mm</text>
+      <text class="sub" x="75" y="252" text-anchor="middle">厚さ 15 mm</text>
+    </g>
+
+    <g transform="translate(470 40)">
+      <rect class="reference" x="0" y="0" width="228" height="234" rx="12"/>
+      <text class="dim" x="114" y="246" text-anchor="middle">旧 Compact A</text>
+      <text class="sub" x="114" y="264" text-anchor="middle">38 × 39 mm</text>
+      <text class="sub" x="114" y="282" text-anchor="middle">厚さ 8.9 mm</text>
+    </g>
+
+    <g transform="translate(760 40)">
+      <rect class="reference" x="0" y="0" width="120" height="234" rx="12"/>
+      <text class="dim" x="60" y="246" text-anchor="middle">旧 Compact B</text>
+      <text class="sub" x="60" y="264" text-anchor="middle">20 × 39 mm</text>
+      <text class="sub" x="60" y="282" text-anchor="middle">厚さ 14.5 mm</text>
+    </g>
+
+    <g transform="translate(45 350)">
+      <text class="sub" x="0" y="-12">側面（厚さも同一縮尺）</text>
+      <rect class="current" x="0" y="0" width="179.45" height="77.88" rx="10"/>
+      <rect class="reference" x="227" y="0" width="150" height="90" rx="10"/>
+      <rect class="reference" x="425" y="0" width="228" height="53.4" rx="9"/>
+      <rect class="reference" x="715" y="0" width="120" height="87" rx="9"/>
+    </g>
+  </svg>
+</div>

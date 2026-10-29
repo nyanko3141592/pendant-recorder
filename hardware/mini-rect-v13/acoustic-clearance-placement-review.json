@@ -1,0 +1,54 @@
+{
+  "status": "REJECTED_Q3_PAD_VIA_SHORT",
+  "source_sha256": "857bf111f2589cf109364a7e5a5d92ea696b354293253d38f7d529d66855df53",
+  "candidate_sha256": "dc5e114f626bedca6e0f6a1c917ce87d3ebe5e2d445ab570bab66018b7699fa5",
+  "changes": [
+    {
+      "ref": "R13",
+      "delta_y_mm": 0.175,
+      "shifted_track_endpoints": [
+        [
+          "2044f6c5-c372-43bc-a0e1-60e39c7bea66",
+          "End"
+        ],
+        [
+          "83b28339-d44e-4bf9-acfa-f7dccfd401dd",
+          "End"
+        ],
+        [
+          "8e10453f-0698-4dc4-b4f0-8bac47fc3882",
+          "Start"
+        ]
+      ]
+    },
+    {
+      "ref": "Q3",
+      "delta_y_mm": -0.125,
+      "shifted_track_endpoints": [
+        [
+          "97db51bc-286e-40cd-a939-cdf9ce2a3e34",
+          "Start"
+        ],
+        [
+          "cbe675f4-3350-48a6-9572-1b381f0bcbc3",
+          "End"
+        ],
+        [
+          "f7428dcc-6fc4-4baf-b199-ade76962ed61",
+          "End"
+        ],
+        [
+          "74bd5ad4-07d0-4707-828d-143e46f3cf93",
+          "Start"
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Moves connected track ends only; DRC/parity and route review required",
+    "Mechanical model and design placement source not updated; candidate only",
+    "Goal is 0.30 mm nominal gap to existing acoustic riser"
+  ],
+  "drc_violations": 3,
+  "unconnected": 0
+}

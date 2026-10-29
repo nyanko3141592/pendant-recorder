@@ -1,0 +1,41 @@
+{
+  "assumptions": {
+    "ntc_R25_ohm": 10000,
+    "ntc_R25_tolerance": 0.05,
+    "beta_K": 3370,
+    "beta_tolerance": 0.03,
+    "resistor_tolerance": 0.01,
+    "comparator_offset_V": 0.01,
+    "VBUS_V": [
+      4.5,
+      5.5
+    ]
+  },
+  "qualified": false,
+  "cold": {
+    "nominal_C": 20.06,
+    "assumed_tolerance_range_C": [
+      17.55,
+      22.39
+    ]
+  },
+  "hot": {
+    "nominal_C": 30.16,
+    "assumed_tolerance_range_C": [
+      27.64,
+      32.82
+    ]
+  },
+  "runtime": {
+    "capacity_mAh": 100,
+    "usable_fraction_assumption": 0.7,
+    "target_hours": 16,
+    "average_current_limit_mA": 4.375,
+    "proven": false
+  },
+  "limitations": [
+    "No thermal lag/self-heating/NTC curve deviation/comparator hysteresis or transient simulation",
+    "Battery vendor values and charging envelope unknown",
+    "100mAh capacity and70% usable fraction are assumptions; firmware and cell testing required"
+  ]
+}

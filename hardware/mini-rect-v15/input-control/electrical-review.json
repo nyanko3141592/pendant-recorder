@@ -1,0 +1,44 @@
+{
+  "status": "ERC_PASS_LOGIC_SCREEN_PASS_NOT_ROUTED_NOT_QUALIFIED",
+  "physical_parts": 91,
+  "ERC_violations": 0,
+  "schematic_sha256": "3c8202b0f88e0ba8818edd1c826a1b67d38763e88e0870722d30372519996216",
+  "design_sha256": "ff30cdd7e4a1b02a35f8c20840f47b33e6bb7d585dc1ae735b953cba87bb69b3",
+  "sources": [
+    {
+      "part": "SN74HCS74DYYR",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hcs74.pdf",
+      "sha256": "eac261a31ca71eed79dd051ed66a03bbd5d837f88087023fd864a3599cfa95fa",
+      "evidence": "AllinputsSchmitt,2..6V,ICC2uAmaxat6V,standard14pinmap;DYYland14x1.05x.30,rowpitch3,pinpitch.5;localfootprintparsed14pads"
+    },
+    {
+      "part": "TLV803EB29DBZR",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+      "sha256": "74ac4474d86c3597c4fff6ffa61a59e850130a40eda28085ece9765fb380e844",
+      "evidence": "AppendixlistsActiveProduction exactpart. StandardDBZ GND1RESET2VDD3;B40usnominal80usmax specifiedcondition;2.93V±2%. No unlistedB29DCK variant used."
+    }
+  ],
+  "latch_behavior": "RawVBUS powersFF andsupervisor;D/PREhigh;Q_NfeedsMAX4995ON. Supervisor/MCUresume clearQ toenable. MCU suspendGPIO raisesNMOSgate thenreleases forCLKrising, latchingOFF. GPIOreset cannotclearOFF; resetduringclocklow completesOFF.",
+  "gpio": {
+    "PA2": "USB_SUSPEND_PULSE",
+    "PA3": "USB_HIGH_BUDGET",
+    "PB1": "USB_RESUME_PULSE"
+  },
+  "firmware_requirements": [
+    "BootmustsetallthreeoutputlatchesLOWbeforeoutputmode; never auto-clearretainedOFF onMCUboot",
+    "Suspend disablecharge andhighbudget beforeclockpulse",
+    "Resume firstrelease suspendGPIO, thenpulseclear withvalidhostresume; restorehighbudget onlyifconfigured",
+    "No user-visible charging until full4.1V thermalguard policy implemented"
+  ],
+  "remaining": [
+    "Place16newparts andreroute separatePCBcandidate within26x29 outline; updatecaseclearance",
+    "5V input-current/inrush andsuspendtotalbudget",
+    "MOSFET exactvariantleakage/capacitance,sinkcapability",
+    "PORstartup anddip timing, recoverymargins, resume/clocksequencing",
+    "Thermal comparator powered-off outputbackfeed afterVBUSsplit",
+    "FWimplementation/integration tests",
+    "Stock andcost ofnewlogic parts,assemblyavailability"
+  ],
+  "charge_enabled": false,
+  "release_allowed": false
+}

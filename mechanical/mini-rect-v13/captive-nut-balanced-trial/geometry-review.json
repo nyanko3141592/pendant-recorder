@@ -1,0 +1,107 @@
+{
+  "status": "CAPTIVE_NUT_GEOMETRY_TRIAL_NOT_RELEASED",
+  "step_sha256": "55228501f55c32de7ea9e5cf9dae8a9891f8e7d991830e37d7e0666fccc913e3",
+  "body_valid": true,
+  "lid_valid": true,
+  "body_solids": 1,
+  "lid_solids": 1,
+  "case_overlap_mm3": 0.0,
+  "case_intersection_valid": true,
+  "component_overlaps": [
+    {
+      "a": "body",
+      "part_index": 2,
+      "volume_mm3": 0.00020340398979041196,
+      "valid": true
+    }
+  ],
+  "outer_checks": [
+    {
+      "name": "body",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "lid",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "0",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "1",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "2",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "3",
+      "outside_mm3": 0.0,
+      "valid": true
+    }
+  ],
+  "fastener_case_checks": [
+    {
+      "fastener": 0,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 0,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 1,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 1,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 2,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 2,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 3,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 3,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    }
+  ],
+  "limitations": [
+    "Lid keeper added; insertion/removal and nut escape paths still need verification",
+    "Carrier cap .40mm and lid seat .30mm require print process/strength qualification",
+    "No thread modeled; screw and nut simplified for geometry",
+    "Closure features lowered 0.30 mm; nominal screw head top 14.45 mm, global top margin 0.36 mm, local curved envelope checked separately",
+    "No insertion trajectory or actual assembly tolerance verification"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "status": "CLEARANCE_CONTRIBUTOR_SCREEN_NOT_COMPLETE_RULE_SOLVER",
+  "source_pcb_sha256": "83ebd6ee0ff5b8ce80b5431da7273054e62686e597c8e13e58df3ca8c9fd0a53",
+  "zone_local_clearance_mm": 0.15,
+  "polygon_error_mm": 0.001,
+  "rows": [
+    {
+      "usb_uuid": "517b0f43-dd77-45ae-a996-98768f7fd367",
+      "net": "/USB_DP",
+      "missing_mm2": 0.03805005673,
+      "contributors": [
+        {
+          "uuid": "28ad8aee-08e4-4004-8b2c-eee63521f5c3",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            11.75,
+            19.883749
+          ],
+          "overlap_with_uncovered_mm2": 0.037885320216,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000164736514
+    },
+    {
+      "usb_uuid": "7d2b2c19-c517-4195-b325-6110cd9f9aab",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "9feff1ca-2b4a-4861-97ce-18cca0232cfd",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0324078977635,
+      "contributors": [
+        {
+          "uuid": "28ad8aee-08e4-4004-8b2c-eee63521f5c3",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            11.75,
+            19.883749
+          ],
+          "overlap_with_uncovered_mm2": 0.0322373488615,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000170544028
+    },
+    {
+      "usb_uuid": "b412ad56-9703-47b9-92be-62741b3ae977",
+      "net": "/USB_DP",
+      "missing_mm2": 0.01828943173,
+      "contributors": [
+        {
+          "uuid": "28ad8aee-08e4-4004-8b2c-eee63521f5c3",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            11.75,
+            19.883749
+          ],
+          "overlap_with_uncovered_mm2": 0.018124695216,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000164736514
+    },
+    {
+      "usb_uuid": "2fa8cf00-552e-4db6-8048-f285d58b60bc",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0615388896965,
+      "contributors": [
+        {
+          "uuid": "2b6f8c6c-7874-4133-bbd5-4b1c56296eef",
+          "kind": "PCB_VIA",
+          "net": "/USB_DM",
+          "xy_mm": [
+            12.0,
+            17.746249
+          ],
+          "overlap_with_uncovered_mm2": 0.0613552134885,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000183676208
+    },
+    {
+      "usb_uuid": "c197ffdc-3eec-4379-9929-a44ba2ddf706",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "d2c32b47-2fdb-47a2-a86a-79be29b69938",
+      "net": "/USB_DM",
+      "missing_mm2": 0.038040896555,
+      "contributors": [
+        {
+          "uuid": "2b6f8c6c-7874-4133-bbd5-4b1c56296eef",
+          "kind": "PCB_VIA",
+          "net": "/USB_DM",
+          "xy_mm": [
+            12.0,
+            17.746249
+          ],
+          "overlap_with_uncovered_mm2": 0.0378935877575,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.0001472589975
+    },
+    {
+      "usb_uuid": "eb876840-7fb1-4a90-85e0-394cbb6fd9ef",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0047931901285,
+      "contributors": [
+        {
+          "uuid": "2b6f8c6c-7874-4133-bbd5-4b1c56296eef",
+          "kind": "PCB_VIA",
+          "net": "/USB_DM",
+          "xy_mm": [
+            12.0,
+            17.746249
+          ],
+          "overlap_with_uncovered_mm2": 0.004631776621,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.0001614077745
+    }
+  ],
+  "limits": [
+    "Uses zone local clearance only; object/netclass/custom-rule differences may explain residuals",
+    "Overlaps from separate obstacles may overlap; do not sum as union",
+    "USB via antipads are required; do not fill or remove clearance to obtain geometric coverage",
+    "Ground connectivity and 3D fields not evaluated"
+  ]
+}

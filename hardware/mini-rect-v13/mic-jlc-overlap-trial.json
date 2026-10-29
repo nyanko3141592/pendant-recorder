@@ -1,0 +1,40 @@
+{
+  "status": "ISOLATED_TRIAL_NOT_RELEASED",
+  "source_sha256": "c410c34f7f6d209aaa18d74272a59e982b1e36e2cefb0e039c7ad2c42dd74247",
+  "candidate_sha256": "8c98180835f975a3c1ba9a2a7714d9da121132c44831814c5668da0da8915fed",
+  "copper_overlap_mm": 0.08,
+  "jlc_minimum_mm": 0.076,
+  "signal_copper_mm": [
+    0.61,
+    0.91
+  ],
+  "target_signal_mask_mm": [
+    0.45,
+    0.75
+  ],
+  "target_ring_mask_radii_mm": [
+    0.58,
+    1.03
+  ],
+  "source_url": "https://jlcpcb.com/help/article/how-to-order-boards-with-solder-mask-defined-pads",
+  "remaining": [
+    "Signal aperture export verification",
+    "Net parity",
+    "CAM note and supplier confirmation",
+    "Full fabrication bundle adoption"
+  ],
+  "design_constraint": "0.09 mm pad spacing meets published 1 oz multilayer minimum with no nominal margin; custom rule is restricted to U8 pad pairs. Final CAM approval still required.",
+  "previous_drc": {
+    "errors": 2,
+    "unconnected": 0,
+    "cause": "0.7 mm pitch minus 0.61 mm copper width leaves 0.09 mm vs current 0.10 mm rule"
+  },
+  "drc": {
+    "errors": 0,
+    "unconnected": 0,
+    "local_clearance_mm": 0.09,
+    "scope": "U8 pad-to-pad only",
+    "required_fabrication": "Multilayer FR4, outer copper 1 oz",
+    "source": "https://jlcpcb.com/capabilities/pcb-capabilities"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "RIGID_ASSEMBLY_PATH_SCREEN_HARNESS_AND_HANDLING_UNRESOLVED",
+  "source_sha256": {
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/body-NOT-MANUFACTURING.step": "1af24408f622bff535c29f0ccab5c9ebc0225d255d2c0008f6d9fb986c55db55",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/key-NOT-MANUFACTURING.step": "c80337a5456316e79eac3d8fa12a5554e7384a02b04d26ae2a2b3103806d07b9",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.mechanical-handoff.json": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/check_removable_ledge_path.py": "b570e4efe67fa736dd883b1b0214ee96b864281aea3c043496c7e43d338e4845"
+  },
+  "pack_sweep_body_overlap_mm3": 0.0,
+  "key_sweep_body_overlap_mm3": 0.0,
+  "key_sweep_pack_overlap_mm3": 0.0,
+  "vertical_travel_mm": 14,
+  "assumptions": [
+    "Install pack with key and PCB absent; insert key after pack.",
+    "Axis-aligned maximum pack rectangle and exact nominal key boxes; no tilting or cell bending.",
+    "No wire, housing, hand/tool clearance, manufacturing tolerance or pack swelling included.",
+    "Full assembly and key retention remain unqualified.",
+    "PCB sweep uses rectangular component envelopes and nominal Z;0.2mm XY expansion is a sensitivity allowance, not measured placement or printing tolerance.",
+    "Mated battery housing, wire and thermal pad handling are omitted; populated-board clearance alone does not prove full assembly.",
+    "Y/Z key offsets are assembly alignment sensitivities, not printer dimensional tolerances. A nominally touching support has no positive insertion clearance at final PCB height. Raising both pack and PCB together preserves their relative geometry but still requires a support fixture and harness validation.",
+    "Alternative sequence is a rigid-body feasibility screen only: supporting fixture, connector mating access, final harness routing, thermal interface and outward key retention remain unresolved. Never suspend the battery by its wires."
+  ],
+  "release_allowed": false,
+  "populated_board_vertical_sweeps": [
+    {
+      "additional_XY_margin_each_side_mm": 0,
+      "moving_envelopes": 92,
+      "collisions": []
+    },
+    {
+      "additional_XY_margin_each_side_mm": 0.2,
+      "moving_envelopes": 92,
+      "collisions": []
+    }
+  ],
+  "horizontal_key_insertion_after_board_and_pack": {
+    "travel_mm": 14,
+    "static_envelopes": 94,
+    "collisions": [],
+    "continuous_sweep": true,
+    "nominal_geometry_only": true
+  },
+  "horizontal_key_alignment_sensitivity": [
+    {
+      "key_y_offset_mm": 0,
+      "key_z_offset_mm": 0,
+      "collisions": []
+    },
+    {
+      "key_y_offset_mm": -0.2,
+      "key_z_offset_mm": 0,
+      "collisions": []
+    },
+    {
+      "key_y_offset_mm": 0.2,
+      "key_z_offset_mm": 0,
+      "collisions": []
+    },
+    {
+      "key_y_offset_mm": 0,
+      "key_z_offset_mm": -0.2,
+      "collisions": [
+        {
+          "target": "body",
+          "overlap_mm3": 0.7199999999999982
+        }
+      ]
+    },
+    {
+      "key_y_offset_mm": 0,
+      "key_z_offset_mm": 0.2,
+      "collisions": [
+        {
+          "target": "PCB",
+          "overlap_mm3": 1.1199999999999963
+        }
+      ]
+    }
+  ],
+  "raised_group_key_insertion": {
+    "group_raise_mm": 0.4,
+    "key_offset_mm": [
+      0,
+      0,
+      0
+    ],
+    "collisions": [],
+    "nominal_geometry_only": true,
+    "independent_support_fixture_required": true
+  },
+  "alternative_assembly_sequence": [
+    "Mate pack and PCB outside the case while independently supporting both; final relative positions must be maintained.",
+    "Lower pack and populated PCB together 14mm with key and lid absent. Existing individual sweeps against the body bound this rigid translation.",
+    "Keep pack and PCB together 0.4mm above their final seats on independent supports; insert left key horizontally at its nominal height, then lower the group 0.4mm onto supports.",
+    "Fit lid and qualified retention system only after harness and thermal interface placement are resolved."
+  ]
+}

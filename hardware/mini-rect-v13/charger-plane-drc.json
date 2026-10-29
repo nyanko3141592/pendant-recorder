@@ -1,0 +1,153 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T01:53:23",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "charger-plane-source.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 10 [/VBUS] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 10.075
+                    },
+                    "uuid": "8ad07815-2552-467d-a791-960abfbe85d0"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.6184 mm )",
+                    "pos": {
+                        "x": 5.4646,
+                        "y": 10.4271
+                    },
+                    "uuid": "f2b1291a-691f-4754-a3f0-acc954aba880"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0974 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.4163 mm )",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 17.1002
+                    },
+                    "uuid": "a85b4f1f-28a2-4867-8079-dd3e131ef846"
+                },
+                {
+                    "description": "配線 [/PDM_CLK] ( B.Cu 上、長さ: 0.1639 mm )",
+                    "pos": {
+                        "x": 14.7696,
+                        "y": 17.3111
+                    },
+                    "uuid": "f377362b-dd55-408d-a79a-7283f1fd72de"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0993 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT2] ( F.Cu 上、長さ: 1.1736 mm )",
+                    "pos": {
+                        "x": 11.1512,
+                        "y": 2.2629
+                    },
+                    "uuid": "bc15c173-c530-495a-9379-f4fac7bbdf2f"
+                },
+                {
+                    "description": "配線 [/TS_COLD_REF] ( F.Cu 上、長さ: 0.9136 mm )",
+                    "pos": {
+                        "x": 10.0882,
+                        "y": 2.4757
+                    },
+                    "uuid": "c8667b75-e060-4eb4-925c-b24e0b6c58c1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0993 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.9701,
+                        "y": 17.3621
+                    },
+                    "uuid": "a6928823-8099-457b-9f3a-24e6872b5ad4"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.4761 mm )",
+                    "pos": {
+                        "x": 14.2913,
+                        "y": 16.9878
+                    },
+                    "uuid": "a8564e60-87ce-4184-9ca5-07f64184a2a5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0974 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.2152 mm )",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 15.885
+                    },
+                    "uuid": "e2ca9571-c755-4469-8f5d-968cdf5bd77b"
+                },
+                {
+                    "description": "配線 [/PDM_CLK] ( B.Cu 上、長さ: 0.1639 mm )",
+                    "pos": {
+                        "x": 14.7696,
+                        "y": 17.3111
+                    },
+                    "uuid": "f377362b-dd55-408d-a79a-7283f1fd72de"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

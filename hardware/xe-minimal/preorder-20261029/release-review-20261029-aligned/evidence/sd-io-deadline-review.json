@@ -1,0 +1,18 @@
+{
+  "status": "PASS_SD_READ_WRITE_DEADLINE_REGRESSION",
+  "change": "Shared100ms data-token wait for CSD and sector read;625001-byte frozen-timer guard covers50MHz. Write500ms/3125001 guard retained.",
+  "validation": [
+    "check_sd_transfer.sh: init/read/write CRC and transport-failure regressions, read50ms success, read100ms timeout preserving caller buffer, frozen-clock finite exit; previous write100ms/500ms/frozen checks pass",
+    "check_storage_probe.sh: ownership and IO-failure invalidation pass (protocol/HAL mocked)",
+    "check_recorder_runtime.sh: USB power-only recording, charging requests, disconnect/eject/recovery and teardown regressions pass"
+  ],
+  "limitations": [
+    "No physical media, power, latency or16h validation",
+    "Full manufacturing firmware build/source lock remains stale; no flashable release claim"
+  ],
+  "source_sha256": {
+    "firmware/stm32/core/sd_init.c": "19ca507eb8815d18409a2c3078b2d01c3beabe96e354cdeda82845d412bb0465",
+    "firmware/stm32/tests/test_sd_read.c": "b35d7a0a607dc4fda625c17f89e85af6d8c45f93e454e8710c82d6d654f2670f",
+    "firmware/stm32/tests/test_sd_write.c": "b99ef37c2b68f0be7e01aad1b8aef5b7f955361e1dd373c01c4de0f23387f11a"
+  }
+}

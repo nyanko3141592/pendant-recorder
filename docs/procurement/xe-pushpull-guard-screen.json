@@ -1,0 +1,22 @@
+{
+  "status": "PUSH_PULL_SCREEN_NOT_ADOPTED",
+  "candidates": [
+    {
+      "part": "TLV3691",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv3691.pdf",
+      "sha256": "d5505eccddf325b33f45e1273061a887824e69232a350c71dd0664b2098c0ed1",
+      "assessment": "Single comparator, two required. Full-temperature offset max +/-22 mV and typical-only 17 mV hysteresis require new threshold analysis. Output swing specified at 0.9 and 6.5 V, not a literal 3.3 V row. IQ max200 nA each across stated range.",
+      "adopted": false
+    },
+    {
+      "part": "TLV7012",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv7012.pdf",
+      "sha256": "39858901f0040a27aeecee20f9188d1aa41ac681112adfcd107ecdef6a592202",
+      "assessment": "Dual push-pull candidate. Output level maximum/minimum rows still use VS5V, so replacing TLV7042 alone does not supply the missing actual-supply output-limit evidence. IQ max9 uA/channel at specified VS1.8V output-low condition.",
+      "adopted": false
+    }
+  ],
+  "decision": "Do not replace U12 merely because output type changes. Select using whole thermal-threshold and output-interface margins, with endpoint-based engineering assumptions explicitly distinguished from literal datasheet guarantees.",
+  "next": "Review comparator output curves and supply endpoints with conservative logic noise margins, then calculate thermal trip windows including hysteresis and input offsets. Prototype plan must test startup and marginal input overdrive.",
+  "unverified_model_name": "TLV3692 URL returned404; no dual equivalent assumed."
+}

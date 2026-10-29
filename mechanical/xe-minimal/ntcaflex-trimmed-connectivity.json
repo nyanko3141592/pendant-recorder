@@ -1,0 +1,37 @@
+{
+  "status": "NOMINAL_BEAD_CONNECTIVITY_NOT_STRENGTH",
+  "sources": {
+    "lower": {
+      "source_sha256": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+      "gcode_sha256": "6b679a13543d4b44b6fc3dd5afb543230246a85cca6dcf5c9deb81e9ffedb332",
+      "3mf_sha256": "bd6c35878d7d6b10f449b3fe0ce06c87ececd66f08659c038d008c00245b1685"
+    },
+    "separator": {
+      "source_sha256": "b565558ef93293655bdcaf166f3f6cfd9763b0da73f616d31f04d143e2be58b0",
+      "gcode_sha256": "6a2e7160b1f950e81d7663d679725c389c91d152620937b208b2a5f0c2881182",
+      "3mf_sha256": "c1f3351d1c9cd539e3f7c1fa093e6ec9f68193417d92fac15fa8474096038989"
+    }
+  },
+  "node_count": 24,
+  "edge_count": 24,
+  "connected_components": [
+    {
+      "prism_count": 24,
+      "summed_prism_volume_mm3": 112.4106528686736,
+      "bounds_mm": [
+        0.28538000000000074,
+        -27.214508223348,
+        -2.219999999999997,
+        21.409260314478235,
+        0.34837141227181667,
+        -1.1199999999999966
+      ]
+    }
+  ],
+  "limits": [
+    "Requires positive XY overlap between prisms with touching/overlapping Z; point contacts excluded.",
+    "Commanded rectangular bead model, not actual fusion or adhesion.",
+    "Removable supports excluded.",
+    "Finite geometric precision can create small disconnected slivers; all are reported without silently discarding them."
+  ]
+}

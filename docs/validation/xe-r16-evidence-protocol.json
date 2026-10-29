@@ -1,0 +1,36 @@
+{
+  "status": "UNEXECUTED_PROTOCOL_NOT_RUNTIME_PROOF",
+  "target_seconds": 57600,
+  "units": 5,
+  "identity": [
+    "Unit serial, battery SKU/lot/history, PCB and case revisions, firmware binary SHA256 and configuration, recipient public key fingerprint",
+    "Instrument model/calibration, measurement wiring, shunt burden and sampling interval, ambient and battery temperature, charging termination and rest interval"
+  ],
+  "startup_diagnostic": [
+    "Separate diagnostic run: read RCC SYSCLK source and HCLK after startup, MSISON/MSISRDY cleared, MSIK enabled when audio starts; verify audio and RNG/USB after clock change.",
+    "Store diagnostic evidence separately; diagnostic run cannot substitute for the normal-build battery acceptance run."
+  ],
+  "capture": [
+    "Record the independent clock time when capture actually begins; button time or USB removal alone is not a capture-start measurement.",
+    "Play a reproducible source with unique time-coded markers and scheduled quiet intervals, retaining the exact source file/hash, playback timing log and independent reference capture.",
+    "Source and recorder clocks are independent: estimate sample-clock drift from markers throughout the run. Do not impose exactly 921600000 samples as an unqualified wall-clock equivalence.",
+    "Before the run, fix marker cadence, detection algorithm, timing uncertainty, acceptable sample-rate tolerance and the smallest detectable discontinuity. These values remain unresolved; do not choose them after viewing results.",
+    "Keep the recorder on its specified battery without USB/debugger/back-power for at least 57600 seconds of actual capture. Include startup and saving energy; retain raw current/voltage/temperature logs.",
+    "At the end, preserve recordings through normal stop/finalization and record the time. A partial final chunk must not silently count as stored audio."
+  ],
+  "verification": [
+    "Import and decrypt every recording, retaining encrypted originals and hashes. Record import/decryption errors rather than skipping failed files.",
+    "Check file ordering, sequence identifiers where available, actual decoded sample rate/channel count and sample totals, and inspect every file boundary for missing or repeated source markers.",
+    "Fit external marker time to decoded sample position and examine residuals for discontinuities, drift changes and duplication; retain per-marker results and alignment uncertainty.",
+    "Verify quiet periods remain on the recorded timeline. Absence of markers in true silence prevents acoustic proof of a sub-interval dropout; combine decoded counts/sequence metadata with firmware capture evidence, and report the remaining detection limit.",
+    "Require recoverable audio spanning at least 57600 real seconds, including quiet intervals, with no detected gaps/duplicates/corruption under the predeclared detection limits. Current-trace duration alone cannot pass R16."
+  ],
+  "unresolved_before_execution": [
+    "Time-code stimulus and detector implementation/validation, including clock drift and dropout/duplication injection",
+    "Permitted audio sample-clock tolerance and continuity detection resolution",
+    "Method to establish actual capture start/end without altering acceptance firmware power",
+    "Measurement burden and logging coverage limits"
+  ],
+  "runtime_pass": null,
+  "evidence_files": []
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PLACEMENT_ESCAPE_REQUIRES_REWORK",
+  "source": "vbus-local.kicad_pcb",
+  "near_scan": {
+    "half_width_mm": 2,
+    "grid_mm": 0.05,
+    "via_diameter_mm": 0.45,
+    "drill_mm": 0.2,
+    "candidates_all_three_nets": 0
+  },
+  "wide_scan": "via-escape-wide-screen.json",
+  "nearest_VBUS_candidate_mm": [
+    5.5,
+    10.45
+  ],
+  "surface_route_to_nearest_candidate": "No path in conservative 0.1mm grid; 362 visited",
+  "limitations": [
+    "Pad bounding boxes and conservative clearance may exclude feasible exact geometry.",
+    "Wide candidates have not passed exact DRC or been connected."
+  ],
+  "next": "Rework nearby blocking tracks or U16 placement; do not keep expanding surface-only search.",
+  "canonical_changed": false
+}

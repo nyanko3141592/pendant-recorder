@@ -1,0 +1,9 @@
+from pathlib import Path
+import pcbnew as k,wx,shutil,json,hashlib,subprocess
+app=wx.App(False);O=Path(__file__).resolve().parent;S=O/'glue-case-trial';D=O/'r44-capped-trial';D.mkdir(exist_ok=True)
+for p in S.iterdir():
+ if p.is_dir()and p.name.endswith('.pretty'):shutil.copytree(p,D/p.name,dirs_exist_ok=True)
+ elif p.is_file()and(p.suffix in ['.kicad_sch','.kicad_pro','.kicad_dru','.csv']or p.name=='fp-lib-table'):shutil.copyfile(p,D/p.name)
+f=S/'pendant-xe-minimal.kicad_pcb';b=k.LoadBoard(str(f));uid='e36f44c3-4fef-4881-bc59-302cc8a3055d';v=next(t for t in b.GetTracks()if t.m_Uuid.AsString()==uid);v.SetFillingMode(k.FILLING_MODE_FILLED);v.SetCappingMode(k.CAPPING_MODE_CAPPED);out=D/f.name;k.SaveBoard(str(out),b)
+subprocess.run(['/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli','pcb','drc',str(out),'--schematic-parity','--format','json','--severity-all','-o',str(D/'drc.json')],check=True,stdout=subprocess.DEVNULL)
+d=json.loads((D/'drc.json').read_text());after=k.LoadBoard(str(out));vias=[t for t in after.GetTracks()if isinstance(t,k.PCB_VIA)];r={'status':'FILL_CAP_PROCESS_CANDIDATE_NOT_FAB_APPROVED','source_sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'output_sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'changed_via_uuid':uid,'filled_capped_count':sum(t.GetFillingMode()==k.FILLING_MODE_FILLED and t.GetCappingMode()==k.CAPPING_MODE_CAPPED for t in vias),'checks':{x:len(d[x])for x in ['violations','unconnected_items','schematic_parity']},'rationale':'Reuse existing filled/capped via process; avoid relocating through dense signal/power routes','limits':['Properties express design intent only; vendor acceptance and fabrication drawing still required','Mask registration and solderability not proven by fill/cap flags','Exact copper/route delta must be audited before adoption','Parent fabrication and models are not automatically relabeled']};(D/'review.json').write_text(json.dumps(r,indent=2));print(r)

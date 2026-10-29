@@ -1,0 +1,167 @@
+{
+  "observed_date": "2026-10-26",
+  "status": "REPLACEMENT_REVIEW_REQUIRED",
+  "reference": "TH1",
+  "current_candidate_mpn": "NCP18XH103F03RB",
+  "observations": [
+    {
+      "url": "https://www.digikey.jp/ja/products/detail/murata-electronics/NCP18XH103F03RB/1644681",
+      "crawl_label": "today",
+      "status": "Not for new designs",
+      "current_price": null,
+      "replacement_list": "NCU18XH103F60RB described as manufacturer recommended; listing is not equivalence proof"
+    },
+    {
+      "url": "https://akizukidenshi.com/catalog/g/g105252/",
+      "crawl_label": "2 days ago",
+      "status": "Sales ended, both 20 and 4000 piece packages",
+      "historical_pack_20_price_including_tax_JPY": 200,
+      "excluded_from_cost": true
+    }
+  ],
+  "replacement_candidate": "NCU18XH103F60RB",
+  "adopted": false,
+  "required_checks": [
+    "Manufacturer lifecycle and replacement documentation",
+    "Full resistance-temperature table and tolerance across charge cutoff range, not only nominal 10k/B25-50",
+    "Footprint, height and soldering compatibility",
+    "Recalculate comparator trip temperatures and worst-case tolerances",
+    "Thermal attachment and response validation",
+    "Current supplier price and assembly availability"
+  ],
+  "cost_effect": "No new current price verified; subtotal remains partial, unchanged",
+  "board_change": false,
+  "replacement_datasheet_review": {
+    "url": "https://www.mouser.com/datasheet/3/76/1/NCU18XH103F60RB.pdf",
+    "author": "Murata",
+    "document_date_printed": "05/02/2025",
+    "source_kind": "manufacturer-authored distributor mirror; direct manufacturer API redirects to inaccessible PIM",
+    "page_2": {
+      "resistance_25_ohm": 10000,
+      "resistance_tolerance_percent": 1,
+      "B25_50_K": 3380,
+      "B_tolerance_percent": 1,
+      "maximum_voltage_V": 5,
+      "maximum_operating_current_at_25_uA": 100,
+      "typical_dissipation_mW_per_C": 1,
+      "operating_temperature_C": [
+        -55,
+        125
+      ],
+      "size_mm": [
+        1.6,
+        0.8
+      ],
+      "MSL": 1
+    },
+    "scalar_comparison": "R25/B25-50 and their tolerances match existing calculation inputs; not full R-T equivalence",
+    "bias_screen": {
+      "source": "hardware/mini-rect-v15/input-control-pa2-pb5/design.json",
+      "source_sha256": "95a52149ac9cddfc5ac284a7be7107c2167514c39c6dd5dd053d7f036cf8ce40",
+      "assumed_supply_max_V": 5.25,
+      "R37_min_ohm": 99000,
+      "NTC_25_min_ohm": 9900,
+      "maximum_25C_current_uA": 48.209366391184574,
+      "maximum_25C_voltage_V": 0.48602199816681946,
+      "result": "Within listed 25C current and voltage values under assumed 5.25V supply; supply transient and full-temperature derating not qualified"
+    },
+    "not_verified": [
+      "Page3 graph pixels unavailable after screenshot timeout; no graph values inferred",
+      "Full R-T tolerance table and current/voltage derating versus temperature",
+      "Current manufacturer lifecycle status and definitive replacement notice",
+      "Land pattern/height and thermal coupling"
+    ],
+    "adopted": false
+  },
+  "visual_review_legacy_mirror": {
+    "url": "https://store.comet.bg/download-file.php?id=28326",
+    "printed_date": "12/04/2023",
+    "local_pdf": "hardware/power-study/xe-charger/evidence/NCU18XH103F60RB-2023-mirror.pdf",
+    "sha256": "e7836f1ee7cefe86bc6839f4b55d9fbe1be90797ead4c3b0096b201ebb111375",
+    "pages_inspected": [
+      1,
+      3
+    ],
+    "render_warning": "Poppler flate block warnings; visible dimensions/axes inspected, do not assume all embedded content intact",
+    "dimensions_mm": {
+      "length": [
+        1.45,
+        1.75
+      ],
+      "width": [
+        0.65,
+        0.95
+      ],
+      "height": [
+        0.65,
+        0.95
+      ],
+      "terminal_length_each": [
+        0.2,
+        0.6
+      ]
+    },
+    "page3_findings": [
+      "Max operating current is temperature-dependent, declining below 25C; 100uA is not a full-temperature limit",
+      "Max operating voltage and absolute max voltage are separate curves",
+      "Absolute max voltage drops above 100C toward zero at 125C in this legacy graph",
+      "Temperature error graph has separate F 1% and other tolerance curves; numerical guaranteed table remains unavailable"
+    ],
+    "decision": "Do not adopt from scalar equality; obtain detailed limits or qualify full-temperature excitation and thermal thresholds",
+    "current_manufacturer_revision_verified": false
+  },
+  "reproducible_sensitivity": {
+    "script": "hardware/mini-rect-v15/check_temperature.py",
+    "report": "hardware/mini-rect-v15/input-control-pa2-pb5/ncu-temperature-screen.json",
+    "source_design_sha256": "95a52149ac9cddfc5ac284a7be7107c2167514c39c6dd5dd053d7f036cf8ce40",
+    "status": "MODEL_ONLY_NOT_SUBSTITUTION_APPROVAL",
+    "cold_trip_model_C": [
+      5.585330892074637,
+      10.117603351919229
+    ],
+    "hot_trip_model_C": [
+      28.875332476528172,
+      37.22583847372573
+    ],
+    "verification": "source hash matched; 25C matches direct divider arithmetic; every sweep point below analytic maximum power bound",
+    "remaining": "Guaranteed R-T/derating, actual VBUS bounds, comparator errors at actual common-mode and cell-to-sensor thermal behavior"
+  },
+  "resistance_domain_acceptance": {
+    "report": "hardware/mini-rect-v15/input-control-pa2-pb5/temperature-resistance-window.json",
+    "sha256": "472b1ca2d27555d690f04455f0a93807dfd7733fc017c899897505010623ac2e",
+    "status": "CONDITIONAL_RESISTANCE_WINDOW_NOT_THERMAL_QUALIFICATION",
+    "priority_supplier_evidence": [
+      {
+        "condition": "Cold endpoint",
+        "temperature_C": 0,
+        "required": "Guaranteed minimum sensor resistance greater than cold inhibit boundary",
+        "boundary_ohm": 21633.90264635771,
+        "received": false
+      },
+      {
+        "condition": "Hot endpoint",
+        "temperature_C": 45,
+        "required": "Guaranteed maximum sensor resistance less than hot inhibit boundary",
+        "boundary_ohm": 6491.205998245187,
+        "received": false
+      }
+    ],
+    "assumptions_not_qualified": [
+      "All boundaries inherit the original4.75..5.25V,1% resistor and33mV comparator-error assumptions. This is not a guarantee at actual common-mode, input bias or leakage.",
+      "Endpoint criteria apply to sensor temperature only and require monotonic NTC behavior over the applicable range. They do not establish cell temperature or thermal lag margin."
+    ]
+  },
+  "legacy_scalar_followup": {
+    "source": "hardware/power-study/xe-charger/evidence/NCU18XH103F60RB-2023-mirror.pdf",
+    "printed_date": "12/04/2023",
+    "reference_B25_80_K": 3428,
+    "reference_B25_85_K": 3434,
+    "reference_B25_100_K": 3455,
+    "operating_range_printed_C": [
+      -40,
+      125
+    ],
+    "interpretation": "Legacy reference constants vary with interval; do not extend B25/50 as a guaranteed full-temperature equation. Legacy lower operating limit differs from2025 mirror(-55C); resolve current approved specification. PDF extraction warns of corrupt streams; new R-T table not obtained.",
+    "new_source_attempt": "Search tools returned empty/error; direct newer mirror download failed HTTP2. No new manufacturer data inferred."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "CIRCUIT_INTERFACE_DRAFT_NOT_NETLIST_RELEASE",
+  "battery": "DTP401525-XE",
+  "charger_candidate": "BQ25186DLHR",
+  "pins": {
+    "1": "SYS",
+    "2": "BAT",
+    "3": "PMIC_PG_N (optional open drain)",
+    "4": "CHG_INHIBIT_GATE (external pullup; enable only when qualified)",
+    "5": "GND",
+    "6": "CHARGER_TS (specified independent contact sensor network)",
+    "7": "PMIC_SDA (10kohm pullup to logic rail)",
+    "8": "PMIC_SCL (10kohm pullup to logic rail)",
+    "9": "PMIC_INT_N (open drain; pullup required)",
+    "10": "VBUS_LIMITED",
+    "EP": "GND; verify footprint pad numbering"
+  },
+  "mcu_bus": "PB8/PB9 presently unused in existing design. Verify alternate-function mapping before assigning SCL/SDA.",
+  "keep": [
+    "USB-C CC resistors and ESD",
+    "Pre-enumeration external current limiter",
+    "Hardware charge inhibit default",
+    "Battery connector polarity and external temperature contact",
+    "System regulator and storage power switch until energy comparison"
+  ],
+  "do_not_copy": [
+    "BQ25185 pin7 voltage-select resistor onto SDA",
+    "BQ25185 pin8 current-set resistor onto SCL",
+    "Old charger fixed resistor charging configuration"
+  ],
+  "remaining": [
+    "I2C pin assignment verified against MCU datasheet",
+    "Charge voltage reset guard",
+    "Low-current termination tolerance",
+    "Actual PCB area including pullups and guards"
+  ]
+}

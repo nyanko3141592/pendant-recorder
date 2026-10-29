@@ -1,0 +1,597 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:38:48",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "r2-search-3.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In3.Cu 上、長さ: 0.0586 mm )",
+                    "pos": {
+                        "x": 18.311,
+                        "y": 18.6245
+                    },
+                    "uuid": "3c87f46b-296b-434c-beef-41af64457915"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 17.26
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 0.1042 mm )",
+                    "pos": {
+                        "x": 16.0296,
+                        "y": 9.73
+                    },
+                    "uuid": "14bb996f-9083-4365-8f9c-cc8a8882067f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 0.1260 mm )",
+                    "pos": {
+                        "x": 13.658,
+                        "y": 3.527
+                    },
+                    "uuid": "63f51b19-eb5b-4c00-b1ca-a50e21e02d9c"
+                },
+                {
+                    "description": "パッド 15 [/SD_CLK_MCU] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 6.4625
+                    },
+                    "uuid": "0ad46389-a20e-4383-b1c5-7bdb0691d4c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5585 mm )",
+                    "pos": {
+                        "x": 3.8551,
+                        "y": 11.8849
+                    },
+                    "uuid": "0b90d9a0-3a64-4d31-9ad9-c236713b6868"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /NRST と /GND)",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.35,
+                        "y": 16.1
+                    },
+                    "uuid": "8c2fb204-4f42-4b16-87c8-89bdfc7da7c6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0700 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 15.85
+                    },
+                    "uuid": "97cb4abc-2903-4b68-83ca-4990da416bd4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /NRST)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 16.2
+                    },
+                    "uuid": "040b5260-e4bd-45b0-8606-d67c6439405f"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /NRST と /GND)",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 15.95
+                    },
+                    "uuid": "fa57829e-3b47-436d-b02a-ab04a5875619"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /NRST と /GND)",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.45,
+                        "y": 16.0
+                    },
+                    "uuid": "f56681a2-53fe-4317-b246-9c4e6187431f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /NRST と /GND)",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 16.2
+                    },
+                    "uuid": "e7474206-eff1-4edb-9b95-5d8986484913"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0200 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.55,
+                        "y": 15.9
+                    },
+                    "uuid": "0cf670b0-8aca-4984-a8db-fd7cd246659e"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /NRST)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 16.15
+                    },
+                    "uuid": "0e9143aa-1f73-4b85-9684-a297dadaa5eb"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /NRST)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 16.25,
+                        "y": 16.15
+                    },
+                    "uuid": "08765e3f-3a34-4c87-849c-d041de66201d"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /NRST)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.4,
+                        "y": 16.05
+                    },
+                    "uuid": "0808fd03-e2ae-4f68-9bbf-098e8d0b9cdf"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 16.2
+                    },
+                    "uuid": "040b5260-e4bd-45b0-8606-d67c6439405f"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.35,
+                        "y": 16.1
+                    },
+                    "uuid": "8c2fb204-4f42-4b16-87c8-89bdfc7da7c6"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 16.2
+                    },
+                    "uuid": "e7474206-eff1-4edb-9b95-5d8986484913"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.45,
+                        "y": 16.0
+                    },
+                    "uuid": "f56681a2-53fe-4317-b246-9c4e6187431f"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 15.95
+                    },
+                    "uuid": "fa57829e-3b47-436d-b02a-ab04a5875619"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 16.2
+                    },
+                    "uuid": "040b5260-e4bd-45b0-8606-d67c6439405f"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.4,
+                        "y": 16.05
+                    },
+                    "uuid": "0808fd03-e2ae-4f68-9bbf-098e8d0b9cdf"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 16.25,
+                        "y": 16.15
+                    },
+                    "uuid": "08765e3f-3a34-4c87-849c-d041de66201d"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 16.15
+                    },
+                    "uuid": "0e9143aa-1f73-4b85-9684-a297dadaa5eb"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 16.24
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.3677 mm )",
+                    "pos": {
+                        "x": 13.48,
+                        "y": 6.26
+                    },
+                    "uuid": "697205a3-a536-4c46-b1c5-0fc949b5827e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SD_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.3294,
+                        "y": 3.6066
+                    },
+                    "uuid": "b78876ae-7f13-4aef-9179-90fd568bdeb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

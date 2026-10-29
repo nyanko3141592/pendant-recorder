@@ -1,0 +1,64 @@
+{
+  "status": "DATASHEET_MODEL_DISCREPANCY_UNRESOLVED",
+  "datasheet_sha256": "fcbb5e48ca63474ac79949b03d8c6f5298f1b57c4bdcf4038cfa0790393a5d4c",
+  "model_sha256": "d5e5c08a12972dd859328ad3827204877c32e1ef302d0606142bc965f6c703fe",
+  "visual_observation": "Page2 H1 dimension appears to span sensing-head top to lower sensing-side datum, not clearly just epoxy height. Drawing does not show strain-relief hole dimensions.",
+  "model_sections": [
+    {
+      "x_mm": 0,
+      "z_mm": 0,
+      "material_y_intervals_mm": [
+        [
+          -0.09999999999999998,
+          1.4999999999999991
+        ]
+      ]
+    },
+    {
+      "x_mm": -8,
+      "z_mm": 0,
+      "material_y_intervals_mm": []
+    },
+    {
+      "x_mm": -8,
+      "z_mm": 0.3,
+      "material_y_intervals_mm": []
+    },
+    {
+      "x_mm": -8,
+      "z_mm": 0.45,
+      "material_y_intervals_mm": [
+        [
+          0.0,
+          0.10000000000000009
+        ]
+      ]
+    },
+    {
+      "x_mm": -8,
+      "z_mm": 0.6,
+      "material_y_intervals_mm": [
+        [
+          0.0,
+          0.17500000000000004
+        ]
+      ]
+    },
+    {
+      "x_mm": -7.3,
+      "z_mm": 0,
+      "material_y_intervals_mm": [
+        [
+          0.0,
+          0.17500000000000004
+        ]
+      ]
+    }
+  ],
+  "decision": "Do not add or subtract 0.3mm from H1 without evidence. Current related-part model cannot establish GL maximum thickness or hole tolerance. Use nominal model only for exploratory packing with an explicit unqualified envelope.",
+  "limits": [
+    "No exact GL model in official archive.",
+    "Section samples classify nominal void only; no manufacturer hole tolerance.",
+    "Drawing/STEP mismatch unresolved; do not use as manufacturing fit guarantee."
+  ]
+}

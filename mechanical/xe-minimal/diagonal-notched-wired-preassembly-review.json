@@ -1,0 +1,190 @@
+{
+  "status": "PRECONNECTED_WIRE_INSERTION_SCREEN_NOT_ASSEMBLY_QUALIFICATION",
+  "separator_sha256": "ba290fc832d18d4615adcd9545e65803344a2929de2d7ed857db0cbcc006f328",
+  "route_sha256": "7789ce528ea56a9ade9fe5993d8a7ad644ec34f185d12c7f684a68ad1cc147a4",
+  "results": [
+    {
+      "wire": 0,
+      "samples": [
+        {
+          "translation_z_mm": -8,
+          "overlap_mm3": 0.0,
+          "gap_mm": 5.984045454372819
+        },
+        {
+          "translation_z_mm": -4,
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.9921847303902327
+        },
+        {
+          "translation_z_mm": -2,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.22000000000000064
+        },
+        {
+          "translation_z_mm": -1,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.2801177068400629
+        },
+        {
+          "translation_z_mm": -0.5,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.3975496457504789
+        },
+        {
+          "translation_z_mm": -0.25,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.5179124096187991
+        },
+        {
+          "translation_z_mm": 0,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.6966519893823878
+        }
+      ],
+      "sample_collision": false,
+      "certified_intervals": [
+        {
+          "translation_z_range_mm": [
+            -0.5,
+            0.0
+          ],
+          "lower_bound_mm": 0.26791240961879914
+        },
+        {
+          "translation_z_range_mm": [
+            -1.0,
+            -0.5
+          ],
+          "lower_bound_mm": 0.1207481440946594
+        },
+        {
+          "translation_z_range_mm": [
+            -1.25,
+            -1.0
+          ],
+          "lower_bound_mm": 0.12473520272672464
+        },
+        {
+          "translation_z_range_mm": [
+            -1.5,
+            -1.25
+          ],
+          "lower_bound_mm": 0.09569334866346962
+        },
+        {
+          "translation_z_range_mm": [
+            -1.75,
+            -1.5
+          ],
+          "lower_bound_mm": 0.09499999999999531
+        },
+        {
+          "translation_z_range_mm": [
+            -2.0,
+            -1.75
+          ],
+          "lower_bound_mm": 0.09500000000000064
+        },
+        {
+          "translation_z_range_mm": [
+            -4.0,
+            -2.0
+          ],
+          "lower_bound_mm": 0.004390362359178557
+        },
+        {
+          "translation_z_range_mm": [
+            -8.0,
+            -4.0
+          ],
+          "lower_bound_mm": 1.9860757644580729
+        }
+      ],
+      "unresolved_intervals": [],
+      "distance_evaluations": 15,
+      "fully_bounded_clear": true
+    },
+    {
+      "wire": 1,
+      "samples": [
+        {
+          "translation_z_mm": -8,
+          "overlap_mm3": 0.0,
+          "gap_mm": 6.0706198200842705
+        },
+        {
+          "translation_z_mm": -4,
+          "overlap_mm3": 0.0,
+          "gap_mm": 2.2388445680752374
+        },
+        {
+          "translation_z_mm": -2,
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.045
+        },
+        {
+          "translation_z_mm": -1,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.8280388631425227
+        },
+        {
+          "translation_z_mm": -0.5,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.842178723423511
+        },
+        {
+          "translation_z_mm": -0.25,
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.913581024746622
+        },
+        {
+          "translation_z_mm": 0,
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.0342709558584797
+        }
+      ],
+      "sample_collision": false,
+      "certified_intervals": [
+        {
+          "translation_z_range_mm": [
+            -1.0,
+            0.0
+          ],
+          "lower_bound_mm": 0.34217872342351097
+        },
+        {
+          "translation_z_range_mm": [
+            -2.0,
+            -1.0
+          ],
+          "lower_bound_mm": 0.46140736581614394
+        },
+        {
+          "translation_z_range_mm": [
+            -4.0,
+            -2.0
+          ],
+          "lower_bound_mm": 0.4326287027698412
+        },
+        {
+          "translation_z_range_mm": [
+            -8.0,
+            -4.0
+          ],
+          "lower_bound_mm": 2.1149027935055766
+        }
+      ],
+      "unresolved_intervals": [],
+      "distance_evaluations": 7,
+      "fully_bounded_clear": true
+    }
+  ],
+  "limits": [
+    "Board and case absent: PCB ends are loose and not soldered during insertion.",
+    "Only nominal preformed wire geometry; bare sensor and provisional joints have a separate exact box-sweep check.",
+    "No allowance for real joint insulation, strain relief, shape retention, fixture or handling.",
+    "Positive-distance bound assumes CAD numerical errors below 0.00001 mm; not a certified kernel guarantee.",
+    "PCB attachment and soldering access after insertion remain unresolved."
+  ]
+}

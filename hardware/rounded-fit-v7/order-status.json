@@ -1,0 +1,28 @@
+{
+  "order_ready": false,
+  "status": "SIZE_RECONSIDERATION_AFTER_PRINT",
+  "pcb_sha256": "f0e69920e7e94718ed5f45edef81417154a1e0baf71de8eb6dbf922196c651a9",
+  "drc_violations": 0,
+  "unconnected_items": 1,
+  "schematic_parity": 0,
+  "erc_violations": 0,
+  "blockers": [
+    "One ground-zone connection remains unresolved; current candidate must not be manufactured",
+    "Finish routed-board DRC/ERC/parity and review USB return paths, power loops, clock routes and copper zones",
+    "JLC BOM includes all80 populated references; resolve stock shortages, inspect actual package/rotation and complete final CPL preview",
+    "Confirm exact six-layer0.8mm stackup,0.10mm trace/clearance,0.35/0.15mm vias and custom USB ground-land DFM",
+    "Confirm finished100mAh protected pack max dimensions,3pin connector polarity/lead length,NTC R25/B/tolerances,charge voltage/current/termination and temperature limits",
+    "Calculate NTC thresholds using confirmed pack tolerances; current resistors provisional",
+    "Check effective MLCC capacitance,SD write-current peaks against200mA LDO and100mA BAT54WS diode ratings; USB load current budget",
+    "Confirm landed quote with allparts,assembly,shipping,taxes and battery/harness; no payment authorized"
+  ],
+  "post_prototype_tests": [
+    "Continuous16h recording at required audio quality; average current,usable capacity and dropout cutoff",
+    "Charging voltage/current/termination,warm/cold cutoff,NTC open/short,MCU reset and USB plug/unplug transients",
+    "USB enumeration/transfer stability and PDM/SPI waveform integrity across battery range",
+    "SD write-current transients and brownout/power-loss recovery without corrupting completed recordings",
+    "Acoustic port/seal,handling noise,component heights,pack tolerance,case closure and thermal behavior"
+  ],
+  "latest_user_direction": "Printed26x31x14 case feels too large; reassess architecture against Omi before further quote/release",
+  "manufacturing_data_released": false
+}

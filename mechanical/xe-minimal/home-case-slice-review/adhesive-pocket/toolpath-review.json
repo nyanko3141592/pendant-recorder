@@ -1,0 +1,28 @@
+{
+  "status": "RECESS_NOT_PRESERVED_IN_CURRENT_SLICE",
+  "layers": [
+    {
+      "z_mm": 7.72,
+      "extruding_segments": 49,
+      "xy_extrusion_length_mm": 227.57926617147513
+    },
+    {
+      "z_mm": 7.88,
+      "extruding_segments": 22,
+      "xy_extrusion_length_mm": 212.86307575267242
+    },
+    {
+      "z_mm": 8.04,
+      "extruding_segments": 23,
+      "xy_extrusion_length_mm": 212.87530981085527
+    }
+  ],
+  "gcode_sha256": "a518dfc0242a2a3ac5115462fa60a56225ef0607c39a8988255f1364bc4ec279",
+  "nominal_recess_top_z_mm": 7.96,
+  "nominal_stop_top_z_mm": 8.12,
+  "limits": [
+    "Layer positions and command paths only, not printed dimensions or adhesive bond qualification"
+  ],
+  "visual_finding": "Z8.04 last layer retains full perimeter on all four sides; intended corner-only height stops absent",
+  "decision": "Do not adopt 0.16mm pocket; revise depth or slicing layer alignment and reslice"
+}

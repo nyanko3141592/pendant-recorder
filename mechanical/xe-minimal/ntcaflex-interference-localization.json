@@ -1,0 +1,93 @@
+{
+  "status": "NOMINAL_INTERFERENCE_LOCALIZATION",
+  "sensor_sha256": "d5e5c08a12972dd859328ad3827204877c32e1ef302d0606142bc965f6c703fe",
+  "head_xy_mm": [
+    5,
+    -15
+  ],
+  "regions": [
+    {
+      "part": "board",
+      "source_sha256": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+      "solid_index": 104,
+      "solid_bounds_mm": [
+        0.525,
+        -17.325,
+        -0.9,
+        8.625,
+        -11.025,
+        3.857637417314e-16
+      ],
+      "overlap_bounds_mm": [
+        4.262845759799264,
+        -15.73715424020073,
+        -0.9000000999999995,
+        5.737154240200735,
+        -14.26284575979926,
+        -0.8199999000000004
+      ],
+      "overlap_mm3": 0.06828514554081025,
+      "nearby_refs_not_identity": [
+        "U11",
+        "C26",
+        "U14"
+      ]
+    },
+    {
+      "part": "lower",
+      "source_sha256": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97",
+      "solid_index": 0,
+      "solid_bounds_mm": [
+        -1.1000000000000014,
+        -28.3,
+        -7.720000000000001,
+        25.1,
+        1.3,
+        0.40000000000000036
+      ],
+      "overlap_bounds_mm": [
+        24.3,
+        -17.000000000000007,
+        -2.52,
+        25.000000000000004,
+        -13.0,
+        -2.1949999999999994
+      ],
+      "overlap_mm3": 0.8630000000000002,
+      "nearby_refs_not_identity": []
+    },
+    {
+      "part": "lower",
+      "source_sha256": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97",
+      "solid_index": 0,
+      "solid_bounds_mm": [
+        -1.1000000000000014,
+        -28.3,
+        -7.720000000000001,
+        25.1,
+        1.3,
+        0.40000000000000036
+      ],
+      "overlap_bounds_mm": [
+        16.6,
+        -16.0,
+        -2.3200000000000003,
+        17.6,
+        -14.0,
+        -2.22
+      ],
+      "overlap_mm3": 0.19999999999999923,
+      "nearby_refs_not_identity": []
+    }
+  ],
+  "limits": [
+    "Nearest footprint is not proof of solid identity.",
+    "No source geometry changed; candidate remains rejected.",
+    "Related HH model and generic component envelopes are not maximum GL assembly."
+  ],
+  "board_identity_check": {
+    "ref": "U11",
+    "method": "Rebuild sourced package body using inventory pose and compare solid104 symmetric difference",
+    "symmetric_difference_mm3": 0.0
+  }
+}

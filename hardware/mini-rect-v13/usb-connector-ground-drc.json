@@ -1,0 +1,129 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T03:44:55",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-connector-ground-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( In2.Cu 上、長さ: 1.6331 mm )",
+                    "pos": {
+                        "x": 10.0108,
+                        "y": 16.9465
+                    },
+                    "uuid": "5377b9b9-3700-4b88-b47a-b411d33fe7f6"
+                },
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 0.7675 mm )",
+                    "pos": {
+                        "x": 9.5573,
+                        "y": 15.7
+                    },
+                    "uuid": "65ff24e8-37a7-4357-a373-0558c2d01f9c"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 1.2313 mm )",
+                    "pos": {
+                        "x": 10.1,
+                        "y": 16.2427
+                    },
+                    "uuid": "d9a56f13-276f-419e-ad90-fc9558dc9003"
+                },
+                {
+                    "description": "配線 [/VDDA] ( In2.Cu 上、長さ: 1.4892 mm )",
+                    "pos": {
+                        "x": 11.0638,
+                        "y": 17.9995
+                    },
+                    "uuid": "db2cdcc9-daf4-4a78-a7d2-851d286a7c3e"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SYS と /USB_DM)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 0.7675 mm )",
+                    "pos": {
+                        "x": 9.5573,
+                        "y": 15.7
+                    },
+                    "uuid": "65ff24e8-37a7-4357-a373-0558c2d01f9c"
+                },
+                {
+                    "description": "ビア [/USB_DM] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4011,
+                        "y": 16.2149
+                    },
+                    "uuid": "f8451785-5e25-44fd-a8aa-a79ebaa00b33"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /SYS)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4011,
+                        "y": 16.7731
+                    },
+                    "uuid": "10ae6e00-f531-4ec5-896e-5403278f356a"
+                },
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 1.2313 mm )",
+                    "pos": {
+                        "x": 10.1,
+                        "y": 16.2427
+                    },
+                    "uuid": "d9a56f13-276f-419e-ad90-fc9558dc9003"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        }
+    ]
+}

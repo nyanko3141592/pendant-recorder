@@ -1,0 +1,79 @@
+{
+  "status": "INDEPENDENT_PARSE_AND_DIMENSION_SCREEN_PASS_NOT_DFM_APPROVAL",
+  "parser_version": "1.6.3",
+  "outline_loops": 1,
+  "outline_segments": 365,
+  "centerline_extent_mm": [
+    21,
+    23
+  ],
+  "copper_layers": [
+    [
+      "top",
+      "copper"
+    ],
+    [
+      "bottom",
+      "copper"
+    ],
+    [
+      "inner_1",
+      "copper"
+    ],
+    [
+      "inner_2",
+      "copper"
+    ],
+    [
+      "inner_4",
+      "copper"
+    ],
+    [
+      "inner_3",
+      "copper"
+    ]
+  ],
+  "drills": [
+    {
+      "file": "usb-ground-plane-candidate-PTH.drl",
+      "objects": 114,
+      "file_function_header": "#@! TF.FileFunction,Plated,1,6,PTH",
+      "parser_plating": null
+    },
+    {
+      "file": "usb-ground-plane-candidate-NPTH.drl",
+      "objects": 6,
+      "file_function_header": "#@! TF.FileFunction,NonPlated,1,6,NPTH",
+      "parser_plating": null
+    }
+  ],
+  "warnings": [
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v13/fabrication-review/gerber/usb-ground-plane-candidate-NPTH.drl:16 \"G90\": G90 header statement found after end of header",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v13/fabrication-review/gerber/usb-ground-plane-candidate-PTH.drl:14 \"G90\": G90 header statement found after end of header",
+    "Aperture definition using macro RoundRect has more parameters than the macro uses."
+  ],
+  "inputs": {
+    "usb-ground-plane-candidate-F_Mask.gts": "59c1c581999aa0f3f38bad7545b84e47ee379305630bc3a97b0d2e9d3797b568",
+    "usb-ground-plane-candidate-job.gbrjob": "de90055d126d5e1a91a55357f078e9082d62a811e2bd452dee0bc0ecca83a4d3",
+    "usb-ground-plane-candidate-In1_Cu.g1": "e702aa5359c956e85a27a326c29e5a6b91f2a0b25f394e6f6034915517869627",
+    "usb-ground-plane-candidate-PTH.drl": "766d98a738c33c11791fbc861c5b70bed76b51632d2fbd1bee861d5c02dd362c",
+    "usb-ground-plane-candidate-F_Paste.gtp": "7e340ad24bf77e5c24d652fcd9cebee599dcf38e2895fe73a67cee3e762187b8",
+    "usb-ground-plane-candidate-B_Mask.gbs": "4730359f13364cf56255901c8aa8413bdb1a3fe7d30a0bba35daebf4d19c11fa",
+    "usb-ground-plane-candidate-B_Cu.gbl": "25b96c9ef1b9af545e018008d85484c8e0f75e18852eb466e19ce704f7bde4fe",
+    "usb-ground-plane-candidate-In2_Cu.g2": "d3966101b758f83f7c298ec28241049ec335c3f8551c9507d9e21df77c3bd479",
+    "usb-ground-plane-candidate-Edge_Cuts.gm1": "340b5ac27257d0097e6498830ecef50657823e2cba775a4e839e44678f21e3b0",
+    "usb-ground-plane-candidate-NPTH.drl": "9876f70706f9c254ea42991edd186124794c7bfa71d663aab3a396653e35d271",
+    "usb-ground-plane-candidate-In4_Cu.g4": "824ea8aad506cb4b9c3c84debd6d711675b5ffed7b2c714c604cd9737d73ecb0",
+    "usb-ground-plane-candidate-F_Cu.gtl": "60a42b0c4678df62b4b8d6fc06689c6c24bdfe338f655982139bafb6a8ed65bf",
+    "usb-ground-plane-candidate-B_Paste.gbp": "8589c1540eb9bc0d5dbe90bc1fd206e8076f67d5f60902ea41dd3f3800be592f",
+    "usb-ground-plane-candidate-B_Silkscreen.gbo": "9c3857b6775ae2772f19c3583a724a7a0d3e11c31bf1edd823c7d03c4c4c7c78",
+    "usb-ground-plane-candidate-In3_Cu.g3": "ca63002bf3fe669bc78a6cf31e9fee0e50b04a3ae62da86acb2ab27eecf1dd13",
+    "usb-ground-plane-candidate-F_Silkscreen.gto": "e6d76e60bbfec7219ee49ea058a1d3abfbb5691bfe5b17e12d418f8195190ca1"
+  },
+  "limitations": [
+    "Drill plating parser returns unknown; explicit KiCad file-function header recorded separately",
+    "Rounded aperture macro warns about unused parameters; rendered output still requires fabricator verification",
+    "No pad-to-drill registration metric, connectivity, impedance or paste inspection claim",
+    "Top preview visually inspected for gross outline, USB slots and microphone opening only; bottom and detailed layers pending"
+  ]
+}

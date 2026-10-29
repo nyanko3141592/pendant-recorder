@@ -1,0 +1,43 @@
+{
+  "status": "PASS_SYNTHETIC_FAT32_NOT_REAL_AUDIO_OR_CARD",
+  "exit_code": 0,
+  "duration_equivalent_hours": 36,
+  "chunk_seconds": 5,
+  "file_count": 25920,
+  "bytes_per_file": 65536,
+  "payload_bytes": 1698693120,
+  "volume_bytes": 2000000000,
+  "free_bytes": 299384832,
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "source_sha256": {
+    "tests/check_storage_36h.sh": "8eceba970a37383a39b8ce3f709d42f6d2ea6aa2e5e48469a24fb1a6a7664751",
+    "tests/test_storage_36h.c": "8d7654d47eb9df9349496474ede9c3f4a443777521f90b961e9d4f823f59a1bd",
+    "core/storage_owner.c": "4849989d1d349e741d2657d3e647c8d619a5a778d0649f2d68421d38fe2bc750",
+    "crypto/fatfs_recording.c": "8a3ca767b99bbbeac90913ea222aa84610db0cbd5b939bca1c4a65a51c956eaf",
+    "crypto/fatfs_recording.h": "bedcfd09b7a08d0f0010d4df9c6e640434930012ff0a1a8b93dd6cc2e0831c10",
+    "board/storage_diskio.c": "01f5eb995cba9736820912f0ca37966ac1aaf4272c0bb7699c6fbe0e2af29158",
+    "board/storage_handoff.c": "febbd8f10f8999efabe2d196fc15d9c8d5870b99c357778300f430b65a9a30af",
+    "board/storage_mount.c": "7584c5ba65269efa3d93f2eb150e03e50ad32b88bab45383b5e8d25fdfd9928c",
+    "vendor/fatfs/ff.c": "3c30280ffe2d0fb19a5241d9ed9f20a2c3911c2861652ebf6ad57f74fb369250",
+    "vendor/fatfs/ffunicode.c": "6cd4dc4a664386ebd108e56d367582c35f005fc20381486366b5d77ac58119bd",
+    "vendor/fatfs/ffconf.h": "4d749bb39f33216d9e4c0945e58ad36ced561db3dbe335a87ebcfeb224f995f3"
+  },
+  "log_sha256": "6861c178238a13968d02145e0c6195c01ab479ed74408a8fdff68b6b77abcbec",
+  "last_log_line": "PASS files=25920 bytes_per_file=65536 free_bytes=299384832 volume_bytes=2000000000",
+  "proven": [
+    "Real FatFs writes and commits all25920 maximum-sized files into synthetic2GB volume",
+    "Unmount/remount and next_id recovery",
+    "Every file read and byte-compared",
+    "No sanitizer failure reported"
+  ],
+  "not_proven": [
+    "Real microphone continuity and sample rate",
+    "Actual encryption execution or plaintext leakage",
+    "Real card latency, energy, endurance or power-loss behavior",
+    "16h battery runtime",
+    "25920-file host decryption/import and3OS compatibility"
+  ]
+}

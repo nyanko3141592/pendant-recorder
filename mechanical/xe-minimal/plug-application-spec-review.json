@@ -1,0 +1,45 @@
+{
+  "status": "APPLICABILITY_CONFLICT_NOT_RELEASED_ASSEMBLY_LIMITS",
+  "checked": "2026-10-27",
+  "target": [
+    "781720003",
+    "781710003"
+  ],
+  "sources": [
+    {
+      "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationspecificationspdf/781/78172/AS-78172-001-001.pdf",
+      "document": "AS-78172-001 rev C",
+      "pages": 45,
+      "revision_date": "2015-09-16",
+      "applicable_housing_on_page1": "78172-500*",
+      "applicable_header_on_page1": "78171-5*0*",
+      "decision": "Do not transfer variant-specific dimensions or handling limits to 0003 parts merely from family name."
+    },
+    {
+      "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationspecificationspdf/781/78172/AS-78172-006-001.pdf",
+      "document_printed": "AS-78172-007",
+      "pages": 12,
+      "revision": "1",
+      "date": "2007-12-14 approval",
+      "release_status": "Tentative release stated on page1",
+      "references": [
+        "SD-78171-008",
+        "SD-78172-007"
+      ],
+      "decision": "Legacy source with filename/document mismatch and tentative status; numeric mating/unmating limits not qualified for current design."
+    }
+  ],
+  "design_consequences": [
+    "Keep connector engagement accessible for inspection before case closure.",
+    "Do not use case closure force to seat connector.",
+    "Provide lead slack and prevent housing walls from applying wire load.",
+    "No inferred universal bend radius or qualified numerical insertion-angle limit.",
+    "Buyer still receives complete original harness; crimping instructions are not buyer operations."
+  ],
+  "unresolved": [
+    "Current applicable handling document for exact 0003 pair",
+    "Mated plug envelope and lead-exit datum",
+    "Exact supplied battery wire specification and free length",
+    "Demonstrate pre-mating and connected-unit insertion without wire strain"
+  ]
+}

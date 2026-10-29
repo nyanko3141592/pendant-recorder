@@ -1,0 +1,43 @@
+{
+  "status": "PACKAGE_ONLY_ENVELOPES_NOT_COMPLETE_ASSEMBLY",
+  "source_pdf": "hardware/mini-rect-v12/reference/csnp32gcr01-bow.pdf",
+  "source_sha256": "966792b6c65fd066decbb1d7e058a68d2896b4d50a6bcf6bf45722a709f25df0",
+  "axis_evidence": "PDF p5 top-view D left-right pad columns; E across row stack; p6 dimension table. Canonical bottom footprint pad1/8 span x by7mm.",
+  "local_frame": "XY package center; body z=0..H; no solder stand-off.",
+  "board_reference": {
+    "pcb_sha256": "9df2e16a2db40a75864dce66e8138a7a0f222ad93ef6ad42cf74692348a7490e",
+    "position_mm": [
+      4.575,
+      14.175
+    ],
+    "rotation_deg": 0,
+    "side": "B"
+  },
+  "models": [
+    {
+      "file": "u11-package-body-nom.step",
+      "sha256": "52a0f263b1c009c043eb5e51c1ab0f97596c9e54a4bce5df4c55c5b15ad4003b",
+      "dimensions_mm": [
+        8.0,
+        6.2,
+        0.8
+      ],
+      "solid_valid": true
+    },
+    {
+      "file": "u11-package-body-max.step",
+      "sha256": "4668cd93ce47592ecdd1d157e0de9a62d7ff11b1cbe4512a4573a83f06b518e1",
+      "dimensions_mm": [
+        8.1,
+        6.3,
+        0.9
+      ],
+      "solid_valid": true
+    }
+  ],
+  "limitations": [
+    "Envelope cuboids represent package body only; no terminals, texture, pin1 marking or auxiliary land geometry.",
+    "Solder stand-off, tolerances beyond package maxima, insulation and assembly margins must be added separately.",
+    "Not positioned in complete recorder assembly; no case or battery fit claim."
+  ]
+}

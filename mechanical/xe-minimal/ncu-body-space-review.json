@@ -1,0 +1,63 @@
+{
+  "status": "NCU_DRAWING_ENVELOPE_SCREEN_NOT_THERMAL_OR_FIT_APPROVAL",
+  "pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "shape_dimensions_mm": [
+    1.75,
+    0.95,
+    0.95
+  ],
+  "dimension_basis": "2025-05-02 manufacturer summary two-view drawing:1.6+/-0.15 and0.8+/-0.15.0.95 height is the interpreted upper drawing envelope, not production approval",
+  "position_mm": [
+    15.305,
+    -1.055
+  ],
+  "rows": [
+    {
+      "solder_standoff_hypothesis_mm": 0,
+      "body_bottom_z_mm": -0.95,
+      "gap_to_battery_max_envelope_mm": 1.47,
+      "intersection_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    },
+    {
+      "solder_standoff_hypothesis_mm": 0.1,
+      "body_bottom_z_mm": -1.05,
+      "gap_to_battery_max_envelope_mm": 1.3699999999999999,
+      "intersection_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    },
+    {
+      "solder_standoff_hypothesis_mm": 0.2,
+      "body_bottom_z_mm": -1.15,
+      "gap_to_battery_max_envelope_mm": 1.27,
+      "intersection_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    }
+  ],
+  "sources_sha256": {
+    "lower": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b",
+    "upper": "07a796a9656f0cf5c420769c411543abae728b8d9bec39311227b6c28d915a3b",
+    "separator": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "output_sha256": "c7d55f465dda763e5f475a2cb4e91e9340de60fe912d080535e0d48b109d52d7",
+  "limits": [
+    "Existing integrated board still has generic TH1 body; this separate study does not overwrite it",
+    "Standoff values are sensitivity cases, not measured or supplier limits",
+    "Battery model is maximum envelope; actual minimum thickness and seating uncertainty can enlarge contact gap",
+    "PCB seating, print tolerance and swelling not included",
+    "No contact pad thickness selected; compression cannot be fixed from this nominal gap alone"
+  ]
+}

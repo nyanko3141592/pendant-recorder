@@ -1,0 +1,59 @@
+{
+  "status": "DIAGNOSTIC_ONLY_DISCONNECTED",
+  "connected_source_sha256": "1aa9d85b5c21bdb4f151013b8e424c251e69d3fb33db2212c7e98cbe601664da",
+  "empty_l3_sha256": "4bbee25df4a1d939d50237a05905b50b7e4e1137633af32c432c81e313e452e6",
+  "comparison_mm": {
+    "/USB_DP": {
+      "connected_missing": 2.7192,
+      "empty_l3_missing": 1.6783,
+      "recovered": 1.0409
+    },
+    "/USB_DM": {
+      "connected_missing": 2.9252,
+      "empty_l3_missing": 1.6823,
+      "recovered": 1.2429
+    },
+    "/PDM_CLK": {
+      "connected_missing": 4.4277,
+      "empty_l3_missing": 2.2338,
+      "recovered": 2.1939
+    },
+    "/PDM_CLK_MCU": {
+      "connected_missing": 0.6226,
+      "empty_l3_missing": 0.0,
+      "recovered": 0.6226
+    },
+    "/PDM_DATA": {
+      "connected_missing": 8.6526,
+      "empty_l3_missing": 2.3264,
+      "recovered": 6.3262
+    },
+    "/SD_CLK_MCU": {
+      "connected_missing": 1.12,
+      "empty_l3_missing": 0.0,
+      "recovered": 1.12
+    },
+    "/SD_CLK": {
+      "connected_missing": 9.5313,
+      "empty_l3_missing": 1.55,
+      "recovered": 7.9813
+    },
+    "/SD_MOSI": {
+      "connected_missing": 8.0027,
+      "empty_l3_missing": 2.284,
+      "recovered": 5.7187
+    },
+    "/SD_MISO": {
+      "connected_missing": 11.5968,
+      "empty_l3_missing": 2.4929,
+      "recovered": 9.1039
+    },
+    "/SD_CS_N": {
+      "connected_missing": 2.4521,
+      "empty_l3_missing": 1.5146,
+      "recovered": 0.9375
+    }
+  },
+  "finding": "Removing only L3 non-GND tracks eliminates long losses; residuals match signal via regions. This is diagnostic evidence, not a routable or qualified design.",
+  "release_allowed": false
+}

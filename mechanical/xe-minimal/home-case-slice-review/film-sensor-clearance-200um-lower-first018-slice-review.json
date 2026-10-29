@@ -1,0 +1,93 @@
+{
+  "status": "SLICED_NOT_PRINTED_OR_FIT_QUALIFIED",
+  "parts": [
+    {
+      "part": "film-sensor-clearance-200um-lower-first018",
+      "source": "film-sensor-clearance-200um-lower-trial.step",
+      "source_sha256": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97",
+      "stl_sha256": "dec5e515edb04e2d456b07c796861f04a9da1fdbea0b869f28f9b1a047408095",
+      "3mf_sha256": "8732284ee23525c7242e6821425abd969328bd92f1d46a83ca12e8a3f86469f4",
+      "first_layer_mm": 0.18,
+      "regular_layer_mm": 0.08,
+      "CAD_height_mm": 8.120000000000001,
+      "translation_mm": [
+        1.1000000000000014,
+        28.3,
+        7.720000000000001
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 442,
+        "layer_height": 0.07999999821186066,
+        "plate_index": 0,
+        "prepare_time": 21,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 29.373559951782227,
+              "Custom": 34.725460052490234,
+              "Gap infill": 0.6945816278457642,
+              "Inner wall": 18.755170822143555,
+              "Internal solid infill": 85.36962127685547,
+              "Outer wall": 701.0819091796875,
+              "Overhang wall": 1.2899714708328247,
+              "Top surface": 18.04193115234375,
+              "Travel": 112.2509994506836,
+              "Undefined": 96.6607894897461
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.671713948249817,
+                "total_used_g": 1.671713948249817
+              }
+            ],
+            "generate_support_material_time": 16,
+            "id": 1,
+            "infill_time": 18,
+            "layer_filament_change": 0,
+            "main_predication": 966.8878784179688,
+            "make_perimeters_time": 100,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 29.60000228881836,
+                  "height": 8.119999885559082,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 75.19999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "film-sensor-clearance-200um-lower-first018.stl",
+                "triangle_count": 11030
+              }
+            ],
+            "sliced_time": 318,
+            "sliced_time_with_cache": 179,
+            "total_predication": 985.992919921875,
+            "triangle_count": 11030,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 2
+      },
+      "profile_sha256": {
+        "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+        "process": "36e93f9196c209bb6a0b9e5444e32bdc0b0eada58fea495d0fa87e6f8eaf1961",
+        "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+      }
+    }
+  ],
+  "limits": [
+    "Toolpath review still required",
+    "Tray pedestal overhang and 0.074mm internal slit not physically verified",
+    "Current plug and original lead fit unresolved",
+    "No print job sent"
+  ]
+}

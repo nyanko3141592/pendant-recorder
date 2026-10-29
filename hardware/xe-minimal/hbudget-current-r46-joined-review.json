@@ -1,0 +1,89 @@
+{
+  "accepted": true,
+  "visited": 98762,
+  "paths": [
+    {
+      "layer": 4,
+      "points": [
+        [
+          9.9,
+          6.8
+        ],
+        [
+          7.9,
+          11.600000000000001
+        ]
+      ]
+    },
+    {
+      "layer": 0,
+      "points": [
+        [
+          7.9,
+          11.600000000000001
+        ],
+        [
+          7.6000000000000005,
+          16.2
+        ],
+        [
+          6.5,
+          18.2
+        ]
+      ]
+    },
+    {
+      "layer": 4,
+      "points": [
+        [
+          6.5,
+          18.2
+        ],
+        [
+          6.6000000000000005,
+          20.900000000000002
+        ],
+        [
+          7.1000000000000005,
+          21.1
+        ],
+        [
+          17.0,
+          20.6
+        ],
+        [
+          23.15,
+          14.55
+        ]
+      ]
+    }
+  ],
+  "switches": [
+    [
+      7.9,
+      11.600000000000001
+    ],
+    [
+      6.5,
+      18.2
+    ]
+  ],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/USB_HIGH_BUDGET] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 17.1,
+            "y": 11.15
+          },
+          "uuid": "17f8b1cb-c3c0-45b4-89a3-fe3f94b64cf5"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 8
+}

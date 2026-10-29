@@ -1,0 +1,136 @@
+{
+  "status": "OFFLINE_SLICE_COMPLETE_NOT_PHYSICAL_QUALIFICATION",
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 363,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 32,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 75.54940032958984,
+          "Bridge": 35.36085891723633,
+          "Custom": 34.51998519897461,
+          "Gap infill": 125.92452239990234,
+          "Inner wall": 259.25067138671875,
+          "Internal solid infill": 180.81161499023438,
+          "Outer wall": 454.4681701660156,
+          "Overhang wall": 109.31695556640625,
+          "Sparse infill": 54.520626068115234,
+          "Support": 123.76362609863281,
+          "Support interface": 49.517276763916016,
+          "Top surface": 106.40259552001953,
+          "Travel": 370.98675537109375,
+          "Undefined": 355.5932312011719
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG00",
+            "id": 1,
+            "main_used_g": 7.703829288482666,
+            "total_used_g": 8.239084243774414
+          }
+        ],
+        "generate_support_material_time": 155,
+        "id": 1,
+        "infill_time": 42,
+        "layer_filament_change": 0,
+        "main_predication": 1945.8251953125,
+        "make_perimeters_time": 81,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 30.799999237060547,
+              "height": 8.75,
+              "width": 30.799999237060547,
+              "x": 125.20001983642578,
+              "y": 125.20001983642578,
+              "z": 0.0
+            },
+            "id": 95,
+            "name": "case-lower.stl",
+            "triangle_count": 6676
+          },
+          {
+            "bbox": {
+              "depth": 30.799999237060547,
+              "height": 6.079999923706055,
+              "width": 30.799999237060547,
+              "x": 125.20001983642578,
+              "y": 70.40003967285156,
+              "z": 0.0
+            },
+            "id": 106,
+            "name": "case-upper.stl",
+            "triangle_count": 6348
+          },
+          {
+            "bbox": {
+              "depth": 27.5,
+              "height": 5.980000019073486,
+              "width": 27.499998092651367,
+              "x": 73.70001220703125,
+              "y": 128.5,
+              "z": 0.0
+            },
+            "id": 117,
+            "name": "pcba-max-gauge.stl",
+            "triangle_count": 5954
+          },
+          {
+            "bbox": {
+              "depth": 27.700000762939453,
+              "height": 2.184999942779541,
+              "width": 27.499998092651367,
+              "x": 73.70001220703125,
+              "y": 24.0,
+              "z": 0.0
+            },
+            "id": 139,
+            "name": "carrier.stl",
+            "triangle_count": 496
+          },
+          {
+            "bbox": {
+              "depth": 27.0,
+              "height": 4.199999809265137,
+              "width": 15.5,
+              "x": 85.70001983642578,
+              "y": 77.5,
+              "z": 0.0
+            },
+            "id": 128,
+            "name": "battery-max.stl",
+            "triangle_count": 12
+          }
+        ],
+        "sliced_time": 706,
+        "sliced_time_with_cache": 401,
+        "total_predication": 1964.9215087890625,
+        "triangle_count": 19486,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 40.0,
+    "wall_loops": 6
+  },
+  "files": {
+    "case-lower.stl": "f31bb1ec48375117013514609cded8d7d6f9b1849a36fcb58b5a8be34c58f154",
+    "case-upper.stl": "4299e3b2f484c3bbcdd83ad3b5abe9f3d513d6e7ebbcaba35ac87e40363c10c3",
+    "pcba-max-gauge.stl": "a0b5812006152a4a19d1c888b810511f4c17b9197432c708010b6a294860e1ca",
+    "battery-max.stl": "4a1027d4e8fbbdb8fb1f0a96341389147f7958b798f4d076ac434fd4e14980fa",
+    "carrier.stl": "809b30b14e1aadbb5c67ca944c1369226e33c04fe91076244e37e49f9c4c2005",
+    "captured-carrier-fit-kit.3mf": "80be3b4a9341a906279b2a1ffad2223aca488d5137a2528901c230dae09c4470"
+  },
+  "limitations": [
+    "Geometric board/carrier capture only; physical strength, tolerances and original harness not qualified",
+    "Gauge has solid USB and J2 cavities; no mating test",
+    "Nominal parts with max board thickness; assembly tolerances not certified",
+    "No printing performed"
+  ],
+  "release_allowed": false
+}

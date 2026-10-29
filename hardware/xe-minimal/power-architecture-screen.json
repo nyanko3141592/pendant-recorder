@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-26",
+  "candidate": "BQ25186DLHR",
+  "status": "COMPARISON_CLOSED_FOR_CURRENT_PROTOTYPE",
+  "source": "https://www.ti.com/lit/ds/symlink/bq25186.pdf",
+  "local_pdf_sha256": "96834a4566939677cf084cef87d88f1534b9369ae80171ee004a7ac6572791c9",
+  "findings": [
+    {
+      "section": "6.3.5 SYS_MODE=01",
+      "finding": "Can power SYS from battery while VIN remains connected and stop charging; potentially replace external USB suspend latch. Mode ignored below BUVLO, VIN reconnect resets mode."
+    },
+    {
+      "section": "6.5.1.9 TMR_ILIM reset0x4D",
+      "finding": "Input current limit defaults to500mA, not100mA. External pre-enumeration protection cannot simply be deleted."
+    },
+    {
+      "section": "6.3 watchdog;6.5.1.8",
+      "finding": "Default watchdog can restore register defaults. Review firmware hang/reset together with hardware USB and charging limits."
+    },
+    {
+      "section": "6.5.1.6",
+      "finding": "Termination selectable5/10/20 percent of charge current. Exact selected settings and low-current tolerance still require analysis against battery1.1mA reference."
+    }
+  ],
+  "decision": "Use charger-selection.json; BQ25186 findings retained as comparison evidence, not active interface.",
+  "next_checks": [
+    "Power-on charging current/voltage and hardware disable behavior",
+    "System current before USB enumeration including depleted battery",
+    "Battery-only quiescent current and3.3V regulator loss",
+    "Specified external contact sensor with no battery modification"
+  ],
+  "startup_review": {
+    "default_registers": {
+      "VBAT_CTRL": "0x46",
+      "ICHG_CTRL": "0x05",
+      "CHARGECTRL0": "0x24",
+      "TMR_ILIM": "0x4D"
+    },
+    "decoded": {
+      "charge_voltage_V": 4.2,
+      "charge_current_mA": 10,
+      "termination_current_nominal_mA": 1.0,
+      "input_current_limit_mA": 500,
+      "charging_enabled": true
+    },
+    "hardware_CE": "Pin4 active-low, internal approximately5Mohm pulldown. Must be pulled high externally until configuration and temperature checks pass. Floating pin enables charging.",
+    "critical_reset_case": "MCU remains running with CE low while PMIC watchdog restores4.2V/500mA defaults. MCU reset pulldown alone does not prevent this. Do not claim hardware-safe4.1V charge from an I2C setting.",
+    "voltage_decision": "Retain hardware voltage guard or qualify worst-case4.2V regulation against battery actual allowed charge tolerance; neither established yet.",
+    "termination_decision": "Nominal1mA default is close to battery1.1mA reference, but published3mA/25C accuracy must not be reused to guarantee1mA across temperature.",
+    "candidate_operating_point": {
+      "charge_current_mA": 20,
+      "termination_percent": 5,
+      "termination_nominal_mA": 1.0,
+      "charge_voltage_nominal_V": 4.1,
+      "status": "EXPLORATORY_NOT_APPROVED",
+      "reason": "Below explicit110mA max, avoids interpreting inconsistent standard-charge table.20mA charging time and1mA accuracy require verification."
+    },
+    "simplification_scope": "Potentially remove external suspend latch only after watchdog and VIN-reconnect behavior verified. Keep external input limiter for startup. No BOM reduction claimed yet."
+  },
+  "bq25120a_comparison": {
+    "source": "https://www.ti.com/lit/ds/symlink/bq25120a.pdf",
+    "sha256": "0726c6421eabd7bd21059ba2ee7d7d939f8367c145f1a937d4b82c737ff14db3",
+    "status": "NOT_DROP_IN_FOR_SHARED_3V3_RAIL",
+    "advantages": [
+      "Integrated buck and100mA LDO/loadswitch",
+      "External resistors for input/charge/termination defaults"
+    ],
+    "constraints": [
+      "Buck defaults1.8V;50s watchdog after I2C begins restores defaults except specifiedMR bits. Shared3.3V rail would drop to1.8V.",
+      "Default charge4.2V retains battery voltage tolerance question.",
+      "Nominal100mA input setting is not guaranteed100mA maximum.",
+      "25ball2.5mmDSBGA needs routing and fabrication review."
+    ],
+    "decision": "Do not replace3.3V regulator directly. Split voltage rails need separate level-shift/USB analysis. Proceed with socket and programming footprint reduction while power comparison continues."
+  },
+  "selected_for_prototype": "BQ25185DLHR"
+}

@@ -1,0 +1,137 @@
+{
+  "status": "RUNTIME_FEASIBILITY_UNCONFIRMED_DESIGN_OPTIMIZED_MEASUREMENT_REQUIRED",
+  "decision": "Keep the fixed 110mAh battery and requirements. The arithmetic target is <=4.4mA, but the current design has neither a conservative completed-device upper bound nor a physical 16h result. An unnecessary continuous HSI16 clock was removed; feasibility remains unconfirmed until measurement.",
+  "battery": {
+    "model": "DTP401525-XE",
+    "nominal_capacity_mAh": 110,
+    "ideal_16h_ceiling_mA": 6.875,
+    "planning_usable_fraction": 0.7,
+    "planning_usable_capacity_mAh": 77.0,
+    "planning_16h_ceiling_mA": 4.8125,
+    "usable_capacity_definition": "Capacity delivered after the final 4.1V nominal on-board charging profile (4.1205V guaranteed maximum) until the final loaded recording stop threshold, including connector/protection/LDO loss, at the qualified temperature and ageing endpoints."
+  },
+  "adopted_design_allocation": {
+    "whole_device_average_target_mA": 4.4,
+    "charge_for_16h_mAh": 70.4,
+    "reserve_inside_70pct_envelope_mAh": 6.599999999999994,
+    "minimum_nominal_capacity_fraction_needed": 0.64,
+    "whole_device_peak_limit_mA": 110,
+    "peak_note": "110mA is treated as a never-exceed complete-pack limit; no unsupported pulse allowance. Regulator droop and storage inrush impose additional prototype checks."
+  },
+  "record_encrypt_store_path": {
+    "sample_rate_Hz": 16000,
+    "channels": 1,
+    "codec": "IMA ADPCM in WAV, then binary age v1 X25519 encryption",
+    "segment_seconds": 10.0,
+    "encrypted_bytes_per_segment": 81172,
+    "encrypted_bytes_per_second": 8117.2,
+    "encrypted_30h_bytes": 876657600.0,
+    "encrypted_30h_GB_decimal": 0.8766576,
+    "minimum_data_area_bytes_including_allocation_reserve": 929787904,
+    "capacity_conclusion": "Selected 8Gbit MKDV8GIL-AST is 1GB nominal. FAT32 data-area budget is 929787904 bytes; energy, startup/inrush, availability, formatted capacity and filesystem behavior remain qualification gates."
+  },
+  "current_allocation_mA": {
+    "mcu_mic_codec_crypto_regulators_base_hypothesis": 2.8,
+    "temperature_guard_and_BOR_reserve": 0.10072480620155037,
+    "indicator_during_ordinary_recording_duty": 0.0,
+    "indicator_during_ordinary_recording_mA": 0.0,
+    "nonstorage_subtotal_hypothesis": 2.9007248062015503,
+    "published_maxima_deducted_from_base": 0.3865,
+    "remaining_mcu_codec_crypto_regulator_load_switch_misc_allocation": 2.4135,
+    "nonstorage_detail": "docs/sourcing/xe-nonstorage-current-ledger.json",
+    "storage_total_allocation_at_4p4mA_target": 1.49927519379845,
+    "storage_payload_only_lower_bound_under_published_CSNP32_maxima": null,
+    "storage_headroom_for_commands_metadata_busy_startup_amortization": null,
+    "accounting_warning": "The 2.8mA base is an allocation hypothesis, not a component sum or measurement. Encryption is included only by intended bucket scope, not by evidence. Do not add these nested estimates to a measured whole-battery integral."
+  },
+  "capacity_sensitivity": [
+    {
+      "usable_fraction_hypothesis": 0.6,
+      "available_mAh": 66.0,
+      "maximum_average_for_16h_mA": 4.125,
+      "margin_vs_4p4mA_mAh": -4.400000000000006
+    },
+    {
+      "usable_fraction_hypothesis": 0.64,
+      "available_mAh": 70.4,
+      "maximum_average_for_16h_mA": 4.4,
+      "margin_vs_4p4mA_mAh": 0.0
+    },
+    {
+      "usable_fraction_hypothesis": 0.7,
+      "available_mAh": 77.0,
+      "maximum_average_for_16h_mA": 4.8125,
+      "margin_vs_4p4mA_mAh": 6.599999999999994
+    },
+    {
+      "usable_fraction_hypothesis": 0.8,
+      "available_mAh": 88.0,
+      "maximum_average_for_16h_mA": 5.5,
+      "margin_vs_4p4mA_mAh": 17.599999999999994
+    }
+  ],
+  "stage1_gate": {
+    "proceed": false,
+    "why": "The 2.8mA non-storage value is only an allocation and the selected LDO MCU's datasheet maximum can itself exceed the whole-device target at elevated temperature. No completed-device upper bound or physical integral exists.",
+    "blocking_evidence": "docs/sourcing/xe-u585-runtime-feasibility-audit.json",
+    "must_be_true_before_release": [
+      "Measured battery-side charge over each complete 16h recording run is <=70.4mAh and the device remains recording through16h.",
+      "At least the qualified worst-case on-board-charge/temperature/age condition delivers >=70.4mAh to the recording stop threshold, or measured average is reduced so runtime still passes.",
+      "Whole-device instantaneous battery current never exceeds110mA and no storage startup/write event causes reset, corruption or audio overrun.",
+      "Every 10s segment is encrypted and durably committed; decrypted continuous audio, timestamps/sequence and missing-segment checks cover the full run.",
+      "A filled/aged selected storage unit preserves at least30h without overwrite and passes recovery after injected power loss."
+    ],
+    "measurement_buckets": [
+      "Battery-side full-session integral: authoritative runtime evidence.",
+      "3.3V storage-rail integral and peak waveform: diagnoses storage allocation/inrush.",
+      "3.3V nonstorage integral while capture+IMA+age run: replaces the unmeasured2.8mA allocation.",
+      "Usable pack capacity after on-board charge to loaded stop: validates the capacity envelope."
+    ]
+  },
+  "not_claimed": [
+    "No 16h runtime has been measured.",
+    "The 70% usable-capacity fraction is not a battery guarantee.",
+    "CSNP32GCR01-BOW is not adopted solely by this energy screen.",
+    "Ordinary recording uses the release configuration with automatic indication disabled; terminal/fault indication is a separate non-recording state and still requires energy/safety EVT.",
+    "No PCB, case, procurement or charging-temperature release follows from this document."
+  ],
+  "source_sha256": {
+    "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/evidence/current-codec-capacity-review.json": "4e26827ca8680163b4d2c42219a8fd9db261c799fcfd8dc5cb428f19fa439b41",
+    "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/evidence/storage-format-and-budget.json": "159c981a9c4188c6b3a9e3ec1c0f4d63201010fe0ccf7148994dc55d145b868c",
+    "hardware/xe-minimal/recording-current-budget.json": "1a97988fb333291125ab20e0be9711a384ec8ad64fbbe1e54e567fbde07ebb10",
+    "hardware/xe-minimal/fixed-usb-limit-trial/led-land-trial/indicator-current-budget.json": "e3687b6562909a476a90fa73881b58b1884f52f15354f3e1ed79b1ffbc4ad18d",
+    "docs/sourcing/xe-cs32-energy-screen.json": "af3b0f95a72b2021fb003fe27508bcd154c3b14199d25e034d7835e6394421cf",
+    "docs/sourcing/xe-nonstorage-current-ledger.json": "ecdb7a2e025f4596f88da58ad0476262c843164125d5165114824d666c2ea1a3",
+    "docs/sourcing/xe-u585-runtime-feasibility-audit.json": "bfc57825040f0d5772eba8f328342a4cb40a1143c865fe4bd2b6e48a8f4bfe49",
+    "docs/sourcing/battery-first-selection.json": "b4cbf42bc1b27e89d8537f7e784ce7d5c7d3a6238552b0e498179af38f571b4c",
+    "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/evidence/factory-image-generation-review.json": "89d1f75ceb8430d26c31b558e76317120fcffe9b693f2d059c6ca1012f99dd30"
+  },
+  "firmware_test_observation": {
+    "status": "FACTORY_EMPTY_IMAGE_GENERATOR_AND_FIRMWARE_FATFS_COMPATIBILITY_PASS",
+    "host_tests_passed": 7,
+    "firmware_test": "sh firmware/stm32/tests/check_storage_36h.sh /tmp/pendant-factory-empty-20261029.img",
+    "fixture_sectors": 1882812,
+    "fixture_size_is_measured_hardware_capacity": false,
+    "files": 10800,
+    "ciphertext_fixture_bytes_per_file": 82180,
+    "real_audio": false,
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "identity_provisioned": false,
+    "physical_write_or_readback_performed": false,
+    "limits": [
+      "Measured medium sector count still required; example capacity is synthetic.",
+      "Generated empty image excludes product identity and recipient provisioning.",
+      "Full medium image programming and physical readback not performed.",
+      "Three-session endpoint rounding remains allocation budget, not this single-stream test."
+    ],
+    "source_sha256": {
+      "host/create_factory_storage_image.py": "e444a26fa0433ca4a65571246e088739119006d65bfbf1ad12cef9db9977ebae",
+      "host/verify_factory_storage.py": "ae3ca36b144248d41cc04d556c19a33d55b2e468bc81cea6f73f3a09e919c134",
+      "firmware/stm32/tests/test_storage_36h.c": "2371c86409852622c3e6e2eba232725a62424d600631fdc0c887aaf1bfd33138",
+      "firmware/stm32/tests/check_storage_36h.sh": "5584f0465710f576fa8baff94d9e9878416e4cf28ef6a46d547ba60e070b5224"
+    }
+  }
+}

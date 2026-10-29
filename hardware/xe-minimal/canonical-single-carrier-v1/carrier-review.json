@@ -1,0 +1,124 @@
+{
+  "status": "CANONICAL_70MM_SINGLE_CARRIER_CAD_CANDIDATE_NOT_RELEASED",
+  "source": "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb",
+  "source_sha256": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+  "carrier": "hardware/xe-minimal/canonical-single-carrier-v1/carrier.kicad_pcb",
+  "carrier_sha256": "85814e1a9e498cf0ce809158793790850b6094120663f859f35a14650bf990fd",
+  "carrier_mm": [
+    70,
+    70
+  ],
+  "finished_board_mm": [
+    27.5,
+    27.5
+  ],
+  "finished_outline_changed": false,
+  "translation_mm": [
+    21.25,
+    22.0
+  ],
+  "route_moat_mm": 2.0,
+  "retention_tabs": [
+    {
+      "edge": "bottom",
+      "x_mm": [
+        25.5,
+        30.5
+      ],
+      "width_mm": 5.0
+    },
+    {
+      "edge": "bottom",
+      "x_mm": [
+        39.5,
+        44.5
+      ],
+      "width_mm": 5.0
+    }
+  ],
+  "tooling_holes": [
+    {
+      "reference": "TOOL1",
+      "center_mm": [
+        12,
+        6
+      ],
+      "diameter_mm": 2
+    },
+    {
+      "reference": "TOOL2",
+      "center_mm": [
+        58,
+        6
+      ],
+      "diameter_mm": 2
+    },
+    {
+      "reference": "TOOL3",
+      "center_mm": [
+        12,
+        64
+      ],
+      "diameter_mm": 2
+    }
+  ],
+  "fiducials": [
+    {
+      "reference": "FID1",
+      "center_mm": [
+        6,
+        6
+      ],
+      "copper_mm": 1,
+      "mask_mm": 2,
+      "sides": [
+        "F",
+        "B"
+      ]
+    },
+    {
+      "reference": "FID2",
+      "center_mm": [
+        64,
+        6
+      ],
+      "copper_mm": 1,
+      "mask_mm": 2,
+      "sides": [
+        "F",
+        "B"
+      ]
+    },
+    {
+      "reference": "FID3",
+      "center_mm": [
+        6,
+        64
+      ],
+      "copper_mm": 1,
+      "mask_mm": 2,
+      "sides": [
+        "F",
+        "B"
+      ]
+    }
+  ],
+  "source_counts": {
+    "footprints": 74,
+    "tracks_and_vias": 1137,
+    "zones": 2
+  },
+  "carrier_counts": {
+    "footprints": 83,
+    "tracks_and_vias": 1137,
+    "zones": 2
+  },
+  "required_physical_or_external_checks": [
+    "router radius and actual route width",
+    "tab stiffness through double reflow",
+    "depanelization force",
+    "finished-edge burr and residual tab",
+    "supplier automatic-flow acceptance"
+  ],
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

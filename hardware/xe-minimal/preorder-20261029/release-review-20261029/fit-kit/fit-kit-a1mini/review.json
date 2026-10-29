@@ -1,0 +1,122 @@
+{
+  "status": "OFFLINE_SLICE_COMPLETE_NOT_PHYSICAL_QUALIFICATION",
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 392,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 35,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 62.072120666503906,
+          "Bridge": 35.36086654663086,
+          "Custom": 34.528141021728516,
+          "Gap infill": 112.84561920166016,
+          "Inner wall": 215.35643005371094,
+          "Internal solid infill": 167.6680145263672,
+          "Outer wall": 400.08135986328125,
+          "Overhang wall": 109.25341033935547,
+          "Sparse infill": 54.520381927490234,
+          "Support": 123.67271423339844,
+          "Support interface": 49.66899871826172,
+          "Top surface": 83.95587921142578,
+          "Travel": 270.17767333984375,
+          "Undefined": 254.7895050048828
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG00",
+            "id": 1,
+            "main_used_g": 6.954690456390381,
+            "total_used_g": 7.489945888519287
+          }
+        ],
+        "generate_support_material_time": 153,
+        "id": 1,
+        "infill_time": 40,
+        "layer_filament_change": 0,
+        "main_predication": 1684.6376953125,
+        "make_perimeters_time": 74,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 30.799999237060547,
+              "height": 8.449999809265137,
+              "width": 30.799997329711914,
+              "x": 100.35002136230469,
+              "y": 102.0,
+              "z": 0.0
+            },
+            "id": 74,
+            "name": "case-lower.stl",
+            "triangle_count": 6092
+          },
+          {
+            "bbox": {
+              "depth": 30.799999237060547,
+              "height": 6.079999923706055,
+              "width": 30.799997329711914,
+              "x": 100.35002136230469,
+              "y": 47.20001983642578,
+              "z": 0.0
+            },
+            "id": 85,
+            "name": "case-upper.stl",
+            "triangle_count": 5976
+          },
+          {
+            "bbox": {
+              "depth": 27.5,
+              "height": 5.980000019073486,
+              "width": 27.5,
+              "x": 48.85000991821289,
+              "y": 105.29998016357422,
+              "z": 0.0
+            },
+            "id": 96,
+            "name": "pcba-max-gauge.stl",
+            "triangle_count": 5954
+          },
+          {
+            "bbox": {
+              "depth": 27.0,
+              "height": 4.199999809265137,
+              "width": 15.499999046325684,
+              "x": 60.85002136230469,
+              "y": 54.29998016357422,
+              "z": 0.0
+            },
+            "id": 107,
+            "name": "battery-max.stl",
+            "triangle_count": 12
+          }
+        ],
+        "sliced_time": 633,
+        "sliced_time_with_cache": 341,
+        "total_predication": 1703.7474365234375,
+        "triangle_count": 18034,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 40.0,
+    "wall_loops": 6
+  },
+  "files": {
+    "case-lower.stl": "b9aa74c12dd70f071be19a2b58e164aeb134e4492f437e24a5c1c64304536aae",
+    "case-upper.stl": "0d2a5bd4842123a1cd09752961d49f68ce69319ef7055fcf199bf9fe8f838006",
+    "pcba-max-gauge.stl": "a0b5812006152a4a19d1c888b810511f4c17b9197432c708010b6a294860e1ca",
+    "battery-max.stl": "4a1027d4e8fbbdb8fb1f0a96341389147f7958b798f4d076ac434fd4e14980fa",
+    "current-fit-kit.3mf": "e616928af003b3b526ccc7d49b20c6e0175593d1cd4156f4bb4cfb50ae389e22"
+  },
+  "limitations": [
+    "Case retention and battery protection not finalized",
+    "Gauge has solid USB and J2 cavities; no mating test",
+    "Nominal parts with max board thickness; assembly tolerances not certified",
+    "No printing performed"
+  ],
+  "release_allowed": false
+}

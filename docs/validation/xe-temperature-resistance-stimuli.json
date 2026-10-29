@@ -1,0 +1,96 @@
+{
+  "status": "CURRENT_NETLIST_RESISTIVE_STIMULUS_PLAN_NOT_THERMAL_QUALIFICATION",
+  "pcb_sha256": "3f7962550e31d2a3133989344962d543977c8cea504f3f3c498273edb25d8127",
+  "verified_divider_nets": {
+    "R37": {
+      "value": "100k 1%",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/BAT_TS"
+      }
+    },
+    "TH1": {
+      "value": "NCP18XH103F03RB 10k 1% B3380 candidate",
+      "pads": {
+        "1": "/BAT_TS",
+        "2": "/GND"
+      }
+    },
+    "R38": {
+      "value": "100k 1%",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/TS_COLD_REF"
+      }
+    },
+    "R39": {
+      "value": "20k 1%",
+      "pads": {
+        "1": "/TS_COLD_REF",
+        "2": "/GND"
+      }
+    },
+    "R40": {
+      "value": "100k 1%",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/TS_HOT_REF"
+      }
+    },
+    "R41": {
+      "value": "7.5k 1%",
+      "pads": {
+        "1": "/TS_HOT_REF",
+        "2": "/GND"
+      }
+    }
+  },
+  "model": "Rsensor_trip=R37*Rbottom/Rtop; all three divider resistors independently1%",
+  "boundaries": [
+    {
+      "boundary": "cold",
+      "ideal_sensor_resistance_ohm": 20000,
+      "resistor_only_corner_range_ohm": [
+        19407.920792079207,
+        20608.08080808081
+      ],
+      "ideal_reference_V_at_assumed3p3V": 0.55,
+      "limits": "Excludes comparator offset/hysteresis/bias, PCB leakage, sensor tolerance and temperature mapping"
+    },
+    {
+      "boundary": "hot",
+      "ideal_sensor_resistance_ohm": 7500,
+      "resistor_only_corner_range_ohm": [
+        7277.970297029703,
+        7728.030303030303
+      ],
+      "ideal_reference_V_at_assumed3p3V": 0.2302325581395349,
+      "limits": "Excludes comparator offset/hysteresis/bias, PCB leakage, sensor tolerance and temperature mapping"
+    }
+  ],
+  "discrete_stimuli": [
+    {
+      "sensor_ohm": 4700,
+      "ideal_BAT_TS_V_at_assumed3p3V": 0.1481375358166189,
+      "ideal_position": "hot side"
+    },
+    {
+      "sensor_ohm": 10000,
+      "ideal_BAT_TS_V_at_assumed3p3V": 0.3,
+      "ideal_position": "normal window"
+    },
+    {
+      "sensor_ohm": 47000,
+      "ideal_BAT_TS_V_at_assumed3p3V": 1.0551020408163265,
+      "ideal_position": "cold side"
+    }
+  ],
+  "additional_stimuli": [
+    "Open circuit",
+    "Short circuit",
+    "Slow bidirectional resistance sweep through each boundary; record actual trip and recovery"
+  ],
+  "supply_note": "3.3V is an illustrative stable supply. Use measured actual rails and repeat qualified startup/brownout cases.",
+  "acceptance_note": "Nominal resistance boundaries are stimulus design points, not charge authorization or temperature pass limits. Actual NTC R-T bounds and cell-to-sensor thermal lag remain required.",
+  "physical_results": []
+}

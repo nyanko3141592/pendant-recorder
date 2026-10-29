@@ -1,0 +1,37 @@
+{
+  "status": "SENSOR_FROM_BELOW_SWEEP_ONLY_NOT_COMPLETE_PREASSEMBLY",
+  "separator_sha256": "6a46f6a9cd1d6c8dd7416ece8ba3f0160735c4ede691c44ca1e371945cf5c4ad",
+  "translation_range_mm": [
+    -8,
+    0
+  ],
+  "checks": {
+    "body": {
+      "overlap_mm3": 0.0,
+      "minimum_gap_mm": 0.19999999999998516
+    },
+    "lead_0": {
+      "overlap_mm3": 0.0,
+      "minimum_gap_mm": 0.5000000000000002
+    },
+    "lead_1": {
+      "overlap_mm3": 0.0,
+      "minimum_gap_mm": 0.5000000000000002
+    },
+    "joint_budget_0": {
+      "overlap_mm3": 0.0,
+      "minimum_gap_mm": 0.1999999999999995
+    },
+    "joint_budget_1": {
+      "overlap_mm3": 0.0,
+      "minimum_gap_mm": 0.1999999999999995
+    }
+  },
+  "limits": [
+    "Only bare sensor and provisional joint boxes, not attached wires or board.",
+    "Separator must be out of case during this operation; no battery is present.",
+    "Preconnected wire flex/routing or in-place soldering process not established.",
+    "Sensor terminal size and insulation joint tolerances unresolved.",
+    "No force or physical assembly qualification."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "status": "GEOMETRY_REVIEW_NOT_STENCIL_PROCESS_APPROVAL",
+  "source_sha256": "cb3b5a233aafc37be5bf76987827d5bd91f666a55ceaf17cf25b9dd596ad3763",
+  "manufacturer_reference": "reference/infineon-im69d130-v1-timing.pdf page 13 Figure 12",
+  "recommendation": {
+    "inner_radius_mm": 0.6,
+    "outer_radius_mm": 1,
+    "angular_sector_deg": 52,
+    "angular_gap_deg": 8,
+    "rounded_end_radius_mm": 0.2
+  },
+  "apertures": [
+    {
+      "center_deg": 0.0,
+      "inner_boundary_min_mm": 0.5968441436807621,
+      "outer_boundary_max_mm": 0.9999998797864952,
+      "angular_span_deg": 52.17061088965281,
+      "vertices": 23,
+      "dark": true,
+      "within_conservative_annulus_0_59_to_1_02": true
+    },
+    {
+      "center_deg": 60.006,
+      "inner_boundary_min_mm": 0.5969895995923596,
+      "outer_boundary_max_mm": 1.000170092056846,
+      "angular_span_deg": 52.160076750339464,
+      "vertices": 23,
+      "dark": true,
+      "within_conservative_annulus_0_59_to_1_02": true
+    },
+    {
+      "center_deg": 119.994,
+      "inner_boundary_min_mm": 0.5969895995923575,
+      "outer_boundary_max_mm": 1.0001700920568448,
+      "angular_span_deg": 52.160076750339584,
+      "vertices": 23,
+      "dark": true,
+      "within_conservative_annulus_0_59_to_1_02": true
+    },
+    {
+      "center_deg": 180.0,
+      "inner_boundary_min_mm": 0.5968441436807621,
+      "outer_boundary_max_mm": 0.9999998797864952,
+      "angular_span_deg": 52.17061088965281,
+      "vertices": 23,
+      "dark": true,
+      "within_conservative_annulus_0_59_to_1_02": true
+    },
+    {
+      "center_deg": 240.006,
+      "inner_boundary_min_mm": 0.5969963274602439,
+      "outer_boundary_max_mm": 1.000158134085307,
+      "angular_span_deg": 52.1601013461115,
+      "vertices": 23,
+      "dark": true,
+      "within_conservative_annulus_0_59_to_1_02": true
+    },
+    {
+      "center_deg": 299.994,
+      "inner_boundary_min_mm": 0.59698883182009,
+      "outer_boundary_max_mm": 1.0001719807538125,
+      "angular_span_deg": 52.16005760415023,
+      "vertices": 23,
+      "dark": true,
+      "within_conservative_annulus_0_59_to_1_02": true
+    }
+  ],
+  "limitations": [
+    "Polygon chord approximation differs slightly from ideal radii and angular span.",
+    "Rounded-end radius and paste volume/stencil thickness are not qualified by this check.",
+    "Conservative radial containment is not a full Boolean mask intersection check.",
+    "Assembly supplier approval remains open."
+  ]
+}

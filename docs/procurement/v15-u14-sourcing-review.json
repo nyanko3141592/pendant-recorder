@@ -1,0 +1,59 @@
+{
+  "observed_date": "2026-10-26",
+  "mpn": "SN74HCS74DYYR",
+  "reference": "U14",
+  "required_installed_quantity": 5,
+  "status": "ALTERNATE_SUPPLY_NOT_VERIFIED",
+  "observations": [
+    {
+      "source": "DigiKey Japan alternate product ID 16184246",
+      "url": "https://www.digikey.jp/en/products/detail/texas-instruments/SN74HCS74DYYR/16184246",
+      "evidence": "Opened current supplier page",
+      "stock": 0,
+      "estimated_restock": "2026-12-28",
+      "result": "Same listing as prior CT record; not an alternate available source"
+    },
+    {
+      "source": "DigiKey US DKR-linked product ID 16184280",
+      "url": "https://www.digikey.com/en/products/detail/texas-instruments/SN74HCS74DYYR/16184280",
+      "evidence": "Opened current supplier page",
+      "stock": 0,
+      "result": "Current supplier page contradicts aggregator 1856 stock; do not count DKR as available"
+    },
+    {
+      "source": "TI direct",
+      "url": "https://www.ti.com/product/SN74HCS74/part-details/SN74HCS74DYYR",
+      "evidence": "Public page; login required to view inventory",
+      "result": "Public out-of-stock and login prompts; authenticated inventory not verified; ACTIVE part status confirmed"
+    },
+    {
+      "source": "Mouser",
+      "url": "https://www.mouser.com/ProductDetail/Texas-Instruments/SN74HCS74DYYR?qs=Li%252BoUPsLEnv7IEX4Wwvegw%3D%3D",
+      "evidence": "Search crawl four months old reports 10658; current direct fetch HTTP403",
+      "stock": null,
+      "result": "Stale search stock rejected; no bypass attempted"
+    },
+    {
+      "source": "TrustedParts authorized-channel aggregation",
+      "url": "https://www.trustedparts.com/en/part/texas-instruments/SN74HCS74DYYR",
+      "evidence": "Opened today; supplier data labels 3 hours to 2 days old",
+      "result": "DKR 1856 contradicted by supplier; Mouser factory lead time84days; Spirit450 is unverified supplier lead"
+    },
+    {
+      "source": "Spirit Electronics",
+      "url": "https://spiritelectronics.com/shop/logic-voltage-translation/sn74hcs74dyyr/",
+      "evidence": "TrustedParts lists450 and USD0.29 at1; supplier fetch timeout",
+      "stock": null,
+      "result": "Potential same-MPN source only; Japan shipping, stock, packaging and landed cost not verified"
+    }
+  ],
+  "decision": "Retain exact MPN and current out-of-stock reference price; do not redesign based solely on unverified alternative inventory.",
+  "next_actions": [
+    "Verify Spirit supplier page and Japan supply terms without ordering",
+    "If exact part remains unavailable, qualify a footprint-compatible alternative against Schmitt thresholds, asynchronous controls, reset timing and leakage before substitution"
+  ],
+  "limitations": [
+    "No order, quote request, reservation or message sent",
+    "Distributor availability does not establish assembly consignment acceptance"
+  ]
+}

@@ -1,0 +1,247 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:40:25",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "chg-perp.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /ISET と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.6786 mm )",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.785
+                    },
+                    "uuid": "4fcd5b1e-84e0-4077-a381-b930c9b3d435"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0403 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In4.Cu 上、長さ: 3.7168 mm )",
+                    "pos": {
+                        "x": 22.158604,
+                        "y": 12.381396
+                    },
+                    "uuid": "33381e84-2ee0-4a54-9871-6905a51d2d42"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /ISET と /CHG_N)",
+            "items": [
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.785
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5179 mm )",
+                    "pos": {
+                        "x": 21.35,
+                        "y": 15.2
+                    },
+                    "uuid": "a306231a-5fa7-44db-bb95-88a9fabc3bba"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /ISET と /CHG_N)",
+            "items": [
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.785
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0650 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 1.6000 mm )",
+                    "pos": {
+                        "x": 23.030481,
+                        "y": 13.97089
+                    },
+                    "uuid": "3f6fe2ea-3ad0-471f-8d69-be0399335b05"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In2.Cu 上、長さ: 4.4553 mm )",
+                    "pos": {
+                        "x": 19.7,
+                        "y": 16.3
+                    },
+                    "uuid": "ca5a4727-c19b-4f2c-8ae7-d73f1ca2a22d"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1400 mm)",
+            "items": [
+                {
+                    "description": "パッド 7 [/ILIM_VSET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.385
+                    },
+                    "uuid": "7a5b716b-e1ed-40a6-9670-be93e77ed407"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.785
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.7
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                },
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.785
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5179 mm )",
+                    "pos": {
+                        "x": 21.35,
+                        "y": 15.2
+                    },
+                    "uuid": "a306231a-5fa7-44db-bb95-88a9fabc3bba"
+                },
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 14.785
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

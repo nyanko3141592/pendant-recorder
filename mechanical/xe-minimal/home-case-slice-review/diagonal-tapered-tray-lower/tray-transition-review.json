@@ -1,0 +1,62 @@
+{
+  "status": "TRAY_TOOLPATH_SCREEN_NOT_PRINT_QUALIFICATION",
+  "gcode_sha256": "9d13c7491e50adb75e785df10ddaadc691ae8f9dac459884bbed76414d1a9890",
+  "roi_bed_xy_mm": [
+    79.5,
+    77,
+    86,
+    84
+  ],
+  "cad_to_bed_xy": "(102-x,76.5-y), verified from current 3mf transform and STL translation",
+  "rows": [
+    {
+      "layer_mm": 4.84,
+      "previous_layer_mm": 4.76,
+      "roi_bead_area_mm2": 14.496702522489889,
+      "roi_area_without_previous_bead_mm2": 0.6539684962460245,
+      "features": {
+        "Inner wall": 5,
+        "Outer wall": 35,
+        "Internal solid infill": 8
+      }
+    },
+    {
+      "layer_mm": 4.92,
+      "previous_layer_mm": 4.84,
+      "roi_bead_area_mm2": 15.078323134008286,
+      "roi_area_without_previous_bead_mm2": 0.682342968796011,
+      "features": {
+        "Inner wall": 5,
+        "Outer wall": 29,
+        "Internal solid infill": 9
+      }
+    },
+    {
+      "layer_mm": 5.0,
+      "previous_layer_mm": 4.92,
+      "roi_bead_area_mm2": 15.262292715333658,
+      "roi_area_without_previous_bead_mm2": 0.398583148852039,
+      "features": {
+        "Inner wall": 6,
+        "Outer wall": 30,
+        "Internal solid infill": 8
+      }
+    },
+    {
+      "layer_mm": 5.08,
+      "previous_layer_mm": 5.0,
+      "roi_bead_area_mm2": 15.246823997418279,
+      "roi_area_without_previous_bead_mm2": 0.018196358731429094,
+      "features": {
+        "Inner wall": 6,
+        "Outer wall": 27,
+        "Internal solid infill": 8
+      }
+    }
+  ],
+  "limits": [
+    "ROI includes surrounding case features; unsupported area is not exclusively tray.",
+    "Nominal bead overlap does not prove deposition or strength.",
+    "Overhang/Bridge classification is not physical support validation."
+  ]
+}

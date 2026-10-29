@@ -1,0 +1,28 @@
+{
+  "status": "CONSERVATIVE_PACKAGE_ENVELOPE_NOT_ASSEMBLY_APPROVAL",
+  "part": "SN74HCS74DYYR",
+  "source_url": "https://www.ti.com/lit/ds/symlink/sn74hcs74.pdf",
+  "source_pdf": "sn74hcs74-package-source.pdf",
+  "source_sha256": "eac261a31ca71eed79dd051ed66a03bbd5d837f88087023fd864a3599cfa95fa",
+  "source_page": 31,
+  "drawing": "DYY0014A 4224643/D 07/2024",
+  "drawing_visually_checked": true,
+  "dimensions_mm": [
+    3.36,
+    4.6,
+    1.1
+  ],
+  "basis": {
+    "x": "3.36 maximum terminal span; exceeds body width 2.1 plus 0.50 interlead flash each side = 3.1",
+    "y": "4.3 maximum body length plus 0.15 mold flash per side = 4.6",
+    "z": "1.1 maximum height from seating plane"
+  },
+  "output": "u14-dyy0014a-envelope.step",
+  "output_sha256": "495fda2709f307c0bf203a3d2dcc7771c2c5302da31b335d762a829e02f2ad3e",
+  "reimport_valid": true,
+  "limitations": [
+    "Solid cuboid envelope, not detailed package or terminal geometry.",
+    "Unpositioned; XY center and Z seating plane 0.",
+    "Solder standoff and assembly clearances not included."
+  ]
+}

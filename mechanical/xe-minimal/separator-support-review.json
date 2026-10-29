@@ -1,0 +1,48 @@
+{
+  "status": "GEOMETRIC_SUPPORT_ONLY_NOT_MANUFACTURING_RELEASE",
+  "source_files_sha256": {
+    "separator-case-lower-study.step": "e426b551446c74dd3123544d70cf3e513c0783cd854c3f093bce8bb1812cf027",
+    "separator-case-upper-study.step": "0d41470b42156ee8b31cdaaa5bfd181899fd2a8038d58fd1e5f0fffc550c5c4d",
+    "separator-stack-study.step": "11706ab6696e06262f3e262eb0569e50db2d59c0951fcf49690305ee56d36c98",
+    "battery-separator-study.step": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67"
+  },
+  "output_sha256": "8ae7f8340efa07e21997e66b2eb1c3d7bd325feef2d512544b0de8bb32b97bde",
+  "checks": [
+    {
+      "name": "front",
+      "case_overlap_mm3": 18.841499999999996,
+      "electronics_intersection_mm3": 0.0,
+      "separator_distance_mm": 4.440892098500626e-16,
+      "nominal_end_bearing_width_mm": 0.15
+    },
+    {
+      "name": "rear",
+      "case_overlap_mm3": 18.84150000000016,
+      "electronics_intersection_mm3": 0.0,
+      "separator_distance_mm": 4.440892098500626e-16,
+      "nominal_end_bearing_width_mm": 0.15
+    },
+    {
+      "name": "side_post_-7",
+      "case_overlap_mm3": 1.5999999999999996,
+      "electronics_intersection_mm3": 0.0,
+      "separator_distance_mm": 4.440892098500626e-16,
+      "bearing_area_mm2": 2.0
+    },
+    {
+      "name": "side_post_-20",
+      "case_overlap_mm3": 1.5999999999999996,
+      "electronics_intersection_mm3": 0.0,
+      "separator_distance_mm": 4.440892098500626e-16,
+      "bearing_area_mm2": 2.0
+    }
+  ],
+  "lower_single_connected_solid": true,
+  "limitations": [
+    "0.15mm end bearing width is small and not tolerance or load qualified",
+    "0.6mm rail thickness and0.3mm separator stiffness require material/process selection",
+    "No PCB supports, closure, battery retention, thermal pad or cable channel yet",
+    "No physical assembly or drop test",
+    "Mating housing and wire geometry remain incomplete"
+  ]
+}

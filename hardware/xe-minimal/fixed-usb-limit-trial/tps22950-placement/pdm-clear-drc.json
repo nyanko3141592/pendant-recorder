@@ -1,0 +1,109 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T11:15:44",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pdm-clear.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド B2 [/VBUS_LIMITED] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.55,
+                        "y": 1.05
+                    },
+                    "uuid": "462706a3-7255-4f6e-bbc2-72b75bcf22d9"
+                },
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( F.Cu 上、長さ: 1.2166 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.049999
+                    },
+                    "uuid": "cc309b04-bbaf-47b9-9011-5f21e0611d5b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( In1.Cu 上、長さ: 3.4033 mm )",
+                    "pos": {
+                        "x": 11.75,
+                        "y": 3.2
+                    },
+                    "uuid": "21353899-3d13-4aa4-b285-aaaa9007ef40"
+                },
+                {
+                    "description": "パッド C2 [/USB_ILIM_SET] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.05
+                    },
+                    "uuid": "3a0645f4-9242-4e6b-8962-9a6cd229e99c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( F.Cu 上、長さ: 1.2166 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.049999
+                    },
+                    "uuid": "cc309b04-bbaf-47b9-9011-5f21e0611d5b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1180 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.999999
+                    },
+                    "uuid": "37e16e63-d5a5-44f9-82ea-419a732e2b74"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( F.Cu 上、長さ: 1.0187 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 2.95
+                    },
+                    "uuid": "8294ad2a-c819-407e-8a24-0f7686408969"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

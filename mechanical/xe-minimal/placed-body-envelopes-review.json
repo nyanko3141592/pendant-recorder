@@ -1,0 +1,121 @@
+{
+  "status": "PARTIAL_ASSEMBLY_VISUALIZATION_NOT_FIT_APPROVAL",
+  "pcb_sha256": "31ebfc3b10417e6fc9de09c4847dfb462e195d9303b57f0c9475281781354e4f",
+  "base_step_sha256": "d1439fa9518e79eef55dfa64d4053e9e033e8fb5f97c53944526d36f7727b914",
+  "output_sha256": "174dc3ed85513977b7002a7b362c44bd9ee7dfab60f11169c3be24ea174aff48",
+  "placed_envelopes": [
+    {
+      "ref": "U11",
+      "source_file": "u11-package-body-max.step",
+      "source_sha256": "4668cd93ce47592ecdd1d157e0de9a62d7ff11b1cbe4512a4573a83f06b518e1",
+      "body_bounds_mm": [
+        0.5250000000000004,
+        8.625,
+        -17.325,
+        -11.025,
+        -0.9000000000000004,
+        3.8576374173141627e-16
+      ],
+      "solder_standoff_mm": 0,
+      "solder_standoff_status": "visualization datum only; must be measured or specified before fit approval"
+    },
+    {
+      "ref": "U8",
+      "source_file": "u8-body-positioned-study.step",
+      "source_sha256": "ebef70a66ae2e0835da33ec48dfa06c66bc7c1e774448f339302f9f273d125ee",
+      "body_bounds_mm": [
+        19.2,
+        23.3,
+        -6.115,
+        -3.0149999999999997,
+        0.8264,
+        2.1264
+      ],
+      "limitations": [
+        "Zero standoff is visualization datum only.",
+        "Terminals, acoustic hole, sealing gasket and acoustic clearance omitted.",
+        "Not combined with latest full board; no fit approval."
+      ]
+    },
+    {
+      "ref": "U14",
+      "source_file": "u14-envelope-positioned-study.step",
+      "source_sha256": "59c959155ddee83808c905669183311865ff721fdca9e0d876ca851fdd6dceba",
+      "body_bounds_mm": [
+        2.945,
+        6.305,
+        -22.475,
+        -17.875,
+        -1.1,
+        2.816687638039e-16
+      ],
+      "limitations": [
+        "Zero solder standoff is visualization datum only.",
+        "Conservative cuboid includes terminal span and mold flash; not detailed package.",
+        "Not combined with complete assembly; no enclosure fit approval."
+      ]
+    },
+    {
+      "ref": "U10",
+      "source_file": "u10-envelope-positioned-study.step",
+      "source_sha256": "73348ed9272e7b6485b01315ed680ea6dc08d5e0e0596e641c3ffba717f53ed0",
+      "body_bounds_mm": [
+        22.575,
+        23.385,
+        -3.385,
+        -2.575,
+        -0.5,
+        4.959819536547e-17
+      ],
+      "limitations": [
+        "Zero solder standoff is visualization datum only.",
+        "Cuboid includes maximum total height from ball seating plane; no detailed balls.",
+        "Not combined with complete assembly; no enclosure fit approval."
+      ]
+    },
+    {
+      "ref": "U1",
+      "source_file": "u1-envelope-positioned-study.step",
+      "source_sha256": "04ca0dbb4fe92c1b884cd419814f494cee454203411df7e4f425405ed1a939a6",
+      "body_bounds_mm": [
+        13.1525,
+        20.5525,
+        -11.4675,
+        -4.0675,
+        -0.6,
+        4.531193156845e-16
+      ],
+      "limitations": [
+        "Zero solder standoff is visualization datum only.",
+        "Conservative7.4mm square includes assumed0.15mm protrusion on each side; drawing visual check pending.",
+        "Not combined with complete assembly; no enclosure fit approval."
+      ]
+    },
+    {
+      "ref": "J2",
+      "source_file": "j2-header-positioned-study.step",
+      "source_sha256": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0",
+      "body_bounds_mm": [
+        0.725,
+        6.325,
+        -5.745,
+        -1.045,
+        -1.7200000000000002,
+        -0.11999999999999943
+      ],
+      "limitations": [
+        "Footprint outline supplies longitudinal pose; exact manufacturer datum mapping still pending.",
+        "Conservatively add maximum stand-off0.12mm outside1.6mm height; possible datum double-counting must be resolved.",
+        "Header only; mating housing781720003, leads and insertion/removal space excluded.",
+        "Not an enclosure fit approval."
+      ]
+    }
+  ],
+  "remaining_missing_required_bodies": [],
+  "limitations": [
+    "J2 header pose is provisional; manufacturer datum and stand-off require confirmation.",
+    "No battery, unmodified cable, mating plug, case, insulation or retention.",
+    "Envelope bodies omit terminals; zero solder standoff is a visualization datum, not an assembly dimension.",
+    "Existing library geometry has not been manufacturer-verified."
+  ]
+}

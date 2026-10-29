@@ -1,0 +1,86 @@
+{
+  "status": "ADDITIONAL_ENVELOPES_ONLY_NOT_COMPLETE_ASSEMBLY",
+  "pcb_sha256": "b4082e2163e932a5e32fa1cb915eccc1bcdbaac505a7c0a80982274db1b40aba",
+  "C34_selection_file": "docs/procurement/xe-c34-murata-candidate.json",
+  "C34_selection_sha256": "033b1e0b5eb79531b601798b5cb6704e0954238bbb165191583605a6219dd977",
+  "parts": [
+    {
+      "ref": "U16",
+      "dimensions_in_step_axes_mm": [
+        2.65,
+        2.4,
+        1.1
+      ],
+      "provisional": false,
+      "bounds_mm": [
+        7.8,
+        10.45,
+        -11.254999,
+        -8.854999,
+        0.8264,
+        1.9264000000000001
+      ],
+      "study_checks": [
+        {
+          "study": "retained-upper-case-study.step",
+          "intersection_volume_mm3": 0.0,
+          "distance_mm": 2.5250000999999997
+        },
+        {
+          "study": "retained-lower-case-study.step",
+          "intersection_volume_mm3": 0.0,
+          "distance_mm": 6.5630843549356435
+        },
+        {
+          "study": "battery-separator-study.step",
+          "intersection_volume_mm3": 0.0,
+          "distance_mm": 2.7464
+        }
+      ],
+      "file": "u16-tmux-candidate-envelope.step"
+    },
+    {
+      "ref": "C34",
+      "dimensions_in_step_axes_mm": [
+        0.55,
+        1.05,
+        0.55
+      ],
+      "provisional": false,
+      "bounds_mm": [
+        7.9,
+        8.450000000000001,
+        -10.0425,
+        -8.9925,
+        -0.55,
+        0.0
+      ],
+      "study_checks": [
+        {
+          "study": "retained-upper-case-study.step",
+          "intersection_volume_mm3": 0.0,
+          "distance_mm": 4.4514001
+        },
+        {
+          "study": "retained-lower-case-study.step",
+          "intersection_volume_mm3": 0.0,
+          "distance_mm": 6.37
+        },
+        {
+          "study": "battery-separator-study.step",
+          "intersection_volume_mm3": 0.0,
+          "distance_mm": 1.3699999999999999
+        }
+      ],
+      "file": "c34-tmux-candidate-envelope.step"
+    }
+  ],
+  "U16_basis": "TI DCK0005A 4214834/G PDF p35; lead span max2.4, body length2.15 plus 0.25 flash each end =2.65, seating height max1.1. Cuboid after90deg rotation.",
+  "C34_basis": "Murata GRM155R71C104KA88J; manufacturer GRM155R71C104KA88-01A reference sheet dated 2024-12-25 p2: L1.0+/-0.05 W0.5+/-0.05 T0.5+/-0.05 mm; maximum cuboid rotated90deg; candidate selection only",
+  "limitations": [
+    "Zero solder standoff is a visualization datum",
+    "Existing case studies are incomplete historical geometry, not a finished fit target",
+    "No wire, mating plug, full component or battery swelling clearance proof",
+    "No case height or overall size acceptance follows from these local intersections"
+  ]
+}

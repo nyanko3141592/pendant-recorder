@@ -1,0 +1,121 @@
+{
+  "status": "RIGID_FIT_DUMMIES_NOT_MANUFACTURING",
+  "units": "mm",
+  "source_sha256": {
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.mechanical-handoff.json": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/export_fit_dummies.py": "20f2bb45921b6f7bbcbf9dd6428bb5050ad82b47b145e4d305ad90255463b305",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/body-NOT-MANUFACTURING.step": "1af24408f622bff535c29f0ccab5c9ebc0225d255d2c0008f6d9fb986c55db55",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/body-NOT-MANUFACTURING.stl": "9c3bd35ed5dfbede6bf86a466dba338e0b3730bdc38895448c9991ce8a1410f8",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/lid-NOT-MANUFACTURING.step": "2969d9fb28311a1cfcb61e9067630ac71bec6415a4f95694b0e89d9b9a97d9cf",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/lid-NOT-MANUFACTURING.stl": "e54402b21b65aeba58eda01923e61840f6e0ffcc285b53b4d2c044355f194f0a",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/key-NOT-MANUFACTURING.step": "c80337a5456316e79eac3d8fa12a5554e7384a02b04d26ae2a2b3103806d07b9",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/key-NOT-MANUFACTURING.stl": "dc16cde26c030ab302cf07c1545966602410d5f56df1ef450979b1e5f8f79477"
+  },
+  "board_thickness_mm": 0.93,
+  "component_envelopes": 91,
+  "items": [
+    {
+      "name": "bare-board-envelope",
+      "assembly_bounds_mm": [
+        1.8000000000000007,
+        1.3000000000000007,
+        8.6,
+        27.8,
+        30.3,
+        9.53
+      ],
+      "size_mm": [
+        26.0,
+        29.0,
+        0.9299999999999997
+      ],
+      "stl_translation_from_assembly_mm": [
+        -1.8000000000000007,
+        -1.3000000000000007,
+        -8.6
+      ],
+      "valid": true,
+      "solids": 1,
+      "stl_triangles": 3060,
+      "stl_closed_oriented_edges": true,
+      "stl_edge_quantization_mm": 1e-05,
+      "volume_mm3": 697.9850670752164,
+      "files": {
+        "bare-board-envelope-NOT-MANUFACTURING.step": "0ee0473f1044749107484bba2fc68528bc8b4c666b6b26a3e0f5164bf543ab52",
+        "bare-board-envelope-NOT-MANUFACTURING.stl": "9b419fc5ee0118f3c33f02b2a1892208c8b6116cee67e676704cf00118592167"
+      }
+    },
+    {
+      "name": "populated-board-envelope",
+      "assembly_bounds_mm": [
+        1.8000000000000007,
+        1.3000000000000007,
+        7.05,
+        27.8,
+        30.495,
+        13.09
+      ],
+      "size_mm": [
+        26.0,
+        29.195,
+        6.04
+      ],
+      "stl_translation_from_assembly_mm": [
+        -1.8000000000000007,
+        -1.3000000000000007,
+        -7.05
+      ],
+      "valid": true,
+      "solids": 1,
+      "stl_triangles": 4496,
+      "stl_closed_oriented_edges": true,
+      "stl_edge_quantization_mm": 1e-05,
+      "volume_mm3": 1818.3727255752174,
+      "files": {
+        "populated-board-envelope-NOT-MANUFACTURING.step": "462d01867af74e6241064aa573adada370b99a2aaf82aa38bca650ae3cba610e",
+        "populated-board-envelope-NOT-MANUFACTURING.stl": "8ece0c1537909a3b8eda912b3f45d8a5e7b91c07ca4dd22ad1e7e88ada218ff6"
+      }
+    },
+    {
+      "name": "XE-max-pack-envelope",
+      "assembly_bounds_mm": [
+        1.3000000000000007,
+        1.3000000000000007,
+        1.5,
+        16.8,
+        28.3,
+        5.7
+      ],
+      "size_mm": [
+        15.5,
+        27.0,
+        4.2
+      ],
+      "stl_translation_from_assembly_mm": [
+        -1.3000000000000007,
+        -1.3000000000000007,
+        -1.5
+      ],
+      "valid": true,
+      "solids": 1,
+      "stl_triangles": 12,
+      "stl_closed_oriented_edges": true,
+      "stl_edge_quantization_mm": 1e-05,
+      "volume_mm3": 1757.7000000000003,
+      "files": {
+        "XE-max-pack-envelope-NOT-MANUFACTURING.step": "dc26a7059a18c12ccf80bc5715c281a25cde321306d5876dbc5d2bdc18ea437d",
+        "XE-max-pack-envelope-NOT-MANUFACTURING.stl": "4a1027d4e8fbbdb8fb1f0a96341389147f7958b798f4d076ac434fd4e14980fa"
+      }
+    }
+  ],
+  "limitations": [
+    "Component shapes include courtyard rectangles; these are conservative envelopes rather than actual bodies.",
+    "Fused dummy includes modeled test/programming envelopes and may obscure PCB bores; unsuitable for acoustic or connector insertion tests.",
+    "Pack dummy excludes harness, plug, pouch compliance/swelling and thermal behavior. Never infer complete battery fit from rigid dummy fit.",
+    "PCB dummy uses0.93mm thickness assumption, not nominal0.8mm.",
+    "STL has no intrinsic unit; import as millimetres at100 percent scale. STEP preserves assembly coordinates; each STL is translated to minimumXYZ zero.",
+    "Print orientation, supports, dimensional compensation and process/material remain to be selected. Geometry validity does not establish printability."
+  ],
+  "release_allowed": false
+}

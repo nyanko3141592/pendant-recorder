@@ -1,0 +1,872 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:07:58",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "lse-mic-shift.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.5867 mm )",
+                    "pos": {
+                        "x": 17.6875,
+                        "y": 10.7375
+                    },
+                    "uuid": "c0c32555-38ff-4b46-90f1-4302e1439289"
+                },
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0375,
+                        "y": 10.7375
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2540 mm )",
+                    "pos": {
+                        "x": 19.1675,
+                        "y": 10.7775
+                    },
+                    "uuid": "6e32f119-fd1e-4113-b0eb-56f7bf12caab"
+                },
+                {
+                    "description": "パッド 5 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.5175,
+                        "y": 10.7775
+                    },
+                    "uuid": "162c1271-d4cd-4945-a364-70a88d661931"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/LSE_IN] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "5f0ebff6-5e04-43d5-a935-f41b3d966c37"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - C11 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.5,
+                        "y": 13.73
+                    },
+                    "uuid": "ea95b80c-3134-42f6-9409-64df632abd20"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 12.1
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                },
+                {
+                    "description": "パッド 3 [/LSE_IN] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "5f0ebff6-5e04-43d5-a935-f41b3d966c37"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_OUT] - C12 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.5,
+                        "y": 11.73
+                    },
+                    "uuid": "87d0e837-cd71-44c9-bab6-3b49461c061f"
+                },
+                {
+                    "description": "パッド 4 [/LSE_OUT] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.15
+                    },
+                    "uuid": "99a55d43-eeca-4fe6-86bc-35b174b2e36a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/LSE_OUT] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.15
+                    },
+                    "uuid": "99a55d43-eeca-4fe6-86bc-35b174b2e36a"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 10.7
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/PDM_DATA] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.3375,
+                        "y": 10.7375
+                    },
+                    "uuid": "d18d6bbe-de4a-4076-b642-3eecffc370fd"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( In3.Cu 上、長さ: 0.4047 mm )",
+                    "pos": {
+                        "x": 17.5262,
+                        "y": 11.3543
+                    },
+                    "uuid": "2f96497a-7be6-4278-bab1-d92884dc0ec6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/PDM_CLK] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.3375,
+                        "y": 12.4375
+                    },
+                    "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+                },
+                {
+                    "description": "配線 [/PDM_CLK] ( F.Cu 上、長さ: 0.5017 mm )",
+                    "pos": {
+                        "x": 16.9875,
+                        "y": 12.4375
+                    },
+                    "uuid": "dc4fb5a4-e7e5-4170-973c-240a14c4739e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.5867 mm )",
+                    "pos": {
+                        "x": 17.6875,
+                        "y": 10.7375
+                    },
+                    "uuid": "c0c32555-38ff-4b46-90f1-4302e1439289"
+                },
+                {
+                    "description": "パッド 1 [/PDM_DATA] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.3375,
+                        "y": 10.7375
+                    },
+                    "uuid": "d18d6bbe-de4a-4076-b642-3eecffc370fd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0541 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 10.7
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.2456 mm )",
+                    "pos": {
+                        "x": 16.6209,
+                        "y": 11.1041
+                    },
+                    "uuid": "3851ef84-b885-4eb7-a83a-635cfca64a3a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_OUT と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 10.7
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.5185 mm )",
+                    "pos": {
+                        "x": 16.9875,
+                        "y": 10.7375
+                    },
+                    "uuid": "785f6a09-1c8b-4b3e-8352-bc8fe54ad2ca"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_CS_N)",
+            "items": [
+                {
+                    "description": "パッド 5 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.5175,
+                        "y": 10.7775
+                    },
+                    "uuid": "162c1271-d4cd-4945-a364-70a88d661931"
+                },
+                {
+                    "description": "ビア [/SD_CS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 20.4891,
+                        "y": 10.9863
+                    },
+                    "uuid": "94a6e774-d8ac-474e-9f51-44b4c78d0eaa"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 7.9699 mm )",
+                    "pos": {
+                        "x": 19.9495,
+                        "y": 17.113
+                    },
+                    "uuid": "4923dce7-cd2e-44fa-94f8-382c4a9462c0"
+                },
+                {
+                    "description": "U8のNPTHパッド",
+                    "pos": {
+                        "x": 19.5175,
+                        "y": 11.5875
+                    },
+                    "uuid": "490a071e-b016-4648-8ae1-ec1222cbb401"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント U1",
+                    "pos": {
+                        "x": 11.75,
+                        "y": 9.9
+                    },
+                    "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+                },
+                {
+                    "description": "フットプリント Y1",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 11.4
+                    },
+                    "uuid": "90d0966d-1c86-4664-a2e2-0159dd9ad8e4"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント Y1",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 11.4
+                    },
+                    "uuid": "90d0966d-1c86-4664-a2e2-0159dd9ad8e4"
+                },
+                {
+                    "description": "フットプリント U8",
+                    "pos": {
+                        "x": 18.8375,
+                        "y": 11.5875
+                    },
+                    "uuid": "d94a7b73-f065-4f9f-a619-ba29abe430e5"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.5185 mm )",
+                    "pos": {
+                        "x": 16.9875,
+                        "y": 10.7375
+                    },
+                    "uuid": "785f6a09-1c8b-4b3e-8352-bc8fe54ad2ca"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 10.7
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/SD_CS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 20.4891,
+                        "y": 10.9863
+                    },
+                    "uuid": "94a6e774-d8ac-474e-9f51-44b4c78d0eaa"
+                },
+                {
+                    "description": "パッド 5 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.5175,
+                        "y": 10.7775
+                    },
+                    "uuid": "162c1271-d4cd-4945-a364-70a88d661931"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.5867 mm )",
+                    "pos": {
+                        "x": 17.6875,
+                        "y": 10.7375
+                    },
+                    "uuid": "c0c32555-38ff-4b46-90f1-4302e1439289"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "6595b663-1c12-4df5-9782-766060e8f719"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2540 mm )",
+                    "pos": {
+                        "x": 19.1675,
+                        "y": 10.7775
+                    },
+                    "uuid": "6e32f119-fd1e-4113-b0eb-56f7bf12caab"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.5185 mm )",
+                    "pos": {
+                        "x": 16.9875,
+                        "y": 10.7375
+                    },
+                    "uuid": "785f6a09-1c8b-4b3e-8352-bc8fe54ad2ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK] ( F.Cu 上、長さ: 0.5017 mm )",
+                    "pos": {
+                        "x": 16.9875,
+                        "y": 12.4375
+                    },
+                    "uuid": "dc4fb5a4-e7e5-4170-973c-240a14c4739e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "セグメント (Edge.Cuts 上)",
+                    "pos": {
+                        "x": 21.0,
+                        "y": 2.5
+                    },
+                    "uuid": "9041c343-c15d-4a1a-b083-a3602659d880"
+                },
+                {
+                    "description": "セグメント of U8 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 17.0275,
+                        "y": 9.9775
+                    },
+                    "uuid": "091c0bae-1613-4ec9-a7b3-e23e4ed62511"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "セグメント (Edge.Cuts 上)",
+                    "pos": {
+                        "x": 21.0,
+                        "y": 2.5
+                    },
+                    "uuid": "9041c343-c15d-4a1a-b083-a3602659d880"
+                },
+                {
+                    "description": "セグメント of U8 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 20.9475,
+                        "y": 9.9775
+                    },
+                    "uuid": "61eb87b0-02c6-4704-84c5-7c2f9be8b184"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "セグメント (Edge.Cuts 上)",
+                    "pos": {
+                        "x": 21.0,
+                        "y": 2.5
+                    },
+                    "uuid": "9041c343-c15d-4a1a-b083-a3602659d880"
+                },
+                {
+                    "description": "セグメント of U8 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 20.9475,
+                        "y": 13.1975
+                    },
+                    "uuid": "b06ce0eb-ebad-4667-a16f-6eb928f792fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of U8 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 16.7275,
+                        "y": 13.1975
+                    },
+                    "uuid": "c7461ae4-2bf3-494c-ba6d-83e264021e54"
+                },
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 12.66
+                    },
+                    "uuid": "d63abb01-c099-4650-a8b4-19752f05b624"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 10.14
+                    },
+                    "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+                },
+                {
+                    "description": "パッド 4 [/LSE_OUT] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.15
+                    },
+                    "uuid": "99a55d43-eeca-4fe6-86bc-35b174b2e36a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 10.14
+                    },
+                    "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+                },
+                {
+                    "description": "パッド 5 [unconnected-(U1-PH0-Pad5)] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 10.65
+                    },
+                    "uuid": "c364da6f-4518-486d-8fa2-0dc3b135be3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 10.14
+                    },
+                    "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+                },
+                {
+                    "description": "パッド 6 [unconnected-(U1-PH1-Pad6)] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 10.15
+                    },
+                    "uuid": "770423b9-8ef8-400a-be90-ba663cb234d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 10.14
+                    },
+                    "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 12.65
+                    },
+                    "uuid": "7774eac7-dafd-4c3f-9074-357b52b26756"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 10.14
+                    },
+                    "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+                },
+                {
+                    "description": "パッド 2 [unconnected-(U1-PC13-Pad2)] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 12.15
+                    },
+                    "uuid": "07f00fd1-43e2-4a77-a3d9-730c86608a24"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 10.14
+                    },
+                    "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+                },
+                {
+                    "description": "パッド 3 [/LSE_IN] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "5f0ebff6-5e04-43d5-a935-f41b3d966c37"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 12.66
+                    },
+                    "uuid": "d63abb01-c099-4650-a8b4-19752f05b624"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 12.65
+                    },
+                    "uuid": "7774eac7-dafd-4c3f-9074-357b52b26756"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 15.44,
+                        "y": 12.66
+                    },
+                    "uuid": "d63abb01-c099-4650-a8b4-19752f05b624"
+                },
+                {
+                    "description": "パッド 3 [/PDM_CLK] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.3375,
+                        "y": 12.4375
+                    },
+                    "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 17.16,
+                        "y": 12.66
+                    },
+                    "uuid": "2d82c032-de7c-40dd-8c55-618de8cd912e"
+                },
+                {
+                    "description": "パッド 1 [/PDM_DATA] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.3375,
+                        "y": 10.7375
+                    },
+                    "uuid": "d18d6bbe-de4a-4076-b642-3eecffc370fd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 17.16,
+                        "y": 12.66
+                    },
+                    "uuid": "2d82c032-de7c-40dd-8c55-618de8cd912e"
+                },
+                {
+                    "description": "パッド 3 [/PDM_CLK] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 17.3375,
+                        "y": 12.4375
+                    },
+                    "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of U8 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 16.7275,
+                        "y": 13.1975
+                    },
+                    "uuid": "c7461ae4-2bf3-494c-ba6d-83e264021e54"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 10.7
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of U8 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 16.7275,
+                        "y": 13.1975
+                    },
+                    "uuid": "c7461ae4-2bf3-494c-ba6d-83e264021e54"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 12.1
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

@@ -1,0 +1,69 @@
+{
+  "status": "PREFERRED_NEXT_LIMITER_CANDIDATE_NOT_ADOPTED",
+  "part": "TPS22950YBHR",
+  "exclude_variants": [
+    "TPS22950L",
+    "TPS22950C"
+  ],
+  "source": {
+    "url": "https://www.ti.com/lit/ds/symlink/tps22950.pdf",
+    "revision": "SLVSFJ2B",
+    "pages": [
+      3,
+      6,
+      12,
+      14
+    ]
+  },
+  "datasheet_screen": {
+    "RILIM_ohm": 19200,
+    "limit_mA_min_typ_max": [
+      34,
+      50,
+      66
+    ],
+    "condition": "VIN-VOUT=0.5 V; -40..125 C; table applies over recommended VIN range unless noted",
+    "IQ_max_uA": 60,
+    "nominal_body_mm": [
+      1.106,
+      0.706
+    ],
+    "behavior": "Current regulation until overload removed or thermal shutdown; auto-retry is thermal cycling, unlike TPS22946 timed retry.",
+    "reverse_behavior": "Always-on reverse blocking feature; enabled reverse-current threshold about 900mA requires transient evaluation; not instantaneous ideal diode."
+  },
+  "conditional_budget": {
+    "max_output_plus_IQ_mA": 66.06,
+    "remaining_to_100mA_before_other_upstream_loads_mA": 33.94,
+    "min_output_less_existing_max_charge_mA": -15.019607843099998,
+    "implication": "Existing maximum charge plus system cannot be guaranteed at minimum limiter current. Charger DPPM must reduce charging; charge completion and low-battery startup require analysis/test. No 16h battery-run change assumed."
+  },
+  "package_pin_map": {
+    "A1": "ON",
+    "A2": "FLT",
+    "B1": "VIN",
+    "B2": "VOUT",
+    "C1": "GND",
+    "C2": "ILIM"
+  },
+  "proposed_connections": {
+    "A1": "USB_INPUT_ON",
+    "A2": "NC unless diagnostic pull-up added",
+    "B1": "VBUS",
+    "B2": "VBUS_LIMITED",
+    "C1": "GND",
+    "C2": "19.2k resistor to GND"
+  },
+  "next_checks": [
+    "Obtain 19.2k resistor tolerance/TCR and determine valid bound with tolerance; do not treat nominal table as exact installed limit.",
+    "Review quick-output-discharge and reverse transient against charger IN retained voltage.",
+    "Verify small WCSP land pattern, assembly availability and actual maximum dimensions.",
+    "Full upstream load and startup/inrush budget, including control latch/supervisor.",
+    "Qualify DPPM interaction, battery-depleted transfer/charging and charge timer."
+  ],
+  "procurement_lead": {
+    "url": "https://www.digikey.jp/en/products/detail/texas-instruments/TPS22950YBHR/13636696",
+    "status": "Search-index listing only; stock and price not live verified"
+  },
+  "physical_tests_run": 0,
+  "pcb_modified": false
+}

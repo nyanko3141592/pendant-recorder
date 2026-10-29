@@ -1,0 +1,16 @@
+{
+  "status": "USB_SURFACE_ROUTE_FEASIBILITY_NOT_ADOPTED",
+  "board": "usb-surface-planes.kicad_pcb",
+  "drc": 0,
+  "whole_board_unconnected": 170,
+  "usb_unconnected": 0,
+  "layers": "USB F/B only; In1 and In2 GND planes added",
+  "limitations": [
+    "Independent paths, NOT differential paired routing",
+    "DP1via vsDM4vias: asymmetric, needs paired transition redesign",
+    "Lengths include duplicate connector and ESD branches; not source-to-load delay",
+    "Other circuitry unrouted, must preserve reference corridors when routing it",
+    "No impedance qualification or completed enclosure"
+  ],
+  "next": "Constrain both data routes to paired transition sites and defined width/gap; do not globally autoroute away the reference planes"
+}

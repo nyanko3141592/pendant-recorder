@@ -1,0 +1,106 @@
+{
+  "status": "CAPTIVE_NUT_GEOMETRY_TRIAL_NOT_RELEASED",
+  "step_sha256": "88c116a1e09d129e9d96ba1485b13d64efdc849bc5d0dbc51b20c3bb57946360",
+  "body_valid": true,
+  "lid_valid": true,
+  "body_solids": 1,
+  "lid_solids": 1,
+  "case_overlap_mm3": 0.0,
+  "case_intersection_valid": true,
+  "component_overlaps": [
+    {
+      "a": "body",
+      "part_index": 2,
+      "volume_mm3": 0.00020340398979041196,
+      "valid": true
+    }
+  ],
+  "outer_checks": [
+    {
+      "name": "body",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "lid",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "0",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "1",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "2",
+      "outside_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "name": "3",
+      "outside_mm3": 0.0,
+      "valid": true
+    }
+  ],
+  "fastener_case_checks": [
+    {
+      "fastener": 0,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 0,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 1,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 1,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 2,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 2,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 3,
+      "case": "body",
+      "overlap_mm3": 0.0,
+      "valid": true
+    },
+    {
+      "fastener": 3,
+      "case": "lid",
+      "overlap_mm3": 0.0,
+      "valid": true
+    }
+  ],
+  "limitations": [
+    "Lid keeper added; insertion/removal and nut escape paths still need verification",
+    "Carrier cap .40mm and lid seat .30mm require print process/strength qualification",
+    "No thread modeled; screw and nut simplified for geometry",
+    "No insertion trajectory or actual assembly tolerance verification"
+  ]
+}

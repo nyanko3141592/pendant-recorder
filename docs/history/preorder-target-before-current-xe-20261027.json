@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-26",
+  "status": "IN_PROGRESS_NOT_ORDER_READY",
+  "objective": "5,000円以下のおしゃれな専用レコーダーを目指し、回路・ケース設計を少数試作の発注直前まで仕上げる",
+  "price_basis": "5,000円以下は製品目標。原価・販売価格のどちらか、送料扱い、量産数量は未確定。少数試作5台の支払総額・1台換算を別記し、達成扱いにしない。",
+  "prototype_quantity": 5,
+  "preserve": [
+    "USB-C充電・有線MSC取出し・PC自動取込み",
+    "連続16h目標、16kHz mono、36h保存",
+    "暗号化・無線なし・専用台なし",
+    "厚さ15mm以下・角と辺を丸めたスクエア",
+    "手はんだ不要の組立"
+  ],
+  "completion_gates": [
+    "調達可能な部品と電池・ハーネスの確定",
+    "回路レビュー、ERC/DRC/未接続およびBOMと配線の整合確認",
+    "固定構造・USB開口・音道・配線余裕を含むケース設計",
+    "ケース・部品付き基板・電池の個別STL/3MFと比較模型",
+    "採用ハードに対応するファームのビルドと机上試験",
+    "JLC部品照合・製造条件・Gerber/BOM/CPL一式",
+    "5台の部品・実装・電池・ケース・送料・税の金額と未確定項目の分離",
+    "実機試験計画と発注チェックリスト",
+    "低電圧時の録音停止・暗号化末尾保存・sync/unmount・再開抑止の実装と机上試験"
+  ],
+  "physical_validation_pending": [
+    "16h連続録音と消費電流",
+    "充電温度保護・瞬間電流・低電圧動作",
+    "録音音質・衣擦れ・音道",
+    "USB実転送・電源断・書込み耐久",
+    "印刷公差・嵌合・落下・固定強度"
+  ],
+  "first_design_work": "最新6層候補を正本に、電池とmicroSDの電流適合、ケース固定構造、JLC実装照合と送料込み見積りを解決する。過去4層検討は履歴として保持する。",
+  "baseline": "Historical baselines retained; current engineering candidate is V15, not adopted for manufacture.",
+  "external_constraints": [
+    "YDL照会メールは送信せず本文確認待ち",
+    "JLCの既存安全拒否を迂回しない。新設計の確定前に旧R6を発注しない"
+  ],
+  "authorization": "ローカル設計・既承認の見積りまで。注文・支払いなし",
+  "goal_tool_note": "既存未完了ゴールがあるためcreate_goalで置換不可。既存ゴールを完了扱いにせず本ファイルで最新スコープを記録",
+  "current_candidate": {
+    "board": "hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb",
+    "board_sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "layers": 6,
+    "board_mm": [
+      26,
+      29
+    ],
+    "nominal_board_thickness_mm": 0.8,
+    "case_nominal_mm": [
+      29.6,
+      31.6,
+      14.6
+    ],
+    "user_outer_limit_mm": [
+      30,
+      32,
+      15
+    ],
+    "assembly_models": "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge",
+    "status": "NOT_ORDER_READY",
+    "closure_status": "Removable support key and tape/pad comparison; key retention, harness, tolerances and assembly fixture unresolved.",
+    "critical_open_items": [
+      "Finished battery harness fit and assembly",
+      "SD card current/runtime feasibility and exact SKU",
+      "Electrical and temperature protection qualification",
+      "Case retention, thermal and acoustic design",
+      "Supplier DFM/part matching and complete five-unit landed cost"
+    ],
+    "cost_review": "docs/procurement/v15-five-unit-cash-review.json",
+    "firmware_status": "Host and ARM engineering evidence exists; physical validation and release configuration remain pending."
+  },
+  "historical_v13_candidate": {
+    "board": "hardware/mini-rect-v13/usb-ground-plane-candidate.kicad_pcb",
+    "layers": 6,
+    "nominal_stack_mm": 0.8264,
+    "outer_mm": [
+      23,
+      25,
+      14.81
+    ],
+    "assembly_models": "/Users/takahashinaoki/Downloads/Pendant-mini-rect-v13-six-layer-fit-study-r8",
+    "status": "NOT_ORDER_READY",
+    "critical_open_items": [
+      "Battery/card peak-current compatibility",
+      "Battery NTC and finished harness specification; charging currently inhibited",
+      "Case retention: edge screw head protrusion and inward boss collision with J4",
+      "JLC final matching, centroid/rotation review and shipping/tax inclusive quote"
+    ],
+    "firmware_status": "Low-battery export and physical USB replug implemented; host tests and ARM link passed. Hardware validation pending; not production release.",
+    "closure_status": "R8 assembly model has no qualified retention. Screw roof screening rejects existing edge seat; inward boss envelope conflicts with J4. Do not treat model as manufacturing-ready."
+  }
+}

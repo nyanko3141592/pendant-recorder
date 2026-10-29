@@ -1,0 +1,24 @@
+{
+  "status": "CAP_CLEARANCE_AND_DESCENT_SCREEN_NOT_ASSEMBLY_APPROVAL",
+  "checks": {
+    "wire_guide_overlap_mm3": 0.0,
+    "wire_cap_overlap_mm3": 0.0,
+    "wire_guide_distance_mm": 0.09948785203023014,
+    "wire_cap_distance_mm": 0.09999999999999987,
+    "cap_board_distance_mm": 0.370000000000001,
+    "cap_descent_wire_overlap_mm3": 0.0,
+    "cap_descent_board_overlap_mm3": 0.8953905590123238
+  },
+  "cap_descent_start_offset_mm": 2,
+  "sources_sha256": {
+    "film-wire-pad-connected-review.json": "b66eb79f7de52fe7f54f2ee87ee9091982ac790ea1792e6e12ea4724eef0ebb3",
+    "film-common-guide-separator-trial.step": "5a6573bd717f3abb857564ce784a2b86da29383e813175bb331dd99b76ca3f07",
+    "film-common-guide-cap-trial.step": "4d79d10a37d6064e33879c86b3f30e95129dbab2140db384bfcb598828188d5b",
+    "film-sensor-depopulated-board-study.step": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e"
+  },
+  "limits": [
+    "Exact rectangular cap sweep covers only one vertical insertion path.",
+    "If PCB blocks descent, install cap before lowering PCB, requiring a separate full assembly sequence check.",
+    "No glue thickness, placement tolerance, flex/slack, adhesion or strain-relief qualification."
+  ]
+}

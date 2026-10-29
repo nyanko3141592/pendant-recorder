@@ -1,0 +1,38 @@
+{
+  "status": "LATENCY_BUDGET_AND_TELEMETRY_NOT_PHYSICAL_PROOF",
+  "sample_rate_hz": 16000,
+  "block_samples": 1024,
+  "block_ms": 64,
+  "queue_blocks": 16,
+  "nominal_backlog_ms": 1024,
+  "synchronous_work": "recording_session save -> encryption + FatFs + blocking SPI writes in main; DMA ISR keeps capturing",
+  "single_sector_busy_timeout_ms": 500,
+  "implication": "Multiple successful but slow writes can overflow queue before per-sector timeout. Timeout does not bound full file save within queue capacity.",
+  "conservative_stall_budget_ms": "(16 - queued_blocks) *64, before margin for interrupt phase and competing work. Not a bound on future storage latency.",
+  "telemetry": "audio_queue.high_water atomic producer-maintained maximum since init; read via debugger or audio_queue_high_water; concurrent consumption can overestimate occupancy but does not hide fullness. No reset while recording.",
+  "validation": "Actual audio_queue.c ASAN/UBSAN existing ring fill/drain/overflow/tails with high-water reset/retention checks; no threaded race test or hardware latency measurement",
+  "bench_gate": [
+    "Record high_water and fault over full16h with realstorage",
+    "Stress lowbattery/fullmedia/writebusy/USB rollover",
+    "Retain raw timing/current traces with ELF/PCBhash",
+    "Any queue overflow remains fatal; no silent gap insertion"
+  ],
+  "remaining": "Optimize write batching or pipeline scheduling if measurement exceeds queue margin; enlarging buffer alone does not solve unbounded sustained latency.",
+  "sd_chunk_optimization": {
+    "bytes": 32,
+    "payload_calls_before": 512,
+    "payload_calls_after": 16,
+    "scope": "read/write payload exchange; CMD24 and card busy semantics unchanged",
+    "adapter": "storage_probe mutable-copy buffer enlarged6\u219232; finite20ms HAL timeout unchanged",
+    "validation": [
+      "check_sd_transfer.sh init/read/write,CRC,all exchange failure positions,read failure output unchanged,write busy/status",
+      "check_storage_probe.sh device/host gating",
+      "actual app ARM link"
+    ],
+    "limitations": [
+      "Polling HAL still blocks main during each transfer",
+      "No measured latency/energy improvement",
+      "Card busy may still exceed PCM queue margin across multiple sectors"
+    ]
+  }
+}

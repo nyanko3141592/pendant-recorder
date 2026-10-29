@@ -1,0 +1,21 @@
+{
+  "status": "MECHANICAL_PLACEMENT_NOT_ROUTED_NOT_RELEASED",
+  "source_sha256": "540e5c3361b85e0db4413245167e51a2cc7ece6ce24a8b5528e51cdf8c5d4ca8",
+  "candidate_sha256": "1e39463e3187e7d1786b322b60c99065301b3aeece55a13eed3699e21252c9bb",
+  "changes": [
+    {
+      "ref": "J2",
+      "change": "F to B; x26"
+    },
+    {
+      "ref": "TH1",
+      "change": "F to B"
+    },
+    {
+      "ref": "J1",
+      "change": "y+20mm to new board end; all old tracks need rerouting"
+    }
+  ],
+  "reason": "F-side PH breaks15mm stack; old USB location becomes recessed behind extended board;TH1 must face battery",
+  "electrical_status": "Old tracks retained only as routing reference, disconnected at moved pads. No DRC pass claimed."
+}

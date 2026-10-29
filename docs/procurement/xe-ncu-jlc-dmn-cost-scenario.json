@@ -1,0 +1,30 @@
+{
+  "status": "CONDITIONAL_NCU_AND_JLC_DMN_COST_SCENARIO_NOT_QUOTE",
+  "sources_sha256": {
+    "docs/procurement/xe-dmn-jlc-availability.json": "be32dfed3b9213e9e1fd36a54ef453d11bcd7d3a89a9f4e3369f9b613a95602a",
+    "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/five-unit-cost-delta.json": "c5c34662cc3dad2294a058b9606ac222eb94a6c4414a9fa3a0c894cf4b98ded3"
+  },
+  "replacement": {
+    "removed_historical_DigiKey_JPY": 392,
+    "added_JLC_USD": 0.678,
+    "quantity": 10
+  },
+  "subtotals": {
+    "mixed_date_parts_reference_subtotals_by_currency": {
+      "JPY": 19528.7,
+      "USD": 203.499
+    },
+    "mixed_date_quantity_proposal_reference_subtotals_by_currency": {
+      "JPY": 19449.7,
+      "USD": 203.499
+    }
+  },
+  "complete_five_unit_total_JPY": null,
+  "limits": [
+    "Availability is observed, not allocated or a binding quotation",
+    "This does not qualify the MOSFET circuit or whole BOM procurement",
+    "Do not substitute ElecSuper DMN2056U-7(ES)",
+    "All other historical mixed-date source limitations remain; no blanket current availability claim.",
+    "JLC assembly of the entire mixed-source BOM has not been confirmed."
+  ]
+}

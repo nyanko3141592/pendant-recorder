@@ -1,0 +1,111 @@
+{
+  "status": "CANDIDATE_INTEGRATED_GEOMETRY_NOT_FIT_APPROVAL",
+  "pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "output_sha256": "5965f500390e21538c1c89e39c8ef3a9e129709b5050e159d9ba0ecdc1fdc3a4",
+  "sources": [
+    {
+      "file": "ncu-candidate-library-components.step",
+      "sha256": "897544f20f3388148b626bfec074f3de6fe7653456b8bae3ea3cba114d75deeb"
+    },
+    {
+      "file": "u8-body-positioned-study.step",
+      "sha256": "ebef70a66ae2e0835da33ec48dfa06c66bc7c1e774448f339302f9f273d125ee"
+    },
+    {
+      "file": "u14-envelope-positioned-study.step",
+      "sha256": "59c959155ddee83808c905669183311865ff721fdca9e0d876ca851fdd6dceba"
+    },
+    {
+      "file": "u10-envelope-positioned-study.step",
+      "sha256": "73348ed9272e7b6485b01315ed680ea6dc08d5e0e0596e641c3ffba717f53ed0"
+    },
+    {
+      "file": "u1-envelope-positioned-study.step",
+      "sha256": "04ca0dbb4fe92c1b884cd419814f494cee454203411df7e4f425405ed1a939a6"
+    },
+    {
+      "file": "j2-header-positioned-study.step",
+      "sha256": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0"
+    },
+    {
+      "file": "u11-package-body-max.step",
+      "sha256": "4668cd93ce47592ecdd1d157e0de9a62d7ff11b1cbe4512a4573a83f06b518e1"
+    },
+    {
+      "file": "hardware/xe-minimal/fixed-usb-limit-trial/tps22950-maximum-envelope.step",
+      "sha256": "75617dd9cfab1e6eb6b03db8ac09557bdad7351f28f6e73a17ea1477d2bec48d",
+      "placed_at_board_top": true
+    },
+    {
+      "file": "d6-led-selection-review.json",
+      "sha256": "23292fff4fdedb7265e8927a50fc12a50d0ef812e928ecbc135b23d4eb0000e6",
+      "candidate_not_adopted": true
+    },
+    {
+      "file": "docs/procurement/xe-q6-q7-dmn2056u-review.json",
+      "sha256": "7672544929c156b63fb492a694daf622c51cf0fcbed2a6926acbc39b182999be",
+      "candidate_not_adopted": true
+    },
+    {
+      "file": "ncu18-drawing-envelope-study.step",
+      "sha256": "c7d55f465dda763e5f475a2cb4e91e9340de60fe912d080535e0d48b109d52d7"
+    },
+    {
+      "file": "ncu-body-space-review.json",
+      "sha256": "e90ffe1e5eb89a46cad85410cad9af0d55483f667f2d31ca9a99503b8f6adef9",
+      "interpreted_envelope_not_qualified_height": true
+    }
+  ],
+  "retained_envelope_pose_checked": [
+    "J2",
+    "U1",
+    "U10",
+    "U11",
+    "U14",
+    "U8"
+  ],
+  "excluded_library_models": [
+    "D6",
+    "J2",
+    "Q6",
+    "Q7",
+    "TH1",
+    "U1",
+    "U10",
+    "U11",
+    "U13",
+    "U14",
+    "U8"
+  ],
+  "removed_Q5_present": false,
+  "study_intersections": [
+    {
+      "file": "thickness-clearance-upper-trial.step",
+      "sha256": "07a796a9656f0cf5c420769c411543abae728b8d9bec39311227b6c28d915a3b",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "offset-pack-lower-trial.step",
+      "sha256": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "support-notched-separator-trial.step",
+      "sha256": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "offset-pack-assembly-trial.step",
+      "sha256": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+      "intersection_volume_mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "TH1 interpreted drawing envelope is 1.75 x 0.95 x 0.95 mm; full body-height and solder-process qualification pending",
+    "Generic library bodies are not manufacturer maximum dimensions",
+    "J2 pose remains provisional; mating plug and original battery leads absent",
+    "Zero solder standoff is a visualization datum",
+    "Battery swelling, closure, thermal contact and assembly access remain unresolved",
+    "This candidate is not the adopted canonical circuit"
+  ]
+}

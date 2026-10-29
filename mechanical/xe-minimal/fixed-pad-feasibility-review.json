@@ -1,0 +1,52 @@
+{
+  "status": "FIXED_PAD_NECESSARY_BOUND_NOT_APPROVED_DESIGN",
+  "source_sha256": "3a2bca30e08e003e46f750050095efad218867a301d21110cb93423ae3598d36",
+  "gap_range_mm": [
+    1.27,
+    1.77
+  ],
+  "equations": [
+    "nominal_min = gap_max/(1-tolerance)",
+    "compression_at_small_gap = 1-gap_min/(nominal_min*(1+tolerance))"
+  ],
+  "rows": [
+    {
+      "pad_fractional_tolerance_hypothesis": 0,
+      "minimum_nominal_for_geometric_contact_mm": 1.77,
+      "unavoidable_compression_at_small_gap_fraction": 0.28248587570621464,
+      "linear_modulus_pressure_estimate_kPa": 15.536723163841804,
+      "linear_modulus_force_estimate_for_2x2mm_N": 0.06214689265536722
+    },
+    {
+      "pad_fractional_tolerance_hypothesis": 0.05,
+      "minimum_nominal_for_geometric_contact_mm": 1.8631578947368421,
+      "unavoidable_compression_at_small_gap_fraction": 0.3508205542103847,
+      "linear_modulus_pressure_estimate_kPa": 19.29513048157116,
+      "linear_modulus_force_estimate_for_2x2mm_N": 0.07718052192628465
+    },
+    {
+      "pad_fractional_tolerance_hypothesis": 0.1,
+      "minimum_nominal_for_geometric_contact_mm": 1.9666666666666666,
+      "unavoidable_compression_at_small_gap_fraction": 0.4129429892141757,
+      "linear_modulus_pressure_estimate_kPa": 22.711864406779664,
+      "linear_modulus_force_estimate_for_2x2mm_N": 0.09084745762711866
+    }
+  ],
+  "interpretation": "Any fixed pad bridging the largest studied gap necessarily sees at least this compression at the smallest studied gap; positive preload requires more. Unknown battery and seating tolerances can widen the gap range further.",
+  "pressure_estimate_basis": "55kPa typical Young modulus from July2020 TGP1000VOUS TDS; linear uniform-strain hypothesis only.2x2mm is the existing investigation probe, not selected contact area.",
+  "historical_evidence": {
+    "VOUS_2001_TDS": "https://docs.rs-online.com/daa0/0900766b800b6cd6.pdf",
+    "date": "2001-01-24",
+    "text": "8psi Young modulus; graphs generated from modulus,0.01in/min and0.79square-inch sample; thickness tolerance +/-5%",
+    "visual_status": "Web screenshot returned no image; direct download403. No curve points digitized.",
+    "Application_Note116": "https://thermal.henkel-adhesives.com/files/downloads/application-notes/APN-116-0309.pdf",
+    "retrieval": "Redirected to generic Henkel thermal-management webpage; note not obtained"
+  },
+  "design_decision": "Keep fixed-pad scheme unapproved. Evaluate reducing gap variation or a compliant sensor carrier before increasing pad thickness.",
+  "limits": [
+    "No permissible battery pressure/force established.",
+    "Sensor is smaller than2x2mm; local stress and nonuniform deformation invalidate use of this estimate as a maximum.",
+    "Current sheet formulation, relaxation, temperature dependence and rate effects not qualified.",
+    "No new sensor carrier design adopted; original no-user-solder requirement persists."
+  ]
+}

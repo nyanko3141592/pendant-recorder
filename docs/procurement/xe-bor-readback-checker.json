@@ -1,0 +1,46 @@
+{
+  "status": "READBACK_CHECKER_IMPLEMENTED_NOT_HARDWARE_VERIFIED",
+  "checker": "tools/bench/check_bor_readback.py",
+  "register": "FLASH_OPTR",
+  "mask": "0x00000700",
+  "shift": 8,
+  "required_encoding": 4,
+  "source_sha256": {
+    "/tmp/pendant-stm32-sdk/device/Include/stm32u535xx.h": "bc47adeffbeea9dd91ba68de1a7ceefde29557b49caa2480569b00ec7cb4bdfc",
+    "/tmp/pendant-stm32-sdk/hal/Inc/stm32u5xx_hal_flash.h": "304651ba7695ac5279325ea0e47d542a8564b910d987a340a47628dba9bb5508"
+  },
+  "source_definitions": [
+    "FLASH_OPTR_BOR_LEV_Pos=8, mask=7<<8",
+    "OB_BOR_LEVEL_4=FLASH_OPTR_BOR_LEV_2=4<<8"
+  ],
+  "input_fields": {
+    "unit_serial": "Actual unique unit identifier",
+    "captured_at": "Capture timestamp with timezone",
+    "capture_method": "Programmer/probe version and raw log location",
+    "reset_after_programming": "Boolean; true only after reload/reset actually performed",
+    "flash_optr": "Actual unsigned32 register readback, integer or 0x-prefixed string"
+  },
+  "synthetic_validation": [
+    "All level encodings0..7, only4passes",
+    "Unrelated bits do not affect BORdecode",
+    "No reload/reset fails",
+    "Negative,overflow,bool,float,malformed string rejected"
+  ],
+  "hardware_results": null,
+  "limits": [
+    "No option bytes programmed",
+    "Raw programmer logs and per-unit readback remain required",
+    "BOR4 static threshold does not prove transient response"
+  ],
+  "startup_guard": {
+    "source": "firmware/stm32/app/main.c",
+    "sha256": "d867d99452d109f6ed3bc729585a2a240b27fbdbfea15b586f4087108c41bbd7",
+    "behavior": "After charge/USB-control/battery IO initialization, mismatched FLASH_OPTR BOR bits enter halted before clock/storage/audio/USB stack startup; option bytes never written",
+    "build_path": "/var/folders/x_/43y172t97j3_qhb7fxxjw11w0000gn/T/pendant-bor-startup-msyhsn_t/build",
+    "binary_bytes": 114597,
+    "binary_sha256": "0235a1de3f0143b2730d9c6f4578110f799a133beeb5f3bda36e03074dc18161",
+    "disassembly": "firmware/stm32/app/bor-startup-disassembly.txt",
+    "verification": "ARM build passed; inspected mask0x700 compare0x400 and mismatch branch to halted before recorder_boot_start",
+    "hardware_verified": false
+  }
+}

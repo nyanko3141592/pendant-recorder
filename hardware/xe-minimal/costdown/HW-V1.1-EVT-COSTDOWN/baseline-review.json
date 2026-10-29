@@ -1,0 +1,21 @@
+{
+  "version": "HW-V1.1-EVT-COSTDOWN",
+  "status": "FOUR_LAYER_BASELINE_CREATED_REROUTE_REQUIRED_NOT_FOR_FABRICATION",
+  "parent_version": "HW-V1.0",
+  "parent_snapshot": "hardware/xe-minimal/snapshots/HW-V1.0-2026-10-28/snapshot-manifest.json",
+  "functional_contract": "No circuit, safety, storage, battery, USB or firmware feature changes permitted",
+  "costdown_order": [
+    "four copper layers",
+    "ordinary off-pad through vias only",
+    "zero DRC and zero unconnected",
+    "single-side assembly only if it fits without changing function or unsafe thermal density"
+  ],
+  "geometry_policy": "May grow by a few millimetres; canonical HW-V1.0 remains untouched",
+  "baseline_transform": "In3 folded onto In1; In4 folded onto In2; duplicate GND zone removed",
+  "drc_violations": 374,
+  "unconnected_items": 0,
+  "candidate_sha256": "e073bb25a2450e7592594744102920951999a7aec2337e4c7addf2b6803d3673",
+  "source_sha256": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+  "release_allowed": false,
+  "orders_uploads_payments_contacts_performed": false
+}

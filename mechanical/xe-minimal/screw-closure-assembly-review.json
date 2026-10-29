@@ -1,0 +1,70 @@
+{
+  "status": "INTEGRATED_SINGLE_SCREW_CANDIDATE_NOT_COMPLETE",
+  "sources": {
+    "screw-candidate-integrated-board.step": "8d1b98b2c185c25a1c5b1fbc41e06eea8d992f6f700f868076aa1ffe5fddaf51",
+    "raised-nut-screw-upper-trial.step": "64db24eaacb55523ba55d242dbcf87cdb0702b4b7e15e08815527eb17dc73435",
+    "raised-nut-screw-lower-trial.step": "d174b8547e6e9c902f0e9a95a41ec279e931d37cd88dca1c6f78e4bf6bf79e2f",
+    "battery-separator-study.step": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67"
+  },
+  "output_sha256": "04fca3b6198f109f951e304a542498a464ff5df51abd39405d764b62d482d24f",
+  "fastener_checks": [
+    {
+      "a": "screw_envelope",
+      "b": "board",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "screw_envelope",
+      "b": "upper",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "screw_envelope",
+      "b": "lower",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "screw_envelope",
+      "b": "separator",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "screw_envelope",
+      "b": "battery",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "nut_envelope",
+      "b": "board",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "nut_envelope",
+      "b": "upper",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "nut_envelope",
+      "b": "lower",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "nut_envelope",
+      "b": "separator",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "nut_envelope",
+      "b": "battery",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "Smooth nominal fastener envelopes, no thread chamfer/runout or screw recess model",
+    "Nut retention and second fixing point missing",
+    "Original battery wires and mating housing missing",
+    "Thermal contact/acoustic path/button features not integrated here",
+    "Generic component models and no tolerance qualification",
+    "No assembly sequence or operating runtime approval"
+  ]
+}

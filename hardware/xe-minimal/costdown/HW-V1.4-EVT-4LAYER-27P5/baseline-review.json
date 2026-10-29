@@ -1,0 +1,36 @@
+{
+  "version": "HW-V1.4-EVT-4LAYER-27P5",
+  "status": "FOUR_LAYER_BASELINE_NOT_FABRICATION_READY",
+  "source": "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb",
+  "candidate": "hardware/xe-minimal/costdown/HW-V1.4-EVT-4LAYER-27P5/hw-v1.4-evt-4layer-27p5-baseline.kicad_pcb",
+  "board_outline_mm": [
+    27.5,
+    27.5
+  ],
+  "assembly_sides": 2,
+  "copper_layers": 4,
+  "functional_changes": 0,
+  "placement_changes": 0,
+  "original_track_segments_by_layer": {
+    "F.Cu": 206,
+    "In1.Cu": 51,
+    "In2.Cu": 139,
+    "In3.Cu": 68,
+    "In4.Cu": 158,
+    "B.Cu": 288
+  },
+  "transform": "In3->In1, In4->In2, duplicate In3 zone removed; conflicts require reroute",
+  "drc_violations": 374,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "source_sha256": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+  "candidate_sha256": "e073bb25a2450e7592594744102920951999a7aec2337e4c7addf2b6803d3673",
+  "release_allowed": false,
+  "next_gate": "Reroute to DRC0/unconnected0 while preserving USB reference return, power integrity and four current POFV nets or replace them with qualified dogbones",
+  "external_actions": {
+    "upload": false,
+    "order": false,
+    "payment": false,
+    "supplier_contact": false
+  }
+}

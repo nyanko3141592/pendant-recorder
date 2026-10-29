@@ -1,0 +1,98 @@
+{
+  "pcb_sha256": "d64e60a6290d90dc344157f867ef617c2f95d880290294fa0b9c7988d86a0c1d",
+  "status": "LOCAL_POWER_TRACE_SCREEN_NOT_LOOP_QUALIFICATION",
+  "connections": [
+    {
+      "ic": "U3",
+      "pin": "10",
+      "capacitor": "C13",
+      "cap_pin": "1",
+      "net": "/VBUS_CHARGER",
+      "pad_center_distance_mm": 1.552417,
+      "graph_track_length_mm": 2.912015884644325,
+      "minimum_track_width_mm": 0.127,
+      "layer_transition_edges": 0,
+      "graph_path_found": true
+    },
+    {
+      "ic": "U3",
+      "pin": "2",
+      "capacitor": "C14",
+      "cap_pin": "1",
+      "net": "/BAT",
+      "pad_center_distance_mm": 1.5,
+      "graph_track_length_mm": 1.3748,
+      "minimum_track_width_mm": 0.15,
+      "layer_transition_edges": 0,
+      "graph_path_found": true
+    },
+    {
+      "ic": "U3",
+      "pin": "1",
+      "capacitor": "C15",
+      "cap_pin": "1",
+      "net": "/SYS",
+      "pad_center_distance_mm": 1.75,
+      "graph_track_length_mm": 1.75,
+      "minimum_track_width_mm": 0.127,
+      "layer_transition_edges": 0,
+      "graph_path_found": true
+    },
+    {
+      "ic": "U13",
+      "pin": "1",
+      "capacitor": "C31",
+      "cap_pin": "1",
+      "net": "/VBUS_OVP",
+      "pad_center_distance_mm": 1.67744,
+      "graph_track_length_mm": 1.3435028842544405,
+      "minimum_track_width_mm": 0.127,
+      "layer_transition_edges": 0,
+      "graph_path_found": true
+    },
+    {
+      "ic": "U13",
+      "pin": "5",
+      "capacitor": "C31",
+      "cap_pin": "1",
+      "net": "/VBUS_OVP",
+      "pad_center_distance_mm": 3.6575,
+      "graph_track_length_mm": 4.012005768508881,
+      "minimum_track_width_mm": 0.127,
+      "layer_transition_edges": 0,
+      "graph_path_found": true
+    },
+    {
+      "ic": "U13",
+      "pin": "6",
+      "capacitor": "C32",
+      "cap_pin": "1",
+      "net": "/VBUS_CHARGER",
+      "pad_center_distance_mm": 0.129639,
+      "graph_track_length_mm": 12.654415930303973,
+      "minimum_track_width_mm": 0.127,
+      "layer_transition_edges": 3,
+      "graph_path_found": true
+    },
+    {
+      "ic": "U14",
+      "pin": "1",
+      "capacitor": "C33",
+      "cap_pin": "1",
+      "net": "/VBUS",
+      "pad_center_distance_mm": 4.432133,
+      "graph_track_length_mm": 5.022698186399662,
+      "minimum_track_width_mm": 0.127,
+      "layer_transition_edges": 0,
+      "graph_path_found": true
+    }
+  ],
+  "limitations": [
+    "No ground return path or loop area measurement",
+    "Exact endpoint graph includes pad-interior joins; midsegment intersections and filled zones omitted",
+    "Via vertical length and in-pad lengths omitted; not a resistance or voltage-drop model",
+    "No path means graph incomplete or connection absent; compare full DRC before concluding",
+    "No datasheet-layout compliance or physical startup/thermal qualification claimed"
+  ],
+  "release_allowed": false
+}

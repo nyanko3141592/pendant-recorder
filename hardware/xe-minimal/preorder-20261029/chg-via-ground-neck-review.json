@@ -1,0 +1,47 @@
+{
+  "status": "CONNECTED_GEOMETRICALLY_CLEAN_RETURN_GEOMETRY_REVIEW_HOLD",
+  "sha256": "eb5f429eeb9f0639c808f33920467740e89026da853e45308245c1798a15c6e1",
+  "violations": {
+    "lib_footprint_issues": 74
+  },
+  "unconnected": 0,
+  "parity": 0,
+  "critical_geometry_unchanged": true,
+  "hole_over_pad": 0,
+  "layer_contract_violations": [],
+  "remaining_gap_categories_mm": {
+    "/USB_DP": {
+      "own_signal_via": 1.6783
+    },
+    "/USB_DM": {
+      "own_signal_via": 1.6581,
+      "not_explained_by_0p15_clearance": 0.0242
+    },
+    "/PDM_CLK": {
+      "own_signal_via": 2.2338
+    },
+    "/PDM_CLK_MCU": {},
+    "/PDM_DATA": {
+      "own_signal_via": 2.3264
+    },
+    "/SD_CLK_MCU": {},
+    "/SD_CLK": {
+      "own_signal_via": 1.55
+    },
+    "/SD_MOSI": {
+      "own_signal_via": 2.284
+    },
+    "/SD_MISO": {
+      "own_signal_via": 2.4929
+    },
+    "/SD_CS_N": {
+      "own_signal_via": 1.5146
+    }
+  },
+  "CHG_ALLOW_via_move_mm": 0.15,
+  "limits": [
+    "Narrow ground neck and return-via distance/connected copper path still unqualified",
+    "Centerline presence is not impedance or reference-edge certification"
+  ],
+  "release_allowed": false
+}

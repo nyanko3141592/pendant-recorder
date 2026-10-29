@@ -1,0 +1,55 @@
+{
+  "status": "CONDITIONAL_RESISTANCE_WINDOW_NOT_THERMAL_QUALIFICATION",
+  "source_sha256": {
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/ncu-temperature-screen.json": "2483f2b8f1cb25ec1ec12539464b3898dd2cd4b64953e8bfa7e3ba66f16441bd",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/design.json": "95a52149ac9cddfc5ac284a7be7107c2167514c39c6dd5dd053d7f036cf8ce40",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/check_temperature_resistance_window.py": "e497a7254970e8b6eaeecfef2d3ce7b447b4c709e0c3993bbd761199cca9ff0f"
+  },
+  "charge_permission_in_all_modeled_corners_ohm": {
+    "lower_exclusive": 8547.32901105509,
+    "upper_exclusive": 18432.138660642453
+  },
+  "charge_inhibited_in_all_modeled_corners_ohm": {
+    "below_exclusive": 6491.205998245187,
+    "above_exclusive": 21633.90264635771
+  },
+  "transition_uncertainty_bands_ohm": [
+    [
+      6491.205998245187,
+      8547.32901105509
+    ],
+    [
+      18432.138660642453,
+      21633.90264635771
+    ]
+  ],
+  "candidate_25C_ohm": [
+    9900,
+    10100
+  ],
+  "candidate_25C_within_permission_window": true,
+  "manufacturer_data_needed": [
+    {
+      "condition": "Cold endpoint",
+      "temperature_C": 0,
+      "required": "Guaranteed minimum sensor resistance greater than cold inhibit boundary",
+      "boundary_ohm": 21633.90264635771,
+      "received": false
+    },
+    {
+      "condition": "Hot endpoint",
+      "temperature_C": 45,
+      "required": "Guaranteed maximum sensor resistance less than hot inhibit boundary",
+      "boundary_ohm": 6491.205998245187,
+      "received": false
+    }
+  ],
+  "limitations": [
+    "All boundaries inherit the original4.75..5.25V,1% resistor and33mV comparator-error assumptions. This is not a guarantee at actual common-mode, input bias or leakage.",
+    "Endpoint criteria apply to sensor temperature only and require monotonic NTC behavior over the applicable range. They do not establish cell temperature or thermal lag margin.",
+    "Equality and uncertainty bands must not be called pass; hysteresis direction and actual comparator behavior require validation.",
+    "Full R-T information remains useful to establish the actual charge window and thermal margin; endpoint criteria prioritize missing supplier evidence rather than waive qualification.",
+    "No component substitution, schematic change or charging enablement."
+  ],
+  "release_allowed": false
+}

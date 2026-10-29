@@ -1,0 +1,33 @@
+{
+  "status": "PARTIALLY_UNROUTED_TRIAL_NOT_FOR_FABRICATION",
+  "source_sha256": "bbbf03a250222ab04aadf364b21955e13cc3d4bb5049f0bf3a5cb56329bb8cce",
+  "output_sha256": "6a9c61e495eb222c302941f9960fc0add28ff925309d425265808dc71769d9f5",
+  "reserved_rule_areas": 11,
+  "margin_beyond_USB_copper_mm": 0.5,
+  "removed_components": [
+    {
+      "net": "/CHG_N",
+      "segments": 16,
+      "length_mm": 20.146894006981675
+    },
+    {
+      "net": "/SWDIO",
+      "segments": 6,
+      "length_mm": 18.034611142186513
+    },
+    {
+      "net": "/NRST",
+      "segments": 16,
+      "length_mm": 40.13415204317402
+    }
+  ],
+  "via_count_changed": false,
+  "layers": 4,
+  "limitations": [
+    "Existing via antipads remain; track corridor does not certify full GND continuity",
+    "DSN keepout handling must be inspected before routing",
+    "Existing pours require refill after rerouting",
+    "All branch endpoints must reconnect; no local whole-net layer swaps"
+  ],
+  "release_allowed": false
+}

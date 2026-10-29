@@ -1,0 +1,127 @@
+{
+  "status": "DESTRUCTIVE_DIAGNOSTIC_ONLY_HAS_UNROUTED_NETS",
+  "source_sha256": "c8e2056719544a37e618e3127a55e55dd1c13d02a63d9b648cfbea79ae7429c9",
+  "runs": [
+    {
+      "removed_nets": [
+        "/SYS"
+      ],
+      "removed_tracks": [
+        {
+          "uuid": "37e718fd-3138-47e7-8a18-1a28297a20dc",
+          "net": "/SYS"
+        },
+        {
+          "uuid": "e08ce9f0-5270-4cca-8d42-94e59856a7a6",
+          "net": "/SYS"
+        }
+      ],
+      "B_reference": {
+        "/USB_DP": {
+          "length_mm": 3.286,
+          "samples": 69,
+          "covered_by_adjacent_gnd_zone": 11
+        },
+        "/USB_DM": {
+          "length_mm": 4.235,
+          "samples": 87,
+          "covered_by_adjacent_gnd_zone": 24
+        }
+      },
+      "file": "DIAGNOSTIC-NOT-FOR-MANUFACTURE-usb-sys.kicad_pcb"
+    },
+    {
+      "removed_nets": [
+        "/VDDA"
+      ],
+      "removed_tracks": [
+        {
+          "uuid": "26710c94-9a81-4bd4-a92e-c7ebf138a562",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "422357e4-98d1-43a4-b2e9-23db8dbef161",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "47eadc88-92e6-4952-ba58-7faeb0d77736",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "5377b9b9-3700-4b88-b47a-b411d33fe7f6",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "db2cdcc9-daf4-4a78-a7d2-851d286a7c3e",
+          "net": "/VDDA"
+        }
+      ],
+      "B_reference": {
+        "/USB_DP": {
+          "length_mm": 3.286,
+          "samples": 69,
+          "covered_by_adjacent_gnd_zone": 0
+        },
+        "/USB_DM": {
+          "length_mm": 4.235,
+          "samples": 87,
+          "covered_by_adjacent_gnd_zone": 9
+        }
+      },
+      "file": "DIAGNOSTIC-NOT-FOR-MANUFACTURE-usb-vdda.kicad_pcb"
+    },
+    {
+      "removed_nets": [
+        "/SYS",
+        "/VDDA"
+      ],
+      "removed_tracks": [
+        {
+          "uuid": "37e718fd-3138-47e7-8a18-1a28297a20dc",
+          "net": "/SYS"
+        },
+        {
+          "uuid": "e08ce9f0-5270-4cca-8d42-94e59856a7a6",
+          "net": "/SYS"
+        },
+        {
+          "uuid": "26710c94-9a81-4bd4-a92e-c7ebf138a562",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "422357e4-98d1-43a4-b2e9-23db8dbef161",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "47eadc88-92e6-4952-ba58-7faeb0d77736",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "5377b9b9-3700-4b88-b47a-b411d33fe7f6",
+          "net": "/VDDA"
+        },
+        {
+          "uuid": "db2cdcc9-daf4-4a78-a7d2-851d286a7c3e",
+          "net": "/VDDA"
+        }
+      ],
+      "B_reference": {
+        "/USB_DP": {
+          "length_mm": 3.286,
+          "samples": 69,
+          "covered_by_adjacent_gnd_zone": 19
+        },
+        "/USB_DM": {
+          "length_mm": 4.235,
+          "samples": 87,
+          "covered_by_adjacent_gnd_zone": 71
+        }
+      },
+      "file": "DIAGNOSTIC-NOT-FOR-MANUFACTURE-usb-both.kicad_pcb"
+    }
+  ],
+  "limitations": [
+    "Removed tracks break circuits; none of these boards can be ordered",
+    "Coverage is sampled geometry only, not impedance or signal integrity"
+  ]
+}

@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,hashlib
+O=Path(__file__).resolve().parent;I=json.loads((O/'board-inventory.json').read_text());R=json.loads((O/'battery-stack-screen.json').read_text());J=json.loads((O/'j2-position-review.json').read_text());assert J['pcb_sha256']==I['pcb_sha256'];t=next(p for p in I['parts'] if p['ref']=='TH1');x,y=t['position_mm'];rows=[]
+for c in R['all_candidates']:
+ left=c['pack_x_min_mm'];right=left+15.5;covered=left<=x<=right and 0<=y<=27
+ rows.append({**c,'th1_on_battery_side':c['side']==t['side'],'th1_center_under_pack':covered,'th1_center_distance_to_nearest_pack_edge_mm':min(x-left,right-x,y,27-y) if covered else None,'header_to_pack_signed_x_gap_mm':left-J['bounds_mm'][1],'assembly_access_qualified':False,'thermal_contact_qualified':False})
+r={'status':'ACCESS_AND_THERMAL_SCREEN_NOT_QUALIFICATION','pcb_sha256':I['pcb_sha256'],'th1':{k:t[k] for k in ['ref','position_mm','side','value']},'best_thickness_candidates':sorted(rows,key=lambda q:q['total_z_extent_without_case_mm'])[:12],'limitations':['Positive X gap alone does not establish finger/tool access or plug removal path.','Sensor center projection does not establish contact, thermal lag or detachment protection.','Header pose is provisional; mating plug and leads are absent.']};(O/'battery-stack-access-review.json').write_text(json.dumps(r,indent=2)+'\n');print(r['best_thickness_candidates'][0])

@@ -1,0 +1,71 @@
+{
+  "status": "SOLDER_SPACE_BUDGET_NOT_TERMINATION_APPROVAL",
+  "sources_sha256": {
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e",
+    "separator": "b7d1f4d2b4356a497543c208831ebac07a7ef0b1f5e6204a5e49904d07d3b649",
+    "lower": "e4d0bde292b5a6c517542001bf5fd13c179a215cac58bfc973c4273bb5ee9887",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10"
+  },
+  "pad_mapping_sha256": "f2b346eacfa2954937e22b174565f6b1c5d52bc5fc4574b0ce9e9fb37bf0ce5d",
+  "rows": [
+    {
+      "pad": "1",
+      "net": "/BAT_TS",
+      "solder_box_mm": [
+        0.6,
+        0.75,
+        0.25
+      ],
+      "z_range_mm": [
+        -0.25,
+        0
+      ],
+      "bare_conductor_diameter_mm": 0.15,
+      "bare_conductor_length_mm": 0.2,
+      "planar_pad_margin_each_side_mm": [
+        0.10000000000000003,
+        0.09999999999999998
+      ],
+      "overlap_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "conductor_inside_solder_budget": true
+    },
+    {
+      "pad": "2",
+      "net": "/GND",
+      "solder_box_mm": [
+        0.6,
+        0.75,
+        0.25
+      ],
+      "z_range_mm": [
+        -0.25,
+        0
+      ],
+      "bare_conductor_diameter_mm": 0.15,
+      "bare_conductor_length_mm": 0.2,
+      "planar_pad_margin_each_side_mm": [
+        0.10000000000000003,
+        0.09999999999999998
+      ],
+      "overlap_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "conductor_inside_solder_budget": true
+    }
+  ],
+  "limits": [
+    "Rectangular solder envelopes are trial maximum packaging dimensions, not predicted meniscus or manufacturing tolerances.",
+    "Vertical end-on termination has no qualified pull strength or fatigue performance. Must add seller-installed strain relief or redesign pads for a supported lap joint.",
+    "0.2mm bare length is geometric continuity only; strip process not qualified.",
+    "No adjacent copper trace/solder-mask clearance check; body-only collision model is insufficient for electrical shorts.",
+    "No buyer soldering or wire processing is allowed."
+  ]
+}

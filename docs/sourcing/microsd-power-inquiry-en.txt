@@ -1,0 +1,24 @@
+DRAFT ONLY — NOT SENT
+Intended recipient: microSD manufacturer's industrial storage technical support
+Subject: 2GB+ SPI microSD: guaranteed current / busy-time bounds and 5/10-piece Japan quotation
+
+Hello,
+
+We are developing a compact USB-C audio recorder and need a fixed, traceable microSD part number with at least 2GB usable nominal capacity. Please recommend an orderable SKU and provide the following before we select it. This is a technical and quotation inquiry, not an order.
+
+The host uses 3.3V SPI with single-sector CMD24 writes, 16kHz mono IMA ADPCM, and encrypted files approximately41.3KB each, created every5seconds on FAT32. Files are closed/synchronized before publication. We need at least36hours of retained audio. Readout occurs over USB while charging. No wireless interface is used.
+
+Our present power design is NOT qualified for a generic card. The battery candidate permits50mA continuous; an alternative lists100mA. The entire system shares that current, and the present3.3V LDO is rated200mA. Please do not treat these as sufficient supply ratings for your product. We need your actual guaranteed requirements before redesigning or accepting the power path.
+
+Candidate-specific question for Apacer: the older Industrial microSD SD2.0 Rev1.5 datasheet lists 34mA operating and 60uA idle for the 2GB AP-MSD02GIDI-T. Please confirm whether this exact revision applies to an orderable part today and whether these are typical or guaranteed bounds. The quoted family-level 50mA/100uA figures must not be substituted for the exact 2GB SKU. We also need a materially lower-cost option: the distributor price found for this legacy SKU is incompatible with our sub-JPY5,000 finished-device target. Do not recommend it solely on its nominal current figures.
+
+1. Exact part number, capacity, temperature grade, NAND/controller revision controls, lifecycle status, manufacturer datasheet and authorized source for5/10units.
+2. Maximum supply current, with duration/duty conditions, for power-up, initialization, SPI reads, CMD24 programming, erase/garbage collection and internal background work. Distinguish guaranteed maxima from typical measurements; identify voltage, temperature and clock conditions. Does slower SPI limit internal current, or only interface transfer current?
+3. Maximum CMD24 busy duration and worst-case repeated-write/service latency, including nearly full or fragmented media. Our firmware has finite staging capacity; average throughput alone is insufficient.
+4. Idle/standby current, entry latency and exact commands/clock/CS conditions. If power cycling is proposed, specify safe shutdown conditions, startup energy and required off interval; no abrupt cut during write will be assumed safe.
+5. Minimum rail voltage, allowable droop, recommended decoupling, inrush and power-loss behaviour. State whether the published active current is a maximum or typical figure.
+6. A quotation for5 and10pieces delivered to Japan: unit price, lead time, MOQ, freight, taxes/duties inclusion and currency. Please request the destination postcode if needed for a final freight quote.
+
+If no product can meet the small-battery current constraints, please state the minimum required supply capability rather than suggesting compatibility based only on average current.
+
+Thank you.

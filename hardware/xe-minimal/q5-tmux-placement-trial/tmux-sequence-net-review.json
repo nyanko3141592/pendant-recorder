@@ -1,0 +1,290 @@
+{
+  "status": "SEQUENCING_REVIEW_INCOMPLETE_NOT_ADOPTED",
+  "candidate_sha256": "b4082e2163e932a5e32fa1cb915eccc1bcdbaac505a7c0a80982274db1b40aba",
+  "parts": {
+    "U13": {
+      "ref": "U13",
+      "value": "MAX4995CAUT+T",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "pins": [
+        {
+          "number": "1",
+          "name": "OUT",
+          "net": "VBUS_LIMITED",
+          "type": "power_out"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "3",
+          "name": "SETI",
+          "net": "USB_ILIM_SET",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "ON",
+          "net": "USB_INPUT_ON",
+          "type": "input"
+        },
+        {
+          "number": "5",
+          "name": "IN",
+          "net": "VBUS",
+          "type": "power_in"
+        },
+        {
+          "number": "6",
+          "name": "FLAG_N",
+          "net": null,
+          "type": "open_collector"
+        }
+      ],
+      "section": 3,
+      "note": "Continuous input limiter; DC screen3.3V only; FLAG explicitlyNC. Not charging qualification.",
+      "assembly_status": "ENGINEERING_CANDIDATE_NOT_RELEASED"
+    },
+    "U14": {
+      "ref": "U14",
+      "value": "SN74HCS74DYYR",
+      "footprint": "Pendant_Input:Texas_DYY0014A",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1CLR_N",
+          "net": "USB_LATCH_CLEAR_N",
+          "type": "input"
+        },
+        {
+          "number": "2",
+          "name": "1D",
+          "net": "VBUS",
+          "type": "input"
+        },
+        {
+          "number": "3",
+          "name": "1CLK",
+          "net": "USB_LATCH_CLOCK",
+          "type": "input"
+        },
+        {
+          "number": "4",
+          "name": "1PRE_N",
+          "net": "VBUS",
+          "type": "input"
+        },
+        {
+          "number": "5",
+          "name": "1Q",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "number": "6",
+          "name": "1Q_N",
+          "net": "USB_INPUT_ON",
+          "type": "output"
+        },
+        {
+          "number": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "8",
+          "name": "2Q_N",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "number": "9",
+          "name": "2Q",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "number": "10",
+          "name": "2PRE_N",
+          "net": "VBUS",
+          "type": "input"
+        },
+        {
+          "number": "11",
+          "name": "2CLK",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "number": "12",
+          "name": "2D",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "number": "13",
+          "name": "2CLR_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "number": "14",
+          "name": "VCC",
+          "net": "VBUS",
+          "type": "power_in"
+        }
+      ],
+      "section": 3,
+      "note": "RawVBUS retainedOFF latch; Schmitt inputs. POR/resume clearQ=0 =>Q_N enables input. Suspend clocksD=1 =>Q_N disables. UnusedFF heldclear; PRE alwayshigh.",
+      "assembly_status": "ENGINEERING_CANDIDATE_NOT_RELEASED"
+    },
+    "U15": {
+      "ref": "U15",
+      "value": "TLV803EB29DBZR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "pins": [
+        {
+          "number": "1",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "2",
+          "name": "RESET_N",
+          "net": "USB_LATCH_CLEAR_N",
+          "type": "open_collector"
+        },
+        {
+          "number": "3",
+          "name": "VDD",
+          "net": "VBUS",
+          "type": "power_in"
+        }
+      ],
+      "section": 2,
+      "note": "2.93V supervisor;B40us nominal/80us maxunderdatasheetcondition. StandardDBZ pinout, NOT RDBZ or VDBZ. Initializes latch before chargerUVLO; analog startup still needs validation.",
+      "assembly_status": "ENGINEERING_CANDIDATE_NOT_RELEASED"
+    },
+    "R44": {
+      "ref": "R44",
+      "value": "390k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "USB_ILIM_SET",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "section": 3,
+      "note": "Input control candidate; tolerance/assembly/physical layout pending",
+      "assembly_status": "ENGINEERING_CANDIDATE_NOT_RELEASED"
+    },
+    "R45": {
+      "ref": "R45",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "USB_ILIM_SET",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "USB_HIGH_BUDGET_DRAIN",
+          "type": "passive"
+        }
+      ],
+      "section": 2,
+      "note": "Input control candidate; tolerance/assembly/physical layout pending",
+      "assembly_status": "ENGINEERING_CANDIDATE_NOT_RELEASED"
+    },
+    "U16": {
+      "ref": "U16",
+      "value": "TMUX1101DCKR candidate",
+      "section": 0,
+      "footprint": "TMUXTrial:TMUX1101_DCK0005A_TI_4214834G",
+      "note": "Q5 replacement candidate; routed with TI-example land pattern, not adopted or released",
+      "pins": [
+        {
+          "number": "1",
+          "name": "D",
+          "net": "USB_HIGH_BUDGET_DRAIN",
+          "type": "passive"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "number": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "number": "4",
+          "name": "SEL",
+          "net": "USB_HIGH_BUDGET",
+          "type": "input"
+        },
+        {
+          "number": "5",
+          "name": "VDD",
+          "net": "VBUS",
+          "type": "power_in"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.analog.com/MAX4995AL/datasheet",
+      "revision": "19-4363 Rev 3 10/19",
+      "reviewed": "Official web PDF pages 1-4; MAX4995C active-high ON, operating VIN 1.7..5.5 V. SETI absolute -0.3..6 V is a stress limit, not generated voltage."
+    },
+    {
+      "local": "../evidence/TMUX1101-SCDS410D.pdf",
+      "revision": "SCDS410D",
+      "reviewed": "Operating VDD>=1.08 V; analog 0..VDD; SEL fail-safe does not guarantee analog powered-off isolation."
+    }
+  ],
+  "derived_reset_state": {
+    "condition": "U14 within valid operating range, CLR_N asserted, PRE_N inactive",
+    "Q": 0,
+    "Q_N": 1,
+    "USB_INPUT_ON": "high",
+    "U13": "enabled, not held off",
+    "consequence": "Do not use U15 2.93 V reset as evidence that U13 is off until TMUX supply is valid."
+  },
+  "startup_supply_overlap": {
+    "MAX4995_min_V": 1.7,
+    "TMUX_min_V": 1.08,
+    "difference_V": 0.62,
+    "meaning": "Steady-state supply range overlap only; no guarantee of transient response or SETI trajectory."
+  },
+  "unproven": [
+    "Actual SETI generated voltage and D trajectory at raw VBUS ramp/fall",
+    "Effects of VBUS_LIMITED stored energy and possible reverse leakage",
+    "High-budget SEL retained by battery-powered MCU while USB falls",
+    "U14 outputs below its recommended supply range"
+  ],
+  "next": "Measure D minus VBUS and input-current profile with current-limited source and battery emulator before real-cell test; evaluate alternative supply/clamp architecture only if constraints fail."
+}

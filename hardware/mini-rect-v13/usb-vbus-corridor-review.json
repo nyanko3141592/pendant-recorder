@@ -1,0 +1,51 @@
+{
+  "status": "REJECTED_DRC_FAILURE",
+  "source_sha256": "3cc4103af9c4ef8fccf57cfaa752c5430f4345f1ed940619bebf31408fcdcc61",
+  "candidate_sha256": "05ec09fadaf8f9f9ac2237fbe71cac92d3846826541ea71ba144e19cada8e4ec",
+  "moved_vertices_mm": [
+    [
+      12.451,
+      12.4452
+    ],
+    [
+      12.451,
+      11.9558
+    ],
+    [
+      12.8888,
+      11.518
+    ]
+  ],
+  "delta_x_mm": 0.1,
+  "BOOT0_delta_x_mm": 0.1,
+  "track_end_updates": [
+    [
+      "177fb569-811e-451a-9c69-af7cd8bb50a9",
+      "Start"
+    ],
+    [
+      "2f27fed2-b109-45a8-bdc1-f8b3781a689d",
+      "End"
+    ],
+    [
+      "ba63a500-9c30-4c46-ba01-e09bd6365c93",
+      "Start"
+    ],
+    [
+      "ba63a500-9c30-4c46-ba01-e09bd6365c93",
+      "End"
+    ],
+    [
+      "e393e994-c9b5-4284-879e-b5db8e896da4",
+      "Start"
+    ],
+    [
+      "e393e994-c9b5-4284-879e-b5db8e896da4",
+      "End"
+    ]
+  ],
+  "width_preserved": true,
+  "violations": 1,
+  "unconnected": 0,
+  "finding": "VBUS_N +0.10 mm fixes USB clearance; BOOT0 via then conflicts. BOOT0 +0.10 mm resolves that but violates F.Cu GND track clearance. Baseline usb-sd-via-clearance remains unchanged."
+}

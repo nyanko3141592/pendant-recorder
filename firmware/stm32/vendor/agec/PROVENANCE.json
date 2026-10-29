@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/pedrobtz/agecrypt",
+  "commit": "f7530fa857bd733135d2fdbe89da29de98a3b4eb",
+  "copied": "src/agec; inst/COPYRIGHTS; LICENSE",
+  "local_changes": [
+    "payload.c: in-place encryption buffer",
+    "io.h: smaller IO buffers",
+    "payload.c: wipe payload workspace on success/error",
+    "agecore.c: wipe payload key on output error",
+    "x25519.c: wipe partial ephemeral secret on RNG error and wrap key after use",
+    "payload.c: encryption workspace moved to static storage; age_writer serialization mandatory; wipe retained"
+  ],
+  "supported_use": "Binary X25519 encryption only through crypto/age_writer.c; nonreentrant library serialized by adapter",
+  "not_yet_qualified": [
+    "hardware RNG",
+    "full firmware linker/stack",
+    "actual SD writes and throughput",
+    "independent security review"
+  ]
+}

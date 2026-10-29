@@ -1,0 +1,36 @@
+{
+  "status": "SCREENED_NOT_ADOPTED",
+  "source": "https://assets.nexperia.com/documents/data-sheet/PMV16UN.pdf",
+  "revision": "Rev. 1, 4 April 2011",
+  "review_date": "2026-10-27",
+  "package": "SOT23",
+  "pins": {
+    "1": "G",
+    "2": "S",
+    "3": "D"
+  },
+  "limits": {
+    "VDS_V": 20,
+    "VGS_absolute_V": 8
+  },
+  "electrical": {
+    "gate_leakage_max_nA": 100,
+    "gate_leakage_conditions": "VGS = +/-8 V, VDS = 0 V, Tj = 25 C",
+    "rds_on_max_ohm": 0.04,
+    "rds_conditions": "VGS = 1.8 V, ID = 3.9 A, Tj = 25 C",
+    "Ciss_typ_pF": 670,
+    "Coss_typ_pF": 195,
+    "capacitance_conditions": "VGS = 0 V, VDS = 10 V, f = 1 MHz, Tj = 25 C"
+  },
+  "assessment": [
+    "Lower specified gate leakage than DMN52D0U, but conditions differ; not a measured operating-point comparison.",
+    "Large typical input/output capacitance makes this a poor default for the high-impedance signal and SETI branches. Do not adopt based only on low on-resistance.",
+    "Q5 output capacitance is behind R45; 195 pF is not directly the capacitance at SETI. A network transient assessment is still required.",
+    "Temperature-range limits, exact ordering code and current stock remain unresolved. No PCB or BOM change."
+  ],
+  "procurement_screen": {
+    "status": "DO_NOT_SELECT_ON_AVAILABLE_EVIDENCE",
+    "source": "https://www.digikey.com/en/products/detail/nxp-usa-inc/PMV16UN-215/2704843",
+    "finding": "Distributor lists PMV16UN,215 obsolete. Nexperia continuity not established; do not assume old NXP listing equals a currently supplied Nexperia MPN."
+  }
+}

@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T08:07:19",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/afab3f0e-e2bb-5ea9-9f68-cfd4ab17cf9a",
+            "violations": [
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'PendantMinimal' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J3 [Part_J3]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 256.54
+                            },
+                            "uuid": "4dea3f3c-0b59-5785-af60-10be925a2127"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'PendantD1' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J1 [Part_J1]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 64.77
+                            },
+                            "uuid": "15e45d7c-28e8-5167-9711-4d05b629f062"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U8 [Part_U8]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 53.34
+                            },
+                            "uuid": "b41c722f-34d5-5774-83de-37a16a198d2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U11 [Part_U11]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 385.445
+                            },
+                            "uuid": "b2b59176-799f-5ec9-a3aa-809af6132da6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        }
+    ],
+    "source": "pendant-xe-tps2552-latch-trial.kicad_sch"
+}

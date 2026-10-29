@@ -1,0 +1,25 @@
+{
+  "status": "READY_FOR_DESIGN_ADOPTION_NOT_MANUFACTURING_RELEASE",
+  "candidate_sha256": "31ebfc3b10417e6fc9de09c4847dfb462e195d9303b57f0c9475281781354e4f",
+  "evidence": {
+    "joined-drc.json": "aa30c65214b535019861eefe101e54dc1b0157f4476b65cd8c99605cd02284b7",
+    "erc.json": "1b23e2f2487c4ae2bf4ea93d3578d460d941900ba26d4376527f31569cb02095",
+    "route-integrity-review.json": "ff3fb6b6c9ba8652a4a1c58d6fae9be15e1895a9c23d8d71e8e29b3deb481ad1",
+    "reference-plane-review.json": "cc7ee882927a3890f57c49d0f68159110b6ce845a86ac74c3f90754e46ba1bd0",
+    "via-audit.json": "3f0142563d83bece2414863a2fb8d94d337a1cfaf822da0c789fe5ece7be833b"
+  },
+  "firmware_fixture_build": {
+    "exit_code": 0,
+    "artifact_sha256": "7262efd3b9a74d9683124bea5732dec6b00aee4434def5a5054b8c1e8a131f4d",
+    "log_sha256": "8c5169a7f520d3a663eff4b310a1974b502d3c534ead9412305100f94f1bfe85",
+    "limitation": "Synthetic VID/PID link fixture; not flashable production image or hardware test"
+  },
+  "flagged_vias": 13,
+  "next": [
+    "Back up and adopt synchronized PCB/schematic/design/BOM",
+    "Refresh active hashes and mechanical inventory/models",
+    "Complete enclosure and manufacturing/runtime qualification"
+  ],
+  "adopted": true,
+  "canonical_pcb_sha256": "31ebfc3b10417e6fc9de09c4847dfb462e195d9303b57f0c9475281781354e4f"
+}

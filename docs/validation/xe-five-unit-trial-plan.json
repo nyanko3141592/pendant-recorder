@@ -1,0 +1,128 @@
+{
+  "status": "PRE_PROTOTYPE_TEST_PLAN_NOT_RESULTS",
+  "prototype_count": 5,
+  "tests": [
+    {
+      "id": "ID",
+      "name": "設計・個体識別",
+      "sample_scope": "各5台",
+      "method": "PCB版、部品実装差分、FWバイナリhash、設定、電池SKU/ロット、ケース版、測定器と校正情報を記録。BORをリセット後に読み戻す。診断用起動試験ではHSI選択、MSIS停止、録音開始後のMSIKを確認する。電池持ち本試験はデバッガを外した通常ビルドで行う。",
+      "acceptance": "対象設計と一致。BOR4読戻しを保存。試験用鍵/VID/PIDのビルドを製品リリースと扱わない。",
+      "prerequisite": "回路・ファームの検証開始条件",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "FIT",
+      "name": "電池無加工組立",
+      "sample_scope": "各5台",
+      "method": "assembly-validation-plan-ja.txtに沿って、純正プラグ・線を含む挿入過程と閉鎖前後を記録。",
+      "acceptance": "はんだ付け・線加工・端子交換なし。完全嵌合、挟み込みなし、指定曲げ条件内。ケース閉鎖が電池を圧迫しない。未確定のプラグ寸法・曲げ条件は合格扱いしない。",
+      "prerequisite": "電池接続前の極性・電源設計確認",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "POWER",
+      "name": "電源・保護の基礎試験",
+      "sample_scope": "各5台",
+      "method": "まず電池エミュレータで電圧掃引と負荷変動を試す。起動/録音/保存/USB挿抜/充電時の電池電流・各電源・制御信号を測る。Q6/Q7は専用bench-planも実施。",
+      "acceptance": "部品と電池の公開定格内。110mA連続放電制限に対し、ピークを独自の許容値で免除しない。過渡応答、逆流、停止・再起動を評価。",
+      "prerequisite": "ID",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "TEMP",
+      "name": "充電・温度監視",
+      "sample_scope": "各5台",
+      "method": "xe-film-temperature-resistance-stimuli.jsonの現基板基準を使い、設計検証済み電源でNTC正常/開放/短絡と境界抵抗を模擬。実電池では接触構造・電池表面温度・充電電流/電圧/終止を記録する。",
+      "acceptance": "公開電池仕様の電圧・電流・温度範囲を公差込みで満たす。異常時充電停止と復帰条件を満たす。センサー接触の熱遅れが未評価なら未合格。",
+      "prerequisite": "POWER; 閾値一覧を公開仕様と現回路から試験前に固定",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "R16",
+      "name": "無給電16時間連続録音",
+      "sample_scope": "各5台",
+      "method": "xe-r16-evidence-protocol.jsonの時刻照合と証拠保存条件を使用する。採用充電条件で充電しUSBを外す。外部時刻基準つき音源と予定した無音区間を交互に与え、16時間以上実録音。電流/電圧/温度を記録し、停止後に全ファイルを取り込んで復号・検証する。",
+      "acceptance": "充電なし実時間57600秒以上、16kHz以上モノラル、無音も同じ時間軸で保存。欠落/重複/破損なし。ファイル総時間だけで連続性を判定せず外部時刻と照合する。平均電流計算だけでは合格にしない。",
+      "prerequisite": "FIT,POWER,TEMP; 供試電池の状態と周囲条件を記録",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "S36",
+      "name": "36時間分の累積暗号化保存",
+      "sample_scope": "最低1台で同一電池・同一媒体の3セッション、残4台は個体保存・復号確認",
+      "method": "実ストレージにUSBを外した電池駆動録音を3セッション蓄積する。セッション間だけ録音を停止してUSBホスト接続で同じ電池を充電し、電池・媒体を交換せず、format/delete/cleanupせずに再起動する。合計36時間以上になった後、全ファイルを復号・検証する。現行安全ポリシーと矛盾する充電専用給電中の録音は行わない。",
+      "acceptance": "3セッション合計129600秒以上が同じ媒体に共存し既存ファイルを上書きしない。録音中USB給電0秒、電池交換0回、セッション間充電2回。保存領域に平文音声を出力しない構成をコードと媒体の両面で確認。媒体の文字列検索だけを暗号化の証明にしない。",
+      "prerequisite": "POWER,TEMP; 36hは累積容量試験であり電池連続時間の証明ではない",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "HOST",
+      "name": "3OSで取込み・復号",
+      "sample_scope": "macOS/Windows/Linuxで各1台以上、全5台にUSB認識確認",
+      "method": "同一既知音声を各OSで取込み、秘密鍵による復号、整合性、保存先権限、重複取込み、再接続を確認。",
+      "acceptance": "全OSで音声を回収でき、復号内容が一致。失敗時は原本保持。秘密鍵を本体へ書き込まない。OSとツール版を記録。",
+      "prerequisite": "ID,POWER; 実USBと対象OSが必要",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "FAULT",
+      "name": "電源断・USB異常・容量上限",
+      "sample_scope": "代表1台で各状態、残4台は正常停止/復帰",
+      "method": "録音保存中の制御された電源断、USB取込み途中抜去、容量上限、低電圧停止/再開抑止を試す。破損試験は専用コピーで行う。",
+      "acceptance": "確定済み区間を回収。不完全区間を検出し、未取込みデータを黙って削除・上書きしない。MSC中に本体が同じ媒体を書き換えない。",
+      "prerequisite": "POWER,HOST",
+      "result": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "id": "CASE",
+      "name": "印刷・閉鎖・使用時形状",
+      "sample_scope": "各5台",
+      "method": "PLA印刷寸法、仕切り板の厚さ/反り、接着後のUSB挿抜、音道、温度接触、完成外形を測る。保持強度の負荷条件を試験前に固定。",
+      "acceptance": "固定電池と16時間録音を優先して必要な大型化を許容し、完成外形を測定してOmi参照寸法と比較する。配線/電池に締付荷重を加えない。最新CADに対応する仕切り板の絶縁と保持が使用条件で維持。試験負荷が未定義なら強度は未合格。",
+      "prerequisite": "FIT; 固定電池と16時間録音を満たす条件下で完成品を最小化。30×32×15mmは絶対上限ではない",
+      "result": "NOT_RUN",
+      "evidence": []
+    }
+  ],
+  "source_sha256": {
+    "mechanical/xe-minimal/temperature-contact-space-review.json": "9389949cd948269639a53622d679f9da492a3a8f8ee83352eb81bb24e0e928bb",
+    "docs/validation/xe-film-temperature-resistance-stimuli.json": "26c3c95ff03a0e620c1bda09c7f65b5c65ef04465e7e6a269d67b5f0563d0070",
+    "docs/requirements.md": "3031e6e7aaceedd52710eef082beef5bf680c7f9d5259251b1a947b492b56dd1",
+    "docs/procurement/preorder-target.json": "bf056242e020a3389a2ad49cf40a3b4b6a5878cc18146d52b0e3a40f158f401b",
+    "docs/procurement/xe-q6-q7-bench-plan.json": "1a0cf6c48035faeab1dd61cbb7f238f8084f860f23eddc258d518dd8f9d1e280",
+    "docs/sourcing/xe-cs32-energy-screen.json": "4e099adfdf2ca324f61d6d73a4f3068a85ebcd0752086a5b3b0c453d45134162",
+    "mechanical/xe-minimal/battery-fit-release-gate.json": "05913014a730fc76b4798a7dd6f54277c546d930ef5e1f26008a34144932ccad",
+    "hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_pcb": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+    "mechanical/xe-minimal/film-current-integration-candidate.json": "ac06e1935db5ed0c2ad613f5ebfa3c353425b6a923f132ad2a7a93105f7f4bfe",
+    "docs/validation/xe-r16-evidence-protocol.json": "2efefa10400798737acd4cc0147b37d46ba37d696d342e938e1b79e0b0858068",
+    "docs/sourcing/xe-msis-shutdown-review.json": "a70876fd3db1853512e112b563f5beaf3247ede3f2823245a26233cbc08659f8"
+  },
+  "execution_order": [
+    "ID",
+    "FIT",
+    "POWER",
+    "TEMP",
+    "CASE",
+    "R16",
+    "S36",
+    "HOST",
+    "FAULT"
+  ],
+  "notes": [
+    "FIT starts with non-energized dimensional models; actual battery connection follows electrical prechecks",
+    "Prototype sample results do not establish lifetime or population guarantees",
+    "Costs and procurement approval are separate; no ordering or hardware actuation performed",
+    "Unresolved limits must be fixed before each test; no retroactive threshold chosen to pass results",
+    "A pre-prototype decision may use calculations plus this unexecuted plan; physical results must never be implied"
+  ],
+  "mechanical_candidate": "previous-film-review"
+}

@@ -1,0 +1,74 @@
+{
+  "status": "HISTORICAL_SLICE_WITH_KNOWN_SEAT_OVERHEIGHT_NOT_CURRENT_RECOMMENDATION",
+  "printer": "Bambu Lab A1 mini 0.4mm nozzle",
+  "material": "PLA",
+  "parts": [
+    {
+      "part": "thickness-clearance-upper",
+      "source": "thickness-clearance-upper-trial.step",
+      "source_sha256": "07a796a9656f0cf5c420769c411543abae728b8d9bec39311227b6c28d915a3b",
+      "files": {
+        "home-case-slice-review/thickness-clearance-upper/upper.stl": "4cd4c9ee6797f4afeb984f4b24b2c786bd7258a1af9d8f2d315d8e3af971cda9",
+        "home-case-slice-review/thickness-clearance-upper/upper.3mf": "5a1865edd0f98c3b41ab1d7c21344144177787701eaad988f4dde9489641b705"
+      },
+      "layer_count": 30,
+      "first_Z_mm": 0.2,
+      "last_Z_mm": 4.84,
+      "gcode_sha256": "63e559207a99ec4d5381bcb277f9ed1a9b1e5d07f61a1962b5609ca799b60112",
+      "estimated_material_g": 1.2331814765930176,
+      "estimated_print_seconds": 354.1871032714844
+    },
+    {
+      "part": "current-lower",
+      "source": "offset-pack-lower-trial.step",
+      "source_sha256": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b",
+      "files": {
+        "home-case-slice-review/current-lower/current-lower.stl": "f3049e4c3c521f97962d8e21a5db674a37e3913dead1f34f7df41433add1579b",
+        "home-case-slice-review/current-lower/current-lower.3mf": "5617c3ac2f2daf1176448f4c8bc64981e02759ad2fe476b6b15ee6fad0c4afe9"
+      },
+      "layer_count": 50,
+      "first_Z_mm": 0.28,
+      "last_Z_mm": 8.12,
+      "gcode_sha256": "53296761aa3942ef88cb6cdeb1f7c4f994c55fe98710cb2c0c196f46ad320796",
+      "estimated_material_g": 1.6408510208129883,
+      "estimated_print_seconds": 529.55859375
+    },
+    {
+      "part": "current-separator",
+      "source": "support-notched-separator-trial.step",
+      "source_sha256": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+      "files": {
+        "home-case-slice-review/current-separator/current-separator.stl": "79b08bb944ed1fc1292dec85766f2c679b4b07ac5fc5ba6fde068f6d44250313",
+        "home-case-slice-review/current-separator/current-separator.3mf": "8f8713fafb9bcc7834dcfb27fe24cdcff7f0fd3e62413cd626c126e7b8c9c11f"
+      },
+      "layer_count": 2,
+      "first_Z_mm": 0.14,
+      "last_Z_mm": 0.3,
+      "gcode_sha256": "f09d305644fa905963ff624ebb30673239e861001df7a99933481a9da9e40597",
+      "estimated_material_g": 0.24760125577449799,
+      "estimated_print_seconds": 78.26160430908203
+    }
+  ],
+  "one_set_estimated_g": 3.121633753180504,
+  "five_separately_printed_sets_estimated_g": 15.60816876590252,
+  "one_set_separate_job_estimated_seconds": 962.0073013305664,
+  "limits": [
+    "Estimates exclude failures and may exclude calibration/purge consumables",
+    "Separate jobs, not a validated multi-part plate",
+    "Layer markers are nominal heights, not measured printed dimensions",
+    "Full lower-case toolpath and separator detail review pending",
+    "No printer commands sent; battery assembly, thermal interface and closure still unqualified"
+  ],
+  "separator_toolpath_review": {
+    "path": "current-separator/toolpath-review.json",
+    "sha256": "d44f215585d117eed40a5b3e6d7cf09321095f86a770e79c337ff83c52b01c13",
+    "image_viewed": true,
+    "result": "Both layers contain perimeter/infill paths including support tabs; nominal bead coverage99.47%/99.85%; boundary and infill-end residuals remain; not physical qualification"
+  },
+  "known_issue": {
+    "part": "current-lower",
+    "nominal_PCB_seat_overheight_mm": 0.08,
+    "evidence": "current-lower/transition-location-review.json",
+    "candidate_replacement_manifest": "wider-right-candidate-print-files.json"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "status": "RESISTOR_PURCHASE_SPECIFICATION_SELECTED_NOT_ASSEMBLY_RELEASE",
+  "date": "2026-10-27",
+  "previous_bom_sha256": "c41037b7d160bbf9ca143233738cfe51f5745c6a3a3f47a6f9d7fa79fc56bcd7",
+  "parts": [
+    {
+      "reference": "R13",
+      "mpn": "RC0402FR-07100KL",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-07100KL",
+      "resistance_screen_ohms": [
+        98554.5,
+        101454.5
+      ],
+      "worst_independent_voltage_dissipation_W": 0.00027966759508698234,
+      "body_max_mm": [
+        1.05,
+        0.55,
+        0.4
+      ]
+    },
+    {
+      "reference": "R14",
+      "mpn": "RC0402FR-071ML",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-071ML",
+      "resistance_screen_ohms": [
+        985545.0,
+        1014545.0
+      ],
+      "worst_independent_voltage_dissipation_W": 2.7966759508698233e-05,
+      "body_max_mm": [
+        1.05,
+        0.55,
+        0.4
+      ]
+    },
+    {
+      "reference": "R15",
+      "mpn": "RC0402FR-07100KL",
+      "source_url": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-07100KL",
+      "resistance_screen_ohms": [
+        98554.5,
+        101454.5
+      ],
+      "worst_independent_voltage_dissipation_W": 0.00027966759508698234,
+      "body_max_mm": [
+        1.05,
+        0.55,
+        0.4
+      ]
+    }
+  ],
+  "assumptions": {
+    "screen_temperature_C": [
+      0,
+      70
+    ],
+    "reference_temperature_C": 25,
+    "temperature_scope": "Engineering screening interval, not declared product operating range",
+    "voltage_across_each_resistor_upper_bound_V": 5.25
+  },
+  "limitations": [
+    "Supplier stock and price not verified in this decision",
+    "Q3 replacement remains unadopted",
+    "Gate leakage and MCU input leakage require circuit-level qualification",
+    "PCB and schematic nominal resistance values unchanged; procurement details are in BOM notes"
+  ],
+  "bom_sha256": "5f9bbb0505eee6e9fd43d123015d478e35beb11719a75ac17920139c63f6bf0d"
+}

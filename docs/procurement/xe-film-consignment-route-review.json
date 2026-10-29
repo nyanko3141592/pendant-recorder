@@ -1,0 +1,25 @@
+{
+  "status": "CONSIGNMENT_ROUTE_COST_REVIEW_NOT_QUOTE",
+  "date": "2026-10-27",
+  "sources": {
+    "terms": "https://jlcpcb.com/help/article/consignment-part-terms-conditions",
+    "overseas_guide": "https://jlcpcb.com/help/article/how-to-consign-parts-to-jlcpcb"
+  },
+  "findings": [
+    "Attrition/minimum assembly quantity is required, but these pages do not provide a numeric R13 0201 minimum. Ten retail pieces are not established as sufficient.",
+    "Restrictions on combining inventory sources apply to the same JLCPCB part number; do not generalize this into a ban on mixed sourcing of different BOM items.",
+    "Terms list overseas consignment service charges of USD85 for 1-50 part numbers.",
+    "Overseas guide lists import handling at 2% of declared value, minimum USD10 per shipment, plus duty and import VAT.",
+    "Guide 30%/minimumUSD30 fee is for retrieval, not incoming consignment."
+  ],
+  "fee_reconciliation": "The pages do not establish whether USD85 and the import handling charge are additive or alternative for this planned route. Do not sum them into a supposedly confirmed quote.",
+  "design_procurement_decision": [
+    "Keep seller-installed TH1 out of automated SMT and out of overseas consignment quantities.",
+    "Treat R13 retail pricing as an alternative procurement observation; compare the exact MPN in assembler stock/global sourcing before selecting overseas consignment.",
+    "Do not use retail part subtotal as delivered assembled cost."
+  ],
+  "numeric_R13_purchase_quantity": null,
+  "route_selected": false,
+  "complete_five_unit_total": null,
+  "external_submission_performed": false
+}

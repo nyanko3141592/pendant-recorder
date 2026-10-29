@@ -1,0 +1,90 @@
+{
+  "status": "OFFICIAL_HOUSING_DRAWING_TEXT_FOUND_VISUAL_REVIEW_PENDING",
+  "part": "781720003",
+  "source_url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/781/78172/781720002_sd.pdf",
+  "document": "781720000-SD PSD000 RevA",
+  "release_date": "2022-06-07",
+  "sheets": 2,
+  "three_circuit_table_mm": {
+    "A": 3.8,
+    "B": 2.4
+  },
+  "other_dimensions_in_text_mm": [
+    3.5,
+    1.3
+  ],
+  "general_tolerance_mm": 0.2,
+  "mate": "78171000*",
+  "application_specification": "AS-78172-001",
+  "product_specification": "781710000-PS PS000",
+  "terminals": [
+    "781720410",
+    "781720411"
+  ],
+  "limitations": [
+    "Web text accessible; curl failedHTTP2, no local PDF yet.",
+    "Dimension orientation and mating pose must be visually reviewed before making housing solid.",
+    "Housing alone does not define wire bend or complete mated envelope."
+  ],
+  "latest_retrieval": {
+    "date": "2026-10-27",
+    "official_text": "Available, both sheets read",
+    "local_pdf": "HTTP1.1 timeout after30s, zero bytes; session17238 terminal exit28",
+    "screenshot": "Tool returned citation but no model-visible pixels; not counted as visual inspection",
+    "sheet2_direction": "Mating view explicitly refers to mating-part drawing; review together with SD-78171-008 RevG before placing housing"
+  },
+  "retrieval_20261027_followup": {
+    "official_download": "curl --http1.1 --max-time20: terminal exit28, zero bytes",
+    "official_web_screenshot": "content type not application/pdf; no image",
+    "Mouser_STEP_link": "https://www.molex.com/pdm_docs/stp/78172-0003_stp.zip",
+    "STEP_result": "redirects to part-detail HTML, no STEP obtained",
+    "existing_header_sheet3": "Rendered and visually inspected; tape-and-reel drawing only, not mating housing or assembly dimensions",
+    "next_action": "Seek manufacturer drawing mirrored by authorized distributor or current manufacturer CAD download; do not infer housing pose from text dimensions alone."
+  },
+  "retrieval_20261027_current": {
+    "part_specific_003_pdf": "curl HTTP2 INTERNAL_ERROR exit92, no valid PDF",
+    "browser": "IAB net::ERR_BLOCKED_BY_CLIENT",
+    "Mouser": "web403",
+    "Farnell_and_RET": "web timeouts",
+    "web_screenshot": "content not application/pdf, no pixels",
+    "conclusion": "No new visual evidence; housing orientation remains unresolved. Do not fabricate solid from text dimensions."
+  },
+  "lcsc_route_review": {
+    "date": "2026-10-27",
+    "page": "https://www.lcsc.com/product-image/C505300.html",
+    "retrieval": "HTML downloaded successfully",
+    "html_sha256": "740947ca37ce08eef5712b78fa95dd0c5686d3bc5b50dd9f54acb5db0c31d09a",
+    "finding": "Product pdfUrl points to previously failed Molex 781720003_sd.pdf endpoint; no mirrored manufacturer drawing found. Alternative product PDFs belong to different manufacturers and were not substituted.",
+    "other_routes": "DigiKey/Kynix timeout; DatasheetArchive search page unavailable",
+    "result": "No additional dimension-orientation evidence"
+  },
+  "legacy_visual_evidence": {
+    "source_url": "https://www.alldatasheetit.com/html-pdf/437331/MOLEX/78172-0003/153/1/78172-0003.html",
+    "image_url": "https://www.alldatasheetit.com/htmldatasheet2/437331/MOLEX/78172-0003/153/1/78172-0003.png",
+    "manufacturer_document": "SD-78172-007 sheet1of1 legacy drawing; revision/date text not fully transcribed",
+    "local_file": "mechanical/xe-minimal/evidence/Molex-SD-78172-007-legacy-mirror.png",
+    "sha256": "4c5b377538519c94b698725e4facfb6f69dbaef0286c5565288474cc9f8a3fba",
+    "visually_verified": {
+      "three_circuit_DIM_A_contact_span_mm": 2.4,
+      "three_circuit_DIM_B_main_body_width_mm": 3.8,
+      "side_view_depth_mm": 3.5,
+      "side_view_height_mm": 1.3,
+      "reference_mated_height_above_pcb_mm": 1.55,
+      "mating_direction": "Housing engages perpendicular to PCB; wires exit parallel to PCB"
+    },
+    "limits": [
+      "Legacy DIM_A/B naming is reverse of current text document; do not merge labels",
+      "DIM_B3.8 excludes lateral protrusions visible beyond extension lines; not full envelope",
+      "Housing depth front flange and side ears need current drawing maximum dimensions",
+      "Mated1.55 is parenthesized reference, not guaranteed max",
+      "Current revision comparison and exact PCB pose remain required"
+    ]
+  },
+  "current_product_page_review": {
+    "date": "2026-10-27",
+    "url": "https://www.molex.com/en-us/products/part-detail/781720003",
+    "observed": "Exact part page lists three circuits, 1.20mm pitch and limited-information notice; no usable dimensional/CAD links in opened page",
+    "application_spec_attempt": "AS-78172-001-001.pdf web fetch timeout; not evidence of specification content",
+    "conclusion": "Current housing maximum dimensions still unverified; use battery-fit-release-gate.json to resolve before release"
+  }
+}

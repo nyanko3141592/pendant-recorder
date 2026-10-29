@@ -1,0 +1,76 @@
+{
+  "status": "CANONICAL_LOCAL_REVIEW_PACKAGE_HOLD_NOT_UPLOAD_OR_ORDER_READY",
+  "candidate": "XE-PROTOTYPE-V1-27P5-PACK-NTC-CASE-V5-1GB-OVP-LATCH",
+  "created_date": "2026-10-28",
+  "board": {
+    "finished_mm": [
+      27.5,
+      27.5
+    ],
+    "layers": 6,
+    "source_sha256": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+    "carrier_sha256": "85814e1a9e498cf0ce809158793790850b6094120663f859f35a14650bf990fd",
+    "assembled_references": 68,
+    "bom_lines": 36
+  },
+  "case": {
+    "revision": "XE-PROTOTYPE-V1-CASE-PEBBLE-V4-PACK-NTC",
+    "material": "PETG",
+    "print_profile": "0.16mm layers, 6 walls, 40% gyroid; lower oriented with cord-hole axis on build Z"
+  },
+  "programming": {
+    "target": "STM32U585CIU6",
+    "artifact_state": "TEMPLATE_AND_FIXTURE_INSTRUCTION_ONLY_NO_RELEASE_BINARY",
+    "acceptance_record": "five-unit-programming-record.template.csv; all five units must pass evaluate-five-unit-programming-record.py",
+    "release_binary_blocker": "EVT image remains conditional on physical battery-cutoff characterization and the full EVT gate."
+  },
+  "buyer_final_assembly": [
+    "DTP401525-XE unmodified 3-wire pack",
+    "case v4",
+    "2-3mm cord"
+  ],
+  "prohibited_interpretation": [
+    "This package is not permission to upload, quote, order, pay, or contact a vendor.",
+    "Local CAD/CAM/hash consistency is not physical safety, runtime, DFM, programming-service acceptance, or a live quote."
+  ],
+  "release_gates": {
+    "physical_evt_A_to_F": "NOT_RUN",
+    "factory_programming_exact_vendor_acceptance": "NOT_VERIFIED",
+    "live_stock_and_quote": "NOT_VERIFIED",
+    "vendor_CAM_DFM_BOM_CPL_preview": "NOT_VERIFIED",
+    "decision": "HOLD_DO_NOT_ORDER"
+  },
+  "source_sha256": {
+    "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+    "hardware/xe-minimal/pendant-xe-minimal.kicad_sch": "319354c1d3485c47e6379a3ca711706992938b790af50b5af0dd481d1f19f7e9",
+    "hardware/xe-minimal/design.json": "d44914af9ee7afadb855c77ad2876812147910803eca642181a89aadf31310d6",
+    "hardware/xe-minimal/active-design.json": "98ac7830c4926b1c08cebe59725c8523a18d43c7e57052671fa63d936d2c69a1",
+    "docs/procurement/xe-production-bom-2026-10-28.csv": "4a0590a0d7db0025f8bd6100eb3820fc87f1c831c391a5ce7be22149e21ee942",
+    "hardware/xe-minimal/canonical-single-carrier-v1/carrier.kicad_pcb": "85814e1a9e498cf0ce809158793790850b6094120663f859f35a14650bf990fd",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v4-review.json": "555fdfa206a13cc002289a7070471add37fc67266a386c6ed4517f778f4aca67",
+    "hardware/xe-minimal/factory-programming/vendor-programming-instruction.json": "8340b8779edad14d1c359d1dab6b8987e8c797d6602d5d11d9d8ff70043beb85",
+    "hardware/xe-minimal/factory-programming/source-toolchain-lock.json": "7861be5fad8fb7ff46e970d4c20dc2cd3d40b4912337dc8733df6c51e7c14f83",
+    "hardware/xe-minimal/factory-programming/programming-readiness.json": "e7fbb3e434dfd63d09aea3e522ab138863168f1347596ecb377787321e499f01",
+    "hardware/xe-minimal/factory-programming/five-unit-programming-record.template.csv": "7ed8cc6d62415ecf9bafd3b2d897b0db48544e01be6b75b108def39541ac9969",
+    "hardware/xe-minimal/factory-programming/evaluate_five_unit_programming_record.py": "d629ca12743e1506ffc0f2f061d9c35ec14d8648e225856c9954af84df99c15a"
+  },
+  "files_sha256": {
+    "evaluate-five-unit-programming-record.py": "d629ca12743e1506ffc0f2f061d9c35ec14d8648e225856c9954af84df99c15a",
+    "evt-programming-manifest.template.json": "5cbf6d6290c5bf63b1d3b76c2077afc2fdba4ab35c3b2e27a9d9d4da0e861e83",
+    "firmware-source-toolchain-lock.json": "7861be5fad8fb7ff46e970d4c20dc2cd3d40b4912337dc8733df6c51e7c14f83",
+    "five-unit-programming-record.template.csv": "7ed8cc6d62415ecf9bafd3b2d897b0db48544e01be6b75b108def39541ac9969",
+    "jlc-bom.csv": "6070f46b6a367f4e647609f872fb63bc635efca2e51617afa4e2286947a44f28",
+    "jlc-cpl.csv": "574e8510f949c3f021a96c5dd6e94a7d325a7cce07ea28ed5cfc30d23177bfdb",
+    "programming-readiness.json": "e7fbb3e434dfd63d09aea3e522ab138863168f1347596ecb377787321e499f01",
+    "vendor-programming-carrier.svg": "da1272e2ae45f07de0612ae50a461b9bd0a926f0553ec129a2c525e3005e0191",
+    "vendor-programming-instruction.json": "8340b8779edad14d1c359d1dab6b8987e8c797d6602d5d11d9d8ff70043beb85",
+    "xe-carrier-gerber-drill.zip": "40282ebbddd225aec0fc4872762fc1ad02a7824d9df1a028a95355304dee2c7a",
+    "xe-case-v4-local-print-files.zip": "94943df74a13694946d9b7ee2ded3facb78c3e572888891027a2a88392226a82"
+  },
+  "external_actions_performed": {
+    "upload": false,
+    "order": false,
+    "payment": false,
+    "vendor_contact": false
+  }
+}

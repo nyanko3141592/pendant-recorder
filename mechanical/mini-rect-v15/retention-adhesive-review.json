@@ -1,0 +1,36 @@
+{
+  "status": "ADHESIVE_STACK_SENSITIVITY_NOT_QUALIFIED",
+  "source_sha256": "2f73ddba8433af4e35f68ff92f9feb744c437a44edcfbdac50d0b8a86d555b30",
+  "candidate": "3M Adhesive Transfer Tape 950",
+  "manufacturer_source": "https://multimedia.3m.com/mws/media/2365991O/3M-Adhesive-Transfer-Tape-950.pdf?pif=000254%3Flocale%3Den-US",
+  "source_evidence": "Manufacturer indexed TDS September2024, retrieved2026-10-26",
+  "nominal_adhesive_layer_mm": 0.13,
+  "adhesive_thickness_tolerance_mm": null,
+  "liner_mm": 0.08,
+  "liner_removed_before_assembly": true,
+  "adhesive_layers": 1,
+  "location": "Lid post to foam only; board-side pad face unbonded",
+  "cases": [
+    {
+      "post_tip_shift_mm": 0,
+      "post_tip_Z_mm": 10.9,
+      "foam_compression_min": 0.16666666666666674,
+      "foam_compression_max": 0.6764252696456081
+    },
+    {
+      "post_tip_shift_mm": 0.13,
+      "post_tip_Z_mm": 11.030000000000001,
+      "foam_compression_min": 0.10546139359698625,
+      "foam_compression_max": 0.6263482280431426
+    }
+  ],
+  "limitations": [
+    "Manufacturer mentions foam generally; exact PORON4701-30 and selected SLA resin pairing unqualified.",
+    "Representative thickness only; no zero-tolerance assumption allowed for release.",
+    "Peel data on metal/ABS/PP cannot establish strength of 2x2mm foam/post joint.",
+    "No adhesive price, die-cutting method, creep or aging qualification.",
+    "No CAD change or final material selection."
+  ],
+  "rejected_evidence_inference": "9471LE product page foam statement belongs to comparison table row300MP, not proof9471LE is qualified for this foam. 9471LE web metric thickness also conflicts with its TDS.",
+  "release_allowed": false
+}

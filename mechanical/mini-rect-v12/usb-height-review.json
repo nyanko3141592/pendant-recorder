@@ -1,0 +1,25 @@
+{
+  "status": "DRAWING_REVIEW_NOT_RELEASED",
+  "source": "https://gct.co/files/drawings/usb4105.pdf",
+  "local_pdf": "hardware/mini-rect-v12/reference/usb4105-gct-b4.pdf",
+  "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+  "drawing_revision": "B4 18/12/23",
+  "nominal_profile_mm": 3.31,
+  "general_two_decimal_tolerance_mm": 0.15,
+  "profile_upper_bound_before_assembly_mm": 3.46,
+  "current_fit_model_height_mm": 3.56,
+  "remaining_allowance_mm": 0.1,
+  "decision": "Do not reduce model to nominal 3.31mm. Current 3.56mm accommodates drawing upper bound plus 0.10mm study assembly reserve; actual assembled envelope requires qualification. Low-profile alternative or stack/layout change remains necessary for the proposed 0.5mm battery/0.2mm roof reserves.",
+  "shell_stake": {
+    "unsuffixed_nominal_mm": 0.95,
+    "positive_tolerance_mm": 0.15,
+    "pcb_nominal_thickness_mm": 0.8,
+    "possible_below_board_projection_mm": 0.3,
+    "note": "Model uses only top-side box and does not represent through-hole stake protrusions; check local battery/support/harness clearance and solder fillet before release."
+  },
+  "mating": {
+    "plug_envelope_diameter_max_mm": 6.5,
+    "drawing_mating_clearance_min_mm": 1.85,
+    "note": "Verify case lip and cable overmold engagement against drawing; the rectangular connector cutout alone is insufficient."
+  }
+}

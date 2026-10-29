@@ -1,0 +1,20 @@
+{
+  "status": "REJECTED_NOT_ADOPTED",
+  "sha256": "dbae43296848b7297b7641a0bdfed362d54dcac206075be2f723c80b7e364afe",
+  "types": {
+    "via_dangling": 7,
+    "lib_footprint_issues": 74
+  },
+  "geometric": 7,
+  "unconnected": 2,
+  "parity": 0,
+  "vias": 121,
+  "release_allowed": false,
+  "rejection_reasons": [
+    "Unconnected BAT_TS and CHG_GUARD_GATE",
+    "7 dangling vias",
+    "SD_MOSI missing reference worsened to11.3436mm because new outer route lies outside original reserved corridor",
+    "PDM_DATA route length and missing reference worsened"
+  ],
+  "next_strategy": "Plan full PDM/SPI routes and reference planes together; do not repeatedly reserve only old outer segments and let new routing escape their reference corridor."
+}

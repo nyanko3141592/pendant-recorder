@@ -1,0 +1,42 @@
+{
+  "status": "TOOLING_INTEGRATED_NOMINAL_SOLID_NOT_RELEASED",
+  "source_step_sha256": "6b1cdee423a757cd895416d78d114c32e852af0102e9eff2e51a726d71d6aead",
+  "tooling_layout_sha256": "a457337dada743037f0c9099b95d1f3bc697e117033a9294db59d2c9673d6a99",
+  "valid_solid": true,
+  "solid_count": 1,
+  "closed_top_face_wires": 12,
+  "patch_added_volume_mm3": 2.4791999999970358,
+  "tooling_hole_removed_volume_mm3": 7.788636506776129,
+  "unit_material_checks": [
+    {
+      "unit": 1,
+      "missing_volume_mm3": 0.0
+    },
+    {
+      "unit": 2,
+      "missing_volume_mm3": 0.0
+    },
+    {
+      "unit": 3,
+      "missing_volume_mm3": 0.0
+    },
+    {
+      "unit": 4,
+      "missing_volume_mm3": 0.0
+    },
+    {
+      "unit": 5,
+      "missing_volume_mm3": 0.0
+    },
+    {
+      "unit": 6,
+      "missing_volume_mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "Fiducials are copper features and are not represented in this mechanical solid.",
+    "Perforation holes and electrical PCB geometry have not been merged.",
+    "Sharp cutout corners remain unmachinable with finite-radius router without relief or accepted radii.",
+    "Connectivity and preserved unit volumes do not establish strength or manufacturing acceptance."
+  ]
+}

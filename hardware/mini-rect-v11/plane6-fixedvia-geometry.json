@@ -1,0 +1,546 @@
+{
+  "scope": "Geometry only; not impedance, reference-plane continuity or electrical qualification",
+  "zones": [
+    {
+      "net": "/GND",
+      "layer": "In1.Cu"
+    },
+    {
+      "net": "/GND",
+      "layer": "In4.Cu"
+    }
+  ],
+  "nets": {
+    "/V3V3": {
+      "length_mm": 71.5743,
+      "vias": 6,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1874,
+        0.25
+      ]
+    },
+    "/SWDIO": {
+      "length_mm": 16.1065,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/NRST": {
+      "length_mm": 18.3659,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SWCLK": {
+      "length_mm": 22.0805,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/GND": {
+      "length_mm": 144.0811,
+      "vias": 6,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/VBUS": {
+      "length_mm": 74.8978,
+      "vias": 8,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.15,
+        0.1874,
+        0.25
+      ]
+    },
+    "/VBUS_GATE": {
+      "length_mm": 4.3303,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/BUTTON_N": {
+      "length_mm": 16.685,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/LSE_IN": {
+      "length_mm": 20.4507,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/LSE_OUT": {
+      "length_mm": 15.2622,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/VDDA": {
+      "length_mm": 6.4927,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/VBUS_N": {
+      "length_mm": 15.5445,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/BAT_ADC": {
+      "length_mm": 7.472,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SD_CS_N": {
+      "length_mm": 28.2115,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SD_CLK_MCU": {
+      "length_mm": 7.7701,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SD_MISO": {
+      "length_mm": 19.9615,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SD_MOSI": {
+      "length_mm": 14.2917,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SD_EN": {
+      "length_mm": 23.0212,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/CHG_ALLOW": {
+      "length_mm": 5.0337,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/VCAP": {
+      "length_mm": 1.5021,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/CHG_N": {
+      "length_mm": 12.6823,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/STATUS_LED": {
+      "length_mm": 17.5221,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/USB_DM_MCU": {
+      "length_mm": 20.2658,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/USB_DP_MCU": {
+      "length_mm": 14.6215,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/PDM_CLK_MCU": {
+      "length_mm": 15.0365,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/PDM_DATA": {
+      "length_mm": 9.096,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/BOOT0": {
+      "length_mm": 10.9737,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/CHG_GUARD_GATE": {
+      "length_mm": 37.4466,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/CHG_INHIBIT_GATE": {
+      "length_mm": 4.8054,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SD_V3": {
+      "length_mm": 22.5757,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1874,
+        0.2298,
+        0.25
+      ]
+    },
+    "/ISET": {
+      "length_mm": 13.1532,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/CC1": {
+      "length_mm": 2.4119,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/USB_DP": {
+      "length_mm": 13.1047,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/USB_DM": {
+      "length_mm": 16.2083,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/CC2": {
+      "length_mm": 11.4695,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/BAT_TS": {
+      "length_mm": 21.7994,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In3.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/TS_COLD_REF": {
+      "length_mm": 5.5012,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/TS_HOT_REF": {
+      "length_mm": 4.605,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/BAT": {
+      "length_mm": 43.8695,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1874,
+        0.25
+      ]
+    },
+    "/PDM_CLK": {
+      "length_mm": 2.5722,
+      "vias": 1,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SYS": {
+      "length_mm": 29.9888,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1874,
+        0.25
+      ]
+    },
+    "/ILIM_VSET": {
+      "length_mm": 3.9569,
+      "vias": 0,
+      "layers": [
+        "B.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/STATUS_LED_A": {
+      "length_mm": 1.8661,
+      "vias": 0,
+      "layers": [
+        "B.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/SD_CLK": {
+      "length_mm": 13.1643,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    },
+    "/CHARGER_TS": {
+      "length_mm": 7.231,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "In2.Cu"
+      ],
+      "widths_mm": [
+        0.1
+      ]
+    }
+  }
+}

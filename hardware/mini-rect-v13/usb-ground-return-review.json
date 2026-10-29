@@ -1,0 +1,18 @@
+{
+  "status": "RETURN_VIA_DISTANCE_IMPROVED_USB_NOT_QUALIFIED",
+  "candidate": "usb-ground-return.kicad_pcb",
+  "drc_violations": 0,
+  "unconnected": 0,
+  "added_ground_vias": 3,
+  "nearest_ground_via_range_mm": [
+    1.055,
+    1.975
+  ],
+  "previous_range_mm": [
+    3.761,
+    7.366
+  ],
+  "reference_coverage": "B.Cu USB samples remain0/160 despite In2 ground fill; additional vias did not repair reference coverage",
+  "interpretation": "Earlier isolated-island explanation was a hypothesis, not demonstrated cause; investigate actual In2 copper/void geometry before more pours",
+  "next": "Inspect and reroute USB B/In2 sections against continuous reference; qualify differential geometry and manufacturer stackup"
+}

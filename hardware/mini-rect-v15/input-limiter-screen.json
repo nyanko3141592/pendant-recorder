@@ -1,0 +1,35 @@
+{
+  "status": "ENGINEERING_SCREEN_NOT_5V_GUARANTEE",
+  "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/max4995a-max4995c.pdf",
+  "part": "MAX4995CAUT+T",
+  "package": "SOT-23-6",
+  "resistors_kohm": {
+    "permanent": 390,
+    "switched_parallel": 100,
+    "tolerance_percent": 1
+  },
+  "conditions": "VIN=3.3V,VIN-VOUT=1V; full datasheet temperature range; switch resistance/leakage and PCB parasitics not included",
+  "modes": [
+    {
+      "mode": "startup",
+      "nominal_mA": 73.99612719119445,
+      "min_mA": 65.9417730460669,
+      "max_mA": 82.21215708477018
+    },
+    {
+      "mode": "configured",
+      "nominal_mA": 353.86072927649246,
+      "min_mA": 315.41822229665166,
+      "max_mA": 393.056155399094
+    }
+  ],
+  "operating_policy": "Low mode until configured; high mode only under500mA configuration; suspend switch off with retained shutdown state",
+  "limitations": [
+    "3.3V specified current-limit extrema are not guaranteed5V extrema",
+    "Iq300uA maximum is specified at3.3V, not a full5V total-input bound",
+    "SETI capacitance must remain below20pF; switched resistor path leakage/capacitance must be reviewed",
+    "Transient overshoot and capacitor charging are not bounded by this DC calculation",
+    "Suspend shutdown must survive MCU brownout/reset, so a simple GPIO pull-down alone is insufficient",
+    "No schematic/PCB/FW integration or charging permission is provided by this screen"
+  ]
+}

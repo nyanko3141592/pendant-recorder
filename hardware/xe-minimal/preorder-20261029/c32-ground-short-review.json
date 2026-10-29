@@ -1,0 +1,32 @@
+{
+  "status": "NOT_ADOPTED_NARROW_L2_ACCESS",
+  "sha256": "ecc71533d4ca49354a5e18f9d629ed245a04c8569f7e3d75106ec017c47d3151",
+  "new_ground_track_mm": 1.595055918610405,
+  "added_vias": 0,
+  "geometric_drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "library_warnings": 74,
+  "hole_over_pad": 0,
+  "critical_geometry_and_reference_samples_unchanged": true,
+  "L2_between_C32_and_U13_ground_vias": {
+    "grid_mm": 0.025,
+    "roi": [
+      9,
+      17,
+      -0.4,
+      5
+    ],
+    "zero_margin_path_mm": 3.219543648263,
+    "margin_0_05_and_0_1_path_found": false,
+    "interpretation": "Restricted ROI point-grid result; may include terminal access bottleneck, not proof no wider global or L3 path exists"
+  },
+  "remaining": [
+    "Assess endpoint copper margin and L3 alternative return path",
+    "Review old power parallel branches",
+    "Same-version manufacturing and mechanical deliverables"
+  ],
+  "release_allowed": false,
+  "endpoint_polygon_audit": "c32-plane-endpoints.json",
+  "finding": "C32 access via remains inside copper but separates from U13 main L2 polygon after .025mm deflation; L3 polygons separate even without deflation. Short outer trace alone is insufficient."
+}

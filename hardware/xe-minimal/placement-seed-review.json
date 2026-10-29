@@ -1,0 +1,39 @@
+{
+  "status": "UNROUTED_PLACEMENT_SEED_NOT_RELEASED",
+  "source_board_sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+  "memory_source_sha256": "e735923ebb03c826558baf40cc6dcf26133528690f0dec9acd750079e3da93a6",
+  "candidate_sha256": "aaec07e53fb66daa65f786fad2e2bcd9089b245344ae666d4b81e47721f43359",
+  "removed_pullups": [
+    "R29",
+    "R30"
+  ],
+  "connections": {
+    "J3": {
+      "1": "/V3V3",
+      "2": "/SWDIO",
+      "3": "/NRST",
+      "4": "/SWCLK",
+      "5": "/GND"
+    },
+    "U11": {
+      "": "",
+      "1": "",
+      "2": "/SD_CS_N",
+      "3": "/SD_CLK",
+      "4": "/GND",
+      "5": "/SD_MOSI",
+      "6": "/SD_MISO",
+      "7": "",
+      "8": "/SD_V3"
+    }
+  },
+  "checks": "Reloaded board, zero tracks/zones, replacement signal nets verified, reference unchanged.",
+  "limitations": [
+    "Storage land pattern inherited from engineering candidate; auxiliary pad role/paste not qualified.",
+    "Existing26x29mm outline and component positions retained as starting state, not minimum-size result.",
+    "Charger remains old baseline pending power architecture selection.",
+    "Memory supply and price not adopted. No production data."
+  ],
+  "schematic": "pendant-xe-minimal.kicad_sch",
+  "schematic_status": "297 physical pads checked against design table;269 connected schematic pins checked via XML export;ERC0. Board symbol UUID paths not yet synchronized for update-from-schematic workflow."
+}

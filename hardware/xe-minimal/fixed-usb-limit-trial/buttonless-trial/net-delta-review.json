@@ -1,0 +1,29 @@
+{
+  "status": "PASS_EXPECTED_BUTTON_REMOVAL_DELTA_ONLY",
+  "source_sha256": {
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/fixed-usb-limit-trial/screw-hole-trial/hole-18.1.kicad_pcb": "b090106d3b48ebba679bb4532108ac82ce0513a382767edfaa2e143610987e93",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/fixed-usb-limit-trial/buttonless-trial/pendant-xe-minimal.kicad_pcb": "5ada9045fee72944cedbff31b97e8a9ec26ba51270359598d8ffbbd5317c3fc7"
+  },
+  "removed_refs": [
+    "R4",
+    "SW1"
+  ],
+  "changed_retained_pads": [
+    {
+      "ref": "U1",
+      "pad": "38",
+      "before": "/BUTTON_N",
+      "after": "unconnected-(U1-PA15-Pad38)"
+    }
+  ],
+  "retained_footprint_geometry_count": 82,
+  "retained_track_or_via_attribute_changes": [],
+  "retained_track_or_via_count": 1174,
+  "removed_track_or_via_count": 47,
+  "removed_routes_by_net": {
+    "/BUTTON_N": 41,
+    "/V3V3": 5,
+    "/GND": 1
+  },
+  "scope": "Pad nets, retained footprint/pad geometry and retained route attributes. Zone fills and electrical performance are outside this comparison; DRC is separate."
+}

@@ -1,0 +1,97 @@
+2026-10-26 12:36:00.143 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-26 12:36:00.399 INFO   Hardware: 8 CPU cores, 501 CPU score, 4096 MB RAM
+2026-10-26 12:36:00.399 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-26 12:36:00.400 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-26 12:36:01.450 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-26 12:36:01.724 INFO   [FA67B5\91FA12] Loading board file 'xe-route.dsn'...
+2026-10-26 12:36:01.848 INFO   Layer 'F.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-26 12:36:01.849 INFO   Layer 'In1.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-26 12:36:01.849 INFO   Layer 'In3.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-26 12:36:01.849 INFO   Layer 'In4.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-26 12:36:01.849 INFO   Layer 'B.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-26 12:36:01.861 INFO   [FA67B5\91FA12] Job 'FA67B5\91FA12' started at 2026-10-26T03:36:01.861227Z.
+2026-10-26 12:36:02.106 WARN   Design Warning: Board has 22 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 22 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 22 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#1702 [net /GND] <-> FixedVia#1695 [net /GND]
+          - FixedVia#1702 [net /GND] <-> FixedVia#1695 [net /GND]
+          - FixedVia#1702 [net /GND] <-> FixedVia#1695 [net /GND]
+          - FixedVia#1702 [net /GND] <-> FixedVia#1695 [net /GND]
+          - FixedVia#1702 [net /GND] <-> FixedVia#1695 [net /GND]
+          ... and 17 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 22 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-26 12:36:02.138 INFO   [FA67B5\91FA12] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=4.
+2026-10-26 12:36:02.480 INFO   [FA67B5\91FA12] Fanout stage started on board 'fa1196886984476f3ba571dd341de25f' with 170 of 254 SMD pins needing fanout (57 already connected, 27 netless).
+2026-10-26 12:36:03.863 INFO   [FA67B5\91FA12] Fanout pass #1 on board '48c7e28f8b4460598037b5438d72cd6f' completed in 1.22 seconds with 27 SMD pins fanouted, 14 not routed, 0 insert errors, +5 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-26 12:36:04.656 INFO   [FA67B5\91FA12] Fanout pass #2 on board 'e7ddf617b846948f81c210e22bff26df' completed in 0.77 seconds with 10 SMD pins fanouted, 3 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-26 12:36:05.395 INFO   [FA67B5\91FA12] Fanout pass #3 on board 'e5743ba9abb68163cfb250ec307b3225' completed in 0.72 seconds with 8 SMD pins fanouted, 1 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-26 12:36:06.119 INFO   [FA67B5\91FA12] Fanout pass #4 on board 'bca19405eafbfeb6bc29ccaf91b83e52' completed in 0.71 seconds with 8 SMD pins fanouted, 1 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-26 12:36:06.849 INFO   [FA67B5\91FA12] Fanout pass #5 on board '81de7596fa81d48638693f2d2f58bfef' completed in 0.71 seconds with 8 SMD pins fanouted, 1 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=500).
+2026-10-26 12:36:07.571 INFO   [FA67B5\91FA12] Fanout pass #6 on board 'ff55d5219709036b823b0ee80b258c83' completed in 0.71 seconds with 8 SMD pins fanouted, 1 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-10-26 12:36:07.571 INFO   Fanout stopped after 6 passes: no progress for 3 consecutive passes.
+2026-10-26 12:36:07.733 INFO   [FA67B5\91FA12] Fanout stage completed: started with 227 total SMD pins, completed in 5.11 seconds, escaped pins: 213/227 (93.8%), using 5.34 total CPU seconds, 3.66 GB total allocated, and 149.6 MB peak heap usage.
+2026-10-26 12:36:08.260 INFO   [FA67B5\91FA12] Auto-routing stage started on board 'ff55d5219709036b823b0ee80b258c83' with baseline score 741.13 for 37 unrouted items.
+2026-10-26 12:36:13.912 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_DAT2' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-26 12:36:18.442 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/BAT_ADC' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-26 12:36:24.256 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/BAT_TS' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-26 12:36:25.154 INFO   [FA67B5\91FA12] Auto-routing pass #1 on board 'ff55d5219709036b823b0ee80b258c83' was completed in 16.70 seconds with score 873.76 (18 unrouted and 22 violations), using 22.73 CPU seconds and the job allocated 22.42 GB of memory so far.
+2026-10-26 12:36:27.389 INFO   [FA67B5\91FA12] Auto-routing pass #2 on board '5cce9cedbd722eaca7be662095359120' was completed in 2.02 seconds with score 887.73 (16 unrouted and 22 violations), using 24.73 CPU seconds and the job allocated 23.94 GB of memory so far.
+2026-10-26 12:36:29.441 INFO   [FA67B5\91FA12] Auto-routing pass #3 on board 'e3af02bec7e9f3ee3c0667fe46c3f1a4' was completed in 1.84 seconds with score 887.73 (16 unrouted and 22 violations), using 26.74 CPU seconds and the job allocated 25.37 GB of memory so far.
+2026-10-26 12:36:31.269 INFO   [FA67B5\91FA12] Auto-routing pass #4 on board 'f12797bfe3e1b636f6742fe72fd3a11b' was completed in 1.62 seconds with score 887.73 (16 unrouted and 22 violations), using 28.74 CPU seconds and the job allocated 26.77 GB of memory so far.
+2026-10-26 12:36:40.907 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/CC2' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-26 12:36:41.505 INFO   [FA67B5\91FA12] Auto-routing pass #5 on board 'f12797bfe3e1b636f6742fe72fd3a11b' was completed in 10.22 seconds with score 894.71 (15 unrouted and 22 violations), using 38.75 CPU seconds and the job allocated 40.01 GB of memory so far.
+2026-10-26 12:36:43.243 INFO   [FA67B5\91FA12] Auto-routing pass #6 on board '496a0dadacc9084d17dba73c834bbd67' was completed in 1.53 seconds with score 894.71 (15 unrouted and 22 violations), using 40.76 CPU seconds and the job allocated 41.40 GB of memory so far.
+2026-10-26 12:36:44.778 INFO   [FA67B5\91FA12] Auto-routing pass #7 on board '496a0dadacc9084d17dba73c834bbd67' was completed in 1.52 seconds with score 894.71 (15 unrouted and 22 violations), using 41.77 CPU seconds and the job allocated 42.12 GB of memory so far.
+2026-10-26 12:36:46.320 INFO   [FA67B5\91FA12] Auto-routing pass #8 on board '496a0dadacc9084d17dba73c834bbd67' was completed in 1.52 seconds with score 894.71 (15 unrouted and 22 violations), using 43.77 CPU seconds and the job allocated 43.55 GB of memory so far.
+2026-10-26 12:36:47.868 INFO   [FA67B5\91FA12] Auto-routing pass #9 on board '496a0dadacc9084d17dba73c834bbd67' was completed in 1.53 seconds with score 894.71 (15 unrouted and 22 violations), using 44.77 CPU seconds and the job allocated 44.28 GB of memory so far.
+2026-10-26 12:36:49.416 INFO   [FA67B5\91FA12] Auto-routing pass #10 on board '496a0dadacc9084d17dba73c834bbd67' was completed in 1.53 seconds with score 894.71 (15 unrouted and 22 violations), using 46.78 CPU seconds and the job allocated 45.68 GB of memory so far.
+2026-10-26 12:36:56.532 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/VBUS_GATE' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-26 12:36:57.368 INFO   [FA67B5\91FA12] Auto-routing pass #11 on board '496a0dadacc9084d17dba73c834bbd67' was completed in 7.93 seconds with score 894.71 (15 unrouted and 22 violations), using 54.79 CPU seconds and the job allocated 56.93 GB of memory so far.
+2026-10-26 12:36:59.360 INFO   [FA67B5\91FA12] Auto-routing pass #12 on board '0f759d16b9f940bd1642dbd8a5b91564' was completed in 1.59 seconds with score 894.71 (15 unrouted and 22 violations), using 56.80 CPU seconds and the job allocated 58.32 GB of memory so far.
+2026-10-26 12:37:01.088 INFO   [FA67B5\91FA12] Auto-routing pass #13 on board '57563f6fe265b4dfc4725f7a039287fa' was completed in 1.52 seconds with score 894.71 (15 unrouted and 22 violations), using 57.80 CPU seconds and the job allocated 59.04 GB of memory so far.
+2026-10-26 12:37:02.633 INFO   [FA67B5\91FA12] Auto-routing pass #14 on board '57563f6fe265b4dfc4725f7a039287fa' was completed in 1.53 seconds with score 894.71 (15 unrouted and 22 violations), using 59.81 CPU seconds and the job allocated 60.46 GB of memory so far.
+2026-10-26 12:37:04.165 INFO   [FA67B5\91FA12] Auto-routing pass #15 on board '57563f6fe265b4dfc4725f7a039287fa' was completed in 1.51 seconds with score 894.71 (15 unrouted and 22 violations), using 60.81 CPU seconds and the job allocated 61.17 GB of memory so far.
+2026-10-26 12:37:05.698 INFO   [FA67B5\91FA12] Auto-routing pass #16 on board '57563f6fe265b4dfc4725f7a039287fa' was completed in 1.52 seconds with score 894.71 (15 unrouted and 22 violations), using 62.83 CPU seconds and the job allocated 62.63 GB of memory so far.
+2026-10-26 12:37:07.236 INFO   [FA67B5\91FA12] Auto-routing pass #17 on board '57563f6fe265b4dfc4725f7a039287fa' was completed in 1.52 seconds with score 894.71 (15 unrouted and 22 violations), using 63.83 CPU seconds and the job allocated 63.35 GB of memory so far.
+2026-10-26 12:37:08.774 INFO   [FA67B5\91FA12] Auto-routing pass #18 on board '57563f6fe265b4dfc4725f7a039287fa' was completed in 1.52 seconds with score 894.71 (15 unrouted and 22 violations), using 65.84 CPU seconds and the job allocated 64.79 GB of memory so far.
+2026-10-26 12:37:08.805 INFO   [FA67B5\91FA12] The router's best score (894.71) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (15 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/V3V3' (4 unrouted connections):
+    - R1-1  ->  R15-1
+    - U10-A2  ->  C3-1
+    - J3-1  ->  U4-5
+    - R15-1  ->  C25-1
+  Net '/NRST' (1 unrouted connection):
+    - C9-1  ->  via
+  Net '/VBUS' (2 unrouted connections):
+    - C13-1  ->  U3-10
+    - via  ->  via
+  Net '/SD_V3' (2 unrouted connections):
+    - via  ->  via
+    - J4-4  ->  U10-A1
+  Net '/BAT_ADC' (1 unrouted connection):
+    - U1-11  ->  via
+  Net '/SWDIO' (1 unrouted connection):
+    - via  ->  U1-34
+  Net '/VBUS_GATE' (1 unrouted connection):
+    - R13-2  ->  Q3-1
+  Net '/SD_EN' (1 unrouted connection):
+    - via  ->  R22-1
+  Net '/BAT_TS' (2 unrouted connections):
+    - via  ->  TH1-1
+    - U12-2  ->  R37-2
+2026-10-26 12:37:09.380 INFO   [FA67B5\91FA12] Auto-routing stage completed: started with 50 unrouted nets, completed in 67.05 seconds, final score: 894.71 (15 unrouted and 22 violations), using 65.84 total CPU seconds, 64.79 GB total allocated, and 160.3 MB peak heap usage.
+2026-10-26 12:37:09.591 INFO   [FA67B5\91FA12] Skipping optimization stage: the board has 15 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-26 12:37:09.608 INFO   [FA67B5\91FA12] Job 'FA67B5\91FA12' finished with state: COMPLETED (elapsed: 1 minute 7.75 seconds, finished at UTC: 2026-10-26T03:37:09.608158Z).
+2026-10-26 12:37:09.610 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/xe-route.ses' (SES)...
+2026-10-26 12:37:09.612 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/xe-route.ses' (171635 bytes).
+
+╔══════════════════════════════════════════════════════════════════╗
+║           Thank you for using Freerouting!                       ║
+║                                                                  ║
+║  If you would like to support the project, please visit          ║
+║  https://www.freerouting.app/donate.html                         ║
+║  Every contribution helps keep this project open and active!     ║
+╚══════════════════════════════════════════════════════════════════╝

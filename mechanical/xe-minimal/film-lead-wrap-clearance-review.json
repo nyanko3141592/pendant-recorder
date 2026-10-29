@@ -1,0 +1,106 @@
+{
+  "status": "LEAD_WRAP_CLEARANCE_TRIAL_NOT_ADOPTED",
+  "source_sha256": "cb3e11bc0664f14e27b75f263665a91d96cfd46c8eeba3a17edcecf273a25e69",
+  "output_sha256": "e17958b3e4aebd29ec1da37864ddc9c77125dc15fa20b7a34bc92b28c75bab45",
+  "valid": true,
+  "solid_count": 1,
+  "removed_volume_mm3": 0.23176000000194108,
+  "same_bbox": true,
+  "wrap_checks": [
+    {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.14999999999999453
+    },
+    {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.1499999999999985
+    }
+  ],
+  "thickness_probes": [
+    {
+      "local_xy_mm": [
+        -0.95,
+        22.05
+      ],
+      "vertical_intervals_mm": [
+        [
+          -7.72,
+          -6.92
+        ]
+      ]
+    },
+    {
+      "local_xy_mm": [
+        -0.95,
+        22.55
+      ],
+      "vertical_intervals_mm": [
+        [
+          -7.72,
+          -6.92
+        ]
+      ]
+    },
+    {
+      "local_xy_mm": [
+        -0.95,
+        23.05
+      ],
+      "vertical_intervals_mm": [
+        [
+          -7.72,
+          -6.92
+        ],
+        [
+          -3.7069230769228376,
+          -2.55
+        ]
+      ]
+    },
+    {
+      "local_xy_mm": [
+        0.95,
+        22.05
+      ],
+      "vertical_intervals_mm": [
+        [
+          -7.72,
+          -6.92
+        ]
+      ]
+    },
+    {
+      "local_xy_mm": [
+        0.95,
+        22.55
+      ],
+      "vertical_intervals_mm": [
+        [
+          -7.72,
+          -6.92
+        ]
+      ]
+    },
+    {
+      "local_xy_mm": [
+        0.95,
+        23.05
+      ],
+      "vertical_intervals_mm": [
+        [
+          -7.72,
+          -6.92
+        ],
+        [
+          -3.706923076922915,
+          -2.55
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "Only six floor probes; no global minimum wall thickness guarantee.",
+    "Wrap is a provisional dimension budget; actual tape/transition/solder not qualified.",
+    "Re-slicing and printed mating/support recheck required."
+  ]
+}

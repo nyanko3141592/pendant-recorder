@@ -1,0 +1,75 @@
+{
+  "status": "CANDIDATE_OFFLINE_PRINT_SET_NOT_ADOPTED_OR_PRINT_QUALIFIED",
+  "printer": "Bambu Lab A1 mini 0.4mm nozzle",
+  "material": "PLA",
+  "parts": [
+    {
+      "part": "thickness-clearance-upper",
+      "source": "thickness-clearance-upper-trial.step",
+      "source_sha256": "07a796a9656f0cf5c420769c411543abae728b8d9bec39311227b6c28d915a3b",
+      "files": {
+        "home-case-slice-review/thickness-clearance-upper/upper.stl": "4cd4c9ee6797f4afeb984f4b24b2c786bd7258a1af9d8f2d315d8e3af971cda9",
+        "home-case-slice-review/thickness-clearance-upper/upper.3mf": "5a1865edd0f98c3b41ab1d7c21344144177787701eaad988f4dde9489641b705"
+      },
+      "layer_count": 30,
+      "first_Z_mm": 0.2,
+      "last_Z_mm": 4.84,
+      "gcode_sha256": "63e559207a99ec4d5381bcb277f9ed1a9b1e5d07f61a1962b5609ca799b60112",
+      "estimated_material_g": 1.2331814765930176,
+      "estimated_print_seconds": 354.1871032714844
+    },
+    {
+      "part": "wider-right-lower",
+      "source": "wider-right-support-lower-trial.step",
+      "source_sha256": "e4d0bde292b5a6c517542001bf5fd13c179a215cac58bfc973c4273bb5ee9887",
+      "files": {
+        "home-case-slice-review/wider-right-lower/wider-right-lower.stl": "409546d0938fe393f96ebc00516bc192accd77a2e4ab9ebbbf8e12006d5c5b5c",
+        "home-case-slice-review/wider-right-lower/wider-right-lower.3mf": "ae9ebbc96b50a046197280c9e8d945c50bf9aada411cd4e8728c2a1516549f14"
+      },
+      "layer_count": 99,
+      "first_Z_mm": 0.28,
+      "last_Z_mm": 8.12,
+      "gcode_sha256": "1f707dfceda2189105b1ee50b0c30e249dad96aadd257f553d7571b7518d2da6",
+      "estimated_material_g": 1.6413497924804688,
+      "estimated_print_seconds": 962.5545043945312
+    },
+    {
+      "part": "current-separator",
+      "source": "support-notched-separator-trial.step",
+      "source_sha256": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+      "files": {
+        "home-case-slice-review/current-separator/current-separator.stl": "79b08bb944ed1fc1292dec85766f2c679b4b07ac5fc5ba6fde068f6d44250313",
+        "home-case-slice-review/current-separator/current-separator.3mf": "8f8713fafb9bcc7834dcfb27fe24cdcff7f0fd3e62413cd626c126e7b8c9c11f"
+      },
+      "layer_count": 2,
+      "first_Z_mm": 0.14,
+      "last_Z_mm": 0.3,
+      "gcode_sha256": "f09d305644fa905963ff624ebb30673239e861001df7a99933481a9da9e40597",
+      "estimated_material_g": 0.24760125577449799,
+      "estimated_print_seconds": 78.26160430908203
+    }
+  ],
+  "one_set_estimated_g": 3.1221325248479843,
+  "five_separately_printed_sets_estimated_g": 15.610662624239922,
+  "one_set_separate_job_estimated_seconds": 1395.0032119750977,
+  "limits": [
+    "Estimates exclude failures and may exclude calibration/purge consumables",
+    "Separate jobs, not a validated multi-part plate",
+    "Layer markers are nominal heights, not measured printed dimensions",
+    "No printer commands sent; battery assembly, thermal interface and closure still unqualified",
+    "Lower case nominal seat height and section paths screened; print accuracy and strength unmeasured",
+    "Pure battery plug, original leads, thermal interface and actual assembly remain unresolved"
+  ],
+  "separator_toolpath_review": {
+    "path": "current-separator/toolpath-review.json",
+    "sha256": "d44f215585d117eed40a5b3e6d7cf09321095f86a770e79c337ff83c52b01c13",
+    "image_viewed": true,
+    "result": "Both layers contain perimeter/infill paths including support tabs; nominal bead coverage99.47%/99.85%; boundary and infill-end residuals remain; not physical qualification"
+  },
+  "lower_reviews": {
+    "home-case-slice-review/wider-right-lower/cross-section-review.json": "ce678e798295770d094ac759958713858e491b1285c877b916cd57fa395e6139",
+    "home-case-slice-review/wider-right-lower/pcb-seat-layer-review.json": "1bf558727566e83d6b2b83d70e3ab22cb46ebb2f3b7e8a8ba68d41d022693952",
+    "wider-right-assembly-path-review.json": "5925bb812bf989506122d5ff2408d0cf35d7081bb08f29ad0726f9426f0e813b",
+    "wider-right-board-thickness-review.json": "2551b94205f2746c0e8e5a4670ee0679c5c5fd7a3c9a184fc632ef3a21c25ab0"
+  }
+}

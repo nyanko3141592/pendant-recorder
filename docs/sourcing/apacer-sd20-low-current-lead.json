@@ -1,0 +1,57 @@
+{
+  "status": "EXACT_2GB_SKU_FOUND_COST_REJECTED_FOR_CURRENT_TARGET",
+  "date": "2026-10-26",
+  "manufacturer": "Apacer",
+  "family": "Industrial microSD SD2.0 SLC, not R1",
+  "source": "https://www.apacer.com/en/product/industrial-product/detail/industrial_ssd/industrial_microsd",
+  "published": {
+    "capacity": "256MB-2GB SD;4GB SDHC",
+    "spi_supported": true,
+    "active_mA": 50,
+    "idle_uA": 100,
+    "supply_V": [
+      2.7,
+      3.6
+    ],
+    "size_mm": [
+      15,
+      11,
+      1
+    ]
+  },
+  "unknown": [
+    "Active and idle numbers not labelled guaranteed maximum",
+    "Exact 2GB/4GB orderable SKU, lifecycle, stock and price",
+    "Power-up/program/erase/background peak current and duration",
+    "Idle entry and internal busy time bounds"
+  ],
+  "decision": "Electrical lead remains unqualified for50mA cell; exact2GB operating34mA improves nominal comparison but peak/temperature guarantee absent. Listed domestic distributor cost is disqualifying for current product target.",
+  "inquiry": "microsd-power-inquiry-en.txt updated; UNSENT",
+  "secondary_screen": {
+    "family": "Swissbit S-56u",
+    "manufacturer_datasheet": "https://www.mouser.com/datasheet/2/615/swissbit_02162021_S_56u_data_sheet-2013721.pdf",
+    "revision": "1.02,2020-08-28",
+    "read_max_mA": 160,
+    "write_max_mA": 120,
+    "conditions": "25C table; SPI-specific and all-temperature limits not established",
+    "decision": "Not a demonstrated solution to50mA cell limit"
+  },
+  "exact_sku_review": {
+    "mpn": "AP-MSD02GIDI-T",
+    "manufacturer_document": "Apacer Industrial Micro SD Card Product Specifications Rev1.5 2016-10-18",
+    "source": "https://static.chipdip.ru/lib/393/DOC050393011.pdf",
+    "pdf_sha256": "42a6e2b6fae408fc9162d9568956d34c779448522cfc3c3009b41651460d2ab5",
+    "section_2_6_2GB_operating_mA": 34,
+    "section_2_6_2GB_idle_uA": 60,
+    "section_6_2_sku_mapping_verified": true,
+    "note": "Family50mA/100uA applies4GB in this2016document; 2GB is34mA/60uA. Neither is a guaranteed peak limit; document says host configuration changes consumption. Current revision/stock conformity unverified."
+  },
+  "cost_screen": {
+    "source": "https://www.digikey.jp/en/products/detail/apacer-memory-america/AP-MSD02GIDI-T/5268812",
+    "evidence": "Indexed distributor page, not checkout quote",
+    "quantity_1_JPY_ex_tax": 77247,
+    "quantity_1_JPY_inc_tax": 84971.7,
+    "listed_stock": 20,
+    "decision": "Reject this procurement path against5000JPY product target. No supplier order or BOM substitution."
+  }
+}

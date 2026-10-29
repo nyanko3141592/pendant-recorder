@@ -1,0 +1,122 @@
+{
+  "$schema": "https://schemas.kicad.org/drc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-10-26T13:47:31",
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning"
+  ],
+  "kicad_version": "10.0.7",
+  "schematic_parity": [],
+  "source": "input-connected-candidate.kicad_pcb",
+  "unconnected_items": [
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/USB_RESUME_PULSE] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.8096 mm )",
+          "pos": {
+            "x": 22.0625,
+            "y": 3.05
+          },
+          "uuid": "83fc1b30-58a6-40f0-a635-132825695276"
+        },
+        {
+          "description": "\u30d1\u30c3\u30c9 43 [/USB_RESUME_PULSE] - U1 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.905,
+            "y": 11.3425
+          },
+          "uuid": "593c7cd6-e14b-4fc6-bd52-2e394d9fec73"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "\u30d1\u30c3\u30c9 1 [/USB_HIGH_BUDGET] - Q5 ( F.Cu \u4e0a)",
+          "pos": {
+            "x": 10.55,
+            "y": 17.4375
+          },
+          "uuid": "70dc58a5-5e97-4a48-9a55-95fad2637a4d"
+        },
+        {
+          "description": "\u30d1\u30c3\u30c9 42 [/USB_HIGH_BUDGET] - U1 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 12.405,
+            "y": 11.3425
+          },
+          "uuid": "69a4e4be-91c9-4dde-b3b8-3c89550ff4f7"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    },
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/USB_SUSPEND_PULSE] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.1973 mm )",
+          "pos": {
+            "x": 21.1499,
+            "y": 3.5374
+          },
+          "uuid": "b1f94532-0c50-403a-9abd-b150392a3493"
+        },
+        {
+          "description": "\u30d1\u30c3\u30c9 41 [/USB_SUSPEND_PULSE] - U1 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 12.905,
+            "y": 11.3425
+          },
+          "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    }
+  ],
+  "violations": [
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/VBUS_LIMITED] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.0229 mm )",
+          "pos": {
+            "x": 3.604631,
+            "y": 9.6276
+          },
+          "uuid": "8b94a434-c460-4773-92a8-5957821b9b73"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    }
+  ]
+}

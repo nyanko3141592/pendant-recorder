@@ -1,0 +1,178 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:40:27",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pdm-perp-right.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_CLK_MCU と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( B.Cu 上、長さ: 0.9961 mm )",
+                    "pos": {
+                        "x": 18.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "0e06f8d5-39f9-4d98-b411-f08b9d1b663a"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_CLK_MCU と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "パッド 39 [/PDM_CLK_MCU] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 18.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "02a82097-150f-4163-9ad6-7bed85560545"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( B.Cu 上、長さ: 0.5805 mm )",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.5
+                    },
+                    "uuid": "aff6c4a3-9ad4-40e8-a4c7-c62138366404"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_CLK_MCU と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "パッド 39 [/PDM_CLK_MCU] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 18.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "02a82097-150f-4163-9ad6-7bed85560545"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DM と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 5.7009 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 15.5
+                    },
+                    "uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 39 [/PDM_CLK_MCU] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 18.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "02a82097-150f-4163-9ad6-7bed85560545"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                },
+                {
+                    "description": "パッド 39 [/PDM_CLK_MCU] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 18.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "02a82097-150f-4163-9ad6-7bed85560545"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( B.Cu 上、長さ: 0.5805 mm )",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.5
+                    },
+                    "uuid": "aff6c4a3-9ad4-40e8-a4c7-c62138366404"
+                },
+                {
+                    "description": "パッド 39 [/PDM_CLK_MCU] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 18.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "02a82097-150f-4163-9ad6-7bed85560545"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

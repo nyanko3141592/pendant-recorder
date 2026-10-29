@@ -1,0 +1,107 @@
+{
+  "status": "PROVISIONAL_INSULATION_BUDGET_PRINT_SCREEN",
+  "sources": {
+    "lower": {
+      "source_sha256": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97",
+      "gcode_sha256": "470ea97e13102aeb4ace59ec00680b89fb51bc5792d897fe3d1e9c66c663a7d7",
+      "3mf_sha256": "8732284ee23525c7242e6821425abd969328bd92f1d46a83ca12e8a3f86469f4"
+    },
+    "separator": {
+      "source_sha256": "69dbd7dcedd2c4b0f85c3339cb82fb253a16aa2a17e269174d81429b5aec0342",
+      "gcode_sha256": "c03c59c65161871c8d2c1b2cc6da171e5065b7fb9bbd0d6249c0eff67476bcc7",
+      "3mf_sha256": "331c21b891ddb09e7fb46e33db82a51d3e828791fd44c17eb06e1a5b6da9dcfe"
+    }
+  },
+  "rows": [
+    {
+      "sign": -1,
+      "envelope": "joint",
+      "part": "lower",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.11093521604110612
+    },
+    {
+      "sign": -1,
+      "envelope": "joint",
+      "part": "separator",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.1995575355479886
+    },
+    {
+      "sign": -1,
+      "envelope": "lead_wrap",
+      "part": "lower",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.17580314652412288
+    },
+    {
+      "sign": -1,
+      "envelope": "lead_wrap",
+      "part": "separator",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.9547990145353513
+    },
+    {
+      "sign": -1,
+      "envelope": "transition_bound",
+      "part": "lower",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.11126834499403207
+    },
+    {
+      "sign": -1,
+      "envelope": "transition_bound",
+      "part": "separator",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.20026730640657128
+    },
+    {
+      "sign": 1,
+      "envelope": "joint",
+      "part": "lower",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.11113469703280346
+    },
+    {
+      "sign": 1,
+      "envelope": "joint",
+      "part": "separator",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 1.9995575355479875
+    },
+    {
+      "sign": 1,
+      "envelope": "lead_wrap",
+      "part": "lower",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.12193202500132028
+    },
+    {
+      "sign": 1,
+      "envelope": "lead_wrap",
+      "part": "separator",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 2.8547990132165895
+    },
+    {
+      "sign": 1,
+      "envelope": "transition_bound",
+      "part": "lower",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 0.11310895263706465
+    },
+    {
+      "sign": 1,
+      "envelope": "transition_bound",
+      "part": "separator",
+      "hits": [],
+      "minimum_xy_gap_on_shared_z_mm": 2.00025710367381
+    }
+  ],
+  "limits": [
+    "Conservative transition rectangular bound is larger than the lofted budget.",
+    "Actual tape, solder, lead tolerances and support residue are not qualified.",
+    "Only lower and separator beads are checked, not board/upper/body/harness or assembly motion.",
+    "Gap values are XY minima on overlapping Z layers, not global 3D clearance."
+  ]
+}

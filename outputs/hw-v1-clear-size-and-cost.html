@@ -1,0 +1,74 @@
+<div id="hwv1-clear" style="max-width:980px;margin:0 auto;color:var(--foreground)">
+  <h1>HW‑V1.0：大きさとコスト予想</h1>
+  <div class="viz-grid" style="margin:14px 0 20px">
+    <div class="card viz-stat"><div class="text-muted">完成外形</div><div class="viz-stat-value tabular-nums">29.9 × 36.4 × 13.0 mm</div><div class="text-small">正面幅 × 高さ × 厚さ</div></div>
+    <div class="card viz-stat"><div class="text-muted">5台試作の着地予想</div><div class="viz-stat-value tabular-nums">$650–950</div><div class="text-small">約10.0–14.6万円（$1=¥154仮定）</div></div>
+    <div class="card viz-stat"><div class="text-muted">100台時の製造原価予想</div><div class="viz-stat-value tabular-nums">$40–60 / 台</div><div class="text-small">金型・送料・税・認証費を除く</div></div>
+  </div>
+
+  <h2>実寸比（同じ縮尺）</h2>
+  <svg viewBox="0 0 920 300" width="100%" role="img" aria-labelledby="size-title size-desc" style="display:block">
+    <title id="size-title">HW-V1.0と比較対象の実寸比</title>
+    <desc id="size-desc">同じ縮尺で正面と側面を比較。HW-V1.0は幅29.9、高さ36.4、厚さ13.0ミリ。</desc>
+    <line x1="38" y1="246" x2="888" y2="246" stroke="var(--border)" stroke-width="1"/>
+    <g fill="var(--viz-series-1)" opacity=".9">
+      <rect x="70" y="64" width="149.5" height="182" rx="42"/>
+      <circle cx="144.75" cy="78" r="16" fill="var(--background)"/>
+    </g>
+    <text x="144.75" y="267" text-anchor="middle" fill="var(--foreground)" font-size="12">HW‑V1.0 正面</text>
+    <text x="144.75" y="286" text-anchor="middle" fill="var(--muted-foreground)" font-size="12">29.9 × 36.4 mm</text>
+
+    <g fill="var(--viz-series-2)" opacity=".7">
+      <circle cx="350" cy="183.5" r="62.5"/>
+    </g>
+    <text x="350" y="267" text-anchor="middle" fill="var(--foreground)" font-size="12">Omi（概寸）</text>
+    <text x="350" y="286" text-anchor="middle" fill="var(--muted-foreground)" font-size="12">直径 約25 mm</text>
+
+    <g fill="var(--muted)">
+      <rect x="480" y="51" width="190" height="195" rx="22"/>
+    </g>
+    <text x="575" y="267" text-anchor="middle" fill="var(--foreground)" font-size="12">旧 Compact A</text>
+    <text x="575" y="286" text-anchor="middle" fill="var(--muted-foreground)" font-size="12">38 × 39 mm</text>
+
+    <g fill="var(--viz-series-1)" opacity=".9"><rect x="760" y="181" width="65" height="65" rx="18"/></g>
+    <g fill="var(--viz-series-2)" opacity=".7"><rect x="840" y="171" width="75" height="75" rx="20"/></g>
+    <text x="837" y="145" text-anchor="middle" fill="var(--foreground)" font-size="12">側面</text>
+    <text x="837" y="161" text-anchor="middle" fill="var(--muted-foreground)" font-size="12">13.0 vs 約15 mm</text>
+    <line x1="70" y1="36" x2="219.5" y2="36" stroke="var(--foreground)" stroke-width="1"/>
+    <line x1="70" y1="30" x2="70" y2="42" stroke="var(--foreground)"/><line x1="219.5" y1="30" x2="219.5" y2="42" stroke="var(--foreground)"/>
+    <text x="144.75" y="25" text-anchor="middle" fill="var(--foreground)" font-size="12">29.9 mm</text>
+  </svg>
+
+  <hr>
+  <h2>5台試作：何にいくら掛かるか</h2>
+  <svg viewBox="0 0 920 275" width="100%" role="img" aria-labelledby="cost-title cost-desc" style="display:block">
+    <title id="cost-title">5台試作の費用レンジ</title>
+    <desc id="cost-desc">合計650ドルから950ドル。部品、実装、基板、ケース、電池、紐、送料税を含む予測。</desc>
+    <g font-size="12" fill="var(--foreground)">
+      <text x="16" y="42">電子部品（1GB NAND含む）</text><text x="16" y="78">JLC実装・初期費用</text><text x="16" y="114">基板・POFV・検査</text><text x="16" y="150">ケース・電池・紐</text><text x="16" y="186">送料・税・不確定余裕</text>
+    </g>
+    <g fill="var(--muted)">
+      <rect x="230" y="26" width="620" height="18"/><rect x="230" y="62" width="620" height="18"/><rect x="230" y="98" width="620" height="18"/><rect x="230" y="134" width="620" height="18"/><rect x="230" y="170" width="620" height="18"/>
+    </g>
+    <g fill="var(--viz-series-1)">
+      <rect x="321" y="26" width="137" height="18"/><rect x="418" y="62" width="99" height="18"/><rect x="269" y="98" width="46" height="18"/><rect x="282" y="134" width="65" height="18"/><rect x="282" y="170" width="91" height="18"/>
+    </g>
+    <g fill="var(--foreground)" font-size="12">
+      <text x="466" y="40">$140–210</text><text x="525" y="76">$145–175</text><text x="323" y="112">$30–70</text><text x="355" y="148">$40–90</text><text x="381" y="184">$40–110</text>
+    </g>
+    <line x1="230" y1="218" x2="850" y2="218" stroke="var(--border)"/>
+    <g fill="var(--muted-foreground)" font-size="12" text-anchor="middle"><text x="230" y="239">$0</text><text x="360" y="239">$100</text><text x="490" y="239">$200</text><text x="620" y="239">$300</text><text x="750" y="239">$400</text><text x="850" y="239">費目別</text></g>
+    <text x="230" y="263" fill="var(--muted-foreground)" font-size="12">事前調達の最低数量が大きい場合、追加で約$100–300上振れ</text>
+  </svg>
+  <div class="table-responsive">
+    <table class="table table-sm">
+      <thead><tr><th>数量</th><th class="text-end">予想総額</th><th class="text-end">1台あたり</th><th>前提</th></tr></thead>
+      <tbody>
+        <tr><td>5台・試作</td><td class="text-end">$650–950</td><td class="text-end">$130–190</td><td>JLC初期費用と小ロット割高を含む</td></tr>
+        <tr><td>100台</td><td class="text-end">$4,000–6,000</td><td class="text-end">$40–60</td><td>金型・認証・物流を除く</td></tr>
+        <tr><td>1,000台</td><td class="text-end">$28,000–42,000</td><td class="text-end">$28–42</td><td>部品価格と実装費が量産単価になる想定</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-small text-muted">予想値。MKDV8GIL‑ASTの事前調達価格、DTP401525‑XE、ケース方式、送料・税は正式見積り未取得。</p>
+</div>

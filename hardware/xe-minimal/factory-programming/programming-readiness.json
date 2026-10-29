@@ -1,0 +1,94 @@
+{
+  "status": "HOLD_FACTORY_PROGRAMMING_RELEASE_INPUTS_INCOMPLETE",
+  "hardware_revision": "XE-PROTOTYPE-V1-27P5-PACK-NTC-CASE-V5-1GB-OVP-LATCH",
+  "target_mpn": "STM32U585CIU6",
+  "interface": "J3 SWD 5-pad",
+  "common_firmware_per_buyer": true,
+  "buyer_flashing_required": false,
+  "recipient_provisioning": "FIRST_USE_USB_HID_WRITE_ONCE_PUBLIC_KEY_ONLY",
+  "private_key_in_factory_inputs": false,
+  "buyer_public_key_in_factory_inputs": false,
+  "nonhardware_regression": {
+    "status": "PASS_NON_HARDWARE_REGRESSION",
+    "checks": 39,
+    "source_hashes": 343
+  },
+  "completed_prebuild_inputs": {
+    "source_tree_sha256": "4b4fc7599f65749167a37004195e4ad20193835b576fa55fa4958b5db9d936d8",
+    "source_file_count": 343,
+    "toolchain_lock": "hardware/xe-minimal/factory-programming/source-toolchain-lock.json",
+    "toolchain_lock_sha256": "7861be5fad8fb7ff46e970d4c20dc2cd3d40b4912337dc8733df6c51e7c14f83",
+    "evt_programming_manifest_template": "hardware/xe-minimal/factory-programming/evt-programming-manifest.template.json",
+    "evt_programming_manifest_template_sha256": "5cbf6d6290c5bf63b1d3b76c2077afc2fdba4ab35c3b2e27a9d9d4da0e861e83",
+    "five_unit_programming_record_template": "hardware/xe-minimal/factory-programming/five-unit-programming-record.template.csv",
+    "five_unit_programming_record_template_sha256": "7ed8cc6d62415ecf9bafd3b2d897b0db48544e01be6b75b108def39541ac9969",
+    "five_unit_programming_record_evaluator": "hardware/xe-minimal/factory-programming/evaluate_five_unit_programming_record.py",
+    "five_unit_programming_record_evaluator_sha256": "d629ca12743e1506ffc0f2f061d9c35ec14d8648e225856c9954af84df99c15a",
+    "five_unit_programming_record_evaluator_selftest": "hardware/xe-minimal/factory-programming/test_evaluate_five_unit_programming_record.py",
+    "five_unit_programming_record_evaluator_selftest_sha256": "07454339eb1ebc818040d1cdf29ac4a96dce774ad15fc372e43ffd59c45e38b5"
+  },
+  "root_release_blockers": {
+    "allocated_production_usb_identity": {
+      "status": "MISSING_EXTERNAL_ALLOCATION_EVIDENCE",
+      "resolves": [
+        "production_usb_vid",
+        "production_usb_pid"
+      ]
+    },
+    "five_pack_battery_cutoff_characterization": {
+      "status": "NOT_RUN_PHYSICAL_EVIDENCE_REQUIRED",
+      "resolves": [
+        "battery_stop_threshold_mV",
+        "battery_stop_threshold_five_pack_characterization_evidence"
+      ]
+    },
+    "standard_pcba_programming_workflow_acceptance": {
+      "status": "NOT_VERIFIED_IN_AUTOMATIC_ORDER_FLOW",
+      "resolves": [
+        "factory_programming_acceptance"
+      ]
+    }
+  },
+  "derived_outputs_after_root_inputs": {
+    "flashable_image": "generated_by_build_evt_image.py_after_USB_identity_and_cutoff_evidence_pass",
+    "flashable_image_sha256": "generated_with_flashable_image",
+    "elf_sha256": "generated_with_flashable_image",
+    "map_sha256": "generated_with_flashable_image"
+  },
+  "required_missing_inputs": {
+    "production_usb_vid": null,
+    "production_usb_pid": null,
+    "battery_stop_threshold_mV": null,
+    "battery_stop_threshold_five_pack_characterization_evidence": null,
+    "flashable_image": null,
+    "flashable_image_sha256": null,
+    "elf_sha256": null,
+    "map_sha256": null,
+    "factory_programming_acceptance": null
+  },
+  "required_physical_evidence": [
+    "J3 pogo continuity and contact repeatability",
+    "VTREF 3.0-3.6 V and no programmer current-limit trip",
+    "flash verify",
+    "BOR level 4 option-byte readback",
+    "MCU UID capture and unique PCB serial binding",
+    "formal VID/PID USB enumeration",
+    "charge request LOW while reset is asserted; fixed-100mA preconfiguration grant after firmware start is allowed",
+    "storage rail default off",
+    "power-loss during programming recovery"
+  ],
+  "sources_sha256": {
+    "hardware/xe-minimal/active-design.json": "98ac7830c4926b1c08cebe59725c8523a18d43c7e57052671fa63d936d2c69a1",
+    "hardware/xe-minimal/prototype-architecture-v1.json": "5283501cee6583939167dd7c4bcfdb48e466b0129f58c6e99211d9f0cd9bf067",
+    "firmware/stm32/tests/prototype-v1-regression.json": "131743967a0d51d693371a8c5b05acdc592e1a090d0c7e595399efe97b8e84ad",
+    "hardware/xe-minimal/factory-programming/j3-swd-interface.svg": "77abedfd895fbeb3275dc445c3558a95e9bb6db8d2db260da61e9ad6c8056ce7",
+    "hardware/xe-minimal/factory-programming/programming-manifest.template.json": "2568be9b6e0cc37fd607275cf2315aea75e0d392cffd96725ddccd3fedab938d",
+    "hardware/xe-minimal/factory-programming/evt-programming-manifest.template.json": "5cbf6d6290c5bf63b1d3b76c2077afc2fdba4ab35c3b2e27a9d9d4da0e861e83",
+    "hardware/xe-minimal/factory-programming/source-toolchain-lock.json": "7861be5fad8fb7ff46e970d4c20dc2cd3d40b4912337dc8733df6c51e7c14f83",
+    "hardware/xe-minimal/factory-programming/build_evt_image.py": "6f6ed5b202c50291034dad33e347d14f76e33628f32eb00dc3d7641d6a9bc703",
+    "hardware/xe-minimal/factory-programming/five-unit-programming-record.template.csv": "7ed8cc6d62415ecf9bafd3b2d897b0db48544e01be6b75b108def39541ac9969",
+    "hardware/xe-minimal/factory-programming/evaluate_five_unit_programming_record.py": "d629ca12743e1506ffc0f2f061d9c35ec14d8648e225856c9954af84df99c15a",
+    "hardware/xe-minimal/factory-programming/test_evaluate_five_unit_programming_record.py": "07454339eb1ebc818040d1cdf29ac4a96dce774ad15fc372e43ffd59c45e38b5"
+  },
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

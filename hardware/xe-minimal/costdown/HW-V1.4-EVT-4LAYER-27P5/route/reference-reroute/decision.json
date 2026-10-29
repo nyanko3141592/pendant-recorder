@@ -1,0 +1,97 @@
+{
+  "status": "LOCAL_REROUTE_SEARCH_REJECTED_CANONICAL_CANDIDATE_UNCHANGED",
+  "candidate_sha256": "8141cc8b00ca4c676ce53ab15a0812420c48636e137fa0559d9ac4d8399db288",
+  "candidate_unchanged": true,
+  "initial_trials": 12,
+  "branch_preserving_trials": 3,
+  "accepted_changes": 0,
+  "search_resolution_mm": 0.05,
+  "maximum_trace_length_ratio": 1.5,
+  "why_initial_gate_route_rejected": "Track-degree-two point had a via branch to another layer. DRC correctly detected one dangling via and one unconnected branch. Initial apparent reduction in missing USB reference must not be treated as an accepted improvement.",
+  "branch_preserving_gate_route": [
+    {
+      "net": "/VBUS_GATE",
+      "target_layer": "In2.Cu",
+      "required_via_waypoints": [
+        [
+          12.3175,
+          22.8338
+        ],
+        [
+          13.3176,
+          15.755
+        ],
+        [
+          14.63,
+          2.14
+        ]
+      ],
+      "path_found": true,
+      "visited": 243245,
+      "accepted": false,
+      "old_length_mm": 26.009158500260202,
+      "new_length_mm": 139.66136523631945
+    },
+    {
+      "net": "/VBUS_GATE",
+      "target_layer": "F.Cu",
+      "required_via_waypoints": [
+        [
+          12.3175,
+          22.8338
+        ],
+        [
+          13.3176,
+          15.755
+        ],
+        [
+          14.63,
+          2.14
+        ]
+      ],
+      "path_found": false,
+      "visited": 156580,
+      "accepted": false
+    },
+    {
+      "net": "/VBUS_GATE",
+      "target_layer": "B.Cu",
+      "required_via_waypoints": [
+        [
+          12.3175,
+          22.8338
+        ],
+        [
+          13.3176,
+          15.755
+        ],
+        [
+          14.63,
+          2.14
+        ]
+      ],
+      "path_found": false,
+      "visited": 132575,
+      "accepted": false
+    }
+  ],
+  "limitations": [
+    "No-path means not found under the grid/width/no-added-via constraints, not a proof that all layouts are impossible.",
+    "Centerline reference sampling is not impedance or EMC certification."
+  ],
+  "verified_existing_evidence": {
+    "drc_geometric_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity_items": 0,
+    "hole_over_pad_vias": 0
+  },
+  "verification_method": "Unchanged board SHA256 matches saved DRC/parity/hole-over-pad evidence; no claim of a new full-board DRC run.",
+  "next_action": "Reserve an uninterrupted L2 ground corridor below the USB pair before rerouting surrounding power/PDM branches; retain four copper layers and ordinary through vias. Do not continue isolated whole-net layer swaps.",
+  "release_allowed": false,
+  "external_actions": {
+    "order": false,
+    "upload": false,
+    "payment": false,
+    "supplier_contact": false
+  }
+}

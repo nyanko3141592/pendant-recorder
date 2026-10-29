@@ -1,0 +1,105 @@
+{
+  "status": "SENSOR_INSERTION_DIRECTION_SCREEN_NOT_ASSEMBLY_QUALIFICATION",
+  "separator_sha256": "e5a67760508904f7676e777dcaa31afcdb36a576700876a86d0678532b6a6f2f",
+  "rows": [
+    {
+      "direction": "from_below",
+      "start_offset_local_mm": [
+        0,
+        0,
+        -8
+      ],
+      "checks": {
+        "body": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.19999999999998516
+        },
+        "lead_left": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.09999999999986052
+        },
+        "lead_right": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.09999999999983533
+        },
+        "joint_left": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.09999999999968266
+        },
+        "joint_right": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.09999999999983326
+        }
+      },
+      "nominal_clear": true
+    },
+    {
+      "direction": "from_sensor_tip",
+      "start_offset_local_mm": [
+        0,
+        -30,
+        0
+      ],
+      "checks": {
+        "body": {
+          "overlap_mm3": 2.1222039759923477,
+          "gap_mm": 0.0
+        },
+        "lead_left": {
+          "overlap_mm3": 0.46840353971273185,
+          "gap_mm": 0.0
+        },
+        "lead_right": {
+          "overlap_mm3": 0.256251476479778,
+          "gap_mm": 0.0
+        },
+        "joint_left": {
+          "overlap_mm3": 0.595055045160368,
+          "gap_mm": 0.0
+        },
+        "joint_right": {
+          "overlap_mm3": 0.3366442613728598,
+          "gap_mm": 0.0
+        }
+      },
+      "nominal_clear": false
+    },
+    {
+      "direction": "from_above",
+      "start_offset_local_mm": [
+        0,
+        0,
+        8
+      ],
+      "checks": {
+        "body": {
+          "overlap_mm3": 7.872000000003739,
+          "gap_mm": 0.0
+        },
+        "lead_left": {
+          "overlap_mm3": 0.3360000000000613,
+          "gap_mm": 0.0
+        },
+        "lead_right": {
+          "overlap_mm3": 0.33600000000006314,
+          "gap_mm": 0.0
+        },
+        "joint_left": {
+          "overlap_mm3": 0.3599999999998714,
+          "gap_mm": 0.0
+        },
+        "joint_right": {
+          "overlap_mm3": 0.35999999999983123,
+          "gap_mm": 0.0
+        }
+      },
+      "nominal_clear": false
+    }
+  ],
+  "limits": [
+    "Seller assembly before PCB soldering and battery/case installation.",
+    "Sweeps are exact for these rectangular envelopes and straight translations only.",
+    "Flexible wires through axial holes, insulation, gripper, solder heat and actual tolerances excluded.",
+    "Clear sensor/joint envelopes alone do not prove a feasible wired assembly sequence."
+  ]
+}

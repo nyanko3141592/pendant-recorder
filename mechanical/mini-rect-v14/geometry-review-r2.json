@@ -1,0 +1,36 @@
+{
+  "status": "GEOMETRY_STUDY_NOT_PRINT_OR_MANUFACTURING_RELEASE",
+  "source_handoff_sha256": "129da327ae9a22b051e15be3173c9d41ea426f61ce88c959d632f74eeb6d0481",
+  "source_board_sha256": "2249c4769947ee2a28f78074a52c18e11601578259ce60dd8b4fda6e7c89100a",
+  "case_mm": [
+    35,
+    47,
+    14.8
+  ],
+  "pcb_bottom_z_mm": 8.6,
+  "battery_max_mm": [
+    20.5,
+    37,
+    5.2
+  ],
+  "intersections": [
+    {
+      "part": "TP3",
+      "target": "body",
+      "overlap_mm3": 0.0015000000000000224
+    }
+  ],
+  "case_valid": true,
+  "lid_valid": true,
+  "case_lid_overlap_mm3": 0.0,
+  "limitations": [
+    "Placement matches USB-edge-cluster electrical candidate; DRC pass alone is not design approval",
+    "Body/lid have no qualified closure or PCB supports yet",
+    "No100mm harness or matedPH housing solid; room must be checked next",
+    "Sensor bottom8.0mm versus pouch top6.7mm leaves1.3mm thermal-interface gap; pad not selected",
+    "Side acoustic channel0.8mm bore; rectangular walls0.4mm, blind-end port wall0.2mm minimum; TP3 interference remains; PCB gasket,response,printability unqualified",
+    "Rectangular part envelopes include courtyards and are not detailed solids",
+    "No swelling tolerance, manufacturing tolerance or strength validation",
+    "No slicing or physical printing performed;3MF contains mesh only"
+  ]
+}

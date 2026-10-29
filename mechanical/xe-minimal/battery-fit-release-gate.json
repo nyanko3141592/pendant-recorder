@@ -1,0 +1,305 @@
+{
+  "status": "UNQUALIFIED_NO_MODIFICATION_BATTERY_ASSEMBLY",
+  "geometry": {
+    "battery": {
+      "source": "offset-pack-assembly-trial.step",
+      "sha256": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+      "bounds_mm": {
+        "x": [
+          0.9,
+          16.4
+        ],
+        "y": [
+          -27.0,
+          0.0
+        ],
+        "z": [
+          -6.62,
+          -2.42
+        ]
+      }
+    },
+    "header": {
+      "source": "j2-header-positioned-study.step",
+      "sha256": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0",
+      "bounds_mm": {
+        "x": [
+          0.725,
+          6.325
+        ],
+        "y": [
+          -5.745,
+          -1.045
+        ],
+        "z": [
+          -1.7200000000000002,
+          -0.11999999999999943
+        ]
+      }
+    },
+    "separator": {
+      "source": "film-roomier-joint-separator-trial.step",
+      "sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+      "bounds_mm": {
+        "x": [
+          0.3,
+          21.674449560615002
+        ],
+        "y": [
+          -27.2,
+          0.2
+        ],
+        "z": [
+          -2.4200000999999998,
+          -0.9199999999999999
+        ]
+      }
+    },
+    "lower": {
+      "source": "film-lead-wrap-clearance-lower-trial.step",
+      "sha256": "e17958b3e4aebd29ec1da37864ddc9c77125dc15fa20b7a34bc92b28c75bab45",
+      "bounds_mm": {
+        "x": [
+          -1.1000000000000014,
+          25.1
+        ],
+        "y": [
+          -28.3,
+          1.3
+        ],
+        "z": [
+          -7.720000000000001,
+          0.40000000000000036
+        ]
+      }
+    },
+    "upper": {
+      "source": "tab-clearance-upper-trial.step",
+      "sha256": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+      "bounds_mm": {
+        "x": [
+          -1.1,
+          25.1
+        ],
+        "y": [
+          -28.3,
+          1.3
+        ],
+        "z": [
+          0.39999999999999947,
+          5.251400100000001
+        ]
+      }
+    },
+    "board_model": {
+      "source": "film-integration-integrated-board.step",
+      "sha256": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+      "bounds_mm": {
+        "x": [
+          0.0,
+          24.0
+        ],
+        "y": [
+          -27.0,
+          0.0
+        ],
+        "z": [
+          -1.7200000000000002,
+          4.1514001
+        ]
+      }
+    },
+    "sensor_insulation_envelope": {
+      "source": "film-sensor-insulation-transition.step",
+      "sha256": "c3d95b41f5f8b74af75778323f8cb78a8f033463595cbd812fb3c58d4be6a5b4",
+      "bounds_mm": {
+        "x": [
+          16.709906703144,
+          21.086534642079
+        ],
+        "y": [
+          -6.723023713748075,
+          -1.862628819628
+        ],
+        "z": [
+          -2.4700001,
+          -1.3699999
+        ]
+      }
+    }
+  },
+  "stock_battery": "DTP401525-XE / DTP401525(EZ3)",
+  "user_operations": [
+    "Plug original battery connector into board with correct polarity",
+    "Seat battery and board in insulated supports without loading connector",
+    "Inspect seating and wire clearance before adhesive closure"
+  ],
+  "measurements_required": [
+    {
+      "item": "Original connector complete envelope",
+      "needed": "Maximum width including side ears, depth, height and position relative to header PCB pads; include mated tolerances",
+      "why": "3.8mm main body width excludes protrusions and cannot establish clearance"
+    },
+    {
+      "item": "Original lead usable free length",
+      "needed": "Insulated flexible length between pack strain relief and housing exit for all three conductors, shortest and longest supplied condition",
+      "why": "Published 15+/-3mm is pack-to-housing drawing dimension, not free wire length"
+    },
+    {
+      "item": "Wire route",
+      "needed": "Wire outside diameter, exit locations and directions, allowable bend radius, strain relief length",
+      "why": "A center-to-center straight distance omits bends and terminal strain"
+    },
+    {
+      "item": "Assembly movement",
+      "needed": "Check premating outside case, full seating inspection, then insertion with no pinch or tension",
+      "why": "Collision-free final pose alone does not establish user assembly"
+    },
+    {
+      "item": "Printed tolerance",
+      "needed": "A1 mini PLA 0.4mm fit sample, measured walls/stops and adhesive intrusion",
+      "why": "Nominal CAD does not establish printed clearance"
+    }
+  ],
+  "acceptance": [
+    "Original battery and original connector remain unmodified",
+    "Full connector engagement is visible before closure",
+    "No lead is trapped between PCB, separator, stops or case seam",
+    "Battery support carries load without pressing on connector or components",
+    "Specified minimum bend radius and strain relief are satisfied throughout assembly",
+    "Five prototype assemblies document actual dimensions and photos; variation beyond sampled units remains bounded by supplier tolerances"
+  ],
+  "not_proven": [
+    "Electrical polarity and battery-protection verification are separate from geometric fit",
+    "No measured assembly exists",
+    "No full plug or lead model is present; do not call current assembled STEP complete",
+    "Clearance applies only to the modeled battery body in its final pose; original harness, mating plug and assembly sweep are excluded.",
+    "Integrated board models are not guaranteed maximum component envelopes; printed tolerance and battery retention load are not validated."
+  ],
+  "integration_manifest_sha256": "ac06e1935db5ed0c2ad613f5ebfa3c353425b6a923f132ad2a7a93105f7f4bfe",
+  "nominal_battery_body_clearance": {
+    "header": {
+      "distance_mm": 0.7,
+      "intersection_volume_mm3": 0.0
+    },
+    "separator": {
+      "distance_mm": 0.19999999999999973,
+      "intersection_volume_mm3": 0.0
+    },
+    "lower": {
+      "distance_mm": 0.05,
+      "intersection_volume_mm3": 0.0
+    },
+    "upper": {
+      "distance_mm": 2.863983240174425,
+      "intersection_volume_mm3": 0.0
+    },
+    "board_model": {
+      "distance_mm": 0.7,
+      "intersection_volume_mm3": 0.0
+    },
+    "sensor_insulation_envelope": {
+      "distance_mm": 0.31055138810442345,
+      "intersection_volume_mm3": 0.0
+    }
+  },
+  "lower_closest_points_mm": [
+    {
+      "battery": [
+        0.9,
+        -27.0,
+        -6.62
+      ],
+      "lower": [
+        0.9,
+        -27.05,
+        -6.62
+      ]
+    },
+    {
+      "battery": [
+        0.9,
+        -27.0,
+        -2.42
+      ],
+      "lower": [
+        0.9,
+        -27.05,
+        -2.42
+      ]
+    },
+    {
+      "battery": [
+        0.9,
+        0.0,
+        -6.62
+      ],
+      "lower": [
+        0.9,
+        0.05,
+        -6.62
+      ]
+    },
+    {
+      "battery": [
+        0.9,
+        0.0,
+        -2.42
+      ],
+      "lower": [
+        0.9,
+        0.05,
+        -2.42
+      ]
+    },
+    {
+      "battery": [
+        16.2,
+        -27.0,
+        -6.62
+      ],
+      "lower": [
+        16.2,
+        -27.05,
+        -6.62
+      ]
+    },
+    {
+      "battery": [
+        16.2,
+        -27.0,
+        -2.42
+      ],
+      "lower": [
+        16.2,
+        -27.05,
+        -2.42
+      ]
+    },
+    {
+      "battery": [
+        16.2,
+        0.0,
+        -6.62
+      ],
+      "lower": [
+        16.2,
+        0.05,
+        -6.62
+      ]
+    },
+    {
+      "battery": [
+        16.2,
+        0.0,
+        -2.42
+      ],
+      "lower": [
+        16.2,
+        0.05,
+        -2.42
+      ]
+    }
+  ],
+  "fit_risk": "Nominal longitudinal clearance is only 0.05mm per end at the modeled maximum battery length. Printed dimensional error, adhesive intrusion and insertion margin are unqualified; zero CAD intersection is not assembly approval."
+}

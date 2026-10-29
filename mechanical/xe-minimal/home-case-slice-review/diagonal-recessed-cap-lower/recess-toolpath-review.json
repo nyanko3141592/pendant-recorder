@@ -1,0 +1,66 @@
+{
+  "status": "RECESS_TOOLPATH_COMPARISON_NOT_PHYSICAL_QUALIFICATION",
+  "sources": {
+    "diagonal-tapered-tray-lower": {
+      "source_sha256": "7eaea3d141df0e929cf9b8edeb7a9c02fe2d2ff728e7942fc26d9690f9c05519",
+      "gcode_sha256": "9d13c7491e50adb75e785df10ddaadc691ae8f9dac459884bbed76414d1a9890",
+      "3mf_sha256": "56aa0ee309e28a78fd2ced17a669f5f9b6e2363f63efbb6ea1926c6409f04fc9"
+    },
+    "diagonal-recessed-cap-lower": {
+      "source_sha256": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+      "gcode_sha256": "5b64304bf126c3ecf1c600f7a568f433a00ec4fc3f5a575bd9fca6725f332349",
+      "3mf_sha256": "cd38e0f9828cb37067ad2524ee5c208180f570061bfca4f3d9fb2f857d1143c1"
+    }
+  },
+  "cad_to_bed": "(102-x,76.5-y,z+7.72), verified from both 3mf meshes/component/build transforms and export translation",
+  "rows": [
+    {
+      "layer_top_mm": 6.28,
+      "nominal_recess_floor_mm": 6.4,
+      "nominal_original_rail_top_mm": 6.6,
+      "diagonal-tapered-tray-lower_bead_area_inside_cut_xy_mm2": 2.0947810304009042,
+      "diagonal-recessed-cap-lower_bead_area_inside_cut_xy_mm2": 2.0947810304009042
+    },
+    {
+      "layer_top_mm": 6.36,
+      "nominal_recess_floor_mm": 6.4,
+      "nominal_original_rail_top_mm": 6.6,
+      "diagonal-tapered-tray-lower_bead_area_inside_cut_xy_mm2": 2.0948091254770556,
+      "diagonal-recessed-cap-lower_bead_area_inside_cut_xy_mm2": 2.0957510915930557
+    },
+    {
+      "layer_top_mm": 6.44,
+      "nominal_recess_floor_mm": 6.4,
+      "nominal_original_rail_top_mm": 6.6,
+      "diagonal-tapered-tray-lower_bead_area_inside_cut_xy_mm2": 2.0948091254770556,
+      "diagonal-recessed-cap-lower_bead_area_inside_cut_xy_mm2": 2.0948091254770556
+    },
+    {
+      "layer_top_mm": 6.52,
+      "nominal_recess_floor_mm": 6.4,
+      "nominal_original_rail_top_mm": 6.6,
+      "diagonal-tapered-tray-lower_bead_area_inside_cut_xy_mm2": 2.095722996516905,
+      "diagonal-recessed-cap-lower_bead_area_inside_cut_xy_mm2": 0.03212858342603846
+    },
+    {
+      "layer_top_mm": 6.6,
+      "nominal_recess_floor_mm": 6.4,
+      "nominal_original_rail_top_mm": 6.6,
+      "diagonal-tapered-tray-lower_bead_area_inside_cut_xy_mm2": 2.0947950779404536,
+      "diagonal-recessed-cap-lower_bead_area_inside_cut_xy_mm2": 0.03212858342603846
+    },
+    {
+      "layer_top_mm": 6.68,
+      "nominal_recess_floor_mm": 6.4,
+      "nominal_original_rail_top_mm": 6.6,
+      "diagonal-tapered-tray-lower_bead_area_inside_cut_xy_mm2": 0.0,
+      "diagonal-recessed-cap-lower_bead_area_inside_cut_xy_mm2": 0.0
+    }
+  ],
+  "limits": [
+    "Commanded bead width is a geometric approximation; actual swelling and flow are unmeasured.",
+    "Cut XY includes pre-existing channels; areas are not the full rail surface.",
+    "Layer tops straddle CAD boundaries; this is not a dimensional tolerance acceptance.",
+    "No printer operation."
+  ]
+}

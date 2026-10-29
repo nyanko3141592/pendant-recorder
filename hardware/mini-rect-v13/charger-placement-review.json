@@ -1,0 +1,85 @@
+{
+  "status": "PLACEMENT_COMPARISON_NOT_RELEASED",
+  "placed": 74,
+  "failed": [],
+  "proximity": [
+    {
+      "board": "mic-ground-route.kicad_pcb",
+      "ref": "R10",
+      "net": "/ISET",
+      "distance_mm": 7.605,
+      "same_side": true
+    },
+    {
+      "board": "mic-ground-route.kicad_pcb",
+      "ref": "C30",
+      "net": "/ISET",
+      "distance_mm": 9.422,
+      "same_side": true
+    },
+    {
+      "board": "mic-ground-route.kicad_pcb",
+      "ref": "R12",
+      "net": "/CHG_INHIBIT_GATE",
+      "distance_mm": 4.415,
+      "same_side": true
+    },
+    {
+      "board": "mic-ground-route.kicad_pcb",
+      "ref": "Q4",
+      "net": "/CHG_INHIBIT_GATE",
+      "distance_mm": 11.651,
+      "same_side": true
+    },
+    {
+      "board": "mic-ground-route.kicad_pcb",
+      "ref": "R43",
+      "net": "/CHG_ALLOW",
+      "distance_mm": 15.198,
+      "same_side": false
+    },
+    {
+      "board": "charger-packing-candidate.kicad_pcb",
+      "ref": "R10",
+      "net": "/ISET",
+      "distance_mm": 2.032,
+      "same_side": true
+    },
+    {
+      "board": "charger-packing-candidate.kicad_pcb",
+      "ref": "C30",
+      "net": "/ISET",
+      "distance_mm": 2.246,
+      "same_side": true
+    },
+    {
+      "board": "charger-packing-candidate.kicad_pcb",
+      "ref": "R12",
+      "net": "/CHG_INHIBIT_GATE",
+      "distance_mm": 2.595,
+      "same_side": true
+    },
+    {
+      "board": "charger-packing-candidate.kicad_pcb",
+      "ref": "Q4",
+      "net": "/CHG_INHIBIT_GATE",
+      "distance_mm": 11.53,
+      "same_side": true
+    },
+    {
+      "board": "charger-packing-candidate.kicad_pcb",
+      "ref": "R43",
+      "net": "/CHG_ALLOW",
+      "distance_mm": 3.567,
+      "same_side": true
+    }
+  ],
+  "drc_types": [
+    "silk_overlap",
+    "silk_overlap",
+    "silk_over_copper",
+    "silk_over_copper"
+  ],
+  "unconnected": 181,
+  "scope": "Straight pad-to-pad distances only, not routed loop impedance. Full rerouting, ground, mechanical enclosure and connector access still required."
+}

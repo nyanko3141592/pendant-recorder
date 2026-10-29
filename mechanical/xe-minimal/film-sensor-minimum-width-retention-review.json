@@ -1,0 +1,41 @@
+{
+  "status": "SHOULDER_STOP_REJECTED_FOR_MINIMUM_WIDTH",
+  "source_url": "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf",
+  "source_page": 1,
+  "review_date": "2026-10-27",
+  "published_width_mm": {
+    "nominal": 3.6,
+    "tolerance": 0.5,
+    "minimum": 3.1,
+    "maximum": 4.1
+  },
+  "candidate_review_sha256": "5e05ff950bd6ec3c706ca7a12f7c7138972d27f935596c167090449556fe7039",
+  "candidates": [
+    {
+      "inner_x_mm": 1.55,
+      "minimum_width_centered_overlap_mm": 0.0,
+      "maximum_width_centered_overlap_mm": 0.5
+    },
+    {
+      "inner_x_mm": 1.65,
+      "minimum_width_centered_overlap_mm": -0.1,
+      "maximum_width_centered_overlap_mm": 0.4
+    },
+    {
+      "inner_x_mm": 1.75,
+      "minimum_width_centered_overlap_mm": -0.2,
+      "maximum_width_centered_overlap_mm": 0.3
+    }
+  ],
+  "decision": "All tested stop openings have zero or negative engagement at minimum published body width, even before positional tolerance. Do not pursue these dimensions by merely cutting the lower case.",
+  "manufacturer_handling_constraints": [
+    "Manufacturer requests consultation for pressing/pushing against an object or insertion into tight spaces. No consultation performed or assumed.",
+    "Do not load sensor head when fixing; published bending diagram specifies 3mm fixing distance and 7mm lead bending distance.",
+    "1N horizontal lead pull for 10 seconds is a reliability test, not an allowable continuous retention load."
+  ],
+  "next_design_constraints": [
+    "Use minimum body width for retention and maximum width for clearance, including lateral float.",
+    "Avoid treating the floating body bridge as established thermal coupling.",
+    "Resolve thermal contact without assuming permission for pressure contact from the dimensional drawing."
+  ]
+}

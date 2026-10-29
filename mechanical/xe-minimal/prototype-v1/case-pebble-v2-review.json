@@ -1,0 +1,66 @@
+{
+  "version": "XE-PROTOTYPE-V1-CASE-PEBBLE-V2",
+  "status": "PRINT_ORIENTED_ALL_EDGE_ROUNDED_CANDIDATE_NOT_PHYSICALLY_QUALIFIED",
+  "complete_bbox_mm": [
+    26.20810877812452,
+    35.65405448906226,
+    12.9780847131513
+  ],
+  "rounding_mm": {
+    "plan_vertical_edges": 3.0,
+    "top_bottom_perimeter_edges": 1.5
+  },
+  "lanyard": {
+    "orientation": "complete bail rotated 90 degrees in top view; hole axis transverse along X",
+    "outer_mm": {
+      "width_x": 4.8,
+      "length_y": 7.0,
+      "height_z": 6.0
+    },
+    "hole_mm": {
+      "diameter": 3.2,
+      "axis": "X"
+    },
+    "construction": "YZ-plane transverse bail integral with lower shell; no upper-shell notch",
+    "print_orientation": "lower exterior broad face on bed; 3.2mm horizontal bridge prints without support by slicer check",
+    "glue_dependency": "none for primary lug load path"
+  },
+  "usb": {
+    "connector_model_front_y_mm": -26.17,
+    "recessed_bezel_y_mm": -26.45,
+    "bezel_ahead_of_connector_mm": 0.2799999999999976,
+    "outer_bay_mm": [
+      14.0,
+      7.5
+    ],
+    "inner_throat_mm": [
+      9.4,
+      3.6
+    ]
+  },
+  "checks": {
+    "lower_to_internals_mm3": 0.0,
+    "upper_to_internals_mm3": 0.0,
+    "lug_to_internals_mm3": 0.0,
+    "lower_valid_single_solid": true,
+    "upper_valid_single_solid": true
+  },
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v2-lower.step": "8116ebebe8a0680c815ce00b85da8de6c4aae012dc6bd43d2325b0614a2e4b7e",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v2-upper.step": "a054486fbfedbd1b041fe01f1d49b98d76259b2ed3d02b2ec915da979b9e6b48",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v2-lower.stl": "b08197f6e103e252de2a26e038efddabb341a2b22399d7483036724b90fbe9a7",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v2-upper.stl": "8ec2958f83c7fa56a92ec1bb821e590e335f3ee545fe2314101dd29681fd0c99",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v2-assembly.step": "94706c464be24663e0c175ab69c4e8730beedd8c209f5a37f69b6dd8031335f4"
+  },
+  "sources_sha256": {
+    "mechanical/xe-minimal/rounded-glue-reinforced-lower-study.step": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+    "mechanical/xe-minimal/rounded-glue-reinforced-upper-study.step": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7",
+    "mechanical/xe-minimal/prototype-v1/integrated-assembly-v1.step": "846e817986bf9a7ec3bf5f1ade3169aff79edeaf303bb3b8c2fbdd4abe1721ed"
+  },
+  "limits": [
+    "The integral lug improves load direction but still requires printed proof-load and fatigue tests.",
+    "R3/R1.5 removes more corner material; slicing must confirm wall continuity and physical printing must confirm strength.",
+    "Nominal internal collision checks do not include manufacturing tolerances or the exact battery lead shape.",
+    "USB bay width is an engineering cable-overmold allowance, not a universal USB-C guarantee."
+  ]
+}

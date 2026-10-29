@@ -1,0 +1,45 @@
+{
+  "status": "NO_NEW_CARD_QUALIFIED",
+  "date": "2026-10-26",
+  "battery": "DTP401525-XE",
+  "storage_peak_allocation_mA": 90,
+  "candidates": [
+    {
+      "family": "Cactus803M",
+      "source": "https://www.cactus-tech.com/wp-content/uploads/2019/03/Datasheet-803M-microSD.pdf",
+      "manufacturer_read_mA": 60,
+      "manufacturer_write_mA": 80,
+      "manufacturer_sleep_uA": 200,
+      "SPI_supported": true,
+      "capacity_GB": [
+        1,
+        4
+      ],
+      "gaps": [
+        "Current figures are not established as guaranteed transient maxima",
+        "Exact SKU revision, stock5, Japan delivery and price not confirmed",
+        "SPI write busy-duration and wake current bounds missing"
+      ],
+      "decision": "Lead only, not qualified",
+      "exact_part_numbers_checked": [
+        "KS2GRT-803M",
+        "KS2GRIT-803M",
+        "KS4GRT-803M",
+        "KS4GRIT-803M"
+      ],
+      "current_manufacturer_product_page": "https://www.cactus-tech.com/products/industrial-grade/microsd/id-803-series/",
+      "current_manufacturer_datasheet_url": "https://www.cactus-tech.com/wp-content/uploads/Collateral/Datasheet-803M-microSD-1.pdf"
+    },
+    {
+      "family": "Delkin SLC Industrial microSD withSMART",
+      "document": "L500707 RevA2015",
+      "source": "https://datasheet.ciiva.com/3193/delkin-microsd-spec-3193019.pdf",
+      "search_index_claim": "Read<50mA/write<60mA/idle<1.05mA",
+      "full_document_obtained": false,
+      "decision": "Legacy2GB S302MMZU8-C1000-4 appears in manufacturer2019EOL notice; exclude from new-design shortlist. Successor current/stock/cost require independent evidence.",
+      "lifecycle_review": "docs/procurement/v15-delkin-lifecycle-review.json",
+      "excluded_legacy_mpn": "S302MMZU8-C1000-4"
+    }
+  ],
+  "next_action": "Battery geometry and NTC evidence remain independent avenues; cannot freeze electrical fit from headline card currents. No new PCB/case design."
+}

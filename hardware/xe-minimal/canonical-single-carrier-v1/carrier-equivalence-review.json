@@ -1,0 +1,101 @@
+{
+  "status": "PASS_CANONICAL_CARRIER_DRC_ZERO_AND_UNIT_SERIALIZATION_EQUAL",
+  "source_sha256": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+  "carrier_sha256": "85814e1a9e498cf0ce809158793790850b6094120663f859f35a14650bf990fd",
+  "drc_sha256": "f6f78bd1a90a7e4c380442d3d78fddc8555c0270128588b4ef22fcc9bceafc88",
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "comparisons": [
+    {
+      "kind": "footprint",
+      "source_count": 74,
+      "carrier_unit_count": 74,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "segment",
+      "source_count": 910,
+      "carrier_unit_count": 910,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "via",
+      "source_count": 227,
+      "carrier_unit_count": 227,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "arc",
+      "source_count": 0,
+      "carrier_unit_count": 0,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "zone",
+      "source_count": 2,
+      "carrier_unit_count": 2,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "gr_line",
+      "source_count": 0,
+      "carrier_unit_count": 0,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "gr_arc",
+      "source_count": 0,
+      "carrier_unit_count": 0,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "gr_rect",
+      "source_count": 0,
+      "carrier_unit_count": 0,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "gr_circle",
+      "source_count": 0,
+      "carrier_unit_count": 0,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "gr_poly",
+      "source_count": 0,
+      "carrier_unit_count": 0,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    },
+    {
+      "kind": "gr_text",
+      "source_count": 0,
+      "carrier_unit_count": 0,
+      "identical": true,
+      "missing": 0,
+      "changed_or_extra": 0
+    }
+  ],
+  "limitations": [
+    "CAD equivalence does not qualify router radius, tabs, double-reflow stiffness, depanelization or supplier acceptance."
+  ]
+}

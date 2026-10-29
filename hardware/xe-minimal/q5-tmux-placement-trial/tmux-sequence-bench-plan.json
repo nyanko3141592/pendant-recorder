@@ -1,0 +1,63 @@
+{
+  "status": "NOT_RUN",
+  "setup": "Current-limited programmable USB source, battery emulator, instrumented candidate PCB; no actual lithium cell for initial sequence tests",
+  "channels": [
+    "raw VBUS/U16 VDD",
+    "U16 D",
+    "U13 SETI",
+    "VBUS_LIMITED",
+    "USB_INPUT_ON",
+    "USB_HIGH_BUDGET SEL",
+    "USB input current"
+  ],
+  "cases": [
+    {
+      "id": "cold_attach",
+      "stimulus": "Attach with MCU unpowered and R46 holding SEL low"
+    },
+    {
+      "id": "battery_attach",
+      "stimulus": "Attach while MCU running from battery emulator; repeat SEL low and forced high test state"
+    },
+    {
+      "id": "slow_ramp",
+      "stimulus": "Sweep VBUS upward/downward across 1.08 V, 1.7 V and supervisor threshold at multiple ramp rates"
+    },
+    {
+      "id": "hard_detach",
+      "stimulus": "Remove USB with high-budget selected and VBUS_LIMITED charged"
+    },
+    {
+      "id": "brownout_bounce",
+      "stimulus": "Repeat short and long USB dips; monitor supervisor reset and input switch behavior"
+    }
+  ],
+  "evaluation": [
+    "While U16 VDD is within recommended range, compare D against 0..VDD and record excursions with probe uncertainty",
+    "Check absolute D bounds -0.5..VDD+0.5 at all captured instants; do not use survival as functional qualification",
+    "Record peak and integrated USB current before configuration and after suspend; compare against final applicable USB power budget",
+    "Below 1.08 V, do not infer switch state from truth table; verify that no hazardous or overbudget current results",
+    "Verify continuous recording remains intact through USB attach/detach when emulator has adequate energy"
+  ],
+  "results": [],
+  "capture_screen_tool": {
+    "path": "tools/bench/check_tmux_capture.py",
+    "csv_columns": [
+      "time_s",
+      "vbus_V",
+      "u16_d_V",
+      "u16_sel_V"
+    ],
+    "required_arguments": [
+      "--uncertainty-v",
+      "--max-gap-s",
+      "--output"
+    ],
+    "scope": "Sampled voltage-envelope screen only; does not cover all evaluation items",
+    "physical_runs": 0,
+    "software_smoke_checks": [
+      "Synthetic VBUS removal with D0.7V flagged",
+      "Duplicate timestamps rejected"
+    ]
+  }
+}

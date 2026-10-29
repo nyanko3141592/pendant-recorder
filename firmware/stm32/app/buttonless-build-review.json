@@ -1,0 +1,20 @@
+{
+  "status": "BUTTONLESS_ARM_BUILD_ONLY_NOT_FLASH_OR_RELEASE",
+  "automatic_battery_indicator_ms": 60000,
+  "button_pin": "PA15 analog/no pull; digital read returns false in this build",
+  "build_directory": "/var/folders/x_/43y172t97j3_qhb7fxxjw11w0000gn/T/pendant-buttonless-build-1gvkbn15",
+  "binary_bytes": 114301,
+  "binary_sha256": "c6d43eb8258607f69fec37d759c7553cf454ebe9fc083f4ee51e4003a2f0205a",
+  "config": "Disposable test public recipient and VID/PID inherited from fixed USB experiment, not production identity",
+  "checks": [
+    "ARM configured application compile/link/bin succeeded",
+    "Default check_application_export.sh PASS"
+  ],
+  "physical_tests": 0,
+  "remaining": [
+    "Buttonless PCB removal and pinmap check",
+    "Periodic application lifecycle behavior test",
+    "Physical LED visibility/current and power budget",
+    "No flash performed"
+  ]
+}

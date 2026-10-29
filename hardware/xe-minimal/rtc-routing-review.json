@@ -1,0 +1,63 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [
+    {
+      "from": [
+        "Y1",
+        "1"
+      ],
+      "to": [
+        "U1",
+        "3"
+      ],
+      "net": "/LSE_IN",
+      "segments": 1
+    },
+    {
+      "from": [
+        "Y1",
+        "2"
+      ],
+      "to": [
+        "U1",
+        "4"
+      ],
+      "net": "/LSE_OUT",
+      "segments": 2
+    },
+    {
+      "from": [
+        "C11",
+        "1"
+      ],
+      "to": [
+        "Y1",
+        "1"
+      ],
+      "net": "/LSE_IN",
+      "segments": 1
+    },
+    {
+      "from": [
+        "C12",
+        "1"
+      ],
+      "to": [
+        "Y1",
+        "2"
+      ],
+      "net": "/LSE_OUT",
+      "segments": 1
+    }
+  ],
+  "unrouted_local_jobs": [],
+  "physical_drc_violations": 0,
+  "unconnected_items": 120,
+  "board_sha256": "d27a49bd6abbbd51f02d100c72d6a78e7594ff3ec9da13f1a4b7adffd07eac4c",
+  "limits": [
+    "Clock drive margin, load capacitance and oscillator startup remain unverified",
+    "0.15mm local traces are not qualification of whole power path",
+    "No via or differential-pair routing in this pass",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

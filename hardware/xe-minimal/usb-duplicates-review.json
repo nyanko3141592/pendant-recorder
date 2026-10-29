@@ -1,0 +1,75 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [
+    {
+      "from": [
+        "J1",
+        "A6"
+      ],
+      "to": [
+        "J1",
+        "B6"
+      ],
+      "net": "/USB_DP",
+      "segments": 3,
+      "path_mm": [
+        [
+          11.75,
+          18.814999
+        ],
+        [
+          11.75,
+          19.714999
+        ],
+        [
+          12.75,
+          19.714999
+        ],
+        [
+          12.75,
+          18.814999
+        ]
+      ]
+    },
+    {
+      "from": [
+        "J1",
+        "A7"
+      ],
+      "to": [
+        "J1",
+        "B7"
+      ],
+      "net": "/USB_DM",
+      "segments": 3,
+      "path_mm": [
+        [
+          12.25,
+          18.814999
+        ],
+        [
+          12.25,
+          17.914999
+        ],
+        [
+          11.25,
+          17.914999
+        ],
+        [
+          11.25,
+          18.814999
+        ]
+      ]
+    }
+  ],
+  "unrouted_local_jobs": [],
+  "physical_drc_violations": 0,
+  "unconnected_items": 116,
+  "board_sha256": "af0a69f82786714c08668c36ef42d2b5bf42500a395b718ff1561a9493af9306",
+  "limits": [
+    "USB main differential pair remains unrouted",
+    "Outer-layer bridges are not impedance-qualified",
+    "ESD and signal integrity remain unverified",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

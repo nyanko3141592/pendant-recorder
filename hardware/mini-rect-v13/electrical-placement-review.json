@@ -1,0 +1,29 @@
+{
+  "status": "ELECTRICAL_PLACEMENT_CANDIDATE_UNROUTED",
+  "footprints": 74,
+  "pcb_sha256": "8c9a6defb7bfa1d7d81082b1a1fdb5b6ab66fead1117575cae7faf0a6a944daf",
+  "comparison": {
+    "previous_target_distance_sum_mm": 172.876,
+    "current_target_distance_sum_mm": 32.764,
+    "previous_opposite_side_count": 6,
+    "current_opposite_side_count": 3
+  },
+  "drc_violations": 4,
+  "drc_types": [
+    "silk_overlap",
+    "silk_overlap",
+    "silk_over_copper",
+    "silk_over_copper"
+  ],
+  "unconnected": 181,
+  "clone_UUIDs_unique": true,
+  "remaining": [
+    "Resolve silk printing conflicts",
+    "C15 opposite side: require short supply/return via pair; distance projection is not loop length",
+    "C16 distance3.448mm should be reduced or justify per LDO layout",
+    "C26/C27 opposite side socket, qualify supply loop and card transients",
+    "Route decoupling and crystal first with close ground returns",
+    "Define manufacturable4-layer stackup and USB reference path",
+    "Mechanical model not yet regenerated for relocated ports"
+  ]
+}

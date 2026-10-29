@@ -1,0 +1,153 @@
+{
+  "status": "IDEAL_WIRE_TIME_SCREEN_NOT_CURRENT_MEASUREMENT",
+  "source_hashes": {
+    "firmware/stm32/board/storage_spi.c": "45d7ed3fc64652dfebff4848f2bb19917939eb42c7398531ab5e79248044459c",
+    "firmware/stm32/board/storage_spi.h": "97be479f54f83c3c8253087494ebcf024cf979985689d7715024dfe179edba62",
+    "firmware/stm32/core/wav_chunk.h": "0a95ee154eee2333616eb03b7db6a91d8b7a44f594b86130719b4ead4aac2645",
+    "docs/sourcing/xe-storage-energy-screen.json": "2dd01f4751e6cd683154d08d8097b4d2ba49bc197372e2cdf5a564d18d9177c5"
+  },
+  "nominal_HSI_hz": 16000000,
+  "prescaler": 4,
+  "nominal_SPI_hz": 4000000.0,
+  "cooperative_plaintext_bytes": 80956,
+  "rows": [
+    {
+      "active_mA": 40.0,
+      "idle_mA": 0.13,
+      "allowed_active_ms": 343.43496207636076,
+      "plaintext_only_wire_time_ms": 161.912,
+      "remaining_time_for_encryption_framing_metadata_commands_busy_and_HAL_gaps_ms": 181.52296207636076,
+      "ideal_storage_average_lower_bound_mA": 0.775543144,
+      "ideal_wire_time_alone_exceeds_allocation": false
+    },
+    {
+      "active_mA": 60.0,
+      "idle_mA": 1.05,
+      "allowed_active_ms": 76.2129251566497,
+      "plaintext_only_wire_time_ms": 161.912,
+      "remaining_time_for_encryption_framing_metadata_commands_busy_and_HAL_gaps_ms": -85.69907484335029,
+      "ideal_storage_average_lower_bound_mA": 2.00447124,
+      "ideal_wire_time_alone_exceeds_allocation": true
+    },
+    {
+      "active_mA": 80.0,
+      "idle_mA": 0.2,
+      "allowed_active_ms": 162.8164403256203,
+      "plaintext_only_wire_time_ms": 161.912,
+      "remaining_time_for_encryption_framing_metadata_commands_busy_and_HAL_gaps_ms": 0.9044403256203148,
+      "ideal_storage_average_lower_bound_mA": 1.4920577600000002,
+      "ideal_wire_time_alone_exceeds_allocation": false
+    },
+    {
+      "active_mA": 90.0,
+      "idle_mA": 0.2,
+      "allowed_active_ms": 144.68543360784523,
+      "plaintext_only_wire_time_ms": 161.912,
+      "remaining_time_for_encryption_framing_metadata_commands_busy_and_HAL_gaps_ms": -17.22656639215478,
+      "ideal_storage_average_lower_bound_mA": 1.65396976,
+      "ideal_wire_time_alone_exceeds_allocation": true
+    }
+  ],
+  "limitations": [
+    "HSI16 nominal only; no measured SPI clock or timing tolerance included.",
+    "Plaintext count is a lower bound on encrypted bytes; no plaintext is written to storage.",
+    "Assumes the hypothetical active current applies for the whole wire-transfer interval. Actual current waveform may differ, so failing this model does not disqualify a real card without evidence.",
+    "Encryption framing, sector rounding, metadata reads/writes, card busy, commands and CPU HAL gaps all require additional time/charge.",
+    "Do not raise SPI clock solely from this model; exact card timing, GPIO/PCB signal integrity and firmware timing need validation.",
+    "16h usable battery energy and non-storage allocation remain unverified."
+  ],
+  "observed_ciphertext_profiles": {
+    "evidence_path": "firmware/stm32/tests/storage-36h-result.json",
+    "evidence_sha256": "36c56813ea229e23b19d3b4893fe0bc7e19ebf5c55b99a7968300fd106dea169",
+    "ciphertext_bytes": 81172,
+    "sector_bytes": 81408,
+    "profiles": [
+      {
+        "nominal_SPI_MHz": 4,
+        "bench_only": false,
+        "ciphertext_byte_only_wire_ms": 162.344,
+        "sector_payload_only_wire_ms": 162.816,
+        "rows": [
+          {
+            "active_mA": 40.0,
+            "idle_mA": 0.13,
+            "allowed_active_ms": 343.43496207636076,
+            "remaining_other_active_ms": 180.61896207636076,
+            "sector_payload_only_average_mA": 0.7791473919999999,
+            "wire_time_alone_exceeds_allocation": false
+          },
+          {
+            "active_mA": 60.0,
+            "idle_mA": 1.05,
+            "allowed_active_ms": 76.2129251566497,
+            "remaining_other_active_ms": -86.6030748433503,
+            "sector_payload_only_average_mA": 2.00980032,
+            "wire_time_alone_exceeds_allocation": true
+          },
+          {
+            "active_mA": 80.0,
+            "idle_mA": 0.2,
+            "allowed_active_ms": 162.8164403256203,
+            "remaining_other_active_ms": 0.0004403256203033834,
+            "sector_payload_only_average_mA": 1.4992716799999999,
+            "wire_time_alone_exceeds_allocation": false
+          },
+          {
+            "active_mA": 90.0,
+            "idle_mA": 0.2,
+            "allowed_active_ms": 144.68543360784523,
+            "remaining_other_active_ms": -18.130566392154776,
+            "sector_payload_only_average_mA": 1.6620876800000002,
+            "wire_time_alone_exceeds_allocation": true
+          }
+        ]
+      },
+      {
+        "nominal_SPI_MHz": 8,
+        "bench_only": true,
+        "ciphertext_byte_only_wire_ms": 81.172,
+        "sector_payload_only_wire_ms": 81.408,
+        "rows": [
+          {
+            "active_mA": 40.0,
+            "idle_mA": 0.13,
+            "allowed_active_ms": 343.43496207636076,
+            "remaining_other_active_ms": 262.02696207636075,
+            "sector_payload_only_average_mA": 0.4545736959999999,
+            "wire_time_alone_exceeds_allocation": false
+          },
+          {
+            "active_mA": 60.0,
+            "idle_mA": 1.05,
+            "allowed_active_ms": 76.2129251566497,
+            "remaining_other_active_ms": -5.195074843350298,
+            "sector_payload_only_average_mA": 1.52990016,
+            "wire_time_alone_exceeds_allocation": true
+          },
+          {
+            "active_mA": 80.0,
+            "idle_mA": 0.2,
+            "allowed_active_ms": 162.8164403256203,
+            "remaining_other_active_ms": 81.4084403256203,
+            "sector_payload_only_average_mA": 0.84963584,
+            "wire_time_alone_exceeds_allocation": false
+          },
+          {
+            "active_mA": 90.0,
+            "idle_mA": 0.2,
+            "allowed_active_ms": 144.68543360784523,
+            "remaining_other_active_ms": 63.277433607845225,
+            "sector_payload_only_average_mA": 0.9310438400000001,
+            "wire_time_alone_exceeds_allocation": false
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "Observed ciphertext size comes from host execution, not physical SD timing.",
+      "Sector payload excludes command/token/CRC, FAT and directory traffic, read-modify-write, busy and HAL gaps.",
+      "8MHz is a compile-checked comparison profile, not adopted operational speed.",
+      "Both speed cases reuse identical hypothetical current; frequency-dependent actual current is unknown."
+    ]
+  }
+}

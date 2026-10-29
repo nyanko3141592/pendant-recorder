@@ -1,0 +1,144 @@
+{
+  "status": "NOMINAL_MARGIN_SCREEN_NOT_MANUFACTURING_TOLERANCE_APPROVAL",
+  "pcb_sha256": "3f7962550e31d2a3133989344962d543977c8cea504f3f3c498273edb25d8127",
+  "rows": [
+    {
+      "via_uuid": "02c2326c-3b01-4e6c-b9de-fc24784970d4",
+      "via_net": "/CC2",
+      "via_xy_mm": [
+        13.975,
+        18.054999
+      ],
+      "USB_uuid": "7640eaad-ec24-45bf-a9e9-eebd4ceb5648",
+      "USB_net": "/USB_DP",
+      "nearest_segment_fraction": 0.4779893224887512,
+      "center_to_segment_mm": 0.4855258621336158,
+      "via_copper_radius_mm": 0.175,
+      "zone_clearance_mm": 0.15,
+      "USB_half_width_mm": 0.05855,
+      "nominal_projection_margin_mm": 0.10197586213361584,
+      "sensitivity": [
+        {
+          "hypothetical_lateral_registration_shift_mm": 0,
+          "remaining_margin_mm": 0.10197586213361584,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.025,
+          "remaining_margin_mm": 0.07697586213361585,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.05,
+          "remaining_margin_mm": 0.05197586213361584,
+          "positive_margin": true
+        }
+      ]
+    },
+    {
+      "via_uuid": "2a7ff8bf-961b-4c3b-a1fc-dad001d91a29",
+      "via_net": "/PDM_CLK",
+      "via_xy_mm": [
+        15.045,
+        15.33
+      ],
+      "USB_uuid": "5415b7e1-8d2a-4c5a-ab88-1d3946f6b546",
+      "USB_net": "/USB_DM",
+      "nearest_segment_fraction": 0.884627594924318,
+      "center_to_segment_mm": 0.4438242870494283,
+      "via_copper_radius_mm": 0.175,
+      "zone_clearance_mm": 0.15,
+      "USB_half_width_mm": 0.05855,
+      "nominal_projection_margin_mm": 0.0602742870494283,
+      "sensitivity": [
+        {
+          "hypothetical_lateral_registration_shift_mm": 0,
+          "remaining_margin_mm": 0.0602742870494283,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.025,
+          "remaining_margin_mm": 0.035274287049428296,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.05,
+          "remaining_margin_mm": 0.010274287049428295,
+          "positive_margin": true
+        }
+      ]
+    },
+    {
+      "via_uuid": "2a7ff8bf-961b-4c3b-a1fc-dad001d91a29",
+      "via_net": "/PDM_CLK",
+      "via_xy_mm": [
+        15.045,
+        15.33
+      ],
+      "USB_uuid": "6815f171-6467-4edb-a5b4-ae1963557cc3",
+      "USB_net": "/USB_DM",
+      "nearest_segment_fraction": 0.11915512538418459,
+      "center_to_segment_mm": 0.4605506840395155,
+      "via_copper_radius_mm": 0.175,
+      "zone_clearance_mm": 0.15,
+      "USB_half_width_mm": 0.05855,
+      "nominal_projection_margin_mm": 0.07700068403951552,
+      "sensitivity": [
+        {
+          "hypothetical_lateral_registration_shift_mm": 0,
+          "remaining_margin_mm": 0.07700068403951552,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.025,
+          "remaining_margin_mm": 0.052000684039515514,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.05,
+          "remaining_margin_mm": 0.027000684039515513,
+          "positive_margin": true
+        }
+      ]
+    },
+    {
+      "via_uuid": "2a7ff8bf-961b-4c3b-a1fc-dad001d91a29",
+      "via_net": "/PDM_CLK",
+      "via_xy_mm": [
+        15.045,
+        15.33
+      ],
+      "USB_uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d",
+      "USB_net": "/USB_DM",
+      "nearest_segment_fraction": 0,
+      "center_to_segment_mm": 0.48572111339738977,
+      "via_copper_radius_mm": 0.175,
+      "zone_clearance_mm": 0.15,
+      "USB_half_width_mm": 0.05855,
+      "nominal_projection_margin_mm": 0.1021711133973898,
+      "sensitivity": [
+        {
+          "hypothetical_lateral_registration_shift_mm": 0,
+          "remaining_margin_mm": 0.1021711133973898,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.025,
+          "remaining_margin_mm": 0.0771711133973898,
+          "positive_margin": true
+        },
+        {
+          "hypothetical_lateral_registration_shift_mm": 0.05,
+          "remaining_margin_mm": 0.05217111339738979,
+          "positive_margin": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "25um and50um shifts are sensitivity cases, not vendor-guaranteed registration limits",
+    "Assumes circular via copper plus zone clearance envelope; actual filled polygon and custom rules may differ",
+    "Does not include etch, drill registration, pad-stack variation or signal field extent",
+    "Positive projection margin alone does not prove90ohm; negative sensitivity margin means the no-overlap geometric claim is not robust to that assumed shift"
+  ]
+}

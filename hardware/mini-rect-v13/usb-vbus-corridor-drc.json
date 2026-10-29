@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T04:16:56",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-vbus-corridor-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0074 mm)",
+            "items": [
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.9639,
+                        "y": 12.1492
+                    },
+                    "uuid": "1953967b-eb92-4259-b22c-319852e85c71"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 2.7015 mm )",
+                    "pos": {
+                        "x": 13.2598,
+                        "y": 12.93
+                    },
+                    "uuid": "44e52ca4-2b96-4600-a2ba-8471534903d3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

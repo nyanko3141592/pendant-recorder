@@ -1,0 +1,44 @@
+{
+  "L2": "GND dedicated power layer",
+  "L3": "GND pour with power/slow signal routing allowed",
+  "critical_nets_outer_only": [
+    "/PDM_CLK",
+    "/PDM_CLK_MCU",
+    "/PDM_DATA",
+    "/SD_CLK",
+    "/SD_CLK_MCU",
+    "/SD_MOSI",
+    "/SD_MISO",
+    "/SD_CS_N"
+  ],
+  "staging": "If connected, freeze critical routes and protect their B.Cu reference from L3 slow/power crossings in a second stage",
+  "release_allowed": false,
+  "R21": {
+    "center_mm": [
+      19.1,
+      12.5
+    ],
+    "orientation_deg": 0,
+    "direct_source_trace_mm": 1.295060326780185
+  },
+  "TP6": {
+    "old_xy": [
+      17.325,
+      13.325
+    ],
+    "new_xy": [
+      17.0,
+      13.3
+    ],
+    "displacement_mm": 0.3259601202601316,
+    "net": "/GND"
+  },
+  "initial_drc": {
+    "geometric": 0,
+    "library_warnings": 74,
+    "parity": 0,
+    "connectivity": "Intentionally unrouted trial"
+  },
+  "source_sha256": "e53d770123ae74bdd43c2568d8d514c233d6db6a2e615a53efd211822d4c974d",
+  "probe_access": "Original TP6 courtyard retained and nonoverlapping; physical probe/fixture access not qualified"
+}

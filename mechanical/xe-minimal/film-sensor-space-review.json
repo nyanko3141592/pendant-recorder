@@ -1,0 +1,124 @@
+{
+  "status": "INTERFERENCE_STUDY_NOT_ASSEMBLY_DESIGN",
+  "source_sha256": {
+    "lower": "e4d0bde292b5a6c517542001bf5fd13c179a215cac58bfc973c4273bb5ee9887",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+    "board": "5965f500390e21538c1c89e39c8ef3a9e129709b5050e159d9ba0ecdc1fdc3a4",
+    "separator": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "envelope_mm": [
+    4.1,
+    26,
+    0.5
+  ],
+  "adhesive_thickness_hypothesis_mm": 0.1,
+  "rows": [
+    {
+      "center_x_mm": 3.1,
+      "center_y_mm": -13.5,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "board": 0.0,
+        "separator": 31.98000000000003,
+        "battery": 0.0
+      }
+    },
+    {
+      "center_x_mm": 5,
+      "center_y_mm": -13.5,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "board": 0.0,
+        "separator": 31.98000000000003,
+        "battery": 0.0
+      }
+    },
+    {
+      "center_x_mm": 7,
+      "center_y_mm": -13.5,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "board": 0.0,
+        "separator": 31.980000000000025,
+        "battery": 0.0
+      }
+    },
+    {
+      "center_x_mm": 9,
+      "center_y_mm": -13.5,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "board": 0.0,
+        "separator": 31.98000000000003,
+        "battery": 0.0
+      }
+    },
+    {
+      "center_x_mm": 11,
+      "center_y_mm": -13.5,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "board": 0.0,
+        "separator": 31.980000000000036,
+        "battery": 0.0
+      }
+    },
+    {
+      "center_x_mm": 13,
+      "center_y_mm": -13.5,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "board": 0.0,
+        "separator": 31.48245750000004,
+        "battery": 0.0
+      }
+    },
+    {
+      "center_x_mm": 14.2,
+      "center_y_mm": -13.5,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "board": 0.0,
+        "separator": 30.558982500000035,
+        "battery": 0.0
+      }
+    }
+  ],
+  "displayed_case": {
+    "center_x_mm": 9,
+    "center_y_mm": -13.5,
+    "bottom_z_mm": -2.32,
+    "overlap_mm3": {
+      "lower": 0.0,
+      "upper": 0.0,
+      "board": 0.0,
+      "separator": 31.98000000000003,
+      "battery": 0.0
+    }
+  },
+  "conclusions": [
+    "Existing separator occupies part of the sensor envelope; unchanged separator cannot be reused for this placement.",
+    "All-current-component board is retained in this screen, including existing TH1; no circuit modification assumed."
+  ],
+  "limits": [
+    "Uniform box overestimates actual film leads and body; flagged overlap needs detailed-shape review.",
+    "No solder joints, wire exits, attachment patch or assembly path modeled.",
+    "Battery maximum envelope and fixed top used; no print, battery or placement tolerances.",
+    "No separator slot or structural change adopted; cutting needs retention/stiffness review."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "status": "PLACEMENT_AND_ROUTING_CANDIDATE_NOT_ADOPTED",
+  "source": "pendant-xe-minimal.kicad_pcb",
+  "candidate": "u10-sot23-candidate/pendant-xe-minimal.kicad_pcb",
+  "u10": {
+    "mpn": "TPS22917DBVT",
+    "jlc": "C2680344",
+    "package": "SOT-23-6",
+    "xy_mm": [
+      25.2,
+      2.5
+    ],
+    "rotation_deg": 90.0,
+    "side": "B.Cu",
+    "pads": [
+      {
+        "number": "1",
+        "net": "/V3V3",
+        "xy_mm": [
+          26.15,
+          3.6375
+        ]
+      },
+      {
+        "number": "2",
+        "net": "/SD_EN",
+        "xy_mm": [
+          25.2,
+          3.6375
+        ]
+      },
+      {
+        "number": "3",
+        "net": "/GND",
+        "xy_mm": [
+          24.25,
+          3.6375
+        ]
+      },
+      {
+        "number": "4",
+        "net": "",
+        "xy_mm": [
+          24.25,
+          1.3625
+        ]
+      },
+      {
+        "number": "5",
+        "net": "/SD_V3",
+        "xy_mm": [
+          25.2,
+          1.3625
+        ]
+      },
+      {
+        "number": "6",
+        "net": "/SD_V3",
+        "xy_mm": [
+          26.15,
+          1.3625
+        ]
+      }
+    ]
+  },
+  "moved": {
+    "C4": [
+      25.5,
+      7.5
+    ],
+    "C25": [
+      23.8,
+      6.2
+    ],
+    "C1": [
+      25.3,
+      1.0
+    ]
+  },
+  "limitations": [
+    "Candidate only; DRC and routing determine adoption.",
+    "CT is open and QOD is tied to VOUT through the shared SD_V3 net, matching the TI functional table.",
+    "No physical rise-time, discharge, reverse-current or 16-hour measurement."
+  ]
+}

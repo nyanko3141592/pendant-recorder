@@ -1,0 +1,86 @@
+{
+  "status": "SINGLE_CANDIDATE_DESIGN_COHERENT_PHYSICAL_RELEASE_NOT_PROVEN",
+  "date": "2026-10-28",
+  "candidate": "XE-PROTOTYPE-V1-27P5-PACK-NTC-CASE-V5-1GB-OVP-LATCH",
+  "release_allowed": false,
+  "requirements": [
+    {
+      "priority": 1,
+      "requirement": "safety",
+      "design_evidence": "BQ25185 4.1V/9-11mA charging, TPS2552DBVR-1 guaranteed 50-100mA latch-off limiting, pack NTC hardware inhibit and fail-low charge control are present. NCP360SNT1G is integrated ahead of TPS2552, giving 1.1V from its guaranteed 5.9V maximum OVLO threshold to the limiter 7.0V absolute maximum. The NCP360 1.5us turn-off limit is specified without the required output capacitor, so CAD/ERC/DRC/parity pass but measurement-uncertainty-inclusive peak-voltage, latch and recovery EVT at 0.1/1/10V-per-us and 6/9/12/20V remains NOT_RUN.",
+      "design_status": "PASS_CAD_NCP360_OVP_INTEGRATED_PHYSICAL_ABNORMAL_INPUT_EVT_NOT_RUN",
+      "physical_gate": "EVT A and B",
+      "physical_status": "NOT_RUN",
+      "release_status": "HOLD"
+    },
+    {
+      "priority": 2,
+      "requirement": "fixed DTP401525-XE 110mAh continuous 16kHz mono recording including silence for >=16h",
+      "design_evidence": "whole-device target <=4.4mA average and <=70.4mAh/16h; nonhardware continuous pipeline regression",
+      "design_status": "PASS_BUDGET_AND_NONHARDWARE_ONLY",
+      "physical_gate": "five-pack cutoff characterization, then common EVT image build, then EVT C on all five completed units for >=57600s with that exact image",
+      "physical_status": "NOT_RUN",
+      "release_status": "HOLD"
+    },
+    {
+      "priority": 3,
+      "requirement": "vendor-complete board with no buyer board-electronics sourcing, hand solder, crimp or wiring",
+      "design_evidence": "68 JLC-routed references, five-unit demand 340, and source-matched one-unit 70x70mm Standard-PCBA carrier with DRC zero, inverse-translation equality and 68-row CAM; buyer final assembly is exact battery, case and cord",
+      "design_status": "PASS_LOCAL_BOUNDARY_CARRIER_AND_CAM_ONLY",
+      "external_gate": "live JLC stock, carrier/POFV/assembly DFM, exact quotation, factory programming acceptance, and seller-side depanelization",
+      "external_status": "NOT_VERIFIED",
+      "physical_gate": "all-five carrier double-reflow, tab, depanelized-edge and case-fit qualification",
+      "physical_status": "NOT_RUN",
+      "release_status": "HOLD"
+    },
+    {
+      "priority": 4,
+      "requirement": ">=36h encrypted storage and one USB-C charge/data port with macOS, Windows and Linux import/decrypt",
+      "design_evidence": "25920-file synthetic 36h run, age encryption, read-only MSC, HID provisioning, verified cleanup and three host implementations covered by nonhardware tests",
+      "design_status": "PASS_NONHARDWARE_ONLY",
+      "physical_gate": "EVT D and E",
+      "physical_status": "NOT_RUN",
+      "release_status": "HOLD"
+    },
+    {
+      "priority": 5,
+      "requirement": "supply continuity and version synchronization",
+      "design_evidence": "canonical production BOM, exact 68-position unit and carrier CAM reviews, inverse-translated carrier equality, active hashes, storage second-source fail-closed review and release consistency checker",
+      "design_status": "PASS_LOCAL_VERSION_COHERENCE",
+      "external_gate": "fresh stock, qualified substitutions and actual quotation",
+      "external_status": "NOT_VERIFIED",
+      "release_status": "HOLD"
+    },
+    {
+      "priority": 6,
+      "requirement": "necklace orientation, integral cord load path, print orientation, wear, fatigue, breakaway safety and USB access",
+      "design_evidence": "case v4 rounded body, CAD-X 3.2mm cord hole rotated onto printer build Z, 1.4mm radial ligament, PETG six walls and USB bezel flush datum; necklace entanglement risk boundary is documented",
+      "design_status": "PASS_CAD_AND_SLICE_ONLY_SINGLE_BREAKAWAY_RETAIL_CANDIDATE_NOT_ADOPTED",
+      "external_gate": "RNST04BK is the single normally purchasable finished-cord candidate; verify continued exact-SKU retail availability and retain its public nominal breakaway claim, then approve a release window through documented product risk assessment",
+      "external_status": "CANDIDATE_SELECTED_CONTINUITY_AND_GUARANTEED_RANGE_NOT_VERIFIED",
+      "physical_gate": "EVT F: 50N fixture proof bypassing clasp, 15N/10000-cycle lug fatigue, 10000 cord slides, breakaway repeats in new/sweat/worn states, drop, wear and six-cable fit",
+      "physical_status": "NOT_RUN",
+      "release_status": "HOLD"
+    },
+    {
+      "priority": 7,
+      "requirement": "smallest completed product after higher priorities",
+      "design_evidence": "CAD complete bbox approximately 29.91 x 36.35 x 12.98mm with no nominal internal intersections",
+      "design_status": "PASS_CAD_ONLY",
+      "physical_gate": "printed fit, harness strain, pouch swelling and acoustic clearance",
+      "physical_status": "NOT_RUN",
+      "release_status": "HOLD"
+    },
+    {
+      "priority": 8,
+      "requirement": "cost and charge speed optimization without harming higher priorities",
+      "design_evidence": "current 68-position CAD rate arithmetic exists; one-unit 70mm carriers preserve five populated units but carrier fabrication, seller depanelization and full landed quote remain null",
+      "design_status": "PARTIAL_NOT_QUOTE",
+      "external_gate": "live quotation including five 70mm carriers, seller depanelization, POFV, parts, inspection, programming, freight, tax, batteries and case",
+      "external_status": "NOT_VERIFIED",
+      "release_status": "HOLD"
+    }
+  ],
+  "release_rule": "Every priority 1-6 physical/external gate and all version hashes must pass with raw evidence; no NOT_RUN, NOT_VERIFIED, FAIL or missing field is releasable.",
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

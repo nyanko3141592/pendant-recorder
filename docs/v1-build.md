@@ -1,5 +1,7 @@
 # v1 — 個人製作と基板密度を優先
 
+> **履歴資料・発注禁止。** この文書は円形、21mm基板、Rev A、個人書込みを含む旧方針の時系列記録。現行の単一候補と優先順位は [`requirements.md`](requirements.md)、製造可否は [`prototype-v1-order-decision.json`](prototype-v1-order-decision.json)を正本とする。
+
 > 最新追加: [保存時暗号化と初期外観設計](decisions/0002-encryption-and-industrial-design.md)を優先。登録PCの鍵で復号する暗号化保存をv1要件に追加（未実装）。従来の平文WAV直読・外観後回しの記述は旧仕様。樹脂3Dプリントから始め、金属外装への移行を考慮する。
 
 > 最新のv1定義: [製品方針](decisions/0001-product-and-v1.md)と[開発フロー](development-flow.md)を優先。v1は実装済み基板を購入し、無はんだで書込み・試験する最初の反復。書込み/計測治具も自作はんだ不要。旧円形/22mm固定・50mA設定は現要件ではない。

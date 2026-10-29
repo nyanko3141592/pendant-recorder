@@ -1,0 +1,79 @@
+{
+  "status": "PUBLIC_BGA_PAD_PITCH_AND_1_TO_1_MASK_SCREEN_COMPATIBLE_NOT_ASSEMBLY_QUALIFIED",
+  "source_pdf": "evidence/TPS22916-SLVSDO5F.pdf",
+  "manufacturer_url": "https://www.ti.com/lit/ds/symlink/tps22916.pdf",
+  "page": 25,
+  "visual_review": "NSMD preferred; radial clearance dimension is 0.05 MAX, not MIN. SMD example has 0.05 MIN metal overlap.",
+  "source_pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "gerber_sha256": {
+    "pendant-xe-minimal-B_Cu.gbl": "00f35788bfdcf51607b450b6d99b37394724905d335ff35adcb604b216c35dc8",
+    "pendant-xe-minimal-B_Mask.gbs": "1ca47ac0536579e16a08d94a5b53044a0400013e8c64797d124b87de2ce288de"
+  },
+  "current_pads": [
+    {
+      "pad": "A1",
+      "copper_diameter_mm": 0.23,
+      "mask_opening_diameter_mm": 0.23,
+      "radial_margin_mm": 0.0
+    },
+    {
+      "pad": "A2",
+      "copper_diameter_mm": 0.23,
+      "mask_opening_diameter_mm": 0.23,
+      "radial_margin_mm": 0.0
+    },
+    {
+      "pad": "B1",
+      "copper_diameter_mm": 0.23,
+      "mask_opening_diameter_mm": 0.23,
+      "radial_margin_mm": 0.0
+    },
+    {
+      "pad": "B2",
+      "copper_diameter_mm": 0.23,
+      "mask_opening_diameter_mm": 0.23,
+      "radial_margin_mm": 0.0
+    }
+  ],
+  "screening_options": [
+    {
+      "radial_margin_mm": 0,
+      "opening_diameter_mm": 0.23,
+      "nominal_web_between_adjacent_openings_mm": 0.17
+    },
+    {
+      "radial_margin_mm": 0.025,
+      "opening_diameter_mm": 0.28,
+      "nominal_web_between_adjacent_openings_mm": 0.12
+    },
+    {
+      "radial_margin_mm": 0.05,
+      "opening_diameter_mm": 0.33,
+      "nominal_web_between_adjacent_openings_mm": 0.07
+    }
+  ],
+  "finding": "Zero nominal margin is supported by candidate fabricator public multilayer process. It still differs from a positive-clearance NSMD geometry and does not establish package-specific yield.",
+  "next_action": "Retain current 1:1 mask pending package-specific fabrication/assembly capability and neighboring-trace clearance review; do not apply automatic mask expansion based solely on zero margin.",
+  "selected_margin_mm": 0,
+  "fabricator_review": {
+    "checked_date": "2026-10-27",
+    "sources": [
+      "https://jlcpcb.com/capabilities/pcb-capabilities/",
+      "https://jlcpcb.com/blog/basic-design-of-solder-mask",
+      "https://jlcpcb.com/capabilities/pcb-assembly-capabilities"
+    ],
+    "findings": [
+      "Current capability page explicitly permits 1:1 copper-to-mask openings after June 2025 LDI upgrade.",
+      "Blog states multilayer LDI alignment within +/-0.02 mm; this is a supplier claim, not a geometric proof of zero encroachment.",
+      "Capability specifies >=0.09 mm mask-opening to neighboring trace clearance.",
+      "Dam criteria are stated as PAD spacing (0.10 mm at 1 oz standard colors), not a guaranteed final mask-web width.",
+      "Generic minimum SMD pad listing is 0.25 x 0.25 mm; U10 uses manufacturer-example 0.23 mm circular copper. Package-specific capability remains unresolved."
+    ],
+    "followup_findings": [
+      "BGA-specific capability permits 0.20-0.25 mm pad diameter with ENIG. U10 0.23 mm lies within that published range; generic 0.25 mm SMD minimum is not the applicable screening limit.",
+      "Standard PCBA lists 0.35 mm minimum IC pitch; U10 0.4 mm is within this published pitch capability.",
+      "Standard PCBA supports double-sided assembly but lists minimum PCB/panel 70 x 70 mm with rails and fiducials required. The 24 x 27 mm design needs a separate assembly panel."
+    ]
+  },
+  "selection_status": "CURRENT_DESIGN_RETAINED_NOT_PROCESS_RELEASE"
+}

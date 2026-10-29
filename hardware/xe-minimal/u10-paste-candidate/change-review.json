@@ -1,0 +1,32 @@
+{
+  "status": "ADOPTED_NOT_MANUFACTURING_QUALIFIED",
+  "source_pcb_sha256": "31ebfc3b10417e6fc9de09c4847dfb462e195d9303b57f0c9475281781354e4f",
+  "change": "U10 four copper pads lose B.Paste membership; four unnumbered paste-only 0.25 mm rounded squares R0.05 at same centers",
+  "candidate_pcb_sha256": "54a4a093db0a59830dfaae8f573461380c05dcc46d66be8a34ddc6d3bb4c7b67",
+  "unchanged_render_geometry": {
+    "pendant-xe-minimal-F_Mask.gts": true,
+    "pendant-xe-minimal-In4_Cu.g4": true,
+    "pendant-xe-minimal-In2_Cu.g2": true,
+    "pendant-xe-minimal-F_Paste.gtp": true,
+    "pendant-xe-minimal-In3_Cu.g3": true,
+    "pendant-xe-minimal-B_Mask.gbs": true,
+    "pendant-xe-minimal-B_Cu.gbl": true,
+    "pendant-xe-minimal-In1_Cu.g1": true,
+    "pendant-xe-minimal-F_Cu.gtl": true
+  },
+  "U10_paste_aperture_count_verified": 4,
+  "drc_list_counts": {
+    "violations": 0,
+    "schematic_parity": 0,
+    "unconnected_items": 0
+  },
+  "other_bottom_paste_render_geometry_unchanged": true,
+  "U10_internal_bbox_gap_mm": 0.14999999999999858,
+  "U10_other_paste_minimum_bbox_gap_mm": 0.8449999999999993,
+  "candidate_library_sha256": "888b92de92a1d7d505fb8ccd41156dc57772b2af412764ba47eff06009d370f2",
+  "limitations": [
+    "Bounding box gaps are conservative geometric lower bounds, not assembly-process approval.",
+    "Canonical adoption requires library isolation and evidence regeneration."
+  ],
+  "adopted_pcb_sha256": "54a4a093db0a59830dfaae8f573461380c05dcc46d66be8a34ddc6d3bb4c7b67"
+}

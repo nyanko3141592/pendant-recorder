@@ -1,0 +1,108 @@
+{
+  "status": "CANDIDATE_INTEGRATED_GEOMETRY_NOT_FIT_APPROVAL",
+  "pcb_sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+  "output_sha256": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+  "sources": [
+    {
+      "file": "film-integration-library-components.step",
+      "sha256": "ae18cc599af6619fa7598c5e3ff3b13268c08a8393a6242599a419d291511ad0"
+    },
+    {
+      "file": "u8-body-positioned-study.step",
+      "sha256": "ebef70a66ae2e0835da33ec48dfa06c66bc7c1e774448f339302f9f273d125ee"
+    },
+    {
+      "file": "u14-envelope-positioned-study.step",
+      "sha256": "59c959155ddee83808c905669183311865ff721fdca9e0d876ca851fdd6dceba"
+    },
+    {
+      "file": "u10-envelope-positioned-study.step",
+      "sha256": "73348ed9272e7b6485b01315ed680ea6dc08d5e0e0596e641c3ffba717f53ed0"
+    },
+    {
+      "file": "u1-envelope-positioned-study.step",
+      "sha256": "04ca0dbb4fe92c1b884cd419814f494cee454203411df7e4f425405ed1a939a6"
+    },
+    {
+      "file": "j2-header-positioned-study.step",
+      "sha256": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0"
+    },
+    {
+      "file": "u11-package-body-max.step",
+      "sha256": "4668cd93ce47592ecdd1d157e0de9a62d7ff11b1cbe4512a4573a83f06b518e1"
+    },
+    {
+      "file": "hardware/xe-minimal/fixed-usb-limit-trial/tps22950-maximum-envelope.step",
+      "sha256": "75617dd9cfab1e6eb6b03db8ac09557bdad7351f28f6e73a17ea1477d2bec48d",
+      "placed_at_board_top": true
+    },
+    {
+      "file": "d6-led-selection-review.json",
+      "sha256": "23292fff4fdedb7265e8927a50fc12a50d0ef812e928ecbc135b23d4eb0000e6",
+      "candidate_not_adopted": true
+    },
+    {
+      "file": "docs/procurement/xe-q6-q7-dmn2056u-review.json",
+      "sha256": "7672544929c156b63fb492a694daf622c51cf0fcbed2a6926acbc39b182999be",
+      "candidate_not_adopted": true
+    },
+    {
+      "file": "docs/procurement/xe-r13-0201-candidate.json",
+      "sha256": "b1ba3c692a929a3c60e72ebc3e5673e88122da4e2e32eeb6c0c0c09614909ed2",
+      "zero_solder_standoff": true
+    }
+  ],
+  "retained_envelope_pose_checked": [
+    "J2",
+    "U1",
+    "U10",
+    "U11",
+    "U14",
+    "U8"
+  ],
+  "excluded_library_models": [
+    "D6",
+    "J2",
+    "Q6",
+    "Q7",
+    "R13",
+    "TH1",
+    "U1",
+    "U10",
+    "U11",
+    "U13",
+    "U14",
+    "U8"
+  ],
+  "removed_Q5_present": false,
+  "study_intersections": [
+    {
+      "file": "tab-clearance-upper-trial.step",
+      "sha256": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "diagonal-recessed-cap-lower-trial.step",
+      "sha256": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "diagonal-entry-notched-separator-trial.step",
+      "sha256": "ba290fc832d18d4615adcd9545e65803344a2929de2d7ed857db0cbcc006f328",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "offset-pack-assembly-trial.step",
+      "sha256": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+      "intersection_volume_mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "TH1 is a wire-pad interface: no surface-mounted sensor body. External sensor, wire, solder and insulation must be modeled separately.",
+    "Generic library bodies are not manufacturer maximum dimensions",
+    "J2 pose remains provisional; mating plug and original battery leads absent",
+    "Zero solder standoff is a visualization datum",
+    "Battery swelling, closure, thermal contact and assembly access remain unresolved",
+    "Provisional film integration circuit; no manufacturing or physical qualification."
+  ]
+}

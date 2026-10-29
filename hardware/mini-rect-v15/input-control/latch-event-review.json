@@ -1,0 +1,274 @@
+{
+  "status": "PASS_IDEAL_EVENT_MODEL",
+  "physical_parts": 91,
+  "checks": [
+    "actual candidate net mapping",
+    "separate raw and limitedVBUS consumers",
+    "hardwareGPIO pulldowns",
+    "suspendOFF retained afterMCUreset",
+    "resetduringclocklow completesOFF",
+    "explicitresume and freshattach enable"
+  ],
+  "scenarios": [
+    {
+      "name": "after_pulse",
+      "events": [
+        {
+          "event": "attach_POR",
+          "POR_asserted": true,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "POR_release",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "configured",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": true,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_begin_inhibit_charge_and_low_budget",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_clock_low",
+          "POR_asserted": false,
+          "suspend_GPIO": true,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_clock_release",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 1,
+          "input_enabled": false
+        },
+        {
+          "event": "MCU_reset_or_battery_brownout",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 1,
+          "input_enabled": false
+        },
+        {
+          "event": "MCU_still_off_or_boot_defaults",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 1,
+          "input_enabled": false
+        },
+        {
+          "event": "valid_resume_clear",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": true,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "resume_clear_release",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_low_again",
+          "POR_asserted": false,
+          "suspend_GPIO": true,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_release_again",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 1,
+          "input_enabled": false
+        },
+        {
+          "event": "VBUS_removed_below_supervisor_threshold",
+          "POR_asserted": true,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "VBUS_reattach_POR_release",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        }
+      ]
+    },
+    {
+      "name": "during_low_phase",
+      "events": [
+        {
+          "event": "attach_POR",
+          "POR_asserted": true,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "POR_release",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "configured",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": true,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_begin_inhibit_charge_and_low_budget",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_clock_low",
+          "POR_asserted": false,
+          "suspend_GPIO": true,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "MCU_reset_or_battery_brownout",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 1,
+          "input_enabled": false
+        },
+        {
+          "event": "MCU_still_off_or_boot_defaults",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 1,
+          "input_enabled": false
+        },
+        {
+          "event": "valid_resume_clear",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": true,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "resume_clear_release",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_low_again",
+          "POR_asserted": false,
+          "suspend_GPIO": true,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "suspend_release_again",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 1,
+          "input_enabled": false
+        },
+        {
+          "event": "VBUS_removed_below_supervisor_threshold",
+          "POR_asserted": true,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        },
+        {
+          "event": "VBUS_reattach_POR_release",
+          "POR_asserted": false,
+          "suspend_GPIO": false,
+          "resume_GPIO": false,
+          "high_budget_GPIO": false,
+          "Q": 0,
+          "input_enabled": true
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Not transistor SPICE or measured electrical behavior",
+    "POR supply ramp/dip and timing not simulated",
+    "A crash before issuing suspend command is not handled by this latch",
+    "VBUS below supervisor threshold deliberately reinitializes; briefdip classification needs bench review",
+    "No proof of5Vcurrentbounds, USBsuspend timing, latch recovery margins or thermalguardpoweroffbackfeed"
+  ]
+}

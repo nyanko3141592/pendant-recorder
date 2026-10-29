@@ -1,0 +1,61 @@
+{
+  "status": "USB_ROUTE_ENDPOINT_REVIEW_NOT_ROUTED",
+  "source_board": "usb-priority-packing-candidate.kicad_pcb",
+  "endpoints_mm": {
+    "J1_F": {
+      "A6_DP": [
+        10.25,
+        15.31
+      ],
+      "B6_DP": [
+        11.25,
+        15.31
+      ],
+      "A7_DM": [
+        10.75,
+        15.31
+      ],
+      "B7_DM": [
+        9.75,
+        15.31
+      ]
+    },
+    "U2_F_180deg": {
+      "1_DP": [
+        4.375,
+        15.9125
+      ],
+      "3_DM": [
+        4.375,
+        14.8375
+      ],
+      "4_DM": [
+        2.675,
+        14.8375
+      ],
+      "6_DP": [
+        2.675,
+        15.9125
+      ]
+    },
+    "U1_B": {
+      "32_DM": [
+        15.5925,
+        8.655
+      ],
+      "33_DP": [
+        15.5925,
+        9.155
+      ]
+    }
+  },
+  "routing_constraints": [
+    "USB-C duplicate D+/D- pads interleave; their join must be designed explicitly, not modeled as one endpoint per net",
+    "U2 flow-through paired routing must include both pin1/6 and pin3/4, not an arbitrary tee",
+    "Front U2 is left of connector and MCU right/upper: surface move adds lateral detour; compare with existing short backside protection route",
+    "Do not assume 12Mbps makes impedance/reference requirements unnecessary"
+  ],
+  "primary_reference": "https://www.st.com/resource/en/application_note/an4879-usb-hardware-design-guidelines-for-stm32-microcontrollers-stmicroelectronics.pdf",
+  "reference_status": "Official current AN4879 discovered; search metadata alone is not sufficient to approve exact layout limits",
+  "next": "Design connector duplicate-pad joins and protection flow-through before whole-board routing"
+}

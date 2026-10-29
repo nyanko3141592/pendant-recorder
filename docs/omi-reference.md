@@ -1,6 +1,6 @@
 # Omi（BasedHardware/omi）ハードウェア／ファームウェア調査メモ
 
-> 2026-10-24 回路照合による訂正: 最新の回路原本は [hardware/rev-a/README.md](../hardware/rev-a/README.md)。48ピンSTM32U535CBU6はSDMMC端子がないため試作はSTM32U535RCT6（LQFP64）へ変更。T5838は底面音孔・1.8V専用でレベル変換が必須。BQ25101は50mA設定＋USB給電の負荷分離、USB PHYは専用3.3V。以下は初期調査/見積りを含み、矛盾時はRev A0を優先する。
+> **外部製品の履歴調査資料。** OmiやRev Aの構成は現行pendant-recorderの回路・BOM・製造根拠ではない。現行正本は [`requirements.md`](requirements.md) と [`hardware/xe-minimal/active-design.json`](../hardware/xe-minimal/active-design.json)。
 
 調査日: 2026-10-24。リポジトリは commit `c10d3ca6efc8f9311b62f05da31e7eb03bd9184a` を参照（以下のリンクはこのcommitに固定）。
 「未確認」と書いたものは一次情報で確かめられていないもの。推測は「推測」と明記。

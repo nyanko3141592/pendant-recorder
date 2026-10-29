@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:39:47",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "chg-bent-hf.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_GUARD_GATE と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( In4.Cu 上、長さ: 3.2558 mm )",
+                    "pos": {
+                        "x": 22.0,
+                        "y": 17.6
+                    },
+                    "uuid": "8548678c-5e44-491b-98b2-e4a7e0ed7eca"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.335,
+                        "y": 15.435
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0280 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.9850 mm )",
+                    "pos": {
+                        "x": 21.35,
+                        "y": 15.2
+                    },
+                    "uuid": "32a5235d-2a26-4458-b173-76fde8893330"
+                },
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( B.Cu 上、長さ: 1.5524 mm )",
+                    "pos": {
+                        "x": 22.985,
+                        "y": 15.185
+                    },
+                    "uuid": "43d89546-5845-4812-a5f5-dfbd867dfcca"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( B.Cu 上、長さ: 1.5524 mm )",
+                    "pos": {
+                        "x": 22.985,
+                        "y": 15.185
+                    },
+                    "uuid": "43d89546-5845-4812-a5f5-dfbd867dfcca"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.2350 mm )",
+                    "pos": {
+                        "x": 22.335,
+                        "y": 15.2
+                    },
+                    "uuid": "67e9488b-b151-473e-8387-4811d06740d6"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        }
+    ]
+}

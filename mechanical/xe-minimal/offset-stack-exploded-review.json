@@ -1,0 +1,62 @@
+{
+  "status": "EXPLODED_CANDIDATE_STUDY_NOT_FINAL_MODEL",
+  "sources": [
+    {
+      "file": "thickness-clearance-upper-trial.step",
+      "sha256": "07a796a9656f0cf5c420769c411543abae728b8d9bec39311227b6c28d915a3b",
+      "display_translation_mm": [
+        0,
+        0,
+        16
+      ]
+    },
+    {
+      "file": "dmn-candidate-integrated-board.step",
+      "sha256": "b43a37bdebaf9789a2b85171637edddc1b75d38589317f83e2f5e3e61a68750d",
+      "display_translation_mm": [
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "file": "support-notched-separator-trial.step",
+      "sha256": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+      "display_translation_mm": [
+        0,
+        0,
+        -5
+      ]
+    },
+    {
+      "file": "offset-pack-assembly-trial.step",
+      "sha256": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+      "display_translation_mm": [
+        0,
+        0,
+        -12
+      ]
+    },
+    {
+      "file": "offset-pack-lower-trial.step",
+      "sha256": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b",
+      "display_translation_mm": [
+        0,
+        0,
+        -25
+      ]
+    }
+  ],
+  "pcb_geometry_source": "dmn-candidate-integrated-review.json; current USB-margin candidate PCB with verified retained envelope poses",
+  "limitations": [
+    "Original leads and mating plug absent",
+    "No proven assembly sequence",
+    "Final case size and closure unresolved",
+    "Thermal interface and battery swelling allowance unresolved",
+    "Some component bodies are approximate envelopes"
+  ],
+  "outputs": {
+    "offset-stack-exploded-review.step": "cfe985cb329003f407d952d47f0a4c58f775e0cf8fd52da20e37c7bf6c9ffa4c",
+    "offset-stack-exploded-review.png": "30eb3b4d014aef26b10038fa1a3da801a1038f963ff93eab4ec3b240bd795734"
+  }
+}

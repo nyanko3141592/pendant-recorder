@@ -1,0 +1,166 @@
+{
+  "status": "A1_MINI_FOUR_OBJECT_SLICE_PASS_PHYSICAL_PRINT_REQUIRED",
+  "hardware": "HW-V1.4-EVT-4LAYER-27P5",
+  "case": "CASE-V3-WALL-TUNNEL",
+  "object_count": 4,
+  "objects": [
+    {
+      "object": "case-v3-lower",
+      "stl": "case-v3-lower.stl",
+      "bbox_mm": [
+        31.402650239235673,
+        31.40265023923568,
+        8.451641459986826
+      ],
+      "sha256": "d1f82310a97909a324659fc6923fd5c018bef4576a049000dc05531e4bfbc8dd"
+    },
+    {
+      "object": "case-v3-upper",
+      "stl": "case-v3-upper.stl",
+      "bbox_mm": [
+        31.402650239235676,
+        31.402650239235676,
+        6.082288999789992
+      ],
+      "sha256": "a0a4b2f1c88a387638e5ac65746345756635a2b5da756c172988ebcf4b9be850"
+    },
+    {
+      "object": "hw-v1.4-4layer-populated",
+      "stl": "hw-v1.4-4layer-populated.stl",
+      "bbox_mm": [
+        27.500000200000017,
+        27.52283808563901,
+        5.871770582193738
+      ],
+      "sha256": "ba30b1a6923121384cd041ae4fdf61f8a1f216a6c224e225672d9d6e3834a3a8"
+    },
+    {
+      "object": "dtp401525-xe-max-body",
+      "stl": "dtp401525-xe-max-body.stl",
+      "bbox_mm": [
+        15.500000199999999,
+        27.000000200000002,
+        4.200000200000001
+      ],
+      "sha256": "4a1027d4e8fbbdb8fb1f0a96341389147f7958b798f4d076ac434fd4e14980fa"
+    }
+  ],
+  "project": {
+    "file": "hw-v1.4-4layer-case-v3-4objects-a1mini.3mf",
+    "sha256": "22d66e4acb2bcad4a28de86f45d15de17f4a9b5b2045369f625f1b6fb2db4363"
+  },
+  "gcode": {
+    "file": "plate_1.gcode",
+    "sha256": "a0410eaf5a447749248075fdd059c8e030918bab3bea5c1b82b75a8aee32eef8"
+  },
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 2782,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 432,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 64.52428436279297,
+          "Bridge": 35.722782135009766,
+          "Custom": 34.67750549316406,
+          "Gap infill": 79.50372314453125,
+          "Inner wall": 344.4841003417969,
+          "Internal solid infill": 150.57760620117188,
+          "Outer wall": 334.6369934082031,
+          "Overhang wall": 103.52700805664062,
+          "Sparse infill": 54.51937484741211,
+          "Support": 150.37742614746094,
+          "Support interface": 37.20656204223633,
+          "Top surface": 90.12523651123047,
+          "Travel": 386.81854248046875,
+          "Undefined": 371.3091125488281
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG00",
+            "id": 1,
+            "main_used_g": 7.059852123260498,
+            "total_used_g": 7.655324935913086
+          }
+        ],
+        "generate_support_material_time": 451,
+        "id": 1,
+        "infill_time": 220,
+        "layer_filament_change": 0,
+        "main_predication": 1831.95458984375,
+        "make_perimeters_time": 580,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 31.399999618530273,
+              "height": 8.449999809265137,
+              "width": 31.400001525878906,
+              "x": 100.05001831054688,
+              "y": 102.0,
+              "z": 0.0
+            },
+            "id": 74,
+            "name": "case-v3-lower.stl",
+            "triangle_count": 12118
+          },
+          {
+            "bbox": {
+              "depth": 31.39999771118164,
+              "height": 6.079999923706055,
+              "width": 31.400001525878906,
+              "x": 100.05001831054688,
+              "y": 46.60002136230469,
+              "z": 0.0
+            },
+            "id": 85,
+            "name": "case-v3-upper.stl",
+            "triangle_count": 11864
+          },
+          {
+            "bbox": {
+              "depth": 27.500001907348633,
+              "height": 5.871399879455566,
+              "width": 27.5,
+              "x": 48.550010681152344,
+              "y": 105.89997863769531,
+              "z": 0.0
+            },
+            "id": 96,
+            "name": "hw-v1.4-4layer-populated.stl",
+            "triangle_count": 812826
+          },
+          {
+            "bbox": {
+              "depth": 27.000001907348633,
+              "height": 4.199999809265137,
+              "width": 15.5,
+              "x": 60.55002975463867,
+              "y": 54.89997863769531,
+              "z": 0.0
+            },
+            "id": 107,
+            "name": "dtp401525-xe-max-body.stl",
+            "triangle_count": 12
+          }
+        ],
+        "sliced_time": 2121,
+        "sliced_time_with_cache": 807,
+        "total_predication": 1851.0924072265625,
+        "triangle_count": 836820,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 40.0,
+    "wall_loops": 6
+  },
+  "profile": "A1 mini / Bambu PETG Basic / 0.4 mm nozzle / 0.16 mm layer / 6 walls / 40% gyroid / tree support",
+  "limits": [
+    "Board is a mechanical populated-envelope gauge; it does not function electrically.",
+    "Slicing does not qualify real fit, USB access, cord proof load, fatigue, sweat, drop, heat or acoustics."
+  ]
+}

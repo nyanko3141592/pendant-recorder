@@ -1,0 +1,72 @@
+{
+  "status": "CAP_SIDE_INSERTION_SCREEN_NOT_ASSEMBLY_APPROVAL",
+  "rows": [
+    {
+      "path": "from_front_y",
+      "start_translation_mm": [
+        0,
+        4,
+        0
+      ],
+      "overlap_mm3": {
+        "board": 0.0,
+        "guide": 0.0,
+        "wire": 0.0
+      },
+      "scope": "Seller assembly before enclosure/battery installation"
+    },
+    {
+      "path": "from_right_x",
+      "start_translation_mm": [
+        15,
+        0,
+        0
+      ],
+      "overlap_mm3": {
+        "board": 0.13786375634521483,
+        "guide": 0.0,
+        "wire": 0.07438012009974442
+      },
+      "scope": "Seller assembly before enclosure/battery installation"
+    },
+    {
+      "path": "from_left_x",
+      "start_translation_mm": [
+        -15,
+        0,
+        0
+      ],
+      "overlap_mm3": {
+        "board": 3.389274165418459,
+        "guide": 0.0,
+        "wire": 0.0
+      },
+      "scope": "Seller assembly before enclosure/battery installation"
+    },
+    {
+      "path": "from_back_y",
+      "start_translation_mm": [
+        0,
+        -32,
+        0
+      ],
+      "overlap_mm3": {
+        "board": 0.00011594008283196723,
+        "guide": 0.0179999999999996,
+        "wire": 0.0
+      },
+      "scope": "Seller assembly before enclosure/battery installation"
+    }
+  ],
+  "sources_sha256": {
+    "film-wire-pad-connected-review.json": "b66eb79f7de52fe7f54f2ee87ee9091982ac790ea1792e6e12ea4724eef0ebb3",
+    "film-common-guide-separator-trial.step": "5a6573bd717f3abb857564ce784a2b86da29383e813175bb331dd99b76ca3f07",
+    "film-common-guide-cap-trial.step": "4d79d10a37d6064e33879c86b3f30e95129dbab2140db384bfcb598828188d5b",
+    "film-sensor-depopulated-board-study.step": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e"
+  },
+  "limits": [
+    "Rectangular cap swept without glue, gripper or tool-access envelope.",
+    "Exact nominal touching of cap and guide top does not allow glue thickness or print variation.",
+    "No axial wire retention, cap fixation strength or full assembly sequence proven."
+  ]
+}

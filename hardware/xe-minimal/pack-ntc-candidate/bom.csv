@@ -1,0 +1,71 @@
+Reference,Part/value,Footprint,Design note
+U1,STM32U585CIU6,Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm,512KB Flash/274KB RAM; non-SMPS UFQFPN48. PB3/PB4 ADF AF3; PA5/6/7 SPI1 AF5. VDD USB shared 3.3V. JLC acceptance and pin review pending.
+C1,100n,Capacitor_SMD:C_0402_1005Metric,
+C4,10u,Capacitor_SMD:C_0603_1608Metric,Main bulk capacitor; check startup and effective capacitance.
+C9,100n,Capacitor_SMD:C_0402_1005Metric,
+R2,10k,Resistor_SMD:R_0402_1005Metric,
+J3,Factory SWD pogo candidate,PendantMinimal:SWD_Pogo_5Pad_P1.27mm,Five exposed pads; factory fixture required; VTref sense only. No buyer flashing.
+SW1,B3U-1000P (candidate),Button_Switch_SMD:SW_SPST_B3U-1000P,
+R4,100k,Resistor_SMD:R_0402_1005Metric,
+J1,USB4105-GF-A (candidate),PendantD1:USB_C_GCT_USB4105_GroundLand112,Exact footprint and shield pad numbering pending connector selection
+R6,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+R7,5.1k 1%,Resistor_SMD:R_0402_1005Metric,
+U2,USBLC6-2P6,Package_TO_SOT_SMD:SOT-666,"ST DS4260 same 6-pin function diagram; smaller package, LCSC C15999 catalog; orientation/land pattern final audit pending."
+C13,2.2u 10V,Capacitor_SMD:C_0402_1005Metric,
+U3,BQ25185DLHR,Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm,BQ25185 Rev.B hardware setting: 4.2V battery regulation and ILIM100. TI specifies 80/90/98mA min/typ/max total IN current at 5V. Charge current remains approximately 44.12mA; physical qualification pending.
+R10,6.8k 1%,Resistor_SMD:R_0402_1005Metric,XE prototype44.12mA nominal;10%IC/1%R screen39.31..49.02mA below110mA pack maximum. Nominal4.41mA termination exceeds manufacturer1.1mA reference; capacity/16h not guaranteed. No charge enable.
+R11,20k 1%,Resistor_SMD:R_0402_1005Metric,
+C14,2.2u,Capacitor_SMD:C_0402_1005Metric,
+J2,Molex781710003 / DTP401525-XE,Connector_Molex:Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical,"DTP401525-XE fixed pack: P1 red BAT+, P2 white built-in 10k NTC, P3 black GND. Pack NTC drives the independent hardware hot/cold charge-inhibit comparators directly. Exact R-T curve remains a receiving-inspection and EVT requirement; no user wiring."
+R12,100k 1%,Resistor_SMD:R_0402_1005Metric,"YAGEO RC0402FR-07100KL; 100k 1%, +/-100ppm/C. Pulls U3 CE high from VBUS_LIMITED to inhibit charging when Q4 is off; no Q2 in this path."
+C15,10u 10V effective >=1u,Capacitor_SMD:C_0603_1608Metric,SYS cap per TI; DC-bias capacitance must be qualified.
+U4,TPS7A0233PDBVR,Package_TO_SOT_SMD:SOT-23-5,3.3V main rail: 48-pin MCU has no separate USB supply; dropout/capacity measurement required.
+C16,1u,Capacitor_SMD:C_0402_1005Metric,
+U8,IM69D130V01,Pendant:IM69D130_JLC_SMD_trial,"Direct 3.3V PDM, bottom port; no AAD. 0.768MHz/decimation48 candidate for 16kHz; acoustic validation required."
+R21,22R tentative,Resistor_SMD:R_0402_1005Metric,
+C22,100n,Capacitor_SMD:C_0402_1005Metric,
+U10,TPS22917DBVT,Package_TO_SOT_SMD:SOT-23-6,SD power switch; CT open; QOD tied to SD_V3; power-off sequence must tristate ALL SD signals
+R22,100k,Resistor_SMD:R_0402_1005Metric,
+C25,1u,Capacitor_SMD:C_0402_1005Metric,
+R23,22R tentative,Resistor_SMD:R_0402_1005Metric,
+R24,47k,Resistor_SMD:R_0402_1005Metric,
+R25,47k,Resistor_SMD:R_0402_1005Metric,
+R28,47k,Resistor_SMD:R_0402_1005Metric,
+C26,100n,Capacitor_SMD:C_0402_1005Metric,
+C27,4.7u effective TBD,Capacitor_SMD:C_0603_1608Metric,
+TP1,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP2,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP3,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP5,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+TP6,TestPoint,TestPoint:TestPoint_Pad_D1.0mm,
+R32,6.8k tentative,Resistor_SMD:R_0402_1005Metric,"LED current target 0.1-0.2mA; verify LED Vf, daylight readability and GPIO limits"
+D6,TJ-S1005SW4TGLC9Y-A5 amber LED,LED_SMD:LED_0402_1005Metric,"Single status/battery indicator; JLC C273600 observed stock 6011 on 2026-10-28; firmware blinks on demand, normally dark."
+C2,100n,Capacitor_SMD:C_0402_1005Metric,
+C3,100n,Capacitor_SMD:C_0402_1005Metric,
+C5,4.7u,Capacitor_SMD:C_0603_1608Metric,
+C6,100n,Capacitor_SMD:C_0402_1005Metric,
+C7,1u,Capacitor_SMD:C_0402_1005Metric,
+R1,0R,Resistor_SMD:R_0402_1005Metric,
+R3,100k,Resistor_SMD:R_0402_1005Metric,
+Q3,DMN63D8L-7,Package_TO_SOT_SMD:SOT-23,"Diodes DMN63D8L-7 selected for engineering prototype VBUS presence detection; pin1 G pin2 S pin3 D. Temperature, detection and solder process qualification pending."
+R13,100k,Resistor_SMD:R_0402_1005Metric,Purchase specification: YAGEO RC0402FR-07100KL; 0402; 1%; +/-100 ppm/C; 0.063 W at 70 C; 50 V working limit. Supplier SKU/price and circuit qualification pending.
+R14,1M,Resistor_SMD:R_0402_1005Metric,Purchase specification: YAGEO RC0402FR-071ML; 0402; 1%; +/-100 ppm/C; 0.063 W at 70 C; 50 V working limit. Supplier SKU/price and circuit qualification pending.
+R15,100k,Resistor_SMD:R_0402_1005Metric,Purchase specification: YAGEO RC0402FR-07100KL; 0402; 1%; +/-100 ppm/C; 0.063 W at 70 C; 50 V working limit. Supplier SKU/price and circuit qualification pending.
+R33,1M 1%,Resistor_SMD:R_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+R34,1M 1%,Resistor_SMD:R_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+C28,10n,Capacitor_SMD:C_0402_1005Metric,"Battery divider 1:2; sample after settling, calibrate with VREFINT; not coulomb counting."
+R35,10k 1%,Resistor_SMD:R_0402_1005Metric,Holds normal TS level when released; no floating TS/TTDM in intended circuit.
+R36,100k 1%,Resistor_SMD:R_0402_1005Metric,"YAGEO RC0402FR-07100KL; 100k 1%, +/-100ppm/C. Reset/high-Z gate pulldown; no charging permission."
+R37,100k 1%,Resistor_SMD:R_0402_1005Metric,Reduce thermistor excitation; 5.25V and99k gives52.99uA maximum branch current and69.60uW maximum thermistor power. Only powered from USB. Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R38,100k 1%,Resistor_SMD:R_0402_1005Metric, Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R39,20k 1%,Resistor_SMD:R_0402_1005Metric,Cold threshold candidate. Beta-model sensitivity is not full manufacturer R-T qualification. See temperature-screen.json.
+R40,100k 1%,Resistor_SMD:R_0402_1005Metric, Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R41,7.5k 1%,Resistor_SMD:R_0402_1005Metric,Hot threshold candidate. Reserve margin for contact sensor lag; physical thermal qualification required.
+U12,TLV7042DDFR,Package_TO_SOT_SMD:SOT-23-8,"TLV7042 open-drain wired-AND temperature permission. Either fault pulls Q4 gate low. Threshold network is retained for NCU18XH103F60RB B3380; electrical tolerance, startup and installed thermal lag require EVT."
+Q4,DMN63D8L-7,Package_TO_SOT_SMD:SOT-23,Diodes DMN63D8L-7 engineering prototype; pulls charger CE low only with permission and both temperature comparators released. Off-current and thermal fault behavior require bench qualification.
+C29,100n 10V,Capacitor_SMD:C_0402_1005Metric,Place adjacent to U12 supply pins. Shared MCU rail for USB-independent temperature guard; BOR4 and startup timing qualification required.
+R42,PTFR0402B24K0P9 24k 0.1%,Resistor_SMD:R_0402_1005Metric,BQ25185 Rev.B Table 6-1: 24k selects 4.2V and ILIM100. PTFR0402B24K0P9 / JLC C5382586 observed stock 22321 on 2026-10-28.
+C30,50p 50V C0G,Capacitor_SMD:C_0402_1005Metric,BQ25185 SLUSF65B6.1.1.4 low-current <50mA recommendation; final transient behavior requires hardware test.
+R43,4.7k 1%,Resistor_SMD:R_0402_1005Metric,"YAGEO RC0402FR-074K7L; 4.7k 1%, +/-100ppm/C, 0.063W at70C. Lowered from10k to improve Q4 gate drive; comparator fault clamp load screen0.724mA, not measured."
+U11,CSNP32GCR01-BOW candidate,Pendant:CSNP32GCR01_LGA8,"SPI managed storage comparison; supply, auxiliary land and peak energy not qualified."
+R51,0R 1%,Resistor_SMD:R_0402_1005Metric,Standard 0402 zero-ohm production link replacing specialty USB limiter; JLC basic/passive candidate.

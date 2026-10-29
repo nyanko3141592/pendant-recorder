@@ -1,0 +1,12 @@
+(footprint "TPS22916_YFP4" (version 20240108) (generator pcbnew) (layer "F.Cu")
+ (attr smd)
+ (fp_text reference "REF**" (at 0 -1.105) (layer "F.SilkS") (effects (font (size .6 .6) (thickness .1))))
+ (fp_text value "TPS22916_YFP4" (at 0 1.105) (layer "F.Fab") (effects (font (size .6 .6) (thickness .1))))
+ (fp_rect (start -0.405 -0.405) (end 0.405 0.405) (stroke (width .1) (type default)) (fill none) (layer "F.Fab"))
+ (fp_rect (start -0.655 -0.655) (end 0.655 0.655) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+(pad "A1" smd circle (at -0.2 -0.2) (size 0.23 0.23) (layers "F.Cu" "F.Paste" "F.Mask"))
+(pad "A2" smd circle (at 0.2 -0.2) (size 0.23 0.23) (layers "F.Cu" "F.Paste" "F.Mask"))
+(pad "B1" smd circle (at -0.2 0.2) (size 0.23 0.23) (layers "F.Cu" "F.Paste" "F.Mask"))
+(pad "B2" smd circle (at 0.2 0.2) (size 0.23 0.23) (layers "F.Cu" "F.Paste" "F.Mask"))
+
+)

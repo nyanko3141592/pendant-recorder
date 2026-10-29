@@ -1,0 +1,244 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T01:28:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "local-repair.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 2.7743 mm )",
+                    "pos": {
+                        "x": 17.0743,
+                        "y": 7.33
+                    },
+                    "uuid": "c6cb826c-ec54-48d4-9722-bdfc46bb62c1"
+                },
+                {
+                    "description": "パッド A1 [/SD_V3] - U10 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.23,
+                        "y": 13.38
+                    },
+                    "uuid": "34d6c143-b602-4afd-b7a0-be272e8921df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHG_ALLOW] - R43 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.245,
+                        "y": 14.215
+                    },
+                    "uuid": "2821c9db-e500-46fe-b02c-efd866e6e67d"
+                },
+                {
+                    "description": "パッド 20 [/CHG_ALLOW] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 4.4675
+                    },
+                    "uuid": "aebc0b89-873f-4cbd-90d4-5b548b908f96"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/BAT_ADC] - R34 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.945,
+                        "y": 5.495
+                    },
+                    "uuid": "e6a3862e-861a-4090-af3d-4b92e3749da0"
+                },
+                {
+                    "description": "配線 [/BAT_ADC] ( In2.Cu 上、長さ: 4.5384 mm )",
+                    "pos": {
+                        "x": 10.2985,
+                        "y": 8.6931
+                    },
+                    "uuid": "ec03896e-3553-4612-8a8d-85891755e397"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.9594 mm )",
+                    "pos": {
+                        "x": 17.0168,
+                        "y": 12.6223
+                    },
+                    "uuid": "6070d5ad-bdaf-4b70-a9ce-d7dffbedec72"
+                },
+                {
+                    "description": "パッド 40 [/PDM_DATA] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.405,
+                        "y": 11.3425
+                    },
+                    "uuid": "5a0b78b0-1752-4061-a1b1-2cd04306db2a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( B.Cu 上、長さ: 0.2500 mm )",
+                    "pos": {
+                        "x": 5.4519,
+                        "y": 18.5669
+                    },
+                    "uuid": "69dc2247-c5a6-4f86-94dd-74c501708466"
+                },
+                {
+                    "description": "パッド 37 [/SWCLK] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "f048dcc7-b4c3-464d-a0a0-7a3c29384f12"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/CHG_INHIBIT_GATE] - Q4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.8925,
+                        "y": 15.975
+                    },
+                    "uuid": "39e1da35-765b-4190-836c-3f6d4bc685d2"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 2.3345 mm )",
+                    "pos": {
+                        "x": 0.943,
+                        "y": 10.6625
+                    },
+                    "uuid": "e6170b16-c7cc-4431-b07f-d8dc2e740723"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.4145 mm )",
+                    "pos": {
+                        "x": 2.115,
+                        "y": 16.215
+                    },
+                    "uuid": "e6837234-e465-4e38-ba09-4483c6075328"
+                },
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 9.275
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/CHG_ALLOW] ( B.Cu 上、長さ: 0.0950 mm )",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 3.7492
+                    },
+                    "uuid": "bb13d1d4-0605-4283-a50c-3edddddf8cec"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.9594 mm )",
+                    "pos": {
+                        "x": 17.0168,
+                        "y": 12.6223
+                    },
+                    "uuid": "6070d5ad-bdaf-4b70-a9ce-d7dffbedec72"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( B.Cu 上、長さ: 0.2500 mm )",
+                    "pos": {
+                        "x": 5.4519,
+                        "y": 18.5669
+                    },
+                    "uuid": "69dc2247-c5a6-4f86-94dd-74c501708466"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

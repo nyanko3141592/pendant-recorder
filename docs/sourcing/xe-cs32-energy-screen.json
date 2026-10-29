@@ -1,0 +1,85 @@
+{
+  "status": "CONDITIONAL_EXACT_PART_SCREEN_NOT_16H_PROOF",
+  "part": "CSNP32GCR01-BOW",
+  "source_pdf_page": 6,
+  "printed_page": 5,
+  "published_values": {
+    "operation_typical_mA": 15,
+    "operation_max_mA": 25,
+    "operation_condition": "3.3V,50MHz, read/write; no separate SPI4MHz/startup guarantee stated",
+    "standby_typical_mA": 0.15,
+    "standby_max_mA": 0.2,
+    "standby_condition": "3.3V,clock stopped"
+  },
+  "hypothesis": "Borrow the published maxima as active/idle states at SPI4MHz for screening only; transfer to actual operating conditions is unproven",
+  "ordinary_recording_indicator_mA": 0.0,
+  "adopted_4p4mA_target": {
+    "storage_average_budget_mA": 1.49927519379845,
+    "wire_only_pass_under_assumed_currents": true
+  },
+  "rows": [
+    {
+      "usable_capacity_fraction_assumed": 0.5,
+      "storage_average_budget_mA": 0.5367751937984497,
+      "idle_alone_exceeds_budget": false,
+      "maximum_active_ms_per_5s": 67.89822455613906,
+      "payload_only_ms": 82.944,
+      "remaining_ms_for_commands_metadata_busy_and_gaps": -15.045775443860947,
+      "wire_only_pass_under_assumed_currents": false
+    },
+    {
+      "usable_capacity_fraction_assumed": 0.6,
+      "storage_average_budget_mA": 1.2242751937984497,
+      "idle_alone_exceeds_budget": false,
+      "maximum_active_ms_per_5s": 206.507095523881,
+      "payload_only_ms": 82.944,
+      "remaining_ms_for_commands_metadata_busy_and_gaps": 123.56309552388099,
+      "wire_only_pass_under_assumed_currents": true
+    },
+    {
+      "usable_capacity_fraction_assumed": 0.7,
+      "storage_average_budget_mA": 1.9117751937984497,
+      "idle_alone_exceeds_budget": false,
+      "maximum_active_ms_per_5s": 345.1159664916229,
+      "payload_only_ms": 82.944,
+      "remaining_ms_for_commands_metadata_busy_and_gaps": 262.17196649162287,
+      "wire_only_pass_under_assumed_currents": true
+    },
+    {
+      "usable_capacity_fraction_assumed": 0.8,
+      "storage_average_budget_mA": 2.5992751937984497,
+      "idle_alone_exceeds_budget": false,
+      "maximum_active_ms_per_5s": 483.7248374593648,
+      "payload_only_ms": 82.944,
+      "remaining_ms_for_commands_metadata_busy_and_gaps": 400.78083745936476,
+      "wire_only_pass_under_assumed_currents": true
+    },
+    {
+      "usable_capacity_fraction_assumed": 0.9,
+      "storage_average_budget_mA": 3.2867751937984497,
+      "idle_alone_exceeds_budget": false,
+      "maximum_active_ms_per_5s": 622.3337084271067,
+      "payload_only_ms": 82.944,
+      "remaining_ms_for_commands_metadata_busy_and_gaps": 539.3897084271067,
+      "wire_only_pass_under_assumed_currents": true
+    }
+  ],
+  "payload_only_lower_bound_under_hypothesis": {
+    "storage_average_mA": 0.61140224,
+    "whole_system_average_mA": 3.51212704620155,
+    "required_usable_mAh_for_16h": 56.1940327392248,
+    "fraction_of_110mAh": 0.5108548430838619
+  },
+  "limits": [
+    "No commands, metadata, internal busy, recovery, startup or final commit energy included in the payload-only lower bound",
+    "Nonstorage allocation is unmeasured; ordinary recording indicator is disabled rather than continuously reserved",
+    "Actual 4.1V nominal on-board charge regulation, charger termination and the loaded recording stop do not establish any usable-capacity fraction without measurement",
+    "Read/write current guarantees at full voltage and temperature range and SPI mode remain unverified",
+    "Any alternate storage part must fit the same 4.4mA whole-device target and 110mA complete-pack peak limit; capacity or pin compatibility alone is insufficient"
+  ],
+  "source_sha256": {
+    "hardware/xe-minimal/recording-current-budget.json": "1a97988fb333291125ab20e0be9711a384ec8ad64fbbe1e54e567fbde07ebb10",
+    "docs/sourcing/xe-nonstorage-current-ledger.json": "ecdb7a2e025f4596f88da58ad0476262c843164125d5165114824d666c2ea1a3",
+    "hardware/mini-rect-v12/reference/csnp32gcr01-bow.pdf": "966792b6c65fd066decbb1d7e058a68d2896b4d50a6bcf6bf45722a709f25df0"
+  }
+}

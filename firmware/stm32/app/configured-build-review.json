@@ -1,0 +1,36 @@
+{
+  "status": "CONFIGURED_APP_ARM_BUILD_PASS_NOT_FOR_FLASH",
+  "test_only_usb_ids": [
+    1,
+    2
+  ],
+  "cutoff_test_only_mv": 3600,
+  "public_recipient_present_in_binary": true,
+  "artifacts": {
+    "candidate-NOT-FOR-FLASH.elf": {
+      "path": "/var/folders/x_/43y172t97j3_qhb7fxxjw11w0000gn/T/pendant-configured-app-o81etjth/build-retry/candidate-NOT-FOR-FLASH.elf",
+      "sha256": "9ba8b05a9b3bd184e82c253363d250a45610b66c6c999af02e42b2df49d59ab4"
+    },
+    "application-UNQUALIFIED.bin": {
+      "path": "/var/folders/x_/43y172t97j3_qhb7fxxjw11w0000gn/T/pendant-configured-app-o81etjth/build-retry/application-UNQUALIFIED.bin",
+      "sha256": "0f9c1bf6c7725cc864a33ac59a0fe1ce324d8455b239e82baa3084e9aef921b3"
+    },
+    "candidate.map": {
+      "path": "/var/folders/x_/43y172t97j3_qhb7fxxjw11w0000gn/T/pendant-configured-app-o81etjth/build-retry/candidate.map",
+      "sha256": "dd801174ef8b3bdc64fca39e82b77b58559f2b2190ef4b16a72ddad25661593a"
+    }
+  },
+  "source_sha256": {
+    "firmware/stm32/app/build_configured.sh": "81e3ca50771c22ad8a99d28df2cc5a64a9e5c63e52d75d182867b009941c20cd",
+    "firmware/stm32/app/build_requirements.h": "efd6ce8e2427ff6b5010faa664ef8ea6ca388f1b763b16c594ae4a773c1c9ce2",
+    "firmware/stm32/linkcheck/build.sh": "26af9d92e16cceca8ed02dcedbd6a5b1305fe074eedc7744d7150544fe9a1f8e",
+    "firmware/stm32/app/main.c": "46190692b3f27a4e7d39b308f2d80842a610ec830d2abbcdd64cc35f98e7cd91",
+    "host/prepare_factory_config.py": "b8eb2e42637bc3823a7eef9a25b7078558bfd8ed4912589361211f785c0f0bbd"
+  },
+  "limitations": [
+    "USB IDs1:2 are disposable test values, not allocated identifiers",
+    "Private fixture key discarded; this build is not a usable customer image",
+    "No flash or hardware test performed",
+    "Battery cutoff and runtime still unqualified"
+  ]
+}

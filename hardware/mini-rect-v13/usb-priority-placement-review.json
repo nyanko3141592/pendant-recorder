@@ -1,0 +1,92 @@
+{
+  "status": "PLACEMENT_CANDIDATE_NOT_ROUTED",
+  "comparison": [
+    {
+      "board": "usb-ground-return.kicad_pcb",
+      "pairs": [
+        {
+          "ref": "U2",
+          "pin": "1",
+          "target": "J1",
+          "target_pin": "A6",
+          "net_match": true,
+          "pad_distance_mm": 1.022,
+          "same_side": false
+        },
+        {
+          "ref": "U2",
+          "pin": "3",
+          "target": "J1",
+          "target_pin": "A7",
+          "net_match": true,
+          "pad_distance_mm": 1.407,
+          "same_side": false
+        },
+        {
+          "ref": "C15",
+          "pin": "1",
+          "target": "U4",
+          "target_pin": "1",
+          "net_match": true,
+          "pad_distance_mm": 0.07,
+          "same_side": false
+        },
+        {
+          "ref": "C16",
+          "pin": "1",
+          "target": "U4",
+          "target_pin": "5",
+          "net_match": true,
+          "pad_distance_mm": 3.448,
+          "same_side": true
+        }
+      ]
+    },
+    {
+      "board": "usb-priority-packing-candidate.kicad_pcb",
+      "pairs": [
+        {
+          "ref": "U2",
+          "pin": "1",
+          "target": "J1",
+          "target_pin": "A6",
+          "net_match": true,
+          "pad_distance_mm": 5.906,
+          "same_side": true
+        },
+        {
+          "ref": "U2",
+          "pin": "3",
+          "target": "J1",
+          "target_pin": "A7",
+          "net_match": true,
+          "pad_distance_mm": 6.392,
+          "same_side": true
+        },
+        {
+          "ref": "C15",
+          "pin": "1",
+          "target": "U4",
+          "target_pin": "1",
+          "net_match": true,
+          "pad_distance_mm": 1.806,
+          "same_side": true
+        },
+        {
+          "ref": "C16",
+          "pin": "1",
+          "target": "U4",
+          "target_pin": "5",
+          "net_match": true,
+          "pad_distance_mm": 1.494,
+          "same_side": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Straight-line geometry is not route length or loop impedance",
+    "USB pair must be routed first against a selected stackup/reference",
+    "Power and enclosure/access review still required"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "status": "USB_ISLAND_BOUNDARY_DIAGNOSTIC_NOT_ADOPTED",
+  "clean_candidate_preserved": "ground-islands-centered.kicad_pcb",
+  "swdio_via_shift": {
+    "old_xy_mm": [
+      21.1103,
+      9.3077
+    ],
+    "attached_track_endpoints": 2,
+    "clear_via_sites": [],
+    "candidate_count": 0,
+    "best_xy_mm": [],
+    "release_allowed": false
+  },
+  "removing_boundary_USB_missing_mm": {
+    "DP": 1.6783,
+    "DM": 1.6823
+  },
+  "outer_via_pair_search": [
+    {
+      "net": "/SWDIO",
+      "visited": 21339,
+      "seconds": 2.674921989440918,
+      "found": false,
+      "termination": "exhausted",
+      "new_vias": 0
+    }
+  ],
+  "three_layer_with_temporary_rectangle_search": [
+    {
+      "net": "/SWDIO",
+      "visited": 70583,
+      "seconds": 11.875877141952515,
+      "found": false,
+      "termination": "exhausted",
+      "new_vias": 0
+    }
+  ],
+  "limits": [
+    "Search failure is bounded by grid, fixed copper, via exclusion and endpoint assumptions; not impossibility",
+    "Temporary rectangle is a search constraint, overlaps retained other-net copper, and is not a finished PCB rule",
+    "Disconnected diagnostic boards are not manufacturing candidates"
+  ],
+  "next_action": "Evaluate the other island boundary, CHG_ALLOW, or a local ground-link opening; do not repeat fixed SWDIO searches",
+  "release_allowed": false
+}

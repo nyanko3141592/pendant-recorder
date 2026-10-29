@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-25",
+  "decision": "KEEP_CURRENT_BOARD_PENDING_BETTER_QUALIFIED_ALTERNATIVE",
+  "required_36h_bytes": 1131544576,
+  "current": {
+    "mpn": "CSNP16GCR01-AOW",
+    "jlc_5pcs_usd": 216.467,
+    "per_device_usd": 43.293400000000005,
+    "evidence": "jlc-v12-bom-state.txt"
+  },
+  "alternatives": [
+    {
+      "mpn": "CSNP16GCR01-AOW",
+      "route": "LCSC direct",
+      "indexed_price_usd": 43.4297,
+      "source": "https://www.lcsc.com/de/product-detail/nand-flash_cs-semiconductor-csnp16gcr01-aow_C7527488.html",
+      "assessment": "No demonstrated savings; old6.6132USD indexed page is1.2years old, not usable as current quote."
+    },
+    {
+      "mpn": "MKDV16GCL-STP",
+      "lcsc": "C19192127",
+      "package_mm": [
+        6.6,
+        8
+      ],
+      "indexed_price_usd": 45.5096,
+      "indexed_promotional_price_usd": 38.6832,
+      "actual_capacity_MB_datasheet": 1850,
+      "source": "https://www.lcsc.com/product-detail/C19192127.html",
+      "assessment": "Potential saving only~4.61USD/unit at promotional indexed price; wider package, pinout/power/footprint/JLC acceptance unqualified. No substitution justified yet."
+    },
+    {
+      "mpn": "MKDV32GCL-STPA",
+      "lcsc": "C47118466",
+      "package_mm": [
+        6.6,
+        8
+      ],
+      "indexed_promotional_price_usd": 36.9847,
+      "source": "https://www.lcsc.com/brand/1288-11930.html",
+      "assessment": "Potential saving~6.31USD/unit versus live current quote; still expensive; latest revision-specific datasheet and JLC price needed."
+    }
+  ],
+  "price_limitations": [
+    "Alternative prices are search-index snapshots, not live authenticated assembly quotes. Direct page fetch did not expose pricing.",
+    "Exclude freight, consignment/inbound handling, losses and taxes.",
+    "No supplier contacted or order placed."
+  ],
+  "rejected_shortcuts": [
+    "8Gbit/1GB with current IMA profile cannot hold1,131,544,576bytes; do not silently reduce36h requirement.",
+    "Raw NAND is not drop-in SD: needs ECC/bad-block/FTL and power-loss handling.",
+    "eMMC is not SPI-drop-in to current STM32U535CE design."
+  ],
+  "next_options": [
+    "Obtain live alternative quote and revision-specific power/landpattern before modifying board.",
+    "Evaluate microSD socket placement as separate cost-study revision only; preserve23x25x14 baseline, include card insertion/retention and current budget."
+  ],
+  "order_ready": false,
+  "microSD_fit_study": "../../mechanical/microsd-study/fit-result.json",
+  "microSD_fit_conclusion": "DM3D-SF connector+card envelope has no collision-free location in existing layout with U11 removed (1802 candidate placements per face,0.25mm grid/0 or90deg). B side1.1mm battery gap is below1.55mm socket height. Requires full rearrangement; does not prove23x25x14 impossible."
+}

@@ -1,0 +1,49 @@
+{
+  "source_sha256": "d2940a9b7339d1a9f005554630e1c2e19241d668e386f9c9ba650dbb1acc9033",
+  "transition_escape_radius_mm": 0.55,
+  "projection_cost_multiplier": 20,
+  "step_mm": 0.01,
+  "width_mm": 0.127,
+  "bounds_mm": [
+    [
+      9.8,
+      14.0
+    ],
+    [
+      14.0,
+      18.5
+    ]
+  ],
+  "endpoint_blocked": [
+    false,
+    false
+  ],
+  "limitations": [
+    "Conservative pad bounding boxes may reject viable paths",
+    "Single layer and single original segment only",
+    "Grid search is not proof of global impossibility"
+  ],
+  "visited": 16402,
+  "violations": 0,
+  "unconnected": 0,
+  "status": "REJECTED_NO_BOTTOM_REFERENCE_COVERAGE_GAIN",
+  "route_points": 15,
+  "candidate_sha256": "c8e2056719544a37e618e3127a55e55dd1c13d02a63d9b648cfbea79ae7429c9",
+  "comparison": {
+    "B_DP_covered_before_after": [
+      0,
+      0
+    ],
+    "B_DM_covered_before_after": [
+      9,
+      9
+    ],
+    "DP_In2_length_before_mm": 11.4,
+    "DP_In2_length_after_mm": 11.55
+  },
+  "findings": [
+    "Hard projection avoidance had no local path in specified bounds; weighted avoidance found a DRC-clean route.",
+    "DP inner length increased 0.15 mm with no B.Cu reference coverage gain. Do not promote.",
+    "Single-segment relocation is insufficient; surrounding copper/ground-island connectivity needs a broader topology change."
+  ]
+}

@@ -1,0 +1,882 @@
+{
+  "status": "ADAPTIVE_TRANSLATION_DISTANCE_BOUND_NOT_PHYSICAL_ASSEMBLY_QUALIFICATION",
+  "sources_sha256": {
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e",
+    "separator": "df558fab6a1a01fc8ad6445cc63220c5a8875c867a9da3b23d980405c248c5df",
+    "lower": "d6fac154b921596f37d2c8eadf8fa5cc81d2023a1913ca40f4c060cc7d94aeda",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "route_sha256": "7789ce528ea56a9ade9fe5993d8a7ad644ec34f185d12c7f684a68ad1cc147a4",
+  "results": {
+    "sensor": {
+      "lower": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 17,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              4.005,
+              8.0
+            ],
+            "distance_lower_bound_mm": 1.7514445643724565
+          },
+          {
+            "range_mm": [
+              2.0075,
+              4.005
+            ],
+            "distance_lower_bound_mm": 0.04480374594580061
+          },
+          {
+            "range_mm": [
+              1.5081249999999997,
+              2.0075
+            ],
+            "distance_lower_bound_mm": 0.3279410875509502
+          },
+          {
+            "range_mm": [
+              1.2584374999999999,
+              1.5081249999999997
+            ],
+            "distance_lower_bound_mm": 0.11199378207931007
+          },
+          {
+            "range_mm": [
+              1.0087499999999998,
+              1.2584374999999999
+            ],
+            "distance_lower_bound_mm": 0.025156249999518848
+          },
+          {
+            "range_mm": [
+              0.7590624999999999,
+              1.0087499999999998
+            ],
+            "distance_lower_bound_mm": 0.025156249999518904
+          },
+          {
+            "range_mm": [
+              0.5093749999999999,
+              0.7590624999999999
+            ],
+            "distance_lower_bound_mm": 0.025156249999518904
+          },
+          {
+            "range_mm": [
+              0.25968749999999996,
+              0.5093749999999999
+            ],
+            "distance_lower_bound_mm": 0.025156249999518904
+          },
+          {
+            "range_mm": [
+              0.01,
+              0.25968749999999996
+            ],
+            "distance_lower_bound_mm": 0.025156249999518904
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      },
+      "battery": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 1,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              0.01,
+              8.0
+            ],
+            "distance_lower_bound_mm": 0.11000000000000032
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      }
+    },
+    "joints": {
+      "lower": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 27,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              4.005,
+              8.0
+            ],
+            "distance_lower_bound_mm": 1.8777833992242332
+          },
+          {
+            "range_mm": [
+              2.0075,
+              4.005
+            ],
+            "distance_lower_bound_mm": 0.015685427616233927
+          },
+          {
+            "range_mm": [
+              1.5081249999999997,
+              2.0075
+            ],
+            "distance_lower_bound_mm": 0.3170177012785428
+          },
+          {
+            "range_mm": [
+              1.2584374999999999,
+              1.5081249999999997
+            ],
+            "distance_lower_bound_mm": 0.08394326253063189
+          },
+          {
+            "range_mm": [
+              1.1335937499999997,
+              1.2584374999999999
+            ],
+            "distance_lower_bound_mm": 0.037578124999518334
+          },
+          {
+            "range_mm": [
+              1.0087499999999998,
+              1.1335937499999997
+            ],
+            "distance_lower_bound_mm": 0.037578124999518445
+          },
+          {
+            "range_mm": [
+              0.8839062499999999,
+              1.0087499999999998
+            ],
+            "distance_lower_bound_mm": 0.037578124999518445
+          },
+          {
+            "range_mm": [
+              0.7590624999999999,
+              0.8839062499999999
+            ],
+            "distance_lower_bound_mm": 0.03757812499951839
+          },
+          {
+            "range_mm": [
+              0.6342187499999998,
+              0.7590624999999999
+            ],
+            "distance_lower_bound_mm": 0.03757812499951839
+          },
+          {
+            "range_mm": [
+              0.5093749999999999,
+              0.6342187499999998
+            ],
+            "distance_lower_bound_mm": 0.037578124999518445
+          },
+          {
+            "range_mm": [
+              0.38453124999999994,
+              0.5093749999999999
+            ],
+            "distance_lower_bound_mm": 0.03757812499951842
+          },
+          {
+            "range_mm": [
+              0.25968749999999996,
+              0.38453124999999994
+            ],
+            "distance_lower_bound_mm": 0.03757812499951842
+          },
+          {
+            "range_mm": [
+              0.13484374999999998,
+              0.25968749999999996
+            ],
+            "distance_lower_bound_mm": 0.03757812499951842
+          },
+          {
+            "range_mm": [
+              0.01,
+              0.13484374999999998
+            ],
+            "distance_lower_bound_mm": 0.03757812499951841
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      },
+      "battery": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 1,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              0.01,
+              8.0
+            ],
+            "distance_lower_bound_mm": 0.18835345483030608
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      }
+    },
+    "wires": {
+      "lower": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 17,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              4.005,
+              8.0
+            ],
+            "distance_lower_bound_mm": 2.154615966369478
+          },
+          {
+            "range_mm": [
+              2.0075,
+              4.005
+            ],
+            "distance_lower_bound_mm": 0.4300350222903271
+          },
+          {
+            "range_mm": [
+              1.5081249999999997,
+              2.0075
+            ],
+            "distance_lower_bound_mm": 0.13885653378065937
+          },
+          {
+            "range_mm": [
+              1.2584374999999999,
+              1.5081249999999997
+            ],
+            "distance_lower_bound_mm": 0.11954279183897565
+          },
+          {
+            "range_mm": [
+              1.0087499999999998,
+              1.2584374999999999
+            ],
+            "distance_lower_bound_mm": 0.11083775606173521
+          },
+          {
+            "range_mm": [
+              0.7590624999999999,
+              1.0087499999999998
+            ],
+            "distance_lower_bound_mm": 0.11083775606173446
+          },
+          {
+            "range_mm": [
+              0.5093749999999999,
+              0.7590624999999999
+            ],
+            "distance_lower_bound_mm": 0.11083775606173446
+          },
+          {
+            "range_mm": [
+              0.25968749999999996,
+              0.5093749999999999
+            ],
+            "distance_lower_bound_mm": 0.11083775606182639
+          },
+          {
+            "range_mm": [
+              0.01,
+              0.25968749999999996
+            ],
+            "distance_lower_bound_mm": 0.11083775606174484
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      },
+      "battery": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 1,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              0.01,
+              8.0
+            ],
+            "distance_lower_bound_mm": 0.8342421015466019
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      }
+    },
+    "separator": {
+      "lower": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 19,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              4.005,
+              8.0
+            ],
+            "distance_lower_bound_mm": 1.3982777091558858
+          },
+          {
+            "range_mm": [
+              3.0062499999999996,
+              4.005
+            ],
+            "distance_lower_bound_mm": 0.4356820253332141
+          },
+          {
+            "range_mm": [
+              2.506875,
+              3.0062499999999996
+            ],
+            "distance_lower_bound_mm": 0.079932457536327
+          },
+          {
+            "range_mm": [
+              2.2571874999999997,
+              2.506875
+            ],
+            "distance_lower_bound_mm": 0.1325550184052937
+          },
+          {
+            "range_mm": [
+              2.0075,
+              2.2571874999999997
+            ],
+            "distance_lower_bound_mm": 0.07515624999999937
+          },
+          {
+            "range_mm": [
+              1.7578124999999998,
+              2.0075
+            ],
+            "distance_lower_bound_mm": 0.07515624999999926
+          },
+          {
+            "range_mm": [
+              1.5081249999999997,
+              1.7578124999999998
+            ],
+            "distance_lower_bound_mm": 0.07515624999999926
+          },
+          {
+            "range_mm": [
+              1.0087499999999998,
+              1.5081249999999997
+            ],
+            "distance_lower_bound_mm": 0.05031250000000004
+          },
+          {
+            "range_mm": [
+              0.5093749999999999,
+              1.0087499999999998
+            ],
+            "distance_lower_bound_mm": 0.05031250000000004
+          },
+          {
+            "range_mm": [
+              0.01,
+              0.5093749999999999
+            ],
+            "distance_lower_bound_mm": 0.01000000000000012
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      },
+      "battery": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 1,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              0.01,
+              8.0
+            ],
+            "distance_lower_bound_mm": 0.20999999999999996
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      }
+    },
+    "board": {
+      "lower": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 117,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              4.005,
+              8.0
+            ],
+            "distance_lower_bound_mm": 2.0180237827710594
+          },
+          {
+            "range_mm": [
+              2.0075,
+              4.005
+            ],
+            "distance_lower_bound_mm": 0.2877429313836124
+          },
+          {
+            "range_mm": [
+              1.7578124999999998,
+              2.0075
+            ],
+            "distance_lower_bound_mm": 0.03972251526740664
+          },
+          {
+            "range_mm": [
+              1.7266015625,
+              1.7578124999999998
+            ],
+            "distance_lower_bound_mm": 0.017833314674916806
+          },
+          {
+            "range_mm": [
+              1.695390625,
+              1.7266015625
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.6641796875,
+              1.695390625
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.6329687499999999,
+              1.6641796875
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.6017578124999998,
+              1.6329687499999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.5705468749999998,
+              1.6017578124999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.5393359374999998,
+              1.5705468749999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.5081249999999997,
+              1.5393359374999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.4769140624999997,
+              1.5081249999999997
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.4457031249999996,
+              1.4769140624999997
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.4144921874999996,
+              1.4457031249999996
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.3832812499999998,
+              1.4144921874999996
+            ],
+            "distance_lower_bound_mm": 0.009394531250000115
+          },
+          {
+            "range_mm": [
+              1.3520703125,
+              1.3832812499999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000115
+          },
+          {
+            "range_mm": [
+              1.320859375,
+              1.3520703125
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.2896484375,
+              1.320859375
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.2584374999999999,
+              1.2896484375
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.2272265624999998,
+              1.2584374999999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.1960156249999998,
+              1.2272265624999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.1648046874999998,
+              1.1960156249999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.1335937499999997,
+              1.1648046874999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.1023828124999997,
+              1.1335937499999997
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.0711718749999997,
+              1.1023828124999997
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.0399609374999996,
+              1.0711718749999997
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              1.0087499999999998,
+              1.0399609374999996
+            ],
+            "distance_lower_bound_mm": 0.009394531250000115
+          },
+          {
+            "range_mm": [
+              0.9775390624999998,
+              1.0087499999999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.9463281249999999,
+              0.9775390624999998
+            ],
+            "distance_lower_bound_mm": 0.00939453125000006
+          },
+          {
+            "range_mm": [
+              0.9151171874999999,
+              0.9463281249999999
+            ],
+            "distance_lower_bound_mm": 0.00939453125000006
+          },
+          {
+            "range_mm": [
+              0.8839062499999999,
+              0.9151171874999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.8526953124999999,
+              0.8839062499999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.8214843749999998,
+              0.8526953124999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.7902734374999998,
+              0.8214843749999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.7590624999999999,
+              0.7902734374999998
+            ],
+            "distance_lower_bound_mm": 0.00939453125000006
+          },
+          {
+            "range_mm": [
+              0.7278515624999999,
+              0.7590624999999999
+            ],
+            "distance_lower_bound_mm": 0.00939453125000006
+          },
+          {
+            "range_mm": [
+              0.6966406249999999,
+              0.7278515624999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.6654296874999999,
+              0.6966406249999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.6342187499999998,
+              0.6654296874999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.6030078124999998,
+              0.6342187499999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.5717968749999999,
+              0.6030078124999998
+            ],
+            "distance_lower_bound_mm": 0.00939453125000006
+          },
+          {
+            "range_mm": [
+              0.5405859375,
+              0.5717968749999999
+            ],
+            "distance_lower_bound_mm": 0.00939453125000006
+          },
+          {
+            "range_mm": [
+              0.5093749999999999,
+              0.5405859375
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.47816406249999993,
+              0.5093749999999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.44695312499999995,
+              0.47816406249999993
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.4157421874999999,
+              0.44695312499999995
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.38453124999999994,
+              0.4157421874999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.35332031249999996,
+              0.38453124999999994
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.3221093749999999,
+              0.35332031249999996
+            ],
+            "distance_lower_bound_mm": 0.009394531250000004
+          },
+          {
+            "range_mm": [
+              0.29089843749999994,
+              0.3221093749999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.25968749999999996,
+              0.29089843749999994
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.22847656249999998,
+              0.25968749999999996
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.19726562499999997,
+              0.22847656249999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000018
+          },
+          {
+            "range_mm": [
+              0.16605468749999996,
+              0.19726562499999997
+            ],
+            "distance_lower_bound_mm": 0.009394531250000018
+          },
+          {
+            "range_mm": [
+              0.13484374999999998,
+              0.16605468749999996
+            ],
+            "distance_lower_bound_mm": 0.009394531250000032
+          },
+          {
+            "range_mm": [
+              0.10363281249999999,
+              0.13484374999999998
+            ],
+            "distance_lower_bound_mm": 0.009394531250000025
+          },
+          {
+            "range_mm": [
+              0.072421875,
+              0.10363281249999999
+            ],
+            "distance_lower_bound_mm": 0.009394531250000025
+          },
+          {
+            "range_mm": [
+              0.041210937499999996,
+              0.072421875
+            ],
+            "distance_lower_bound_mm": 0.009394531250000022
+          },
+          {
+            "range_mm": [
+              0.01,
+              0.041210937499999996
+            ],
+            "distance_lower_bound_mm": 0.009394531250000025
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      },
+      "battery": {
+        "range_mm": [
+          0.01,
+          8.0
+        ],
+        "evaluations": 1,
+        "certified_intervals": [
+          {
+            "range_mm": [
+              0.01,
+              8.0
+            ],
+            "distance_lower_bound_mm": 0.71
+          }
+        ],
+        "unresolved_intervals": [],
+        "fully_bounded_clear": true
+      }
+    }
+  },
+  "method": "Pure translation distance is 1-Lipschitz; midpoint distance minus half interval span bounds all positions. CAD distance numerical margin 0.00001 mm is an engineering assumption, not a certified kernel error bound.",
+  "limits": [
+    "Final lift interval 0 to 0.01 mm excluded because intentional bearing contact defeats a positive-distance certificate.",
+    "No material tolerance, motion rotation, wire flex, battery harness, adhesive or cap.",
+    "Parts are assumed held rigidly in their design positions; fixture and preassembly unresolved.",
+    "Shape-distance bounds are only as reliable as source geometry and numerical kernel."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "status": "OPEN_MANUFACTURING_REVIEW_REQUIRED",
+  "board_sha256": "337d9c5c6121f58c9a47e0f14d5fa4b0e18af633092b8fa4dbd73ebde4142c34",
+  "method": "KiCad effective copper pad shape collision vs via radius and additional0.025mm; F/B layers",
+  "flagged_vias": 2,
+  "vias": [
+    {
+      "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de",
+      "xy_mm": [
+        20.7,
+        10.6
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "36",
+          "net": "/V3V3",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e",
+      "xy_mm": [
+        18.1,
+        11.5
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "40",
+          "net": "/PDM_DATA",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Solder mask openings, actual drill registration and fabrication capability not qualified.",
+    "Resolve by geometry changes or qualified filled/capped process before release."
+  ],
+  "process": "Both flagged vias explicitly filled/capped in PCB; physical geometry unchanged; manufacturing qualification pending."
+}

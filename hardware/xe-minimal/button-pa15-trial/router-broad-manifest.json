@@ -1,0 +1,48 @@
+{
+  "source": "pa15-router-screen-candidate",
+  "source_sha256": "9df2e16a2db40a75864dce66e8138a7a0f222ad93ef6ad42cf74692348a7490e",
+  "purpose": "Isolated routing experiment; no adoption. Existing wires preserved by exporter; verify fix types and rule translation before routing.",
+  "movable_existing_nets": [
+    "/BUTTON_N",
+    "/CHG_N",
+    "/NRST",
+    "/PDM_CLK",
+    "/PDM_CLK_MCU",
+    "/PDM_DATA",
+    "/SD_CLK",
+    "/SD_CS_N",
+    "/SD_EN",
+    "/SD_MISO",
+    "/SD_MOSI",
+    "/STATUS_LED",
+    "/STATUS_LED_A",
+    "/SWCLK",
+    "/SWDIO",
+    "/USB_HIGH_BUDGET",
+    "/USB_HIGH_BUDGET_DRAIN",
+    "/USB_ILIM_SET",
+    "/USB_INPUT_ON",
+    "/USB_LATCH_CLEAR_N",
+    "/USB_LATCH_CLOCK",
+    "/USB_RESUME_PULSE",
+    "/USB_SUSPEND_PULSE",
+    "/VBUS_GATE",
+    "/VBUS_N"
+  ],
+  "fixed_existing_nets": "All others, including USB data pair, power, RTC and temperature guard",
+  "routing_width_mm": 0.15,
+  "via_diameter_drill_mm": [
+    0.35,
+    0.15
+  ],
+  "reserved_plane_layers": [
+    "In1.Cu",
+    "In3.Cu"
+  ],
+  "pending": [
+    "Inspect DSN defaults and fixed critical wires",
+    "Run local Freerouting",
+    "Import into copy and full KiCad DRC/parity",
+    "Check electrical routing and manufacturing constraints"
+  ]
+}

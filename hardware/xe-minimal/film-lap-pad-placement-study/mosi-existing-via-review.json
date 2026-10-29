@@ -1,0 +1,31 @@
+{
+  "status": "BYPASS_CANDIDATE_NOT_MANUFACTURING_RELEASE",
+  "source_sha256": "bef9fa550c51d7f5e13139113f293ec46069cae2b456eab5920bffc674f740d6",
+  "search_radius_mm": 3.0,
+  "via_search_stages": [
+    {
+      "start_mm": [
+        16.1025,
+        4.33
+      ],
+      "counts": {
+        "within_edge_bounds": 3721,
+        "bottom_trace_clear": 156,
+        "all_layer_via_clear": 0,
+        "outside_pads": 0
+      }
+    }
+  ],
+  "via_candidates_at_ends": [
+    0,
+    1
+  ],
+  "straight_inner_candidates": 0,
+  "accepted_geometrically": null,
+  "attempts": [],
+  "limits": [
+    "Acceptance excludes documented footprint-library/courtyard/silk issues, which still require repair.",
+    "New through vias are standard design hypotheses; no supplier approval or SI qualification.",
+    "No schematic/BOM substitution, real solder process, harness or runtime qualification."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "version": "XE-PROTOTYPE-V1-CASE-PEBBLE-V3-27P5",
+  "status": "27P5MM_PCB_SYNCHRONIZED_CAD_CANDIDATE_NOT_PHYSICALLY_QUALIFIED",
+  "complete_bbox_mm": [
+    29.90807241697691,
+    35.65406461498197,
+    12.979529129963932
+  ],
+  "case_body_bbox_mm": [
+    -1.1,
+    28.8,
+    -28.300000100000002,
+    1.3000001,
+    -7.720000100000001,
+    5.251400200000002
+  ],
+  "x_stretch_mm": {
+    "pcb_width_delta": 3.5,
+    "assembly_clearance_added": 0.2,
+    "inserted": 3.7,
+    "split": 12.0,
+    "usb_datum_shift": 0.0
+  },
+  "rounding_mm": {
+    "plan_vertical_edges": 3.0,
+    "top_bottom_perimeter_edges": 1.5
+  },
+  "lanyard": {
+    "center_x_mm": 13.85,
+    "outer_mm": [
+      4.8,
+      7.0,
+      6.0
+    ],
+    "hole_diameter_mm": 3.2,
+    "hole_axis": "X",
+    "construction": "integral with lower shell; primary path does not cross glue seam"
+  },
+  "usb": {
+    "center_x_mm": 12.0,
+    "connector_model_front_y_mm": -26.17,
+    "recessed_bezel_y_mm": -26.45,
+    "outer_bay_mm": [
+      14.0,
+      7.5
+    ],
+    "inner_throat_mm": [
+      9.4,
+      3.6
+    ]
+  },
+  "checks": {
+    "lower_to_internals_mm3": 0.007206949623769327,
+    "upper_to_internals_mm3": 0.006421392114778643,
+    "lug_to_internals_mm3": 0.0,
+    "pcb_right_clearance_to_shell_outer_mm": 1.3000000000000007,
+    "usb_center_x_mm": 12.0,
+    "right_bottom_component_relief_mm": [
+      1.62,
+      0.62,
+      0.54
+    ]
+  },
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v3-lower.step": "f405315b24d8c79cf18203c05b8c26a9b79cf0e245b657e3d4dcc07e5ed32c77",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v3-upper.step": "326f6ce0a71b5c7583c0bab2faec2eb476886c8976f6e01f2faff04859589bae",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v3-lower.stl": "a984338e1a790c2d202196b92d0764c129a8b10204b2e3c08b1775fc4d6e7762",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v3-upper.stl": "0f680e044deeea39e589835737a8ea776be1f414a2bd1af8c871704fee5aac47",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v3-assembly.step": "974449af2c8946d9ea9118a28a37f848fded11d08992aef95a3adc20fc06a9d1"
+  },
+  "sources_sha256": {
+    "mechanical/xe-minimal/rounded-glue-reinforced-lower-study.step": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+    "mechanical/xe-minimal/rounded-glue-reinforced-upper-study.step": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7",
+    "mechanical/xe-minimal/prototype-v1/integrated-assembly-v1.step": "34712210b555b29d3da503da90215fa3bfdd7a5bd4cf3e0535d1d04e8848ba6f"
+  },
+  "limits": [
+    "CAD intersections are nominal and do not prove printed tolerances, pouch swelling, harness motion or acoustic performance.",
+    "The transverse lug still requires print-orientation-specific proof-load, wear and fatigue testing.",
+    "Centering the lug on the enclosure is a static design choice; worn orientation remains unverified.",
+    "The 14 mm USB bay is a cable-overmold allowance, not a universal USB-C guarantee."
+  ]
+}

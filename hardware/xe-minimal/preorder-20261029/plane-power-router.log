@@ -1,0 +1,84 @@
+2026-10-29 11:47:16.200 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+WARNING: Final field userProfileSettings in class app.freerouting.settings.GlobalSettings has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @78186a70 (file:/private/tmp/pendant-router/freerouting-2.5.0.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+2026-10-29 11:47:16.458 INFO   Hardware: 8 CPU cores, 499 CPU score, 4096 MB RAM
+2026-10-29 11:47:16.459 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:47:16.460 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 11:47:17.612 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:47:17.878 INFO   [4ED844\0EA256] Loading board file 'plane-power-unrouted.dsn'...
+2026-10-29 11:47:17.974 WARN   Power-plane validation failed:
+- Dedicated power layer 'In1.Cu' contains 10 signal wire(s)/trace(s).
+- Dedicated power layer 'In2.Cu' contains 2 signal wire(s)/trace(s).
+
+Proper Definition and Best Practices for Power Planes:
+1. What Belongs on a Power Plane:
+   - Solid Copper Pours: A single, uninterrupted sheet of copper assigned to one voltage (e.g., +3.3V).
+   - Split Planes: Multiple distinct voltage zones divided by thin isolation gaps (puzzle pieces).
+   - Vias and Anti-Pads: Plated holes passing through the board, surrounded by circular voids (anti-pads) to prevent shorting.
+   - Thermal Reliefs: Spoked connections for vias or pins that connect to the plane, facilitating soldering.
+2. Why Signal Wires/Traces are Banned:
+   - Destroyed Return Paths: High-speed signals on adjacent layers couple to the solid plane below/above as return paths. Crossing a trace gap detours return currents, causing severe EMI and signal integrity issues.
+   - Compromised Power Delivery: Power planes should provide the lowest impedance path. Routing traces chops up the copper, creating bottleneck restrictions and voltage drops.
+
+2026-10-29 11:47:17.986 INFO   [4ED844\0EA256] Job '4ED844\0EA256' started at 2026-10-29T02:47:17.986163Z.
+2026-10-29 11:47:18.186 INFO   [4ED844\0EA256] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=7.
+2026-10-29 11:47:18.338 INFO   [4ED844\0EA256] Fanout stage started on board 'a8cb50eacecdb6a7417c0583ceae5f42' with 156 of 255 SMD pins needing fanout (96 already connected, 3 netless).
+2026-10-29 11:47:20.166 INFO   [4ED844\0EA256] Fanout pass #1 on board '879bac87c8e7cccd25d6f975396b368d' completed in 1.75 seconds with 134 SMD pins fanouted, 14 not routed, 0 insert errors, +59 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 11:47:21.369 INFO   [4ED844\0EA256] Fanout pass #2 on board '8baa36fc529b584b035b819eabb67772' completed in 1.19 seconds with 58 SMD pins fanouted, 10 not routed, 0 insert errors, +8 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 11:47:22.100 INFO   [4ED844\0EA256] Fanout pass #3 on board '24c066819015a58a785c80eb663fe920' completed in 0.72 seconds with 35 SMD pins fanouted, 1 not routed, 0 insert errors, +8 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 11:47:22.656 INFO   [4ED844\0EA256] Fanout pass #4 on board 'f273951ff2b9f8a4bebb903aefba54e0' completed in 0.55 seconds with 21 SMD pins fanouted, 0 not routed, 0 insert errors, +4 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-29 11:47:23.071 INFO   [4ED844\0EA256] Fanout pass #5 on board 'e71a299a30d8c07cdf48b2a5c7c5e1ac' completed in 0.40 seconds with 16 SMD pins fanouted, 0 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=500).
+2026-10-29 11:47:23.496 INFO   [4ED844\0EA256] Fanout pass #6 on board 'ab7d182b89b83e31c9b3d720495fe771' completed in 0.42 seconds with 17 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=600).
+2026-10-29 11:47:23.891 INFO   [4ED844\0EA256] Fanout pass #7 on board '0cbdbaa814747b7221bc135e114ae647' completed in 0.39 seconds with 14 SMD pins fanouted, 0 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=700).
+2026-10-29 11:47:24.266 INFO   [4ED844\0EA256] Fanout pass #8 on board '25727062a70ad752c03afedbce59e916' completed in 0.36 seconds with 12 SMD pins fanouted, 0 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=800).
+2026-10-29 11:47:24.623 INFO   [4ED844\0EA256] Fanout pass #9 on board 'bb30e08521e452c0b8fc31ce13689afa' completed in 0.35 seconds with 11 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=900).
+2026-10-29 11:47:24.980 INFO   [4ED844\0EA256] Fanout pass #10 on board 'c2f05724f1fde54b3f5a4cde397fd9e4' completed in 0.35 seconds with 11 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1000).
+2026-10-29 11:47:25.333 INFO   [4ED844\0EA256] Fanout pass #11 on board '54f2ec628e1ea464845793572eddd842' completed in 0.34 seconds with 11 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1100).
+2026-10-29 11:47:25.691 INFO   [4ED844\0EA256] Fanout pass #12 on board 'a47843922693121b569ffa71b8214926' completed in 0.35 seconds with 11 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=1200).
+2026-10-29 11:47:25.692 INFO   Fanout stopped after 12 passes: no progress for 3 consecutive passes.
+2026-10-29 11:47:25.754 INFO   [4ED844\0EA256] Fanout stage completed: started with 252 total SMD pins, completed in 7.35 seconds, escaped pins: 210/252 (83.3%), using 7.37 total CPU seconds, 7.26 GB total allocated, and 185.9 MB peak heap usage.
+2026-10-29 11:47:25.967 INFO   [4ED844\0EA256] Auto-routing stage started on board 'a47843922693121b569ffa71b8214926' with baseline score 557.93 for 62 unrouted items.
+2026-10-29 11:47:33.016 INFO   [4ED844\0EA256] Auto-routing pass #1 on board 'a47843922693121b569ffa71b8214926' was completed in 6.96 seconds with score 700.53 (42 unrouted and 0 violations), using 13.72 CPU seconds and the job allocated 15.33 GB of memory so far.
+2026-10-29 11:47:37.407 INFO   [4ED844\0EA256] Auto-routing pass #2 on board '67ae7fd8276f8248b7a956745d335e1c' was completed in 4.31 seconds with score 764.71 (33 unrouted and 0 violations), using 18.68 CPU seconds and the job allocated 21.70 GB of memory so far.
+2026-10-29 11:47:43.184 INFO   [4ED844\0EA256] Auto-routing pass #3 on board '27ae1fb18a6b02a7defc64f14a09335d' was completed in 5.70 seconds with score 764.71 (33 unrouted and 0 violations), using 24.56 CPU seconds and the job allocated 29.10 GB of memory so far.
+2026-10-29 11:47:47.782 INFO   [4ED844\0EA256] Auto-routing pass #4 on board '445aa9bca25b57603cfc92a2b4b653a7' was completed in 4.52 seconds with score 821.75 (25 unrouted and 0 violations), using 28.54 CPU seconds and the job allocated 34.12 GB of memory so far.
+2026-10-29 11:47:54.072 INFO   [4ED844\0EA256] Auto-routing pass #5 on board '56f5a466fb2181c8d5b6fdac9cd1fe33' was completed in 6.20 seconds with score 850.27 (21 unrouted and 0 violations), using 34.49 CPU seconds and the job allocated 41.98 GB of memory so far.
+2026-10-29 11:47:59.104 INFO   [4ED844\0EA256] Auto-routing pass #6 on board 'ed6bc74156122b79f2eb60b654208c0a' was completed in 4.94 seconds with score 885.92 (16 unrouted and 0 violations), using 39.44 CPU seconds and the job allocated 48.66 GB of memory so far.
+2026-10-29 11:48:03.790 INFO   [4ED844\0EA256] Auto-routing pass #7 on board '85841cd51fdf6c9b6e2b9cf7ecb39916' was completed in 4.59 seconds with score 850.27 (21 unrouted and 0 violations), using 44.41 CPU seconds and the job allocated 55.17 GB of memory so far.
+2026-10-29 11:48:08.072 INFO   [4ED844\0EA256] Auto-routing pass #8 on board '85841cd51fdf6c9b6e2b9cf7ecb39916' was completed in 0.00 seconds with score 885.92 (16 unrouted and 0 violations), using 48.40 CPU seconds and the job allocated 60.42 GB of memory so far.
+2026-10-29 11:48:12.642 INFO   [4ED844\0EA256] Auto-routing pass #9 on board '85841cd51fdf6c9b6e2b9cf7ecb39916' was completed in 4.56 seconds with score 893.05 (15 unrouted and 0 violations), using 53.36 CPU seconds and the job allocated 67.07 GB of memory so far.
+2026-10-29 11:48:17.364 INFO   [4ED844\0EA256] Auto-routing pass #10 on board '6b1328d4af4e1b1caaafc5c8735f51a7' was completed in 4.64 seconds with score 893.05 (15 unrouted and 0 violations), using 58.33 CPU seconds and the job allocated 73.92 GB of memory so far.
+2026-10-29 11:48:20.532 INFO   [4ED844\0EA256] Auto-routing pass #11 on board '56887b7756b0001e8eaa4649290069e9' was completed in 3.08 seconds with score 935.83 (9 unrouted and 0 violations), using 61.32 CPU seconds and the job allocated 77.90 GB of memory so far.
+2026-10-29 11:48:23.416 INFO   [4ED844\0EA256] Auto-routing pass #12 on board '0ceb43ff6ecfe7afaf9b5c147bed0343' was completed in 2.79 seconds with score 935.83 (9 unrouted and 0 violations), using 64.30 CPU seconds and the job allocated 81.78 GB of memory so far.
+2026-10-29 11:48:26.696 INFO   [4ED844\0EA256] Auto-routing pass #13 on board '0ceb43ff6ecfe7afaf9b5c147bed0343' was completed in 3.27 seconds with score 928.70 (10 unrouted and 0 violations), using 67.27 CPU seconds and the job allocated 85.89 GB of memory so far.
+2026-10-29 11:48:30.284 INFO   [4ED844\0EA256] Auto-routing pass #14 on board 'fe8bd50b8b8e7f1ab9dd7929039f6e17' was completed in 3.50 seconds with score 921.57 (11 unrouted and 0 violations), using 70.26 CPU seconds and the job allocated 89.91 GB of memory so far.
+2026-10-29 11:48:33.013 INFO   [4ED844\0EA256] Auto-routing pass #15 on board 'fb8e978f1cbc593447cd3ea1a5014f4b' was completed in 2.54 seconds with score 957.22 (6 unrouted and 0 violations), using 73.24 CPU seconds and the job allocated 93.77 GB of memory so far.
+2026-10-29 11:48:33.820 INFO   [4ED844\0EA256] Auto-routing pass #16 on board '975569d59f1030b7c6bb26625c33fdbd' was completed in 0.70 seconds with score 978.61 (3 unrouted and 0 violations), using 74.24 CPU seconds and the job allocated 94.81 GB of memory so far.
+2026-10-29 11:48:34.650 INFO   [4ED844\0EA256] Auto-routing pass #17 on board '338ebfd7a7e9446901126de3df4856ae' was completed in 0.74 seconds with score 978.61 (3 unrouted and 0 violations), using 75.24 CPU seconds and the job allocated 95.87 GB of memory so far.
+2026-10-29 11:48:35.949 INFO   [4ED844\0EA256] Auto-routing pass #18 on board '01844c5c0ad19e49f7e22719364a3e0e' was completed in 1.20 seconds with score 971.48 (4 unrouted and 0 violations), using 76.23 CPU seconds and the job allocated 97.00 GB of memory so far.
+2026-10-29 11:48:37.762 INFO   [4ED844\0EA256] Auto-routing pass #19 on board 'f9862c422929d81b6513d57e4a3f1073' was completed in 1.72 seconds with score 964.35 (5 unrouted and 0 violations), using 78.22 CPU seconds and the job allocated 99.61 GB of memory so far.
+2026-10-29 11:48:37.855 INFO   [4ED844\0EA256] Last-mile rip-up removed 24 blocking trace(s) or via(s) around 5 remaining connection(s).
+2026-10-29 11:48:45.912 INFO   [4ED844\0EA256] Auto-routing pass #20 on board '338ebfd7a7e9446901126de3df4856ae' was completed in 0.00 seconds with score 978.61 (3 unrouted and 0 violations), using 86.12 CPU seconds and the job allocated 110.52 GB of memory so far.
+2026-10-29 11:48:46.573 INFO   [4ED844\0EA256] Auto-routing pass #21 on board '338ebfd7a7e9446901126de3df4856ae' was completed in 0.65 seconds with score 978.61 (3 unrouted and 0 violations), using 87.11 CPU seconds and the job allocated 111.69 GB of memory so far.
+2026-10-29 11:48:47.992 INFO   [4ED844\0EA256] Auto-routing pass #22 on board 'f379d9b24945b4f2291abf5a4fe1ab9b' was completed in 1.33 seconds with score 971.48 (4 unrouted and 0 violations), using 88.11 CPU seconds and the job allocated 112.90 GB of memory so far.
+2026-10-29 11:48:48.081 INFO   [4ED844\0EA256] Last-mile rip-up removed 24 blocking trace(s) or via(s) around 4 remaining connection(s).
+2026-10-29 11:48:53.089 INFO   [4ED844\0EA256] Auto-routing pass #23 on board '37aa2dc001aa39787a2e6316318d8b9e' was completed in 4.93 seconds with score 928.70 (10 unrouted and 0 violations), using 93.08 CPU seconds and the job allocated 119.71 GB of memory so far.
+2026-10-29 11:48:55.875 INFO   [4ED844\0EA256] Auto-routing pass #24 on board '338ebfd7a7e9446901126de3df4856ae' was completed in 0.00 seconds with score 978.61 (3 unrouted and 0 violations), using 96.07 CPU seconds and the job allocated 123.72 GB of memory so far.
+2026-10-29 11:48:56.570 INFO   [4ED844\0EA256] Auto-routing pass #25 on board '338ebfd7a7e9446901126de3df4856ae' was completed in 0.69 seconds with score 978.61 (3 unrouted and 0 violations), using 97.06 CPU seconds and the job allocated 124.84 GB of memory so far.
+2026-10-29 11:48:58.037 INFO   [4ED844\0EA256] Auto-routing pass #26 on board '388d5ff89cdd966610d9e60861b6d1bf' was completed in 1.37 seconds with score 971.48 (4 unrouted and 0 violations), using 98.05 CPU seconds and the job allocated 126.06 GB of memory so far.
+2026-10-29 11:48:58.050 INFO   [4ED844\0EA256] The router's best score (978.61) has not improved by more than 0.5 points since pass #16. Stopping the auto-router after 26 passes (3 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/SYS' (1 unrouted connection):
+    - TP2-1  ->  U4-1
+  Net '/USB_DP' (1 unrouted connection):
+    - U1-33  ->  J1-B6
+  Net '/SD_MISO' (1 unrouted connection):
+    - U11-6  ->  U1-16
+  Net '/SD_CLK_MCU' (1 unrouted connection):
+    - U1-15  ->  R23-1
+2026-10-29 11:48:58.494 INFO   [4ED844\0EA256] Auto-routing stage completed: started with 110 unrouted nets, completed in 100.22 seconds, final score: 978.61 (3 unrouted and 0 violations), using 99.04 total CPU seconds, 127.06 GB total allocated, and 331.9 MB peak heap usage.
+2026-10-29 11:48:58.597 INFO   [4ED844\0EA256] Skipping optimization stage: the board has 3 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 11:48:58.610 INFO   [4ED844\0EA256] Job '4ED844\0EA256' finished with state: COMPLETED (elapsed: 1 minute 40.62 seconds, finished at UTC: 2026-10-29T02:48:58.610230Z).
+2026-10-29 11:48:58.658 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/plane-power-routed.ses' (SES)...
+2026-10-29 11:48:58.661 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/plane-power-routed.ses' (110101 bytes).

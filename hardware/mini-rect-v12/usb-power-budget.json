@@ -1,0 +1,60 @@
+{
+  "status": "DESIGN_SCREEN_NOT_MEASURED",
+  "input_limit_lower_bound_mA": 80,
+  "storage_reference": "mini-rect-v11/reference/csnp16gcr01-aow.txt",
+  "storage_reference_sha256": "c7ee91e7cc4061a62bc98c1c9d4ba5fa4bdca48cc2e00113f494838fab3826bb",
+  "rows": [
+    {
+      "storage_state": "read",
+      "storage_mA": 60,
+      "charge_enabled": false,
+      "charge_allocation_mA": 0,
+      "remaining_for_MCU_USB_regulator_and_other_mA": 20
+    },
+    {
+      "storage_state": "read",
+      "storage_mA": 60,
+      "charge_enabled": true,
+      "charge_allocation_mA": 21.212121212121215,
+      "remaining_for_MCU_USB_regulator_and_other_mA": -1.2121212121212146
+    },
+    {
+      "storage_state": "write",
+      "storage_mA": 50,
+      "charge_enabled": false,
+      "charge_allocation_mA": 0,
+      "remaining_for_MCU_USB_regulator_and_other_mA": 30
+    },
+    {
+      "storage_state": "write",
+      "storage_mA": 50,
+      "charge_enabled": true,
+      "charge_allocation_mA": 21.212121212121215,
+      "remaining_for_MCU_USB_regulator_and_other_mA": 8.787878787878785
+    },
+    {
+      "storage_state": "standby",
+      "storage_mA": 0.25,
+      "charge_enabled": false,
+      "charge_allocation_mA": 0,
+      "remaining_for_MCU_USB_regulator_and_other_mA": 79.75
+    },
+    {
+      "storage_state": "standby",
+      "storage_mA": 0.25,
+      "charge_enabled": true,
+      "charge_allocation_mA": 21.212121212121215,
+      "remaining_for_MCU_USB_regulator_and_other_mA": 58.53787878787878
+    }
+  ],
+  "conclusion": "60mA memory read plus nominal20mA charge leaves no MCU margin at80mA input minimum. KISET/resistor upper screen alone exceeds80mA before MCU. Cannot promise full-rate USB sync and20mA charging simultaneously.",
+  "design_policy": "Keep CHG_ALLOW low throughout USB storage ownership and recovery; only allow charging after storage is released and USB/load/battery/NTC conditions qualified. If remaining20mA MCU+USB budget fails, throttle read duty or redesign input limit with USB negotiation.",
+  "limitations": [
+    "Storage60mA is datasheet3.3V50MHz condition; actual selected SPI clock current unknown",
+    "Linear power path/LDO screening uses current sums, not switching conversion",
+    "Charge upper screen excludes unspecified additional errors",
+    "BQ power-path may reduce charge or supplement from battery; do not rely on supplement until battery pulse current qualified",
+    "Host eject while still configured does not alone prove low USB consumption"
+  ],
+  "implemented": "Existing firmware has no charge-enable API, so charging remains inhibited. Conditional charging/resume not yet implemented."
+}

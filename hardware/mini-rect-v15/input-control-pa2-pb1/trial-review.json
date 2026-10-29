@@ -1,0 +1,17 @@
+{
+  "status": "EXPERIMENTAL_NOT_RELEASED",
+  "board": "hardware/mini-rect-v15/input-control-pa2-pb1/ground-island-routes.kicad_pcb",
+  "sha256": "1078450e8092ccfba019f0e571f66e9980dc99456dd60b950f1905869b62b595",
+  "drc_violations": 0,
+  "unconnected_items": 5,
+  "missing": "GND4 and USB_RESUME_PULSE1",
+  "parity": "PASS 308 pads",
+  "usb_geometry": "PASS 48 items",
+  "firmware_map_matches": false,
+  "resume_pin_scans": "Ordinary unused pins and .35/.15 vias found no accepted route",
+  "pc13_trial": "Connected all signals but split ground; not adopted due to PC13 output restrictions and unqualified Q7 gate load",
+  "pc13_source": "https://www.st.com/resource/en/datasheet/stm32u535je.pdf",
+  "pc13_source_detail": "DS14217 Rev5 p113 note2: 3mA VSW, max30pF/2MHz, no current-source use",
+  "next_trial": "In3 signal routing outside 1mm USB corridor; In1 remains ground-only",
+  "active_session": 17803
+}

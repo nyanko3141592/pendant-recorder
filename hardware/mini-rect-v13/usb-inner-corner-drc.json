@@ -1,0 +1,106 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T02:13:17",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-inner-corner.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 1.4322 mm )",
+                    "pos": {
+                        "x": 14.9284,
+                        "y": 9.155
+                    },
+                    "uuid": "7e09b403-2c23-4322-a149-457d8cc59060"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 4.8058 mm )",
+                    "pos": {
+                        "x": 15.6047,
+                        "y": 8.5953
+                    },
+                    "uuid": "cc5a29aa-bb0c-4c4b-9a68-028f8e3c534d"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 3.8270 mm )",
+                    "pos": {
+                        "x": 12.2223,
+                        "y": 11.8611
+                    },
+                    "uuid": "4a28a2d9-e50f-41d4-ac1a-338f930ee220"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 4.8058 mm )",
+                    "pos": {
+                        "x": 15.6047,
+                        "y": 8.5953
+                    },
+                    "uuid": "cc5a29aa-bb0c-4c4b-9a68-028f8e3c534d"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0951 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 0.6788 mm )",
+                    "pos": {
+                        "x": 12.2223,
+                        "y": 12.5399
+                    },
+                    "uuid": "6be451ac-8235-41cb-a233-b4308f7e465a"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 4.8058 mm )",
+                    "pos": {
+                        "x": 15.6047,
+                        "y": 8.5953
+                    },
+                    "uuid": "cc5a29aa-bb0c-4c4b-9a68-028f8e3c534d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

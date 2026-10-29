@@ -1,0 +1,25 @@
+{
+  "status": "EXPERIMENT_COMPLETE_NOT_ADOPTED_NOT_ORDER_READY",
+  "previous_turn": "progress: isolated PA2 comparison yielded no route and was not adopted",
+  "inner_escape_comparison": "All four nets remained unrouted even with In1 enabled; baseline retained",
+  "critical_first": "Removed other signal tracks, preserved GND tracks/vias, routed CHG_ALLOW/PDM_DATA/CHG_INHIBIT_GATE/ISET first, retained original MCU pins",
+  "critical_first_drc_violations": 0,
+  "critical_first_total_unconnected": 113,
+  "critical_nets_unconnected": 0,
+  "pad_parity_checked": 254,
+  "limitations": [
+    "USB/power/ground return qualification incomplete",
+    "Autorouter fixed-item warnings are not equivalent to KiCad violations",
+    "Critical-first has 0 critical-net missing connections; full board still incomplete"
+  ],
+  "board_sha256": "13f84df8061aa58694c7b7db83f0128e20aadbd105ea3caf38dcd99143befcc7",
+  "continuation": {
+    "drc": {
+      "clearance": 10
+    },
+    "unconnected": 25,
+    "pad_parity": 254,
+    "board_sha256": "b83a0cf5d0cde490b069e871dd8755bb59016be5204dd5ebd763224b5f0990e2",
+    "decision": "Do not promote: worse than baseline 2 dangling and 5 unconnected. Critical signal routing feasibility proven, but remaining placement escape/power/GND constraints need redesign."
+  }
+}

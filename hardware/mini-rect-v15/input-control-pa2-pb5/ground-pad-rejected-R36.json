@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.kicad.org/drc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-10-26T14:40:15",
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning"
+  ],
+  "kicad_version": "10.0.7",
+  "schematic_parity": [],
+  "source": "last-ground.kicad_pcb",
+  "unconnected_items": [
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "\u30be\u30fc\u30f3 [/GND] B.Cu \u4e0a, \u512a\u5148\u5ea6 0",
+          "pos": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+        },
+        {
+          "description": "\u30be\u30fc\u30f3 [/GND] In1.Cu \u4e0a, \u512a\u5148\u5ea6 0",
+          "pos": {
+            "x": -1.0,
+            "y": -1.0
+          },
+          "uuid": "4b4492ef-1b6d-47a3-bbf6-3b87c8dd75ee"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    }
+  ],
+  "violations": []
+}

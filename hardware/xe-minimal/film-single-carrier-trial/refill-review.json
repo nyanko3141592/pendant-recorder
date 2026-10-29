@@ -1,0 +1,33 @@
+{
+  "status": "REFILL_REVIEW_WITH_SUB_NANOMETER_PLANAR_DIFFERENCE_NOT_RELEASE",
+  "panel_sha256": "23812c34533d71bd03c193eb52c5d629bd4886268adf41fa0d5490cddad8ede5",
+  "drc_counts": {
+    "violations": 0,
+    "unconnected_items": 0
+  },
+  "non_zone_items_identical": true,
+  "zones_exactly_equal": false,
+  "different_geometry": [
+    {
+      "zone_uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573",
+      "net": "/GND",
+      "layer_or_outline": "In3.Cu",
+      "equal_geometry": false,
+      "difference_area_mm2": 8.053e-09,
+      "difference_length_mm": 0.3428185500941062,
+      "boundary_hausdorff_distance_mm": 8.90499660397262e-08,
+      "difference_bounds_mm": [
+        12.446682,
+        1.62564,
+        16.565578,
+        1.699862
+      ],
+      "source_invalid_contours_normalized": 2,
+      "panel_invalid_contours_normalized": 2,
+      "source_area_mm2": 496.3587737418605,
+      "panel_area_mm2": 496.3587737499135
+    }
+  ],
+  "interpretation": "Difference is below the 1 nm KiCad coordinate quantum and arises in planar geometry comparison after contour normalization; numerical cause is not independently established. Do not report exact equivalence or substitute DRC for electrical/manufacturing approval.",
+  "next": "Compare actual plotted copper geometry and retain source/panel hashes; no change to unit routing warranted solely by this minute difference."
+}

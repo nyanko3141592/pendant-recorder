@@ -1,0 +1,72 @@
+{
+  "status": "U585_CANONICAL_NONFLASHABLE_LINK_PASS_HARDWARE_UNQUALIFIED",
+  "date": "2026-10-28",
+  "target": "STM32U585CIU6 / C5271026",
+  "toolchain": "arm-none-eabi-gcc Cortex-M33 soft-float",
+  "sdk": "/tmp/pendant-stm32-sdk (existing pinned STM32CubeU5 working copy)",
+  "tinyusb_upstream": {
+    "tag": "0.21.0",
+    "commit": "dae3f9a366bfcddbf9dcf1b48d7500286a849539",
+    "use": "DWC2 driver sources vendored with upstream hashes; local patched TinyUSB device core remains in use"
+  },
+  "changes_proven": [
+    "STM32U585xx CMSIS/startup/HAL compilation",
+    "U585 family-specific RNG NIST register constants are compile-time pinned",
+    "OTG_FS IRQ, reset and clock-control branch compiles and links",
+    "TinyUSB DWC2 device driver links with the existing MSC, power-event hook and storage stack",
+    "full-module and configured-application link fixtures fit the U585 memory map",
+    "the unchanged U535 FSDEV build and focused safety regressions still pass"
+  ],
+  "full_module_fixture": {
+    "elf_sha256": "0281d69d666413ce2d11db5e1aa2479be8f396d9bf9cd89ade22d24016ec6078",
+    "text_plus_rodata_data_bytes_arm_none_eabi_size": 156310,
+    "bss_bytes": 218744,
+    "result": "PASS_LINK_ONLY_NOT_FOR_FLASH"
+  },
+  "configured_application_fixture": {
+    "elf_sha256": "6524904cdbbabef2753d69d833bd9d85c8a8eea4e61621c191361e67c9fb48ba",
+    "text_bytes": 113778,
+    "data_bytes": 2584,
+    "bss_bytes": 224080,
+    "result": "PASS_LINK_ONLY_NOT_FOR_FLASH",
+    "configuration": "tests/u585_candidate_config.h contains deliberately non-deployable recipient and test IDs"
+  },
+  "u535_regression": {
+    "full_module_link": "PASS",
+    "audio_compile": "PASS",
+    "usb_compile": "PASS",
+    "focused_tests": [
+      "check_clock48.sh",
+      "check_secure_random.sh",
+      "check_usb_board.sh",
+      "check_usb_event_queue.sh",
+      "check_usb_input_policy.sh",
+      "check_usb_session.sh",
+      "check_application_export.sh"
+    ],
+    "focused_test_result": "ALL_PASS"
+  },
+  "u585_canonical_regression": {
+    "shell_test_files": 30,
+    "result": "ALL_PASS",
+    "includes": "storage 36h synthetic capacity, audio, storage, crypto RNG adapters, USB ownership/power policy, configured application link and U585 DWC2 compile",
+    "additional_python": [
+      "check_storage_spi_profiles.py PASS with STM32U585xx HAL",
+      "check_ima.py PASS including 16kHz silence and tone"
+    ],
+    "limitations": "Mock/native/synthetic tests only; no U585 silicon, battery, microphone, USB cable or storage hardware"
+  },
+  "source_sha256": {
+    "board/usb_board.c": "ce44d68e2a1ab0aa2d79b1cd2460f9d9650f0b4d3f90205c67dd77e4ef94c59f",
+    "board/rng_board.c": "12b58df876bdf59a6eb550b2c98318b4bdb2fedc16f9d943df2193293d61f295",
+    "linkcheck/build_u585_candidate.sh": "81292f3b6a06caba04bff381e2c5cc4eaf82bdc83a18f933cdc6ee06cc6f617e",
+    "linkcheck/STM32U585CI.ld": "a7bbacfb2d21ab7d784f83544a39ce2fe44bbc5b44114f1eaa45df07bae029cd",
+    "tests/u585_candidate_config.h": "7bbead3bf405fc4955618ea18a6aff7ddf6ef18681ac1614f818bca293f45c8d"
+  },
+  "remaining_before_release": [
+    "Run and record the complete non-hardware regression set against the adopted U585 default target.",
+    "Verify OTG_FS enumeration and suspend/reset/unplug power policy on U585 hardware.",
+    "Measure PDM acquisition, storage writes, encryption, current, 16-hour runtime and thermal behavior on the fixed 110mAh pack.",
+    "JLC stock 37 is an observation, not a reservation or continuity guarantee."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": "XE-PROTOTYPE-V1-CASE-R2",
+  "status": "PREFERRED_STYLE_CANDIDATE_NOT_PHYSICALLY_QUALIFIED",
+  "selection": "pebble-r23",
+  "reason": [
+    "R2.3 plan corners and R0.8 top/bottom edges are visibly softer than the R1.5/R0.4 baseline without moving any internal component.",
+    "The 8x5mm slotted shoulder integrates the neck-cord feature into the silhouette and distributes load better than the circular eyelet geometry.",
+    "The recessed USB bezel ends 0.28mm ahead of the connector model front, avoiding the previous 2.13mm case tunnel.",
+    "Both shell halves remain valid single solids, retain nominal zero meaningful internal collision, and slice without warnings."
+  ],
+  "geometry": {
+    "complete_bbox_mm": [
+      26.20186727595198,
+      33.600933737976,
+      12.973267375951977
+    ],
+    "plan_corner_radius_mm": 2.3,
+    "top_bottom_edge_radius_mm": 0.8,
+    "lanyard_outer_mm": [
+      8.0,
+      5.0
+    ],
+    "lanyard_slot_mm": [
+      4.0,
+      1.8
+    ],
+    "usb_connector_model_front_y_mm": -26.17,
+    "usb_recessed_bezel_y_mm": -26.45,
+    "usb_outer_bay_mm": [
+      14.0,
+      7.5
+    ],
+    "usb_inner_throat_mm": [
+      9.4,
+      3.6
+    ]
+  },
+  "slice": {
+    "process": "A1 mini, PLA, 0.4mm nozzle, 0.16mm layer, four walls, no support",
+    "total_filament_g": 3.2324661016464233,
+    "total_minutes": 16.124418640136717,
+    "warnings": [
+      "",
+      ""
+    ]
+  },
+  "required_physical_checks": [
+    "Try representative straight and right-angle USB-C cables with different overmold widths and lengths.",
+    "Verify that plug bending loads are carried by the receptacle/PCB retention design and not by the case bezel.",
+    "Print and inspect minimum walls, USB roof/side continuity, seam fit, microphone path and LED window.",
+    "Proof-load the bonded slotted shoulder in every expected necklace direction."
+  ],
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/case-pebble-r23-lower.step": "950237258b6aa131174c4ed03d64ce02463321d516a12b6c2054d2a17208464b",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-r23-upper.step": "b32034caa72d9753157b1d35073c14ad7253fbc48ff40e87fe8241d50d940288",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-r23-lower.stl": "aa772a8bd2ddeadecd02de81d2d1765e9251194c28fc478dbd9b73136e4e3a32",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-r23-upper.stl": "e8b7d63b54bc55771dc1662b9513fc4414dbb50af20470a01de4284cf9aae12e",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-r23-assembly.step": "a48be764b1dce6618233698f3ab3ed6dff330b6f791485ce7b1da6285b9acdc6",
+    "mechanical/xe-minimal/prototype-v1/styled-case-variants-review.json": "5ad78abac22c2827bbe2109fa0b350568f7f2e03df11520850d1777c1acf4e96",
+    "mechanical/xe-minimal/prototype-v1/styled-slice-review/review.json": "4acd1b176673c199eea2711756966e696425b2c0f1a2f9332286790d614d05f0",
+    "mechanical/xe-minimal/prototype-v1/styled-case-comparison.png": "2f41cfe1e711f6d25c73b9ee90280c574bb467ef673e9e4125e685832d36587b"
+  }
+}

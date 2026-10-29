@@ -1,0 +1,1011 @@
+{
+  "status": "CONDITIONAL_DC_TRACE_COMPARISON_NOT_ERROR_BOUND",
+  "assumptions": {
+    "copper_resistivity_ohm_m": 2.2e-08,
+    "ntc_ohm": 6500,
+    "temperature_K": 310,
+    "beta_K": 3435,
+    "pullup_ohm": 100000,
+    "supply_V": 3.3
+  },
+  "candidates": [
+    {
+      "candidate": "guarded",
+      "source_sha256": "5be6744abc537911874d9b1666782ddca8816525f4f84a02c731facef0920df2",
+      "copper_thickness_mm": {
+        "F.Cu": 0.035,
+        "In1.Cu": 0.0152,
+        "In2.Cu": 0.0152,
+        "In3.Cu": 0.0152,
+        "In4.Cu": 0.0152,
+        "B.Cu": 0.035
+      },
+      "paths": [
+        {
+          "ref": "R37",
+          "value": "100k 1%",
+          "pad": "2",
+          "path_length_mm": 20.637542880138508,
+          "trace_resistance_ohm": 0.1942214045263122,
+          "path": [
+            {
+              "uuid": "cb6cdc79-4384-420a-a985-81d1fa4df110",
+              "layer": "In3.Cu",
+              "length_mm": 1.0965856099730655,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.01058108921903835
+            },
+            {
+              "uuid": "7d5be3a2-992c-45b3-968a-1b72df5c05ff",
+              "layer": "In3.Cu",
+              "length_mm": 5.900847396772773,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.05693800119693026
+            },
+            {
+              "uuid": "bccb7f74-cb1b-44aa-ac88-99d08ba03200",
+              "layer": "In1.Cu",
+              "length_mm": 2.3021728866442674,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.022213948906216613
+            },
+            {
+              "uuid": "489d1def-79cf-4966-8a48-5cf1a90b0bbe",
+              "layer": "In2.Cu",
+              "length_mm": 0.2,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0019298245614035087
+            },
+            {
+              "uuid": "43f8a03c-98a9-44ea-953d-7aaa19fb11fe",
+              "layer": "In2.Cu",
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.009649122807017543
+            },
+            {
+              "uuid": "a061fd74-caf8-4d1a-84b2-6c1cd82284a9",
+              "layer": "In2.Cu",
+              "length_mm": 1.4560219778561037,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.01404933487405012
+            },
+            {
+              "uuid": "79cce1b1-8348-4b98-b5a3-82b7701637b2",
+              "layer": "In2.Cu",
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.009649122807017543
+            },
+            {
+              "uuid": "1042b76b-e67a-43fc-868b-e6a08b22c725",
+              "layer": "In2.Cu",
+              "length_mm": 0.3,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.002894736842105263
+            },
+            {
+              "uuid": "e1fd4f3e-504d-48cb-bebf-dc7d55f8e2bf",
+              "layer": "In2.Cu",
+              "length_mm": 0.223606797749979,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0021576094519734816
+            },
+            {
+              "uuid": "538d41a0-3328-4890-a206-1698aca83f2a",
+              "layer": "In2.Cu",
+              "length_mm": 1.2165525060596438,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.011738664532154457
+            },
+            {
+              "uuid": "8c4efa70-9bfe-40f1-ae72-fafd489660f9",
+              "layer": "In2.Cu",
+              "length_mm": 1.392838827718412,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.013439672899037308
+            },
+            {
+              "uuid": "f192cc35-745f-41e2-9e82-8e7297476591",
+              "layer": "In2.Cu",
+              "length_mm": 0.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.004824561403508771
+            },
+            {
+              "uuid": "bbb268c8-3f3e-4703-8d72-7882ea44c6b5",
+              "layer": "In2.Cu",
+              "length_mm": 0.7071067811865476,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0068229601693438795
+            },
+            {
+              "uuid": "f43b597a-c5ac-4644-ac72-64be6ed9a418",
+              "layer": "In2.Cu",
+              "length_mm": 2.4418102419377306,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.023561326895890383
+            },
+            {
+              "uuid": "f6fd3469-ab4c-48fd-bb61-bb986026641f",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            }
+          ],
+          "conditional_delta_temperature_C": 0.000835950150038231,
+          "conditional_divider_delta_mV": 0.005650814133789007
+        },
+        {
+          "ref": "U12",
+          "value": "TLV7042DDFR",
+          "pad": "2",
+          "path_length_mm": 35.79337995965316,
+          "trace_resistance_ohm": 0.3175356235515303,
+          "path": [
+            {
+              "uuid": "cb6cdc79-4384-420a-a985-81d1fa4df110",
+              "layer": "In3.Cu",
+              "length_mm": 1.0965856099730655,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.01058108921903835
+            },
+            {
+              "uuid": "7d5be3a2-992c-45b3-968a-1b72df5c05ff",
+              "layer": "In3.Cu",
+              "length_mm": 5.900847396772773,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.05693800119693026
+            },
+            {
+              "uuid": "bccb7f74-cb1b-44aa-ac88-99d08ba03200",
+              "layer": "In1.Cu",
+              "length_mm": 2.3021728866442674,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.022213948906216613
+            },
+            {
+              "uuid": "489d1def-79cf-4966-8a48-5cf1a90b0bbe",
+              "layer": "In2.Cu",
+              "length_mm": 0.2,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0019298245614035087
+            },
+            {
+              "uuid": "43f8a03c-98a9-44ea-953d-7aaa19fb11fe",
+              "layer": "In2.Cu",
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.009649122807017543
+            },
+            {
+              "uuid": "a061fd74-caf8-4d1a-84b2-6c1cd82284a9",
+              "layer": "In2.Cu",
+              "length_mm": 1.4560219778561037,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.01404933487405012
+            },
+            {
+              "uuid": "79cce1b1-8348-4b98-b5a3-82b7701637b2",
+              "layer": "In2.Cu",
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.009649122807017543
+            },
+            {
+              "uuid": "1042b76b-e67a-43fc-868b-e6a08b22c725",
+              "layer": "In2.Cu",
+              "length_mm": 0.3,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.002894736842105263
+            },
+            {
+              "uuid": "e1fd4f3e-504d-48cb-bebf-dc7d55f8e2bf",
+              "layer": "In2.Cu",
+              "length_mm": 0.223606797749979,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0021576094519734816
+            },
+            {
+              "uuid": "538d41a0-3328-4890-a206-1698aca83f2a",
+              "layer": "In2.Cu",
+              "length_mm": 1.2165525060596438,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.011738664532154457
+            },
+            {
+              "uuid": "8c4efa70-9bfe-40f1-ae72-fafd489660f9",
+              "layer": "In2.Cu",
+              "length_mm": 1.392838827718412,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.013439672899037308
+            },
+            {
+              "uuid": "f192cc35-745f-41e2-9e82-8e7297476591",
+              "layer": "In2.Cu",
+              "length_mm": 0.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.004824561403508771
+            },
+            {
+              "uuid": "bbb268c8-3f3e-4703-8d72-7882ea44c6b5",
+              "layer": "In2.Cu",
+              "length_mm": 0.7071067811865476,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0068229601693438795
+            },
+            {
+              "uuid": "f43b597a-c5ac-4644-ac72-64be6ed9a418",
+              "layer": "In2.Cu",
+              "length_mm": 2.4418102419377306,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.023561326895890383
+            },
+            {
+              "uuid": "f6fd3469-ab4c-48fd-bb61-bb986026641f",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            },
+            {
+              "uuid": "40c59ab8-6981-458b-90df-ce0a4fee1f63",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            },
+            {
+              "uuid": "33381e84-2ee0-4a54-9871-6905a51d2d42",
+              "layer": "In4.Cu",
+              "length_mm": 3.7167699602789512,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.03586356979216532
+            },
+            {
+              "uuid": "81b23294-0caf-4588-887c-f117e1c20f10",
+              "layer": "In4.Cu",
+              "length_mm": 4.618833642558693,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.044567693042233
+            },
+            {
+              "uuid": "5429cd2e-d7f6-44f3-b1bc-38e11195b67a",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            },
+            {
+              "uuid": "24b5f429-0077-46f6-a792-11e0e8628284",
+              "layer": "B.Cu",
+              "length_mm": 1.2,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.005028571428571428
+            },
+            {
+              "uuid": "60eff3c2-2eb2-45e8-845e-143308b15daa",
+              "layer": "In4.Cu",
+              "length_mm": 2.6202337681970285,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.02528295741242747
+            },
+            {
+              "uuid": "a6e3c468-0c35-4b6a-aa75-2564b3806f2d",
+              "layer": "B.Cu",
+              "length_mm": 1.2,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.005028571428571428
+            }
+          ],
+          "conditional_delta_temperature_C": 0.001366708024781192,
+          "conditional_divider_delta_mV": 0.009238594048398255
+        },
+        {
+          "ref": "U12",
+          "value": "TLV7042DDFR",
+          "pad": "5",
+          "path_length_mm": 30.773146191456128,
+          "trace_resistance_ohm": 0.28219552328195996,
+          "path": [
+            {
+              "uuid": "cb6cdc79-4384-420a-a985-81d1fa4df110",
+              "layer": "In3.Cu",
+              "length_mm": 1.0965856099730655,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.01058108921903835
+            },
+            {
+              "uuid": "7d5be3a2-992c-45b3-968a-1b72df5c05ff",
+              "layer": "In3.Cu",
+              "length_mm": 5.900847396772773,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.05693800119693026
+            },
+            {
+              "uuid": "bccb7f74-cb1b-44aa-ac88-99d08ba03200",
+              "layer": "In1.Cu",
+              "length_mm": 2.3021728866442674,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.022213948906216613
+            },
+            {
+              "uuid": "489d1def-79cf-4966-8a48-5cf1a90b0bbe",
+              "layer": "In2.Cu",
+              "length_mm": 0.2,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0019298245614035087
+            },
+            {
+              "uuid": "43f8a03c-98a9-44ea-953d-7aaa19fb11fe",
+              "layer": "In2.Cu",
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.009649122807017543
+            },
+            {
+              "uuid": "a061fd74-caf8-4d1a-84b2-6c1cd82284a9",
+              "layer": "In2.Cu",
+              "length_mm": 1.4560219778561037,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.01404933487405012
+            },
+            {
+              "uuid": "79cce1b1-8348-4b98-b5a3-82b7701637b2",
+              "layer": "In2.Cu",
+              "length_mm": 1.0,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.009649122807017543
+            },
+            {
+              "uuid": "1042b76b-e67a-43fc-868b-e6a08b22c725",
+              "layer": "In2.Cu",
+              "length_mm": 0.3,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.002894736842105263
+            },
+            {
+              "uuid": "e1fd4f3e-504d-48cb-bebf-dc7d55f8e2bf",
+              "layer": "In2.Cu",
+              "length_mm": 0.223606797749979,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0021576094519734816
+            },
+            {
+              "uuid": "538d41a0-3328-4890-a206-1698aca83f2a",
+              "layer": "In2.Cu",
+              "length_mm": 1.2165525060596438,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.011738664532154457
+            },
+            {
+              "uuid": "8c4efa70-9bfe-40f1-ae72-fafd489660f9",
+              "layer": "In2.Cu",
+              "length_mm": 1.392838827718412,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.013439672899037308
+            },
+            {
+              "uuid": "f192cc35-745f-41e2-9e82-8e7297476591",
+              "layer": "In2.Cu",
+              "length_mm": 0.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.004824561403508771
+            },
+            {
+              "uuid": "bbb268c8-3f3e-4703-8d72-7882ea44c6b5",
+              "layer": "In2.Cu",
+              "length_mm": 0.7071067811865476,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.0068229601693438795
+            },
+            {
+              "uuid": "f43b597a-c5ac-4644-ac72-64be6ed9a418",
+              "layer": "In2.Cu",
+              "length_mm": 2.4418102419377306,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.023561326895890383
+            },
+            {
+              "uuid": "f6fd3469-ab4c-48fd-bb61-bb986026641f",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            },
+            {
+              "uuid": "40c59ab8-6981-458b-90df-ce0a4fee1f63",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            },
+            {
+              "uuid": "33381e84-2ee0-4a54-9871-6905a51d2d42",
+              "layer": "In4.Cu",
+              "length_mm": 3.7167699602789512,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.03586356979216532
+            },
+            {
+              "uuid": "81b23294-0caf-4588-887c-f117e1c20f10",
+              "layer": "In4.Cu",
+              "length_mm": 4.618833642558693,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.044567693042233
+            },
+            {
+              "uuid": "5429cd2e-d7f6-44f3-b1bc-38e11195b67a",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            }
+          ],
+          "conditional_delta_temperature_C": 0.0012146003711743971,
+          "conditional_divider_delta_mV": 0.008210388232448606
+        }
+      ]
+    },
+    {
+      "candidate": "anynet",
+      "source_sha256": "8a15e07c6cba4a34b63e1a68ecd6f066f9f7a6d26d3792a4326b84ecf423718b",
+      "copper_thickness_mm": {
+        "F.Cu": 0.035,
+        "In1.Cu": 0.0152,
+        "In2.Cu": 0.0152,
+        "In3.Cu": 0.0152,
+        "In4.Cu": 0.0152,
+        "B.Cu": 0.035
+      },
+      "paths": [
+        {
+          "ref": "R37",
+          "value": "100k 1%",
+          "pad": "2",
+          "path_length_mm": 54.69519444975281,
+          "trace_resistance_ohm": 0.3009143188190818,
+          "path": [
+            {
+              "uuid": "7179657b-8c08-44ed-9bfe-afbb09ce7e3e",
+              "layer": "In1.Cu",
+              "length_mm": 4.802343178074637,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.04633839908668509
+            },
+            {
+              "uuid": "bebe73ac-579d-46d3-801b-2874aee6401e",
+              "layer": "F.Cu",
+              "length_mm": 2.280350236257799,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00955575337098506
+            },
+            {
+              "uuid": "20d474d6-24bb-469a-bb9a-73415d195f2b",
+              "layer": "F.Cu",
+              "length_mm": 2.332381615431103,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00977378962656843
+            },
+            {
+              "uuid": "fe58124e-695f-48cc-a919-ca58e9614db9",
+              "layer": "F.Cu",
+              "length_mm": 1.6155494421403511,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.006769921471826233
+            },
+            {
+              "uuid": "dc8afabe-d0e5-4681-b5eb-ec196333c65e",
+              "layer": "F.Cu",
+              "length_mm": 8.429116205154607,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0353220107644574
+            },
+            {
+              "uuid": "0976a46f-f6eb-44e5-89ad-47eff0076d4d",
+              "layer": "F.Cu",
+              "length_mm": 2.9698484809835,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.01244507934888324
+            },
+            {
+              "uuid": "448e7f51-d545-4154-a296-d277f7e5cf51",
+              "layer": "F.Cu",
+              "length_mm": 1.969771560359221,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00825428082436245
+            },
+            {
+              "uuid": "fccf07d3-529f-4a92-a927-c9049487f2f5",
+              "layer": "F.Cu",
+              "length_mm": 0.31622776601683794,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.001325144924261035
+            },
+            {
+              "uuid": "ef6f2fc7-fd91-405f-b2ac-22267280d504",
+              "layer": "F.Cu",
+              "length_mm": 4.167733196834941,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.01746478672959404
+            },
+            {
+              "uuid": "f9dba646-bd22-4f38-accc-8106ae09c706",
+              "layer": "F.Cu",
+              "length_mm": 8.914033879226622,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.03735404673199727
+            },
+            {
+              "uuid": "fb9a6b0c-23f4-4c16-b524-a99cf96aff50",
+              "layer": "F.Cu",
+              "length_mm": 3.026549190084311,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.012682682320353304
+            },
+            {
+              "uuid": "0442a35c-92cc-421a-a1a4-f042d73f9265",
+              "layer": "B.Cu",
+              "length_mm": 0.3605551275463989,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0015108976773372906
+            },
+            {
+              "uuid": "fe85b8d7-6fa7-46fc-9fd8-8d3647c09ac4",
+              "layer": "B.Cu",
+              "length_mm": 0.8062257748298549,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0033784699135727255
+            },
+            {
+              "uuid": "deea55e9-07bf-467a-b26f-d8dc4c80d489",
+              "layer": "B.Cu",
+              "length_mm": 0.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0020952380952380953
+            },
+            {
+              "uuid": "e1bd9f56-9a7b-4432-8f82-43ab84a901e5",
+              "layer": "B.Cu",
+              "length_mm": 2.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.010476190476190476
+            },
+            {
+              "uuid": "0713362b-5107-4d9d-99d5-fc446593bb74",
+              "layer": "B.Cu",
+              "length_mm": 0.4689053397350046,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0019649366617466857
+            },
+            {
+              "uuid": "81b23294-0caf-4588-887c-f117e1c20f10",
+              "layer": "In4.Cu",
+              "length_mm": 4.618833642558693,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.044567693042233
+            },
+            {
+              "uuid": "33381e84-2ee0-4a54-9871-6905a51d2d42",
+              "layer": "In4.Cu",
+              "length_mm": 3.7167699602789512,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.03586356979216532
+            },
+            {
+              "uuid": "40c59ab8-6981-458b-90df-ce0a4fee1f63",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            }
+          ],
+          "conditional_delta_temperature_C": 0.0012951681127987354,
+          "conditional_divider_delta_mV": 0.008755004045528854
+        },
+        {
+          "ref": "U12",
+          "value": "TLV7042DDFR",
+          "pad": "2",
+          "path_length_mm": 51.3798246151122,
+          "trace_resistance_ohm": 0.25582315625425384,
+          "path": [
+            {
+              "uuid": "7179657b-8c08-44ed-9bfe-afbb09ce7e3e",
+              "layer": "In1.Cu",
+              "length_mm": 4.802343178074637,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.04633839908668509
+            },
+            {
+              "uuid": "bebe73ac-579d-46d3-801b-2874aee6401e",
+              "layer": "F.Cu",
+              "length_mm": 2.280350236257799,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00955575337098506
+            },
+            {
+              "uuid": "20d474d6-24bb-469a-bb9a-73415d195f2b",
+              "layer": "F.Cu",
+              "length_mm": 2.332381615431103,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00977378962656843
+            },
+            {
+              "uuid": "fe58124e-695f-48cc-a919-ca58e9614db9",
+              "layer": "F.Cu",
+              "length_mm": 1.6155494421403511,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.006769921471826233
+            },
+            {
+              "uuid": "dc8afabe-d0e5-4681-b5eb-ec196333c65e",
+              "layer": "F.Cu",
+              "length_mm": 8.429116205154607,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0353220107644574
+            },
+            {
+              "uuid": "0976a46f-f6eb-44e5-89ad-47eff0076d4d",
+              "layer": "F.Cu",
+              "length_mm": 2.9698484809835,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.01244507934888324
+            },
+            {
+              "uuid": "448e7f51-d545-4154-a296-d277f7e5cf51",
+              "layer": "F.Cu",
+              "length_mm": 1.969771560359221,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00825428082436245
+            },
+            {
+              "uuid": "fccf07d3-529f-4a92-a927-c9049487f2f5",
+              "layer": "F.Cu",
+              "length_mm": 0.31622776601683794,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.001325144924261035
+            },
+            {
+              "uuid": "ef6f2fc7-fd91-405f-b2ac-22267280d504",
+              "layer": "F.Cu",
+              "length_mm": 4.167733196834941,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.01746478672959404
+            },
+            {
+              "uuid": "f9dba646-bd22-4f38-accc-8106ae09c706",
+              "layer": "F.Cu",
+              "length_mm": 8.914033879226622,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.03735404673199727
+            },
+            {
+              "uuid": "fb9a6b0c-23f4-4c16-b524-a99cf96aff50",
+              "layer": "F.Cu",
+              "length_mm": 3.026549190084311,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.012682682320353304
+            },
+            {
+              "uuid": "0442a35c-92cc-421a-a1a4-f042d73f9265",
+              "layer": "B.Cu",
+              "length_mm": 0.3605551275463989,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0015108976773372906
+            },
+            {
+              "uuid": "fe85b8d7-6fa7-46fc-9fd8-8d3647c09ac4",
+              "layer": "B.Cu",
+              "length_mm": 0.8062257748298549,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0033784699135727255
+            },
+            {
+              "uuid": "deea55e9-07bf-467a-b26f-d8dc4c80d489",
+              "layer": "B.Cu",
+              "length_mm": 0.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0020952380952380953
+            },
+            {
+              "uuid": "e1bd9f56-9a7b-4432-8f82-43ab84a901e5",
+              "layer": "B.Cu",
+              "length_mm": 2.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.010476190476190476
+            },
+            {
+              "uuid": "0713362b-5107-4d9d-99d5-fc446593bb74",
+              "layer": "B.Cu",
+              "length_mm": 0.4689053397350046,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0019649366617466857
+            },
+            {
+              "uuid": "5429cd2e-d7f6-44f3-b1bc-38e11195b67a",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            },
+            {
+              "uuid": "24b5f429-0077-46f6-a792-11e0e8628284",
+              "layer": "B.Cu",
+              "length_mm": 1.2,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.005028571428571428
+            },
+            {
+              "uuid": "60eff3c2-2eb2-45e8-845e-143308b15daa",
+              "layer": "In4.Cu",
+              "length_mm": 2.6202337681970285,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.02528295741242747
+            },
+            {
+              "uuid": "a6e3c468-0c35-4b6a-aa75-2564b3806f2d",
+              "layer": "B.Cu",
+              "length_mm": 1.2,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.005028571428571428
+            }
+          ],
+          "conditional_delta_temperature_C": 0.0011010908214548782,
+          "conditional_divider_delta_mV": 0.007443094516128375
+        },
+        {
+          "ref": "U12",
+          "value": "TLV7042DDFR",
+          "pad": "5",
+          "path_length_mm": 46.35959084691517,
+          "trace_resistance_ohm": 0.22048305598468348,
+          "path": [
+            {
+              "uuid": "7179657b-8c08-44ed-9bfe-afbb09ce7e3e",
+              "layer": "In1.Cu",
+              "length_mm": 4.802343178074637,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.0152,
+              "resistance_ohm": 0.04633839908668509
+            },
+            {
+              "uuid": "bebe73ac-579d-46d3-801b-2874aee6401e",
+              "layer": "F.Cu",
+              "length_mm": 2.280350236257799,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00955575337098506
+            },
+            {
+              "uuid": "20d474d6-24bb-469a-bb9a-73415d195f2b",
+              "layer": "F.Cu",
+              "length_mm": 2.332381615431103,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00977378962656843
+            },
+            {
+              "uuid": "fe58124e-695f-48cc-a919-ca58e9614db9",
+              "layer": "F.Cu",
+              "length_mm": 1.6155494421403511,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.006769921471826233
+            },
+            {
+              "uuid": "dc8afabe-d0e5-4681-b5eb-ec196333c65e",
+              "layer": "F.Cu",
+              "length_mm": 8.429116205154607,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0353220107644574
+            },
+            {
+              "uuid": "0976a46f-f6eb-44e5-89ad-47eff0076d4d",
+              "layer": "F.Cu",
+              "length_mm": 2.9698484809835,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.01244507934888324
+            },
+            {
+              "uuid": "448e7f51-d545-4154-a296-d277f7e5cf51",
+              "layer": "F.Cu",
+              "length_mm": 1.969771560359221,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.00825428082436245
+            },
+            {
+              "uuid": "fccf07d3-529f-4a92-a927-c9049487f2f5",
+              "layer": "F.Cu",
+              "length_mm": 0.31622776601683794,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.001325144924261035
+            },
+            {
+              "uuid": "ef6f2fc7-fd91-405f-b2ac-22267280d504",
+              "layer": "F.Cu",
+              "length_mm": 4.167733196834941,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.01746478672959404
+            },
+            {
+              "uuid": "f9dba646-bd22-4f38-accc-8106ae09c706",
+              "layer": "F.Cu",
+              "length_mm": 8.914033879226622,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.03735404673199727
+            },
+            {
+              "uuid": "fb9a6b0c-23f4-4c16-b524-a99cf96aff50",
+              "layer": "F.Cu",
+              "length_mm": 3.026549190084311,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.012682682320353304
+            },
+            {
+              "uuid": "0442a35c-92cc-421a-a1a4-f042d73f9265",
+              "layer": "B.Cu",
+              "length_mm": 0.3605551275463989,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0015108976773372906
+            },
+            {
+              "uuid": "fe85b8d7-6fa7-46fc-9fd8-8d3647c09ac4",
+              "layer": "B.Cu",
+              "length_mm": 0.8062257748298549,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0033784699135727255
+            },
+            {
+              "uuid": "deea55e9-07bf-467a-b26f-d8dc4c80d489",
+              "layer": "B.Cu",
+              "length_mm": 0.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0020952380952380953
+            },
+            {
+              "uuid": "e1bd9f56-9a7b-4432-8f82-43ab84a901e5",
+              "layer": "B.Cu",
+              "length_mm": 2.5,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.010476190476190476
+            },
+            {
+              "uuid": "0713362b-5107-4d9d-99d5-fc446593bb74",
+              "layer": "B.Cu",
+              "length_mm": 0.4689053397350046,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0019649366617466857
+            },
+            {
+              "uuid": "5429cd2e-d7f6-44f3-b1bc-38e11195b67a",
+              "layer": "B.Cu",
+              "length_mm": 0.8999998542399882,
+              "width_mm": 0.15,
+              "copper_thickness_mm": 0.035,
+              "resistance_ohm": 0.0037714279606247125
+            }
+          ],
+          "conditional_delta_temperature_C": 0.0009489831678480833,
+          "conditional_divider_delta_mV": 0.006414887508573199
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Declared resistivity scenario and nominal CAD copper geometry; not supplier worst-case process limits.",
+    "Vias treated as ideal; external wires, joints, contact and ground-return resistance excluded.",
+    "Each endpoint path is an isolated series-resistance sensitivity, not a full distributed circuit solution.",
+    "Beta sensitivity is approximate and does not bound the actual thermistor R-T curve.",
+    "No capacitance, inductive/capacitive pickup, comparator common-mode guarantees, leakage or PDN solution.",
+    "Longer path alone is not a rejection criterion; geometry/DRC alone is not acceptance."
+  ]
+}

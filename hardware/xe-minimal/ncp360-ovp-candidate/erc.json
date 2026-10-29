@@ -1,0 +1,2468 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T07:29:19",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/afab3f0e-e2bb-5ea9-9f68-cfd4ab17cf9a",
+            "violations": [
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_DFN_QFN' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U1 [Part_U1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 95.25
+                            },
+                            "uuid": "e2f21976-fa1a-58c4-bdbc-1dc1c95957ec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U1 [Part_U1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 95.25
+                            },
+                            "uuid": "e2f21976-fa1a-58c4-bdbc-1dc1c95957ec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C1 [Part_C1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 162.56
+                            },
+                            "uuid": "d7102957-f6af-5a58-91e4-c86e0cf72da2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C1 [Part_C1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 162.56
+                            },
+                            "uuid": "d7102957-f6af-5a58-91e4-c86e0cf72da2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C4 [Part_C4]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 185.42
+                            },
+                            "uuid": "00ba66dc-3402-58d5-ae3e-17a164b1cf1b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C4 [Part_C4]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 185.42
+                            },
+                            "uuid": "00ba66dc-3402-58d5-ae3e-17a164b1cf1b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C9 [Part_C9]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 208.28
+                            },
+                            "uuid": "ff2bfd35-b2ef-5450-9425-460722c91c05"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C9 [Part_C9]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 208.28
+                            },
+                            "uuid": "ff2bfd35-b2ef-5450-9425-460722c91c05"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R2 [Part_R2]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 231.14
+                            },
+                            "uuid": "da6216b2-b35f-54dc-b908-de30ec586fb0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R2 [Part_R2]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 231.14
+                            },
+                            "uuid": "da6216b2-b35f-54dc-b908-de30ec586fb0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'PendantMinimal' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J3 [Part_J3]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 256.54
+                            },
+                            "uuid": "4dea3f3c-0b59-5785-af60-10be925a2127"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J3 [Part_J3]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 256.54
+                            },
+                            "uuid": "4dea3f3c-0b59-5785-af60-10be925a2127"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Button_Switch_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル SW1 [Part_SW1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 281.94
+                            },
+                            "uuid": "da04d453-f413-5b88-a351-164f2dea9906"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル SW1 [Part_SW1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 281.94
+                            },
+                            "uuid": "da04d453-f413-5b88-a351-164f2dea9906"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R4 [Part_R4]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 304.8
+                            },
+                            "uuid": "9e2d0c96-bb53-5607-a7e0-df8e3da47353"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R4 [Part_R4]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 304.8
+                            },
+                            "uuid": "9e2d0c96-bb53-5607-a7e0-df8e3da47353"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C2 [Part_C2]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 327.66
+                            },
+                            "uuid": "ddb96206-4a5c-53e6-8b6a-823d3391b7e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C2 [Part_C2]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 327.66
+                            },
+                            "uuid": "ddb96206-4a5c-53e6-8b6a-823d3391b7e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C3 [Part_C3]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 350.52
+                            },
+                            "uuid": "769f69e5-07bb-571b-bb3c-6b9a9b039f47"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C3 [Part_C3]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 350.52
+                            },
+                            "uuid": "769f69e5-07bb-571b-bb3c-6b9a9b039f47"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C5 [Part_C5]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 373.38
+                            },
+                            "uuid": "685ed3db-68d6-5509-a263-231cb61044d9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C5 [Part_C5]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 373.38
+                            },
+                            "uuid": "685ed3db-68d6-5509-a263-231cb61044d9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C6 [Part_C6]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 396.24
+                            },
+                            "uuid": "af1ddc99-8239-5fe6-b071-b345bd47569f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C6 [Part_C6]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 396.24
+                            },
+                            "uuid": "af1ddc99-8239-5fe6-b071-b345bd47569f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C7 [Part_C7]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 419.1
+                            },
+                            "uuid": "2b755b17-cddc-53d3-b6cc-c411726c5c64"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C7 [Part_C7]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 419.1
+                            },
+                            "uuid": "2b755b17-cddc-53d3-b6cc-c411726c5c64"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R1 [Part_R1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 441.96
+                            },
+                            "uuid": "ca39a201-c9f4-56c5-8525-c387640ad511"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R1 [Part_R1]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 441.96
+                            },
+                            "uuid": "ca39a201-c9f4-56c5-8525-c387640ad511"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R3 [Part_R3]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 464.82
+                            },
+                            "uuid": "423078fe-9538-55fa-ad82-786a7b6935cd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R3 [Part_R3]",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 464.82
+                            },
+                            "uuid": "423078fe-9538-55fa-ad82-786a7b6935cd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'PendantD1' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J1 [Part_J1]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 64.77
+                            },
+                            "uuid": "15e45d7c-28e8-5167-9711-4d05b629f062"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J1 [Part_J1]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 64.77
+                            },
+                            "uuid": "15e45d7c-28e8-5167-9711-4d05b629f062"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R6 [Part_R6]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 101.6
+                            },
+                            "uuid": "bc9d6ff0-d6d8-5ad2-abc6-d9efb498d129"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R6 [Part_R6]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 101.6
+                            },
+                            "uuid": "bc9d6ff0-d6d8-5ad2-abc6-d9efb498d129"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R7 [Part_R7]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 124.46
+                            },
+                            "uuid": "ee235c77-28de-5e1b-9633-11efe957f79b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R7 [Part_R7]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 124.46
+                            },
+                            "uuid": "ee235c77-28de-5e1b-9633-11efe957f79b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U2 [Part_U2]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 149.86
+                            },
+                            "uuid": "24c69dc7-cab3-5886-96e4-9f62cbd3210e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U2 [Part_U2]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 149.86
+                            },
+                            "uuid": "24c69dc7-cab3-5886-96e4-9f62cbd3210e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C13 [Part_C13]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 175.26
+                            },
+                            "uuid": "7455e224-94fd-5850-ba21-0273c31da5df"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C13 [Part_C13]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 175.26
+                            },
+                            "uuid": "7455e224-94fd-5850-ba21-0273c31da5df"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_DFN_QFN' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U3 [Part_U3]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 206.375
+                            },
+                            "uuid": "bd0deac7-ea94-5003-b2e7-3346ad75623b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U3 [Part_U3]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 206.375
+                            },
+                            "uuid": "bd0deac7-ea94-5003-b2e7-3346ad75623b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R10 [Part_R10]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 237.49
+                            },
+                            "uuid": "812472f6-ae45-5c3b-af37-d7def38a8f7b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R10 [Part_R10]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 237.49
+                            },
+                            "uuid": "812472f6-ae45-5c3b-af37-d7def38a8f7b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R11 [Part_R11]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 260.35
+                            },
+                            "uuid": "21904e41-efb6-5929-a048-2a9e03b551eb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R11 [Part_R11]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 260.35
+                            },
+                            "uuid": "21904e41-efb6-5929-a048-2a9e03b551eb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C14 [Part_C14]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 283.21
+                            },
+                            "uuid": "3d5f2d01-8c73-5415-8824-68befbb06c18"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C14 [Part_C14]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 283.21
+                            },
+                            "uuid": "3d5f2d01-8c73-5415-8824-68befbb06c18"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Connector_Molex' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J2 [Part_J2]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 306.705
+                            },
+                            "uuid": "3848f7a2-77c4-5fc8-9455-9d8266efeacb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル J2 [Part_J2]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 306.705
+                            },
+                            "uuid": "3848f7a2-77c4-5fc8-9455-9d8266efeacb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R12 [Part_R12]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 330.2
+                            },
+                            "uuid": "df4d5f78-e2dd-5fba-972d-05a7dba0e4c8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R12 [Part_R12]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 330.2
+                            },
+                            "uuid": "df4d5f78-e2dd-5fba-972d-05a7dba0e4c8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル Q3 [Part_Q3]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 353.695
+                            },
+                            "uuid": "0cdd67ef-732d-5c69-a7d9-54cc7674e073"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル Q3 [Part_Q3]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 353.695
+                            },
+                            "uuid": "0cdd67ef-732d-5c69-a7d9-54cc7674e073"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R13 [Part_R13]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 377.19
+                            },
+                            "uuid": "691bfdb4-8650-5255-bce2-56fcaf2f8246"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R13 [Part_R13]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 377.19
+                            },
+                            "uuid": "691bfdb4-8650-5255-bce2-56fcaf2f8246"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R14 [Part_R14]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 400.05
+                            },
+                            "uuid": "6c6c9eb8-928d-5f52-9e90-9a22cb45f4ca"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R14 [Part_R14]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 400.05
+                            },
+                            "uuid": "6c6c9eb8-928d-5f52-9e90-9a22cb45f4ca"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R15 [Part_R15]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 422.91
+                            },
+                            "uuid": "b435581d-c1fe-5036-bd56-2422d84d6077"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R15 [Part_R15]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 422.91
+                            },
+                            "uuid": "b435581d-c1fe-5036-bd56-2422d84d6077"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R35 [Part_R35]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 445.77
+                            },
+                            "uuid": "c47bdbcf-4fd3-555a-97e0-654f0951acea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R35 [Part_R35]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 445.77
+                            },
+                            "uuid": "c47bdbcf-4fd3-555a-97e0-654f0951acea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R36 [Part_R36]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 468.63
+                            },
+                            "uuid": "470eff21-21af-54fb-b538-50e6b18ac4c5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R36 [Part_R36]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 468.63
+                            },
+                            "uuid": "470eff21-21af-54fb-b538-50e6b18ac4c5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル Q4 [Part_Q4]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 492.125
+                            },
+                            "uuid": "01148000-a6df-5398-b690-4c7fc7d67bd4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル Q4 [Part_Q4]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 492.125
+                            },
+                            "uuid": "01148000-a6df-5398-b690-4c7fc7d67bd4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R42 [Part_R42]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 515.62
+                            },
+                            "uuid": "c18c03bd-2bcd-5e43-8e18-c9b70df4cb97"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R42 [Part_R42]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 515.62
+                            },
+                            "uuid": "c18c03bd-2bcd-5e43-8e18-c9b70df4cb97"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R43 [Part_R43]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 538.48
+                            },
+                            "uuid": "2a1e2985-726e-582a-a91c-15f0c459d176"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R43 [Part_R43]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 538.48
+                            },
+                            "uuid": "2a1e2985-726e-582a-a91c-15f0c459d176"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R51 [Part_R51]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 561.34
+                            },
+                            "uuid": "d01b5031-a4d8-5995-a023-fb89fcc2fcc4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R51 [Part_R51]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 561.34
+                            },
+                            "uuid": "d01b5031-a4d8-5995-a023-fb89fcc2fcc4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル #FLG01 [Part_#FLG01]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 584.2
+                            },
+                            "uuid": "36e723ff-4c67-58a7-95e5-ebb828f00036"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル #FLG02 [Part_#FLG02]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 607.06
+                            },
+                            "uuid": "5a2f8e48-f260-5739-8b75-9fba2e93e443"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル #FLG03 [Part_#FLG03]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 629.92
+                            },
+                            "uuid": "20f8d2ab-841c-58b2-91de-f7136f273559"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル #FLG04 [Part_#FLG04]",
+                            "pos": {
+                                "x": 426.72,
+                                "y": 652.78
+                            },
+                            "uuid": "9e8203f8-1a26-5699-921d-2ed569325502"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "水平ワイヤー, 長さ 7.62 mm",
+                            "pos": {
+                                "x": 661.9,
+                                "y": 696.19
+                            },
+                            "uuid": "a1400000-0000-4000-8000-000000000001"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol U14 ピン 1 [IN, 電源入力, ライン]",
+                            "pos": {
+                                "x": 661.9,
+                                "y": 696.19
+                            },
+                            "uuid": "a1400000-0000-4000-8000-000000000011"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "水平ワイヤー, 長さ 7.62 mm",
+                            "pos": {
+                                "x": 661.9,
+                                "y": 700.0
+                            },
+                            "uuid": "a1400000-0000-4000-8000-000000000003"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "水平ワイヤー, 長さ 7.62 mm",
+                            "pos": {
+                                "x": 661.9,
+                                "y": 703.81
+                            },
+                            "uuid": "a1400000-0000-4000-8000-000000000005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "水平ワイヤー, 長さ 7.62 mm",
+                            "pos": {
+                                "x": 661.9,
+                                "y": 726.44
+                            },
+                            "uuid": "c0330000-0000-4000-8000-000000000001"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol C33 ピン 1 [1, パッシブ, ライン]",
+                            "pos": {
+                                "x": 661.9,
+                                "y": 726.44
+                            },
+                            "uuid": "c0330000-0000-4000-8000-000000000006"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U14 [Part_U14]",
+                            "pos": {
+                                "x": 700.0,
+                                "y": 700.0
+                            },
+                            "uuid": "a1400000-0000-4000-8000-000000000010"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U14 [Part_U14]",
+                            "pos": {
+                                "x": 700.0,
+                                "y": 700.0
+                            },
+                            "uuid": "a1400000-0000-4000-8000-000000000010"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C33 [Part_C33]",
+                            "pos": {
+                                "x": 700.0,
+                                "y": 727.71
+                            },
+                            "uuid": "c0330000-0000-4000-8000-000000000005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C33 [Part_C33]",
+                            "pos": {
+                                "x": 700.0,
+                                "y": 727.71
+                            },
+                            "uuid": "c0330000-0000-4000-8000-000000000005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C15 [Part_C15]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 50.8
+                            },
+                            "uuid": "3473fcbd-4dd5-5dc4-8587-96c0160d143b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C15 [Part_C15]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 50.8
+                            },
+                            "uuid": "3473fcbd-4dd5-5dc4-8587-96c0160d143b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U4 [Part_U4]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 76.2
+                            },
+                            "uuid": "7bb132ab-9abe-596b-94d4-126ac5cd6a3c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U4 [Part_U4]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 76.2
+                            },
+                            "uuid": "7bb132ab-9abe-596b-94d4-126ac5cd6a3c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C16 [Part_C16]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 101.6
+                            },
+                            "uuid": "9009c8af-17c0-5414-9da2-2a6c90208a15"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C16 [Part_C16]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 101.6
+                            },
+                            "uuid": "9009c8af-17c0-5414-9da2-2a6c90208a15"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP1 [Part_TP1]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 124.46
+                            },
+                            "uuid": "b3d73a17-e4c2-5363-b6a9-0a20a766a226"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP1 [Part_TP1]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 124.46
+                            },
+                            "uuid": "b3d73a17-e4c2-5363-b6a9-0a20a766a226"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP2 [Part_TP2]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 147.32
+                            },
+                            "uuid": "41cd56d2-0e62-5cb1-a908-080ebd69c427"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP2 [Part_TP2]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 147.32
+                            },
+                            "uuid": "41cd56d2-0e62-5cb1-a908-080ebd69c427"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP3 [Part_TP3]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 170.18
+                            },
+                            "uuid": "1569753a-fb4d-53db-80cc-a9e1343c9128"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP3 [Part_TP3]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 170.18
+                            },
+                            "uuid": "1569753a-fb4d-53db-80cc-a9e1343c9128"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP5 [Part_TP5]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 193.04
+                            },
+                            "uuid": "e785ff2e-212e-54db-b918-f13268b1ae02"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP5 [Part_TP5]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 193.04
+                            },
+                            "uuid": "e785ff2e-212e-54db-b918-f13268b1ae02"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP6 [Part_TP6]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 215.9
+                            },
+                            "uuid": "5e7de755-365e-5a36-84f5-99b2436b7bcb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル TP6 [Part_TP6]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 215.9
+                            },
+                            "uuid": "5e7de755-365e-5a36-84f5-99b2436b7bcb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R33 [Part_R33]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 238.76
+                            },
+                            "uuid": "c4342b9c-8989-5509-a516-68993f721a6e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R33 [Part_R33]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 238.76
+                            },
+                            "uuid": "c4342b9c-8989-5509-a516-68993f721a6e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R34 [Part_R34]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 261.62
+                            },
+                            "uuid": "43a8614a-1d79-550b-a95b-64ce730d54c3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R34 [Part_R34]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 261.62
+                            },
+                            "uuid": "43a8614a-1d79-550b-a95b-64ce730d54c3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C28 [Part_C28]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 284.48
+                            },
+                            "uuid": "d0aedba9-b872-56c0-b8d5-a57398e25a63"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C28 [Part_C28]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 284.48
+                            },
+                            "uuid": "d0aedba9-b872-56c0-b8d5-a57398e25a63"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R37 [Part_R37]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 307.34
+                            },
+                            "uuid": "94649960-c3f2-50cb-9846-0570b4d6297a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R37 [Part_R37]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 307.34
+                            },
+                            "uuid": "94649960-c3f2-50cb-9846-0570b4d6297a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R38 [Part_R38]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 330.2
+                            },
+                            "uuid": "15eb494a-0959-5b30-bba0-7bf5ec5f36c8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R38 [Part_R38]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 330.2
+                            },
+                            "uuid": "15eb494a-0959-5b30-bba0-7bf5ec5f36c8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R39 [Part_R39]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 353.06
+                            },
+                            "uuid": "1ef8410a-666d-5f17-a512-e68c8dbb757a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R39 [Part_R39]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 353.06
+                            },
+                            "uuid": "1ef8410a-666d-5f17-a512-e68c8dbb757a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R40 [Part_R40]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 375.92
+                            },
+                            "uuid": "bb7640e4-5e1a-50d1-9a51-aaff267ba29d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R40 [Part_R40]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 375.92
+                            },
+                            "uuid": "bb7640e4-5e1a-50d1-9a51-aaff267ba29d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R41 [Part_R41]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 398.78
+                            },
+                            "uuid": "58e77922-c143-5a27-b3d2-c659a0c74ac8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R41 [Part_R41]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 398.78
+                            },
+                            "uuid": "58e77922-c143-5a27-b3d2-c659a0c74ac8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U12 [Part_U12]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 426.085
+                            },
+                            "uuid": "cca9678c-7525-51d7-8c79-7e0109e4e9f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U12 [Part_U12]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 426.085
+                            },
+                            "uuid": "cca9678c-7525-51d7-8c79-7e0109e4e9f9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C29 [Part_C29]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 453.39
+                            },
+                            "uuid": "a59c7162-5003-5ed0-8a27-18e52317a07a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C29 [Part_C29]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 453.39
+                            },
+                            "uuid": "a59c7162-5003-5ed0-8a27-18e52317a07a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C30 [Part_C30]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 476.25
+                            },
+                            "uuid": "9e970874-071b-59d2-ae85-fc8934d2b299"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C30 [Part_C30]",
+                            "pos": {
+                                "x": 701.04,
+                                "y": 476.25
+                            },
+                            "uuid": "9e970874-071b-59d2-ae85-fc8934d2b299"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "水平ワイヤー, 長さ 7.62 mm",
+                            "pos": {
+                                "x": 738.1,
+                                "y": 703.81
+                            },
+                            "uuid": "a1400000-0000-4000-8000-000000000008"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "水平ワイヤー, 長さ 7.62 mm",
+                            "pos": {
+                                "x": 738.1,
+                                "y": 726.44
+                            },
+                            "uuid": "c0330000-0000-4000-8000-000000000003"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U8 [Part_U8]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 53.34
+                            },
+                            "uuid": "b41c722f-34d5-5774-83de-37a16a198d2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U8 [Part_U8]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 53.34
+                            },
+                            "uuid": "b41c722f-34d5-5774-83de-37a16a198d2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R21 [Part_R21]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 78.74
+                            },
+                            "uuid": "84f16474-317a-50bc-b46a-c57500d90f29"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R21 [Part_R21]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 78.74
+                            },
+                            "uuid": "84f16474-317a-50bc-b46a-c57500d90f29"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C22 [Part_C22]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 101.6
+                            },
+                            "uuid": "ca892846-db1e-50a4-ac93-067e572219d6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C22 [Part_C22]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 101.6
+                            },
+                            "uuid": "ca892846-db1e-50a4-ac93-067e572219d6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U10 [Part_U10]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 127.0
+                            },
+                            "uuid": "a63fd5fc-619f-5526-b0d0-40538feffed0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U10 [Part_U10]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 127.0
+                            },
+                            "uuid": "a63fd5fc-619f-5526-b0d0-40538feffed0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R22 [Part_R22]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 152.4
+                            },
+                            "uuid": "87523e3e-83c0-5823-a22b-a74af442be75"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R22 [Part_R22]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 152.4
+                            },
+                            "uuid": "87523e3e-83c0-5823-a22b-a74af442be75"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C25 [Part_C25]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 175.26
+                            },
+                            "uuid": "5e83fced-3f60-5106-a147-9cf6735238bf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C25 [Part_C25]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 175.26
+                            },
+                            "uuid": "5e83fced-3f60-5106-a147-9cf6735238bf"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R23 [Part_R23]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 198.12
+                            },
+                            "uuid": "da9bae5f-c92d-5298-9ad2-13bfcfe6fa2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R23 [Part_R23]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 198.12
+                            },
+                            "uuid": "da9bae5f-c92d-5298-9ad2-13bfcfe6fa2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R24 [Part_R24]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 220.98
+                            },
+                            "uuid": "5e441baa-c7ba-575c-9454-7d79d1e3ccc1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R24 [Part_R24]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 220.98
+                            },
+                            "uuid": "5e441baa-c7ba-575c-9454-7d79d1e3ccc1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R25 [Part_R25]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 243.84
+                            },
+                            "uuid": "e23048ab-c567-598b-ae14-f90cf72888ec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R25 [Part_R25]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 243.84
+                            },
+                            "uuid": "e23048ab-c567-598b-ae14-f90cf72888ec"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R28 [Part_R28]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 266.7
+                            },
+                            "uuid": "f9862ed6-57e7-5f7e-84c0-bd7701189bb2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R28 [Part_R28]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 266.7
+                            },
+                            "uuid": "f9862ed6-57e7-5f7e-84c0-bd7701189bb2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C26 [Part_C26]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 289.56
+                            },
+                            "uuid": "decaedf2-c5b5-5988-bda3-5aa9f29d071e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C26 [Part_C26]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 289.56
+                            },
+                            "uuid": "decaedf2-c5b5-5988-bda3-5aa9f29d071e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C27 [Part_C27]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 312.42
+                            },
+                            "uuid": "ba1cc063-0237-5f06-9fde-d1055a0941e6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C27 [Part_C27]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 312.42
+                            },
+                            "uuid": "ba1cc063-0237-5f06-9fde-d1055a0941e6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R32 [Part_R32]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 335.28
+                            },
+                            "uuid": "66467696-6094-5632-a628-06538af786ff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル R32 [Part_R32]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 335.28
+                            },
+                            "uuid": "66467696-6094-5632-a628-06538af786ff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'LED_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル D6 [Part_D6]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 358.14
+                            },
+                            "uuid": "5e6561e6-1821-5736-9f00-95c052188222"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル D6 [Part_D6]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 358.14
+                            },
+                            "uuid": "5e6561e6-1821-5736-9f00-95c052188222"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U11 [Part_U11]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 385.445
+                            },
+                            "uuid": "b2b59176-799f-5ec9-a3aa-809af6132da6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U11 [Part_U11]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 385.445
+                            },
+                            "uuid": "b2b59176-799f-5ec9-a3aa-809af6132da6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C31 [Part_C31]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 727.71
+                            },
+                            "uuid": "c0310000-0000-4000-8000-000000000005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C31 [Part_C31]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 727.71
+                            },
+                            "uuid": "c0310000-0000-4000-8000-000000000005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C32 [Part_C32]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 750.57
+                            },
+                            "uuid": "c0320000-0000-4000-8000-000000000005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル C32 [Part_C32]",
+                            "pos": {
+                                "x": 975.36,
+                                "y": 750.57
+                            },
+                            "uuid": "c0320000-0000-4000-8000-000000000005"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U13 [Part_U13]",
+                            "pos": {
+                                "x": 1099.82,
+                                "y": 699.77
+                            },
+                            "uuid": "11d51b9b-a59a-508d-b564-973619f416e0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "現在の構成にはシンボル ライブラリ 'Pendant' が含まれていません",
+                    "items": [
+                        {
+                            "description": "シンボル U13 [Part_U13]",
+                            "pos": {
+                                "x": 1099.82,
+                                "y": 699.77
+                            },
+                            "uuid": "11d51b9b-a59a-508d-b564-973619f416e0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "pendant-xe-ncp360-ovp.kicad_sch"
+}

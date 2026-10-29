@@ -1,0 +1,31 @@
+To: support@jlcpcb.com
+Subject: V12 R5 prototype PCBA: six shortages, SD NAND pricing and landed Japan quote
+Status: LOCAL DRAFT ONLY — NOT SENT — NO ORDER AUTHORIZATION
+
+Hello JLCPCB team,
+
+Please help qualify sourcing and quote five and ten fully assembled prototypes for our compact USB audio recorder. This is an inquiry only. Do not manufacture, purchase parts or charge any payment.
+
+Current saved quote: V12-R5-GERBER-QUOTE-ONLY
+https://cart.jlcpcb.com/smt-order/?pcbFileNo=90775287799e4d99b71f93a7f382e182
+Board: rounded rectangle21x23mm,6 layers,0.8mm,ENIG,proposed JLC06081H-2116 stack,0.15mm minimum through drill,epoxy filled/capped via option,double-sided Standard PCBA. Please confirm panelization,via filling/capping,DFM and any necessary fixtures before release. This saved data remains review-only.
+
+For five boards, the BOM shows these shortages:
+D6 CS42EA2C C7233279:5
+J1 USB4105-GF-A C3020560:5
+U1 STM32U535CEU6 C22454224:4 (one shown available)
+U8 IM69D130V01XTSA1 C9900015304:5
+U12 TLV7042DDFR C2867856:5
+Y1 FC-12M32.7680KA-AG C7275966:5
+Please confirm actual sourcing routes,unit costs,MOQ,attrition quantities and lead times. The microphone price currently shown is USD0.029 for five; please verify whether this is a placeholder and supply a firm price for the exact manufacturer part. No substitution without reviewed datasheets/land patterns.
+
+U11 CSNP16GCR01-AOW C7527488 is shown at USD216.467 for five. Please confirm this price and whether economical sourcing is available. Also quote CSNP32GCR01-BOW C5440134 as a separate4GB alternative; it is NOT an approved replacement in the current files. Its datasheet indicates lower operating current, but the extra land position and full compatibility require review. Do not silently substitute it.
+
+Q3 and Q4 (2N7002 C8545) are currently unchecked in the saved quote. Both are required and must be included, not treated as do-not-populate. All electronic components including the USB connector, battery connector, microphone, switch and indicator must be factory assembled; the end user will not solder components.
+
+Please itemize PCB,panels,components/attrition,sourcing,setup,feeders,stencils,assembly,X-ray/inspection,fixtures,shipping to Japan and taxes/duties. Please ask for a delivery postcode if required before fixing freight. State lead times and exclusions. Battery sourcing is separate; do not include a battery or assume cell/NTC qualification. No programming image is released at this stage.
+
+Separately, we are evaluating a future mid-mount USB4505-03-0-A layout (JLC C5124501; LCSC also lists C6582300). This is NOT a substitution for J1 in the uploaded files. Your catalog labels C5124501 Standard Only, High assembly difficulty and Fixture Required, and includes a sink-mount/PCB-slotting responsibility notice. Please confirm exact supported ordering code, available quantities and lead time, 5/10-piece pricing, fixture/setup charges, required board-slot tolerances for 0.8mm PCB, assembly acceptance/inspection criteria, and the meaning of that responsibility notice. Please keep this alternative quotation separate from the current R5 quote; no fabrication or substitution is authorized.
+
+Please keep the quote provisional until final placement review and manufacturing release.
+Thank you.

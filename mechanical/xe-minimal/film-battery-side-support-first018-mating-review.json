@@ -1,0 +1,89 @@
+{
+  "status": "NOMINAL_PRINT_MATING_SCREEN_NOT_TOLERANCE_QUALIFICATION",
+  "sources": {
+    "lower": {
+      "source_sha256": "1acfa30bbc85f201200025342cb6ce4dd85a5da171ad36eb009bbee594409660",
+      "gcode_sha256": "651f0c3f11d8b213a56aa6d510deb5eceb5a3afbb404d2398604f56d256e9859",
+      "3mf_sha256": "1fd691020e9f10dffac2e12ef1dcca68266a51a852fecd4945c390f1d92dcbd5"
+    },
+    "separator": {
+      "source_sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+      "gcode_sha256": "ea992b830e62ed5c1efa73c84956b419f51f52d42c93364bdf53a0a55ab794c8",
+      "3mf_sha256": "d579cba4d19c08cf3154a5ee2ea520cf5ed338635a433848f8ae653afcfc97a5"
+    }
+  },
+  "roi": "Full part XY bounding region -2..27, -30..3",
+  "separator_lowest_part_bottom_in_roi_mm": -2.339999999999999,
+  "contacts": [
+    {
+      "lower_layer": 5.54,
+      "separator_layer": 1.26,
+      "contact_area_mm2": 8.855479529265516,
+      "assembly_z_mm": -2.1800000000000006
+    }
+  ],
+  "overlaps": [],
+  "limits": [
+    "Rectangular bead cross-section is an approximation, not measured deposited geometry.",
+    "Excludes support; support removal residue and sag are unknown.",
+    "Assembly positioning uses CAD origin; mounting datum tolerances are not characterized.",
+    "Zero nominal gap does not establish fit or seating force.",
+    "Full XY for lower/separator only; board, lid, sensor, battery and wires excluded."
+  ],
+  "support_vertical_gaps": [
+    {
+      "region": "front",
+      "nearest_vertical_pair": {
+        "gap_mm": 1.3322676295501878e-15,
+        "projected_overlap_area_mm2": 2.154350325622876,
+        "lower_print_z_mm": 5.54,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "rear",
+      "nearest_vertical_pair": {
+        "gap_mm": 1.3322676295501878e-15,
+        "projected_overlap_area_mm2": 2.044148522008514,
+        "lower_print_z_mm": 5.54,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "middle1",
+      "nearest_vertical_pair": {
+        "gap_mm": 1.3322676295501878e-15,
+        "projected_overlap_area_mm2": 1.558424219023181,
+        "lower_print_z_mm": 5.54,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "middle2",
+      "nearest_vertical_pair": {
+        "gap_mm": 1.3322676295501878e-15,
+        "projected_overlap_area_mm2": 1.5394473238865551,
+        "lower_print_z_mm": 5.54,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "left1",
+      "nearest_vertical_pair": {
+        "gap_mm": 1.3322676295501878e-15,
+        "projected_overlap_area_mm2": 0.6809583755429132,
+        "lower_print_z_mm": 5.54,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "left2",
+      "nearest_vertical_pair": {
+        "gap_mm": 1.3322676295501878e-15,
+        "projected_overlap_area_mm2": 0.6773245643326189,
+        "lower_print_z_mm": 5.54,
+        "separator_print_z_mm": 1.26
+      }
+    }
+  ]
+}

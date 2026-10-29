@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26",
+  "status": "CARD_NOT_SELECTED_POWER_QUALIFICATION_REQUIRED",
+  "example": {
+    "model": "Transcend USD220I family (2/4/8/16GB)",
+    "source": "https://us.transcend-info.com/Embedded/products/Product_detail.aspx?catName=embedded-memory-cards&modName=usd220i",
+    "manufacturer_max_power_W": 0.72,
+    "equivalent_current_at_3V3_mA": 218.2,
+    "note": "Family max operating power; not measured SPI4MHz current and not a guaranteed startup pulse bound."
+  },
+  "baseline_battery": {
+    "model": "YDL601515 candidate",
+    "capacity_mAh": 100,
+    "previous_page_discharge_limit_mA": 50,
+    "pulse_limit_confirmed": false
+  },
+  "decision": "Do not qualify generic microSD by capacity/price alone. This example maximum exceeds existing battery discharge budget; slower SPI is not proof of bounded card-internal current.",
+  "qualification": [
+    "Pin a purchasable exact card SKU and stable hardware revision where possible",
+    "Obtain or measure startup/write/idle currents and busy duration across voltage, fullness and temperature",
+    "Check battery pulse specification, protection behavior, LDO current/transient and capacitor droop",
+    "Verify continuous16h recording without queue overrun; record supply waveform and average current",
+    "Do not assume average-current target covers peak demand; no capacitor substitution without pulse-duration bound"
+  ],
+  "runtime_target": {
+    "usable_mAh_assumed": 70,
+    "required_runtime_h": 16,
+    "allowed_average_mA": 4.375
+  },
+  "order_ready": false
+}

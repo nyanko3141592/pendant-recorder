@@ -1,0 +1,219 @@
+{
+  "status": "BRANCH_REVIEW_NOT_ADOPTED",
+  "candidate": "DMN63D8L-7",
+  "visual_pin_review": {
+    "source": "hardware/xe-minimal/evidence/DMN63D8L-page1.png",
+    "top_view": "D upper, G lower-left, S lower-right",
+    "KiCad_local_pad_mm": {
+      "1": [
+        -0.9375,
+        -0.95
+      ],
+      "2": [
+        -0.9375,
+        0.95
+      ],
+      "3": [
+        0.9375,
+        0
+      ]
+    },
+    "drawing_alignment": "For y-down display, transform (x,y) to (y,-x): pad1 lower-left G; pad2 lower-right S; pad3 upper D. Manufacturing orientation still checked against actual board and assembly export.",
+    "marking": "MX2"
+  },
+  "firmware": {
+    "source": "firmware/stm32/board/usb_board.c",
+    "sha256": "9954b91cb12345c1652fd2ac97120cc0337cdbe8dd3eeafcdf6fcf1d0e5b2a6b",
+    "behavior": "PA0 low means VBUS present; no analog voltage threshold measurement"
+  },
+  "dc_sensitivity": [
+    {
+      "VBUS_V": 0,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": -0.9090909090909091,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 0,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": -0.9164986251145738,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 0,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": -0.9454976303317536,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 1,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 0.0,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 1,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": -0.00907424381301559,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 1,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": -0.0450236966824645,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 2,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 0.9090909090909091,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 2,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 0.8983501374885426,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 2,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 0.8554502369668247,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 2.7,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 1.5454545454545456,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 2.7,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 1.5335472043996337,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 2.7,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 1.4857819905213272,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 3,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 1.8181818181818181,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 3,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 1.8057745187901009,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 3,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 1.7559241706161137,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 3.75,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 2.5,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 3.75,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 2.4863428047662697,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 3.75,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 2.4312796208530805,
+      "reaches_2_5V_rating_in_model": false
+    },
+    {
+      "VBUS_V": 4,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 2.727272727272727,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 2.713198900091659,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 2.656398104265403,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4.4,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 3.0909090909090913,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4.4,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 3.076168652612283,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4.4,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 3.016587677725119,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4.75,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 3.409090909090909,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4.75,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 3.393767186067828,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 4.75,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 3.3317535545023698,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 5.25,
+      "hypothetical_resistor_tolerance": 0,
+      "gate_V_with_hypothetical_10uA_sink": 3.8636363636363638,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 5.25,
+      "hypothetical_resistor_tolerance": 0.01,
+      "gate_V_with_hypothetical_10uA_sink": 3.847479376718607,
+      "reaches_2_5V_rating_in_model": true
+    },
+    {
+      "VBUS_V": 5.25,
+      "hypothetical_resistor_tolerance": 0.05,
+      "gate_V_with_hypothetical_10uA_sink": 3.7819905213270144,
+      "reaches_2_5V_rating_in_model": true
+    }
+  ],
+  "limitations": [
+    "10uA at all voltages is a deliberately hypothetical sensitivity, not actual leakage behavior; negative computed gate voltages at low VBUS are outside model applicability.",
+    "Historical 1%/5% scenarios retained; current selected R13/R14 parts are 1% plus temperature drift, see xe-vbus-resistor-purchase-specification.json.",
+    "2.5V RDS test point is not a switching threshold.",
+    "Q3 alone cannot certify USB VBUS is within operating limits.",
+    "Electrical turn-off point, hysteresis, transient latency and temperature remain bench checks."
+  ],
+  "next": "R13/R14/R15 purchase specification now selected in xe-vbus-resistor-purchase-specification.json. Evaluate USB droop/detach behavior before adopting Q3 candidate."
+}

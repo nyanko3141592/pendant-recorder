@@ -1,0 +1,39 @@
+{
+  "status": "BOTTOM_LED_DIRECT_VIEW_BLOCKED",
+  "pcb_sha256": "5ada9045fee72944cedbff31b97e8a9ec26ba51270359598d8ffbbd5317c3fc7",
+  "led_ref": "D6",
+  "led_side": "B",
+  "led_center_step_mm": [
+    11.49,
+    -4.795,
+    0
+  ],
+  "battery_translation_mm": [
+    8.25,
+    -13.5,
+    -6.62
+  ],
+  "probe_diameter_mm": 0.5,
+  "probe_z_mm": [
+    -9,
+    0
+  ],
+  "intersection_mm3": {
+    "separator": 0.05890486225480859,
+    "battery": 0.8246680715673196,
+    "lower_case": 0.15707963267948946
+  },
+  "sources": {
+    "battery-separator-study.step": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+    "dtp401525-xe-pack-max.step": "e4c9bb308a5120fcc3943aa438e41ea36d7462cdcddac260d87ced0f222285d3",
+    "closure-acoustic-slim-lower-case-trial.step": "e01f239aef0fc4a07e47e19b585c4533645b0741859f4921862c81de102e4b75",
+    "clearance-hook-upper-trial.step": "d67171ae6ccdf9e598b67cfd587fcb676a54eb9132db514c971aed9ac2dd7d23",
+    "buttonless-candidate-integrated-board.step": "fcfbd698565c8cdd8dfc1744b8a5fc9fc709d74f1f222799f7b3ea6eda70c50f"
+  },
+  "required_action": "Relocate LED to top side or design and qualify a light guide; a lower-case viewing hole alone is insufficient.",
+  "limitations": [
+    "Probe represents a direct optical corridor, not the LED angular emission or brightness.",
+    "Battery pose follows current study; original leads and plug remain absent.",
+    "No PCB/case change or part selection made by this check."
+  ]
+}

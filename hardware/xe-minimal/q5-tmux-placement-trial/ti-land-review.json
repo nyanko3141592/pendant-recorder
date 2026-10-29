@@ -1,0 +1,24 @@
+{
+  "status": "MANUFACTURER_LAND_GEOMETRY_TRIAL_NOT_ADOPTED",
+  "source": "ground-island-join.kicad_pcb",
+  "sha256": "e6d70ffd21a5d0e10720650d6f7ebf0b5e5d7279682f8f06a029397a63d7c744",
+  "pad_geometry": "0.95 x 0.4 mm, row centers 2.2 mm, pitch 0.65 mm, radius 0.05 mm",
+  "courtyard": "Expanded row-direction extent to +/-1.825 mm; engineering margin, not manufacturer requirement",
+  "drc_types": {
+    "shorting_items": 1,
+    "clearance": 1,
+    "hole_clearance": 1,
+    "courtyards_overlap": 1,
+    "solder_mask_bridge": 1,
+    "lib_footprint_mismatch": 1
+  },
+  "unconnected_count": 0,
+  "parity_count": 0,
+  "next": [
+    "Resolve PDM_DATA against U16.4",
+    "Resolve U16.1 against existing SEL via at 7.9,11.6",
+    "Resolve U16/Q7 courtyard overlap",
+    "Create named local footprint and synchronize schematic only after geometry settles; library mismatch is expected in this isolated geometry trial"
+  ],
+  "canonical_changed": false
+}

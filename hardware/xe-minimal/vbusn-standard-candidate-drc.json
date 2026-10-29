@@ -1,0 +1,316 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:25:22",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "vbusn-standard-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0788 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 1.1570 mm )",
+                    "pos": {
+                        "x": 13.15,
+                        "y": 5.95
+                    },
+                    "uuid": "22f5c4f4-61c6-434e-8ded-9438ea6094a9"
+                },
+                {
+                    "description": "パッド 2 [/STATUS_LED_A] - D6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.975,
+                        "y": 4.795
+                    },
+                    "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /STATUS_LED_A と /VBUS_N)",
+            "items": [
+                {
+                    "description": "パッド 2 [/STATUS_LED_A] - D6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.975,
+                        "y": 4.795
+                    },
+                    "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( B.Cu 上、長さ: 1.6000 mm )",
+                    "pos": {
+                        "x": 11.815,
+                        "y": 5.5175
+                    },
+                    "uuid": "04b26aa5-f14b-498a-a204-c7edaced3d8b"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 1.1570 mm )",
+                    "pos": {
+                        "x": 13.15,
+                        "y": 5.95
+                    },
+                    "uuid": "22f5c4f4-61c6-434e-8ded-9438ea6094a9"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0500 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( In2.Cu 上、長さ: 0.6000 mm )",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 4.8
+                    },
+                    "uuid": "4a600ef1-1e22-4dbb-af81-c2bae2690550"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0311 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 4.8
+                    },
+                    "uuid": "84da0d7f-adf2-431c-a8c8-07cf69889713"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0311 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 4.8
+                    },
+                    "uuid": "84da0d7f-adf2-431c-a8c8-07cf69889713"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0311 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 4.8
+                    },
+                    "uuid": "84da0d7f-adf2-431c-a8c8-07cf69889713"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0311 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 4.8
+                    },
+                    "uuid": "84da0d7f-adf2-431c-a8c8-07cf69889713"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0311 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 4.8
+                    },
+                    "uuid": "84da0d7f-adf2-431c-a8c8-07cf69889713"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0311 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 4.8
+                    },
+                    "uuid": "84da0d7f-adf2-431c-a8c8-07cf69889713"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0538 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/STATUS_LED_A] - D6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.975,
+                        "y": 4.795
+                    },
+                    "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "パッド 2 [/STATUS_LED_A] - D6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.975,
+                        "y": 4.795
+                    },
+                    "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2500 mm; 現状 0.2311 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 4.8
+                    },
+                    "uuid": "84da0d7f-adf2-431c-a8c8-07cf69889713"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.365,
+                        "y": 5.1
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        }
+    ]
+}

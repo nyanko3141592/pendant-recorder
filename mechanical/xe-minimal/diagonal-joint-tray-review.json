@@ -1,0 +1,68 @@
+{
+  "status": "OPEN_JOINT_TRAY_GEOMETRY_TRIAL_NOT_ADOPTED",
+  "source_sha256": {
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e",
+    "separator": "df558fab6a1a01fc8ad6445cc63220c5a8875c867a9da3b23d980405c248c5df",
+    "lower": "54fd2bc82ec4af2bb6225e6b9eedbb01c9931416a7af20835af1fd835ea03d5b",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "route_source_sha256": "4d24aea5883ac3c2c6aa4626752102b13b5d7723c86927025ab2e0998e9665a4",
+  "valid": true,
+  "solid_count": 1,
+  "outer_width_mm": 3.7,
+  "length_mm": 3.8,
+  "height_mm": 1.7,
+  "floor_mm": 0.4,
+  "outer_wall_mm": 0.4,
+  "central_wall_mm": 0.7,
+  "channel_width_mm": 1.1,
+  "open_exit_length_mm": 0.9,
+  "joint_side_floor_allowance_mm": 0.1,
+  "checks": {
+    "board": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 0.5199999999999999
+    },
+    "separator": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 0.5000000000000883
+    },
+    "lower": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 0.07425183874579633
+    },
+    "upper": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 3.3572085684794972
+    },
+    "battery": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 0.1766042721721206
+    },
+    "joints": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 0.0999999999999974
+    },
+    "sensor": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 0.10000000000000009
+    },
+    "wires": {
+      "overlap_mm3": 0.0,
+      "clearance_mm": 0.19385170112001143
+    }
+  },
+  "wire_contacts": [],
+  "wire_to_other_joint_overlap_mm3": [
+    0.0,
+    0.037616271119432006
+  ],
+  "limits": [
+    "Open tray has no lid or axial strain relief, and is not attached to the case.",
+    "Joint dimensions are provisional insulated envelopes, not a validated solder/wrap process.",
+    "Wire route remains provisional and has only 0.099 mm inter-wire gap.",
+    "No print or assembly qualification.",
+    "Lead width is an allowance, not manufacturer guaranteed maximum."
+  ]
+}

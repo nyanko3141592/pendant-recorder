@@ -1,0 +1,72 @@
+{
+  "status": "GEOMETRY_CANDIDATE_NOT_ORDER_READY",
+  "commands_sha256": "d84676e83c22d617d17d2dbc263f97853bc474aa325e4dbcd0e63eb7091eb07d",
+  "component_clearance": {
+    "bodies": 4,
+    "ms": 1396.5086250000002,
+    "near": [
+      {
+        "a": "case_body",
+        "b": "pcb_dummy",
+        "distance_mm": 0.0,
+        "from": [
+          1.100049821982433,
+          18.99997152524425,
+          9.449999999999996
+        ],
+        "to": [
+          1.100049821982433,
+          18.99997152524425,
+          9.449999999999996
+        ]
+      },
+      {
+        "a": "case_body",
+        "b": "battery_dummy",
+        "distance_mm": 0.0,
+        "from": [
+          4.4,
+          6.0,
+          1.4
+        ],
+        "to": [
+          4.4,
+          6.0,
+          1.4
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 85,
+    "pairs_pruned": 235,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  "native_case_lid_clearance": {
+    "bodies": 1,
+    "ms": 16141.490167,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 1,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": [
+      {
+        "a": "case_body",
+        "b": "case_lid",
+        "reason": "a pin on one cylinder with its hole, whose walls could not be intersected (the operation failed: boolean Intersect: the operation failed: no result in the tries it was given)"
+      }
+    ]
+  },
+  "independent_case_lid_review": "independent-step-review.json",
+  "next": [
+    "Add screened sidewall root reinforcement and recheck",
+    "Verify exterior curved containment and lid removal path",
+    "Select manufacturable female thread or suitable plastic screw and validate retention",
+    "Generate separate printable trial parts only after checks"
+  ]
+}

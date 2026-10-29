@@ -1,0 +1,71 @@
+{
+  "status": "GEOMETRY_CHECKED_NOT_SI_QUALIFIED",
+  "results": [
+    {
+      "usb_net": "/USB_DP",
+      "usb_via_mm": [
+        21.89,
+        8.6175
+      ],
+      "action": "added",
+      "ground_via_mm": [
+        22.372962,
+        8.746909
+      ],
+      "distance_mm": 0.5,
+      "trials": 1,
+      "nearest_selected_ground_via_distance_mm": 0.49999898272396587
+    },
+    {
+      "usb_net": "/USB_DP",
+      "usb_via_mm": [
+        11.75,
+        19.883749
+      ],
+      "action": "reuse",
+      "ground_via_mm": [
+        12.183012,
+        20.133749
+      ],
+      "distance_mm": 0.49999939214363026,
+      "nearest_selected_ground_via_distance_mm": 0.49999939214363026
+    },
+    {
+      "usb_net": "/USB_DM",
+      "usb_via_mm": [
+        12.0,
+        17.746249
+      ],
+      "action": "reuse",
+      "ground_via_mm": [
+        11.566987,
+        17.496249
+      ],
+      "distance_mm": 0.5000002581689339,
+      "nearest_selected_ground_via_distance_mm": 0.500000258168934
+    },
+    {
+      "usb_net": "/USB_DM",
+      "usb_via_mm": [
+        21.89,
+        8.1175
+      ],
+      "action": "added",
+      "ground_via_mm": [
+        23.242296,
+        7.755153
+      ],
+      "distance_mm": 1.4,
+      "trials": 18,
+      "nearest_selected_ground_via_distance_mm": 0.7933523698363808
+    }
+  ],
+  "physical_drc_violations": 0,
+  "unconnected_items": 112,
+  "limits": [
+    "0.7mm reuse threshold is a layout heuristic, not a verified electrical limit",
+    "Only ground-plane stitching; outer-surface return paths and ESD still require review",
+    "No measured impedance, USB compliance or ESD immunity"
+  ],
+  "total_added_across_both_passes": 4
+}

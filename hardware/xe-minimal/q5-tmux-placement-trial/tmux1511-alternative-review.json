@@ -1,0 +1,45 @@
+{
+  "status": "SCREENED_NOT_ADOPTED",
+  "date": "2026-10-27",
+  "previous_goal_turn": "NO_PROGRESS: existing model presentation only; resumed unresolved electrical screening",
+  "source": {
+    "url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+    "revision": "SCDS390B March 2025",
+    "pages": [
+      4,
+      6,
+      21,
+      22
+    ]
+  },
+  "candidate_pcb_sha256": "b4082e2163e932a5e32fa1cb915eccc1bcdbaac505a7c0a80982274db1b40aba",
+  "verified_limits": {
+    "supply_V": [
+      1.5,
+      5.5
+    ],
+    "analog_absolute_V": [
+      -0.5,
+      6
+    ],
+    "powered_off_signal_max_V": 3.6,
+    "powered_off_leakage_max_uA": 2,
+    "powered_off_leakage_condition": "VDD=0; VS=0..3.6 V; VD=0; full rated temperature",
+    "off_leakage_max_nA": 100,
+    "off_leakage_condition": "VS/VD=0.2/0.8 VDD; not the present grounded source condition",
+    "supply_current_max_uA": 70
+  },
+  "decision": "Do not replace TMUX1101 on the strength of powered-off protection alone. Analog absolute rating no longer tracks VDD, but SETI voltage, leakage and intermediate-supply behavior remain unbounded for this circuit.",
+  "distinctions": [
+    "VDD=0 powered-off leakage is not a leakage bound throughout 0<VDD<1.5 V.",
+    "Powered-off leakage must not be inserted into a powered USB startup calculation as if simultaneous; evaluate each operating state separately.",
+    "Absolute maximum ratings are stress limits, not functional guarantees.",
+    "Different package and pin count require fresh footprint, route and mechanical checks."
+  ],
+  "next_evidence": [
+    "Bound MAX4995 SETI voltage during ramp/detach, including retained downstream energy.",
+    "Choose a topology with specified default low-current behavior throughout startup before committing replacement layout."
+  ],
+  "physical_tests_run": 0,
+  "canonical_modified": false
+}

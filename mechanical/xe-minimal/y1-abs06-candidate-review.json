@@ -1,0 +1,55 @@
+{
+  "status": "CANDIDATE_NOT_ADOPTED",
+  "ref": "Y1",
+  "part": "ABS06-32.768KHZ-7-T",
+  "source_pdf": "mechanical/xe-minimal/ABS06.pdf",
+  "source_url": "https://abracon.com/Resonators/ABS06.pdf",
+  "sha256": "48479f890f8ab99ef5d8cfd259f9bb7c47625db6f6f34f8dd525d44a43dc31e4",
+  "revision": "2020-11-23",
+  "electrical": {
+    "frequency_Hz": 32768,
+    "CL_pF": 7,
+    "ESR_max_ohms": 90000,
+    "drive_typ_uW": 0.1,
+    "drive_max_uW": 0.5,
+    "tolerance_ppm": 20,
+    "temperature_C": [
+      -40,
+      85
+    ]
+  },
+  "package_mm": {
+    "length_nom": 2,
+    "length_max": 2.15,
+    "width_nom": 1.2,
+    "width_max": 1.3,
+    "height_max": 0.6
+  },
+  "recommended_land_mm": {
+    "pad_size": [
+      0.75,
+      1.4
+    ],
+    "inner_gap": 0.7,
+    "pad_center_spacing": 1.45
+  },
+  "current_land_mm": {
+    "pad_size": [
+      0.6,
+      1.1
+    ],
+    "pad_center_spacing": 1.4
+  },
+  "drawing_review": "Page2 rendered and visually inspected; recommended land differs from current generic2012 footprint.",
+  "retail_evidence": {
+    "url": "https://www.digikey.jp/en/products/detail/abracon-llc/ABS06-32-768KHZ-7-T/9997928",
+    "status": "Indexed product listing found; live checkout quantity/price and PCBA sourcing not verified."
+  },
+  "pending": [
+    "Check larger recommended land against current crystal placement and adjacent routes",
+    "Verify STM32U535 LSE negative-resistance/gain margin and drive against90kohm/0.5uW limits",
+    "Estimate actual parasitic capacitance;10pF C11/C12 remain tentative",
+    "Qualify cold/hot startup and time accuracy on prototype",
+    "Synchronize schematic,PCB,BOM only after selection review"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "status": "STACKUP_ARITHMETIC_RECONCILED_EXPORT_ENVELOPE_NOT_PHYSICAL_MEASUREMENT",
+  "pcb_sha256": "4d753d98fa81284715b1bb22fbd8f0b79cc2a56ee8e9b994bc58e5dd94a9abcd",
+  "substrate_step_sha256": "1444eb20ff17f0dfd4bd2da88c4b3b55e150b58a87a8aa532eae1ea66a07b254",
+  "layers": [
+    {
+      "name": "F.Cu",
+      "thickness_mm": 0.035
+    },
+    {
+      "name": "dielectric 1",
+      "thickness_mm": 0.1164
+    },
+    {
+      "name": "In1.Cu",
+      "thickness_mm": 0.0152
+    },
+    {
+      "name": "dielectric 2",
+      "thickness_mm": 0.13
+    },
+    {
+      "name": "In2.Cu",
+      "thickness_mm": 0.0152
+    },
+    {
+      "name": "dielectric 3",
+      "thickness_mm": 0.2028
+    },
+    {
+      "name": "In3.Cu",
+      "thickness_mm": 0.0152
+    },
+    {
+      "name": "dielectric 4",
+      "thickness_mm": 0.13
+    },
+    {
+      "name": "In4.Cu",
+      "thickness_mm": 0.0152
+    },
+    {
+      "name": "dielectric 5",
+      "thickness_mm": 0.1164
+    },
+    {
+      "name": "B.Cu",
+      "thickness_mm": 0.035
+    }
+  ],
+  "stack_sum_mm": 0.8264,
+  "outer_copper_total_mm": 0.07,
+  "interior_stack_mm": 0.7564,
+  "exported_body_z_range_mm": [
+    0.0,
+    0.7564
+  ],
+  "interpretation": "Observed STEP body thickness equals total stack minus the two outer copper layers. This is inferred from output and stackup, not a verified exporter implementation contract.",
+  "case_envelope": {
+    "path": "/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review/carrier-max-thickness-envelope.step",
+    "sha256": "006ff308f7cf3a748c2cbd1929133b06cf6982b626e21d036e461889f7b09a40",
+    "z_range_mm": [
+      0,
+      0.93
+    ],
+    "basis": "Existing finished-PCB upper thickness envelope; retains exported XY and all drilled holes. Full XY cross-section extruded to .93, not a physical copper reconstruction."
+  },
+  "limits": [
+    "Do not replace existing .73.. .93 finished thickness checks with .7564 substrate thickness.",
+    "Envelope excludes solder, components, warpage and manufacturing variation outside assumed range.",
+    "Carrier tooling and depanelization remain unqualified."
+  ]
+}

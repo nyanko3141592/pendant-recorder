@@ -1,0 +1,996 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:08:33",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "lse-top-placement.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - C11 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.5,
+                        "y": 13.73
+                    },
+                    "uuid": "ea95b80c-3134-42f6-9409-64df632abd20"
+                },
+                {
+                    "description": "パッド 3 [/LSE_IN] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "5f0ebff6-5e04-43d5-a935-f41b3d966c37"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/LSE_IN] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "5f0ebff6-5e04-43d5-a935-f41b3d966c37"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_OUT] - C12 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.5,
+                        "y": 11.73
+                    },
+                    "uuid": "87d0e837-cd71-44c9-bab6-3b49461c061f"
+                },
+                {
+                    "description": "パッド 4 [/LSE_OUT] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.15
+                    },
+                    "uuid": "99a55d43-eeca-4fe6-86bc-35b174b2e36a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/LSE_OUT] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.15
+                    },
+                    "uuid": "99a55d43-eeca-4fe6-86bc-35b174b2e36a"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.35,
+                        "y": 8.35
+                    },
+                    "uuid": "85c46f79-fd1f-4233-818d-83249ea7023e"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.1
+                    },
+                    "uuid": "4d28f5f7-06ca-419d-94da-051b78f08e44"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_IN と /GND)",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.65,
+                        "y": 8.05
+                    },
+                    "uuid": "b04577d7-36a9-4403-8c0c-254b1f893a60"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_IN と /GND)",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.4,
+                        "y": 8.3
+                    },
+                    "uuid": "d0f8e99a-4b65-4730-b9b5-1859943f276a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0062 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.25,
+                        "y": 8.45
+                    },
+                    "uuid": "a665fcfb-6848-426c-9ce1-ac7a51d8fc36"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_IN と /GND)",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.45,
+                        "y": 8.25
+                    },
+                    "uuid": "d22fc5a9-5235-4459-9088-b85ee2cb5db4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.55,
+                        "y": 8.15
+                    },
+                    "uuid": "47b9ee69-00b9-4035-99a5-b0640bcb830b"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_IN と /GND)",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 8.0
+                    },
+                    "uuid": "b5255b00-cce8-428f-a631-0c597c739087"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_IN と /GND)",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 8.4
+                    },
+                    "uuid": "f2f1f07f-c0b6-4f16-a451-12d0fa8e75be"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 8.0
+                    },
+                    "uuid": "3397245d-a297-4240-9fa1-111ddd6bd3b6"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0693 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 8.5
+                    },
+                    "uuid": "1a43874c-f76b-4e73-a977-b5bb7c18920b"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 8.2
+                    },
+                    "uuid": "06fc0734-5658-447f-a776-22341da8e32a"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_OUT と /VBUS_N)",
+            "items": [
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.3916,
+                        "y": 7.5852
+                    },
+                    "uuid": "6fd260e3-aece-4f20-aded-51c9d4d45281"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /LSE_OUT)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( F.Cu 上、長さ: 1.3261 mm )",
+                    "pos": {
+                        "x": 17.4539,
+                        "y": 6.6475
+                    },
+                    "uuid": "216e5c4a-376c-429b-9ad1-68e1fa26ec51"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0283 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( F.Cu 上、長さ: 1.6867 mm )",
+                    "pos": {
+                        "x": 15.887,
+                        "y": 7.8402
+                    },
+                    "uuid": "1da662c0-12b7-4316-9f14-a5c715e493dd"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VDDA と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 2.3646 mm )",
+                    "pos": {
+                        "x": 17.2171,
+                        "y": 6.978
+                    },
+                    "uuid": "6a617e64-400d-4564-80a2-a3d5517d74ba"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 8.0
+                    },
+                    "uuid": "b5255b00-cce8-428f-a631-0c597c739087"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0171 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.3916,
+                        "y": 7.5852
+                    },
+                    "uuid": "6fd260e3-aece-4f20-aded-51c9d4d45281"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BUTTON_N と /LSE_OUT)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 8.7
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント SW1",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 7.0
+                    },
+                    "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+                },
+                {
+                    "description": "フットプリント Y1",
+                    "pos": {
+                        "x": 17.3,
+                        "y": 8.0
+                    },
+                    "uuid": "90d0966d-1c86-4664-a2e2-0159dd9ad8e4"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント U1",
+                    "pos": {
+                        "x": 11.75,
+                        "y": 9.9
+                    },
+                    "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+                },
+                {
+                    "description": "フットプリント Y1",
+                    "pos": {
+                        "x": 17.3,
+                        "y": 8.0
+                    },
+                    "uuid": "90d0966d-1c86-4664-a2e2-0159dd9ad8e4"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.65,
+                        "y": 8.05
+                    },
+                    "uuid": "b04577d7-36a9-4403-8c0c-254b1f893a60"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 8.7
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.4,
+                        "y": 8.3
+                    },
+                    "uuid": "d0f8e99a-4b65-4730-b9b5-1859943f276a"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.45,
+                        "y": 8.25
+                    },
+                    "uuid": "d22fc5a9-5235-4459-9088-b85ee2cb5db4"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.5,
+                        "y": 8.2
+                    },
+                    "uuid": "06fc0734-5658-447f-a776-22341da8e32a"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 8.4
+                    },
+                    "uuid": "f2f1f07f-c0b6-4f16-a451-12d0fa8e75be"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 8.0
+                    },
+                    "uuid": "3397245d-a297-4240-9fa1-111ddd6bd3b6"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.7,
+                        "y": 8.0
+                    },
+                    "uuid": "b5255b00-cce8-428f-a631-0c597c739087"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.55,
+                        "y": 8.15
+                    },
+                    "uuid": "47b9ee69-00b9-4035-99a5-b0640bcb830b"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.1
+                    },
+                    "uuid": "4d28f5f7-06ca-419d-94da-051b78f08e44"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 16.35,
+                        "y": 8.35
+                    },
+                    "uuid": "85c46f79-fd1f-4233-818d-83249ea7023e"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 2.3646 mm )",
+                    "pos": {
+                        "x": 17.2171,
+                        "y": 6.978
+                    },
+                    "uuid": "6a617e64-400d-4564-80a2-a3d5517d74ba"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.6,
+                        "y": 8.0
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( F.Cu 上、長さ: 1.3261 mm )",
+                    "pos": {
+                        "x": 17.4539,
+                        "y": 6.6475
+                    },
+                    "uuid": "216e5c4a-376c-429b-9ad1-68e1fa26ec51"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.3916,
+                        "y": 7.5852
+                    },
+                    "uuid": "6fd260e3-aece-4f20-aded-51c9d4d45281"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 8.0
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "6595b663-1c12-4df5-9782-766060e8f719"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 18.56,
+                        "y": 7.14
+                    },
+                    "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+                },
+                {
+                    "description": "セグメント of SW1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 17.1,
+                        "y": 8.65
+                    },
+                    "uuid": "1e9332af-11d0-4a7c-b94c-4b228486f89b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of Y1 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 16.04,
+                        "y": 8.86
+                    },
+                    "uuid": "2d82c032-de7c-40dd-8c55-618de8cd912e"
+                },
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 8.7
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+  "status": "SENSOR_OPENING_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "ntcaflex-receiving-seat-separator-trial.step": "b5b96db5bdf5971889c9fe214b49c7ea4179ee816850fe86c6f1be166ddd2e6c",
+    "ntcaflex-diagonal-positioned-reference.step": "98c8c667fa13ff247d718b7f6ab66a1f3df63a16cc2e4718da33b4f494d89d08",
+    "ntcaflex-relocated-support-lower-trial.step": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "output_sha256": "7ec8e86f7e723fcedcd83270956af3226e923d6ae83e9fe4f489b40a885f7590",
+  "valid": true,
+  "solid_count": 3,
+  "solid_volumes_mm3": [
+    100.06317273244238,
+    0.8924590027302366,
+    3.5585747335920623
+  ],
+  "removed_volume_mm3": 17.913029368708237,
+  "checks": {
+    "sensor": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.19999999999977336
+    },
+    "lower": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    "board": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.020000000000000018
+    },
+    "battery": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.19999999999999973
+    }
+  },
+  "lower_seat_proxy_mm3": 0.008518339176723051,
+  "limits": [
+    "Foil envelope is simplified nominal related-HH outline plus 0.2mm, not all published GL tolerances.",
+    "Full-height opening deliberately removes old material; head retention, thermal load path and insulation bridge must be designed separately.",
+    "Solid connectivity does not prove minimum web strength or printability.",
+    "Original harness and complete assembly sequence omitted."
+  ],
+  "detached_piece_bounds_mm": [
+    {
+      "volume_mm3": 0.8924590027315015,
+      "bounds": [
+        12.038119784643985,
+        -1.9460722012463147,
+        -2.22,
+        14.9,
+        0.2,
+        -1.92
+      ]
+    },
+    {
+      "volume_mm3": 3.558574733592775,
+      "bounds": [
+        14.58985047312,
+        -6.237317273970812,
+        -2.4200000999999998,
+        21.674449560615002,
+        -1.233366298085,
+        -0.9199999999999999
+      ]
+    },
+    {
+      "volume_mm3": 100.06317273241882,
+      "bounds": [
+        0.3,
+        -27.2,
+        -2.22,
+        17.6,
+        0.20000000000249382,
+        -1.12
+      ]
+    }
+  ]
+}

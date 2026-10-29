@@ -1,0 +1,72 @@
+{
+  "status": "BRANCH_SCREEN_NOT_ADOPTED",
+  "candidate": "DMN63D8L-7",
+  "source_pcb_sha256": "0753b2e85892a530bba429b7b49dae4a322f1b8d5d0805760657e1b43a72a44d",
+  "source_design_sha256": "77896e747faf7264b38b7a4fc9384db203973f12848d44582240c2e27d87a769",
+  "direct_GPIO_drive_screen": {
+    "assumed_regulated_VDD_min_V": 3.2504999999999997,
+    "VOH_drop_bound_V": 0.4,
+    "gate_min_V": 2.8505,
+    "margin_above_2_5V_test_point_V": 0.3504999999999998,
+    "scope": "Requires applicability of STM32 GPIO limit to PB6/PB1/PA2 and actual regulated supply; not brownout coverage"
+  },
+  "branches": [
+    {
+      "reference": "Q5",
+      "pins": {
+        "1": "USB_HIGH_BUDGET",
+        "2": "GND",
+        "3": "USB_HIGH_BUDGET_DRAIN"
+      },
+      "candidate": "DMN63D8L-7"
+    },
+    {
+      "reference": "Q6",
+      "pins": {
+        "1": "USB_SUSPEND_PULSE",
+        "2": "GND",
+        "3": "USB_LATCH_CLOCK"
+      },
+      "candidate": "DMN63D8L-7"
+    },
+    {
+      "reference": "Q7",
+      "pins": {
+        "1": "USB_RESUME_PULSE",
+        "2": "GND",
+        "3": "USB_LATCH_CLEAR_N"
+      },
+      "candidate": "DMN63D8L-7"
+    }
+  ],
+  "Q5": {
+    "R44_ohm": 390000,
+    "R45_ohm": 100000,
+    "minimum_parallel_ohm_at_1pct": 78795.91836734694,
+    "manufacturer_FAQ_approx_minimum_ohm": 45000,
+    "FAQ_url": "https://ez.analog.com/interface-isolation/a/documents/DO18157/is-it-possible-to-change-the-current-limit-while-the-max4995-is-powered-on",
+    "interpretation": "R44 remains connected while Q5 switches R45. The network is never intentionally open; even with Q5 ideal short, resistance exceeds the FAQ approximate minimum. This addresses switching topology, not USB current accuracy or leakage.",
+    "on_resistance_fraction_of_R45_at13ohm": 0.0001313131313131313,
+    "remaining": [
+      "SETI voltage/current and Q5 off leakage effect on 100mA budget",
+      "Transient feedthrough through R45 and low-voltage Coss",
+      "USB input current envelope across temperature/load"
+    ],
+    "leakage_screen": "xe-q5-leakage-screen.json",
+    "decision": "Common Q3/Q4 MPN cannot yet be selected for Q5: hypothetical sub-uA leakage can exhaust startup budget; SETI operating voltage and thermal leakage need evidence."
+  },
+  "Q6_Q7": {
+    "pullup_ohm": 10000,
+    "hypothetical_VBUS_max_V": 5.25,
+    "pullup_current_bound_mA": 0.5303030303030304,
+    "drain_low_screen_V_at13ohm": 0.006884898617976394,
+    "off_leakage_drop_V_if1uA": 0.0101,
+    "scope": "13ohm specified at25C/VGS2.5V/ID10mA; screens at smaller load are engineering extrapolations. No full-temperature guarantee. Q7 also shares supervisor output.",
+    "remaining": [
+      "U14 Schmitt thresholds at actual VBUS",
+      "U15 open-drain leakage and reset timing",
+      "MCU reset high-Z gate discharge and spurious latch clock edge",
+      "Measured pulse and latch output behavior across attach/suspend/resume"
+    ]
+  }
+}

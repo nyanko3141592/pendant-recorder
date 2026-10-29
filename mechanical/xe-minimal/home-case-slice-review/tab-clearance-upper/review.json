@@ -1,0 +1,84 @@
+{
+  "status": "SLICED_NOT_PRINTED",
+  "source_sha256": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+  "original_zmax_mm": 5.251400100000001,
+  "stop_original_z_mm": 1.03,
+  "stop_print_z_mm": 4.2214001,
+  "rotation_x_deg": 180,
+  "print_xyz_translation_mm": [
+    1.1,
+    1.3000000000000007,
+    5.251400100000004
+  ],
+  "profile_sha256": {
+    "machine.json": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+    "process.json": "f25c69282f70fb071f04620e01c96d52d6b9e2e3fe287a605e5041d374dbc5fe",
+    "filament.json": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+  },
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 340,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 19,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 30.3924560546875,
+          "Custom": 34.540000915527344,
+          "Gap infill": 0.76554936170578,
+          "Inner wall": 5.872952938079834,
+          "Internal solid infill": 40.158409118652344,
+          "Outer wall": 208.2130126953125,
+          "Overhang wall": 1.4392085075378418,
+          "Top surface": 20.279346466064453,
+          "Travel": 27.937929153442383,
+          "Undefined": 12.50505256652832
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 1.2331485748291016,
+            "total_used_g": 1.2331485748291016
+          }
+        ],
+        "generate_support_material_time": 3,
+        "id": 1,
+        "infill_time": 9,
+        "layer_filament_change": 0,
+        "main_predication": 335.08917236328125,
+        "make_perimeters_time": 11,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 29.60000228881836,
+              "height": 4.851399898529053,
+              "width": 26.19999885559082,
+              "x": 76.9000015258789,
+              "y": 75.19999694824219,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "upper.stl",
+            "triangle_count": 10128
+          }
+        ],
+        "sliced_time": 102,
+        "sliced_time_with_cache": 76,
+        "total_predication": 354.16607666015625,
+        "triangle_count": 10128,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 2
+  },
+  "limitations": [
+    "Toolpath stop height must be inspected separately",
+    "No printer operation or physical verification"
+  ]
+}

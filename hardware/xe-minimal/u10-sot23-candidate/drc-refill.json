@@ -1,0 +1,336 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T02:34:27",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-minimal.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0500 mm)",
+            "items": [
+                {
+                    "description": "パッド 4 [<no net>] - U10 ( B.Cu 上)",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 1.3625
+                    },
+                    "uuid": "76a21f49-d31d-4bd3-977b-80f807abafe8"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 1.4500 mm )",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 0.55
+                    },
+                    "uuid": "fdd93c90-b6ca-4b84-b5ca-381780221b36"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0950 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 2.0000 mm )",
+                    "pos": {
+                        "x": 23.75,
+                        "y": 0.55
+                    },
+                    "uuid": "43c794d5-2435-4642-a073-42452b51df3f"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.38,
+                        "y": 1.055
+                    },
+                    "uuid": "78e333fa-b36d-4498-8088-478a80872808"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 26.2,
+                        "y": 4.5
+                    },
+                    "uuid": "44a64f94-07b7-4828-8b50-610935d82a0a"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.7125 mm )",
+                    "pos": {
+                        "x": 24.25,
+                        "y": 3.6375
+                    },
+                    "uuid": "6670532e-0861-490c-98f4-ac361878fdbf"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /SD_EN)",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - U10 ( B.Cu 上)",
+                    "pos": {
+                        "x": 26.15,
+                        "y": 3.6375
+                    },
+                    "uuid": "02de5d22-2d4e-4445-b5f3-c7ebd8311b5f"
+                },
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 1.3206 mm )",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 3.6375
+                    },
+                    "uuid": "ba257cf4-a1cc-48c6-bc28-bf4471e4e5e7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 1.9849 mm )",
+                    "pos": {
+                        "x": 23.0,
+                        "y": 3.7
+                    },
+                    "uuid": "3dfa402d-71ee-4d6f-b8f3-51477ffdf9c3"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 2.3162 mm )",
+                    "pos": {
+                        "x": 23.75,
+                        "y": 2.55
+                    },
+                    "uuid": "a424baf0-dfe8-445e-bd11-a1d4f1dca0fb"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0786 mm)",
+            "items": [
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.4,
+                        "y": 0.6
+                    },
+                    "uuid": "585fa7d9-8ed2-4a1a-846d-ba9e3ed7b9b4"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 1.4500 mm )",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 0.55
+                    },
+                    "uuid": "fdd93c90-b6ca-4b84-b5ca-381780221b36"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_V3)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.98,
+                        "y": 2.78
+                    },
+                    "uuid": "4f5e3c9f-3bd9-40be-b8f8-ec22a06fdabd"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 2.3162 mm )",
+                    "pos": {
+                        "x": 23.75,
+                        "y": 2.55
+                    },
+                    "uuid": "a424baf0-dfe8-445e-bd11-a1d4f1dca0fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0900 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 3.715
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                },
+                {
+                    "description": "パッド 1 [/PDM_DATA] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 3.715
+                    },
+                    "uuid": "d18d6bbe-de4a-4076-b642-3eecffc370fd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0900 mm)",
+            "items": [
+                {
+                    "description": "パッド 4 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 5.415
+                    },
+                    "uuid": "5bba1861-3b94-4c6f-822b-8a0d96b28073"
+                },
+                {
+                    "description": "パッド 3 [/PDM_CLK] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 5.415
+                    },
+                    "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 1.3206 mm )",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 3.6375
+                    },
+                    "uuid": "ba257cf4-a1cc-48c6-bc28-bf4471e4e5e7"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - U10 ( B.Cu 上)",
+                    "pos": {
+                        "x": 26.15,
+                        "y": 3.6375
+                    },
+                    "uuid": "02de5d22-2d4e-4445-b5f3-c7ebd8311b5f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.0,
+                        "y": 6.0
+                    },
+                    "uuid": "dbc2181f-597e-41c2-8f0e-663a9071e0e7"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 2.1408 mm )",
+                    "pos": {
+                        "x": 19.6025,
+                        "y": 2.829999
+                    },
+                    "uuid": "47f61289-06dd-422b-ad17-77e46e3eac0f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "フットプリントライブラリ 'PendantD1' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント J1",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 22.495
+                    },
+                    "uuid": "7727b2fe-a090-4f44-8e0d-1481f25e6834"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "フットプリントライブラリ 'PendantMinimal' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 2.71,
+                        "y": 7.845
+                    },
+                    "uuid": "a33299a6-9b49-48b8-a0f1-ed4ca11872ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "フットプリントライブラリ 'Pendant' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント U8",
+                    "pos": {
+                        "x": 21.25,
+                        "y": 4.565
+                    },
+                    "uuid": "d94a7b73-f065-4f9f-a619-ba29abe430e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "フットプリントライブラリ 'Pendant' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント U11",
+                    "pos": {
+                        "x": 4.575,
+                        "y": 14.175
+                    },
+                    "uuid": "36be6cc9-a446-4db4-a3b0-ce16c16a683c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

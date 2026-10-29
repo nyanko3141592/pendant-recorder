@@ -1,0 +1,6 @@
+from pathlib import Path
+import wx,pcbnew as k,json,hashlib,shutil
+app=wx.App(False);P=Path(__file__).resolve().parent;src=P/'usb-vbus-corridor-candidate.kicad_pcb';b=k.LoadBoard(str(src));t=next(t for t in b.GetTracks() if t.m_Uuid.AsString()=='44e52ca4-2b96-4600-a2ba-8471534903d3');points=[t.GetStart(),t.GetEnd()];assert t.GetNetname()=='/GND';b.DeleteNative(t);k.ZONE_FILLER(b).Fill(b.Zones());coverage=[]
+for q in points:coverage.append(any(z.GetLayer()==k.F_Cu and z.GetNetname()=='/GND' and z.HitTestFilledArea(k.F_Cu,q) for z in b.Zones()))
+out=P/'usb-ground-plane-candidate.kicad_pcb';k.SaveBoard(str(out),b);shutil.copyfile(src.with_suffix('.kicad_pro'),out.with_suffix('.kicad_pro'))
+(P/'usb-ground-plane-review.json').write_text(json.dumps({'status':'PLANE_CONNECTION_TRIAL_NOT_RELEASED','source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'candidate_sha256':hashlib.sha256(out.read_bytes()).hexdigest(),'removed_ground_track':'44e52ca4-2b96-4600-a2ba-8471534903d3','endpoints_in_F_ground_after_fill':coverage,'limitations':['Endpoint plane presence alone does not establish connectivity or ground current capacity','No layer/zone deleted; retained all existing GND vias','Requires DRC and ground topology review']},indent=2)+'\n')

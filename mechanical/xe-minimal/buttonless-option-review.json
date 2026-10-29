@@ -1,0 +1,32 @@
+{
+  "status": "BUTTONLESS_FIRMWARE_OPTION_NOT_ADOPTED",
+  "flag": "PENDANT_AUTOMATIC_BATTERY_INDICATOR_MS",
+  "default": 0,
+  "candidate_interval_ms": 60000,
+  "recording_behavior": "Unchanged: recorder_boot_start starts recording automatically; existing button only requests battery indication",
+  "tests": [
+    "battery indicator ASAN/UBSAN: legacy debounce/held-button, periodic wraparound, timeout, invalid voltage and delayed polling",
+    "check_application_export.sh: default configuration PASS; lifecycle/hardware mocked"
+  ],
+  "conditional_LED_budget": {
+    "rail_max_V": 3.35,
+    "resistor_nominal_ohm": 6800,
+    "assumed_resistor_tolerance_fraction": 0.01,
+    "assumed_LED_forward_voltage_lower_bound_V": 0,
+    "worst_LED_on_ms_per_period": 600,
+    "period_ms": 60000,
+    "average_LED_current_bound_mA": 0.004976232917409387,
+    "excludes": [
+      "GPIO dynamic overhead",
+      "firmware timing if polling stalls with LED on",
+      "Actual rail and resistor qualification"
+    ]
+  },
+  "remaining": [
+    "Periodic application ARM build and application-path test",
+    "Physical switch/pullup removal candidate and PA15 pin configuration",
+    "LED visibility and actual current",
+    "Full/error indicators must remain distinguishable",
+    "No change to accepted case or PCB yet"
+  ]
+}

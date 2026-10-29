@@ -1,0 +1,37 @@
+{
+  "status": "NOT_RELEASED",
+  "board": "hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb",
+  "sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected_ground": 0,
+  "unconnected_signals": 0,
+  "parity": "PASS 308 pads",
+  "usb_copper_geometry": "PASS 48 items",
+  "pinmap": {
+    "suspend": "PA2",
+    "budget": "PB6",
+    "resume": "PB1",
+    "SD_EN": "PB5"
+  },
+  "firmware_pinmap_matches": true,
+  "firmware_tests": "USB input + storage sequencing mock HAL ASan/UBSan PASS; actual ARM HAL compile -Werror both drivers PASS",
+  "usb_input_application_integration": "Startup init and fault revoke only; USB configuration/suspend/resume event policy not integrated",
+  "reference_planes_and_power_widths": "Require review after reroute",
+  "reference_review": {
+    "status": "OWN_USB_TRANSITION_CLEARANCES_ONLY_IN_POINT_SCREEN",
+    "uncovered_samples": 95,
+    "unexplained_samples": 0,
+    "foreign_obstacle_samples": 0,
+    "scope": "Point sampling only; laminate, full corridor, impedance and physical SI not qualified"
+  },
+  "manufacturing_review": {
+    "directory": "hardware/mini-rect-v15/input-control-pa2-pb5/manufacturing-review",
+    "zip": "hardware/mini-rect-v15/input-control-pa2-pb5/ENGINEERING-REVIEW-NOT-FOR-ORDER.zip",
+    "assembly_references": 85,
+    "pcb_only_references": 6,
+    "exact_supplier_skus": "Not yet completed; engineering BOM explicitly marks unresolved",
+    "order_ready": false
+  },
+  "case_fit_review": "mechanical/mini-rect-v15/routed-input-fit-review.json"
+}

@@ -1,0 +1,36 @@
+{
+  "version": "HW-V1.3-EVT-ECONOMIC",
+  "parent": "HW-V1.2-EVT-ULTRACOST",
+  "board_mm": [
+    36.0,
+    36.0
+  ],
+  "board_thickness_mm": 0.8,
+  "copper_layers": 4,
+  "assembly_sides": 1,
+  "minimum_passive_package": "0402",
+  "minimum_ic_pitch_mm": 0.4,
+  "explicit_custom_stackup": false,
+  "requested_stackup": "vendor standard four-layer 0.8 mm; no controlled-impedance surcharge requested",
+  "placement_or_circuit_changes_from_v1_2": [],
+  "drc_geometric_violations": 0,
+  "drc_library_provenance_warnings": 74,
+  "unconnected_items": 0,
+  "candidate_sha256": "c5031afc9ef9dfc0df981f44c8e448d881091b739720f086f5a50a77530fc554",
+  "pcb_process_economic_compatible_on_published_rules": true,
+  "complete_pcba_economic_compatible": false,
+  "blocking_bom_item": {
+    "reference": "U11",
+    "current_mpn": "MKDV8GIL-AST",
+    "jlc_part": "C26159627",
+    "published_pcba_type": "Standard Only",
+    "reason_not_replaced": "The observed Economic-compatible 8Gbit SD-interface candidate XTSDG08GWSIGA/C25836657 is about USD 40 each; it erases most or all prototype fixed-fee savings and footprint/pin compatibility is not yet qualified."
+  },
+  "release_allowed": false,
+  "next_gates": [
+    "Run the live JLC BOM tool: verify every selected MPN remains available for Economic PCBA.",
+    "Choose Standard with the current lower-cost U11, or qualify a genuinely cheaper Economic-compatible 8Gbit managed storage part.",
+    "Review USB differential routing, PDM/SPI, power, heat and acoustics; V1.3 inherits the V1.2 autorouted candidate.",
+    "Export CAM/BOM/CPL only after the storage/economic route and routing review are accepted."
+  ]
+}

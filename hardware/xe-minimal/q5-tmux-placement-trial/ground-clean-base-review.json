@@ -1,0 +1,23 @@
+{
+  "status": "GND_OPEN_AND_OLD_BRANCH_REMAINS_NOT_ADOPTED",
+  "sha256": "ef2bdd5b9adf3daf5dad6e1e70fdd4d342a7b32d252673345a0e6340a58d3a8c",
+  "unconnected": 1,
+  "violations": [
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/USB_HIGH_BUDGET_DRAIN] ( In2.Cu \u4e0a\u3001\u9577\u3055: 1.9698 mm )",
+          "pos": {
+            "x": 6.8,
+            "y": 8.0
+          },
+          "uuid": "2c79c6b3-e4ff-43ed-9389-47bd00e58aa3"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    }
+  ],
+  "next": "Trace and remove remaining obsolete D branch; connect GND via another island endpoint. Direct join and conservative In1/In2/In3 route between 21.265,10.895 and 23.55,10.5175 failed."
+}

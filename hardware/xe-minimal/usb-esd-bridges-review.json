@@ -1,0 +1,38 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [
+    {
+      "from": [
+        "U2",
+        "1"
+      ],
+      "to": [
+        "U2",
+        "6"
+      ],
+      "net": "/USB_DP",
+      "segments": 1
+    },
+    {
+      "from": [
+        "U2",
+        "3"
+      ],
+      "to": [
+        "U2",
+        "4"
+      ],
+      "net": "/USB_DM",
+      "segments": 1
+    }
+  ],
+  "unrouted_local_jobs": [],
+  "physical_drc_violations": 0,
+  "unconnected_items": 114,
+  "board_sha256": "977380391230d37a291e4aae3d685d1f5dc7b6405474f4bec3a396a6d53302d6",
+  "limits": [
+    "External same-net ESD bridges; internal conduction not used to waive connectivity",
+    "USB main differential pair and signal integrity remain unqualified",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

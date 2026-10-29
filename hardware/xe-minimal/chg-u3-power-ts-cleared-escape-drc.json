@@ -1,0 +1,239 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T06:17:14",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "chg-u3-power-ts-cleared-escape-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.295,
+                        "y": 9.245
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - Q3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.3175,
+                        "y": 23.475
+                    },
+                    "uuid": "80905ce2-b930-431a-9044-931160fed9bc"
+                },
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                },
+                {
+                    "description": "パッド 2 [/VBUS_GATE] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.77,
+                        "y": 3.0
+                    },
+                    "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 12 [/USB_SUSPEND_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.0175
+                    },
+                    "uuid": "416e95a4-97f8-4ab5-b554-3ed6e6f90a13"
+                },
+                {
+                    "description": "配線 [/USB_SUSPEND_PULSE] ( B.Cu 上、長さ: 3.3784 mm )",
+                    "pos": {
+                        "x": 9.3175,
+                        "y": 2.975
+                    },
+                    "uuid": "dae4ed7d-5da9-4149-930f-cad76f1f1506"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 27 [/CHG_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 6.0175
+                    },
+                    "uuid": "59f8625a-35e8-4d8f-b79a-b9608e272ce7"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.1358 mm )",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "b67e2334-b343-43fc-9b96-47b70fbf0be8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.1358 mm )",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "b67e2334-b343-43fc-9b96-47b70fbf0be8"
+                },
+                {
+                    "description": "パッド 2 [/CHG_N] - R11 ( B.Cu 上)",
+                    "pos": {
+                        "x": 6.265,
+                        "y": 23.295
+                    },
+                    "uuid": "309ee24f-5040-4dc2-8318-5b1279f76949"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( B.Cu 上、長さ: 0.9000 mm )",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 11.745
+                    },
+                    "uuid": "40c59ab8-6981-458b-90df-ce0a4fee1f63"
+                },
+                {
+                    "description": "配線 [/BAT_TS] ( B.Cu 上、長さ: 1.2000 mm )",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 20.915
+                    },
+                    "uuid": "24b5f429-0077-46f6-a792-11e0e8628284"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 19.7,
+                        "y": 16.3
+                    },
+                    "uuid": "684ab17f-ff92-498b-bf40-338b0a20f216"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.35,
+                        "y": 15.2
+                    },
+                    "uuid": "c545e964-fe3c-463f-a7b1-fc704b31ba44"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/BAT_TS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.158604,
+                        "y": 12.381396
+                    },
+                    "uuid": "9cd948b7-a96a-4352-9bf2-b89da1059f7f"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/BAT_TS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 19.913604,
+                        "y": 20.351396
+                    },
+                    "uuid": "dd6157d6-75bf-4bc0-8d39-d954ebbb4a12"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

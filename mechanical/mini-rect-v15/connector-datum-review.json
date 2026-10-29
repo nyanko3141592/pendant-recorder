@@ -1,0 +1,78 @@
+{
+  "status": "DRAWING_DATUM_REVIEW_NOT_FIT_APPROVAL",
+  "source_url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/781/78171/781710003_sd.pdf?inline=",
+  "document": "781710000-SD PSD000 RevA released2022-06-07",
+  "confirmed_text": {
+    "sheet1_three_circuit_dimensions_mm": {
+      "A": 5.4,
+      "B": 2.4,
+      "C": 3.8,
+      "D": 2.7
+    },
+    "sheet2_reference_mated_height_mm": 1.55,
+    "sheet2_reference_mated_dimension_mm": 4.53,
+    "connector_manual": "AS-78172-001"
+  },
+  "limitations": [
+    "PDF text confirms parenthesized reference dimensions but does not establish positional datums; visual drawing or manufacturer CAD still required.",
+    "No maximum mated height or wire exit tolerance established.",
+    "Do not infer a 0.03mm overhang merely by subtracting4.50 from4.53; endpoints not yet established.",
+    "Existing harness endY22.02 and Z7.3 remain assumptions."
+  ],
+  "changes": [
+    "Exporter and current mechanical handoff now explicitly mark1.55 as reference, not guaranteed maximum."
+  ],
+  "next_action": "Compare current mating drawing or manufacturer CAD to the archived visual evidence; establish wire exit Y/Z before replacing harness endpoint assumptions.",
+  "manual_review": {
+    "AS-78172-001-001": {
+      "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationspecificationspdf/781/78172/AS-78172-001-001.pdf",
+      "finding": "RevC sheet1 lists78172-500* and78171-5*0*; AWG30 UL3302 example insulation OD0.70mm. Applicability to0003 and actual XE wire not established."
+    },
+    "AS-78172-006-001": {
+      "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationspecificationspdf/781/78172/AS-78172-006-001.pdf",
+      "finding": "URL returns document internally labeled AS-78172-007 revision1 dated2007, tentative. Contains vertical mating, no horizontal unmating and wire stress clearance guidance. Do not treat its angle limits as qualified current0003 requirements."
+    }
+  },
+  "historical_visual_review": {
+    "source_url": "https://static.chipdip.ru/lib/957/DOC011957221.pdf",
+    "document": "Molex SD-78171-008 RevG approved2014-10-15, 3 sheets",
+    "evidence_pdf": "mechanical/mini-rect-v15/evidence/Molex-SD-78171-008-RevG.pdf",
+    "sha256": "861b90161910159a8eb8b5e168b7e63ab14bfcfdcec0049fe8ff10e9d37fa0ca",
+    "visually_inspected_sheets": [
+      1,
+      2
+    ],
+    "findings": [
+      "Sheet1 lists78171-0003 and mating78172-00**; mating view shows wires leaving the open/notched side opposite signal solder tails.",
+      "Sheet1 header depth4.5, width5.4 for3circuits; mated height(1.55) reference only.",
+      "Sheet2 land layout shows signal pitch1.20, signal land0.60MIN x0.85, mounting land0.70x0.80.",
+      "Neither viewed sheet dimensions the wire exit center height or its longitudinal position."
+    ],
+    "board_mapping": {
+      "board_origin_mm": [
+        7.25,
+        17.95
+      ],
+      "rotation_deg": 180,
+      "side": "B",
+      "case_offset_xy_mm": [
+        2,
+        1.5
+      ],
+      "open_side_direction_case": "+Y",
+      "header_fab_open_side_case_Y_mm": 21.97,
+      "previous_envelope_edge_case_Y_mm": 22.02,
+      "interpretation": "21.97 =17.95+2.52+1.5 is the actual footprint Fab edge;22.02 was the padded envelope edge. Neither is verified mated wire exit.",
+      "wire_pitch_alignment_case_X_mm": [
+        8.05,
+        9.25,
+        10.45
+      ]
+    },
+    "limitations": [
+      "Historical drawing supports orientation only pending current-revision comparison.",
+      "Do not use image pixel scaling as manufacturer wire-exit dimensions.",
+      "No wire path or connector overhang clearance approval."
+    ]
+  }
+}

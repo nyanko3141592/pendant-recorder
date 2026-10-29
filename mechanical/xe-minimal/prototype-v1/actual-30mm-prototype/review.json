@@ -1,0 +1,103 @@
+{
+  "version": "HW-V1.4-EVT-ACTUAL-30MM",
+  "status": "PRINTABLE_ACTUAL_ASSEMBLY_CANDIDATE_NOT_PHYSICALLY_QUALIFIED",
+  "complete_case_bbox_mm": [
+    29.907612791678666,
+    29.98673209814518,
+    12.978132298145182
+  ],
+  "pcb_outline_mm": [
+    27.5,
+    27.5
+  ],
+  "battery_max_body_mm": [
+    15.5,
+    27.0,
+    4.2
+  ],
+  "cord_tunnel": {
+    "diameter_mm": 2.2,
+    "axis": "diagonal in case XY plane through top-right corner",
+    "recommended_initial_cord_mm": "1.0 to 1.5 braided polyester/nylon",
+    "construction": "reinforced boss integral to lower shell; no exterior protrusion"
+  },
+  "rounding_mm": {
+    "plan_corner_radius": 3.0,
+    "top_bottom_edge_radius": 1.5
+  },
+  "usb": {
+    "outer_bay_mm": [
+      14.0,
+      7.5
+    ],
+    "inner_throat_mm": [
+      9.4,
+      3.6
+    ],
+    "mating_face_y_mm": -26.17
+  },
+  "checks": {
+    "lower_to_internals_mm3": 5.337791054432941e-05,
+    "upper_to_internals_mm3": 0.0,
+    "corner_boss_to_internals_mm3": 0.0,
+    "cord_tunnel_to_internals_mm3": 0.0,
+    "pcb_to_battery_mm3": 0.0
+  },
+  "source_contract": {
+    "pcb": "canonical PCB STEP plus explicit U1/U8/J2 maximum envelopes",
+    "battery": "DTP401525-XE maximum finished body; factory lead/plug route remains a conservative reserved corridor",
+    "closure": "prototype seam bonding after fit verification; never bond the battery or harness"
+  },
+  "files": {
+    "case-lower-corner-cord.step": {
+      "sha256": "f958439934fa23d0d11bee978b828242e8b256430774de1ab74375bafd6695c0",
+      "bytes": 445141
+    },
+    "case-lower-corner-cord.stl": {
+      "sha256": "70488d4667b18675a8f3aa73e3f15cb54a0b47237c26d7e16a9753a12a3d2845",
+      "bytes": 488884
+    },
+    "case-upper-rounded.step": {
+      "sha256": "6a52803216c2a048a92659fd763b40c3ea034042cabe693446051ad49c17f965",
+      "bytes": 254639
+    },
+    "case-upper-rounded.stl": {
+      "sha256": "5aa778ddbbf951a73a1c3fc47ba0b3680162c474ff53d043e11248132c7d1dec",
+      "bytes": 410284
+    },
+    "actual-populated-pcb-complete.step": {
+      "sha256": "500d3c2425d73826b6ba29feb07b192a2679e2bc495ada8efaaa96d94f9b95a7",
+      "bytes": 21812117
+    },
+    "actual-populated-pcb-complete.stl": {
+      "sha256": "8039d7dca500502dfe5b798d405e5c44c1c0d675eba67885df84b7c0b8fab1cb",
+      "bytes": 33889184
+    },
+    "dtp401525-xe-max-body.step": {
+      "sha256": "12142966b8f5c4f252336baefa0a4054fe5e5f1784cb49d96cb6547c0ae380c8",
+      "bytes": 15530
+    },
+    "dtp401525-xe-max-body.stl": {
+      "sha256": "e292643f312d591ec65d156054205150c8dc0750f9c578e15499863d735d701f",
+      "bytes": 684
+    },
+    "actual-30mm-prototype-assembly.step": {
+      "sha256": "be3ee734b41fcba5a6a96dda803a4db1db1fea98d5df966febdace76d7b479e8",
+      "bytes": 28006861
+    },
+    "case-pcb-battery-print-plate.step": {
+      "sha256": "beefd8bc39f1c23324e8b980034c1521614ba47cc857978012a6c14c52140835",
+      "bytes": 29266962
+    },
+    "case-pcb-battery-print-plate.stl": {
+      "sha256": "19c24afca38f618b53fc76129a5b2a94f36d1073e9ca01b6ddd9a677a0629a1e",
+      "bytes": 34788784
+    }
+  },
+  "limitations": [
+    "The printed circuit part is a mechanical gauge; solder joints and flexible leads are not printable functional electronics.",
+    "The battery gauge must never be mistaken for or substituted for a real Li-ion cell.",
+    "Physical USB cable fit, pouch swelling, microphone acoustics, sweat, drop, cord proof/fatigue and print tolerance remain unmeasured.",
+    "The 30 mm target is met nominally in CAD; verify printer shrink and elephant-foot before treating it as a dimensional pass."
+  ]
+}

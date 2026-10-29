@@ -1,0 +1,89 @@
+{
+  "status": "HISTORICAL_ENGINEERING_BASELINE_NOT_CURRENT_SELECTION",
+  "preferred_candidate": "DTP401525-XE",
+  "user_sequence": "Battery selection before any new PCB or enclosure design",
+  "manufacturer": {
+    "url": "https://www.sengoku.co.jp/item/pdf/Spe-01-401525-XE-NTC-110mah-3.7V-en-1.pdf",
+    "sha256": "757689c6906ce62184e0f271ce908d6234ce503de70e19c43037fc7b4f342a57",
+    "revision": "Ver1.0; cover2020-07-20, drawing2020-06-28",
+    "finished_pack_max_mm": [
+      15.5,
+      27,
+      4.2
+    ],
+    "lead_length_mm": 15,
+    "lead_tolerance_mm": 3,
+    "wire": "UL3302AWG30",
+    "connector": "Molex781720003",
+    "pinout": {
+      "1": "red positive",
+      "2": "NTC",
+      "3": "black negative"
+    },
+    "rated_minimum_mAh": 110,
+    "max_charge_mA": 110,
+    "max_discharge_mA": 110,
+    "charge_limit_V": 4.2,
+    "discharge_cutoff_V": 2.4,
+    "end_charge_mA": 1.1,
+    "NTC": "JOINSET10k0603; exact part/B/R-T/tolerance not specified",
+    "standard_charge_discrepancy": "Table says0.2C(2mA), internally inconsistent:0.2*110=22mA. Do not silently treat printed2mA as verified22mA."
+  },
+  "connector_header": {
+    "model": "781710003",
+    "mated_height_mm": 1.55,
+    "source": "https://www.molex.com/en-us/products/part-detail/781710003?display=pdf",
+    "mating_cycles_max": 10
+  },
+  "why_over_PH": "15±3mm leads versus100±3mm PH leads;1.55mm mated low-profile connection. Same27mm finished pack length, not smaller25.3mm pack.",
+  "excluded": [
+    "300mAh pack: case exceeded user limit",
+    "40mAh pack: current4mA allocation does not meet16h",
+    "EZ3 not treated as different smaller cell: retail kit listsXE plus mating header"
+  ],
+  "new_PCB_or_case_design_allowed": true,
+  "order_ready": false,
+  "power_fit_screen": "docs/sourcing/xe-power-fit.json",
+  "power_selection_gate": "Storage peak allocation90mA after20mA non-storage reserve; average storage2.0125mA after2.8mA non-storage hypothesis. These are engineering allocations, not guarantees. Exact card not selected.",
+  "selected_model": "DTP401525-XE",
+  "decision_scope": "Select one exact commercial pack to design and evaluate against. This is not a claim that assembled30mm fit, charging safety or16h runtime has passed. No manufacturing/order release.",
+  "selection_reasons": [
+    "Domestic single-unit listings with matching model and connector",
+    "Published completed-pack maximum15.5x27x4.2mm and short15±3mm leads; body fits30mm envelope geometrically, complete assembly still needs proof",
+    "Protected completed pack with manufacturer110mA continuous limit; concrete design budget instead of assuming generic battery",
+    "110mAh permits4.8125mA average at assumed70%usable for16h; feasibility allocation, not runtime assurance"
+  ],
+  "retail_primary": {
+    "seller": "Sengoku",
+    "sku": "EEHD-5VAC",
+    "url": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5VAC",
+    "listed_JPY": 1500,
+    "quantity": 1,
+    "availability": "Listed; stock not reserved, delivered variant not inspected"
+  },
+  "unresolved_before_manufacturing_release": [
+    "Foldback of wire exit within30mm case without stressing pouch or exceeding thickness",
+    "NTC exact R-T or independent qualified contact-temperature approach",
+    "110mA whole-system peak budget and16h average-current feasibility",
+    "Charge voltage tolerance and standard-charge typo",
+    "Exact retail delivered variant and lead length match drawing"
+  ],
+  "design_permission_scope": "Only constraint-driven work for this selected battery within30x30x15. Resolve electrical and mechanical blockers before freezing fabrication. Selection must be reopened if constraints prove incompatible; do not enlarge case or reduce16h/36h targets silently.",
+  "temperature_decision": "Do not assume built-inNTC B=3435 from JOINSET catalogue. Exact installed part remains unproven. Evaluate independently specified board contact sensor without modifying user battery, or obtain exact installed R-T evidence; temperature protection remains mandatory.",
+  "reopen_if": [
+    "Full pack/lead/connector cannot fit30x30x15 with tolerances",
+    "No feasible power/recording architecture can satisfy110mA continuous and16h goal",
+    "Charge temperature/voltage protection cannot be specified for this pack",
+    "Commercial supplied product differs from drawing"
+  ],
+  "wire_exit_review": "mechanical/mini-rect-v15/wire-exit-screen.json",
+  "mechanical_risk": "30mm fit remains unproven: planar foldback screen with1.2mm walls requires30.7..31.7mm across assumed radii. Thinwall0.8/radius0.5 passes only geometrically, not qualified. Do not force bend.",
+  "size_update": "Explicit user2026-10-26 approval30x32mm, thickness<=15. Prior30mm-square fit screens are historical constraints, not present outer limit.",
+  "case_limit_mm_historical": [
+    30,
+    32,
+    15
+  ],
+  "latest_policy": "docs/requirements.md",
+  "note_latest": "User requests consultation before relaxation.30x32 is historical only; XE is not adopted for Omi-size requirement."
+}

@@ -1,0 +1,140 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T09:55:19",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "sel-via-probe.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_HIGH_BUDGET_DRAIN] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.175,
+                        "y": 10.692499
+                    },
+                    "uuid": "ec433f3d-a032-4157-83a2-13d10b40f054"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( In3.Cu 上、長さ: 2.7074 mm )",
+                    "pos": {
+                        "x": 6.9,
+                        "y": 10.1
+                    },
+                    "uuid": "974f8db8-f860-4c0d-9b8c-017bb85869b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.9,
+                        "y": 9.05
+                    },
+                    "uuid": "09b0f270-6a0b-47e5-bacf-2ef4877c44ee"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( F.Cu 上、長さ: 0.4297 mm )",
+                    "pos": {
+                        "x": 10.075,
+                        "y": 7.1925
+                    },
+                    "uuid": "fef15f09-e223-4bab-bef2-392e77221122"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /USB_HIGH_BUDGET)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 4.4407 mm )",
+                    "pos": {
+                        "x": 10.7,
+                        "y": 8.3
+                    },
+                    "uuid": "07697c8f-1cee-411c-bdcf-8a3dd6aeb6a8"
+                },
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.9,
+                        "y": 9.05
+                    },
+                    "uuid": "09b0f270-6a0b-47e5-bacf-2ef4877c44ee"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_HIGH_BUDGET と /GND)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.9,
+                        "y": 9.05
+                    },
+                    "uuid": "09b0f270-6a0b-47e5-bacf-2ef4877c44ee"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 2.7800 mm )",
+                    "pos": {
+                        "x": 8.175,
+                        "y": 9.0375
+                    },
+                    "uuid": "36b01fbd-fbbb-4de2-8c48-60028565eaf4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( F.Cu 上、長さ: 0.9990 mm )",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "853b0b3b-2838-401f-9e25-80498b321ad6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( F.Cu 上、長さ: 0.4297 mm )",
+                    "pos": {
+                        "x": 10.075,
+                        "y": 7.1925
+                    },
+                    "uuid": "fef15f09-e223-4bab-bef2-392e77221122"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

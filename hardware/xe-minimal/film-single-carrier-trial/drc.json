@@ -1,0 +1,381 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T21:55:03",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "panel-rounded.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 43.45,
+                        "y": 25.215
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                },
+                {
+                    "description": "パッド 5 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 44.93,
+                        "y": 25.255
+                    },
+                    "uuid": "162c1271-d4cd-4945-a364-70a88d661931"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TOOL1",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 6.0
+                    },
+                    "uuid": "0c90180d-cc8e-47e2-a4d2-148555164307"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID1F",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "2481d7d3-a137-443c-9848-68d8cc1172c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID3F",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "37bea383-ae4c-4fbe-aebd-74d7581ae5aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TOOL2",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 6.0
+                    },
+                    "uuid": "78d914d4-1419-4dd0-9b9a-82f53331e83a"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TOOL3",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 64.0
+                    },
+                    "uuid": "92d30a19-7091-4a8a-a136-aa5e69ad9a35"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID2F",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "f62fd819-dadb-4707-8ab9-9379d004c124"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID2B",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "115c25f0-4476-44f1-a031-062dbb4d722d"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID3B",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "230ae56a-916e-430e-b9a2-5db291402aa7"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID1B",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "329e302a-abf2-4811-89aa-5d0292083367"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "FID1Fのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "58a99de0-7a8f-4f36-b83e-fa1c4e1f4c6b"
+                },
+                {
+                    "description": "FID1Bのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "a75153b7-cd53-4c41-8b75-33986293e5f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "FID3Bのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "61c1e1b6-0330-4f65-b1e5-5fabee2ced08"
+                },
+                {
+                    "description": "FID3Fのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "766c28d6-0351-46bf-809b-593e333b1e50"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "FID2Fのリファレンスフィールド",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "68834c3f-c4bc-409f-8e40-9e3836dd2ec4"
+                },
+                {
+                    "description": "FID2Bのリファレンスフィールド",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "f03c262f-14b8-48e5-b0cb-7c01fb6b3be4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "FID1Bのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "a75153b7-cd53-4c41-8b75-33986293e5f0"
+                },
+                {
+                    "description": "パッド [<no net>] - FID1F ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "daa66c13-ca2b-4bcf-b999-b695de537b29"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "FID1Fのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "58a99de0-7a8f-4f36-b83e-fa1c4e1f4c6b"
+                },
+                {
+                    "description": "パッド [<no net>] - FID1F ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.0
+                    },
+                    "uuid": "daa66c13-ca2b-4bcf-b999-b695de537b29"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "FID3Bのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "61c1e1b6-0330-4f65-b1e5-5fabee2ced08"
+                },
+                {
+                    "description": "パッド [<no net>] - FID3F ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "49492afd-1512-4963-8c60-a090516ec951"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "FID3Fのリファレンスフィールド",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "766c28d6-0351-46bf-809b-593e333b1e50"
+                },
+                {
+                    "description": "パッド [<no net>] - FID3F ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 64.0
+                    },
+                    "uuid": "49492afd-1512-4963-8c60-a090516ec951"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "FID2Bのリファレンスフィールド",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "f03c262f-14b8-48e5-b0cb-7c01fb6b3be4"
+                },
+                {
+                    "description": "パッド [<no net>] - FID2F ( F.Cu 上)",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "0ac861b5-2a54-4c2e-b764-8eac86bd11a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "FID2Fのリファレンスフィールド",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "68834c3f-c4bc-409f-8e40-9e3836dd2ec4"
+                },
+                {
+                    "description": "パッド [<no net>] - FID2F ( F.Cu 上)",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 6.0
+                    },
+                    "uuid": "0ac861b5-2a54-4c2e-b764-8eac86bd11a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

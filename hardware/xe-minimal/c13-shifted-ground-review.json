@@ -1,0 +1,56 @@
+[
+  {
+    "delta": 180,
+    "shift_up_mm": 0.4,
+    "ground_mm": [
+      22.985,
+      16.145
+    ],
+    "via_mm": [
+      21.635,
+      17.335
+    ],
+    "length_mm": 1.7996110690924305,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0871 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.7996 mm )",
+            "pos": {
+              "x": 22.985,
+              "y": 16.145
+            },
+            "uuid": "192ca40f-f64e-4183-b0ee-2957ca957c6f"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS_LIMITED] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2000 mm )",
+            "pos": {
+              "x": 21.795582,
+              "y": 16.74411
+            },
+            "uuid": "83534ce7-f539-4140-b13d-f795ad715def"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      }
+    ]
+  },
+  {
+    "delta": 180,
+    "shift_up_mm": 0.4,
+    "ground_mm": [
+      22.985,
+      16.145
+    ],
+    "via_mm": [
+      22.255,
+      18.085
+    ],
+    "length_mm": 2.072800038595137,
+    "accepted": true,
+    "violations": []
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "status": "ACTUAL_BOARD_CONNECTIVITY_VERIFIED_NOT_DEVICE_QUALIFIED",
+  "pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "parts": [
+    {
+      "ref": "R13",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "side": "B.Cu",
+      "angle_deg": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/VBUS",
+          "xy_mm": [
+            12.75,
+            3.0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VBUS_GATE",
+          "xy_mm": [
+            13.77,
+            3.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "side": "B.Cu",
+      "angle_deg": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "xy_mm": [
+            22.795,
+            24.765
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/VBUS_N",
+          "xy_mm": [
+            22.795,
+            23.745
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "1M",
+      "footprint": "R_0402_1005Metric",
+      "side": "B.Cu",
+      "angle_deg": 90.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/VBUS_GATE",
+          "xy_mm": [
+            15.295,
+            13.765
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "xy_mm": [
+            15.295,
+            12.745
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q3",
+      "value": "2N7002 (VBUS detect)",
+      "footprint": "SOT-23",
+      "side": "B.Cu",
+      "angle_deg": 0.0,
+      "pads": [
+        {
+          "number": "1",
+          "net": "/VBUS_GATE",
+          "xy_mm": [
+            12.3175,
+            23.475
+          ]
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "xy_mm": [
+            12.3175,
+            21.575
+          ]
+        },
+        {
+          "number": "3",
+          "net": "/VBUS_N",
+          "xy_mm": [
+            14.1925,
+            22.525
+          ]
+        }
+      ]
+    }
+  ],
+  "qualification": "G/S/D correspondence agrees with reviewed top-view SOT23 drawing and library numbering. This is not manufacturer land-pattern or assembly-feeder qualification."
+}

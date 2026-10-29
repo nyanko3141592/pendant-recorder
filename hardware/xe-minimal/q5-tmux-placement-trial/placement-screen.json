@@ -1,0 +1,120 @@
+{
+  "status": "PLACEMENT_IMPROVED_BUT_REJECTED_PENDING_CLEARANCE_AND_COURTYARD_FIX",
+  "U16": [
+    4,
+    4.049691346263319,
+    8.825,
+    9.655000000000001,
+    90
+  ],
+  "C34": [
+    0,
+    4.91934955049954,
+    6.624999999999999,
+    8.455000000000002,
+    180
+  ],
+  "top_U16": [
+    [
+      4,
+      4.049691346263319,
+      8.825,
+      9.655000000000001,
+      90
+    ],
+    [
+      4,
+      4.219004621945798,
+      8.825,
+      9.855,
+      90
+    ],
+    [
+      4,
+      4.219004621945798,
+      8.825,
+      9.855,
+      270
+    ],
+    [
+      4,
+      4.39089968002003,
+      8.825,
+      10.055,
+      270
+    ],
+    [
+      4,
+      4.565084884205331,
+      7.025,
+      8.455,
+      0
+    ],
+    [
+      5,
+      4.049691346263319,
+      8.825,
+      9.655000000000001,
+      270
+    ],
+    [
+      5,
+      4.079215610874228,
+      15.025,
+      7.055,
+      180
+    ],
+    [
+      5,
+      4.17612260356422,
+      15.025,
+      7.455,
+      180
+    ],
+    [
+      5,
+      4.39089968002003,
+      8.825,
+      10.055,
+      90
+    ],
+    [
+      5,
+      4.472135954999579,
+      7.025,
+      8.254999999999999,
+      0
+    ],
+    [
+      5,
+      4.664761515876241,
+      7.025,
+      8.655000000000001,
+      0
+    ],
+    [
+      6,
+      2.863564212655271,
+      8.225,
+      5.654999999999999,
+      90
+    ]
+  ],
+  "limitations": [
+    "Same-net copper collision skipped; hole/paste/body/clearance still need exact DRC",
+    "Existing Q5 track stubs retained",
+    "No routes added"
+  ],
+  "exact_DRC": {
+    "violations_by_type": {
+      "clearance": 1,
+      "courtyards_overlap": 2,
+      "track_dangling": 3,
+      "silk_overlap": 1,
+      "silk_over_copper": 3
+    },
+    "unconnected": 6
+  },
+  "board_sha256": "dbd5f008bad83345c3884651f8989e1039ce5eb960a40baa0a5ff24566ea84a5",
+  "next": "Resolve U16 proximity to TP1/PDM_DATA and C34 overlap with Q7 before routing; preserve PDM signal integrity"
+}

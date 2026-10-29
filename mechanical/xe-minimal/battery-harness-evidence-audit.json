@@ -1,0 +1,56 @@
+{
+  "status": "PUBLIC_HARNESS_GEOMETRY_INCOMPLETE_NO_FIT_CLAIM",
+  "checked_date": "2026-10-27",
+  "verified_source": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/781/78172/781720002_sd.pdf",
+  "drawing_document": "781720000-SD PSD 000 A, 2022-06-07",
+  "reconfirmed_text": {
+    "three_circuit_part": "781720003",
+    "table_A_mm": 3.8,
+    "table_B_mm": 2.4,
+    "general_linear_tolerance_mm": 0.2
+  },
+  "new_distributor_document_link": {
+    "page": "https://item.szlcsc.com/518280.html",
+    "part": "781720003",
+    "catalog_code": "C505300",
+    "drawing_link": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/781/78172/781720003_sd.pdf?inline",
+    "result": "Direct HTTP2 download error92; web open inaccessible."
+  },
+  "access_results": [
+    "Canonical 0002 PDF text readable through web; screenshot still returned no usable pixels.",
+    "Canonical HTTP1 download failed with receive timeout; no local PDF obtained.",
+    "Archive and Farnell alternate routes unavailable."
+  ],
+  "not_established": [
+    "Graphic dimension endpoints and complete mated envelope",
+    "Exact original wire diameter, exit datum and free bending length",
+    "Allowable bend and installation slack"
+  ],
+  "decision": "Do not insert a guessed plug or route and label it verified. Do not repeat these failed PDF routes without new evidence. Continue independent design work, but require viewable applicable drawing or a measured retail battery assembly before case-fit release.",
+  "next_physical_evidence": {
+    "object": "Unmodified retail DTP401525-XE and mating 781710003 header",
+    "record": [
+      "Housing width/depth and mated height with datums and measurement uncertainty",
+      "Each original lead insulation diameter",
+      "Pack edge to connector edge length and actual free wire span",
+      "Wire exit location/orientation and fully seated polarity",
+      "Photographed slack during actual proposed buyer assembly sequence"
+    ],
+    "restriction": "No purchase or supplier inquiry performed; measurement does not establish supplier-wide manufacturing tolerance."
+  },
+  "additional_official_cable_reference": {
+    "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/369/36920/369200300_sd.pdf",
+    "document": "369200300 PSD 000 revision A, 2019-05-09",
+    "verified_text": [
+      "Uses 781720003 housings and 781720410 terminals",
+      "Specifies 28 AWG UL1571 wire for this Molex cable assembly",
+      "Length table applies to 369200300 and related cable assemblies"
+    ],
+    "applicability": "Not the battery supplier assembly. Do not transfer its wire gauge, insulation, lengths or routing to DTP401525-XE. It supplies no new guaranteed battery harness envelope.",
+    "decision": "Excluded from battery-fit dimensional inputs; retain original battery-specific evidence requirements."
+  },
+  "additional_application_reference": {
+    "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationspecificationspdf/781/78172/AS-78172-001-001.pdf",
+    "result": "Search indexed terminal assembly specification; full page fetch timed out. Not verified or adopted."
+  }
+}

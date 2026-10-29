@@ -1,0 +1,24 @@
+{
+  "status": "POWER_SEQUENCE_NOT_YET_QUALIFIED",
+  "source": "TMUX1101 SCDS410D sections 6.1,6.3,8.3.4,9.4",
+  "limits": {
+    "VDD_recommended_V": [
+      1.08,
+      5.5
+    ],
+    "analog_recommended_V": "0..VDD",
+    "analog_absolute_V": "-0.5..VDD+0.5",
+    "SEL_fail_safe": "Control input can be driven to 5.5 V with VDD=0; not an analog powered-off isolation guarantee",
+    "bypass_recommendation_uF": [
+      0.1,
+      10
+    ]
+  },
+  "candidate": "U16 VDD raw VBUS, D via R45 to MAX4995 SETI, S/GND at GND, SEL MCU with pulldown, C34 0.1uF",
+  "unresolved": [
+    "Bound SETI/D relative to raw VBUS during attach/detach/ramp and retained output energy",
+    "Verify current limiter enable/reset sequencing does not rely on unspecified TMUX behavior below 1.08 V",
+    "Evaluate C34 ground-return length and supply impedance; opposite-side routing is not noise qualification"
+  ],
+  "measurements": "NOT_RUN"
+}

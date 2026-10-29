@@ -1,0 +1,125 @@
+<main>:
+ 800f094:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+ 800f098:	b086      	sub	sp, #24
+ 800f09a:	f7f9 fd79 	bl	8008b90 <HAL_Init>
+ 800f09e:	f000 fdad 	bl	800fbfc <board_charge_inhibit_init>
+ 800f0a2:	f002 fc25 	bl	80118f0 <board_usb_input_v15_init>
+ 800f0a6:	f000 fce7 	bl	800fa78 <board_battery_io_init>
+ 800f0aa:	4b48      	ldr	r3, [pc, #288]	@ (800f1cc <main+0x138>)
+ 800f0ac:	6c1b      	ldr	r3, [r3, #64]	@ 0x40
+ 800f0ae:	f403 63e0 	and.w	r3, r3, #1792	@ 0x700
+ 800f0b2:	f5b3 6f80 	cmp.w	r3, #1024	@ 0x400
+ 800f0b6:	d001      	beq.n	800f0bc <main+0x28>
+ 800f0b8:	f7ff ff94 	bl	800efe4 <halted>
+ 800f0bc:	f001 fc68 	bl	8010990 <board_stack_guard_enable>
+ 800f0c0:	2800      	cmp	r0, #0
+ 800f0c2:	d0f9      	beq.n	800f0b8 <main+0x24>
+ 800f0c4:	f7f9 fd9a 	bl	8008bfc <HAL_GetTick>
+ 800f0c8:	4601      	mov	r1, r0
+ 800f0ca:	4841      	ldr	r0, [pc, #260]	@ (800f1d0 <main+0x13c>)
+ 800f0cc:	f003 f817 	bl	80120fe <battery_monitor_init>
+ 800f0d0:	f002 fa2c 	bl	801152c <board_system_clock_startup>
+ 800f0d4:	2800      	cmp	r0, #0
+ 800f0d6:	d0ef      	beq.n	800f0b8 <main+0x24>
+ 800f0d8:	2400      	movs	r4, #0
+ 800f0da:	2064      	movs	r0, #100	@ 0x64
+ 800f0dc:	f7f9 fd94 	bl	8008c08 <HAL_Delay>
+ 800f0e0:	a805      	add	r0, sp, #20
+ 800f0e2:	f8ad 4014 	strh.w	r4, [sp, #20]
+ 800f0e6:	f000 fc3d 	bl	800f964 <board_battery_measure_mv>
+ 800f0ea:	2800      	cmp	r0, #0
+ 800f0ec:	d0e4      	beq.n	800f0b8 <main+0x24>
+ 800f0ee:	f241 1294 	movw	r2, #4500	@ 0x1194
+ 800f0f2:	f8bd 3014 	ldrh.w	r3, [sp, #20]
+ 800f0f6:	4293      	cmp	r3, r2
+ 800f0f8:	d8de      	bhi.n	800f0b8 <main+0x24>
+ 800f0fa:	f640 6274 	movw	r2, #3700	@ 0xe74
+ 800f0fe:	4293      	cmp	r3, r2
+ 800f100:	d802      	bhi.n	800f108 <main+0x74>
+ 800f102:	4620      	mov	r0, r4
+ 800f104:	f7ff ffa4 	bl	800f050 <low_battery_export>
+ 800f108:	4932      	ldr	r1, [pc, #200]	@ (800f1d4 <main+0x140>)
+ 800f10a:	4833      	ldr	r0, [pc, #204]	@ (800f1d8 <main+0x144>)
+ 800f10c:	f7ff ff3c 	bl	800ef88 <x25519pubkey>
+ 800f110:	2800      	cmp	r0, #0
+ 800f112:	d0d1      	beq.n	800f0b8 <main+0x24>
+ 800f114:	4622      	mov	r2, r4
+ 800f116:	492f      	ldr	r1, [pc, #188]	@ (800f1d4 <main+0x140>)
+ 800f118:	4830      	ldr	r0, [pc, #192]	@ (800f1dc <main+0x148>)
+ 800f11a:	f000 ff2f 	bl	800ff7c <recorder_boot_start>
+ 800f11e:	2800      	cmp	r0, #0
+ 800f120:	d0ca      	beq.n	800f0b8 <main+0x24>
+ 800f122:	4f2f      	ldr	r7, [pc, #188]	@ (800f1e0 <main+0x14c>)
+ 800f124:	4e2d      	ldr	r6, [pc, #180]	@ (800f1dc <main+0x148>)
+ 800f126:	4638      	mov	r0, r7
+ 800f128:	f001 f8ec 	bl	8010304 <recorder_runtime_poll>
+ 800f12c:	2800      	cmp	r0, #0
+ 800f12e:	d0c3      	beq.n	800f0b8 <main+0x24>
+ 800f130:	7833      	ldrb	r3, [r6, #0]
+ 800f132:	2b00      	cmp	r3, #0
+ 800f134:	d13a      	bne.n	800f1ac <main+0x118>
+ 800f136:	4b2b      	ldr	r3, [pc, #172]	@ (800f1e4 <main+0x150>)
+ 800f138:	e8d3 4faf 	lda	r4, [r3]
+ 800f13c:	3304      	adds	r3, #4
+ 800f13e:	681a      	ldr	r2, [r3, #0]
+ 800f140:	1aa1      	subs	r1, r4, r2
+ 800f142:	424c      	negs	r4, r1
+ 800f144:	414c      	adcs	r4, r1
+ 800f146:	f7f9 fd59 	bl	8008bfc <HAL_GetTick>
+ 800f14a:	4622      	mov	r2, r4
+ 800f14c:	4601      	mov	r1, r0
+ 800f14e:	4b26      	ldr	r3, [pc, #152]	@ (800f1e8 <main+0x154>)
+ 800f150:	481f      	ldr	r0, [pc, #124]	@ (800f1d0 <main+0x13c>)
+ 800f152:	f002 ffd9 	bl	8012108 <battery_monitor_poll>
+ 800f156:	2300      	movs	r3, #0
+ 800f158:	f8ad 3016 	strh.w	r3, [sp, #22]
+ 800f15c:	f7f9 fd4e 	bl	8008bfc <HAL_GetTick>
+ 800f160:	f10d 0216 	add.w	r2, sp, #22
+ 800f164:	4601      	mov	r1, r0
+ 800f166:	4604      	mov	r4, r0
+ 800f168:	4819      	ldr	r0, [pc, #100]	@ (800f1d0 <main+0x13c>)
+ 800f16a:	f002 fff2 	bl	8012152 <battery_monitor_read>
+ 800f16e:	f44f 6361 	mov.w	r3, #3600	@ 0xe10
+ 800f172:	f640 32b8 	movw	r2, #3000	@ 0xbb8
+ 800f176:	f896 8000 	ldrb.w	r8, [r6]
+ 800f17a:	e9cd 3201 	strd	r3, r2, [sp, #4]
+ 800f17e:	fab8 f288 	clz	r2, r8
+ 800f182:	f8bd 3016 	ldrh.w	r3, [sp, #22]
+ 800f186:	4605      	mov	r5, r0
+ 800f188:	9300      	str	r3, [sp, #0]
+ 800f18a:	0952      	lsrs	r2, r2, #5
+ 800f18c:	4603      	mov	r3, r0
+ 800f18e:	4621      	mov	r1, r4
+ 800f190:	4816      	ldr	r0, [pc, #88]	@ (800f1ec <main+0x158>)
+ 800f192:	f002 ffee 	bl	8012172 <battery_stop_poll>
+ 800f196:	b158      	cbz	r0, 800f1b0 <main+0x11c>
+ 800f198:	f1b8 0f00 	cmp.w	r8, #0
+ 800f19c:	d108      	bne.n	800f1b0 <main+0x11c>
+ 800f19e:	4810      	ldr	r0, [pc, #64]	@ (800f1e0 <main+0x14c>)
+ 800f1a0:	f001 f928 	bl	80103f4 <recorder_runtime_stop>
+ 800f1a4:	2800      	cmp	r0, #0
+ 800f1a6:	d087      	beq.n	800f0b8 <main+0x24>
+ 800f1a8:	480c      	ldr	r0, [pc, #48]	@ (800f1dc <main+0x148>)
+ 800f1aa:	e7ab      	b.n	800f104 <main+0x70>
+ 800f1ac:	2400      	movs	r4, #0
+ 800f1ae:	e7ca      	b.n	800f146 <main+0xb2>
+ 800f1b0:	f8bd 3016 	ldrh.w	r3, [sp, #22]
+ 800f1b4:	f64e 2260 	movw	r2, #60000	@ 0xea60
+ 800f1b8:	9300      	str	r3, [sp, #0]
+ 800f1ba:	4621      	mov	r1, r4
+ 800f1bc:	462b      	mov	r3, r5
+ 800f1be:	480c      	ldr	r0, [pc, #48]	@ (800f1f0 <main+0x15c>)
+ 800f1c0:	f002 ff73 	bl	80120aa <battery_indicator_periodic_poll>
+ 800f1c4:	f000 fcda 	bl	800fb7c <board_battery_led>
+ 800f1c8:	bf30      	wfi
+ 800f1ca:	e7ac      	b.n	800f126 <main+0x92>
+ 800f1cc:	40022000 	.word	0x40022000
+ 800f1d0:	2002f990 	.word	0x2002f990
+ 800f1d4:	2002f9fc 	.word	0x2002f9fc
+ 800f1d8:	200009b8 	.word	0x200009b8
+ 800f1dc:	20010a70 	.word	0x20010a70
+ 800f1e0:	2002f958 	.word	0x2002f958
+ 800f1e4:	20027318 	.word	0x20027318
+ 800f1e8:	0800f965 	.word	0x0800f965
+ 800f1ec:	2002fa1c 	.word	0x2002fa1c
+ 800f1f0:	2002f9e8 	.word	0x2002f9e8

@@ -1,0 +1,33 @@
+{
+  "status": "CURVATURE_SCREEN_ONLY_NOT_HARNESS_APPROVAL",
+  "assumed_minimum_radius_mm": 1.4,
+  "return_chord_mm": 6.88,
+  "rows": [
+    {
+      "lead_length_mm": 12,
+      "amplitude_mm": 0.9635628768738067,
+      "min_radius_mm": 2.488668643275253,
+      "meets_assumed_radius": true
+    },
+    {
+      "lead_length_mm": 15,
+      "amplitude_mm": 3.527484559852236,
+      "min_radius_mm": 0.6798013362815077,
+      "meets_assumed_radius": false
+    },
+    {
+      "lead_length_mm": 18,
+      "amplitude_mm": 5.371838579584278,
+      "min_radius_mm": 0.4463999954528632,
+      "meets_assumed_radius": false
+    }
+  ],
+  "max_length_with_this_curve_and_radius_mm": 12.632998850762824,
+  "rejected_previous_model": "sin(2*pi*u) has nonzero endpoint slope and a tangent discontinuity at return entry; its expensive CAD run was intentionally stopped, not timed out",
+  "limitations": [
+    "1.4mm radius,0.6mm wire OD,exit heights and length datums remain unverified",
+    "This rejects only the specified planar curve family, not all possible paths",
+    "12mm curvature pass does not establish wire-wire, component or case clearance",
+    "15..18mm require another path with more space or a verified smaller allowable radius; do not cut/reterminate purchased leads"
+  ]
+}

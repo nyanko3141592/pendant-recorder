@@ -1,0 +1,81 @@
+{
+  "status": "WIDE350_FIRST018_REVIEW_CANDIDATE_NOT_RELEASE",
+  "artifacts": {
+    "pcb": {
+      "path": "hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_pcb",
+      "sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6"
+    },
+    "schematic": {
+      "path": "hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_sch",
+      "sha256": "cf32c71c158a592d571af45c8c10234174e13c8d3e8ef25ee2230655d70cbe13"
+    },
+    "lower": {
+      "path": "mechanical/xe-minimal/film-battery-end-wide-350um-lower-trial.step",
+      "sha256": "1a936dd64f53216e5f578304f2455dec28cffa0fec21106dcbd63720a528096a"
+    },
+    "separator": {
+      "path": "mechanical/xe-minimal/film-roomier-joint-separator-trial.step",
+      "sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2"
+    },
+    "upper": {
+      "path": "mechanical/xe-minimal/tab-clearance-upper-trial.step",
+      "sha256": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10"
+    },
+    "board_model": {
+      "path": "mechanical/xe-minimal/film-integration-integrated-board.step",
+      "sha256": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc"
+    },
+    "wire_model": {
+      "path": "mechanical/xe-minimal/film-lap-lowered-terminals-review.json",
+      "sha256": "2ce9018076e28973d23542a01735de162f9c382a853d91b0f1a85e125b54c921"
+    },
+    "printed_mating": {
+      "path": "mechanical/xe-minimal/film-battery-wide350-first018-mating-review.json",
+      "sha256": "240ea7de52fbf980a659653b76e23329b35cb7942057226b9a630272e8850735"
+    },
+    "printed_joint_clearance": {
+      "path": "mechanical/xe-minimal/film-wide350-printed-sensor-review.json",
+      "sha256": "c017afb961f790a8c2358ff814d2a5aa9d083e34b57dc1df2c8cb85473aeef2c"
+    },
+    "sensor_insulation_envelope": {
+      "path": "mechanical/xe-minimal/film-sensor-insulation-transition.step",
+      "sha256": "c3d95b41f5f8b74af75778323f8cb78a8f033463595cbd812fb3c58d4be6a5b4"
+    },
+    "sensor_insulation_review": {
+      "path": "mechanical/xe-minimal/film-sensor-insulation-transition-review.json",
+      "sha256": "7a67cb984fa76501db23033f729e242c5796754db7698415e64f6316e021fdf9"
+    },
+    "printed_lid": {
+      "path": "mechanical/xe-minimal/film-wide350-printed-lid-review.json",
+      "sha256": "e28b935b6afab771c0fe2b5949404cd3cffe07f3dba0c3894b7cf9bacbd44610"
+    },
+    "printed_battery": {
+      "path": "mechanical/xe-minimal/home-case-slice-review/film-battery-end-wide-350um-lower-first018/battery-clearance-review.json",
+      "sha256": "9e3651367d35776705b0ad93629bd80f9a6d48730b8f28d75fe69b7a909f2702"
+    },
+    "lower_slice": {
+      "path": "mechanical/xe-minimal/home-case-slice-review/film-battery-end-wide-350um-lower-first018/review.json",
+      "sha256": "29179ba125c9164f888518ed1409c6558dce01459827e03d321ba867ee6d5b02"
+    }
+  },
+  "separator_print_rotation_x_deg": 180,
+  "joint_finished_envelope_budget_mm": [
+    1.1,
+    2.8,
+    1.1
+  ],
+  "priority": "Fixed DTP401525-XE and 16 hours continuous recording first; minimize complete assembly, necessary size growth authorized.",
+  "unresolved": [
+    "Actual sensor joint insulation and minimum retention collar",
+    "Manufacturing forming sequence and strain isolation",
+    "Original battery harness and mating plug envelope",
+    "Temperature protection qualification",
+    "16-hour measured runtime and complete power budget qualification",
+    "Unified release fabrication files and full five-unit cost",
+    "Nominal printed seating contact is not measured seating or retention",
+    "Insulation clearance down to approximately 0.041mm in conservative printed-envelope screen; actual process tolerance unresolved",
+    "New lower wall toolpath and mechanical strength qualification remain incomplete"
+  ],
+  "lower_first_layer_mm": 0.18,
+  "lower_regular_layer_mm": 0.08
+}

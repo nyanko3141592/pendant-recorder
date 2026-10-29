@@ -1,0 +1,125 @@
+{
+  "status": "NOMINAL_GEOMETRIC_CAPTURE_AND_BODY_INSERTION_VERIFIED_PHYSICAL_AND_HARNESS_HOLD",
+  "source_pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "source_envelope_sha256": "d8cafcaf8fd5439f500d4437c61fdcdb60e19592d566f41b10dc870f3c8cf53e",
+  "board_supports": [
+    {
+      "xy_rect_mm": [
+        0.19999999999999996,
+        1.0,
+        -26.6,
+        -25.4
+      ],
+      "footprint_bbox_margin_mm": 0.2,
+      "hits": []
+    },
+    {
+      "xy_rect_mm": [
+        26.5,
+        27.299999999999997,
+        -26.6,
+        -25.4
+      ],
+      "footprint_bbox_margin_mm": 0.2,
+      "hits": []
+    },
+    {
+      "xy_rect_mm": [
+        26.5,
+        27.299999999999997,
+        -11.6,
+        -10.4
+      ],
+      "footprint_bbox_margin_mm": 0.2,
+      "hits": []
+    },
+    {
+      "xy_rect_mm": [
+        7.199999999999999,
+        8.0,
+        -0.7,
+        0.5
+      ],
+      "footprint_bbox_margin_mm": 0.2,
+      "hits": []
+    }
+  ],
+  "nominal_board_upper_stop_clearance_mm": 0.2008,
+  "max_board_upper_stop_clearance_mm": 0.1,
+  "carrier_post_top_z_mm": -0.035,
+  "carrier_bottom_z_mm": -2.22,
+  "growth_reserve_mm": 0.5,
+  "checks": {
+    "lower_valid": true,
+    "lower_solid_count": 1,
+    "lower_overlap_pcb_mm3": 0.0,
+    "lower_overlap_max_gauge_mm3": 0.0,
+    "lower_overlap_battery_mm3": 0.0,
+    "lower_overlap_growth_mm3": 0.0,
+    "upper_valid": true,
+    "upper_solid_count": 1,
+    "upper_overlap_pcb_mm3": 0.0,
+    "upper_overlap_max_gauge_mm3": 0.0,
+    "upper_overlap_battery_mm3": 0.0,
+    "upper_overlap_growth_mm3": 0.0,
+    "carrier_valid": true,
+    "carrier_solid_count": 1,
+    "carrier_overlap_pcb_mm3": 0.0,
+    "carrier_overlap_max_gauge_mm3": 0.0,
+    "carrier_overlap_battery_mm3": 0.0,
+    "carrier_overlap_growth_mm3": 0.0,
+    "lower_carrier_overlap_mm3": 0.0,
+    "upper_carrier_overlap_mm3": 0.0,
+    "lower_upper_overlap_mm3": 0.0,
+    "carrier_seat_contact_proxy_mm3": 0.005470000000005149,
+    "pcb_carrier_contact_proxy_mm3": 0.00383999999999954,
+    "carrier_upper_distance_mm": 0.8716220511207827
+  },
+  "limitations": [
+    "Nominal geometric capture depends on closed lid; lid joint strength and print tolerances unqualified.",
+    "Frame stiffness, positive support under lateral tolerance, and physical drop testing unqualified.",
+    "Original harness/mated connector/insertion route still unverified.",
+    "0.5mm growth allowance is an engineering reservation, not battery manufacturer qualification."
+  ],
+  "order_allowed": false,
+  "offline_slice": {
+    "return_code": 0,
+    "warnings": [],
+    "grams": 8.239084243774414,
+    "minutes": 32.74869181315104
+  },
+  "capture_evidence": "capture-and-insertion-review.json",
+  "connectivity_evidence": "carrier-print-connectivity.json",
+  "historical_xy_collision": "xy-interference-location.json records PRE-corner-relief geometry, superseded by final four-corner checks",
+  "files": {
+    "case-upper.stl": "8187a49a634d1e5e5658dab867e4f6d595a004bae1abeea4823c0f0498105612",
+    "battery-growth-reserve.stl": "5da001b057546afa057184dc392470f4c037a04f041aabb5637dfdff7ba970af",
+    "xy-interference-location.json": "4445cbba3278a9102d7a20cd18275d6e30f400d9f745243537cbb32701bed964",
+    "case-lower.step": "77425984b76ab935fcdd0f520db4264a150773689778568cd13eace6ade00876",
+    "carrier.stl": "d68d4e17877a6677043f73f4c080ed330237a658a30b5ba35e05f4fa48e11f0d",
+    "case-lower.stl": "35fad479d6e84e2896c7292e40bbae96d70a7354bb0d4721d03343a4456fb52c",
+    "battery-growth-reserve.step": "ec167f93ffc23bca89dc54c1b29fcc89ef3ce61dcb7331458b42ddf61bc1d9bd",
+    "FIT-CHECK-INSTRUCTIONS.txt": "d074f5f09b839dba6a26c901b51e4adf3b8988d352320b5c94402f21e9d172ac",
+    "battery-max-positioned.stl": "457f51762edb2d48a6fe17619e070d0a74a55fae89152808510c7c3a379702c2",
+    "pcba-max-gauge.stl": "d140faa63e2116cc4e248160ea6ec3529baaa24308580fe5320fc479f2ee6356",
+    "capture-and-insertion-review.json": "059855aebf74f33aaf4dd597463e8cd17083b5c4de1b406e8463236f7c18cc47",
+    "pcba-max-gauge.step": "30e104ebb8fc7e282a75acf9e0fa52aa3c3d48674f8c8186008d62b7dfc5be8d",
+    "carrier.step": "309d4ea9c140aad8c99e4eff5e6d737d9c07d7f7c55a5a83d2cb9ae897928f84",
+    "carrier-print-connectivity.json": "4d53eddd461777e14f8171a55425487d71c884583e5ed1c6aadf042224ba08cd",
+    "case-upper.step": "bde703de2cfdde1a5bfb3bfaffd84e2ef08b131eec5e57ddd0e9a746d3aec45b",
+    "battery-max-positioned.step": "312119991dc0db8d03908e1f3e9de677355086fbcbe5a1c0b9c576b65e4ff56c",
+    "assembly.step": "d061c89bf392fd724d5ee6a9bae7630d8f3850dea36189e7940dda78ccc6c5c3",
+    "a1mini-fit-kit/case-upper.stl": "4299e3b2f484c3bbcdd83ad3b5abe9f3d513d6e7ebbcaba35ac87e40363c10c3",
+    "a1mini-fit-kit/captured-carrier-fit-kit.3mf": "80be3b4a9341a906279b2a1ffad2223aca488d5137a2528901c230dae09c4470",
+    "a1mini-fit-kit/result.json": "5a31c7f9384c86d2f694097f32131ec7a6c4a76125c01a7f92d2d1015058bc5b",
+    "a1mini-fit-kit/carrier.stl": "809b30b14e1aadbb5c67ca944c1369226e33c04fe91076244e37e49f9c4c2005",
+    "a1mini-fit-kit/plate_1.gcode": "960b9461cfc7d0b76731175895be2d2f734bcdb47d0ef3e0bce3dd266a09ab78",
+    "a1mini-fit-kit/slice.log": "456dde7efd4c67d9fc68114c28acc1a3bc08162c0735f590c71c5ac31538c777",
+    "a1mini-fit-kit/case-lower.stl": "f31bb1ec48375117013514609cded8d7d6f9b1849a36fcb58b5a8be34c58f154",
+    "a1mini-fit-kit/battery-max.stl": "4a1027d4e8fbbdb8fb1f0a96341389147f7958b798f4d076ac434fd4e14980fa",
+    "a1mini-fit-kit/pcba-max-gauge.stl": "a0b5812006152a4a19d1c888b810511f4c17b9197432c708010b6a294860e1ca",
+    "a1mini-fit-kit/process.json": "f395536fa41cecc6235d412b0ecbe76005d2140fc1d33b29a81d4c5ba06d58ad",
+    "a1mini-fit-kit/machine.json": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+    "a1mini-fit-kit/filament-petg-a1.json": "d2dd5a3e684ba388b6bd38fa087e82e12de137a887b3d028891d92b6d2d7319d"
+  }
+}

@@ -1,0 +1,1006 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T02:48:36",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "standard-via-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /ISET と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( In4.Cu 上、長さ: 1.2748 mm )",
+                    "pos": {
+                        "x": 21.6,
+                        "y": 15.8
+                    },
+                    "uuid": "c6608a61-aad2-465c-a3ad-a6136698f625"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /ISET と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( In4.Cu 上、長さ: 3.1313 mm )",
+                    "pos": {
+                        "x": 22.15,
+                        "y": 14.65
+                    },
+                    "uuid": "71c74d54-1baf-4d4a-979f-04d6db842924"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0541 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.7225 mm )",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "9c7bf416-c10e-4d3c-8d2f-0a8ebf74a584"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.85
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0975 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.9899 mm )",
+                    "pos": {
+                        "x": 17.8,
+                        "y": 11.9
+                    },
+                    "uuid": "07a53b51-4648-42d9-82cb-028ea0a6d032"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( B.Cu 上、長さ: 0.6450 mm )",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 11.205
+                    },
+                    "uuid": "7e4c4d22-b554-4137-b568-d037d7eec773"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( In3.Cu 上、長さ: 1.5240 mm )",
+                    "pos": {
+                        "x": 20.9,
+                        "y": 16.2
+                    },
+                    "uuid": "ab7cc318-cb6f-4af3-a49c-35070b2d3c1e"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /PDM_CLK)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 2.8200 mm )",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "db9c08ef-b312-494b-8aa2-ab0935cbf619"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 2.8200 mm )",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "db9c08ef-b312-494b-8aa2-ab0935cbf619"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0578 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 0.7182 mm )",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 6.0175
+                    },
+                    "uuid": "e2c70bd7-e4a5-48dc-b030-30a542612674"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /PDM_CLK)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /PDM_CLK)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /PDM_CLK)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /PDM_CLK)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /PDM_CLK)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /PDM_CLK)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0183 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CS_N] ( In4.Cu 上、長さ: 1.7889 mm )",
+                    "pos": {
+                        "x": 13.6,
+                        "y": 5.2
+                    },
+                    "uuid": "a7263004-8fe7-4a58-b06e-e4315ca629a1"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /ILIM_VSET と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( In2.Cu 上、長さ: 3.1623 mm )",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 16.6
+                    },
+                    "uuid": "2b6ce15e-74c3-493e-9248-236b27b53f97"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0325 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK] ( In4.Cu 上、長さ: 0.4272 mm )",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 6.3
+                    },
+                    "uuid": "a7ba80c0-e7c3-460b-8bb7-b8528561af0f"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0328 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK] ( F.Cu 上、長さ: 1.0548 mm )",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "95c35e9b-aff2-4972-bcad-d7fa5b146758"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0550 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( In2.Cu 上、長さ: 4.6024 mm )",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.85
+                    },
+                    "uuid": "6c38d58f-1247-4b27-9c24-01ab55f845ea"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 5.7009 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 15.5
+                    },
+                    "uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.85
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.85
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.85
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.85
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DM と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 5.7009 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 15.5
+                    },
+                    "uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.85
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_CHARGER と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( B.Cu 上、長さ: 1.5524 mm )",
+                    "pos": {
+                        "x": 22.985,
+                        "y": 15.185
+                    },
+                    "uuid": "43d89546-5845-4812-a5f5-dfbd867dfcca"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.05,
+                        "y": 15.2
+                    },
+                    "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.265,
+                        "y": 10.895
+                    },
+                    "uuid": "ce2693b5-898d-460e-846b-4133de21b0ee"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.265,
+                        "y": 10.895
+                    },
+                    "uuid": "ce2693b5-898d-460e-846b-4133de21b0ee"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.265,
+                        "y": 10.895
+                    },
+                    "uuid": "ce2693b5-898d-460e-846b-4133de21b0ee"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.265,
+                        "y": 10.895
+                    },
+                    "uuid": "ce2693b5-898d-460e-846b-4133de21b0ee"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.05,
+                        "y": 10.6
+                    },
+                    "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.05,
+                        "y": 10.6
+                    },
+                    "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "677b077b-c24a-47bc-af4c-e8d94aca8a14"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.05,
+                        "y": 10.6
+                    },
+                    "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.05,
+                        "y": 10.6
+                    },
+                    "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "5b231fb3-05ee-44a9-97b0-c06c95af5573"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2500 mm; 現状 0.2150 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.05,
+                        "y": 10.6
+                    },
+                    "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de"
+                },
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.265,
+                        "y": 10.895
+                    },
+                    "uuid": "ce2693b5-898d-460e-846b-4133de21b0ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2500 mm; 現状 0.1328 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.7,
+                        "y": 5.95
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 6.15
+                    },
+                    "uuid": "f0aeb026-b62e-4fb2-b5a4-5233326408bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        }
+    ]
+}

@@ -1,54 +1,35 @@
 # pendant-recorder
 
-**小さく身につけて録音し、USBで自分のPCへ音声を取り出すOSS録音機。**
+DTP401525-XE（3.7V・110mAh）を使う、連続録音型のUSB-Cネックレスレコーダーです。現行の4層設計レビューは[確認パッケージ](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/START-HERE.txt)に集約しています。基板・製造出力・実寸ダミーは同じ基板版へ揃えていますが、ファームの工場書込み版と純正配線込みの機構は未確定です。
 
-V1はUSB-C充電、充電なし連続16時間以上の録音、36時間以上の圧縮音声保存、登録鍵によるローカル復号・WAV取出しに集中します。無線と画面を外した円形D1を設計中（Rev Cから派生）。文字起こし・要約・クラウド・課金はV1必須外です。
+**現状は `HOLD` です。注文、支払い、製造データのアップロードは禁止です。** CAD・静的検査・ソフトウェア試験は通過していますが、安全性、16時間連続録音、30時間保存、3 OSでのUSB取込み、ケース強度は実機未確認です。
 
-**まだ発注不可・実機未検証です。** 回路図、実フットプリント配置、6層全接続配線、ケース収納案までの設計成果物であり、16時間動作や無加工組立を達成した製品ではありません。
+## 優先順位
 
-- [D2：紐通し・蓋固定・音道を追加したケース](mechanical/structure-d2/README.md) — 強度/公差未検証
-- [最新D1：直径25.5mmの円形ケース・円形基板・比較モデル](mechanical/structure-d1/README.md) / [D1回路図](hardware/omi-fit-d1/schematic.pdf) — ERC/DRC/未接続/回路図等価性すべて0・発注不可
-- [V1の範囲・合格条件](docs/v1-scope.md) / [現行要件](docs/requirements.md)
-- [Rev C回路・PCB・BOM](hardware/rev-c/README.md) / [回路図PDF](hardware/rev-c/pendant-rev-c.pdf)
-- [業者DFM照会用データ（発注禁止）](hardware/omi-fit-d1/DFM-REVIEW-NOT-FOR-ORDER.zip) / [69実装部品の品番候補](hardware/omi-fit-d1/sourcing-candidates.csv)
-- [現行D1の発注可否](hardware/omi-fit-d1/order-status.json) / [発注までの残件・電池確認仕様](docs/d1-order-gates.md)
-- [旧Rev B・Rev C・Omi・500円玉のサイズ比較](mechanical/size-comparison-c0/top.png)
-- [ケース内部の分解表示](mechanical/structure-c0/exploded.png)
+今回は低コストで小型の初号試作を作り、実際に使って評価します。基本安全対策を前提に、**使い勝手（特に電池持ち）→小型化→初回費用**の順で判断します。性能は根拠のある理論見積りで達成を見込めれば試作判断へ進め、実測や量産認定を事前条件にしません。現時点で理論成立を確認済みという意味ではありません。詳細は[現行要件](docs/requirements.md)を正本とします。
 
-Rev Cの収納案は23.8×34×14mm。旧Rev Bの24.8×46.5×12.8mmより長さ12.5mm減、厚さ1.2mm増。配線・実際の電池線材・ケース固定・音道・公差の成立確認は未完了です。Rev A/Bは比較原本として保持します。
+## 現行候補
 
-USB-C接続直後は充電のみで録音状態を維持。明示同期時だけ録音を止め、macOS/Windows/Linuxへ暗号化音声をコピー・復号し、通常WAVとして保存します。検証・永続化済みの一致録音だけ本体から削除する仕様です。ファームと本番CLIは未実装。
+基板27.5mm角・最大4層・通常through via・固定DTP401525-XE・16時間録音・30時間以上保存が現要件です。旧6層正本とCase V5は履歴として保全し、現候補の製造入力には使用しません。
 
-JLC等へ基板製造と両面部品実装を依頼し、完成電池・治具で手はんだなしに組み立てることを発注条件にします。実装受理・治具・付属電池収納の確認はこれからです。
+| 項目 | 現在の確認先 | 判定 |
+| --- | --- | --- |
+| 回路・4層基板 | [同版KiCad設計](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/design/) | 基準PCB b3cdfc064b43…、DRC/未接続/parity 0。電気性能の認定ではない |
+| BOM・調達 | [全BOM確認](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/live-full-bom-summary.json) | 68実装・36型番。U1/U12/J1事前手配、C30ロス余裕不足 |
+| 製造資料 | [確認パッケージ](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/START-HERE.txt) | Gerber/drill/BOM/CPL同梱。回転・DFM・90Ω・総額は未確定、upload禁止 |
+| ケース・実寸ダミー | [現優先候補](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/mechanical-captured-carrier/FIT-CHECK-INSTRUCTIONS.txt) | 約30.8×30.8×14.2mm。ケース3点＋PCBA/電池ダミーのSTEP/STL/3MF。配線込み組立・印刷・強度は未認定 |
+| ファーム・取込み | [STM32](firmware/stm32/) / [host](host/README.md) | 現codecで暗号化・復号の非実機試験済み。工場imageと3 OS実機動作は未確定 |
+| 組立・試験 | [現4層の手順](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/ASSEMBLY-AND-EVT.txt) | 発注前の設計確認と試作後の実測を分離。実測合格は主張しない |
+| 残件 | [release-gates.json](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/release-gates.json) | 調達・製造・実装方向・純正配線/蓋・電気評価・工場formatが未完 |
 
-## 構成
-- `docs/design.md` 設計書（構成、ボード比較、電力の見積もり、音声フォーマット、時刻、USB、省電力、ケース）
-- `docs/bom.md` 部品表（価格は概算・要確認）
-- `docs/open-questions.md` 未決事項
-- `docs/omi-reference.md` Omiのハード／ファーム調査（出典つき）
-- `reference/omi/` Omiの参照ファイル（MIT）
-- `AGENTS.md` Cursorエージェント向けの要約
-- `firmware/` PlatformIO の骨組み（XIAO ESP32S3 Sense 向け、スタブ）
-- `host/` Mac側スクリプトのスタブ（マウント検出、コピー、ローカル文字起こし）
+## 製造と購入者作業の境界
 
-- 電池残量・充電・録音・同期・異常を本体で確認できるインジケーターは必須。回路追加済み、表示ファームと筐体への反映は未実装。
+JLCPCB Standard PCBAで両面実装、検査、書込み、出荷前パネル分割まで完結させる方針です。購入者による電子部品の調達、部品支給、はんだ、圧着、配線加工は認めません。購入者が用意して組み付けるものは、固定型番のDTP401525-XE、ケース、ネックレス紐だけです。業者完結できない場合は代替部品または設計変更とし、個別問い合わせを前提に進めません。
 
-## 状態
-設計のたたき台です。数値のうち「推定」「要検証」と書いたものは、まだ実測していません。
+## 発注を止めている条件
 
-## 製品方針とv1
+発注前の設計残件は[release-gates.json](hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/release-gates.json)を参照してください。試作後の安全・16時間録音・30時間保存・USB・ケース強度試験は未実施です。発注前設計確認の完了と実機認定を区別し、注文・支払い・upload・業者連絡・実印刷は禁止のままです。
 
-販売の軸は組立・動作確認済みデバイス。ソースを公開し、自分で作る人も完成品を購入する人も使える形にします。アプリ課金/API代理販売は当面行わず、寄付は任意の将来項目です。
+旧XIAO/ESP32、旧PCB、旧ケース、外付け温度センサー案は比較・履歴資料であり、現行製造データへ混ぜません。
 
-**v1は「業者実装済み基板を発注 → ファーム実装 → はんだなしで組立・実機検証 → 改版」の最初のサイクルです。販売完成版ではありません。** 現在は全接続配線済みですが、部品適合性・完成電池・製造/組立条件が未確定で発注不可。必要品を買って電池を挿し、完成治具で書込み・検査できる状態を目指します。
-
-- [製品方針の決定記録](docs/decisions/0001-product-and-v1.md)
-- [発注・実装・試験・販売候補までの開発フロー](docs/development-flow.md)
-- [検証記録テンプレート](docs/validation/TEMPLATE.md)
-- [貢献手順](CONTRIBUTING.md) / [MITライセンス](LICENSE) / [第三者通知](THIRD_PARTY_NOTICES.md)
-
-ローカル処理は外部への送信を減らすための方針であり、機密保護の保証ではありません。録音の暗号化・紛失時保護は未実装です。機密録音を公開リポジトリやissueへ投稿しないでください。
-
-## 発注前の費用と残件（2026-10-25）
-
-[発注準備台帳](docs/procurement/preorder.md) / [5台試作の概算費用](docs/procurement/cost.md)。製作約6.0万〜13.2万円、道具を全て揃える初回約8.2万〜18.2万円の予算仮置き。正式見積りではなく、電池MOQ・専用加工費・再試作は別。完成電池/充電温度整合、電気品質、業者DFM、筐体/無はんだ治具が未確定のため、発注不可を維持。
+[プロトコル](docs/protocol/README.md) / [貢献手順](CONTRIBUTING.md) / [MITライセンス](LICENSE) / [第三者通知](THIRD_PARTY_NOTICES.md)

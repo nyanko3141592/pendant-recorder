@@ -1,0 +1,127 @@
+{
+  "status": "CONDITIONAL_MIXED_SOURCE_POWER_MIC_REFERENCE_NOT_QUOTE",
+  "sources_sha256": {
+    "docs/procurement/xe-jlc-switch-cost-scenario.json": "55de086efaa89a5712d2eb341241153d328cd58b8689cdc1742b373f90a7fd90",
+    "hardware/xe-minimal/fixed-usb-limit-trial/dmn-land-trial/five-unit-cost-coverage.json": "5969299b0ca785548c3209f87c3b7578477fbf92ae6cb426d4c8c531edb3e16a",
+    "docs/procurement/xe-tps7a02-jlc-availability.json": "b19eed8b4a005b2ad1c7a16c526b2eb9838886676fec8ab982aca511a8f7d834",
+    "docs/procurement/xe-tps22916-jlc-availability.json": "3936fdbf4d91a13497297d129ae680ba13a2bb336fa2bc1a077794e9d18e9d6a",
+    "docs/procurement/xe-microphone-retail-availability.json": "dcf66e41bc539019eaf2d6125757058f493a512149bec15228f1c47ef2475fe3",
+    "docs/procurement/xe-tlv7042-retail-availability.json": "eabbd55111d1c4a40113697ddf50a684f551e760cd868022acc43c94abcd66c5",
+    "docs/procurement/xe-dmn63-jlc-availability.json": "d3fe2197d57a96e0f9cb12fc550969ea84b5ecad9866a4db32cb49a61ee7a7c0",
+    "docs/procurement/xe-tlv803-jlc-availability.json": "c4fa3ec67afd3046d365ee2456e6d57d2025ebec064bc45bbaa0bdc55ca8e1b9",
+    "docs/procurement/xe-hcs74-jlc-availability.json": "63d2db02ee6dd05f318aee14b21fd51cd15c05d25e3b0d10a4ca764887d9ea6e",
+    "docs/procurement/xe-usblc6-jlc-availability.json": "1bbcbff9a68c6e7367b6f1ec67946d92221d25703a513a7115b1cc9f608bce69",
+    "docs/procurement/xe-battery-header-jlc-availability.json": "21769a63118a0aea4df2d81aa592bb6ce7fab7bad5bc0e0dbe5c6fbf68408f22",
+    "docs/procurement/xe-usb4105-retail-availability.json": "1eea7f3c25b3f48ca8c05dccf0a6124c11dff42beb019a79070030ab0883f52c",
+    "docs/procurement/xe-led-retail-availability.json": "f6fa16e59d2405feb480ad9f326b3f978d09376d447d34d61c3bfc5f87e10c26"
+  },
+  "replacements": [
+    {
+      "mpn": "TPS7A0233PDBVR",
+      "removed_JPY": 685.0,
+      "added_currency": "USD",
+      "added_amount": 2.84,
+      "quantity": 5
+    },
+    {
+      "mpn": "TPS22916CYFPR",
+      "removed_JPY": 455.0,
+      "added_currency": "USD",
+      "added_amount": 1.5895,
+      "quantity": 5
+    },
+    {
+      "mpn": "IM69D130V01XTSA1",
+      "removed_JPY": 2145.0,
+      "added_currency": "JPY",
+      "added_amount": 2160.0,
+      "quantity": 5
+    },
+    {
+      "mpn": "TLV7042DDFR",
+      "removed_JPY": 1520.0,
+      "added_currency": "JPY",
+      "added_amount": 1535.0,
+      "quantity": 5
+    },
+    {
+      "mpn": "DMN63D8L-7",
+      "removed_JPY": 242.0,
+      "added_currency": "USD",
+      "added_amount": 0.901,
+      "quantity": 10
+    },
+    {
+      "mpn": "TLV803EB29DBZR",
+      "removed_JPY": 410.0,
+      "added_currency": "USD",
+      "added_amount": 2.0135,
+      "quantity": 5
+    },
+    {
+      "mpn": "SN74HCS74DYYR",
+      "removed_JPY": 245.0,
+      "added_currency": "USD",
+      "added_amount": 1.474,
+      "quantity": 5
+    },
+    {
+      "mpn": "USBLC6-2P6",
+      "removed_JPY": 565.0,
+      "added_currency": "USD",
+      "added_amount": 1.7605,
+      "quantity": 5
+    },
+    {
+      "mpn": "781710003",
+      "removed_JPY": 340.0,
+      "added_currency": "USD",
+      "added_amount": 1.4335,
+      "quantity": 5
+    },
+    {
+      "mpn": "USB4105-GF-A",
+      "removed_JPY": 655.0,
+      "added_currency": "JPY",
+      "added_amount": 660.0,
+      "quantity": 5
+    },
+    {
+      "mpn": "APHHS1005LSYCK/J3-PF",
+      "removed_JPY": 425.0,
+      "added_currency": "JPY",
+      "added_amount": 425.0,
+      "quantity": 5
+    }
+  ],
+  "subtotals": {
+    "mixed_date_parts_reference_subtotals_by_currency": {
+      "JPY": 13599.7,
+      "USD": 227.314
+    },
+    "mixed_date_quantity_proposal_reference_subtotals_by_currency": {
+      "JPY": 13520.7,
+      "USD": 227.314
+    }
+  },
+  "complete_five_unit_total_JPY": null,
+  "limits": [
+    "Availability is observed, not allocated or a binding quotation",
+    "This does not qualify the MOSFET circuit or whole BOM procurement",
+    "Do not substitute ElecSuper DMN2056U-7(ES)",
+    "All other historical mixed-date source limitations remain; no blanket current availability claim.",
+    "JLC assembly of the entire mixed-source BOM has not been confirmed.",
+    "Stock not allocated; no purchase or upload",
+    "PCBA inventory only; not a standalone shipment",
+    "Attrition, process, feeder, inspection, shipping and tax charges excluded",
+    "C9900196853 is a separate consignment/assembly-service entry, not equivalent component pricing",
+    "Full BOM, assembly process and footprint approval remain pending",
+    "Five sensors price only; assembler attrition and purchasing quantity remain unknown",
+    "Stock and prices are recorded observations, not freshly reserved or quoted",
+    "Charger cost is five installed pieces only; attrition and final purchase quantity unknown",
+    "U13 requires Standard PCBA and X-ray inspection per listing; inspection cost remains unpriced",
+    "No TPS22950L substitution; same exact part retained",
+    "Microphone, TLV7042 comparator USB4105 connector and D6 LED use retail cut-tape pricing; assembler acceptance, shipping and handling not included",
+    "Replacements use installed quantities for five boards; attrition quantities not established"
+  ]
+}

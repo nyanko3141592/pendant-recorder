@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T08:12:04",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-minimal.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント MP_PANEL",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "411e32ca-8e69-4592-a323-83e4edea327a"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        }
+    ]
+}

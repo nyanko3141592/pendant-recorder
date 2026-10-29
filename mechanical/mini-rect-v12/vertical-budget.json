@@ -1,0 +1,53 @@
+{
+  "status": "STACK_SCREEN_NOT_RELEASED",
+  "placement_sha256": "c1ffc504cd7dd7af5a678934c463a838433052cb857b3e00d6843eaea6e750ad",
+  "dimensions_mm": [
+    23,
+    25,
+    14
+  ],
+  "limiting_top_component": "J1",
+  "limiting_bottom_component": "U11",
+  "current_battery_gap_mm": 0.2,
+  "current_planar_roof_gap_mm": 0.34,
+  "study_battery_reserve_mm": 0.5,
+  "study_roof_reserve_mm": 0.2,
+  "required_board_z_min_mm": 8.8,
+  "allowed_board_z_max_mm": 8.64,
+  "translation_only_feasible": false,
+  "additional_stack_reduction_needed_mm": 0.16,
+  "sweep": [
+    {
+      "board_raise_mm": 0,
+      "battery_gap_mm": 0.2,
+      "planar_roof_gap_mm": 0.34
+    },
+    {
+      "board_raise_mm": 0.1,
+      "battery_gap_mm": 0.3,
+      "planar_roof_gap_mm": 0.24
+    },
+    {
+      "board_raise_mm": 0.16,
+      "battery_gap_mm": 0.36,
+      "planar_roof_gap_mm": 0.18
+    },
+    {
+      "board_raise_mm": 0.2,
+      "battery_gap_mm": 0.4,
+      "planar_roof_gap_mm": 0.14
+    },
+    {
+      "board_raise_mm": 0.3,
+      "battery_gap_mm": 0.5,
+      "planar_roof_gap_mm": 0.04
+    }
+  ],
+  "decision": "Do not raise the whole PCB as the final fix. Qualify a lower-profile USB connector or thinner qualified battery, or rearrange underside storage outside the battery footprint. Preserve exterior and baseline until the full stack closes.",
+  "limitations": [
+    "Full-height envelopes; solder stand-off and PCB/pack tolerances unqualified.",
+    "Roof plane is optimistic near fillets; no claim of collision-free geometry.",
+    "0.5mm battery reserve is a study target, not confirmed swelling allowance.",
+    "USB opening, supports and microphone riser must move with PCB in any variant."
+  ]
+}

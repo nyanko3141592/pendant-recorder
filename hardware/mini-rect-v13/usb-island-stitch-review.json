@@ -1,0 +1,43 @@
+{
+  "status": "NO_SITE_IN_CONSERVATIVE_LOCAL_GRID",
+  "source_sha256": "287ac6f8bf673e8fa24541649612b5a5f9900679c7ad1640ea93ba507090f46e",
+  "targets_mm": [
+    [
+      15.8,
+      9.155
+    ],
+    [
+      10.4,
+      16.0
+    ]
+  ],
+  "radius_mm": 1.5,
+  "grid_mm": 0.05,
+  "via_mm": [
+    0.45,
+    0.2
+  ],
+  "constraints": [
+    "Must already touch In1 GND to connect new island",
+    "Must lie in currently unfilled In2 region",
+    "Track clearance, pad/no-via/edge/drill exclusions; ground pads conservatively excluded too"
+  ],
+  "result": [
+    {
+      "target": [
+        15.8,
+        9.155
+      ],
+      "result": "NO_SITE"
+    },
+    {
+      "target": [
+        10.4,
+        16.0
+      ],
+      "result": "NO_SITE"
+    }
+  ],
+  "meaning": "No solution in this sampled conservative space, not proof no legal via exists. Candidate has no added vias and provides no improvement.",
+  "next": "Need change nearby routing or placement, or a more precise pad/shape search; do not adopt no-op candidate."
+}

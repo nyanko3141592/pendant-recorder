@@ -1,0 +1,7277 @@
+{
+  "status": "CURRENT_PCB_GEOMETRY_NOT_CASE_FIT",
+  "board_path": "hardware/xe-minimal/costdown/HW-V1.4-EVT-4LAYER-27P5/route/hw-v1.4-evt-4layer-27p5-routed-candidate.kicad_pcb",
+  "pcb_sha256": "8141cc8b00ca4c676ce53ab15a0812420c48636e137fa0559d9ac4d8399db288",
+  "board_bbox_including_edge_stroke": {
+    "min_mm": [
+      -0.025,
+      -0.525
+    ],
+    "max_mm": [
+      27.525,
+      27.025
+    ]
+  },
+  "board_thickness_mm": 0.8264,
+  "outline_edges": [
+    {
+      "start_mm": [
+        0.0,
+        -0.5
+      ],
+      "end_mm": [
+        27.5,
+        -0.5
+      ],
+      "shape": "0",
+      "stroke_width_mm": 0.05
+    },
+    {
+      "start_mm": [
+        0.0,
+        27.0
+      ],
+      "end_mm": [
+        0.0,
+        -0.5
+      ],
+      "shape": "0",
+      "stroke_width_mm": 0.05
+    },
+    {
+      "start_mm": [
+        27.5,
+        -0.5
+      ],
+      "end_mm": [
+        27.5,
+        27.0
+      ],
+      "shape": "0",
+      "stroke_width_mm": 0.05
+    },
+    {
+      "start_mm": [
+        27.5,
+        27.0
+      ],
+      "end_mm": [
+        0.0,
+        27.0
+      ],
+      "shape": "0",
+      "stroke_width_mm": 0.05
+    }
+  ],
+  "footprint_count": 74,
+  "parts": [
+    {
+      "ref": "C1",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        25.3,
+        1.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            24.84,
+            1.91
+          ],
+          "end_mm": [
+            25.76,
+            0.09
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            25.3,
+            1.48
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            25.3,
+            0.52
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C13",
+      "value": "2.2u 10V",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        22.985,
+        15.665
+      ],
+      "rotation_deg": -90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            22.525,
+            14.755
+          ],
+          "end_mm": [
+            23.445,
+            16.575
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            22.985,
+            15.185
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/VBUS_CHARGER"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            22.985,
+            16.145
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C14",
+      "value": "2.2u",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        17.785,
+        15.665
+      ],
+      "rotation_deg": -90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            17.325,
+            14.755
+          ],
+          "end_mm": [
+            18.245,
+            16.575
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            17.785,
+            15.185
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/BAT"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            17.785,
+            16.145
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C15",
+      "value": "10u 10V effective >=1u",
+      "footprint": "C_0603_1608Metric",
+      "position_mm": [
+        20.06,
+        17.335
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            18.58,
+            18.065
+          ],
+          "end_mm": [
+            21.54,
+            16.605
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            19.285,
+            17.335
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            20.835,
+            17.335
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C16",
+      "value": "1u",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        3.5325,
+        0.785
+      ],
+      "rotation_deg": 180.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            4.4425,
+            1.245
+          ],
+          "end_mm": [
+            2.6225,
+            0.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            4.0125,
+            0.785
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            3.0525,
+            0.785
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        22.27,
+        10.5175
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            21.36,
+            10.9775
+          ],
+          "end_mm": [
+            23.18,
+            10.0575
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            21.79,
+            10.5175
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            22.75,
+            10.5175
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C22",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        20.45,
+        1.235
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            19.99,
+            2.145
+          ],
+          "end_mm": [
+            20.91,
+            0.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            20.45,
+            1.715
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            20.45,
+            0.755
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C25",
+      "value": "1u",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        23.8,
+        6.2
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            24.26,
+            7.11
+          ],
+          "end_mm": [
+            23.34,
+            5.29
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            23.8,
+            6.68
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            23.8,
+            5.72
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C26",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        10.055,
+        16.08
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            9.145,
+            16.54
+          ],
+          "end_mm": [
+            10.965,
+            15.62
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            9.575,
+            16.08
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/SD_V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.535,
+            16.08
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C27",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "position_mm": [
+        10.6,
+        14.58
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            9.12,
+            15.31
+          ],
+          "end_mm": [
+            12.08,
+            13.85
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            9.825,
+            14.58
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/SD_V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            11.375,
+            14.58
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C28",
+      "value": "10n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        10.12,
+        3.8
+      ],
+      "rotation_deg": 180.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            11.03,
+            4.26
+          ],
+          "end_mm": [
+            9.21,
+            3.34
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            10.6,
+            3.8
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/BAT_ADC"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            9.64,
+            3.8
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C29",
+      "value": "100n 10V",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        22.5,
+        19.235
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            22.04,
+            20.145
+          ],
+          "end_mm": [
+            22.96,
+            18.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            22.5,
+            19.715
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            22.5,
+            18.755
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C3",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        14.1025,
+        13.185
+      ],
+      "rotation_deg": -90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            13.6425,
+            12.275
+          ],
+          "end_mm": [
+            14.5625,
+            14.095
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            14.1025,
+            12.705
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            14.1025,
+            13.665
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C30",
+      "value": "50p 50V C0G",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        21.005,
+        12.785
+      ],
+      "rotation_deg": 180.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            21.915,
+            12.325
+          ],
+          "end_mm": [
+            20.095,
+            13.245
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            21.485,
+            12.785
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/ISET"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            20.525,
+            12.785
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C31",
+      "value": "1u 10V X5R",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        15.5,
+        0.95
+      ],
+      "rotation_deg": 0.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            14.59,
+            0.49
+          ],
+          "end_mm": [
+            16.41,
+            1.41
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            15.02,
+            0.95
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/VBUS_OVP"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            15.98,
+            0.95
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C32",
+      "value": "1u 10V X5R",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        10.8,
+        1.8
+      ],
+      "rotation_deg": 180.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            11.71,
+            1.34
+          ],
+          "end_mm": [
+            9.89,
+            2.26
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            11.28,
+            1.8
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/VBUS_CHARGER"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.32,
+            1.8
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C33",
+      "value": "1u 35V X5R",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        10.0,
+        8.0
+      ],
+      "rotation_deg": 180.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            10.91,
+            8.46
+          ],
+          "end_mm": [
+            9.09,
+            7.54
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            10.48,
+            8.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            9.52,
+            8.0
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C4",
+      "value": "10u",
+      "footprint": "C_0603_1608Metric",
+      "position_mm": [
+        25.5,
+        7.5
+      ],
+      "rotation_deg": 180.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            26.98,
+            8.23
+          ],
+          "end_mm": [
+            24.02,
+            6.77
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            26.275,
+            7.5
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            24.725,
+            7.5
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C5",
+      "value": "4.7u",
+      "footprint": "C_0603_1608Metric",
+      "position_mm": [
+        18.1025,
+        1.805
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            18.8325,
+            3.285
+          ],
+          "end_mm": [
+            17.3725,
+            0.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            18.1025,
+            2.58
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/VCAP"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            18.1025,
+            1.03
+          ],
+          "size_mm": [
+            0.9,
+            0.95
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        11.435,
+        6.5175
+      ],
+      "rotation_deg": 180.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            12.345,
+            6.0575
+          ],
+          "end_mm": [
+            10.525,
+            6.9775
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            11.915,
+            6.5175
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/VDDA"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.955,
+            6.5175
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C7",
+      "value": "1u",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        10.475,
+        7.7675
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            9.565,
+            8.2275
+          ],
+          "end_mm": [
+            11.385,
+            7.3075
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            9.995,
+            7.7675
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/VDDA"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.955,
+            7.7675
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "C9",
+      "value": "100n",
+      "footprint": "C_0402_1005Metric",
+      "position_mm": [
+        22.735,
+        17.285
+      ],
+      "rotation_deg": 180.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            23.645,
+            16.825
+          ],
+          "end_mm": [
+            21.825,
+            17.745
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            23.215,
+            17.285
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/NRST"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            22.255,
+            17.285
+          ],
+          "size_mm": [
+            0.56,
+            0.62
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "D6",
+      "value": "TJ-S1005SW4TGLC9Y-A5 amber LED",
+      "footprint": "LED_0402_1005Metric",
+      "position_mm": [
+        11.49,
+        4.795
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            10.56,
+            5.265
+          ],
+          "end_mm": [
+            12.42,
+            4.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            11.005,
+            4.795
+          ],
+          "size_mm": [
+            0.59,
+            0.64
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            11.975,
+            4.795
+          ],
+          "size_mm": [
+            0.59,
+            0.64
+          ],
+          "net": "/STATUS_LED_A"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "J1",
+      "value": "USB4105-GF-A",
+      "footprint": "USB_C_GCT_USB4105_GroundLand112",
+      "position_mm": [
+        12.0,
+        22.495
+      ],
+      "rotation_deg": 0.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            6.68,
+            17.735
+          ],
+          "end_mm": [
+            17.32,
+            26.675
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "",
+          "position_mm": [
+            9.11,
+            19.89
+          ],
+          "size_mm": [
+            0.65,
+            0.65
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            14.89,
+            19.89
+          ],
+          "size_mm": [
+            0.65,
+            0.65
+          ],
+          "net": ""
+        },
+        {
+          "number": "A1",
+          "position_mm": [
+            8.8,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.12
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "A4",
+          "position_mm": [
+            9.6,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.15
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "A5",
+          "position_mm": [
+            10.75,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "/CC1"
+        },
+        {
+          "number": "A6",
+          "position_mm": [
+            11.75,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "A7",
+          "position_mm": [
+            12.25,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "A8",
+          "position_mm": [
+            13.25,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "unconnected-(J1-SBU1-PadA8)"
+        },
+        {
+          "number": "A9",
+          "position_mm": [
+            14.4,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.15
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "A12",
+          "position_mm": [
+            15.2,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.12
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "B1",
+          "position_mm": [
+            15.2,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.12
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "B4",
+          "position_mm": [
+            14.4,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.15
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "B5",
+          "position_mm": [
+            13.75,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "/CC2"
+        },
+        {
+          "number": "B6",
+          "position_mm": [
+            12.75,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "B7",
+          "position_mm": [
+            11.25,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "B8",
+          "position_mm": [
+            10.25,
+            18.815
+          ],
+          "size_mm": [
+            0.3,
+            1.15
+          ],
+          "net": "unconnected-(J1-SBU2-PadB8)"
+        },
+        {
+          "number": "B9",
+          "position_mm": [
+            9.6,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.15
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "B12",
+          "position_mm": [
+            8.8,
+            18.815
+          ],
+          "size_mm": [
+            0.6,
+            1.12
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "SH",
+          "position_mm": [
+            7.68,
+            19.39
+          ],
+          "size_mm": [
+            1.0,
+            2.1
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "SH",
+          "position_mm": [
+            7.68,
+            23.57
+          ],
+          "size_mm": [
+            1.0,
+            1.8
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "SH",
+          "position_mm": [
+            16.32,
+            19.39
+          ],
+          "size_mm": [
+            1.0,
+            2.1
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "SH",
+          "position_mm": [
+            16.32,
+            23.57
+          ],
+          "size_mm": [
+            1.0,
+            1.8
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "J2",
+      "value": "Molex781710003 / DTP401525-XE",
+      "footprint": "Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical",
+      "position_mm": [
+        3.525,
+        3.125
+      ],
+      "rotation_deg": 180.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            0.325,
+            0.645
+          ],
+          "end_mm": [
+            0.325,
+            6.145
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            0.325,
+            6.145
+          ],
+          "end_mm": [
+            6.725,
+            6.145
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            1.525,
+            0.325
+          ],
+          "end_mm": [
+            1.525,
+            0.645
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            1.525,
+            0.645
+          ],
+          "end_mm": [
+            0.325,
+            0.645
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.525,
+            0.325
+          ],
+          "end_mm": [
+            1.525,
+            0.325
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.525,
+            0.645
+          ],
+          "end_mm": [
+            5.525,
+            0.325
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            6.725,
+            0.645
+          ],
+          "end_mm": [
+            5.525,
+            0.645
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            6.725,
+            6.145
+          ],
+          "end_mm": [
+            6.725,
+            0.645
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            4.725,
+            1.25
+          ],
+          "size_mm": [
+            0.6,
+            0.85
+          ],
+          "net": "/BAT"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            3.525,
+            1.25
+          ],
+          "size_mm": [
+            0.6,
+            0.85
+          ],
+          "net": "/BAT_TS"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            2.325,
+            1.25
+          ],
+          "size_mm": [
+            0.6,
+            0.85
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "MP",
+          "position_mm": [
+            5.875,
+            5.025
+          ],
+          "size_mm": [
+            0.7,
+            0.8
+          ],
+          "net": ""
+        },
+        {
+          "number": "MP",
+          "position_mm": [
+            1.175,
+            5.025
+          ],
+          "size_mm": [
+            0.7,
+            0.8
+          ],
+          "net": ""
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "J3",
+      "value": "Factory SWD pogo pads",
+      "footprint": "SWD_Pogo_5Pad_P1.27mm",
+      "position_mm": [
+        2.71,
+        7.845
+      ],
+      "rotation_deg": 0.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            1.325,
+            5.825
+          ],
+          "end_mm": [
+            4.095,
+            9.865
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            2.075,
+            6.575
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            3.345,
+            6.575
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/SWDIO"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            2.075,
+            7.845
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/NRST"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            3.345,
+            7.845
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/SWCLK"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            2.075,
+            9.115
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [],
+      "body_height_mm": null
+    },
+    {
+      "ref": "Q3",
+      "value": "DMN63D8L-7",
+      "footprint": "SOT-23",
+      "position_mm": [
+        13.255,
+        22.525
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            11.325,
+            21.025
+          ],
+          "end_mm": [
+            11.325,
+            22.135
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.325,
+            22.135
+          ],
+          "end_mm": [
+            12.355,
+            22.135
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.325,
+            22.915
+          ],
+          "end_mm": [
+            11.325,
+            24.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.325,
+            24.025
+          ],
+          "end_mm": [
+            12.355,
+            24.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            12.355,
+            20.825
+          ],
+          "end_mm": [
+            12.355,
+            21.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            12.355,
+            21.025
+          ],
+          "end_mm": [
+            11.325,
+            21.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            12.355,
+            22.135
+          ],
+          "end_mm": [
+            12.355,
+            22.915
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            12.355,
+            22.915
+          ],
+          "end_mm": [
+            11.325,
+            22.915
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            12.355,
+            24.025
+          ],
+          "end_mm": [
+            12.355,
+            24.225
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            12.355,
+            24.225
+          ],
+          "end_mm": [
+            14.155,
+            24.225
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            14.155,
+            20.825
+          ],
+          "end_mm": [
+            12.355,
+            20.825
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            14.155,
+            21.975
+          ],
+          "end_mm": [
+            14.155,
+            20.825
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            14.155,
+            23.075
+          ],
+          "end_mm": [
+            15.185,
+            23.075
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            14.155,
+            24.225
+          ],
+          "end_mm": [
+            14.155,
+            23.075
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            15.185,
+            21.975
+          ],
+          "end_mm": [
+            14.155,
+            21.975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            15.185,
+            23.075
+          ],
+          "end_mm": [
+            15.185,
+            21.975
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            12.3175,
+            23.475
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "net": "/VBUS_GATE"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            12.3175,
+            21.575
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            14.1925,
+            22.525
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "net": "/VBUS_N"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "Q4",
+      "value": "DMN63D8L-7",
+      "footprint": "SOT-23",
+      "position_mm": [
+        4.755,
+        8.525
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            2.825,
+            7.025
+          ],
+          "end_mm": [
+            2.825,
+            8.135
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            2.825,
+            8.135
+          ],
+          "end_mm": [
+            3.855,
+            8.135
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            2.825,
+            8.915
+          ],
+          "end_mm": [
+            2.825,
+            10.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            2.825,
+            10.025
+          ],
+          "end_mm": [
+            3.855,
+            10.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.855,
+            6.825
+          ],
+          "end_mm": [
+            3.855,
+            7.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.855,
+            7.025
+          ],
+          "end_mm": [
+            2.825,
+            7.025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.855,
+            8.135
+          ],
+          "end_mm": [
+            3.855,
+            8.915
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.855,
+            8.915
+          ],
+          "end_mm": [
+            2.825,
+            8.915
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.855,
+            10.025
+          ],
+          "end_mm": [
+            3.855,
+            10.225
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.855,
+            10.225
+          ],
+          "end_mm": [
+            5.655,
+            10.225
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.655,
+            6.825
+          ],
+          "end_mm": [
+            3.855,
+            6.825
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.655,
+            7.975
+          ],
+          "end_mm": [
+            5.655,
+            6.825
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.655,
+            9.075
+          ],
+          "end_mm": [
+            6.685,
+            9.075
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.655,
+            10.225
+          ],
+          "end_mm": [
+            5.655,
+            9.075
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            6.685,
+            7.975
+          ],
+          "end_mm": [
+            5.655,
+            7.975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            6.685,
+            9.075
+          ],
+          "end_mm": [
+            6.685,
+            7.975
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            3.8175,
+            9.475
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "net": "/CHG_GUARD_GATE"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            3.8175,
+            7.575
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            5.6925,
+            8.525
+          ],
+          "size_mm": [
+            1.475,
+            0.6
+          ],
+          "net": "/CHG_INHIBIT_GATE"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R1",
+      "value": "0R",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        10.295,
+        23.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            10.765,
+            24.185
+          ],
+          "end_mm": [
+            9.825,
+            22.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            10.295,
+            23.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.295,
+            22.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/VDDA"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R10",
+      "value": "RC0402FR-0730KL 30k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        16.755,
+        21.295
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            15.825,
+            21.765
+          ],
+          "end_mm": [
+            17.685,
+            20.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            16.245,
+            21.295
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/ISET"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            17.265,
+            21.295
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R11",
+      "value": "20k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        5.755,
+        23.295
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            4.825,
+            23.765
+          ],
+          "end_mm": [
+            6.685,
+            22.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            5.245,
+            23.295
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            6.265,
+            23.295
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CHG_N"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R12",
+      "value": "100k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        18.795,
+        22.755
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            18.325,
+            23.685
+          ],
+          "end_mm": [
+            19.265,
+            21.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            18.795,
+            23.265
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            18.795,
+            22.245
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CHG_INHIBIT_GATE"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R13",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        13.26,
+        3.0
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            12.33,
+            3.47
+          ],
+          "end_mm": [
+            14.19,
+            2.53
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            12.75,
+            3.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            13.77,
+            3.0
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/VBUS_GATE"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R14",
+      "value": "1M",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        15.295,
+        13.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            15.765,
+            14.185
+          ],
+          "end_mm": [
+            14.825,
+            12.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            15.295,
+            13.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/VBUS_GATE"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            15.295,
+            12.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R15",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        22.795,
+        24.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            23.265,
+            25.185
+          ],
+          "end_mm": [
+            22.325,
+            23.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            22.795,
+            24.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            22.795,
+            23.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/VBUS_N"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R2",
+      "value": "10k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        13.795,
+        9.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            13.325,
+            10.185
+          ],
+          "end_mm": [
+            14.265,
+            8.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            13.795,
+            9.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            13.795,
+            8.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/NRST"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R21",
+      "value": "22R tentative",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        17.795,
+        17.755
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            18.265,
+            18.685
+          ],
+          "end_mm": [
+            17.325,
+            16.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            17.795,
+            18.265
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/PDM_CLK_MCU"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            17.795,
+            17.245
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/PDM_CLK"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R22",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        13.795,
+        15.755
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            14.265,
+            16.685
+          ],
+          "end_mm": [
+            13.325,
+            14.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            13.795,
+            16.265
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_EN"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            13.795,
+            15.245
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R23",
+      "value": "22R tentative",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        1.295,
+        21.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            1.765,
+            22.185
+          ],
+          "end_mm": [
+            0.825,
+            20.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            1.295,
+            21.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_CLK_MCU"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            1.295,
+            20.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_CLK"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R24",
+      "value": "47k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        18.295,
+        9.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            17.825,
+            10.185
+          ],
+          "end_mm": [
+            18.765,
+            8.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            18.295,
+            9.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            18.295,
+            8.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_MOSI"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R25",
+      "value": "47k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        19.795,
+        7.755
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            19.325,
+            8.685
+          ],
+          "end_mm": [
+            20.265,
+            6.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            19.795,
+            8.265
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            19.795,
+            7.245
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_MISO"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R28",
+      "value": "47k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        21.295,
+        24.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            21.765,
+            25.185
+          ],
+          "end_mm": [
+            20.825,
+            23.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            21.295,
+            24.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            21.295,
+            23.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/SD_CS_N"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R3",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        1.295,
+        18.755
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            1.765,
+            19.685
+          ],
+          "end_mm": [
+            0.825,
+            17.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            1.295,
+            19.265
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/BOOT0"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            1.295,
+            18.245
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R32",
+      "value": "6.8k tentative",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        22.795,
+        1.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            22.325,
+            2.185
+          ],
+          "end_mm": [
+            23.265,
+            0.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            22.795,
+            1.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/STATUS_LED"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            22.795,
+            0.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/STATUS_LED_A"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R33",
+      "value": "1M 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        15.295,
+        9.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            14.825,
+            10.185
+          ],
+          "end_mm": [
+            15.765,
+            8.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            15.295,
+            9.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/BAT"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            15.295,
+            8.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/BAT_ADC"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R34",
+      "value": "1M 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        16.795,
+        9.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            16.325,
+            10.185
+          ],
+          "end_mm": [
+            17.265,
+            8.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            16.795,
+            9.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/BAT_ADC"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            16.795,
+            8.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R35",
+      "value": "10k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        10.295,
+        12.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            10.765,
+            13.185
+          ],
+          "end_mm": [
+            9.825,
+            11.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            10.295,
+            12.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CHARGER_TS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.295,
+            11.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R36",
+      "value": "100k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        1.755,
+        23.295
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            0.825,
+            23.765
+          ],
+          "end_mm": [
+            2.685,
+            22.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            1.245,
+            23.295
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CHG_GUARD_GATE"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            2.265,
+            23.295
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R37",
+      "value": "100k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        22.795,
+        12.255
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            23.265,
+            13.185
+          ],
+          "end_mm": [
+            22.325,
+            11.325
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            22.795,
+            12.765
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            22.795,
+            11.745
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/BAT_TS"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R38",
+      "value": "100k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        20.0,
+        24.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            20.47,
+            24.93
+          ],
+          "end_mm": [
+            19.53,
+            23.07
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            20.0,
+            24.51
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            20.0,
+            23.49
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/TS_COLD_REF"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R39",
+      "value": "20k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        18.5,
+        24.5
+      ],
+      "rotation_deg": 180.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            19.43,
+            24.03
+          ],
+          "end_mm": [
+            17.57,
+            24.97
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            19.01,
+            24.5
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/TS_COLD_REF"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            17.99,
+            24.5
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R4",
+      "value": "100k",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        7.6,
+        3.21
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            8.07,
+            4.14
+          ],
+          "end_mm": [
+            7.13,
+            2.28
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            7.6,
+            3.72
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            7.6,
+            2.7
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/BUTTON_N"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R40",
+      "value": "100k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        17.75,
+        19.75
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            18.22,
+            20.68
+          ],
+          "end_mm": [
+            17.28,
+            18.82
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            17.75,
+            20.26
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            17.75,
+            19.24
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/TS_HOT_REF"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R41",
+      "value": "7.5k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        17.75,
+        22.75
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            18.22,
+            23.68
+          ],
+          "end_mm": [
+            17.28,
+            21.82
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            17.75,
+            23.26
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/TS_HOT_REF"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            17.75,
+            22.24
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R42",
+      "value": "RC0402FR-07130KL 130k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        10.295,
+        20.755
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            10.765,
+            21.685
+          ],
+          "end_mm": [
+            9.825,
+            19.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            10.295,
+            21.265
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/ILIM_VSET"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.295,
+            20.245
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R43",
+      "value": "4.7k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        3.795,
+        23.755
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            4.265,
+            24.685
+          ],
+          "end_mm": [
+            3.325,
+            22.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            3.795,
+            24.265
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CHG_ALLOW"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            3.795,
+            23.245
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CHG_GUARD_GATE"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R6",
+      "value": "5.1k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        9.76,
+        18.815
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            8.83,
+            19.285
+          ],
+          "end_mm": [
+            10.69,
+            18.345
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            9.25,
+            18.815
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CC1"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            10.27,
+            18.815
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "R7",
+      "value": "5.1k 1%",
+      "footprint": "R_0402_1005Metric",
+      "position_mm": [
+        15.0,
+        18.305
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            15.47,
+            19.235
+          ],
+          "end_mm": [
+            14.53,
+            17.375
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            15.0,
+            18.815
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/CC2"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            15.0,
+            17.795
+          ],
+          "size_mm": [
+            0.54,
+            0.64
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "SW1",
+      "value": "B3U-1000P",
+      "footprint": "SW_SPST_B3U-1000P",
+      "position_mm": [
+        15.725,
+        5.975
+      ],
+      "rotation_deg": 0.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            13.325,
+            4.325
+          ],
+          "end_mm": [
+            13.325,
+            7.625
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.325,
+            7.625
+          ],
+          "end_mm": [
+            18.125,
+            7.625
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            18.125,
+            4.325
+          ],
+          "end_mm": [
+            13.325,
+            4.325
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            18.125,
+            7.625
+          ],
+          "end_mm": [
+            18.125,
+            4.325
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            14.025,
+            5.975
+          ],
+          "size_mm": [
+            0.9,
+            1.7
+          ],
+          "net": "/BUTTON_N"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            17.425,
+            5.975
+          ],
+          "size_mm": [
+            0.9,
+            1.7
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "TP1",
+      "value": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "position_mm": [
+        10.2929,
+        10.7071
+      ],
+      "rotation_deg": 180.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            10.2929,
+            10.7071
+          ],
+          "end_mm": [
+            9.2929,
+            10.7071
+          ],
+          "shape": "3"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            10.2929,
+            10.7071
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/BAT"
+        }
+      ],
+      "models": [],
+      "body_height_mm": null
+    },
+    {
+      "ref": "TP2",
+      "value": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "position_mm": [
+        8.825,
+        5.325
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            8.825,
+            5.325
+          ],
+          "end_mm": [
+            9.825,
+            5.325
+          ],
+          "shape": "3"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            8.825,
+            5.325
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/SYS"
+        }
+      ],
+      "models": [],
+      "body_height_mm": null
+    },
+    {
+      "ref": "TP3",
+      "value": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "position_mm": [
+        1.325,
+        7.825
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            1.325,
+            7.825
+          ],
+          "end_mm": [
+            2.325,
+            7.825
+          ],
+          "shape": "3"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            1.325,
+            7.825
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/V3V3"
+        }
+      ],
+      "models": [],
+      "body_height_mm": null
+    },
+    {
+      "ref": "TP5",
+      "value": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "position_mm": [
+        22.325,
+        7.325
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            22.325,
+            7.325
+          ],
+          "end_mm": [
+            23.325,
+            7.325
+          ],
+          "shape": "3"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            22.325,
+            7.325
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/SD_V3"
+        }
+      ],
+      "models": [],
+      "body_height_mm": null
+    },
+    {
+      "ref": "TP6",
+      "value": "TestPoint",
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "position_mm": [
+        17.325,
+        13.325
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            17.325,
+            13.325
+          ],
+          "end_mm": [
+            18.325,
+            13.325
+          ],
+          "shape": "3"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            17.325,
+            13.325
+          ],
+          "size_mm": [
+            1.0,
+            1.0
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U1",
+      "value": "STM32U585CIU6",
+      "footprint": "QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+      "position_mm": [
+        16.8525,
+        7.7675
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            12.7225,
+            4.6375
+          ],
+          "end_mm": [
+            12.7225,
+            10.8975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            12.7225,
+            10.8975
+          ],
+          "end_mm": [
+            13.1025,
+            10.8975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.1025,
+            4.0175
+          ],
+          "end_mm": [
+            13.1025,
+            4.6375
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.1025,
+            4.6375
+          ],
+          "end_mm": [
+            12.7225,
+            4.6375
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.1025,
+            10.8975
+          ],
+          "end_mm": [
+            13.1025,
+            11.5175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.1025,
+            11.5175
+          ],
+          "end_mm": [
+            13.7225,
+            11.5175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.7225,
+            3.6375
+          ],
+          "end_mm": [
+            13.7225,
+            4.0175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.7225,
+            4.0175
+          ],
+          "end_mm": [
+            13.1025,
+            4.0175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.7225,
+            11.5175
+          ],
+          "end_mm": [
+            13.7225,
+            11.8975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.7225,
+            11.8975
+          ],
+          "end_mm": [
+            19.9825,
+            11.8975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.9825,
+            3.6375
+          ],
+          "end_mm": [
+            13.7225,
+            3.6375
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.9825,
+            4.0175
+          ],
+          "end_mm": [
+            19.9825,
+            3.6375
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.9825,
+            11.5175
+          ],
+          "end_mm": [
+            20.6025,
+            11.5175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.9825,
+            11.8975
+          ],
+          "end_mm": [
+            19.9825,
+            11.5175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.6025,
+            4.0175
+          ],
+          "end_mm": [
+            19.9825,
+            4.0175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.6025,
+            4.6375
+          ],
+          "end_mm": [
+            20.6025,
+            4.0175
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.6025,
+            10.8975
+          ],
+          "end_mm": [
+            20.9825,
+            10.8975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.6025,
+            11.5175
+          ],
+          "end_mm": [
+            20.6025,
+            10.8975
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.9825,
+            4.6375
+          ],
+          "end_mm": [
+            20.6025,
+            4.6375
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.9825,
+            10.8975
+          ],
+          "end_mm": [
+            20.9825,
+            4.6375
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "",
+          "position_mm": [
+            14.7525,
+            5.6675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            14.7525,
+            7.0675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            14.7525,
+            8.4675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            14.7525,
+            9.8675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            16.1525,
+            5.6675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            16.1525,
+            7.0675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            16.1525,
+            8.4675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            16.1525,
+            9.8675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            17.5525,
+            5.6675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            17.5525,
+            7.0675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            17.5525,
+            8.4675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            17.5525,
+            9.8675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            18.9525,
+            5.6675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            18.9525,
+            7.0675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            18.9525,
+            8.4675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            18.9525,
+            9.8675
+          ],
+          "size_mm": [
+            1.13,
+            1.13
+          ],
+          "net": ""
+        },
+        {
+          "number": "1",
+          "position_mm": [
+            13.415,
+            10.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            13.415,
+            10.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PC13-Pad2)"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            13.415,
+            9.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PC14-Pad3)"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            13.415,
+            9.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PC15-Pad4)"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            13.415,
+            8.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PH0-Pad5)"
+        },
+        {
+          "number": "6",
+          "position_mm": [
+            13.415,
+            8.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PH1-Pad6)"
+        },
+        {
+          "number": "7",
+          "position_mm": [
+            13.415,
+            7.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/NRST"
+        },
+        {
+          "number": "8",
+          "position_mm": [
+            13.415,
+            7.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "9",
+          "position_mm": [
+            13.415,
+            6.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/VDDA"
+        },
+        {
+          "number": "10",
+          "position_mm": [
+            13.415,
+            6.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/VBUS_N"
+        },
+        {
+          "number": "11",
+          "position_mm": [
+            13.415,
+            5.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/BAT_ADC"
+        },
+        {
+          "number": "12",
+          "position_mm": [
+            13.415,
+            5.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PA2-Pad12)"
+        },
+        {
+          "number": "13",
+          "position_mm": [
+            14.1025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PA3-Pad13)"
+        },
+        {
+          "number": "14",
+          "position_mm": [
+            14.6025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/SD_CS_N"
+        },
+        {
+          "number": "15",
+          "position_mm": [
+            15.1025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/SD_CLK_MCU"
+        },
+        {
+          "number": "16",
+          "position_mm": [
+            15.6025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/SD_MISO"
+        },
+        {
+          "number": "17",
+          "position_mm": [
+            16.1025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/SD_MOSI"
+        },
+        {
+          "number": "18",
+          "position_mm": [
+            16.6025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PB0-Pad18)"
+        },
+        {
+          "number": "19",
+          "position_mm": [
+            17.1025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PB1-Pad19)"
+        },
+        {
+          "number": "20",
+          "position_mm": [
+            17.6025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/CHG_ALLOW"
+        },
+        {
+          "number": "21",
+          "position_mm": [
+            18.1025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PB10-Pad21)"
+        },
+        {
+          "number": "22",
+          "position_mm": [
+            18.6025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/VCAP"
+        },
+        {
+          "number": "23",
+          "position_mm": [
+            19.1025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "24",
+          "position_mm": [
+            19.6025,
+            4.33
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "25",
+          "position_mm": [
+            20.29,
+            5.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PB12-Pad25)"
+        },
+        {
+          "number": "26",
+          "position_mm": [
+            20.29,
+            5.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PB13-Pad26)"
+        },
+        {
+          "number": "27",
+          "position_mm": [
+            20.29,
+            6.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/CHG_N"
+        },
+        {
+          "number": "28",
+          "position_mm": [
+            20.29,
+            6.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PB15-Pad28)"
+        },
+        {
+          "number": "29",
+          "position_mm": [
+            20.29,
+            7.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/STATUS_LED"
+        },
+        {
+          "number": "30",
+          "position_mm": [
+            20.29,
+            7.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PA9-Pad30)"
+        },
+        {
+          "number": "31",
+          "position_mm": [
+            20.29,
+            8.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "unconnected-(U1-PA10-Pad31)"
+        },
+        {
+          "number": "32",
+          "position_mm": [
+            20.29,
+            8.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "33",
+          "position_mm": [
+            20.29,
+            9.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "34",
+          "position_mm": [
+            20.29,
+            9.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/SWDIO"
+        },
+        {
+          "number": "35",
+          "position_mm": [
+            20.29,
+            10.0175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "36",
+          "position_mm": [
+            20.29,
+            10.5175
+          ],
+          "size_mm": [
+            0.875,
+            0.25
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "37",
+          "position_mm": [
+            19.6025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/SWCLK"
+        },
+        {
+          "number": "38",
+          "position_mm": [
+            19.1025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/BUTTON_N"
+        },
+        {
+          "number": "39",
+          "position_mm": [
+            18.6025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/PDM_CLK_MCU"
+        },
+        {
+          "number": "40",
+          "position_mm": [
+            18.1025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/PDM_DATA"
+        },
+        {
+          "number": "41",
+          "position_mm": [
+            17.6025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/SD_EN"
+        },
+        {
+          "number": "42",
+          "position_mm": [
+            17.1025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PB6-Pad42)"
+        },
+        {
+          "number": "43",
+          "position_mm": [
+            16.6025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PB7-Pad43)"
+        },
+        {
+          "number": "44",
+          "position_mm": [
+            16.1025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/BOOT0"
+        },
+        {
+          "number": "45",
+          "position_mm": [
+            15.6025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PB8-Pad45)"
+        },
+        {
+          "number": "46",
+          "position_mm": [
+            15.1025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "unconnected-(U1-PB9-Pad46)"
+        },
+        {
+          "number": "47",
+          "position_mm": [
+            14.6025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "48",
+          "position_mm": [
+            14.1025,
+            11.205
+          ],
+          "size_mm": [
+            0.25,
+            0.875
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "49",
+          "position_mm": [
+            16.8525,
+            7.7675
+          ],
+          "size_mm": [
+            5.6,
+            5.6
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U10",
+      "value": "TPS22917DBVT",
+      "footprint": "SOT-23-6",
+      "position_mm": [
+        25.2,
+        2.5
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            23.5,
+            1.45
+          ],
+          "end_mm": [
+            23.5,
+            3.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.5,
+            3.55
+          ],
+          "end_mm": [
+            23.7,
+            3.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.7,
+            0.45
+          ],
+          "end_mm": [
+            23.7,
+            1.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.7,
+            1.45
+          ],
+          "end_mm": [
+            23.5,
+            1.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.7,
+            3.55
+          ],
+          "end_mm": [
+            23.7,
+            4.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.7,
+            4.55
+          ],
+          "end_mm": [
+            26.7,
+            4.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            26.7,
+            0.45
+          ],
+          "end_mm": [
+            23.7,
+            0.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            26.7,
+            1.45
+          ],
+          "end_mm": [
+            26.7,
+            0.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            26.7,
+            3.55
+          ],
+          "end_mm": [
+            26.9,
+            3.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            26.7,
+            4.55
+          ],
+          "end_mm": [
+            26.7,
+            3.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            26.9,
+            1.45
+          ],
+          "end_mm": [
+            26.7,
+            1.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            26.9,
+            3.55
+          ],
+          "end_mm": [
+            26.9,
+            1.45
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            26.15,
+            3.6375
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            25.2,
+            3.6375
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/SD_EN"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            24.25,
+            3.6375
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            24.25,
+            1.3625
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "unconnected-(U10-CT-Pad4)"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            25.2,
+            1.3625
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/SD_V3"
+        },
+        {
+          "number": "6",
+          "position_mm": [
+            26.15,
+            1.3625
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/SD_V3"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U11",
+      "value": "MKDV8GIL-AST",
+      "footprint": "MKDV8GIL_AST_LGA8",
+      "position_mm": [
+        4.575,
+        14.175
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            0.325,
+            17.525
+          ],
+          "end_mm": [
+            8.825,
+            10.825
+          ],
+          "shape": "1"
+        }
+      ],
+      "pads": [
+        {
+          "number": "",
+          "position_mm": [
+            4.575,
+            11.575
+          ],
+          "size_mm": [
+            0.4,
+            0.4
+          ],
+          "net": ""
+        },
+        {
+          "number": "1",
+          "position_mm": [
+            1.075,
+            16.08
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "unconnected-(U11-RSV-Pad1)"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            1.075,
+            14.81
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "/SD_CS_N"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            1.075,
+            13.54
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "/SD_CLK"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            1.075,
+            12.27
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            8.075,
+            12.27
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "/SD_MOSI"
+        },
+        {
+          "number": "6",
+          "position_mm": [
+            8.075,
+            13.54
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "/SD_MISO"
+        },
+        {
+          "number": "7",
+          "position_mm": [
+            8.075,
+            14.81
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "unconnected-(U11-RSV-Pad7)"
+        },
+        {
+          "number": "8",
+          "position_mm": [
+            8.075,
+            16.08
+          ],
+          "size_mm": [
+            0.7,
+            0.55
+          ],
+          "net": "/SD_V3"
+        }
+      ],
+      "models": [],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U12",
+      "value": "TLV7042DDFR",
+      "footprint": "SOT-23-8",
+      "position_mm": [
+        21.525,
+        20.8525
+      ],
+      "rotation_deg": 90.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            19.825,
+            19.8025
+          ],
+          "end_mm": [
+            19.825,
+            21.9025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.825,
+            21.9025
+          ],
+          "end_mm": [
+            20.045,
+            21.9025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.045,
+            18.8025
+          ],
+          "end_mm": [
+            20.045,
+            19.8025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.045,
+            19.8025
+          ],
+          "end_mm": [
+            19.825,
+            19.8025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.045,
+            21.9025
+          ],
+          "end_mm": [
+            20.045,
+            22.9025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            20.045,
+            22.9025
+          ],
+          "end_mm": [
+            23.005,
+            22.9025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.005,
+            18.8025
+          ],
+          "end_mm": [
+            20.045,
+            18.8025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.005,
+            19.8025
+          ],
+          "end_mm": [
+            23.005,
+            18.8025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.005,
+            21.9025
+          ],
+          "end_mm": [
+            23.225,
+            21.9025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.005,
+            22.9025
+          ],
+          "end_mm": [
+            23.005,
+            21.9025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.225,
+            19.8025
+          ],
+          "end_mm": [
+            23.005,
+            19.8025
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.225,
+            21.9025
+          ],
+          "end_mm": [
+            23.225,
+            19.8025
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            22.5,
+            21.99
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/CHG_GUARD_GATE"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            21.85,
+            21.99
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/BAT_TS"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            21.2,
+            21.99
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/TS_COLD_REF"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            20.55,
+            21.99
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            20.55,
+            19.715
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/BAT_TS"
+        },
+        {
+          "number": "6",
+          "position_mm": [
+            21.2,
+            19.715
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/TS_HOT_REF"
+        },
+        {
+          "number": "7",
+          "position_mm": [
+            21.85,
+            19.715
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/CHG_GUARD_GATE"
+        },
+        {
+          "number": "8",
+          "position_mm": [
+            22.5,
+            19.715
+          ],
+          "size_mm": [
+            1.325,
+            0.5
+          ],
+          "net": "/V3V3"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-8.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U13",
+      "value": "TPS2552DBVR-1",
+      "footprint": "SOT-23-6",
+      "position_mm": [
+        12.5,
+        0.95
+      ],
+      "rotation_deg": 180.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            10.45,
+            -0.55
+          ],
+          "end_mm": [
+            11.45,
+            -0.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            10.45,
+            2.45
+          ],
+          "end_mm": [
+            10.45,
+            -0.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.45,
+            -0.75
+          ],
+          "end_mm": [
+            13.55,
+            -0.75
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.45,
+            -0.55
+          ],
+          "end_mm": [
+            11.45,
+            -0.75
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.45,
+            2.45
+          ],
+          "end_mm": [
+            10.45,
+            2.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.45,
+            2.65
+          ],
+          "end_mm": [
+            11.45,
+            2.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.55,
+            -0.75
+          ],
+          "end_mm": [
+            13.55,
+            -0.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.55,
+            -0.55
+          ],
+          "end_mm": [
+            14.55,
+            -0.55
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.55,
+            2.45
+          ],
+          "end_mm": [
+            13.55,
+            2.65
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            13.55,
+            2.65
+          ],
+          "end_mm": [
+            11.45,
+            2.65
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            14.55,
+            -0.55
+          ],
+          "end_mm": [
+            14.55,
+            2.45
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            14.55,
+            2.45
+          ],
+          "end_mm": [
+            13.55,
+            2.45
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            13.6375,
+            1.9
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/VBUS_OVP"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            13.6375,
+            0.95
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            13.6375,
+            0.0
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            11.3625,
+            0.0
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "unconnected-(U13-FAULT-Pad4)"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            11.3625,
+            0.95
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/VBUS_OVP"
+        },
+        {
+          "number": "6",
+          "position_mm": [
+            11.3625,
+            1.9
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/VBUS_CHARGER"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U14",
+      "value": "NCP360SNT1G",
+      "footprint": "SOT-23-5",
+      "position_mm": [
+        7.0,
+        7.0
+      ],
+      "rotation_deg": 90.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            5.3,
+            5.95
+          ],
+          "end_mm": [
+            5.5,
+            5.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.3,
+            8.05
+          ],
+          "end_mm": [
+            5.3,
+            5.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.5,
+            4.95
+          ],
+          "end_mm": [
+            6.61,
+            4.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.5,
+            5.95
+          ],
+          "end_mm": [
+            5.5,
+            4.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.5,
+            8.05
+          ],
+          "end_mm": [
+            5.3,
+            8.05
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            5.5,
+            9.05
+          ],
+          "end_mm": [
+            5.5,
+            8.05
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            6.61,
+            4.95
+          ],
+          "end_mm": [
+            6.61,
+            5.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            6.61,
+            5.95
+          ],
+          "end_mm": [
+            7.39,
+            5.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            7.39,
+            4.95
+          ],
+          "end_mm": [
+            8.5,
+            4.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            7.39,
+            5.95
+          ],
+          "end_mm": [
+            7.39,
+            4.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            8.5,
+            4.95
+          ],
+          "end_mm": [
+            8.5,
+            5.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            8.5,
+            5.95
+          ],
+          "end_mm": [
+            8.7,
+            5.95
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            8.5,
+            8.05
+          ],
+          "end_mm": [
+            8.5,
+            9.05
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            8.5,
+            9.05
+          ],
+          "end_mm": [
+            5.5,
+            9.05
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            8.7,
+            5.95
+          ],
+          "end_mm": [
+            8.7,
+            8.05
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            8.7,
+            8.05
+          ],
+          "end_mm": [
+            8.5,
+            8.05
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            6.05,
+            8.1375
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            7.0,
+            8.1375
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            7.95,
+            8.1375
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            7.95,
+            5.8625
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "unconnected-(U14-FLAG-Pad4)"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            6.05,
+            5.8625
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/VBUS_OVP"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U2",
+      "value": "USBLC6-2P6",
+      "footprint": "SOT-666",
+      "position_mm": [
+        12.6,
+        18.815
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            11.1,
+            17.715
+          ],
+          "end_mm": [
+            14.1,
+            17.715
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.1,
+            19.915
+          ],
+          "end_mm": [
+            11.1,
+            17.715
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            11.1,
+            19.915
+          ],
+          "end_mm": [
+            14.1,
+            19.915
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            14.1,
+            17.715
+          ],
+          "end_mm": [
+            14.1,
+            19.915
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            11.75,
+            19.3525
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "net": "/USB_DP"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            11.675,
+            18.815
+          ],
+          "size_mm": [
+            0.65,
+            0.3
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            11.75,
+            18.2775
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            13.45,
+            18.2775
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "net": "/USB_DM"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            13.525,
+            18.815
+          ],
+          "size_mm": [
+            0.65,
+            0.3
+          ],
+          "net": "/VBUS"
+        },
+        {
+          "number": "6",
+          "position_mm": [
+            13.45,
+            19.3525
+          ],
+          "size_mm": [
+            0.5,
+            0.375
+          ],
+          "net": "/USB_DP"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-666.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U3",
+      "value": "BQ25185DLHR",
+      "footprint": "Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "position_mm": [
+        20.385,
+        14.785
+      ],
+      "rotation_deg": 0.0,
+      "side": "B",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            18.655,
+            13.635
+          ],
+          "end_mm": [
+            18.655,
+            15.935
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            18.655,
+            15.935
+          ],
+          "end_mm": [
+            19.035,
+            15.935
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.035,
+            13.535
+          ],
+          "end_mm": [
+            19.035,
+            13.635
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.035,
+            13.635
+          ],
+          "end_mm": [
+            18.655,
+            13.635
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.035,
+            15.935
+          ],
+          "end_mm": [
+            19.035,
+            16.035
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.035,
+            16.035
+          ],
+          "end_mm": [
+            21.735,
+            16.035
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            21.735,
+            13.535
+          ],
+          "end_mm": [
+            19.035,
+            13.535
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            21.735,
+            13.635
+          ],
+          "end_mm": [
+            21.735,
+            13.535
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            21.735,
+            15.935
+          ],
+          "end_mm": [
+            22.115,
+            15.935
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            21.735,
+            16.035
+          ],
+          "end_mm": [
+            21.735,
+            15.935
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            22.115,
+            13.635
+          ],
+          "end_mm": [
+            21.735,
+            13.635
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            22.115,
+            15.935
+          ],
+          "end_mm": [
+            22.115,
+            13.635
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "",
+          "position_mm": [
+            20.385,
+            14.785
+          ],
+          "size_mm": [
+            0.84,
+            1.41
+          ],
+          "net": ""
+        },
+        {
+          "number": "1",
+          "position_mm": [
+            19.285,
+            15.585
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            19.285,
+            15.185
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/BAT"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            19.285,
+            14.785
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "unconnected-(U3-STAT2-Pad3)"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            19.285,
+            14.385
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/CHG_INHIBIT_GATE"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            19.285,
+            13.985
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "6",
+          "position_mm": [
+            21.485,
+            13.985
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/CHARGER_TS"
+        },
+        {
+          "number": "7",
+          "position_mm": [
+            21.485,
+            14.385
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/ILIM_VSET"
+        },
+        {
+          "number": "8",
+          "position_mm": [
+            21.485,
+            14.785
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/ISET"
+        },
+        {
+          "number": "9",
+          "position_mm": [
+            21.485,
+            15.185
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/CHG_N"
+        },
+        {
+          "number": "10",
+          "position_mm": [
+            21.485,
+            15.585
+          ],
+          "size_mm": [
+            0.75,
+            0.2
+          ],
+          "net": "/VBUS_CHARGER"
+        },
+        {
+          "number": "11",
+          "position_mm": [
+            20.385,
+            14.785
+          ],
+          "size_mm": [
+            0.9,
+            1.5
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U4",
+      "value": "TPS7A0233PDBVR",
+      "footprint": "SOT-23-5",
+      "position_mm": [
+        2.875,
+        3.485
+      ],
+      "rotation_deg": 0.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            0.825,
+            1.985
+          ],
+          "end_mm": [
+            1.825,
+            1.985
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            0.825,
+            4.985
+          ],
+          "end_mm": [
+            0.825,
+            1.985
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            1.825,
+            1.785
+          ],
+          "end_mm": [
+            3.925,
+            1.785
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            1.825,
+            1.985
+          ],
+          "end_mm": [
+            1.825,
+            1.785
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            1.825,
+            4.985
+          ],
+          "end_mm": [
+            0.825,
+            4.985
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            1.825,
+            5.185
+          ],
+          "end_mm": [
+            1.825,
+            4.985
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.925,
+            1.785
+          ],
+          "end_mm": [
+            3.925,
+            1.985
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.925,
+            1.985
+          ],
+          "end_mm": [
+            4.925,
+            1.985
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.925,
+            3.095
+          ],
+          "end_mm": [
+            3.925,
+            3.875
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.925,
+            3.875
+          ],
+          "end_mm": [
+            4.925,
+            3.875
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.925,
+            4.985
+          ],
+          "end_mm": [
+            3.925,
+            5.185
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            3.925,
+            5.185
+          ],
+          "end_mm": [
+            1.825,
+            5.185
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            4.925,
+            1.985
+          ],
+          "end_mm": [
+            4.925,
+            3.095
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            4.925,
+            3.095
+          ],
+          "end_mm": [
+            3.925,
+            3.095
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            4.925,
+            3.875
+          ],
+          "end_mm": [
+            4.925,
+            4.985
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            4.925,
+            4.985
+          ],
+          "end_mm": [
+            3.925,
+            4.985
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "position_mm": [
+            1.7375,
+            2.535
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            1.7375,
+            3.485
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            1.7375,
+            4.435
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/SYS"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            4.0125,
+            4.435
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "unconnected-(U4-NC-Pad4)"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            4.0125,
+            2.535
+          ],
+          "size_mm": [
+            1.325,
+            0.6
+          ],
+          "net": "/V3V3"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+      ],
+      "body_height_mm": null
+    },
+    {
+      "ref": "U8",
+      "value": "IM69D130V01",
+      "footprint": "IM69D130_JLC_SMD_trial",
+      "position_mm": [
+        21.25,
+        4.565
+      ],
+      "rotation_deg": 0.0,
+      "side": "F",
+      "courtyard_geometry": [
+        {
+          "start_mm": [
+            19.0,
+            2.815
+          ],
+          "end_mm": [
+            23.5,
+            2.815
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            19.0,
+            6.315
+          ],
+          "end_mm": [
+            19.0,
+            2.815
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.5,
+            2.815
+          ],
+          "end_mm": [
+            23.5,
+            6.315
+          ],
+          "shape": "0"
+        },
+        {
+          "start_mm": [
+            23.5,
+            6.315
+          ],
+          "end_mm": [
+            19.0,
+            6.315
+          ],
+          "shape": "0"
+        }
+      ],
+      "pads": [
+        {
+          "number": "",
+          "position_mm": [
+            19.75,
+            3.715
+          ],
+          "size_mm": [
+            0.4,
+            0.6
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            19.75,
+            5.415
+          ],
+          "size_mm": [
+            0.4,
+            0.6
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            20.45,
+            3.715
+          ],
+          "size_mm": [
+            0.4,
+            0.6
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            20.45,
+            5.415
+          ],
+          "size_mm": [
+            0.4,
+            0.6
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            21.13,
+            4.565
+          ],
+          "size_mm": [
+            0.3,
+            0.3
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            21.53,
+            3.872
+          ],
+          "size_mm": [
+            0.3,
+            0.3
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            21.53,
+            5.258
+          ],
+          "size_mm": [
+            0.3,
+            0.3
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            21.93,
+            4.565
+          ],
+          "size_mm": [
+            0.8,
+            0.8
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            22.33,
+            3.872
+          ],
+          "size_mm": [
+            0.3,
+            0.3
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            22.33,
+            5.258
+          ],
+          "size_mm": [
+            0.3,
+            0.3
+          ],
+          "net": ""
+        },
+        {
+          "number": "",
+          "position_mm": [
+            22.73,
+            4.565
+          ],
+          "size_mm": [
+            0.3,
+            0.3
+          ],
+          "net": ""
+        },
+        {
+          "number": "1",
+          "position_mm": [
+            19.75,
+            3.715
+          ],
+          "size_mm": [
+            0.61,
+            0.91
+          ],
+          "net": "/PDM_DATA"
+        },
+        {
+          "number": "2",
+          "position_mm": [
+            20.45,
+            3.715
+          ],
+          "size_mm": [
+            0.61,
+            0.91
+          ],
+          "net": "/V3V3"
+        },
+        {
+          "number": "3",
+          "position_mm": [
+            19.75,
+            5.415
+          ],
+          "size_mm": [
+            0.61,
+            0.91
+          ],
+          "net": "/PDM_CLK"
+        },
+        {
+          "number": "4",
+          "position_mm": [
+            20.45,
+            5.415
+          ],
+          "size_mm": [
+            0.61,
+            0.91
+          ],
+          "net": "/GND"
+        },
+        {
+          "number": "5",
+          "position_mm": [
+            21.93,
+            3.755
+          ],
+          "size_mm": [
+            0.4,
+            0.4
+          ],
+          "net": "/GND"
+        }
+      ],
+      "models": [
+        "${KICAD10_3DMODEL_DIR}/Sensor_Audio.3dshapes/Infineon_PG-LLGA-5-1.step"
+      ],
+      "body_height_mm": null
+    }
+  ],
+  "limitations": [
+    "Courtyard is a placement boundary, not an exact component body.",
+    "Body heights, connector mating and original lead bending still require source-backed models.",
+    "This export does not prove assembled dimensions or collision-free assembly."
+  ]
+}

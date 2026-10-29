@@ -1,0 +1,56 @@
+{
+  "status": "CONDITIONAL_NCU_TRIAL_MIXED_DATE_REFERENCE_NOT_QUOTE",
+  "prototype_count": 5,
+  "source_sha256": {
+    "hardware/xe-minimal/fixed-usb-limit-trial/dmn-land-trial/five-unit-cost-coverage.json": "5969299b0ca785548c3209f87c3b7578477fbf92ae6cb426d4c8c531edb3e16a",
+    "docs/procurement/xe-ncu-sensor-review.json": "27229abcc847462d484fd5cfacde8a48963b02f602b8f1a6def065a36db388a0",
+    "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/candidate-mpn-review.csv": "60cdf408e202de65d9617261bc2336600b42a8e5f31b693b33bfcb01716b09d7",
+    "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/pendant-xe-minimal.kicad_pcb": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5"
+  },
+  "only_changed_reference": "TH1",
+  "old_mpn": "NCP18XH103F03RB",
+  "candidate_mpn": "NCU18XH103F60RB",
+  "old_five_part_JPY": 124.0,
+  "candidate_five_part_JPY": 102.0,
+  "difference_JPY": -22.0,
+  "candidate_price_observation": {
+    "checked": "2026-10-27",
+    "url": "https://www.digikey.jp/en/products/detail/murata-electronics/NCU18XH103F60RB/7363023",
+    "status": "Active",
+    "stock_displayed": 445565,
+    "cut_tape_sku": "490-16279-1-ND",
+    "minimum_displayed_quantity": 1,
+    "unit_JPY_at1": 23,
+    "unit_JPY_at5": 20.4,
+    "five_part_subtotal_ex_tax_JPY": 102,
+    "not_reserved": true,
+    "assembler_attrition_quantity": null
+  },
+  "mixed_date_parts_reference_subtotals_by_currency": {
+    "JPY": 19920.7,
+    "USD": 202.821
+  },
+  "mixed_date_quantity_proposal_reference_subtotals_by_currency": {
+    "JPY": 19841.7,
+    "USD": 202.821
+  },
+  "complete_five_unit_total_JPY": null,
+  "excluded": [
+    "PCB manufacture including 6-layer0.8mm/ENIG/filled-capped vias",
+    "Assembly setup, stencil, extended parts fees, attrition and packaging minimums",
+    "Case printing material/time and adhesive/insulation",
+    "Programming, fixture and test labor",
+    "Shipping, tax and exchange-rate costs",
+    "Battery purchased separately by users"
+  ],
+  "limits": [
+    "Exact MPN matching only; installed quantity is not purchase quantity",
+    "Historical unit rates extended linearly, not current quantity-break prices",
+    "Mixed sourcing and assembler availability are not established; total remains null until all costs are available",
+    "Mixed-date reference subtotals include historical rates and out-of-stock listings; neither complete quotations nor procurable assembly kits",
+    "NCU candidate is not adopted; this report does not authorize production.",
+    "Other part availability and prices were not refreshed by this calculation.",
+    "DMN2056U-7 stock gate remains unresolved; these subtotals do not represent a purchasable kit.",
+    "Assembly costs, source currency conversion and whole-project cost remain separate."
+  ]
+}

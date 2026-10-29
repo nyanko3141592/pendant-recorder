@@ -1,0 +1,6 @@
+from pathlib import Path
+import json,hashlib,cadquery as cq
+O=Path(__file__).resolve().parent;I=json.loads((O/'board-inventory.json').read_text());p=next(x for x in I['parts'] if x['ref']=='U1');assert p['side']=='B' and p['rotation_deg']==0
+# Symmetric square envelope: orientation does not affect its bounds.
+s=cq.importers.importStep(str(O/'u1-ufqfpn48-envelope.step')).val().rotate((0,0,0),(1,0,0),180).translate((p['position_mm'][0],-p['position_mm'][1],0));f=O/'u1-envelope-positioned-study.step';cq.exporters.export(s,str(f));c=cq.importers.importStep(str(f)).val();assert c.isValid();b=c.BoundingBox();assert abs(b.zmin+.6)<1e-6 and abs(b.zmax)<1e-6
+r={'status':'POSITIONED_ENVELOPE_NOT_COMPLETE_ASSEMBLY','pcb_sha256':I['pcb_sha256'],'file':f.name,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'axis_evidence':'Symmetric square envelope centered on footprint. Bottom mounted, body extends toward negative STEP Z.','bounds_mm':[b.xmin,b.xmax,b.ymin,b.ymax,b.zmin,b.zmax],'solder_standoff_mm':0,'limitations':['Zero solder standoff is visualization datum only.','Conservative7.4mm square includes assumed0.15mm protrusion on each side; drawing visual check pending.','Not combined with complete assembly; no enclosure fit approval.']};(O/'u1-position-review.json').write_text(json.dumps(r,indent=2)+'\n');print(r['bounds_mm'])

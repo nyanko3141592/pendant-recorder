@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-26",
+  "policy": "docs/requirements.md",
+  "status": "SUPERSEDED_SCREEN_DTP401525_XE_SELECTED_DO_NOT_USE_AS_CURRENT_DECISION",
+  "superseded_by": "docs/sourcing/dtp401525-xe-purchase-specification.json",
+  "parts": [
+    {
+      "part": "TinyCircuits ASR00003",
+      "capacity_mAh": 150,
+      "manufacturer_page": "https://tinycircuits.com/products/lithium-ion-polymer-battery-3-7v-150mah",
+      "datasheet": "https://files.tinycircuits.com/Datasheets/ASR00003_150mAh.pdf",
+      "public_pack_max_mm": [
+        23,
+        22,
+        5.5
+      ],
+      "wire_length_mm": [
+        15,
+        35
+      ],
+      "connector": "JST SHR-02V-S-B",
+      "mate": "JST SM02B-SRSS-TB(LF)(SN)",
+      "published_max_charge_discharge_mA": 150,
+      "price_usd_before_shipping_tax": 4.95,
+      "procurement": {
+        "mouser_japan_url": "https://www.mouser.jp/ja/ProductDetail/TinyCircuits/ASR00003?qs=sGAEpiMZZMuXcNZ31nzYhWU9pPI3i6ApDvSN63BTRzI%3D",
+        "result": "Mouser Japan explicitly says not sold in this region. US inventory does not prove Japan purchase. Direct Japan battery-only delivery not established."
+      },
+      "geometry": {
+        "target_xy_mm": [
+          25,
+          25
+        ],
+        "assumed_wall_mm": 1,
+        "cavity_xy_mm": [
+          23,
+          23
+        ],
+        "max_pack_axis_clearance_total_mm": [
+          0,
+          1
+        ],
+        "interpretation": "Axis-aligned flat layout has zero clearance on23mm side before additional tolerances, swelling, wire or connector. Not a fit pass; nominal20x20 cannot be used instead of maxima."
+      },
+      "decision": "NOT_ADOPTED: no verified normal Japan retail route and insufficient axis-aligned margin for25mm target. Do not inquire or use forwarding/custom harness."
+    },
+    {
+      "part": "SwitchScience product3166 110mAh",
+      "source": "https://www.switch-science.com/products/3166/",
+      "result": "Current opened page title explicitly販売終了; search snippet lacked this.",
+      "decision": "EXCLUDED_END_OF_SALE: do not use old listing/catalogue as current retail availability."
+    },
+    {
+      "part": "ROBIN RB_100_1S_JR",
+      "source": "https://robin.jp/SHOP/RB_100_1S_JR.html",
+      "published_price_jpy_tax_included": 580,
+      "published_measured_body_mm": [
+        22,
+        12,
+        5.4
+      ],
+      "published_discharge": "Specification says1C continuous/3C instantaneous but introductory text says30C; do not use30C.",
+      "decision": "EXCLUDED_PUBLIC_SPEC_INSUFFICIENT",
+      "missing": [
+        "Protection circuitry not specified; absence of description does not prove absence of protection",
+        "Exact connector manufacturer/part/polarity diagram and lead dimensions",
+        "Maximum pack tolerances rather than one measured sample",
+        "Charge voltage/current/termination/temperature specifications"
+      ],
+      "note": "Retail listing and small measured dimensions alone are insufficient under current requirements. No inquiry."
+    },
+    {
+      "part": "Aska DTP battery catalogue",
+      "source": "https://www.aska-elt.jp/battery/",
+      "finding": "Stock catalogue entries:40mAh DTP301120PHR,110mAh DTP401525PHR/XE, then300mAh andlarger. No intermediate80/100/150mAh part established.40mAh linked PDF returned404.",
+      "decision": "Catalogue is source evidence, not ordinary retail checkout. No new qualified compact battery found; do not initiate contact."
+    }
+  ],
+  "next_action": "Historical screen only. DTP401525-XE is fixed by the current requirements; use the canonical purchase specification and do not reopen battery selection.",
+  "inquiries_sent": false,
+  "orders_placed": false,
+  "energy_screen_40mAh": {
+    "usable_fraction_assumption": 0.7,
+    "target_h": 16,
+    "average_budget_mA": 1.75,
+    "existing_nonstorage_assumption_mA": 2.8,
+    "implication": "1.75mA allocation is below the existing2.8mA hypothesis, but2.8mA is neither measurement nor physical lower bound.40mAh not qualified; power-redesign feasibility remains open. Do not exclude solely on2.8mA.",
+    "audit": "docs/sourcing/nonstorage-power-assumption-audit.json"
+  },
+  "dtp40_detail": "docs/sourcing/dtp40-public-spec-review.json"
+}

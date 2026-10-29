@@ -1,0 +1,36 @@
+{
+  "status": "WIRE_PAD_FOOTPRINT_CANDIDATE_NOT_RELEASE",
+  "source_sha256": "c6240769cba6124e534f8d3de8ecf5ba1968b9c58dfc8a246193dd1108a758b9",
+  "candidate_sha256": "5be6744abc537911874d9b1666782ddca8816525f4f84a02c731facef0920df2",
+  "footprint_sha256": "2d2e3ef121d43322f19999fb420f5fd49d8215d756c1318af39392140e319dcd",
+  "drc_violations": 0,
+  "unconnected": 0,
+  "courtyard_margin_hypothesis_mm": {
+    "left_of_pad_1": 0.15,
+    "other_outer_edges": 0.25
+  },
+  "pads": [
+    {
+      "number": "1",
+      "net": "/BAT_TS",
+      "pcb_xy_mm": [
+        12.75,
+        1.5
+      ]
+    },
+    {
+      "number": "2",
+      "net": "/GND",
+      "pcb_xy_mm": [
+        14.5,
+        1.5
+      ]
+    }
+  ],
+  "limits": [
+    "External sensor attachment excluded from automated placement; seller joining process remains unqualified.",
+    "Courtyard uses a provisional 0.15 mm left margin and 0.25 mm other margins; it is not a qualified tool/strain-relief envelope. Q6 pad 3 right edge is x=11.705 mm and wire pad 1 left edge x=12.35 mm; actual solder spread and positioning tolerance remain unqualified.",
+    "Schematic parity, component adoption and updated mechanical model remain incomplete.",
+    "No manufacturing release, order, physical test or runtime guarantee."
+  ]
+}

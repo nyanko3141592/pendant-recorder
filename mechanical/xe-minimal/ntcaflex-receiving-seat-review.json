@@ -1,0 +1,94 @@
+{
+  "status": "RECEIVING_SEAT_TRIAL_NOT_SENSOR_CARRIER",
+  "source_sha256": {
+    "film-sensor-clearance-200um-separator-trial.step": "69dbd7dcedd2c4b0f85c3339cb82fb253a16aa2a17e269174d81429b5aec0342",
+    "ntcaflex-relocated-support-lower-trial.step": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+    "ntcaflex-diagonal-positioned-reference.step": "98c8c667fa13ff247d718b7f6ab66a1f3df63a16cc2e4718da33b4f494d89d08",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "cases": [
+    {
+      "pad_x_start_mm": 14,
+      "valid": true,
+      "solid_count": 1,
+      "anchor_overlap_mm3": 1.3200000000000005,
+      "lower_seat_proxy_mm3": 0.001999999999999632,
+      "checks": {
+        "sensor": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 2.583270440704234
+        },
+        "board": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 0.552202362124553
+        },
+        "battery": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 0.19999999999999973
+        },
+        "lower": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 0.0
+        }
+      }
+    },
+    {
+      "pad_x_start_mm": 15,
+      "valid": true,
+      "solid_count": 1,
+      "anchor_overlap_mm3": 0.7200000000000002,
+      "lower_seat_proxy_mm3": 0.001999999999999632,
+      "checks": {
+        "sensor": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 2.583270440704234
+        },
+        "board": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 1.2563603152376057
+        },
+        "battery": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 0.19999999999999973
+        },
+        "lower": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 0.0
+        }
+      }
+    },
+    {
+      "pad_x_start_mm": 16,
+      "valid": true,
+      "solid_count": 1,
+      "anchor_overlap_mm3": 0.11999999999999969,
+      "lower_seat_proxy_mm3": 0.001999999999999632,
+      "checks": {
+        "sensor": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 2.583270440704234
+        },
+        "board": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 1.3850000000000002
+        },
+        "battery": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 0.19999999999999973
+        },
+        "lower": {
+          "pad_overlap_mm3": 0.0,
+          "pad_distance_mm": 0.0
+        }
+      }
+    }
+  ],
+  "exported_x_start_mm": 15,
+  "output_sha256": "b5b96db5bdf5971889c9fe214b49c7ea4179ee816850fe86c6f1be166ddd2e6c",
+  "limits": [
+    "Only added ledge is checked against obstacles; existing separator has not been relieved for this sensor.",
+    "Downward 1um proxy is nominal contact geometry, not strength or printed seating.",
+    "New carrier opening, retention, GL tolerances, solder, harness and thermal coupling unresolved."
+  ]
+}

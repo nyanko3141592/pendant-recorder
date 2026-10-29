@@ -1,0 +1,22 @@
+{
+  "status": "PLACEMENT_REJECTED_REQUIRES_LOCAL_REROUTE",
+  "pcb_sha256": "d03529c274238b6c38eacdf3f301c2ee0c68d23a7ebc1fd1e4cc1daea566a9ee",
+  "pose": {
+    "x_mm": 13.875,
+    "y_mm": 2,
+    "rotation_deg": 180
+  },
+  "violation_counts": {
+    "shorting_items": 5,
+    "hole_clearance": 7,
+    "solder_mask_bridge": 6,
+    "track_dangling": 4,
+    "via_dangling": 1,
+    "text_height": 1
+  },
+  "unconnected": 5,
+  "schematic_parity": 0,
+  "finding": "Smaller package at old center intersects pre-existing SD_MISO/GND vias and VBUS/GND surface traces. Body size alone does not establish routability.",
+  "next": "Move candidate into a clear region and rebuild local fanout; do not remove or renet SD_MISO to make DRC pass. Clear old U13 stubs only with connectivity verification.",
+  "adopted": false
+}

@@ -1,0 +1,46 @@
+{
+  "accepted": true,
+  "visited": 57,
+  "paths": [
+    {
+      "layer": 0,
+      "points": [
+        [
+          13.6,
+          3.7
+        ],
+        [
+          13.5,
+          3.9000000000000004
+        ],
+        [
+          13.100000000000001,
+          4.1000000000000005
+        ],
+        [
+          11.8,
+          3.7
+        ]
+      ]
+    }
+  ],
+  "switches": [],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 13.2,
+            "y": 3.6
+          },
+          "uuid": "8e9467d3-b12a-48fb-99aa-eae9e1428cb0"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 6
+}

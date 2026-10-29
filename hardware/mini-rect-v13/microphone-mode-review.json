@@ -1,0 +1,53 @@
+{
+  "status": "CLOCK_MODE_SCREEN_PASS_APPLICATION_CURRENT_UNMEASURED",
+  "source": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-im69d130-datasheet-en.pdf",
+  "datasheet_revision": "1.0 2017-12-19",
+  "firmware_sha256": "c85d5772e81be2a2bf9b8394ac15f2980287d86ff4a1770cc116dae3b9b843d4",
+  "configured": {
+    "MSIK_Hz": 3072000,
+    "clock_divider": 4,
+    "PDM_Hz": 768000,
+    "decimation": 48,
+    "PCM_Hz": 16000,
+    "microphone_supply_V": 3.3
+  },
+  "datasheet": {
+    "low_power_clock_range_Hz": [
+      400000,
+      950000
+    ],
+    "at_768kHz_current_typ_uA": 300,
+    "at_768kHz_current_max_uA": 380,
+    "current_test_supply_V": 1.8,
+    "current_test_temperature_C": 25,
+    "current_test_data_load": "none",
+    "at_768kHz_typ_SNR_dBA": 64,
+    "SNR_bandwidth_Hz": [
+      20,
+      8000
+    ]
+  },
+  "decision": "Configured PDM clock is in low-power operating range. Do not claim69dBA high-rate SNR or380uA guaranteed current at actual3.3V from1.8V characterization. Existing0.5mA microphone+clock allocation remains a target.",
+  "bench_required": [
+    "PDM edge rise/fall<=13ns at microphone using current GPIO low-speed setting",
+    "Duty cycle40–60% and correct data sampling edge",
+    "Supply current at3.3V including MCU clock generation and actual data load",
+    "Startup settling, ADF passband/gain and enclosure audio response"
+  ],
+  "sampling_edge_review": {
+    "status": "POLARITY_REVIEW_PASS_BOARD_TIMING_PENDING",
+    "configured": "MDF_BITSTREAM0_RISING; SELECT=GND",
+    "evidence": "Visually inspected Infineon v1.0 Figure 9 page9. LR=GND drives data after falling edge; data is valid before next rising edge, then goes high impedance after rising edge. Current rising-edge sampling is correct in polarity. ST U5 MDF/ADF training confirms separate rising/falling sampled streams selected by BSMX.",
+    "local_datasheet": "hardware/mini-rect-v13/reference/infineon-im69d130-v1-timing.pdf",
+    "datasheet_sha256": "7d6c2bebd1da22cec7376747a6cad97b2d1548825e917f51ba3b73939bd8b541",
+    "download_mirror": "https://www.rutronik.com/fileadmin/Rutronik/Supplier/Infineon/Intuitive_Sensing/Datasheet_Infineon-IM69D130-DS-v01_00-EN.pdf",
+    "st_source": "https://www.st.com/content/ccc/resource/training/technical/product_training/group1/ec/44/67/63/9e/aa/46/02/STM32U5-Peripheral-Multi-Digital-Filter-Audio-Digital-Filter/files/STM32U5-Peripheral-Multi-Digital-Filter-Audio-Digital-Filter.pdf/jcr%3Acontent/translations/en.STM32U5-Peripheral-Multi-Digital-Filter-Audio-Digital-Filter.pdf",
+    "data_valid_delay_max_ns": 100,
+    "data_valid_test_load": "100pF,100kohm",
+    "ideal_min_low_phase_ns": 520.8333333333334,
+    "ideal_valid_before_rising_ns": 420.83333333333337,
+    "timing_limit": "Ideal phase calculation excludes clock propagation, MCU setup/hold, skew, thresholds and load. Not a board timing signoff.",
+    "bench_required": "Measure CLK/DATA rise/fall, phase and setup/hold at MCU pin.",
+    "firmware_change": "None: keep current rising edge."
+  }
+}

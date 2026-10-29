@@ -1,0 +1,62 @@
+{
+  "status": "OPTIONAL_COOPERATIVE_APP_LINKED_HOST_TESTED_NOT_HARDWARE_QUALIFIED",
+  "evidence": {
+    "elf_sha256": "d0122edf86ee8539b243e02f79646589547b7763702dfe713b47b5def8357d43",
+    "arm_compiled_sizeof_original_chunk": 85060,
+    "arm_compiled_sizeof_two_five_second_chunks": 90248
+  },
+  "memory": {
+    "linked_data_bss": 197325,
+    "reserved_stack_heap": 25088,
+    "main_ram_capacity": 262144,
+    "linked_remaining_main_ram": 39731
+  },
+  "design": [
+    "Two independent 80000-sample IMA-ADPCM WAV chunks, each40x1024 payload bytes plus header/pending/state",
+    "While encrypting or writing frozen chunk, cooperative progress callback drains PCM queue into second chunk only",
+    "Callback must not call filesystem, RNG, USB ownership transition, or recursively save; latch errors and unwind outer writer",
+    "Invoke progress in SD busy polling and bounded transfer boundaries; crypto CPU duration separately must fit PCM queue",
+    "On staging chunk full while previous still saving: explicit overrun; never overwrite unsaved samples",
+    "Keep file naming, encryption, power-fail recovery and host decoding compatibility; 36h increases full chunks from12960 to25920 and requires repeated capacity/recovery testing"
+  ],
+  "limits": [
+    "Five-second staging is finite; exact card remains unqualified",
+    "Static stack screen has missing frames and is not an upper-bound proof",
+    "No measured energy savings; twice the per-file setup rate versus10s legacy",
+    "Crypto before the storage callback must fit remaining PCM queue time"
+  ],
+  "tests": {
+    "sanitizers": "ASAN/UBSAN",
+    "cooperative_5second_chunks": [
+      "19 delayed DMA blocks preserve exact encoded stream and sample count",
+      "70 delayed DMA blocks preserve exact encoded stream and sample count",
+      "98 delayed DMA blocks fail explicitly when finite staging fills",
+      "frozen save buffer hash unchanged during every progress call"
+    ],
+    "legacy": "Default10second recording_pipeline regression PASS",
+    "limits": "Native mocked DMA/HAL timing; optional full ARM application linked but not flashed or physically tested"
+  },
+  "storage_adapter_integration": {
+    "result": "PASS native ASAN/UBSAN",
+    "test": "check_cooperative_storage.sh",
+    "real_components": [
+      "board_storage adapter",
+      "recording_pipeline cooperative wrappers",
+      "PCM queue",
+      "IMA WAV encoding",
+      "storage ownership"
+    ],
+    "mock_components": [
+      "SD command protocol",
+      "SPI HAL",
+      "DMA timing"
+    ],
+    "assertions": [
+      "1200ms cumulative simulated wait preserves produced/committed sample count",
+      "progress callback invoked through board storage exchanges",
+      "pump failure faults storage and pipeline"
+    ],
+    "limitation": "Time advanced at mock exchange boundaries, not real HAL timeout/protocol timing; does not measure hardware or SD busy implementation."
+  },
+  "power_budget": "../../../hardware/mini-rect-v13/recording-power-budget.json"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PARTIALLY_ROUTED_NOT_ADOPTED",
+  "sha256": "f462c644751dcb0d3979f0ee747d44bb99cdbfa20f3d63763af85dd903f3af44",
+  "changes": [
+    "SD_MISO In2 segment rerouted through 7.2,11.2 mm",
+    "U16 VBUS escape via at 8.2,9.65 mm, diameter 0.4 mm drill 0.2 mm; existing board DRC passes this geometry"
+  ],
+  "violations": {
+    "track_dangling": 3,
+    "via_dangling": 1
+  },
+  "unconnected_count": 4,
+  "limits": [
+    "0.1 mm nominal annular ring requires manufacturing-process review before adoption",
+    "VBUS source, SEL and D plus remaining GND connectivity still incomplete",
+    "SD timing and all circuit functionality remain unqualified"
+  ],
+  "canonical_changed": false
+}

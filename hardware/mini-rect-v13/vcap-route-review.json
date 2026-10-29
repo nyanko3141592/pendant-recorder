@@ -1,0 +1,92 @@
+{
+  "status": "ROUTE_INVENTORY_NOT_LOOP_QUALIFICATION",
+  "board_sha256": "8c98180835f975a3c1ba9a2a7714d9da121132c44831814c5668da0da8915fed",
+  "pads": [
+    {
+      "ref": "U1",
+      "pad": "22",
+      "x_mm": 13.905,
+      "y_mm": 4.4675,
+      "layer": "B.Cu"
+    },
+    {
+      "ref": "C5",
+      "pad": "1",
+      "x_mm": 13.505,
+      "y_mm": 2.78,
+      "layer": "B.Cu"
+    }
+  ],
+  "tracks": [
+    {
+      "start_mm": [
+        13.905,
+        3.18
+      ],
+      "end_mm": [
+        13.905,
+        4.4675
+      ],
+      "width_mm": 0.127,
+      "length_mm": 1.2875,
+      "layer": "B.Cu"
+    },
+    {
+      "start_mm": [
+        13.505,
+        2.78
+      ],
+      "end_mm": [
+        13.905,
+        3.18
+      ],
+      "width_mm": 0.127,
+      "length_mm": 0.5656854249492381,
+      "layer": "B.Cu"
+    }
+  ],
+  "vias": [],
+  "total_trace_length_mm": 1.8531854249492383,
+  "limitations": [
+    "Trace length sums segments, not package/internal or ground return length",
+    "Ground return geometry and parasitics not characterized",
+    "Does not prove regulator stability"
+  ],
+  "ground_local_path": {
+    "pad": "C5.2",
+    "pad_center_mm": [
+      13.505,
+      1.23
+    ],
+    "via_center_mm": [
+      12.7004,
+      1.0206
+    ],
+    "segments_mm": [
+      [
+        [
+          13.505,
+          1.23
+        ],
+        [
+          13.2956,
+          1.0206
+        ]
+      ],
+      [
+        [
+          13.2956,
+          1.0206
+        ],
+        [
+          12.7004,
+          1.0206
+        ]
+      ]
+    ],
+    "layer": "B.Cu",
+    "trace_length_mm": 0.8913363199609261,
+    "decision": "Existing adjacent ground via has direct two-segment connection. No extra via added solely on distance grounds.",
+    "limitation": "Does not establish the full ground plane return path to MCU or its impedance"
+  }
+}

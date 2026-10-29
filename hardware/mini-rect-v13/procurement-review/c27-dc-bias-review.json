@@ -1,0 +1,19 @@
+{
+  "status": "TYPICAL_CURVE_SCREEN_NOT_GUARANTEED_MINIMUM",
+  "part": "CL10A475KP8NNNC",
+  "source": "https://product.samsungsem.com/mlcc/CL10A475KP8NNN.do",
+  "source_html_sha256": "350d99dd1f9d29f9b946cca2bcdc932aafcb7e5103aea15b952246476b1ae02c",
+  "temperature_c": 25.0,
+  "frequency_hz": 1000,
+  "test_signal_v": 1.0,
+  "voltage_v": 3.3,
+  "typical_delta_percent": -55.312673447044915,
+  "typical_capacitance_uF": 2.100304347988889,
+  "tolerance_minus10_only_uF": 1.8902739131900004,
+  "decision": "Reject as a 4.7uF-effective C27 substitute; keep BOM unresolved pending a suitable capacitor and exact card transient requirement.",
+  "limitations": [
+    "Typical vendor curve, not guaranteed minimum",
+    "Minus10 calculation omits combined temperature and aging effects",
+    "No circuit/BOM substitution; C5 use requires its own requirement analysis"
+  ]
+}

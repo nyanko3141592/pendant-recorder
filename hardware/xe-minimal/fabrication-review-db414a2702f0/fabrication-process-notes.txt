@@ -1,0 +1,31 @@
+DRAFT — NOT RELEASED FOR FABRICATION
+Source PCB SHA256: db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36
+This current schedule supersedes historical incremental coordinates and totals.
+
+Six copper layers; nominal design thickness 0.8264 mm. Stackup/impedance and production tolerances remain unapproved.
+Required process for the 14 listed through vias: nonconductive epoxy fill, planarization, copper cap, ENIG finish.
+Solder-mask ink plugging or tenting alone is not a substitute. Process capability and surface flatness remain unqualified.
+Coordinates: KiCad board X right/Y down in mm, top view for both sides. Excellon/position export uses negative Y.
+Do not infer processing of other vias from this list; the complete 253-via intent is in via-process-intent.json.
+
+Net | X mm | Y board mm | Drill mm | Copper diameter mm | Via UUID
+/USB_RESUME_PULSE | 0.745000 | 0.795000 | 0.150 | 0.350 | f1ae5096-e5b3-444d-a732-8c82734bbb32
+/USB_LATCH_CLOCK | 2.800000 | 20.700000 | 0.150 | 0.350 | 9245057e-df34-4fe4-a4ed-c7a81b1be9f2
+/USB_LATCH_CLEAR_N | 8.250000 | 4.500000 | 0.150 | 0.350 | 2820b8d9-5a9b-42ba-8cab-faa32ec27372
+/USB_HIGH_BUDGET | 9.900000 | 6.800000 | 0.150 | 0.350 | 29069677-6964-4422-a665-d84204bfc33c
+/USB_ILIM_SET | 12.350000 | 10.200000 | 0.150 | 0.350 | f56b75e3-cbac-43f7-87aa-2ed403ecea9f
+/USB_SUSPEND_PULSE | 13.000000 | 5.050000 | 0.150 | 0.350 | 45327421-6b9d-4216-bcf4-ce4fe1a82d95
+/VBUS_N | 13.150000 | 5.950000 | 0.150 | 0.350 | c2faa17a-0df5-46e8-b7e0-a5c8f86431a4
+/VBUS_GATE | 13.200000 | 3.600000 | 0.150 | 0.350 | 0d5fa8a3-463c-4e3f-8a08-7283b3a246c7
+/USB_INPUT_ON | 15.012500 | 3.000000 | 0.150 | 0.350 | e71d5545-68b9-4075-892a-e0c29c1aae7b
+/USB_HIGH_BUDGET | 17.100000 | 11.150000 | 0.150 | 0.350 | 17f8b1cb-c3c0-45b4-89a3-fe3f94b64cf5
+/USB_RESUME_PULSE | 17.150000 | 4.350000 | 0.150 | 0.350 | b8753f4c-af58-4502-81f5-f6fe262a24ad
+/PDM_DATA | 18.100000 | 11.500000 | 0.150 | 0.350 | d5f838d5-49c4-4b63-814d-c51369fbaf3e
+/V3V3 | 20.700000 | 10.600000 | 0.150 | 0.350 | 58d8777e-5726-406c-9002-92c3cbdf22de
+/CHG_N | 21.350000 | 15.200000 | 0.150 | 0.350 | cd6f76be-442e-464d-affc-2baf7a4eb158
+
+Use the current exported paste apertures; do not add paste apertures at filled vias.
+U10 paste uses four 0.25 mm rounded squares R0.05 per manufacturer example. Stencil thickness remains to be qualified for the whole board.
+Gerber job and board metadata specify ENIG consistently; process capability remains unqualified.
+Remaining: exact BOM and assembly orientation, solder-mask registration, stencil/paste process, stackup/impedance, thermal/runtime tests and final enclosure.
+No fabrication, assembly or purchase approval is granted by this draft.

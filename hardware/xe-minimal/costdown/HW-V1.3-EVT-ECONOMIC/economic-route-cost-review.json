@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-28",
+  "currency": "USD",
+  "public_rate_source": "https://jlcpcb.com/help/article/pcb-assembly-price",
+  "standard_single_side_fixed": {
+    "setup": 25.56,
+    "stencil": 8.21,
+    "two_fixtures_1_to_29_pieces": 16.42,
+    "subtotal": 50.19
+  },
+  "economic_fixed": {
+    "setup": 8.18,
+    "stencil": 1.53,
+    "fixtures": 0.0,
+    "subtotal": 9.71
+  },
+  "economic_fixed_saving": 40.48,
+  "storage_comparison": {
+    "current_standard_only": {
+      "mpn": "MKDV8GIL-AST",
+      "jlc_part": "C26159627",
+      "capacity": "8Gbit / about 1GB",
+      "reference_unit_price": 7.2182,
+      "price_lineage": "older locally captured public detail; live quote required"
+    },
+    "observed_economic_candidate": {
+      "mpn": "XTSDG08GWSIGA",
+      "jlc_part": "C25836657",
+      "capacity": "8Gbit / about 1GB",
+      "observed_unit_price": 40.022,
+      "observed_stock": 114,
+      "published_pcba_type": "Economic and Standard",
+      "qualification": "NOT_ADOPTED_PINOUT_FOOTPRINT_FIRMWARE_ENDURANCE_AND_POWER_UNQUALIFIED"
+    },
+    "candidate_unit_price_increase": 32.8038
+  },
+  "fixed_saving_after_memory_delta_before_feeders": 7.6762,
+  "feeder_model": {
+    "standard": "USD 1.53 for every unique Basic/Extended MPN",
+    "economic": "USD 3.07 for each unique Extended MPN; Basic and Preferred Extended are free",
+    "exact_delta": null,
+    "reason_unknown": "Every selected MPN must be reclassified by the live BOM tool; classifications and availability can change."
+  },
+  "decision": "KEEP_BOTH_ROUTES_OPEN_DO_NOT_REPLACE_U11_YET",
+  "reason": "The board is now Economic-process compatible, but the only confirmed blocker is the current 1GB managed storage. The observed Economic substitute consumes most of the fixed-fee saving before feeder charges and is not electrically qualified.",
+  "order_or_upload_performed": false
+}

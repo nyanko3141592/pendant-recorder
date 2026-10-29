@@ -1,0 +1,48 @@
+{
+  "status": "ADOPTED_IN_CANONICAL_CAD_PHYSICAL_EVT_NOT_RUN",
+  "date": "2026-10-28",
+  "candidate": {
+    "mpn": "TPS2552DBVR-1",
+    "jlc_part": "C140331",
+    "package": "SOT-23-6",
+    "manufacturer_status": "ACTIVE_PRODUCTION",
+    "jlc_public_observation": "2443 in stock, minimum 1, Economic and Standard PCBA, observed 2026-10-28",
+    "input_recommended_max_V": 6.5,
+    "input_absolute_max_V": 7.0,
+    "enable": "active low tied to GND",
+    "overcurrent_behavior": "latch-off until input power cycle",
+    "current_limit_configuration": "ILIM shorted to IN",
+    "guaranteed_current_limit_mA": {
+      "minimum": 50,
+      "typical": 75,
+      "maximum": 100
+    }
+  },
+  "comparison_to_canonical_TPS22950": {
+    "canonical_absolute_max_V": 6.0,
+    "NCP360_guaranteed_OVLO_max_V": 5.9,
+    "canonical_guaranteed_threshold_margin_V": 0.1,
+    "candidate_guaranteed_threshold_margin_V": 1.1,
+    "canonical_guaranteed_current_max_mA": 66.06,
+    "candidate_guaranteed_current_max_mA": 100,
+    "system_charge_current_mA": "9..11",
+    "decision_basis": "Safety priority favors 1.1V threshold margin and latch-off. The 100mA maximum remains within the pre-existing upstream USB-input ceiling, but startup, short-circuit, thermal and recovery behavior still require physical EVT."
+  },
+  "canonical_cad_result": {
+    "pcb_outline_mm": [27.5, 27.5],
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0,
+    "assembled_references": 68,
+    "pofv_count": 4,
+    "physical_evt": "NOT_RUN"
+  },
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/tps2552.pdf",
+    "https://www.ti.com/lit/gpn/TPS2552",
+    "https://jlcpcb.com/partdetail/TexasInstruments-TPS2552DBVR1/C140331"
+  ],
+  "release_allowed": false,
+  "orders_payments_uploads_contacts_performed": false
+}

@@ -1,0 +1,208 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T11:10:15",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "scan.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド B2 [/VBUS_LIMITED] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.55,
+                        "y": 1.05
+                    },
+                    "uuid": "462706a3-7255-4f6e-bbc2-72b75bcf22d9"
+                },
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( F.Cu 上、長さ: 1.2166 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.049999
+                    },
+                    "uuid": "cc309b04-bbaf-47b9-9011-5f21e0611d5b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド C1 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.45
+                    },
+                    "uuid": "ef3657e9-35ed-47b1-86c2-09a3ccda505c"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 14.48,
+                        "y": 1.055
+                    },
+                    "uuid": "3dfd6012-f35d-40ec-9637-e70c660f6c2a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド B1 [/VBUS] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.55,
+                        "y": 1.45
+                    },
+                    "uuid": "0db3c655-c791-4503-987f-714fcfbf7482"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.7614 mm )",
+                    "pos": {
+                        "x": 16.7625,
+                        "y": 2.199999
+                    },
+                    "uuid": "f8a3e172-77f9-4909-ba6f-1c262cc4a90a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_INPUT_ON] ( In1.Cu 上、長さ: 2.1703 mm )",
+                    "pos": {
+                        "x": 15.0125,
+                        "y": 3.0
+                    },
+                    "uuid": "1e98c49f-53a5-4b64-9596-4efe1bfef548"
+                },
+                {
+                    "description": "パッド A1 [/USB_INPUT_ON] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.15,
+                        "y": 1.45
+                    },
+                    "uuid": "fe7fe769-b3e7-4945-b80f-6dda3ec1da23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( In1.Cu 上、長さ: 3.4033 mm )",
+                    "pos": {
+                        "x": 11.75,
+                        "y": 3.2
+                    },
+                    "uuid": "21353899-3d13-4aa4-b285-aaaa9007ef40"
+                },
+                {
+                    "description": "パッド C2 [/USB_ILIM_SET] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.05
+                    },
+                    "uuid": "3a0645f4-9242-4e6b-8962-9a6cd229e99c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( F.Cu 上、長さ: 1.2166 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.049999
+                    },
+                    "uuid": "cc309b04-bbaf-47b9-9011-5f21e0611d5b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1180 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.999999
+                    },
+                    "uuid": "37e16e63-d5a5-44f9-82ea-419a732e2b74"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.7614 mm )",
+                    "pos": {
+                        "x": 16.7625,
+                        "y": 2.199999
+                    },
+                    "uuid": "f8a3e172-77f9-4909-ba6f-1c262cc4a90a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/USB_INPUT_ON] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.0125,
+                        "y": 3.0
+                    },
+                    "uuid": "e71d5545-68b9-4075-892a-e0c29c1aae7b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( F.Cu 上、長さ: 1.0187 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 2.95
+                    },
+                    "uuid": "8294ad2a-c819-407e-8a24-0f7686408969"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

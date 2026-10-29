@@ -1,0 +1,159 @@
+{
+  "status": "CANDIDATE_SLICED_NOT_PRINTED",
+  "parts": [
+    {
+      "part": "upper",
+      "source_sha256": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7",
+      "valid_solid": true,
+      "stl_sha256": "e745100413d5d5bb77704076432fbe7ddf2a6ea1201644bc0ce3b0599cf28c79",
+      "rotation_x_deg": 180,
+      "bounds_mm": [
+        26.200000000000003,
+        29.6,
+        4.851400100000005
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 332,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 18,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 30.395544052124023,
+              "Custom": 34.57537841796875,
+              "Gap infill": 0.5565581321716309,
+              "Inner wall": 5.949212074279785,
+              "Internal solid infill": 40.15843963623047,
+              "Outer wall": 205.0297088623047,
+              "Overhang wall": 1.299332857131958,
+              "Top surface": 20.784353256225586,
+              "Travel": 30.951047897338867,
+              "Undefined": 15.482097625732422
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.2339224815368652,
+                "total_used_g": 1.2339224815368652
+              }
+            ],
+            "generate_support_material_time": 3,
+            "id": 1,
+            "infill_time": 9,
+            "layer_filament_change": 0,
+            "main_predication": 335.1541442871094,
+            "make_perimeters_time": 11,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 29.60000228881836,
+                  "height": 4.851399898529053,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 75.19999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "upper.stl",
+                "triangle_count": 10096
+              }
+            ],
+            "sliced_time": 104,
+            "sliced_time_with_cache": 78,
+            "total_predication": 354.2303466796875,
+            "triangle_count": 10096,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 2
+      }
+    },
+    {
+      "part": "lower",
+      "source_sha256": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+      "valid_solid": true,
+      "stl_sha256": "25d2d71c8bde45de83b1d0459852643e40727eff0a5ba44dab06d74d5f00b285",
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        26.200000000000003,
+        29.6,
+        8.120000000000001
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 360,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 18,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 29.927928924560547,
+              "Custom": 34.56150817871094,
+              "Gap infill": 34.834259033203125,
+              "Inner wall": 5.7385053634643555,
+              "Internal solid infill": 40.23519515991211,
+              "Outer wall": 331.68511962890625,
+              "Overhang wall": 1.4349110126495361,
+              "Top surface": 18.521459579467773,
+              "Travel": 64.56145477294922,
+              "Undefined": 49.122657775878906
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.7203866243362427,
+                "total_used_g": 1.7203866243362427
+              }
+            ],
+            "generate_support_material_time": 7,
+            "id": 1,
+            "infill_time": 11,
+            "layer_filament_change": 0,
+            "main_predication": 526.9717407226562,
+            "make_perimeters_time": 32,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 29.60000228881836,
+                  "height": 8.119999885559082,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 75.19999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "lower.stl",
+                "triangle_count": 10652
+              }
+            ],
+            "sliced_time": 158,
+            "sliced_time_with_cache": 104,
+            "total_predication": 546.064208984375,
+            "triangle_count": 10652,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 2
+      }
+    }
+  ],
+  "limits": [
+    "Original battery leads and mating plug unresolved",
+    "Adhesive joint not qualified",
+    "Toolpaths and thin duct require review",
+    "No physical fit or strength validation"
+  ]
+}

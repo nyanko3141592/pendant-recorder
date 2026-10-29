@@ -1,0 +1,139 @@
+{
+  "observed_date": "2026-10-27",
+  "status": "PARTIAL_PROCUREMENT_REVIEW_NOT_ORDER_READY",
+  "shared_passive_candidates": [
+    {
+      "ref": "R45",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-07100KL",
+      "evidence_reference": "R37",
+      "historical_unit_price_ex_tax_JPY": 1.96,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "ref": "R46",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-07100KL",
+      "evidence_reference": "R37",
+      "historical_unit_price_ex_tax_JPY": 1.96,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "ref": "R47",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-0710KL",
+      "evidence_reference": "R35",
+      "historical_unit_price_ex_tax_JPY": 2.48,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "ref": "R48",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-0710KL",
+      "evidence_reference": "R35",
+      "historical_unit_price_ex_tax_JPY": 2.48,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "ref": "R49",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-07100KL",
+      "evidence_reference": "R37",
+      "historical_unit_price_ex_tax_JPY": 1.96,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "ref": "R50",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-07100KL",
+      "evidence_reference": "R37",
+      "historical_unit_price_ex_tax_JPY": 1.96,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "ref": "C32",
+      "value": "100n 10V",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX7R7BB104",
+      "evidence_reference": "C29",
+      "historical_unit_price_ex_tax_JPY": 4.62,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    },
+    {
+      "ref": "C33",
+      "value": "100n 10V",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX7R7BB104",
+      "evidence_reference": "C29",
+      "historical_unit_price_ex_tax_JPY": 4.62,
+      "status": "IDENTICAL_VALUE_FOOTPRINT_CANDIDATE_NOT_QUALIFIED"
+    }
+  ],
+  "live_listing_observations": [
+    {
+      "ref": "U13",
+      "mpn": "MAX4995CAUT+T",
+      "url": "https://www.digikey.jp/ja/products/detail/analog-devices-inc-maxim-integrated/MAX4995CAUT-T/2137383",
+      "listed_stock": 1038,
+      "unit_price_ex_tax_JPY_at_qty1": 1172,
+      "five_installed_ex_tax_JPY": 5860,
+      "ten_purchase_ex_tax_JPY": 9035,
+      "packaging": "Cut Tape",
+      "assembly_attrition_quantity_not_final": true
+    },
+    {
+      "ref": "U14",
+      "mpn": "SN74HCS74DYYR",
+      "url": "https://www.digikey.jp/en/products/detail/texas-instruments/SN74HCS74DYYR/16184274",
+      "listed_stock": 0,
+      "unit_price_ex_tax_JPY_at_qty1": 49,
+      "five_installed_ex_tax_JPY": 245,
+      "ten_purchase_ex_tax_JPY": 341,
+      "estimated_restock_date": "2026-12-28",
+      "availability": "BACKORDER_NOT_IMMEDIATE_PROCUREMENT"
+    },
+    {
+      "ref": "U15",
+      "mpn": "TLV803EB29DBZR",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/TLV803EB29DBZR/12352263",
+      "listed_stock": 2396,
+      "unit_price_ex_tax_JPY_at_qty1": 82,
+      "five_installed_ex_tax_JPY": 410,
+      "ten_purchase_ex_tax_JPY": 577,
+      "packaging": "Cut Tape",
+      "observed_date": "2026-10-27",
+      "availability": "LISTED_STOCK_NOT_RESERVED"
+    }
+  ],
+  "remaining_actions": [
+    "Find ordinary retail stock for exact U14; do not silently substitute automotive variant.",
+    "Qualify shared passive candidates and MOSFET exact manufacturer/MPN.",
+    "Finish all other BOM and manufacturing/case costs before total."
+  ],
+  "full_five_unit_cost_JPY": null,
+  "no_order_or_contact": true,
+  "alternative_supplier_check": {
+    "ref": "U14",
+    "mpn": "SN74HCS74DYYR",
+    "TI_public_page": "https://www.ti.com/product/SN74HCS74/part-details/SN74HCS74DYYR",
+    "TI_result": "Out of stock on retrieved page; login inventory not inspected",
+    "Mouser_result": "Search index reports historical stock; direct page fetch failed/403. Current Japanese availability and price unverified.",
+    "do_not_treat_search_cache_as_current": true
+  },
+  "alternate_exact_u14_listing_check": {
+    "url": "https://www.digikey.jp/en/products/detail/texas-instruments/SN74HCS74DYYR/16184246",
+    "observed_date": "2026-10-27",
+    "search_index_stock": 1859,
+    "direct_page_stock": 0,
+    "direct_page_estimated_restock": "2026-12-28",
+    "unit_ex_tax_JPY": 49,
+    "qty10_total_ex_tax_JPY": 341,
+    "conclusion": "Alternate product ID is not an available stock route; search cache is stale."
+  }
+}

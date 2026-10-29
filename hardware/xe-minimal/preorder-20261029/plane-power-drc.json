@@ -1,0 +1,1844 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T11:49:05",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "plane-power-routed.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( F.Cu 上、長さ: 3.0932 mm )",
+                    "pos": {
+                        "x": 16.0886,
+                        "y": 6.6486
+                    },
+                    "uuid": "87400fe5-73d6-4471-aa37-462e30ec7e36"
+                },
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.4351,
+                        "y": 11.6513
+                    },
+                    "uuid": "06dd1949-2ab3-48ea-b98e-8f42f2007d05"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/SD_CLK_MCU] - R23 ( B.Cu 上)",
+                    "pos": {
+                        "x": 1.295,
+                        "y": 21.765
+                    },
+                    "uuid": "c324db32-f3e8-482e-aa03-0f1e00689d94"
+                },
+                {
+                    "description": "パッド 15 [/SD_CLK_MCU] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.1025,
+                        "y": 4.33
+                    },
+                    "uuid": "0ad46389-a20e-4383-b1c5-7bdb0691d4c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 1.0573 mm )",
+                    "pos": {
+                        "x": 1.5174,
+                        "y": 23.2133
+                    },
+                    "uuid": "033c2e0a-f9aa-4f05-9bdb-d8c615a9105a"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 9.3082 mm )",
+                    "pos": {
+                        "x": 3.2798,
+                        "y": 10.4648
+                    },
+                    "uuid": "0dd6ac66-d9f5-43f5-8a01-dfe27e72bb0c"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 0.6941 mm )",
+                    "pos": {
+                        "x": 23.1534,
+                        "y": 6.3682
+                    },
+                    "uuid": "16b39b73-8c97-4e4b-ba21-504bdbd431c0"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 8.7802 mm )",
+                    "pos": {
+                        "x": 23.6442,
+                        "y": 6.859
+                    },
+                    "uuid": "660dfe44-e88f-4b47-bf8e-2a3763d9e337"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 4.1800 mm )",
+                    "pos": {
+                        "x": 16.32,
+                        "y": 23.57
+                    },
+                    "uuid": "9c569a03-0555-4298-a65e-4b301bb73ec5"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 1.6779 mm )",
+                    "pos": {
+                        "x": 1.5174,
+                        "y": 21.5354
+                    },
+                    "uuid": "b7f75720-6586-4b37-89e3-ac18d6c9e94f"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 4.1800 mm )",
+                    "pos": {
+                        "x": 7.68,
+                        "y": 19.39
+                    },
+                    "uuid": "e715c66d-a0a2-4041-8403-4e812b408a8c"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 2.4924 mm )",
+                    "pos": {
+                        "x": 3.2798,
+                        "y": 19.773
+                    },
+                    "uuid": "e795776c-dbd0-441d-ba47-aeb652d3bd89"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 0.9290 mm )",
+                    "pos": {
+                        "x": 23.6442,
+                        "y": 15.6392
+                    },
+                    "uuid": "eb6937a5-527e-4042-90ca-d666b8b1b863"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In1.Cu 上、長さ: 1.9716 mm )",
+                    "pos": {
+                        "x": 22.9873,
+                        "y": 16.2961
+                    },
+                    "uuid": "f3a521e4-3298-48e6-af67-b6f032df0461"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In2.Cu 上、長さ: 4.7407 mm )",
+                    "pos": {
+                        "x": 2.9393,
+                        "y": 24.6352
+                    },
+                    "uuid": "60b7fa1e-09c2-4dec-9eff-ce66af2d6987"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In2.Cu 上、長さ: 1.0652 mm )",
+                    "pos": {
+                        "x": 7.68,
+                        "y": 23.57
+                    },
+                    "uuid": "833d808d-4379-47ef-a98c-11d2694b1384"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Items not allowed",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( In2.Cu 上、長さ: 0.9536 mm )",
+                    "pos": {
+                        "x": 2.265,
+                        "y": 23.9609
+                    },
+                    "uuid": "eb10bd48-4921-4e30-9cc3-96fd3353f56d"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 0.4836 mm )",
+                    "pos": {
+                        "x": 8.5786,
+                        "y": 6.171
+                    },
+                    "uuid": "9da4b6da-906d-4585-86f2-2b403d73eafe"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 3.6327 mm )",
+                    "pos": {
+                        "x": 9.9642,
+                        "y": 6.7496
+                    },
+                    "uuid": "ae7457b0-972e-455b-bbe5-1c5d5f61fb71"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 0.8791 mm )",
+                    "pos": {
+                        "x": 12.0816,
+                        "y": 11.5872
+                    },
+                    "uuid": "b1e6966f-7362-4ee0-8af1-176a255b5f5f"
+                },
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.7454 mm )",
+                    "pos": {
+                        "x": 11.7832,
+                        "y": 10.9654
+                    },
+                    "uuid": "e0da4150-d234-4859-b308-ba553e380d07"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 1.0543 mm )",
+                    "pos": {
+                        "x": 10.2217,
+                        "y": 6.9783
+                    },
+                    "uuid": "1393b685-3f3f-412e-b0c8-1e99fa0d6e26"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 0.9549 mm )",
+                    "pos": {
+                        "x": 11.1959,
+                        "y": 8.584
+                    },
+                    "uuid": "4a51cb6f-0863-4f13-92bf-5b0e8351a3b7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 0.3232 mm )",
+                    "pos": {
+                        "x": 12.0816,
+                        "y": 11.9104
+                    },
+                    "uuid": "bbbad72a-f76b-4caa-a777-ed0b7aa17a71"
+                },
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.7454 mm )",
+                    "pos": {
+                        "x": 11.7832,
+                        "y": 10.9654
+                    },
+                    "uuid": "e0da4150-d234-4859-b308-ba553e380d07"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 0.8167 mm )",
+                    "pos": {
+                        "x": 10.9672,
+                        "y": 7.7238
+                    },
+                    "uuid": "2398e7b9-a6cd-4e4b-a242-c26f05d6d918"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 0.9549 mm )",
+                    "pos": {
+                        "x": 11.1959,
+                        "y": 8.584
+                    },
+                    "uuid": "4a51cb6f-0863-4f13-92bf-5b0e8351a3b7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 0.3233 mm )",
+                    "pos": {
+                        "x": 12.0119,
+                        "y": 8.9742
+                    },
+                    "uuid": "8c20d965-ef59-46dd-901b-4d0318b85bde"
+                },
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 2.3143 mm )",
+                    "pos": {
+                        "x": 11.7832,
+                        "y": 8.6511
+                    },
+                    "uuid": "cc2069ff-e192-432e-b58d-f24fb2da2b02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 1.8914 mm )",
+                    "pos": {
+                        "x": 13.3493,
+                        "y": 12.2081
+                    },
+                    "uuid": "a6a80119-df6f-4eb8-b0a3-51e888e3ea4c"
+                },
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.7454 mm )",
+                    "pos": {
+                        "x": 11.7832,
+                        "y": 10.9654
+                    },
+                    "uuid": "e0da4150-d234-4859-b308-ba553e380d07"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 1.8965 mm )",
+                    "pos": {
+                        "x": 12.0119,
+                        "y": 10.8707
+                    },
+                    "uuid": "1421e218-6a2d-4718-bb18-5aa7fcf5202c"
+                },
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.7454 mm )",
+                    "pos": {
+                        "x": 11.7832,
+                        "y": 10.9654
+                    },
+                    "uuid": "e0da4150-d234-4859-b308-ba553e380d07"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0863 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.9827 mm )",
+                    "pos": {
+                        "x": 13.8498,
+                        "y": 20.0973
+                    },
+                    "uuid": "5a268e6b-cb4d-494d-a60a-22a85f4ade92"
+                },
+                {
+                    "description": "パッド 6 [/USB_DP] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.45,
+                        "y": 19.3525
+                    },
+                    "uuid": "8ab2ac3b-d604-4f4c-a7cf-c7efb327ca49"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 3.0307 mm )",
+                    "pos": {
+                        "x": 12.3103,
+                        "y": 11.4925
+                    },
+                    "uuid": "539f7ae5-93d5-4190-b439-28dfc69ae2ee"
+                },
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 1.8914 mm )",
+                    "pos": {
+                        "x": 13.3493,
+                        "y": 12.2081
+                    },
+                    "uuid": "a6a80119-df6f-4eb8-b0a3-51e888e3ea4c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 1.2970 mm )",
+                    "pos": {
+                        "x": 19.1835,
+                        "y": 15.0835
+                    },
+                    "uuid": "217f7a4d-b48a-48e8-87c6-cd1e872439af"
+                },
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.5015,
+                        "y": 15.4737
+                    },
+                    "uuid": "6b7a693b-9036-45fd-a56f-9c85eb8bfb5d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0970 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 0.3522 mm )",
+                    "pos": {
+                        "x": 10.3164,
+                        "y": 6.7496
+                    },
+                    "uuid": "cca537c5-5416-450c-8dc1-c2f689c37283"
+                },
+                {
+                    "description": "配線 [/NRST] ( F.Cu 上、長さ: 3.1454 mm )",
+                    "pos": {
+                        "x": 10.4207,
+                        "y": 6.5209
+                    },
+                    "uuid": "f6df6039-ce34-4166-ba60-13ef11a16a73"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 3.6327 mm )",
+                    "pos": {
+                        "x": 9.9642,
+                        "y": 6.7496
+                    },
+                    "uuid": "ae7457b0-972e-455b-bbe5-1c5d5f61fb71"
+                },
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 0.3522 mm )",
+                    "pos": {
+                        "x": 9.8695,
+                        "y": 6.9783
+                    },
+                    "uuid": "df5e9fa9-5376-4156-8d99-581f35151343"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0970 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 1.2438 mm )",
+                    "pos": {
+                        "x": 11.1959,
+                        "y": 7.6291
+                    },
+                    "uuid": "6c68b59c-890b-4571-91ec-374d36e5c92c"
+                },
+                {
+                    "description": "配線 [/NRST] ( F.Cu 上、長さ: 3.1454 mm )",
+                    "pos": {
+                        "x": 10.4207,
+                        "y": 6.5209
+                    },
+                    "uuid": "f6df6039-ce34-4166-ba60-13ef11a16a73"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0943 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 0.6544 mm )",
+                    "pos": {
+                        "x": 11.1959,
+                        "y": 8.584
+                    },
+                    "uuid": "61b22e0f-561a-4c51-890f-8ebf3eaa03c6"
+                },
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 0.3445 mm )",
+                    "pos": {
+                        "x": 10.9672,
+                        "y": 8.5405
+                    },
+                    "uuid": "e736cb8d-ac24-4b9e-b6c9-22c5273b3931"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0943 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 1.2281 mm )",
+                    "pos": {
+                        "x": 11.1959,
+                        "y": 9.8121
+                    },
+                    "uuid": "057fe256-0145-4ddc-a61d-da8f5e23f5b5"
+                },
+                {
+                    "description": "配線 [/VDDA] ( F.Cu 上、長さ: 0.8167 mm )",
+                    "pos": {
+                        "x": 10.9672,
+                        "y": 7.7238
+                    },
+                    "uuid": "2398e7b9-a6cd-4e4b-a242-c26f05d6d918"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0970 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 0.9549 mm )",
+                    "pos": {
+                        "x": 11.1959,
+                        "y": 8.584
+                    },
+                    "uuid": "4a51cb6f-0863-4f13-92bf-5b0e8351a3b7"
+                },
+                {
+                    "description": "配線 [/NRST] ( F.Cu 上、長さ: 3.1454 mm )",
+                    "pos": {
+                        "x": 10.4207,
+                        "y": 6.5209
+                    },
+                    "uuid": "f6df6039-ce34-4166-ba60-13ef11a16a73"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0977 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 3.2608 mm )",
+                    "pos": {
+                        "x": 14.8523,
+                        "y": 10.2077
+                    },
+                    "uuid": "04c559f7-a0ee-4072-a159-b06a1651875b"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 9.765
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( F.Cu 上、長さ: 0.3618 mm )",
+                    "pos": {
+                        "x": 10.0589,
+                        "y": 6.5209
+                    },
+                    "uuid": "649490a5-275f-456d-a2e0-bd3e19ae5517"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 1.2438 mm )",
+                    "pos": {
+                        "x": 11.1959,
+                        "y": 7.6291
+                    },
+                    "uuid": "6c68b59c-890b-4571-91ec-374d36e5c92c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( F.Cu 上、長さ: 3.8981 mm )",
+                    "pos": {
+                        "x": 7.3025,
+                        "y": 3.7645
+                    },
+                    "uuid": "1d55e952-8d09-4464-b946-c396f5c3809e"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 1.6662 mm )",
+                    "pos": {
+                        "x": 7.3955,
+                        "y": 4.1809
+                    },
+                    "uuid": "a9a0926c-f51f-4105-9ff4-b06f90354575"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SD_MOSI] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.4351,
+                        "y": 11.6513
+                    },
+                    "uuid": "06dd1949-2ab3-48ea-b98e-8f42f2007d05"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R2",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 9.255
+                    },
+                    "uuid": "02bed081-ba13-468f-a062-5b98e59aa675"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R24",
+                    "pos": {
+                        "x": 18.295,
+                        "y": 9.255
+                    },
+                    "uuid": "0e89aa03-cccb-4598-b470-506584306189"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R12",
+                    "pos": {
+                        "x": 18.795,
+                        "y": 22.755
+                    },
+                    "uuid": "1354bf05-ac31-4a86-9eea-e92246edba4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Button_Switch_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント SW1",
+                    "pos": {
+                        "x": 15.725,
+                        "y": 5.975
+                    },
+                    "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R34",
+                    "pos": {
+                        "x": 16.795,
+                        "y": 9.255
+                    },
+                    "uuid": "38b60fa2-f803-487b-9227-ff6e1a382abf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C4",
+                    "pos": {
+                        "x": 25.5,
+                        "y": 7.5
+                    },
+                    "uuid": "61a46db0-6cc6-4ffa-846d-95051d6948d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C28",
+                    "pos": {
+                        "x": 10.12,
+                        "y": 3.8
+                    },
+                    "uuid": "61d05ac4-6847-475e-b06b-d34db0012fb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R32",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 1.255
+                    },
+                    "uuid": "63f07579-2878-421e-b87c-c0c4420665b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP1",
+                    "pos": {
+                        "x": 10.2929,
+                        "y": 10.7071
+                    },
+                    "uuid": "6cfa12de-20df-43a7-95b8-7b33b5fbe6d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'PendantD1' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J1",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 22.495
+                    },
+                    "uuid": "7727b2fe-a090-4f44-8e0d-1481f25e6834"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C31",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 0.95
+                    },
+                    "uuid": "826a6285-13ca-4daa-a92f-6dd0cecbd812"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U14",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 7.0
+                    },
+                    "uuid": "9d3088c0-da96-481d-9ec8-fcd99a60f92b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'PendantMinimal' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 2.71,
+                        "y": 7.845
+                    },
+                    "uuid": "a33299a6-9b49-48b8-a0f1-ed4ca11872ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R33",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 9.255
+                    },
+                    "uuid": "abe6f1a0-020d-42b3-82b2-e37612319166"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C16",
+                    "pos": {
+                        "x": 3.5325,
+                        "y": 0.785
+                    },
+                    "uuid": "acf3f213-6a6d-477d-b032-989210690aa9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C1",
+                    "pos": {
+                        "x": 25.3,
+                        "y": 1.0
+                    },
+                    "uuid": "b9e66c8d-8645-4600-937b-9c0b99c3ddb5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C29",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 19.235
+                    },
+                    "uuid": "bc44f5c4-8bd3-4707-a64a-12b82378d2ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R25",
+                    "pos": {
+                        "x": 19.795,
+                        "y": 7.755
+                    },
+                    "uuid": "cbfb7bf4-4885-4ddc-a302-740955f43a47"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C33",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 8.0
+                    },
+                    "uuid": "d20c36b1-2f17-451d-bd1c-265a32c5f34c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U8",
+                    "pos": {
+                        "x": 21.25,
+                        "y": 4.565
+                    },
+                    "uuid": "d94a7b73-f065-4f9f-a619-ba29abe430e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U4",
+                    "pos": {
+                        "x": 2.875,
+                        "y": 3.485
+                    },
+                    "uuid": "ead05e45-bef2-42db-8080-689cb379405c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C22",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 1.235
+                    },
+                    "uuid": "ed8036b5-5120-48a0-93cc-360bd2c7018d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U13",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 0.95
+                    },
+                    "uuid": "f744f036-ebbd-4ec0-925d-2be225aaf3da"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C27",
+                    "pos": {
+                        "x": 10.6,
+                        "y": 14.58
+                    },
+                    "uuid": "0305d08d-cadf-4906-a8ba-da86d4d90dc3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R40",
+                    "pos": {
+                        "x": 17.75,
+                        "y": 19.75
+                    },
+                    "uuid": "0d5e0ead-d7b0-4fcb-8932-519c20d321a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP3",
+                    "pos": {
+                        "x": 1.325,
+                        "y": 7.825
+                    },
+                    "uuid": "0dd7bb33-205b-48c2-b3f8-eba02f819726"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C13",
+                    "pos": {
+                        "x": 22.985,
+                        "y": 15.665
+                    },
+                    "uuid": "0fdd8d60-fbe0-485f-8e0e-bf1e12968f20"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R13",
+                    "pos": {
+                        "x": 13.26,
+                        "y": 3.0
+                    },
+                    "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C15",
+                    "pos": {
+                        "x": 20.06,
+                        "y": 17.335
+                    },
+                    "uuid": "1cffa86b-0651-4138-9264-f4c0fc8c151e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R7",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 18.305
+                    },
+                    "uuid": "285e4e33-432d-414d-8028-016a8def1748"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R6",
+                    "pos": {
+                        "x": 9.76,
+                        "y": 18.815
+                    },
+                    "uuid": "2bc77aab-e423-40a2-9fe5-6a105c37851b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R42",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 20.755
+                    },
+                    "uuid": "336f6dbe-4ab3-4c4b-94bf-3b115ee5e19b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U11",
+                    "pos": {
+                        "x": 4.575,
+                        "y": 14.175
+                    },
+                    "uuid": "36be6cc9-a446-4db4-a3b0-ce16c16a683c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'LED_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント D6",
+                    "pos": {
+                        "x": 11.49,
+                        "y": 4.795
+                    },
+                    "uuid": "3830735a-7131-47ec-8018-817416eb2912"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R21",
+                    "pos": {
+                        "x": 17.795,
+                        "y": 17.755
+                    },
+                    "uuid": "3d5a4a03-5f67-4d81-85dd-40b199621dae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R23",
+                    "pos": {
+                        "x": 1.295,
+                        "y": 21.255
+                    },
+                    "uuid": "411c8d9a-1148-4bde-be48-ff0843354c12"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R38",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 24.0
+                    },
+                    "uuid": "4547de91-f284-46c0-9d4d-66000fd7a8ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C2",
+                    "pos": {
+                        "x": 22.27,
+                        "y": 10.5175
+                    },
+                    "uuid": "4676bdc1-1c5e-461d-8302-6b77bcd92c50"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_DFN_QFN' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U1",
+                    "pos": {
+                        "x": 16.8525,
+                        "y": 7.7675
+                    },
+                    "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R37",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 12.255
+                    },
+                    "uuid": "4bbebe6d-394e-4f33-a5e7-c7960beebb22"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント Q4",
+                    "pos": {
+                        "x": 4.755,
+                        "y": 8.525
+                    },
+                    "uuid": "4fafec9e-035b-422f-ae67-b2502257aace"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP5",
+                    "pos": {
+                        "x": 22.325,
+                        "y": 7.325
+                    },
+                    "uuid": "512352c8-c8b2-4a47-a68f-4f6540069d22"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R41",
+                    "pos": {
+                        "x": 17.75,
+                        "y": 22.75
+                    },
+                    "uuid": "6734ab1b-70ba-4145-8631-357625c8db0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R15",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 24.255
+                    },
+                    "uuid": "6ab7654f-464f-4762-a976-259d07a888d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C32",
+                    "pos": {
+                        "x": 10.8,
+                        "y": 1.8
+                    },
+                    "uuid": "6dbc13a8-645b-42c1-a506-3415fc7760bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R3",
+                    "pos": {
+                        "x": 1.295,
+                        "y": 18.755
+                    },
+                    "uuid": "6e9a15e1-670d-485b-9e06-e70b806fc390"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C30",
+                    "pos": {
+                        "x": 21.005,
+                        "y": 12.785
+                    },
+                    "uuid": "7029692e-4cc9-4c87-b7a9-4067466c46a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R10",
+                    "pos": {
+                        "x": 16.755,
+                        "y": 21.295
+                    },
+                    "uuid": "76263337-8bfb-4d16-8c6e-5fce27d86bff"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C7",
+                    "pos": {
+                        "x": 10.475,
+                        "y": 7.7675
+                    },
+                    "uuid": "7cebc256-b404-403e-895c-57ab67f24f9d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_DFN_QFN' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U3",
+                    "pos": {
+                        "x": 20.385,
+                        "y": 14.785
+                    },
+                    "uuid": "7dd77aa3-d1f2-4794-94fa-08354f55d9d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C5",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 1.805
+                    },
+                    "uuid": "81ba6b65-b15c-4d9d-a908-bf7fc0052a9b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R36",
+                    "pos": {
+                        "x": 1.755,
+                        "y": 23.295
+                    },
+                    "uuid": "865ed7d4-5ae8-48a3-bd65-df125fbeec82"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R35",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 12.255
+                    },
+                    "uuid": "888d5948-89b1-4e50-8d7e-a38df8ed8761"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP6",
+                    "pos": {
+                        "x": 17.325,
+                        "y": 13.325
+                    },
+                    "uuid": "89f295dc-feb5-4b59-a548-3882a8e6be1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U12",
+                    "pos": {
+                        "x": 21.525,
+                        "y": 20.8525
+                    },
+                    "uuid": "8aa36003-7a9e-4f10-b357-be17753be618"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R43",
+                    "pos": {
+                        "x": 3.795,
+                        "y": 23.755
+                    },
+                    "uuid": "8d5938a4-6bc1-4d91-8fcf-5969856def95"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C3",
+                    "pos": {
+                        "x": 14.1025,
+                        "y": 13.185
+                    },
+                    "uuid": "8de967f4-1fb6-401e-ae03-abce2cf042b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Connector_Molex' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J2",
+                    "pos": {
+                        "x": 3.525,
+                        "y": 3.125
+                    },
+                    "uuid": "9e305891-2959-4cb4-b1f3-243fc53949aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C26",
+                    "pos": {
+                        "x": 10.055,
+                        "y": 16.08
+                    },
+                    "uuid": "a6e7a168-62eb-4e52-9b8d-3782f564783f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C14",
+                    "pos": {
+                        "x": 17.785,
+                        "y": 15.665
+                    },
+                    "uuid": "ae0251c8-899c-4837-bf4e-bae746fd0667"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R1",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 23.255
+                    },
+                    "uuid": "b0ffc949-f80e-474a-b472-1228d8190830"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R11",
+                    "pos": {
+                        "x": 5.755,
+                        "y": 23.295
+                    },
+                    "uuid": "bab72dec-4668-48c3-a7e7-6554d05f2d4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C9",
+                    "pos": {
+                        "x": 22.735,
+                        "y": 17.285
+                    },
+                    "uuid": "c780d252-f3db-4403-b36e-9c210cc45f04"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R14",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.255
+                    },
+                    "uuid": "cf67d3ce-88e6-498c-ac98-3b0d7d795b04"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R22",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 15.755
+                    },
+                    "uuid": "d1b99ad0-ffeb-44aa-bca6-2c25b35d5504"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U2",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 18.815
+                    },
+                    "uuid": "d2017190-4f91-4628-9aa2-63606064002a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R4",
+                    "pos": {
+                        "x": 7.6,
+                        "y": 3.21
+                    },
+                    "uuid": "d2d04fe5-dca8-417f-bc78-07752fb87d17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R28",
+                    "pos": {
+                        "x": 21.295,
+                        "y": 24.255
+                    },
+                    "uuid": "d94ea4a1-84a4-4106-a927-eaa29ec2fa15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP2",
+                    "pos": {
+                        "x": 8.825,
+                        "y": 5.325
+                    },
+                    "uuid": "da9e5fc0-84d0-47d6-9aa1-f217927606f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U10",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 2.5
+                    },
+                    "uuid": "e4836b06-848d-4b6b-84d7-875f58e48625"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R39",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 24.5
+                    },
+                    "uuid": "e91b6749-efc4-4d84-bc9b-d1ff19e7dd39"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント Q3",
+                    "pos": {
+                        "x": 13.255,
+                        "y": 22.525
+                    },
+                    "uuid": "e9882674-9407-4ab5-a7a6-f3e5fbb5b1d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C6",
+                    "pos": {
+                        "x": 11.435,
+                        "y": 6.5175
+                    },
+                    "uuid": "ead018a5-d76b-4da3-9b23-b9c9fd720420"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C25",
+                    "pos": {
+                        "x": 23.8,
+                        "y": 6.2
+                    },
+                    "uuid": "f6f14ead-7162-4511-8572-fcb0e3b947fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+  "version": "HW-V1.4-EVT-4LAYER-27P5",
+  "status": "MECHANICALLY_COMPATIBLE_WITH_EXISTING_CASE_V3",
+  "canonical_board": "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb",
+  "candidate_board": "hardware/xe-minimal/costdown/HW-V1.4-EVT-4LAYER-27P5/route/hw-v1.4-evt-4layer-27p5-routed-candidate.kicad_pcb",
+  "case_review": "mechanical/xe-minimal/prototype-v1/actual-fit-case-v3/review.json",
+  "canonical_outline_mm": [
+    27.55,
+    27.55
+  ],
+  "candidate_outline_mm": [
+    27.55,
+    27.55
+  ],
+  "nominal_outline_mm": [
+    27.5,
+    27.5
+  ],
+  "canonical_thickness_mm": 0.8264,
+  "candidate_thickness_mm": 0.8264,
+  "copper_layer_change": [
+    6,
+    4
+  ],
+  "footprint_pose_changes": {},
+  "usb_pose": {
+    "x_mm": 12.0,
+    "y_mm": 22.495,
+    "rotation_deg": 0.0,
+    "side": "top"
+  },
+  "checks": {
+    "outline_identical": true,
+    "board_thickness_identical": true,
+    "footprint_set_identical": true,
+    "all_footprint_poses_identical": true,
+    "usb_j1_pose_identical": true,
+    "case_internal_bbox_covers_board_outline": true,
+    "case_cad_collision_checks_zero": true
+  },
+  "cad_compatibility_pass": true,
+  "mechanical_release_allowed": false,
+  "physical_gates": [
+    "reprint and inspect all four outer corners",
+    "fit real PCBA without force",
+    "fit maximum battery and factory harness without pinch",
+    "six representative USB-C cables",
+    "mic/button access",
+    "cord proof/fatigue"
+  ],
+  "electrical_release_allowed": false,
+  "reason": "The layer-count reduction changes internal copper only; the case-driving external geometry is unchanged. Electrical USB/power review remains open.",
+  "sha256": {
+    "canonical_board": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+    "candidate_board": "8141cc8b00ca4c676ce53ab15a0812420c48636e137fa0559d9ac4d8399db288",
+    "case_review": "dc00f4412e82b729bdf84565a6b37d66e6c46f180767f59809d913da98ed81fb"
+  },
+  "external_actions": {
+    "upload": false,
+    "order": false,
+    "payment": false,
+    "supplier_contact": false
+  }
+}

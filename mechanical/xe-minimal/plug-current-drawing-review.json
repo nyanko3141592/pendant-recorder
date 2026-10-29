@@ -1,0 +1,112 @@
+{
+  "status": "PRIMARY_DRAWING_FOUND_NOT_COMPLETE_PLUG_ENVELOPE",
+  "checked": "2026-10-27",
+  "mpn": "781720003",
+  "manufacturer_product_url": "https://www.molex.com/en-us/products/part-detail/781720003",
+  "drawing_url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/781/78172/781720002_sd.pdf",
+  "drawing_document": "781720000-SD PSD 000 revision A",
+  "release_date": "2022-06-07",
+  "pages": 2,
+  "text_verified": {
+    "circuit_count": 3,
+    "A_mm": 3.8,
+    "B_mm": 2.4,
+    "pitch_mm": 1.2,
+    "general_linear_tolerance_mm": 0.2,
+    "mating_part_family": "78171000*",
+    "applicable_crimp_terminals": [
+      "781720410",
+      "781720411"
+    ],
+    "application_specification": "AS-78172-001",
+    "product_specification": "781710000-PS PS 000",
+    "mating_view_instruction": "Refer to mating part drawings"
+  },
+  "limitations": [
+    "Dimensions A/B read from text table; graphic dimension endpoints not visually verified in this turn.",
+    "A must not be treated as total width including ears without drawing endpoint inspection.",
+    "No complete mated envelope or wire exit datum established.",
+    "Web PDF screenshot returned reference only, no visible pixels; local HTTP2 download failed and HTTP1 fallback timed out.",
+    "No generic block inserted in assembly as a substitute for verified plug geometry."
+  ],
+  "next_evidence": [
+    "Obtain visible current drawing and mating header drawing",
+    "Resolve mated height and wire exit datum",
+    "Use AS-78172-001 for handling/strain restrictions; do not infer wire bend radius"
+  ],
+  "header_series_chart_evidence": {
+    "url": "https://www.molex.com/en-us/products/series-chart/78171",
+    "mpn": "781710003",
+    "mated_height_listed_mm": 1.55,
+    "checked": "2026-10-27",
+    "scope": "Manufacturer series-chart row; no min/max, datum drawing or original lead exit geometry verified. Do not treat 1.55 as maximum assembled battery connector height."
+  },
+  "latest_visual_access_attempt": {
+    "method": "IAB direct manufacturer PDF navigation",
+    "result": "net::ERR_BLOCKED_BY_CLIENT",
+    "web_screenshot": "Reference returned without visible pixels",
+    "farnell_ie": "Web fetch timed out",
+    "consequence": "Drawing endpoints remain unverified; case/plug model unchanged."
+  },
+  "historical_header_drawing_visual_evidence": {
+    "source_url": "https://static.chipdip.ru/lib/957/DOC011957221.pdf",
+    "authorship": "Molex drawing, distributor mirror",
+    "document": "SD-78171-008 revision G, sheet 1 of 3",
+    "revision_dates": [
+      "2014-10-02",
+      "2014-10-15"
+    ],
+    "local_pdf": "mechanical/xe-minimal/connector-reference-drawings/molex-sd-78171-008-rev-g-mirror.pdf",
+    "local_page1": "mechanical/xe-minimal/connector-reference-drawings/molex-sd-78171-008-rev-g-page1.png",
+    "sha256": {
+      "mechanical/xe-minimal/connector-reference-drawings/molex-sd-78171-008-rev-g-mirror.pdf": "861b90161910159a8eb8b5e168b7e63ab14bfcfdcec0049fe8ff10e9d37fa0ca",
+      "mechanical/xe-minimal/connector-reference-drawings/molex-sd-78171-008-rev-g-page1.png": "c74dd6e5124e1f960c409930b544ce597355424c9fb50daad1a03242f2e6165c"
+    },
+    "visually_verified": {
+      "part": "78171-0003",
+      "header_DIM_A_mm": 2.4,
+      "header_DIM_B_mm": 3.8,
+      "header_DIM_C_outer_width_mm": 5.4,
+      "header_DIM_K_mm": 2.7,
+      "header_body_depth_mm": 4.5,
+      "header_body_height_mm": 1.4,
+      "general_linear_tolerance_under_10_mm": 0.2,
+      "mating_height_reference_mm": 1.55,
+      "mating_height_datum": "PCB top surface to upper surface of mated connector in side view; parenthesized reference dimension"
+    },
+    "limits": [
+      "Historical drawing; latest revision not established. Do not replace current manufacturing land pattern with this version.",
+      "Header table dimension letters are not receptacle housing dimension letters.",
+      "Reference mating height does not establish maximum assembled height.",
+      "Wire extension visible in mating view is not dimensioned; no original battery wire exit, lead length or bend allowance established.",
+      "No case or plug geometry changed."
+    ]
+  },
+  "harness_drawing_review": {
+    "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/369/36920/369200305_sd.pdf",
+    "document": "369200300 PSD 000 revision A, 2019-05-09",
+    "confirmed": "Uses 781720003 housing and 781720410 terminals, 28AWG UL1571 black wire; 50..600mm harnesses.",
+    "limitation": "Different cable assembly, not DTP401525-XE. Its wire specification and length must not be assigned to the battery; no mating envelope resolved."
+  },
+  "alternate_drawing_route_review": {
+    "checked": "2026-10-27",
+    "rejected_documents": [
+      {
+        "url": "https://static.chipdip.ru/lib/221/DOC011221177.pdf",
+        "actual_part": "0781725006",
+        "reason": "Six-circuit housing product sheet, not 781720003 drawing; embedded drawing target is 781725006_sd.pdf. Search match SD-78172-001 is insufficient for applicability."
+      },
+      {
+        "url": "https://assets.testequity.com/te1/Documents/pdf/Molex/Molex_78172-0004_Headers-and-Wire-Housings_Datasheet.pdf",
+        "actual_part": "78172-0004",
+        "reason": "Four-circuit product sheet; contains link to https://www.molex.com/pdm_docs/sd/781720004_sd.pdf, not embedded geometry."
+      }
+    ],
+    "new_drawing_fetch": {
+      "url": "https://www.molex.com/pdm_docs/sd/781720004_sd.pdf",
+      "result": "curl HTTP2 error92; no PDF obtained"
+    },
+    "conclusion": "No new geometric dimension established. Do not reuse six-circuit housing shape or infer three-circuit complete width from four-circuit sheet.",
+    "next_action": "Stop repeating product-sheet routes; obtain a viewable 781720000-SD/78172-000x drawing or verified CAD. Independent electrical/procurement work can continue."
+  }
+}

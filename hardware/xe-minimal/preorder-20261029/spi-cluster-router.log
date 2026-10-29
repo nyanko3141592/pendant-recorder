@@ -1,0 +1,78 @@
+2026-10-29 11:59:40.057 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+WARNING: Final field userProfileSettings in class app.freerouting.settings.GlobalSettings has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @78186a70 (file:/private/tmp/pendant-router/freerouting-2.5.0.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+2026-10-29 11:59:40.317 INFO   Hardware: 8 CPU cores, 451 CPU score, 4096 MB RAM
+2026-10-29 11:59:40.320 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:59:40.321 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 11:59:41.475 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:59:41.749 INFO   [FD9D77\DB7DE5] Loading board file 'spi-cluster-unrouted.dsn'...
+2026-10-29 11:59:41.901 INFO   [FD9D77\DB7DE5] Job 'FD9D77\DB7DE5' started at 2026-10-29T02:59:41.901307Z.
+2026-10-29 11:59:42.159 INFO   [FD9D77\DB7DE5] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=7.
+2026-10-29 11:59:42.389 INFO   [FD9D77\DB7DE5] Fanout stage started on board 'ee511eb5834353dc7f9d6e167add8e18' with 71 of 255 SMD pins needing fanout (181 already connected, 3 netless).
+2026-10-29 11:59:43.521 INFO   [FD9D77\DB7DE5] Fanout pass #1 on board 'd7ae111d4717ac29637f8ae3e6b463e9' completed in 1.01 seconds with 28 SMD pins fanouted, 7 not routed, 0 insert errors, +13 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 11:59:50.384 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 11:59:50.567 INFO   [FD9D77\DB7DE5] Fanout pass #2 on board '0474f9380d095c163112501ef37574dc' completed in 7.03 seconds with 8 SMD pins fanouted, 4 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 11:59:51.011 INFO   [FD9D77\DB7DE5] Fanout pass #3 on board '7556e786280db5a224f8d2cc770a8c91' completed in 0.43 seconds with 5 SMD pins fanouted, 1 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 11:59:51.413 INFO   [FD9D77\DB7DE5] Fanout pass #4 on board '7556e786280db5a224f8d2cc770a8c91' completed in 0.38 seconds with 2 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-29 11:59:51.509 INFO   [FD9D77\DB7DE5] Fanout stage completed: started with 252 total SMD pins, completed in 9.03 seconds, escaped pins: 218/252 (86.5%), using 9.11 total CPU seconds, 13.39 GB total allocated, and 230.8 MB peak heap usage.
+2026-10-29 11:59:51.811 INFO   [FD9D77\DB7DE5] Auto-routing stage started on board '7556e786280db5a224f8d2cc770a8c91' with baseline score 878.79 for 17 unrouted items.
+2026-10-29 11:59:54.863 INFO   [FD9D77\DB7DE5] Auto-routing pass #1 on board '7556e786280db5a224f8d2cc770a8c91' was completed in 2.93 seconds with score 893.05 (15 unrouted and 0 violations), using 11.74 CPU seconds and the job allocated 15.84 GB of memory so far.
+2026-10-29 11:59:56.826 INFO   [FD9D77\DB7DE5] Auto-routing pass #2 on board '4f911ba3c537c182873cefebcd790300' was completed in 1.85 seconds with score 850.27 (21 unrouted and 0 violations), using 13.73 CPU seconds and the job allocated 17.95 GB of memory so far.
+2026-10-29 11:59:58.855 INFO   [FD9D77\DB7DE5] Auto-routing pass #3 on board 'd6233dc1214694dd2317c9482f2cc66b' was completed in 1.92 seconds with score 843.14 (22 unrouted and 0 violations), using 15.72 CPU seconds and the job allocated 20.10 GB of memory so far.
+2026-10-29 12:00:00.878 INFO   [FD9D77\DB7DE5] Auto-routing pass #4 on board '96561425f5deaf7b6663cb4ff5a3f073' was completed in 1.92 seconds with score 878.79 (17 unrouted and 0 violations), using 17.73 CPU seconds and the job allocated 22.10 GB of memory so far.
+2026-10-29 12:00:02.689 INFO   [FD9D77\DB7DE5] Auto-routing pass #5 on board '0ee63b91a5e79c8f20e901d513349fc2' was completed in 1.70 seconds with score 828.88 (24 unrouted and 0 violations), using 19.73 CPU seconds and the job allocated 24.01 GB of memory so far.
+2026-10-29 12:00:04.845 INFO   [FD9D77\DB7DE5] Auto-routing pass #6 on board '2e33658fd5a7158f913252a93f5046ba' was completed in 2.04 seconds with score 836.01 (23 unrouted and 0 violations), using 21.73 CPU seconds and the job allocated 26.06 GB of memory so far.
+2026-10-29 12:00:07.160 INFO   [FD9D77\DB7DE5] Auto-routing pass #7 on board '82186ebec9761a6b0e6185a1246aadb3' was completed in 2.21 seconds with score 828.88 (24 unrouted and 0 violations), using 24.72 CPU seconds and the job allocated 29.06 GB of memory so far.
+2026-10-29 12:00:09.549 INFO   [FD9D77\DB7DE5] Auto-routing pass #8 on board '4f911ba3c537c182873cefebcd790300' was completed in 0.00 seconds with score 893.05 (15 unrouted and 0 violations), using 26.71 CPU seconds and the job allocated 31.11 GB of memory so far.
+2026-10-29 12:00:21.218 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 12:00:21.453 INFO   [FD9D77\DB7DE5] Auto-routing pass #9 on board '4f911ba3c537c182873cefebcd790300' was completed in 11.89 seconds with score 843.14 (22 unrouted and 0 violations), using 38.67 CPU seconds and the job allocated 51.12 GB of memory so far.
+2026-10-29 12:00:23.499 INFO   [FD9D77\DB7DE5] Auto-routing pass #10 on board '98ca198ccc58e3728913dcc6770d4d2d' was completed in 1.95 seconds with score 850.27 (21 unrouted and 0 violations), using 40.66 CPU seconds and the job allocated 53.45 GB of memory so far.
+2026-10-29 12:00:25.486 INFO   [FD9D77\DB7DE5] Auto-routing pass #11 on board 'cdb5f9a767c162f1c2031315339233e3' was completed in 1.81 seconds with score 857.40 (20 unrouted and 0 violations), using 42.67 CPU seconds and the job allocated 55.64 GB of memory so far.
+2026-10-29 12:00:27.392 INFO   [FD9D77\DB7DE5] Auto-routing pass #12 on board '4f911ba3c537c182873cefebcd790300' was completed in 0.00 seconds with score 893.05 (15 unrouted and 0 violations), using 44.65 CPU seconds and the job allocated 57.80 GB of memory so far.
+2026-10-29 12:00:39.198 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 12:00:39.429 INFO   [FD9D77\DB7DE5] Auto-routing pass #13 on board '4f911ba3c537c182873cefebcd790300' was completed in 12.03 seconds with score 843.14 (22 unrouted and 0 violations), using 56.55 CPU seconds and the job allocated 77.84 GB of memory so far.
+2026-10-29 12:00:41.636 INFO   [FD9D77\DB7DE5] Auto-routing pass #14 on board '0258f9483a121d5fb4738b41c3a09062' was completed in 2.11 seconds with score 850.27 (21 unrouted and 0 violations), using 58.53 CPU seconds and the job allocated 80.12 GB of memory so far.
+2026-10-29 12:00:43.670 INFO   [FD9D77\DB7DE5] Auto-routing pass #15 on board '7236a2dbd2a31d855fe683d34ea96b5c' was completed in 1.92 seconds with score 857.40 (20 unrouted and 0 violations), using 60.52 CPU seconds and the job allocated 82.21 GB of memory so far.
+2026-10-29 12:00:45.748 INFO   [FD9D77\DB7DE5] Auto-routing pass #16 on board '4f911ba3c537c182873cefebcd790300' was completed in 0.00 seconds with score 893.05 (15 unrouted and 0 violations), using 62.51 CPU seconds and the job allocated 84.28 GB of memory so far.
+2026-10-29 12:00:57.567 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 12:00:57.801 INFO   [FD9D77\DB7DE5] Auto-routing pass #17 on board '4f911ba3c537c182873cefebcd790300' was completed in 12.04 seconds with score 843.14 (22 unrouted and 0 violations), using 74.50 CPU seconds and the job allocated 104.23 GB of memory so far.
+2026-10-29 12:00:59.903 INFO   [FD9D77\DB7DE5] Auto-routing pass #18 on board '77faeae52bab451445e8209f1696f7e2' was completed in 2.01 seconds with score 850.27 (21 unrouted and 0 violations), using 76.50 CPU seconds and the job allocated 106.66 GB of memory so far.
+2026-10-29 12:00:59.919 INFO   [FD9D77\DB7DE5] The router's best score (893.05) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (15 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/V3V3' (1 unrouted connection):
+    - C16-1  ->  U4-5
+  Net '/SD_V3' (7 unrouted connections):
+    - C26-1  ->  U11-8
+    - C27-1  ->  C26-1
+    - R25-1  ->  U11-8
+    - R24-1  ->  R25-1
+    - R28-1  ->  R25-1
+    - U10-5  ->  TP5-1
+    - TP5-1  ->  C27-1
+  Net '/SD_MOSI' (1 unrouted connection):
+    - via  ->  U1-17
+  Net '/BAT_ADC' (1 unrouted connection):
+    - via  ->  C28-1
+  Net '/BAT' (4 unrouted connections):
+    - U3-2  ->  C14-1
+    - R33-1  ->  TP1-1
+    - C14-1  ->  R33-1
+    - J2-1  ->  TP1-1
+  Net '/SD_MISO' (2 unrouted connections):
+    - R25-2  ->  U11-6
+    - U1-16  ->  U11-6
+  Net '/SD_CS_N' (2 unrouted connections):
+    - U11-2  ->  R28-2
+    - U11-2  ->  U1-14
+  Net '/SD_CLK' (1 unrouted connection):
+    - R23-2  ->  U11-3
+  Net '/SD_EN' (1 unrouted connection):
+    - R22-1  ->  via
+  Net '/CHG_GUARD_GATE' (1 unrouted connection):
+    - via  ->  U12-1
+2026-10-29 12:01:00.357 INFO   [FD9D77\DB7DE5] Auto-routing stage completed: started with 28 unrouted nets, completed in 78.12 seconds, final score: 893.05 (15 unrouted and 0 violations), using 76.50 total CPU seconds, 106.66 GB total allocated, and 230.8 MB peak heap usage.
+2026-10-29 12:01:00.454 INFO   [FD9D77\DB7DE5] Skipping optimization stage: the board has 15 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 12:01:00.476 INFO   [FD9D77\DB7DE5] Job 'FD9D77\DB7DE5' finished with state: COMPLETED (elapsed: 1 minute 18.57 seconds, finished at UTC: 2026-10-29T03:01:00.475554Z).
+2026-10-29 12:01:00.496 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/spi-cluster-routed.ses' (SES)...
+2026-10-29 12:01:00.499 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/spi-cluster-routed.ses' (170124 bytes).

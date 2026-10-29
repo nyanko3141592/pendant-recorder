@@ -1,0 +1,87 @@
+{
+  "status": "LOW_VOLTAGE_MOSFET_CANDIDATE_NOT_ADOPTED",
+  "manufacturer": "Diodes Incorporated",
+  "mpn_candidate": "DMN52D0U-7",
+  "source": "https://www.diodes.com/datasheet/download/DMN52D0U.pdf",
+  "document": "DS44865 Rev.2-2 March 2023",
+  "observed_date": "2026-10-27",
+  "package": "SOT23",
+  "specified_25C_RDSon_ohm": [
+    {
+      "VGS": 1.8,
+      "ID_mA": 50,
+      "max": 4.0
+    },
+    {
+      "VGS": 2.5,
+      "ID_mA": 50,
+      "max": 2.5
+    },
+    {
+      "VGS": 5.0,
+      "ID_mA": 50,
+      "max": 2.0
+    }
+  ],
+  "gate_leakage_spec": {
+    "max_abs_uA": 10,
+    "test_VGS_abs_V": 12,
+    "VDS_V": 0
+  },
+  "drain_leakage_spec": {
+    "max_uA": 1,
+    "test_VDS_V": 50,
+    "VGS_V": 0
+  },
+  "typical_Coss_pF": 4.8,
+  "Coss_test_VDS_V": 25,
+  "remaining_checks": [
+    "Visual pin mapping and package dimensions against existing SOT23 footprint",
+    "Current retail stock and exact ordering suffix",
+    "Worst-case gate voltage after pullups/pulldowns and leakage",
+    "Drain load and required logic-low level over temperature",
+    "Q5 SETI network response using low-voltage capacitance, not 25V typical Coss alone"
+  ],
+  "no_substitution_or_order": true,
+  "sourcing_followup": {
+    "LCSC_listing": "https://www.lcsc.com/product-detail/C19949883.html",
+    "result": "Search listing found; direct page unavailable through tool, stock and price unverified.",
+    "digikey_search_result": "Exact -7 appears as zero stock in indexed related listings; not treated as fresh direct availability evidence."
+  },
+  "pin_diagram_review": "Page 1 top view visually inspected: single upper lead D, lower-left G, lower-right S. Diagram uses terminal letters, not numerical pin numbers; compare transformed footprint geometry before adoption.",
+  "circuit_evidence": "xe-mosfet-circuit-networks.json",
+  "identified_sensitive_networks": [
+    "Q3 uses 100k series VBUS gate resistor and 1M gate pulldown; gate leakage requires explicit analysis.",
+    "Q4 gate has 10k series from CHG_ALLOW and 100k pulldown plus wired protection outputs; cannot qualify from MOSFET threshold alone.",
+    "Q5 drain connects through 100k to USB_ILIM_SET; capacitance/leakage affect current limit setting.",
+    "Q6/Q7 drains each have 10k VBUS pullups and gates 100k pulldowns."
+  ],
+  "local_evidence": {
+    "pdf": "hardware/xe-minimal/evidence/DMN52D0U-DS44865.pdf",
+    "sha256": "ed5301def76948659df7e5281c596091d251804c3e76a8634d767936a858c04a",
+    "visually_inspected_pages": [
+      1,
+      2
+    ]
+  },
+  "confirmed_limits": [
+    "All listed electrical maxima use TA=25C unless otherwise specified; no full-temperature RDSon maximum table shown.",
+    "Coss 4.8 pF is in Typ column at VDS25V; not a guaranteed maximum at operating voltage.",
+    "Gate leakage max +/-10 uA is specified at VGS+/-12V, not directly characterized at actual GPIO voltage.",
+    "Marking diagram reads 5DK; extraction artifact 51D is not the marking."
+  ],
+  "procurement_recheck_2026_10_27": {
+    "status": "INDEXED_ZERO_STOCK_NOT_FRESH_DISTRIBUTOR_CONFIRMATION",
+    "observations": [
+      {
+        "url": "https://www.lcsc.com/product-image/C19949883.html",
+        "indexed_stock": 0
+      },
+      {
+        "url": "https://www.digikey.hk/en/products/detail/diodes-incorporated/DMN52D0U-7/18735442",
+        "indexed_stock": 0
+      }
+    ],
+    "decision": "Do not select for Q4 based on demonstrated ordinary availability; direct current inventory not established. Different DMN52D0UVA suffix is not an interchangeable footprint assumption."
+  }
+}

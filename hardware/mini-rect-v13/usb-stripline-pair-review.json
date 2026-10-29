@@ -1,0 +1,150 @@
+{
+  "status": "DRC_PARITY_PASS_TRANSITION_REVIEW_PENDING",
+  "source_sha256": "7d9aafb3b7bd40601e3839de6b2441c057eb66853b4f94f58f4cbc708d71563c",
+  "candidate_sha256": "63c5f7002c30a90ee451bf1c59fd2c0d0b6b660608aaf4d7d60e2a3936a2fc1f",
+  "width_mm": 0.1171,
+  "target_edge_gap_mm": 0.1199,
+  "paths": {
+    "/USB_DP": [
+      [
+        16.3606,
+        9.155
+      ],
+      [
+        15.7659,
+        8.993649999999999
+      ],
+      [
+        15.095634307141212,
+        8.993649999999999
+      ],
+      [
+        12.22645,
+        11.862834307141213
+      ],
+      [
+        12.22645,
+        12.538165692858788
+      ],
+      [
+        12.44375,
+        12.75546569285879
+      ],
+      [
+        12.44375,
+        14.618934307141213
+      ],
+      [
+        10.909156153570606,
+        16.153528153570605
+      ],
+      [
+        10.6,
+        16.7731
+      ],
+      [
+        10.4011,
+        16.7731
+      ]
+    ],
+    "/USB_DM": [
+      [
+        16.3712,
+        8.5953
+      ],
+      [
+        15.7659,
+        8.75665
+      ],
+      [
+        14.997465692858787,
+        8.75665
+      ],
+      [
+        11.989450000000001,
+        11.764665692858788
+      ],
+      [
+        11.989450000000001,
+        12.63633430714121
+      ],
+      [
+        12.206750000000001,
+        12.853634307141212
+      ],
+      [
+        12.206750000000001,
+        14.520765692858788
+      ],
+      [
+        10.741571846429395,
+        15.985943846429393
+      ],
+      [
+        10.4011,
+        16.2149
+      ]
+    ]
+  },
+  "limitations": [
+    "Noncoplanar calculator width0.1171/gap0.1199 applied to main pair; fanouts remain nonuniform",
+    "Both-reference missing samples and via return/outer fanouts require review",
+    "Nearby signal copper/crosstalk and manufacturing tolerances not field-solved",
+    "Removal of In2 GND pour passes connectivity DRC, but ground-current/EMI review is not complete",
+    "Not manufacturing release"
+  ],
+  "drc": 0,
+  "unconnected": 0,
+  "checked_pads": 254,
+  "plane_change": "Removed In2 GND pour; retains In1/In3/In4 reference ground planes",
+  "spacing": [
+    {
+      "net": "/USB_DP",
+      "inner_length_mm": 11.252,
+      "edge_gap_range_mm": [
+        0.1199,
+        0.4714
+      ],
+      "length_by_gap_mm": {
+        "gap_0.10_to_0.15_mm": 9.892,
+        "gap_0.15_to_0.30_mm": 0.593,
+        "gap_above_0.30_mm": 0.767,
+        "gap_below_0.10_mm": 0
+      }
+    },
+    {
+      "net": "/USB_DM",
+      "inner_length_mm": 10.977,
+      "edge_gap_range_mm": [
+        0.1199,
+        0.4198
+      ],
+      "length_by_gap_mm": {
+        "gap_0.10_to_0.15_mm": 10.109,
+        "gap_0.15_to_0.30_mm": 0.603,
+        "gap_above_0.30_mm": 0.265,
+        "gap_below_0.10_mm": 0
+      }
+    }
+  ],
+  "reference_counts": [
+    {
+      "net": "/USB_DP",
+      "counts": {
+        "both": 209,
+        "top_only": 0,
+        "bottom_only": 0,
+        "neither": 21
+      }
+    },
+    {
+      "net": "/USB_DM",
+      "counts": {
+        "both": 199,
+        "top_only": 0,
+        "bottom_only": 0,
+        "neither": 26
+      }
+    }
+  ]
+}

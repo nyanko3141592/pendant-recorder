@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T12:41:17",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "xe-connected-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - R15 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.995,
+                        "y": 18.465
+                    },
+                    "uuid": "eff91b3c-07d8-432b-9cef-91391323b0ff"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - C25 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.735,
+                        "y": 14.455
+                    },
+                    "uuid": "01d88bcc-e0b6-458e-bbcb-345c998d69b5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/BAT_TS] - U12 ( B.Cu 上)",
+                    "pos": {
+                        "x": 19.05,
+                        "y": 4.4625
+                    },
+                    "uuid": "9e99fe54-476e-49f2-a29b-66d0c88c2282"
+                },
+                {
+                    "description": "パッド 2 [/BAT_TS] - R37 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 22.49
+                    },
+                    "uuid": "6f020dd2-2ccf-4ac2-9a3d-180de106f93a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

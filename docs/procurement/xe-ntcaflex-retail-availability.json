@@ -1,0 +1,51 @@
+{
+  "status": "EXACT_MPN_RETAIL_INDEX_FOUND_LIVE_NOT_VERIFIED",
+  "mpn": "NTCAFLEX05103GL",
+  "observed": "2026-10-27",
+  "routes": [
+    {
+      "supplier": "Mouser Japan",
+      "url": "https://www.mouser.jp/en/ProductDetail/Vishay/NTCAFLEX05103GL?qs=Imq1NPwxi763CgcmqbA10Q%3D%3D",
+      "evidence": "Search index crawled four days before observation; direct page returned HTTP403",
+      "indexed_stock": 230,
+      "indexed_minimum_quantity": 1,
+      "indexed_multiple": 1,
+      "currency": "JPY",
+      "indexed_price_tiers": [
+        {
+          "quantity": 1,
+          "unit": 503.3
+        },
+        {
+          "quantity": 10,
+          "unit": 378.7
+        }
+      ],
+      "tax_basis": "not verified",
+      "live_stock": null,
+      "live_price": null
+    },
+    {
+      "supplier": "DigiKey US",
+      "url": "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/NTCAFLEX05103GL/26637690",
+      "evidence": "Search index only",
+      "indexed_status": "not stocked; available to order",
+      "indexed_lead_weeks": 15,
+      "indexed_first_price_quantity": 1700,
+      "decision": "Not suitable as five-unit purchase route based on this listing."
+    },
+    {
+      "supplier": "Marutsu",
+      "url": "https://www.marutsu.co.jp/GoodsDetail.jsp?salesGoodsCode=49289865",
+      "evidence": "Exact MPN indexed listing; direct page timed out",
+      "stock": null,
+      "price": null,
+      "minimum": null
+    }
+  ],
+  "five_installed_reference_jpy": 2516.5,
+  "reference_limit": "5 times indexed one-unit price only, excludes tax/shipping/loss/fixtures and is not a quote. Not included in adopted BOM cost.",
+  "decision": "Keep as sourcing candidate because Japanese-market one-piece listing exists; no confirmed inventory or adoption.",
+  "manufacturer_model_link": "https://www.vishay.com/doc?29158",
+  "model_access": "Web open failed; no geometry obtained."
+}

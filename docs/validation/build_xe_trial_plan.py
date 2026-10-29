@@ -1,0 +1,40 @@
+"""Generate pre-prototype tests; all physical results remain unmeasured."""
+from pathlib import Path
+import argparse,json,hashlib
+R=Path(__file__).resolve().parents[2]
+sources=['mechanical/xe-minimal/temperature-contact-space-review.json','docs/validation/xe-film-temperature-resistance-stimuli.json','docs/requirements.md','docs/procurement/preorder-target.json','docs/procurement/xe-q6-q7-bench-plan.json','docs/sourcing/xe-cs32-energy-screen.json','mechanical/xe-minimal/battery-fit-release-gate.json','hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_pcb','mechanical/xe-minimal/film-current-integration-candidate.json','docs/validation/xe-r16-evidence-protocol.json','docs/sourcing/xe-msis-shutdown-review.json']
+parser=argparse.ArgumentParser()
+parser.add_argument('--wide350',action='store_true')
+args=parser.parse_args()
+if args.wide350:
+ sources=[s.replace('battery-fit-release-gate.json','battery-fit-wide350-release-gate.json').replace('film-current-integration-candidate.json','film-wide350-integration-candidate.json') for s in sources]
+ manifest=json.loads((R/'mechanical/xe-minimal/film-wide350-integration-candidate.json').read_text())
+ for key,entry in manifest['artifacts'].items():
+  assert hashlib.sha256((R/entry['path']).read_bytes()).hexdigest()==entry['sha256'],key
+ sources += [entry['path'] for entry in manifest['artifacts'].values() if entry['path'] not in sources]
+ gate=json.loads((R/'mechanical/xe-minimal/battery-fit-wide350-release-gate.json').read_text())
+ assert gate['integration_manifest_sha256']==hashlib.sha256((R/'mechanical/xe-minimal/film-wide350-integration-candidate.json').read_bytes()).hexdigest()
+ stem='xe-five-unit-wide350-trial-plan'
+else:
+ stem='xe-five-unit-trial-plan'
+tests=[
+('ID','設計・個体識別','各5台','PCB版、部品実装差分、FWバイナリhash、設定、電池SKU/ロット、ケース版、測定器と校正情報を記録。BORをリセット後に読み戻す。診断用起動試験ではHSI選択、MSIS停止、録音開始後のMSIKを確認する。電池持ち本試験はデバッガを外した通常ビルドで行う。','対象設計と一致。BOR4読戻しを保存。試験用鍵/VID/PIDのビルドを製品リリースと扱わない。','回路・ファームの検証開始条件'),
+('FIT','電池無加工組立','各5台','assembly-validation-plan-ja.txtに沿って、純正プラグ・線を含む挿入過程と閉鎖前後を記録。','はんだ付け・線加工・端子交換なし。完全嵌合、挟み込みなし、指定曲げ条件内。ケース閉鎖が電池を圧迫しない。未確定のプラグ寸法・曲げ条件は合格扱いしない。','電池接続前の極性・電源設計確認'),
+('POWER','電源・保護の基礎試験','各5台','まず電池エミュレータで電圧掃引と負荷変動を試す。起動/録音/保存/USB挿抜/充電時の電池電流・各電源・制御信号を測る。Q6/Q7は専用bench-planも実施。','部品と電池の公開定格内。110mA連続放電制限に対し、ピークを独自の許容値で免除しない。過渡応答、逆流、停止・再起動を評価。','ID'),
+('TEMP','充電・温度監視','各5台','xe-film-temperature-resistance-stimuli.jsonの現基板基準を使い、設計検証済み電源でNTC正常/開放/短絡と境界抵抗を模擬。実電池では接触構造・電池表面温度・充電電流/電圧/終止を記録する。','公開電池仕様の電圧・電流・温度範囲を公差込みで満たす。異常時充電停止と復帰条件を満たす。センサー接触の熱遅れが未評価なら未合格。','POWER; 閾値一覧を公開仕様と現回路から試験前に固定'),
+('R16','無給電16時間連続録音','各5台','xe-r16-evidence-protocol.jsonの時刻照合と証拠保存条件を使用する。採用充電条件で充電しUSBを外す。外部時刻基準つき音源と予定した無音区間を交互に与え、16時間以上実録音。電流/電圧/温度を記録し、停止後に全ファイルを取り込んで復号・検証する。','充電なし実時間57600秒以上、16kHz以上モノラル、無音も同じ時間軸で保存。欠落/重複/破損なし。ファイル総時間だけで連続性を判定せず外部時刻と照合する。平均電流計算だけでは合格にしない。','FIT,POWER,TEMP; 供試電池の状態と周囲条件を記録'),
+('S36','36時間分の累積暗号化保存','最低1台で同一電池・同一媒体の3セッション、残4台は個体保存・復号確認','実ストレージにUSBを外した電池駆動録音を3セッション蓄積する。セッション間だけ録音を停止してUSBホスト接続で同じ電池を充電し、電池・媒体を交換せず、format/delete/cleanupせずに再起動する。合計36時間以上になった後、全ファイルを復号・検証する。現行安全ポリシーと矛盾する充電専用給電中の録音は行わない。','3セッション合計129600秒以上が同じ媒体に共存し既存ファイルを上書きしない。録音中USB給電0秒、電池交換0回、セッション間充電2回。保存領域に平文音声を出力しない構成をコードと媒体の両面で確認。媒体の文字列検索だけを暗号化の証明にしない。','POWER,TEMP; 36hは累積容量試験であり電池連続時間の証明ではない'),
+('HOST','3OSで取込み・復号','macOS/Windows/Linuxで各1台以上、全5台にUSB認識確認','同一既知音声を各OSで取込み、秘密鍵による復号、整合性、保存先権限、重複取込み、再接続を確認。','全OSで音声を回収でき、復号内容が一致。失敗時は原本保持。秘密鍵を本体へ書き込まない。OSとツール版を記録。','ID,POWER; 実USBと対象OSが必要'),
+('FAULT','電源断・USB異常・容量上限','代表1台で各状態、残4台は正常停止/復帰','録音保存中の制御された電源断、USB取込み途中抜去、容量上限、低電圧停止/再開抑止を試す。破損試験は専用コピーで行う。','確定済み区間を回収。不完全区間を検出し、未取込みデータを黙って削除・上書きしない。MSC中に本体が同じ媒体を書き換えない。','POWER,HOST'),
+('CASE','印刷・閉鎖・使用時形状','各5台','PLA印刷寸法、仕切り板の厚さ/反り、接着後のUSB挿抜、音道、温度接触、完成外形を測る。保持強度の負荷条件を試験前に固定。','固定電池と16時間録音を優先して必要な大型化を許容し、完成外形を測定してOmi参照寸法と比較する。配線/電池に締付荷重を加えない。最新CADに対応する仕切り板の絶縁と保持が使用条件で維持。試験負荷が未定義なら強度は未合格。','FIT; 固定電池と16時間録音を満たす条件下で完成品を最小化。30×32×15mmは絶対上限ではない')]
+rows=[dict(id=i,name=n,sample_scope=q,method=m,acceptance=a,prerequisite=p,result='NOT_RUN',evidence=[])for i,n,q,m,a,p in tests]
+r={'status':'PRE_PROTOTYPE_TEST_PLAN_NOT_RESULTS','prototype_count':5,'tests':rows,'source_sha256':{s:hashlib.sha256((R/s).read_bytes()).hexdigest()for s in sources},'execution_order':['ID','FIT','POWER','TEMP','CASE','R16','S36','HOST','FAULT'],'notes':['FIT starts with non-energized dimensional models; actual battery connection follows electrical prechecks','Prototype sample results do not establish lifetime or population guarantees','Costs and procurement approval are separate; no ordering or hardware actuation performed','Unresolved limits must be fixed before each test; no retroactive threshold chosen to pass results','A pre-prototype decision may use calculations plus this unexecuted plan; physical results must never be implied']}
+r['mechanical_candidate']='wide350-first018-review' if args.wide350 else 'previous-film-review'
+if args.wide350:
+ r['notes'].append('temperature-contact-space-review.json is historical contact-design context, not proof of wide350 fit or thermal coupling; qualify actual current sensor contact in TEMP and CASE.')
+ r['notes'].append('Wide350 is a review candidate, not a released manufacturing design. Source hashes bind the plan to artifacts without approving unresolved constraints.')
+out=R/'docs/validation'/f'{stem}.json';out.write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n')
+text='XE固定電池・5台試作試験計画（未実施）\n\n'
+for t in rows:text+=f"{t['id']} {t['name']} / {t['sample_scope']}\n前提: {t['prerequisite']}\n方法: {t['method']}\n合否: {t['acceptance']}\n結果: 未実施\n\n"
+(R/'docs/validation'/f'{stem}-ja.txt').write_text(text)
+print('Generated',len(rows),'test definitions; all results NOT_RUN.')

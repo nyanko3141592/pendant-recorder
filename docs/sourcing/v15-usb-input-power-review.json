@@ -1,0 +1,97 @@
+{
+  "status": "HARDWARE_INPUT_POWER_CONTROL_REQUIRED_NOT_RELEASED",
+  "existing_charger": {
+    "part": "BQ25185",
+    "selected_voltage_V": 4.1,
+    "input_limit_class_mA": 500,
+    "CE_scope": "Battery charging only; does not disconnect input power to SYS",
+    "current_firmware": "100mA USB descriptor; no charge enable API; no input disconnect control"
+  },
+  "alternatives": [
+    {
+      "part": "BQ25186",
+      "source": "https://www.ti.com/lit/ds/symlink/bq25186.pdf",
+      "source_sha256": "96834a4566939677cf084cef87d88f1534b9369ae80171ee004a7ac6572791c9",
+      "evidence": "TMR_ILIM0x08 reset0x4D; ILIM bits101=500mA; I2C can select100mA later",
+      "decision": "Not a drop-in solution for startup; also requiresSDA/SCL routing and reset/watchdog protection"
+    },
+    {
+      "part": "TPS22946",
+      "source": "https://www.ti.com/product/TPS22946",
+      "evidence": "Manufacturer lists435mA temporary startup limit for8ms",
+      "decision": "Not selected as hard100mA startup limiter; startup allowance needs independent USB inrush compliance analysis"
+    },
+    {
+      "part": "TPS2553",
+      "source": "https://www.ti.com/product/TPS2553",
+      "evidence": "Datasheet ILIM tiedIN50/75/100mA output; resistor mode210k110/130/150mA; stable resistor range15..232k",
+      "decision": "Not selected: minimum-mode100mA output upper bound leaves no guaranteed headroom for own quiescent/upstream current"
+    },
+    {
+      "part": "TPS22943",
+      "source": "https://www.ti.com/lit/ds/symlink/tps22943.pdf",
+      "evidence": "40/65/80mA atVIN3.3V,VOUT3V; no reverse protection; reverseVOUT>VIN may damage part",
+      "decision": "Not selected; MAX4995C offers programmable two-level budget and reverse protection"
+    },
+    {
+      "part": "MAX4995CAUT+T",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/max4995a-max4995c.pdf",
+      "decision": "SELECTED_ENGINEERING_BASELINE_NOT_QUALIFIED; continuous limiting, reverse protection, active-highON; SOT23-6 supported by current manufacturer lifecycle despite2019datasheet future-product footnote",
+      "screen": "hardware/mini-rect-v15/input-limiter-screen.json"
+    }
+  ],
+  "required_states": [
+    {
+      "state": "attach / reset / not configured",
+      "charging": "inhibited",
+      "requirement": "Hardware-safe startup input budget; software runs too late to guarantee the initial current; preserve dead-battery boot"
+    },
+    {
+      "state": "configured active",
+      "charging": "allowed only after validated voltage/current configuration and thermal guard",
+      "requirement": "Advertised configuration budget must cover system plus charging and input overhead"
+    },
+    {
+      "state": "suspend",
+      "charging": "inhibited",
+      "requirement": "Control total USB current including SYS, charger, sensing and pullups; CE alone is insufficient"
+    },
+    {
+      "state": "detach / MCU reset / firmware failure",
+      "charging": "inhibited by hardware default",
+      "requirement": "No stale charge permission; no unintended input backfeed"
+    }
+  ],
+  "next_action": "Design VBUS-powered retained suspend-off latch with valid attach reset; preserve dead-battery boot and reset-to-low current budget; then integrate proposed net split, GPIOs, schematic/PCB/FW.5V current/inrush verification remains a prototype test requirement, not implied by3.3V screen.",
+  "release_allowed": false,
+  "selected_input_switch": {
+    "part": "MAX4995CAUT+T",
+    "pinout": {
+      "1": "OUT",
+      "2": "GND",
+      "3": "SETI",
+      "4": "ON",
+      "5": "IN",
+      "6": "FLAG_N"
+    },
+    "source_pages": [
+      3,
+      4,
+      8,
+      10,
+      11
+    ],
+    "manufacturer_lifecycle": "PRODUCTION as observed2026-10-26",
+    "manufacturer_url": "https://www.analog.com/en/products/max4995c.html",
+    "PIN2571C": "Shipping packaging change only, no electrical/pinout erratum: https://www.analog.com/media/en/pcn/pcn_2571c.pdf",
+    "sourcing": {
+      "url": "https://www.digikey.jp/ja/products/detail/analog-devices-inc-maxim-integrated/MAX4995CAUT-T/2137383",
+      "observed_date": "2026-10-26",
+      "listed_stock": 1038,
+      "single_unit_JPY_ex_tax": 1164,
+      "five_units_JPY_ex_tax": 5820,
+      "excludes": "tax/shipping/assembly/other components; not a quotation or reservation"
+    },
+    "qualified": false
+  }
+}

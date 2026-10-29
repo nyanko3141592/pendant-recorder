@@ -1,0 +1,53 @@
+{
+  "status": "TOPOLOGY_CANDIDATE_NOT_ADOPTED",
+  "previous_turn": "PROGRESS: alternative switch electrical screening recorded",
+  "purpose": "Remove the selectable SETI shunt instead of adding a powered-off protected switch. Charging speed is not a user requirement.",
+  "changes": {
+    "canonical_remove": [
+      "Q5",
+      "R45",
+      "R46"
+    ],
+    "tmux_trial_remove": [
+      "U16",
+      "C34",
+      "R45",
+      "R46"
+    ],
+    "retain": [
+      "U13 MAX4995 input limiter",
+      "R44 390k SETI to GND",
+      "U14/U15 suspend/reset control",
+      "BQ25185 at existing 4.1 V setting"
+    ]
+  },
+  "conditional_current_screen": {
+    "basis": "Existing MAX4995 coefficients specified at 3.3 V; NOT qualified at USB 5 V",
+    "resistor_initial_tolerance_percent": 1,
+    "output_limit_min_mA": 65.9417730460669,
+    "output_limit_max_mA": 82.21215708477018,
+    "charge_max_mA": 49.0196078431,
+    "remaining_for_system_at_min_limit_mA": 16.9221652029669,
+    "meaning": "With no input collapse and negligible overhead, system above this residual requires charging reduction. These are not guaranteed operating margins."
+  },
+  "power_path_evidence": {
+    "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+    "revision": "SLUSF65B August 2026",
+    "sections": [
+      "6.3.2",
+      "6.3.3",
+      "6.3.6"
+    ],
+    "finding": "BQ25185 reduces charging when SYS droops; battery supplement can supply excess system load above battery UVLO. Existing 4.1 V resistor mode has 500 mA internal limit, so external fixed limit remains necessary."
+  },
+  "required_before_adoption": [
+    "Verify external limiter at USB voltage, upstream current and inrush; 3.3 V coefficients are insufficient.",
+    "Check worst-case USB transfer current and low-battery behavior; supplement must not trip battery protection or MCU BOR.",
+    "Check interaction of external limiter and charger VINDPM/DPPM, including depleted-battery startup.",
+    "Remove high-budget GPIO drive in firmware and update USB descriptor/policy consistently; retain suspend isolation.",
+    "Generate schematic and PCB variant; verify parity, DRC, power-path nets and reclaimed area."
+  ],
+  "expected_benefit": "Eliminates SETI switch leakage and analog powered-off sequencing mechanism; removes 3 canonical parts or 4 TMUX trial parts. Does not resolve all power-path risks.",
+  "size_or_runtime_requirement_changed": false,
+  "physical_tests_run": 0
+}

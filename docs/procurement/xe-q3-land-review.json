@@ -1,0 +1,50 @@
+{
+  "status": "GEOMETRY_REVIEW_COMPLETE_SOLDER_PROCESS_UNQUALIFIED",
+  "source_pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "manufacturer_drawing": "hardware/xe-minimal/evidence/DMN63D8L-page6.png",
+  "drawing_visually_reviewed": true,
+  "drawing_dimensions_mm": {
+    "Z": 2.9,
+    "X": 0.8,
+    "Y": 0.9,
+    "C": 2.0,
+    "E": 1.35
+  },
+  "interpretation": "E runs from centerline to outer side-pad edge, so side pad centers are +/-0.95 mm; C is row-center separation. Normalize rotation and bottom-side reflection for comparison.",
+  "comparison_mm": {
+    "pad_width": {
+      "manufacturer": 0.8,
+      "current": 0.6
+    },
+    "pad_length": {
+      "manufacturer": 0.9,
+      "current": 1.475
+    },
+    "row_center_separation": {
+      "manufacturer": 2,
+      "current": 1.875
+    },
+    "side_pad_center_pitch": {
+      "manufacturer": 1.9,
+      "current": 1.9
+    },
+    "overall_row_span": {
+      "manufacturer": 2.9,
+      "current": 3.35
+    },
+    "overall_side_span": {
+      "manufacturer": 2.7,
+      "current": 2.5
+    },
+    "current_corner_radius": 0.15
+  },
+  "decision": "Retain existing standard KiCad SOT-23 copper for engineering prototype; it is not identical to the manufacturer suggestion. No claim of manufacturer land-pattern compliance. Review solder joints/placement under prototype assembly process before release.",
+  "basis": "Pad numbering and pitch agree; current lands are longer and narrower. A suggested footprint difference alone is not proof of electrical or assembly failure.",
+  "unresolved": [
+    "Effective paste verified 1:1 to copper; stencil thickness and solder process remain unqualified",
+    "Solder fillet, bridging, component placement tolerance and reflow process require qualification",
+    "Do not enlarge pads without checking existing clearance and rerunning DRC"
+  ],
+  "no_board_edit": true,
+  "paste_review": "xe-q3-paste-review.json"
+}

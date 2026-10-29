@@ -1,0 +1,28 @@
+{
+  "status": "XE_PROTOTYPE_SETTINGS_NOT_CHARGE_RELEASE",
+  "battery": "DTP401525-XE",
+  "R10_ohms": 6800,
+  "charge_nominal_mA": 44.11764705882353,
+  "charge_tolerance_screen_mA": [
+    39.31275480489225,
+    49.01960784313726
+  ],
+  "charge_max_pack_mA": 110,
+  "termination_nominal_mA": 4.411764705882353,
+  "pack_end_current_mA": 1.1,
+  "ideal_CC_only_hours": 2.493333333333333,
+  "safety_timer_typical_hours": 6,
+  "input_minimum_mA": 450,
+  "nonstorage_SYS_reserve_mA": 20,
+  "charge_plus_reserve_upper_screen_mA": 69.01960784313727,
+  "voltage_status": "4.1V setting plus0.5% gives4.1205V, below pack4.20V; overshoot/startup bench validation still required",
+  "temperature_status": "IndependentTH1; packpin2NC; exactsensor/thermal implementation unqualified",
+  "runtime_status": "4.1V charging and4.41mA nominal termination reduce usable capacity versus datasheet4.2V/1.1mA;110mAh and16h cannot be assumed",
+  "release_allowed": false,
+  "R42_ohms": 130000,
+  "input_typical_mA": 475,
+  "input_maximum_mA": 498,
+  "charge_voltage_nominal_V": 4.1,
+  "charge_voltage_upper_V": 4.120499999999999,
+  "USB_power_status": "INPUT_CLASS_CHANGED:100mA descriptor and preconfiguration/suspend behavior are not yet compatible with new500mA input class; no charge release"
+}

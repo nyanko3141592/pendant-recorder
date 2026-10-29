@@ -1,0 +1,150 @@
+{
+  "status": "CLEARANCE_CONTRIBUTOR_SCREEN_NOT_COMPLETE_RULE_SOLVER",
+  "source_pcb_sha256": "3f7962550e31d2a3133989344962d543977c8cea504f3f3c498273edb25d8127",
+  "zone_local_clearance_mm": 0.15,
+  "polygon_error_mm": 0.001,
+  "rows": [
+    {
+      "usb_uuid": "05b552a5-d798-4793-b3a3-b4995fa62241",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "6975cde6-c8fc-4e9c-96d4-789911aa4ba1",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0380041336725,
+      "contributors": [
+        {
+          "uuid": "28ad8aee-08e4-4004-8b2c-eee63521f5c3",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            11.75,
+            19.883749
+          ],
+          "overlap_with_uncovered_mm2": 0.037893662291,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.0001105904025
+    },
+    {
+      "usb_uuid": "7640eaad-ec24-45bf-a9e9-eebd4ceb5648",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "cd543976-b9a2-40c9-bae5-b76d8336c2f1",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0380072371825,
+      "contributors": [
+        {
+          "uuid": "06d4601c-2efb-44a0-9fe1-f1f7046fe521",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            21.89,
+            8.6175
+          ],
+          "overlap_with_uncovered_mm2": 0.037894147817,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000113085551
+    },
+    {
+      "usb_uuid": "d987e5c9-48e4-4a35-be7c-cc2c50881659",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "5415b7e1-8d2a-4c5a-ab88-1d3946f6b546",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "62cad2b1-98f7-4cfc-a55f-597715a863e1",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0380435119795,
+      "contributors": [
+        {
+          "uuid": "2b6f8c6c-7874-4133-bbd5-4b1c56296eef",
+          "kind": "PCB_VIA",
+          "net": "/USB_DM",
+          "xy_mm": [
+            12.0,
+            17.746249
+          ],
+          "overlap_with_uncovered_mm2": 0.037894428319,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000149244215
+    },
+    {
+      "usb_uuid": "63739360-e6c3-4b80-83e9-4dd74a8cbe0a",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0404996736475,
+      "contributors": [
+        {
+          "uuid": "06d4601c-2efb-44a0-9fe1-f1f7046fe521",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            21.89,
+            8.6175
+          ],
+          "overlap_with_uncovered_mm2": 0.002651037566,
+          "is_USB_net": true
+        },
+        {
+          "uuid": "5353367c-7e9c-4663-bc5f-90539681e5b2",
+          "kind": "PCB_VIA",
+          "net": "/USB_DM",
+          "xy_mm": [
+            21.89,
+            8.1175
+          ],
+          "overlap_with_uncovered_mm2": 0.037888189585,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000924466121
+    },
+    {
+      "usb_uuid": "6815f171-6467-4edb-a5b4-ae1963557cc3",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    }
+  ],
+  "limits": [
+    "Uses zone local clearance only; object/netclass/custom-rule differences may explain residuals",
+    "Overlaps from separate obstacles may overlap; do not sum as union",
+    "USB via antipads are required; do not fill or remove clearance to obtain geometric coverage",
+    "Ground connectivity and 3D fields not evaluated"
+  ]
+}

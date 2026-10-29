@@ -1,0 +1,74 @@
+{
+  "status": "NOT_ADOPTED_AFTER_USER_REJECTION",
+  "copper_layers": 4,
+  "board_mm": [
+    27.5,
+    27.5
+  ],
+  "assembly_sides": 2,
+  "bom_changes": 0,
+  "moves": [
+    {
+      "ref": "SW1",
+      "from_mm": [
+        15.725,
+        5.975
+      ],
+      "to_mm": [
+        3.5,
+        20.0
+      ],
+      "side": "F.Cu",
+      "courtyard_bbox_mm": [
+        1.1,
+        5.9,
+        18.35,
+        21.65
+      ],
+      "nets": [
+        "/BUTTON_N",
+        "/GND"
+      ]
+    },
+    {
+      "ref": "U8",
+      "from_mm": [
+        21.25,
+        4.565
+      ],
+      "to_mm": [
+        19.75,
+        19.0
+      ],
+      "side": "F.Cu",
+      "courtyard_bbox_mm": [
+        17.5,
+        22.0,
+        17.25,
+        20.75
+      ],
+      "nets": [
+        "",
+        "/GND",
+        "/PDM_CLK",
+        "/PDM_DATA",
+        "/V3V3"
+      ]
+    }
+  ],
+  "source_sha256": "8141cc8b00ca4c676ce53ab15a0812420c48636e137fa0559d9ac4d8399db288",
+  "placement_sha256": "98ae6ee7383c7c8bc71b17cd5bf87119ba17fa6e52a725244357017c9eeaeb42",
+  "release_allowed": false,
+  "manufacturing_constraints": [
+    "Maximum four copper layers",
+    "Same exact MPNs and assembly sides; no HDI/blind-via/filled-via cost escalation",
+    "Reserve uninterrupted ground reference during reroute, not after autorouting"
+  ],
+  "remaining": [
+    "Battery factory harness reach and mating clearance",
+    "Maximum package envelopes and insulating retention",
+    "Full routing, ERC/DRC/parity, current and USB review",
+    "JLC exact stock and Standard-only storage cost qualification"
+  ],
+  "user_feedback": "2026-10-29: user rejected the presented proposal. Do not adopt the top-battery architecture or its approximately 11 mm envelope as a requirement or validated result."
+}

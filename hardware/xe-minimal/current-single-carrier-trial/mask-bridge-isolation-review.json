@@ -1,0 +1,52 @@
+{
+  "status": "FIDUCIAL_ADDITION_CORRELATED_CAUSE_NOT_YET_PROVEN",
+  "variants": [
+    {
+      "variant": "translation-only",
+      "pcb_sha256": "5b0a378d016c21fe45c3b197d9e2bbf731d5325548c2da8de8ddcb422b510cd1",
+      "violations": [],
+      "unconnected_count": 0
+    },
+    {
+      "variant": "outline-only",
+      "pcb_sha256": "2c17b6a88b67b789f88938064a7522a360b2a1c957f5bdcdabb8795996f579ae",
+      "violations": [],
+      "unconnected_count": 0
+    },
+    {
+      "variant": "holes-only",
+      "pcb_sha256": "6db0c034d6e049f8271cfb453b2adda495d76b96777a871d52a32c304e759bd5",
+      "violations": [],
+      "unconnected_count": 0
+    },
+    {
+      "variant": "fiducials-only",
+      "pcb_sha256": "feb9cd103d34e25ecc81e7fd831ea7e314bb81f49974ea0b64e5377d2ca84df2",
+      "violations": [
+        {
+          "type": "solder_mask_bridge",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 2 [/V3V3] - U8 ( F.Cu \u4e0a)",
+              "pos": {
+                "x": 43.45,
+                "y": 25.215
+              },
+              "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 5 [/GND] - U8 ( F.Cu \u4e0a)",
+              "pos": {
+                "x": 44.93,
+                "y": 25.255
+              },
+              "uuid": "162c1271-d4cd-4945-a364-70a88d661931"
+            }
+          ]
+        }
+      ],
+      "unconnected_count": 0
+    }
+  ],
+  "finding": "Translation, carrier outline and tooling holes do not reproduce the bridge; added fiducials do. U8 footprint text differs from source only in translated top-level placement. No source exclusions or mask edits."
+}

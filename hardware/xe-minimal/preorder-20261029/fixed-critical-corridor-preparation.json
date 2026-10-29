@@ -1,0 +1,93 @@
+{
+  "status": "PARTIALLY_UNROUTED_TRIAL_NOT_FOR_FABRICATION",
+  "source_sha256": "1aa9d85b5c21bdb4f151013b8e424c251e69d3fb33db2212c7e98cbe601664da",
+  "output_sha256": "a32b13993a18019a5cff5d685b368f6e8de00a29391e74b822484be27f8f85ba",
+  "reserved_rule_areas": 65,
+  "margin_beyond_signal_copper_mm": 0.3,
+  "removed_components": [
+    {
+      "net": "/BOOT0",
+      "segments": 1,
+      "length_mm": 7.6943
+    },
+    {
+      "net": "/CHG_N",
+      "segments": 4,
+      "length_mm": 10.273727545705292
+    },
+    {
+      "net": "/CHG_ALLOW",
+      "segments": 6,
+      "length_mm": 38.193757805524505
+    },
+    {
+      "net": "/VBUS_N",
+      "segments": 6,
+      "length_mm": 20.927749427594396
+    },
+    {
+      "net": "/VBUS_GATE",
+      "segments": 7,
+      "length_mm": 13.903428696856176
+    },
+    {
+      "net": "/VBUS_CHARGER",
+      "segments": 5,
+      "length_mm": 17.06864521738444
+    },
+    {
+      "net": "/SWCLK",
+      "segments": 10,
+      "length_mm": 16.69639862944145
+    },
+    {
+      "net": "/SWDIO",
+      "segments": 6,
+      "length_mm": 15.605637490643609
+    },
+    {
+      "net": "/CC1",
+      "segments": 2,
+      "length_mm": 3.7094227488785467
+    },
+    {
+      "net": "/BAT",
+      "segments": 7,
+      "length_mm": 16.93938895995529
+    },
+    {
+      "net": "/STATUS_LED_A",
+      "segments": 2,
+      "length_mm": 9.49231006643063
+    },
+    {
+      "net": "/STATUS_LED",
+      "segments": 3,
+      "length_mm": 5.3607853234263825
+    },
+    {
+      "net": "/CHG_INHIBIT_GATE",
+      "segments": 12,
+      "length_mm": 20.950602297199993
+    },
+    {
+      "net": "/SYS",
+      "segments": 10,
+      "length_mm": 42.65294151989054
+    },
+    {
+      "net": "/V3V3",
+      "segments": 9,
+      "length_mm": 26.27098273120655
+    }
+  ],
+  "via_count_changed": false,
+  "layers": 4,
+  "limitations": [
+    "Existing via antipads remain; track corridor does not certify full GND continuity",
+    "DSN keepout handling must be inspected before routing",
+    "Existing pours require refill after rerouting",
+    "All branch endpoints must reconnect; no local whole-net layer swaps"
+  ],
+  "release_allowed": false
+}

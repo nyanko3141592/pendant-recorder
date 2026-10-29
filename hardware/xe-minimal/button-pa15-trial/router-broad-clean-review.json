@@ -1,0 +1,43 @@
+{
+  "removed": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 23.3898,
+            "y": 9.4011
+          },
+          "uuid": "0cba44f5-5735-46b6-bc48-b68b8d9c6bc3"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/SWDIO] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.9834 mm )",
+          "pos": {
+            "x": 23.3898,
+            "y": 9.4011
+          },
+          "uuid": "ca99038f-fc15-4f7a-b061-106193162a64"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    }
+  ],
+  "violations": [],
+  "parity": [],
+  "unconnected": 21,
+  "adopted": true,
+  "postcopy_drc": {
+    "violations": 0,
+    "parity": 0,
+    "unconnected": 21
+  }
+}

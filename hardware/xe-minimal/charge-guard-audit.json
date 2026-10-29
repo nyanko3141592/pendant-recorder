@@ -1,0 +1,179 @@
+{
+  "status": "DEFAULT_DENY_AND_10MS_STARTUP_DELAY_STATICALLY_VERIFIED_PHYSICAL_RAMP_PENDING",
+  "design_sha256": "1e9ebf225bf3db0af1fd9000ad123aee638a5d6feac92ffe9513e8d0351dc2aa",
+  "checked_pin_maps": {
+    "U12": {
+      "1": "CHG_GUARD_GATE",
+      "2": "BAT_TS",
+      "3": "TS_COLD_REF",
+      "4": "GND",
+      "5": "BAT_TS",
+      "6": "TS_HOT_REF",
+      "7": "CHG_GUARD_GATE",
+      "8": "V3V3"
+    },
+    "Q4": {
+      "1": "CHG_GUARD_GATE",
+      "2": "GND",
+      "3": "CHG_INHIBIT_GATE"
+    },
+    "R36": {
+      "1": "CHG_GUARD_GATE",
+      "2": "GND"
+    },
+    "R43": {
+      "1": "CHG_ALLOW",
+      "2": "CHG_GUARD_GATE"
+    },
+    "R12": {
+      "1": "SYS",
+      "2": "CHG_INHIBIT_GATE"
+    },
+    "J2": {
+      "1": "BAT",
+      "2": "BAT_TS",
+      "3": "GND"
+    }
+  },
+  "source": "https://www.ti.com/lit/ds/symlink/tlv7042.pdf",
+  "source_sections": [
+    "5 Pin Configuration and Functions",
+    "5.9 Electrical Characteristics (Dual)"
+  ],
+  "nominal_ntc_resistance_window_ohm": [
+    7500.0,
+    19999.999999999996
+  ],
+  "startup_design_evidence": {
+    "R36_pulldown_ohm": 100000.0,
+    "mcu_sequence": "PB2 output latch LOW before output configuration",
+    "firmware_charge_delay_ms": 10,
+    "TLV7042_VCC_ready_threshold_V": 1.6,
+    "TLV7042_ready_time_us": 200,
+    "nominal_delay_ratio": 50
+  },
+  "truth_table": [
+    {
+      "sensor": "short",
+      "mcu": "low",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "short",
+      "mcu": "low",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "short",
+      "mcu": "high_z",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "short",
+      "mcu": "high_z",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "short",
+      "mcu": "high",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "short",
+      "mcu": "high",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": true
+    },
+    {
+      "sensor": "nominal_25C",
+      "mcu": "low",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "nominal_25C",
+      "mcu": "low",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "nominal_25C",
+      "mcu": "high_z",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "nominal_25C",
+      "mcu": "high_z",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "nominal_25C",
+      "mcu": "high",
+      "comparator": "operating",
+      "ideal_charge_permission": true
+    },
+    {
+      "sensor": "nominal_25C",
+      "mcu": "high",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": true
+    },
+    {
+      "sensor": "open",
+      "mcu": "low",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "open",
+      "mcu": "low",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "open",
+      "mcu": "high_z",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "open",
+      "mcu": "high_z",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "open",
+      "mcu": "high",
+      "comparator": "operating",
+      "ideal_charge_permission": false
+    },
+    {
+      "sensor": "open",
+      "mcu": "high",
+      "comparator": "POR_high_impedance",
+      "ideal_charge_permission": true
+    }
+  ],
+  "finding": "Open/short and MCU low/high-Z inhibit in ideal steady state. Reset/high-Z is default-deny through R36 and Q4-off, leaving CE pulled high from SYS. Firmware drives PB2 low before output mode and cannot request charge until 10ms after an accepted USB grant. A stuck-high MCU does not itself inhibit; operating temperature comparators still override it.",
+  "required_resolution": [
+    "Bench-capture SYS, V3V3, CHG_ALLOW, CHG_GUARD_GATE, CE and charge current during dead-pack USB insertion and removal; prove the real ramp preserves inhibit",
+    "Qualify real NTC R-T envelope and mechanical thermal contact; electrically intact detached sensor is not detected",
+    "Check MOS gate threshold, comparator sink/leakage, input common mode and supply tolerances over temperature",
+    "Do not substitute a push-pull-output comparator directly: its outputs cannot be tied together in this topology"
+  ],
+  "not_proven": [
+    "Physical startup/transient inhibit",
+    "Cell-temperature threshold bounds",
+    "16h runtime",
+    "Hardware fault-tolerant certification"
+  ],
+  "order_ready": false
+}

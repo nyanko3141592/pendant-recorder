@@ -1,0 +1,178 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T19:25:14",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-film-lap-route-trial.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 2.1325 mm )",
+                    "pos": {
+                        "x": 16.1025,
+                        "y": 4.33
+                    },
+                    "uuid": "0da1d33c-cd1f-4ac9-a0f6-8f3070471c67"
+                },
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 1.2042 mm )",
+                    "pos": {
+                        "x": 15.1,
+                        "y": 0.4
+                    },
+                    "uuid": "1d941cf1-0d84-4ba9-ab44-3ef1e3a9b0da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 2.1325 mm )",
+                    "pos": {
+                        "x": 16.1025,
+                        "y": 4.33
+                    },
+                    "uuid": "0da1d33c-cd1f-4ac9-a0f6-8f3070471c67"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 1.2042 mm )",
+                    "pos": {
+                        "x": 15.1,
+                        "y": 0.4
+                    },
+                    "uuid": "1d941cf1-0d84-4ba9-ab44-3ef1e3a9b0da"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TH1",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "c9a2255c-6f75-4b90-afb8-d5906082cccd"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "セグメント (Edge.Cuts 上)",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "c6351f77-ca06-4dab-8c41-3a15c5f1825d"
+                },
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5e599848-19be-47b0-97d7-36dc458bd8b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of R50 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 1.101359,
+                        "y": 0.415
+                    },
+                    "uuid": "0c8d61d0-3231-43b4-b6c6-e25fc9de6e69"
+                },
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5e599848-19be-47b0-97d7-36dc458bd8b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5e599848-19be-47b0-97d7-36dc458bd8b3"
+                },
+                {
+                    "description": "パッド 1 [/USB_RESUME_PULSE] - R50 ( F.Cu 上)",
+                    "pos": {
+                        "x": 0.745,
+                        "y": 0.795
+                    },
+                    "uuid": "74dc3145-115c-4937-8004-d3a56ecc0ead"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5e599848-19be-47b0-97d7-36dc458bd8b3"
+                },
+                {
+                    "description": "パッド 2 [/GND] - R50 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.765,
+                        "y": 0.795
+                    },
+                    "uuid": "a9bd1c90-e567-412e-b7bf-b87b55a86723"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

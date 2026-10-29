@@ -1,0 +1,1652 @@
+{
+  "source_pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "status": "EXTRACTED_NET_CONTEXT_NOT_TRANSISTOR_QUALIFICATION",
+  "mosfets": [
+    {
+      "ref": "Q7",
+      "pins": {
+        "1": "/USB_RESUME_PULSE",
+        "2": "/GND",
+        "3": "/USB_LATCH_CLEAR_N"
+      },
+      "direct_neighbors": [
+        {
+          "ref": "R50",
+          "value": "100k 1%",
+          "connected_pads": [
+            {
+              "number": "1",
+              "net": "/USB_RESUME_PULSE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/USB_RESUME_PULSE"
+            },
+            {
+              "number": "2",
+              "net": "/GND"
+            }
+          ]
+        },
+        {
+          "ref": "R48",
+          "value": "10k 1%",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/USB_LATCH_CLEAR_N"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/VBUS"
+            },
+            {
+              "number": "2",
+              "net": "/USB_LATCH_CLEAR_N"
+            }
+          ]
+        },
+        {
+          "ref": "U15",
+          "value": "TLV803EB29DBZR",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/USB_LATCH_CLEAR_N"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/GND"
+            },
+            {
+              "number": "2",
+              "net": "/USB_LATCH_CLEAR_N"
+            },
+            {
+              "number": "3",
+              "net": "/VBUS"
+            }
+          ]
+        },
+        {
+          "ref": "U1",
+          "value": "STM32U535CEU6",
+          "connected_pads": [
+            {
+              "number": "19",
+              "net": "/USB_RESUME_PULSE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "1",
+              "net": "/V3V3"
+            },
+            {
+              "number": "2",
+              "net": "unconnected-(U1-PC13-Pad2)"
+            },
+            {
+              "number": "3",
+              "net": "unconnected-(U1-PC14-Pad3)"
+            },
+            {
+              "number": "4",
+              "net": "unconnected-(U1-PC15-Pad4)"
+            },
+            {
+              "number": "5",
+              "net": "unconnected-(U1-PH0-Pad5)"
+            },
+            {
+              "number": "6",
+              "net": "unconnected-(U1-PH1-Pad6)"
+            },
+            {
+              "number": "7",
+              "net": "/NRST"
+            },
+            {
+              "number": "8",
+              "net": "/GND"
+            },
+            {
+              "number": "9",
+              "net": "/VDDA"
+            },
+            {
+              "number": "10",
+              "net": "/VBUS_N"
+            },
+            {
+              "number": "11",
+              "net": "/BAT_ADC"
+            },
+            {
+              "number": "12",
+              "net": "/USB_SUSPEND_PULSE"
+            },
+            {
+              "number": "13",
+              "net": "unconnected-(U1-PA3-Pad13)"
+            },
+            {
+              "number": "14",
+              "net": "/SD_CS_N"
+            },
+            {
+              "number": "15",
+              "net": "/SD_CLK_MCU"
+            },
+            {
+              "number": "16",
+              "net": "/SD_MISO"
+            },
+            {
+              "number": "17",
+              "net": "/SD_MOSI"
+            },
+            {
+              "number": "18",
+              "net": "unconnected-(U1-PB0-Pad18)"
+            },
+            {
+              "number": "19",
+              "net": "/USB_RESUME_PULSE"
+            },
+            {
+              "number": "20",
+              "net": "/CHG_ALLOW"
+            },
+            {
+              "number": "21",
+              "net": "unconnected-(U1-PB10-Pad21)"
+            },
+            {
+              "number": "22",
+              "net": "/VCAP"
+            },
+            {
+              "number": "23",
+              "net": "/GND"
+            },
+            {
+              "number": "24",
+              "net": "/V3V3"
+            },
+            {
+              "number": "25",
+              "net": "unconnected-(U1-PB12-Pad25)"
+            },
+            {
+              "number": "26",
+              "net": "unconnected-(U1-PB13-Pad26)"
+            },
+            {
+              "number": "27",
+              "net": "/CHG_N"
+            },
+            {
+              "number": "28",
+              "net": "unconnected-(U1-PB15-Pad28)"
+            },
+            {
+              "number": "29",
+              "net": "/STATUS_LED"
+            },
+            {
+              "number": "30",
+              "net": "unconnected-(U1-PA9-Pad30)"
+            },
+            {
+              "number": "31",
+              "net": "unconnected-(U1-PA10-Pad31)"
+            },
+            {
+              "number": "32",
+              "net": "/USB_DM"
+            },
+            {
+              "number": "33",
+              "net": "/USB_DP"
+            },
+            {
+              "number": "34",
+              "net": "/SWDIO"
+            },
+            {
+              "number": "35",
+              "net": "/GND"
+            },
+            {
+              "number": "36",
+              "net": "/V3V3"
+            },
+            {
+              "number": "37",
+              "net": "/SWCLK"
+            },
+            {
+              "number": "38",
+              "net": "/BUTTON_N"
+            },
+            {
+              "number": "39",
+              "net": "/PDM_CLK_MCU"
+            },
+            {
+              "number": "40",
+              "net": "/PDM_DATA"
+            },
+            {
+              "number": "41",
+              "net": "/SD_EN"
+            },
+            {
+              "number": "42",
+              "net": "/USB_HIGH_BUDGET"
+            },
+            {
+              "number": "43",
+              "net": "unconnected-(U1-PB7-Pad43)"
+            },
+            {
+              "number": "44",
+              "net": "/BOOT0"
+            },
+            {
+              "number": "45",
+              "net": "unconnected-(U1-PB8-Pad45)"
+            },
+            {
+              "number": "46",
+              "net": "unconnected-(U1-PB9-Pad46)"
+            },
+            {
+              "number": "47",
+              "net": "/GND"
+            },
+            {
+              "number": "48",
+              "net": "/V3V3"
+            },
+            {
+              "number": "49",
+              "net": "/GND"
+            }
+          ]
+        },
+        {
+          "ref": "U14",
+          "value": "SN74HCS74DYYR",
+          "connected_pads": [
+            {
+              "number": "1",
+              "net": "/USB_LATCH_CLEAR_N"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/USB_LATCH_CLEAR_N"
+            },
+            {
+              "number": "2",
+              "net": "/VBUS"
+            },
+            {
+              "number": "3",
+              "net": "/USB_LATCH_CLOCK"
+            },
+            {
+              "number": "4",
+              "net": "/VBUS"
+            },
+            {
+              "number": "5",
+              "net": "unconnected-(U14-1Q-Pad5)"
+            },
+            {
+              "number": "6",
+              "net": "/USB_INPUT_ON"
+            },
+            {
+              "number": "7",
+              "net": "/GND"
+            },
+            {
+              "number": "8",
+              "net": "unconnected-(U14-2Q_N-Pad8)"
+            },
+            {
+              "number": "9",
+              "net": "unconnected-(U14-2Q-Pad9)"
+            },
+            {
+              "number": "10",
+              "net": "/VBUS"
+            },
+            {
+              "number": "11",
+              "net": "/GND"
+            },
+            {
+              "number": "12",
+              "net": "/GND"
+            },
+            {
+              "number": "13",
+              "net": "/GND"
+            },
+            {
+              "number": "14",
+              "net": "/VBUS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q5",
+      "pins": {
+        "1": "/USB_HIGH_BUDGET",
+        "2": "/GND",
+        "3": "/USB_HIGH_BUDGET_DRAIN"
+      },
+      "direct_neighbors": [
+        {
+          "ref": "R45",
+          "value": "100k 1%",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/USB_HIGH_BUDGET_DRAIN"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/USB_ILIM_SET"
+            },
+            {
+              "number": "2",
+              "net": "/USB_HIGH_BUDGET_DRAIN"
+            }
+          ]
+        },
+        {
+          "ref": "R46",
+          "value": "100k 1%",
+          "connected_pads": [
+            {
+              "number": "1",
+              "net": "/USB_HIGH_BUDGET"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/USB_HIGH_BUDGET"
+            },
+            {
+              "number": "2",
+              "net": "/GND"
+            }
+          ]
+        },
+        {
+          "ref": "U1",
+          "value": "STM32U535CEU6",
+          "connected_pads": [
+            {
+              "number": "42",
+              "net": "/USB_HIGH_BUDGET"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "1",
+              "net": "/V3V3"
+            },
+            {
+              "number": "2",
+              "net": "unconnected-(U1-PC13-Pad2)"
+            },
+            {
+              "number": "3",
+              "net": "unconnected-(U1-PC14-Pad3)"
+            },
+            {
+              "number": "4",
+              "net": "unconnected-(U1-PC15-Pad4)"
+            },
+            {
+              "number": "5",
+              "net": "unconnected-(U1-PH0-Pad5)"
+            },
+            {
+              "number": "6",
+              "net": "unconnected-(U1-PH1-Pad6)"
+            },
+            {
+              "number": "7",
+              "net": "/NRST"
+            },
+            {
+              "number": "8",
+              "net": "/GND"
+            },
+            {
+              "number": "9",
+              "net": "/VDDA"
+            },
+            {
+              "number": "10",
+              "net": "/VBUS_N"
+            },
+            {
+              "number": "11",
+              "net": "/BAT_ADC"
+            },
+            {
+              "number": "12",
+              "net": "/USB_SUSPEND_PULSE"
+            },
+            {
+              "number": "13",
+              "net": "unconnected-(U1-PA3-Pad13)"
+            },
+            {
+              "number": "14",
+              "net": "/SD_CS_N"
+            },
+            {
+              "number": "15",
+              "net": "/SD_CLK_MCU"
+            },
+            {
+              "number": "16",
+              "net": "/SD_MISO"
+            },
+            {
+              "number": "17",
+              "net": "/SD_MOSI"
+            },
+            {
+              "number": "18",
+              "net": "unconnected-(U1-PB0-Pad18)"
+            },
+            {
+              "number": "19",
+              "net": "/USB_RESUME_PULSE"
+            },
+            {
+              "number": "20",
+              "net": "/CHG_ALLOW"
+            },
+            {
+              "number": "21",
+              "net": "unconnected-(U1-PB10-Pad21)"
+            },
+            {
+              "number": "22",
+              "net": "/VCAP"
+            },
+            {
+              "number": "23",
+              "net": "/GND"
+            },
+            {
+              "number": "24",
+              "net": "/V3V3"
+            },
+            {
+              "number": "25",
+              "net": "unconnected-(U1-PB12-Pad25)"
+            },
+            {
+              "number": "26",
+              "net": "unconnected-(U1-PB13-Pad26)"
+            },
+            {
+              "number": "27",
+              "net": "/CHG_N"
+            },
+            {
+              "number": "28",
+              "net": "unconnected-(U1-PB15-Pad28)"
+            },
+            {
+              "number": "29",
+              "net": "/STATUS_LED"
+            },
+            {
+              "number": "30",
+              "net": "unconnected-(U1-PA9-Pad30)"
+            },
+            {
+              "number": "31",
+              "net": "unconnected-(U1-PA10-Pad31)"
+            },
+            {
+              "number": "32",
+              "net": "/USB_DM"
+            },
+            {
+              "number": "33",
+              "net": "/USB_DP"
+            },
+            {
+              "number": "34",
+              "net": "/SWDIO"
+            },
+            {
+              "number": "35",
+              "net": "/GND"
+            },
+            {
+              "number": "36",
+              "net": "/V3V3"
+            },
+            {
+              "number": "37",
+              "net": "/SWCLK"
+            },
+            {
+              "number": "38",
+              "net": "/BUTTON_N"
+            },
+            {
+              "number": "39",
+              "net": "/PDM_CLK_MCU"
+            },
+            {
+              "number": "40",
+              "net": "/PDM_DATA"
+            },
+            {
+              "number": "41",
+              "net": "/SD_EN"
+            },
+            {
+              "number": "42",
+              "net": "/USB_HIGH_BUDGET"
+            },
+            {
+              "number": "43",
+              "net": "unconnected-(U1-PB7-Pad43)"
+            },
+            {
+              "number": "44",
+              "net": "/BOOT0"
+            },
+            {
+              "number": "45",
+              "net": "unconnected-(U1-PB8-Pad45)"
+            },
+            {
+              "number": "46",
+              "net": "unconnected-(U1-PB9-Pad46)"
+            },
+            {
+              "number": "47",
+              "net": "/GND"
+            },
+            {
+              "number": "48",
+              "net": "/V3V3"
+            },
+            {
+              "number": "49",
+              "net": "/GND"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q6",
+      "pins": {
+        "1": "/USB_SUSPEND_PULSE",
+        "2": "/GND",
+        "3": "/USB_LATCH_CLOCK"
+      },
+      "direct_neighbors": [
+        {
+          "ref": "R47",
+          "value": "10k 1%",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/USB_LATCH_CLOCK"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/VBUS"
+            },
+            {
+              "number": "2",
+              "net": "/USB_LATCH_CLOCK"
+            }
+          ]
+        },
+        {
+          "ref": "U1",
+          "value": "STM32U535CEU6",
+          "connected_pads": [
+            {
+              "number": "12",
+              "net": "/USB_SUSPEND_PULSE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "1",
+              "net": "/V3V3"
+            },
+            {
+              "number": "2",
+              "net": "unconnected-(U1-PC13-Pad2)"
+            },
+            {
+              "number": "3",
+              "net": "unconnected-(U1-PC14-Pad3)"
+            },
+            {
+              "number": "4",
+              "net": "unconnected-(U1-PC15-Pad4)"
+            },
+            {
+              "number": "5",
+              "net": "unconnected-(U1-PH0-Pad5)"
+            },
+            {
+              "number": "6",
+              "net": "unconnected-(U1-PH1-Pad6)"
+            },
+            {
+              "number": "7",
+              "net": "/NRST"
+            },
+            {
+              "number": "8",
+              "net": "/GND"
+            },
+            {
+              "number": "9",
+              "net": "/VDDA"
+            },
+            {
+              "number": "10",
+              "net": "/VBUS_N"
+            },
+            {
+              "number": "11",
+              "net": "/BAT_ADC"
+            },
+            {
+              "number": "12",
+              "net": "/USB_SUSPEND_PULSE"
+            },
+            {
+              "number": "13",
+              "net": "unconnected-(U1-PA3-Pad13)"
+            },
+            {
+              "number": "14",
+              "net": "/SD_CS_N"
+            },
+            {
+              "number": "15",
+              "net": "/SD_CLK_MCU"
+            },
+            {
+              "number": "16",
+              "net": "/SD_MISO"
+            },
+            {
+              "number": "17",
+              "net": "/SD_MOSI"
+            },
+            {
+              "number": "18",
+              "net": "unconnected-(U1-PB0-Pad18)"
+            },
+            {
+              "number": "19",
+              "net": "/USB_RESUME_PULSE"
+            },
+            {
+              "number": "20",
+              "net": "/CHG_ALLOW"
+            },
+            {
+              "number": "21",
+              "net": "unconnected-(U1-PB10-Pad21)"
+            },
+            {
+              "number": "22",
+              "net": "/VCAP"
+            },
+            {
+              "number": "23",
+              "net": "/GND"
+            },
+            {
+              "number": "24",
+              "net": "/V3V3"
+            },
+            {
+              "number": "25",
+              "net": "unconnected-(U1-PB12-Pad25)"
+            },
+            {
+              "number": "26",
+              "net": "unconnected-(U1-PB13-Pad26)"
+            },
+            {
+              "number": "27",
+              "net": "/CHG_N"
+            },
+            {
+              "number": "28",
+              "net": "unconnected-(U1-PB15-Pad28)"
+            },
+            {
+              "number": "29",
+              "net": "/STATUS_LED"
+            },
+            {
+              "number": "30",
+              "net": "unconnected-(U1-PA9-Pad30)"
+            },
+            {
+              "number": "31",
+              "net": "unconnected-(U1-PA10-Pad31)"
+            },
+            {
+              "number": "32",
+              "net": "/USB_DM"
+            },
+            {
+              "number": "33",
+              "net": "/USB_DP"
+            },
+            {
+              "number": "34",
+              "net": "/SWDIO"
+            },
+            {
+              "number": "35",
+              "net": "/GND"
+            },
+            {
+              "number": "36",
+              "net": "/V3V3"
+            },
+            {
+              "number": "37",
+              "net": "/SWCLK"
+            },
+            {
+              "number": "38",
+              "net": "/BUTTON_N"
+            },
+            {
+              "number": "39",
+              "net": "/PDM_CLK_MCU"
+            },
+            {
+              "number": "40",
+              "net": "/PDM_DATA"
+            },
+            {
+              "number": "41",
+              "net": "/SD_EN"
+            },
+            {
+              "number": "42",
+              "net": "/USB_HIGH_BUDGET"
+            },
+            {
+              "number": "43",
+              "net": "unconnected-(U1-PB7-Pad43)"
+            },
+            {
+              "number": "44",
+              "net": "/BOOT0"
+            },
+            {
+              "number": "45",
+              "net": "unconnected-(U1-PB8-Pad45)"
+            },
+            {
+              "number": "46",
+              "net": "unconnected-(U1-PB9-Pad46)"
+            },
+            {
+              "number": "47",
+              "net": "/GND"
+            },
+            {
+              "number": "48",
+              "net": "/V3V3"
+            },
+            {
+              "number": "49",
+              "net": "/GND"
+            }
+          ]
+        },
+        {
+          "ref": "U14",
+          "value": "SN74HCS74DYYR",
+          "connected_pads": [
+            {
+              "number": "3",
+              "net": "/USB_LATCH_CLOCK"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/USB_LATCH_CLEAR_N"
+            },
+            {
+              "number": "2",
+              "net": "/VBUS"
+            },
+            {
+              "number": "3",
+              "net": "/USB_LATCH_CLOCK"
+            },
+            {
+              "number": "4",
+              "net": "/VBUS"
+            },
+            {
+              "number": "5",
+              "net": "unconnected-(U14-1Q-Pad5)"
+            },
+            {
+              "number": "6",
+              "net": "/USB_INPUT_ON"
+            },
+            {
+              "number": "7",
+              "net": "/GND"
+            },
+            {
+              "number": "8",
+              "net": "unconnected-(U14-2Q_N-Pad8)"
+            },
+            {
+              "number": "9",
+              "net": "unconnected-(U14-2Q-Pad9)"
+            },
+            {
+              "number": "10",
+              "net": "/VBUS"
+            },
+            {
+              "number": "11",
+              "net": "/GND"
+            },
+            {
+              "number": "12",
+              "net": "/GND"
+            },
+            {
+              "number": "13",
+              "net": "/GND"
+            },
+            {
+              "number": "14",
+              "net": "/VBUS"
+            }
+          ]
+        },
+        {
+          "ref": "R49",
+          "value": "100k 1%",
+          "connected_pads": [
+            {
+              "number": "1",
+              "net": "/USB_SUSPEND_PULSE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/USB_SUSPEND_PULSE"
+            },
+            {
+              "number": "2",
+              "net": "/GND"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q4",
+      "pins": {
+        "1": "/CHG_GUARD_GATE",
+        "2": "/GND",
+        "3": "/CHG_INHIBIT_GATE"
+      },
+      "direct_neighbors": [
+        {
+          "ref": "R12",
+          "value": "100k",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/CHG_INHIBIT_GATE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/VBUS_LIMITED"
+            },
+            {
+              "number": "2",
+              "net": "/CHG_INHIBIT_GATE"
+            }
+          ]
+        },
+        {
+          "ref": "U3",
+          "value": "BQ25185DLHR",
+          "connected_pads": [
+            {
+              "number": "4",
+              "net": "/CHG_INHIBIT_GATE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "1",
+              "net": "/SYS"
+            },
+            {
+              "number": "2",
+              "net": "/BAT"
+            },
+            {
+              "number": "3",
+              "net": "unconnected-(U3-STAT2-Pad3)"
+            },
+            {
+              "number": "4",
+              "net": "/CHG_INHIBIT_GATE"
+            },
+            {
+              "number": "5",
+              "net": "/GND"
+            },
+            {
+              "number": "6",
+              "net": "/CHARGER_TS"
+            },
+            {
+              "number": "7",
+              "net": "/ILIM_VSET"
+            },
+            {
+              "number": "8",
+              "net": "/ISET"
+            },
+            {
+              "number": "9",
+              "net": "/CHG_N"
+            },
+            {
+              "number": "10",
+              "net": "/VBUS_LIMITED"
+            },
+            {
+              "number": "11",
+              "net": "/GND"
+            }
+          ]
+        },
+        {
+          "ref": "R36",
+          "value": "100k",
+          "connected_pads": [
+            {
+              "number": "1",
+              "net": "/CHG_GUARD_GATE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/CHG_GUARD_GATE"
+            },
+            {
+              "number": "2",
+              "net": "/GND"
+            }
+          ]
+        },
+        {
+          "ref": "U12",
+          "value": "TLV7042DDFR",
+          "connected_pads": [
+            {
+              "number": "1",
+              "net": "/CHG_GUARD_GATE"
+            },
+            {
+              "number": "7",
+              "net": "/CHG_GUARD_GATE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/CHG_GUARD_GATE"
+            },
+            {
+              "number": "2",
+              "net": "/BAT_TS"
+            },
+            {
+              "number": "3",
+              "net": "/TS_COLD_REF"
+            },
+            {
+              "number": "4",
+              "net": "/GND"
+            },
+            {
+              "number": "5",
+              "net": "/BAT_TS"
+            },
+            {
+              "number": "6",
+              "net": "/TS_HOT_REF"
+            },
+            {
+              "number": "7",
+              "net": "/CHG_GUARD_GATE"
+            },
+            {
+              "number": "8",
+              "net": "/V3V3"
+            }
+          ]
+        },
+        {
+          "ref": "R43",
+          "value": "10k 1%",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/CHG_GUARD_GATE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/CHG_ALLOW"
+            },
+            {
+              "number": "2",
+              "net": "/CHG_GUARD_GATE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "Q3",
+      "pins": {
+        "1": "/VBUS_GATE",
+        "2": "/GND",
+        "3": "/VBUS_N"
+      },
+      "direct_neighbors": [
+        {
+          "ref": "R13",
+          "value": "100k",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/VBUS_GATE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/VBUS"
+            },
+            {
+              "number": "2",
+              "net": "/VBUS_GATE"
+            }
+          ]
+        },
+        {
+          "ref": "U1",
+          "value": "STM32U535CEU6",
+          "connected_pads": [
+            {
+              "number": "10",
+              "net": "/VBUS_N"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "",
+              "net": ""
+            },
+            {
+              "number": "1",
+              "net": "/V3V3"
+            },
+            {
+              "number": "2",
+              "net": "unconnected-(U1-PC13-Pad2)"
+            },
+            {
+              "number": "3",
+              "net": "unconnected-(U1-PC14-Pad3)"
+            },
+            {
+              "number": "4",
+              "net": "unconnected-(U1-PC15-Pad4)"
+            },
+            {
+              "number": "5",
+              "net": "unconnected-(U1-PH0-Pad5)"
+            },
+            {
+              "number": "6",
+              "net": "unconnected-(U1-PH1-Pad6)"
+            },
+            {
+              "number": "7",
+              "net": "/NRST"
+            },
+            {
+              "number": "8",
+              "net": "/GND"
+            },
+            {
+              "number": "9",
+              "net": "/VDDA"
+            },
+            {
+              "number": "10",
+              "net": "/VBUS_N"
+            },
+            {
+              "number": "11",
+              "net": "/BAT_ADC"
+            },
+            {
+              "number": "12",
+              "net": "/USB_SUSPEND_PULSE"
+            },
+            {
+              "number": "13",
+              "net": "unconnected-(U1-PA3-Pad13)"
+            },
+            {
+              "number": "14",
+              "net": "/SD_CS_N"
+            },
+            {
+              "number": "15",
+              "net": "/SD_CLK_MCU"
+            },
+            {
+              "number": "16",
+              "net": "/SD_MISO"
+            },
+            {
+              "number": "17",
+              "net": "/SD_MOSI"
+            },
+            {
+              "number": "18",
+              "net": "unconnected-(U1-PB0-Pad18)"
+            },
+            {
+              "number": "19",
+              "net": "/USB_RESUME_PULSE"
+            },
+            {
+              "number": "20",
+              "net": "/CHG_ALLOW"
+            },
+            {
+              "number": "21",
+              "net": "unconnected-(U1-PB10-Pad21)"
+            },
+            {
+              "number": "22",
+              "net": "/VCAP"
+            },
+            {
+              "number": "23",
+              "net": "/GND"
+            },
+            {
+              "number": "24",
+              "net": "/V3V3"
+            },
+            {
+              "number": "25",
+              "net": "unconnected-(U1-PB12-Pad25)"
+            },
+            {
+              "number": "26",
+              "net": "unconnected-(U1-PB13-Pad26)"
+            },
+            {
+              "number": "27",
+              "net": "/CHG_N"
+            },
+            {
+              "number": "28",
+              "net": "unconnected-(U1-PB15-Pad28)"
+            },
+            {
+              "number": "29",
+              "net": "/STATUS_LED"
+            },
+            {
+              "number": "30",
+              "net": "unconnected-(U1-PA9-Pad30)"
+            },
+            {
+              "number": "31",
+              "net": "unconnected-(U1-PA10-Pad31)"
+            },
+            {
+              "number": "32",
+              "net": "/USB_DM"
+            },
+            {
+              "number": "33",
+              "net": "/USB_DP"
+            },
+            {
+              "number": "34",
+              "net": "/SWDIO"
+            },
+            {
+              "number": "35",
+              "net": "/GND"
+            },
+            {
+              "number": "36",
+              "net": "/V3V3"
+            },
+            {
+              "number": "37",
+              "net": "/SWCLK"
+            },
+            {
+              "number": "38",
+              "net": "/BUTTON_N"
+            },
+            {
+              "number": "39",
+              "net": "/PDM_CLK_MCU"
+            },
+            {
+              "number": "40",
+              "net": "/PDM_DATA"
+            },
+            {
+              "number": "41",
+              "net": "/SD_EN"
+            },
+            {
+              "number": "42",
+              "net": "/USB_HIGH_BUDGET"
+            },
+            {
+              "number": "43",
+              "net": "unconnected-(U1-PB7-Pad43)"
+            },
+            {
+              "number": "44",
+              "net": "/BOOT0"
+            },
+            {
+              "number": "45",
+              "net": "unconnected-(U1-PB8-Pad45)"
+            },
+            {
+              "number": "46",
+              "net": "unconnected-(U1-PB9-Pad46)"
+            },
+            {
+              "number": "47",
+              "net": "/GND"
+            },
+            {
+              "number": "48",
+              "net": "/V3V3"
+            },
+            {
+              "number": "49",
+              "net": "/GND"
+            }
+          ]
+        },
+        {
+          "ref": "R15",
+          "value": "100k",
+          "connected_pads": [
+            {
+              "number": "2",
+              "net": "/VBUS_N"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/V3V3"
+            },
+            {
+              "number": "2",
+              "net": "/VBUS_N"
+            }
+          ]
+        },
+        {
+          "ref": "R14",
+          "value": "1M",
+          "connected_pads": [
+            {
+              "number": "1",
+              "net": "/VBUS_GATE"
+            }
+          ],
+          "all_pads": [
+            {
+              "number": "1",
+              "net": "/VBUS_GATE"
+            },
+            {
+              "number": "2",
+              "net": "/GND"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

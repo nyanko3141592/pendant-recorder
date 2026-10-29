@@ -1,0 +1,96 @@
+{
+  "status": "PARTIAL_MIXED_ROUTE_REFERENCE_NOT_DELIVERED_QUOTE",
+  "priced_groups": 39,
+  "total_groups": 39,
+  "JPY_reference": {
+    "source": "docs/procurement/xe-film-reference-parts-cost.json",
+    "subtotal_ex_tax": "18652.00"
+  },
+  "USD_additional_rows": [
+    {
+      "mpn": "CSNP32GCR01-BOW",
+      "references": "U11",
+      "quantity_installed_five": 5,
+      "unit_USD_observed": "40.1657",
+      "reference_extension_USD": "200.8285",
+      "source": "docs/procurement/xe-u11-jlc-availability.json",
+      "date": "2026-10-27",
+      "url": "https://jlcpcb.com/partdetail/6320934-CS_SDNAND_32Gb_SPISDIO/C5440134",
+      "status": "ASSEMBLER_STOCK_OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "DMN2056U-7",
+      "references": "Q6 Q7",
+      "quantity_installed_five": 10,
+      "unit_USD_observed": "0.0678",
+      "reference_extension_USD": "0.6780",
+      "source": "docs/procurement/xe-dmn-jlc-availability.json",
+      "date": "2026-10-27",
+      "url": "https://jlcpcb.com/partdetail/DMN2056U-7/C332302",
+      "status": "ASSEMBLER_LISTED_STOCK_NOT_RESERVED"
+    },
+    {
+      "mpn": "DMN63D8L-7",
+      "references": "Q3 Q4",
+      "quantity_installed_five": 10,
+      "unit_USD_observed": "0.0901",
+      "reference_extension_USD": "0.9010",
+      "source": "docs/procurement/xe-dmn63-jlc-availability.json",
+      "date": "2026-10-27",
+      "url": "https://jlcpcb.com/partdetail/DIODES-DMN63D8L_7/C338876",
+      "status": "ASSEMBLER_LISTED_STOCK_NOT_RESERVED"
+    },
+    {
+      "mpn": "TPS22950YBHR",
+      "references": "U13",
+      "quantity_installed_five": 5,
+      "unit_USD_observed": "0.8937",
+      "reference_extension_USD": "4.4685",
+      "source": "docs/procurement/xe-tps22950-jlc-availability.json",
+      "date": "2026-10-27",
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS22950YBHR/C3230039",
+      "status": "ASSEMBLER_LISTED_STOCK_NOT_RESERVED"
+    },
+    {
+      "mpn": "TNPW040219K1BEED",
+      "references": "R44",
+      "quantity_installed_five": 5,
+      "unit_USD_observed": "0.26",
+      "reference_extension_USD": "1.30",
+      "source": "docs/procurement/xe-r44-retail-availability.json",
+      "date": "2026-10-27",
+      "url": "https://www.digikey.com/en/products/detail/vishay-dale/TNPW040219K1BEED/14543996",
+      "status": "RETAIL_STOCK_OBSERVED_NOT_ASSEMBLER_RECEIPT"
+    },
+    {
+      "mpn": "CL05A105KP5NNNC",
+      "references": "C31",
+      "quantity_installed_five": 5,
+      "unit_USD_observed": "0.1",
+      "reference_extension_USD": "0.5",
+      "source": "docs/procurement/xe-c31-retail-availability.json",
+      "date": "2026-10-27",
+      "url": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05A105KP5NNNC/3886734",
+      "status": "DATED_RETAIL_OBSERVATION_NOT_QUOTE"
+    }
+  ],
+  "USD_partial_subtotal": "208.6760",
+  "unpriced_mpns": [],
+  "complete_total": null,
+  "sources_sha256": {
+    "docs/procurement/xe-film-reference-parts-cost.json": "6197b34995b9845ba186b929e3c28c1cd18f452697985a6ab9614922f75b1f9b",
+    "docs/procurement/xe-u11-jlc-availability.json": "699f6e646d00fa610fd853418cb1aee0e65f457d53f8ef4a73a8d6c5ba6c3bb7",
+    "docs/procurement/xe-dmn-jlc-availability.json": "be32dfed3b9213e9e1fd36a54ef453d11bcd7d3a89a9f4e3369f9b613a95602a",
+    "docs/procurement/xe-dmn63-jlc-availability.json": "d3fe2197d57a96e0f9cb12fc550969ea84b5ecad9866a4db32cb49a61ee7a7c0",
+    "docs/procurement/xe-tps22950-jlc-availability.json": "636432a4a5800c3c7f6b7679c77c909335b77309916cbfbe198b41fcd112b749",
+    "docs/procurement/xe-r44-retail-availability.json": "1089dc3bbd0e9321642ef02b8aa4f48025e13e3069ab28e17addcf498775c782",
+    "docs/procurement/xe-c31-retail-availability.json": "1eea033f25d9a8f8eeac7366fc839282358554cd4465e7b6201bdf639c9245bf"
+  },
+  "limits": [
+    "All rows are nonoverlapping exact MPNs from current demand. No old whole-budget subtotal is imported.",
+    "USD rows use installed quantities at displayed one-piece price, not final purchase quantity or an attrition-inclusive quote.",
+    "JPY retail and USD assembler/US-retail routes are not a confirmed coherent procurement plan.",
+    "No FX conversion or tax normalization; currencies remain separate.",
+    "No live stock reservation, orders, shipping, PCB, assembly, inspection, handling, case or labor included."
+  ]
+}

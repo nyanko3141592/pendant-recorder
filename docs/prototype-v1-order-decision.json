@@ -1,0 +1,75 @@
+{
+  "version": "XE-PROTOTYPE-V1-27P5-PACK-NTC-CASE-V5-1GB-OVP-LATCH",
+  "date": "2026-10-28",
+  "decision": "HOLD_DO_NOT_ORDER_PHYSICAL_EVT_AND_LIVE_PROCUREMENT_PENDING",
+  "release_allowed": false,
+  "coherent_baseline": {
+    "battery": "DTP401525-XE 110mAh with factory 781720003 plug and internal 10k NTC",
+    "battery_procurement": "buyer separately procures exact connectorized pack; no solder, crimp or wiring",
+    "runtime_design_target": "<=4.4mA average, <=70.4mAh/16h, <=110mA peak; physical result NOT_RUN",
+    "pcb_mm": [
+      27.5,
+      27.5
+    ],
+    "pcb_layers": 6,
+    "jlc_assembly_positions_per_unit": 68,
+    "external_sensor_positions_per_unit": 0,
+    "pofv_count": 4,
+    "pcba_route": "JLCPCB Standard PCBA",
+    "carrier_status": "CARRIER_CAD_EQUIVALENCE_AND_CAM_PASS_EXTERNAL_AND_PHYSICAL_QUALIFICATION_HOLD",
+    "carrier_physical_qualification": "READY_FOR_EXTERNAL_AND_PHYSICAL_EXECUTION_NOT_RUN",
+    "battery_cutoff_characterization": "READY_FOR_PHYSICAL_CHARACTERIZATION_NOT_RUN",
+    "jlc_programming_service": "STANDARD_PCBA_PROGRAMMING_OPTION_EXISTS_EXACT_XE_WORKFLOW_NOT_ACCEPTED",
+    "case_revision": "HW-V1.0-CASE-PEBBLE-V5-1GB",
+    "case_complete_bbox_mm": [
+      29.908119004044224,
+      36.354064614981965,
+      12.978077853130117
+    ],
+    "case_slice_status": "PEBBLE_V5_A1_MINI_PETG_SLICE_PASS_NOT_PRINTED",
+    "firmware_shell_checks_passed": 39,
+    "firmware_source_hashes": 343,
+    "physical_evt_gates": {
+      "A": "NOT_RUN",
+      "B": "NOT_RUN",
+      "C": "NOT_RUN",
+      "D": "NOT_RUN",
+      "E": "NOT_RUN",
+      "F": "NOT_RUN"
+    }
+  },
+  "local_review": {
+    "directory": "fabrication-review-d0c7ca1c4a31",
+    "status": "PROTOTYPE_V1_LOCAL_CAM_PACKAGE_COMPLETE_FOR_REVIEW_DO_NOT_ORDER",
+    "archive_or_upload_package_created": false,
+    "upload_or_order_performed": false
+  },
+  "remaining_release_blockers": [
+    "Safety priority 1 HOLD: NCP360SNT1G overvoltage protection is integrated ahead of a TPS2552DBVR-1 latch-off 50-100mA limiter. The TPS2552 recommended-input ceiling is 6.5V and absolute maximum is 7.0V, giving 1.1V from the NCP360 guaranteed 5.9V maximum OVLO threshold to absolute maximum. CAD checks pass, but the NCP360 published 1.5us turn-off limit does not cover the required 1uF output capacitor, so physical qualification remains NOT_RUN. At 6/9/12/20V and 0.1/1/10V/us, measured peaks at both /VBUS_OVP and /VBUS_CHARGER plus measurement uncertainty must remain strictly below 6.5V. Sustained short must latch off at 50-100mA and recover only after USB power-cycle; otherwise redesign is mandatory.",
+    "Public JLC pages now provide exact-model prices and public orderable flags for all 36 MPN lines, including NCP360 C603707, Murata 35V C33 C6628588 and Molex battery header C564183. Live BOM-tool recognition, reservation, substitutions and an exact quotation remain unverified.",
+    "The fixed DTP401525-XE pack remains separate buyer procurement because it is outside the JLC assembly boundary.",
+    "JLC automatic-flow acceptance of the six-layer stackup and four POFV features is unverified; upload is prohibited in this task.",
+    "Double-sided placement requires the generated 70x70mm Standard-PCBA carrier; CAD DRC, unit equivalence, unarchived CAM review and local 36-line/68-placement BOM/CPL reference matching must pass on the current board, while live BOM-tool recognition, viewer rotation/pin-1 review, five-carrier reflow/depanelization/edge/case-fit qualification and supplier acceptance remain incomplete.",
+    "JLC publishes a selectable Standard-PCBA programming option, so buyer flashing is not inherently required; however exact STM32U585/J3 SWD, BOR4 readback, UID-to-PCB binding and raw-record delivery remain subject to order-flow engineering acceptance. Product VID/PID, five-pack cutoff evidence and the common EVT image are also incomplete; final-image EVT C remains separately mandatory.",
+    "Physical EVT gates A-F are all NOT_RUN: safety, 16h runtime, 30h storage, three-OS USB, and enclosure/necklace durability remain unproven."
+  ],
+  "release_rule": "release_allowed remains false until every blocker is resolved and EVT A-F have complete passing raw evidence",
+  "evidence_sha256": {
+    "hardware/xe-minimal/prototype-architecture-v1.json": "5283501cee6583939167dd7c4bcfdb48e466b0129f58c6e99211d9f0cd9bf067",
+    "hardware/xe-minimal/active-design.json": "98ac7830c4926b1c08cebe59725c8523a18d43c7e57052671fa63d936d2c69a1",
+    "hardware/xe-minimal/fabrication-review-d0c7ca1c4a31/prototype-v1-manifest.json": "711c8046c5db4f87b3e17807e6695ed3c9ffed2cbe894369f81bcdd6cc6ba94a",
+    "docs/procurement/xe-production-bom-2026-10-28.csv": "4a0590a0d7db0025f8bd6100eb3820fc87f1c831c391a5ce7be22149e21ee942",
+    "docs/procurement/xe-production-readiness-2026-10-28.md": "59de3fa82d8e5b89354f74ec463c93c5074951af9fde8cf3e95919401fd5395a",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-review.json": "0f6d2fe4d8d0a07e23aa983501159724d07576cc4437795a62e0aedc4de9497e",
+    "mechanical/xe-minimal/prototype-v1/pebble-v5-slice-review/review.json": "129d45def9b9e02c0e512f7d220028a41419c4165f8d74fa4dd21a45a4ff8f51",
+    "firmware/stm32/tests/prototype-v1-regression.json": "131743967a0d51d693371a8c5b05acdc592e1a090d0c7e595399efe97b8e84ad",
+    "docs/prototype-v1-assembly-and-test.md": "f61c0a4b8234068ffe2e719711aaa8a96723873cb97382ad0ff2a69f9069f840",
+    "docs/validation/xe-current-five-unit-evt-plan.json": "d4d2d64b26334f88f40ea2e93a909b8bab55cf439bb527361b6f5e13b276a7d6",
+    "docs/procurement/xe-panel-readiness.json": "a967745d3533da253861776f69a79d93660b89d3175a497d9948a859b37e0811",
+    "docs/validation/xe-carrier-manufacturing-qualification.json": "8c96a5c734078c805605e06e7223224ea23ad63b527b8c93371a3f233c5e7f97",
+    "docs/validation/xe-battery-cutoff-characterization-plan.json": "0a17e5904df657bdefd87ee8f3f5d0b71e223d578a1be349707793f63b7ded5b",
+    "docs/procurement/xe-jlc-programming-service-review-2026-10-28.json": "1bbd996e25ed49ae705a5ecf43db7ecbbfbce2d1e66ccaed5fe354ca56f1447e",
+    "docs/safety/xe-usb-overvoltage-gap-review.json": "000a74c6760a3a67385fcea09d9c9a3b2af8694d53a11ae2c2702c3936d1fb56"
+  },
+  "orders_payments_uploads_contacts_performed": false
+}

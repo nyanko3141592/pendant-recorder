@@ -1,0 +1,129 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:09:31",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "plane6-fixedvia.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.0790 mm )",
+                    "pos": {
+                        "x": 1.6144,
+                        "y": 14.5086
+                    },
+                    "uuid": "5a12c070-ab46-43f3-bd07-41b2e33f8324"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.2600 mm )",
+                    "pos": {
+                        "x": 2.01,
+                        "y": 15.51
+                    },
+                    "uuid": "5fa84fa3-7cc3-47a1-9bed-3d4636191138"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.0607 mm )",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 6.02
+                    },
+                    "uuid": "98a65ac6-37cb-455f-94d1-5a1fe26b464e"
+                },
+                {
+                    "description": "パッド 3 [/GND] - J2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 2.515,
+                        "y": 6.0
+                    },
+                    "uuid": "efd9298d-7a7f-4e73-920b-54cd236000a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 2.3631 mm )",
+                    "pos": {
+                        "x": 15.8825,
+                        "y": 3.5
+                    },
+                    "uuid": "e975efc9-74a8-4b32-b9b9-a490b974b84a"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 2.7600 mm )",
+                    "pos": {
+                        "x": 13.8525,
+                        "y": 3.5525
+                    },
+                    "uuid": "79bfa290-d0d9-40bf-8259-2593f177d5fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - Q3 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.95,
+                        "y": 19.9375
+                    },
+                    "uuid": "5f945e02-4481-44e3-9f5e-ea7e8d6f59f1"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.7067 mm )",
+                    "pos": {
+                        "x": 18.2603,
+                        "y": 21.2497
+                    },
+                    "uuid": "3724e386-f7b4-4eaf-b5e2-e27edc15b60c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

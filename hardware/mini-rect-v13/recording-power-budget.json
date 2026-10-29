@@ -1,0 +1,84 @@
+{
+  "status": "ALLOCATION_ONLY_NOT_16H_PREDICTION",
+  "battery_mAh": 100,
+  "usable_fraction_assumed": 0.7,
+  "required_hours": 16,
+  "maximum_average_battery_mA": 4.375,
+  "allocations_mA": {
+    "microphone_and_clock": 0.5,
+    "mcu_dma_codec_crypto_ram": 1.6,
+    "storage": 1.2,
+    "power_support": 0.4,
+    "reserve": 0.3
+  },
+  "firmware": {
+    "cpu_Hz": 16000000,
+    "source": "HSI",
+    "voltage_scaling": "Range4",
+    "idle": "WFI Sleep, not Stop2",
+    "systick_period_ms": 1,
+    "cooperative_chunk_seconds": 5,
+    "files_per_16h": 11520,
+    "files_per_36h": 25920,
+    "fixed_per_file_work_rate_vs_legacy": 2,
+    "default_configuration": "Legacy10s unless cooperative flags supplied"
+  },
+  "storage_sensitivity": [
+    {
+      "active_mA_hypothesis": 50,
+      "idle_mA_hypothesis": 0.25,
+      "max_active_fraction": 0.01909547738693467,
+      "max_active_ms_per_5s": 95.47738693467336,
+      "note": "Two-state sensitivity, not actual card performance or a peak-current approval"
+    },
+    {
+      "active_mA_hypothesis": 115,
+      "idle_mA_hypothesis": 0.265,
+      "max_active_fraction": 0.008149213404802371,
+      "max_active_ms_per_5s": 40.74606702401186,
+      "note": "Two-state sensitivity, not actual card performance or a peak-current approval"
+    },
+    {
+      "active_mA_hypothesis": 218.18,
+      "idle_mA_hypothesis": 0.25,
+      "max_active_fraction": 0.004359197907585004,
+      "max_active_ms_per_5s": 21.79598953792502,
+      "note": "Two-state sensitivity, not actual card performance or a peak-current approval"
+    }
+  ],
+  "illustrative_total_current_runtime": [
+    {
+      "average_battery_mA": 4,
+      "hours": 17.5
+    },
+    {
+      "average_battery_mA": 4.375,
+      "hours": 16.0
+    },
+    {
+      "average_battery_mA": 5,
+      "hours": 14.0
+    },
+    {
+      "average_battery_mA": 6,
+      "hours": 11.666666666666666
+    },
+    {
+      "average_battery_mA": 8,
+      "hours": 8.75
+    }
+  ],
+  "source_sha256": {
+    "firmware/stm32/board/system_clock.c": "d99a5c409c44e9a77a1e90e14b24656364a1c0fbf1983377ba68bc69d556b7fd",
+    "firmware/stm32/app/main.c": "70bdb250df6d0ae675cc475be516a8850c28c4396277b5131b287c6c5c8c1181",
+    "firmware/stm32/app/cooperative-link-result.json": "08bd3950cfae187b86aa9822e166bf6bff0701b7625f8dcd79fa7396c495c0ee"
+  },
+  "caveats": [
+    "Usable70% is an assumption, not measured capacity above regulator dropout",
+    "No exact card qualified for peak current or average storage allocation",
+    "HSI and enabled peripherals differ from datasheet MSI/all-peripherals-disabled Sleep tables; do not use those figures as application current",
+    "Five-second buffering improves finite stall tolerance but has no demonstrated energy savings",
+    "Include crypto setup, RNG startup, FAT metadata, flush/busy, standby and startup in complete-cycle measurement",
+    "16h and36h uninterrupted recording still require physical qualification"
+  ]
+}

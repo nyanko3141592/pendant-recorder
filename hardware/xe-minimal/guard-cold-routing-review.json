@@ -1,0 +1,38 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [
+    {
+      "from": [
+        "R38",
+        "2"
+      ],
+      "to": [
+        "U12",
+        "3"
+      ],
+      "net": "/TS_COLD_REF",
+      "segments": 3
+    },
+    {
+      "from": [
+        "R39",
+        "1"
+      ],
+      "to": [
+        "R38",
+        "2"
+      ],
+      "net": "/TS_COLD_REF",
+      "segments": 1
+    }
+  ],
+  "unrouted_local_jobs": [],
+  "physical_drc_violations": 0,
+  "unconnected_items": 106,
+  "board_sha256": "527296c08fb7abb93f0a32367b0aadc9c7222cf05193caba294c85085b859d66",
+  "limits": [
+    "Cold reference only; whole sensor and hot comparator network remain incomplete",
+    "Noise, thermal contact and startup remain unqualified",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

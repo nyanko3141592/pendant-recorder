@@ -1,0 +1,17 @@
+{
+  "change": "C30 10nF tentative ->50pF C0G50V, same0402 footprint and copper",
+  "reason": "BQ25185 SLUSF65B section6.1.1.4 recommends50pF below50mA; design20mA",
+  "source": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+  "candidate": "iset-50pf-candidate.kicad_pcb",
+  "drc": "iset-50pf-candidate-drc.json",
+  "violations": 0,
+  "unconnected": 0,
+  "parity": 0,
+  "sourcing": "sourcing-iset-50pf-candidate.json",
+  "remaining": [
+    "Live JLC C30 match/stock",
+    "Regenerate coherent manufacturing bundle; current r3 has obsolete10nF",
+    "Charge startup/lowcurrent stability hardware validation"
+  ],
+  "order_ready": false
+}

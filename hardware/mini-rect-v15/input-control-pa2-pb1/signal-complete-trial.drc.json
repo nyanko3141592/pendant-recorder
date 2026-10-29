@@ -1,0 +1,152 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T14:26:46",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "signal-complete-trial.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "95b4bfd6-f959-43c6-a1fb-05bfe9cc170f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 18 [/SD_EN] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.905,
+                        "y": 4.4675
+                    },
+                    "uuid": "33ae186c-f084-4a76-ae07-d4ebc0918f3d"
+                },
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 11.9,
+                        "y": 12.75
+                    },
+                    "uuid": "0b352d5c-8309-41b5-8c74-9f1f9a0791d5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

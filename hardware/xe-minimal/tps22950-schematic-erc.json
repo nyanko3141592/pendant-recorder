@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T05:27:40",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/afab3f0e-e2bb-5ea9-9f68-cfd4ab17cf9a",
+            "violations": [
+                {
+                    "description": "ピンのタイプ 電源出力 と 電源出力 が接続されています",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG04 ピン 1 [pwr, 電源出力, ライン]",
+                            "pos": {
+                                "x": 388.62,
+                                "y": 651.51
+                            },
+                            "uuid": "3839bb11-bff7-5fe0-9ecf-6f22525db336"
+                        },
+                        {
+                            "description": "Symbol U13 ピン 5 [VOUT, 電源出力, ライン]",
+                            "pos": {
+                                "x": 1061.72,
+                                "y": 695.96
+                            },
+                            "uuid": "11111111-a59a-508d-b564-973619f416e5"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                }
+            ]
+        }
+    ],
+    "source": "pendant-xe-minimal.kicad_sch"
+}

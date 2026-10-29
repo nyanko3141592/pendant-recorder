@@ -1,0 +1,62 @@
+{
+  "status": "MOSFET_QUALIFICATION_GAP_IDENTIFIED_NO_SUBSTITUTION",
+  "board_pin_maps": {
+    "Q3": {
+      "1": "VBUS_GATE",
+      "2": "GND",
+      "3": "VBUS_N"
+    },
+    "Q4": {
+      "1": "CHG_GUARD_GATE",
+      "2": "GND",
+      "3": "CHG_INHIBIT_GATE"
+    },
+    "Q5": {
+      "1": "USB_HIGH_BUDGET",
+      "2": "GND",
+      "3": "USB_HIGH_BUDGET_DRAIN"
+    },
+    "Q6": {
+      "1": "USB_SUSPEND_PULSE",
+      "2": "GND",
+      "3": "USB_LATCH_CLOCK"
+    },
+    "Q7": {
+      "1": "USB_RESUME_PULSE",
+      "2": "GND",
+      "3": "USB_LATCH_CLEAR_N"
+    }
+  },
+  "reviews": [
+    {
+      "part": "Nexperia2N7002",
+      "source": "https://assets.nexperia.com/documents/data-sheet/2N7002.pdf",
+      "document": "Rev7",
+      "findings": [
+        "Pin1G/2S/3D agrees with current schematic.",
+        "RDSon maximum5.3ohm specified at4.5V/75mA/25C, no3.3V guaranteed resistance in table.",
+        "Threshold maximum2.5V at0.25mA/25C is not a low-resistance guarantee.",
+        "Output capacitance maximum30pF atVDS10V; actual SETI-network low-voltage capacitance needs evaluation."
+      ],
+      "decision": "Do not qualify GPIO-driven switches solely from2N7002 generic value."
+    },
+    {
+      "part": "DMN5L06K-7",
+      "source": "https://www.diodes.com/datasheet/download/DMN5L06K.pdf",
+      "document": "DS30929 Rev12-3 Aug2022",
+      "findings": [
+        "RDSon max3ohm at1.8V and2.5ohm at2.5V,50mA,25C.",
+        "Manufacturer document marks NOT RECOMMENDED FOR NEW DESIGN."
+      ],
+      "decision": "Not adopted; seek supported low-voltage alternative."
+    }
+  ],
+  "requirements_for_replacement": [
+    "Compatible pin1G/2S/3D SOT23 footprint or explicit board revision.",
+    "Guaranteed low-state voltage using MCU minimum VOH and actual drain pull-up load across intended temperature.",
+    "Gate and drain leakage included in reset-state and low-current budgets.",
+    "Q5 SETI response requires the full R45+drain-capacitance network, not direct comparison of Coss to SETI20pF limit.",
+    "Confirmed active orderable suffix, supplier SKU, assembly availability and price."
+  ],
+  "note": "Generic2N7002 remains an unqualified design placeholder. No board/firmware change or purchasing action."
+}

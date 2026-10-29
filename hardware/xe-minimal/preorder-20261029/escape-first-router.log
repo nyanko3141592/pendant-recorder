@@ -1,0 +1,70 @@
+2026-10-29 12:15:29.058 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+WARNING: Final field userProfileSettings in class app.freerouting.settings.GlobalSettings has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @78186a70 (file:/private/tmp/pendant-router/freerouting-2.5.0.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+2026-10-29 12:15:29.322 INFO   Hardware: 8 CPU cores, 461 CPU score, 4096 MB RAM
+2026-10-29 12:15:29.323 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 12:15:29.325 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 12:15:30.494 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 12:15:30.767 INFO   [FFA799\50B6F9] Loading board file 'escape-first-unrouted.dsn'...
+2026-10-29 12:15:30.939 INFO   [FFA799\50B6F9] Job 'FFA799\50B6F9' started at 2026-10-29T03:15:30.939205Z.
+2026-10-29 12:15:31.117 WARN   Design Warning: Board has 7 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 7 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 2 pin-to-pin clearance violations:
+          - U8.4 [net /GND] <-> U8.3 [net /PDM_CLK]
+          - U8.2 [net /V3V3] <-> U8.1 [net /PDM_DATA]
+      * 5 fixed trace/via clearance violations:
+          - FixedTrace#1112 [net /VBUS] <-> D6.1 [net /GND]
+          - FixedTrace#1108 [net /VBUS] <-> D6.1 [net /GND]
+          - FixedTrace#627 [net /PDM_DATA] <-> U1.39 [net /PDM_CLK_MCU]
+          - FixedTrace#626 [net /PDM_DATA] <-> U1.39 [net /PDM_CLK_MCU]
+          - U1.16 [net /SD_MISO] <-> FixedVia#1497 [net /SD_MISO]
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 7 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-29 12:15:31.152 INFO   [FFA799\50B6F9] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=7.
+2026-10-29 12:15:31.398 INFO   [FFA799\50B6F9] Fanout stage started on board '334c4daaa25a0e03a3a40ca536e7efd0' with 110 of 255 SMD pins needing fanout (142 already connected, 3 netless).
+2026-10-29 12:15:32.251 INFO   [FFA799\50B6F9] Fanout pass #1 on board '69133392dee4e7dad1d8c4ddbc83346c' completed in 0.74 seconds with 9 SMD pins fanouted, 6 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 12:15:32.675 INFO   [FFA799\50B6F9] Fanout pass #2 on board '69133392dee4e7dad1d8c4ddbc83346c' completed in 0.41 seconds with 7 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 12:15:32.759 INFO   [FFA799\50B6F9] Fanout stage completed: started with 252 total SMD pins, completed in 1.27 seconds, escaped pins: 220/252 (87.3%), using 1.41 total CPU seconds, 0.73 GB total allocated, and 106.5 MB peak heap usage.
+2026-10-29 12:15:33.005 INFO   [FFA799\50B6F9] Auto-routing stage started on board '69133392dee4e7dad1d8c4ddbc83346c' with baseline score 935.55 for 9 unrouted items.
+2026-10-29 12:15:34.673 INFO   [FFA799\50B6F9] Auto-routing pass #1 on board '69133392dee4e7dad1d8c4ddbc83346c' was completed in 1.58 seconds with score 949.81 (7 unrouted and 7 violations), using 2.78 CPU seconds and the job allocated 1.64 GB of memory so far.
+2026-10-29 12:15:36.105 INFO   [FFA799\50B6F9] Auto-routing pass #2 on board 'b86a81ee6657734cf9ec9af0b9a4ddc9' was completed in 1.30 seconds with score 949.81 (7 unrouted and 7 violations), using 4.72 CPU seconds and the job allocated 3.31 GB of memory so far.
+2026-10-29 12:15:37.315 INFO   [FFA799\50B6F9] Auto-routing pass #3 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.11 seconds with score 949.81 (7 unrouted and 7 violations), using 5.72 CPU seconds and the job allocated 4.28 GB of memory so far.
+2026-10-29 12:15:38.364 INFO   [FFA799\50B6F9] Auto-routing pass #4 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.04 seconds with score 956.94 (6 unrouted and 7 violations), using 6.72 CPU seconds and the job allocated 5.31 GB of memory so far.
+2026-10-29 12:15:39.467 INFO   [FFA799\50B6F9] Auto-routing pass #5 on board '25ccdca1b0fb7abf39cd49854ec7aa22' was completed in 1.01 seconds with score 949.81 (7 unrouted and 7 violations), using 7.72 CPU seconds and the job allocated 6.37 GB of memory so far.
+2026-10-29 12:15:40.482 INFO   [FFA799\50B6F9] Auto-routing pass #6 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.00 seconds with score 949.81 (7 unrouted and 7 violations), using 8.72 CPU seconds and the job allocated 7.47 GB of memory so far.
+2026-10-29 12:15:41.529 INFO   [FFA799\50B6F9] Auto-routing pass #7 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.04 seconds with score 949.81 (7 unrouted and 7 violations), using 9.72 CPU seconds and the job allocated 8.59 GB of memory so far.
+2026-10-29 12:15:42.545 INFO   [FFA799\50B6F9] Auto-routing pass #8 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.00 seconds with score 949.81 (7 unrouted and 7 violations), using 10.73 CPU seconds and the job allocated 9.69 GB of memory so far.
+2026-10-29 12:15:43.564 INFO   [FFA799\50B6F9] Auto-routing pass #9 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.01 seconds with score 949.81 (7 unrouted and 7 violations), using 11.73 CPU seconds and the job allocated 10.74 GB of memory so far.
+2026-10-29 12:15:44.607 INFO   [FFA799\50B6F9] Auto-routing pass #10 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.03 seconds with score 956.94 (6 unrouted and 7 violations), using 12.73 CPU seconds and the job allocated 11.83 GB of memory so far.
+2026-10-29 12:15:45.730 INFO   [FFA799\50B6F9] Auto-routing pass #11 on board '7009196887545f31198b7674f2da748b' was completed in 1.02 seconds with score 949.81 (7 unrouted and 7 violations), using 13.74 CPU seconds and the job allocated 12.84 GB of memory so far.
+2026-10-29 12:15:46.786 INFO   [FFA799\50B6F9] Auto-routing pass #12 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.04 seconds with score 949.81 (7 unrouted and 7 violations), using 14.74 CPU seconds and the job allocated 13.89 GB of memory so far.
+2026-10-29 12:15:47.846 INFO   [FFA799\50B6F9] Auto-routing pass #13 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.05 seconds with score 956.94 (6 unrouted and 7 violations), using 15.74 CPU seconds and the job allocated 14.92 GB of memory so far.
+2026-10-29 12:15:49.041 INFO   [FFA799\50B6F9] Auto-routing pass #14 on board '22033b3359d764f6ba29c67485a40a9a' was completed in 1.02 seconds with score 949.81 (7 unrouted and 7 violations), using 16.74 CPU seconds and the job allocated 15.86 GB of memory so far.
+2026-10-29 12:15:50.092 INFO   [FFA799\50B6F9] Auto-routing pass #15 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.04 seconds with score 949.81 (7 unrouted and 7 violations), using 17.74 CPU seconds and the job allocated 16.94 GB of memory so far.
+2026-10-29 12:15:51.174 INFO   [FFA799\50B6F9] Auto-routing pass #16 on board '160b53fa00ac15bf9d891b2c108cc972' was completed in 1.07 seconds with score 956.94 (6 unrouted and 7 violations), using 19.73 CPU seconds and the job allocated 19.09 GB of memory so far.
+2026-10-29 12:15:51.269 INFO   [FFA799\50B6F9] Last-mile rip-up removed 5 blocking trace(s) or via(s) around 6 remaining connection(s).
+2026-10-29 12:15:52.457 INFO   [FFA799\50B6F9] Auto-routing pass #17 on board 'ca89884435211b8938c207c716ec5798' was completed in 1.10 seconds with score 942.68 (8 unrouted and 7 violations), using 20.73 CPU seconds and the job allocated 20.05 GB of memory so far.
+2026-10-29 12:15:53.632 INFO   [FFA799\50B6F9] Auto-routing pass #18 on board '049df5d022f82c7dd3618237e881682d' was completed in 1.08 seconds with score 942.68 (8 unrouted and 7 violations), using 21.73 CPU seconds and the job allocated 21.01 GB of memory so far.
+2026-10-29 12:15:54.721 INFO   [FFA799\50B6F9] Auto-routing pass #19 on board '049df5d022f82c7dd3618237e881682d' was completed in 1.08 seconds with score 942.68 (8 unrouted and 7 violations), using 22.74 CPU seconds and the job allocated 22.03 GB of memory so far.
+2026-10-29 12:15:55.968 INFO   [FFA799\50B6F9] Auto-routing pass #20 on board '25ccdca1b0fb7abf39cd49854ec7aa22' was completed in 0.00 seconds with score 956.94 (6 unrouted and 7 violations), using 23.73 CPU seconds and the job allocated 23.19 GB of memory so far.
+2026-10-29 12:15:55.990 INFO   [FFA799\50B6F9] The router's best score (956.94) has not improved by more than 0.5 points since pass #10. Stopping the auto-router after 20 passes (6 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/GND' (1 unrouted connection):
+    - C16-2  ->  J2-3
+  Net '/SD_MOSI' (1 unrouted connection):
+    - U11-5  ->  U1-17
+  Net '/SYS' (1 unrouted connection):
+    - via  ->  via
+  Net '/USB_DP' (1 unrouted connection):
+    - J1-A6  ->  U2-1
+  Net '/PDM_DATA' (1 unrouted connection):
+    - U1-40  ->  U8-1
+  Net '/PDM_CLK_MCU' (1 unrouted connection):
+    - R21-1  ->  U1-39
+2026-10-29 12:15:56.231 INFO   [FFA799\50B6F9] Auto-routing stage completed: started with 9 unrouted nets, completed in 25.00 seconds, final score: 956.94 (6 unrouted and 7 violations), using 24.73 total CPU seconds, 24.05 GB total allocated, and 340.7 MB peak heap usage.
+2026-10-29 12:15:56.327 INFO   [FFA799\50B6F9] Skipping optimization stage: the board has 6 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 12:15:56.342 INFO   [FFA799\50B6F9] Job 'FFA799\50B6F9' finished with state: COMPLETED (elapsed: 25.40 seconds, finished at UTC: 2026-10-29T03:15:56.341942Z).
+2026-10-29 12:15:56.343 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/escape-first-routed.ses' (SES)...
+2026-10-29 12:15:56.345 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/escape-first-routed.ses' (140651 bytes).

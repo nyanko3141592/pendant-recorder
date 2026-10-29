@@ -1,0 +1,22 @@
+{
+  "status": "PLACEMENT_FEASIBILITY_ONLY_NOT_ADOPTED",
+  "source_board_sha256": "9e76a15a1101025b694a62bd4873c610833445c1afbfd374f221d8e7d29e351d",
+  "candidate_board_sha256": "e43727fd22575b52af38cdf33c87128efd5daa6b4ec1386a1c7abd98b3617c11",
+  "mcu": {
+    "source": "STM32U585CIU6 / UFQFPN48",
+    "candidate": "STM32U585CIT6 / LQFP48 7x7 P0.5",
+    "same_48_numbered_signal_pads": true,
+    "qfn_exposed_ground_pad_removed": "pad 49"
+  },
+  "drc": {
+    "violations": 314,
+    "schematic_parity": 3,
+    "unconnected_items": 27
+  },
+  "decision_rule": "Do not adopt unless the LQFP candidate can be fully routed with DRC/parity/unconnected zero, ordinary through vias, confirmed JLC procurement, and unchanged safety/runtime functions.",
+  "limitations": [
+    "The footprint was swapped at the same center without moving neighboring parts or rerouting copper.",
+    "This result measures redesign scope; it is not a manufacturable candidate.",
+    "JLC public-stock availability for STM32U585CIT6 is not confirmed."
+  ]
+}

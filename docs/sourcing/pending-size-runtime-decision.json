@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-26",
+  "status": "SUPERSEDED_BY_USER_BATTERY_FIRST_INSTRUCTION",
+  "user_instruction": "無理そうなら相談して。どこ要件を緩めるか決める",
+  "fixed": [
+    "Circuit+case sales only, battery separately userpurchased",
+    "Readily procurable standard battery, no supplier inquiry/customization",
+    "User assembly without soldering/wiremodification",
+    "USB-C data+charge,36h encryptedstorage"
+  ],
+  "current_requirements_remain": [
+    "Omi-size finished assembly",
+    "16h continuous recording"
+  ],
+  "comparison": [
+    {
+      "battery_mAh": 40,
+      "usable_fraction_assumption": 0.7,
+      "runtime_hours_at_assumed_average_mA": {
+        "2": 14.0,
+        "3": 9.333,
+        "4": 7.0,
+        "5": 5.6
+      },
+      "average_limit_for16h_mA": 1.75
+    },
+    {
+      "battery_mAh": 110,
+      "usable_fraction_assumption": 0.7,
+      "runtime_hours_at_assumed_average_mA": {
+        "2": 38.5,
+        "3": 25.667,
+        "4": 19.25,
+        "5": 15.4
+      },
+      "average_limit_for16h_mA": 4.8125
+    }
+  ],
+  "interpretation": [
+    "Runtime numbers are arithmetic sensitivity, not measured or promised minimumruntime.",
+    "40mAh sizecandidate still needs103mmleadpacking, charger andlowpeakstorage redesign; shorter runtime alone does notsolve these.",
+    "110mAh existing30x32 comparison hasunqualifiedharness/assembly/electrical aspects; size relaxation alone doesnotguarantee16h.",
+    "Both require a coherent qualified design beforemanufacturing. No exact smallerintermediatecase or shorterrecordingduration isestablished."
+  ],
+  "actions_after_user_choice": {
+    "size_priority": "KeepOmi-size; define acceptable recordingduration with user before changing requirement, then evaluate smallbattery architecture.",
+    "runtime_priority": "Keep16h; obtain explicit size allowance, then evaluate largerbattery design; do notassume old30x32 approval automatically revived.",
+    "no_relaxation": "Continue originaljointrequirements; do not claim feasibility."
+  },
+  "sources_sha256": {
+    "docs/sourcing/dtp40-public-spec-review.json": "7039c7255b0ec86f3d47ba39781f91e812ca1c218f735792d96839a137482655",
+    "docs/sourcing/battery-first-selection.json": "74cf4ea758856de05526eb4e97f2a6115bc0713777953f2be01b210d964c3a65"
+  },
+  "orders_or_inquiries": false,
+  "resolution": "110mAhを入手性で先に確定してから回路設計。DTP401525-XE採用。サイズ・録音時間の緩和は未承認。"
+}

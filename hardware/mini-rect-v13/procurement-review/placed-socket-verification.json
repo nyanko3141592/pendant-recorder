@@ -1,0 +1,161 @@
+{
+  "status": "PLACED_LANDS_MATCH_REVIEWED_DRAWING",
+  "board_sha256": "287ac6f8bf673e8fa24541649612b5a5f9900679c7ad1640ea93ba507090f46e",
+  "drawing_sha256": "ea2cf1d30b80504654f23bd3facc30b8ab2783a5a5172952a8a1b0249e69d395",
+  "pads": [
+    {
+      "pad": "1",
+      "local_xy_size_mm": [
+        3.175,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/SD_DAT2"
+    },
+    {
+      "pad": "2",
+      "local_xy_size_mm": [
+        2.075,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/SD_CS_N"
+    },
+    {
+      "pad": "3",
+      "local_xy_size_mm": [
+        0.975,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/SD_MOSI"
+    },
+    {
+      "pad": "4",
+      "local_xy_size_mm": [
+        -0.125,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/SD_V3"
+    },
+    {
+      "pad": "5",
+      "local_xy_size_mm": [
+        -1.225,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/SD_CLK"
+    },
+    {
+      "pad": "6",
+      "local_xy_size_mm": [
+        -2.325,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/GND"
+    },
+    {
+      "pad": "7",
+      "local_xy_size_mm": [
+        -3.425,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/SD_MISO"
+    },
+    {
+      "pad": "8",
+      "local_xy_size_mm": [
+        -4.525,
+        5.35,
+        0.7,
+        1.75
+      ],
+      "net": "/SD_DAT1"
+    },
+    {
+      "pad": "9",
+      "local_xy_size_mm": [
+        -5.65,
+        -3.875,
+        1.45,
+        1.0
+      ],
+      "net": ""
+    },
+    {
+      "pad": "10",
+      "local_xy_size_mm": [
+        5.575,
+        -5.45,
+        1.0,
+        1.55
+      ],
+      "net": ""
+    },
+    {
+      "pad": "SH",
+      "local_xy_size_mm": [
+        -5.975,
+        -2.375,
+        0.8,
+        1.5
+      ],
+      "net": "/GND"
+    },
+    {
+      "pad": "SH",
+      "local_xy_size_mm": [
+        -5.725,
+        5.225,
+        1.3,
+        1.5
+      ],
+      "net": "/GND"
+    },
+    {
+      "pad": "SH",
+      "local_xy_size_mm": [
+        5.625,
+        5.225,
+        1.5,
+        1.5
+      ],
+      "net": "/GND"
+    },
+    {
+      "pad": "SH",
+      "local_xy_size_mm": [
+        5.975,
+        -3.025,
+        0.8,
+        1.4
+      ],
+      "net": "/GND"
+    }
+  ],
+  "catalog_evidence": {
+    "file": "reference/hirose-dm3-catalog.pdf",
+    "sha256": "c800484777481b563daacb741d32618a31fbb6775c8e09e8e30834e5260b2ef8",
+    "printed_page": 9,
+    "part": "DM3D-SF",
+    "hrs_no": "609-0025-8",
+    "switch": "Open without card, closed with card"
+  },
+  "resolution": "JLC catalog no-detection-pins attribute conflicts with manufacturer catalog. Design intentionally leaves both detection contacts unconnected; no functional dependency on the switch. Manufacturer land geometry is the reference.",
+  "limitations": [
+    "Exact supplied revision, assembly rotation and stock not confirmed",
+    "Does not verify solder mask/paste or socket/card tolerance",
+    "Does not qualify storage power or release the board"
+  ]
+}

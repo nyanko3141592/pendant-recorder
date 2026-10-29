@@ -1,0 +1,108 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [
+    {
+      "from": [
+        "U14",
+        "4"
+      ],
+      "to": [
+        "U14",
+        "2"
+      ],
+      "net": "/VBUS",
+      "segments": 3
+    },
+    {
+      "from": [
+        "U14",
+        "4"
+      ],
+      "to": [
+        "U14",
+        "10"
+      ],
+      "net": "/VBUS",
+      "segments": 1
+    },
+    {
+      "from": [
+        "C32",
+        "1"
+      ],
+      "to": [
+        "U14",
+        "14"
+      ],
+      "net": "/VBUS",
+      "segments": 1
+    },
+    {
+      "from": [
+        "R48",
+        "1"
+      ],
+      "to": [
+        "C33",
+        "1"
+      ],
+      "net": "/VBUS",
+      "segments": 1
+    }
+  ],
+  "unrouted_local_jobs": [
+    {
+      "from": [
+        "U4",
+        "1"
+      ],
+      "to": [
+        "U4",
+        "3"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    },
+    {
+      "from": [
+        "U3",
+        "1"
+      ],
+      "to": [
+        "TP2",
+        "1"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    },
+    {
+      "from": [
+        "U3",
+        "10"
+      ],
+      "to": [
+        "R12",
+        "1"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    },
+    {
+      "from": [
+        "C33",
+        "1"
+      ],
+      "to": [
+        "C31",
+        "1"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    }
+  ],
+  "physical_drc_violations": 0,
+  "unconnected_items": 88,
+  "board_sha256": "e3b5a6b7f7cc4cf0a8cbcd7a6be37b7257a9325164a24bf056bc0ab4389ee945",
+  "limits": [
+    "Temperature reference divider placement is dispersed; not a completed noise-qualified guard",
+    "Shared supply, BOR4 and thermal contact remain unqualified",
+    "Only same-layer local connections in this pass",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

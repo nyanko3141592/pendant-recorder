@@ -1,0 +1,79 @@
+{
+  "status": "NOT_ADOPTED_THIN_WALL_AND_TOLERANCE_LIMIT",
+  "checks": {
+    "lower": {
+      "solid_count": 1,
+      "board_intersection_mm3": 0.0,
+      "separator_intersection_mm3": 0.0,
+      "battery_intersection_mm3": 0.0
+    },
+    "upper": {
+      "solid_count": 1,
+      "board_intersection_mm3": 0.0,
+      "separator_intersection_mm3": 0.0,
+      "battery_intersection_mm3": 0.0
+    },
+    "case_intersection_mm3": 0.0
+  },
+  "latch_motion_obstacle_screen": [
+    {
+      "side": "right",
+      "center_y_mm": -15,
+      "inward_sweep_mm": 0.2,
+      "board_intersection_mm3": 0.0,
+      "separator_intersection_mm3": 0.0,
+      "battery_intersection_mm3": 0.0
+    },
+    {
+      "side": "right",
+      "center_y_mm": -22,
+      "inward_sweep_mm": 0.2,
+      "board_intersection_mm3": 0.0,
+      "separator_intersection_mm3": 0.0,
+      "battery_intersection_mm3": 0.0
+    },
+    {
+      "side": "left",
+      "center_y_mm": -10,
+      "inward_sweep_mm": 0.2,
+      "board_intersection_mm3": 0.0,
+      "separator_intersection_mm3": 0.0,
+      "battery_intersection_mm3": 0.0
+    },
+    {
+      "side": "left",
+      "center_y_mm": -18,
+      "inward_sweep_mm": 0.2,
+      "board_intersection_mm3": 0.0,
+      "separator_intersection_mm3": 0.0,
+      "battery_intersection_mm3": 0.0
+    }
+  ],
+  "hypothesis": {
+    "beam_thickness_mm": 0.45,
+    "loaded_length_mm": 4.15,
+    "nominal_deflection_mm": 0.15,
+    "linear_cantilever_surface_strain": 0.005878937436492959
+  },
+  "limitations": [
+    "Four latch positions; release access and assembly force still unresolved",
+    "Material, print process, root radius, tolerances and fatigue unqualified",
+    "Elastic assembly motion not represented by rigid overlap check",
+    "Pocket leaves thin wall; manufacturing review required",
+    "Original leads and plug omitted",
+    "Battery placement inherited from battery-over-connector-review.json",
+    "Not adopted; exterior size target decision pending"
+  ],
+  "retention_tolerance_screen": {
+    "nominal_lateral_engagement_mm": 0.09999999999999787,
+    "pocket_remaining_outer_wall_mm": 0.15000000000000213,
+    "necessary_total_relative_lateral_error_less_than_mm": 0.09999999999999787,
+    "example_independent_dimension_errors_mm": [
+      -0.1,
+      0.1
+    ],
+    "example_minimum_engagement_mm": -0.10000000000000497,
+    "example_is_process_specification": false,
+    "decision": "Do not adopt: positive nominal engagement alone does not establish usable retention; .15mm residual wall and .1mm engagement require redesign or qualified process."
+  }
+}

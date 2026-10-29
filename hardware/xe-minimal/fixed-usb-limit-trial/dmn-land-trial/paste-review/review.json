@@ -1,0 +1,87 @@
+{
+  "status": "Q6_Q7_EXPORTED_PASTE_GEOMETRY_VERIFIED",
+  "board_sha256": "61498be19440afb6830a9f17f8568268e5987578d10d6fef85bffd0cdb5ac19f",
+  "rows": [
+    {
+      "ref": "Q6",
+      "gerber": "pendant-xe-minimal-B_Paste.gbp",
+      "sha256": "6cf50bf285bab83358f94c266087628f26ffca3ef051cf234be34796edb6c8b8",
+      "flashes": [
+        {
+          "xy_mm": [
+            9.255,
+            2.975
+          ],
+          "size_mm": [
+            0.9,
+            0.8
+          ]
+        },
+        {
+          "xy_mm": [
+            9.255,
+            1.075
+          ],
+          "size_mm": [
+            0.9,
+            0.8
+          ]
+        },
+        {
+          "xy_mm": [
+            11.255,
+            2.025
+          ],
+          "size_mm": [
+            0.9,
+            0.8
+          ]
+        }
+      ],
+      "aperture_area_mm2": 0.72
+    },
+    {
+      "ref": "Q7",
+      "gerber": "pendant-xe-minimal-F_Paste.gtp",
+      "sha256": "f688d53e321ffd2f012d89243a83417b2e447587190c93e79a5e3cf4c6d1c6e4",
+      "flashes": [
+        {
+          "xy_mm": [
+            5.755,
+            6.575
+          ],
+          "size_mm": [
+            0.9,
+            0.8
+          ]
+        },
+        {
+          "xy_mm": [
+            5.755,
+            8.475
+          ],
+          "size_mm": [
+            0.9,
+            0.8
+          ]
+        },
+        {
+          "xy_mm": [
+            7.755,
+            7.525
+          ],
+          "size_mm": [
+            0.9,
+            0.8
+          ]
+        }
+      ],
+      "aperture_area_mm2": 0.72
+    }
+  ],
+  "limits": [
+    "Verification covers Q6/Q7 rectangular flashes only, not entire stencil CAM",
+    "No aperture reduction observed; stencil thickness and paste transfer process not qualified",
+    "Gerber creation does not approve transistor electrical behavior or manufacturing release"
+  ]
+}

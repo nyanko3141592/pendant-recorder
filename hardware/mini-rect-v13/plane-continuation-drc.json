@@ -1,0 +1,395 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T01:25:03",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "plane-continuation.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 2.7743 mm )",
+                    "pos": {
+                        "x": 17.0743,
+                        "y": 7.33
+                    },
+                    "uuid": "c6cb826c-ec54-48d4-9722-bdfc46bb62c1"
+                },
+                {
+                    "description": "パッド A1 [/SD_V3] - U10 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.23,
+                        "y": 13.38
+                    },
+                    "uuid": "34d6c143-b602-4afd-b7a0-be272e8921df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHG_ALLOW] - R43 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.245,
+                        "y": 14.215
+                    },
+                    "uuid": "2821c9db-e500-46fe-b02c-efd866e6e67d"
+                },
+                {
+                    "description": "配線 [/CHG_ALLOW] ( B.Cu 上、長さ: 0.7183 mm )",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 4.4675
+                    },
+                    "uuid": "bc319717-d784-4d67-a264-5d6b8d242ae9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/BAT_ADC] - R34 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.945,
+                        "y": 5.495
+                    },
+                    "uuid": "e6a3862e-861a-4090-af3d-4b92e3749da0"
+                },
+                {
+                    "description": "配線 [/BAT_ADC] ( In2.Cu 上、長さ: 4.5384 mm )",
+                    "pos": {
+                        "x": 10.2985,
+                        "y": 8.6931
+                    },
+                    "uuid": "ec03896e-3553-4612-8a8d-85891755e397"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.9594 mm )",
+                    "pos": {
+                        "x": 17.0168,
+                        "y": 12.6223
+                    },
+                    "uuid": "6070d5ad-bdaf-4b70-a9ce-d7dffbedec72"
+                },
+                {
+                    "description": "パッド 40 [/PDM_DATA] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.405,
+                        "y": 11.3425
+                    },
+                    "uuid": "5a0b78b0-1752-4061-a1b1-2cd04306db2a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( B.Cu 上、長さ: 0.2500 mm )",
+                    "pos": {
+                        "x": 5.4519,
+                        "y": 18.5669
+                    },
+                    "uuid": "69dc2247-c5a6-4f86-94dd-74c501708466"
+                },
+                {
+                    "description": "パッド 37 [/SWCLK] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "f048dcc7-b4c3-464d-a0a0-7a3c29384f12"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/CHG_INHIBIT_GATE] - Q4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.8925,
+                        "y": 15.975
+                    },
+                    "uuid": "39e1da35-765b-4190-836c-3f6d4bc685d2"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 2.3345 mm )",
+                    "pos": {
+                        "x": 0.943,
+                        "y": 10.6625
+                    },
+                    "uuid": "e6170b16-c7cc-4431-b07f-d8dc2e740723"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.4145 mm )",
+                    "pos": {
+                        "x": 2.115,
+                        "y": 16.215
+                    },
+                    "uuid": "e6837234-e465-4e38-ba09-4483c6075328"
+                },
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 9.275
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ゾーン クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.8143,
+                        "y": 10.362
+                    },
+                    "uuid": "2b176afc-6c51-4d7e-b5cd-9e0bd7bc4f6e"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "2a926811-1b42-4a13-bd40-9188eaa65cb5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.8143,
+                        "y": 10.362
+                    },
+                    "uuid": "2b176afc-6c51-4d7e-b5cd-9e0bd7bc4f6e"
+                },
+                {
+                    "description": "ゾーン [/GND] In1.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "2a926811-1b42-4a13-bd40-9188eaa65cb5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.6884 mm )",
+                    "pos": {
+                        "x": 5.7092,
+                        "y": 9.8188
+                    },
+                    "uuid": "0c5a3c3f-cfc5-44ec-a56f-cc118e42ecb3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.1355 mm )",
+                    "pos": {
+                        "x": 5.5702,
+                        "y": 9.8201
+                    },
+                    "uuid": "1f567edf-1227-44f9-bc10-1d24b198d63f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.7962 mm )",
+                    "pos": {
+                        "x": 5.0072,
+                        "y": 10.3831
+                    },
+                    "uuid": "686f5c8c-8ffb-47af-bb84-1ec8cab4ed62"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.1010 mm )",
+                    "pos": {
+                        "x": 5.5138,
+                        "y": 8.935
+                    },
+                    "uuid": "ad268b0b-e288-4534-b0c0-5247a04c2a81"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.2763 mm )",
+                    "pos": {
+                        "x": 5.7092,
+                        "y": 9.1304
+                    },
+                    "uuid": "e310a613-99f6-49c2-9df0-d329abe3caa5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.8287,
+                        "y": 1.399
+                    },
+                    "uuid": "0a87929d-2044-4c80-8352-df7a99450efc"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/CHG_ALLOW] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.9722,
+                        "y": 3.682
+                    },
+                    "uuid": "f2cbbc1b-930c-41a3-9f46-ceceb9ef1b10"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.3384,
+                        "y": 11.9439
+                    },
+                    "uuid": "6b540bdd-fbff-4114-bc5f-644b64ec3006"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 5.7019,
+                        "y": 18.5669
+                    },
+                    "uuid": "5b5f89ae-d742-4bc4-878a-446775f91af9"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/ISET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 2.1041,
+                        "y": 17.8195
+                    },
+                    "uuid": "0375387b-2fee-4352-995f-1453b49b27e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

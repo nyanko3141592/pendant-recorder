@@ -1,0 +1,39 @@
+{
+  "status": "PROCESS_DEVELOPMENT_LIMITS_NOT_VALIDATED_OR_RELEASED",
+  "purpose": "Make tape-wrap candidate measurable without treating nominal catalogue thickness as maximum.",
+  "candidate_material": "3M 92; selection pending supplied-material and process verification",
+  "development_acceptance_targets": {
+    "measured_total_tape_thickness_max_mm": 0.08,
+    "raw_soldered_joint_width_max_mm": 0.85,
+    "raw_soldered_joint_height_max_mm": 0.8,
+    "finished_joint_width_max_mm": 1.1,
+    "finished_joint_height_max_mm": 1.1,
+    "finished_joint_axial_budget_mm": 2.8,
+    "seam": "Single wrap, overlap on upper broad face; no second full turn."
+  },
+  "arithmetic_only": {
+    "raw_plus_two_side_layers_mm": 1.01,
+    "raw_plus_three_vertical_layers_mm": 1.04,
+    "vertical_headroom_to_budget_mm": 0.06
+  },
+  "inspection": [
+    "Measure representative supplied tape thickness under a defined repeatable low-force method; nominal catalogue value is insufficient.",
+    "Inspect raw joint for protruding strands and sharp solder; record width and height before wrapping.",
+    "Inspect whole wrapped lead, transition, joint and wire exit for exposed conductor and seam lifting.",
+    "Measure finished width/height without compressing the wrap; reject wrinkles that exceed the envelope.",
+    "Verify insulation after forming and assembled handling using a defined electrical test; test voltage and acceptance threshold still to be specified."
+  ],
+  "unresolved": [
+    "Film-edge transition across supplied lead length tolerance",
+    "Tape overlap length and adhesion on tiny joint",
+    "Minimum retained collar and proof-load level",
+    "Actual solder profile and strand wicking",
+    "Bend fixture and repeated handling damage"
+  ],
+  "boundary": "Targets are proposed process limits, not manufacturer guarantees or evidence of producibility. Buyer performs none of these operations.",
+  "retention_dimension_screen": {
+    "review": "mechanical/xe-minimal/film-minimum-collar-review.json",
+    "result": "Small rectangular collar .3/.4 mm sections can avoid contact through .4 mm axial displacement in some sampled positions. Sections .5x.5 and larger contact in all sampled cases, but this is not a certified minimum because shape, deformation and escape paths are excluded.",
+    "next_step": "Use actual finished joint cross-sections and all allowed movement limits before defining a lower acceptance bound; no minimum collar approved yet."
+  }
+}

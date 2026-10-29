@@ -1,0 +1,27 @@
+{
+  "status": "MEASUREMENT_TOOL_READY_NO_HARDWARE_DATA",
+  "tool": "tools/bench/integrate_current_trace.py",
+  "input_columns": [
+    "time_s",
+    "current_mA",
+    "voltage_V"
+  ],
+  "example_command": "python3 tools/bench/integrate_current_trace.py battery.csv --max-gap-s 0.01 --source-kind measured",
+  "gap_limit_example_only": true,
+  "required_evidence": [
+    "Measurement at battery output including all loads, with calibrated instrument and sufficient bandwidth",
+    "Fixed battery identity and documented on-board 4.2V charging/termination procedure",
+    "No USB or other external power during 16h recording",
+    "Decrypted audio sample count and timestamps proving continuous 16h including silence",
+    "Voltage/current raw trace and instrument metadata retained",
+    "Firmware and PCB revision hashes tied to the run"
+  ],
+  "automated_checks": [
+    "Finite numeric discharge samples",
+    "Strictly increasing timestamps",
+    "Missing-sample gap count",
+    "Integrated charge and energy",
+    "No runtime pass inferred from current trace alone"
+  ],
+  "test_result": "4 synthetic unit tests passed; no physical measurement"
+}

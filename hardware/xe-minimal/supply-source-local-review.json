@@ -1,0 +1,26 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [],
+  "unrouted_local_jobs": [
+    {
+      "from": [
+        "U4",
+        "5"
+      ],
+      "to": [
+        "J3",
+        "1"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    }
+  ],
+  "physical_drc_violations": 0,
+  "unconnected_items": 98,
+  "board_sha256": "ed417dcaf9ee697fce62bbf2268d5e3af82af0021dd3850212056f41a170a70c",
+  "limits": [
+    "Temperature reference divider placement is dispersed; not a completed noise-qualified guard",
+    "Shared supply, BOR4 and thermal contact remain unqualified",
+    "Only same-layer local connections in this pass",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "NCU_SENSOR_ENGINEERING_TRIAL_NOT_RELEASED",
+  "source_sha256": {
+    "pendant-xe-minimal.kicad_pcb": "3f7962550e31d2a3133989344962d543977c8cea504f3f3c498273edb25d8127",
+    "pendant-xe-minimal.kicad_sch": "6d649651dcf877adbcd96ca871e27a242f0fcd5cf4c30e925895438a515f21e4"
+  },
+  "output_pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "change": "TH1 part identity only in PCB and schematic; inverse text substitution exactly reproduces source files",
+  "checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "bom_references": 75,
+  "bom_changed_references": [
+    "TH1"
+  ],
+  "limits": [
+    "No physical charging or temperature qualification",
+    "Current3D model still uses generic resistor envelope forTH1",
+    "Previous manufacturing outputs belong to previous PCB; not silently relabeled"
+  ]
+}

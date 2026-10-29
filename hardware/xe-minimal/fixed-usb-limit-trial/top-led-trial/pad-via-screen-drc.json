@@ -1,0 +1,263 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T12:21:18",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pad-via-screen.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/STATUS_LED_A] - D6 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 5.49
+                    },
+                    "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+                },
+                {
+                    "description": "パッド 2 [/STATUS_LED_A] - R32 ( F.Cu 上)",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 0.745
+                    },
+                    "uuid": "02624a63-71eb-40f4-bccf-9f3f8a27f0b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_ALLOW と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_ALLOW] ( In2.Cu 上、長さ: 19.2042 mm )",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 18.0
+                    },
+                    "uuid": "5c8b5816-8880-4742-a391-0cba28f52175"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 6.46
+                    },
+                    "uuid": "be7b60ba-98e6-4d04-8eb8-a3804d17974a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0322 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK] ( In4.Cu 上、長さ: 2.5080 mm )",
+                    "pos": {
+                        "x": 15.4,
+                        "y": 6.1
+                    },
+                    "uuid": "1ebf4463-daa3-40e2-af0d-ad9a59f0b66b"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 6.46
+                    },
+                    "uuid": "be7b60ba-98e6-4d04-8eb8-a3804d17974a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0429 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_RESUME_PULSE] ( In3.Cu 上、長さ: 7.8502 mm )",
+                    "pos": {
+                        "x": 17.15,
+                        "y": 4.35
+                    },
+                    "uuid": "7197eb5b-c43e-47bd-96d7-102c11b7c79e"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 5.49
+                    },
+                    "uuid": "bf2e41d4-7508-40b3-a1c7-a8f7b54786be"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /STATUS_LED_A)",
+            "items": [
+                {
+                    "description": "パッド 49 [/GND] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.8525,
+                        "y": 7.7675
+                    },
+                    "uuid": "2ab9d7a2-fe99-4b8b-b1cf-b4d18d5ad3d9"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 5.49
+                    },
+                    "uuid": "bf2e41d4-7508-40b3-a1c7-a8f7b54786be"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0975 mm)",
+            "items": [
+                {
+                    "description": "パッド 9 [/VDDA] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 6.5175
+                    },
+                    "uuid": "a9f94331-28bf-460c-82b4-e738f1c5606e"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 6.46
+                    },
+                    "uuid": "be7b60ba-98e6-4d04-8eb8-a3804d17974a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1975 mm)",
+            "items": [
+                {
+                    "description": "パッド 9 [/VDDA] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 6.5175
+                    },
+                    "uuid": "a9f94331-28bf-460c-82b4-e738f1c5606e"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 6.46
+                    },
+                    "uuid": "be7b60ba-98e6-4d04-8eb8-a3804d17974a"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1975 mm)",
+            "items": [
+                {
+                    "description": "パッド 11 [/BAT_ADC] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5175
+                    },
+                    "uuid": "93b18af6-1c37-409d-b504-b0bb13bfd6e7"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 5.49
+                    },
+                    "uuid": "bf2e41d4-7508-40b3-a1c7-a8f7b54786be"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 49 [/GND] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.8525,
+                        "y": 7.7675
+                    },
+                    "uuid": "2ab9d7a2-fe99-4b8b-b1cf-b4d18d5ad3d9"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 5.49
+                    },
+                    "uuid": "bf2e41d4-7508-40b3-a1c7-a8f7b54786be"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.125,
+                        "y": 5.49
+                    },
+                    "uuid": "bf2e41d4-7508-40b3-a1c7-a8f7b54786be"
+                },
+                {
+                    "description": "パッド 49 [/GND] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.8525,
+                        "y": 7.7675
+                    },
+                    "uuid": "2ab9d7a2-fe99-4b8b-b1cf-b4d18d5ad3d9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 11.005,
+                        "y": 4.795
+                    },
+                    "uuid": "08391b1c-1b48-408e-9686-87117468974c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

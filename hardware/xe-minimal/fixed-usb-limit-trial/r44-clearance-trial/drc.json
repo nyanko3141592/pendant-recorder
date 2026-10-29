@@ -1,0 +1,155 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T13:29:45",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-minimal.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SYS と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 6.8964 mm )",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 0.6
+                    },
+                    "uuid": "0a37e6d8-e8c1-4e34-b34d-c50a8436bac8"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_DATA と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.3000 mm )",
+                    "pos": {
+                        "x": 17.7,
+                        "y": 1.2
+                    },
+                    "uuid": "3b8c515a-4319-4913-9af2-43f7fcba6547"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_DATA と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.4243 mm )",
+                    "pos": {
+                        "x": 17.7,
+                        "y": 0.9
+                    },
+                    "uuid": "99ca3c42-6ae8-4cec-a4c0-8cb19182a904"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_DATA と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.2828 mm )",
+                    "pos": {
+                        "x": 17.9,
+                        "y": 1.4
+                    },
+                    "uuid": "351fc41e-5bc2-4ef8-91d8-a8050fcdb89e"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.9600 mm )",
+                    "pos": {
+                        "x": 16.65,
+                        "y": 1.15
+                    },
+                    "uuid": "3026cf6c-e8b6-4bc4-83f8-8d8cae086be0"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.3000 mm )",
+                    "pos": {
+                        "x": 17.7,
+                        "y": 1.2
+                    },
+                    "uuid": "3b8c515a-4319-4913-9af2-43f7fcba6547"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0623 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In4.Cu 上、長さ: 4.0792 mm )",
+                    "pos": {
+                        "x": 21.3,
+                        "y": 1.4
+                    },
+                    "uuid": "78a1dd00-42c4-451d-b28e-89cf1304d530"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 1.029999
+                    },
+                    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

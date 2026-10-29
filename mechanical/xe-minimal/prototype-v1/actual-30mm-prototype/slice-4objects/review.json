@@ -1,0 +1,29 @@
+{
+  "status": "A1_MINI_FOUR_SEPARATE_OBJECTS_SLICE_PASS_NOT_PRINTED",
+  "hardware_version": "HW-V1.4-EVT-ACTUAL-30MM",
+  "object_count": 4,
+  "objects": [
+    "case-lower-corner-cord.stl",
+    "case-upper-rounded.stl",
+    "actual-populated-pcb-complete.stl",
+    "dtp401525-xe-max-body.stl"
+  ],
+  "bambu_project": {
+    "file": "actual-30mm-prototype-4objects-a1mini.3mf",
+    "sha256": "7a470345b7993bd2885abbeb47c5501eca3cba09b65f8d87a4c75db1cb7cdb3f",
+    "four_independently_selectable_objects_verified": true
+  },
+  "slice": {
+    "file": "plate_1.gcode",
+    "sha256": "76af8058499cb1a4a9742cd10efb7dad0af44bf7a2680c47c0d1e718bc7994dc",
+    "return_code": 0,
+    "warning_message": null,
+    "estimated_total_time": "33m 18s",
+    "filament_g": 7.15,
+    "layers": 51,
+    "object_max_heights_mm": [8.2, 4.84, 5.8, 4.2]
+  },
+  "printer": "Bambu Lab A1 mini, 0.4 mm nozzle",
+  "material": "PETG",
+  "note": "The PCB and battery objects are nonfunctional physical size gauges."
+}

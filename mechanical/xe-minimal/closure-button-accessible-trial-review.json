@@ -1,0 +1,58 @@
+{
+  "status": "BUTTON_GEOMETRY_ONLY_NOT_OPERABLE_ASSEMBLY",
+  "pcb_sha256": "b090106d3b48ebba679bb4532108ac82ce0513a382767edfaa2e143610987e93",
+  "manufacturer_source": {
+    "url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf",
+    "file": "b3u-source.pdf",
+    "sha256": "271b3d35eb58fac7449cb36bbe6a78b36439baa29281e74da83bede2b7ba8b01",
+    "dimensions_page_visually_checked": 2,
+    "height_mm": [
+      1.5,
+      1.75
+    ],
+    "nominal_height_mm": 1.6,
+    "pretravel_mm": [
+      0.05,
+      0.35
+    ],
+    "operating_force_N": [
+      1.01,
+      1.99
+    ]
+  },
+  "geometry": {
+    "switch_center_step_xy_mm": [
+      15.725,
+      -5.975
+    ],
+    "opening_diameter_mm": 2.3,
+    "shaft_diameter_mm": 2,
+    "flange_diameter_mm": 3.2,
+    "tip_diameter_mm": 1,
+    "tip_bottom_z_mm": 2.7264,
+    "flange_z_mm": [
+      4.001400100000001,
+      4.401400100000001
+    ],
+    "case_top_z_mm": 5.251400100000001,
+    "nominal_protrusion_mm": 0.9,
+    "above_case_at_worst_activation_mm": 0.15000000000000002,
+    "gap_to_maximum_switch_height_mm": 0.15,
+    "gap_to_minimum_switch_height_mm": 0.4,
+    "worst_independent_gap_plus_pretravel_mm": 0.75
+  },
+  "checks": {
+    "released_case_collision_mm3": 0.0,
+    "released_board_collision_mm3": 0.0,
+    "released_board_clearance_mm": 0.28500000000000014
+  },
+  "limitations": [
+    "Zero solder standoff assumed; tolerances not fully budgeted",
+    "Loose button lacks a return spring or elastomer suspension",
+    "No qualified hard stop or switch overtravel/force protection",
+    "No retention against inward fall with PCB removed",
+    "Protrusion is a trial choice, not approved finished size",
+    "Released library geometry is not manufacturer maximum envelope",
+    "Not adopted into final case"
+  ]
+}

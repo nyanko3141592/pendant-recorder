@@ -1,0 +1,80 @@
+{
+  "status": "DIRECTIONAL_TEST_PREDICTION_NOT_ACCEPTANCE_LIMIT",
+  "pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "comparator": "U12 TLV7042DDFR",
+  "verified_pins": {
+    "1": "CHG_GUARD_GATE",
+    "2": "BAT_TS",
+    "3": "TS_COLD_REF",
+    "4": "GND",
+    "5": "BAT_TS",
+    "6": "TS_HOT_REF",
+    "7": "CHG_GUARD_GATE",
+    "8": "V3V3"
+  },
+  "pin_definition_source": "TI RevJ Table4-2",
+  "assumed_supply_V": 3.3,
+  "rows": [
+    {
+      "transition": "cold_stop",
+      "resistance_sweep": "increase resistance",
+      "corner_resistance_ohm": [
+        19129.626813758885,
+        21524.5207187892
+      ],
+      "beta_temperature_C": [
+        5.992349320209087,
+        9.48636421150303
+      ]
+    },
+    {
+      "transition": "cold_recover",
+      "resistance_sweep": "decrease resistance",
+      "corner_resistance_ohm": [
+        18534.645079284906,
+        20897.17149824561
+      ],
+      "beta_temperature_C": [
+        6.671753633315575,
+        10.215767114280595
+      ]
+    },
+    {
+      "transition": "hot_stop",
+      "resistance_sweep": "decrease resistance",
+      "corner_resistance_ohm": [
+        6573.918486963829,
+        7959.068051436432
+      ],
+      "beta_temperature_C": [
+        30.69827872701751,
+        36.664393005569536
+      ]
+    },
+    {
+      "transition": "hot_recover",
+      "resistance_sweep": "increase resistance",
+      "corner_resistance_ohm": [
+        7053.719817842418,
+        8460.038025181946
+      ],
+      "beta_temperature_C": [
+        29.08251869170664,
+        34.68872802274848
+      ]
+    }
+  ],
+  "test_sequence": [
+    "Use a battery simulator and current-limited bench supply; no real cell for fault sweeps.",
+    "Start10kohm; verify gate and charge behavior, then increase to47kohm and sweep back through cold recovery.",
+    "Return10kohm; decrease to4.7kohm and sweep back through hot recovery.",
+    "Record measured resistance, BAT_TS, both reference voltages, rail, guard gate and charge current for each transition.",
+    "Repeat open/short sensor faults and power-up/brownout cases."
+  ],
+  "acceptance": "Stop transitions must inhibit charging and recovery must not oscillate. Numeric thresholds remain provisional until actual common-mode comparator error, sensor R-T bounds and cell thermal lag are resolved.",
+  "limits": [
+    "Comparator extrema taken from datasheet test conditions; actual common-mode bound not established.",
+    "Beta approximation and independent1% tolerances are only a screening model.",
+    "No physical results or charge-safety approval."
+  ]
+}

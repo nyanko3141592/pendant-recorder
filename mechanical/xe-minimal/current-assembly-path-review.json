@@ -1,0 +1,83 @@
+{
+  "status": "CURRENT_NOMINAL_GEOMETRY_SCREEN_NOT_ASSEMBLY_APPROVAL",
+  "source_sha256": {
+    "lower": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b",
+    "upper": "07a796a9656f0cf5c420769c411543abae728b8d9bec39311227b6c28d915a3b",
+    "board": "b43a37bdebaf9789a2b85171637edddc1b75d38589317f83e2f5e3e61a68750d",
+    "separator": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "final_pose_all_pairs": [
+    {
+      "a": "lower",
+      "b": "upper",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lower",
+      "b": "board",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lower",
+      "b": "separator",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "lower",
+      "b": "battery",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "upper",
+      "b": "board",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "upper",
+      "b": "separator",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "upper",
+      "b": "battery",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "board",
+      "b": "separator",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "board",
+      "b": "battery",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "separator",
+      "b": "battery",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "insertion_screens": [
+    {
+      "part": "battery",
+      "motion": "Translation down20mm to final pose, horizontal-face extrusion screen",
+      "horizontal_faces": 2,
+      "maximum_overlap_with_lower_mm3": 0.0
+    },
+    {
+      "part": "separator",
+      "motion": "Translation down20mm to final pose, horizontal-face extrusion screen",
+      "horizontal_faces": 2,
+      "maximum_overlap_with_lower_mm3": 0.0
+    }
+  ],
+  "limits": [
+    "Only represented bodies; original mating housing, leads and thermal interface absent",
+    "Horizontal-face sweeps apply to prismatic battery/separator only",
+    "Board movement is separately screened in offset-stack-candidate-review.json",
+    "Separate successful movements do not prove a premated battery/board/lead assembly can be inserted",
+    "No print tolerances, deformation, swelling, connector engagement or assembly forces are qualified"
+  ]
+}

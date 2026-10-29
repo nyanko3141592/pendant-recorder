@@ -1,0 +1,41 @@
+{
+  "candidate": "https://github.com/pedrobtz/agecrypt",
+  "commit": "f7530fa857bd733135d2fdbe89da29de98a3b4eb",
+  "integrated": false,
+  "firmware_ready": false,
+  "licenses": "inst/COPYRIGHTS: MIT wrapper files, remaining agec 0BSD; preserve exact notices before vendoring",
+  "test": "tests/check_agec_candidate.py",
+  "baseline_and_experimental_variants_passed": [
+    "unmodified",
+    "in-place payload encryption",
+    "in-place plus smaller IO buffers"
+  ],
+  "plaintext_sizes_tested": [
+    0,
+    1,
+    65535,
+    65536,
+    65537,
+    80956,
+    131072
+  ],
+  "validation": "ASan/UBSan native C encoder; standard age v1.3.2 decrypt; exact plaintext equality",
+  "payload_buffer_reduction_bytes": 65536,
+  "experimental_io": {
+    "IOBUFSIZE": 512,
+    "IOABUFRAWSIZE": 384,
+    "IOABUFREADSIZE": 520
+  },
+  "ram_assessment": "Current pipeline uses one WAV buffer and1.024s PCM backlog. ARM object sizes: pipeline87128bytes,queue32780bytes; plus4096DMA and65552experimental encryption workspace =189556bytes before IO/HAL/USB/FatFs/stack. Complete linker map and latency/high-water tests still required.",
+  "pending": [
+    "Hardware RNG fail-closed hook and key provisioning",
+    "Cross-build/link/stack analysis",
+    "Streaming/nonblocking writes while capture continues",
+    "Error propagation and plaintext/key wiping on all exits",
+    "Hardware timing, storage busy latency and power tests",
+    "Complete firmware integration; native callback tests are not hardware/storage qualification"
+  ],
+  "limitations": "Experiments patch temporary copies only. No changed age wire format. Binary X25519 encryption path tested; no general assurance for decryption or armored paths.",
+  "vendored": true,
+  "adapter_implemented": true
+}

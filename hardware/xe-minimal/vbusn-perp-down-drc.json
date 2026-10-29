@@ -1,0 +1,270 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:40:29",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "vbusn-perp-down.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BUTTON_N と /VBUS_N)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.025,
+                        "y": 5.975
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BAT_ADC と /VBUS_N)",
+            "items": [
+                {
+                    "description": "パッド 11 [/BAT_ADC] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5175
+                    },
+                    "uuid": "93b18af6-1c37-409d-b504-b0bb13bfd6e7"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_N と /BAT_ADC)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 0.5222 mm )",
+                    "pos": {
+                        "x": 13.15,
+                        "y": 5.95
+                    },
+                    "uuid": "634192d2-f02d-4166-9248-3ce79f87f3cf"
+                },
+                {
+                    "description": "パッド 11 [/BAT_ADC] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5175
+                    },
+                    "uuid": "93b18af6-1c37-409d-b504-b0bb13bfd6e7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_CS_N と /VBUS_N)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CS_N] ( In4.Cu 上、長さ: 1.7889 mm )",
+                    "pos": {
+                        "x": 13.6,
+                        "y": 5.2
+                    },
+                    "uuid": "a7263004-8fe7-4a58-b06e-e4315ca629a1"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BAT_ADC と /VBUS_N)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( B.Cu 上、長さ: 1.6000 mm )",
+                    "pos": {
+                        "x": 11.815,
+                        "y": 5.5175
+                    },
+                    "uuid": "04b26aa5-f14b-498a-a204-c7edaced3d8b"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0096 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( F.Cu 上、長さ: 1.6298 mm )",
+                    "pos": {
+                        "x": 14.025,
+                        "y": 5.975
+                    },
+                    "uuid": "ae8ab251-78eb-4ba8-89aa-66168a7957b4"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0850 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.025,
+                        "y": 5.975
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 11 [/BAT_ADC] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5175
+                    },
+                    "uuid": "93b18af6-1c37-409d-b504-b0bb13bfd6e7"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 0.5222 mm )",
+                    "pos": {
+                        "x": 13.15,
+                        "y": 5.95
+                    },
+                    "uuid": "634192d2-f02d-4166-9248-3ce79f87f3cf"
+                },
+                {
+                    "description": "パッド 11 [/BAT_ADC] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5175
+                    },
+                    "uuid": "93b18af6-1c37-409d-b504-b0bb13bfd6e7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.025,
+                        "y": 5.975
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5
+                    },
+                    "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4"
+                },
+                {
+                    "description": "パッド 11 [/BAT_ADC] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 5.5175
+                    },
+                    "uuid": "93b18af6-1c37-409d-b504-b0bb13bfd6e7"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

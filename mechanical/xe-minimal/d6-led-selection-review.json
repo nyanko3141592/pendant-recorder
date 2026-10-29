@@ -1,0 +1,58 @@
+{
+  "status": "LED_CANDIDATE_DATASHEET_REVIEW_NOT_ADOPTED",
+  "mpn": "APHHS1005LSYCK/J3-PF",
+  "source": "https://www.kingbrightusa.com/images/catalog/SPEC/APHHS1005LSYCK-J3-PF.pdf",
+  "pdf_sha256": "ef90199afa285d0af2a55141217072a8d49597463fb5182623861aa0890c05cb",
+  "revision": "V.4B 03/12/2025",
+  "package_nominal_mm": [
+    1,
+    0.5,
+    0.5
+  ],
+  "general_tolerance_mm": 0.1,
+  "bounding_envelope_mm": [
+    1.1,
+    0.6,
+    0.6
+  ],
+  "pins": {
+    "1": "cathode GND",
+    "2": "anode STATUS_LED_A"
+  },
+  "recommended_pad_mm": [
+    0.7,
+    0.5
+  ],
+  "recommended_gap_mm": 0.2,
+  "current_pad_mm": [
+    0.59,
+    0.64
+  ],
+  "current_gap_mm": 0.38,
+  "land_pattern_matches": false,
+  "intensity_test_current_mA": 2,
+  "intensity_min_typ_mcd": [
+    10,
+    20
+  ],
+  "vf_at_2mA_min_typ_max_V": [
+    1.5,
+    1.85,
+    2.1
+  ],
+  "retail": {
+    "url": "https://www.digikey.jp/en/products/detail/kingbright/APHHS1005LSYCK-J3-PF/7318978",
+    "observed_date": "2026-10-27",
+    "cut_tape_part": "754-2125-1-ND",
+    "listed_stock": 131410,
+    "qty1_JPY_ex_tax": 86,
+    "qty1_JPY_inc_JCT": 94.6,
+    "shipping_not_included": true
+  },
+  "remaining": [
+    "Update footprint to manufacturer land pattern and rerun DRC",
+    "Visibility at current 6.8k resistor is not specified by 2mA optical rating",
+    "Package solder standoff and window view angle qualification",
+    "Not selected in production BOM"
+  ]
+}

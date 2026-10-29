@@ -1,0 +1,10 @@
+{
+  "status": "FIDUCIAL_MASK_REPRESENTATION_DEPENDENT_DRC_RESULT_NOT_YET_ADOPTED",
+  "observations": [
+    "P1_U8 footprint serialized text is identical before and after feature addition.",
+    "Removing all fiducials leaves 9 missing-courtyard warnings and no mask bridge errors.",
+    "Explicit 2 mm mask-only apertures plus 1 mm copper fiducial pads leave 15 missing-courtyard warnings and no mask bridge errors."
+  ],
+  "inference": "DRC appears sensitive to large local mask-margin representation; this is not yet proven as a KiCad defect.",
+  "next": "Compare exported copper and mask geometry between original and explicit-aperture candidate before adoption."
+}

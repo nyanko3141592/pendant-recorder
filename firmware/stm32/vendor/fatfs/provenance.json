@@ -1,0 +1,20 @@
+{
+  "version": "R0.16 + official patches1 and2",
+  "source": "https://elm-chan.org/fsw/ff/arc/ff16.zip",
+  "archive_sha256": "99f7dc1f7e095356e4a9e3dbe29959090d8b948afe2bbc5441e52fdf4b85449e",
+  "patches": [
+    "https://elm-chan.org/fsw/ff/patch/ff16p1.diff",
+    "https://elm-chan.org/fsw/ff/patch/ff16p2.diff"
+  ],
+  "license": "Permissive license retained in source headers",
+  "config": "FAT12/16/32,1volume512sectors,CP437,LFNstack64chars for PENDANT.JSON,4filelocks,noexFAT/noformat/noRTC (placeholder timestamps, not actual recording time)",
+  "files": {
+    "ff.c": "3c30280ffe2d0fb19a5241d9ed9f20a2c3911c2861652ebf6ad57f74fb369250",
+    "diskio.h": "2279ac777bc7a8a317b1b44519df8604e4cdd0cd3b1608861eed3c78045d89c6",
+    "ff16p1.diff": "7996ddc3135f3d534a8153f7d75d587030e5c8551b003c3b7ee823ffb7fc64bf",
+    "ffunicode.c": "6cd4dc4a664386ebd108e56d367582c35f005fc20381486366b5d77ac58119bd",
+    "ff.h": "86099100a6ef3c3623dfbeaacb3a2613ff266df76aad1386513042b831c5b733",
+    "ffconf.h": "4d749bb39f33216d9e4c0945e58ad36ced561db3dbe335a87ebcfeb224f995f3",
+    "ff16p2.diff": "5cd39f1fc299f0f1dec9fa1ce544dc0bc048b2f6eb3b8161476ed20f9cf1e290"
+  }
+}

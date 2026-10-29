@@ -1,0 +1,74 @@
+{
+  "status": "EXACT_IMAGE_16H_MEASUREMENT_CONTRACT_READY_PHYSICAL_TEST_NOT_RUN",
+  "date": "2026-10-27",
+  "sources": {
+    "app/main.c": "a282a4d66258551394f64c567ee0de338ea94205fb68eae2362462a3ee2b2cd9",
+    "app/build_requirements.h": "dbb3d93f8da5d6e5c70660c088ae47448e8d320de7f5068750e1666c03b8d2bd",
+    "board/recorder_runtime.c": "20f82482ff358b462ce5e6e054929eedea856b0dec7a2bda02b4a8f5017b8ce1",
+    "board/recording_session.c": "237ac206dd2a9c92f1f3c0bfcec82e79d7f8ccd5ae18be021a3e3057a57e283f",
+    "core/cooperative_pipeline.c": "3fb70f71c0ebf57c3987c4d870398c4fffee6747177aa9d65f8550adc1f06edb",
+    "core/audio_queue.h": "f92a359feb335e501df4f9213d846bbeea2ae3e38a4011ba0c16b7ebf1c90c9e",
+    "crypto/recording_store.c": "968fbc75c147c40d04107a0b6f8cd49782bc642a29a6666c23623a947b4be482",
+    "crypto/fatfs_recording.c": "c0821b2d525f9740d1a13f3b5b0d6955c484d93e4045e80771ea6412b214d1b5",
+    "board/storage_probe.c": "1aa7ecf2be905bf8d268d3fc792785083c4f3f8a448b6ca20a5935898ec560f4",
+    "board/storage_spi.c": "45d7ed3fc64652dfebff4848f2bb19917939eb42c7398531ab5e79248044459c",
+    "board/system_clock.c": "6f2db3c0905972cb701409969ed3d122e65318e7728bcee9006c453a0c906822",
+    "board/instruction_cache.c": "6478ce0232babe973ce1efe886e23fe93bbbf6b8250b8dcd7039337e8a714044",
+    "board/instruction_cache.h": "e6adcafab2b5e08405d6140a4ac1ebc4d8118ce5d0ee2cd40c0559aba5a26e60",
+    "board/stm32u5xx_hal_conf.h": "1d341d64a0a024818545e71573571ead080cf6ead70e172e850d3d434117d97d"
+  },
+  "verified_structure": {
+    "application_chunk_samples": 80000,
+    "chunk_seconds_at_16khz": 5,
+    "queue_block_samples": 1024,
+    "queue_blocks": 16,
+    "queue_nominal_capacity_seconds": 1.024,
+    "storage_progress_callback": "recorder_runtime.capture_progress calls cooperative_pipeline_pump while synchronous storage access progresses",
+    "save_scope": "recording_store_save includes begin, age_write_recording with interleaved ciphertext writes, commit; commit includes f_sync, close, rename, CTRL_SYNC",
+    "sleep": "main uses WFI with 1ms SysTick; not a proof of Stop mode or low measured current",
+    "clock_profile": "MSIS16 CPU, MSIK3.072MHz ADF, PCLK2 16MHz SPI, HSI16 off",
+    "instruction_cache": "ICACHE one-way required fail-closed at startup"
+  },
+  "acceptance_run_contract": {
+    "units": 5,
+    "battery": "DTP401525-XE 110mAh, five serialized production-representative packs",
+    "firmware": "same configured BIN and source/build/config hashes on all units; debugger detached; no diagnostic instrumentation",
+    "start_state": "charge each pack in the candidate board to normal termination, rest 30 minutes disconnected, storage preconditioned to at least 80 percent allocated, then cold boot recording",
+    "recording": "at least 57600 seconds continuous, 16000Hz mono, silence retained, five-second encrypted segments, no USB power",
+    "ambient_primary": "25C +/-2C in still air after thermal stabilization",
+    "ambient_endpoint_repeats": ["10C +/-2C", "35C +/-2C"],
+    "electrical_capture": "battery-side voltage and current from before boot until controlled stop; raw sample rate at least 100kS/s or instrument peak-detect bandwidth at least 100kHz; calibrated range must cover 0 to at least 150mA without autorange gaps",
+    "per_unit_pass": [
+      "recording duration >=57600s without reset, stop, queue overflow or fault",
+      "integrated discharge charge <=70.4mAh and average current <=4.4mA over the complete run",
+      "observed battery current <=110mA; instrument bandwidth and uncertainty recorded, so observed samples alone are not promoted to a peak bound",
+      "all expected encrypted segments through the full interval exist, authenticate, decrypt and decode",
+      "decoded sample count >=921600000 with no sequence gap, duplicate interval or hidden silence omission",
+      "completed files remain recoverable after normal stop; incomplete tail is reported rather than silently discarded"
+    ],
+    "release_rule": "All five units pass the primary run. Endpoint repeats must also demonstrate >=16h using the qualified cutoff; any failure keeps the design on HOLD and triggers power redesign, not requirement relaxation."
+  },
+  "diagnostic_capture_contract": {
+    "separate_from_acceptance": true,
+    "rails": ["battery input", "3V3 non-storage", "SD_V3 storage"],
+    "required_observations": ["CPU awake fraction or equivalent GPIO timing with quantified probe overhead", "five-second commit inclusive latency", "SPI bus-active time", "storage internal-busy current after CS release", "audio queue high-water and overflow fault", "MSIS/MSIK/HSI16 live clock state"],
+    "decision_threshold": "If battery average exceeds4.4mA or the 70.4mAh integral, identify the dominant rail. If non-storage dominates, qualify tickless idle while preserving HAL time and ADF/LPDMA continuity; if storage dominates, change batching/media only after verifying audio backlog and durability."
+  },
+  "measurement_rules": [
+    "Primary energy evidence is battery-side integrated current over the complete run, including startup, ordinary capture, encryption, filesystem metadata, sync and indicators. Do not add nested timing-derived current estimates to this integral.",
+    "recording_store_save elapsed duration is an inclusive software interval, not SD active time. Crypto writes and audio progress are nested; do not sum their inclusive durations.",
+    "An SPI CS or clock observation cannot alone establish SD internal active/idle current. Relate bus activity to measured current without assigning the datasheet active current to every software save interval.",
+    "Use an unchanged non-instrumented application for the acceptance runtime test. Any diagnostic build requires matched compiler flags/configuration and paired current captures to bound instrumentation overhead.",
+    "Do not attach a powered USB host or debugger during the battery-runtime acceptance capture. Any diagnostic probe setup must document additional loading and possible back-power.",
+    "On-device diagnostic counters, if implemented, should aggregate in RAM without per-block serial/USB prints, flash writes or interrupt masking. Export after recording stops; instrumentation not yet implemented.",
+    "Record queue high-water, sticky overflow/fault state, committed sample count, build hash and battery cutoff reason. Queue occupancy alone cannot prove decrypted audio continuity.",
+    "Validate decrypted audio sample totals and sequence continuity independently, including silence; a 16-hour current trace alone is insufficient."
+  ],
+  "host_evidence": {
+    "command": "sh firmware/stm32/tests/check_cooperative_storage.sh",
+    "result": "PASS real SD adapter/pipeline progress integration; simulated cumulative1200ms stall and pump failure",
+    "scope": "host simulation with sanitizers; not hardware latency, power, media reliability or 16h runtime"
+  },
+  "runtime_pass": null,
+  "next_action": "Run the diagnostic captures first on one assembled unit, then the unchanged acceptance image on five units. Until hardware exists, retain NOT_RUN and HOLD."
+}

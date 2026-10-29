@@ -1,0 +1,32 @@
+{
+  "status": "DATASHEET_LIMITS_EXTRACTED_NOT_MEASURED",
+  "source": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+  "revision": "SLUSF65B August 2026",
+  "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+  "CE": {
+    "pin": 4,
+    "active_low": true,
+    "VIL_max_V": 0.4,
+    "VIH_min_V": 1.3,
+    "table_condition": "VPULLUP=1.8 V",
+    "absolute_limits_V": [
+      -0.3,
+      5.5
+    ],
+    "note": "Absolute limits are stress limits, not targets. R12 now pulls CE up from BQ25185 SYS, separating CE from the abnormal USB-voltage domain. SYS and CE must still be checked over attach/detach, dead-pack startup and transients."
+  },
+  "engineering_bench_targets": {
+    "enable_CE_max_V": 0.3,
+    "disable_CE_min_V": 1.4,
+    "margin_V": 0.1,
+    "scope": "Proposed 100mV measurement margin relative to table limits; not a new manufacturer specification."
+  },
+  "required_observations": [
+    "Scope CE directly at U3 pin4 relative to device ground",
+    "Record both steady state and peak transients",
+    "Measure charger current independently; CE alone does not demonstrate actual charging has stopped",
+    "Record SYS and Q4 leakage loading; confirm CE never exceeds pin stress limits",
+    "Verify SYS establishes a valid CE-high inhibit during dead-pack USB startup before charging can begin",
+    "Reconcile the 1.8V logic-table test condition with the actual SYS pull-up domain before release"
+  ]
+}

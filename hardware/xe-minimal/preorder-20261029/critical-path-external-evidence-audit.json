@@ -1,0 +1,42 @@
+{
+  "status": "SUPERSEDED_BY_FIRST_PROTOTYPE_USER_CLARIFICATION",
+  "audit_number_in_consecutive_impasse_sequence": 3,
+  "previous_turn_classification": "no progress: same missing power evidence; not a live process wait",
+  "requirement": "docs/requirements.md lines29-33: establish16h power feasibility before final case and final version synchronization",
+  "observation": "Current4.4mA allocation is neither measured nor a conservative complete-device bound. Exact storage part published current conditions differ from configured SPI; MCU/peripheral duty and usable charged-pack capacity unresolved.",
+  "meaningful_next_action": "Acquire exact hardware battery-side current/charge and rail/queue measurements, or an applicable conservative component-level power bound. Existing firmware has measurement plans; speculative board or clock substitutions do not establish feasibility.",
+  "external_input_question": "Does user have current hardware or measured current logs?",
+  "prohibited_actions_remain": [
+    "order",
+    "pay",
+    "upload",
+    "vendor_contact",
+    "print"
+  ],
+  "not_reclassified_as_preorder_blocker": [
+    "Physical30h media qualification",
+    "Physical case/drop/cord results"
+  ],
+  "still_open_design_scope": [
+    "USB/electrical layout acceptance",
+    "full physical pin/tape mapping",
+    "harness route and lid joint",
+    "automatic sourcing/assembly availability"
+  ],
+  "decision": "Do not continue lower-priority cosmetic/document iterations while highest-priority feasibility lacks evidence. No claim of completed design, no goal-complete or blocked status change on first audit.",
+  "evidence_sha256": {
+    "docs/requirements.md": "b1695220dc770fffe63536f98a1cc26674b4d8dea21fef6f8c55ef70817eea7f",
+    "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/evidence/xe-integrated-16h-budget.json": "42e62b454ef15f9c47610fc904d00e6e2aad3bcfb7a2e7251746b0730314b92f",
+    "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/evidence/current-storage-energy-review.json": "6fdaf45fea571ee960bb4a1c5be5b942fcddee24c856fb7353d6d52105ef8700"
+  },
+  "revalidation": {
+    "matching_csv_paths": [
+      "docs/validation/xe-battery-cutoff-results.template.csv"
+    ],
+    "measurement_plan_status": "EXACT_IMAGE_16H_MEASUREMENT_CONTRACT_READY_PHYSICAL_TEST_NOT_RUN",
+    "new_user_measurement_evidence_received": false,
+    "running_measurement_process_confirmed": false
+  },
+  "latest_revalidation": "Requirement and feasibility evidence hashes unchanged; no measured current CSV beyond blank template; no new human reply.",
+  "superseding_instruction": "User confirms no hardware/logs; accepts supported theoretical performance estimates for small low-cost first prototype. No measurement-only design stop."
+}

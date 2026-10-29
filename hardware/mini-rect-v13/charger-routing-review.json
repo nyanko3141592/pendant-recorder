@@ -1,0 +1,124 @@
+{
+  "status": "IMPROVED_ROUTING_CANDIDATE_NOT_RELEASED",
+  "board_sha256": "9f96e6b5918289774992ab5a03aeab4188fbdc1accf3914b04b89e26270df570",
+  "violations": [
+    {
+      "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd ( \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0974 mm)",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4163 mm )",
+          "pos": {
+            "x": 14.82,
+            "y": 17.1002
+          },
+          "uuid": "a85b4f1f-28a2-4867-8079-dd3e131ef846"
+        },
+        {
+          "description": "\u914d\u7dda [/PDM_CLK] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.1639 mm )",
+          "pos": {
+            "x": 14.7696,
+            "y": 17.3111
+          },
+          "uuid": "f377362b-dd55-408d-a79a-7283f1fd72de"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd ( \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0993 mm)",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/SD_DAT2] ( F.Cu \u4e0a\u3001\u9577\u3055: 1.1736 mm )",
+          "pos": {
+            "x": 11.1512,
+            "y": 2.2629
+          },
+          "uuid": "bc15c173-c530-495a-9379-f4fac7bbdf2f"
+        },
+        {
+          "description": "\u914d\u7dda [/TS_COLD_REF] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.9136 mm )",
+          "pos": {
+            "x": 10.0882,
+            "y": 2.4757
+          },
+          "uuid": "c8667b75-e060-4eb4-925c-b24e0b6c58c1"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd ( \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0993 mm)",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/PDM_CLK] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 13.9701,
+            "y": 17.3621
+          },
+          "uuid": "a6928823-8099-457b-9f3a-24e6872b5ad4"
+        },
+        {
+          "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4761 mm )",
+          "pos": {
+            "x": 14.2913,
+            "y": 16.9878
+          },
+          "uuid": "a8564e60-87ce-4184-9ca5-07f64184a2a5"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd ( \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0974 mm)",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2152 mm )",
+          "pos": {
+            "x": 14.82,
+            "y": 15.885
+          },
+          "uuid": "e2ca9571-c755-4469-8f5d-968cdf5bd77b"
+        },
+        {
+          "description": "\u914d\u7dda [/PDM_CLK] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.1639 mm )",
+          "pos": {
+            "x": 14.7696,
+            "y": 17.3111
+          },
+          "uuid": "f377362b-dd55-408d-a79a-7283f1fd72de"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    }
+  ],
+  "unconnected": [
+    {
+      "description": "Missing connection between items",
+      "items": [
+        {
+          "description": "\u30d1\u30c3\u30c9 10 [/VBUS] - U3 ( B.Cu \u4e0a)",
+          "pos": {
+            "x": 3.855,
+            "y": 10.075
+          },
+          "uuid": "8ad07815-2552-467d-a791-960abfbe85d0"
+        },
+        {
+          "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.6184 mm )",
+          "pos": {
+            "x": 5.4646,
+            "y": 10.4271
+          },
+          "uuid": "f2b1291a-691f-4754-a3f0-acc954aba880"
+        }
+      ],
+      "severity": "error",
+      "type": "unconnected_items"
+    }
+  ],
+  "decision": "Continue on charger-plane-source; retain mic-ground-route as previous baseline. Need clearance fixes, VBUS route, USB/power/ground and mechanical review."
+}

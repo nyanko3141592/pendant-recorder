@@ -1,0 +1,32 @@
+{
+  "status": "PASS_SYNTHETIC_30H_PLUS_RECOVERY_RESERVE",
+  "profile": "current30: 10800 ten-second files, 82180-byte conservative payload, FAT32 4096-byte clusters, 963999744-byte RAM volume",
+  "command": "sh firmware/stm32/tests/check_storage_36h.sh",
+  "baseline_free_bytes": 32710656,
+  "two_max_file_plus_six_cluster_budget_bytes": 286720,
+  "maximum_file_bytes": 131072,
+  "recovery_additional_allocation_bytes": 0,
+  "checks": [
+    "30h production begin/write/commit",
+    "Retain maximum 128KiB TMP using orderly abort; unmount/remount",
+    "Recovery advances ID and consumes no additional clusters",
+    "Next maximum 128KiB recording commits",
+    "All original 10800 complete files read back byte-for-byte after recovery",
+    "ASan/UBSan process exit 0"
+  ],
+  "limits": [
+    "Orderly close/remount is not injected power loss",
+    "Synthetic ciphertext fixture does not prove real encoder maximum or real media latency/power/endurance",
+    "4096-byte cluster format and actual card usable capacity must be fixed and verified",
+    "286720 bytes is a two-operation allocation budget, not an arbitrary-duration outage guarantee; repeated incomplete files consume capacity"
+  ],
+  "physical_release_allowed": false,
+  "source_sha256": {
+    "firmware/stm32/tests/test_storage_36h.c": "43741f92975e0cb64044fc5f1f7ae713a32557ac0a1f02924bdbebe9ef054996",
+    "firmware/stm32/tests/check_storage_36h.sh": "cdb8b89871697277c40cdfa55c9515ee86aba98c733a753380bf16ae955ae966",
+    "firmware/stm32/crypto/fatfs_recording.c": "c0821b2d525f9740d1a13f3b5b0d6955c484d93e4045e80771ea6412b214d1b5",
+    "firmware/stm32/crypto/fatfs_recording.h": "b1d62a1d7741cedb29adcb0431169e3ab16b53eb6164e1972df36c5bcce938d3",
+    "firmware/stm32/vendor/fatfs/ffconf.h": "4d749bb39f33216d9e4c0945e58ad36ced561db3dbe335a87ebcfeb224f995f3"
+  },
+  "log_sha256": "8b4e9d15bd3cd525682d47bd18f9e0169d9aa44b72b233a7a3e353abbb5a1636"
+}

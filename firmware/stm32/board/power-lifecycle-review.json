@@ -1,0 +1,83 @@
+{
+  "status": "POWER_OPTIMIZATION_OPEN_NOT_16H_PROOF",
+  "observations": [
+    {
+      "source": "board/rng_board.c",
+      "finding": "Startup probe and each nonempty RNG request acquire/init/generate/deinit/reset/disable/release. HSI48 stops when no USB owner remains."
+    },
+    {
+      "source": "board/usb_board.c",
+      "finding": "USB retains its own shared clock lease through controller/CRS lifetime."
+    },
+    {
+      "source": "app/main.c",
+      "finding": "WFI sleep only; SysTick stays active. No Stop2 policy."
+    }
+  ],
+  "next_required": [
+    "Measure repeated RNG startup/health/stop latency and audio queue margin",
+    "Measure current in record/encrypt/write/USB states; finish low-power scheduling policy"
+  ],
+  "implemented_this_revision": "Per-request board_rng_bytes callback wired to recorder store. Errors including shutdown errors wipe all output and latch session failure. Empty requests do not enable hardware.",
+  "evidence": {
+    "test": "check_secure_random.sh; check_recorder_boot.sh; full actual app ARM link",
+    "result": "PASS sanitizer tests: repeated requests, zero request, USB shared lease, oscillator/clock/frequency/init/generate/deinit/stop failure, sticky fault and output wipe; boot callback wiring",
+    "app_elf_sha256": "c6e3ae1f50723ce22cabede5f23e61cf52cae229eabf35e0aab0c385425dc228"
+  },
+  "source_sha256": {
+    "board/clock48.c": "de3b8c5cf5a18baf08101ea5dd6ab9482bec8f9a887654972e8c8eecaa717976",
+    "board/rng_board.c": "effd824e643785f8ea502d05fdfa710736ce83c2aea8b239135aeb7eac834ae9",
+    "board/secure_random.c": "a4b08871e09220b913a99297a0b712369acd32bdb2ca6f288c7ce82a828b8507",
+    "board/usb_board.c": "898ab2ba73b0054588906abe5caea9bbf433414a4699052011b3f6f89e32d2e5",
+    "board/recorder_boot.c": "266ee08da6323f0d12ff4f96a2f143bbeebd526a0ca038b0da06f9202b664660",
+    "app/main.c": "70bdb250df6d0ae675cc475be516a8850c28c4396277b5131b287c6c5c8c1181"
+  },
+  "shared_clock_manager": {
+    "source": "board/clock48.c",
+    "integrated_consumers": [
+      "rng_board.c",
+      "usb_board.c"
+    ],
+    "policy": "one lease per owner; first acquisition starts HSI48, last release stops; transition failure latches fault; main task with interrupts enabled only",
+    "validation": "check_clock48.sh ASAN/UBSAN: both owner orders, duplicates, invalid owner, context rejection, start/stop failure; check_secure_random.sh regression; full ARM app link",
+    "remaining": "Physical power/latency/USB enumeration and reconnect verification pending."
+  },
+  "hal_timeout_note": "Pinned HAL RNG_TIMEOUT_VALUE=4ms per wait, not an end-to-end latency bound; oscillator waits, interrupt delays and repeated calls remain.",
+  "usb_adapter_verification": {
+    "command": "sh firmware/stm32/tests/check_usb_board.sh",
+    "result": "PASS ASAN/UBSAN",
+    "implementation_under_test": [
+      "board/usb_board.c",
+      "board/clock48.c"
+    ],
+    "mocked": [
+      "HAL RCC GPIO PWR NVIC",
+      "TinyUSB initialized/deinit",
+      "UID descriptor setter"
+    ],
+    "cases": [
+      "successful prepare/stop and repeat",
+      "IRQ/masked context rejected before hardware access",
+      "HSI48 start failure",
+      "CLK48 mux failure cleanup",
+      "VBUS lost during prepare cleanup",
+      "TinyUSB deinit false retains resources",
+      "TinyUSB deinit true but still initialized retains resources",
+      "HSI48 stop failure prevents re-acquisition",
+      "RNG owner preserves shared HSI48 across USB stop"
+    ],
+    "limits": [
+      "Mock ordering only, not physical electrical/timing behavior",
+      "TinyUSB full stack and actual enumeration not exercised",
+      "No measured energy/latency/16h validation"
+    ],
+    "sha256": {
+      "board/usb_board.c": "898ab2ba73b0054588906abe5caea9bbf433414a4699052011b3f6f89e32d2e5",
+      "board/clock48.c": "de3b8c5cf5a18baf08101ea5dd6ab9482bec8f9a887654972e8c8eecaa717976",
+      "tests/test_usb_board.c": "f1fc3c3cfd97b94660119698fe6a2d0ff48a02032f9a17c9c8ef732a85955df7",
+      "tests/usb_board_mock/stm32u5xx_hal.h": "72bf605e2baffaa0997a070a1960de4735e72fc439037e35365a9ab2ac4c2598",
+      "tests/usb_board_mock/tusb.h": "0e05f8f235815eee5a819ffc1f4cd5f5c8a031b9da902f344b31133d2f616047",
+      "tests/check_usb_board.sh": "e67cba3b7b867c94341797500862d2305eb5c05446b2b4308127daca59e6b558"
+    }
+  }
+}

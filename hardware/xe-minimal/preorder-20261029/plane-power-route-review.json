@@ -1,0 +1,24 @@
+{
+  "status": "INCOMPLETE_PLANE_ROUTING_TRIAL_NOT_ADOPTED",
+  "sha256": "c025c6c6d76b5eac1a7843a336e5476eaddf4c02b2574a6594b8dae27f03bd0c",
+  "types": {
+    "items_not_allowed": 13,
+    "clearance": 20,
+    "via_dangling": 1,
+    "lib_footprint_issues": 74
+  },
+  "geometric": 34,
+  "unconnected": 2,
+  "parity": 0,
+  "vias": 133,
+  "release_allowed": false,
+  "diagnosis": {
+    "unconnected_nets": [
+      "/SD_MOSI",
+      "/SD_CLK_MCU"
+    ],
+    "items_not_allowed": "13 preserved GND traces against KiCad full-layer track keepouts; no inner signal traces detected by layer-length audit",
+    "clearance": "Most20 violations arise after enforcing BAT minimum.15; supply widths must be passed into router before routing; VBUS/U2 pad clearance also needs review",
+    "next": "Remove redundant inner GND tracks from trial and encode supply net widths before re-routing BAT/VBUS and unfinished SPI; retain two GND planes"
+  }
+}

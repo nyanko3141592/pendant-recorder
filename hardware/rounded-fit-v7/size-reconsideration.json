@@ -1,0 +1,47 @@
+{
+  "current_mm": [
+    26,
+    31,
+    14
+  ],
+  "current_plan_corner_radius_mm": 5,
+  "omi_diameter_mm": 25.5,
+  "plan_area_current_mm2": 784.5398163397448,
+  "plan_area_omi_mm2": 510.70515574919074,
+  "area_ratio": 1.53618934038143,
+  "pcb_current_mm": [
+    24,
+    27,
+    0.8
+  ],
+  "pcb_omi_documented_mm": [
+    21,
+    21,
+    0.6
+  ],
+  "next_envelope_target_unproven_mm": [
+    26,
+    28,
+    14
+  ],
+  "target_shape": "capsule, R13 plan corners",
+  "target_area_ratio": 1.141420155826572,
+  "requirements_retained": [
+    "USB-C on device",
+    "continuous16h",
+    "no dock",
+    "thickness no greater than Omi",
+    "battery supply and cost priority"
+  ],
+  "architecture_candidates": [
+    "Smaller STM32U535 WLCSP56,3.38x3.38mm;different pinout/SMPS/layout and JLC acceptance required",
+    "Integrated charger/power-path/NTC protection; no temperature protection removed",
+    "Smaller regulator packages and reduced discrete safety circuit after qualified charger selection",
+    "Keep battery capacity while evaluating PCB/USB nesting and circular/capsule envelope"
+  ],
+  "tradeoffs": [
+    "Fine pitch assembly and potentially HDI increase prototype price and procurement risk",
+    "WLCSP package area saving is not equal to whole-board saving",
+    "New enclosure target not yet proven with routing,connector,pack and assembly tolerances"
+  ]
+}

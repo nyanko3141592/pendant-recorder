@@ -1,0 +1,89 @@
+{
+  "status": "LOCAL_ROUTE_TRIAL_NOT_DRC_APPROVED",
+  "results": [
+    {
+      "net": "/SD_MOSI",
+      "start": [
+        16.0,
+        2.2
+      ],
+      "end": [
+        15.1,
+        0.4
+      ],
+      "visited": 730,
+      "found": false
+    },
+    {
+      "net": "/SD_MOSI",
+      "start": [
+        13.9,
+        0.3
+      ],
+      "end": [
+        12.1,
+        2.6
+      ],
+      "visited": 533,
+      "found": true,
+      "path_mm": [
+        [
+          13.9,
+          0.3
+        ],
+        [
+          12.2,
+          0.4
+        ],
+        [
+          12.15,
+          0.45
+        ],
+        [
+          12.1,
+          2.6
+        ]
+      ]
+    },
+    {
+      "net": "/GND",
+      "start": [
+        12.75,
+        1.5
+      ],
+      "end": [
+        13.68,
+        1.055
+      ],
+      "visited": 102,
+      "found": true,
+      "path_mm": [
+        [
+          12.75,
+          1.5
+        ],
+        [
+          13.68,
+          1.055
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "Single-layer bounded search failure does not prove all routing impossible.",
+    "Full DRC and electrical/assembly qualification required.",
+    "Failed routes remain open in this explicitly separate study candidate."
+  ],
+  "drc_after_library_resolution": {
+    "report": "local-route-libraries-drc.json",
+    "unconnected": 1,
+    "violation_types": {
+      "track_dangling": 2,
+      "missing_courtyard": 1,
+      "silk_edge_clearance": 1,
+      "silk_overlap": 1,
+      "silk_over_copper": 2
+    }
+  },
+  "bypass_search_review": "mosi-existing-via-review.json"
+}

@@ -1,0 +1,768 @@
+{
+  "status": "PROVISIONAL_DISPLACEMENT_SCREEN_NOT_PRINT_QUALIFICATION",
+  "sources_sha256": {
+    "film-battery-end-clearance-review.json": "63ffbcc883d78d949bbe17b668e38260d8ddf5ef44c142f120bd72d0ab081235",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "assumption": "X/Z offsets +/-0.1mm are an exploratory engineering screen, not measured A1 mini tolerance or user-specified allowance. Y offsets equal each candidate end clearance.",
+  "results": [
+    {
+      "candidate": "film-battery-end-150um-lower-trial.step",
+      "sha256": "f302fd272dca284d4b1ce0cdfc3456fbfabc2144a2a6679fc0824ea3fe417814",
+      "cases": [
+        {
+          "offset_mm": [
+            -0.1,
+            -0.15,
+            -0.1
+          ],
+          "intersection_mm3": 0.09774999999999756,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            -0.15,
+            0
+          ],
+          "intersection_mm3": 0.020999999999999526,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            -0.15,
+            0.1
+          ],
+          "intersection_mm3": 0.09774999999999921,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.15,
+            -0.1
+          ],
+          "intersection_mm3": 0.09774999999998368,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.15,
+            0
+          ],
+          "intersection_mm3": 0.02099999999999967,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.15,
+            0.1
+          ],
+          "intersection_mm3": 0.0977499999999699,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.15,
+            -0.1
+          ],
+          "intersection_mm3": 0.07649999999999808,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.15,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.15,
+            0.1
+          ],
+          "intersection_mm3": 0.07649999999999922,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0.15,
+            -0.1
+          ],
+          "intersection_mm3": 0.07649999999999918,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            0.15,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0.15,
+            0.1
+          ],
+          "intersection_mm3": 0.07650000000000004,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.15,
+            -0.1
+          ],
+          "intersection_mm3": 0.0759999999999981,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.15,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.15,
+            0.1
+          ],
+          "intersection_mm3": 0.07599999999999922,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.15,
+            -0.1
+          ],
+          "intersection_mm3": 0.07599999999999918,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.15,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.15,
+            0.1
+          ],
+          "intersection_mm3": 0.07600000000000003,
+          "collision": true
+        }
+      ],
+      "colliding_cases": 14,
+      "maximum_overlap_mm3": 0.09774999999999921
+    },
+    {
+      "candidate": "film-battery-end-250um-lower-trial.step",
+      "sha256": "b358903995d135e3e14402d4d20e2fcc2c56fa63b9daac4bc5aad9efeb227492",
+      "cases": [
+        {
+          "offset_mm": [
+            -0.1,
+            -0.25,
+            -0.1
+          ],
+          "intersection_mm3": 0.19549999999999845,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            -0.25,
+            0
+          ],
+          "intersection_mm3": 0.0419999999999998,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            -0.25,
+            0.1
+          ],
+          "intersection_mm3": 0.19550000000000037,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.25,
+            -0.1
+          ],
+          "intersection_mm3": 0.19549999999999468,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.25,
+            0
+          ],
+          "intersection_mm3": 0.04199999999999985,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.25,
+            0.1
+          ],
+          "intersection_mm3": 0.19549999999999104,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.25,
+            -0.1
+          ],
+          "intersection_mm3": 0.15299999999999891,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.25,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.25,
+            0.1
+          ],
+          "intersection_mm3": 0.15300000000000116,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0.25,
+            -0.1
+          ],
+          "intersection_mm3": 0.15299999999999925,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            0.25,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0.25,
+            0.1
+          ],
+          "intersection_mm3": 0.15300000000000147,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.25,
+            -0.1
+          ],
+          "intersection_mm3": 0.1519999999999989,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.25,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.25,
+            0.1
+          ],
+          "intersection_mm3": 0.15200000000000113,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.25,
+            -0.1
+          ],
+          "intersection_mm3": 0.1519999999999993,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.25,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.25,
+            0.1
+          ],
+          "intersection_mm3": 0.1520000000000014,
+          "collision": true
+        }
+      ],
+      "colliding_cases": 14,
+      "maximum_overlap_mm3": 0.19550000000000037
+    },
+    {
+      "candidate": "film-battery-end-350um-lower-trial.step",
+      "sha256": "0c0f249d55e028d3a595d39b1b72b06c7f6347c9e04acd97105694e1c0d1399c",
+      "cases": [
+        {
+          "offset_mm": [
+            -0.1,
+            -0.35,
+            -0.1
+          ],
+          "intersection_mm3": 0.29324999999999957,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            -0.35,
+            0
+          ],
+          "intersection_mm3": 0.06300000000000007,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            -0.35,
+            0.1
+          ],
+          "intersection_mm3": 0.29325000000000306,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.35,
+            -0.1
+          ],
+          "intersection_mm3": 0.2932500000000178,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.35,
+            0
+          ],
+          "intersection_mm3": 0.06299999999999983,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            -0.1,
+            0.35,
+            0.1
+          ],
+          "intersection_mm3": 0.2932500000000124,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.35,
+            -0.1
+          ],
+          "intersection_mm3": 0.22949999999999973,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.35,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            -0.35,
+            0.1
+          ],
+          "intersection_mm3": 0.22950000000000312,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0.35,
+            -0.1
+          ],
+          "intersection_mm3": 0.2294999999999991,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0,
+            0.35,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0,
+            0.35,
+            0.1
+          ],
+          "intersection_mm3": 0.2295000000000028,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.35,
+            -0.1
+          ],
+          "intersection_mm3": 0.22799999999999973,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.35,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            -0.35,
+            0.1
+          ],
+          "intersection_mm3": 0.2280000000000031,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            -0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0,
+            0.1
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.35,
+            -0.1
+          ],
+          "intersection_mm3": 0.2279999999999991,
+          "collision": true
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.35,
+            0
+          ],
+          "intersection_mm3": 0.0,
+          "collision": false
+        },
+        {
+          "offset_mm": [
+            0.1,
+            0.35,
+            0.1
+          ],
+          "intersection_mm3": 0.2280000000000028,
+          "collision": true
+        }
+      ],
+      "colliding_cases": 14,
+      "maximum_overlap_mm3": 0.2932500000000178
+    }
+  ],
+  "limits": [
+    "Tests 27 final poses per candidate, not a continuous insertion sweep or rotation tolerance.",
+    "Only battery body versus lower case; harness, plug, sensor and upper assembly are not evaluated here.",
+    "A zero intersection at exact end travel may mean contact and is not installation clearance."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "status": "CURRENT_CASE_NOT_QUALIFIED_FOR_SELECTED_SERVICE",
+  "observed_date": "2026-10-26",
+  "source": "https://jlc3dp.com/help/article/3d-printing-design-guideline",
+  "source_crawl_label": "today",
+  "cad_source_sha256": "d8b7c01a8a669fa8edcb710269bc2c410e838db5bd3cf0a8b93e740dab8c0735",
+  "case_nominal_mm": [
+    30,
+    32,
+    14.8
+  ],
+  "hard_external_limit_mm": [
+    30,
+    32,
+    15
+  ],
+  "findings": [
+    {
+      "feature": "Snap cantilever",
+      "current_thickness_mm": 0.5,
+      "supplier_recommended_thickness_mm": "more than1.5",
+      "result": "Below published snap recommendation; generic minimum-wall table is not snap durability approval."
+    },
+    {
+      "feature": "Acoustic passage",
+      "current_bore_mm": 0.8,
+      "current_length_to_gasket_top_mm": 8.6,
+      "supplier_table": "Smallest listed SLA bore1.0mm depth1-3mm; nylon smallest listed1.5mm depth1.5-4.5mm",
+      "result": "Current long0.8mm passage is outside listed aperture/depth combinations; no extrapolated acceptance."
+    },
+    {
+      "feature": "Overall envelope",
+      "SLA_nominal_dimensional_tolerance_mm": 0.2,
+      "nylon_nominal_dimensional_tolerance_mm": 0.3,
+      "SLA_positive_tolerance_screen_mm": [
+        30.2,
+        32.2,
+        15.0
+      ],
+      "nylon_positive_tolerance_screen_mm": [
+        30.3,
+        32.3,
+        15.1
+      ],
+      "result": "Nominal X/Y already equal hard maximum; positive tolerance exceeds user limit. Whole-assembly stackup still needed."
+    },
+    {
+      "feature": "Battery guide clearance",
+      "nominal_gap_mm": 0.3,
+      "result": "Comparable to nylon published0.3mm model tolerance; cannot assume guaranteed positive clearance or swelling allowance."
+    }
+  ],
+  "redesign_actions": [
+    "Keep30x32x15 hard limit; allocate fabrication and assembly tolerances before choosing new nominal dimensions.",
+    "Replace or redesign closure for a qualified material/process; do not simply thicken snaps into PCB clearance.",
+    "Review split acoustic channel or separately formed insert to avoid relying on an unsupported narrow deep printed bore; preserve microphone seal and acoustic validation.",
+    "Regenerate enclosure and PCB/pack/component collision checks after choosing closure/channel changes."
+  ],
+  "limitations": [
+    "Guidelines are supplier recommendations and general tolerances, not a formal rejection or a production quotation.",
+    "No material chosen or uploaded model evaluated by supplier.",
+    "Acoustic channel length includes bottom wall and seal path, not the cutter length used in CAD.",
+    "No final print price or case manufacturing approval."
+  ],
+  "release_allowed": false
+}

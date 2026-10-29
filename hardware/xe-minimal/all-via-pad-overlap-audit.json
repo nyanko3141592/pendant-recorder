@@ -1,0 +1,123 @@
+{
+  "method": "Conservative axis-aligned pad bounding box vs via copper radius plus0.025mm; not solder-mask/manufacturing qualification",
+  "vias": [
+    {
+      "uuid": "1244cfda-6f64-4613-9973-753505b74069",
+      "xy_mm": [
+        23.0,
+        12.8
+      ],
+      "near_pad_bbox": [
+        {
+          "ref": "R37",
+          "pad": "1",
+          "net": "/V3V3",
+          "bbox_copper_gap_mm": -0.175
+        }
+      ]
+    },
+    {
+      "uuid": "46dbcaa7-420f-423b-9d24-7de66d74a515",
+      "xy_mm": [
+        20.1,
+        2.9
+      ],
+      "near_pad_bbox": [
+        {
+          "ref": "C1",
+          "pad": "1",
+          "net": "/V3V3",
+          "bbox_copper_gap_mm": 0.0125
+        }
+      ]
+    },
+    {
+      "uuid": "52c797b8-1eea-474f-8eaa-aef4deea83b8",
+      "xy_mm": [
+        20.0,
+        2.5
+      ],
+      "near_pad_bbox": [
+        {
+          "ref": "C1",
+          "pad": "1",
+          "net": "/V3V3",
+          "bbox_copper_gap_mm": -0.074222
+        }
+      ]
+    },
+    {
+      "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de",
+      "xy_mm": [
+        20.7,
+        10.6
+      ],
+      "near_pad_bbox": [
+        {
+          "ref": "U1",
+          "pad": "36",
+          "net": "/V3V3",
+          "bbox_copper_gap_mm": -0.175
+        }
+      ]
+    },
+    {
+      "uuid": "825059d0-c8fd-4d80-814e-d8e84d8fa14a",
+      "xy_mm": [
+        21.4,
+        1.4
+      ],
+      "near_pad_bbox": [
+        {
+          "ref": "C4",
+          "pad": "1",
+          "net": "/V3V3",
+          "bbox_copper_gap_mm": -0.175
+        }
+      ]
+    },
+    {
+      "uuid": "f8274bf8-2322-49ed-80d6-54702794632c",
+      "xy_mm": [
+        20.9,
+        1.4
+      ],
+      "near_pad_bbox": [
+        {
+          "ref": "C22",
+          "pad": "1",
+          "net": "/V3V3",
+          "bbox_copper_gap_mm": -0.030691
+        },
+        {
+          "ref": "C4",
+          "pad": "1",
+          "net": "/V3V3",
+          "bbox_copper_gap_mm": -0.175
+        }
+      ]
+    },
+    {
+      "uuid": "87bffccc-3927-4521-8e4a-13b8fa8644ed",
+      "xy_mm": [
+        18.1,
+        11.5
+      ],
+      "near_pad_bbox": [
+        {
+          "ref": "U1",
+          "pad": "40",
+          "net": "/PDM_DATA",
+          "bbox_copper_gap_mm": -0.175
+        }
+      ]
+    }
+  ],
+  "board_sha256": "500e5712f803414f505a42c7e4c561d1b2d2ddc5093f67324cf67d38f1626023",
+  "status": "OPEN_MANUFACTURING_REVIEW_REQUIRED",
+  "flagged_vias": 7,
+  "limits": [
+    "Axis-aligned bounding boxes are conservative; inspect actual pad shapes and mask openings before deciding relocation or filled/capped vias.",
+    "Not a complete manufacturing capability audit."
+  ]
+}

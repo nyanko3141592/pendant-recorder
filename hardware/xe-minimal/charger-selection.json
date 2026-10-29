@@ -1,0 +1,59 @@
+{
+  "status": "SELECTED_FOR_PROTOTYPE_NOT_QUALIFIED_FOR_RELEASE",
+  "date": "2026-10-26",
+  "selected": "BQ25185DLHR",
+  "battery": "DTP401525-XE",
+  "decision": "Retain resistor-programmed charger for this prototype; do not migrate to BQ25186 I2C interface. Preserve all user capacity/runtime/size requirements.",
+  "sources": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+      "revision": "SLUSF65B August 2026",
+      "sections": [
+        "5.5",
+        "6.1.1.4",
+        "6.1.1.5",
+        "Table 6-1"
+      ]
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/bq25186.pdf",
+      "revision": "SLUSF69A January 2025",
+      "section": "6.3.8 watchdog and 6.5 register defaults"
+    }
+  ],
+  "operating_point": {
+    "vbat_nominal_V": 4.1,
+    "vbat_screen_upper_V": 4.120499999999999,
+    "rset_ohm": 6800,
+    "rset_tolerance": 0.01,
+    "ichg_nominal_mA": 44.11764705882353,
+    "ichg_screen_min_mA": 39.31275480489225,
+    "ichg_screen_max_mA": 49.01960784313726,
+    "termination_typical_mA": 4.411764705882353,
+    "battery_max_charge_mA": 110,
+    "vset_resistor_ohm": 130000,
+    "internal_input_limit_selection_mA": 500,
+    "iset_filter_cap_pF": 50,
+    "fast_charge_timer_hours": 6
+  },
+  "screen_limits": [
+    "Current screen combines published >=40mA accuracy with resistor tolerance; does not prove transient performance",
+    "Termination tolerance at this low setting is not established by the cited 3mA table condition",
+    "4.1V and early termination may reduce available capacity; no capacity percentage is asserted",
+    "Charge time must include precharge, CV, thermal/input limiting and timer behavior; C/I alone is insufficient"
+  ],
+  "reason_not_bq25186": [
+    "Watchdog restores all writable defaults, including nominal 4.2V and 500mA input setting",
+    "Requires I2C pins and reset-safe charge inhibition or voltage guard; no verified board-area saving",
+    "Existing BQ25185 fixed 4.1V setting avoids dependence on persistent voltage-register contents"
+  ],
+  "required_remaining": [
+    "Complete independent battery-contact temperature sensing and hardware charge-inhibit qualification; R35 fixed TS resistor alone does not monitor battery temperature",
+    "Verify external USB pre-enumeration limiter and suspend controls; internal 500mA mode alone is insufficient",
+    "Measure deliverable energy after this exact charge profile and run continuous 16h recording test",
+    "Confirm maximum battery discharge, regulator/storage peak current and undervoltage behavior",
+    "Complete power routing, BOM sourcing and enclosure contact sensor retention"
+  ],
+  "canonical_design_sha256": "3361fd0c0509f799f309271c29a2f70d5b8375f654cc81d4271b5c413782291f",
+  "no_requirement_relaxation": true
+}

@@ -1,0 +1,44 @@
+{
+  "status": "SINGLE_BOARD_EXPORT_CANDIDATE_NOT_MANUFACTURING_RELEASE",
+  "pcb_sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+  "tool": "KiCad10.0.7 CLI",
+  "origin": "absolute; mm drill",
+  "copper_layers": 6,
+  "files_sha256": {
+    "pendant-xe-minimal-B_Cu.gbl": "c7e05ece95a4c64f6bbd3e0f7976751895855ede0d58061a6af54ea34c528973",
+    "pendant-xe-minimal-B_Mask.gbs": "5d4039b51c98747c83e40d9ec7ff5cd655c025cb7d2d371c07618d9c30eb7619",
+    "pendant-xe-minimal-B_Paste.gbp": "538b9567aa3b419a4e44302dd2a16c22a366c882fccadee62b9f9c1a055309d5",
+    "pendant-xe-minimal-B_Silkscreen.gbo": "ed45ffb1e4399d4979d808a21fb6df353f48f1f7e22f068f39266174dd4ca55a",
+    "pendant-xe-minimal-Edge_Cuts.gm1": "3041ddb9addf0c8b13b5039c3d6787a35be25b5b00a37c7c8044c696040359f6",
+    "pendant-xe-minimal-F_Cu.gtl": "fbf5bd3023ffaa11be0eb3ee355215ab7dd7604f33bd61c1435cdbce2b63c29f",
+    "pendant-xe-minimal-F_Mask.gts": "63a775629d5808638be3fddb3e6cb6aacaa4c68e652dcb8912cb2c3b4af4468d",
+    "pendant-xe-minimal-F_Paste.gtp": "66d6c1283f264b63682d64b7c801ebe92ba309d5ffb56bfd193ce2425b161342",
+    "pendant-xe-minimal-F_Silkscreen.gto": "c0ca57e81667082df8e5a9f04d5ef1ade7d4620b935564a6d52cc4225e84767a",
+    "pendant-xe-minimal-In1_Cu.g1": "893a847b9794b7df915ff0949df6aaa3fb176941efe283b9fa5a7ffbae05c3bc",
+    "pendant-xe-minimal-In2_Cu.g2": "3e16ace2fb7c3b5432a3a0cf07fc90d1359bce96d923185771c632a3a5601d6b",
+    "pendant-xe-minimal-In3_Cu.g3": "3e63343895759c0b302d3f69dbae8926a47f8b5dc59b8e20924bf8bb44ade256",
+    "pendant-xe-minimal-In4_Cu.g4": "79f3ddb0c9e8b7bf96b91ceda8442abb2d63cd562a99d869ca5db2ef62cdc46d",
+    "pendant-xe-minimal-NPTH.drl": "8a98efeb44f3e95dba79735a484b74d6bad15d4092a5fed597e6903c6f039332",
+    "pendant-xe-minimal-PTH.drl": "740c082fc6ce47a533f4322f07b4fa08c7dac1234003812a26e013c5f5faff57",
+    "pendant-xe-minimal-drill.rpt": "2e0b74d6d507e5a1d2fc9adc9c3ada6088c46f404bc07cb5ca2ec5a04a8d408b",
+    "pendant-xe-minimal-job.gbrjob": "da80ff8516b7a1c0c13a7292008a1f5248f386adb41be627e95ff8ffe50f6bb2"
+  },
+  "sensor_attachment_check": {
+    "pcbnew_pad_layer_assertions": "Both pads B.Cu/B.Mask; neither F.Paste nor B.Paste",
+    "generated_X2_attributes": "TH1 pads1/2 present in bottom copper; TH1 absent from both paste exports",
+    "placement": "Excluded from candidate74-component assembly position file"
+  },
+  "drill_report_counts": {
+    "plated_total": 241,
+    "plated_0p15mm": 237,
+    "plated_0p6mm_slots": 4,
+    "nonplated_total": 3
+  },
+  "limits": [
+    "Single-board outline; assembly carrier/panel from older design must not be substituted.",
+    "Filled/capped via process, stackup acceptance, stencil and manufacturing review unresolved.",
+    "DRC zero is not supplier DFM approval.",
+    "Gerber export does not qualify 16h runtime, temperature protection or original battery harness fit.",
+    "Do not order from this candidate folder."
+  ]
+}

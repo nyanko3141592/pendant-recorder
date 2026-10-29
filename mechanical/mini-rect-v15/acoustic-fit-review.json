@@ -1,0 +1,56 @@
+{
+  "status": "ACOUSTIC_FIT_DRAFT_NOT_RELEASED",
+  "acoustic_inlet_xy_mm": [
+    21.13,
+    17.7
+  ],
+  "acoustic_bore_mm": 0.8,
+  "acoustic_wall_mm": 0.4,
+  "acoustic_gasket_allocation_mm": [
+    1.8,
+    0.8,
+    0.4
+  ],
+  "acoustic_pillar_battery_overlap_mm3": 0.0,
+  "body_valid": true,
+  "lid_valid": true,
+  "body_solids": 1,
+  "lid_solids": 1,
+  "body_lid_overlap_mm3": 0.0,
+  "usb_opening_mm": [
+    12,
+    4.37
+  ],
+  "support_count": 3,
+  "thermal_pad_allocation_mm": [
+    3,
+    3,
+    2.3
+  ],
+  "source_board_sha256": "ffaa8985aafb49e5c47cae81555b2e0ec26f9f5ba91b16d313473127851a4cbf",
+  "case_mm": [
+    30,
+    32,
+    14.8
+  ],
+  "board_mm": [
+    26.0,
+    29.0,
+    0.93
+  ],
+  "component_count": 75,
+  "component_vs_body_lid_battery_intersections": [],
+  "thermal_sensor_contact_gap_mm": 2.3,
+  "limitations": [
+    "retained V13 rectangular envelopes, not manufacturer-solid accuracy",
+    "XE mated housing overhang, insertion sweep and harness not included",
+    "No assembly release",
+    "Conservative component envelopes can overstate body size",
+    "USB notch and support geometry provisional; plug insertion and lid closure not qualified",
+    "Thermal pad is space allocation only; material, pressure, retention and response not qualified",
+    "Straight bottom acoustic inlet added; response, print bore accuracy, gasket material/seal/compression and debris protection not qualified",
+    "Battery retention still missing",
+    "Wire routing and mated connector insertion envelope are not included",
+    "Battery swelling and assembly tolerances are not qualified"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "status": "CONDITIONAL_FEASIBILITY_NOT_SELECTED",
+  "battery": "DTP301120(PHR)",
+  "storage": "CSNP32GCR01-BOW",
+  "storage_source": "hardware/mini-rect-v12/reference/csnp32gcr01-bow.pdf",
+  "sha256": "966792b6c65fd066decbb1d7e058a68d2896b4d50a6bcf6bf45722a709f25df0",
+  "visual_pages_checked": [
+    6,
+    8
+  ],
+  "storage_max_body_mm": [
+    6.3,
+    8.1,
+    0.9
+  ],
+  "published_current": {
+    "read_write_max_mA": 25,
+    "condition": "3.3V50MHz",
+    "standby_max_mA": 0.2,
+    "condition_standby": "3.3Vclock stopped"
+  },
+  "peak_screen": "40mA pack minus25mA media leaves15mA for remaining loads only under these specified conditions. Startup/inrush/SPI4or8MHz/fullvoltage-temperature envelope not established; not powerqualification.",
+  "average_screen": {
+    "battery_usable_fraction_hypothesis": 0.7,
+    "total_average_limit_mA": 1.75,
+    "rows": [
+      {
+        "nonstorage_average_hypothesis_mA": 0.5,
+        "storage_budget_mA": 1.25,
+        "max_storage_active_ms_per5s_hypothesis": 211.694,
+        "remaining_after_4MHz_ciphertext_sector_wire_ms": 128.75,
+        "remaining_after_8MHz_ciphertext_sector_wire_ms": 170.222
+      },
+      {
+        "nonstorage_average_hypothesis_mA": 0.75,
+        "storage_budget_mA": 1.0,
+        "max_storage_active_ms_per5s_hypothesis": 161.29,
+        "remaining_after_4MHz_ciphertext_sector_wire_ms": 78.346,
+        "remaining_after_8MHz_ciphertext_sector_wire_ms": 119.818
+      },
+      {
+        "nonstorage_average_hypothesis_mA": 1,
+        "storage_budget_mA": 0.75,
+        "max_storage_active_ms_per5s_hypothesis": 110.887,
+        "remaining_after_4MHz_ciphertext_sector_wire_ms": 27.943,
+        "remaining_after_8MHz_ciphertext_sector_wire_ms": 69.415
+      },
+      {
+        "nonstorage_average_hypothesis_mA": 1.25,
+        "storage_budget_mA": 0.5,
+        "max_storage_active_ms_per5s_hypothesis": 60.484,
+        "remaining_after_4MHz_ciphertext_sector_wire_ms": -22.46,
+        "remaining_after_8MHz_ciphertext_sector_wire_ms": 19.012
+      },
+      {
+        "nonstorage_average_hypothesis_mA": 1.5,
+        "storage_budget_mA": 0.25,
+        "max_storage_active_ms_per5s_hypothesis": 10.081,
+        "remaining_after_4MHz_ciphertext_sector_wire_ms": -72.863,
+        "remaining_after_8MHz_ciphertext_sector_wire_ms": -31.391
+      }
+    ],
+    "limitations": [
+      "25mA active/.2mA idle borrowed as hypotheticalSPI statecurrents, not proven4/8MHz bounds",
+      "Wire-time excludes commands,busy,FATreads/writes,HAL gaps,boot,recovery",
+      "Nonstorage allocations are hypotheses, not physical measured limits",
+      "Actual16h depends onusablecapacity at recorder cutoff"
+    ]
+  },
+  "charger_screen": {
+    "rejected_simple_reuse": "BQ25100/01 family publicminimum1mA termination doesnotmatchbattery.4mA reference; cannot assumecomplete40mAh capacity with earlytermination.",
+    "source": "https://www.ti.com/product/BQ25101",
+    "next": "Find charger supporting submA termination and smallcharge current with datasheet errorbounds and0..45C inhibition. Do notuse oldercharger bynameonly."
+  },
+  "cost_issue": "HistoricalCSNP32BOW5pcs200.7895USD excludesassembly/tax/freight. Kit5000JPY target remainsunresolved.",
+  "next_action": "Beforeboardadoption resolve lowcurrentcharger and exactstoragecost; evaluate103mm lead routing withPH connector.",
+  "release_allowed": false
+}

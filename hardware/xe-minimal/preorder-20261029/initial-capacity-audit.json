@@ -1,0 +1,60 @@
+{
+  "status": "INITIAL_AUDIT_CAPACITY_REQUIREMENT_CONFLICT_HOLD",
+  "date": "2026-10-29",
+  "source_sha256": {
+    "docs/requirements.md": "2c69698c5ec1884c27449ff8062442f22abdc1707bb02eef8dfbecd6304b7d7d",
+    "hardware/xe-minimal/design-goal.json": "d51ccd902a7940c2a8e8e768142cf27554f574d076c77766f5c52d158e9aac4f",
+    "docs/procurement/xe-production-bom-2026-10-28.csv": "4a0590a0d7db0025f8bd6100eb3820fc87f1c831c391a5ce7be22149e21ee942",
+    "firmware/stm32/tests/storage-36h-result.json": "36c56813ea229e23b19d3b4893fe0bc7e19ebf5c55b99a7968300fd106dea169",
+    "firmware/stm32/tests/test_storage_36h.c": "ab9a951900eae25704f39fda0af8d3c1ac28bf9df5329e6632b388f18bedcecd",
+    "hardware/xe-minimal/costdown/HW-V1.4-EVT-4LAYER-27P5/route/hw-v1.4-evt-4layer-27p5-routed-candidate.kicad_pcb": "8141cc8b00ca4c676ce53ab15a0812420c48636e137fa0559d9ac4d8399db288"
+  },
+  "capacity": {
+    "requirements_hours": 30,
+    "design_goal_hours": 36,
+    "existing_test_hours": 30,
+    "existing_test_filename": "storage-36h-result.json",
+    "actual_capacity_bytes": 964000000,
+    "chunk_seconds": 10,
+    "observed_ciphertext_bytes_per_chunk": 81172,
+    "conservative_fixture_bytes_per_chunk": 82180,
+    "rows": [
+      {
+        "hours": 30,
+        "files": 10800,
+        "observed_payload_bytes": 876657600,
+        "fixture_payload_bytes": 887544000,
+        "observed_4KiB_allocation_bytes": 884736000,
+        "fixture_4KiB_allocation_bytes": 928972800,
+        "metadata_included": false,
+        "observed_payload_fits": true
+      },
+      {
+        "hours": 36,
+        "files": 12960,
+        "observed_payload_bytes": 1051989120,
+        "fixture_payload_bytes": 1065052800,
+        "observed_4KiB_allocation_bytes": 1061683200,
+        "fixture_4KiB_allocation_bytes": 1114767360,
+        "metadata_included": false,
+        "observed_payload_fits": false
+      }
+    ]
+  },
+  "decision": "Do not reduce the 36-hour design goal or claim the 30-hour test proves it. Resolve capacity and sourcing before committing another route or final dummy geometry.",
+  "release_allowed": false,
+  "external_sources": [
+    {
+      "url": "https://jlcpcb.com/partdetail/MK-8Gb_SD_NAND_SDNAND_SLC/C26159627",
+      "finding": "8Gbit LGA-8(6x8), Standard Only; live stock not verified"
+    },
+    {
+      "url": "https://datasheet.lcsc.com/datasheet/pdf/61bfef9e1fb8ace7e6d0d3d43cbccc88.pdf?productCode=C26159627",
+      "finding": "MK manufacturer datasheet lists 964MByte actual capacity for MKDV8GIL-AST"
+    },
+    {
+      "url": "https://www.marutsu.co.jp/pc/i/2228265/",
+      "finding": "DTP401525(EZ3) 3.7V 110mAh product listing remains accessible; stock not yet verified"
+    }
+  ]
+}

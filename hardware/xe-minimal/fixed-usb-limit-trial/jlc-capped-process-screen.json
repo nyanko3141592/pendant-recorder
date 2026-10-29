@@ -1,0 +1,27 @@
+{
+  "status": "PUBLIC_STANDARD_PROCESS_SCREEN_NOT_ORDER_ACCEPTANCE",
+  "checked_date": "2026-10-27",
+  "sources": [
+    "https://jlcpcb.com/help/article/via-in-pad-pofv-guide",
+    "https://jlcpcb.com/help/article/pcb-via-covering"
+  ],
+  "candidate_process": "Epoxy resin filled and copper capped, ENIG,6-layer",
+  "findings": [
+    "Public guide describes resin fill and plated cap for6+layers with ENIG",
+    "Epoxy/copper fill supports pad-adjacent holes where ink plugging is unsuitable",
+    "Published covering guide recommends holes<=0.5mm and requires plugging diameter in order remarks"
+  ],
+  "selected_vias": 12,
+  "selected_drill_diameters_mm": [
+    0.15
+  ],
+  "all_selected_holes_at_most_0_5mm": true,
+  "limits": [
+    "Not a live quote or CAM acceptance",
+    "Board thickness0.8264mm stackup must be matched to vendor standard stackup/tolerances",
+    "Public covering quality table wording about depression is ambiguous; not converted into a package coplanarity guarantee",
+    "Standard process may apply to all eligible vias;12-location map records mandatory locations, not an instruction to exclude other vias",
+    "Assembly WCSP/QFN solderability still needs stencil/flatness qualification"
+  ],
+  "orders_uploads_or_inquiries": false
+}

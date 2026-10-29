@@ -1,0 +1,172 @@
+{
+  "status": "ATTACHMENT_CORRIDOR_SCREEN_ONLY",
+  "handoff_sha256": "2186038e8eea2bcd87e7e1abe7accc46dcac203887bb62060c650b4171535cda",
+  "candidates": [
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        5
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        9
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        13
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        17
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "SW1"
+      ]
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        21
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "SW1"
+      ]
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        5
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        9
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        13
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        17
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "U8"
+      ]
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        21
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.9
+      ],
+      "z_min_mm": 11.1,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "U4",
+        "U8"
+      ]
+    }
+  ],
+  "limitations": [
+    "AABB screen of current component envelopes only; not a CAD interference result",
+    "Does not include unqualified harness, fillets, battery swelling or supplier tolerance",
+    "No retention strength or printability established",
+    "Currentr3 still uses temporary tape; no released latch"
+  ],
+  "next_design": "Use clear front-side corridors for tongue/groove prototypes; preserve14.81mm exterior. Test clearance coupons before adopting brittle small snap hooks."
+}

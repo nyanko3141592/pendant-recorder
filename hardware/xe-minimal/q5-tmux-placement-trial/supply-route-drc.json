@@ -1,0 +1,561 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T09:41:49",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "supply-route.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 3.8664 mm )",
+                    "pos": {
+                        "x": 7.245,
+                        "y": 4.795
+                    },
+                    "uuid": "2ebd9652-d27a-4c57-ae7c-aa209365f730"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.9800 mm )",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.9975
+                    },
+                    "uuid": "6de2cbfe-ed3b-4ee8-8383-c07c66f7b44a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_HIGH_BUDGET_DRAIN] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.175,
+                        "y": 10.692499
+                    },
+                    "uuid": "ec433f3d-a032-4157-83a2-13d10b40f054"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( In3.Cu 上、長さ: 2.7074 mm )",
+                    "pos": {
+                        "x": 6.9,
+                        "y": 10.1
+                    },
+                    "uuid": "974f8db8-f860-4c0d-9b8c-017bb85869b6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/USB_HIGH_BUDGET] - U16 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.475,
+                        "y": 9.017499
+                    },
+                    "uuid": "bcef95b3-1c6d-4ea1-a6f7-4c4850c31c98"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( F.Cu 上、長さ: 0.4297 mm )",
+                    "pos": {
+                        "x": 10.075,
+                        "y": 7.1925
+                    },
+                    "uuid": "fef15f09-e223-4bab-bef2-392e77221122"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_HIGH_BUDGET_DRAIN と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( In3.Cu 上、長さ: 2.7074 mm )",
+                    "pos": {
+                        "x": 6.9,
+                        "y": 10.1
+                    },
+                    "uuid": "974f8db8-f860-4c0d-9b8c-017bb85869b6"
+                },
+                {
+                    "description": "ビア [/VBUS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.9975
+                    },
+                    "uuid": "b41adb5b-a661-431d-8129-66060099f03e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_MISO と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( In2.Cu 上、長さ: 6.5705 mm )",
+                    "pos": {
+                        "x": 8.6,
+                        "y": 7.2
+                    },
+                    "uuid": "40f93d01-a07f-4675-b34a-737e18771100"
+                },
+                {
+                    "description": "ビア [/VBUS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.9975
+                    },
+                    "uuid": "b41adb5b-a661-431d-8129-66060099f03e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_LATCH_CLOCK と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/USB_LATCH_CLOCK] ( In1.Cu 上、長さ: 10.7703 mm )",
+                    "pos": {
+                        "x": 8.7,
+                        "y": 7.3
+                    },
+                    "uuid": "a2f1c211-d6a7-4303-9017-199e98652fed"
+                },
+                {
+                    "description": "ビア [/VBUS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.9975
+                    },
+                    "uuid": "b41adb5b-a661-431d-8129-66060099f03e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /STATUS_LED_A と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/STATUS_LED_A] ( In3.Cu 上、長さ: 11.0776 mm )",
+                    "pos": {
+                        "x": 17.4,
+                        "y": 4.6
+                    },
+                    "uuid": "06ae18c2-4846-4070-b377-decaead58c5e"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0114 mm)",
+            "items": [
+                {
+                    "description": "配線 [/STATUS_LED_A] ( B.Cu 上、長さ: 2.4703 mm )",
+                    "pos": {
+                        "x": 8.75,
+                        "y": 7.15
+                    },
+                    "uuid": "6cdea22d-59d4-48d0-8a55-d4597f352afb"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6250 mm )",
+                    "pos": {
+                        "x": 8.175,
+                        "y": 9.0375
+                    },
+                    "uuid": "7dfe57f8-7c2f-4d39-8da2-8b42c49700da"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_LATCH_CLEAR_N と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/USB_LATCH_CLEAR_N] ( F.Cu 上、長さ: 3.2826 mm )",
+                    "pos": {
+                        "x": 7.6925,
+                        "y": 7.525
+                    },
+                    "uuid": "0c3ec2c8-a496-4a36-b61f-5319ac8d0ac7"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /STATUS_LED_A)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.9800 mm )",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.9975
+                    },
+                    "uuid": "6de2cbfe-ed3b-4ee8-8383-c07c66f7b44a"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0329 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.6250 mm )",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.017499
+                    },
+                    "uuid": "40ca82e0-dfb0-44a9-8f06-cddf484cdc4b"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0241 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6250 mm )",
+                    "pos": {
+                        "x": 8.175,
+                        "y": 9.0375
+                    },
+                    "uuid": "7dfe57f8-7c2f-4d39-8da2-8b42c49700da"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /VBUS)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.6250 mm )",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.017499
+                    },
+                    "uuid": "40ca82e0-dfb0-44a9-8f06-cddf484cdc4b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /STATUS_LED_A)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /STATUS_LED_A)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /STATUS_LED_A)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /STATUS_LED_A)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /STATUS_LED_A)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 11.975,
+                        "y": 7.1925
+                    },
+                    "uuid": "be74a202-425e-434e-a9f7-e1eaf190213d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/VBUS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 6.954999,
+                        "y": 9.7675
+                    },
+                    "uuid": "6b5a16c9-4356-4d37-9b33-2b39491fb818"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( F.Cu 上、長さ: 0.9990 mm )",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "853b0b3b-2838-401f-9e25-80498b321ad6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET] ( F.Cu 上、長さ: 0.4297 mm )",
+                    "pos": {
+                        "x": 10.075,
+                        "y": 7.1925
+                    },
+                    "uuid": "fef15f09-e223-4bab-bef2-392e77221122"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.6250 mm )",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.017499
+                    },
+                    "uuid": "40ca82e0-dfb0-44a9-8f06-cddf484cdc4b"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.9800 mm )",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.9975
+                    },
+                    "uuid": "6de2cbfe-ed3b-4ee8-8383-c07c66f7b44a"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2500 mm; 現状 0.0991 mm)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.55,
+                        "y": 9.0375
+                    },
+                    "uuid": "177bda3e-271f-42be-80d0-6c5574c15355"
+                },
+                {
+                    "description": "ビア [/STATUS_LED_A] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3,
+                        "y": 9.15
+                    },
+                    "uuid": "fa8cf2f0-969f-41fb-b9c3-6671624285fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        }
+    ]
+}

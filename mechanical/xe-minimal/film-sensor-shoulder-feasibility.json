@@ -1,0 +1,44 @@
+{
+  "status": "CURRENT_200UM_SHOULDER_SCHEME_INFEASIBLE",
+  "source_sha256": {
+    "film-sensor-minimum-width-retention-review.json": "34111ec80194c7b2c67d9698269aca8ef8224a2d7f372ce6fb2c6426b4157d85",
+    "build_sensor_clearance_trial.py": "04036e1b32bc438c20847ffe30531b1c7a22b5472138f96818873f94196afd76",
+    "explore_sensor_body_bridge.py": "38275b2db4c65bf465a75993f3303a2d75537f3d17cb2d2f83e98e51e64157f9"
+  },
+  "body_minimum_width_mm": 3.1,
+  "provisional_insulated_lead_outer_x_mm": 1.38,
+  "bridge_inner_opening_mm": 4.5,
+  "minimum_body_lateral_float_mm": 0.7,
+  "cases": [
+    {
+      "insulation_clearance_mm": 0.1,
+      "stop_inner_minimum_mm": 1.48,
+      "centered_max_possible_engagement_mm": 0.07,
+      "bilateral_engagement_at_full_bridge_float_mm": -0.63,
+      "positive_centered_engagement_possible": true
+    },
+    {
+      "insulation_clearance_mm": 0.15,
+      "stop_inner_minimum_mm": 1.53,
+      "centered_max_possible_engagement_mm": 0.02,
+      "bilateral_engagement_at_full_bridge_float_mm": -0.68,
+      "positive_centered_engagement_possible": true
+    },
+    {
+      "insulation_clearance_mm": 0.2,
+      "stop_inner_minimum_mm": 1.58,
+      "centered_max_possible_engagement_mm": -0.03,
+      "bilateral_engagement_at_full_bridge_float_mm": -0.73,
+      "positive_centered_engagement_possible": false
+    }
+  ],
+  "decision": "At current 0.2mm clearance, stop must start at X>=1.58 while minimum body edge is X=1.55 even when centered. Stop resizing or lower-case relief alone cannot solve this configuration.",
+  "next_direction": "Separate wire strain relief from sensor-body capture; review a seller-installed carrier or alternate surface-sensor package rather than shrinking insulation clearance to force this stop to pass.",
+  "limits": [
+    "Necessary planar conditions only, not full mechanical feasibility.",
+    "0.1/0.15 scenarios illustrate tradeoff only; neither is adopted or printer-qualified.",
+    "Negative bilateral engagement at full lateral float does not prove single-sided escape; it shows both shoulders cannot be guaranteed engaged.",
+    "Published minimum width does not establish minimum shoulder length or safe contact force.",
+    "No battery or recording requirement changed."
+  ]
+}

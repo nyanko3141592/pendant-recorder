@@ -1,0 +1,152 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T17:32:18",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "via-search.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( F.Cu 上、長さ: 1.0663 mm )",
+                    "pos": {
+                        "x": 16.8682,
+                        "y": 7.87
+                    },
+                    "uuid": "a96420be-2250-4179-851a-cd4cc68b57fe"
+                },
+                {
+                    "description": "ビア [/VDDA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8919,
+                        "y": 8.1842
+                    },
+                    "uuid": "b03dc3b3-2a12-4623-a01b-21b9d0972e35"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0608 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( F.Cu 上、長さ: 0.3960 mm )",
+                    "pos": {
+                        "x": 15.8019,
+                        "y": 7.87
+                    },
+                    "uuid": "9d29b3c6-8c04-4ef3-86e6-d3cd3c941715"
+                },
+                {
+                    "description": "ビア [/VDDA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8919,
+                        "y": 8.1842
+                    },
+                    "uuid": "b03dc3b3-2a12-4623-a01b-21b9d0972e35"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0919 mm)",
+            "items": [
+                {
+                    "description": "パッド 10 [/VBUS_N] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 8.15
+                    },
+                    "uuid": "3a7f0ffb-7b79-4334-a26d-02755372c753"
+                },
+                {
+                    "description": "ビア [/VDDA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8919,
+                        "y": 8.1842
+                    },
+                    "uuid": "b03dc3b3-2a12-4623-a01b-21b9d0972e35"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0733 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VDDA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8919,
+                        "y": 8.1842
+                    },
+                    "uuid": "b03dc3b3-2a12-4623-a01b-21b9d0972e35"
+                },
+                {
+                    "description": "配線 [/SD_MOSI] ( In2.Cu 上、長さ: 2.9730 mm )",
+                    "pos": {
+                        "x": 13.6945,
+                        "y": 6.4087
+                    },
+                    "uuid": "ea6491b2-a822-433f-92eb-57478a8ebb9b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1919 mm)",
+            "items": [
+                {
+                    "description": "パッド 10 [/VBUS_N] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 8.15
+                    },
+                    "uuid": "3a7f0ffb-7b79-4334-a26d-02755372c753"
+                },
+                {
+                    "description": "ビア [/VDDA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8919,
+                        "y": 8.1842
+                    },
+                    "uuid": "b03dc3b3-2a12-4623-a01b-21b9d0972e35"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        }
+    ]
+}

@@ -1,0 +1,405 @@
+{
+  "status": "SUPERSEDED_DO_NOT_USE_FOR_BUILD_PROCUREMENT_OR_RELEASE",
+  "review_date": "2026-10-27",
+  "release_allowed": false,
+  "superseded_by": "hardware/xe-minimal/active-design.json",
+  "supersession_reason": "This historical film/103JT cross-discipline index predates the adopted DTP401525-XE pack-NTC, 27.5 x 27.5 mm PCB and case-pebble-v4 baseline. Its evidence and remaining-work lists are retained only as history.",
+  "evidence": {
+    "requirements": {
+      "path": "docs/requirements.md",
+      "sha256": "077c4f2c0a8404b7cef6e30518f599c86606885a761760dc527700d48ca13ce2"
+    },
+    "battery_selection": {
+      "path": "docs/sourcing/battery-first-selection.json",
+      "sha256": "6ae0b0e0289d1a72cde143b6de77f9b180421ecaea15f0278d3b7c6081f7a61f"
+    },
+    "pcb_candidate": {
+      "path": "hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_pcb",
+      "sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6"
+    },
+    "schematic_candidate": {
+      "path": "hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_sch",
+      "sha256": "cf32c71c158a592d571af45c8c10234174e13c8d3e8ef25ee2230655d70cbe13"
+    },
+    "pcb_review": {
+      "path": "hardware/xe-minimal/film-integration-trial/review.json",
+      "sha256": "b818d9ac179845202886add42f2e9b67cda41a40ca0dbe5377f9f0d3a74936eb"
+    },
+    "mechanical_candidate": {
+      "path": "mechanical/xe-minimal/diagonal-retainer-design-review.json",
+      "sha256": "c46b0e4497e759ab59fce41b43da1b5a6414e79b1dbb3ad3831fb4752de093fd"
+    },
+    "harness_unknowns": {
+      "path": "mechanical/xe-minimal/battery-harness-evidence-audit.json",
+      "sha256": "b99d4def5cc2dea3fe3dce8d44662f763a84677a059f2659d103b079a5b670ee"
+    },
+    "firmware_status": {
+      "path": "firmware/stm32/implementation-status.json",
+      "sha256": "975d8f4ae5b372875e605164cba130801d44c69d1c97b7916057e0ace0ab3570"
+    },
+    "host_status": {
+      "path": "host/current-import-validation.json",
+      "sha256": "e693bd749633caa69e3344c3eed7242ea58a0114f7a00eaa772fac5e3ed512cc"
+    },
+    "five_unit_budget": {
+      "path": "docs/procurement/xe-five-unit-budget-review.json",
+      "sha256": "76fc0148bf9db7fe7605854b527620254537832f5e77f828754cf922d2ec1a79"
+    },
+    "fabrication_review": {
+      "path": "hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review/REVIEW-ONLY.json",
+      "sha256": "df23004b3d03302e6ea6440c650bae5aac48e978f1e35728fe19bdd531c8e9f3"
+    },
+    "mechanical_test_plan": {
+      "path": "mechanical/xe-minimal/diagonal-retainer-trial-plan.json",
+      "sha256": "701448a0bd67f2923d27227f1d60e36c1a651fb0ed0ec36598824219b1a5813b"
+    }
+  },
+  "inconsistencies": [
+    "Film schematic/PCB/part identity table and standalone board model are synchronized. Full case review still uses older board/wire geometry; new routes require lap-solder terminal and strain-relief modeling.",
+    "Carrier fabrication outputs are not silently transferable to the NCU or film sensor candidate.",
+    "Firmware implementation-status has historical target names and section-level results; no qualified XE production image is established.",
+    "Five-unit cost is partial and does not include an adopted film sensor harness/mechanical assembly.",
+    "Current-release-audit contains older V15/D1 records; use this index to locate current XE candidates, not as a replacement for validation."
+  ],
+  "required_remaining": [
+    "Original battery harness enclosure and assembly validation",
+    "Adopt and synchronize electrical sensor circuit, BOM and mechanical assembly",
+    "Seller preassembly and axial strain relief",
+    "Manufacturing DFM and final source-matched fabrication data",
+    "Complete five-unit prototype cost",
+    "Real audio/USB/charge/temperature/power/runtime qualification, including three OS import"
+  ],
+  "runtime_16h_measured": false,
+  "physical_assembly_verified": false,
+  "orders_or_payments_performed": false,
+  "external_film_wire_pad_candidate": {
+    "pcb": "hardware/xe-minimal/film-lap-pad-placement-study-1/pendant-xe-film-lap-footprint-trial.kicad_pcb",
+    "sha256": "4ed26f80b0b8a95297f8754cb7298151d29d6fa0d06347099c1d574454fe1a72",
+    "review": "hardware/xe-minimal/film-lap-pad-placement-study-1/footprint-trial-review.json",
+    "drc": "hardware/xe-minimal/film-lap-pad-placement-study-1/footprint-trial-drc.json",
+    "drc_violations": 0,
+    "unconnected": 0,
+    "adopted": false,
+    "schematic_parity_verified": false,
+    "new_features": [
+      "Two manual lap wire pads; external sensor excluded from automated pick-and-place.",
+      "R13 0201 100k geometry candidate.",
+      "BAT_TS uses one added through via and In1.Cu route."
+    ],
+    "remaining": [
+      "Validate In1 ground-plane return continuity and coupling near other signals.",
+      "Synchronize and verify schematic/BOM only after electrical substitution checks.",
+      "Update case wire routes, R13 body and seller strain relief to new pad locations.",
+      "Confirm provisional courtyard margins with actual joining process."
+    ],
+    "reference_plane_disposition": {
+      "status": "NOT_ADOPTED_REFERENCE_PLANE_REGRESSION",
+      "review": "hardware/xe-minimal/film-lap-pad-placement-study-1/reference-plane-delta-review.json",
+      "In1_removed_ground_mm2": 5.947849729422,
+      "new_reference_gaps_under": [
+        "/PDM_DATA (F.Cu)",
+        "/SD_MISO (In2.Cu)"
+      ],
+      "usb_projection_change_detected": false,
+      "guarded_single_layer_route_found": false,
+      "note": "DRC zero does not resolve these reference gaps; do not promote this candidate."
+    }
+  },
+  "external_film_guarded_multilayer_candidate": {
+    "status": "CONNECTED_GEOMETRY_NOT_ADOPTED",
+    "pcb": "hardware/xe-minimal/film-lap-pad-placement-study-1/pendant-xe-film-lap-guarded-multilayer-trial.kicad_pcb",
+    "sha256": "c6240769cba6124e534f8d3de8ecf5ba1968b9c58dfc8a246193dd1108a758b9",
+    "review": "hardware/xe-minimal/film-lap-pad-placement-study-1/batts-guarded-multilayer-review.json",
+    "unconnected": 0,
+    "drc_violation_types": {
+      "missing_courtyard": 1,
+      "silk_edge_clearance": 1,
+      "silk_overlap": 1,
+      "silk_over_copper": 2
+    },
+    "reference_plane_checks": {
+      "In1": {
+        "report": "guarded-multilayer-in1-reference-review.json",
+        "ground": {
+          "source_area_mm2": 505.780913427829,
+          "candidate_area_mm2": 504.338472117811,
+          "removed_area_mm2": 1.4424413625615,
+          "added_area_mm2": 1.0758e-08,
+          "source_outlines": 5,
+          "candidate_outlines": 5
+        },
+        "affected_nets": [
+          "/V3V3",
+          "/VBUS_LIMITED"
+        ],
+        "usb_changed_checks": 0
+      },
+      "In3": {
+        "report": "guarded-multilayer-in3-reference-review.json",
+        "ground": {
+          "source_area_mm2": 494.7860432033725,
+          "candidate_area_mm2": 491.128928432977,
+          "removed_area_mm2": 3.657114803613,
+          "added_area_mm2": 9.9545e-09,
+          "source_outlines": 5,
+          "candidate_outlines": 5
+        },
+        "affected_nets": [
+          "/SYS",
+          "/V3V3"
+        ],
+        "usb_changed_checks": 0
+      }
+    },
+    "limits": [
+      "Grid routing with through vias only; no blind vias or existing-track reroutes.",
+      "Fast-signal projection screen is not SI acceptance.",
+      "Film sensor and R13 substitutions remain unadopted.",
+      "No schematic parity, physical assembly or runtime qualification.",
+      "In1/In3 routing guarded against adjacent PDM/SD/USB track projections with 0.2 mm clearance; pad/via projections and return-current continuity need further review.",
+      "Ground removal remains beneath SYS/V3V3/VBUS_LIMITED; no power integrity acceptance.",
+      "Pad-center via requires filled and copper-capped planar manufacture; unqualified."
+    ]
+  },
+  "external_film_guarded_footprint_candidate": {
+    "status": "DRC_ZERO_NOT_ADOPTED_POWER_REFERENCE_REVIEW_REQUIRED",
+    "pcb": "hardware/xe-minimal/film-lap-pad-placement-study-1/pendant-xe-film-lap-guarded-footprint-trial.kicad_pcb",
+    "sha256": "5be6744abc537911874d9b1666782ddca8816525f4f84a02c731facef0920df2",
+    "drc_violations": 0,
+    "unconnected": 0,
+    "footprint_review": "hardware/xe-minimal/film-lap-pad-placement-study-1/guarded-footprint-trial-review.json",
+    "projection_review": "hardware/xe-minimal/film-lap-pad-placement-study-1/guarded-full-projections-review.json",
+    "fast_projection_new_ground_loss_hits": 0,
+    "In2_power_tracks_with_increased_double_reference_loss": 6,
+    "limits": [
+      "External sensor attachment excluded from automated placement; seller joining process remains unqualified.",
+      "Courtyard uses a provisional 0.15 mm left margin and 0.25 mm other margins; it is not a qualified tool/strain-relief envelope. Q6 pad 3 right edge is x=11.705 mm and wire pad 1 left edge x=12.35 mm; actual solder spread and positioning tolerance remain unqualified.",
+      "Schematic parity, component adoption and updated mechanical model remain incomplete.",
+      "No manufacturing release, order, physical test or runtime guarantee.",
+      "Projection includes track end caps, pads and vias using outward polygon approximation.",
+      "No field solution, return-via inductance, PDN impedance or physical verification.",
+      "Power/control projections with removed ground need separate review.",
+      "Unchanged missing reference areas are not detected by a delta screen."
+    ]
+  },
+  "external_film_anynet_candidate": {
+    "status": "DRC_ZERO_UNADOPTED_REFERENCE_AND_ANALOG_NOISE_COMPARISON",
+    "pcb": "hardware/xe-minimal/film-lap-pad-placement-study-1/pendant-xe-film-lap-anynet-footprint-trial.kicad_pcb",
+    "sha256": "8a15e07c6cba4a34b63e1a68ecd6f066f9f7a6d26d3792a4326b84ecf423718b",
+    "drc_violations": 0,
+    "unconnected": 0,
+    "review": "hardware/xe-minimal/film-lap-pad-placement-study-1/anynet-footprint-trial-review.json",
+    "projection_review": "hardware/xe-minimal/film-lap-pad-placement-study-1/anynet-full-projections-review.json",
+    "comparison": "hardware/xe-minimal/film-lap-pad-placement-study-1/batts-route-comparison.json",
+    "limits": [
+      "External sensor attachment excluded from automated placement; seller joining process remains unqualified.",
+      "Courtyard uses a provisional 0.15 mm left margin and 0.25 mm other margins; it is not a qualified tool/strain-relief envelope. Q6 pad 3 right edge is x=11.705 mm and wire pad 1 left edge x=12.35 mm; actual solder spread and positioning tolerance remain unqualified.",
+      "Schematic parity, component adoption and updated mechanical model remain incomplete.",
+      "No manufacturing release, order, physical test or runtime guarantee.",
+      "Projection includes track end caps, pads and vias using outward polygon approximation.",
+      "No field solution, return-via inductance, PDN impedance or physical verification.",
+      "Power/control projections with removed ground need separate review.",
+      "Unchanged missing reference areas are not detected by a delta screen."
+    ]
+  },
+  "provisional_electrical_integration_base": {
+    "pcb": "hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_pcb",
+    "sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+    "review": "hardware/xe-minimal/film-integration-trial/review.json",
+    "status": "FILM_INTEGRATION_CANDIDATE_NOT_RELEASE"
+  },
+  "previous_ncu_electrical_evidence": {
+    "pcb_candidate": {
+      "path": "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/pendant-xe-minimal.kicad_pcb",
+      "sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5"
+    },
+    "schematic_candidate": {
+      "path": "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/pendant-xe-minimal.kicad_sch",
+      "sha256": "15480dfe7c70e2915f006b4c058d7687e73f702a20e921f2d620011a3e718426"
+    },
+    "pcb_review": {
+      "path": "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/review.json",
+      "sha256": "fc85536cfbc0656b5287820cc17c6878f4b72155ea5e0a96718eedb9c70a8ba7"
+    }
+  },
+  "film_integration_mechanical_update": {
+    "board_model": "mechanical/xe-minimal/film-integration-integrated-board.step",
+    "board_review": "mechanical/xe-minimal/film-integration-integrated-review.json",
+    "pcb_sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+    "wire_route_review": "mechanical/xe-minimal/film-integration-wire-routes-review.json",
+    "status": "LAP_TERMINALS_NOMINALLY_CLEAR_STRAIN_RELIEF_AND_PROCESS_UNQUALIFIED",
+    "lap_terminal_review": "mechanical/xe-minimal/film-lap-terminals-review.json",
+    "seller_tool_review": "mechanical/xe-minimal/film-lap-tool-azimuth-access-review.json",
+    "seller_tool_status": "NOMINALLY_ACCESSIBLE_SMALL_CLEARANCE_UNQUALIFIED",
+    "lowered_lap_terminal_review": "mechanical/xe-minimal/film-lap-lowered-terminals-review.json",
+    "lowered_seller_tool_review": "mechanical/xe-minimal/film-lap-lowered-tool-access-review.json",
+    "axial_retention_trial": {
+      "review": "mechanical/xe-minimal/film-axial-stop-review.json",
+      "status": "GEOMETRY_REJECTED_WIRE_COLLISION_AND_DISCONNECTED_LOWER"
+    },
+    "axial_retention_revised_trial": {
+      "review": "mechanical/xe-minimal/film-axial-stop-relieved-review.json",
+      "integration_review": "mechanical/xe-minimal/film-axial-stop-integration-review.json",
+      "status": "NOMINAL_GEOMETRY_CLEAR_RETENTION_AND_ASSEMBLY_UNQUALIFIED"
+    }
+  },
+  "axial_stop_printed_hole_screen": {
+    "review": "mechanical/xe-minimal/film-axial-stop-printed-holes-review.json",
+    "image": "mechanical/xe-minimal/film-axial-stop-printed-holes.png",
+    "result": "Nominal .31 mm wire cylinder vs commanded part/support bead prisms: zero screened overlap at both holes. Not physical print qualification.",
+    "remaining": [
+      "Rail strength and support removal",
+      "Actual hole size, sag and fit",
+      "Seller assembly sequence and joint retention"
+    ]
+  },
+  "axial_stop_seat_clearance_trial": {
+    "status": "CANDIDATE_NOT_ADOPTED_PENDING_STRENGTH_AND_ASSEMBLY",
+    "original_mating_review": "mechanical/xe-minimal/film-axial-stop-printed-mating-review.json",
+    "modified_lower": "mechanical/xe-minimal/film-axial-stop-seat-clearance-lower-trial.step",
+    "modified_mating_review": "mechanical/xe-minimal/film-axial-stop-seat-clearance-mating-review.json",
+    "finding": "Original nominal bead prisms overlap .04 mm depth. Seat recess extended .16 mm; resliced local mating has zero positive overlap. Physical tolerances, remaining seat thickness and assembly retention unverified.",
+    "thickness_review": "mechanical/xe-minimal/film-axial-stop-seat-thickness-review.json",
+    "sampled_modified_seat_thickness_mm": 1.4248
+  },
+  "candidate_visualization_update": {
+    "image": "mechanical/xe-minimal/film-seat-clearance-design-review.png",
+    "step": "mechanical/xe-minimal/film-seat-clearance-design-review.step",
+    "review": "mechanical/xe-minimal/film-seat-clearance-design-review.json",
+    "status": "VISUALIZED_CANDIDATE_NOT_RELEASE",
+    "missing": "Original battery leads/plug, actual sensor-joint insulation and qualified assembly sequence"
+  },
+  "seller_sensor_insertion_trial": {
+    "review": "mechanical/xe-minimal/film-sensor-stop-insertion-review.json",
+    "process": "mechanical/xe-minimal/film-seller-assembly-sequence-trial.json",
+    "result": "Bottom insertion sensor/joint continuous box sweeps clear; axial-tip and above translations collide. Flexible wire threading remains unvalidated."
+  },
+  "bottom_slot_assembly_comparison": {
+    "status": "NOT_ADOPTED_RIGID_PREFORMED_WIRE_INSERTION_COLLIDES",
+    "review": "mechanical/xe-minimal/film-bottom-slot-review.json",
+    "diagnostic": "mechanical/xe-minimal/film-bottom-slot-insertion-diagnostic.json",
+    "finding": "Opening .5 mm slots preserves one solid but does not permit rigid downward-offset final wire route to translate upward. Only TS wire collides: return crossing at stop/rail and separate separator region. Need staged forming/threading or reroute; do not remove more retaining material without design review."
+  },
+  "straight_wire_loading_trial": {
+    "status": "STAGED_ASSEMBLY_CANDIDATE_NOT_ADOPTED",
+    "geometry_review": "mechanical/xe-minimal/film-straight-wire-stage-review.json",
+    "print_review": "mechanical/xe-minimal/film-bottom-slot-printed-entry-review.json",
+    "finding": "Straight wires can translate upward through bottom slots in nominal continuous box screen; stop wall entry remains clear in nominal bead screen. Subsequent forming into final route remains unverified."
+  },
+  "user_priority_update_2026_10_27": {
+    "fixed_battery": "DTP401525-XE 3.7V 110mAh",
+    "first_priority": "Continuous recording and operation for at least 16 hours with fixed battery",
+    "second_priority": "Minimize complete assembly; target Omi size or smaller",
+    "necessary_size_increase": "Authorized by explicit user reply",
+    "absolute_envelope_limit_mm": null,
+    "not_authorized": "Battery capacity/runtime/storage/assembly requirement reductions"
+  },
+  "sensor_joint_wrap_screen": {
+    "review": "mechanical/xe-minimal/film-joint-wrap-budget-review.json",
+    "expansion_review": "mechanical/xe-minimal/film-larger-joint-review.json",
+    "result": "Conservative lap/tape height exceeds .8; centered 1.1x3x1.0 joint touches lower/separator, 1.1 high intersects lower. No adopted revision."
+  },
+  "roomier_joint_trial": {
+    "review": "mechanical/xe-minimal/film-roomier-joint-review.json",
+    "thickness_review": "mechanical/xe-minimal/film-roomier-joint-thickness-review.json",
+    "status": "NOT_ADOPTED_THIN_REMAINING_SUPPORT",
+    "finding": "1.1x2.8x1.1 joint budget with .1 nominal gaps is statically clear but leaves sampled lower material only .15 mm. Supporting geometry must be redesigned."
+  },
+  "open_joint_pocket_trial": {
+    "review": "mechanical/xe-minimal/film-open-joint-pockets-review.json",
+    "support_review": "mechanical/xe-minimal/film-joint-pocket-support-review.json",
+    "status": "CANDIDATE_SUPPORT_NOT_YET_PROVEN",
+    "finding": "Previous .15 mm interval was an upper residual roof, not floor. Sampled floor thickness minimum .9636 mm. Removed residual roof, retained one valid lower solid and zero static overlap with separator/board/battery. Solid-common contact result is insufficient to establish support.",
+    "support_displacement_review": "mechanical/xe-minimal/film-open-pocket-support-displacement-review.json",
+    "printed_mating_review": "mechanical/xe-minimal/film-open-joint-pockets-mating-review.json",
+    "updated_finding": "Downward .001 mm separator displacement intersects lower in several distributed regions, proxy area 8.484 mm2; upward .01 has zero overlap. Both parts sliced; local nominal bead mating overlap zero. No strength, full printed fit or manufacturing approval."
+  },
+  "full_printed_mating_screen": {
+    "review": "mechanical/xe-minimal/film-full-printed-mating-review.json",
+    "status": "NOMINAL_OVERLAP_FOUND_NOT_PRINT_READY",
+    "finding": "Full lower/separator XY comparison finds four overlapping layer pairs at front/rear/central supports, not covered by prior local joint ROI. Need verify slicer placement/layer interpretation before geometry changes.",
+    "diagnostic": "mechanical/xe-minimal/film-printed-support-layer-diagnostic.json",
+    "floating_shell_off_review": "mechanical/xe-minimal/film-no-floating-full-mating-review.json",
+    "updated_finding": "First-layer outer-wall centerlines themselves lie above CAD intervals beginning -2.22, while nominal first-layer material starts -2.42. This is not solely lateral bead expansion. Fine .08/.08 mm slicing still overlaps supports; do not adopt either process as fit-qualified.",
+    "fine_layer_review": "mechanical/xe-minimal/film-fine-full-mating-review.json",
+    "mesh_comparison": "mechanical/xe-minimal/film-separator-mesh-height-review.json",
+    "mesh_finding": "At five support/interference probes, STEP, binary STL and transformed 3MF triangles agree at Z -2.22/-1.92. No export mismatch at tested positions. Raw G-code uses Z .14 for first-layer paths. Remaining issue is slicing behavior or nominal toolpath interpretation, not demonstrated CAD export corruption."
+  },
+  "flipped_separator_print_trial": {
+    "review": "mechanical/xe-minimal/film-flipped-full-mating-review.json",
+    "status": "PREFERRED_ORIENTATION_CANDIDATE_NOT_FIT_QUALIFIED",
+    "finding": "X180 export rotation with inverse XY/Z layer transform removes full lower/separator nominal bead overlap. Four support regions retain .06 mm nominal vertical gap at unchanged CAD placement. Seating, other components, support removal and printed strength unverified."
+  },
+  "current_mechanical_integration_snapshot": "mechanical/xe-minimal/film-current-integration-candidate.json",
+  "printed_joint_envelope_screen": {
+    "review": "mechanical/xe-minimal/film-printed-joint-envelope-review.json",
+    "finding": "1.1x2.8x1.1 joint budgets clear both nominal printed parts; minimum lateral gap across shared Z .06289 mm. This is not tolerance-qualified clearance."
+  },
+  "sensor_lead_insulation_screen": {
+    "review": "mechanical/xe-minimal/film-full-lead-insulation-review.json",
+    "model": "mechanical/xe-minimal/film-full-lead-insulation-study.step",
+    "status": "NOT_ADOPTED_CLEARANCE_TOO_SMALL_TO_QUALIFY",
+    "finding": "Previously unmodeled Y22..23.2 exposed lead segment with provisional .08 mm wrap is nominally clear, but lower gap only .02 mm. Joint budget clearance does not cover this segment. Need transition and manufacturing allowance."
+  },
+  "lead_wrap_clearance_revision": {
+    "review": "mechanical/xe-minimal/film-lead-wrap-clearance-review.json",
+    "support": "mechanical/xe-minimal/film-lead-wrap-support-displacement-review.json",
+    "print_mating": "mechanical/xe-minimal/film-lead-wrap-full-mating-review.json",
+    "status": "TRIAL_NOT_RELEASE",
+    "finding": "CAD lead-wrap gap increased .02 to .15 mm, same case bounding box, one solid. Support displacement proxy unchanged. Resliced lower has no full nominal overlap with flipped separator; .06 mm support gaps remain."
+  },
+  "sensor_insulation_transition_trial": {
+    "review": "mechanical/xe-minimal/film-sensor-insulation-transition-review.json",
+    "status": "SPACE_BUDGET_CONTINUITY_ONLY",
+    "finding": "Lead wrap and larger joint envelopes joined over local Y23..23.4; each one valid solid, static overlap zero. Minimum lower gap .09894 mm, conductor-envelope separation .7 mm. Actual wrapping continuity and retention unqualified."
+  },
+  "minimum_joint_collar_screen": {
+    "review": "mechanical/xe-minimal/film-minimum-collar-review.json",
+    "status": "GEOMETRIC_SENSITIVITY_ONLY_NOT_RETENTION_QUALIFIED"
+  },
+  "indicator_energy_sensitivity": {
+    "review": "docs/sourcing/xe-indicator-energy-sensitivity.json",
+    "status": "NOT_ADOPTED_CONDITIONAL_SCENARIOS",
+    "finding": "Existing conservative budget counts continuous LED maximum. At hypothetical 1% duty the difference is 7.882 mAh over16h. Base MCU/audio allocation, usable battery capacity and storage busy energy remain unmeasured; no16h proof."
+  },
+  "current_integration_visualization": {
+    "status": "CANDIDATE_NOT_RELEASE",
+    "artifacts": {
+      "mechanical/xe-minimal/render_film_current_integration_review.py": "34069b88629b281bb424ce082f973dd638fe14cb83ff7a6bcddb07540c8ac599",
+      "mechanical/xe-minimal/film-current-integration-design-review.png": "5fc17c96193ed23a52540af85a4968ebadbb333370eb39868e9f2b9ace805bdf",
+      "mechanical/xe-minimal/film-current-integration-design-review.step": "2f4d9a99698b0b261f068cec4f49826bd6586b621a36fd14d0ba43140913412b",
+      "mechanical/xe-minimal/film-current-integration-design-review.json": "b6c91e904a7a77ea8298b5e19f9c4499216f7e6b238bba071182af1b90becf4e"
+    },
+    "projection": "orthographic; equal physical coordinate scale for comparison",
+    "limitations": [
+      "Original battery harness omitted",
+      "Insulation is occupied-space envelope only",
+      "Exploded offsets not verified assembly trajectory",
+      "16h runtime unmeasured"
+    ]
+  },
+  "candidate_bom_reconciliation": {
+    "review": "hardware/xe-minimal/film-integration-trial/candidate-bom-reconciliation.json",
+    "reference_bom": "hardware/xe-minimal/film-integration-trial/reconciled-candidate-bom.csv",
+    "five_unit_installed_quantities": "hardware/xe-minimal/film-integration-trial/five-unit-candidate-quantities.csv",
+    "status": "75_REFERENCES_MATCH_SCHEMATIC_NOT_ORDER_RELEASE",
+    "open": "Q6/Q7 candidate adoption; all electrical qualification; purchase loss/MOQ/materials/labor/prices"
+  },
+  "film_budget_delta": {
+    "path": "docs/procurement/xe-film-five-unit-budget-delta.json",
+    "status": "OLD_NCU_TOTAL_NOT_TRANSFERABLE",
+    "changed_references": [
+      "R13",
+      "TH1"
+    ],
+    "complete_five_unit_total": null
+  },
+  "film_carrier_candidate": {
+    "manifest": "hardware/xe-minimal/film-single-carrier-trial/REVIEW-CANDIDATE.json",
+    "status": "REVIEW_CANDIDATE_NOT_ORDER_RELEASE",
+    "placement_references": 74,
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "manufacturing_ready": false
+  }
+}

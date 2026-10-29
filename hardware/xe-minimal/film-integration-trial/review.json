@@ -1,0 +1,30 @@
+{
+  "status": "FILM_INTEGRATION_CANDIDATE_NOT_RELEASE",
+  "source_pcb_sha256": "8a15e07c6cba4a34b63e1a68ecd6f066f9f7a6d26d3792a4326b84ecf423718b",
+  "candidate_pcb_sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+  "changes": {
+    "R13": {
+      "footprint": "Resistor_SMD:R_0201_0603Metric",
+      "value": "100k",
+      "mpn": "RC0201FR-07100KL"
+    },
+    "TH1": {
+      "footprint": "PendantWire:External_NTC_WirePads_P1.75_0.8x1.8",
+      "value": "103JT-025 external 10k 1% B3435 candidate",
+      "mpn": "103JT-025"
+    }
+  },
+  "bom_references": 75,
+  "checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "erc_violations": 0,
+  "limits": [
+    "Film sensor and R13 engineering selections are provisional; no supplier or physical qualification.",
+    "Circuit topology unchanged; TH1 represents seller-installed external sensor on dedicated wire pads, not an SMT thermistor.",
+    "BOM is a candidate identity table, not a released order/assembly BOM or complete wire/material cost.",
+    "Schematic/PCB consistency does not prove temperature protection, runtime or physical case fit."
+  ]
+}

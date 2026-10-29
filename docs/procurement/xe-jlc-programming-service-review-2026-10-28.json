@@ -1,0 +1,53 @@
+{
+  "status": "STANDARD_PCBA_PROGRAMMING_OPTION_EXISTS_EXACT_XE_WORKFLOW_NOT_ACCEPTED",
+  "observed_date": "2026-10-28",
+  "supplier": "JLCPCB",
+  "canonical_route": "Standard PCBA",
+  "service_available_for_canonical_route": true,
+  "service_location_in_order_flow": "Advanced Options -> Function test (Standard PCBA) -> Programming",
+  "pre_assembly_programming_supported": false,
+  "post_assembly_programming_supported": true,
+  "published_inputs": [
+    "programmable device manufacturer part number",
+    "reserved programming interface definition",
+    "board picture",
+    "HEX or BIN program file",
+    "operation video if available (optional)"
+  ],
+  "xe_inputs_already_defined_locally": {
+    "target_mpn": "STM32U585CIU6",
+    "interface": "J3 five-pad SWD: VTREF, SWDIO, NRST, SWCLK, GND",
+    "firmware_format": "BIN generated only after allocated VID/PID and five-pack cutoff evidence",
+    "board_picture": "hardware/xe-minimal/factory-programming/vendor-programming-carrier.svg generated from the canonical carrier; final vendor image-format acceptance remains unverified",
+    "machine_readable_instruction": "hardware/xe-minimal/factory-programming/vendor-programming-instruction.json",
+    "programming_record": "hardware/xe-minimal/factory-programming/five-unit-programming-record.template.csv"
+  },
+  "published_price_USD": {
+    "engineering_fee_approx": 8,
+    "operator_labor_per_hour_approx": 8,
+    "exact_hours": null,
+    "exact_total": null
+  },
+  "published_process": [
+    "supplier engineers review whether the requested programming is supported",
+    "programming is performed after assembly through the reserved interface",
+    "supplier normally sends first-board programming video for customer confirmation before continuing"
+  ],
+  "not_proven_by_public_service_description": [
+    "STM32U585CIU6 support with the exact J3 SWD footprint and carrier access",
+    "BOR level 4 option-byte programming and readback",
+    "96-bit MCU UID capture and binding to a unique PCB serial",
+    "flash/ELF/MAP hash binding in the returned production record",
+    "charge-request-low and storage-rail-off post-program checks",
+    "power-loss recovery test",
+    "five-unit raw log delivery",
+    "exact labor hours and total price"
+  ],
+  "release_interpretation": "The selectable Standard-PCBA programming service establishes a plausible vendor-complete route without buyer flashing or a pre-order custom inquiry. It does not establish acceptance of the exact XE procedure; release remains HOLD until the order-flow engineering review accepts every required record and post-program check.",
+  "official_sources": {
+    "programming_service": "https://jlcpcb.com/help/article/pcba-programming-service",
+    "assembly_service": "https://jlcpcb.com/pcb-assembly",
+    "inspection_and_testing": "https://jlcpcb.com/help/article/smt-inspection-and-testing-capabilities"
+  },
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

@@ -1,0 +1,62 @@
+{
+  "status": "LAYER_THICKNESSES_MATCH_VENDOR_SELECTED_STACKUP_DK_AND_USB_UNQUALIFIED",
+  "source_pcb_sha256": "dedfe7ece3be60342a13023ee30e0ee2e45b1eb0313b1e58c96e3a74ef89ef4c",
+  "source": "https://jlcpcb.com/impedance",
+  "cad_total_mm": 0.8264,
+  "cad_dielectric_mm": [
+    0.1164,
+    0.13,
+    0.2028,
+    0.13,
+    0.1164
+  ],
+  "cad_all_dielectric_epsilon_r": 4.5,
+  "public_material_epsilon_r": {
+    "2116": 4.16,
+    "7628": 4.4,
+    "core": 4.6
+  },
+  "finding": "Selected recommended 2116 stackup layer thicknesses match CAD; generic CAD Dk4.5 differs from public material table. Finished thickness tolerance is 0.83±0.10mm.",
+  "impact": [
+    "USB impedance estimates using generic4.5 are provisional",
+    "0.8mm ordering thickness is nominal; exact0.8264CAD is not a manufacturing tolerance guarantee"
+  ],
+  "next": [
+    "Update material constants and calculate actual USB differential geometry against selected stackup",
+    "Evaluate enclosure at finished board thickness extrema 0.73 and 0.93mm, including component face placement and assembly datum"
+  ],
+  "limits": [
+    "Calculator result is not a quotation or fabrication acceptance",
+    "Default 50ohm single-ended calculation used only to reveal stackup, not USB validation",
+    "No PCB or case geometry changed",
+    "Public Dk table is separate evidence from selected stackup thickness table"
+  ],
+  "interactive_source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "interactive_selection": {
+    "layers": 6,
+    "nominal_mm": 0.8,
+    "inner_copper_oz": 0.5,
+    "outer_copper_oz": 1,
+    "stackup": "JLC06081H-2116",
+    "label": "Standard / Finished thickness 0.83±0.10mm",
+    "finished_min_mm": 0.73,
+    "finished_max_mm": 0.93,
+    "dielectric_mm": [
+      0.1164,
+      0.13,
+      0.2028,
+      0.13,
+      0.1164
+    ],
+    "copper_mm": [
+      0.035,
+      0.0152,
+      0.0152,
+      0.0152,
+      0.0152,
+      0.035
+    ],
+    "observed_via": "CUA rendered calculator selected tab",
+    "date": "2026-10-27"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "reset_chain": {
+    "R12": {
+      "1": "VBUS",
+      "2": "CHG_INHIBIT_GATE"
+    },
+    "R36": {
+      "1": "CHG_GUARD_GATE",
+      "2": "GND"
+    },
+    "R43": {
+      "1": "CHG_ALLOW",
+      "2": "CHG_GUARD_GATE"
+    },
+    "Q4": {
+      "1": "CHG_GUARD_GATE",
+      "2": "GND",
+      "3": "CHG_INHIBIT_GATE"
+    }
+  },
+  "reset_logic": "R36 pulls Q4 gate down while MCU high-Z; Q4 off allows R12 to pull CE_N high. Comparator POR high-Z alone does not defeat this default inhibit. During MCU asserted permission, VBUS ramps still require qualification.",
+  "board": "usb-return-candidate.kicad_pcb",
+  "board_sha256": "5301a71d3f24f3a8c6e0866951df4ea6a907f44368ec58c36f5a431298136a1b",
+  "part": "TLV7042DDFR",
+  "footprint": "SOT-23-8",
+  "pad_nets": {
+    "1": "CHG_GUARD_GATE",
+    "2": "BAT_TS",
+    "3": "TS_COLD_REF",
+    "4": "GND",
+    "5": "BAT_TS",
+    "6": "TS_HOT_REF",
+    "7": "CHG_GUARD_GATE",
+    "8": "VBUS"
+  },
+  "pin_function_match": true,
+  "source": "https://www.ti.com/lit/ds/symlink/tlv7042.pdf",
+  "revision": "SLVSE13J November 2024",
+  "evidence": "Table 4-2 p4: DDF pin functions; section 6.4 p17: TLV704x POR output high impedance; section 6.4.1 p18: unpowered input tolerance",
+  "scope": "Logical pin-to-net match and steady-state comparator polarity only; land pattern and startup not qualified",
+  "steady_state": "Cold: BAT_TS > COLD_REF makes A sink. Hot: BAT_TS < HOT_REF makes B sink. Open-drain outputs may share guard node. Requires both supplies/references settled.",
+  "remaining": [
+    "POR output is high impedance; verify MCU CHG_ALLOW reset/pulldown and charger inhibit during VBUS ramps/brownout before enabling charge.",
+    "R25/B and NTC harness remain unqualified; do not enable charging.",
+    "Verify DDF recommended land pattern, JLC orientation and exact supplied part.",
+    "Verify offset/hysteresis/resistor tolerances across supply and temperature."
+  ],
+  "qualified": false
+}

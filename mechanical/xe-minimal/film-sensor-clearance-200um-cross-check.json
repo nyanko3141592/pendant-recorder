@@ -1,0 +1,22 @@
+{
+  "status": "CROSS_CHECKED_REVIEW_CANDIDATE_NOT_RELEASE",
+  "sources_sha256": {
+    "film-sensor-clearance-200um-review.json": "30a1781f9dafe64b752857745a3bd5f88c632031bb65c46dfc078438d3eeb92a",
+    "film-sensor-clearance-200um-printed-review.json": "90c71e33e881bc1548d0214f3287dad38b2ea5b9c8d60c68c68d676c5dd0a2f4",
+    "film-sensor-clearance-200um-mating-review.json": "3c9241fd1741a0a17d5830a3c855ddc5f9a5d67a3bcaf12cf3105ab064152754",
+    "film-sensor-clearance-200um-lid-review.json": "4418eb3b28c785eb6f7940954991e03d7af23fb4ec3113959d7c048141e8b35c",
+    "home-case-slice-review/film-sensor-clearance-200um-lower-first018/battery-clearance-review.json": "cb180929e14669ea296998fbf6c1a66fd767a21ec84f7bb6dea099d9ed996ec4"
+  },
+  "findings": [
+    "Nominal sensor insulation XY minimum improved to 0.110935mm from 0.040886mm on shared Z layers.",
+    "Battery body nominal XY minimum decreased to 0.154426mm from 0.199706mm after reslicing; CAD subtraction does not imply monotonic printed clearance.",
+    "All same 27 exploratory battery offsets have zero modeled overlap.",
+    "Lower/lid nominal overlap is zero; seam gap remains 0.0314001mm."
+  ],
+  "remaining": [
+    "Local wall thickness and sensor retention after enlarged cut",
+    "Actual print tolerances, support residue and thermal contact",
+    "Original unmodified battery harness/plug fit and insertion",
+    "Electrical qualification, measured runtime and complete prototype cost"
+  ]
+}

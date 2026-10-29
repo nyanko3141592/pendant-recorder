@@ -1,0 +1,46 @@
+{
+  "status": "SCREEN_ONLY_NOT_A_POWER_DESIGN",
+  "design_sha256": "ddd0a7590c3a5d0b48b99e0171caf3e7cbdaa9718747d2160735e1ed48262fd1",
+  "sources": [
+    "https://jp.transcend-info.com/products/images/modelpic/739/Transcend-USD220I_202209.pdf",
+    "https://www.swissbit.com/files/public/Documents/Swissbit_Product_Guide.pdf"
+  ],
+  "inputs": {
+    "reference_card_current_mA": 218.1818181818182,
+    "battery_limit_mA_unconfirmed": 50,
+    "assumed_other_system_current_mA": 10,
+    "assumed_allowed_rail_droop_V": 0.3,
+    "C26_nominal_uF": 0.1,
+    "C27_nominal_uF": 4.7
+  },
+  "formula": "C = (I_load - I_available_to_card) * pulse_duration / allowed_droop",
+  "deficit_mA": 178.1818181818182,
+  "sensitivity": [
+    {
+      "assumed_pulse_ms": 0.1,
+      "ideal_required_capacitance_uF": 59.4
+    },
+    {
+      "assumed_pulse_ms": 1,
+      "ideal_required_capacitance_uF": 593.9
+    },
+    {
+      "assumed_pulse_ms": 10,
+      "ideal_required_capacitance_uF": 5939.4
+    },
+    {
+      "assumed_pulse_ms": 100,
+      "ideal_required_capacitance_uF": 59393.9
+    }
+  ],
+  "ideal_nominal_C26_C27_hold_time_us": 8.081632653061224,
+  "limitations": [
+    "Reference maximum power does not specify SPI pulse current or duration. Rows are hypothetical sensitivity, not measured performance.",
+    "50mA battery bound lacks approved pack datasheet. 10mA other load and 0.3V droop are analysis assumptions, not verified limits.",
+    "Nominal capacitance overstates effective ceramic capacitance under DC bias. ESR, tolerance, temperature, path drop and LDO stability excluded.",
+    "A capacitor alone does not enforce battery current limit; charging/inrush control and recovery energy must be designed.",
+    "LDO 200mA rating is a separate limitation; capacitor cannot support an indefinite overload."
+  ],
+  "decision": "Do not add a token capacitor or approve generic microSD. Obtain exact card peak/busy/startup bounds plus qualified battery pulse limits, or evaluate a documented lower-current storage architecture. No circuit change adopted.",
+  "alternative_evidence": "Swissbit official guide lists low-current SLC families at typical write 40/50mA; typical is not maximum and leaves no proven system margin. These are research candidates only, no exact SKU/price qualification."
+}

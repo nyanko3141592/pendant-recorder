@@ -1,0 +1,100 @@
+{
+  "status": "HOLD_DO_NOT_ORDER",
+  "issues": [
+    {
+      "id": "FAB",
+      "stage": "before_order",
+      "issue": "Public JLC04081H-3313 matches PCB. General multilayer capability explicitly permits0.15mm drills with surcharge; separate impedance page lists0.2mm. Combined service acceptance, USB90ohm, finished tolerance, DFM and total cost remain unconfirmed.",
+      "next": "Resolve impedance-service drill applicability and actual USB differential geometry/neck/transitions using applicable public manufacturer parameters; no upload or contact.",
+      "evidence": "evidence/public-stackup-match.json",
+      "fixed_center_drill_expansion": "evidence/standard-drill-screen/decision.json",
+      "drill_service_evidence": "evidence/drill-service-public-review.json"
+    },
+    {
+      "id": "BOM",
+      "stage": "before_order",
+      "issue": "All 36 JLC BOM lines checked in rendered public pages. U1: stock15/pre-order; U12: stock0/min11/pre-order; J1: stock0/min12/pre-order. C30 available5 equals installed demand for five units, without attrition margin. Remaining32 lines show orderable quantity above installed demand, not reserved.",
+      "next": "Resolve U1/U12/J1 supply timing and C30 assembly attrition supply; review compatible catalog alternatives without changing design until electrical/mechanical equivalence is established. No purchase/reservation.",
+      "u12_alternative_review": "evidence/u12-sourcing-and-carrier-review.json"
+    },
+    {
+      "id": "ASSEMBLY",
+      "stage": "before_order",
+      "issue": "68 placements and terminal coordinates match board; original library checks pass. Supplier tape orientation and physical polarity mapping are not yet independently certified.",
+      "next": "Review polarized and multi-pin component physical pin1 and supplier rotation conventions before upload; retain explicit terminal map.",
+      "selected_pin_map_evidence": "evidence/selected-critical-pin-map-review.json",
+      "u12_carrier_review": "evidence/u12-sourcing-and-carrier-review.json"
+    },
+    {
+      "id": "MECHANICAL",
+      "stage": "before_order",
+      "issue": "Preferred captured-carrier candidate: same PCB, integral separator/frame/4 board posts, 4 lid stops, body insertion sweeps clear, +/-0.1mm common XY corner checks clear after corner relief, carrier commanded beads one connected component. Original harness/mated connector, physical tolerances/stiffness/lid joint/battery protection remain unqualified.",
+      "next": "Complete factory harness/mated connector geometry and connected insertion; qualify physical fit, carrier stiffness, lid joint and battery protection. No more unconstrained local routing or style variants.",
+      "evidence": "mechanical-captured-carrier/review.json",
+      "connector_evidence": "evidence/official-connector-models/harness-evidence-review.json",
+      "joint_evidence": "mechanical-captured-carrier/joint-land-review.json"
+    },
+    {
+      "id": "ELECTRICAL",
+      "stage": "before_order_design_review",
+      "issue": "DRC-clean geometry does not certify USB impedance/return quality, power transient margins or charging safety; trace-resistance estimate excludes component and return losses.",
+      "next": "Complete full-path USB field/transition assessment with current adjacent copper, bounded power/charging review and EVT criteria. Historical uniform noncoplanar calculator result cannot certify current full route.",
+      "usb_current_geometry_evidence": "evidence/current-usb-si-decision.json",
+      "usb_mode_and_control_evidence": "evidence/current-usb-fs-scope-review.json",
+      "runtime_budget_evidence": "evidence/xe-integrated-16h-budget.json",
+      "runtime_limitation": "4.4mA is an allocation, not a measured or conservative complete-device bound. Old CSNP32 current estimate is not evidence for MKDV8GIL-AST and has been removed from usable headroom.",
+      "storage_energy_evidence": "evidence/current-storage-energy-review.json",
+      "temperature_pin_review": "evidence/temperature-window-pin-polarity-review.json"
+    },
+    {
+      "id": "EVT",
+      "stage": "after_prototype_physical",
+      "issue": "16h battery recording, actual-media >=30h encrypted storage, thermal/NTC/abnormal USB input, three-OS USB, acoustic, drop and cord tests are unmeasured.",
+      "next": "Use explicit assembly/test protocol; never replace physical results with CAD or host tests."
+    },
+    {
+      "id": "STORAGE_RESERVE",
+      "stage": "before_order_design_review",
+      "issue": "Design allocation budget fixed for FAT32/4KiB, 30h across three normal sessions, identity, directory growth and maximum TMP/next file. Actual factory format and media readback pending.",
+      "next": "Empty-image generator and readback verifier implemented; firmware FatFs 10800-file synthetic compatibility passed. Actual addressable sector count, identity setup, factory programming and physical readback remain pending, followed by physical Gate D.",
+      "evidence": "evidence/storage-30h-reserve-review.json",
+      "codec_evidence": "evidence/current-codec-capacity-review.json",
+      "budget_evidence": "evidence/storage-format-and-budget.json",
+      "readback_verifier": "evidence/factory-storage-readback-verifier.json",
+      "generator_evidence": "evidence/factory-image-generation-review.json"
+    },
+    {
+      "id": "FACTORY_FIRMWARE",
+      "stage": "before_order_design_review",
+      "issue": "Current J3 pin coordinates and five-unit template packaged; no flashable product image. USB identity, cutoff evidence and supplier programming workflow acceptance missing.",
+      "next": "Resolve external configuration evidence, rebuild current sources, then verify image/readback procedure. Do not substitute link-test ELF.",
+      "evidence": "factory-programming/readiness.json"
+    }
+  ],
+  "order_allowed": false,
+  "resolved": [
+    "General thickness aligned to stackup total .7992mm; nominal .8mm",
+    "PCB manufacturing outputs and fit envelope/gauge rebuilt from the same current PCB hash",
+    "All 74 footprints resolve to packaged original library sources; DRC including library checks is zero",
+    "All 68 component centers, sides, rotations and terminal coordinates match the exported placement CSV",
+    "Public multilayer dimensional screen: 145 through vias meet published hole/diameter minima; minimum track .1mm; USB slot axis annulus .2mm",
+    "Standard PCBA service required by U11 catalog; Economic-only assembly excluded",
+    "Browser rendered current numeric U1/U11 stock; U11 stock0/preorder-only historical assumption superseded",
+    "Full 36-line public BOM availability screen completed; all exact MPN identities checked; 68 installed parts accounted for",
+    "Named public JLC04081H-3313 stackup thicknesses and dielectric constants match packaged PCB; service/impedance acceptance remains open"
+  ],
+  "assembly_and_test_protocol": "ASSEMBLY-AND-EVT.txt",
+  "decision_context": {
+    "stage": "first_prototype_design_review",
+    "priority": [
+      "usability including runtime",
+      "small complete size",
+      "first prototype cost"
+    ],
+    "basic_safety_required": true,
+    "supported_theoretical_estimate_sufficient_for_prototype_decision": true,
+    "physical_measurement_absence_alone_blocks_design": false,
+    "existing_engineering_issues_still_open": true,
+    "mass_production_qualification_deferred": true
+  }
+}

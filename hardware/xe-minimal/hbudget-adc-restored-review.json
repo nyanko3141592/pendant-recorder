@@ -1,0 +1,42 @@
+{
+  "accepted": true,
+  "visited": 108,
+  "paths": [
+    {
+      "layer": 0,
+      "points": [
+        [
+          16.795,
+          9.765
+        ],
+        [
+          17.5,
+          11.100000000000001
+        ],
+        [
+          17.442047,
+          12.179814
+        ]
+      ]
+    }
+  ],
+  "switches": [],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/USB_HIGH_BUDGET] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 17.1,
+            "y": 11.15
+          },
+          "uuid": "ffe98233-528f-4097-b605-3f9998c7d3d9"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 11
+}

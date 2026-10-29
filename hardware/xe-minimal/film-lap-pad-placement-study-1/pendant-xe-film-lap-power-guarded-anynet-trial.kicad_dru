@@ -1,0 +1,9 @@
+(version 1)
+# JLC 1 oz multilayer minimum spacing: 0.09 mm.
+# https://jlcpcb.com/capabilities/pcb-capabilities (reviewed 2026-10-26)
+# Limited to pairs of U8 pads; other clearances retain the project rules.
+(rule "U8 SMD pad pairs - JLC 1oz multilayer"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U8') && B.memberOfFootprint('U8')")
+  (constraint clearance (min 0.09mm)))
+
+(rule "U13 TPS pad pair candidate" (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U13') && B.memberOfFootprint('U13')") (constraint clearance (min 0.1mm)))

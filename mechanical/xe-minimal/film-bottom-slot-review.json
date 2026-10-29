@@ -1,0 +1,86 @@
+{
+  "status": "BOTTOM_SLOT_COMPARISON_NOT_ADOPTED",
+  "source_sha256": "e5a67760508904f7676e777dcaa31afcdb36a576700876a86d0678532b6a6f2f",
+  "output_sha256": "63d2986eb0404d397b91a6681831f76cec5bbb167c59b42b6f1fa5bc622deaac",
+  "wire_source_sha256": "2ce9018076e28973d23542a01735de162f9c382a853d91b0f1a85e125b54c921",
+  "valid": true,
+  "solid_count": 1,
+  "slot_width_mm": 0.5,
+  "removed_volume_mm3": 0.11855255125642827,
+  "sampled_rigid_wire_insertion": [
+    {
+      "z_translation_mm": 0,
+      "original_overlap_mm3": 0.0,
+      "slotted_overlap_mm3": 0.0
+    },
+    {
+      "z_translation_mm": -0.1,
+      "original_overlap_mm3": 0.0,
+      "slotted_overlap_mm3": 0.0
+    },
+    {
+      "z_translation_mm": -0.2,
+      "original_overlap_mm3": 0.04105400735397299,
+      "slotted_overlap_mm3": 0.030706096597174368
+    },
+    {
+      "z_translation_mm": -0.4,
+      "original_overlap_mm3": 0.13308897500534417,
+      "slotted_overlap_mm3": 0.08041103310575819
+    },
+    {
+      "z_translation_mm": -0.8,
+      "original_overlap_mm3": 0.16412583721697846,
+      "slotted_overlap_mm3": 0.1571460583707655
+    },
+    {
+      "z_translation_mm": -1.5,
+      "original_overlap_mm3": 0.0,
+      "slotted_overlap_mm3": 0.0
+    },
+    {
+      "z_translation_mm": -3,
+      "original_overlap_mm3": 0.0,
+      "slotted_overlap_mm3": 0.0
+    },
+    {
+      "z_translation_mm": -5,
+      "original_overlap_mm3": 0.0,
+      "slotted_overlap_mm3": 0.0
+    },
+    {
+      "z_translation_mm": -8,
+      "original_overlap_mm3": 0.0,
+      "slotted_overlap_mm3": 0.0
+    }
+  ],
+  "retention_max_box_screen": [
+    {
+      "translation_mm": 0,
+      "max_joint_box_overlap_mm3": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "translation_mm": 0.2,
+      "max_joint_box_overlap_mm3": [
+        0.04175233105721485,
+        0.04175233105734726
+      ]
+    },
+    {
+      "translation_mm": 0.5,
+      "max_joint_box_overlap_mm3": [
+        0.16700620211783307,
+        0.16700932422934991
+      ]
+    }
+  ],
+  "limits": [
+    "Sampled positions do not prove continuous insertion clearance.",
+    "Preformed wires are treated rigidly; bare PCB tails, joint insulation and tools omitted.",
+    "Opening holes removes threading requirement at stop but does not establish full assembly feasibility.",
+    "Max joint envelope is not a minimum retention collar; no retention or printed strength qualification."
+  ]
+}

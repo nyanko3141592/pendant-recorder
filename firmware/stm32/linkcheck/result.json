@@ -1,0 +1,25 @@
+{
+  "status": "HISTORICAL_FIXTURE_LINK_BEFORE_STATIC_AGE_WORKSPACE",
+  "elf": "/tmp/pendant-fixture-current/candidate-NOT-FOR-FLASH.elf",
+  "sha256": "ccdda757c6642666649a3078f2e7bcdcdb3bac8e8ea3d4419f1a9c0d2e9a1191",
+  "flash_allocated_bytes": 149966,
+  "main_ram_data_bss_bytes": 126484,
+  "reserved_stack_bytes": 81920,
+  "reserved_heap_bytes": 512,
+  "sram4_lpbam_bytes": 4192,
+  "main_ram_capacity_bytes": 262144,
+  "sram4_capacity_bytes": 16384,
+  "garbage_collection": false,
+  "scope": "HAL/init/WFI fixture; all modules linked but app lifecycle not executed.",
+  "missing": [
+    "Allocated USB IDs and persistent user recipient provisioning",
+    "Real audio/USB/current/ADC/latency tests",
+    "Charging qualification and low-power clock/Stop2 policy"
+  ],
+  "limitations": [
+    "NOT FOR FLASH: synthetic USB IDs; app uses disposable recipient whose private key was destroyed",
+    "80KiB stack reservation is not proven maximum stack usage",
+    "Link size includes all modules without garbage collection; physical functionality and16h runtime unproven"
+  ],
+  "build_script_sha256": "8040bf6ed1af2aa039afd923b1adc56c032aa88bd88ed7f706855ea1cf13bb4a"
+}

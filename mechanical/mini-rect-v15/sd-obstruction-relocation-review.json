@@ -1,0 +1,45 @@
+{
+  "status": "GEOMETRY_ONLY_RELOCATION_SCREEN_NOT_ROUTED",
+  "source_sha256": {
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.mechanical-handoff.json": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief/body-NOT-MANUFACTURING.step": "ca49adfd0c8e28f0ddf2fe3d25da31783b9f271e77130b6c0c14808a93e4f31e",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief/lid-NOT-MANUFACTURING.step": "8ee6e4ad9fb132b415134ce54cef164eeee758d581bbecf89fe4f8f2c3ef1807",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief/key-NOT-MANUFACTURING.step": "66ac274bd045690497c25272de0c6dede28086adc5b17aa2115ba8e2f724908e",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/evidence/tlv803e-package-review.pdf": "74ac4474d86c3597c4fff6ffa61a59e850130a40eda28085ece9765fb380e844",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/screen_sd_obstruction_relocation.py": "da6bd73f0703f59b06b5a46cd738092367149c345cfe48828eb615c1cb6f2e4d"
+  },
+  "U15_package_review": {
+    "part": "TLV803EB29DBZR",
+    "drawing": "DBZ0003A",
+    "url": "https://www.ti.com/lit/ds/symlink/tlv803e.pdf",
+    "maximum_body_mm": [
+      1.4,
+      3.04,
+      1.12
+    ],
+    "uppermost_card_overlap_mm3": 1.8726399999999963,
+    "interpretation": "Maximum package envelope still conflicts; shrinking provisional height1.45 to actual maximum1.12 does not qualify the current straight insertion path."
+  },
+  "Q7_package_review": "Nexperia direct PDF403; do not infer exact height or bypass restriction. Existing1.45mm envelope retained.",
+  "trial_centers_board_mm": {
+    "Q7": [
+      23,
+      14.5
+    ],
+    "U15": [
+      23,
+      18
+    ]
+  },
+  "collisions": [],
+  "adopted": false,
+  "board_changed": false,
+  "remaining": [
+    "No routing or pad/trace/via DRC for trial positions; existing board and manufacturing files unchanged.",
+    "Actual card Z datum and remaining low components still need verification; two-part relocation alone is not full insertion approval.",
+    "Recheck schematic/PCB parity, USB return/current control nets and all mechanical artifacts if moving parts.",
+    "No manufacturer guarantee of hand access or tilted insertion."
+  ],
+  "release_allowed": false
+}

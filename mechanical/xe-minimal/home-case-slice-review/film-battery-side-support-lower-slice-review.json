@@ -1,0 +1,93 @@
+{
+  "status": "SLICED_NOT_PRINTED_OR_FIT_QUALIFIED",
+  "parts": [
+    {
+      "part": "film-battery-side-support-lower",
+      "source": "film-battery-side-support-lower-trial.step",
+      "source_sha256": "1acfa30bbc85f201200025342cb6ce4dd85a5da171ad36eb009bbee594409660",
+      "stl_sha256": "92a2a2713c28a9b21429074b46ad26c69a705cbbfa0d8ee6b87d598ef84c9794",
+      "3mf_sha256": "4e44810ebed0517412c07b05f887f514a29194871a16caa62afec70c0f52d5bc",
+      "first_layer_mm": 0.28,
+      "regular_layer_mm": 0.08,
+      "CAD_height_mm": 8.120000000000001,
+      "translation_mm": [
+        1.1000000000000014,
+        28.3,
+        7.720000000000001
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 480,
+        "layer_height": 0.07999999821186066,
+        "plate_index": 0,
+        "prepare_time": 20,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 31.248374938964844,
+              "Custom": 34.72233963012695,
+              "Gap infill": 0.8450047969818115,
+              "Inner wall": 40.045654296875,
+              "Internal solid infill": 62.708335876464844,
+              "Outer wall": 690.7301025390625,
+              "Overhang wall": 1.5173766613006592,
+              "Top surface": 17.637548446655273,
+              "Travel": 118.71292114257812,
+              "Undefined": 103.12271118164062
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.6634860038757324,
+                "total_used_g": 1.6634860038757324
+              }
+            ],
+            "generate_support_material_time": 16,
+            "id": 1,
+            "infill_time": 16,
+            "layer_filament_change": 0,
+            "main_predication": 963.476806640625,
+            "make_perimeters_time": 105,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 29.60000228881836,
+                  "height": 8.119999885559082,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 75.19999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "film-battery-side-support-lower.stl",
+                "triangle_count": 11030
+              }
+            ],
+            "sliced_time": 318,
+            "sliced_time_with_cache": 177,
+            "total_predication": 982.5787353515625,
+            "triangle_count": 11030,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 2
+      },
+      "profile_sha256": {
+        "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+        "process": "4d1014d71dc6c2612ac0336a1c5c584c89861455ac803587d43745e34ba118be",
+        "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+      }
+    }
+  ],
+  "limits": [
+    "Toolpath review still required",
+    "Tray pedestal overhang and 0.074mm internal slit not physically verified",
+    "Current plug and original lead fit unresolved",
+    "No print job sent"
+  ]
+}

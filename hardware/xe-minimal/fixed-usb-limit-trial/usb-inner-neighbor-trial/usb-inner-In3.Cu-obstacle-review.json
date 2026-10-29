@@ -1,0 +1,115 @@
+{
+  "status": "CLEARANCE_CONTRIBUTOR_SCREEN_NOT_COMPLETE_RULE_SOLVER",
+  "source_pcb_sha256": "c9ab7dbf9069c682b8dda88617fb59677ea9adf2bd29e446508a39a687f879ed",
+  "zone_local_clearance_mm": 0.15,
+  "polygon_error_mm": 0.001,
+  "rows": [
+    {
+      "usb_uuid": "338c66e3-7933-4afd-b2f4-01325a85229b",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0380379979725,
+      "contributors": [
+        {
+          "uuid": "28ad8aee-08e4-4004-8b2c-eee63521f5c3",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            11.75,
+            19.883749
+          ],
+          "overlap_with_uncovered_mm2": 0.037888642721,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000149448796
+    },
+    {
+      "usb_uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    },
+    {
+      "usb_uuid": "cd543976-b9a2-40c9-bae5-b76d8336c2f1",
+      "net": "/USB_DP",
+      "missing_mm2": 0.0380072371825,
+      "contributors": [
+        {
+          "uuid": "06d4601c-2efb-44a0-9fe1-f1f7046fe521",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            21.89,
+            8.6175
+          ],
+          "overlap_with_uncovered_mm2": 0.037894147817,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000113085551
+    },
+    {
+      "usb_uuid": "1fd3a811-f21b-4177-b010-f981762dcccb",
+      "net": "/USB_DM",
+      "missing_mm2": 0.038030517076,
+      "contributors": [
+        {
+          "uuid": "2b6f8c6c-7874-4133-bbd5-4b1c56296eef",
+          "kind": "PCB_VIA",
+          "net": "/USB_DM",
+          "xy_mm": [
+            12.0,
+            17.746249
+          ],
+          "overlap_with_uncovered_mm2": 0.037891498502,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.00013918757
+    },
+    {
+      "usb_uuid": "63739360-e6c3-4b80-83e9-4dd74a8cbe0a",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0404996736475,
+      "contributors": [
+        {
+          "uuid": "06d4601c-2efb-44a0-9fe1-f1f7046fe521",
+          "kind": "PCB_VIA",
+          "net": "/USB_DP",
+          "xy_mm": [
+            21.89,
+            8.6175
+          ],
+          "overlap_with_uncovered_mm2": 0.002651037566,
+          "is_USB_net": true
+        },
+        {
+          "uuid": "5353367c-7e9c-4663-bc5f-90539681e5b2",
+          "kind": "PCB_VIA",
+          "net": "/USB_DM",
+          "xy_mm": [
+            21.89,
+            8.1175
+          ],
+          "overlap_with_uncovered_mm2": 0.037888189585,
+          "is_USB_net": true
+        }
+      ],
+      "unattributed_mm2": 0.000924466121
+    },
+    {
+      "usb_uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d",
+      "net": "/USB_DM",
+      "missing_mm2": 0.0,
+      "contributors": [],
+      "unattributed_mm2": 0.0
+    }
+  ],
+  "limits": [
+    "Uses zone local clearance only; object/netclass/custom-rule differences may explain residuals",
+    "Overlaps from separate obstacles may overlap; do not sum as union",
+    "USB via antipads are required; do not fill or remove clearance to obtain geometric coverage",
+    "Ground connectivity and 3D fields not evaluated"
+  ]
+}

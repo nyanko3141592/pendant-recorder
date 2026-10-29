@@ -1,0 +1,10 @@
+from pathlib import Path
+import pcbnew as k,wx,json,collections,hashlib
+app=wx.App(False);w=Path(__file__).resolve().parent;out=w/'release-review-20261029-aligned';p=out/'design/pendant-review.kicad_pcb';b=k.LoadBoard(str(p));vias=[t for t in b.GetTracks() if isinstance(t,k.PCB_VIA)];tracks=[t for t in b.GetTracks() if not isinstance(t,k.PCB_VIA)];pth=[]
+for f in b.GetFootprints():
+ for a in f.Pads():
+  if a.GetAttribute()!=k.PAD_ATTRIB_PTH:continue
+  size=a.GetSize();drill=a.GetDrillSize();pth.append({'ref':f.GetReference(),'pad':a.GetNumber(),'pad_size_mm':[k.ToMM(size.x),k.ToMM(size.y)],'drill_mm':[k.ToMM(drill.x),k.ToMM(drill.y)],'axis_annular_margin_mm':min(k.ToMM(size.x-drill.x),k.ToMM(size.y-drill.y))/2})
+vs=collections.Counter((k.ToMM(v.GetDrillValue()),k.ToMM(v.GetWidth(k.F_Cu))) for v in vias);minimum=min(k.ToMM(t.GetWidth()) for t in tracks)
+checks={'four_copper_layers':b.GetCopperLayerCount()==4,'all_vias_through':all(v.GetViaType()==k.VIATYPE_THROUGH for v in vias),'via_hole_at_least_0_15mm':all(k.ToMM(v.GetDrillValue())>=.15 for v in vias),'via_diameter_at_least_0_25mm':all(k.ToMM(v.GetWidth(k.F_Cu))>=.25 for v in vias),'trace_width_at_least_multilayer_0_09mm':minimum>=.09,'pth_axis_annular_margin_at_least_0_15mm':all(a['axis_annular_margin_mm']>=.15 for a in pth)}
+r={'status':'PUBLIC_DIMENSION_SCREEN_NOT_ORDER_ACCEPTANCE','source_pcb_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'source_url':'https://jlcpcb.com/capabilities/Capabilities','checked_date':'2026-10-29','via_sizes':[{'hole_mm':h,'diameter_mm':d,'count':n} for (h,d),n in vs.items()],'minimum_track_width_mm':minimum,'pth':pth,'checks':checks,'limitations':['Via limits and component PTH annular limits are distinct','PTH axis margin does not inspect complete rounded slot annulus','No quoting, order acceptance or full CAM DFM','Supplier stackup, 90ohm impedance and exact costs remain unresolved'],'release_allowed':False};(out/'public-fabrication-screen.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2))

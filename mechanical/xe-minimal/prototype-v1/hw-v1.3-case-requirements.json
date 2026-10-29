@@ -1,0 +1,77 @@
+{
+  "version": "HW-V1.3-CASE-REQUIREMENTS-R0",
+  "status": "REQUIREMENTS_FIXED_CAD_PENDING_FINAL_PCB_PLACEMENT",
+  "inputs": {
+    "pcb_mm": [36.0, 36.0, 0.8],
+    "pcb_assembly_side": "single side",
+    "battery": "DTP401525-XE",
+    "battery_max_body_mm": [15.5, 27.0, 4.2],
+    "battery_lead_mm": "15 +/- 3",
+    "battery_connector": "Molex 78172-0003 to PCB 78171-0003",
+    "cord": "2 to 3 mm finished breakaway necklace cord"
+  },
+  "architecture": {
+    "stack": "case back / battery cradle / battery / electrical insulation / PCB / component clearance / case front",
+    "battery_retention": "captured removable cradle; no adhesive on pouch, leads or connector",
+    "pcb_retention": "perimeter ledge plus local stops outside component courtyards",
+    "closure_for_evt": "perimeter adhesive seam allowed; seam must not carry lanyard primary load",
+    "service": "battery can be inserted before final EVT closure without soldering, crimping or wire modification"
+  },
+  "clearances_mm": {
+    "pcb_xy_each_side_min": 0.25,
+    "printed_wall_nominal": 1.6,
+    "battery_body_xy_min": 0.5,
+    "battery_swelling_normal_min": 0.8,
+    "component_z_min": 0.5,
+    "wire_bend_reserved_min": 2.5,
+    "usb_shell_to_case_min": 0.25
+  },
+  "usb": {
+    "connector_face": "flush with or up to 0.3 mm behind exterior datum",
+    "outer_bay_mm": [14.0, 7.5],
+    "inner_throat_mm": [9.4, 3.6],
+    "orientation": "connector insertion axis parallel to the wearer's vertical torso axis when hanging",
+    "test": "charge and data with at least three ordinary USB-C overmold widths; no plug load transferred directly to PCB solder joints"
+  },
+  "microphone": {
+    "location": "case face directly below U8 bottom port after final PCB placement",
+    "acoustic_path": "dedicated short cavity; not shared with battery or USB cavity",
+    "requirements": ["no adhesive over port", "cloth-rub screen/mesh provision", "water resistance is not claimed", "orientation and cavity require acoustic A/B test"]
+  },
+  "lanyard": {
+    "location": "case edge opposite the USB connector",
+    "hole_axis": "90 degrees from the old top-view orientation; necklace hangs with USB axis vertical",
+    "hole_diameter_mm": 3.2,
+    "minimum_radial_ligament_mm": 1.4,
+    "load_path": "integral with lower shell and continuous into broad back wall; not bonded-tab-only",
+    "print_orientation": "hole axis parallel to printer build Z",
+    "qualification": "50 N three-direction proof load plus 15 N / 10000-cycle fatigue and cord-wear inspection"
+  },
+  "shape": {
+    "style": "pebble rounded rectangle; all exterior edges rounded",
+    "plan_corner_radius_target_mm": 4.0,
+    "front_back_edge_radius_target_mm": 1.5,
+    "no_unjustified_protrusions": true,
+    "target_body_envelope_mm": [39.7, 39.7, 12.5],
+    "target_complete_length_with_lanyard_mm": 46.0,
+    "target_is_not_release_proof": true
+  },
+  "printing": {
+    "printer": "Bambu Lab A1 mini",
+    "material": "Bambu PETG Basic",
+    "nozzle_mm": 0.4,
+    "layer_height_mm": 0.16,
+    "walls": 6,
+    "infill": "40% gyroid",
+    "supports": "only where slicer/overhang review requires; none inside acoustic or USB mating surfaces after removal"
+  },
+  "release_gates": [
+    "final populated-PCB STEP and battery/lead/connector envelope show no nominal interference",
+    "first print closes without forcing or compressing battery pouch",
+    "USB plug family fit and cable strain test pass",
+    "microphone frequency/noise/cloth-rub comparison passes",
+    "lanyard proof/fatigue/wear tests pass",
+    "thermal charge cutoff and recovery pass in the closed case",
+    "drop test does not expose or pinch the pouch cell"
+  ]
+}

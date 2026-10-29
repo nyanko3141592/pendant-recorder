@@ -1,0 +1,106 @@
+{
+  "status": "CAD_DIMENSIONS_CHECKED_PROCESS_ACCEPTANCE_NOT_PROVEN",
+  "candidate_sha256": "b4082e2163e932a5e32fa1cb915eccc1bcdbaac505a7c0a80982274db1b40aba",
+  "canonical_via_count": 253,
+  "candidate_via_count": 253,
+  "added": [
+    {
+      "uuid": "4bc72cb4-756d-4294-9611-f73398d609ad",
+      "xy_mm": [
+        8.199999,
+        9.65
+      ],
+      "net": "/VBUS",
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "nominal_annular_mm": 0.1
+    },
+    {
+      "uuid": "63f701a7-9681-4202-9c67-3619085331d3",
+      "xy_mm": [
+        7.25,
+        9.9
+      ],
+      "net": "/USB_HIGH_BUDGET_DRAIN",
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "nominal_annular_mm": 0.1
+    },
+    {
+      "uuid": "09b0f270-6a0b-47e5-bacf-2ef4877c44ee",
+      "xy_mm": [
+        9.9,
+        9.05
+      ],
+      "net": "/USB_HIGH_BUDGET",
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "nominal_annular_mm": 0.1
+    }
+  ],
+  "removed": [
+    {
+      "uuid": "6b5a16c9-4356-4d37-9b33-2b39491fb818",
+      "xy_mm": [
+        6.954999,
+        9.7675
+      ],
+      "net": "/GND",
+      "diameter_mm": 0.35,
+      "drill_mm": 0.15,
+      "nominal_annular_mm": 0.1
+    },
+    {
+      "uuid": "6357f87c-68a1-4584-a4bb-cb68166ece77",
+      "xy_mm": [
+        9.4,
+        4.45
+      ],
+      "net": "/USB_HIGH_BUDGET_DRAIN",
+      "diameter_mm": 0.35,
+      "drill_mm": 0.15,
+      "nominal_annular_mm": 0.1
+    },
+    {
+      "uuid": "29069677-6964-4422-a665-d84204bfc33c",
+      "xy_mm": [
+        9.9,
+        6.8
+      ],
+      "net": "/USB_HIGH_BUDGET",
+      "diameter_mm": 0.35,
+      "drill_mm": 0.15,
+      "nominal_annular_mm": 0.1
+    }
+  ],
+  "candidate_histogram": {
+    "(0.35, 0.15, 0.1)": 250,
+    "(0.4, 0.2, 0.1)": 3
+  },
+  "cad_minimums": {
+    "min_via_annular_width": 0.1,
+    "min_via_diameter": 0.35,
+    "min_through_hole_diameter": 0.15,
+    "min_hole_clearance": 0.2
+  },
+  "minimum_nominal_annular_mm": 0.1,
+  "limits": [
+    "Nominal annular ring is geometric only; drill registration, finished hole size and plating tolerance not included",
+    "Existing rule minimum is not supplier process acceptance",
+    "Candidate has not been exported into canonical production package"
+  ],
+  "public_capability_review": {
+    "url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "observed_date": "2026-10-27",
+    "published_multilayer_min_hole_pad_mm": [
+      0.15,
+      0.25
+    ],
+    "published_min_pad_minus_hole_mm": 0.1,
+    "preferred_pad_minus_hole_mm": 0.15,
+    "candidate_pad_minus_hole_mm": 0.2,
+    "dimension_screen": "PASS for both 0.35/0.15 and 0.4/0.2 mm geometry",
+    "pricing_note": "0.15 mm holes and 0.2 mm holes with pad diameter below 0.45 mm listed as extra-cost options; no price inferred",
+    "limitations": "Public capability screen only; full-board DFM, plating, via filling/capping, mask and assembly acceptance remain unproven."
+  }
+}

@@ -1,0 +1,2549 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T12:33:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "xe-usb-placement.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.5018 mm )",
+                    "pos": {
+                        "x": 5.1691,
+                        "y": 16.4082
+                    },
+                    "uuid": "e7b87243-c540-424d-a036-6d8732055a79"
+                },
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.3659 mm )",
+                    "pos": {
+                        "x": 2.0956,
+                        "y": 15.6036
+                    },
+                    "uuid": "827d20b6-0203-4c6a-8764-17c6be670c0d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.3489 mm )",
+                    "pos": {
+                        "x": 13.0839,
+                        "y": 14.455
+                    },
+                    "uuid": "5b28db99-6313-4da5-912f-e683daa5f689"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.7686 mm )",
+                    "pos": {
+                        "x": 12.5417,
+                        "y": 17.9183
+                    },
+                    "uuid": "8af03863-94ec-44d7-99fb-5b7476eec288"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.8840 mm )",
+                    "pos": {
+                        "x": 20.6056,
+                        "y": 14.5356
+                    },
+                    "uuid": "3ef866bc-33a8-4c59-aa88-fccf7f1ff546"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - J3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.365,
+                        "y": 17.27
+                    },
+                    "uuid": "e8f6a79b-4b18-47a4-8af1-c29b7e9e0306"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/NRST] - J3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.365,
+                        "y": 16.0
+                    },
+                    "uuid": "32a5f09a-705a-4b13-81f8-a6e9bfa90724"
+                },
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 8.5064,
+                        "y": 7.8661
+                    },
+                    "uuid": "de597b9b-42c2-4b43-98cd-79305f1023df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド A4 [/VBUS] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.1,
+                        "y": 21.31
+                    },
+                    "uuid": "87db57a9-1e0d-4ce5-805e-dc44f1753482"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.2,
+                        "y": 22.375
+                    },
+                    "uuid": "ddf6e8fc-0414-4dbe-b6f0-eb2facbb6c23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In2.Cu 上、長さ: 3.3522 mm )",
+                    "pos": {
+                        "x": 11.8184,
+                        "y": 22.1525
+                    },
+                    "uuid": "0e1fd34d-b5d2-4883-a1b9-6297664b2673"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.2,
+                        "y": 22.375
+                    },
+                    "uuid": "ddf6e8fc-0414-4dbe-b6f0-eb2facbb6c23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.2243 mm )",
+                    "pos": {
+                        "x": 11.8434,
+                        "y": 14.571
+                    },
+                    "uuid": "7b2e0ff9-c508-4feb-8313-dd1901fda7d8"
+                },
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.2160 mm )",
+                    "pos": {
+                        "x": 11.412,
+                        "y": 16.3994
+                    },
+                    "uuid": "9c12b57e-0907-426e-9cb6-765d103fe2e2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド A9 [/VBUS] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 21.31
+                    },
+                    "uuid": "137464c3-7437-4ed6-8917-57875ee11892"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In2.Cu 上、長さ: 3.3522 mm )",
+                    "pos": {
+                        "x": 11.8184,
+                        "y": 22.1525
+                    },
+                    "uuid": "0e1fd34d-b5d2-4883-a1b9-6297664b2673"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In2.Cu 上、長さ: 1.1740 mm )",
+                    "pos": {
+                        "x": 18.2105,
+                        "y": 19.1126
+                    },
+                    "uuid": "5c7d86ca-4f5b-4da2-9644-51734163c7d5"
+                },
+                {
+                    "description": "パッド 1 [/VBUS] - R37 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 23.51
+                    },
+                    "uuid": "6cce590f-77b8-4f10-9fd6-6ca89f4b3e8b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 0.975,
+                        "y": 17.175
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                },
+                {
+                    "description": "配線 [/BUTTON_N] ( In2.Cu 上、長さ: 10.0244 mm )",
+                    "pos": {
+                        "x": 0.4034,
+                        "y": 8.9968
+                    },
+                    "uuid": "52507b7b-d43e-4d1e-b41a-4a063de00978"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "ゾーン [/GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "1caa8b7e-6922-4323-8dae-f1d4045aa49b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "95b4bfd6-f959-43c6-a1fb-05bfe9cc170f"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 6.18,
+                        "y": 26.065
+                    },
+                    "uuid": "a95e97a2-5ac0-4533-8f05-ac6b6f6f0922"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - R7 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.745,
+                        "y": 25.445
+                    },
+                    "uuid": "d2174c8c-f009-47a2-987d-8f23abfc6cce"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 26.065
+                    },
+                    "uuid": "0f25432c-e918-44ab-83cd-dadd48619af8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "パッド 2 [/GND] - R7 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.745,
+                        "y": 25.445
+                    },
+                    "uuid": "d2174c8c-f009-47a2-987d-8f23abfc6cce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "パッド 1 [/GND] - TP6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 23.0,
+                        "y": 25.5
+                    },
+                    "uuid": "0db27ecf-52ae-48d7-a15c-9a205c33f33b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/CC1] - R6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 7.195,
+                        "y": 21.995
+                    },
+                    "uuid": "7dd5ad17-3b79-42c7-8f17-cf6964743d61"
+                },
+                {
+                    "description": "パッド A5 [/CC1] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.25,
+                        "y": 21.31
+                    },
+                    "uuid": "fe621ed1-85b3-4a44-b4c5-971a5737b734"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_DP] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.425,
+                        "y": 22.9125
+                    },
+                    "uuid": "b430ca77-571e-4ca9-ad9a-2b71c6d19256"
+                },
+                {
+                    "description": "パッド 6 [/USB_DP] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.125,
+                        "y": 22.9125
+                    },
+                    "uuid": "8ab2ac3b-d604-4f4c-a7cf-c7efb327ca49"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド A6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 21.31
+                    },
+                    "uuid": "faf34051-e63c-46cb-9c0b-48c4c03b1e02"
+                },
+                {
+                    "description": "パッド B6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 21.31
+                    },
+                    "uuid": "eecb89c9-7d3c-4253-8974-9b032ea62b31"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 0.1989 mm )",
+                    "pos": {
+                        "x": 10.6,
+                        "y": 16.7731
+                    },
+                    "uuid": "c4179f99-f738-4097-b858-71f38c326fe2"
+                },
+                {
+                    "description": "パッド A6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 21.31
+                    },
+                    "uuid": "faf34051-e63c-46cb-9c0b-48c4c03b1e02"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.3385 mm )",
+                    "pos": {
+                        "x": 10.5676,
+                        "y": 14.5259
+                    },
+                    "uuid": "51cff182-d3af-4ecb-9c52-ce55e1dbb8a8"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 1.8487 mm )",
+                    "pos": {
+                        "x": 12.44375,
+                        "y": 12.770249
+                    },
+                    "uuid": "29d9b6a5-1aa1-4661-8c16-2709c574a448"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド B6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 21.31
+                    },
+                    "uuid": "eecb89c9-7d3c-4253-8974-9b032ea62b31"
+                },
+                {
+                    "description": "パッド 6 [/USB_DP] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.125,
+                        "y": 22.9125
+                    },
+                    "uuid": "8ab2ac3b-d604-4f4c-a7cf-c7efb327ca49"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/USB_DM] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.425,
+                        "y": 21.8375
+                    },
+                    "uuid": "450c403d-2605-4608-91ad-0bdc94aa7135"
+                },
+                {
+                    "description": "パッド B7 [/USB_DM] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.75,
+                        "y": 21.31
+                    },
+                    "uuid": "69111dc4-5d59-450c-a1ab-fbaaddd5ee26"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド B7 [/USB_DM] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.75,
+                        "y": 21.31
+                    },
+                    "uuid": "69111dc4-5d59-450c-a1ab-fbaaddd5ee26"
+                },
+                {
+                    "description": "パッド A7 [/USB_DM] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.75,
+                        "y": 21.31
+                    },
+                    "uuid": "f7fc1e86-d74c-4ef5-8ab8-a5f0d4b91d36"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 0.4103 mm )",
+                    "pos": {
+                        "x": 10.741571,
+                        "y": 15.985943
+                    },
+                    "uuid": "ec37aa5c-aa87-4573-ace3-85cca5be78a7"
+                },
+                {
+                    "description": "パッド A7 [/USB_DM] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.75,
+                        "y": 21.31
+                    },
+                    "uuid": "f7fc1e86-d74c-4ef5-8ab8-a5f0d4b91d36"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/USB_DM] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.125,
+                        "y": 21.8375
+                    },
+                    "uuid": "a5897d63-1768-41ee-8a7f-7fadb523bb9e"
+                },
+                {
+                    "description": "パッド A7 [/USB_DM] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.75,
+                        "y": 21.31
+                    },
+                    "uuid": "f7fc1e86-d74c-4ef5-8ab8-a5f0d4b91d36"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/CC2] ( B.Cu 上、長さ: 0.0371 mm )",
+                    "pos": {
+                        "x": 10.267,
+                        "y": 19.987
+                    },
+                    "uuid": "64ee6ed9-715a-4ff6-bb35-869fa078802e"
+                },
+                {
+                    "description": "パッド B5 [/CC2] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.25,
+                        "y": 21.31
+                    },
+                    "uuid": "56787d18-57f8-4f77-9626-f6a1c86645a0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/CC2] - R7 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.745,
+                        "y": 26.465
+                    },
+                    "uuid": "8c2c290a-c0e4-432c-9b8b-1d5557817b94"
+                },
+                {
+                    "description": "パッド B5 [/CC2] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.25,
+                        "y": 21.31
+                    },
+                    "uuid": "56787d18-57f8-4f77-9626-f6a1c86645a0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 0.9324 mm )",
+                    "pos": {
+                        "x": 4.0628,
+                        "y": 11.4571
+                    },
+                    "uuid": "5e12362b-2017-4b5c-93e6-95e6f7b1ae53"
+                },
+                {
+                    "description": "パッド 1 [/BAT] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 8.45,
+                        "y": 16.075
+                    },
+                    "uuid": "091b11a3-0670-4e5f-90b7-7bc351ada9f5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/PDM_CLK] - R21 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 20.49
+                    },
+                    "uuid": "4942c7df-b5a9-43c8-ae8f-c206405ac3be"
+                },
+                {
+                    "description": "配線 [/PDM_CLK] ( F.Cu 上、長さ: 0.5504 mm )",
+                    "pos": {
+                        "x": 16.95,
+                        "y": 17.5652
+                    },
+                    "uuid": "024692e9-2eee-4ec5-a031-c0c495a4e815"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.8708 mm )",
+                    "pos": {
+                        "x": 15.9312,
+                        "y": 18.4194
+                    },
+                    "uuid": "02cbcf2e-5580-4577-90f4-a5384d583ca0"
+                },
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 1.3115 mm )",
+                    "pos": {
+                        "x": 14.149,
+                        "y": 19.3974
+                    },
+                    "uuid": "cb1c43e7-7639-436d-9771-a1e85812388d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 0.8237 mm )",
+                    "pos": {
+                        "x": 5.6192,
+                        "y": 14.6056
+                    },
+                    "uuid": "ed204081-6023-49d0-81a5-acef12cf4013"
+                },
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 0.5719 mm )",
+                    "pos": {
+                        "x": 6.9198,
+                        "y": 16.6708
+                    },
+                    "uuid": "3c5edd9a-6aa2-4c29-b502-ffd71516e71b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 1.9380 mm )",
+                    "pos": {
+                        "x": 13.1764,
+                        "y": 21.8656
+                    },
+                    "uuid": "823a000c-646b-4ac4-a34c-35ff12e28479"
+                },
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 3.1980 mm )",
+                    "pos": {
+                        "x": 7.7046,
+                        "y": 17.0752
+                    },
+                    "uuid": "4f9c81fc-6e7f-42dc-bcbf-df896b049e67"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 9.8637 mm )",
+                    "pos": {
+                        "x": 17.4581,
+                        "y": 19.5219
+                    },
+                    "uuid": "24035c1e-0325-4529-9761-0ec35cfaa42f"
+                },
+                {
+                    "description": "パッド 2 [/SWDIO] - J3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 23.635,
+                        "y": 17.27
+                    },
+                    "uuid": "43618b57-a05b-4935-86cd-1b3aeb0e3f59"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0830 mm )",
+                    "pos": {
+                        "x": 13.5593,
+                        "y": 17.2065
+                    },
+                    "uuid": "9ec3229c-662a-42f7-ad45-b7bf8fb31710"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 4.2917 mm )",
+                    "pos": {
+                        "x": 8.6296,
+                        "y": 20.3417
+                    },
+                    "uuid": "a3b22aa1-ceca-412e-ac9e-c7531d87be5f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.2118 mm )",
+                    "pos": {
+                        "x": 13.6787,
+                        "y": 17.0871
+                    },
+                    "uuid": "7bb690e4-5063-4ebb-b5c9-55854f6264ad"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.3886 mm )",
+                    "pos": {
+                        "x": 14.6257,
+                        "y": 17.1793
+                    },
+                    "uuid": "d6bc8401-775d-42f4-837b-445296aefa2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/SWCLK] - J3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 23.635,
+                        "y": 16.0
+                    },
+                    "uuid": "15ce9535-4bb1-420a-a4d4-cba0c40738fb"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( In2.Cu 上、長さ: 0.4388 mm )",
+                    "pos": {
+                        "x": 15.9864,
+                        "y": 17.0056
+                    },
+                    "uuid": "8bc68cf7-ec06-48cd-b723-0510ab045d31"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.0938,
+                        "y": 18.465
+                    },
+                    "uuid": "6279c38e-53aa-4f00-924f-41d3cf330e12"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In2.Cu 上、長さ: 0.9707 mm )",
+                    "pos": {
+                        "x": 13.4014,
+                        "y": 21.3586
+                    },
+                    "uuid": "0231401d-e71c-4809-8075-f7a170f24871"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/PDM_CLK_MCU] - R21 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 21.51
+                    },
+                    "uuid": "225f1c21-a62a-4819-b694-8442168e23d0"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In2.Cu 上、長さ: 5.2240 mm )",
+                    "pos": {
+                        "x": 16.8204,
+                        "y": 14.2552
+                    },
+                    "uuid": "55fde9fd-6158-40c7-945a-249ca4eca5f4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( In2.Cu 上、長さ: 0.1707 mm )",
+                    "pos": {
+                        "x": 14.0426,
+                        "y": 14.5997
+                    },
+                    "uuid": "82db71dc-36ce-41e2-90cd-83a9d1e2b7e6"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( In2.Cu 上、長さ: 0.4144 mm )",
+                    "pos": {
+                        "x": 14.1175,
+                        "y": 16.2993
+                    },
+                    "uuid": "3e591bf1-3042-4da5-86d9-5e3bdf4b5c77"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( In2.Cu 上、長さ: 1.1385 mm )",
+                    "pos": {
+                        "x": 14.3837,
+                        "y": 19.0961
+                    },
+                    "uuid": "04a1004e-01e2-4c5a-95f6-ebddeae3a676"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( In2.Cu 上、長さ: 0.2302 mm )",
+                    "pos": {
+                        "x": 13.7363,
+                        "y": 19.7435
+                    },
+                    "uuid": "f4a720c8-f4f7-41d7-a9d0-41a6efb93420"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.0966 mm )",
+                    "pos": {
+                        "x": 1.9797,
+                        "y": 18.9464
+                    },
+                    "uuid": "f38cd990-4dcd-467b-a0cb-30ac9be1ffdd"
+                },
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.1138 mm )",
+                    "pos": {
+                        "x": 4.1221,
+                        "y": 19.1269
+                    },
+                    "uuid": "ed7bfa89-d26a-41ed-af32-46c70b79ec7a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.7792 mm )",
+                    "pos": {
+                        "x": 5.3561,
+                        "y": 18.964
+                    },
+                    "uuid": "fe1117a7-5c94-4011-928b-64d08ee0be43"
+                },
+                {
+                    "description": "パッド 2 [/BAT_TS] - R37 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 22.49
+                    },
+                    "uuid": "6f020dd2-2ccf-4ac2-9a3d-180de106f93a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と <ネットなし>)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.8816 mm )",
+                    "pos": {
+                        "x": 5.3022,
+                        "y": 19.1066
+                    },
+                    "uuid": "134811ad-1c5e-4828-bf49-fe2aeb2014fc"
+                },
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.9,
+                        "y": 19.85
+                    },
+                    "uuid": "47d041df-83d5-480e-988e-edd96dad75e9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /PDM_CLK_MCU)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In2.Cu 上、長さ: 0.0598 mm )",
+                    "pos": {
+                        "x": 14.3721,
+                        "y": 21.3586
+                    },
+                    "uuid": "d8af42ed-d891-417d-9fa6-3cf1d268842c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /PDM_CLK_MCU)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In2.Cu 上、長さ: 0.5091 mm )",
+                    "pos": {
+                        "x": 14.941,
+                        "y": 21.3586
+                    },
+                    "uuid": "9032f24d-dbfe-4a37-ba5c-7cd88e18cd4d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /PDM_CLK_MCU)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In2.Cu 上、長さ: 2.6579 mm )",
+                    "pos": {
+                        "x": 16.8204,
+                        "y": 19.4792
+                    },
+                    "uuid": "33074318-5db0-45c8-9bb4-5546127c1327"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_CLK_MCU と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In2.Cu 上、長さ: 0.9707 mm )",
+                    "pos": {
+                        "x": 13.4014,
+                        "y": 21.3586
+                    },
+                    "uuid": "0231401d-e71c-4809-8075-f7a170f24871"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BAT_TS と /CHG_INHIBIT_GATE)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BAT_TS] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.325,
+                        "y": 3.3
+                    },
+                    "uuid": "43de8b1a-5c3e-4149-9a68-60c3570030b9"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 1.6881 mm )",
+                    "pos": {
+                        "x": 5.6489,
+                        "y": 3.2718
+                    },
+                    "uuid": "9060bd3f-2349-4aed-a243-8d8c6b53308d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_INHIBIT_GATE と /BAT_TS)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 0.7410 mm )",
+                    "pos": {
+                        "x": 5.6489,
+                        "y": 4.0128
+                    },
+                    "uuid": "41f3de46-b246-491f-a1ad-b0cc9f2b2cb0"
+                },
+                {
+                    "description": "パッド 1 [/BAT_TS] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.325,
+                        "y": 3.3
+                    },
+                    "uuid": "43de8b1a-5c3e-4149-9a68-60c3570030b9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SWDIO)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 3.3145 mm )",
+                    "pos": {
+                        "x": 15.1144,
+                        "y": 21.8656
+                    },
+                    "uuid": "daae8f9b-e181-41f1-993a-83d2f0c845b7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SWDIO)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 1.9380 mm )",
+                    "pos": {
+                        "x": 13.1764,
+                        "y": 21.8656
+                    },
+                    "uuid": "823a000c-646b-4ac4-a34c-35ff12e28479"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SYS と /GND)",
+            "items": [
+                {
+                    "description": "ビア [/SYS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.0181,
+                        "y": 20.8398
+                    },
+                    "uuid": "5384d916-0e78-4a22-b0a3-1998510b17a9"
+                },
+                {
+                    "description": "パッド A12 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a4aa376a-a959-4eb9-aff3-b18e3a5047a6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SYS と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.1851 mm )",
+                    "pos": {
+                        "x": 14.149,
+                        "y": 20.7089
+                    },
+                    "uuid": "517651cf-81ed-4775-9773-84dc9446f58e"
+                },
+                {
+                    "description": "パッド A12 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a4aa376a-a959-4eb9-aff3-b18e3a5047a6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0920 mm)",
+            "items": [
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 19.85
+                    },
+                    "uuid": "8577dfac-8532-49ca-a7b7-b593f3c79801"
+                },
+                {
+                    "description": "ビア [/CC2] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.267,
+                        "y": 19.9499
+                    },
+                    "uuid": "e4c05f1b-3e9d-4985-893d-45ac51689c65"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_DAT1)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/SD_DAT1] ( In2.Cu 上、長さ: 2.8246 mm )",
+                    "pos": {
+                        "x": 15.0518,
+                        "y": 21.5913
+                    },
+                    "uuid": "390ce344-5acd-4e6e-8358-86b9a79f3a9b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_DAT1 と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( In2.Cu 上、長さ: 1.8199 mm )",
+                    "pos": {
+                        "x": 13.2319,
+                        "y": 21.5913
+                    },
+                    "uuid": "133fa974-3a07-453c-b1de-b4fc1d89a864"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_DAT2 と /GND)",
+            "items": [
+                {
+                    "description": "ビア [/SD_DAT2] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.0655,
+                        "y": 2.7668
+                    },
+                    "uuid": "904778ed-e03c-4d2a-b1db-bfcb5f7ab80c"
+                },
+                {
+                    "description": "パッド 2 [/GND] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.675,
+                        "y": 3.3
+                    },
+                    "uuid": "f0cca010-74c5-49a6-a5bb-c05e48d8ab01"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0004 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( B.Cu 上、長さ: 0.4835 mm )",
+                    "pos": {
+                        "x": 4.4714,
+                        "y": 3.3029
+                    },
+                    "uuid": "e3b129dc-eadc-49be-b9e5-ac1d33bb3448"
+                },
+                {
+                    "description": "パッド 2 [/GND] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.675,
+                        "y": 3.3
+                    },
+                    "uuid": "f0cca010-74c5-49a6-a5bb-c05e48d8ab01"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BUTTON_N と /GND)",
+            "items": [
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.1295,
+                        "y": 3.6448
+                    },
+                    "uuid": "9d59ba6a-68a2-42fb-b548-230112ea0b89"
+                },
+                {
+                    "description": "パッド 2 [/GND] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.675,
+                        "y": 3.3
+                    },
+                    "uuid": "f0cca010-74c5-49a6-a5bb-c05e48d8ab01"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /VBUS)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In2.Cu 上、長さ: 4.2991 mm )",
+                    "pos": {
+                        "x": 15.1706,
+                        "y": 22.1525
+                    },
+                    "uuid": "e8fcd45e-8b90-48b7-90ee-6b43271aab19"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In2.Cu 上、長さ: 3.3522 mm )",
+                    "pos": {
+                        "x": 11.8184,
+                        "y": 22.1525
+                    },
+                    "uuid": "0e1fd34d-b5d2-4883-a1b9-6297664b2673"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 21.885
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /V3V3)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 6.18,
+                        "y": 21.885
+                    },
+                    "uuid": "4d3023cd-3e7c-41c1-85a5-39de19bfc09a"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 3.8958 mm )",
+                    "pos": {
+                        "x": 9.4121,
+                        "y": 21.1345
+                    },
+                    "uuid": "f64b0f26-2651-41f8-a9f7-52332331b83f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0022 mm)",
+            "items": [
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.9,
+                        "y": 19.85
+                    },
+                    "uuid": "47d041df-83d5-480e-988e-edd96dad75e9"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.3028 mm )",
+                    "pos": {
+                        "x": 5.5163,
+                        "y": 20.2023
+                    },
+                    "uuid": "f89b8642-0e1f-4f72-9821-f351b7a1d0e2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット <ネットなし> と /V3V3)",
+            "items": [
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 19.85
+                    },
+                    "uuid": "8577dfac-8532-49ca-a7b7-b593f3c79801"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.0034 mm )",
+                    "pos": {
+                        "x": 10.4068,
+                        "y": 18.9559
+                    },
+                    "uuid": "9a0663d4-7be0-42cf-8a89-cbac0794c840"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と <ネットなし>)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.1839 mm )",
+                    "pos": {
+                        "x": 9.6973,
+                        "y": 19.6654
+                    },
+                    "uuid": "5c11412c-69e2-418e-aa32-c89c40c2015a"
+                },
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 19.85
+                    },
+                    "uuid": "8577dfac-8532-49ca-a7b7-b593f3c79801"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド A12 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a4aa376a-a959-4eb9-aff3-b18e3a5047a6"
+                },
+                {
+                    "description": "ビア [/SYS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.0181,
+                        "y": 20.8398
+                    },
+                    "uuid": "5384d916-0e78-4a22-b0a3-1998510b17a9"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド B1 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a7462daf-96aa-4485-a6c9-3dd0dbb810dd"
+                },
+                {
+                    "description": "ビア [/SYS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.0181,
+                        "y": 20.8398
+                    },
+                    "uuid": "5384d916-0e78-4a22-b0a3-1998510b17a9"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/CC1] - R6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 7.195,
+                        "y": 21.995
+                    },
+                    "uuid": "7dd5ad17-3b79-42c7-8f17-cf6964743d61"
+                },
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 7.61,
+                        "y": 22.385
+                    },
+                    "uuid": "c9123e69-6a2f-4f9f-938f-c2dd48bee23e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0528 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - R6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 8.215,
+                        "y": 21.995
+                    },
+                    "uuid": "b0ef0587-3335-4a4b-9812-03f575e3b779"
+                },
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 7.61,
+                        "y": 22.385
+                    },
+                    "uuid": "c9123e69-6a2f-4f9f-938f-c2dd48bee23e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.675,
+                        "y": 3.3
+                    },
+                    "uuid": "f0cca010-74c5-49a6-a5bb-c05e48d8ab01"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.1295,
+                        "y": 3.6448
+                    },
+                    "uuid": "9d59ba6a-68a2-42fb-b548-230112ea0b89"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0209 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.675,
+                        "y": 3.3
+                    },
+                    "uuid": "f0cca010-74c5-49a6-a5bb-c05e48d8ab01"
+                },
+                {
+                    "description": "ビア [/SD_DAT2] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.0655,
+                        "y": 2.7668
+                    },
+                    "uuid": "904778ed-e03c-4d2a-b1db-bfcb5f7ab80c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "items": [
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 7.61,
+                        "y": 22.385
+                    },
+                    "uuid": "c9123e69-6a2f-4f9f-938f-c2dd48bee23e"
+                },
+                {
+                    "description": "フットプリント R6",
+                    "pos": {
+                        "x": 7.705,
+                        "y": 21.995
+                    },
+                    "uuid": "2bc77aab-e423-40a2-9fe5-6a105c37851b"
+                }
+            ],
+            "severity": "error",
+            "type": "npth_inside_courtyard"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/SD_DAT2] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.0655,
+                        "y": 2.7668
+                    },
+                    "uuid": "904778ed-e03c-4d2a-b1db-bfcb5f7ab80c"
+                },
+                {
+                    "description": "パッド 2 [/GND] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.675,
+                        "y": 3.3
+                    },
+                    "uuid": "f0cca010-74c5-49a6-a5bb-c05e48d8ab01"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.8816 mm )",
+                    "pos": {
+                        "x": 5.3022,
+                        "y": 19.1066
+                    },
+                    "uuid": "134811ad-1c5e-4828-bf49-fe2aeb2014fc"
+                },
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.9,
+                        "y": 19.85
+                    },
+                    "uuid": "47d041df-83d5-480e-988e-edd96dad75e9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.1295,
+                        "y": 3.6448
+                    },
+                    "uuid": "9d59ba6a-68a2-42fb-b548-230112ea0b89"
+                },
+                {
+                    "description": "パッド 2 [/GND] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.675,
+                        "y": 3.3
+                    },
+                    "uuid": "f0cca010-74c5-49a6-a5bb-c05e48d8ab01"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.1839 mm )",
+                    "pos": {
+                        "x": 9.6973,
+                        "y": 19.6654
+                    },
+                    "uuid": "5c11412c-69e2-418e-aa32-c89c40c2015a"
+                },
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 19.85
+                    },
+                    "uuid": "8577dfac-8532-49ca-a7b7-b593f3c79801"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.0034 mm )",
+                    "pos": {
+                        "x": 10.4068,
+                        "y": 18.9559
+                    },
+                    "uuid": "9a0663d4-7be0-42cf-8a89-cbac0794c840"
+                },
+                {
+                    "description": "パッド MP [<no net>] - J2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 19.85
+                    },
+                    "uuid": "8577dfac-8532-49ca-a7b7-b593f3c79801"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.1851 mm )",
+                    "pos": {
+                        "x": 14.149,
+                        "y": 20.7089
+                    },
+                    "uuid": "517651cf-81ed-4775-9773-84dc9446f58e"
+                },
+                {
+                    "description": "パッド A12 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a4aa376a-a959-4eb9-aff3-b18e3a5047a6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.1851 mm )",
+                    "pos": {
+                        "x": 14.149,
+                        "y": 20.7089
+                    },
+                    "uuid": "517651cf-81ed-4775-9773-84dc9446f58e"
+                },
+                {
+                    "description": "パッド B1 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a7462daf-96aa-4485-a6c9-3dd0dbb810dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/SYS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.0181,
+                        "y": 20.8398
+                    },
+                    "uuid": "5384d916-0e78-4a22-b0a3-1998510b17a9"
+                },
+                {
+                    "description": "パッド A12 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a4aa376a-a959-4eb9-aff3-b18e3a5047a6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/SYS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.0181,
+                        "y": 20.8398
+                    },
+                    "uuid": "5384d916-0e78-4a22-b0a3-1998510b17a9"
+                },
+                {
+                    "description": "パッド B1 [/GND] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 21.31
+                    },
+                    "uuid": "a7462daf-96aa-4485-a6c9-3dd0dbb810dd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 3.8958 mm )",
+                    "pos": {
+                        "x": 9.4121,
+                        "y": 21.1345
+                    },
+                    "uuid": "f64b0f26-2651-41f8-a9f7-52332331b83f"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 6.18,
+                        "y": 21.885
+                    },
+                    "uuid": "4d3023cd-3e7c-41c1-85a5-39de19bfc09a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 7.61,
+                        "y": 22.385
+                    },
+                    "uuid": "c9123e69-6a2f-4f9f-938f-c2dd48bee23e"
+                },
+                {
+                    "description": "パッド 1 [/CC1] - R6 ( B.Cu 上)",
+                    "pos": {
+                        "x": 7.195,
+                        "y": 21.995
+                    },
+                    "uuid": "7dd5ad17-3b79-42c7-8f17-cf6964743d61"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 0.7410 mm )",
+                    "pos": {
+                        "x": 5.6489,
+                        "y": 4.0128
+                    },
+                    "uuid": "41f3de46-b246-491f-a1ad-b0cc9f2b2cb0"
+                },
+                {
+                    "description": "パッド 1 [/BAT_TS] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.325,
+                        "y": 3.3
+                    },
+                    "uuid": "43de8b1a-5c3e-4149-9a68-60c3570030b9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 1.6881 mm )",
+                    "pos": {
+                        "x": 5.6489,
+                        "y": 3.2718
+                    },
+                    "uuid": "9060bd3f-2349-4aed-a243-8d8c6b53308d"
+                },
+                {
+                    "description": "パッド 1 [/BAT_TS] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 5.325,
+                        "y": 3.3
+                    },
+                    "uuid": "43de8b1a-5c3e-4149-9a68-60c3570030b9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.5018 mm )",
+                    "pos": {
+                        "x": 5.1691,
+                        "y": 16.4082
+                    },
+                    "uuid": "e7b87243-c540-424d-a036-6d8732055a79"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.6441 mm )",
+                    "pos": {
+                        "x": 3.525,
+                        "y": 17.91
+                    },
+                    "uuid": "2732d343-7362-4f88-a770-f734b1124700"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.7686 mm )",
+                    "pos": {
+                        "x": 12.5417,
+                        "y": 17.9183
+                    },
+                    "uuid": "8af03863-94ec-44d7-99fb-5b7476eec288"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.1424 mm )",
+                    "pos": {
+                        "x": 8.3134,
+                        "y": 16.6577
+                    },
+                    "uuid": "09394cbf-b185-45d3-929a-da309650e2e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.0273 mm )",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 14.5903
+                    },
+                    "uuid": "54682708-bca6-47bc-a0cb-8c1d3befdbd7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.1018 mm )",
+                    "pos": {
+                        "x": 8.172,
+                        "y": 14.2348
+                    },
+                    "uuid": "a0ad604f-679f-4bd7-bf5b-6ba9badb9232"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.2160 mm )",
+                    "pos": {
+                        "x": 11.412,
+                        "y": 16.3994
+                    },
+                    "uuid": "9c12b57e-0907-426e-9cb6-765d103fe2e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( F.Cu 上、長さ: 0.6380 mm )",
+                    "pos": {
+                        "x": 1.1245,
+                        "y": 19.1043
+                    },
+                    "uuid": "cb279ab3-0f72-4ba1-83ae-19cf40df76eb"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( F.Cu 上、長さ: 0.3893 mm )",
+                    "pos": {
+                        "x": 1.909,
+                        "y": 16.8562
+                    },
+                    "uuid": "eeaf24f3-a62c-412e-8a61-e27666295a5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.3385 mm )",
+                    "pos": {
+                        "x": 10.5676,
+                        "y": 14.5259
+                    },
+                    "uuid": "51cff182-d3af-4ecb-9c52-ce55e1dbb8a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 0.2816 mm )",
+                    "pos": {
+                        "x": 10.1195,
+                        "y": 16.607
+                    },
+                    "uuid": "eda5e629-63dc-4b3d-aec4-41cbb159542a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.3234 mm )",
+                    "pos": {
+                        "x": 10.4011,
+                        "y": 16.0534
+                    },
+                    "uuid": "36692422-c592-4a05-9ac3-46fc1ab46ee7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/CC2] ( F.Cu 上、長さ: 2.2386 mm )",
+                    "pos": {
+                        "x": 11.522,
+                        "y": 16.4563
+                    },
+                    "uuid": "cc2faf5f-a7ce-42ed-87b2-8b3f82440990"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.8904 mm )",
+                    "pos": {
+                        "x": 3.525,
+                        "y": 5.17
+                    },
+                    "uuid": "703c3257-bb02-4199-9b28-dea4aac8c603"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.0218,
+                        "y": 16.8318
+                    },
+                    "uuid": "f0a35aaf-f906-4e21-8d7a-9562e376a798"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.8708 mm )",
+                    "pos": {
+                        "x": 15.9312,
+                        "y": 18.4194
+                    },
+                    "uuid": "02cbcf2e-5580-4577-90f4-a5384d583ca0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 1.3115 mm )",
+                    "pos": {
+                        "x": 14.149,
+                        "y": 19.3974
+                    },
+                    "uuid": "cb1c43e7-7639-436d-9771-a1e85812388d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 0.5719 mm )",
+                    "pos": {
+                        "x": 6.9198,
+                        "y": 16.6708
+                    },
+                    "uuid": "3c5edd9a-6aa2-4c29-b502-ffd71516e71b"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 3.1980 mm )",
+                    "pos": {
+                        "x": 7.7046,
+                        "y": 17.0752
+                    },
+                    "uuid": "4f9c81fc-6e7f-42dc-bcbf-df896b049e67"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 1.9380 mm )",
+                    "pos": {
+                        "x": 13.1764,
+                        "y": 21.8656
+                    },
+                    "uuid": "823a000c-646b-4ac4-a34c-35ff12e28479"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 0.8237 mm )",
+                    "pos": {
+                        "x": 5.6192,
+                        "y": 14.6056
+                    },
+                    "uuid": "ed204081-6023-49d0-81a5-acef12cf4013"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.2118 mm )",
+                    "pos": {
+                        "x": 13.6787,
+                        "y": 17.0871
+                    },
+                    "uuid": "7bb690e4-5063-4ebb-b5c9-55854f6264ad"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0830 mm )",
+                    "pos": {
+                        "x": 13.5593,
+                        "y": 17.2065
+                    },
+                    "uuid": "9ec3229c-662a-42f7-ad45-b7bf8fb31710"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 4.2917 mm )",
+                    "pos": {
+                        "x": 8.6296,
+                        "y": 20.3417
+                    },
+                    "uuid": "a3b22aa1-ceca-412e-ac9e-c7531d87be5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.3886 mm )",
+                    "pos": {
+                        "x": 14.6257,
+                        "y": 17.1793
+                    },
+                    "uuid": "d6bc8401-775d-42f4-837b-445296aefa2c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.0938,
+                        "y": 18.465
+                    },
+                    "uuid": "6279c38e-53aa-4f00-924f-41d3cf330e12"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( In2.Cu 上、長さ: 0.9707 mm )",
+                    "pos": {
+                        "x": 13.4014,
+                        "y": 21.3586
+                    },
+                    "uuid": "0231401d-e71c-4809-8075-f7a170f24871"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( In2.Cu 上、長さ: 1.1385 mm )",
+                    "pos": {
+                        "x": 14.3837,
+                        "y": 19.0961
+                    },
+                    "uuid": "04a1004e-01e2-4c5a-95f6-ebddeae3a676"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( In2.Cu 上、長さ: 0.4144 mm )",
+                    "pos": {
+                        "x": 14.1175,
+                        "y": 16.2993
+                    },
+                    "uuid": "3e591bf1-3042-4da5-86d9-5e3bdf4b5c77"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( In2.Cu 上、長さ: 0.1707 mm )",
+                    "pos": {
+                        "x": 14.0426,
+                        "y": 14.5997
+                    },
+                    "uuid": "82db71dc-36ce-41e2-90cd-83a9d1e2b7e6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/BAT_TS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 5.3561,
+                        "y": 18.4623
+                    },
+                    "uuid": "8087a32c-6099-4ed9-925c-55b911c7f29a"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( B.Cu 上、長さ: 0.0901 mm )",
+                    "pos": {
+                        "x": 4.725,
+                        "y": 5.17
+                    },
+                    "uuid": "8e6a4d73-7ed9-46bf-81dd-a6ff92a01bd0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.1138 mm )",
+                    "pos": {
+                        "x": 4.1221,
+                        "y": 19.1269
+                    },
+                    "uuid": "ed7bfa89-d26a-41ed-af32-46c70b79ec7a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.0966 mm )",
+                    "pos": {
+                        "x": 1.9797,
+                        "y": 18.9464
+                    },
+                    "uuid": "f38cd990-4dcd-467b-a0cb-30ac9be1ffdd"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of R6 、B.Silkscreen 上",
+                    "pos": {
+                        "x": 7.551359,
+                        "y": 22.375
+                    },
+                    "uuid": "376da36d-9fb1-49f5-8a5e-f297233aa1d0"
+                },
+                {
+                    "description": "J1のNPTHパッド",
+                    "pos": {
+                        "x": 7.61,
+                        "y": 22.385
+                    },
+                    "uuid": "c9123e69-6a2f-4f9f-938f-c2dd48bee23e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "J2のリファレンスフィールド",
+                    "pos": {
+                        "x": 7.25,
+                        "y": 14.45
+                    },
+                    "uuid": "baebd436-98db-4e46-9188-5f7bf5201bc1"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C11 ( B.Cu 上)",
+                    "pos": {
+                        "x": 6.985,
+                        "y": 13.915
+                    },
+                    "uuid": "3170b426-c24a-4861-a06a-dc4bb8324395"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

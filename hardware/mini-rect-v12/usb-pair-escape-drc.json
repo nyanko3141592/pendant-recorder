@@ -1,0 +1,267 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:01:58",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-pair-escape.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( F.Cu 上、長さ: 0.9355 mm )",
+                    "pos": {
+                        "x": 8.0093,
+                        "y": 11.65
+                    },
+                    "uuid": "1182ec9d-90ac-4471-a1eb-ff7868db9641"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.5500 mm )",
+                    "pos": {
+                        "x": 7.35,
+                        "y": 11.75
+                    },
+                    "uuid": "bd71b68c-ecc7-4b52-9939-db7ee9ca740a"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0228 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SWDIO] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.3478,
+                        "y": 12.739
+                    },
+                    "uuid": "b81e7aa0-1852-460e-a3d2-7157faf4c9c1"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.2500 mm )",
+                    "pos": {
+                        "x": 7.1,
+                        "y": 11.15
+                    },
+                    "uuid": "bddad332-0158-4fa7-ba9a-3a7b4ba10dcc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWDIO と /USB_DP)",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( F.Cu 上、長さ: 0.4275 mm )",
+                    "pos": {
+                        "x": 7.3478,
+                        "y": 12.3115
+                    },
+                    "uuid": "a2baa27d-2213-44f4-b010-cf98e07e3b26"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.5500 mm )",
+                    "pos": {
+                        "x": 7.35,
+                        "y": 11.75
+                    },
+                    "uuid": "bd71b68c-ecc7-4b52-9939-db7ee9ca740a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /USB_DP)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.8703 mm )",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "3be79f5e-9ced-4112-9e29-8537e5d660c3"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.5500 mm )",
+                    "pos": {
+                        "x": 8.1,
+                        "y": 14.05
+                    },
+                    "uuid": "5ed96b7f-be05-4f59-99a6-5473e97346e7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 1.1824 mm )",
+                    "pos": {
+                        "x": 8.3846,
+                        "y": 13.9529
+                    },
+                    "uuid": "7fe236de-6f52-40a0-9095-509052ad2571"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.0607 mm )",
+                    "pos": {
+                        "x": 7.35,
+                        "y": 13.3
+                    },
+                    "uuid": "8329c9c3-5103-46e3-bae6-8b8a8cee9713"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /SWCLK)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.5500 mm )",
+                    "pos": {
+                        "x": 8.1,
+                        "y": 14.05
+                    },
+                    "uuid": "5ed96b7f-be05-4f59-99a6-5473e97346e7"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 1.1824 mm )",
+                    "pos": {
+                        "x": 8.3846,
+                        "y": 13.9529
+                    },
+                    "uuid": "7fe236de-6f52-40a0-9095-509052ad2571"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /PDM_CLK_MCU)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.8485 mm )",
+                    "pos": {
+                        "x": 9.65,
+                        "y": 14.05
+                    },
+                    "uuid": "3e00c0ef-c8fc-4707-ae42-df2972c77a28"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( F.Cu 上、長さ: 0.5877 mm )",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 13.6429
+                    },
+                    "uuid": "c781f4b8-e938-426b-94bc-76227deaf326"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0789 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.5844,
+                        "y": 14.0585
+                    },
+                    "uuid": "6c1a1c17-82d9-4fab-8951-4a52d2ca3756"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 1.4000 mm )",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 14.3
+                    },
+                    "uuid": "a6065de2-fa26-4b75-b059-cfe9788b1010"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0789 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.4950 mm )",
+                    "pos": {
+                        "x": 9.4,
+                        "y": 14.3
+                    },
+                    "uuid": "158837f4-e903-49b1-baee-3baeb313e80c"
+                },
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.5844,
+                        "y": 14.0585
+                    },
+                    "uuid": "6c1a1c17-82d9-4fab-8951-4a52d2ca3756"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 1.2728 mm )",
+                    "pos": {
+                        "x": 7.1,
+                        "y": 13.4
+                    },
+                    "uuid": "04238e20-22a7-47f3-80ba-97060ef82fda"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 1.1824 mm )",
+                    "pos": {
+                        "x": 8.3846,
+                        "y": 13.9529
+                    },
+                    "uuid": "7fe236de-6f52-40a0-9095-509052ad2571"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        }
+    ]
+}

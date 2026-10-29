@@ -1,0 +1,28 @@
+{
+  "status": "IMPLEMENTED_NATIVE_WINDOWS_UNVERIFIED",
+  "files_sha256": {
+    "prepare_recipient.py": "3abe5ee8d86bc714c01ee4ffda40c1d858a103e5ac98ff4e8b8f89fcddd05252",
+    "windows_private_directory.py": "10234ef3af18919337e32ecb5d24b9bf9f2fffcae52d23d6e0ffca73ffa2935a",
+    "test_windows_private_directory.py": "d8e7e837899f6390ef0268109669198fb58f3edc4c8e5821aeb2a8b625430bdb",
+    "README.md": "17065a6a250e7b3cc81dcdba8efedc15587c58bf5cd7bf098608133c2973a7cd",
+    "RECIPIENT_SETUP.txt": "3aa3a89a6ec2c2b3d4906f781aebff111515877faf8e1db9e30d4ff1d5dbc493"
+  },
+  "validation": {
+    "POSIX_age_roundtrip": "PASS",
+    "non_Windows_fail_closed": "PASS",
+    "native_Windows_tests": "3 SKIPPED; Windows native ACL inheritance and age roundtrip test added but not run",
+    "syntax": "PASS"
+  },
+  "remaining": [
+    "Run new native child identity DACL inheritance test",
+    "Attempt read as a separate standard user",
+    "Run native age encryption/decryption",
+    "Exercise unsupported filesystem and junction refusal",
+    "Inspect startup failure recovery without exposing key material"
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-createdirectory",
+    "https://learn.microsoft.com/windows/win32/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptorw",
+    "https://learn.microsoft.com/en-us/windows/win32/secauthz/security-descriptors-for-new-objects"
+  ]
+}

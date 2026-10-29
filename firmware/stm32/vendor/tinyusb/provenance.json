@@ -1,0 +1,93 @@
+{
+  "url": "https://github.com/hathach/tinyusb",
+  "tag": "0.21.0",
+  "commit": "dae3f9a366bfcddbf9dcf1b48d7500286a849539",
+  "scope": "Subset: common/device/osal/MSC/HID/STM32 FSDEV/Synopsys DWC2 device and root headers, with documented local power-event hook patch; unused host driver retained.",
+  "license": "MIT; upstream headers retained",
+  "sha256": {
+    "LICENSE": "f878d62e47e693ea64160218edb1b9b4755f4839a3179e5bef4a6b0359399431",
+    "src/tusb.h": "115100fbffe8984964a321e477720a5586db7776ac832ca81749c89cc08183bb",
+    "src/tusb_option.h": "452216f8caa674e6987f7565186dc100d02a177f3a655c7cb6e506e68e0ee67f",
+    "src/tusb.c": "b5f0e8ca00ba6e63914583f7b4711c540a125c261b261216f89e5136fda2ac6f",
+    "src/osal/osal_rtthread.h": "f6827295e34c508bf13c8385403d561313d4e765dc8b5fd01e7d50e83ec2b0a5",
+    "src/osal/osal_zephyr.h": "2891766f7cc3ff678a74e0fd2f39653f38592f7f29b8905b4fb5c83a23c83729",
+    "src/osal/osal_freertos.h": "60849e614071197ca4111f8fadee72baa86cc10dd73f31beda8064e0d4588fad",
+    "src/osal/osal_threadx.h": "35ed19f5b5b9f81be6b58148f1696cc280d2d1167af069002c144eae77d691e7",
+    "src/osal/osal_pico.h": "f6a08dbd085a53f370e63cd0a03412029b8b21db7135419523f242144bd6b2c8",
+    "src/osal/osal_rtx4.h": "19d31a27fcf1b7fc64ecb6a4a09b2cf8d4493dcb3159ea3708ca45676871ea0b",
+    "src/osal/osal_mynewt.h": "ef7491ad9e62017c190e85ed897016be19fccf4fd71c1581d082af4a309dba61",
+    "src/osal/osal_none.h": "d6eed8e3a3c7a25fc7d57bdded71ce2f56aa82564d7a1dd07cba525239bc1b8f",
+    "src/osal/osal.h": "c9bd3d35f7436c47287bc481041f9af6aeec605f1e0291e3a76bd95bfc04f4d9",
+    "src/common/tusb_fifo.c": "d87e25d3329244226f3b794882e89898ac5fe20e04568a7750f4aff154f871ac",
+    "src/common/tusb_verify.h": "061205bd8a55fd7134436bef64147100769a4ee4f15cef123f3b513c62b57514",
+    "src/common/tusb_mcu.h": "ef584be007e78926dac89863b87e1e2bdd0358d9a89ed68c433f9f57ab1dd953",
+    "src/common/tusb_common.h": "a664fab5d2c3c635f64eca7a379e76934cb3ba6969b99260064946573e5396b1",
+    "src/common/tusb_private.h": "6216aa425618d3c88ff57c0d2d29caace1b59bad1c361627a9a7401e4994fa97",
+    "src/common/tusb_fifo.h": "6d4af6262d85a13a38d7e211419c0491e78bc076e6d7c5bba38613c011bf8166",
+    "src/common/tusb_debug.h": "25c5e7f4ca87daa1619b0dc7042de641092a8f5970b6138f31a4d090b47a25be",
+    "src/common/tusb_compiler.h": "7f726abb8a3de111f55d95de60d6f9607d3464eb52b7780f37b1e10dae19ecfc",
+    "src/common/tusb_types.h": "cb6f1d329629fe7a91a2509d991878298070d203d804eab7f90a260de1c977a4",
+    "src/device/usbd.h": "5465318649142390492dd8fe0014d227d25511c0bae9ffec766acb81c00a2f9d",
+    "src/device/usbd_pvt.h": "3d3bae6a54ac6d677a2fdae156665c760a7f22f7651b34cfaa4460a585964db9",
+    "src/device/dcd.h": "baf785f2d5d8e3f74bd6d6a04559fc606d341983aad35aa08e168b452c2750db",
+    "src/device/usbd.c": "d03a4525c20d8751535d78ae4e27943a1b928f3d311e35d84424a8da57d3c024",
+    "src/class/msc/msc_host.c": "1ff5c70ccb6729a47f395348016e724f05092a276eb0e3b10b294abf4c9f63fc",
+    "src/class/msc/msc_device.h": "c769bfb8782e0a7759fb993014ff86dbebcf4d1410c5e89b95a2874dc98d49ad",
+    "src/class/msc/msc_host.h": "a65017fa67146d5fb65ff18ef8e5e32c8fae70e97beb999d67cd2d8c53452646",
+    "src/class/msc/msc.h": "53d55797b88f0461372a339a69032a80db0284cb376e27fc4312602660d81700",
+    "src/class/msc/msc_device.c": "9bba988f5c1e83db1d565e55e934a8e9dd7f5e5085820b6c555ffa1484473ac5",
+    "src/class/hid/hid.h": "ddd8921b25f02f1007eaf67bd1f9ea19525629fc3fc7f7b7c140c03552e5354e",
+    "src/class/hid/hid_device.c": "9dd40250fd973ebec576cb31d2de21aa6759f7b3e12463d0bc59933347ba8d6f",
+    "src/class/hid/hid_device.h": "19685a8a929ff371327c3a25cc31090005e1fc547b14af2f8e6c0e9dbca83a16",
+    "src/portable/st/stm32_fsdev/fsdev_at32.h": "5a0e3d0e8cb89d7bfaac36d9c836953823ecaf08c1cc8686c5e5bab660d917de",
+    "src/portable/st/stm32_fsdev/fsdev_ch32.h": "597f895f10d3599f1f68ed1fbac5cd6c617ce2c4f5a74dadb92139390e0ede1f",
+    "src/portable/st/stm32_fsdev/fsdev_common.c": "6ffeaa1f64fcdeaf0e7db1c932696bcc962cdd546032599ebccc41fe2b7e990f",
+    "src/portable/st/stm32_fsdev/hcd_stm32_fsdev.c": "03c7550a51bcd1921e28e91d142b14c093088e3fb7dea6e077157e3dc8bd34b4",
+    "src/portable/st/stm32_fsdev/fsdev_stm32.h": "8ad617f61884ef9acc137fed9eab34264af79ef75df916cef1126f3106fdeabe",
+    "src/portable/st/stm32_fsdev/fsdev_common.h": "83bd242c95387e0ba2158d9d4525ffd3bc3304533ea8d3ba3b78186dc57da3cb",
+    "src/portable/st/stm32_fsdev/dcd_stm32_fsdev.c": "62b73c5fab0cbda70df6bd1bc1c9a7df0c8a59ea02c38c884b24b55e44ddfc9f",
+    "src/portable/synopsys/dwc2/dcd_dwc2.c": "96e6a20e599f97fc9fa057e672612977f5732465911988df7cbeccdd9028dcb7",
+    "src/portable/synopsys/dwc2/dwc2_common.c": "3971bcb1b0fd639dad056dab97a2671aa430a5892347938427a11d864679559b",
+    "src/portable/synopsys/dwc2/dwc2_common.h": "1bbfe05848a9de8275fc8650176c847a89f5b5d550556f7f47085e1ce31af637",
+    "src/portable/synopsys/dwc2/dwc2_stm32.h": "9c6f7e6e092c514b42885f1b54ec2e2e7504553f02b6b5ba2821203b6e6dd631",
+    "src/portable/synopsys/dwc2/dwc2_type.h": "d26e86d39ef2fac05adb7d2ad7c53720b144ec3c32f3501b8d6c3975e62ea567"
+  },
+  "local_patches": [
+    {
+      "file": "src/device/usbd.c",
+      "upstream_sha256": "38de54351d81878e6543f2b022d0c39f45d28c8f0888491796398dec45e727be",
+      "patched_sha256": "33987582609b6100d6f8e7151bcfc54c3a4ad3370dc77edcdb380132acd52506",
+      "reason": "Invoke tud_event_hook_cb before queue send so critical power revocation survives full OS_NONE event queue",
+      "semantic_change": "Hook reports attempted enqueue, including failure; existing callback must remain nonblocking and ISR-safe.",
+      "test": "firmware/stm32/tests/check_usb_event_queue.sh"
+    },
+    {
+      "file": "src/device/usbd.c",
+      "previous_sha256": "33987582609b6100d6f8e7151bcfc54c3a4ad3370dc77edcdb380132acd52506",
+      "patched_sha256": "10f85a027af4ff52fc248ab60d6a8cd3e5a07eb8661ad779089c751b0764b4c4",
+      "reason": "Sticky event queue overflow flag plus ISR-safe callback; policy rejects subsequent resume until MCU reset",
+      "test": "check_usb_event_queue.sh, check_usb_input_policy.sh, check_usb_session.sh"
+    },
+    {
+      "file": "src/device/usbd.h",
+      "previous_sha256": "48040a0ea812b5f099bab557c81aa83fb9386d7eb2dfd814b1eba9aa2468b298",
+      "patched_sha256": "2014d3e3367baaacdea6083b9060f51c5920a346d63a1992fdfd8677bc671e2e",
+      "reason": "Sticky event queue overflow flag plus ISR-safe callback; policy rejects subsequent resume until MCU reset",
+      "test": "check_usb_event_queue.sh, check_usb_input_policy.sh, check_usb_session.sh"
+    },
+    {
+      "file": "src/device/usbd.c",
+      "previous_sha256": "10f85a027af4ff52fc248ab60d6a8cd3e5a07eb8661ad779089c751b0764b4c4",
+      "patched_sha256": "d03a4525c20d8751535d78ae4e27943a1b928f3d311e35d84424a8da57d3c024",
+      "reason": "Power grant requires successful SET_CONFIGURATION status ACK, not early mounted state",
+      "test": "Actual usbd_control_xfer_cb through usb_event_queue_bridge; policy100/500 tests"
+    },
+    {
+      "file": "src/device/usbd.h",
+      "previous_sha256": "2014d3e3367baaacdea6083b9060f51c5920a346d63a1992fdfd8677bc671e2e",
+      "patched_sha256": "5465318649142390492dd8fe0014d227d25511c0bae9ffec766acb81c00a2f9d",
+      "reason": "Power grant requires successful SET_CONFIGURATION status ACK, not early mounted state",
+      "test": "Actual usbd_control_xfer_cb through usb_event_queue_bridge; policy100/500 tests"
+    }
+  ]
+}

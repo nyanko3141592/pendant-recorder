@@ -1,0 +1,45 @@
+{
+  "status": "STRAIGHT_WIRE_LOADING_SCREEN_NOT_ASSEMBLY_QUALIFICATION",
+  "sources_sha256": {
+    "closed_holes": "e5a67760508904f7676e777dcaa31afcdb36a576700876a86d0678532b6a6f2f",
+    "bottom_slots": "63d2986eb0404d397b91a6681831f76cec5bbb167c59b42b6f1fa5bc622deaac"
+  },
+  "wire_source_sha256": "2ce9018076e28973d23542a01735de162f9c382a853d91b0f1a85e125b54c921",
+  "rows": [
+    {
+      "wire_index": 0,
+      "straight_length_mm": 9.400607394485888,
+      "checks": {
+        "closed_holes": {
+          "overlap_mm3": 0.0324529528599808,
+          "gap_mm": 0.0
+        },
+        "bottom_slots": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.035365289886028106
+        }
+      }
+    },
+    {
+      "wire_index": 1,
+      "straight_length_mm": 13.534244958004848,
+      "checks": {
+        "closed_holes": {
+          "overlap_mm3": 0.03245254437569011,
+          "gap_mm": 0.0
+        },
+        "bottom_slots": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.03579689783213592
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Conservative .31 mm square contains nominal round wire; no OD tolerance.",
+    "Continuous translation from 8 mm below, seller stage without case or PCB.",
+    "Wire length includes final stripped PCB segment but is modeled fully insulated at this stage.",
+    "Does not establish subsequent forming into final route, gripper access, bend damage or joint strength.",
+    "Sensor-side actual insulation remains undefined."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "FASTENING_METHOD_UNRESOLVED_NOT_PURCHASE_READY",
+  "date": "2026-10-26",
+  "current_machine_screw": "SNZ-M1.2-2-TZB",
+  "current_boss_width_mm": 2.4,
+  "current_pilot_mm": 0.95,
+  "current_thread_engagement_mm": 0.9,
+  "candidates": [
+    {
+      "method": "Captured metal nut",
+      "mpn": "SHNS-M1",
+      "manufacturer": "NBK",
+      "source": "https://www.nbk1560.com/images/ja-JP/product/miniaturescrew/SHNS/SHNS_1.pdf",
+      "thread": "M1x0.25",
+      "across_flats_mm": 2.5,
+      "height_mm": 0.8,
+      "pack_quantity": 10,
+      "nominal_across_corners_mm": 2.8867513459481287,
+      "decision": "Not drop-in: nut wider than boss before pocket clearance or wall; also incompatible with M1.2 screw. Requires geometry and screw redesign."
+    },
+    {
+      "method": "Thread-forming micro screw for plastic",
+      "manufacturer": "EJOT",
+      "source": "https://www.ejot.co.uk/Industrial-Fasteners/Products/Micro-Screws/p/VBT_MICROSCREWS",
+      "evidence": "Manufacturer search result describes direct plastic fastening. Direct page returned503; PDF link404. Exact drawing not verified.",
+      "decision": "Lead only; no exact SKU/head/pilot recommendation/low-quantity stock confirmed."
+    },
+    {
+      "method": "Tapped printed polymer with existing machine screw",
+      "decision": "Not adopted: no qualified material/thread-forming process, torque or repeated assembly evidence. Smooth pilot is not a female thread."
+    }
+  ],
+  "next": "Resolve .25mm carrier cap and .30mm lid/keeper printability, torque and retention; nominal geometry and straight nut insertion pass, not release approval.",
+  "new_candidate": {
+    "screw": "SNZS-M1-2",
+    "nut": "SHNS-M1",
+    "screen": "mechanical/mini-rect-v13/captive-nut-envelope-screen.json",
+    "catalog_screw_jpy_inc_tax_per_50": 1595,
+    "price_status": "Indexed manufacturer catalogue, not live delivered quote",
+    "assembly_note": "Use a carrier cap above nut; screw load pulls nut upward. Side slot needs retention. No plastic female thread.",
+    "geometry": "mechanical/mini-rect-v13/captive-nut-cad-trial/geometry-review.json",
+    "continuous_nut_insertion": "mechanical/mini-rect-v13/captive-nut-cad-trial/nut-sweep-review.json"
+  }
+}

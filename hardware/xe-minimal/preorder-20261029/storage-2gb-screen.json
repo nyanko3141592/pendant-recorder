@@ -1,0 +1,27 @@
+{
+  "status": "2GB_SCREEN_NOT_ADOPTED",
+  "part": "CSNP16GCR01-AOW",
+  "jlc_part": "C7527488",
+  "source": "https://jlcpcb.com/partdetail/Creat_StorageWorld-CSNP16GCR01AOW/C7527488",
+  "pcba_type": "Standard Only",
+  "current_stock": null,
+  "current_price": null,
+  "historical_price_USD_20261025": 43.2934,
+  "current_page_did_not_expose_stock_or_price": true,
+  "datasheet_path": "hardware/mini-rect-v11/reference/csnp16gcr01-aow.pdf",
+  "datasheet_sha256": "7bd65a7d5d904a46c300fc04ace8d84ef0398479c004e7266c05a35a717b69d8",
+  "electrical_text_screen": {
+    "write_max_mA_at_50MHz": 50,
+    "read_max_mA_at_50MHz": 60,
+    "standby_max_uA": 250,
+    "not_SPI_energy_measurement": true
+  },
+  "land_screen": "storage-land-review.json",
+  "required_reroute_nets": [
+    "/SD_CS_N",
+    "/SD_MISO",
+    "/GND"
+  ],
+  "user_question_pending": "30h requirements.md versus 36h design-goal.json; no requirement changed",
+  "next_action": "Resolve selected storage before committing affected routing; numbered land enlargement alone has 8 DRC violations including two shorts."
+}

@@ -1,0 +1,87 @@
+{
+  "status": "PROCESS_SPECIFIED_QUALIFICATION_PENDING",
+  "source_sha256": "5936111ddf50fcbd5aa9c13895637e5dd960f09510211adae244c05f4dcff6c0",
+  "candidate_sha256": "337d9c5c6121f58c9a47e0f14d5fa4b0e18af633092b8fa4dbd73ebde4142c34",
+  "vias": [
+    {
+      "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de",
+      "xy_mm": [
+        20.7,
+        10.6
+      ],
+      "drill_mm": 0.15,
+      "copper_diameter_mm": 0.35,
+      "nominal_annular_ring_mm": 0.09999999999999999,
+      "published_diameter_screen_pass": true,
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "36",
+          "net": "/V3V3",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true,
+          "pad_center_mm": [
+            20.29,
+            10.5175
+          ],
+          "pad_size_mm": [
+            0.875,
+            0.25
+          ],
+          "mask_expansion_mm": 0.0,
+          "paste_margin_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e",
+      "xy_mm": [
+        18.1,
+        11.5
+      ],
+      "drill_mm": 0.15,
+      "copper_diameter_mm": 0.35,
+      "nominal_annular_ring_mm": 0.09999999999999999,
+      "published_diameter_screen_pass": true,
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "40",
+          "net": "/PDM_DATA",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true,
+          "pad_center_mm": [
+            18.1025,
+            11.205
+          ],
+          "pad_size_mm": [
+            0.25,
+            0.875
+          ],
+          "mask_expansion_mm": 0.0,
+          "paste_margin_mm": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_violations": 0,
+  "parity_violations": 0,
+  "unconnected_items": 21,
+  "mask_stencil_review": "Both pads have zero effective mask/paste margin. The via copper exceeds the narrow pad width; retain pad-defined paste and qualify partial-overlap filling/capping and mask registration. No extra via paste aperture.",
+  "limitations": [
+    "Nominal annular ring excludes drill registration and fabrication tolerances.",
+    "KiCad flags express fabrication intent; Gerber alone does not order a filled/capped process.",
+    "Final mask Gerbers, stencil, flatness and assembly acceptance remain unqualified."
+  ],
+  "adopted": true,
+  "copper_geometry_unchanged": true,
+  "post_adoption_drc": "current-drc.json"
+}

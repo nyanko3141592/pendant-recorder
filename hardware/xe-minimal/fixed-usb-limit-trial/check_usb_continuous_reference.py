@@ -1,0 +1,18 @@
+"""Subtract filled reference copper from exact rectangular straight-track footprint."""
+from pathlib import Path
+import pcbnew as k,wx,json,hashlib,math
+app=wx.App(False);O=Path(__file__).resolve().parent;rows=[];sources={}
+for directory in ['usb-pair-far-extension-trial','usb-reference-via-small-trial']:
+ p=O/directory/'pendant-xe-minimal.kicad_pcb';b=k.LoadBoard(str(p));sources[directory]=hashlib.sha256(p.read_bytes()).hexdigest()
+ for uid in ['810dcba1-a2b0-4d03-b340-884fb9cb3fa0','730d0479-5ef7-44dd-bd9f-237343f09d6d']:
+  t=next(t for t in b.GetTracks()if t.m_Uuid.AsString()==uid);a,z=t.GetStart(),t.GetEnd();dx,dy=z.x-a.x,z.y-a.y;length=math.hypot(dx,dy);nx,ny=-dy/length,dx/length
+  for margin in [0,.025,.05,.1]:
+   half=t.GetWidth()/2+k.FromMM(margin);poly=k.SHAPE_POLY_SET();poly.NewOutline()
+   for point,side in [(a,1),(z,1),(z,-1),(a,-1)]:poly.Append(round(point.x+nx*half*side),round(point.y+ny*half*side))
+   for layer in [k.In1_Cu,k.In3_Cu]:
+    ground=k.SHAPE_POLY_SET()
+    for zone in b.Zones():
+     if zone.GetNetname()=='/GND'and zone.IsOnLayer(layer):ground.BooleanAdd(zone.GetFilledPolysList(layer))
+    missing=k.SHAPE_POLY_SET();missing.BooleanSubtract(poly,ground)
+    rows.append({'board':directory,'net':t.GetNetname(),'uuid':uid,'reference':b.GetLayerName(layer),'extra_margin_each_side_mm':margin,'rectangle_area_mm2':poly.Area()/1e12,'uncovered_area_mm2':missing.Area()/1e12,'empty_difference':missing.IsEmpty()})
+r={'status':'CONTINUOUS_POLYGON_FOOTPRINT_CHECK_NOT_IMPEDANCE_QUALIFICATION','source_sha256':sources,'rows':rows,'scope':'Two central straight track rectangles, excluding semicircular end caps and fanouts','limits':['Uses KiCad integer polygon clipping and filled copper already in PCB file','Copper connectivity and manufacturing registration/etch tolerance unverified','Geometric margin is not an electrical acceptance criterion','No field solution, USB measurement or full route qualification']};(O/'usb-continuous-reference-review.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(rows,indent=2))

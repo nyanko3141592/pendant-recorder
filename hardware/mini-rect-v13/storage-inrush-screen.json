@@ -1,0 +1,38 @@
+{
+  "status": "TYPICAL_INRUSH_SCREEN_NOT_CURRENT_LIMIT_GUARANTEE",
+  "source": "https://www.ti.com/lit/ds/symlink/tps22916.pdf",
+  "revision": "SLVSDO5F December2021",
+  "installed_candidate": "TPS22916CYFPR",
+  "evidence": "TI section9.2 example gives3.2mV/us slew at3.6V for C variant. Current PCB BOM uses C, not faster B variant.",
+  "screen_conditions": "Typical example at3.6V, not guaranteed3.3V worst-case. External output capacitance only; card internal capacitance and active startup load excluded.",
+  "cases": [
+    {
+      "external_C_uF": 4.8,
+      "capacitive_inrush_typ_mA": 15.36
+    },
+    {
+      "external_C_uF": 10.1,
+      "capacitive_inrush_typ_mA": 32.32
+    },
+    {
+      "external_C_uF": 22.1,
+      "capacitive_inrush_typ_mA": 70.72000000000001
+    },
+    {
+      "external_C_uF": 47.1,
+      "capacitive_inrush_typ_mA": 150.72
+    },
+    {
+      "external_C_uF": 594,
+      "capacitive_inrush_typ_mA": 1900.8000000000002
+    }
+  ],
+  "decision": "Do not increase C27 solely to buffer writes: larger capacitance increases switch-on demand. C variant provides slew control, not a hard50mA battery current limit. Final C27 value requires exact card startup/write waveform and effective-capacitance qualification.",
+  "remaining": [
+    "Worst-case switch slew over supply/process/temperature",
+    "Card internal capacitance and startup current",
+    "MCU/microphone simultaneous load and battery current allowance",
+    "C27 DC bias/temperature/aging and selected card minimum bypass requirement"
+  ],
+  "hardware_changed": false
+}

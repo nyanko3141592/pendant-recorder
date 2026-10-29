@@ -1,0 +1,38 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [
+    {
+      "from": [
+        "R40",
+        "2"
+      ],
+      "to": [
+        "U12",
+        "6"
+      ],
+      "net": "/TS_HOT_REF",
+      "segments": 3
+    }
+  ],
+  "unrouted_local_jobs": [
+    {
+      "from": [
+        "R41",
+        "1"
+      ],
+      "to": [
+        "U12",
+        "6"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    }
+  ],
+  "physical_drc_violations": 0,
+  "unconnected_items": 105,
+  "board_sha256": "a9fa21c3a6101b88906714f09c9e855811ab45fcfcf19bdaa05325d10d17e6cc",
+  "limits": [
+    "Hot reference only; whole sensor and hot comparator network remain incomplete",
+    "Noise, thermal contact and startup remain unqualified",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

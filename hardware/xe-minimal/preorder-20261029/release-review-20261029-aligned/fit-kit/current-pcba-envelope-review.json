@@ -1,0 +1,33 @@
+{
+  "status": "CURRENT_PCBA_ENVELOPE_NOT_PRINT_READY",
+  "source_pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "datum": {
+    "dielectric_z_mm": [
+      0,
+      0.7292
+    ],
+    "outer_copper_z_mm": [
+      -0.035,
+      0.7642
+    ],
+    "total_nominal_mm": 0.7992,
+    "U8_z_correction_mm": -0.0622,
+    "bottom_supplement_z_correction_mm": -0.035
+  },
+  "native_solids": 100,
+  "combined_solids": 104,
+  "valid": true,
+  "supplement_vs_native_overlaps": [],
+  "case_overlap_mm3": {
+    "lower": 0.0,
+    "upper": 0.0
+  },
+  "limitations": [
+    "Existing U8/J2 supplements retained; dimensional/pose provenance requires recheck",
+    "Nominal native component models mixed with maximum U1/U11 envelopes",
+    "Solder standoff and placement tolerance absent",
+    "Disconnected component solids require designed bridges for print gauge; no print authorization",
+    "PCB native dielectric thickness .7292; finished-thickness tolerance not incorporated"
+  ],
+  "release_allowed": false
+}

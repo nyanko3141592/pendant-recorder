@@ -1,0 +1,86 @@
+{
+  "manufacturer": {
+    "url": "https://www.sengoku.co.jp/item/pdf/Spe-01-401525-XE-NTC-110mah-3.7V-en-1.pdf",
+    "sha256": "757689c6906ce62184e0f271ce908d6234ce503de70e19c43037fc7b4f342a57",
+    "revision": "Ver1.0; cover2020-07-20, drawing2020-06-28",
+    "finished_pack_max_mm": [
+      15.5,
+      27,
+      4.2
+    ],
+    "lead_length_mm": 15,
+    "lead_tolerance_mm": 3,
+    "wire": "UL3302AWG30",
+    "connector": "Molex781720003",
+    "pinout": {
+      "1": "red positive",
+      "2": "NTC",
+      "3": "black negative"
+    },
+    "rated_minimum_mAh": 110,
+    "max_charge_mA": 110,
+    "max_discharge_mA": 110,
+    "charge_limit_V": 4.2,
+    "discharge_cutoff_V": 2.4,
+    "end_charge_mA": 1.1,
+    "NTC": "JOINSET10k0603; exact part/B/R-T/tolerance not specified",
+    "standard_charge_discrepancy": "Table says0.2C(2mA), internally inconsistent:0.2*110=22mA. Do not silently treat printed2mA as verified22mA."
+  },
+  "connector_header": {
+    "model": "781710003",
+    "mated_height_mm": 1.55,
+    "source": "https://www.molex.com/en-us/products/part-detail/781710003?display=pdf",
+    "mating_cycles_max": 10
+  },
+  "temperature_decision": "Use the finished pack's pin-2 built-in nominal 10k NTC directly as BAT_TS; do not assume B=3435 or any JOINSET catalogue curve. The exact installed B/R-T/tolerance remains unproven, so qualify resistance and actual cell-surface cutoff/recovery at 0/10/25/35/45C on the finished assembly. Charging remains disabled until that physical qualification passes. No separate contact sensor, thermal pad or buyer sensor installation is used.",
+  "date": "2026-10-26",
+  "status": "SELECTED_FOR_CIRCUIT_DESIGN",
+  "selected_model": "DTP401525-XE",
+  "capacity_mAh": 110,
+  "user_instruction": "110mAhで決定。入手性で決めて。先にそれを確定させる。そのあと回路を設計しろ。",
+  "selection_reason": "国内の複数販売店で1個から通常購入できる完成パック。保護回路・短い配線・3極コネクター付き。",
+  "retail": [
+    {
+      "seller": "マルツ",
+      "model": "DTP401525(EZ3)",
+      "url": "https://www.marutsu.co.jp/pc/i/2228265/",
+      "contents": "DTP401525-XE + 0781710003 header",
+      "price_JPY_tax_included": 1252,
+      "displayed_stock": 32,
+      "page_stock_timestamp": "2026/10/29 11:38",
+      "note": "付属の単体ヘッダはユーザーが実装しない。本体基板に実装済みで販売。",
+      "checked_date": "2026-10-29",
+      "stock_reserved": false
+    },
+    {
+      "seller": "千石電商",
+      "model": "DTP401525-XE",
+      "url": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5VAC",
+      "listed_JPY": 1500,
+      "minimum_quantity": 1,
+      "checked_date": "2026-10-29",
+      "displayed_stock": null,
+      "stock_note": "Product listing and stock locations shown; numeric stock not available."
+    }
+  ],
+  "buyer_assembly": "出荷時配線のまま実装済み基板へ接続。電池はユーザーが別途購入。",
+  "new_PCB_or_case_design_allowed": true,
+  "order_ready": false,
+  "qualification": "採用型番の確定。16時間、充電適合、完成外形の合格を意味しない。",
+  "size": "Current 27.5mm PCB; compact 30.8mm case remains a candidate. Preorder fit-kit exists, but original harness/mated plug, retention, swelling and impact are not qualified. Older pebble dimensions are historical.",
+  "runtime_budget": {
+    "hours": 16,
+    "ideal_average_mA": 6.875,
+    "assumed_usable_fraction": 0.7,
+    "design_average_mA": 4.4,
+    "note": "70%は計画仮定で、4.4mAは採用設計目標。実機容量・電流測定が必要。非storage2.8mAは実測値ではなく、部品別台帳を伴う配分枠としてのみ使う。"
+  },
+  "unresolved_before_release": [
+    "充電終止電流1.1mA参照と現回路の整合",
+    "標準充電電流の原資料誤記を推定で補わず、別記最大値内で設計・検証",
+    "内蔵NTCのB/R-T/公差/ロット差とセル表面温度に対する応答を完成状態で認定し、open/short・冷温・高温・復帰・チャタリングを実測",
+    "全負荷・過渡を含む110mA電流制約",
+    "配線無加工の収納と16時間実測"
+  ],
+  "change_policy": "容量や型番を独断で再選定しない。成立しない要件は具体的根拠と緩和案を提示して相談。"
+}

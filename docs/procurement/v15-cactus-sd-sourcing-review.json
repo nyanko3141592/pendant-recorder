@@ -1,0 +1,55 @@
+{
+  "status": "EXACT_SD_SKUS_IDENTIFIED_PRICING_UNRESOLVED",
+  "date": "2026-10-26",
+  "manufacturer_url": "https://www.cactus-tech.com/products/industrial-grade/microsd/id-803-series/",
+  "candidates": [
+    {
+      "mpn": "KS2GRT-803M",
+      "capacity_GB": 2,
+      "price": null,
+      "five_unit_price": null,
+      "source": "https://www.distrelec.ch/en/memory-card-microsd-2gb-20mb-17mb-black-cactus-technologies-ks2grt-803m/p/11095065",
+      "source_status": "Indexed listing only; direct open403. No availability or price inferred."
+    },
+    {
+      "mpn": "KS4GRT-803M",
+      "capacity_GB": 4,
+      "price": null,
+      "five_unit_price": null,
+      "source": "https://greenchips.com/en/detail/Cactus/KS4GRT-803M/",
+      "source_status": "Search index5months old shows100 and6weeks, request quote. Not current guaranteed stock or lead time."
+    }
+  ],
+  "technical_status": "Manufacturer lists SPI support and2.7..3.6V at family level. Read60/write80mA/sleep200uA are not verified peak or long-term average bounds.",
+  "supplier_questions_prepared_not_sent": [
+    "Quote5 units of exact MPN with hardware/firmware revision and traceable source; include Japan shipping, taxes and lead time.",
+    "Provide guaranteed maximum startup/wake/read/write current and pulse duration at3.3V, including internal garbage collection.",
+    "Provide SPI mode maximum busy time, behavior after CS deassertion, and active-to-sleep transition conditions.",
+    "Confirm same revision supports SPI4MHz/8MHz and minimum usable sectors; state supplied filesystem.",
+    "State lifecycle/PCN controls and whether mixed controller or NAND revisions can appear under the same MPN."
+  ],
+  "action": "Do not substitute a generic same-capacity card or use stale indexed stock in the five-unit cost total.",
+  "messages_sent": false,
+  "orders_placed": false,
+  "release_allowed": false,
+  "public_price_followup": {
+    "date": "2026-10-26",
+    "checked": [
+      "https://csi.pl/produkt/ks2grt-803m/",
+      "https://csi.pl/produkt/ks2grit-803m/",
+      "https://www.ibselectronics.cn/products/cactus",
+      "https://uk.rs-online.com/web/b/cactus/"
+    ],
+    "result": "CSI exact 2GB listings request product inquiry; IBS exact-model search listings also request quotes. RS brand page shows other capacities/models but no usable exact 2GB price in inspected results. Public5-piece price and Japan delivery remain unverified.",
+    "excluded_price_shortcuts": [
+      "RS1GB prices do not price a2GB requirement",
+      "2019 experiment cost is not a current vendor quote",
+      "Search RFQ stock totals do not establish live availability"
+    ],
+    "next_evidence_needed": "Manufacturer or authorized supplier response for exact offered revision; do not repeat broad public-price searches without a new lead."
+  },
+  "manufacturer_contact_route": "https://www.cactus-tech.com/contact-us/talk-to-a-cactus-expert/",
+  "inquiry_draft": "docs/procurement/v15-cactus-inquiry-UNSENT.txt",
+  "inquiry_draft_sha256": "22dbdff083752ec62debf3187c592bd39f302a93cc69dd590ff5c6da98aca50a",
+  "inquiry_scope": "Five cards, Japan delivery terms, revision and lifecycle, quantified SPI recording workload, current/busy/sleep and power-loss clarification; no shipment or order. No personal address or confidential design attachment included."
+}

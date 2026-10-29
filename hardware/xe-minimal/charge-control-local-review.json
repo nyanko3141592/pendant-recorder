@@ -1,0 +1,83 @@
+{
+  "status": "PARTIAL_LOCAL_ROUTING_NOT_RELEASED",
+  "accepted": [
+    {
+      "from": [
+        "R36",
+        "1"
+      ],
+      "to": [
+        "R43",
+        "2"
+      ],
+      "net": "/CHG_GUARD_GATE",
+      "segments": 3
+    }
+  ],
+  "unrouted_local_jobs": [
+    {
+      "from": [
+        "R12",
+        "2"
+      ],
+      "to": [
+        "U3",
+        "4"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    },
+    {
+      "from": [
+        "U3",
+        "4"
+      ],
+      "to": [
+        "Q4",
+        "3"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    },
+    {
+      "from": [
+        "R43",
+        "1"
+      ],
+      "to": [
+        "U1",
+        "20"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    },
+    {
+      "from": [
+        "R43",
+        "2"
+      ],
+      "to": [
+        "Q4",
+        "1"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    },
+    {
+      "from": [
+        "U12",
+        "7"
+      ],
+      "to": [
+        "R43",
+        "2"
+      ],
+      "reason": "Direct and two orthogonal short paths fail physical DRC; requires obstacle-aware routing."
+    }
+  ],
+  "physical_drc_violations": 0,
+  "unconnected_items": 96,
+  "board_sha256": "f5ba076d0411969311907814630003571b46e1b6988968e539ae0ec0c5a4a5df",
+  "limits": [
+    "Temperature reference divider placement is dispersed; not a completed noise-qualified guard",
+    "Shared supply, BOR4 and thermal contact remain unqualified",
+    "Only same-layer local connections in this pass",
+    "Power architecture, battery fit and runtime remain unqualified"
+  ]
+}

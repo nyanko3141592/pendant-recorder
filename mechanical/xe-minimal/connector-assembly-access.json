@@ -1,0 +1,73 @@
+{
+  "status": "ASSEMBLY_ACCESS_REQUIREMENTS_IDENTIFIED_NOT_FIT_VALIDATED",
+  "source": {
+    "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationspecificationspdf/781/78172/AS-78172-006-001.pdf",
+    "retrieved": "2026-10-27",
+    "internal_document": "AS-78172-007 revision1",
+    "filename_internal_id_mismatch": true,
+    "qualification": "First page marked tentative release; use qualitative assembly guidance, numeric limits require current-document verification.",
+    "pages_read": "Text pages1-5; screenshots incomplete, do not infer dimensional geometry from diagrams."
+  },
+  "requirements": [
+    {
+      "id": "J2-ACCESS-01",
+      "requirement": "Case opens to expose top of plug for aligned downward insertion; support board locally during insertion.",
+      "basis": "Section3.1 describes alignment and downward mating; local support is engineering implementation."
+    },
+    {
+      "id": "J2-ACCESS-02",
+      "requirement": "Do not constrain plug to a horizontal-only insertion or removal path.",
+      "basis": "Section3.2.2 prohibits horizontal removal."
+    },
+    {
+      "id": "J2-ACCESS-03",
+      "requirement": "Lead channel and battery retention must avoid applying tensile or side loads to the mated plug.",
+      "basis": "Section3.3.1 calls for sufficient clear space to avoid wire overstress."
+    },
+    {
+      "id": "J2-ACCESS-04",
+      "requirement": "Assembly order: open case, support PCB, align/connect unmodified battery plug, verify full seating, route original leads, seat battery/insulation, close cover.",
+      "basis": "Proposed engineering assembly sequence, pending model/physical validation."
+    }
+  ],
+  "tentative_numeric_guidance": {
+    "mating_angle_deg_max": 5,
+    "unmating_stress_angle_deg_max": 15,
+    "not_used_as_verified_design_limit": true
+  },
+  "pending": [
+    "Exact78172-0003housing envelope and mated pose",
+    "Lead exit and original lead-length extremes12..18mm in case",
+    "Finger or supplied tool access envelope",
+    "PCB support position clear of components",
+    "No-solder user assembly trial with actual battery"
+  ],
+  "geometry_screen": {
+    "file": "connector-access-screen.json",
+    "result": "Header-projection bottom approach overlaps battery, separator and lower case",
+    "scope": "Provisional header silhouette only; actual plug/finger clearance unproven"
+  },
+  "proposed_sequence_constraints": [
+    {
+      "before": "mate_battery_plug",
+      "after": "seat_separator_and_battery",
+      "reason": "Keep the bottom approach exposed while mating; do not place insulating plate between the plug and user access."
+    },
+    {
+      "before": "support_pcb_at_connector",
+      "after": "mate_battery_plug",
+      "reason": "Connection load must not be carried by small parts or unsupported board flex."
+    },
+    {
+      "before": "verify_full_seating",
+      "after": "route_original_leads",
+      "reason": "Do not pull wires to correct partial mating."
+    },
+    {
+      "before": "route_original_leads",
+      "after": "close_case",
+      "reason": "Leads must remain free of seams and battery compression."
+    }
+  ],
+  "sequence_status": "PROPOSED_NOT_VALIDATED_WITH_ACTUAL_BATTERY"
+}

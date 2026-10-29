@@ -1,0 +1,31 @@
+{
+  "status": "NO_PATH_IN_CONSERVATIVE_SURFACE_GRID",
+  "source": "vbus-local.kicad_pcb",
+  "cases": [
+    {
+      "net": "VBUS",
+      "target": "existing via",
+      "visited": 362
+    },
+    {
+      "net": "VBUS",
+      "target": "upstream trace",
+      "visited": 362
+    },
+    {
+      "net": "USB_HIGH_BUDGET",
+      "target": "old gate stub, local region",
+      "visited": 369
+    },
+    {
+      "net": "USB_HIGH_BUDGET",
+      "target": "old gate stub, full board",
+      "visited": 369
+    }
+  ],
+  "grid_mm": 0.1,
+  "obstacle_inflation_mm": 0.19,
+  "limits": "Conservative bounding-box/grid search failure is not proof of geometric impossibility. No new PCB candidate saved or adopted.",
+  "next": "Find legal all-layer via escape near U16 pads, or adjust U16 position; use actual pad shapes/finer grid if necessary.",
+  "canonical_changed": false
+}

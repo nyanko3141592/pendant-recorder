@@ -1,0 +1,40 @@
+{
+  "status": "CENTRAL_GEOMETRY_MATCHES_RECORDED_TARGET_NOT_ACTUAL_90OHM_PROOF",
+  "pcb_sha256": "202732ca2a5996ed7491276b2a8a08397579740211ab8ce4e178e00bdd9f0bf0",
+  "historical_calculator_observed_date": "2026-10-26",
+  "calculator_source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "stackup": "JLC06081H-2116",
+  "target_ohm": 90,
+  "target_width_mm": 0.1171,
+  "target_gap_mm": 0.1199,
+  "current_central_pair": {
+    "dp_uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0",
+    "dm_uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d",
+    "layer": "In2.Cu",
+    "parallel_overlap_mm": 6.556008277984893,
+    "edge_gap_mm": 0.11989905650619441,
+    "widths_mm": [
+      0.1171,
+      0.1171
+    ]
+  },
+  "reference_coverage": "Both central track rectangles plus25um each side lie over ground on In1/In3;50um expansion ofDP is not completely covered",
+  "outer_layer_lengths_mm": {
+    "/USB_DP": 7.749242250247064,
+    "/USB_DM": 7.833976810444087
+  },
+  "limits": [
+    "Recorded calculator assumes uniform pair and continuous broad reference planes; narrow projection coverage is not sufficient to establish its electromagnetic boundary conditions",
+    "Nearby same-layer copper, edges and reference voids alter impedance; use actual geometry field model or measurement",
+    "Outer-layer fanouts and four signal vias are not evaluated by inner-layer calculator result",
+    "Manufacturing etch and dielectric tolerance not evaluated; no90ohm label or fabrication approval",
+    "Segment sums may include branches; do not report sum difference as endpoint skew"
+  ],
+  "source_sha256": {
+    "hardware/xe-minimal/fixed-usb-limit-trial/material-dk-trial/usb-geometry-review.json": "6d13327bd75ffeec4915af3422b24d4b2339d8e899c86c5ba315ee0be0513faa",
+    "hardware/xe-minimal/fixed-usb-limit-trial/material-dk-trial/usb-continuous-reference-review.json": "d3fca8df4def98b4197454c3938957e6f796a8c535ccd242cc90bf0d086a633f",
+    "hardware/mini-rect-v13/jlc-six-layer-usb-impedance.json": "bf639c711ea1013045702cee06be33474dfb499cc7cfd7f02daf3aab84d9462b",
+    "hardware/xe-minimal/fixed-usb-limit-trial/current-stackup-source-review.json": "a67a9d9102855f8e5b2a8ff5774eef59dcb1dd2ab7abd6d080428f72c161eb75",
+    "hardware/xe-minimal/fixed-usb-limit-trial/material-dk-trial/review.json": "3007336ffbbdf3a7b595d96152683b334d6114b69cee06759c60daffab7d74c3"
+  }
+}

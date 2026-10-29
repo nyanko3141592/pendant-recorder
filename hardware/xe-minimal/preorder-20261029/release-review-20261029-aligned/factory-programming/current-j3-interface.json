@@ -1,0 +1,78 @@
+{
+  "pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "connector": "J3 PCB pogo pads, not fitted connector",
+  "view": "KiCad board coordinates, top-view datum; backside fixture requires explicit mirror transform",
+  "footprint_layer": "F.Cu",
+  "pads": [
+    {
+      "pin": "1",
+      "net": "/V3V3",
+      "pcb_xy_mm": [
+        2.075,
+        6.575
+      ],
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "pin": "2",
+      "net": "/SWDIO",
+      "pcb_xy_mm": [
+        3.345,
+        6.575
+      ],
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "pin": "3",
+      "net": "/NRST",
+      "pcb_xy_mm": [
+        2.075,
+        7.845
+      ],
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "pin": "4",
+      "net": "/SWCLK",
+      "pcb_xy_mm": [
+        3.345,
+        7.845
+      ],
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "pin": "5",
+      "net": "/GND",
+      "pcb_xy_mm": [
+        2.075,
+        9.115
+      ],
+      "pad_size_mm": [
+        1.0,
+        1.0
+      ],
+      "layer": "F.Cu"
+    }
+  ],
+  "limits": [
+    "No physical pogo continuity/contact test",
+    "Coordinates are not a manufacturing fixture approval",
+    "V3V3 is VTREF sense; do not inject programmer power without validated power procedure"
+  ]
+}

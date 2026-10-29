@@ -1,0 +1,56 @@
+{
+  "status": "CAD_CLEARANCE_PENDING",
+  "source_board_sha256": "287ac6f8bf673e8fa24541649612b5a5f9900679c7ad1640ea93ba507090f46e",
+  "change": "R13/Q3 XY union of Fab PCB_SHAPE and pads, no courtyard/text; conservative height retained",
+  "parts": [
+    {
+      "ref": "R13",
+      "x_mm": 19.705,
+      "y_mm": 17.245,
+      "origin_x_mm": 19.705,
+      "origin_y_mm": 17.245,
+      "w_mm": 1.56,
+      "d_mm": 0.64,
+      "height_mm": 0.6,
+      "side": "B",
+      "rotation_deg": 0.0,
+      "height_basis": "Retained V12 conservative envelope, not manufacturer maximum qualification",
+      "xy_basis": "Fab shapes plus pad bounding union; excludes courtyard/text; solder spread unqualified"
+    },
+    {
+      "ref": "Q3",
+      "x_mm": 18.705,
+      "y_mm": 13.725,
+      "origin_x_mm": 18.705,
+      "origin_y_mm": 13.725,
+      "w_mm": 3.35,
+      "d_mm": 3.0,
+      "height_mm": 1.2,
+      "side": "B",
+      "rotation_deg": 0.0,
+      "height_basis": "Retained V12 conservative envelope, not manufacturer maximum qualification",
+      "xy_basis": "Fab shapes plus pad bounding union; excludes courtyard/text; solder spread unqualified"
+    }
+  ],
+  "riser": {
+    "outer_center_board_coordinates_mm": [
+      19.13,
+      16.1
+    ],
+    "outer_size_mm": [
+      1.4,
+      1.4
+    ],
+    "bore_center_board_coordinates_mm": [
+      19.13,
+      16.2
+    ],
+    "bore_diameter_mm": 0.6,
+    "minimum_straight_wall_mm": 0.3
+  },
+  "limitations": [
+    "Fab/pad union is library geometry, not supplier maximum package/solder tolerance",
+    "0.3mm local wall requires slicer and physical print review",
+    "Riser top still needs compressible gasket; response untested"
+  ]
+}

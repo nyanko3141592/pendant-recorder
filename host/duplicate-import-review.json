@@ -1,0 +1,25 @@
+{
+  "status": "DUPLICATE_COPY_ELIMINATED_TESTED",
+  "change": "Hash source before temporary copy; existing imports verify saved ciphertext and WAV then return without copying",
+  "validation": {
+    "command": "AGE_BIN=/tmp/pendant-host-tools/age AGE_KEYGEN_BIN=/tmp/pendant-host-tools/age-keygen python3 -m unittest discover -s host -p test_import_recordings.py -v",
+    "tests": 5,
+    "result": "PASS",
+    "covers": [
+      "real age/ffmpeg roundtrip",
+      "duplicate import performs no copyfile call",
+      "wrong key/truncated source/damaged destination preserve source",
+      "source mutation before copy rejected before codec",
+      "discovery/scan reconnection and mixed-case enumeration"
+    ]
+  },
+  "tradeoffs": [
+    "First import adds an initial source hash read; repeated scans remove temporary copy and one source read",
+    "Still hashes each source and saved content; no25,920-file latency benchmark or physical USB throughput claim",
+    "Verified cleanup remains separate and opt-in; source preserved by default"
+  ],
+  "sha256": {
+    "host/import_recordings.py": "20ec10fffbfb82852db4228743fdcb81a20a9fb273b4bdbe699659fe516a1699",
+    "host/test_import_recordings.py": "f8ef0674f37457a8e33e0012ea3c45a36a5936e2555c89d76def45ae4384b3f7"
+  }
+}

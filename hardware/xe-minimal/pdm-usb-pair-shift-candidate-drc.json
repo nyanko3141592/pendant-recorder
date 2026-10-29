@@ -1,0 +1,178 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:40:56",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pdm-usb-pair-shift-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0566 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.7225 mm )",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "9c7bf416-c10e-4d3c-8d2f-0a8ebf74a584"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 11.95
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_EN と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.9899 mm )",
+                    "pos": {
+                        "x": 17.8,
+                        "y": 11.9
+                    },
+                    "uuid": "07a53b51-4648-42d9-82cb-028ea0a6d032"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 11.95
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0309 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 6.0877 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 15.5
+                    },
+                    "uuid": "730d0479-5ef7-44dd-bd9f-237343f09d6d"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 12.6
+                    },
+                    "uuid": "f81dcbe3-21d8-4b10-801d-cb9fed3557d1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0057 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 6.0877 mm )",
+                    "pos": {
+                        "x": 15.687076,
+                        "y": 15.645503
+                    },
+                    "uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.125,
+                        "y": 13.325
+                    },
+                    "uuid": "ff2e68d6-043e-41cd-9cdc-88afa5cfe8a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0775 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.89,
+                        "y": 8.6175
+                    },
+                    "uuid": "06d4601c-2efb-44a0-9fe1-f1f7046fe521"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( In2.Cu 上、長さ: 3.6814 mm )",
+                    "pos": {
+                        "x": 19.6,
+                        "y": 11.0
+                    },
+                    "uuid": "63739360-e6c3-4b80-83e9-4dd74a8cbe0a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BUTTON_N と /USB_DP)",
+            "items": [
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 19.0,
+                        "y": 11.95
+                    },
+                    "uuid": "20230b2b-9854-4b02-b8ca-0fcca55085a9"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 6.0877 mm )",
+                    "pos": {
+                        "x": 15.687076,
+                        "y": 15.645503
+                    },
+                    "uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0987 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_INHIBIT_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.285,
+                        "y": 14.385
+                    },
+                    "uuid": "0b002ec1-c08c-4909-9b47-c9b42a50afba"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 6.0877 mm )",
+                    "pos": {
+                        "x": 15.687076,
+                        "y": 15.645503
+                    },
+                    "uuid": "810dcba1-a2b0-4d03-b340-884fb9cb3fa0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

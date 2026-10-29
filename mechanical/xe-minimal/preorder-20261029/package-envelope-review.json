@@ -1,0 +1,79 @@
+{
+  "status": "PART_BODY_ENVELOPES_NOT_ASSEMBLY_QUALIFICATION",
+  "parts": {
+    "U1": {
+      "mpn": "STM32U585CIU6",
+      "body_max_mm": [
+        7.1,
+        7.1,
+        0.6
+      ],
+      "envelope_mm": [
+        7.4,
+        7.4,
+        0.6
+      ],
+      "center_xy_mm": [
+        16.8525,
+        -7.7675
+      ],
+      "source": "https://www.st.com/resource/en/datasheet/stm32u585ai.pdf",
+      "page": 312,
+      "note": "DS13086 Rev10 Table156; D/E exclude <=.15 mold protrusion. Conservatively add .15 each side. Same envelope size as old U535, now independently supported for U585.",
+      "case_overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      },
+      "case_distance_mm": {
+        "lower": 4.8175,
+        "upper": 4.883472765358685,
+        "separator": 1.3199999999999998,
+        "battery": 1.8199999999999998
+      },
+      "valid": true
+    },
+    "U11": {
+      "mpn": "MKDV8GIL-AST",
+      "body_max_mm": [
+        8.1,
+        6.1,
+        0.9
+      ],
+      "envelope_mm": [
+        8.1,
+        6.1,
+        0.9
+      ],
+      "center_xy_mm": [
+        4.575,
+        -14.175
+      ],
+      "source": "https://datasheet.lcsc.com/datasheet/pdf/61bfef9e1fb8ace7e6d0d3d43cbccc88.pdf?productCode=C26159627",
+      "page": 22,
+      "note": "Manufacturer package drawing visually checked: Dmax8.1 Emax6.1 Amax.9; replaces assumed8.2x6.4x1.2.",
+      "case_overlap_mm3": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      },
+      "case_distance_mm": {
+        "lower": 0.7750000000000004,
+        "upper": 1.1138334704972734,
+        "separator": 1.02,
+        "battery": 1.52
+      },
+      "valid": true
+    }
+  },
+  "limitations": [
+    "Mounted solder stand-off and placement tolerances not yet included",
+    "No interference test against other populated components or harness; separator and battery nominal envelopes checked",
+    "U1 source text/table verified; local PDF download unavailable; U11 page visually checked"
+  ],
+  "release_allowed": false,
+  "source_pcb_sha256": "8ff2553abf8e12a10e8251f214e554d707a4d6510ac05c312dc8ef98a4e7434d",
+  "mk_datasheet_sha256": "dc3574c9f22602c5436c314ac25819b1317236cd3b63112bb3c23e5cb8ee5234"
+}

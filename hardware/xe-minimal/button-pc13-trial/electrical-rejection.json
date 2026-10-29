@@ -1,0 +1,9 @@
+{
+  "status": "REJECTED_FOR_CURRENT_LSE_CRYSTAL_ARCHITECTURE",
+  "source": "https://www.st.com/content/st_com/en/technical-documents/es0587-stm32u535xx-and-stm32u545xx-device-errata-stmicroelectronics_asset/chunk-001-topic-es-description.html",
+  "errata": "ES0587: LSE crystal oscillator may be disturbed by transitions on PC13",
+  "reason": "UFQFPN package and LSE crystal used. Input transitions on PC13 can disturb LSE. ST lists no workaround. Do not adopt BUTTON_N on PC13 with this architecture.",
+  "canonical_changed": false,
+  "reusable_geometry": "SW1 F escape via (13.15,4.6), with SD_CS_N In4 detour through (13.6,5.2); needs regeneration/DRC on a non-PC13 candidate.",
+  "routing_result": "pc13-switch-layer candidate routing passed; reject despite geometric success. Session 78511 exited 0 before attempted termination."
+}

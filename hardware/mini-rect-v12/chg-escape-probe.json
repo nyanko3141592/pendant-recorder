@@ -1,0 +1,229 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:53:05",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "chg-escape-probe.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5585 mm )",
+                    "pos": {
+                        "x": 3.8551,
+                        "y": 11.8849
+                    },
+                    "uuid": "0b90d9a0-3a64-4d31-9ad9-c236713b6868"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( In2.Cu 上、長さ: 0.7000 mm )",
+                    "pos": {
+                        "x": 3.0548,
+                        "y": 15.6878
+                    },
+                    "uuid": "a96efd61-7727-4ab4-bc54-a9f54fbec908"
+                },
+                {
+                    "description": "配線 [/CHARGER_TS] ( In2.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 1.3,
+                        "y": 13.95
+                    },
+                    "uuid": "7a7547d5-15c5-4f00-a3e0-744d4e4835dd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /CHG_N)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In3.Cu 上、長さ: 0.3941 mm )",
+                    "pos": {
+                        "x": 4.5556,
+                        "y": 16.2069
+                    },
+                    "uuid": "38cfc66e-9ee2-4c10-adf3-d62aa77a41a8"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0824 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In3.Cu 上、長さ: 1.9216 mm )",
+                    "pos": {
+                        "x": 5.9144,
+                        "y": 17.5657
+                    },
+                    "uuid": "2dbd18f5-ea54-4371-8faf-737232b90044"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0709 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In2.Cu 上、長さ: 3.1309 mm )",
+                    "pos": {
+                        "x": 6.6011,
+                        "y": 18.48
+                    },
+                    "uuid": "18b30a56-fd10-4ba2-aa05-fe21d3744d32"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_N と /BAT)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                },
+                {
+                    "description": "配線 [/BAT] ( In2.Cu 上、長さ: 5.3728 mm )",
+                    "pos": {
+                        "x": 4.3872,
+                        "y": 16.2661
+                    },
+                    "uuid": "d571341a-5825-432c-af70-a3abf5de9429"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_N と /VBUS)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In3.Cu 上、長さ: 0.6732 mm )",
+                    "pos": {
+                        "x": 4.5556,
+                        "y": 15.8128
+                    },
+                    "uuid": "f1859bf1-b21d-4eac-a4b9-f8505696343b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.0830 mm )",
+                    "pos": {
+                        "x": 1.2622,
+                        "y": 15.5366
+                    },
+                    "uuid": "86ce750d-6b21-4651-bb5d-fa3f4db7ad93"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( In2.Cu 上、長さ: 0.7000 mm )",
+                    "pos": {
+                        "x": 3.0548,
+                        "y": 15.6878
+                    },
+                    "uuid": "a96efd61-7727-4ab4-bc54-a9f54fbec908"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

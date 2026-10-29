@@ -1,0 +1,20 @@
+{
+  "status": "HOST_READBACK_VERIFIER_IMPLEMENTED_SYNTHETIC_TESTS_PASS",
+  "command": "python3 -m unittest discover -s host -p test_verify_factory_storage.py -v",
+  "tests_passed": 4,
+  "coverage": [
+    "valid empty 964MB image",
+    "undersized FAT32 image",
+    "two FAT mismatch",
+    "orphan allocated cluster",
+    "cyclic root chain",
+    "existing file deducted from free space",
+    "cross-linked files rejected"
+  ],
+  "physical_readback_performed": false,
+  "formatter_implemented": false,
+  "source_sha256": {
+    "host/verify_factory_storage.py": "ae3ca36b144248d41cc04d556c19a33d55b2e468bc81cea6f73f3a09e919c134",
+    "host/test_verify_factory_storage.py": "f1eaebdab721a965e848578ec38888918e482b4b3bba9be7992ec7063c2fc17e"
+  }
+}

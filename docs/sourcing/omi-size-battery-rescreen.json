@@ -1,0 +1,102 @@
+{
+  "status": "OMI_SIZE_REOPENED_CANDIDATES_NOT_SELECTED",
+  "date": "2026-10-26",
+  "latest_user_request": "結構デカいなあ。Omiサイズにはできんか？",
+  "target": "Omi-sized completed wearable, shape free, thickness<=15mm; exact achievable dimensions not established",
+  "preserved": [
+    "16h continuous recording",
+    "36h encrypted storage",
+    "body USB-C data and charge",
+    "no dock or wireless",
+    "separately purchasable protected connectorized battery",
+    "no buyer solder/crimp/cutting"
+  ],
+  "omi_reference": {
+    "source": "https://github.com/BasedHardware/omi/blob/main/docs/doc/hardware/consumer/mechanical.mdx",
+    "stated_diameter_mm": 25.5,
+    "caution": "CAD covers confirm25.5mm diameter. Wrapper is28.6145x35.55 projected extent, invalid OCCT shape; fullassembly/revision association unverified. Keep smalltarget, no automatic allowance expansion.",
+    "cad_review": "reference/omi/mechanical-size-check/dimension-review.json"
+  },
+  "geometry_scope": "Flat body-only rectangular battery at zero tilt. Diagonal+2wall is circular lower bound, not assembly fit. Wire/connector/clearance/swelling/retention excluded. Rectangle lower bounds are not proposed completed dimensions.",
+  "candidates": [
+    {
+      "model": "iFun 501520",
+      "capacity_mAh": 120,
+      "body_mm": [
+        15,
+        21,
+        5
+      ],
+      "source": "https://www.ifun-battery.com/aitemu/-501520-リポバッテリー",
+      "protected": true,
+      "connector": "1.25mm 2pin; exact series/polarity drawing missing",
+      "current_rating_mA": null,
+      "issue": "Source writes maximum charge/discharge 120mAh: invalid current units, do not silently interpret as 120mA. Wire length, maximum pack tolerance, connector geometry, charge specification, stock and price unverified.",
+      "body_diagonal_mm": 25.807,
+      "circle_required_diameter_with_assumed_1mm_wall_mm": 27.807,
+      "rect_body_only_with_assumed_1mm_wall_mm": [
+        17,
+        23,
+        7
+      ],
+      "average_budget_16h_at_assumed_70pct_mA": 5.25,
+      "selection_status": "EXCLUDED_PUBLIC_SPEC_INSUFFICIENT_NO_INQUIRY"
+    },
+    {
+      "model": "iFun 501220",
+      "capacity_mAh": 80,
+      "body_mm": [
+        12,
+        20,
+        5
+      ],
+      "source": "https://www.ifun-battery.com/aitemu/501220リチウムポリマー電池",
+      "protected": true,
+      "connector": "1.25mm 2pin; exact series missing",
+      "current_rating_mA": null,
+      "issue": "Maximum currents written as 80mAh; not qualified. Harness, tolerances, charge specification and purchase availability missing.",
+      "body_diagonal_mm": 23.324,
+      "circle_required_diameter_with_assumed_1mm_wall_mm": 25.324,
+      "rect_body_only_with_assumed_1mm_wall_mm": [
+        14,
+        22,
+        7
+      ],
+      "average_budget_16h_at_assumed_70pct_mA": 3.5
+    },
+    {
+      "model": "YDL501515",
+      "capacity_mAh": 90,
+      "body_mm": [
+        15,
+        17,
+        5
+      ],
+      "source": "https://ydlbattery.com/ja/products/ydl-501515-90mah-3-7v-lithium-polymer-battery-5x15x17mm-with-ph2-0-connector",
+      "protected": true,
+      "connector": "JST PHR-2, standard 50mm 28AWG leads",
+      "current_rating_mA": 45,
+      "issue": "Published maximum 0.5C gives 45mA. Existing SD 90mA target cannot transfer. Requires lower-peak storage design. 50mm leads must fit without buyer cutting. MOQ4, page price2.13USD and 4-9 discount1.82USD; Japan landed cost unverified.",
+      "body_diagonal_mm": 22.672,
+      "circle_required_diameter_with_assumed_1mm_wall_mm": 24.672,
+      "rect_body_only_with_assumed_1mm_wall_mm": [
+        17,
+        19,
+        7
+      ],
+      "average_budget_16h_at_assumed_70pct_mA": 3.9374999999999996
+    }
+  ],
+  "next_action": "Screen publicly specified retail batteries; no inquiry or reply dependency",
+  "existing_v15": "Historical routed comparison preserved; XE110 not selected for Omi-size redesign",
+  "release_ready": false,
+  "followup_2026_10_26": {
+    "inquiry_draft": "docs/sourcing/ifun-501520-inquiry-UNSENT.txt",
+    "sent": false,
+    "connector_note": "Third-party marketplace index calls item1.25mm and JST PH; JST officialPH is2.0mm. Do not choosePH/ZH/PicoBlade from ambiguous retail wording. Exact matingpart remains unknown.",
+    "jst_primary_source": "https://www.jst-mfg.com/product/index.php?series=199",
+    "next": "Draft retired by latest user instruction; do not send"
+  },
+  "latest_policy": "docs/requirements.md: no inquiries or custom packs; publicly sufficient retail products only",
+  "retail_availability_screen": "docs/sourcing/retail-battery-availability-screen.json"
+}

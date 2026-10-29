@@ -1,0 +1,34 @@
+{
+  "status": "BENCH_COMPARISON_NOT_RELEASED",
+  "source": "storage-4gb-candidate",
+  "candidate": "storage-4gb-4u7-candidate",
+  "change": {
+    "ref": "C27",
+    "before": "22uF C86295",
+    "after": "4.7uF C1705"
+  },
+  "layout_change": false,
+  "source_sha256": "e735923ebb03c826558baf40cc6dcf26133528690f0dec9acd750079e3da93a6",
+  "reason": "Reduce switched-rail capacitor inrush without board growth; trade against transient hold-up",
+  "qualification_required": [
+    "Effective capacitance over3.3Vbias/temp",
+    "SD_V3 startup monotonicity and settling",
+    "Battery peak current including MCU/internal storage startup",
+    "SD_V3 minimum during write/erase/busy at low battery",
+    "Write errors/record continuity across voltage/temp",
+    "Battery vendor pulse limits and completed harness"
+  ],
+  "checks": {
+    "ERC": 0,
+    "DRC": 0,
+    "unconnected": 0,
+    "schematic_parity": 0
+  },
+  "sha256": {
+    "storage-4gb-4u7-candidate.kicad_pcb": "d69fa4b8bf509b5f54a96678a16ae49d0c9cc82b54ba09af0d7a4a6bcc4c0446",
+    "storage-4gb-4u7-candidate.kicad_sch": "bcb1facafc0c514db92df966baa7e9f5cf8c205e63ab09f1de56a4ff9fa4ff99",
+    "storage-4gb-4u7-drc.json": "6eda739a6c7d8bd4a3ec0af9db2639e665aed2c24cb578640c732a0cff67ffd3",
+    "storage-4gb-4u7-erc.json": "9c73ef3a91befe55bf1045572e044c76775efb7cf1c7b1f09f5f5c8c94449e39"
+  },
+  "test_plan": "storage-power-bench-plan.json"
+}

@@ -1,0 +1,147 @@
+{
+  "status": "REJECTED_NO_REFERENCE_COVERAGE_GAIN",
+  "change": "DP L3 straight segment replaced by345um offset dogleg to reduce overlap with B.Cu fanout",
+  "drc": 0,
+  "unconnected": 0,
+  "baseline_sha256": "287ac6f8bf673e8fa24541649612b5a5f9900679c7ad1640ea93ba507090f46e",
+  "candidate_sha256": "c0d841daa624aace14028863e3f945b2d653aa9ecc948e10cff44fc27cd30091",
+  "before": [
+    {
+      "net": "/USB_DP",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 3.995,
+          "samples": 83,
+          "covered_by_adjacent_gnd_zone": 75
+        },
+        "B.Cu": {
+          "length_mm": 3.286,
+          "samples": 69,
+          "covered_by_adjacent_gnd_zone": 0
+        },
+        "In2.Cu": {
+          "length_mm": 11.114,
+          "samples": 225,
+          "covered_by_adjacent_gnd_zone": 209
+        }
+      },
+      "vias": [
+        {
+          "x_mm": 10.4011,
+          "y_mm": 16.7731,
+          "nearest_ground_via_mm": 1.379
+        },
+        {
+          "x_mm": 16.3606,
+          "y_mm": 9.155,
+          "nearest_ground_via_mm": 1.055
+        }
+      ]
+    },
+    {
+      "net": "/USB_DM",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 2.314,
+          "samples": 51,
+          "covered_by_adjacent_gnd_zone": 33
+        },
+        "B.Cu": {
+          "length_mm": 4.235,
+          "samples": 87,
+          "covered_by_adjacent_gnd_zone": 0
+        },
+        "In2.Cu": {
+          "length_mm": 10.971,
+          "samples": 222,
+          "covered_by_adjacent_gnd_zone": 206
+        }
+      },
+      "vias": [
+        {
+          "x_mm": 16.3712,
+          "y_mm": 8.5953,
+          "nearest_ground_via_mm": 1.556
+        },
+        {
+          "x_mm": 10.4011,
+          "y_mm": 16.2149,
+          "nearest_ground_via_mm": 1.81
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "net": "/USB_DP",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 3.995,
+          "samples": 83,
+          "covered_by_adjacent_gnd_zone": 75
+        },
+        "B.Cu": {
+          "length_mm": 3.286,
+          "samples": 69,
+          "covered_by_adjacent_gnd_zone": 0
+        },
+        "In2.Cu": {
+          "length_mm": 11.4,
+          "samples": 231,
+          "covered_by_adjacent_gnd_zone": 215
+        }
+      },
+      "vias": [
+        {
+          "x_mm": 10.4011,
+          "y_mm": 16.7731,
+          "nearest_ground_via_mm": 1.379
+        },
+        {
+          "x_mm": 16.3606,
+          "y_mm": 9.155,
+          "nearest_ground_via_mm": 1.055
+        }
+      ]
+    },
+    {
+      "net": "/USB_DM",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 2.314,
+          "samples": 51,
+          "covered_by_adjacent_gnd_zone": 33
+        },
+        "B.Cu": {
+          "length_mm": 4.235,
+          "samples": 87,
+          "covered_by_adjacent_gnd_zone": 0
+        },
+        "In2.Cu": {
+          "length_mm": 10.971,
+          "samples": 222,
+          "covered_by_adjacent_gnd_zone": 206
+        }
+      },
+      "vias": [
+        {
+          "x_mm": 16.3712,
+          "y_mm": 8.5953,
+          "nearest_ground_via_mm": 1.556
+        },
+        {
+          "x_mm": 10.4011,
+          "y_mm": 16.2149,
+          "nearest_ground_via_mm": 1.81
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "Other reference gaps remain",
+    "DP length and differential spacing changed; pair SI review required",
+    "Do not treat centerline zone coverage as impedance or return-path qualification"
+  ],
+  "release": false,
+  "decision": "DRC passes but B.Cu adjacent GND coverage remains0 for both nets. Added DP length without demonstrated return-path improvement; do not promote."
+}

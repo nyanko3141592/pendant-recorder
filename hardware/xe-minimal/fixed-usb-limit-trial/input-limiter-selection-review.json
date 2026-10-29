@@ -1,0 +1,43 @@
+{
+  "status": "NO_REPLACEMENT_SELECTED",
+  "date": "2026-10-27",
+  "candidates": [
+    {
+      "part": "MAX4995C",
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/max4995a-max4995c.pdf",
+      "revision": "Rev 3 10/19",
+      "pages": [
+        3,
+        4
+      ],
+      "finding": "General electrical table covers 1.7..5.5 V, but current-limit accuracy/product and IQ rows explicitly specify VIN=3.3 V. Existing 65.94..82.21 mA screen is not a 5 V guaranteed bound.",
+      "action": "Retain as unqualified candidate; do not promote numerical screen to compliance."
+    },
+    {
+      "part": "TPS22946",
+      "source": "https://www.ti.com/lit/ds/symlink/tps22946.pdf",
+      "revision": "SLVS984B",
+      "pages": [
+        1
+      ],
+      "finding": "Startup temporarily raises current limit to 435 mA for 8 ms; sustained overcurrent invokes retry and eventual shutoff.",
+      "decision": "REJECT_AS_SIMPLE_FIXED_100MA_INPUT_REPLACEMENT",
+      "reason": "Does not enforce the intended low startup limit and is not continuous-limit equivalent."
+    },
+    {
+      "part": "TPS2553",
+      "source": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "revision": "SLVS841F",
+      "pages": [
+        6,
+        7,
+        15
+      ],
+      "finding": "ILIM tied to IN yields 50/75/100 mA min/typ/max over operating conditions. This upper output limit leaves no allowance for upstream IC and control supply current under a 100 mA bus budget.",
+      "decision": "NOT_QUALIFIED_FOR_TOTAL_100MA_BUDGET",
+      "reason": "100 mA output maximum is not 100 mA total USB input maximum. Do not extrapolate resistor range beyond 232k to claim lower guaranteed limit."
+    }
+  ],
+  "next_step": "Screen a low-current continuous limiter with guaranteed USB-voltage bounds and total-input headroom; retain firmware and reduced-component topology as separate candidates.",
+  "pcb_changes": false
+}

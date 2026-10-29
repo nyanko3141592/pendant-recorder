@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:58:17",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-both-front-trial.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.2652 mm )",
+                    "pos": {
+                        "x": 10.6197,
+                        "y": 14.5281
+                    },
+                    "uuid": "34af64e8-af34-437a-8119-7c6fa3572d2d"
+                },
+                {
+                    "description": "パッド 33 [/USB_DP] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.3125,
+                        "y": 11.15
+                    },
+                    "uuid": "43a988d5-a5dd-41ae-b1ee-b1aaf90e09e4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

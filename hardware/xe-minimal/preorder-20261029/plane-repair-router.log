@@ -1,0 +1,73 @@
+2026-10-29 11:51:17.843 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+WARNING: Final field userProfileSettings in class app.freerouting.settings.GlobalSettings has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @78186a70 (file:/private/tmp/pendant-router/freerouting-2.5.0.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+2026-10-29 11:51:18.098 INFO   Hardware: 8 CPU cores, 492 CPU score, 4096 MB RAM
+2026-10-29 11:51:18.099 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:51:18.099 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 11:51:19.219 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:51:19.488 INFO   [2833D0\7CFA4B] Loading board file 'plane-repair-unrouted.dsn'...
+2026-10-29 11:51:19.643 INFO   [2833D0\7CFA4B] Job '2833D0\7CFA4B' started at 2026-10-29T02:51:19.643391Z.
+2026-10-29 11:51:19.873 INFO   [2833D0\7CFA4B] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=7.
+2026-10-29 11:51:20.112 INFO   [2833D0\7CFA4B] Fanout stage started on board '171ffabf8fe32af6af92d09d82b9d07d' with 65 of 255 SMD pins needing fanout (187 already connected, 3 netless).
+2026-10-29 11:51:21.119 INFO   [2833D0\7CFA4B] Fanout pass #1 on board '596cf42fbb20120c3b374c6ed5bd259c' completed in 0.88 seconds with 16 SMD pins fanouted, 5 not routed, 0 insert errors, +8 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 11:51:28.009 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 11:51:28.181 INFO   [2833D0\7CFA4B] Fanout pass #2 on board 'd67bd89c346538b6e3de2aa3f6cac12f' completed in 7.04 seconds with 4 SMD pins fanouted, 1 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 11:51:28.605 INFO   [2833D0\7CFA4B] Fanout pass #3 on board '9935e40d869967df552e131d03fd3288' completed in 0.41 seconds with 4 SMD pins fanouted, 0 not routed, 0 insert errors, +1 extra via (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 11:51:29.007 INFO   [2833D0\7CFA4B] Fanout pass #4 on board '9935e40d869967df552e131d03fd3288' completed in 0.38 seconds with 3 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-29 11:51:29.099 INFO   [2833D0\7CFA4B] Fanout stage completed: started with 252 total SMD pins, completed in 8.89 seconds, escaped pins: 218/252 (86.5%), using 8.98 total CPU seconds, 13.36 GB total allocated, and 264.9 MB peak heap usage.
+2026-10-29 11:51:29.397 INFO   [2833D0\7CFA4B] Auto-routing stage started on board '9935e40d869967df552e131d03fd3288' with baseline score 907.31 for 13 unrouted items.
+2026-10-29 11:51:31.538 INFO   [2833D0\7CFA4B] Auto-routing pass #1 on board '9935e40d869967df552e131d03fd3288' was completed in 1.99 seconds with score 921.57 (11 unrouted and 0 violations), using 10.76 CPU seconds and the job allocated 14.69 GB of memory so far.
+2026-10-29 11:51:33.242 INFO   [2833D0\7CFA4B] Auto-routing pass #2 on board 'c9e7904e546511c9638b2c8fa6d39fd5' was completed in 1.59 seconds with score 878.79 (17 unrouted and 0 violations), using 12.74 CPU seconds and the job allocated 16.71 GB of memory so far.
+2026-10-29 11:51:35.027 INFO   [2833D0\7CFA4B] Auto-routing pass #3 on board 'ac9f788dd1613169073bc7a29c8b30f4' was completed in 1.67 seconds with score 878.79 (17 unrouted and 0 violations), using 14.75 CPU seconds and the job allocated 18.80 GB of memory so far.
+2026-10-29 11:51:36.715 INFO   [2833D0\7CFA4B] Auto-routing pass #4 on board '98da2de792463c231ed2d0353f66b0eb' was completed in 1.58 seconds with score 893.05 (15 unrouted and 0 violations), using 15.75 CPU seconds and the job allocated 19.71 GB of memory so far.
+2026-10-29 11:51:38.415 INFO   [2833D0\7CFA4B] Auto-routing pass #5 on board '39ab81273b3dded557019aea05f0cf67' was completed in 1.59 seconds with score 878.79 (17 unrouted and 0 violations), using 17.75 CPU seconds and the job allocated 21.82 GB of memory so far.
+2026-10-29 11:51:40.301 INFO   [2833D0\7CFA4B] Auto-routing pass #6 on board 'ca731a68c5cbced9a189a487424a40e9' was completed in 1.78 seconds with score 878.79 (17 unrouted and 0 violations), using 19.69 CPU seconds and the job allocated 23.82 GB of memory so far.
+2026-10-29 11:51:41.917 INFO   [2833D0\7CFA4B] Auto-routing pass #7 on board 'bfdc46cab72b0d83e92cf02517ffd954' was completed in 1.51 seconds with score 893.05 (15 unrouted and 0 violations), using 21.69 CPU seconds and the job allocated 25.81 GB of memory so far.
+2026-10-29 11:51:43.747 INFO   [2833D0\7CFA4B] Auto-routing pass #8 on board 'c9e7904e546511c9638b2c8fa6d39fd5' was completed in 0.00 seconds with score 921.57 (11 unrouted and 0 violations), using 22.69 CPU seconds and the job allocated 26.77 GB of memory so far.
+2026-10-29 11:51:55.220 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 11:51:55.524 INFO   [2833D0\7CFA4B] Auto-routing pass #9 on board 'c9e7904e546511c9638b2c8fa6d39fd5' was completed in 11.76 seconds with score 878.79 (17 unrouted and 0 violations), using 34.69 CPU seconds and the job allocated 46.83 GB of memory so far.
+2026-10-29 11:51:57.173 INFO   [2833D0\7CFA4B] Auto-routing pass #10 on board '4ee1c3d1a614f075d8f03ca464c40edd' was completed in 1.55 seconds with score 878.79 (17 unrouted and 0 violations), using 36.69 CPU seconds and the job allocated 49.28 GB of memory so far.
+2026-10-29 11:51:58.900 INFO   [2833D0\7CFA4B] Auto-routing pass #11 on board '171ffabf8fe32af6af92d09d82b9d07d' was completed in 1.55 seconds with score 878.79 (17 unrouted and 0 violations), using 37.69 CPU seconds and the job allocated 50.28 GB of memory so far.
+2026-10-29 11:52:00.488 INFO   [2833D0\7CFA4B] Auto-routing pass #12 on board 'c9e7904e546511c9638b2c8fa6d39fd5' was completed in 0.00 seconds with score 921.57 (11 unrouted and 0 violations), using 39.70 CPU seconds and the job allocated 52.61 GB of memory so far.
+2026-10-29 11:52:11.993 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 11:52:12.299 INFO   [2833D0\7CFA4B] Auto-routing pass #13 on board 'c9e7904e546511c9638b2c8fa6d39fd5' was completed in 11.80 seconds with score 878.79 (17 unrouted and 0 violations), using 51.68 CPU seconds and the job allocated 72.90 GB of memory so far.
+2026-10-29 11:52:13.851 INFO   [2833D0\7CFA4B] Auto-routing pass #14 on board '4ee1c3d1a614f075d8f03ca464c40edd' was completed in 1.54 seconds with score 878.79 (17 unrouted and 0 violations), using 52.69 CPU seconds and the job allocated 73.96 GB of memory so far.
+2026-10-29 11:52:15.485 INFO   [2833D0\7CFA4B] Auto-routing pass #15 on board 'c4c071374f537710c52f21cfa7c8e39e' was completed in 1.54 seconds with score 878.79 (17 unrouted and 0 violations), using 54.69 CPU seconds and the job allocated 76.26 GB of memory so far.
+2026-10-29 11:52:17.252 INFO   [2833D0\7CFA4B] Auto-routing pass #16 on board 'c9e7904e546511c9638b2c8fa6d39fd5' was completed in 0.00 seconds with score 921.57 (11 unrouted and 0 violations), using 56.69 CPU seconds and the job allocated 78.53 GB of memory so far.
+2026-10-29 11:52:28.698 WARN   BasicBoard.normalizeTraces: reached 2000 iterations for net '/SD_EN' — stopping to prevent hang. The board geometry for this net may be oscillating (split/combine cycle); traces are kept as-is and further normalization for this net is suppressed on this board candidate.
+2026-10-29 11:52:29.000 INFO   [2833D0\7CFA4B] Auto-routing pass #17 on board 'c9e7904e546511c9638b2c8fa6d39fd5' was completed in 11.73 seconds with score 878.79 (17 unrouted and 0 violations), using 67.67 CPU seconds and the job allocated 97.34 GB of memory so far.
+2026-10-29 11:52:30.571 INFO   [2833D0\7CFA4B] Auto-routing pass #18 on board '4ee1c3d1a614f075d8f03ca464c40edd' was completed in 1.56 seconds with score 878.79 (17 unrouted and 0 violations), using 69.67 CPU seconds and the job allocated 99.94 GB of memory so far.
+2026-10-29 11:52:30.588 INFO   [2833D0\7CFA4B] The router's best score (921.57) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (11 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/V3V3' (1 unrouted connection):
+    - C16-1  ->  U4-5
+  Net '/SD_V3' (1 unrouted connection):
+    - U10-5  ->  U10-6
+  Net '/SD_MOSI' (2 unrouted connections):
+    - R24-2  ->  U1-17
+    - U11-5  ->  R24-2
+  Net '/BAT_ADC' (1 unrouted connection):
+    - via  ->  C28-1
+  Net '/BAT' (4 unrouted connections):
+    - C14-1  ->  U3-2
+    - R33-1  ->  TP1-1
+    - C14-1  ->  R33-1
+    - TP1-1  ->  J2-1
+  Net '/VBUS' (5 unrouted connections):
+    - J1-B4  ->  U2-5
+    - U2-5  ->  J1-B9
+    - U14-1  ->  C33-1
+    - R13-1  ->  C33-1
+    - U14-1  ->  J1-B9
+  Net '/SD_CLK_MCU' (1 unrouted connection):
+    - R23-1  ->  U1-15
+  Net '/SD_EN' (1 unrouted connection):
+    - via  ->  R22-1
+  Net '/CHG_GUARD_GATE' (1 unrouted connection):
+    - via  ->  U12-1
+2026-10-29 11:52:31.040 INFO   [2833D0\7CFA4B] Auto-routing stage completed: started with 17 unrouted nets, completed in 71.08 seconds, final score: 921.57 (11 unrouted and 0 violations), using 69.67 total CPU seconds, 99.94 GB total allocated, and 264.9 MB peak heap usage.
+2026-10-29 11:52:31.138 INFO   [2833D0\7CFA4B] Skipping optimization stage: the board has 11 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 11:52:31.157 INFO   [2833D0\7CFA4B] Job '2833D0\7CFA4B' finished with state: COMPLETED (elapsed: 1 minute 11.51 seconds, finished at UTC: 2026-10-29T02:52:31.156979Z).
+2026-10-29 11:52:31.200 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/plane-repair-routed.ses' (SES)...
+2026-10-29 11:52:31.202 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/plane-repair-routed.ses' (181817 bytes).

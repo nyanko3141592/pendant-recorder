@@ -1,0 +1,82 @@
+{
+  "status": "PASTE_GEOMETRY_DIFFERS_FROM_MANUFACTURER_EXAMPLE_REQUIRES_REVISION_REVIEW",
+  "source_url": "https://www.ti.com/lit/ds/symlink/tps22916.pdf",
+  "source_pdf_sha256": "a4d81b70556d5564aaee9baf455b7651375a94c629448f3f7e7ced2f5c41b33f",
+  "page": 26,
+  "drawing": "4223507/A 01/2017 YFP0004",
+  "visually_reviewed": true,
+  "current_gerber_sha256": "a6f3d7978c0737f0d49ea0cbb65c1b658c4335106b7368aa4a2c8ab76f710317",
+  "current_apertures": [
+    {
+      "aperture_type": "CircleAperture",
+      "bounds_mm": [
+        [
+          22.665000000000003,
+          -3.2950000000000004
+        ],
+        [
+          22.895,
+          -3.065
+        ]
+      ],
+      "diameter_mm": 0.23
+    },
+    {
+      "aperture_type": "CircleAperture",
+      "bounds_mm": [
+        [
+          23.065,
+          -3.2950000000000004
+        ],
+        [
+          23.294999999999998,
+          -3.065
+        ]
+      ],
+      "diameter_mm": 0.23
+    },
+    {
+      "aperture_type": "CircleAperture",
+      "bounds_mm": [
+        [
+          22.665000000000003,
+          -2.895
+        ],
+        [
+          22.895,
+          -2.6649999999999996
+        ]
+      ],
+      "diameter_mm": 0.23
+    },
+    {
+      "aperture_type": "CircleAperture",
+      "bounds_mm": [
+        [
+          23.065,
+          -2.895
+        ],
+        [
+          23.294999999999998,
+          -2.6649999999999996
+        ]
+      ],
+      "diameter_mm": 0.23
+    }
+  ],
+  "manufacturer_example": {
+    "width_mm": 0.25,
+    "height_mm": 0.25,
+    "corner_radius_mm": 0.05,
+    "stencil_thickness_mm": 0.1,
+    "pitch_mm": 0.4
+  },
+  "current_area_per_pad_mm2": 0.04154756284372502,
+  "example_area_per_pad_mm2": 0.060353981633974485,
+  "current_to_example_area_ratio": 0.6883980429940193,
+  "next_action": "Create isolated PCB candidate with four paste-only rounded-square 0.25 mm apertures (R0.05), retain electrical copper/pins; check mask/nearby paste and all Gerber exports before adoption.",
+  "limitations": [
+    "Manufacturer drawing is an example, not a guarantee of assembly yield.",
+    "No stencil thickness or new board revision adopted by this review."
+  ]
+}

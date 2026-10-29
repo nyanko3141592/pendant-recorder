@@ -1,0 +1,71 @@
+{
+  "status": "GEOMETRY_AND_BODY_INSERTION_CHECKED_RETENTION_AND_HARNESS_UNFINISHED",
+  "source_pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "source_pcba_sha256": "d8cafcaf8fd5439f500d4437c61fdcdb60e19592d566f41b10dc870f3c8cf53e",
+  "bbox_mm": [
+    30.803169272452845,
+    30.803169272452845,
+    14.203169272452843
+  ],
+  "battery_max_mm": [
+    15.5,
+    27,
+    4.2
+  ],
+  "growth_reservation_mm": 0.5,
+  "growth_reservation_is_manufacturer_qualification": false,
+  "checks": {
+    "lower_overlap_pcb_mm3": 0.0,
+    "lower_overlap_battery_mm3": 0.0,
+    "lower_overlap_separator_mm3": 0.0,
+    "lower_overlap_harness_provisional_mm3": 0.0,
+    "lower_overlap_growth_reserve_mm3": 0.0,
+    "lower_overlap_upper_mm3": 0.0,
+    "separator_pcb_overlap_mm3": 0.0,
+    "separator_growth_overlap_mm3": 0.0,
+    "battery_separator_distance_mm": 0.49999999999999956,
+    "separator_support_contact_proxy_mm3": 0.0030999999999982777,
+    "battery_floor_contact_proxy_mm3": 0.41850000000013976,
+    "lower_valid": true,
+    "lower_solids": 1,
+    "upper_valid": true,
+    "upper_solids": 1
+  },
+  "remaining": [
+    "Verify battery/connector insertion and separator retention without pouch preload; separator is currently a separate case insert.",
+    "Verify original harness sweep and mated connector dimensions; current harness envelope is provisional.",
+    "Verify separator flexure, insulation, drop/cord/thermal and actual printed fit; no physical tests performed."
+  ],
+  "order_allowed": false,
+  "files": {
+    "assembly.step": "2525654a4caa09a540b6d8682ab3f8cd614876c23a69d6685c69340fcfcbc70a",
+    "battery-growth-reserve.step": "17f982cb11368e8a983412459357d1a26d0f7b8aa9d11d93ce463ef5167e90f7",
+    "battery-growth-reserve.stl": "5da001b057546afa057184dc392470f4c037a04f041aabb5637dfdff7ba970af",
+    "battery-max-positioned.step": "1e970ba2aaa0f680b33d0742ade05153fa5a9fbdfcfb4d16780bbe782b42a678",
+    "battery-max-positioned.stl": "fff7114dfd031324e04b5a3dc218846074dd3ae7a6490f336f0a6478f7492a82",
+    "case-lower.step": "eef2363227b85f6ce0cf2e221cbc6293b8f1636995f83e09031fe179b94abc1f",
+    "case-lower.stl": "4012e41e02e901b854a7decad9078cb44e04ca7da0c1524099bc1d06bf8b065a",
+    "case-upper.step": "c8034c4ffdc23291e9f187e9edfeb3b1f3204e671df54e67bfa86cc44b83f224",
+    "case-upper.stl": "46a5e8651a0dac2263a9820e96b9f4a521ac16ea948569dd900e4cb039bde456",
+    "pcba-dummy.step": "c8527566d58e7e15a7f1a551d98d65aeb512870d617464f2324ff17c3b15a2cd",
+    "pcba-dummy.stl": "4cd933d35627b50f4f63c9fd08af36f8618b51d5dac11cc10608d7dcd609899b",
+    "separator.step": "371fac55cff5a51abfe62464df2fb927cd344532554d1070d3705306e850e88f",
+    "separator.stl": "1fb052554fcb5e607d28e1af6281ebc35863bdf6d6be3a6947bdb3076ccc503d",
+    "a1mini-fit-kit/retained-battery-fit-kit.3mf": "1747b2e8cf73980f568ea23ea5d7d268a3a17fc0423a385373265b13eb08bf9e"
+  },
+  "assembly_path_review": {
+    "battery_body_vertical_insertion_overlap_mm3": 0.0,
+    "separator_vertical_insertion_overlap_mm3": 0.0,
+    "harness_insertion_verified": false,
+    "separator_positive_retention_verified": false,
+    "max_board_gauge_lower_overlap_mm3": 0.0,
+    "max_board_gauge_separator_overlap_mm3": 0.0
+  },
+  "offline_slice": {
+    "return_code": 0,
+    "warnings": [],
+    "objects": 5,
+    "grams": 8.156458854675293,
+    "minutes": 31.182769775390625
+  }
+}

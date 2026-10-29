@@ -1,0 +1,27 @@
+Pendant recorder 統合確認パッケージ 2026-10-29
+
+判断：発注不可。回路・製造資料・機構の最終完成版ではありません。
+基準PCB SHA256: c04806b51a3edb3352171756134e34778f96fb9f9f2dcb3706cdac95a2c8aa33
+要件：基板27.5mm角、最大4層、通常through via、固定DTP401525-XE、16時間録音、暗号化保存30時間以上。
+
+生成済み
+- design/: 同一基準のPCB・回路図・プロジェクト・設計ルール
+- gerbers/ と drills/: 現候補から再出力。4銅層、PTH149（USB長穴4含む）、NPTH3
+- assembly-bom-review.csv: 基板電子部品68点。テスト端子等6点は部品実装対象から除外
+- cpl-review-unverified-rotation.csv: 同じ68点の座標。回転未認定のためupload禁止
+- sourcing-bom.csv: 型番・購入経路・過去の在庫観測。現時点の在庫保証ではない
+- current-native-pcba.step: 現候補からのnative STEP。欠落部品モデルあり
+- fit-kit/: 既存ケース上下・PCBAダミー・電池ダミー・3MF・確認手順。元PCB hashはmanifest内参照
+- evidence/: 配線/帰路/抵抗・電池購入場所・調達の根拠
+- drc.json: 幾何違反0、未接続0、回路図不一致0。library provenance警告74は残存
+
+最優先で解消する項目
+1. 厚さ記述0.8264mmとstackup合計0.7992mmの不一致、業者stackup/90Ω条件
+2. U1/U11を含む全BOM調達、実装方向、footprint来歴
+3. 電池保持・膨張保護・純正ハーネスを含む機構の完成
+4. 回路/layoutの設計判断と製造/機構の最終版同期
+詳細と次の処置はrelease-gates.jsonに集約。
+
+実機段階：16h/30h実媒体、温度、異常入力、USB、音質、落下、紐強度を試験する。
+CAD干渉0やoffline slice成功は、これらの合格を意味しません。
+注文・支払い・upload・業者連絡・実印刷は実行していません。

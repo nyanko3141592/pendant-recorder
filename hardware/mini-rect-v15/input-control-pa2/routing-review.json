@@ -1,0 +1,18 @@
+{
+  "status": "NOT_RELEASED",
+  "board": "hardware/mini-rect-v15/input-control-pa2/input-gpio-source.kicad_pcb",
+  "board_sha256": "ccc3c737f68a048cc1904226c8935bf212139e212cc956ed24e4db0d9b4a4544",
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "unconnected_items": 6,
+  "parity": "PASS 308 pads",
+  "usb_geometry": "PASS 48 items",
+  "pinmap": {
+    "suspend": "PA2",
+    "budget": "PB6",
+    "resume": "PB7"
+  },
+  "firmware_tests": "pinmap checker and ASan/UBSan mock HAL PASS; ARM Cortex-M33 actual HAL compile -Werror PASS",
+  "application_integration": false,
+  "route_fix": "Via keepout expansion corrected to 0.206mm; earlier textual replacement accidentally left 0.15225mm. No board keepout or clearance rule removed."
+}

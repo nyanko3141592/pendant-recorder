@@ -1,0 +1,25 @@
+UNSENT — local draft only. No quotation request or sample request has been submitted.
+Suggested destination: Cactus Technologies, via the official product-support contact route:
+https://www.cactus-tech.com/contact-us/talk-to-a-cactus-expert/
+
+Subject: Five-piece Japan prototype inquiry — KS2GRT-803M, SPI power and busy timing
+
+We are evaluating KS2GRT-803M for a small battery-powered audio recorder and would like a quotation and technical clarification before deciding whether to purchase five cards. This is a prototype inquiry; there is no committed production volume. Please do not initiate an order or shipment.
+
+Please quote five KS2GRT-803M cards, or identify an authorized supplier serving Japan. Include minimum purchase quantity, unit and extended prices, currency, stock or lead time, quote validity, and shipping/tax treatment. If a postcode is required for freight, please itemize the card price first and identify the information needed. We have not supplied a delivery address. Please state the current lifecycle status and the controller/NAND/firmware revision that would be supplied. Do not substitute another capacity, temperature grade or model without identifying it separately.
+
+Our current engineering workload is:
+- 3.3V card supply, SPI mode, 4MHz default; 8MHz is a separate evaluation option.
+- A FAT32 file approximately every five seconds. The present full-file ciphertext is 41,220 bytes; final short files can differ. File creation, FAT/directory updates and synchronization add traffic beyond that payload.
+- Continuous recording for 16 hours per charge, with at least 36 hours of accumulated encrypted recordings retained. We need at least 2GB nominal capacity and would like the minimum addressable sector count for the supplied revision.
+- A current engineering allocation of 90mA card peak and 2.0125mA card average over this workload, leaving separate reserves for the rest of the system. These are design targets, not measurements or proof that this card meets them.
+
+Your 803M brief lists 200uA sleep, 60mA read and 80mA write. Please clarify the measurement conditions and whether these are typical or guaranteed limits. In particular, could you provide:
+1. Maximum initialization, wake, read/write and garbage-collection current, pulse duration, and relevant supply/temperature conditions for the offered revision.
+2. The exact conditions for entering and leaving the stated sleep state in SPI mode, including CS and clock behavior, any command requirement, and transition delay.
+3. Write-busy time bounds and variability, including aged/full-card operation and internal housekeeping. If a guaranteed bound is unavailable, please state that and provide representative characterization rather than interpreting transfer-speed ratings as latency guarantees.
+4. SPI operation confirmation at 4MHz and 8MHz, the product manual, and any required startup or supply sequencing.
+5. Power-interruption behavior during a write or internal housekeeping: whether previously acknowledged sectors may be affected, and the applicable application guidance. We do not assume the card's write-abort feature makes FAT32 transactions atomic.
+6. Whether a publicly documented lower-power alternative is available in five-piece quantities, with an exact orderable part number and the same details above. Please quote any alternative separately.
+
+We will validate the selected revision in our own system. At this stage, please provide information and a quotation only; no sample shipment is requested.

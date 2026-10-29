@@ -1,0 +1,51 @@
+{
+  "part": "CL10A106KP8NNNC",
+  "refs": [
+    "C4",
+    "C15"
+  ],
+  "source": "https://product.samsungsem.com/mlcc/CL10A106KP8NNN.do",
+  "retrieved": "2026-10-25",
+  "source_sha256": "f55ea610e2ff3da7f5a10327b79dce242032b23bbc2015f936f64dff117dfd90",
+  "manufacturer_nominal": "10uF 10V X5R +/-10percent 0603",
+  "measurement": {
+    "temperature_C": 25.0,
+    "frequency_Hz": 1000,
+    "AC_Vrms": 1.0
+  },
+  "interpolated_values": [
+    {
+      "bias_V": 3.3,
+      "typical_delta_percent": -55.71168912559489,
+      "typical_uF": 4.4288310874405115,
+      "screen_with_minus10pct_tolerance_minus15pct_temperature_uF": 3.388055781891991
+    },
+    {
+      "bias_V": 4.2,
+      "typical_delta_percent": -65.44789937841647,
+      "typical_uF": 3.4552100621583537,
+      "screen_with_minus10pct_tolerance_minus15pct_temperature_uF": 2.6432356975511406
+    },
+    {
+      "bias_V": 4.5,
+      "typical_delta_percent": -68.03684927209999,
+      "typical_uF": 3.1963150727900014,
+      "screen_with_minus10pct_tolerance_minus15pct_temperature_uF": 2.4451810306843513
+    },
+    {
+      "bias_V": 4.65,
+      "typical_delta_percent": -69.21730053246584,
+      "typical_uF": 3.078269946753416,
+      "screen_with_minus10pct_tolerance_minus15pct_temperature_uF": 2.354876509266363
+    },
+    {
+      "bias_V": 5.0,
+      "typical_delta_percent": -71.71164046920306,
+      "typical_uF": 2.8288359530796936,
+      "screen_with_minus10pct_tolerance_minus15pct_temperature_uF": 2.164059504105966
+    }
+  ],
+  "requirement": "BQ25185 SYS nominal10uF and effective >=1uF",
+  "conclusion": "Typical-curve screening has margin above1uF; not guaranteed minimum capacitance. Combined voltage/temperature effects, aging and lot spread require qualification.",
+  "qualified": false
+}

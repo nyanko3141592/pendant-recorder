@@ -1,0 +1,19 @@
+{
+  "status": "ANALYZER_TESTED_NO_HARDWARE_TRACE",
+  "tool": "host/analyze_current_trace.py",
+  "input_columns": [
+    "time_s",
+    "current_mA"
+  ],
+  "command_example": "python3 host/analyze_current_trace.py --channel battery --max-gap-s 0.001 --allocation-ma 1.75 measurement.csv",
+  "example_gap_limit_is_instrument_qualification": false,
+  "validation": "4 unittest cases passed, including budget-dependentclassification without changing integratedcharge and invalidbudget rejection",
+  "actual_trace_available": false,
+  "runtime_16h_proven": false,
+  "source_sha256": {
+    "host/analyze_current_trace.py": "fbdab689f2b18d83adcff11060dbbe7f3516fbb8576925ed03da1c3cf08477bb",
+    "host/test_analyze_current_trace.py": "f1489e0692910f709045574e382c2c6543903d3323a9b443a4935ea43993fbb4"
+  },
+  "release_allowed": false,
+  "allocation_example": "1.75mA is40mAh*0.7/16h hypothesis only; select budget explicitly for actual design."
+}

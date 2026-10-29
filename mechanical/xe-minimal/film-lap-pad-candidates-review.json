@@ -1,0 +1,2011 @@
+{
+  "status": "LAP_PAD_SPACE_SCREEN_NOT_PCB_CHANGE_OR_PROCESS_APPROVAL",
+  "pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "trial_clearance_mm": 0.2,
+  "rows": [
+    {
+      "size_mm": [
+        0.8,
+        1.4
+      ],
+      "dy_pcb_mm": -0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            0.855
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            0.855
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.4
+      ],
+      "dy_pcb_mm": 0,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.055
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.055
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.4
+      ],
+      "dy_pcb_mm": 0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.255
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.255
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.4
+      ],
+      "dy_pcb_mm": 0.4,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.455
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.455
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.4
+      ],
+      "dy_pcb_mm": 0.6,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.8
+      ],
+      "dy_pcb_mm": -0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            0.855
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            0.855
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.8
+      ],
+      "dy_pcb_mm": 0,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.055
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.055
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.8
+      ],
+      "dy_pcb_mm": 0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.255
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.255
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.8
+      ],
+      "dy_pcb_mm": 0.4,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.455
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.455
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        0.8,
+        1.8
+      ],
+      "dy_pcb_mm": 0.6,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "R13.2",
+              "net": "/VBUS_GATE",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.0,
+        1.8
+      ],
+      "dy_pcb_mm": -0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            0.855
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            0.855
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.0,
+        1.8
+      ],
+      "dy_pcb_mm": 0,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.055
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.055
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.0,
+        1.8
+      ],
+      "dy_pcb_mm": 0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.255
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.255
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.0,
+        1.8
+      ],
+      "dy_pcb_mm": 0.4,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.455
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.455
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.0,
+        1.8
+      ],
+      "dy_pcb_mm": 0.6,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "R13.2",
+              "net": "/VBUS_GATE",
+              "overlap": false
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.4,
+        0.8
+      ],
+      "dy_pcb_mm": -0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            0.855
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            0.855
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.4,
+        0.8
+      ],
+      "dy_pcb_mm": 0,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.055
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.055
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.4,
+        0.8
+      ],
+      "dy_pcb_mm": 0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.255
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.255
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.4,
+        0.8
+      ],
+      "dy_pcb_mm": 0.4,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.455
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.455
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.4,
+        0.8
+      ],
+      "dy_pcb_mm": 0.6,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.2,
+        0.8
+      ],
+      "dy_pcb_mm": -0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            0.855
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            0.855
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -0.855
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.2,
+        0.8
+      ],
+      "dy_pcb_mm": 0,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.055
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.055
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.055
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:242",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:245",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.2,
+        0.8
+      ],
+      "dy_pcb_mm": 0.2,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.255
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.255
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.255
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.2,
+        0.8
+      ],
+      "dy_pcb_mm": 0.4,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.455
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.455
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.455
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    },
+    {
+      "size_mm": [
+        1.2,
+        0.8
+      ],
+      "dy_pcb_mm": 0.6,
+      "checks": [
+        {
+          "pad": "1",
+          "net": "/BAT_TS",
+          "pcb_center_mm": [
+            16.13,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            16.13,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:240",
+              "net": "/SD_MOSI",
+              "overlap": false
+            },
+            {
+              "item": "track:241",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:244",
+              "net": "/SD_MOSI",
+              "overlap": true
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:724",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:998",
+              "net": "/CHG_ALLOW",
+              "overlap": true
+            },
+            {
+              "item": "track:999",
+              "net": "/CHG_ALLOW",
+              "overlap": false
+            }
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "/GND",
+          "pcb_center_mm": [
+            14.48,
+            1.6549999999999998
+          ],
+          "assembly_center_mm": [
+            14.48,
+            -1.6549999999999998
+          ],
+          "violates_trial_0_2mm_clearance": [
+            {
+              "item": "track:718",
+              "net": "/SD_MISO",
+              "overlap": false
+            },
+            {
+              "item": "track:721",
+              "net": "/SD_MISO",
+              "overlap": true
+            }
+          ]
+        }
+      ],
+      "both_clear_at_trial_0_2mm": false
+    }
+  ],
+  "limits": [
+    "Same-net copper excluded; no zone refill or routing changes performed.",
+    "Existing TH1 component is assumed replaced by a wire-attachment footprint only in a future electrical candidate.",
+    "Dimensions and clearance are design hypotheses, not solder strength qualification.",
+    "No board-edge, mask, courtyard, top-side, inner-layer or mechanical access approval.",
+    "Strain relief and actual wire lap length remain unresolved."
+  ],
+  "disposition": {
+    "evaluated_candidates": 25,
+    "passing_candidates": 0,
+    "blocking_nets": [
+      "/CHG_ALLOW",
+      "/SD_MISO",
+      "/SD_MOSI",
+      "/VBUS_GATE"
+    ],
+    "next_design_action": "Relocate dedicated wire lap pads and locally reroute affected copper, with strain-relief and seller tool access modeled before adoption. Do not enlarge current pads in place without rerouting.",
+    "no_global_impossibility_claim": true
+  }
+}

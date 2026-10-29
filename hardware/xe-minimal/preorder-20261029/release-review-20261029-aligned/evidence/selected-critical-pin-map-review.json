@@ -1,0 +1,137 @@
+{
+  "status": "SELECTED_PIN_FUNCTIONS_MATCH_NOT_TAPE_ORIENTATION_APPROVAL",
+  "pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "checked_pins": [
+    {
+      "ref": "U1",
+      "pin": "7",
+      "expected_net": "/NRST",
+      "actual_net": "/NRST",
+      "match": true
+    },
+    {
+      "ref": "U1",
+      "pin": "10",
+      "expected_net": "/VBUS_N",
+      "actual_net": "/VBUS_N",
+      "match": true
+    },
+    {
+      "ref": "U1",
+      "pin": "32",
+      "expected_net": "/USB_DM",
+      "actual_net": "/USB_DM",
+      "match": true
+    },
+    {
+      "ref": "U1",
+      "pin": "33",
+      "expected_net": "/USB_DP",
+      "actual_net": "/USB_DP",
+      "match": true
+    },
+    {
+      "ref": "U1",
+      "pin": "34",
+      "expected_net": "/SWDIO",
+      "actual_net": "/SWDIO",
+      "match": true
+    },
+    {
+      "ref": "U1",
+      "pin": "37",
+      "expected_net": "/SWCLK",
+      "actual_net": "/SWCLK",
+      "match": true
+    },
+    {
+      "ref": "U2",
+      "pin": "1",
+      "expected_net": "/USB_DP",
+      "actual_net": "/USB_DP",
+      "match": true
+    },
+    {
+      "ref": "U2",
+      "pin": "2",
+      "expected_net": "/GND",
+      "actual_net": "/GND",
+      "match": true
+    },
+    {
+      "ref": "U2",
+      "pin": "3",
+      "expected_net": "/USB_DM",
+      "actual_net": "/USB_DM",
+      "match": true
+    },
+    {
+      "ref": "U2",
+      "pin": "4",
+      "expected_net": "/USB_DM",
+      "actual_net": "/USB_DM",
+      "match": true
+    },
+    {
+      "ref": "U2",
+      "pin": "5",
+      "expected_net": "/VBUS",
+      "actual_net": "/VBUS",
+      "match": true
+    },
+    {
+      "ref": "U2",
+      "pin": "6",
+      "expected_net": "/USB_DP",
+      "actual_net": "/USB_DP",
+      "match": true
+    },
+    {
+      "ref": "J2",
+      "pin": "1",
+      "expected_net": "/BAT",
+      "actual_net": "/BAT",
+      "match": true
+    },
+    {
+      "ref": "J2",
+      "pin": "2",
+      "expected_net": "/BAT_TS",
+      "actual_net": "/BAT_TS",
+      "match": true
+    },
+    {
+      "ref": "J2",
+      "pin": "3",
+      "expected_net": "/GND",
+      "actual_net": "/GND",
+      "match": true
+    }
+  ],
+  "sources": [
+    {
+      "part": "U1",
+      "url": "https://www.st.com/resource/en/datasheet/stm32u585ci.pdf",
+      "location": "DS13086 Rev10 UFQFPN48 non-SMPS pinout figure10 p96 and pin-function table",
+      "scope": "Selected reset/PA0/USB/debug functions only; not all48pins or EP footprint dimensions"
+    },
+    {
+      "part": "U2",
+      "url": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "location": "DS4260 Rev7 p1 top-view functional diagram, text extraction",
+      "scope": "1/6 IO1,3/4 IO2,2GND,5VBUS"
+    },
+    {
+      "part": "J2",
+      "source": "mechanical/xe-minimal/dtp401525-xe-source.pdf",
+      "scope": "Pack drawing P1red+,P2whiteNTC,P3black-; mated mechanical orientation remains unverified"
+    }
+  ],
+  "not_proven": [
+    "Tape-and-reel pickup zero-angle and bottom-side assembly transformation",
+    "Physical pin1 marking/placement visual approval",
+    "All other polarized components and MCU power pins",
+    "ESD current paths or immunity"
+  ],
+  "evidence_method": "Manufacturer PDF text and numbered pin tables; screenshot API did not return viewable pixels and direct PDF fetch failed, so no new visual package-orientation certification claimed."
+}

@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,hashlib,cadquery as cq
+O=Path(__file__).resolve().parent;I=json.loads((O/'board-inventory.json').read_text());p=next(x for x in I['parts'] if x['ref']=='J2');assert p['side']=='B' and p['rotation_deg']==180
+# Adopt library fabrication-outline center: local Y=-0.27, rotated180 -> PCB Y+0.27.
+center=[p['position_mm'][0],p['position_mm'][1]+.27];s=cq.importers.importStep(str(O/'j2-header-envelope-tolerance.step')).val().rotate((0,0,0),(1,0,0),180).translate((center[0],-center[1],-.12))
+f=O/'j2-header-positioned-study.step';cq.exporters.export(s,str(f));q=cq.importers.importStep(str(f)).val();assert q.isValid();b=q.BoundingBox()
+r={'status':'PROVISIONAL_HEADER_POSE_NOT_MATED_ASSEMBLY','pcb_sha256':I['pcb_sha256'],'file':f.name,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'center_pcb_mm':center,'bounds_mm':[b.xmin,b.xmax,b.ymin,b.ymax,b.zmin,b.zmax],'placement_basis':'Existing footprint B.Fab local bounds X+-2.7,Y-2.52..1.98; centerY-.27 rotated180. Manufacturer sheets1/2 visually checked for outline5.4x4.5 and land spacing.','stand_off_allowance_mm':.12,'limitations':['Footprint outline supplies longitudinal pose; exact manufacturer datum mapping still pending.','Conservatively add maximum stand-off0.12mm outside1.6mm height; possible datum double-counting must be resolved.','Header only; mating housing781720003, leads and insertion/removal space excluded.','Not an enclosure fit approval.']};(O/'j2-position-review.json').write_text(json.dumps(r,indent=2)+'\n');print(r['bounds_mm'])

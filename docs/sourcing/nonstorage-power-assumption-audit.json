@@ -1,0 +1,154 @@
+{
+  "status": "SOURCE_AUDIT_NOT_POWER_MEASUREMENT",
+  "date": "2026-10-26",
+  "finding": "2.8mA nonstorage is a hard-coded allocation hypothesis, not measured or calculated lower bound. Do not exclude40mAh solely on this number.",
+  "firmware_facts": [
+    "MSIS16, voltage scale4, HCLK16MHz; HSI16 is explicitly off after startup and SPI1 uses PCLK2",
+    "MSIK3.072MHz divided4 gives768kHz microphone clock, divided48 yields16kHz audio",
+    "Main loop usesWFI; SysTick increments HAL time; no implemented Stop2 policy",
+    "audio_stop uses HAL_GetTick for150ms bound, so globally disablingSysTick would invalidate timeout behavior",
+    "SPI transfers synchronous; normal idle sleeping is outside transfers"
+  ],
+  "capacity_sensitivity": [
+    {
+      "capacity_mAh": 40,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 1.25
+    },
+    {
+      "capacity_mAh": 40,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 1.75
+    },
+    {
+      "capacity_mAh": 40,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 2.125
+    },
+    {
+      "capacity_mAh": 70,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 2.1875
+    },
+    {
+      "capacity_mAh": 70,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 3.0625
+    },
+    {
+      "capacity_mAh": 70,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 3.71875
+    },
+    {
+      "capacity_mAh": 80,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 2.5
+    },
+    {
+      "capacity_mAh": 80,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 3.5
+    },
+    {
+      "capacity_mAh": 80,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 4.25
+    },
+    {
+      "capacity_mAh": 90,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 2.8125
+    },
+    {
+      "capacity_mAh": 90,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 3.9374999999999996
+    },
+    {
+      "capacity_mAh": 90,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 4.78125
+    },
+    {
+      "capacity_mAh": 100,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 3.125
+    },
+    {
+      "capacity_mAh": 100,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 4.375
+    },
+    {
+      "capacity_mAh": 100,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 5.3125
+    },
+    {
+      "capacity_mAh": 110,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 3.4375
+    },
+    {
+      "capacity_mAh": 110,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 4.8125
+    },
+    {
+      "capacity_mAh": 110,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 5.84375
+    },
+    {
+      "capacity_mAh": 120,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 3.75
+    },
+    {
+      "capacity_mAh": 120,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 5.25
+    },
+    {
+      "capacity_mAh": 120,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 6.375
+    },
+    {
+      "capacity_mAh": 150,
+      "usable_fraction_assumption": 0.5,
+      "average_limit_mA": 4.6875
+    },
+    {
+      "capacity_mAh": 150,
+      "usable_fraction_assumption": 0.7,
+      "average_limit_mA": 6.5625
+    },
+    {
+      "capacity_mAh": 150,
+      "usable_fraction_assumption": 0.85,
+      "average_limit_mA": 7.96875
+    }
+  ],
+  "next_design_work": [
+    "Audit MCU active/sleep duty during5s audio, encryption and storage before decidingbattery feasibility",
+    "If changingtick/sleep, provide monotonic elapsed time for battery sampling, button timing and allHAL timeouts; preserveADC/DMA continuity",
+    "Evaluate storage average from bytes+busy+metadata and state currents; do not equate50MHz datasheetcurrent with measuredSPI4MHz average",
+    "Keep40mAh as power-redesign candidate only; retail/harness/peakcurrent qualification still required"
+  ],
+  "not_done": [
+    "No firmware clock/tick edits",
+    "No measured energy or16h proof",
+    "No battery adoption"
+  ],
+  "sha256": {
+    "docs/sourcing/check_xe_power_fit.py": "65dc3900a55abf1ceb09cbd231d0c93afcee8ea96095bd2e1f6b11efa4ef2915",
+    "firmware/stm32/app/main.c": "46190692b3f27a4e7d39b308f2d80842a610ec830d2abbcdd64cc35f98e7cd91",
+    "firmware/stm32/board/system_clock.c": "d99a5c409c44e9a77a1e90e14b24656364a1c0fbf1983377ba68bc69d556b7fd",
+    "firmware/stm32/board/audio_adf.c": "c85d5772e81be2a2bf9b8394ac15f2980287d86ff4a1770cc116dae3b9b843d4",
+    "firmware/stm32/board/audio_adf.h": "45418230d4bfc7a3cd5c2f6733504700148c99751af7149b6c7a12f099878f5c",
+    "firmware/stm32/board/audio_stop.c": "c8df496814e0595f2880c8e56081d66cd5e0cb9ce9d44b22f23229c38ee086af",
+    "firmware/stm32/board/storage_spi.c": "2544f99fe3486182754a5a93a8184472b2f4838adec6083e399eb364166e1a21"
+  }
+}

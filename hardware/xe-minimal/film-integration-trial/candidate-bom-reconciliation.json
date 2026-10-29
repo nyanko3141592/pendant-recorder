@@ -1,0 +1,66 @@
+{
+  "status": "IDENTITY_RECONCILED_NOT_QUALIFIED_OR_PRICED",
+  "source_sha256": {
+    "pendant-xe-minimal.kicad_sch": "cf32c71c158a592d571af45c8c10234174e13c8d3e8ef25ee2230655d70cbe13",
+    "candidate-mpn-review.csv": "c27f52552614e7dd432c69cdef4c3f280f85c9385c1d25c939b38666e9c43449",
+    "identity-netlist.xml": "2fb7e59b665737b9a0a3a5f9cb13b7c2a1b7b6f8e77178223b1ffc2ce543fcef"
+  },
+  "schematic_components": 81,
+  "candidate_references": 75,
+  "grouped_mpn_footprint_process_rows": 39,
+  "installed_quantity_five_devices": 375,
+  "explicit_exclusions": [
+    {
+      "reference": "J3",
+      "value": "Factory SWD pogo candidate",
+      "footprint": "PendantMinimal:SWD_Pogo_5Pad_P1.27mm"
+    },
+    {
+      "reference": "TP1",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "reference": "TP2",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "reference": "TP3",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "reference": "TP5",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    },
+    {
+      "reference": "TP6",
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm"
+    }
+  ],
+  "identity_issues": [
+    {
+      "reference": "Q6",
+      "schematic_value": "2N7002",
+      "candidate_mpn": "DMN2056U-7",
+      "resolution": "Explicit candidate adoption and electrical qualification required; do not order generic 2N7002 from the value field."
+    },
+    {
+      "reference": "Q7",
+      "schematic_value": "2N7002",
+      "candidate_mpn": "DMN2056U-7",
+      "resolution": "Explicit candidate adoption and electrical qualification required; do not order generic 2N7002 from the value field."
+    }
+  ],
+  "limits": [
+    "Values match candidate table, not proof of electrical suitability.",
+    "Only explicit footprint overrides checked against candidate table; package compatibility not established for every MPN.",
+    "Installed quantities are not purchase quantities or feeder counts.",
+    "Battery excluded from sale. Wire, insulation, adhesive, case, fixtures, programming and assembly labor require separate materials/process costing.",
+    "TH1 is installed by seller, not a pick-and-place thermistor.",
+    "All candidate qualification statuses remain unchanged."
+  ]
+}

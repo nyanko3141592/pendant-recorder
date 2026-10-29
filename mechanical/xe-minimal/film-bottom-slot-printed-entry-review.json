@@ -1,0 +1,121 @@
+{
+  "status": "NOMINAL_BEAD_PRISM_SCREEN_NOT_PRINT_QUALIFICATION",
+  "source_sha256": "63d2986eb0404d397b91a6681831f76cec5bbb167c59b42b6f1fa5bc622deaac",
+  "gcode_sha256": "8ac2253fd1911f32e8726ccf3a7c80d09ff320e1ec2dbebd831325f7960a9eae",
+  "rows": [
+    {
+      "layer_top_mm": 0.14,
+      "assembly_bottom_mm": -2.419999990395355,
+      "assembly_top_mm": -2.2799999903953547,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.14,
+      "assembly_bottom_mm": -2.419999990395355,
+      "assembly_top_mm": -2.2799999903953547,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.3,
+      "assembly_bottom_mm": -2.279999990395355,
+      "assembly_top_mm": -2.119999990395355,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.3,
+      "assembly_bottom_mm": -2.279999990395355,
+      "assembly_top_mm": -2.119999990395355,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.46,
+      "assembly_bottom_mm": -2.119999990395355,
+      "assembly_top_mm": -1.9599999903953549,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.46,
+      "assembly_bottom_mm": -2.119999990395355,
+      "assembly_top_mm": -1.9599999903953549,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.54,
+      "assembly_bottom_mm": -1.9599999903953549,
+      "assembly_top_mm": -1.8799999903953548,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.54,
+      "assembly_bottom_mm": -1.9599999903953549,
+      "assembly_top_mm": -1.8799999903953548,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.62,
+      "assembly_bottom_mm": -1.9599999903953547,
+      "assembly_top_mm": -1.7999999903953547,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.62,
+      "assembly_bottom_mm": -1.9599999903953547,
+      "assembly_top_mm": -1.7999999903953547,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.155,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.78,
+      "assembly_bottom_mm": -1.7999999903953547,
+      "assembly_top_mm": -1.6399999903953548,
+      "hole_local_x_mm": -0.9,
+      "wire_max_slice_halfwidth_mm": 0.09810707260378869,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    },
+    {
+      "layer_top_mm": 0.78,
+      "assembly_bottom_mm": -1.7999999903953547,
+      "assembly_top_mm": -1.6399999903953548,
+      "hole_local_x_mm": 0.9,
+      "wire_max_slice_halfwidth_mm": 0.09810707260378869,
+      "part_overlap_upper_bound_mm2": 0.0,
+      "support_overlap_upper_bound_mm2": 0.0
+    }
+  ],
+  "limits": [
+    "Wire nominal OD .31 mm; no manufacturing tolerances. Continuous loading from below is screened only through stop wall Y26.1..26.5.",
+    "Per-layer maximum cylinder section is conservative: positive overlap is a screen finding, not exact physical collision.",
+    "Commanded bead width and rectangular layer section are approximations.",
+    "Support must be removed; sag, residue, hole size and pull strength require physical validation."
+  ]
+}

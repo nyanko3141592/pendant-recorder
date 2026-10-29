@@ -1,0 +1,18 @@
+{
+  "status": "LED_TIMEOUT_ARM_BUILD_PASS_NOT_FLASHED",
+  "build_directory": "/var/folders/x_/43y172t97j3_qhb7fxxjw11w0000gn/T/pendant-led-timeout-build-50xgwybq/build",
+  "binary_bytes": 114573,
+  "binary_sha256": "0891e67c0bc256ce107bcf704fc8caabdec6a864196cde0f3f3fc85fb7859e16",
+  "timeout_delivered_1ms_ticks": 650,
+  "hardware_timing_qualified": false,
+  "tests": [
+    "core timeout held-high/reset ASAN UBSAN",
+    "application lifecycle both indicator profiles",
+    "actual indicator waveform with delayed main polling and ideal 1ms ticks",
+    "actual battery_io.c host mock GPIO/IRQ interleavings, ASAN/UBSAN, both profiles"
+  ],
+  "remaining": [
+    "Measured SysTick latency and IRQ masking under recording/storage",
+    "Actual LED current/visibility and 16h discharge"
+  ]
+}

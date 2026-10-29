@@ -1,0 +1,81 @@
+{
+  "accepted": true,
+  "visited": 4304,
+  "paths": [
+    {
+      "layer": 0,
+      "points": [
+        [
+          11.8,
+          3.7
+        ],
+        [
+          12.5,
+          3.8000000000000003
+        ]
+      ]
+    },
+    {
+      "layer": 2,
+      "points": [
+        [
+          12.5,
+          3.8000000000000003
+        ],
+        [
+          11.3,
+          4.0
+        ],
+        [
+          10.600000000000001,
+          3.4000000000000004
+        ],
+        [
+          10.5,
+          3.2
+        ]
+      ]
+    },
+    {
+      "layer": 0,
+      "points": [
+        [
+          10.5,
+          3.2
+        ],
+        [
+          10.5,
+          3.1
+        ]
+      ]
+    }
+  ],
+  "switches": [
+    [
+      12.5,
+      3.8000000000000003
+    ],
+    [
+      10.5,
+      3.2
+    ]
+  ],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.4,
+            "y": 3.55
+          },
+          "uuid": "94ce1084-5ba4-44e2-96b9-b1e2fe63ec5e"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 10
+}

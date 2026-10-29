@@ -1,0 +1,40 @@
+{
+  "status": "USB_FS_MODE_AND_VBUS_CONTROL_REVIEWED_SI_PENDING",
+  "configured_speed": "Full Speed, device only",
+  "local_evidence": [
+    "CFG_TUD_MAX_SPEED OPT_MODE_FULL_SPEED",
+    "Export and recorder init use TUSB_SPEED_FULL",
+    "GPIO PA0 active-low VBUS detection; prepare rejects absent VBUS and checks again before starting USB",
+    "Current PCB Q3 gate VBUS_GATE/sourceGND/drainVBUS_N, R15 pullupV3V3; U1 pin10VBUS_N",
+    "Current PCB J1 A6/B6DP and A7/B7DM, U2 USBLC6-2P6 on both nets"
+  ],
+  "manufacturer_reference": {
+    "url": "https://www.st.com/resource/en/application_note/an4879-introduction-to-usb-hardware-and-pcb-guidelines-using-stm32-mcus-stmicroelectronics.pdf",
+    "version": "AN4879 Rev12 June2026",
+    "review_scope": "FS upstream and VBUS detection text; not a full dimensional or electrical compliance audit",
+    "implications": [
+      "Internally managed FS driver impedance does not require external series resistors by default",
+      "Self-powered detection and DP pullup gating must follow VBUS presence",
+      "ESD device proximity to connector is recommended"
+    ]
+  },
+  "regression": {
+    "command": "sh firmware/stm32/tests/check_usb_board.sh",
+    "exit_code": 0,
+    "kind": "host HAL mocks, not hardware"
+  },
+  "decision": "Scope electrical validation to USB Full Speed; retain target90ohm and current SI gate. Short PCB length and FS mode do not certify waveform, return continuity, impedance or ESD performance. Do not add series resistors or reroute solely to follow HS/ULPI examples.",
+  "pending": [
+    "Current-route copper/branch/via assessment",
+    "Physical FS waveform, enumeration/transfer, VBUS disconnect and ESD qualification",
+    "Exact MCU physical pinout and factory programmed image review remain separate"
+  ],
+  "source_sha256": {
+    "firmware/stm32/usb/tusb_config.h": "b971804cbdc4db553f71d79c55cfdcc8e211fdff134c0805b064451dcc2410d3",
+    "firmware/stm32/board/usb_board.c": "ce44d68e2a1ab0aa2d79b1cd2460f9d9650f0b4d3f90205c67dd77e4ef94c59f",
+    "firmware/stm32/board/export_runtime.c": "9f7c7f04bf91af383a90fb02938ac7da2d319d605d90248f971e8af66291e39e",
+    "firmware/stm32/board/recorder_runtime.c": "20f82482ff358b462ce5e6e054929eedea856b0dec7a2bda02b4a8f5017b8ce1",
+    "firmware/stm32/tests/check_usb_board.sh": "0c9ca8b3af6ace05f48d8a2cd7a8f7151a086402e32a682c60c73d3af31c8746",
+    "firmware/stm32/tests/test_usb_board.c": "0bfa20010c72aff01da4e742abc8b7907e9224708933ebff68d2f1861bcc65db"
+  }
+}

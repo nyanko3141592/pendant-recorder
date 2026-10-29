@@ -1,0 +1,28 @@
+{
+  "status": "PANEL_UNIT_PLACEMENT_MATCH_NOT_ASSEMBLER_APPROVAL",
+  "source_sha256": {
+    "film-integration-trial/pendant-xe-minimal.kicad_pcb": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+    "film-single-carrier-trial/panel-refilled.kicad_pcb": "23812c34533d71bd03c193eb52c5d629bd4886268adf41fa0d5490cddad8ede5",
+    "film-integration-trial/reconciled-candidate-bom.csv": "96e8fc1bf2f24b533b0813c2619f3a6fcb569146a30012d64e9d2253b6fff9d7",
+    "film-integration-trial/candidate-assembly-positions-NOT-RELEASE.csv": "0d00a2aeb4b5ad63c78634a5f9cb94de6a266173963399ca7a0bf606f7bdfd69",
+    "film-single-carrier-trial/panel-refilled-all-positions.csv": "f0508db2985a353dc7d2c5dcc428aa50be8867e90bc7966191be0f7c81e9fbb9",
+    "film-single-carrier-trial/candidate-panel-assembly-positions-NOT-RELEASE.csv": "818191d2e3834485caaf44a33f38a8494d1e031b017e8e02f338ecf87880b72d"
+  },
+  "matched_components": 74,
+  "position_csv_offset_mm": [
+    23,
+    -21.5
+  ],
+  "pcb_coordinate_translation_mm": [
+    23,
+    21.5
+  ],
+  "explanation": "KiCad position CSV uses upward-positive Y; PCB editor coordinates use downward-positive Y. All values, packages, rotations and sides match unit CSV.",
+  "excluded_export_refs": [],
+  "seller_only_ref": "TH1",
+  "limitations": [
+    "No vendor rotation conventions, pin1/nozzle inspection or bottom-side preview approval.",
+    "Component placement does not qualify mechanical panel cutting or support.",
+    "Exact MPN choices and costs remain provisional."
+  ]
+}

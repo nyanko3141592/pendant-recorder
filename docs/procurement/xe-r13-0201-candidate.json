@@ -1,0 +1,48 @@
+{
+  "status": "R13_0201_PART_CANDIDATE_NOT_ADOPTED",
+  "manufacturer": "YAGEO",
+  "mpn": "RC0201FR-07100KL",
+  "source_url": "https://yageogroup.com/component-documentation/download/specsheet/RC0201FR-07100KL",
+  "source_pdf": "docs/procurement/RC0201FR-07100KL-manufacturer.pdf",
+  "source_sha256": "acdf873560a527744af9d20f6601549c362d8c504083a9f237781351b3839a69",
+  "source_generated_date": "2026-10-27",
+  "specifications": {
+    "resistance_ohms": 100000,
+    "tolerance_percent": 1,
+    "power_w_at_70C": 0.05,
+    "tcr_ppm_per_C": 200,
+    "maximum_continuous_voltage_v": 25,
+    "temperature_C": [
+      -55,
+      125
+    ],
+    "body_nominal_mm": [
+      0.6,
+      0.3,
+      0.23
+    ],
+    "body_tolerance_mm": [
+      0.03,
+      0.03,
+      0.03
+    ]
+  },
+  "comparison_to_existing_purchase_spec": {
+    "existing_mpn": "RC0402FR-07100KL",
+    "existing_tcr_ppm_per_C": 100,
+    "changed_tcr_requires_review": true
+  },
+  "conditional_dc_screen": {
+    "voltage_assumption_v": 5.5,
+    "minimum_R_at_reference_temperature_ohms": 99000,
+    "power_w": 0.00030555555555555555,
+    "fraction_of_70C_power_rating": 0.0061111111111111106,
+    "scope": "Hypothetical full 5.5 V across resistor; not proof of actual transient limits, gate timing or operation over temperature."
+  },
+  "remaining": [
+    "Verify actual VBUS_GATE circuit leakage, RC timing and voltage/transient limits with doubled TCR.",
+    "Check manufacturer land-pattern recommendation against selected KiCad footprint.",
+    "Confirm assembly procurement SKU, stock, price and 0201 assembly capability.",
+    "Synchronize schematic, BOM and mechanical export only after candidate adoption."
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "status": "ALLOCATION_UPDATED_NOT_RUNTIME_PROOF",
+  "battery": "DTP401525-XE",
+  "capacity_mAh": 110,
+  "continuous_recording_target_h": 16,
+  "source_sha256": {
+    "hardware/xe-minimal/design.json": "d44914af9ee7afadb855c77ad2876812147910803eca642181a89aadf31310d6",
+    "firmware/stm32/tests/five-second-import-result.json": "ac72b1d521d0587ffd01e3d61dca31b9af48749bf6a7e7e2c736aa8d8e0fe9ca",
+    "firmware/stm32/board/storage_spi.h": "97be479f54f83c3c8253087494ebcf024cf979985689d7715024dfe179edba62"
+  },
+  "incremental_budget": {
+    "divider_short_case_mA": 0.09672480620155037,
+    "comparator_engineering_reserve_mA": 0.002,
+    "BOR_engineering_reserve_mA": 0.002,
+    "additional_total_mA": 0.10072480620155037,
+    "additional_charge_16h_mAh": 1.611596899224806,
+    "accounting": "Linear regulator: conservatively carry output current to battery one-for-one, plus IQ elsewhere. Do not scale by3.3/3.7. Existing2.8mA allocation is unmeasured; adding explicit reserves does not validate it."
+  },
+  "scenarios": [
+    {
+      "usable_fraction_hypothesis": 0.5,
+      "whole_battery_average_allocation_mA": 3.4375,
+      "base_nonstorage_allocation_mA": 2.8,
+      "additional_guard_and_BOR_reserve_mA": 0.10072480620155037,
+      "remaining_storage_allocation_mA": 0.5367751937984498,
+      "storage_sensitivity": [
+        {
+          "active_current_hypothesis_mA": 25,
+          "idle_current_hypothesis_mA": 0.2,
+          "max_active_ms_per_5s": 67.89822455613908,
+          "remaining_active_ms_after_payload_only_4MHz": -15.045775443860919,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 50,
+          "idle_current_hypothesis_mA": 0.25,
+          "max_active_ms_per_5s": 28.821627517432145,
+          "remaining_active_ms_after_payload_only_4MHz": -54.122372482567854,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 80,
+          "idle_current_hypothesis_mA": 0.135,
+          "max_active_ms_per_5s": 25.153395968099286,
+          "remaining_active_ms_after_payload_only_4MHz": -57.79060403190071,
+          "assumed_idle_alone_exceeds_allocation": false
+        }
+      ]
+    },
+    {
+      "usable_fraction_hypothesis": 0.6,
+      "whole_battery_average_allocation_mA": 4.125,
+      "base_nonstorage_allocation_mA": 2.8,
+      "additional_guard_and_BOR_reserve_mA": 0.10072480620155037,
+      "remaining_storage_allocation_mA": 1.2242751937984497,
+      "storage_sensitivity": [
+        {
+          "active_current_hypothesis_mA": 25,
+          "idle_current_hypothesis_mA": 0.2,
+          "max_active_ms_per_5s": 206.507095523881,
+          "remaining_active_ms_after_payload_only_4MHz": 123.56309552388099,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 50,
+          "idle_current_hypothesis_mA": 0.25,
+          "max_active_ms_per_5s": 97.91710490436681,
+          "remaining_active_ms_after_payload_only_4MHz": 14.973104904366807,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 80,
+          "idle_current_hypothesis_mA": 0.135,
+          "max_active_ms_per_5s": 68.1947783007857,
+          "remaining_active_ms_after_payload_only_4MHz": -14.749221699214303,
+          "assumed_idle_alone_exceeds_allocation": false
+        }
+      ]
+    },
+    {
+      "usable_fraction_hypothesis": 0.7,
+      "whole_battery_average_allocation_mA": 4.8125,
+      "base_nonstorage_allocation_mA": 2.8,
+      "additional_guard_and_BOR_reserve_mA": 0.10072480620155037,
+      "remaining_storage_allocation_mA": 1.9117751937984497,
+      "storage_sensitivity": [
+        {
+          "active_current_hypothesis_mA": 25,
+          "idle_current_hypothesis_mA": 0.2,
+          "max_active_ms_per_5s": 345.1159664916229,
+          "remaining_active_ms_after_payload_only_4MHz": 262.17196649162287,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 50,
+          "idle_current_hypothesis_mA": 0.25,
+          "max_active_ms_per_5s": 167.01258229130147,
+          "remaining_active_ms_after_payload_only_4MHz": 84.06858229130147,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 80,
+          "idle_current_hypothesis_mA": 0.135,
+          "max_active_ms_per_5s": 111.2361606334721,
+          "remaining_active_ms_after_payload_only_4MHz": 28.292160633472093,
+          "assumed_idle_alone_exceeds_allocation": false
+        }
+      ]
+    },
+    {
+      "usable_fraction_hypothesis": 0.8,
+      "whole_battery_average_allocation_mA": 5.5,
+      "base_nonstorage_allocation_mA": 2.8,
+      "additional_guard_and_BOR_reserve_mA": 0.10072480620155037,
+      "remaining_storage_allocation_mA": 2.5992751937984497,
+      "storage_sensitivity": [
+        {
+          "active_current_hypothesis_mA": 25,
+          "idle_current_hypothesis_mA": 0.2,
+          "max_active_ms_per_5s": 483.72483745936484,
+          "remaining_active_ms_after_payload_only_4MHz": 400.7808374593648,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 50,
+          "idle_current_hypothesis_mA": 0.25,
+          "max_active_ms_per_5s": 236.10805967823615,
+          "remaining_active_ms_after_payload_only_4MHz": 153.16405967823613,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 80,
+          "idle_current_hypothesis_mA": 0.135,
+          "max_active_ms_per_5s": 154.27754296615853,
+          "remaining_active_ms_after_payload_only_4MHz": 71.33354296615853,
+          "assumed_idle_alone_exceeds_allocation": false
+        }
+      ]
+    },
+    {
+      "usable_fraction_hypothesis": 0.9,
+      "whole_battery_average_allocation_mA": 6.1875,
+      "base_nonstorage_allocation_mA": 2.8,
+      "additional_guard_and_BOR_reserve_mA": 0.10072480620155037,
+      "remaining_storage_allocation_mA": 3.2867751937984497,
+      "storage_sensitivity": [
+        {
+          "active_current_hypothesis_mA": 25,
+          "idle_current_hypothesis_mA": 0.2,
+          "max_active_ms_per_5s": 622.3337084271068,
+          "remaining_active_ms_after_payload_only_4MHz": 539.3897084271068,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 50,
+          "idle_current_hypothesis_mA": 0.25,
+          "max_active_ms_per_5s": 305.2035370651708,
+          "remaining_active_ms_after_payload_only_4MHz": 222.25953706517078,
+          "assumed_idle_alone_exceeds_allocation": false
+        },
+        {
+          "active_current_hypothesis_mA": 80,
+          "idle_current_hypothesis_mA": 0.135,
+          "max_active_ms_per_5s": 197.31892529884493,
+          "remaining_active_ms_after_payload_only_4MHz": 114.37492529884493,
+          "assumed_idle_alone_exceeds_allocation": false
+        }
+      ]
+    }
+  ],
+  "encrypted_sector_payload_per_5s_bytes": 41472,
+  "payload_only_4MHz_ms": 82.944,
+  "limits": [
+    "Usable battery fraction is hypothetical and must include the actual 4.1V nominal on-board charge regulation and early termination, BOR4, LDO dropout, temperature and ageing",
+    "Guard reserve includes shorted NTC as electrical worst case; no assertion this is ordinary recording consumption",
+    "Base2.8mA excludes new explicit reserves by accounting choice, not by an established measurement",
+    "Comparator/BOR2uA entries are reserves requiring later verification against final conditions",
+    "Storage current examples omit startup, metadata, busy and frequency dependence; not part qualification",
+    "MCU microphone codec encryption and actual storage integrated charge remain unmeasured",
+    "Final16h test starts from the actual approved 4.1V nominal on-board charging profile, not an external laboratory charge"
+  ],
+  "required_measurements": [
+    "Whole battery current and voltage during continuous recording, write bursts and storage startup",
+    "Usable discharge duration/energy after on-board charge at temperature endpoints",
+    "Recording continuity, buffer overruns and successful decryption across16h"
+  ],
+  "order_ready": false
+}

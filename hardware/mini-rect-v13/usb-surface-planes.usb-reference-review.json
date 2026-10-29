@@ -1,0 +1,71 @@
+{
+  "status": "REFERENCE_SCREEN_REQUIRES_REDESIGN_REVIEW",
+  "source_sha256": "605a515dddfa5f6d2c0681173428d9fb63ad5701f9f71d35ad8b914b336e1531",
+  "rows": [
+    {
+      "net": "/USB_DP",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 11.781,
+          "samples": 424,
+          "covered_by_adjacent_gnd_zone": 412
+        },
+        "B.Cu": {
+          "length_mm": 5.663,
+          "samples": 200,
+          "covered_by_adjacent_gnd_zone": 188
+        }
+      },
+      "vias": [
+        {
+          "x_mm": 13.05,
+          "y_mm": 12.5,
+          "nearest_ground_via_mm": null
+        }
+      ]
+    },
+    {
+      "net": "/USB_DM",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 12.442,
+          "samples": 414,
+          "covered_by_adjacent_gnd_zone": 351
+        },
+        "B.Cu": {
+          "length_mm": 7.425,
+          "samples": 244,
+          "covered_by_adjacent_gnd_zone": 199
+        }
+      },
+      "vias": [
+        {
+          "x_mm": 4.85,
+          "y_mm": 14.7,
+          "nearest_ground_via_mm": null
+        },
+        {
+          "x_mm": 9.9,
+          "y_mm": 16.25,
+          "nearest_ground_via_mm": null
+        },
+        {
+          "x_mm": 8.65,
+          "y_mm": 13.6,
+          "nearest_ground_via_mm": null
+        },
+        {
+          "x_mm": 16.2,
+          "y_mm": 8.65,
+          "nearest_ground_via_mm": null
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Checks ground zones only; ground traces/pads not counted as continuous planes",
+    "Point sampling omits copper clearance around trace width and does not prove return quality",
+    "Nearest ground via is geometric distance, not proof it joins required planes",
+    "Actual laminate and paired routing not yet applied"
+  ]
+}

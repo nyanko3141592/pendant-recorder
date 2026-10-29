@@ -1,0 +1,42 @@
+{
+  "status": "SELECTED_FOR_ENGINEERING_PROTOTYPE_NOT_PRODUCTION_RELEASE",
+  "reference": "Q3",
+  "mpn": "DMN63D8L-7",
+  "manufacturer": "Diodes Incorporated",
+  "date": "2026-10-27",
+  "bom_sha256": "29e01b71a6f40e8dc14f88913ae3cb1ae73534350b119615a23f619a0822c565",
+  "decision": "Use for the first engineering prototype VBUS presence detector. Keep existing SOT-23 geometry pending land-pattern qualification. Not a precision undervoltage detector.",
+  "evidence": [
+    "xe-q3-board-pad-review.json",
+    "xe-q3-dmn63d8l-branch-review.json",
+    "xe-vbus-resistor-purchase-specification.json",
+    "../../hardware/xe-minimal/usb-detach-bench-plan.json"
+  ],
+  "dc_screen": {
+    "VBUS_assumed_V": 4.4,
+    "not_USB_compliance_threshold": true,
+    "R13_max_ohm": 101454.5,
+    "R14_min_ohm": 985545.0,
+    "hypothetical_gate_sink_A": 1e-05,
+    "gate_V": 3.0694754210788506,
+    "margin_above_2_5V_test_point_V": 0.5694754210788506,
+    "limitation": "10 uA at operating voltage and over temperature is an assumed screen, not a manufacturer-guaranteed bound. RDS test point is not a trip threshold."
+  },
+  "procurement": {
+    "url": "https://www.digikey.jp/en/products/detail/diodes-incorporated/DMN63D8L-7/5699705",
+    "observed_stock": 52399,
+    "qty1_ex_tax_JPY": 40,
+    "five_installed_at_qty1_tier_JPY": 200,
+    "ten_cut_tape_purchase_JPY": 242,
+    "quantity_note": "10-piece purchase is an optional costing scenario, not assembler-approved attrition quantity",
+    "shipping_tax_assembly_excluded": true,
+    "ordered": false
+  },
+  "remaining": [
+    "Land geometry compared; manufacturer suggestion differs. Effective paste and prototype solder-joint qualification remain.",
+    "Measure detection/detach/bounce across intended temperature and rail ranges",
+    "Synchronize historical schematic/PCB placeholder value on next full CAD release; current assembly choice is explicit in BOM note",
+    "Q4-Q7 choices independent; do not copy this MPN without branch-specific review"
+  ],
+  "land_review": "xe-q3-land-review.json"
+}

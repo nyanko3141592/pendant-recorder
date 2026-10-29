@@ -1,0 +1,38 @@
+{
+  "status": "SUPERSEDED_CLOCK_BASELINE_RETAINED_AS_HISTORY",
+  "sources_sha256": {
+    "firmware/stm32/board/system_clock.c": "d99a5c409c44e9a77a1e90e14b24656364a1c0fbf1983377ba68bc69d556b7fd",
+    "firmware/stm32/board/recorder_boot.c": "266ee08da6323f0d12ff4f96a2f143bbeebd526a0ca038b0da06f9202b664660",
+    "firmware/stm32/board/clock48.c": "de3b8c5cf5a18baf08101ea5dd6ab9482bec8f9a887654972e8c8eecaa717976",
+    "firmware/stm32/board/rng_board.c": "effd824e643785f8ea502d05fdfa710736ce83c2aea8b239135aeb7eac834ae9",
+    "firmware/stm32/board/usb_board.c": "9954b91cb12345c1652fd2ac97120cc0337cdbe8dd3eeafcdf6fcf1d0e5b2a6b",
+    "firmware/stm32/board/audio_adf.c": "c85d5772e81be2a2bf9b8394ac15f2980287d86ff4a1770cc116dae3b9b843d4"
+  },
+  "observations": [
+    "System HCLK16MHz fromHSI, voltage scale4.",
+    "Audio kernel MSIK3.072MHz remains active for continuous capture.",
+    "RNG acquiresHSI48 for each nonempty random request, initializes and health-checks RNG, resets/disables it and releasesHSI48 after the request.",
+    "USB sharesHSI48 ownership; last-owner release requests oscillator off. Failure is sticky and returned to caller.",
+    "No explicitMSIS disable found in board C/H sources. This does not proveMSIS is running: reset/startup/vendor state and live RCC readback remain to be checked."
+  ],
+  "mock_validation": [
+    {
+      "command": "sh firmware/stm32/tests/check_clock48.sh",
+      "result": "PASS ordering/duplicate/invalid/context and start-stop failures"
+    },
+    {
+      "command": "sh firmware/stm32/tests/check_secure_random.sh",
+      "result": "PASS random extraction/health failures/wipe/startup/clock cleanup"
+    }
+  ],
+  "power_accounting": [
+    "Do not allocateHSI48 as continuously running in battery-only recording based solely on its use by RNG. Include request startup and active energy per recording chunk.",
+    "Do not assume zeroHSI48 duty or infer current savings from mocked clock calls.",
+    "Measure RCC oscillator enable/ready states in a separate diagnostic run, then validate battery current with debugger detached.",
+    "Keep RNG health checks and entropy generation intact; no crypto weakening for power reduction."
+  ],
+  "next_action": "Use docs/sourcing/xe-u585-runtime-feasibility-audit.json: MSIS16 is now SYSCLK, MSIK remains audio, SPI uses PCLK2 and HSI16 is off; obtain physical duty and current measurements.",
+  "superseded_by": "docs/sourcing/xe-u585-runtime-feasibility-audit.json",
+  "measured_saving_mA": null,
+  "runtime_pass": null
+}

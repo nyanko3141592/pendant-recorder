@@ -1,0 +1,138 @@
+{
+  "version": "XE-PROTOTYPE-V1-PACK-NTC",
+  "status": "PACK_NTC_NO_THERMAL_PAD_CAD_MODELED_NOT_PHYSICALLY_QUALIFIED",
+  "output": "mechanical/xe-minimal/prototype-v1/integrated-assembly-v1.step",
+  "output_sha256": "f18230fd88b103f1b325016c0ccf408105fb3f4ce556f91b6a883f55f5728051",
+  "assembly_bbox_mm": [
+    0.0,
+    27.5,
+    -27.2,
+    0.5000001000000003,
+    -6.62,
+    4.1514001
+  ],
+  "sources_sha256": {
+    "mechanical/xe-minimal/prototype-v1/pcb-assembly-pack-ntc.step": "83914db34b28e63d6a63be20df6d6436cf35bfa1e9b8ad0368ae51748548f6c0",
+    "mechanical/xe-minimal/dtp401525-xe-pack-max.step": "e4c9bb308a5120fcc3943aa438e41ea36d7462cdcddac260d87ced0f222285d3",
+    "mechanical/xe-minimal/battery-separator-study.step": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+    "mechanical/xe-minimal/u1-envelope-positioned-study.step": "04ca0dbb4fe92c1b884cd419814f494cee454203411df7e4f425405ed1a939a6",
+    "mechanical/xe-minimal/u8-body-positioned-study.step": "ebef70a66ae2e0835da33ec48dfa06c66bc7c1e774448f339302f9f273d125ee",
+    "mechanical/xe-minimal/j2-header-positioned-study.step": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0",
+    "mechanical/xe-minimal/rounded-glue-reinforced-lower-study.step": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+    "mechanical/xe-minimal/rounded-glue-reinforced-upper-study.step": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7"
+  },
+  "sensor": {
+    "part": "DTP401525-XE internal 10k NTC on factory P2 white lead",
+    "electrical_path": "factory harness -> J2 pin2 -> BAT_TS -> TLV7042 hardware inhibit",
+    "thermal_pad": "not used",
+    "carrier": "unmodified broad separator; no local sensor-pressure feature"
+  },
+  "contacts": [],
+  "unexpected_internal_collisions": [],
+  "internal_collision_scope": [
+    [
+      "pcb",
+      "battery_max"
+    ],
+    [
+      "pcb",
+      "sensor_carrier"
+    ],
+    [
+      "U1_max",
+      "battery_max"
+    ],
+    [
+      "U8_max",
+      "battery_max"
+    ],
+    [
+      "J2_header",
+      "battery_max"
+    ],
+    [
+      "sensor_carrier",
+      "battery_max"
+    ]
+  ],
+  "shell_collision_screen": [
+    {
+      "shell": "lower",
+      "part": "pcb",
+      "intersection_mm3": 1.8891173945013724
+    },
+    {
+      "shell": "lower",
+      "part": "U1_max",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "lower",
+      "part": "U8_max",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "lower",
+      "part": "J2_header",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "lower",
+      "part": "battery_max",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "lower",
+      "part": "sensor_carrier",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "lower",
+      "part": "battery_harness_reserve",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "upper",
+      "part": "pcb",
+      "intersection_mm3": 0.29675118372412246
+    },
+    {
+      "shell": "upper",
+      "part": "U1_max",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "upper",
+      "part": "U8_max",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "upper",
+      "part": "J2_header",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "upper",
+      "part": "battery_max",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "upper",
+      "part": "sensor_carrier",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shell": "upper",
+      "part": "battery_harness_reserve",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "shell_collision_free_above_numeric_contact_threshold": false,
+  "limits": [
+    "Pack NTC R-T curve, tolerance, lot spread and installed thermal response are unqualified.",
+    "The battery harness solid is a reserved corridor, not a verified manufactured route.",
+    "Battery plug maximum envelope and removal motion remain incomplete.",
+    "The existing shell is only screened for nominal solid intersections and is not adopted.",
+    "No print tolerance, pouch swelling, lead bend radius, acoustic path or assembly motion proof."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "status": "CAP_INSERTION_DIRECTION_SCREEN_NOT_ADOPTED",
+  "sources_sha256": {
+    "lower": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e",
+    "separator": "df558fab6a1a01fc8ad6445cc63220c5a8875c867a9da3b23d980405c248c5df",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "route_sha256": "7789ce528ea56a9ade9fe5993d8a7ad644ec34f185d12c7f684a68ad1cc147a4",
+  "rows": [
+    {
+      "direction": "above_8mm",
+      "swept_overlap_mm3": {
+        "lower": 0.0,
+        "board": 7.51518258066992,
+        "separator": 0.0,
+        "battery": 0.0,
+        "wires": 0.0,
+        "sensor": 0.0,
+        "joints": 0.0
+      },
+      "nominal_clear": false
+    },
+    {
+      "direction": "local_positive_y_8mm",
+      "swept_overlap_mm3": {
+        "lower": 1.5822752677446792,
+        "board": 0.010281214050235011,
+        "separator": 0.0,
+        "battery": 0.0,
+        "wires": 0.134882514501896,
+        "sensor": 0.0,
+        "joints": 0.0
+      },
+      "nominal_clear": false
+    },
+    {
+      "direction": "local_negative_y_8mm",
+      "swept_overlap_mm3": {
+        "lower": 0.022500000000001692,
+        "board": 0.0,
+        "separator": 0.22200000000288114,
+        "battery": 0.0,
+        "wires": 0.0,
+        "sensor": 0.0,
+        "joints": 0.0
+      },
+      "nominal_clear": false
+    },
+    {
+      "direction": "local_positive_x_8mm",
+      "swept_overlap_mm3": {
+        "lower": 0.43490689946459127,
+        "board": 0.0,
+        "separator": 0.0,
+        "battery": 0.0,
+        "wires": 0.0,
+        "sensor": 0.0,
+        "joints": 0.0
+      },
+      "nominal_clear": false
+    },
+    {
+      "direction": "local_negative_x_8mm",
+      "swept_overlap_mm3": {
+        "lower": 0.0,
+        "board": 0.3899009626203436,
+        "separator": 0.0,
+        "battery": 0.0,
+        "wires": 0.0,
+        "sensor": 0.0,
+        "joints": 0.0
+      },
+      "nominal_clear": false
+    }
+  ],
+  "limits": [
+    "Only five straight translations checked, not arbitrary rotations or deforming paths.",
+    "No gripping tool or adhesive dispensing access included.",
+    "A collision rejects that insertion direction only.",
+    "Upper lid excluded, board/other parts fixed in final position."
+  ]
+}

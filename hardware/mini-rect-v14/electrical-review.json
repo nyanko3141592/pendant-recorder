@@ -1,0 +1,40 @@
+{
+  "status": "ELECTRICAL_DRAFT_ERC_PASS_NOT_ORDER_READY",
+  "added": [
+    "TH1"
+  ],
+  "changed": [
+    "U3",
+    "R10",
+    "J2",
+    "R37",
+    "R38",
+    "R39",
+    "R40",
+    "R41",
+    "U12",
+    "Q4"
+  ],
+  "unchanged_count": 64,
+  "erc_violations": 0,
+  "pcb_created": true,
+  "charge_enabled": false,
+  "source_board_to_reuse": "../mini-rect-v13/mic-jlc-overlap-candidate.kicad_pcb",
+  "remaining": [
+    "Verify PH header pin numbering against battery mating view; reverse-polarity protection",
+    "Qualify current NTC SKU and full R-T curve; thermal interface geometry and detachment behavior",
+    "Charge current/termination and SD current supply selection",
+    "Actual PCB placement/routing and case model; retain V13/r10 comparison",
+    "Final JLC part matching and landed quote without bypassing previous rejection"
+  ],
+  "hashes": {
+    "design.json": "ffaee4b4fe201dced7200bc6d7d285d0cd1cd0e48f512db9df8cf3fac0fa5eb2",
+    "pendant-mini-rect-v14.kicad_sch": "3bddfe9ed556f905f2fb48644ad09b1dd99916ea0f1b1aba91fcaf1bfcc6bffe",
+    "pendant-mini-rect-v14.kicad_pro": "556b3626664109304449ebab8ad6d6e34c32488d14f2fe7872a10b454af90066",
+    "erc.json": "bc8b9992bfa607dd4be57ea3ce46d18a863a6c482a1d729697354bae490b05ba",
+    "temperature-screen.json": "67e4a57a4b71902f972491cc38dc7baefd3fee7f2fd343f8d75989bc5f62e618",
+    "domestic-pack-placement-seed.kicad_pcb": "84f1053db4c0a8cb56cc3e1c7bd4343697116899d1d79dfc064717ca0c590f51",
+    "domestic-pack-routed-candidate.kicad_pcb": "540e5c3361b85e0db4413245167e51a2cc7ece6ce24a8b5528e51cdf8c5d4ca8"
+  },
+  "pcb_status": "Routed comparison candidate DRC0/unconnected0/pad-net255PASS; design correctness and manufacture not approved"
+}

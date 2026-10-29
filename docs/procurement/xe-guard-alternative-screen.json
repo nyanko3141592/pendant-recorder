@@ -1,0 +1,41 @@
+{
+  "status": "NO_DROP_IN_SELECTED",
+  "date": "2026-10-27",
+  "candidates": [
+    {
+      "part": "TLV9022",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv9022.pdf",
+      "pdf_sha256": "874c1d4f5ec1c1b4bf6c714d3fe8623d57ad6bff18b83930e3894061a0701c8a",
+      "screening": "Output leakage remains typical-only; dual IQ up to 70 uA at stated 1.8/5 V full-temperature conditions. Does not close leakage gap.",
+      "adopted": false
+    },
+    {
+      "part": "MCP6547",
+      "source": "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6546-Open-Drain-Output-Sub-Microamp-Comparators-DS20001714.pdf",
+      "pdf_sha256": "cfe68d70b91e22f487a1014e0a9f5eccc9b7b91efa768e40d5ed41c5de10db1b",
+      "screening": "IOH -100 nA bound at 25 C, VPU10V; VOL bound at VDD5V. Does not establish full-temperature 3.3 V wired gate operation.",
+      "adopted": false
+    },
+    {
+      "part": "TLV3402",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv3402.pdf",
+      "pdf_sha256": "e99a508fc84f8abd3649037f88089daf5f8d1f0f7f5d562de1191422c1f0b5e0",
+      "screening": "IOZ50pA typical only. Full-range VOL300mV specified at 50uA, below present R43 drive load near 0.3mA. Not a qualified drop-in.",
+      "adopted": false
+    }
+  ],
+  "next_architecture_study": {
+    "concept": "Separate push-pull comparator outputs into a three-input logic AND with CHG_ALLOW, then drive a qualified MOSFET or charger enable stage.",
+    "reason": "Avoid depending on summed unspecified open-drain off leakage at a high-impedance MOSFET gate.",
+    "must_verify": [
+      "Logic polarity and power-up defaults",
+      "All output-high/output-low limits at actual supplies and temperatures",
+      "No direct tying of push-pull outputs",
+      "Default charging disabled when MCU or monitor is unpowered",
+      "Logic gate current, PCB area and extra decoupling",
+      "Comparator hysteresis and thermal thresholds",
+      "Charger enable voltage domain and unpowered backfeed"
+    ]
+  },
+  "canonical_circuit_changed": false
+}

@@ -1,0 +1,30 @@
+Persistent recording key setup (Windows implementation unverified; not performed automatically)
+
+1. Install age/age-keygen from a trusted distribution. Keep keys outside this repository.
+2. Choose a NEW directory under an existing private parent, for example:
+   python3 host/prepare_recipient.py --directory "$HOME/.pendant-recorder-keys"
+3. Back up identity.txt securely. It decrypts all recordings for this recipient.
+   Do not commit it, upload it to JLCPCB, or copy it onto the recorder.
+4. Do not send recipient.txt, identity.txt, or the key directory to the factory or seller.
+   The factory flashes the same public-only common firmware into every unit.
+5. On first USB connection, hold the recorder button continuously for at least
+   2 seconds while running provision_recipient_hid.py with recipient.txt,
+   the allocated product VID/PID and the intended device serial. The tool writes
+   only the public recipient to the device write-once slot and verifies the
+   returned fingerprint. Keep holding until commit/readback completes. Never
+   pass identity.txt to the provisioning tool.
+6. Pass identity.txt only to the host importer with --identity. Before relying
+   on the device, verify that an encrypted test recording decrypts with it.
+   Buyers do not build or flash firmware. firmware-recipient.h is a legacy
+   developer artifact and is not part of product setup.
+
+The helper refuses existing directories/symlinks and creates POSIX0700 directory/0600 files.
+A partial failure retains any generated identity; inspect the private folder rather than retrying over it.
+The helper does not flash hardware, assign valid USB IDs, install auto-start, or qualify charging.
+Current checked ELF remains a disposable-key non-flashable link fixture.
+
+Windows: use python host/prepare_recipient.py --directory "%USERPROFILE%\.pendant-recorder-keys"
+from cmd.exe after installing age-keygen. Use a private local parent directory.
+The helper creates and verifies a protected current-user DACL before generating keys.
+Native Windows ACL inheritance, different-user denial and age roundtrip tests remain pending.
+This controls ordinary user access; it does not prevent administrators from taking ownership.

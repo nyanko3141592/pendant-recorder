@@ -1,0 +1,94 @@
+{
+  "board_mm": [
+    27.5,
+    27.5
+  ],
+  "baseline_preserved": true,
+  "comparison": [
+    {
+      "variant": "baseline",
+      "width_depth_nominal_mm": 31.4,
+      "height_nominal_mm": 13.9,
+      "plan_radius_mm": 3.2,
+      "internal_poses_changed": false,
+      "cad_checks": {
+        "lower_to_internals_mm3": 0.0,
+        "upper_to_internals_mm3": 0.0,
+        "cord_reinforcement_added_inside_cavity_mm3": 0.0,
+        "cord_tunnel_to_internals_mm3": 0.0,
+        "lower_upper_overlap_mm3": 0.0,
+        "lower_material_removed_by_cord_tunnel_mm3": 14.532484596652921
+      },
+      "shell_volume_mm3": 3726.9093837867385,
+      "minimum_plan_wall_mm": 1.2340213654980885,
+      "minimum_plan_seam_wall_mm": 0.606959632378627,
+      "volume_bbox_reduction_percent": 0.0,
+      "cord_tunnel_intersects_geometric_cavity_mm3": 8.885765789590737,
+      "battery_floor_clearance_mm": 0.25,
+      "physical_release_allowed": false,
+      "lower_sha256": "807c506ddf8d625c06b5eae5a8bab104cbad954934a93734707c8c5bc2a880b2",
+      "upper_sha256": "5b03aaec8a3141b4f450d4bb41578822da8a9de4f047bcd8ce39d3f74efc5bb0"
+    },
+    {
+      "variant": "compact-rounded",
+      "width_depth_nominal_mm": 30.8,
+      "height_nominal_mm": 13.9,
+      "plan_radius_mm": 2.2,
+      "internal_poses_changed": false,
+      "cad_checks": {
+        "lower_to_internals_mm3": 0.0,
+        "upper_to_internals_mm3": 0.0,
+        "cord_reinforcement_added_inside_cavity_mm3": 0.0,
+        "cord_tunnel_to_internals_mm3": 0.0,
+        "lower_upper_overlap_mm3": 0.0,
+        "lower_material_removed_by_cord_tunnel_mm3": 11.994397754020383
+      },
+      "shell_volume_mm3": 3302.951197824371,
+      "minimum_plan_wall_mm": 1.21989077877997,
+      "minimum_plan_seam_wall_mm": 0.5929119883247869,
+      "volume_bbox_reduction_percent": 3.785143413525882,
+      "cord_tunnel_intersects_geometric_cavity_mm3": 8.885765789590737,
+      "battery_floor_clearance_mm": 0.25,
+      "physical_release_allowed": false,
+      "lower_sha256": "d6c1f50c856ed8a3dd0e6426c815fa97be521d5907b49c7d1d394e55a10f6fa7",
+      "upper_sha256": "118015829dc142083fe7d0cd7fbbd2300385727fcde60f6e798ffa89e37ba6d5"
+    },
+    {
+      "variant": "compact-soft-square",
+      "width_depth_nominal_mm": 30.6,
+      "height_nominal_mm": 13.9,
+      "plan_radius_mm": 1.8,
+      "internal_poses_changed": false,
+      "cad_checks": {
+        "lower_to_internals_mm3": 0.0,
+        "upper_to_internals_mm3": 0.0,
+        "cord_reinforcement_added_inside_cavity_mm3": 0.0,
+        "cord_tunnel_to_internals_mm3": 0.0,
+        "lower_upper_overlap_mm3": 0.0,
+        "lower_material_removed_by_cord_tunnel_mm3": 11.107207345396773
+      },
+      "shell_volume_mm3": 3161.439852677093,
+      "minimum_plan_wall_mm": 1.2000000000000004,
+      "minimum_plan_seam_wall_mm": 0.5750000000000004,
+      "volume_bbox_reduction_percent": 5.030630045843621,
+      "cord_tunnel_intersects_geometric_cavity_mm3": 8.885765789590737,
+      "battery_floor_clearance_mm": 0.25,
+      "physical_release_allowed": false,
+      "lower_sha256": "72a331a4337e0091b43a36cda3fededf348173cfa0577a21b1ff01f53c76ef9c",
+      "upper_sha256": "5a30c607b08f9a2146e8b83ab35adc3e7f70f265a3cf25ff49e4197327e89636"
+    }
+  ],
+  "selection": "NOT_SELECTED_PENDING_RETENTION_AND_CORD_REVIEW",
+  "limitations": [
+    "Unchanged 0.25 mm battery-floor clearance is not demonstrated shock cushioning or swelling allowance.",
+    "Rounded cavity and tongue/groove wall distances are 2D seam screens, not minimum 3D ligaments at USB/cord openings.",
+    "Cord tunnel can enter empty cavity without hitting current internals; qualify battery retention and cord isolation before selection.",
+    "No drop/fatigue/thermal/print tests have run."
+  ],
+  "external_actions": {
+    "order": false,
+    "upload": false,
+    "payment": false,
+    "supplier_contact": false
+  }
+}

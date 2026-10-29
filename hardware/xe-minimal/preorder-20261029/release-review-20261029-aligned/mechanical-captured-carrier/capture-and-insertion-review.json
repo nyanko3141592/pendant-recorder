@@ -1,0 +1,48 @@
+{
+  "checks": {
+    "battery_body_insertion_sweep_overlap_mm3": 0.0,
+    "carrier_insertion_sweep_overlap_mm3": 0.0,
+    "pcba_component_insertion_sweep_hits": [],
+    "pcb_slab_insertion_sweep_overlap_mm3": 0.0,
+    "upward_stop_contact_at_0p101mm_mm3": 0.0038400000000000634,
+    "carrier_and_board_upward_stop_contact_at_0p101mm_mm3": 0.0038400000000000634,
+    "nominal_support_contact_mm3": 0.0038399999999997264,
+    "common_xy_offset_corner_checks": [
+      {
+        "xy_offset_mm": [
+          -0.1,
+          -0.1
+        ],
+        "lower_overlap_mm3": 0.0,
+        "upper_overlap_mm3": 0.0
+      },
+      {
+        "xy_offset_mm": [
+          -0.1,
+          0.1
+        ],
+        "lower_overlap_mm3": 0.0,
+        "upper_overlap_mm3": 0.0
+      },
+      {
+        "xy_offset_mm": [
+          0.1,
+          -0.1
+        ],
+        "lower_overlap_mm3": 0.0,
+        "upper_overlap_mm3": 0.0
+      },
+      {
+        "xy_offset_mm": [
+          0.1,
+          0.1
+        ],
+        "lower_overlap_mm3": 0.0,
+        "upper_overlap_mm3": 0.0
+      }
+    ]
+  },
+  "scope": "Conservative straight +Z swept body envelopes. Harness omitted. XY offset checks are four discrete corner cases, not certified manufacturing tolerances.",
+  "original_harness_insertion_verified": false,
+  "physical_qualification": false
+}

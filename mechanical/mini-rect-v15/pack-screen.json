@@ -1,0 +1,111 @@
+{
+  "status": "SCREEN_ONLY_NOT_SELECTED",
+  "candidates": [
+    {
+      "model": "DTP301120(PHR)",
+      "pack_mm": [
+        11.5,
+        22,
+        3.4
+      ],
+      "dimension_basis": "Retail completed dimensions; manufacturer verification pending",
+      "case_mm": [
+        30,
+        30,
+        15
+      ],
+      "wall_mm": 1.2,
+      "inside_xy_mm": 27.6,
+      "total_length_clearance_mm": 5.6,
+      "side_space_before_connector_mm": 16.1,
+      "capacity_mAh": 40,
+      "assumed_usable_fraction": 0.7,
+      "average_budget_for16h_mA": 1.75,
+      "existing_allocation_mA": 4.0,
+      "headroom_against_allocation_mA": -2.25,
+      "runtime_if_allocation_met_h": 7.0,
+      "fit_qualified": false,
+      "runtime_qualified": false
+    },
+    {
+      "model": "DTP401525(PHR)",
+      "pack_mm": [
+        15.5,
+        27,
+        4.2
+      ],
+      "dimension_basis": "Manufacturer completed-pack maximum",
+      "case_mm": [
+        30,
+        30,
+        15
+      ],
+      "wall_mm": 1.2,
+      "inside_xy_mm": 27.6,
+      "total_length_clearance_mm": 0.6,
+      "side_space_before_connector_mm": 12.1,
+      "capacity_mAh": 110,
+      "assumed_usable_fraction": 0.7,
+      "average_budget_for16h_mA": 4.8125,
+      "existing_allocation_mA": 4.0,
+      "headroom_against_allocation_mA": 0.8125,
+      "runtime_if_allocation_met_h": 19.25,
+      "fit_qualified": false,
+      "runtime_qualified": false
+    },
+    {
+      "model": "DTP401525-XE",
+      "pack_mm": [
+        15,
+        25.3,
+        4
+      ],
+      "dimension_basis": "Retail approximate dimensions, not maximum; cannot qualify fit",
+      "case_mm": [
+        30,
+        30,
+        15
+      ],
+      "wall_mm": 1.2,
+      "inside_xy_mm": 27.6,
+      "total_length_clearance_mm": 2.3,
+      "side_space_before_connector_mm": 12.6,
+      "capacity_mAh": 110,
+      "assumed_usable_fraction": 0.7,
+      "average_budget_for16h_mA": 4.8125,
+      "existing_allocation_mA": 4.0,
+      "headroom_against_allocation_mA": 0.8125,
+      "runtime_if_allocation_met_h": 19.25,
+      "fit_qualified": false,
+      "runtime_qualified": false
+    }
+  ],
+  "decision": "Prioritize110mAh class.40mAh does not cover current unmeasured allocation. PH27mm requires explicit lead-exit geometry; XE approximate25.3mm cannot substitute a maximum dimension.",
+  "placement_hypothesis": {
+    "case_mm": [
+      30,
+      30,
+      14.8
+    ],
+    "battery_region_mm": [
+      15.5,
+      27,
+      4.2
+    ],
+    "side_corridor_width_mm": 12.1,
+    "strategy": "Place connector and folded factory leads beside battery; do not place PH header on top of pouch or add it beyond pack length. Retain lead length, no user soldering.",
+    "not_yet_proven": [
+      "Wire exit bend and manufacturer minimum radius",
+      "Mated housing and insertion/removal sweep",
+      "Full100mm lead route with insulation OD and assembly slack",
+      "PCB backside population, support and thermal pad",
+      "Swelling and manufacturing tolerance",
+      "Acoustic path and lid retention"
+    ]
+  },
+  "sources": [
+    "https://www.inedenki.co.jp/category/lithium/Lipobattery/DTP-301120.html",
+    "https://www.sengoku.co.jp/item/pdf/SPE-DTP401525%28PHR%29-3.7V-110mAh-en-2.0ver.pdf",
+    "https://eleshop.jp/shop/g/gPCC31A/"
+  ]
+}

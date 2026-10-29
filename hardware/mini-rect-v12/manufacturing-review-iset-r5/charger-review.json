@@ -1,0 +1,72 @@
+{
+  "board_sha256": "5301a71d3f24f3a8c6e0866951df4ea6a907f44368ec58c36f5a431298136a1b",
+  "source": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+  "revision": "SLUSF65B August 2026",
+  "matched_pad_nets": {
+    "U3": {
+      "1": "SYS",
+      "2": "BAT",
+      "4": "CHG_INHIBIT_GATE",
+      "5": "GND",
+      "6": "CHARGER_TS",
+      "7": "ILIM_VSET",
+      "8": "ISET",
+      "9": "CHG_N",
+      "10": "VBUS",
+      "11": "GND"
+    },
+    "R10": {
+      "1": "ISET",
+      "2": "GND"
+    },
+    "R42": {
+      "1": "ILIM_VSET",
+      "2": "GND"
+    },
+    "R11": {
+      "1": "V3V3",
+      "2": "CHG_N"
+    },
+    "C30": {
+      "1": "ISET",
+      "2": "GND"
+    }
+  },
+  "values": {
+    "U3": "BQ25185DLHR",
+    "R10": "15k 1%",
+    "R42": "24k 1%",
+    "R11": "20k 1%",
+    "C30": "10n tentative"
+  },
+  "pin_match": true,
+  "settings": {
+    "battery_V_nominal": 4.2,
+    "input_limit_mA_nominal": 100,
+    "input_limit_mA_min_typ_max_at_5V": [
+      80,
+      90,
+      98
+    ],
+    "charge_mA_nominal": 20,
+    "termination_mA_nominal": 2,
+    "iset_factor_and_1pct_resistor_only_mA_range": [
+      18.81188118811881,
+      21.212121212121215
+    ]
+  },
+  "evidence": [
+    "Table4-1 p4 pin functions",
+    "Table6-1 p16 24k=4.2V/ILIM100",
+    "Electrical characteristics p6-7 input limit and KISET",
+    "Section6.1.1.5 termination10percent"
+  ],
+  "remaining": [
+    "20mA complete accuracy not inferred from >=40mA accuracy line; battery acceptance pending",
+    "Low-current ISET 10n RC and detection timing qualification",
+    "SYS effective capacitor >=1uF after DC bias; nominal >=10uF",
+    "Input load+charge budget must use80mA limit minimum, not100mA",
+    "PCB land pattern/thermal performance/CE startup transient not qualified"
+  ],
+  "qualified": false
+}

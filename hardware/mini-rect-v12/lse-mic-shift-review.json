@@ -1,0 +1,425 @@
+[
+  {
+    "name": "lse-mic-shift",
+    "x": 16.3,
+    "y": 11.4,
+    "rot": 90,
+    "back": false,
+    "crystal_violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd ( \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0541 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/LSE_OUT] - Y1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 16.3,
+              "y": 10.7
+            },
+            "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+          },
+          {
+            "description": "\u914d\u7dda [/PDM_DATA] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.2456 mm )",
+            "pos": {
+              "x": 16.6209,
+              "y": 11.1041
+            },
+            "uuid": "3851ef84-b885-4eb7-a83a-635cfca64a3a"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /LSE_OUT \u3068 /PDM_DATA)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/LSE_OUT] - Y1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 16.3,
+              "y": 10.7
+            },
+            "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+          },
+          {
+            "description": "\u914d\u7dda [/PDM_DATA] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.5185 mm )",
+            "pos": {
+              "x": 16.9875,
+              "y": 10.7375
+            },
+            "uuid": "785f6a09-1c8b-4b3e-8352-bc8fe54ad2ca"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U1",
+            "pos": {
+              "x": 11.75,
+              "y": 9.9
+            },
+            "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Y1",
+            "pos": {
+              "x": 16.3,
+              "y": 11.4
+            },
+            "uuid": "90d0966d-1c86-4664-a2e2-0159dd9ad8e4"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Y1",
+            "pos": {
+              "x": 16.3,
+              "y": 11.4
+            },
+            "uuid": "90d0966d-1c86-4664-a2e2-0159dd9ad8e4"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U8",
+            "pos": {
+              "x": 18.8375,
+              "y": 11.5875
+            },
+            "uuid": "d94a7b73-f065-4f9f-a619-ba29abe430e5"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/PDM_DATA] ( F.Cu \u4e0a\u3001\u9577\u3055: 0.5185 mm )",
+            "pos": {
+              "x": 16.9875,
+              "y": 10.7375
+            },
+            "uuid": "785f6a09-1c8b-4b3e-8352-bc8fe54ad2ca"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/LSE_OUT] - Y1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 16.3,
+              "y": 10.7
+            },
+            "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U8 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 16.7275,
+              "y": 13.1975
+            },
+            "uuid": "c7461ae4-2bf3-494c-ba6d-83e264021e54"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 12.66
+            },
+            "uuid": "d63abb01-c099-4650-a8b4-19752f05b624"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 10.14
+            },
+            "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 4 [/LSE_OUT] - U1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.1875,
+              "y": 11.15
+            },
+            "uuid": "99a55d43-eeca-4fe6-86bc-35b174b2e36a"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 10.14
+            },
+            "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 5 [unconnected-(U1-PH0-Pad5)] - U1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.1875,
+              "y": 10.65
+            },
+            "uuid": "c364da6f-4518-486d-8fa2-0dc3b135be3c"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 10.14
+            },
+            "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 6 [unconnected-(U1-PH1-Pad6)] - U1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.1875,
+              "y": 10.15
+            },
+            "uuid": "770423b9-8ef8-400a-be90-ba663cb234d5"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 10.14
+            },
+            "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/V3V3] - U1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.1875,
+              "y": 12.65
+            },
+            "uuid": "7774eac7-dafd-4c3f-9074-357b52b26756"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 10.14
+            },
+            "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [unconnected-(U1-PC13-Pad2)] - U1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.1875,
+              "y": 12.15
+            },
+            "uuid": "07f00fd1-43e2-4a77-a3d9-730c86608a24"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 10.14
+            },
+            "uuid": "1785979c-ae56-4c79-89c7-55caf51854e0"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/LSE_IN] - U1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.1875,
+              "y": 11.65
+            },
+            "uuid": "5f0ebff6-5e04-43d5-a935-f41b3d966c37"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 12.66
+            },
+            "uuid": "d63abb01-c099-4650-a8b4-19752f05b624"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/V3V3] - U1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.1875,
+              "y": 12.65
+            },
+            "uuid": "7774eac7-dafd-4c3f-9074-357b52b26756"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 15.44,
+              "y": 12.66
+            },
+            "uuid": "d63abb01-c099-4650-a8b4-19752f05b624"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/PDM_CLK] - U8 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 17.3375,
+              "y": 12.4375
+            },
+            "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 17.16,
+              "y": 12.66
+            },
+            "uuid": "2d82c032-de7c-40dd-8c55-618de8cd912e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/PDM_DATA] - U8 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 17.3375,
+              "y": 10.7375
+            },
+            "uuid": "d18d6bbe-de4a-4076-b642-3eecffc370fd"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Y1 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 17.16,
+              "y": 12.66
+            },
+            "uuid": "2d82c032-de7c-40dd-8c55-618de8cd912e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/PDM_CLK] - U8 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 17.3375,
+              "y": 12.4375
+            },
+            "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U8 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 16.7275,
+              "y": 13.1975
+            },
+            "uuid": "c7461ae4-2bf3-494c-ba6d-83e264021e54"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/LSE_OUT] - Y1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 16.3,
+              "y": 10.7
+            },
+            "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of U8 \u3001F.Silkscreen \u4e0a",
+            "pos": {
+              "x": 16.7275,
+              "y": 13.1975
+            },
+            "uuid": "c7461ae4-2bf3-494c-ba6d-83e264021e54"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/LSE_IN] - Y1 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 16.3,
+              "y": 12.1
+            },
+            "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "status": "SNAP_CLOSURE_DRAFT_NOT_RELEASED",
+  "snap_features": [
+    {
+      "side": "left",
+      "y_mm": 8,
+      "beam_mm": [
+        0.5,
+        2.5,
+        3.8
+      ],
+      "nominal_deflection_mm": 0.25,
+      "small_deflection_root_strain_estimate": 0.012984764542936289
+    },
+    {
+      "side": "left",
+      "y_mm": 20,
+      "beam_mm": [
+        0.5,
+        2.5,
+        3.8
+      ],
+      "nominal_deflection_mm": 0.25,
+      "small_deflection_root_strain_estimate": 0.012984764542936289
+    },
+    {
+      "side": "right",
+      "y_mm": 10,
+      "beam_mm": [
+        0.5,
+        2.5,
+        3.8
+      ],
+      "nominal_deflection_mm": 0.25,
+      "small_deflection_root_strain_estimate": 0.012984764542936289
+    },
+    {
+      "side": "right",
+      "y_mm": 22,
+      "beam_mm": [
+        0.5,
+        2.5,
+        3.8
+      ],
+      "nominal_deflection_mm": 0.25,
+      "small_deflection_root_strain_estimate": 0.012984764542936289
+    }
+  ],
+  "battery_body_overlap_mm3": 0.0,
+  "battery_guide_nominal_gap_mm": 0.3,
+  "pcb_lid_overlap_mm3": 0.0,
+  "acoustic_inlet_xy_mm": [
+    21.13,
+    17.7
+  ],
+  "acoustic_bore_mm": 0.8,
+  "acoustic_wall_mm": 0.4,
+  "acoustic_gasket_allocation_mm": [
+    1.8,
+    0.8,
+    0.4
+  ],
+  "acoustic_pillar_battery_overlap_mm3": 0.0,
+  "body_valid": true,
+  "lid_valid": true,
+  "body_solids": 1,
+  "lid_solids": 1,
+  "body_lid_overlap_mm3": 0.0,
+  "usb_opening_mm": [
+    12,
+    4.37
+  ],
+  "support_count": 3,
+  "thermal_pad_allocation_mm": [
+    3,
+    3,
+    2.3
+  ],
+  "source_board_sha256": "16bd67e57931855e9113c62cb751e84c30b441ff480417a87bc04802fa7c0a63",
+  "case_mm": [
+    30,
+    32,
+    14.8
+  ],
+  "board_mm": [
+    26.0,
+    29.0,
+    0.93
+  ],
+  "component_count": 91,
+  "component_vs_body_lid_battery_intersections": [],
+  "thermal_sensor_contact_gap_mm": 2.3,
+  "limitations": [
+    "retained V13 rectangular envelopes, not manufacturer-solid accuracy",
+    "XE mated housing overhang, insertion sweep and harness not included",
+    "No assembly release",
+    "Conservative component envelopes can overstate body size",
+    "USB notch and support geometry provisional; plug insertion not qualified; four snap ramps/recesses and release windows added, assembly force and durability unqualified",
+    "Thermal pad is space allocation only; material, pressure, retention and response not qualified",
+    "Straight bottom acoustic inlet added; response, print bore accuracy, gasket material/seal/compression and debris protection not qualified",
+    "Low battery guides added with0.3mm nominal clearance; vertical retention and swelling allowance remain unqualified",
+    "Wire routing and mated connector insertion envelope are not included",
+    "Battery swelling and assembly tolerances are not qualified"
+  ]
+}

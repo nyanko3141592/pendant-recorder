@@ -1,0 +1,39 @@
+{
+  "status": "HIGHER_DISCHARGE_SMALL_CELL_LEAD_NOT_SELECTED",
+  "date": "2026-10-26",
+  "manufacturer": "Grepow",
+  "model": "GRP1254R1",
+  "capacity_mAh": 70,
+  "nominal_voltage_V": 3.7,
+  "charge_limit_V": 4.2,
+  "cell_dimensions_from_manufacturer_blog_mm": {
+    "diameter": 12,
+    "thickness": 5.4
+  },
+  "discharge_from_manufacturer_comparison_chart": {
+    "continuous_mA": 140,
+    "noncontinuous_mA": 350,
+    "noncontinuous_duration_and_duty": "not specified; not accepted for arbitrary SD bursts"
+  },
+  "sources": [
+    "https://www.grepow.com/storage/images/20230105/06235bbc7ac191d78ac00fa38054a199.pdf",
+    "https://www.grepow.com/blog/grepow-rechargeable-li-lon-button-cells-solutions.html"
+  ],
+  "runtime_budget": {
+    "usable_fraction_assumption": 0.7,
+    "target_h": 16,
+    "required_average_mA": 3.0625,
+    "runtime_h_at_4mA_assumed_average": 12.25,
+    "not_measured": true
+  },
+  "tradeoff": "Higher published continuous current but30pct lower capacity than100mAh candidate. At assumed4mA average and70pct usable capacity only12.25h, so cannot claim16h. Required3.0625mA average must include all loads.",
+  "unresolved": [
+    "Finished protected pack dimensions and max tolerances including tabs/NTC/3pin harness",
+    "Exact card peak current plus MCU/microphone load below140mA with margin",
+    "Voltage sag and usable capacity to actual recorder cutoff",
+    "NTC curve and charge termination approval",
+    "5/10piece availability, landed quote and completed pack supply"
+  ],
+  "parallel_pack_note": "Manufacturer chart also lists140mAh1S2P/280mA continuous. No adopted layout: finished pack dimensions/parallel protection/interconnect unknown. Do not propose user-built parallel cells.",
+  "decision": "Keep as procurement lead only, preserve16h requirement and current BOM/model."
+}

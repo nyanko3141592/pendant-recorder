@@ -1,0 +1,63 @@
+{
+  "status": "OPEN_MANUFACTURING_REVIEW_REQUIRED",
+  "board_sha256": "6c322ad03af1838aa59451b09b28a2f57bba38d0a2d764e4c9b15b5f41673f7b",
+  "method": "KiCad effective copper pad shape collision vs via radius and additional0.025mm; F/B layers",
+  "flagged_vias": 3,
+  "vias": [
+    {
+      "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de",
+      "xy_mm": [
+        20.7,
+        10.6
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "36",
+          "net": "/V3V3",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "e71d5545-68b9-4075-892a-e0c29c1aae7b",
+      "xy_mm": [
+        15.0125,
+        3.0
+      ],
+      "hits": [
+        {
+          "ref": "U13",
+          "pad": "4",
+          "net": "/USB_INPUT_ON",
+          "layer": "F.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e",
+      "xy_mm": [
+        18.1,
+        11.5
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "40",
+          "net": "/PDM_DATA",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Solder mask openings, actual drill registration and fabrication capability not qualified.",
+    "Resolve by geometry changes or qualified filled/capped process before release."
+  ]
+}

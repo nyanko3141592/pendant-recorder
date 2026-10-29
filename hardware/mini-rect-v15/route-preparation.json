@@ -1,0 +1,25 @@
+{
+  "status": "UNROUTED_TRIAL_NOT_RELEASED",
+  "cleanup_passes": [
+    {
+      "iteration": 0,
+      "drc": 73,
+      "unconnected": 42,
+      "deleted_track_vias": 55
+    },
+    {
+      "iteration": 1,
+      "drc": 39,
+      "unconnected": 49,
+      "deleted_track_vias": 0
+    }
+  ],
+  "reserved_planes": [
+    "In1.Cu",
+    "In3.Cu"
+  ],
+  "limitations": [
+    "USB pair and power widths require separate review after routing",
+    "No design rules weakened; DRC conflicts converted to explicit unrouted connections"
+  ]
+}

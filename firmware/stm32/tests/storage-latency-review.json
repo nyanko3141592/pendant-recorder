@@ -1,0 +1,38 @@
+{
+  "status": "BLOCKING_SAVE_LATENCY_NOT_QUALIFIED",
+  "evidence": {
+    "core/audio_queue.h": "f92a359feb335e501df4f9213d846bbeea2ae3e38a4011ba0c16b7ebf1c90c9e",
+    "board/storage_diskio.c": "01f5eb995cba9736820912f0ca37966ac1aaf4272c0bb7699c6fbe0e2af29158",
+    "board/recording_session.c": "7ba64bc65e03a3b8e45a7c6fad50fa25923eba8efd93443634aa81f5bd192d6b",
+    "core/sd_init.c": "75fa86a586b3e833f41f70ceeb0a0e40b33a3f76c5a45989628904834ea9ad89"
+  },
+  "facts": {
+    "sample_rate_hz": 16000,
+    "samples_per_queue_block": 1024,
+    "queue_blocks": 16,
+    "empty_queue_capacity_ms": 1024,
+    "sector_busy_timeout_ms": 500,
+    "writes": "disk_write loops synchronous single-sector writes; recording_session save is synchronous"
+  },
+  "analysis": {
+    "important": "A successful sector below 500ms does not imply a complete file commit fits the audio backlog. Consecutive busy periods accumulate while queue cannot drain.",
+    "example": "Three consecutive 400ms sector waits exceed 1024ms even though no individual SD timeout fires. This is a permitted software timing scenario, not observed card behaviour.",
+    "limit": "Available save time is less than 1024ms when queue already contains data; encryption, FAT metadata, transfer and commit time share the same budget."
+  },
+  "required_change": "Measure and bound entire save transaction, then implement cooperative/asynchronous persistence or prove total worst-case save fits measured queue slack for exact card. Raising per-sector timeout or modestly enlarging queue alone does not establish continuous recording.",
+  "hardware_test": [
+    "timestamp save begin/end and queue high-water",
+    "exercise nearly-full/fragmented card, repeated writes and temperature",
+    "verify sticky overrun produces explicit recording failure, never silent success"
+  ],
+  "native_reproduction": {
+    "test": "test_storage_stall.c",
+    "sanitizers": "ASAN+UBSAN PASS",
+    "results": [
+      "800ms empty queue survives, high-water13",
+      "1200ms empty queue explicitly overruns, high-water16",
+      "800ms with four queued blocks explicitly overruns, high-water16"
+    ],
+    "conclusion": "Existing fault propagation works; uninterrupted capture requirement remains unmet under these simulated stalls. Saved prefix accounting remains intact. No physical card timing claim."
+  }
+}

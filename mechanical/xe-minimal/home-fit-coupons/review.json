@@ -1,0 +1,111 @@
+{
+  "status": "HOME_PRINTER_FIT_EXPERIMENT_NOT_PRODUCTION",
+  "printer_reported_by_user": "Bambu Lab A1 mini",
+  "nozzle": {
+    "diameter_mm": 0.4,
+    "interpretation": "User said pla 4mm; interpreted as 0.4mm nozzle"
+  },
+  "filament": "PLA; brand unspecified",
+  "items": [
+    {
+      "name": "tray-gap-25",
+      "inner_clearance_each_side_mm": 0.25,
+      "outer_mm": [
+        26.1,
+        29.1,
+        4
+      ],
+      "floor_mm": 1,
+      "wall_mm": 0.8,
+      "outer_radius_mm": 1.5,
+      "inner_radius_mm": 0.7,
+      "nominal_square_dummy_overlap_mm3": 0.0,
+      "plate_offset_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tray-gap-30",
+      "inner_clearance_each_side_mm": 0.3,
+      "outer_mm": [
+        26.200000000000003,
+        29.200000000000003,
+        4
+      ],
+      "floor_mm": 1,
+      "wall_mm": 0.8,
+      "outer_radius_mm": 1.5,
+      "inner_radius_mm": 0.7,
+      "nominal_square_dummy_overlap_mm3": 0.0,
+      "plate_offset_mm": [
+        32,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tray-gap-40",
+      "inner_clearance_each_side_mm": 0.4,
+      "outer_mm": [
+        26.400000000000002,
+        29.400000000000002,
+        4
+      ],
+      "floor_mm": 1,
+      "wall_mm": 0.8,
+      "outer_radius_mm": 1.5,
+      "inner_radius_mm": 0.7,
+      "nominal_square_dummy_overlap_mm3": 0.0,
+      "plate_offset_mm": [
+        64,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pcb-size-dummy",
+      "size_mm": [
+        24,
+        27,
+        0.8264
+      ],
+      "plate_offset_mm": [
+        96,
+        0,
+        0
+      ]
+    }
+  ],
+  "units": "mm",
+  "print_orientation": "All exported parts have flat bottom at Z=0; tray openings upward",
+  "interpretation": [
+    "Printed dummy is a handling aid, not a calibrated PCB gauge",
+    "Measure real tray cavity and wall with calipers; record actual dimensions",
+    "Fit with actual PCB or a measured 24x27mm gauge is required to qualify clearance",
+    "Layer quantization affects dummy thickness; measure rather than assume0.8264mm",
+    "Coupon floor and wall geometry are simplified and omit connector, battery and acoustic duct"
+  ],
+  "printer_command_sent": false,
+  "files_sha256": {
+    "pcb-size-dummy.step": "a394046d5205dcd693c9632fdec9975c9012f550cca420c15836590f62f06035",
+    "tray-gap-25.step": "1dea43aea2b1107112afc93b635a2425eed68ca8f07aa6b2192f7c3cc2a327c0",
+    "pcb-size-dummy.stl": "5e162ec1cc0c360546029819e4ce2cdc5cac9c0fb05f6db27b2fdca9f3dbf7de",
+    "coupon-layout.step": "fe517f2061fc8d1073f75f57984fd50ffe7705b8a6bf05023e74c202a362e432",
+    "tray-gap-40.step": "eb917a0eefd0d7950110b0e7f8aff86e67f6becc98b2537633b2f98cc58fc1a3",
+    "tray-gap-40.stl": "55830dd59e7c123240d7dc115b12ba1713b507d2298925b11b7b5897671fb738",
+    "tray-gap-30.step": "66ba7a8d22ac7a3fc0c47c3ace109cd63ec2acda4f25f093d37e77048b2c8e45",
+    "tray-gap-30.stl": "e032b4a22c4b140158070ebc641fb6b06869d7eeddfb808e08e6fc3c5d541aed",
+    "tray-gap-25.stl": "b25be45532fb4b195cb4341b61c0c91143857cf0ea6393a67227313132a2cfb5"
+  },
+  "trial_layer_height_mm": 0.16,
+  "slice_review": {
+    "model": "tray-gap-30.stl",
+    "profile": "A1 mini 0.4 / 0.16mm Optimal / Generic PLA",
+    "status": "SLICED_NOT_PRINTED",
+    "layers": 25,
+    "estimated_mass_g": 1.32,
+    "note": "Inherited bundled profiles flattened; no physical wall or fit validation"
+  }
+}

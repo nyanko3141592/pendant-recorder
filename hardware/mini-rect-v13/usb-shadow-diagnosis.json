@@ -1,0 +1,26 @@
+{
+  "status": "DIAGNOSTIC_NOT_SI_APPROVAL",
+  "source_sha256": "9f5ba0e8fac9422b3d6c176ac3ea99b8f135651d74c35ecde6c63ad002ecc853",
+  "rows": [
+    {
+      "net": "/USB_DP",
+      "back_length_mm": 3.286,
+      "samples": {
+        "same_signal_copper_or_clearance": 97,
+        "other_signal_copper_or_clearance": 37,
+        "unexplained_void": 1
+      }
+    },
+    {
+      "net": "/USB_DM",
+      "back_length_mm": 4.438,
+      "samples": {
+        "unexplained_void": 112,
+        "same_signal_copper_or_clearance": 30,
+        "other_signal_copper_or_clearance": 39
+      }
+    }
+  ],
+  "method": "B.Cu trace center sampled at <=0.025mm; In2 GND polygon and signal copper expanded by zone clearance0.15mm; nearest physical plane not automatically valid reference",
+  "decision": "Do not add more pours blindly; route USB pair with a defined continuous reference and minimize ESD branch/stub geometry"
+}

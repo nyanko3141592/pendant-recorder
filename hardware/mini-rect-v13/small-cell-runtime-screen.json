@@ -1,0 +1,40 @@
+{
+  "status": "70MAH_ALLOCATION_SCREEN_NOT_RUNTIME_PREDICTION",
+  "source_budget_sha256": "cb813496f700435687ae110517fd11249f9cf8054476dda24d437830c238cdd0",
+  "assumed_capacity_mAh": 70,
+  "assumed_usable_fraction": 0.7,
+  "target_h": 16,
+  "total_allowance_mA": 3.0625,
+  "retained_nonstorage_allocation_mA": 2.8000000000000003,
+  "remaining_storage_allowance_mA": 0.26249999999999973,
+  "scenarios": [
+    {
+      "active_mA_hypothesis": 50,
+      "idle_mA_hypothesis": 0.25,
+      "feasible_idle": true,
+      "maximum_active_ms_per_5s": 1.2562814070351491,
+      "note": "Two-state sensitivity, not a card performance guarantee"
+    },
+    {
+      "active_mA_hypothesis": 115,
+      "idle_mA_hypothesis": 0.265,
+      "feasible_idle": false,
+      "maximum_active_ms_per_5s": 0,
+      "note": "Two-state sensitivity, not a card performance guarantee"
+    },
+    {
+      "active_mA_hypothesis": 218.18,
+      "idle_mA_hypothesis": 0.25,
+      "feasible_idle": true,
+      "maximum_active_ms_per_5s": 0.2867893360253231,
+      "note": "Two-state sensitivity, not a card performance guarantee"
+    }
+  ],
+  "audit": {
+    "main": "WFI after each runtime loop, SysTick1ms still wakes CPU",
+    "battery_adc": "HAL_ADC_DeInit plus ADC12 clock disable after each measurement",
+    "sdk": "HAL_ADC_DeInit clears common measurement paths when all shared ADC instances are disabled; battery_adc owns ADC12 exclusively",
+    "warning": "These are source-level observations, not measured current"
+  },
+  "decision": "70mAh substitution is not justified by existing budget. Keep100mAh candidate until qualification or demonstrate revised measured allocation."
+}

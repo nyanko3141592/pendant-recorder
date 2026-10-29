@@ -1,0 +1,49 @@
+{
+  "version": "HW-V1.3-PHYSICAL-SIZE-MOCKUP-R0",
+  "status": "PRINTABLE_SIZE_AND_STACKING_MOCKUP_NOT_FINAL_CASE_OR_ELECTRICAL_QUALIFICATION",
+  "complete_bbox_mm": [
+    39.702409650430376,
+    45.302537621203825,
+    12.50253762120382
+  ],
+  "body_bbox_mm": [
+    39.7,
+    39.7,
+    12.5
+  ],
+  "print_plate_bbox_mm": [
+    84.00150610651899,
+    77.50114422135576,
+    39.70240965043038
+  ],
+  "parts": {
+    "case_lower": 1,
+    "case_upper": 1,
+    "populated_pcb_envelope_gauge": 1,
+    "battery_max_envelope_gauge": 1
+  },
+  "print_orientation": {
+    "lower": "CAD X / lanyard-hole axis rotated to printer Z",
+    "upper": "broad exterior face down",
+    "gauges": "flat"
+  },
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-physical-mockup-assembly.step": "fbe6020327f74ca4b88e47542ede400da90243b42923eb80185db8c6ece70d79",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-case-lower-size-mockup.stl": "81fde7022f2b7e24fbfa5f52e6f326f3d9c94f7a4a5432c9d34682671b83c522",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-case-lower-size-mockup.step": "2813a3e033a44002e3566e0d4147468e597ce35843cc67a65054d5c1ab41070f",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-case-upper-size-mockup.stl": "5e3212e03378981525bc441a9f094efabab94d3c50e86a1208a4c6e8771e0cbb",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-case-upper-size-mockup.step": "9bb043a697ae179a0b2698399dcbac3d6e5b51c556e2ffc9e8a151312db1c41b",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-populated-pcb-envelope-gauge.stl": "a7526e953784d512f5920fd3dea1b8b7adce43ced66c54e7e9a3938b3c39a60f",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-populated-pcb-envelope-gauge.step": "3183ed1b097d6a47c889825afb11f9c9b86d544f4956e69fc355c29929c17acd",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/dtp401525-xe-max-envelope-gauge.stl": "f776f3d834e68b2e31f646741479ceff00957c7401c980f5a5d8eb64b45a6e7a",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/dtp401525-xe-max-envelope-gauge.step": "5f6ddb49b1852aa138dde9090b4ad684d629eb1d041ad678830571c03f418642",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-case-pcb-battery-print-plate.stl": "ab0f110c38ecf09ffeb46ff20cadf1a1ef9f7b3b8b0a99d2e1fd0e634029fd06",
+    "mechanical/xe-minimal/prototype-v1/hw-v1.3-physical-mockup/hw-v1.3-case-pcb-battery-print-plate.step": "3ccdcad1a28bbd5116631260960a2f2c0f037bc96cbadb3c9b7174150ce25d1e"
+  },
+  "limitations": [
+    "Major component envelopes only; not every passive body is modeled.",
+    "Battery lead and connector flex are reserved by requirements but are not a printed flexible harness.",
+    "A successful print checks perceived size and nominal stacking only; it does not qualify fit, heat, acoustics, USB retention, electrical safety or lanyard strength.",
+    "V1.3 routing and final populated-board STEP are not released."
+  ]
+}

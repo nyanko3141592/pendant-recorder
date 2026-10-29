@@ -1,0 +1,13 @@
+{
+  "status": "REJECTED_ALL_TESTED_NEIGHBOR_MOVES",
+  "reason": "No tested position improves the previous hard-rule count; TP1 moves intersect PDM_DATA and C34 moves intersect existing vias/traces. Do not route or adopt this branch.",
+  "trials": 12,
+  "retained_working_candidate": "local-opt.kicad_pcb",
+  "retained_sha256": "23ff5101c19e60c4e5e96078043e2e81bb15c2605986bb4c8ac8794a60452716",
+  "retained_limitations": [
+    "Two courtyard overlaps remain",
+    "Old Q5 track stubs and new switch/bypass are not routed",
+    "No fit or electrical release"
+  ],
+  "next": "Screen C34 on bottom side and alternative TP1 locations on BAT network; include component courtyards and whole-route collisions in search scoring. Include unchanged baseline among candidates."
+}

@@ -1,0 +1,32 @@
+{
+  "status": "LOCAL_JLC_BOM_CPL_EXACT_REF_MATCH_REVIEW_ONLY",
+  "carrier_sha256": "85814e1a9e498cf0ce809158793790850b6094120663f859f35a14650bf990fd",
+  "source_bom": "docs/procurement/xe-production-bom-2026-10-28.csv",
+  "source_positions": "hardware/xe-minimal/canonical-single-carrier-v1/cam-review-85814e1a/positions.csv",
+  "bom_output": "hardware/xe-minimal/canonical-single-carrier-v1/jlc-review-bom.csv",
+  "cpl_output": "hardware/xe-minimal/canonical-single-carrier-v1/jlc-review-cpl.csv",
+  "bom_lines": 36,
+  "placement_rows": 68,
+  "unique_references": 68,
+  "placement_sides": {
+    "Bottom": 47,
+    "Top": 21
+  },
+  "mechanical_fiducial_and_tooling_refs_excluded": true,
+  "reference_set_exact_match": true,
+  "archive_or_upload_package_created": false,
+  "orders_payments_uploads_vendor_contacts_performed": false,
+  "external_acceptance": "NOT_VERIFIED",
+  "required_before_release": [
+    "Confirm BOM-tool recognition and assembly eligibility for every exact LCSC part in a fresh authenticated session",
+    "Confirm all top and bottom placements, rotations and pin-1/polarity in the vendor assembly viewer",
+    "Confirm carrier Gerber, drill, BOM and CPL coordinate alignment in vendor DFM/assembly previews",
+    "Obtain exact five-carrier fabrication, assembly, POFV, programming, inspection and depanelization quotation"
+  ],
+  "sha256": {
+    "docs/procurement/xe-production-bom-2026-10-28.csv": "4a0590a0d7db0025f8bd6100eb3820fc87f1c831c391a5ce7be22149e21ee942",
+    "hardware/xe-minimal/canonical-single-carrier-v1/cam-review-85814e1a/positions.csv": "5e4846d4eba1c3e3d064409560f32ff0b39cf1b288bb5b954bc023d4db8d8ed6",
+    "hardware/xe-minimal/canonical-single-carrier-v1/jlc-review-bom.csv": "6070f46b6a367f4e647609f872fb63bc635efca2e51617afa4e2286947a44f28",
+    "hardware/xe-minimal/canonical-single-carrier-v1/jlc-review-cpl.csv": "574e8510f949c3f021a96c5dd6e94a7d325a7cce07ea28ed5cfc30d23177bfdb"
+  }
+}

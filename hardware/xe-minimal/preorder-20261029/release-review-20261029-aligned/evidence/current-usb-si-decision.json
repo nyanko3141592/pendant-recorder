@@ -1,0 +1,34 @@
+{
+  "status": "USB_FULL_PATH_IMPEDANCE_NOT_QUALIFIED",
+  "pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "parallel_screen": {
+    "/USB_DP": {
+      "sampled_length_mm": 19.60635850131683,
+      "parallel_gap_0p126_plusminus_0p01_mm_length": 11.845222910387923,
+      "nonmatching_length_mm": 7.761135590928923
+    },
+    "/USB_DM": {
+      "sampled_length_mm": 20.558180066758265,
+      "parallel_gap_0p126_plusminus_0p01_mm_length": 11.909424251032302,
+      "nonmatching_length_mm": 8.648755815725895
+    }
+  },
+  "same_layer_copper_screen": {
+    "/USB_DM": {
+      "min_sampled_edge_gap_mm": 0.158831,
+      "sampled_length_with_other_copper_within_3h_mm": 10.180358199156274
+    },
+    "/USB_DP": {
+      "min_sampled_edge_gap_mm": 0.171222,
+      "sampled_length_with_other_copper_within_3h_mm": 1.783011417666983
+    }
+  },
+  "decision": "Do not apply noncoplanar uniform-pair calculator result to the complete routed USB path. Current DM has about10.18mm of sampled path with other same-layer copper within3h; DP about1.78mm. Uniform parallel-gap segments cover only about12mm per net.",
+  "limits": [
+    "Nearest-segment and3h screens are geometric heuristics, not impedance pass/fail",
+    "Total routed lengths include connector branches;0.952mm difference is not endpoint skew",
+    "No layout modification made",
+    "Previous width-trial adjacency report uses another board hash and must not certify current board"
+  ],
+  "required_next": "Evaluate current main pair with coplanar/nearby copper model, plus necks, branches and two via transitions per net; preserve public stackup and current copper context. No blind rerouting based solely on these screens."
+}

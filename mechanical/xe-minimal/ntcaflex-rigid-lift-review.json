@@ -1,0 +1,61 @@
+{
+  "status": "RIGID_LIFT_SCREEN_NOT_ADOPTED",
+  "sources_sha256": {
+    "vendor/ntcaflex/NTCAFLEX05103HH.STEP": "d5e5c08a12972dd859328ad3827204877c32e1ef302d0606142bc965f6c703fe",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc"
+  },
+  "head_center_xy_mm": [
+    12.5,
+    -5
+  ],
+  "original_overlap_regions": [
+    {
+      "volume_mm3": 1.5959999999999903,
+      "bounds_mm": [
+        10.499999999999993,
+        -25.0,
+        -2.52,
+        14.500000000000004,
+        -21.0,
+        -2.42
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "lift_mm": 0.1,
+      "head_nominal_gap_to_battery_mm": 0.1,
+      "battery_overlap_mm3": 0.0,
+      "board_overlap_mm3": 0.0,
+      "board_distance_mm": 0.025591294531746654
+    },
+    {
+      "lift_mm": 0.15,
+      "head_nominal_gap_to_battery_mm": 0.15,
+      "battery_overlap_mm3": 0.0,
+      "board_overlap_mm3": 1.242757949107088e-05,
+      "board_distance_mm": 0.0
+    },
+    {
+      "lift_mm": 0.2,
+      "head_nominal_gap_to_battery_mm": 0.2,
+      "battery_overlap_mm3": 0.0,
+      "board_overlap_mm3": 0.000445331215207809,
+      "board_distance_mm": 0.0
+    },
+    {
+      "lift_mm": 0.3,
+      "head_nominal_gap_to_battery_mm": 0.3,
+      "battery_overlap_mm3": 0.0,
+      "board_overlap_mm3": 0.00588205751263498,
+      "board_distance_mm": 0.0
+    }
+  ],
+  "limits": [
+    "Related HH nominal STEP only, not maximum GL envelope.",
+    "Head gap requires designed thermal interface; air gap is not accepted thermal coupling.",
+    "No tolerances, foam load, fastening, tail solder, separator, harness or assembly motion.",
+    "Zero distance is contact, not adequate clearance."
+  ]
+}

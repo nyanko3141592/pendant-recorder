@@ -1,0 +1,43 @@
+{
+  "status": "CONDITIONAL_JLC_CHARGER_SENSOR_MEMORY_MOSFET_SCENARIO_NOT_QUOTE",
+  "sources_sha256": {
+    "docs/procurement/xe-jlc-sensor-memory-mosfet-cost-scenario.json": "1b6f401189623da331d93cf07801c702386e89077252d6aa97d5175d92d26c25",
+    "docs/procurement/xe-bq25185-jlc-availability.json": "0b8a8b541c5b4e2e18ab16b4b5638c7fb3fa011a51ae202cad73c0f9f2360ac2",
+    "hardware/xe-minimal/fixed-usb-limit-trial/dmn-land-trial/five-unit-cost-coverage.json": "5969299b0ca785548c3209f87c3b7578477fbf92ae6cb426d4c8c531edb3e16a",
+    "docs/procurement/cost_dmn_candidate_bom.py": "3f944b0848031b4d68a634a071ee5ae4f32b1a9ae1b841185be0038af9fbc296"
+  },
+  "charger_replacement": {
+    "mpn": "BQ25185DLHR",
+    "installed_quantity": 5,
+    "removed_historical_JPY": 2110.0,
+    "added_PCBA_USD": 7.7585,
+    "purchase_quantity_including_attrition": null,
+    "quantity_basis": "U3 contributes five times historical unit price to shared historical subtotal in both parent scenarios; no followup purchase quantity applies."
+  },
+  "subtotals": {
+    "mixed_date_parts_reference_subtotals_by_currency": {
+      "JPY": 17316.7,
+      "USD": 210.8335
+    },
+    "mixed_date_quantity_proposal_reference_subtotals_by_currency": {
+      "JPY": 17237.7,
+      "USD": 210.8335
+    }
+  },
+  "complete_five_unit_total_JPY": null,
+  "limits": [
+    "Availability is observed, not allocated or a binding quotation",
+    "This does not qualify the MOSFET circuit or whole BOM procurement",
+    "Do not substitute ElecSuper DMN2056U-7(ES)",
+    "All other historical mixed-date source limitations remain; no blanket current availability claim.",
+    "JLC assembly of the entire mixed-source BOM has not been confirmed.",
+    "Stock not allocated; no purchase or upload",
+    "PCBA inventory only; not a standalone shipment",
+    "Attrition, process, feeder, inspection, shipping and tax charges excluded",
+    "C9900196853 is a separate consignment/assembly-service entry, not equivalent component pricing",
+    "Full BOM, assembly process and footprint approval remain pending",
+    "Five sensors price only; assembler attrition and purchasing quantity remain unknown",
+    "Stock and prices are recorded observations, not freshly reserved or quoted",
+    "Charger cost is five installed pieces only; attrition and final purchase quantity unknown"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "status": "EXPLODED_EXISTING_STUDY_NOT_FINAL_MODEL",
+  "sources": [
+    {
+      "file": "retained-upper-case-study.step",
+      "sha256": "8c33cedac3c34c3deb94799332f0e416154523d4bf8cca553dba8dd6409effbe",
+      "display_translation_mm": [
+        0,
+        0,
+        16
+      ]
+    },
+    {
+      "file": "pcb-partial-with-body-envelopes.step",
+      "sha256": "174dc3ed85513977b7002a7b362c44bd9ee7dfab60f11169c3be24ea174aff48",
+      "display_translation_mm": [
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "file": "battery-separator-study.step",
+      "sha256": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+      "display_translation_mm": [
+        0,
+        0,
+        -5
+      ]
+    },
+    {
+      "file": "dtp401525-xe-pack-max.step",
+      "sha256": "e4c9bb308a5120fcc3943aa438e41ea36d7462cdcddac260d87ced0f222285d3",
+      "display_translation_mm": [
+        8.25,
+        -13.5,
+        -19
+      ]
+    },
+    {
+      "file": "retained-lower-case-study.step",
+      "sha256": "05c7f92960bfab469b2026331f3f68b1c0a2262bf460e1a8a68547b105a27cd2",
+      "display_translation_mm": [
+        0,
+        0,
+        -25
+      ]
+    }
+  ],
+  "pcb_geometry_source": "board-inventory.json; historical geometry retained, no current PCB hash relabeling",
+  "limitations": [
+    "Original leads and mating plug absent",
+    "No proven assembly sequence",
+    "Final case size and closure unresolved",
+    "Thermal interface and battery swelling allowance unresolved",
+    "Some component bodies are approximate envelopes"
+  ],
+  "outputs": {
+    "exploded-assembly-review.step": "5e7c03ff48fb3297639f0c5dd6c2d95d7e420af99ce0ac0d66a2e9b528c5bb5a",
+    "exploded-assembly-review.png": "5ce8454fbbcc3f321d32c66e41ee400a3dcf692010d9d6e8f5ba1b158077980c"
+  },
+  "visual_review": "PNG inspected after two-sided normal lighting correction; planar triangle shading substantially reduced, labels readable. Minor tessellation artifacts remain; STEP geometry is authoritative."
+}

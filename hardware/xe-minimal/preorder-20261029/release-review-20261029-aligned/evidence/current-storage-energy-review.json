@@ -1,0 +1,37 @@
+{
+  "status": "CURRENT_PART_DATASHEET_REVIEWED_SPI_ENERGY_BOUND_UNAVAILABLE",
+  "part": "MKDV8GIL-AST",
+  "source": "mechanical/xe-minimal/preorder-20261029/mkdv8gil-ast.pdf",
+  "source_sha256": "dc3574c9f22602c5436c314ac25819b1317236cd3b63112bb3c23e5cb8ee5234",
+  "visually_reviewed_pdf_page": 13,
+  "datasheet": {
+    "read_mA_max": 30,
+    "write_mA_max": 40,
+    "standby_mA_max": 0.13,
+    "test_conditions": "50MHz, SD four-wire, ambient25C; not the configured 4MHz SPI/full-temperature condition"
+  },
+  "current_design": {
+    "spi_hz": 4000000,
+    "chunk_seconds": 10,
+    "ciphertext_payload_bytes": 81172,
+    "storage_allocation_mA": 1.49927519379845
+  },
+  "conditional_sensitivity_not_guarantee": {
+    "assumption": "If active40mA and standby0.13mA applied at configured SPI conditions, with all other allocation assumptions unchanged",
+    "maximum_active_seconds_per10seconds": 0.34343496207636076,
+    "payload_only_wire_seconds_at4MHz": 0.162344,
+    "remaining_active_seconds_for_commands_FAT_directory_busy_and_other_IO": 0.18109096207636077,
+    "warning": "Payload serialization is a lower bound on wire duration, not active-energy duration. SD-mode current numbers cannot certify SPI behavior. Do not infer a passing average or peak from this sensitivity."
+  },
+  "required_evidence": [
+    "Battery-side 16h integral and completed-device peak<=110mA",
+    "Storage-rail integral over full10s cycles including FAT/directory/sync/busy, full/aged media and temperature endpoints",
+    "Startup/inrush peak and rail droop; do not equate40mA write test with startup limit"
+  ],
+  "public_source_check": {
+    "url": "https://www.mkfounder.com/Uploads/file/2025/08/13/689bfb8ac73f5.pdf",
+    "search_index_found": true,
+    "direct_fetch": "404; local retained PDF is the inspected source"
+  },
+  "release_allowed": false
+}

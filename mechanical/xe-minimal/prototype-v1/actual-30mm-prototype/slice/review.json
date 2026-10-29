@@ -1,0 +1,38 @@
+{
+  "status": "A1_MINI_PETG_SLICE_PASS_NOT_PRINTED",
+  "hardware_version": "HW-V1.4-EVT-ACTUAL-30MM",
+  "input": "case-pcb-battery-print-plate.stl",
+  "bambu_project": {
+    "file": "actual-30mm-prototype-a1mini.3mf",
+    "sha256": "7e8ccbaf5e5793cdf6622e9f20b526d674aac21a83e03f1496c2bece0e5abc20",
+    "archive_validation": "PASS"
+  },
+  "output": "plate_1.gcode",
+  "slicer": "Bambu Studio 02.07.01.62",
+  "printer_profile": "Bambu Lab A1 mini, 0.4 mm nozzle",
+  "material": "Bambu PETG Basic",
+  "process": {
+    "layer_height_mm": 0.16,
+    "wall_loops": 6,
+    "top_shell_layers": 6,
+    "bottom_shell_layers": 6,
+    "infill_percent": 40,
+    "infill_pattern": "gyroid",
+    "supports": true
+  },
+  "result": {
+    "return_code": 0,
+    "warnings": [],
+    "estimated_model_time": "33m 41s",
+    "estimated_total_time": "34m 0s",
+    "layers": 51,
+    "max_z_mm": 8.2,
+    "filament_g": 7.1,
+    "gcode_sha256": "af4d807a86bacf7b4242b9763597f5955f67219206df2df31d4c6fb93f2a7505"
+  },
+  "limitations": [
+    "Successful slicing proves toolpath generation, not dimensional fit or strength.",
+    "The PCB and battery pieces are nonfunctional physical gauges.",
+    "Inspect support removal from the USB, microphone and cord openings before inserting real hardware."
+  ]
+}

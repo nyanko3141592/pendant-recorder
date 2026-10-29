@@ -1,0 +1,124 @@
+{
+  "status": "CONDITIONAL_DC_SCREEN_NOT_PART_APPROVAL",
+  "candidate": "BSS138BK,215",
+  "references": [
+    "Q6",
+    "Q7"
+  ],
+  "observed_connections": {
+    "R47_R48": "10k1% from VBUS to drains",
+    "R49_R50": "100k1% gate to GND",
+    "Q7_extra_drain_load": "TLV803EB29DBZR reset output"
+  },
+  "conditions": {
+    "VBUS_V": [
+      4.5,
+      5.25
+    ],
+    "gate_V_min_required": 2.5,
+    "RDSon_ohm_at_25C": 6.5,
+    "pullup_ohm": [
+      9900,
+      10100
+    ]
+  },
+  "calculated": {
+    "maximum_sink_mA": 0.5299550799979812,
+    "drain_low_V_using_25C_RDSon": 0.0034447080199868775,
+    "Q6_high_V_at_4_5V_using_10uA_MOSFET_plus_1uA_input_leakage": 4.3889,
+    "Q7_high_V_at_4_5V_with_supervisor_leakage_screen": 4.385365
+  },
+  "latch_datasheet": {
+    "source": "https://www.ti.com/lit/ds/symlink/sn74hcs74.pdf",
+    "positive_threshold_max_at_4_5V": 3.15,
+    "negative_threshold_min_at_4_5V": 0.9,
+    "input_leakage_max_uA": 1,
+    "clear_pulse_min_ns": 11,
+    "clock_pulse_min_ns_at_4_5V": 12
+  },
+  "limits": [
+    "RDSon bound is at25C and specified current, not full-temperature low-current guarantee",
+    "10uA MOSFET leakage bound specified at60V150C; used conservatively as screen, not characterized at5V",
+    "Thresholds at4.5/6V do not by themselves guarantee interpolated supply points",
+    "Firmware pulse widths, startup and power loss sequencing remain unqualified",
+    "Supervisor350nA bound taken at6V; application at4.5V is a conservative screening assumption, not separately characterized",
+    "MCU table verified; application minimum VDD during pulses and dropout is not yet qualified"
+  ],
+  "supervisor_leakage": {
+    "source": "https://www.ti.com/lit/gpn/tlv810e",
+    "document": "SLVSES2J table7.5 TLV803E",
+    "maximum_nA": 350,
+    "conditions": "VDD=VPULLUP=6V, VDD>VIT+; operating temperature table -40..125C"
+  },
+  "firmware_pulse_review": {
+    "source": "firmware/stm32/board/usb_input_v15.c",
+    "sha256": "c8c6ca33df7a18ab666be97671d2700daad54fbd4ec43eae1909b0740c32c5d9",
+    "gpio_mode": "push-pull, pulldown, low speed",
+    "suspend": "Q6 gate high HAL_Delay(1), low HAL_Delay(1); latch clocks on gate falling edge",
+    "resume": "Q6 low delay1, Q7 high delay1, Q7 low delay1",
+    "delay_unit": "HAL milliseconds requested, not measured pulse width",
+    "context": "Task context required, interrupts enabled",
+    "remaining": [
+      "Verify HAL tick/timebase and worst-case ISR scheduling",
+      "Measure gate/drain rise/fall and latch threshold crossings",
+      "Check MCU supply loss during pulse and retainedOFF behavior"
+    ],
+    "reset_note": "Reset releases Q6 but completion requires a valid prior CLK LOW; no unconditional OFF guarantee."
+  },
+  "mcu_voh_evidence_status": "Official DS14217 Rev5 table94 and footnotes read successfully via STM32U535RB URL; table26 confirms both PA2 and PB1 FT_ha, within table94 scope.",
+  "mcu_output_screen": {
+    "source": "https://www.st.com/resource/en/datasheet/stm32u535rb.pdf",
+    "document": "DS14217 Rev5 May2025",
+    "pages": [
+      99,
+      101,
+      205
+    ],
+    "pin_structures": {
+      "PA2": "FT_ha",
+      "PB1": "FT_ha"
+    },
+    "table94_cmos_condition": {
+      "supply_V": [
+        2.7,
+        3.6
+      ],
+      "current_mA": 8,
+      "VOH_min": "VDDIOx - 0.4 V"
+    },
+    "footnotes": "Observe per-pin and aggregate current ratings. Other low-current rows marked specified by design, not production tested.",
+    "required_supply_V_for_2_5V_gate": 2.9,
+    "conditional_regulated_supply_V": 3.2504999999999997,
+    "conditional_VOH_min_V": 2.8505,
+    "conditional_gate_margin_V": 0.3504999999999998,
+    "qualification": "Conditional static screening only: regulator must remain in regulation, ground drops and transient margins excluded. At VDD=2.7V the 2.3V VOH bound does not support the selected 2.5V RDSon condition.",
+    "remaining": [
+      "Verify actual VDD minimum during gate pulses including dropout, startup and power removal",
+      "Verify BOR option and sequencing prevent reliance on the 2.5V MOSFET condition below VDD 2.9V",
+      "Include internal pulldown and gate leakage in GPIO load; dynamic gate charge and temperature qualification still pending"
+    ]
+  },
+  "brownout_screen": {
+    "source": "https://www.st.com/resource/en/datasheet/stm32u535rb.pdf",
+    "document": "DS14217 Rev5 table34 pp135-136",
+    "BOR4_falling_V": [
+      2.67,
+      2.79,
+      2.9
+    ],
+    "BOR4_rising_V": [
+      2.76,
+      2.88,
+      3.0
+    ],
+    "PVD6_falling_V": [
+      2.76,
+      2.88,
+      3.0
+    ],
+    "result": "BOR4 cannot guarantee reset before VDD falls below 2.9V. PVD6 likewise does not guarantee detection above 2.9V, before considering interrupt latency. Do not use typical or maximum thresholds as guaranteed minimum.",
+    "static_gap_V": 0.22999999999999998,
+    "firmware_observation": "usb_input_v15_suspend/resume check initialized/task context; resume also checks VBUS. Neither verifies MCU VDD. Reset during high suspend pulse can complete OFF only if drain was driven sufficiently low first.",
+    "next_design_action": "Evaluate a pin-compatible MOSFET with RDSon specified at 1.8V; minimum VDD then 2.2V under VDD-.4 bound. Still verify startup, BOR programming, reset GPIO behavior, temperature, leakage and dynamic edges. No part substitution adopted."
+  }
+}

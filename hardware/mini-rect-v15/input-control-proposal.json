@@ -1,0 +1,110 @@
+{
+  "status": "SUPERSEDED_BY_INPUT_CONTROL_ELECTRICAL_CANDIDATE",
+  "base": "hardware/mini-rect-v15/design.json",
+  "purpose": "Insert limiter ahead of charger and thermal guard while preserving rawVBUS attachment sensing and USB ESD clamp",
+  "switch": {
+    "ref": "U13",
+    "value": "MAX4995CAUT+T",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "connections": {
+      "1": "VBUS_LIMITED",
+      "2": "GND",
+      "3": "USB_ILIM_SET",
+      "4": "USB_INPUT_ON",
+      "5": "VBUS",
+      "6": "USB_INPUT_FAULT_N"
+    }
+  },
+  "existing_pin_moves": [
+    {
+      "ref": "C13",
+      "pin": "1",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    },
+    {
+      "ref": "U3",
+      "pin": "10",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    },
+    {
+      "ref": "R12",
+      "pin": "1",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    },
+    {
+      "ref": "R37",
+      "pin": "1",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    },
+    {
+      "ref": "R38",
+      "pin": "1",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    },
+    {
+      "ref": "R40",
+      "pin": "1",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    },
+    {
+      "ref": "U12",
+      "pin": "8",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    },
+    {
+      "ref": "C29",
+      "pin": "1",
+      "from": "VBUS",
+      "to": "VBUS_LIMITED"
+    }
+  ],
+  "new_input_capacitor": {
+    "value": "1uF10V",
+    "between": [
+      "VBUS",
+      "GND"
+    ],
+    "note": "C13existing2.2u moves downstream; review rawVBUS total effective capacitance and inrush"
+  },
+  "seti_network": {
+    "permanent_R": "390k1% SETI toGND",
+    "high_budget_branch": "100k1% SETI todrain ofNMOS; sourceGND, gateUSB_HIGH_BUDGET withpulldown",
+    "GPIO_candidate": "U1.PA3 pin13 currentlyNC",
+    "requirement": "MOSFET leakage/capacitance and20pFSETI limit must be verified; mode high only after500mA host configuration"
+  },
+  "on_control": {
+    "requirement": "VBUS-powered retained off latch; attach initializesON, suspend latchesOFF, MCUreset/brownout does not clearOFF, resume deliberately clearsOFF; disconnect resetsattach state",
+    "unresolved": "Concretecandidate nowSN74HCS74DYYR plusTLV803EB29DBZR andNMOSleveltranslation; placement/analogtiming/poweroffverification remain",
+    "GPIO_candidates": [
+      "U1.PA2 pin12",
+      "U1.PB1 pin19"
+    ]
+  },
+  "firmware_sequence": [
+    "Defaultchargeinhibit andlowbudget",
+    "Configure500mA only when hardware integration is ready",
+    "Onconfiguration enablehighbudget beforestorageexport/chargepermission",
+    "Onsuspend inhibitcharge, lowerbudget, latchinputoff",
+    "Onresume clearofflatch then restore budget only ifconfigured",
+    "Onbusreset lowerbudget andinhibitcharge immediately",
+    "Ifbatteryexhausts during suspended state, stay disconnected until safe resume mechanism orVBUSreattach; no repetitive startup pulses"
+  ],
+  "validation_required": [
+    "VIN4.4..5.25VDCcurrentlimits and inputIq across expected temperature",
+    "Hotplug and loadstep peak/inrush charge",
+    "Pre-enumeration no-battery startup withSDdisabled",
+    "Suspend MCUbrownout andwatchdog injection",
+    "VBUSdetach reversecurrent",
+    "Interlock thermalguard powered fromlimitedrail andchargeinhibit pullup behavior",
+    "USBESD upstream leakage and total suspend budget"
+  ],
+  "release_allowed": false,
+  "candidate": "hardware/mini-rect-v15/input-control/design.json"
+}

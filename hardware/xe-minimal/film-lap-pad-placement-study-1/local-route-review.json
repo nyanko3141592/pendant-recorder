@@ -1,0 +1,75 @@
+{
+  "status": "LOCAL_ROUTE_TRIAL_NOT_DRC_APPROVED",
+  "results": [
+    {
+      "net": "/SD_MOSI",
+      "start": [
+        15.5,
+        1.6
+      ],
+      "end": [
+        12.1,
+        2.6
+      ],
+      "visited": 2036,
+      "found": true,
+      "path_mm": [
+        [
+          15.5,
+          1.6
+        ],
+        [
+          15.1,
+          0.45
+        ],
+        [
+          15.05,
+          0.4
+        ],
+        [
+          12.2,
+          0.4
+        ],
+        [
+          12.15,
+          0.45
+        ],
+        [
+          12.1,
+          2.6
+        ]
+      ]
+    },
+    {
+      "net": "/SD_MISO",
+      "start": [
+        15.7,
+        2.3
+      ],
+      "end": [
+        13.7,
+        1.7
+      ],
+      "visited": 723,
+      "found": false
+    },
+    {
+      "net": "/BAT_TS",
+      "start": [
+        12.75,
+        1.5
+      ],
+      "end": [
+        16.13,
+        1.055
+      ],
+      "visited": 829,
+      "found": false
+    }
+  ],
+  "limits": [
+    "Single-layer bounded search failure does not prove all routing impossible.",
+    "Full DRC and electrical/assembly qualification required.",
+    "Failed routes remain open in this explicitly separate study candidate."
+  ]
+}

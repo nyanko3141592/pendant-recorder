@@ -1,0 +1,63 @@
+{
+  "status": "Q5_REPLACEMENT_ARCHITECTURE_CANDIDATE_NOT_ADOPTED",
+  "part": "TMUX1101DCKR",
+  "source": "https://www.ti.com/lit/ds/symlink/tmux1101.pdf",
+  "revision": "SCDS410D February2024",
+  "pdf_sha256": "c1b3a8da1ddef89f535f615c9fb92a3cff4c096b1a75d546e7b57d6a9aa64155",
+  "purpose": "Reduce leakage in the switched R45 branch; precision SPST replaces Q5, not a footprint-compatible MOSFET substitution",
+  "proposed_connections": {
+    "1_D": "USB_HIGH_BUDGET_DRAIN (R45 lower end)",
+    "2_S": "GND",
+    "3_GND": "GND",
+    "4_SEL": "USB_HIGH_BUDGET; retain R46 default-low pull",
+    "5_VDD": "VBUS (raw upstream of MAX4995); add local100nF bypass"
+  },
+  "table_5V": {
+    "off_leakage_max_nA": 0.9,
+    "temperature_C": [
+      -40,
+      125
+    ],
+    "test_VDD_V": 5,
+    "test_signal_pairs_V": [
+      [
+        4.5,
+        1.5
+      ],
+      [
+        1.5,
+        4.5
+      ]
+    ],
+    "RON_max_ohm_125C": 4.9,
+    "VIH_min_V": 1.49,
+    "VIL_max_V": 0.87
+  },
+  "supply_range_V": [
+    1.08,
+    5.5
+  ],
+  "analog_signal_range": "0..VDD during operation; fail-safe rating applies to SEL, not an assumption of powered-off analog isolation",
+  "tradeoff": [
+    "Adds supply connection and bypass capacitor; local routing and USB upstream capacitance budget change",
+    "SC70-5 physical size must be checked against current placement; no final size increase assumed",
+    "Retain R44 always connected; do not put switch directly between SETI and ground"
+  ],
+  "limitations": [
+    "Off leakage table does not literally test S=0 with D at unknown SETI voltage; check applicability and bench measure",
+    "Leakage sub-nA table is promising but not a complete USB current guarantee",
+    "VBUS ramp/removal: analog terminal must not exceed powered-down supply domain",
+    "Measure SEL threshold during MCU reset and supply ramp; internal fail-safe logic does not guarantee analog state below1.08V",
+    "Candidate routed and modeled; electrical transients, complete fit, runtime and manufacturing qualification remain pending"
+  ],
+  "next": "Resolve power sequencing/SETI and manufacturing qualification before adoption; routed candidate exists.",
+  "procurement_observation": {
+    "date": "2026-10-27",
+    "url": "https://www.digikey.jp/en/products/detail/texas-instruments/TMUX1101DCKR/10442439",
+    "stock": 7285,
+    "JPY_qty1_ex_tax": 412,
+    "JPY_qty10_total_ex_tax": 3059,
+    "ordered": false
+  },
+  "placement_trial": "hardware/xe-minimal/q5-tmux-placement-trial/ti-registered-review.json"
+}

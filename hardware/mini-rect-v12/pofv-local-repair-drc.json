@@ -1,0 +1,180 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:18:39",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pofv-local-repair.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0751 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                },
+                {
+                    "description": "配線 [/ISET] ( In3.Cu 上、長さ: 1.7574 mm )",
+                    "pos": {
+                        "x": 2.3487,
+                        "y": 15.662
+                    },
+                    "uuid": "9a04fe0d-bc21-474e-942a-ee39c3a4a57b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In3.Cu 上、長さ: 0.0000 mm )",
+                    "pos": {
+                        "x": 3.9,
+                        "y": 16.3
+                    },
+                    "uuid": "e9034854-8f93-4f91-b4bb-13cf85f18995"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.75,
+                        "y": 11.35
+                    },
+                    "uuid": "39257223-a173-4c8d-982f-fdcca22cf0d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.7,
+                        "y": 11.95
+                    },
+                    "uuid": "9e92ac8b-2acc-4fbd-9956-bcffc9b1ffc3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( In3.Cu 上、長さ: 0.0000 mm )",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 6.85
+                    },
+                    "uuid": "76d44053-6bd9-4f53-9ba9-eb74a125fa2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( In3.Cu 上、長さ: 0.0000 mm )",
+                    "pos": {
+                        "x": 13.2,
+                        "y": 6.7
+                    },
+                    "uuid": "b038c012-87f4-49ba-ba83-cfbbe81e3eb3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In2.Cu 上、長さ: 0.0000 mm )",
+                    "pos": {
+                        "x": 5.05,
+                        "y": 15.9
+                    },
+                    "uuid": "11fd44b3-5147-4854-ba05-0cf0fa82eea5"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In3.Cu 上、長さ: 0.8733 mm )",
+                    "pos": {
+                        "x": 14.2473,
+                        "y": 21.2349
+                    },
+                    "uuid": "0bcc1da3-1d7f-4cb7-bd0a-6cf6065a386f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In3.Cu 上、長さ: 0.0202 mm )",
+                    "pos": {
+                        "x": 16.753799,
+                        "y": 18.2198
+                    },
+                    "uuid": "abb7aa5b-c990-4382-b1af-ba26be7063e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+"""Envelope and power screening only, not an assembled fit or runtime claim."""
+from pathlib import Path
+import json
+P=Path(__file__).resolve().parent;R=P.parents[1]
+old=json.loads((R/'hardware/mini-rect-v13/recording-power-budget.json').read_text())
+allocation=sum(old['allocations_mA'].values())
+rows=[]
+for model,size,capacity,basis in [('DTP301120(PHR)',[11.5,22,3.4],40,'Retail completed dimensions; manufacturer verification pending'),('DTP401525(PHR)',[15.5,27,4.2],110,'Manufacturer completed-pack maximum'),('DTP401525-XE',[15,25.3,4],110,'Retail approximate dimensions, not maximum; cannot qualify fit')]:
+ rows.append(dict(model=model,pack_mm=size,dimension_basis=basis,case_mm=[30,30,15],wall_mm=1.2,inside_xy_mm=27.6,total_length_clearance_mm=round(27.6-size[1],3),side_space_before_connector_mm=round(27.6-size[0],3),capacity_mAh=capacity,assumed_usable_fraction=.7,average_budget_for16h_mA=capacity*.7/16,existing_allocation_mA=allocation,headroom_against_allocation_mA=round(capacity*.7/16-allocation,4),runtime_if_allocation_met_h=capacity*.7/allocation,fit_qualified=False,runtime_qualified=False))
+r=dict(status='SCREEN_ONLY_NOT_SELECTED',candidates=rows,decision='Prioritize110mAh class.40mAh does not cover current unmeasured allocation. PH27mm requires explicit lead-exit geometry; XE approximate25.3mm cannot substitute a maximum dimension.',placement_hypothesis={'case_mm':[30,30,14.8],'battery_region_mm':[15.5,27,4.2],'side_corridor_width_mm':12.1,'strategy':'Place connector and folded factory leads beside battery; do not place PH header on top of pouch or add it beyond pack length. Retain lead length, no user soldering.','not_yet_proven':['Wire exit bend and manufacturer minimum radius','Mated housing and insertion/removal sweep','Full100mm lead route with insulation OD and assembly slack','PCB backside population, support and thermal pad','Swelling and manufacturing tolerance','Acoustic path and lid retention']},sources=['https://www.inedenki.co.jp/category/lithium/Lipobattery/DTP-301120.html','https://www.sengoku.co.jp/item/pdf/SPE-DTP401525%28PHR%29-3.7V-110mAh-en-2.0ver.pdf','https://eleshop.jp/shop/g/gPCC31A/'])
+(P/'pack-screen.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(rows,indent=2))

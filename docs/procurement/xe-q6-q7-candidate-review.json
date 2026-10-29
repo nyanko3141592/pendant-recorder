@@ -1,0 +1,48 @@
+{
+  "status": "ALTERNATIVE_CANDIDATE_NOT_ADOPTED",
+  "references": [
+    "Q6",
+    "Q7"
+  ],
+  "candidate_mpn": "BSS138BK,215",
+  "manufacturer": "Nexperia",
+  "source": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+  "verified": {
+    "package": "SOT23",
+    "pins": {
+      "1": "G",
+      "2": "S",
+      "3": "D"
+    },
+    "RDSon_max_ohm": 6.5,
+    "RDSon_conditions": "VGS2.5V ID10mA Tj25C",
+    "IDSS_max_uA_at_150C_60V": 10,
+    "Ciss_max_pF": 56
+  },
+  "board_connections": {
+    "Q6": {
+      "1": "USB_SUSPEND_PULSE",
+      "2": "GND",
+      "3": "USB_LATCH_CLOCK"
+    },
+    "Q7": {
+      "1": "USB_RESUME_PULSE",
+      "2": "GND",
+      "3": "USB_LATCH_CLEAR_N"
+    }
+  },
+  "remaining": [
+    "Verify MCU minimum VOH and gate series/pulldown network",
+    "Calculate latch input low/high levels including leakage and pullups across temperature",
+    "Check output capacitance and latch pulse timing",
+    "Verify exact order suffix availability, assembly SKU and price",
+    "Apply explicit alternative to schematic and BOM only after qualification"
+  ],
+  "C31": {
+    "net": "VBUS to GND",
+    "required": "1uF10V0402",
+    "candidate_family": "GRM155R61A105KE15",
+    "status": "NOT_SELECTED",
+    "reason": "Manufacturer list confirms family, direct datasheet fetch failed; lifecycle/order suffix and DC-bias capacity unresolved"
+  }
+}

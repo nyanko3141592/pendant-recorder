@@ -1,0 +1,20 @@
+{
+  "status": "INCOMPLETE_NOT_ADOPTED",
+  "sha256": "27d4acdf203073a67e3ab8f3e0c3cfc27ca1be5bf2e9f72c9d4bb442b0954bc0",
+  "types": {
+    "via_dangling": 1,
+    "lib_footprint_issues": 74
+  },
+  "geometric": 1,
+  "unconnected": 3,
+  "parity": 0,
+  "vias": 118,
+  "release_allowed": false,
+  "remaining_nets": [
+    "/SD_MOSI",
+    "/PDM_DATA",
+    "/PDM_CLK_MCU"
+  ],
+  "finding": "SD_MISO connected, but neighbour routes remain incomplete; isolated escape priority does not solve coordinated MCU fanout.",
+  "next_action": "Coordinate neighbouring MCU escapes and source-side R21 placement; preserve clean reference candidates."
+}

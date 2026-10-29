@@ -1,0 +1,108 @@
+{
+  "status": "REJECTED_REPACK_TRIAL_CLEARANCE_AND_COURTYARD_VIOLATIONS",
+  "results": [
+    {
+      "net": "/SD_MOSI",
+      "start": [
+        15.5,
+        1.6
+      ],
+      "end": [
+        12.1,
+        2.6
+      ],
+      "visited": 365,
+      "found": true,
+      "path_mm": [
+        [
+          15.5,
+          1.6
+        ],
+        [
+          15.1,
+          2.55
+        ],
+        [
+          15.05,
+          2.6
+        ],
+        [
+          12.1,
+          2.6
+        ]
+      ]
+    },
+    {
+      "net": "/SD_MISO",
+      "start": [
+        15.7,
+        2.3
+      ],
+      "end": [
+        13.7,
+        1.7
+      ],
+      "visited": 374,
+      "found": false
+    },
+    {
+      "net": "/BAT_TS",
+      "start": [
+        12.75,
+        1.5
+      ],
+      "end": [
+        16.13,
+        1.055
+      ],
+      "visited": 848,
+      "found": true,
+      "path_mm": [
+        [
+          12.75,
+          1.5
+        ],
+        [
+          13.5,
+          0.7
+        ],
+        [
+          13.95,
+          0.4
+        ],
+        [
+          15.05,
+          0.4
+        ],
+        [
+          16.13,
+          1.055
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "Single-layer bounded search failure does not prove all routing impossible.",
+    "Full DRC and electrical/assembly qualification required.",
+    "Failed routes remain open in this explicitly separate study candidate."
+  ],
+  "r13_shift_mm": [
+    0,
+    0.3
+  ],
+  "drc": {
+    "report": "r13-route-drc.json",
+    "unconnected_items": 1,
+    "types": {
+      "clearance": 3,
+      "hole_clearance": 1,
+      "courtyards_overlap": 1,
+      "via_dangling": 1,
+      "track_dangling": 1,
+      "missing_courtyard": 1,
+      "silk_edge_clearance": 1,
+      "silk_overlap": 1,
+      "silk_over_copper": 2
+    }
+  }
+}

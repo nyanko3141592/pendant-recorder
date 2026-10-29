@@ -1,0 +1,20 @@
+DRAFT — NOT RELEASED FOR FABRICATION
+
+Six-layer PCB. Required process at the following through vias: nonconductive epoxy fill, planarization, copper cap, ENIG finish. Solder-mask ink plugging or tenting alone is not a substitute. Coordinates in KiCad board coordinates, mm.
+
+U1.36 V3V3: X20.700 Y10.600; drill0.150, copper diameter0.350.
+U1.40 PDM_DATA: X18.100 Y11.500; drill0.150, copper diameter0.350.
+
+Preserve component-pad paste apertures; do not add a circular paste aperture for either via. These are partially overlapping pad/via geometries; final solder mask registration, stencil and surface flatness must be reviewed for UFQFPN48 assembly. PCB metadata is not a replacement for selecting the fabrication process and inspecting final production files.
+
+No board-size, battery, recording-time or component-placement change. Final stackup, manufacturing outputs, cost and assembly qualification remain pending. Do not order from this draft.
+
+Added U13.4 USB_INPUT_ON: X15.0125 Y3.000; drill0.150, copper diameter0.350; same required epoxy-fill/planarize/copper-cap/ENIG process.
+
+USB_RESUME_PULSE route adds filled/capped vias at U1.19 (17.15,4.35 mm) and R50.1 (0.745,0.795 mm), each copper diameter0.35 mm/drill0.15 mm. Total five flagged pad-overlap vias. Same resin fill, planarization, copper cap, ENIG and stencil qualification requirements apply; not fabrication-qualified.
+
+USB_ILIM_SET route adds filled/capped via at R45.1 (12.35,10.2 mm), copper diameter0.35 mm/drill0.15 mm. Total six flagged pad-overlap vias. Same resin fill, planarization, copper cap, ENIG and stencil qualification requirements apply; not fabrication-qualified.
+
+USB_LATCH_CLEAR_N route adds filled/capped via at R48.2 (8.25,4.5 mm), copper diameter0.35 mm/drill0.15 mm. Total seven flagged pad-overlap vias. Same resin fill, planarization, copper cap, ENIG and stencil qualification requirements apply; not fabrication-qualified.
+
+USB_LATCH_CLOCK adds filled/capped via at U14.3(2.8,20.7 mm), copper0.35/drill0.15mm. Total eight flagged overlap vias; same resin-fill, planarize, copper-cap and stencil qualification requirements. Not manufacturing-qualified.

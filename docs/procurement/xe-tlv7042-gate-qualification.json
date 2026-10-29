@@ -1,0 +1,34 @@
+{
+  "status": "GUARD_OUTPUT_LIMIT_GAPS_IDENTIFIED",
+  "source": "https://www.ti.com/lit/ds/symlink/tlv7042.pdf",
+  "document": "SLVSE13J November 2024",
+  "page": 9,
+  "visually_verified": true,
+  "pdf_sha256": "9d53a63c34e9ca14f68d3fb60bdd4ae81bbc91c101db01df985ed245d99fcacc",
+  "current_circuit": {
+    "U12_supply": "V3V3",
+    "U12_outputs": [
+      1,
+      7
+    ],
+    "shared_net": "CHG_GUARD_GATE",
+    "target": "Q4 gate"
+  },
+  "published_limits": {
+    "output_leakage_pA": 100,
+    "output_leakage_kind": "typical only; maximum column blank",
+    "output_leakage_conditions": "VS=5V, VID=+0.1V, VPULLUP=VCC",
+    "VOL_max_mV": 350,
+    "VOL_conditions": "VS=5V, IO=3mA",
+    "power_up_us": 200,
+    "power_up_kind": "typical only"
+  },
+  "conclusions": [
+    "Do not sum 2x100 pA and call it guaranteed worst-case leakage.",
+    "The 350 mV maximum at 5 V cannot directly certify the actual 3.3 V comparator output-low voltage.",
+    "Q4 normal-on DC calculation lacks a guaranteed total gate-node leakage bound. Fault-off calculation also requires the real output-low envelope and MOSFET off-current at that residual gate voltage.",
+    "No evidence here establishes hardware failure; it establishes missing specification coverage.",
+    "Next decision: compare a guard topology or comparator with published bounds covering actual supply, output load and temperature, while retaining the temperature protection function."
+  ],
+  "board_changed": false
+}

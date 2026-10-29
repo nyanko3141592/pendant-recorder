@@ -1,0 +1,64 @@
+{
+  "status": "FULL_LEAD_INSULATION_SCREEN_NOT_ADOPTED",
+  "sources_sha256": {
+    "lower": "cb3e11bc0664f14e27b75f263665a91d96cfd46c8eeba3a17edcecf273a25e69",
+    "separator": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+    "board": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "screened_local_y_mm": [
+    22,
+    23.2
+  ],
+  "tape_nominal_assumption_mm": 0.08,
+  "rows": [
+    {
+      "lead_center_local_x_mm": -0.95,
+      "checks": {
+        "lower": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.020000000000000018
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.33999999999999986
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.06
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.3105513881047
+        }
+      }
+    },
+    {
+      "lead_center_local_x_mm": 0.95,
+      "checks": {
+        "lower": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.020000000000000018
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.33999999999999986
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.0600000000000003
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.9876077555987717
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Only previously uncovered lead-to-joint segment; joint wrap and transition at film edge remain unrealized.",
+    "Tape thickness and lead dimensions are provisional envelopes, not guaranteed material maxima.",
+    "Independent conductor insulation must extend to the film boundary without pinching or insulating the sensing contact region.",
+    "No adhesion, creepage, wear, solder heat or pull qualification."
+  ]
+}

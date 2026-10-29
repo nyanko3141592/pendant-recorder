@@ -1,0 +1,1080 @@
+{
+  "status": "QUANTITIES_RECONCILED_PRICING_AND_QUALIFICATION_INCOMPLETE",
+  "prototype_units": 5,
+  "assembly_refs_per_board": 85,
+  "installed_components": 425,
+  "grouped_lines": 48,
+  "candidate_mpn_refs": 85,
+  "unresolved_mpn_refs": 0,
+  "source_hashes": {
+    "BOM-ENGINEERING-REVIEW.csv": "245109adf060afad085a857cdfee0e252e97fd7615c1862fab94da866a64c809",
+    "CPL-ENGINEERING-REVIEW.csv": "8c461efd029c3e5dd47c534b5b2ee9b310b1377974e7d221fc86c1ae11adfc04"
+  },
+  "lines": [
+    {
+      "references": [
+        "U1"
+      ],
+      "design_value": "STM32U535CEU6",
+      "footprint": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+      "candidate_mpn": "STM32U535CEU6",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "C1",
+        "C2",
+        "C22",
+        "C26",
+        "C3",
+        "C6",
+        "C9"
+      ],
+      "design_value": "100n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX7R7BB104",
+      "per_board": 7,
+      "installed_quantity_for_five": 35,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "C4"
+      ],
+      "design_value": "10u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate_mpn": "CC0603KRX5R6BB106",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "R2"
+      ],
+      "design_value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-0710KL",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "Y1"
+      ],
+      "design_value": "32.768kHz CL=7pF TBD",
+      "footprint": "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm",
+      "candidate_mpn": "ABS06-32.768KHZ-7-T",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Design value still tentative",
+        "Actual pad pattern and maximum outline",
+        "STM32LSE negative-resistance/startup margin and drive power",
+        "C11/C12 remain10pF tentative;7pF load needs about2pF aggregate stray with equal10pF capacitors",
+        "Supplier SKU, stock, price and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "C11",
+        "C12"
+      ],
+      "design_value": "10p tentative",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402JRNPO9BN100",
+      "per_board": 2,
+      "installed_quantity_for_five": 10,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Design value still tentative",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions",
+        "Crystal load remains tentative"
+      ]
+    },
+    {
+      "references": [
+        "SW1"
+      ],
+      "design_value": "B3U-1000P (candidate)",
+      "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "candidate_mpn": "B3U-1000P",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "R12",
+        "R13",
+        "R15",
+        "R22",
+        "R3",
+        "R36",
+        "R4"
+      ],
+      "design_value": "100k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-07100KL",
+      "per_board": 7,
+      "installed_quantity_for_five": 35,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "J1"
+      ],
+      "design_value": "USB4105-GF-A (candidate)",
+      "footprint": "PendantD1:USB_C_GCT_USB4105_GroundLand112",
+      "candidate_mpn": "USB4105-GF-A",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "R6",
+        "R7"
+      ],
+      "design_value": "5.1k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-075K1L",
+      "per_board": 2,
+      "installed_quantity_for_five": 10,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "U2"
+      ],
+      "design_value": "USBLC6-2P6",
+      "footprint": "Package_TO_SOT_SMD:SOT-666",
+      "candidate_mpn": "USBLC6-2P6",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "C13"
+      ],
+      "design_value": "2.2u 10V",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX5R6BB225",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "U3"
+      ],
+      "design_value": "BQ25185DLHR",
+      "footprint": "Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "candidate_mpn": "BQ25185DLHR",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "R10"
+      ],
+      "design_value": "6.8k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-076K8L",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "R11",
+        "R39"
+      ],
+      "design_value": "20k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-0720KL",
+      "per_board": 2,
+      "installed_quantity_for_five": 10,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "C14"
+      ],
+      "design_value": "2.2u",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX5R6BB225",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "J2"
+      ],
+      "design_value": "Molex781710003 / DTP401525-XE",
+      "footprint": "Connector_Molex:Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical",
+      "candidate_mpn": "781710003",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "C15"
+      ],
+      "design_value": "10u 10V effective >=1u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate_mpn": "CC0603KRX5R6BB106",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "U4"
+      ],
+      "design_value": "TPS7A0233PDBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "candidate_mpn": "TPS7A0233PDBVR",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "C16",
+        "C25",
+        "C7"
+      ],
+      "design_value": "1u",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX5R6BB105",
+      "per_board": 3,
+      "installed_quantity_for_five": 15,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "U8"
+      ],
+      "design_value": "IM69D130V01XTSA1",
+      "footprint": "Pendant:IM69D130_JLC_SMD_trial",
+      "candidate_mpn": "IM69D130V01XTSA1",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "R21",
+        "R23"
+      ],
+      "design_value": "22R tentative",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-0722RL",
+      "per_board": 2,
+      "installed_quantity_for_five": 10,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Design value still tentative",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check",
+        "Circuit value remains tentative"
+      ]
+    },
+    {
+      "references": [
+        "U10"
+      ],
+      "design_value": "TPS22916CYFPR",
+      "footprint": "Pendant:TPS22916_YFP4",
+      "candidate_mpn": "TPS22916CYFPR",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "R24",
+        "R25",
+        "R28",
+        "R29",
+        "R30"
+      ],
+      "design_value": "47k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-0747KL",
+      "per_board": 5,
+      "installed_quantity_for_five": 25,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "C27"
+      ],
+      "design_value": "4.7u effective TBD",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate_mpn": "CC0603KRX5R6BB475",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Design value still tentative",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "R32"
+      ],
+      "design_value": "6.8k tentative",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-076K8L",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Design value still tentative",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check",
+        "Circuit value remains tentative"
+      ]
+    },
+    {
+      "references": [
+        "D6"
+      ],
+      "design_value": "amber LED 0402 TBD",
+      "footprint": "LED_SMD:LED_0402_1005Metric",
+      "candidate_mpn": "APHHS1005LSYCK/J3-PF",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Design value still tentative",
+        "Cathode orientation and land pattern",
+        "Visibility at actual sub-mA current through6.8k resistor and case window",
+        "MSL3 and no more than2 reflow passes",
+        "Supplier SKU, stock, price and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "C5"
+      ],
+      "design_value": "4.7u",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate_mpn": "CC0603KRX5R6BB475",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "R1"
+      ],
+      "design_value": "0R",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402JR-070RL",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check",
+        "Jumper resistance/current limit requires series specification; do not interpret0ohm5% literally"
+      ]
+    },
+    {
+      "references": [
+        "Q3"
+      ],
+      "design_value": "2N7002 (VBUS detect)",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "candidate_mpn": "BSS138BK,215",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Proposed BSS138BK substitution not adopted in board; minimum gate drive, temperature, leakage and capacitance validation pending",
+        "Temperature-range and minimum GPIO VOH validation",
+        "Leakage/reset-state analysis",
+        "Supplier availability and price"
+      ]
+    },
+    {
+      "references": [
+        "R14"
+      ],
+      "design_value": "1M",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-071ML",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "R33",
+        "R34"
+      ],
+      "design_value": "1M 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-071ML",
+      "per_board": 2,
+      "installed_quantity_for_five": 10,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "C28"
+      ],
+      "design_value": "10n",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX7R9BB103",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "R35",
+        "R43",
+        "R47",
+        "R48"
+      ],
+      "design_value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-0710KL",
+      "per_board": 4,
+      "installed_quantity_for_five": 20,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "R37",
+        "R38",
+        "R40",
+        "R45",
+        "R46",
+        "R49",
+        "R50"
+      ],
+      "design_value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-07100KL",
+      "per_board": 7,
+      "installed_quantity_for_five": 35,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "R41"
+      ],
+      "design_value": "7.5k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-077K5L",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "U12"
+      ],
+      "design_value": "TLV7042DDFR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-8",
+      "candidate_mpn": "TLV7042DDFR",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7"
+      ],
+      "design_value": "2N7002",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "candidate_mpn": "BSS138BK,215",
+      "per_board": 4,
+      "installed_quantity_for_five": 20,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Proposed BSS138BK substitution not adopted in board; minimum gate drive, temperature, leakage and capacitance validation pending",
+        "Temperature-range and minimum GPIO VOH validation",
+        "Leakage/reset-state analysis",
+        "Supplier availability and price",
+        "R45 plus SETI dynamic network analysis"
+      ]
+    },
+    {
+      "references": [
+        "C29",
+        "C32",
+        "C33"
+      ],
+      "design_value": "100n 10V",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX7R7BB104",
+      "per_board": 3,
+      "installed_quantity_for_five": 15,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "R42"
+      ],
+      "design_value": "130k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "ERJ2RKF1303X",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Height/land pattern and working voltage",
+        "Temperature drift of charger selection thresholds",
+        "Supplier SKU, stock, price and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "C30"
+      ],
+      "design_value": "50p 50V C0G",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402JRNPO9BN500",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    },
+    {
+      "references": [
+        "J4"
+      ],
+      "design_value": "DM3D-SF candidate",
+      "footprint": "Pendant:DM3D_SF_reviewed_candidate",
+      "candidate_mpn": "DM3D-SF",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "TH1"
+      ],
+      "design_value": "NCP18XH103F03RB 10k 1% B3380 candidate",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "candidate_mpn": "NCP18XH103F03RB",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "U13"
+      ],
+      "design_value": "MAX4995CAUT+T",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "candidate_mpn": "MAX4995CAUT+T",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "U14"
+      ],
+      "design_value": "SN74HCS74DYYR",
+      "footprint": "Pendant_Input:Texas_DYY0014A",
+      "candidate_mpn": "SN74HCS74DYYR",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "U15"
+      ],
+      "design_value": "TLV803EB29DBZR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "candidate_mpn": "TLV803EB29DBZR",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance"
+      ]
+    },
+    {
+      "references": [
+        "R44"
+      ],
+      "design_value": "390k 1%",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "candidate_mpn": "RC0402FR-07390KL",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Resistance tolerance, power and working voltage",
+        "Assembly supplier SKU and price",
+        "Circuit temperature drift and dissipation check"
+      ]
+    },
+    {
+      "references": [
+        "C31"
+      ],
+      "design_value": "1u 10V",
+      "footprint": "Capacitor_SMD:C_0402_1005Metric",
+      "candidate_mpn": "CC0402KRX5R6BB105",
+      "per_board": 1,
+      "installed_quantity_for_five": 5,
+      "procurement_quantity": null,
+      "unit_price": null,
+      "currency": null,
+      "qualification": "NOT_RELEASED",
+      "remaining": [
+        "Supplier SKU, availability, minimum order, attrition and assembly acceptance",
+        "Voltage rating, tolerance, dielectric, effective capacitance at bias and height",
+        "Supplier SKU, availability and price",
+        "Effective capacitance including DC bias, temperature, tolerance and aging",
+        "Mechanical clearance with specified body dimensions"
+      ]
+    }
+  ],
+  "non_pcba_items": [
+    {
+      "item": "DTP401525-XE protected connectorized battery",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Qualified microSD card at least2GB",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Case body",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Case lid",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Removable left support key (current comparison)",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Thermal contact material",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "PORON support pads 2x2mm (three per unit; purchase full sheet)",
+      "required_quantity": 15,
+      "price": null
+    },
+    {
+      "item": "Pad adhesive pieces (three per unit; purchase pack/roll)",
+      "required_quantity": 15,
+      "price": null
+    },
+    {
+      "item": "Case closure tape (purchase pack/roll; not selected)",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Pendant cord/accessory set (not selected)",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "SWD pogo fixture/cable set",
+      "required_quantity": 1,
+      "price": null
+    },
+    {
+      "item": "Debug probe (reuse ownership not confirmed)",
+      "required_quantity": 1,
+      "price": null
+    },
+    {
+      "item": "Assembly support fixture (not yet designed)",
+      "required_quantity": 1,
+      "price": null
+    },
+    {
+      "item": "USB-C data cable (reuse ownership not confirmed)",
+      "required_quantity": 1,
+      "price": null
+    }
+  ],
+  "unpriced_services": [
+    "6-layer PCB fabrication",
+    "Double-sided assembly",
+    "Stencil/setup",
+    "Part sourcing and attrition",
+    "Case printing and finishing",
+    "Shipping per supplier",
+    "Japan tax/import fees",
+    "Foreign exchange conversion"
+  ],
+  "pricing_policy": "Unknown costs remain null, never zero. Old revision quote totals are not used. Installed quantities exclude supplier attrition and MOQ. No orders or external uploads.",
+  "non_pcba_scope": "Current removable-ledge/open-acoustic comparison only; no manufacturing adoption. Shared cavity has no separate microphone gasket. If acoustic design changes, add its selected material. Tools may be reused only after ownership/compatibility confirmation; unknown cost is not zero."
+}

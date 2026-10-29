@@ -1,0 +1,85 @@
+#!/usr/bin/env python3
+"""Add ground planes and audit the routed four-layer cost-down candidate."""
+from pathlib import Path
+import collections
+import hashlib
+import json
+import shutil
+import subprocess
+
+import wx
+import pcbnew as k
+
+app = wx.App(False)
+HERE = Path(__file__).resolve().parent
+OUT = HERE / "costdown/HW-V1.1-EVT-COSTDOWN"
+source = HERE / "pendant-xe-minimal.kicad_pcb"
+routed = OUT / "hw-v1.1-evt-costdown-4layer-routed-v3.kicad_pcb"
+candidate = OUT / "hw-v1.1-evt-costdown-4layer-candidate.kicad_pcb"
+
+b = k.LoadBoard(str(routed))
+parent = k.LoadBoard(str(source))
+parent_zones = list(parent.Zones())
+assert len(parent_zones) == 2
+for original, layer in zip(parent_zones, (k.In1_Cu, k.In2_Cu)):
+    zone = original.Duplicate(False)
+    zone.SetLayer(layer)
+    b.Add(zone)
+k.ZONE_FILLER(b).Fill(b.Zones())
+k.SaveBoard(str(candidate), b)
+for suffix in (".kicad_pro", ".kicad_dru"):
+    shutil.copy2(routed.with_suffix(suffix), candidate.with_suffix(suffix))
+
+drc_path = OUT / "four-layer-candidate-drc.json"
+cli = "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli"
+subprocess.run([cli, "pcb", "drc", "--format", "json", "--output", str(drc_path), str(candidate)], check=True)
+drc = json.loads(drc_path.read_text())
+types = collections.Counter(row["type"] for row in drc["violations"])
+geometric = sum(count for kind, count in types.items() if kind != "lib_footprint_issues")
+
+overlaps = []
+for via in b.GetTracks():
+    if not isinstance(via, k.PCB_VIA):
+        continue
+    hits = []
+    for fp in b.GetFootprints():
+        for pad in fp.Pads():
+            if pad.GetAttribute() == k.PAD_ATTRIB_NPTH:
+                continue
+            for layer in (k.F_Cu, k.B_Cu):
+                if not pad.IsOnLayer(layer):
+                    continue
+                shape = pad.GetEffectiveShape(layer)
+                if shape.Collide(via.GetPosition(), via.GetDrillValue() // 2):
+                    hits.append({"ref": fp.GetReference(), "pad": pad.GetNumber(), "layer": b.GetLayerName(layer)})
+    if hits:
+        overlaps.append({"xy_mm": [k.ToMM(via.GetPosition().x), k.ToMM(via.GetPosition().y)], "hits": hits})
+
+report = {
+    "version": "HW-V1.1-EVT-COSTDOWN",
+    "status": "FOUR_LAYER_ORDINARY_VIA_ROUTED_CANDIDATE_SIGNAL_AND_MANUFACTURING_REVIEW_REQUIRED",
+    "parent_version": "HW-V1.0",
+    "parent_snapshot": "hardware/xe-minimal/snapshots/HW-V1.0-2026-10-28/snapshot-manifest.json",
+    "board_mm": [31.5, 31.5],
+    "copper_layers": b.GetCopperLayerCount(),
+    "footprints": len(b.GetFootprints()),
+    "tracks_and_vias": len(b.GetTracks()),
+    "zones": len(b.Zones()),
+    "drc_geometric_violations": geometric,
+    "drc_library_provenance_warnings": types.get("lib_footprint_issues", 0),
+    "unconnected_items": len(drc["unconnected_items"]),
+    "hole_over_pad_vias": len(overlaps),
+    "hole_over_pad_detail": overlaps,
+    "candidate_sha256": hashlib.sha256(candidate.read_bytes()).hexdigest(),
+    "function_changes": [],
+    "release_allowed": False,
+    "remaining_gates": [
+        "Replace/inspect autorouted USB D+/D- as a controlled pair for the selected four-layer stackup.",
+        "Review PDM, SPI, power and charger routes; autorouter completion is not signal/power qualification.",
+        "Resolve footprint-library provenance warnings without changing pad geometry.",
+        "Re-export schematic parity, CAM, assembly data and case only after routing review passes.",
+        "Obtain live one-unit PCB/PCBA quotation; no upload or order has been performed.",
+    ],
+}
+(OUT / "candidate-review.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+print(json.dumps(report, ensure_ascii=False))

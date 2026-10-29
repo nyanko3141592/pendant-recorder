@@ -1,0 +1,13 @@
+"""Drawing-envelope sensitivity for proposed NCU; not qualified manufacturing geometry."""
+from pathlib import Path
+import cadquery as cq,json,hashlib
+O=Path(__file__).resolve().parent;R=O.parents[1];pcb=R/'hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/pendant-xe-minimal.kicad_pcb';parent=R/'hardware/xe-minimal/fixed-usb-limit-trial/usb-margin-detour-trial/pendant-xe-minimal.kicad_pcb'
+assert pcb.read_text().replace('NCU18XH103F60RB 10k 1% B3380 candidate','NCP18XH103F03RB 10k 1% B3380 candidate')==parent.read_text()
+i=json.loads((O/'dmn-candidate-board-inventory.json').read_text());assert i['pcb_sha256']==hashlib.sha256(parent.read_bytes()).hexdigest();p=next(p for p in i['parts']if p['ref']=='TH1');assert p['side']=='B';x,y=p['position_mm'];y=-y
+files={'lower':'offset-pack-lower-trial.step','upper':'thickness-clearance-upper-trial.step','separator':'support-notched-separator-trial.step','battery':'offset-pack-assembly-trial.step'};shapes={n:cq.importers.importStep(str(O/f)).val()for n,f in files.items()};bt=shapes['battery'].BoundingBox().zmax;rows=[]
+for stand in [0,.1,.2]:
+ body=cq.Workplane('XY').box(1.75,.95,.95,centered=(True,True,False)).val().rotate((0,0,0),(0,0,1),p['rotation_deg']).translate((x,y,-.95-stand))
+ if stand==0:cq.exporters.export(body,str(O/'ncu18-drawing-envelope-study.step'))
+ rows.append({'solder_standoff_hypothesis_mm':stand,'body_bottom_z_mm':-.95-stand,'gap_to_battery_max_envelope_mm':-.95-stand-bt,'intersection_mm3':{n:body.intersect(s).Volume()for n,s in shapes.items()}})
+r={'status':'NCU_DRAWING_ENVELOPE_SCREEN_NOT_THERMAL_OR_FIT_APPROVAL','pcb_sha256':hashlib.sha256(pcb.read_bytes()).hexdigest(),'shape_dimensions_mm':[1.75,.95,.95],'dimension_basis':'2025-05-02 manufacturer summary two-view drawing:1.6+/-0.15 and0.8+/-0.15.0.95 height is the interpreted upper drawing envelope, not production approval','position_mm':[x,y],'rows':rows,'sources_sha256':{n:hashlib.sha256((O/f).read_bytes()).hexdigest()for n,f in files.items()},'output_sha256':hashlib.sha256((O/'ncu18-drawing-envelope-study.step').read_bytes()).hexdigest(),'limits':['Existing integrated board still has generic TH1 body; this separate study does not overwrite it','Standoff values are sensitivity cases, not measured or supplier limits','Battery model is maximum envelope; actual minimum thickness and seating uncertainty can enlarge contact gap','PCB seating, print tolerance and swelling not included','No contact pad thickness selected; compression cannot be fixed from this nominal gap alone']}
+(O/'ncu-body-space-review.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(rows,indent=2))

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-28",
+  "decision": "HOLD_DO_NOT_ORDER",
+  "release_allowed": false,
+  "authoritative_audit": "procurement/xe-production-readiness-2026-10-28.md",
+  "authoritative_bom": "procurement/xe-production-bom-2026-10-28.csv",
+  "superseded_blockers": ["Q5", "former U14 film-sensor function", "external 103JT assembly", "D6 exact MPN", "R42 order-minimum anomaly", "STM32U535CEU6"],
+  "current_blockers": [
+    "STM32U585CIU6 C5271026 ordinary JLC stock and physical USB/PDM/power qualification not verified",
+    "public exact-match snapshot covers all 36 MPN lines and 68 JLC-assembled references; live BOM-tool recognition, reservation and assembly eligibility remain unverified",
+    "DTP401525-XE battery is not in the JLC assembly boundary; the current product boundary still requires separate procurement and unmodified insertion of that exact connectorized pack",
+    "automatic-order acceptance not verified for six layers and four explicitly filled/capped hole-over-pad vias; simple dogbone candidate rejected by DRC",
+    "NCP360 is followed by TPS2552DBVR-1 latch-off limiting with a 1.1V guaranteed OVLO-threshold-to-absolute-maximum margin, but the published NCP360 turn-off limit excludes the required 1uF output capacitor; physical 6/9/12/20V at 0.1/1/10V/us must prove /VBUS_OVP and /VBUS_CHARGER peaks plus measurement uncertainty strictly below 6.5V, 50-100mA latch-off and USB-power-cycle-only recovery, or require redesign; safety, runtime, retention, host interoperability, USB, thermal and necklace tests are not complete",
+    "all earlier manufacturing and order packages superseded"
+  ],
+  "local_checks": {"erc_violations": 0, "drc_violations": 0, "unconnected_items": 0, "schematic_parity_issues": 0},
+  "external_actions_performed": {"order": false, "payment": false, "manufacturing_upload": false, "supplier_message": false}
+}

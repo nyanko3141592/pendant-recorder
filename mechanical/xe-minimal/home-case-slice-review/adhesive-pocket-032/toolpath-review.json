@@ -1,0 +1,31 @@
+{
+  "status": "RECESS_PRESENT_BUT_HEIGHT_QUANTIZED",
+  "layers": [
+    {
+      "z_mm": 7.72,
+      "extruding_segments": 49,
+      "xy_extrusion_length_mm": 227.57544434631154
+    },
+    {
+      "z_mm": 7.88,
+      "extruding_segments": 22,
+      "xy_extrusion_length_mm": 212.87317145750043
+    },
+    {
+      "z_mm": 8.04,
+      "extruding_segments": 39,
+      "xy_extrusion_length_mm": 53.228758197427865
+    }
+  ],
+  "gcode_sha256": "265291cd9da67f97a089d724c083ea019c3500550e021f86f7624e02f5b9acb9",
+  "nominal_recess_top_z_mm": 7.8,
+  "nominal_stop_top_z_mm": 8.12,
+  "limits": [
+    "Layer positions and command paths only, not printed dimensions or adhesive bond qualification"
+  ],
+  "visual_finding": "Z7.88 retains full side perimeters; Z8.04 contains only four corner stops",
+  "commanded_top_height_difference_mm": 0.16,
+  "nominal_cad_depth_mm": 0.32,
+  "decision": "Study only: commanded gap differs from CAD; do not claim0.32mm printed bondline",
+  "cause_assessment": "Layer quantization/boundary selection consistent with both trials; exact cause not proven"
+}

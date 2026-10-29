@@ -1,0 +1,32 @@
+{
+  "status": "OPEN_JOINT_POCKETS_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "lower": "4cf4195b87a6be842328bc00527f78eee5d1f5a155a90ceb96a6350e99d65949",
+    "separator": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+    "board": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "output_sha256": "cb3e11bc0664f14e27b75f263665a91d96cfd46c8eeba3a17edcecf273a25e69",
+  "valid": true,
+  "solid_count": 1,
+  "removed_volume_mm3": 0.041999999998552084,
+  "checks": {
+    "separator": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0
+    },
+    "board": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0
+    },
+    "battery": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.05
+    }
+  },
+  "limits": [
+    "Removed upper thin roof, not pocket floor.",
+    "Separator support area, local printed mating and strength require recheck.",
+    "No physical assembly or load qualification."
+  ]
+}

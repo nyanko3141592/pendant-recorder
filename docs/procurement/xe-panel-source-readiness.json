@@ -1,0 +1,89 @@
+{
+  "status": "CURRENT_SINGLE_UNIT_CARRIER_REVIEW_ONLY",
+  "observed_date": "2026-10-27",
+  "capabilities_source": "https://jlcpcb.com/capabilities/pcb-assembly-capabilities",
+  "standard_PCBA_minimum_carrier_mm": [
+    70,
+    70
+  ],
+  "edge_rails_and_fiducials_required": true,
+  "unit_finished_outline_mm": [
+    24,
+    27
+  ],
+  "existing_panel_merge_source_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "current_source_matches": {
+    "NCU_candidate": false,
+    "canonical_engineering_parent": false
+  },
+  "sources_sha256": {
+    "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/pendant-xe-minimal.kicad_pcb": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+    "hardware/xe-minimal/fixed-usb-limit-trial/usb-margin-detour-trial/pendant-xe-minimal.kicad_pcb": "3f7962550e31d2a3133989344962d543977c8cea504f3f3c498273edb25d8127",
+    "hardware/xe-minimal/electrical-panel-candidate-v3/merge-review.json": "642b90ef8d9ef4aea7efc381e47048351d9e7b0427d9489dd0c25706ff054b70"
+  },
+  "order_quantity_gate": {
+    "requested_finished_units": 5,
+    "existing_study_positions_per_panel": 6,
+    "approved_populated_positions": null,
+    "minimum_purchased_panels": null,
+    "required_action": "One-unit carrier candidate now exists. Confirm adoption, supplier minimum carrier quantity and purchase/assembly quantities for five finished units."
+  },
+  "required_before_release": [
+    "Review and adopt the current electrical and single-carrier candidates explicitly",
+    "Resolve carrier tooling, support, depanelization and edge finishing process",
+    "Resolve feeder rotations/pin1 and via fill/cap manufacturing qualification",
+    "Establish purchase quantities, sourcing, attrition and complete five-unit cost",
+    "Resolve original battery plug/leads, thermal interface, outer-size and physical validation gates"
+  ],
+  "limits": [
+    "Stale provenance is sufficient to reject reuse; does not diagnose all geometry differences",
+    "Current one-unit carrier has review outputs; manufacturing acceptance and release remain unproven.",
+    "No change to finished product size, no upload or order"
+  ],
+  "historical_six_up_status": "PANEL_SOURCE_STALE_DO_NOT_REUSE",
+  "current_single_unit_carrier": {
+    "board": "hardware/xe-minimal/current-single-carrier-trial/panel-rounded.kicad_pcb",
+    "board_sha256": "4d753d98fa81284715b1bb22fbd8f0b79cc2a56ee8e9b994bc58e5dd94a9abcd",
+    "manifest": "hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review/REVIEW-ONLY.json",
+    "manifest_sha256": "df23004b3d03302e6ea6440c650bae5aac48e978f1e35728fe19bdd531c8e9f3",
+    "integrity_checks": {
+      "carrier_board_hash": true,
+      "source_unit_hash": true,
+      "all_review_paths_exist": true,
+      "all_manifest_file_hashes_match": true,
+      "placement_source_hash": true,
+      "reported_drc_has_no_violations": true,
+      "reported_drc_has_no_unconnected": true
+    },
+    "files_checked": 53,
+    "file_hash_mismatches": [],
+    "review_paths": {
+      "drc": "hardware/xe-minimal/current-single-carrier-trial/drc-rounded.json",
+      "placements": "hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review/assembly-reconciliation.json",
+      "drills": "hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review/drill-coordinate-review.json",
+      "stackup": "hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review/stackup-export-review.json",
+      "source_unit_serialization": "hardware/xe-minimal/current-single-carrier-trial/unit-serialization-comparison.json",
+      "source_unit_zone_geometry": "hardware/xe-minimal/current-single-carrier-trial/zone-geometry-comparison.json",
+      "gerber_visual_review": "hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review/gerber-render-review/render-review.json"
+    },
+    "units_per_carrier": 1,
+    "intended_prototype_units": 5,
+    "adopted": false,
+    "order_ready": false,
+    "unresolved": [
+      "Supplier acceptance of 70mm single-unit carrier, 1.6mm assumed cutter and 2mm tooling holes",
+      "Tab stiffness, assembly support, full-width depanelization and residual/burr tolerance",
+      "Feeder rotations and pin1, assembly sourcing and attrition quantities",
+      "Via fill/cap process qualification and complete five-unit price",
+      "Original battery mating housing and lead fit; thermal interface selection",
+      "16h power and physical operation, 36h recording, three-OS physical USB tests",
+      "Candidate adoption and final case outer-size gate"
+    ],
+    "limits": [
+      "Hashes establish current bundle integrity, not independent correctness of the reports.",
+      "DRC report is existing evidence, not a new DRC run.",
+      "Exact unit zone serialization differs; inspect zone geometry review.",
+      "Canonical preorder target remains unchanged."
+    ]
+  }
+}

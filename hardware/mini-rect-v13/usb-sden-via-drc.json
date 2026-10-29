@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T04:14:11",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-sden-via-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_EN)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6904 mm )",
+                    "pos": {
+                        "x": 10.995,
+                        "y": 12.7395
+                    },
+                    "uuid": "7b1522a4-22ac-4c61-9676-2164c8f9ee7c"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.6447,
+                        "y": 12.9875
+                    },
+                    "uuid": "818d0a2d-29b9-4d48-944e-8eb040ab7ebe"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_EN)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.4991 mm )",
+                    "pos": {
+                        "x": 11.4832,
+                        "y": 13.2277
+                    },
+                    "uuid": "0a638aeb-351f-4de4-a110-35cbc3b0ddff"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.6447,
+                        "y": 12.9875
+                    },
+                    "uuid": "818d0a2d-29b9-4d48-944e-8eb040ab7ebe"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        }
+    ]
+}

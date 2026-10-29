@@ -1,0 +1,152 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T04:15:01",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-pair-sden-clearance-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0582 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 0.2570 mm )",
+                    "pos": {
+                        "x": 12.30645,
+                        "y": 12.552949
+                    },
+                    "uuid": "60d250ae-48f3-43c9-853f-94bed916b575"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 0.4894 mm )",
+                    "pos": {
+                        "x": 12.451,
+                        "y": 12.4452
+                    },
+                    "uuid": "e393e994-c9b5-4284-879e-b5db8e896da4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0471 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 4.0015 mm )",
+                    "pos": {
+                        "x": 15.096594,
+                        "y": 8.993649
+                    },
+                    "uuid": "484a4335-b43d-42fb-965e-b18774ffbf0b"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 0.6191 mm )",
+                    "pos": {
+                        "x": 12.451,
+                        "y": 11.9558
+                    },
+                    "uuid": "ba63a500-9c30-4c46-ba01-e09bd6365c93"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0225 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 0.6911 mm )",
+                    "pos": {
+                        "x": 12.30645,
+                        "y": 11.861879
+                    },
+                    "uuid": "b353196d-fbb7-4507-836a-9183494d145b"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 0.6191 mm )",
+                    "pos": {
+                        "x": 12.451,
+                        "y": 11.9558
+                    },
+                    "uuid": "ba63a500-9c30-4c46-ba01-e09bd6365c93"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0225 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 0.3213 mm )",
+                    "pos": {
+                        "x": 12.6782,
+                        "y": 12.6724
+                    },
+                    "uuid": "2f27fed2-b109-45a8-bdc1-f8b3781a689d"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 0.6911 mm )",
+                    "pos": {
+                        "x": 12.30645,
+                        "y": 11.861879
+                    },
+                    "uuid": "b353196d-fbb7-4507-836a-9183494d145b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0556 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 1.9662 mm )",
+                    "pos": {
+                        "x": 12.8888,
+                        "y": 11.518
+                    },
+                    "uuid": "177fb569-811e-451a-9c69-af7cd8bb50a9"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 4.0015 mm )",
+                    "pos": {
+                        "x": 15.096594,
+                        "y": 8.993649
+                    },
+                    "uuid": "484a4335-b43d-42fb-965e-b18774ffbf0b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

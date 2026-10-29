@@ -1,0 +1,74 @@
+{
+  "status": "NOMINAL_RECESS_SCREEN_POSITION_TOLERANCE_UNRESOLVED",
+  "source_sha256": {
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.mechanical-handoff.json": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/removable-ledge-fit-review.json": "eb0c735e236b55cc56d699e94472a885fe6790ab14fba6cd47b76d126a4c5e99",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/body-NOT-MANUFACTURING.step": "1af24408f622bff535c29f0ccab5c9ebc0225d255d2c0008f6d9fb986c55db55",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-removable-ledge/lid-NOT-MANUFACTURING.step": "2969d9fb28311a1cfcb61e9067630ac71bec6415a4f95694b0e89d9b9a97d9cf",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/evidence/usb4105-B4.pdf": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/check_usb_mating_recess.py": "e710099379d4762146122d7461246dd8610bc5d2720730888b86fbbdf1bf164a"
+  },
+  "drawing": {
+    "url": "https://gct.co/files/drawings/usb4105.pdf",
+    "revision": "B4",
+    "date": "18/12/2023",
+    "sheet": 1,
+    "front_to_NPTH_axis_mm": 6.28,
+    "minimum_mated_plug_shoulder_standoff_mm": 1.85,
+    "illustrated_maximum_plug_height_mm": 6.5
+  },
+  "mouth_plane_y_mm": 29.965000000000003,
+  "case_outer_y_mm": 31.6,
+  "mouth_recess_mm": 1.634999999999998,
+  "nominal_shoulder_to_case_gap_mm": 0.21500000000000208,
+  "axis_case_mm": [
+    12.3,
+    29.965000000000003,
+    11.26
+  ],
+  "metal_allocation_mm": [
+    8.4,
+    14,
+    2.6
+  ],
+  "metal_allocation_case_overlap_mm3": {
+    "body": 0.0,
+    "lid": 0.0
+  },
+  "adverse_recess_increase_sensitivity": [
+    {
+      "additional_recess_mm": 0,
+      "remaining_gap_mm": 0.21500000000000208,
+      "positive_gap": true
+    },
+    {
+      "additional_recess_mm": 0.1,
+      "remaining_gap_mm": 0.11500000000000207,
+      "positive_gap": true
+    },
+    {
+      "additional_recess_mm": 0.2,
+      "remaining_gap_mm": 0.015000000000002067,
+      "positive_gap": true
+    },
+    {
+      "additional_recess_mm": 0.3,
+      "remaining_gap_mm": -0.08499999999999791,
+      "positive_gap": false
+    },
+    {
+      "additional_recess_mm": 0.4,
+      "remaining_gap_mm": -0.18499999999999794,
+      "positive_gap": false
+    }
+  ],
+  "limitations": [
+    "Mating drawing establishes illustrated shoulder standoff, not compatibility of every marketed USB-C cable or shell molding.",
+    "8.40x2.60 rectangle is a geometric allocation only; exact plug shell geometry, cable molding width and tolerances not supplied.",
+    "Positive-volume intersection check omits the receptacle internals and cannot prove electrical mating depth/contact force.",
+    "Sensitivity offsets are not a complete manufacturing tolerance stack. Connector, PCB seating, print size, body/lid alignment and closure tape must be included.",
+    "No adopted cable or full insertion test; current0.215mm nominal reserve is not a qualified assembly margin."
+  ],
+  "release_allowed": false
+}

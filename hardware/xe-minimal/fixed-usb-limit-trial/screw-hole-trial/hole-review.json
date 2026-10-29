@@ -1,0 +1,31 @@
+{
+  "status": "NOT_ADOPTED_USB_COURTYARD_OVERLAP",
+  "pcb_sha256": "e0c76168363ccf71809262bac295385d1bd71ab54424e861a05bec4e0365030a",
+  "hole_center_mm": [
+    18,
+    26
+  ],
+  "hole_diameter_mm": 1.3,
+  "hole_copper_clearance_mm": 0.25,
+  "courtyard_radius_mm": 0.7,
+  "courtyard_scope": "Screw shaft clearance only, not screw head, nut or boss",
+  "modified_net": "/VBUS_N",
+  "modified_layers": [
+    "B.Cu",
+    "In1.Cu"
+  ],
+  "detour_y_mm": 25,
+  "checks": {
+    "violations": 1,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "remaining": [
+    "H4 overlaps J1 courtyard; evaluate USB connector/plug envelope and relocate hole, do not waive blindly",
+    "Head/nut must be supported by external case, not near PCB",
+    "Only one fastening site; torsional retention unresolved",
+    "Hole-to-edge nominal ligament .35mm requires fabrication/mechanical review",
+    "Tolerance/shaft tilt/insulation and original leads unresolved",
+    "Not canonical or manufacturing release"
+  ]
+}

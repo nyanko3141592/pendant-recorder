@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-28",
+  "status": "PUBLISHED_JLC_POFV_CAPABILITY_MATCH_PHYSICAL_ACCEPTANCE_PENDING",
+  "decision": "Retain the four local hole-over-pad vias as epoxy-filled, planarized and copper-capped POFV. The TPS2552 redesign removes the former VBUS_CHARGER overlap and uses one VBUS_OVP POFV at U13.5 for the datasheet ILIM-to-IN 50..100mA configuration, so the total count and process class remain unchanged.",
+  "board": "pendant-xe-minimal.kicad_pcb",
+  "board_copper_layers": 6,
+  "surface_finish_intent": "ENIG",
+  "process": "Via Resin Plugged + Via Plated Capped (epoxy-filled and copper-capped POFV)",
+  "published_capability_sources": [
+    {
+      "url": "https://jlcpcb.com/help/article/via-in-pad-pofv-guide",
+      "last_updated": "2026-10-16",
+      "findings": [
+        "Mechanical drill minimum is 0.15 mm.",
+        "Minimum via pad diameter is drill diameter plus 0.15 mm.",
+        "Six-layer and higher boards automatically use resin plugging, plated capping and ENIG for via-in-pad."
+      ]
+    },
+    {
+      "url": "https://jlcpcb.com/help/article/pcb-via-covering",
+      "last_updated": "2026-09-09",
+      "findings": [
+        "Epoxy-filled and capped vias are described as flat and suitable for BGA and SMT holes.",
+        "Both double-sided openings and half-covered openings may be epoxy filled.",
+        "Plugging diameter must be identified in fabrication information.",
+        "Published leveled-pad quality permits depression up to 127 um and protrusion up to 50 um; assembly yield remains an EVT inspection item."
+      ]
+    }
+  ],
+  "current_vias": [
+    {
+      "uuid": "e11df905-3d9d-4a69-bc7e-e4a029e6f6f8",
+      "net": "/VBUS_OVP",
+      "pad": "U13.5",
+      "xy_mm": [
+        11.3625,
+        0.95
+      ],
+      "drill_mm": 0.15,
+      "diameter_mm": 0.35,
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "8f964d3b-bdf3-4c9d-8694-c27cc84126d0",
+      "net": "/PDM_DATA",
+      "pad": "U1.40",
+      "xy_mm": [
+        18.1,
+        11.5
+      ],
+      "drill_mm": 0.15,
+      "diameter_mm": 0.35,
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4",
+      "net": "/VBUS_N",
+      "pad": "U1.10",
+      "xy_mm": [
+        13.15,
+        5.95
+      ],
+      "drill_mm": 0.15,
+      "diameter_mm": 0.35,
+      "filled": true,
+      "capped": true
+    },
+    {
+      "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158",
+      "net": "/CHG_N",
+      "pad": "U3.9",
+      "xy_mm": [
+        21.35,
+        15.2
+      ],
+      "drill_mm": 0.15,
+      "diameter_mm": 0.35,
+      "filled": true,
+      "capped": true
+    }
+  ],
+  "release_checks": [
+    "Run check_via_in_pad_release_intent.py and exact-via-pad-overlap-audit.json before every manufacturing export.",
+    "Identify all 0.15 mm POFV holes in the fabrication manifest without relying on free-text communication.",
+    "Inspect cap planarity, solder voiding, opens and shorts on all five EVT boards, including X-ray where optical inspection cannot see the joint.",
+    "Do not treat published capability or DRC0 as physical assembly acceptance."
+  ],
+  "limitations": [
+    "No manufacturing files have been uploaded and no vendor DFM result exists.",
+    "The published flatness range does not prove yield for these exact UFBGA and WSON/QFN joints.",
+    "Five-unit physical acceptance remains NOT_RUN."
+  ]
+}

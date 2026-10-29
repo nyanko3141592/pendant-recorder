@@ -1,0 +1,86 @@
+{
+  "status": "CANDIDATE_INTEGRATED_GEOMETRY_NOT_FIT_APPROVAL",
+  "pcb_sha256": "b4082e2163e932a5e32fa1cb915eccc1bcdbaac505a7c0a80982274db1b40aba",
+  "output_sha256": "cb9fe5974afeb5bed5dba6a2cb542430b592ab98ef1424a1530665a7f1150a5d",
+  "sources": [
+    {
+      "file": "tmux-candidate-library-components.step",
+      "sha256": "5e54cc37ca0ada8ccc452ccdaa92ee957125ab2414577d90545b4116c911cd21"
+    },
+    {
+      "file": "u8-body-positioned-study.step",
+      "sha256": "ebef70a66ae2e0835da33ec48dfa06c66bc7c1e774448f339302f9f273d125ee"
+    },
+    {
+      "file": "u14-envelope-positioned-study.step",
+      "sha256": "59c959155ddee83808c905669183311865ff721fdca9e0d876ca851fdd6dceba"
+    },
+    {
+      "file": "u10-envelope-positioned-study.step",
+      "sha256": "73348ed9272e7b6485b01315ed680ea6dc08d5e0e0596e641c3ffba717f53ed0"
+    },
+    {
+      "file": "u1-envelope-positioned-study.step",
+      "sha256": "04ca0dbb4fe92c1b884cd419814f494cee454203411df7e4f425405ed1a939a6"
+    },
+    {
+      "file": "j2-header-positioned-study.step",
+      "sha256": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0"
+    },
+    {
+      "file": "u11-package-body-max.step",
+      "sha256": "4668cd93ce47592ecdd1d157e0de9a62d7ff11b1cbe4512a4573a83f06b518e1"
+    },
+    {
+      "file": "u16-tmux-candidate-envelope.step",
+      "sha256": "1ead2251ab04068f44a4def6aef88073b6dd79e2c5c5cae2414ce30cb7e157f1"
+    },
+    {
+      "file": "c34-tmux-candidate-envelope.step",
+      "sha256": "e5713c907a6527ae4a0751b6e5e70e4b48775e0a60169b4d0c3d64cea1ec55db"
+    }
+  ],
+  "retained_envelope_pose_checked": [
+    "J2",
+    "U1",
+    "U10",
+    "U11",
+    "U14",
+    "U8"
+  ],
+  "excluded_library_models": [
+    "C34",
+    "J2",
+    "U1",
+    "U10",
+    "U11",
+    "U14",
+    "U16",
+    "U8"
+  ],
+  "removed_Q5_present": false,
+  "study_intersections": [
+    {
+      "file": "retained-upper-case-study.step",
+      "sha256": "8c33cedac3c34c3deb94799332f0e416154523d4bf8cca553dba8dd6409effbe",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "retained-lower-case-study.step",
+      "sha256": "05c7f92960bfab469b2026331f3f68b1c0a2262bf460e1a8a68547b105a27cd2",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "battery-separator-study.step",
+      "sha256": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+      "intersection_volume_mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "Generic library bodies are not manufacturer maximum dimensions",
+    "J2 pose remains provisional; mating plug and original battery leads absent",
+    "Zero solder standoff is a visualization datum",
+    "Battery swelling, closure, thermal contact and assembly access remain unresolved",
+    "This candidate is not the adopted canonical circuit"
+  ]
+}

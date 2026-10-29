@@ -1,0 +1,805 @@
+{
+  "status": "GEOMETRIC_LOCAL_SUPPORT_SCREEN_NOT_QUALIFIED",
+  "sources_sha256": {
+    "film-lead-wrap-clearance-lower-trial.step": "e17958b3e4aebd29ec1da37864ddc9c77125dc15fa20b7a34bc92b28c75bab45",
+    "film-battery-end-wide-250um-lower-trial.step": "07f4e244fee276965a1ff7a48b5e9235b98efe8c061252ecaf21684238372af4",
+    "film-roomier-joint-separator-trial.step": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+    "film-sensor-insulation-transition.step": "c3d95b41f5f8b74af75778323f8cb78a8f033463595cbd812fb3c58d4be6a5b4"
+  },
+  "checks": {
+    "separator": {
+      "removed_material_distance_mm": 0.04999999999999982,
+      "old_gap_mm": 0.0,
+      "new_gap_mm": 0.0
+    },
+    "insulation": {
+      "removed_material_distance_mm": 3.01137224053426,
+      "old_gap_mm": 0.09893557373385412,
+      "new_gap_mm": 0.09893557373385412
+    },
+    "separator_support_proxy": {
+      "downward_offset_mm": 0.001,
+      "old_intersection_mm3": 0.008484038276670594,
+      "new_intersection_mm3": 0.008484038276670594
+    }
+  },
+  "end_wall_ray_probes": [
+    {
+      "x": 0.8,
+      "z": -6.72,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -6.72,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -6.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -6.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -4.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -4.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -2.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -2.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -2.32,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 0.8,
+      "z": -2.32,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -6.72,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -6.72,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -6.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -6.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -4.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -4.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -2.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -2.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -2.32,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": -2.32,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -6.72,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -6.72,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -6.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -6.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -4.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -4.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -2.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -2.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -2.32,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": -2.32,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -6.72,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -6.72,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -6.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -6.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -4.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -4.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -2.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -2.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -2.32,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 8.0,
+      "z": -2.32,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -6.72,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -6.72,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -6.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -6.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -4.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -4.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -2.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -2.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -2.32,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 12.0,
+      "z": -2.32,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -6.72,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -6.72,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -6.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -6.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -4.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -4.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -2.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -2.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -2.32,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.25
+        ]
+      ]
+    },
+    {
+      "x": 16.0,
+      "z": -2.32,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.24999999999999997,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -6.72,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.5
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -6.72,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.5,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -6.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.5
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -6.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.5,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -4.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.5
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -4.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.5,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -2.5,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.5
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -2.5,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.5,
+          1.3
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -2.32,
+      "side": "negative",
+      "material_y_intervals_mm": [
+        [
+          -28.3,
+          -27.5
+        ]
+      ]
+    },
+    {
+      "x": 16.5,
+      "z": -2.32,
+      "side": "positive",
+      "material_y_intervals_mm": [
+        [
+          0.5,
+          1.3
+        ]
+      ]
+    }
+  ],
+  "minimum_sampled_interval_mm": 0.8,
+  "limits": [
+    "Sampled ray thickness is not global wall thickness or mechanical strength.",
+    "Downshift contact proxy does not prove printed seating; previous 0.06mm print seating gap remains unresolved.",
+    "Sensor insulation envelope is not the complete sensor retainer, film contact or thermal path.",
+    "Candidate requires new toolpaths and physical fit checks; not adopted."
+  ]
+}

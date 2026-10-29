@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T16:24:43",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "panel-metadata.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 43.45,
+                        "y": 25.215
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                },
+                {
+                    "description": "パッド 5 [/GND] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 44.93,
+                        "y": 25.255
+                    },
+                    "uuid": "162c1271-d4cd-4945-a364-70a88d661931"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

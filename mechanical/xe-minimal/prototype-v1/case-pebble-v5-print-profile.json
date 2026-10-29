@@ -1,0 +1,25 @@
+{
+  "status": "PROTOTYPE_PROFILE_NOT_PHYSICALLY_QUALIFIED",
+  "case_revision": "HW-V1.0-CASE-PEBBLE-V5-1GB",
+  "printer": "Bambu Lab A1 mini or dimensionally equivalent FDM",
+  "material": "PETG, dried per filament supplier instructions, lot recorded",
+  "nozzle_diameter_mm": 0.4,
+  "layer_height_mm": 0.16,
+  "wall_loops": 6,
+  "top_shell_layers": 6,
+  "bottom_shell_layers": 6,
+  "sparse_infill_percent": 40,
+  "sparse_infill_pattern": "gyroid",
+  "lower_orientation": "side face on build plate; CAD X/lanyard-hole axis is rotated onto printer build Z",
+  "upper_orientation": "broad exterior face on build plate; CAD Z is aligned to printer build Z",
+  "support": "enabled for lower case overhangs with removable interface; keep support out of connector mating throat and finish hole without reducing 3.2 mm diameter",
+  "adhesive": "if required for EVT, use PETG-compatible adhesive only at the case seam; no adhesive on battery, harness, connector or lanyard primary load path",
+  "inspection": [
+    "record actual slicer version and exported 3MF hash",
+    "confirm sliced lower orientation X and upper orientation Z before printing",
+    "confirm lanyard ligament is rendered solid by perimeters",
+    "measure hole diameter, USB bay, seam, overall dimensions and mass",
+    "reject voids, under-extrusion, layer separation, support damage or connector-throat residue"
+  ],
+  "release_limit": "Profile selection is not strength evidence; Gate F proof, fatigue, wear, sweat and drop tests remain mandatory."
+}

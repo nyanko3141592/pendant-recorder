@@ -1,0 +1,34 @@
+{
+  "status": "BENCH_PROFILE_COMPILED_NOT_HARDWARE_QUALIFIED",
+  "default_transfer_MHz": 4,
+  "optional_transfer_MHz": 8,
+  "init_nominal_kHz": 62.5,
+  "source_hashes": {
+    "firmware/stm32/board/storage_spi.c": "2544f99fe3486182754a5a93a8184472b2f4838adec6083e399eb364166e1a21",
+    "firmware/stm32/board/storage_spi.h": "494823fa62928d8f044ecb62f0bfe7144433a8b65fdd4fc63b607615b115e417",
+    "firmware/stm32/tests/check_storage_spi_profiles.py": "c0ecc19daf43ec92c0e63e48786792d38fcac8705a0f68ae78de8f7bc08ab114"
+  },
+  "validation": [
+    "Real STM32 HAL driver compiles for default4, explicit4 and8; static assertions check prescaler mapping.",
+    "Invalid0,2,16MHz profiles fail compilation.",
+    "Storage probe ownership/failure test passes with mocked SPI.",
+    "Historical full application ARM link succeeded with a superseded cooperative500mA experimental configuration plus8MHz; it is linkage evidence only, not the canonical fixed-limit build. NEVER FLASH synthetic IDs/bench configuration."
+  ],
+  "elf": {
+    "path": "/tmp/pendant-spi8-link/candidate-NOT-FOR-FLASH.elf",
+    "sha256": "0d03dc6954efa0a1e3f8e9a670aeb2ba154542a6e69c69e45cacf563c09cdd42",
+    "text_bytes": 106544,
+    "bss_bytes": 194852
+  },
+  "bench_comparison": [
+    "Use same board, exact card revision, filesystem condition, battery voltage and workload for4/8MHz.",
+    "Capture SCK/MISO/MOSI timing, errors/CRC/retries, save duration, audio queue high-water and integrated storage/battery charge.",
+    "Include startup, nearly-full media, low voltage and temperature endpoints. Do not accept a speed improvement with lost samples or corrupt files."
+  ],
+  "limitations": [
+    "No waveform, current, actual8MHz card transfer or16h runtime proof.",
+    "Shorter wire time does not bound card programming busy time.",
+    "GPIO medium slew unchanged; signal integrity and exact card timing remain to qualify.",
+    "Existing full-link evidence for older sources is historical; new ELF is experimental8MHz only."
+  ]
+}

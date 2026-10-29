@@ -1,0 +1,33 @@
+{
+  "status": "COMMANDED_RECESS_DEPTH_MATCHES_CAD",
+  "layers": [
+    {
+      "z_mm": 7.8,
+      "extruding_segments": 49,
+      "xy_extrusion_length_mm": 227.57666273448294
+    },
+    {
+      "z_mm": 7.96,
+      "extruding_segments": 38,
+      "xy_extrusion_length_mm": 53.22705575517791
+    },
+    {
+      "z_mm": 8.12,
+      "extruding_segments": 39,
+      "xy_extrusion_length_mm": 53.232059622958964
+    }
+  ],
+  "gcode_sha256": "27a733348786692c50d224fb79cc784c0c04455a0e59d308b717be37aa8cc646",
+  "nominal_recess_top_z_mm": 7.8,
+  "nominal_stop_top_z_mm": 8.12,
+  "limits": [
+    "Layer positions and command paths only, not printed dimensions or adhesive bond qualification"
+  ],
+  "first_layer_height_mm": 0.28,
+  "subsequent_layer_height_mm": 0.16,
+  "commanded_recess_top_mm": 7.8,
+  "commanded_stop_top_mm": 8.12,
+  "commanded_depth_mm": 0.32,
+  "visual_finding": "Z7.80 full side perimeters, Z7.96 and8.12 four corner stops only",
+  "decision": "Geometry/slice candidate only; adhesive compatibility, squeeze-out and physical measurements still required"
+}

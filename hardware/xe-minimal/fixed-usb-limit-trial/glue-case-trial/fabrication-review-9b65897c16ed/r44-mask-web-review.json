@@ -1,0 +1,32 @@
+{
+  "status": "NOMINAL_MASK_WEB_REQUIRES_PROCESS_REVIEW",
+  "pcb_sha256": "9b65897c16ed3d470b82b152bc7766614a9c00eb1ad511854044fa6e2f60145a",
+  "gerber_sha256": "f548a1de1f50e23f4a47d2e0b4e1a924a742aa58b92c86add6dbc9b55931fe11",
+  "via": {
+    "uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d",
+    "net": "/GND",
+    "x_mm": 17.3025,
+    "y_mm": 1.029999,
+    "drill_mm": 0.15,
+    "copper_mm": 0.35,
+    "filling_mode": 0,
+    "capping_mode": 0,
+    "filled": false,
+    "capped": false
+  },
+  "R44_pad2_mask_aperture": "D13 RoundRect radius0.135mm corner centers x+-0.135 y+-0.185",
+  "pad2_center_gerber_mm": [
+    16.909999,
+    -0.9
+  ],
+  "pad2_mask_right_edge_mm": 17.179999000000002,
+  "via_hole_left_edge_mm": 17.2275,
+  "nominal_hole_to_pad_mask_gap_mm": 0.04750099999999691,
+  "assessment": "Hole does not overlap this pad mask aperture nominally, but remaining nominal web is small and fabrication registration is unqualified",
+  "limits": [
+    "Gerber negative soldermask openings interpreted for R44 only; not complete mask CAM",
+    "No independent via opening or nearby merged aperture check yet",
+    "Registration error, drill tolerance and mask adhesion not included",
+    "Do not assume tenting/fill/cap from nominal geometry"
+  ]
+}

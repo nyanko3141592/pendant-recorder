@@ -1,0 +1,62 @@
+{
+  "status": "ENGINEERING_REPLACEMENT_CANDIDATE_NOT_RELEASED",
+  "old_part": "NCP18XH103F03RB",
+  "new_part": "NCU18XH103F60RB",
+  "reason": "Manufacturer suggested alternative to NRND sensor",
+  "manufacturer_authored_summary": {
+    "path": "docs/procurement/evidence/NCU18XH103F60RB-20250502-summary.pdf",
+    "sha256": "b1a9add480d778ef6379e64dfa87403e7b8530b8fa21d1e373806c15ff2bc8a6",
+    "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8942/NCU18XH103F60RB.pdf",
+    "date": "2025-05-02",
+    "visual_page1": "In Production/Recommended shown; dimension drawing matches old projected dimensions",
+    "parser_warning": "Poppler reported flate-stream errors; page1 visible, no whole-file integrity qualification",
+    "resistance_25C_ohm": 10000,
+    "resistance_tolerance_percent": 1,
+    "B25_50_K": 3380,
+    "B_tolerance_percent": 1,
+    "max_voltage_V": 5,
+    "max_current25C_mA": 0.1,
+    "typical_dissipation_mW_per_C": 1,
+    "case_size_code_mm": [
+      1.6,
+      0.8
+    ],
+    "drawing_length_mm": [
+      1.45,
+      1.75
+    ],
+    "drawing_transverse_mm": [
+      0.65,
+      0.95
+    ],
+    "electrode_note": "NCU Cu system versus NCP Ag system; same nominal size does not qualify solder process or all tolerances"
+  },
+  "retail_observation": {
+    "checked": "2026-10-27",
+    "url": "https://www.digikey.jp/en/products/detail/murata-electronics/NCU18XH103F60RB/7363023",
+    "status": "Active",
+    "stock_displayed": 445565,
+    "cut_tape_sku": "490-16279-1-ND",
+    "minimum_displayed_quantity": 1,
+    "unit_JPY_at1": 23,
+    "unit_JPY_at5": 20.4,
+    "five_part_subtotal_ex_tax_JPY": 102,
+    "not_reserved": true,
+    "assembler_attrition_quantity": null
+  },
+  "electrical_screen": {
+    "assumed_max_stable_rail_V": 3.35,
+    "R37_min_ohm": 99000,
+    "absolute_current_upper_mA_for_nonnegative_NTC": 0.033838383838383834,
+    "max_divider_sensor_power_uW": 28.339646464646464,
+    "scope": "Conditional stable-rail divider calculation; not measured rail/transient or thermal-contact proof"
+  },
+  "remaining": [
+    "Full manufacturer R-T tolerance data and reduction curves",
+    "Explicit body height/current land pattern and process check",
+    "Thermal contact thickness/position/compression/lag",
+    "Physical charging protection tests",
+    "Update adopted BOM/cost/manufacturing/model bundle only after selection review"
+  ],
+  "orders_or_inquiries": false
+}

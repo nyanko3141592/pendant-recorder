@@ -1,0 +1,43 @@
+{
+  "status": "NO_COMPATIBLE_CARD_SELECTED",
+  "sources": {
+    "ldo": "https://www.ti.com/product/TPS7A02",
+    "card": "https://jp.transcend-info.com/products/images/modelpic/739/Transcend-USD220I_202209.pdf"
+  },
+  "bounds": {
+    "TPS7A02_rated_output_mA": 200,
+    "screened_USD220I_max_power_W": 0.72,
+    "equivalent_at_3V3_mA": 218.18,
+    "battery_candidate_max_mA_unconfirmed_datasheet": 50
+  },
+  "decision": "USD220I is not qualified for current battery/LDO. Its published family max exceeds both limits; no assumption that slower SPI bounds internal current. Other card not yet selected.",
+  "runtime": "Average current and pulse limits are separate; 4.375mA average budget remains only a target.",
+  "inquiry": "YDL draft paragraph5 updated with current evidence, not sent, user review required.",
+  "alternative_screen": "Raw SPI NAND needs ECC/bad-block/power-loss handling and capacity/codec analysis; no hardware/format change authorized by this research result alone.",
+  "apacer_R1_screen": {
+    "source": "https://www.apacer.com/en/product/industrial-product/detail/industrial_ssd/industrial_microsd_r1",
+    "active_mA": 115,
+    "idle_uA": 265,
+    "peak_guarantee": "not stated on product page",
+    "decision": "Not qualified for50mA or100mA battery candidates; active figure already exceeds both before system load. No BOM substitution."
+  },
+  "draft_inquiry": "docs/sourcing/microsd-power-inquiry-en.txt; UNSENT",
+  "swissbit_S200u_screen": {
+    "source": "https://www.swissbit.com/data/S-200u/S-200u_fact_sheet.pdf",
+    "revision": "1.01",
+    "interface": "SPI and SD",
+    "capacity_GB_max": 2,
+    "supply_V": [
+      2.7,
+      3.6
+    ],
+    "at_3V3_write_mA_typ": 50,
+    "at_3V3_write_mA_max": 70,
+    "at_3V3_read_mA_max": 60,
+    "at_3V3_sleep_mA_max": 0.4,
+    "decision": "Reject for current 50mA battery: published max write alone is70mA. It fits200mA LDO rating on steady-state arithmetic, but is not a battery solution. Max measurement window/inrush unspecified; do not call70mA a guaranteed transient ceiling.",
+    "lifecycle": "PCN20-0040 dated2020-11-27 manufacturer document hosted by distributor identifies EOL; confirm with official current part lifecycle before any consideration. No stock/price qualified.",
+    "successor_lead": "S-250u, not selected; do not transfer current ratings from S-200u.",
+    "procurement_change": "None"
+  }
+}

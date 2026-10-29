@@ -1,0 +1,97 @@
+{
+  "status": "REQUIREMENT_UNRESOLVED_NOT_FIXED_4_7UF_MINIMUM",
+  "evidence": [
+    "design.json labels C27 as 4.7u effective TBD",
+    "electrical-change.json requires requalification for card transients",
+    "new-candidate-screen.json explicitly ties effective requirement to selected card"
+  ],
+  "finding": "No selected-card manufacturer minimum4.7uF requirement established in current design records. Previous capacitor rejections apply only to the provisional4.7uF-effective screen, not overall component suitability.",
+  "formula": "C >= current_deficit * duration / allowed_voltage_drop",
+  "assumptions": [
+    "0.1V droop is an illustrative budget, not an approved rail limit",
+    "Current deficit is the portion not delivered by upstream supply, not the entire card current",
+    "Ideal capacitor; ESR, ESL, regulator control response and trace inductance excluded"
+  ],
+  "scenarios": [
+    {
+      "current_deficit_mA": 25,
+      "duration_ms": 0.01,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 2.5
+    },
+    {
+      "current_deficit_mA": 25,
+      "duration_ms": 0.1,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 25.0
+    },
+    {
+      "current_deficit_mA": 25,
+      "duration_ms": 1,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 250.0
+    },
+    {
+      "current_deficit_mA": 25,
+      "duration_ms": 10,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 2500.0
+    },
+    {
+      "current_deficit_mA": 50,
+      "duration_ms": 0.01,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 5.0
+    },
+    {
+      "current_deficit_mA": 50,
+      "duration_ms": 0.1,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 50.0
+    },
+    {
+      "current_deficit_mA": 50,
+      "duration_ms": 1,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 500.0
+    },
+    {
+      "current_deficit_mA": 50,
+      "duration_ms": 10,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 5000.0
+    },
+    {
+      "current_deficit_mA": 100,
+      "duration_ms": 0.01,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 10.0
+    },
+    {
+      "current_deficit_mA": 100,
+      "duration_ms": 0.1,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 100.0
+    },
+    {
+      "current_deficit_mA": 100,
+      "duration_ms": 1,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 1000.0
+    },
+    {
+      "current_deficit_mA": 100,
+      "duration_ms": 10,
+      "assumed_allowed_droop_v": 0.1,
+      "ideal_required_capacitance_uF": 10000.0
+    }
+  ],
+  "example": {
+    "effective_capacitance_uF": 4.7,
+    "deficit_mA": 50,
+    "droop_v": 0.1,
+    "ideal_support_time_us": 9.4
+  },
+  "decision": "Select battery/card sustained and pulse capability first, then calculate capacitance and startup slew together. Do not grow the circuit solely to satisfy an unproven4.7uF threshold.",
+  "no_board_or_bom_change": true
+}

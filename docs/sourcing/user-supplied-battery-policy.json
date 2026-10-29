@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-26",
+  "status": "BATTERY_SELECTED_CIRCUIT_DESIGN_NEXT",
+  "user_requirement": "入手性を優先。販売物は実装済み基板とケース。ユーザーが市販電池を別途購入して取り付ける。",
+  "sales_scope": {
+    "included": [
+      "実装済み基板",
+      "ケース"
+    ],
+    "battery": "ユーザーが独立した国内販売店から購入。電池の同梱・輸入代行・転売を前提にしない。"
+  },
+  "selection_priority": [
+    "通常通販で個人が少量購入でき、問い合わせ・特注不要",
+    "保護回路・完成コネクタ付き、購入者の加工不要",
+    "公開仕様で電気・寸法・極性・相手部品を特定可能",
+    "16h/36h/USBを維持しOmi級へ小型化"
+  ],
+  "compatibility_policy": "電圧やJST呼称だけの汎用対応はしない。検証済みメーカー型番・販売SKUと極性を指定する。",
+  "design_requirements": [
+    "USB-C充電とMSC取り出し維持",
+    "16時間は実測前の設計目標",
+    "交換可能な蓋・コネクタ・配線収納・電池保持",
+    "2線電池の場合も温度監視を省略せずセルとの接触構造を設計",
+    "逆接続対策と充電電流・終止条件を選定電池に合わせる"
+  ],
+  "regulatory_note": "電池を販売しない構成は電池の輸入販売業務を切り離す方針であり、本体のPSE非該当や安全責任免除の法的確定ではない。対象電池の同梱販売は別売と同一扱いにしない。",
+  "sources": [
+    "https://www.meti.go.jp/policy/consumer/seian/denan/hourei/act/tikuzyoukaisetsu.pdf",
+    "https://www.meti.go.jp/product_safety/consumer/lithium_ion_battery.html"
+  ],
+  "candidate_status": "DTP401525-XE selected by latest battery-first instruction; product qualification pending.",
+  "cost_policy": "Kit target税込5000円以下, battery and freight separately shown with total startup cost; not all-inclusive5000 claim.",
+  "supersedes": [
+    "特注YDLパックとメーカー返信を必須とする調達方針"
+  ],
+  "unchanged": "既存PCB・ケースを比較原本として保存。電池固定後に回路を設計し、注文可能とはまだ扱わない。",
+  "enclosure_limit_mm": null,
+  "size_priority": "Omi-size is mandatory, not stretch goal.25x25x15mm is engineering envelope only; completed-size comparison needed.30x32 historical notaccepted.",
+  "authoritative_requirements": "docs/requirements.md",
+  "inquiries_allowed": false,
+  "enclosure_design_target_mm": [
+    25,
+    25,
+    15
+  ],
+  "mandatory_joint_acceptance": [
+    "販売は回路とケースのみ、電池販売なし",
+    "ユーザーが指定電池を別途買って自分で無加工組立",
+    "高調達性の通常市販電池のみ、問い合わせ特注不要",
+    "電池配線含む完成状態でOmiサイズ",
+    "指定電池で充電なし連続16時間以上"
+  ],
+  "selected_model": "DTP401525-XE",
+  "capacity_mAh": 110
+}

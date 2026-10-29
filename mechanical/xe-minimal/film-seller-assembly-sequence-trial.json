@@ -1,0 +1,47 @@
+{
+  "status": "DRAFT_PROCESS_NOT_VALIDATED",
+  "scope": "Seller supplies fully connected sensor/PCB module. Buyer installs unchanged retail battery only.",
+  "geometry": "film-seat-clearance-design-review.step",
+  "sequence": [
+    {
+      "step": 1,
+      "operation": "Print separator/lower/upper and remove support; gauge two axial holes with intended wire stock.",
+      "gate": "Actual hole clearance and support removal without rail damage untested."
+    },
+    {
+      "step": 2,
+      "operation": "Prepare sensor-to-wire joints and insulation in an external fixture, leaving PCB ends unsoldered.",
+      "gate": "Joint insulation, minimum retention collar dimensions, solder heat process and pull-test acceptance remain undefined."
+    },
+    {
+      "step": 3,
+      "operation": "Feed free PCB wire ends through axial-stop holes from the sensor side. Bring sensor into position from below separator while feeding wire slack.",
+      "gate": "Sensor/joint straight upward envelopes clear; flexible wire threading path and handling access unvalidated."
+    },
+    {
+      "step": 4,
+      "operation": "Route wires to PCB pads and solder using the screened tool approach before fitting battery or enclosure.",
+      "gate": "Actual tool envelope, flux/heat, cleaning, separation from PLA and joint inspection unvalidated."
+    },
+    {
+      "step": 5,
+      "operation": "Inspect polarity, sensor resistance, insulation and retention; flash and electrically test completed module.",
+      "gate": "This is a seller operation; no buyer soldering, wire modification or connector exchange."
+    },
+    {
+      "step": 6,
+      "operation": "Fit tested module to enclosure; provide buyer battery installation and final closure instructions.",
+      "gate": "Original battery harness routing/mating plug, module insertion, closure adhesive and charge/runtime tests remain open."
+    }
+  ],
+  "rejected_simple_paths": [
+    "Sensor translated from above separator collides with integral bridges.",
+    "Sensor translated from its tip along its axis collides with separator."
+  ],
+  "evidence": [
+    "film-sensor-stop-insertion-review.json",
+    "film-lap-lowered-tool-access-review.json",
+    "film-axial-stop-printed-holes-review.json"
+  ],
+  "decision": "Keep bottom insertion as candidate; do not claim preassembly is feasible until threading and sensor-joint insulation are modeled or bench verified."
+}

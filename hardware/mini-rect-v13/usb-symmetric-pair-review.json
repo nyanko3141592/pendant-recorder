@@ -1,0 +1,170 @@
+{
+  "status": "DRC_PARITY_PASS_IMPEDANCE_REVIEW_PENDING",
+  "source_sha256": "7d9aafb3b7bd40601e3839de6b2441c057eb66853b4f94f58f4cbc708d71563c",
+  "candidate_sha256": "cc056eda62c801f0ecfc91d7724c4f8e09e235a236cb7818f375537474e0f79c",
+  "width_mm": 0.1135,
+  "target_edge_gap_mm": 0.1199,
+  "paths": {
+    "/USB_DP": [
+      [
+        16.3606,
+        9.155
+      ],
+      [
+        15.7659,
+        8.99185
+      ],
+      [
+        15.09488872272894,
+        8.99185
+      ],
+      [
+        12.22465,
+        11.862088722728942
+      ],
+      [
+        12.22465,
+        12.53891127727106
+      ],
+      [
+        12.44195,
+        12.756211277271062
+      ],
+      [
+        12.44195,
+        14.618188722728942
+      ],
+      [
+        10.90788336136447,
+        16.152255361364467
+      ],
+      [
+        10.6,
+        16.7731
+      ],
+      [
+        10.4011,
+        16.7731
+      ]
+    ],
+    "/USB_DM": [
+      [
+        16.3712,
+        8.5953
+      ],
+      [
+        15.7659,
+        8.75845
+      ],
+      [
+        14.998211277271059,
+        8.75845
+      ],
+      [
+        11.99125,
+        11.76541127727106
+      ],
+      [
+        11.99125,
+        12.635588722728938
+      ],
+      [
+        12.20855,
+        12.85288872272894
+      ],
+      [
+        12.20855,
+        14.52151127727106
+      ],
+      [
+        10.74284463863553,
+        15.987216638635529
+      ],
+      [
+        10.4011,
+        16.2149
+      ]
+    ]
+  },
+  "limitations": [
+    "Via fanouts remain nonuniform; target width and main-pair spacing alone do not prove 90 ohm",
+    "Coplanar GND presence/clearance and bend/via discontinuities require review",
+    "Outer-layer branches and total skew not yet qualified",
+    "No final manufacturing release"
+  ],
+  "drc": 0,
+  "unconnected": 0,
+  "checked_pads": 254,
+  "spacing": [
+    {
+      "net": "/USB_DP",
+      "inner_length_mm": 11.254,
+      "edge_gap_range_mm": [
+        0.1199,
+        0.475
+      ],
+      "length_by_gap_mm": {
+        "gap_0.10_to_0.15_mm": 9.894,
+        "gap_0.15_to_0.30_mm": 0.593,
+        "gap_above_0.30_mm": 0.767,
+        "gap_below_0.10_mm": 0
+      }
+    },
+    {
+      "net": "/USB_DM",
+      "inner_length_mm": 10.977,
+      "edge_gap_range_mm": [
+        0.1199,
+        0.423
+      ],
+      "length_by_gap_mm": {
+        "gap_0.10_to_0.15_mm": 10.108,
+        "gap_0.15_to_0.30_mm": 0.579,
+        "gap_above_0.30_mm": 0.289,
+        "gap_below_0.10_mm": 0
+      }
+    }
+  ],
+  "reference": [
+    {
+      "net": "/USB_DP",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 3.995,
+          "samples": 83,
+          "covered_by_adjacent_gnd_zone": 75
+        },
+        "B.Cu": {
+          "length_mm": 3.286,
+          "samples": 69,
+          "covered_by_adjacent_gnd_zone": 43
+        },
+        "In2.Cu": {
+          "length_mm": 11.254,
+          "samples": 230,
+          "covered_by_adjacent_gnd_zone": 213
+        }
+      }
+    },
+    {
+      "net": "/USB_DM",
+      "layers": {
+        "F.Cu": {
+          "length_mm": 2.314,
+          "samples": 51,
+          "covered_by_adjacent_gnd_zone": 33
+        },
+        "B.Cu": {
+          "length_mm": 4.235,
+          "samples": 87,
+          "covered_by_adjacent_gnd_zone": 71
+        },
+        "In2.Cu": {
+          "length_mm": 10.977,
+          "samples": 225,
+          "covered_by_adjacent_gnd_zone": 209
+        }
+      }
+    }
+  ]
+}

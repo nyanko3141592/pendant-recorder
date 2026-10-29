@@ -1,0 +1,65 @@
+{
+  "status": "BOTH_CANDIDATES_DRC_ZERO_REFERENCE_TRADEOFF_REMAINS",
+  "baseline_review": "batts-guarded-multilayer-review.json",
+  "baseline_sha256": "c6240769cba6124e534f8d3de8ecf5ba1968b9c58dfc8a246193dd1108a758b9",
+  "baseline_route_lengths_mm": {
+    "In3.Cu": 6.997433006745837,
+    "In1.Cu": 2.3021728866442692
+  },
+  "baseline_added_vias": 2,
+  "comparison_criteria": [
+    "Electrical connection and complete DRC",
+    "Added ground loss beneath fast and power nets",
+    "Added route length and layer transitions",
+    "Filled/capped via manufacturing and assembly constraints"
+  ],
+  "limits": [
+    "No route-length acceptance threshold has been set; compare topology and electrical effects rather than declaring the shorter route automatically acceptable.",
+    "Power projection guard is a design experiment, not a user requirement or a PDN qualification.",
+    "Longer route has no new In2 V3V3 double-reference loss, but VBUS_LIMITED still has increased double-reference loss. Neither is a PDN or noise qualification."
+  ],
+  "fixed_via_power_guarded_result": {
+    "status": "MULTILAYER_SEARCH_NO_ROUTE",
+    "visited": 139351,
+    "transition_sites_count": 4628,
+    "report": "batts-power-guarded-multilayer-review.json"
+  },
+  "alternative": {
+    "report": "batts-power-guarded-anynet-review.json",
+    "sha256": "22f0570fbf1e78a9d5411906d73c28b8608268fbc64c66d3be5f07b1af0e9df7",
+    "route_lengths_mm": {
+      "In1.Cu": 4.802343178074637,
+      "F.Cu": 36.021561328936784,
+      "B.Cu": 4.635686242111258
+    },
+    "total_mm": 45.45959074912268,
+    "length_ratio_to_baseline": 4.888335190788467,
+    "added_vias": 3,
+    "unconnected": 0,
+    "violation_types": {
+      "via_dangling": 1,
+      "missing_courtyard": 1,
+      "silk_edge_clearance": 1,
+      "silk_overlap": 1,
+      "silk_over_copper": 2
+    },
+    "final_pcb": "pendant-xe-film-lap-anynet-footprint-trial.kicad_pcb",
+    "final_sha256": "8a15e07c6cba4a34b63e1a68ecd6f066f9f7a6d26d3792a4326b84ecf423718b",
+    "drc_violations": 0,
+    "final_violation_types": {},
+    "obsolete_branch_removed_tracks": 12,
+    "obsolete_branch_removed_vias": 2,
+    "full_projection_review": "anynet-full-projections-review.json",
+    "new_fast_ground_loss_hits": 0,
+    "In2_power_double_reference_loss": [
+      {
+        "net": "/VBUS_LIMITED",
+        "uuid": "f616461d-aa39-4133-b775-7282e8c1e14d",
+        "simultaneously_uncovered_mm2": {
+          "source": 0.119036385257,
+          "candidate": 0.172706408559
+        }
+      }
+    ]
+  }
+}

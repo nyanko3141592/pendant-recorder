@@ -1,0 +1,43 @@
+{
+  "status": "GEOMETRY_AND_CONNECTIVITY_PASS_NOT_ORDER_RELEASE",
+  "candidate": "charger-vbus-route.kicad_pcb",
+  "board_sha256": "b0e5b1041f298a097cd2b950252aa95321672dffe43ed1a27eb0389b909484da",
+  "drc_violations": 0,
+  "unconnected": 0,
+  "pad_parity": 254,
+  "via_pad_screen_overlap": 0,
+  "changes": [
+    "Three shared trace vertices shifted 0.01mm without moving pad/via anchors; unchanged 0.1mm minimum clearance",
+    "VBUS U3 pad10 connected by local path, zones refilled"
+  ],
+  "remaining": [
+    "USB90ohm stackup, paired route and reference transition review",
+    "Power branch width/drop/current qualification; geometry lengths are summed branches, not source-load lengths",
+    "microSD exact SKU/current and battery/NTC harness",
+    "Case retention/cable/gasket/tolerance and printable assembly revision",
+    "Firmware matching and physical-test plan",
+    "JLC parts/stackup/manufacturing/landed quote"
+  ],
+  "ignored_drc_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "status": "SENSITIVITY_FLAGS_Q5_LEAKAGE_NOT_ACTUAL_FAILURE",
+  "source_pcb_sha256": "0753b2e85892a530bba429b7b49dae4a322f1b8d5d0805760657e1b43a72a44d",
+  "baseline_source": "hardware/mini-rect-v15/screen_input_limiter.py",
+  "source_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/max4995a-max4995c.pdf",
+  "model": "R_equiv=1/(1/R44 + I_Q5/V_SETI); I_screen=31946/(R_equiv_kohm+2.48)+0.3mA",
+  "scope": [
+    "K and offset originate in prior3.3V datasheet screen, not5V guarantee",
+    "SETI voltages are sensitivity inputs, not asserted device values",
+    "Equivalent shunt assumes fixed SETI voltage and constant sink; internal control behavior and R45 voltage drop require validation",
+    "0.3mA overhead is only prior3.3V limiter Iq bound; latch, supervisor, divider and other upstream current omitted",
+    "Initial1% resistor tolerance only; no temperature drift included"
+  ],
+  "rows": [
+    {
+      "assumed_SETI_V": 0.5,
+      "hypothetical_Q5_sink_uA": 0,
+      "equivalent_R_kohm": 386.1,
+      "screen_total_mA": 82.51215708477018,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 0.5,
+      "hypothetical_Q5_sink_uA": 0.1,
+      "equivalent_R_kohm": 358.42260633853806,
+      "screen_total_mA": 88.81695565211197,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 0.5,
+      "hypothetical_Q5_sink_uA": 0.25,
+      "equivalent_R_kohm": 323.6243242110557,
+      "screen_total_mA": 98.26251576021559,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 0.5,
+      "hypothetical_Q5_sink_uA": 0.5,
+      "equivalent_R_kohm": 278.55133107279414,
+      "screen_total_mA": 113.97415824438872,
+      "exceeds_100mA_in_model": true
+    },
+    {
+      "assumed_SETI_V": 0.5,
+      "hypothetical_Q5_sink_uA": 1,
+      "equivalent_R_kohm": 217.8648008125494,
+      "screen_total_mA": 145.28186425182295,
+      "exceeds_100mA_in_model": true
+    },
+    {
+      "assumed_SETI_V": 0.75,
+      "hypothetical_Q5_sink_uA": 0,
+      "equivalent_R_kohm": 386.1,
+      "screen_total_mA": 82.51215708477018,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 0.75,
+      "hypothetical_Q5_sink_uA": 0.1,
+      "equivalent_R_kohm": 367.19671320424544,
+      "screen_total_mA": 86.71604639659819,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 0.75,
+      "hypothetical_Q5_sink_uA": 0.25,
+      "equivalent_R_kohm": 342.0749534863117,
+      "screen_total_mA": 93.01670506187958,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 0.75,
+      "hypothetical_Q5_sink_uA": 0.5,
+      "equivalent_R_kohm": 307.0621918243996,
+      "screen_total_mA": 103.50402466531176,
+      "exceeds_100mA_in_model": true
+    },
+    {
+      "assumed_SETI_V": 0.75,
+      "hypothetical_Q5_sink_uA": 1,
+      "equivalent_R_kohm": 254.88513335093742,
+      "screen_total_mA": 124.42714800974667,
+      "exceeds_100mA_in_model": true
+    },
+    {
+      "assumed_SETI_V": 1,
+      "hypothetical_Q5_sink_uA": 0,
+      "equivalent_R_kohm": 386.1,
+      "screen_total_mA": 82.51215708477018,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1,
+      "hypothetical_Q5_sink_uA": 0.1,
+      "equivalent_R_kohm": 371.74685396828454,
+      "screen_total_mA": 85.66533298251065,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1,
+      "hypothetical_Q5_sink_uA": 0.25,
+      "equivalent_R_kohm": 352.1123549394679,
+      "screen_total_mA": 90.39218488496027,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1,
+      "hypothetical_Q5_sink_uA": 0.5,
+      "equivalent_R_kohm": 323.6243242110557,
+      "screen_total_mA": 98.26251576021559,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1,
+      "hypothetical_Q5_sink_uA": 1,
+      "equivalent_R_kohm": 278.55133107279414,
+      "screen_total_mA": 113.97415824438872,
+      "exceeds_100mA_in_model": true
+    },
+    {
+      "assumed_SETI_V": 1.25,
+      "hypothetical_Q5_sink_uA": 0,
+      "equivalent_R_kohm": 386.1,
+      "screen_total_mA": 82.51215708477018,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.25,
+      "hypothetical_Q5_sink_uA": 0.1,
+      "equivalent_R_kohm": 374.5314718960741,
+      "screen_total_mA": 85.03482209794969,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.25,
+      "hypothetical_Q5_sink_uA": 0.25,
+      "equivalent_R_kohm": 358.42260633853806,
+      "screen_total_mA": 88.81695565211197,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.25,
+      "hypothetical_Q5_sink_uA": 0.5,
+      "equivalent_R_kohm": 334.4478708291466,
+      "screen_total_mA": 95.11554589528022,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.25,
+      "hypothetical_Q5_sink_uA": 1,
+      "equivalent_R_kohm": 294.9850253651977,
+      "screen_total_mA": 107.6941380529691,
+      "exceeds_100mA_in_model": true
+    },
+    {
+      "assumed_SETI_V": 1.5,
+      "hypothetical_Q5_sink_uA": 0,
+      "equivalent_R_kohm": 386.1,
+      "screen_total_mA": 82.51215708477018,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.5,
+      "hypothetical_Q5_sink_uA": 0.1,
+      "equivalent_R_kohm": 376.41117632148496,
+      "screen_total_mA": 84.61444698752808,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.5,
+      "hypothetical_Q5_sink_uA": 0.25,
+      "equivalent_R_kohm": 362.75661201672386,
+      "screen_total_mA": 87.76658727230013,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.5,
+      "hypothetical_Q5_sink_uA": 0.5,
+      "equivalent_R_kohm": 342.0749534863117,
+      "screen_total_mA": 93.01670506187958,
+      "exceeds_100mA_in_model": false
+    },
+    {
+      "assumed_SETI_V": 1.5,
+      "hypothetical_Q5_sink_uA": 1,
+      "equivalent_R_kohm": 307.0621918243996,
+      "screen_total_mA": 103.50402466531176,
+      "exceeds_100mA_in_model": true
+    }
+  ],
+  "leakage_allowance_uA_by_assumed_SETI_V": [
+    {
+      "SETI_V": 0.5,
+      "Q5_sink_uA_to_reach_100mA": 0.27761621943397774
+    },
+    {
+      "SETI_V": 0.75,
+      "Q5_sink_uA_to_reach_100mA": 0.41642432915096655
+    },
+    {
+      "SETI_V": 1,
+      "Q5_sink_uA_to_reach_100mA": 0.5552324388679555
+    },
+    {
+      "SETI_V": 1.25,
+      "Q5_sink_uA_to_reach_100mA": 0.6940405485849442
+    },
+    {
+      "SETI_V": 1.5,
+      "Q5_sink_uA_to_reach_100mA": 0.8328486583019331
+    }
+  ],
+  "decision": "Do not adopt DMN63D8L-7 for Q5 from its 1uA IDSS number alone. On resistance is not the limiting selection criterion. Establish SETI behavior and leakage including temperature, or change the switching component/network.",
+  "remaining": [
+    "Recover manufacturer SETI electrical voltage limits and current-limit behavior at actual5V",
+    "Include total upstream current and resistor TCR",
+    "Select Q5 with bounded relevant off leakage or revise resistor network",
+    "Measure preconfiguration current, switching transients and suspend behavior on hardware"
+  ]
+}

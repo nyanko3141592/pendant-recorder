@@ -1,0 +1,32 @@
+{
+  "status": "JOINT_LANDS_MEASURED_ADHESIVE_UNQUALIFIED",
+  "source_sha256": {
+    "case-lower.step": "77425984b76ab935fcdd0f520db4264a150773689778568cd13eace6ade00876",
+    "case-upper.step": "bde703de2cfdde1a5bfb3bfaffd84e2ef08b131eec5e57ddd0e9a746d3aec45b"
+  },
+  "horizontal_mating_lands": [
+    {
+      "lower_face": 27,
+      "upper_face": 67,
+      "lower_z_mm": 0.73,
+      "nominal_gap_mm": 0.07000000000000006,
+      "projected_overlap_area_mm2": 42.276807776373076
+    },
+    {
+      "lower_face": 109,
+      "upper_face": 72,
+      "lower_z_mm": 0.1,
+      "nominal_gap_mm": 0.0,
+      "projected_overlap_area_mm2": 75.30199741883186
+    }
+  ],
+  "nominal_contact_area_mm2": 75.30199741883186,
+  "limits": [
+    "Only horizontal face pairs with0..0.15mm gap; not vertical lap area or total glue wetting area",
+    "Nominal zero-gap contact does not reserve a finite adhesive film",
+    "Adhesive type, PETG preparation, curing, creep, bond strength and battery compatibility unqualified",
+    "Separating lid to add film changes case height and board-stop clearance; cannot treat existing fit checks as unchanged"
+  ],
+  "geometry_changed": false,
+  "physical_release_allowed": false
+}

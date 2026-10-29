@@ -1,0 +1,39 @@
+{
+  "status": "NOMINAL_CLEARANCE_INSUFFICIENT_FOR_UNCONTROLLED_PLACEMENT",
+  "source_sha256": "4c9e198910837a65f43b52d7219932a6c4611e0a65d7ffec0eb507a946ad24a8",
+  "nominal_clearance_mm": {
+    "board": 0.09500000000000042,
+    "separator": 0.018237117209719194,
+    "lower": 0.4713188083736027,
+    "upper": 1.801044371103407,
+    "battery": 0.3498828928530182
+  },
+  "wire_to_wire_mm": 0.017987878625860793,
+  "sensitivity": [
+    {
+      "assumed_independent_displacement_each_mm": 0.025,
+      "wire_separator_residual_mm": -0.031762882790280805,
+      "wire_wire_residual_mm": -0.03201212137413921,
+      "wire_board_residual_mm": 0.045000000000000415
+    },
+    {
+      "assumed_independent_displacement_each_mm": 0.05,
+      "wire_separator_residual_mm": -0.08176288279028081,
+      "wire_wire_residual_mm": -0.08201212137413921,
+      "wire_board_residual_mm": -0.004999999999999588
+    },
+    {
+      "assumed_independent_displacement_each_mm": 0.1,
+      "wire_separator_residual_mm": -0.18176288279028083,
+      "wire_wire_residual_mm": -0.18201212137413922,
+      "wire_board_residual_mm": -0.1049999999999996
+    }
+  ],
+  "interpretation": "Even the illustrative +/-0.025mm independent movement of both objects exceeds wire-to-wire and wire-to-separator nominal gaps. These are hypothetical offsets, not measured printer or wire manufacturing tolerances.",
+  "next_design_actions": [
+    "Increase separation using distinct wire heights or a wider lane before designing attachment.",
+    "Include joint exit and solder-pad approach in same continuous route.",
+    "Provide seller-installed strain relief and establish measurable assembly tolerances."
+  ],
+  "not_adopted": true
+}

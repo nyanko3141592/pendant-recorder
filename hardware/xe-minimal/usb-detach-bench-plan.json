@@ -1,0 +1,89 @@
+{
+  "status": "PLANNED_NOT_EXECUTED",
+  "purpose": "Qualify physical VBUS indication, charge revocation and data integrity; Q3 is presence detection, not a precision voltage supervisor",
+  "sources_sha256": {
+    "firmware/stm32/usb/usb_input_policy.c": "e09036543d11759b6e7da8ca30dbd70933bfc40e87e479c8c120d27b8e13e0ef",
+    "firmware/stm32/board/usb_input_v15.c": "6fe5fddd0c90eeacc2a5498207b0b01cbaa205a68217cae98f4a1bb6e3cb4bf3",
+    "firmware/stm32/board/usb_board.c": "9954b91cb12345c1652fd2ac97120cc0337cdbe8dd3eeafcdf6fcf1d0e5b2a6b",
+    "firmware/stm32/tests/test_usb_input_policy.c": "7fbc5717ca110b2dd2d0de67352c4c02147c54438ebeb46e8202ab54a2e7c7ee"
+  },
+  "preconditions": [
+    "Exact Q3 MPN and installed resistor parts recorded",
+    "Current-limited USB source plus battery emulator first; real cell only after separate charge-guard qualification",
+    "Document source slew, cable impedance, instrument loading and bandwidth",
+    "Record PCB and firmware hashes and active USB power configuration"
+  ],
+  "channels": [
+    "VBUS",
+    "VBUS_GATE",
+    "VBUS_N / PA0",
+    "V3V3",
+    "CHG_ALLOW / PB2",
+    "charger CE",
+    "USB input current",
+    "battery-emulator current",
+    "firmware event timestamps"
+  ],
+  "cases": [
+    {
+      "id": "VBUS-STEP",
+      "stimulus": "Remove 5 V while configured and charging requested; repeat while reading storage",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "VBUS-RAMP",
+      "stimulus": "Ramp 5 V to 0 V and back; record actual Q3 gate and PA0 transition voltages",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "VBUS-BOUNCE",
+      "stimulus": "Sweep interruption durations across measured detector and application response times",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "VBUS-SUSPEND",
+      "stimulus": "Detach during suspend/resume pulse and during 10 ms charge settling interval",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "VBUS-RESET",
+      "stimulus": "Reset MCU during attached, suspended and detached states",
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "VBUS-LOWBAT",
+      "stimulus": "Detach during export with battery emulator near configured low-battery cutoff",
+      "result": "NOT_RUN"
+    }
+  ],
+  "measurements": [
+    "Time from physical VBUS change to PA0 transition",
+    "Time from PA0 transition to charge-request LOW and CE inhibit",
+    "Time from charge request revoke to actual charging current cessation",
+    "Minimum V3V3 during transition and reset/brownout status",
+    "Authenticated exported chunk sequence before and after interruption"
+  ],
+  "acceptance": [
+    "No charge request while observed VBUS is absent; do not infer actual current cessation from GPIO alone",
+    "No fresh high-current grant until new session has acknowledged configuration",
+    "CE levels satisfy charge-enable-limits.json wherever the charger is in its specified operating domain",
+    "No invalid committed recording accepted by host; interrupted data handled by existing recovery policy",
+    "Record all transition latencies; no numerical worst-case timing claim until measured coverage and power hold-up requirement are established"
+  ],
+  "open_qualification": [
+    "Detector threshold/temperature/hysteresis not guaranteed by 2.5 V RDS test point",
+    "Polling and synchronous storage can delay application response; source inspection alone does not bound end-to-end latency",
+    "Short VBUS bounce with stale USB session requires system-level test; policy unit test covers sustained observed absence"
+  ],
+  "software_evidence": {
+    "command": "sh firmware/stm32/tests/check_usb_input_policy.sh",
+    "result": "PASS",
+    "configurations": [
+      "100mA charging disabled",
+      "500mA charging disabled",
+      "500mA experimental charging enabled"
+    ],
+    "new_test_scope": "500mA variants: observed detach while mounted/ACK remain stale, stale resume rejected, repeated absence stays revoked, new session does not grant before ACK",
+    "instrumentation": "Host ASan/UBSan and mocked driver; no physical timing or current evidence"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_SYNTHETIC_FAT32_NOT_REAL_CARD",
+  "configuration": "PENDANT_COOPERATIVE_SAVE=1 WAV_CHUNK_SAMPLES=80000",
+  "duration_hours": 36,
+  "files": 25920,
+  "bytes_per_file": 65536,
+  "volume_bytes": 2000000000,
+  "free_bytes": 299384832,
+  "test_scope": [
+    "Real FatFs and recording hooks on synthetic RAM FAT32",
+    "All25920 files created, committed, remounted and byte-compared",
+    "Recovery next_id25920 and not exhausted"
+  ],
+  "exclusions": [
+    "actual SD latency/current/endurance",
+    "real continuous ADC capture",
+    "physical power loss",
+    "host import of25920 actual encrypted recordings"
+  ],
+  "sources": {
+    "firmware/stm32/tests/test_storage_36h.c": "8d7654d47eb9df9349496474ede9c3f4a443777521f90b961e9d4f823f59a1bd",
+    "firmware/stm32/crypto/fatfs_recording.h": "bedcfd09b7a08d0f0010d4df9c6e640434930012ff0a1a8b93dd6cc2e0831c10"
+  }
+}

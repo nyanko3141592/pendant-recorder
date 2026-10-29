@@ -1,0 +1,103 @@
+{
+  "status": "LAP_WRAP_BUDGET_UNRESOLVED_NOT_QUALIFIED",
+  "source_sha256": "5e15af987403525fc4994b2d4e1d02f4446cc05fe630ed38452685f4025c7548",
+  "existing_finished_joint_budget_mm": [
+    0.9,
+    3,
+    0.8
+  ],
+  "rows": [
+    {
+      "tape_thickness_assumption_mm": 0.06985,
+      "lead_thickness_assumption_mm": 0.17,
+      "lead_thickness_basis": "drawing reference only",
+      "bare_conductor_nominal_diameter_mm": 0.15,
+      "raw_lead_width_assumption_mm": 0.7,
+      "wrapped_width_before_solder_mm": 0.8396999999999999,
+      "wrapped_height_before_solder_mm": 0.52955,
+      "remaining_width_to_0p9_mm": 0.06030000000000013,
+      "remaining_height_to_0p8_mm": 0.2704500000000001,
+      "maximum_lead_thickness_with_zero_solder_allowance_mm": 0.44045,
+      "fits_before_solder_and_tolerance": true
+    },
+    {
+      "tape_thickness_assumption_mm": 0.06985,
+      "lead_thickness_assumption_mm": 0.5,
+      "lead_thickness_basis": "existing conservative envelope, not certified lead thickness",
+      "bare_conductor_nominal_diameter_mm": 0.15,
+      "raw_lead_width_assumption_mm": 0.7,
+      "wrapped_width_before_solder_mm": 0.8396999999999999,
+      "wrapped_height_before_solder_mm": 0.85955,
+      "remaining_width_to_0p9_mm": 0.06030000000000013,
+      "remaining_height_to_0p8_mm": -0.05954999999999999,
+      "maximum_lead_thickness_with_zero_solder_allowance_mm": 0.44045,
+      "fits_before_solder_and_tolerance": false
+    },
+    {
+      "tape_thickness_assumption_mm": 0.076,
+      "lead_thickness_assumption_mm": 0.17,
+      "lead_thickness_basis": "drawing reference only",
+      "bare_conductor_nominal_diameter_mm": 0.15,
+      "raw_lead_width_assumption_mm": 0.7,
+      "wrapped_width_before_solder_mm": 0.852,
+      "wrapped_height_before_solder_mm": 0.548,
+      "remaining_width_to_0p9_mm": 0.04800000000000004,
+      "remaining_height_to_0p8_mm": 0.252,
+      "maximum_lead_thickness_with_zero_solder_allowance_mm": 0.42200000000000004,
+      "fits_before_solder_and_tolerance": true
+    },
+    {
+      "tape_thickness_assumption_mm": 0.076,
+      "lead_thickness_assumption_mm": 0.5,
+      "lead_thickness_basis": "existing conservative envelope, not certified lead thickness",
+      "bare_conductor_nominal_diameter_mm": 0.15,
+      "raw_lead_width_assumption_mm": 0.7,
+      "wrapped_width_before_solder_mm": 0.852,
+      "wrapped_height_before_solder_mm": 0.878,
+      "remaining_width_to_0p9_mm": 0.04800000000000004,
+      "remaining_height_to_0p8_mm": -0.07799999999999996,
+      "maximum_lead_thickness_with_zero_solder_allowance_mm": 0.42200000000000004,
+      "fits_before_solder_and_tolerance": false
+    },
+    {
+      "tape_thickness_assumption_mm": 0.08,
+      "lead_thickness_assumption_mm": 0.17,
+      "lead_thickness_basis": "drawing reference only",
+      "bare_conductor_nominal_diameter_mm": 0.15,
+      "raw_lead_width_assumption_mm": 0.7,
+      "wrapped_width_before_solder_mm": 0.86,
+      "wrapped_height_before_solder_mm": 0.56,
+      "remaining_width_to_0p9_mm": 0.040000000000000036,
+      "remaining_height_to_0p8_mm": 0.24,
+      "maximum_lead_thickness_with_zero_solder_allowance_mm": 0.41000000000000003,
+      "fits_before_solder_and_tolerance": true
+    },
+    {
+      "tape_thickness_assumption_mm": 0.08,
+      "lead_thickness_assumption_mm": 0.5,
+      "lead_thickness_basis": "existing conservative envelope, not certified lead thickness",
+      "bare_conductor_nominal_diameter_mm": 0.15,
+      "raw_lead_width_assumption_mm": 0.7,
+      "wrapped_width_before_solder_mm": 0.86,
+      "wrapped_height_before_solder_mm": 0.89,
+      "remaining_width_to_0p9_mm": 0.040000000000000036,
+      "remaining_height_to_0p8_mm": -0.08999999999999997,
+      "maximum_lead_thickness_with_zero_solder_allowance_mm": 0.41000000000000003,
+      "fits_before_solder_and_tolerance": false
+    }
+  ],
+  "findings": [
+    "The .5 mm conservative lead envelope plus .15 mm conductor and tape exceeds .8 mm height even before solder.",
+    "The .17 mm reference lead thickness yields nominal room but cannot be used as a guaranteed maximum.",
+    "At .08 mm tape, width headroom is .04 mm total before solder, wrinkles and tolerances.",
+    "Current max joint box must not be treated as a realized insulated joint or as evidence of axial retention."
+  ],
+  "next_decision": [
+    "Derive controlled finished-joint acceptance dimensions and feasible process from actual supplied parts, or enlarge/reconfigure joint region.",
+    "Do not increase final case size or relax battery/runtime requirements without consultation."
+  ],
+  "limits": [
+    "No material maximum tolerances, solder fillet or insulation overlap adhesion qualified.",
+    "This is one lap-wrap construction, not proof that every insulation construction is impossible."
+  ]
+}

@@ -1,0 +1,47 @@
+Pendant recorder 統合確認パッケージ 2026-10-29
+
+判断：発注不可。回路・製造資料・機構の最終完成版ではありません。
+基準PCB SHA256: b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0
+要件：基板27.5mm角、最大4層、通常through via、固定DTP401525-XE、16時間録音、暗号化保存30時間以上。
+
+生成済み
+- design/: 同一基準のPCB・回路図・プロジェクト・設計ルール
+- gerbers/ と drills/: 現候補から再出力。4銅層、PTH149（USB長穴4含む）、NPTH3
+- assembly-bom-review.csv: 基板電子部品68点。テスト端子等6点は部品実装対象から除外
+- cpl-review-unverified-rotation.csv: 同じ68点の座標。回転未認定のためupload禁止
+- sourcing-bom.csv: 型番・購入経路・過去の在庫観測。現時点の在庫保証ではない
+- current-native-pcba.step: 現候補からのnative STEP。欠落部品モデルあり
+- fit-kit/: ケース上下・最新PCB由来のPCBAダミー・電池ダミー・3MF・確認手順。同版hashで再生成、CAD干渉0、offline slice警告0
+- evidence/: 配線/帰路/抵抗・電池購入場所・調達の根拠
+- drc.json: 幾何違反0、未接続0、回路図不一致0。元ライブラリ74部品を同梱し照合済み、警告を含めDRC0
+
+組立・試験の現版：ASSEMBLY-AND-EVT.txt。旧docs/prototype-v1-assembly-and-test.mdの6層via・旧ケース・旧製造フォルダは本候補へ流用しない。
+
+最優先で解消する項目
+1. 業者stackup/90Ω条件と0.15mm通常through drillの製造条件（厚さ記述は0.7992mmへ修正済み、公称0.8mm）
+2. U1/U11を含む全BOM調達、メーカー物理端子と実装方向（ライブラリ照合と68点座標/表裏/角度のCSV一致は確認済み）
+3. 電池保持・膨張保護・純正ハーネスを含む機構の完成
+4. 回路/layoutの設計判断と製造/機構の最終版同期
+詳細と次の処置はrelease-gates.jsonに集約。
+
+実機段階：16h/30h実媒体、温度、異常入力、USB、音質、落下、紐強度を試験する。
+CAD干渉0やoffline slice成功は、これらの合格を意味しません。
+注文・支払い・upload・業者連絡・実印刷は実行していません。
+
+追加資料：footprint-provenance.jsonに元ライブラリの出典とhash、assembly-terminal-orientation.jsonに68点の端子座標を収録。座標一致は業者のテープ方向の承認ではありません。
+
+製造条件照合：Standard PCBAを必要サービスとして固定（U11がStandard Only）。ブラウザでU1在庫15（Pre-order）、U11在庫2128/注文可能2117を確認。未予約、U1の入荷・使用可能時期は未確認。全145viaは通常through、.15/.35が6本・.2/.45が139本。最小線幅.1mm、USB slotの軸方向annular margin .2mmは公開寸法下限を満たす。正式DFM/stackup/90Ω/費用は未確定。
+
+数値在庫の観測時刻・表示操作・価格はlive-key-parts-browser-check.jsonを参照。全BOMの即納保証ではありません。後続の全数確認結果はlive-full-bom-summary.jsonを優先してください。
+
+全BOM再確認（2026-10-29）：36型番・68実装点の公開表示を照合済み。U1在庫15/Pre-order、U12在庫0/最小購入11、J1在庫0/最小購入12で事前手配が必要。C30は注文可能5個で5台実装分のみ、実装ロス余裕なし。他32型番は5台実装数を上回る注文可能数を表示。未予約、納期・実装ロス・総額未確定。C5/C27の旧最小購入151は現在表示1へ更新。
+
+電池受け機構の追加検討：mechanical-cradle-study/に30.8×30.8×14.2mm案のSTEP/STL/5物体3MFと確認手順を追加。同版PCB、底受け・横ガイド・仕切り板支持、電池上0.5mm予約をCAD照合。仕切り板/PCB抜け止め・純正配線・膨張十分性は未完成/未認定。未採用案であり従来fit-kitを置換しない。
+
+機構の現優先候補：mechanical-captured-carrier/。旧mechanical-cradle-studyの仕切りを一体キャリアへ更新し、基板支持4点と蓋ストッパー4点を追加。公称拘束/本体挿入/±0.1mm共通XY隅4条件のCAD干渉0、carrierビード連結1、offline slice警告0。配線込み挿入・実物公差/剛性・蓋接合・電池保護は未認定。旧案とfit-kitは履歴/比較用で、発注releaseではない。
+
+積層照合更新：現JLC公式の0.8mm/4層JLC04081H-3313と、7層分の銅/誘電体厚・Erが一致。evidence/public-stackup-match.json参照。インピーダンス制御ページの最小via0.2mmと現6本の0.15mm穴の適用整合は未確認。一般寸法下限の通過をインピーダンスサービス受理と扱わない。90Ω・完成厚公差・DFM・費用は未確定。
+
+穴径条件の解釈更新：JLC一般製造能力には多層0.15mm穴が明記され、追加料金対象。したがって0.15mm自体を製造不可・HDI必須とはしない。別のimpedanceページ0.2mm表示とのサービス併用条件は未確定。現DRC-clean基板を維持し、見積り時は小径穴追加費用を計上する。evidence/drill-service-public-review.json参照。
+
+回路図の可搬性修正：Pendant.kicad_symとsym-lib-tableをdesign/へ同梱。元の不足78警告を解消し、現フォルダと別の一時フォルダの両方で警告込みERC0を確認。回路図/PCBは不変更。erc.jsonとevidence/symbol-library-portability.json参照。

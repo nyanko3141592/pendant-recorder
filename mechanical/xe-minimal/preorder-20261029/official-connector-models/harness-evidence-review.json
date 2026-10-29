@@ -1,0 +1,17 @@
+{
+  "status": "REFERENCE_ONLY_HARNESS_FIT_UNCONFIRMED",
+  "date": "2026-10-29",
+  "plug_model": "Valid one-solid nominal manufacturer CAD; width including ears 4.76 mm.",
+  "header_model": "AP242 and AP203 both fail topology validation at face 14 (UnorientableShape). Fix/sewing/face orientation attempts did not resolve it; stopped. Not used for Boolean clearance certification.",
+  "mating_transform_verified": false,
+  "missing_inputs": [
+    "Maximum mated envelope and intended mounting datum",
+    "Actual UL3302 AWG30 insulation outside diameter",
+    "Battery wire exit datum and allowable bend radius / root strain relief",
+    "Connected assembly insertion path with minimum 12 mm harness"
+  ],
+  "battery_drawing": "15 +/- 3 mm to connector wire-entry flange; this does not certify a 12 mm freely bendable span.",
+  "design_changed": false,
+  "physical_fit_verified": false,
+  "next": "Obtain actual dimensional evidence when available; retain current harness exclusion. No further CAD repair variants without new evidence."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "TRIAL_NOT_ADOPTED",
+  "from": "U1.26 PB13",
+  "to": "U1.21 PB10",
+  "source": "https://www.st.com/resource/en/datasheet/stm32u535nc.pdf",
+  "evidence": "DS14217 Rev5 pin table lists PB10 I/O pin21 for non-SMPS UFQFPN48; canonical connections marks PB10 NC.",
+  "firmware_change_required": "battery_io.c GPIO_PIN_13 to GPIO_PIN_10 initialization/read, maintain GPIOB.",
+  "qualification": "Must prove route benefit, DRC/parity/ERC and firmware integration before adoption."
+}

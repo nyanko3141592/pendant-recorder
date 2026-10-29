@@ -1,0 +1,72 @@
+{
+  "status": "CANDIDATES_NOT_QUALIFIED",
+  "entries": [
+    {
+      "reference": "R42",
+      "design_value": "130k 1%",
+      "mpn": "ERJ2RKF1303X",
+      "source_url": "https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2RKF1303X",
+      "verified": {
+        "resistance_ohm": 130000,
+        "tolerance_percent": 1,
+        "power_W": 0.1,
+        "TCR_ppm_per_C": 100
+      },
+      "qualification": "CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Height/land pattern and working voltage",
+        "Temperature drift of charger selection thresholds",
+        "Supplier SKU, stock, price and assembly acceptance"
+      ]
+    },
+    {
+      "reference": "Y1",
+      "design_value": "32.768kHz CL=7pF TBD",
+      "mpn": "ABS06-32.768KHZ-7-T",
+      "source_url": "https://abracon.com/Resonators/ABS06.pdf",
+      "verified": {
+        "frequency_Hz": 32768,
+        "CL_pF": 7,
+        "ESR_max_ohm": 90000,
+        "drive_max_uW": 0.5,
+        "nominal_size_mm": [
+          2,
+          1.2,
+          0.6
+        ],
+        "tolerance_ppm": 20
+      },
+      "qualification": "CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Actual pad pattern and maximum outline",
+        "STM32LSE negative-resistance/startup margin and drive power",
+        "C11/C12 remain10pF tentative;7pF load needs about2pF aggregate stray with equal10pF capacitors",
+        "Supplier SKU, stock, price and assembly acceptance"
+      ]
+    },
+    {
+      "reference": "D6",
+      "design_value": "amber LED 0402 TBD",
+      "mpn": "APHHS1005LSYCK/J3-PF",
+      "source_url": "https://www.kingbrightusa.com/images/catalog/SPEC/APHHS1005LSYCK-J3-PF.pdf",
+      "verified": {
+        "dominant_wavelength_nm": 590,
+        "color": "Yellow (amber-range candidate)",
+        "nominal_size_mm": [
+          1,
+          0.5,
+          0.5
+        ],
+        "Vf_typ_V_at_2mA": 1.85,
+        "luminous_intensity_min_mcd_at_2mA": 10
+      },
+      "qualification": "CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Cathode orientation and land pattern",
+        "Visibility at actual sub-mA current through6.8k resistor and case window",
+        "MSL3 and no more than2 reflow passes",
+        "Supplier SKU, stock, price and assembly acceptance"
+      ]
+    }
+  ]
+}

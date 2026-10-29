@@ -1,0 +1,34 @@
+{
+  "status": "PASS_CURRENT_CODEC_CAPACITY_AND_IMPORT",
+  "command": "python3 firmware/stm32/tests/check_recording_end_to_end.py /tmp/pendant-host-tools/age --fat32 --cooperative",
+  "reference_age_version": "1.2.1 (built offline from local module cache)",
+  "chunk_samples": 160000,
+  "sample_rate_hz": 16000,
+  "wav_bound_bytes": 80956,
+  "wav_bound_derivation": "60 + ceil(160000 / 2041) * 1024; fixed-size IMA ADPCM blocks independent of audio amplitude",
+  "observed_full_ciphertext_bytes": 81172,
+  "capacity_fixture_bytes_per_file": 82180,
+  "allocation_bytes_per_full_file_at_4k_clusters": 81920,
+  "fixture_allocation_bytes_per_file_at_4k_clusters": 86016,
+  "checks": [
+    "Real C codec, cooperative pipeline, recording store, age writer and FatFs on RAM FAT32",
+    "Two full chunks plus tail: ciphertext sizes 81172,81172,5380",
+    "Standard age decryption, production host importer, 328704 total PCM samples",
+    "Ordered WAV and decoded PCM match synchronous reference",
+    "Import replay deduplicates without deleting source"
+  ],
+  "limitations": [
+    "Short synthetic capture, not 30-hour real microphone recording",
+    "Single binary X25519 recipient profile only; profile changes invalidate size evidence",
+    "Real media usable capacity, latency, power, endurance and interrupted-write integrity unmeasured",
+    "Partial-session files, device identity files and retained TMP files consume additional capacity"
+  ],
+  "sources": {
+    "firmware/stm32/core/wav_chunk.h": "0a95ee154eee2333616eb03b7db6a91d8b7a44f594b86130719b4ead4aac2645",
+    "firmware/stm32/core/wav_chunk.c": "8f20f25da2777464a0acb81e610f405d083a585a3eb158a4bf1ae77f1388d2f8",
+    "firmware/stm32/core/ima_adpcm.c": "93f7ef7e0b527b28d6966b466ab7545b05a30eb7ac54ffd543fd64432baa81a7",
+    "firmware/stm32/crypto/age_writer.c": "5cae078a794c0a4f94ec6d936fcfe16b523c528d72f3e565b7568ef9ce9e523b",
+    "firmware/stm32/tests/check_recording_end_to_end.py": "4059f469cc55641a0d836460c2d597ed0ad15be6cc477373fff826a857c0bf0d"
+  },
+  "log_sha256": "15d95224d89da64251b1ff7527a0a399bc9f93a4a60fe030a52de9ccdb19e987"
+}

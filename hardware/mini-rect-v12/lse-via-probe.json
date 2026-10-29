@@ -1,0 +1,153 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:09:43",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "lse-via-probe.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/LSE_IN] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "5f0ebff6-5e04-43d5-a935-f41b3d966c37"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.25,
+                        "y": 13.2
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_MISO と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.9441 mm )",
+                    "pos": {
+                        "x": 15.4374,
+                        "y": 11.9929
+                    },
+                    "uuid": "ac9786db-8d37-4acc-a1fa-1c29edfa5f97"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "c77cecc7-74ca-4362-9cc4-bd2453036f79"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /LSE_IN)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - C27 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.75,
+                        "y": 11.225
+                    },
+                    "uuid": "c0e4ffc5-58b4-494e-98ba-0a0221798ba5"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "c77cecc7-74ca-4362-9cc4-bd2453036f79"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0710 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - C27 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.75,
+                        "y": 11.225
+                    },
+                    "uuid": "c0e4ffc5-58b4-494e-98ba-0a0221798ba5"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "c77cecc7-74ca-4362-9cc4-bd2453036f79"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.1875,
+                        "y": 11.65
+                    },
+                    "uuid": "c77cecc7-74ca-4362-9cc4-bd2453036f79"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C27 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.75,
+                        "y": 11.225
+                    },
+                    "uuid": "c0e4ffc5-58b4-494e-98ba-0a0221798ba5"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

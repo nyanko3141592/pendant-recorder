@@ -1,0 +1,40 @@
+{
+  "status": "DO_NOT_PROMOTE_WIDE_RELIEF_SUPPORT_LOSS",
+  "sources_sha256": {
+    "film-lead-wrap-full-mating-review.json": "d131866dfc5eee212b2d0e19c1499a74981bf6dbc618d318d13189628c6773e1",
+    "film-battery-wide-full-mating-review.json": "c425bd076a46f45e3a35ce70a2b7900d8676f65b27e6ac2b998bad41e430eb01"
+  },
+  "comparison": [
+    {
+      "region": "front",
+      "old_projected_area_mm2": 2.1543503256228727,
+      "new_projected_area_mm2": 0.04198268727551153,
+      "fraction_remaining": 0.019487400343476336,
+      "gap_mm": 0.06000000000000094
+    },
+    {
+      "region": "rear",
+      "old_projected_area_mm2": 2.0441485220085163,
+      "new_projected_area_mm2": 0.011611038899400957,
+      "fraction_remaining": 0.005680134674359334,
+      "gap_mm": 0.06000000000000094
+    },
+    {
+      "region": "middle1",
+      "old_projected_area_mm2": 1.558455107654652,
+      "new_projected_area_mm2": 1.5584551076546518,
+      "fraction_remaining": 0.9999999999999999,
+      "gap_mm": 0.06000000000000094
+    },
+    {
+      "region": "middle2",
+      "old_projected_area_mm2": 1.5394164352550845,
+      "new_projected_area_mm2": 1.5394164352550832,
+      "fraction_remaining": 0.9999999999999991,
+      "gap_mm": 0.06000000000000094
+    }
+  ],
+  "interpretation": "CAD support proxy equality did not survive slicing. Front/rear narrow support overlap nearly disappears in the nominal bead model. This is projected overlap across a 0.06mm gap, not actual contact area or measured support strength.",
+  "decision": "Keep existing integration manifest unchanged; wide-end relief is a rejected adoption candidate pending support redesign.",
+  "next_design_constraint": "Preserve printable front/rear support width and vertical section while accommodating maximum battery plus explicit fit allowance; revise ledge/seat geometry or overall size if needed rather than interpreting CAD support alone as sufficient."
+}

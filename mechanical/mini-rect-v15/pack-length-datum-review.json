@@ -1,0 +1,62 @@
+{
+  "status": "PACK_LENGTH_DATUM_VISUALLY_VERIFIED_NOT_COMPLETE_HARNESS_FIT",
+  "source_url": "https://www.sengoku.co.jp/item/pdf/Spe-01-401525-XE-NTC-110mah-3.7V-en-1.pdf",
+  "source_local_pdf_sha256": "757689c6906ce62184e0f271ce908d6234ce503de70e19c43037fc7b4f342a57",
+  "drawing": {
+    "document": "E-SPE-0307-01",
+    "version": "1.0",
+    "date": "2020-06-28",
+    "page": 9,
+    "section": "9.4 External Dimension Drawing"
+  },
+  "evidence_image": "mechanical/mini-rect-v15/evidence/XE-pack-drawing-page9.png",
+  "verified": {
+    "lead_dimension_mm": {
+      "nominal": 15,
+      "tolerance": 3,
+      "lower": 12,
+      "upper": 18,
+      "datum_start": "Top edge of completed protected battery pack",
+      "datum_end": "Wire-exit edge of connector housing",
+      "housing_included": false
+    },
+    "wire_marking": "UL3302 AWG#30",
+    "connector": "Molex781720003",
+    "pin_labels": {
+      "1": "Red positive",
+      "2": "NTC",
+      "3": "Black negative"
+    },
+    "pack_max_mm": [
+      15.5,
+      27,
+      4.2
+    ]
+  },
+  "remaining_unknowns": [
+    "Wire insulation OD and allowable static bend radius are not dimensioned on this sheet.",
+    "Lateral wire exit locations and through-thickness height are not dimensioned.",
+    "Drawing does not provide independent wire-length tolerances; independent12/15/18 screen is an engineering stress case.",
+    "Mated wire-exit coordinates relative to PCB pads still require connector drawing/CAD.",
+    "No assembled-case or insertion-sweep approval."
+  ],
+  "effect_on_design": "Keep12..18mm free-wire length budget. Do not subtract connector housing length. Prior curve-family rejection remains applicable under its other assumptions.",
+  "prototype_incoming_checks": [
+    {
+      "quantity": 5,
+      "check": "Photograph each pack label and connector pin1 orientation; record lot and compare polarity to J2 before mating."
+    },
+    {
+      "quantity": 5,
+      "check": "Measure pack envelope, exposed free-wire length without tension, wire OD and connector envelope; retain minimum/maximum values."
+    },
+    {
+      "quantity": 5,
+      "check": "Assemble without cutting, retermination or soldering; inspect wire pinch, terminal load and clearance at closed lid."
+    },
+    {
+      "quantity": 5,
+      "check": "Confirm case dimensions including protrusions do not exceed30x32x15mm; photograph seated harness before closure."
+    }
+  ]
+}

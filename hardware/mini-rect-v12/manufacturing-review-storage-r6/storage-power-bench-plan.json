@@ -1,0 +1,54 @@
+{
+  "status": "NOT_RUN_HARDWARE_REQUIRED",
+  "candidate": "storage-4gb-4u7-candidate",
+  "comparison": "storage-4gb-candidate (22uF)",
+  "equipment": [
+    "Current-limited programmable supply in place of battery for initial evaluation",
+    "Oscilloscope recording BAT input current, SD_V3 atU11, V3V3 and SD_EN",
+    "Known data writer/readback comparison and firmware loss/error counters"
+  ],
+  "first_stage": "Use bench supply before connecting unqualified cell; if50mA input limit causes rail collapse, candidate fails this screen. Do not use current limit as proof of actual cell behavior.",
+  "conditions": {
+    "input_volts": [
+      4.2,
+      3.7,
+      3.3
+    ],
+    "temperature": "Begin room temperature; operating corners only after permissible battery/system range is confirmed",
+    "operations": [
+      "Cold boot from discharged switched rail",
+      "Sequential write sustained and alternating busy/idle",
+      "Readback full test data",
+      "USB insertion/removal at file rollover",
+      "Minimum free-space writes after filling media"
+    ]
+  },
+  "acceptance": {
+    "battery_current": "Stay within confirmed vendor continuous/pulse envelope; until clarified use50mA as provisional ceiling, including startup",
+    "storage_rail": "U11 supply remains within datasheet2.7..3.6V; scope at pins with sufficient bandwidth; no undershoot/overshoot outside limits",
+    "ramp": "Monotonic and meets storage vendor power-on/reset specification; missing vendor spec prevents qualification",
+    "integrity": "No byte mismatches or recording queue overruns; reset/brownout/data errors are failures",
+    "time": "Continuous16h recording still requires real pack run and energy integration; this test does not replace it"
+  },
+  "record_fields": [
+    "candidatePCBsha256",
+    "firmwareELFsha256",
+    "capacitorMPN/lot",
+    "actualeffectivecapacitance",
+    "supplyvoltage/currentlimit",
+    "temperature",
+    "probe/bandwidth/sampleRate",
+    "peakcurrent/duration",
+    "minimumSD_V3",
+    "ramp_time",
+    "write/read/errorcounts",
+    "queue_overrun_count",
+    "rawcapture_paths"
+  ],
+  "unresolved_before_release": [
+    "BatteryNTC/harness/charge and pulse specification",
+    "Storage auxiliary pad assembly definition",
+    "Storage startup envelope",
+    "JLC shortages and full landed quotation"
+  ]
+}

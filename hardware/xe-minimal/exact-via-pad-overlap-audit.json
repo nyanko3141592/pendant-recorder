@@ -1,0 +1,100 @@
+{
+  "status": "OPEN_MANUFACTURING_REVIEW_REQUIRED",
+  "board_sha256": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+  "method": "KiCad effective copper pad shape collision vs via radius and additional0.025mm; F/B layers",
+  "copper_proximity_vias": 5,
+  "hole_over_pad_vias": 4,
+  "flagged_vias": 4,
+  "vias": [
+    {
+      "uuid": "58d8777e-5726-406c-9002-92c3cbdf22de",
+      "xy_mm": [
+        20.84,
+        10.5175
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "36",
+          "net": "/V3V3",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": false
+        }
+      ]
+    },
+    {
+      "uuid": "e11df905-3d9d-4a69-bc7e-e4a029e6f6f8",
+      "xy_mm": [
+        11.3625,
+        0.95
+      ],
+      "hits": [
+        {
+          "ref": "U13",
+          "pad": "5",
+          "net": "/VBUS_OVP",
+          "layer": "F.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "8f964d3b-bdf3-4c9d-8694-c27cc84126d0",
+      "xy_mm": [
+        18.1,
+        11.5
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "40",
+          "net": "/PDM_DATA",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "c2faa17a-0df5-46e8-b7e0-a5c8f86431a4",
+      "xy_mm": [
+        13.15,
+        5.95
+      ],
+      "hits": [
+        {
+          "ref": "U1",
+          "pad": "10",
+          "net": "/VBUS_N",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    },
+    {
+      "uuid": "cd6f76be-442e-464d-affc-2baf7a4eb158",
+      "xy_mm": [
+        21.35,
+        15.2
+      ],
+      "hits": [
+        {
+          "ref": "U3",
+          "pad": "9",
+          "net": "/CHG_N",
+          "layer": "B.Cu",
+          "copper_overlap": true,
+          "hole_overlaps_pad": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Copper overlap alone is a normal dogbone connection; hole_overlaps_pad is the special-process discriminator.",
+    "Solder mask openings, actual drill registration and fabrication capability not qualified.",
+    "Resolve hole overlaps by geometry changes or qualified filled/capped process before release."
+  ]
+}

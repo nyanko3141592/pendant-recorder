@@ -1,0 +1,18 @@
+{
+  "status": "ESD_GROUND_GEOMETRY_IMPROVEMENT_NOT_QUALIFIED",
+  "board": "usb-esd-ground.kicad_pcb",
+  "board_sha256": "1b243dd7f70a1b342b8afda2029a90319650d5645fb72122dd364223b74fffd9",
+  "source": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+  "source_section": "DS4260 Rev7 section2.3, page6",
+  "manufacturer_guidance": "Minimize connections from data to I/O pins, VBUS supply to clamp, and ground pin to ground plane to reduce parasitic overvoltage",
+  "schematic_pinmap": "1/6 IO1,3/4 IO2,2GND,5VBUS matches design",
+  "change": "Added0.45/0.20mm GND via on existing B and In1 filled areas,1.589mm straight distance from U2GND pad",
+  "drc": 0,
+  "unconnected": 0,
+  "limitations": [
+    "Straight distance is not extracted ESD current-path inductance",
+    "Signal routing/reference defects remain; 90ohm not qualified",
+    "Actual ESD immunity requires assembled-board testing",
+    "Front-side protection placement is still an unadopted alternative"
+  ]
+}

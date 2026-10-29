@@ -1,0 +1,105 @@
+{
+  "status": "CANONICAL_CARRIER_SWD_INSTRUCTION_COMPLETE_POWER_METHOD_PHYSICAL_HOLD",
+  "hardware_revision": "XE-PROTOTYPE-V1-27P5-PACK-NTC-CASE-V5-1GB-OVP-LATCH",
+  "target_mpn": "STM32U585CIU6",
+  "view": "TOP/component view of 70x70mm carrier",
+  "carrier_translation_from_unit_mm": [
+    21.25,
+    22.0
+  ],
+  "j3_pitch_mm": 1.27,
+  "j3_pads": [
+    {
+      "pin": "1",
+      "net": "/V3V3",
+      "xy_mm": [
+        23.325,
+        28.575
+      ],
+      "size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "pin": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        24.595,
+        28.575
+      ],
+      "size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "pin": "3",
+      "net": "/NRST",
+      "xy_mm": [
+        23.325,
+        29.845
+      ],
+      "size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "pin": "4",
+      "net": "/SWCLK",
+      "xy_mm": [
+        24.595,
+        29.845
+      ],
+      "size_mm": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "pin": "5",
+      "net": "/GND",
+      "xy_mm": [
+        23.325,
+        31.115
+      ],
+      "size_mm": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "pin_1_rule": "VTREF sense only; programmer must not source power into J3 pin 1",
+  "candidate_board_power": "J1 USB-C at 5.0V with external current limit; J2 battery connector empty",
+  "candidate_board_power_physical_qualification": "NOT_RUN",
+  "program_sequence": [
+    "Verify carrier, PCB, firmware and instruction hashes",
+    "Keep J2 battery connector empty and apply current-limited 5.0V through J1 USB-C",
+    "Sense target V3V3 on J3 pin1; abort on absent or out-of-range VTREF",
+    "Connect GND, SWDIO, SWCLK and NRST through J3 without powering pin1",
+    "Program common BIN and BOR level 4, then verify full flash and option-byte readback",
+    "Read STM32 96-bit UID and bind it to the unique PCB serial",
+    "Verify charge request is LOW during reset; after firmware starts it may assert before USB configuration only on the fixed-100mA input path; storage rail defaults OFF",
+    "Record programmer, fixture, timestamps, hashes and raw-log SHA-256 for every unit"
+  ],
+  "abort_conditions": [
+    "unexpected current limit operation",
+    "VTREF absent or outside qualified range",
+    "flash verify failure",
+    "BOR4 readback failure",
+    "duplicate or unreadable MCU UID",
+    "charge request high while reset is asserted",
+    "storage rail on at default"
+  ],
+  "vendor_acceptance": "NOT_VERIFIED",
+  "physical_pogo_contact_and_no_battery_powerup": "NOT_RUN",
+  "drawing": "hardware/xe-minimal/factory-programming/vendor-programming-carrier.svg",
+  "source_sha256": {
+    "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+    "hardware/xe-minimal/canonical-single-carrier-v1/carrier.kicad_pcb": "85814e1a9e498cf0ce809158793790850b6094120663f859f35a14650bf990fd",
+    "hardware/xe-minimal/factory-programming/vendor-programming-carrier.svg": "da1272e2ae45f07de0612ae50a461b9bd0a926f0553ec129a2c525e3005e0191",
+    "hardware/xe-minimal/prototype-architecture-v1.json": "5283501cee6583939167dd7c4bcfdb48e466b0129f58c6e99211d9f0cd9bf067"
+  },
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

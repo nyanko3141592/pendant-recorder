@@ -1,0 +1,35 @@
+{
+  "status": "USB_CC_ROUTED_NOT_FUNCTIONALLY_TESTED",
+  "accepted": [
+    {
+      "connector_pin": "B5",
+      "resistor": [
+        "R7",
+        "1"
+      ],
+      "net": "/CC2",
+      "via_mm": [
+        13.975,
+        18.014999
+      ],
+      "tested": 2
+    }
+  ],
+  "deferred": [
+    {
+      "connector_pin": "A5",
+      "resistor": [
+        "R6",
+        "1"
+      ],
+      "tested": 40
+    }
+  ],
+  "physical_drc_violations": 0,
+  "unconnected_items": 111,
+  "board_sha256": "7441fc4e1c35f2205949defe0164c2323c83f471feebfdb7c0bdba1127711f89",
+  "limits": [
+    "CC connectivity only; Type-C attachment and both cable orientations remain untested",
+    "VBUS and whole USB power/data operation remain incomplete"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "status": "SEQUENCE_SCREEN_NOT_QUALIFIED",
+  "source_pdf_sha256": "e0f4f5766ba30309af96287e20345b34b38986da59bb0e644bf5401e009c0c66",
+  "source_page": 7,
+  "VBUS_LIMITED_members": [
+    {
+      "ref": "C13",
+      "value": "2.2u 10V",
+      "pins": [
+        "1"
+      ]
+    },
+    {
+      "ref": "U3",
+      "value": "BQ25185DLHR",
+      "pins": [
+        "10"
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "100k 1%",
+      "pins": [
+        "1"
+      ]
+    },
+    {
+      "ref": "U13",
+      "value": "MAX4995CAUT+T",
+      "pins": [
+        "1"
+      ]
+    }
+  ],
+  "specification_classification": {
+    "reverse_activation_mV": {
+      "typ": 44,
+      "max": null
+    },
+    "reverse_response_us": {
+      "typ": 3,
+      "max": null
+    },
+    "reverse_leakage_uA": {
+      "max": 38,
+      "condition": "ON low, VIN 0, VOUT 5 V"
+    },
+    "QOD_ohm_at_5V": {
+      "typ": 100,
+      "max": 160,
+      "condition": "ON low; no stated minimum"
+    }
+  },
+  "nominal_capacitor_only_example": {
+    "C13_uF": 2.2,
+    "initial_V": 5,
+    "stored_energy_uJ": 27.5,
+    "QOD_initial_current_mA_using_typical_R": 50,
+    "tau_us_using_typical_R": 220,
+    "scope": "Illustration only: ignores capacitance tolerance/bias, other parasitics and BQ25185 input behavior. Not peak bound or timing guarantee."
+  },
+  "findings": [
+    "The limited rail feeds charger IN and CE pullup, not SYS or BAT directly.",
+    "QOD on suspend discharges charger input and CE pullup. Charger input isolation and undervoltage handling must be included; CE low alone does not prove battery charging.",
+    "QOD figures apply with VIN powered and ON low; do not use them for unplug/VIN=0.",
+    "Reverse activation and response are typical-only; do not report 3us as a guaranteed upper bound.",
+    "38uA reverse leakage applies to the stated OFF test and is not automatically battery discharge current."
+  ],
+  "bench_cases": [
+    "USB suspend with VBUS present: capture limited rail, SYS, BAT current and CE.",
+    "Hard unplug during charging and storage transfer: capture raw/limited VBUS and reverse current.",
+    "Slow VBUS collapse with ON latch high: verify no repeated startup/reset or corrupted recording."
+  ],
+  "physical_tests_run": 0
+}

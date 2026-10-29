@@ -1,0 +1,88 @@
+{
+  "status": "CANDIDATE_INTEGRATED_GEOMETRY_NOT_FIT_APPROVAL",
+  "pcb_sha256": "9b65897c16ed3d470b82b152bc7766614a9c00eb1ad511854044fa6e2f60145a",
+  "output_sha256": "079cfcb77528a869830eb697bf7d1084a74bf5438cfa79259fe7f29f5f0b49d9",
+  "sources": [
+    {
+      "file": "glue-case-candidate-library-components.step",
+      "sha256": "0594c7a5cc588bf6fc2983cd3a7526657c5edf241039a8a2a877e5cfa7a424ee"
+    },
+    {
+      "file": "u8-body-positioned-study.step",
+      "sha256": "ebef70a66ae2e0835da33ec48dfa06c66bc7c1e774448f339302f9f273d125ee"
+    },
+    {
+      "file": "u14-envelope-positioned-study.step",
+      "sha256": "59c959155ddee83808c905669183311865ff721fdca9e0d876ca851fdd6dceba"
+    },
+    {
+      "file": "u10-envelope-positioned-study.step",
+      "sha256": "73348ed9272e7b6485b01315ed680ea6dc08d5e0e0596e641c3ffba717f53ed0"
+    },
+    {
+      "file": "u1-envelope-positioned-study.step",
+      "sha256": "04ca0dbb4fe92c1b884cd419814f494cee454203411df7e4f425405ed1a939a6"
+    },
+    {
+      "file": "j2-header-positioned-study.step",
+      "sha256": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0"
+    },
+    {
+      "file": "u11-package-body-max.step",
+      "sha256": "4668cd93ce47592ecdd1d157e0de9a62d7ff11b1cbe4512a4573a83f06b518e1"
+    },
+    {
+      "file": "hardware/xe-minimal/fixed-usb-limit-trial/tps22950-maximum-envelope.step",
+      "sha256": "75617dd9cfab1e6eb6b03db8ac09557bdad7351f28f6e73a17ea1477d2bec48d",
+      "placed_at_board_top": true
+    },
+    {
+      "file": "d6-led-selection-review.json",
+      "sha256": "23292fff4fdedb7265e8927a50fc12a50d0ef812e928ecbc135b23d4eb0000e6",
+      "candidate_not_adopted": true
+    }
+  ],
+  "retained_envelope_pose_checked": [
+    "J2",
+    "U1",
+    "U10",
+    "U11",
+    "U14",
+    "U8"
+  ],
+  "excluded_library_models": [
+    "D6",
+    "J2",
+    "U1",
+    "U10",
+    "U11",
+    "U13",
+    "U14",
+    "U8"
+  ],
+  "removed_Q5_present": false,
+  "study_intersections": [
+    {
+      "file": "rounded-glue-upper-study.step",
+      "sha256": "bf13bd278f90f424d43600dafdc0acd41fc1f5151e59c3b1eb3a576c5aa4cfad",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "rounded-glue-lower-study.step",
+      "sha256": "8173fb1f9c5cabbc46b1531e43189a1e94f4b414e133890c445931e0c57523f6",
+      "intersection_volume_mm3": 0.0
+    },
+    {
+      "file": "battery-separator-study.step",
+      "sha256": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+      "intersection_volume_mm3": 0.0
+    }
+  ],
+  "limitations": [
+    "Generic library bodies are not manufacturer maximum dimensions",
+    "J2 pose remains provisional; mating plug and original battery leads absent",
+    "Zero solder standoff is a visualization datum",
+    "Battery swelling, closure, thermal contact and assembly access remain unresolved",
+    "This candidate is not the adopted canonical circuit"
+  ]
+}

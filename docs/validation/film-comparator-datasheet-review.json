@@ -1,0 +1,24 @@
+{
+  "status": "DATASHEET_CONDITIONS_VERIFIED_NOT_APPLICATION_BOUND",
+  "source": "https://www.ti.com/lit/ds/symlink/tlv7042.pdf?ts=1779845950457",
+  "revision": "SLVSE13J November2024",
+  "sha256": "9d53a63c34e9ca14f68d3fb60bdd4ae81bbc91c101db01df985ed245d99fcacc",
+  "table": "5.9 Dual, page9 visually checked",
+  "temperature_range_C": [
+    -40,
+    125
+  ],
+  "offset_max_abs_mV": 8,
+  "hysteresis_min_typ_max_mV": [
+    3,
+    10,
+    25
+  ],
+  "test_conditions": "Vs=1.8V and5V, Vcm=Vs/2",
+  "hysteresis_equation": "VTH+VOS +/- VHYST/2 (section6.4.2 Figure6-1)",
+  "combined_offset_half_hysteresis_mV": 20.5,
+  "bias_current_pA_typical_only": 2,
+  "CMRR_dB_typical_only": 73,
+  "PSRR_dB_typical_only": 77,
+  "application_gap": "Actual threshold common-mode is near0.23V/0.55V at3.3V, notVs/2. Typical CMRR/PSRR do not establish a guaranteed bound there."
+}

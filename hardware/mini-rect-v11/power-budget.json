@@ -1,0 +1,30 @@
+{
+  "status": "ALLOCATION_TARGETS_NOT_MEASURED_PREDICTION",
+  "battery_mAh": 100,
+  "usable_capacity_fraction_assumed": 0.7,
+  "required_recording_hours": 16,
+  "maximum_average_battery_mA": 4.375,
+  "target_average_battery_mA": 4.0,
+  "allocations_mA": {
+    "microphone_and_clock": 0.5,
+    "mcu_dma_decimation_adpcm_crypto_ram": 1.6,
+    "storage_including_busy_and_standby": 1.2,
+    "regulator_charger_ntc_dividers_leakage": 0.4,
+    "reserve": 0.3
+  },
+  "storage_duty_sensitivity": {
+    "standby_max_mA": 0.25,
+    "write_max_mA_at_datasheet_condition": 50,
+    "allocated_average_mA": 1.2,
+    "max_write_busy_fraction_at_50mA": 0.019095477386934675,
+    "max_busy_seconds_per_10s": 0.19095477386934676,
+    "note": "Two-state sensitivity only. Real SPI current, internal NAND busy duration, startup, flush, and read/metadata overhead must be measured. Do not infer duty from advertised peak MB/s."
+  },
+  "acceptance_measurement": {
+    "includes": ["continuous silence and speech", "PDM and DMA", "ADPCM", "age v1 encryption including key setup and RNG", "filesystem metadata and flush", "SD busy", "battery voltage and LDO dropout"],
+    "exclude_usb_power": true,
+    "recording_duration_min_hours": 16,
+    "measure_at": "battery pack output, over complete recording cycle and multiple cell voltages",
+    "result": null
+  }
+}

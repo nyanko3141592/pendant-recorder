@@ -1,0 +1,27 @@
+{
+  "status": "OPTICAL_CORRIDOR_TRIAL_COMPLETE_BOARD_MODEL_UPDATE_PENDING",
+  "center_step_mm": [
+    14.125,
+    -5.975
+  ],
+  "LED_footprint_rotation_deg": 90,
+  "corridor_diameter_mm": 1.2,
+  "corridor_bottom_mm": 0.8364,
+  "current_board_corridor_intersection_mm3": 0.0,
+  "case_removed_volume_mm3": 0.9047786842331789,
+  "case_valid": true,
+  "case_solid_count": 1,
+  "outer_dimensions_unchanged": true,
+  "sources": {
+    "clearance-hook-upper-trial.step": "d67171ae6ccdf9e598b67cfd587fcb676a54eb9132db514c971aed9ac2dd7d23",
+    "buttonless-candidate-integrated-board.step": "fcfbd698565c8cdd8dfc1744b8a5fc9fc709d74f1f222799f7b3ea6eda70c50f"
+  },
+  "output_sha256": "181b9bb97bb302d3c10baf2968506b63d2df48f602c5dd5fc56a26d39ae77172",
+  "remaining": [
+    "Select LED MPN and verify package/emission/current",
+    "Integrate routed top LED candidate into 3D; source board model still has bottom LED",
+    "Check courtyard and copper clearances",
+    "Qualify viewing angle/brightness/window sealing",
+    "Verify implemented fault/full patterns on actual hardware"
+  ]
+}

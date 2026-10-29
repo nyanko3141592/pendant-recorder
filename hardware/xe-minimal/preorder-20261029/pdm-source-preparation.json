@@ -1,0 +1,16 @@
+{
+  "L2": "GND dedicated power layer",
+  "L3": "GND pour with power/slow signal routing allowed",
+  "critical_nets_outer_only": [
+    "/PDM_CLK",
+    "/PDM_CLK_MCU",
+    "/PDM_DATA",
+    "/SD_CLK",
+    "/SD_CLK_MCU",
+    "/SD_MOSI",
+    "/SD_MISO",
+    "/SD_CS_N"
+  ],
+  "staging": "If connected, freeze critical routes and protect their B.Cu reference from L3 slow/power crossings in a second stage",
+  "release_allowed": false
+}

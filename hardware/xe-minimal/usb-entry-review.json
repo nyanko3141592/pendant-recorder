@@ -1,0 +1,34 @@
+{
+  "status": "USB_ENTRY_TRIAL_NOT_SIGNAL_INTEGRITY_QUALIFIED",
+  "accepted": [
+    {
+      "connector_pin": "A6",
+      "esd_pin": "1",
+      "net": "/USB_DP",
+      "via_mm": [
+        11.75,
+        19.883749
+      ],
+      "tested": 1
+    },
+    {
+      "connector_pin": "A7",
+      "esd_pin": "3",
+      "net": "/USB_DM",
+      "via_mm": [
+        12.0,
+        17.746249
+      ],
+      "tested": 1
+    }
+  ],
+  "deferred": [],
+  "physical_drc_violations": 0,
+  "unconnected_items": 118,
+  "board_sha256": "7c0c808a14b91b351d831551c48e4673133617266fab4d6946318ed8b7f308ac",
+  "limits": [
+    "Not the main controlled-impedance pair; short outer-layer transitions need joint SI review.",
+    "Connector duplicated pins and ESD second pins still need connection.",
+    "No claim of90ohm, USB compliance or measured ESD performance."
+  ]
+}

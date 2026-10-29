@@ -1,0 +1,19 @@
+DRAFT FOR QUOTATION / CAM REVIEW — NOT SENT
+Applies only to mic-jlc-overlap-candidate, not the older fabrication ZIP.
+
+U8 (IM69D130V01XTSA1) intentionally uses solder-mask-defined pads.
+Retain U8 solder-mask openings; do not convert them to NSMD openings.
+Copper-to-mask overlap is nominally 0.08 mm on each edge.
+U8 adjacent signal copper pads are 0.09 mm apart. This requires the published
+1 oz multilayer spacing capability; do not substitute 2 oz outer copper.
+Please review U8's segmented annular paste pattern against the supplied
+F.Paste data and Infineon datasheet Figure 12. Do not apply generic aperture
+reshaping to U8 without returning the proposed changes for review.
+Please confirm stencil thickness and process suitability for this MEMS part.
+Enable production-file confirmation and return processed mask/paste files
+for inspection before production approval. The acoustic hole must stay open.
+
+References:
+https://jlcpcb.com/capabilities/pcb-capabilities
+https://jlcpcb.com/help/article/how-to-order-boards-with-solder-mask-defined-pads
+https://jlcpcb.com/help/article/opening-process-standard-of-stencil

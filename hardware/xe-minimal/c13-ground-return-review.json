@@ -1,0 +1,19 @@
+{
+  "status": "OPEN_NOT_RELEASE_QUALIFIED",
+  "component": "C13 2.2uF VBUS_LIMITED bypass",
+  "previous_ground_trace_mm": 0.8,
+  "current_ground_trace_mm": 2.072800038595137,
+  "current_width_mm": 0.25,
+  "ground_via_mm": [
+    22.255,
+    18.085
+  ],
+  "reason": "ISET escape retained while reducing the interim 4.069 mm ground return to 2.073 mm. Ground connection shares an existing via; input transient/loop performance remains unverified.",
+  "required": [
+    "Review placement of C13 and local return via to shorten loop while retaining ISET",
+    "Verify input droop/ringing and charge startup with USB current limiting",
+    "Verify low-current ISET filtering and charge current with C30 routing"
+  ],
+  "interim_ground_trace_mm": 4.069450438948645,
+  "layout_change": "C13 rotated 180 degrees and shifted up 0.4 mm; input track follows pad 1; long 4-segment return replaced with one 0.25 mm segment"
+}

@@ -1,0 +1,90 @@
+{
+  "status": "ARCHITECTURE_PROPOSAL_NOT_APPLIED",
+  "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+  "revision": "SCES487I November 2024",
+  "pdf_sha256": "ffd953703273b43844eae23cfbf31cfc801a3b9443f2c863d49dde62f5a9232b",
+  "proposed_connections": {
+    "A": "temperature comparator cold-safe push-pull output",
+    "B": "temperature comparator hot-safe push-pull output",
+    "C": "MCU CHG_ALLOW with independent pulldown",
+    "Y": "Q4 gate; no wired comparator outputs",
+    "VCC": "V3V3",
+    "GND": "GND"
+  },
+  "truth_table": [
+    {
+      "cold_safe": 0,
+      "hot_safe": 0,
+      "mcu_allow": 0,
+      "charge_request": 0
+    },
+    {
+      "cold_safe": 0,
+      "hot_safe": 0,
+      "mcu_allow": 1,
+      "charge_request": 0
+    },
+    {
+      "cold_safe": 0,
+      "hot_safe": 1,
+      "mcu_allow": 0,
+      "charge_request": 0
+    },
+    {
+      "cold_safe": 0,
+      "hot_safe": 1,
+      "mcu_allow": 1,
+      "charge_request": 0
+    },
+    {
+      "cold_safe": 1,
+      "hot_safe": 0,
+      "mcu_allow": 0,
+      "charge_request": 0
+    },
+    {
+      "cold_safe": 1,
+      "hot_safe": 0,
+      "mcu_allow": 1,
+      "charge_request": 0
+    },
+    {
+      "cold_safe": 1,
+      "hot_safe": 1,
+      "mcu_allow": 0,
+      "charge_request": 0
+    },
+    {
+      "cold_safe": 1,
+      "hot_safe": 1,
+      "mcu_allow": 1,
+      "charge_request": 1
+    }
+  ],
+  "limits": {
+    "VIH_min_V_at_3_to_3_6V": 2.0,
+    "VIL_max_V_at_3_to_3_6V": 0.8,
+    "input_leakage_abs_max_uA": 5,
+    "Ioff_abs_max_uA": 10,
+    "ICC_max_uA_rail_inputs": 10,
+    "delta_ICC_max_uA_one_input_VCC_minus_0_6": 500
+  },
+  "power_off_screen": {
+    "existing_100k_pulldown_V_at_10uA": 1.0,
+    "candidate_10k_1percent_pulldown_V_at_10uA": 0.101,
+    "interpretation": "Logic output leakage contribution only, at stated Ioff test condition. MOSFET leakage and ramp behavior still need inclusion. 100k is not automatically a safe default."
+  },
+  "power_screen": {
+    "rail_input_ICC_charge_mAh_for_16h": 0.16,
+    "scope": "Gate IC only, not total monitor or device; non-rail inputs can increase current substantially."
+  },
+  "remaining": [
+    "Select comparator with output limits at actual supply; do not reuse wired push-pull outputs.",
+    "Output drive versus stronger Q4 pulldown and MOSFET leakage",
+    "MOSFET off-current at residual gate voltage",
+    "Startup/ramp and unpowered sequencing",
+    "Input transition-time limits and near-rail comparator levels",
+    "Exact package stock, pad area, decoupling and rerouting"
+  ],
+  "no_board_change": true
+}

@@ -1,0 +1,61 @@
+{
+  "status": "ASSEMBLY_CLEARANCE_SCREEN_NOT_QUALIFIED",
+  "rows": [
+    {
+      "offset_y_mm": 0,
+      "board_distance_mm": 0.030000000000001137,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset_y_mm": 0.3,
+      "board_distance_mm": 0.030000000000001137,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset_y_mm": 0.4,
+      "board_distance_mm": 0.030000000000001137,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset_y_mm": 0.45,
+      "board_distance_mm": 0.030000000000001137,
+      "overlap_mm3": 0.0
+    },
+    {
+      "offset_y_mm": 0.5,
+      "board_distance_mm": 0.0,
+      "overlap_mm3": 0.0
+    }
+  ],
+  "meaning": "Zero overlap alone is insufficient; clearance must cover manufacturing and positioning errors",
+  "limitations": [
+    "Approximate component models",
+    "No supplier tolerance stack",
+    "Original leads omitted"
+  ],
+  "identified_limits": [
+    {
+      "offset_y_mm": 0,
+      "case_point_mm": [
+        16.5,
+        -26,
+        2.8714
+      ],
+      "component_point_mm": [
+        16.47,
+        -26,
+        2.8714
+      ],
+      "cause": "Upper screw support adjacent to USB component model; only .03mm nominal gap"
+    },
+    {
+      "offset_y_mm": 0.5,
+      "contact_location": "PCB rear edge y=-27; upper case shifted into edge",
+      "cause": "Assembly translation consumes rear gap"
+    }
+  ],
+  "next_changes": [
+    "Reduce or reshape screw support with material thickness check",
+    "Reduce slide distance and adjust hook engagement; retain positive positioning clearance"
+  ]
+}

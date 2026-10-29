@@ -1,0 +1,123 @@
+{
+  "status": "PLANNED_NOT_EXECUTED",
+  "scope": "Five-prototype engineering decision; no production runtime guarantee",
+  "design_evidence_sha256": {
+    "active-design.json": "d934f03bbbf5d1ab2f86e72c31bb3242f6bcf4dfdc49afc91af9c6d89ebe26e4",
+    "recording-current-budget.json": "15f12281068f92e55a2d67c099caeca95a586645b014179fc3298edeccb71bc1"
+  },
+  "required_record_fields": [
+    "Prototype serial and PCB revision/hash",
+    "Firmware binary/hash, recipient public-key identifier and option-byte readback; never record private keys",
+    "Battery seller/part/lot and measured initial condition",
+    "Storage part/lot and formatted usable bytes",
+    "Case revision and verified thermal interface configuration",
+    "Instrument model/calibration/range/bandwidth/burden voltage/sample loss",
+    "Ambient and pack-contact temperature; start/end timestamps",
+    "Raw traces, complete encrypted recording set and authenticated import report"
+  ],
+  "preconditions": [
+    "Electrical bring-up and charger/protection review completed before battery runtime testing",
+    "Use the onboard charger configuration, not a laboratory4.2V top-up; log actual end voltage and termination",
+    "Temperature contact, inhibit response and sensor fault handling validated separately before unattended charging",
+    "No USB power or debugger back-power during discharge test; measurement setup must not alter cutoff or radio/clock state",
+    "Final production build and provisioned encryption recipient; synthetic VID/PID link fixture is not suitable",
+    "Five exact batteries/prototypes available; no purchase authorized by this plan"
+  ],
+  "tests": [
+    {
+      "id": "BAT-16H",
+      "purpose": "Continuous full-system recording from actual onboard charge",
+      "units": "Each of five prototypes at declared nominal ambient; report every unit, not only best",
+      "method": [
+        "Charge using device until normal termination and record charge profile",
+        "Disconnect all external power and begin independent elapsed-time measurement",
+        "Present externally logged time-coded audio interleaved with deliberate silence; never use silence suppression",
+        "Log battery voltage/current and buffer-overrun/drop counters throughout at qualified bandwidth",
+        "Continue beyond16h until orderly stop; preserve final chunk and record cutoff reason",
+        "Import/decrypt all chunks and compare decoded samples, chunk sequence, acquisition counters and audio time markers"
+      ],
+      "acceptance": [
+        "Each tested unit records at least57600seconds continuously without recharge",
+        "No dropped/overwritten audio buffers or unexplained gaps; intentional silence remains represented",
+        "Every committed recording authenticates and decodes as mono16kHz-or-higher audio",
+        "Measured sample clock and duration reconciliation documented; nominal WAV header alone is insufficient",
+        "Charge/discharge electrical limits and qualified thermal bounds remain satisfied"
+      ],
+      "report_limits": [
+        "Five samples do not establish lifetime/worst-case runtime guarantee",
+        "Repeat at declared operating-temperature endpoints and defined ageing condition before broader claim",
+        "Capacity110mAh divided by average current is not an observed runtime"
+      ]
+    },
+    {
+      "id": "STORE-36H",
+      "purpose": "Actual encrypted36h retention on selected storage",
+      "method": [
+        "Begin with documented card filesystem/cluster size and usable capacity",
+        "Record36h of continuous audio using external power where needed; this does not count as battery endurance",
+        "Authenticate/decode all25920 five-second chunks, compare sequence and source markers",
+        "Remount and repeat enumeration; verify no plaintext audio files or temporary plaintext remnants in firmware write paths"
+      ],
+      "acceptance": [
+        "All36h recoverable without overwriting previous material",
+        "No storage-full event before36h",
+        "Successful import/retry onmacOS,Windows,Linux"
+      ],
+      "existing_evidence": "firmware/stm32/tests/current-storage36-validation.json is synthetic capacity only"
+    },
+    {
+      "id": "USB-POWER",
+      "purpose": "Power negotiation and storage ownership transitions",
+      "method": [
+        "Exercise attach/detach, suspend/resume and charging at low battery",
+        "Verify charge permission only after allowedUSB current state and measured total input current within advertised budget",
+        "Exercise physical cable loss during transfer and repeat import",
+        "Check recording/storage ownership excludes simultaneous unsafe host/device writes"
+      ],
+      "acceptance": [
+        "No source loss or authentication failure after retry",
+        "No unapproved charging state or electrical-limit violation"
+      ],
+      "existing_evidence": "Host unit tests do not replace USB hardware tests"
+    },
+    {
+      "id": "POWER-LOSS",
+      "purpose": "Recover committed recordings across interrupted save",
+      "method": [
+        "Use controlled supply fixture first; interrupt across encryption/write/sync/rename stages",
+        "Restore power and verify allpreviouslycommitted files, bounded incomplete-tail handling and next recording ID",
+        "Repeat on the exact selected storage hardware"
+      ],
+      "acceptance": [
+        "Previouslycommitted recordings retained and decryptable",
+        "Incomplete file never presented as complete",
+        "No unbounded startup recovery or IDreuse"
+      ]
+    },
+    {
+      "id": "ASSEMBLY",
+      "purpose": "User battery installation without modification",
+      "method": [
+        "Use retail batteries spanning measured cable/pack variation",
+        "Follow supplied assembly guide with no soldering, wirecutting or connectorreplacement",
+        "Inspect pinching, housing seating, acoustic opening and thermal contact after closure"
+      ],
+      "acceptance": [
+        "Assembly succeeds without modifying retail battery",
+        "Case closure cannot load or disconnect plug",
+        "Thermal contact remains valid after handling and declared mechanical test"
+      ]
+    }
+  ],
+  "release_rules": [
+    "Mark each test PASS/FAIL/NOT_RUN with raw evidence; no blank field implies success",
+    "Resolve size requirement with user before case release",
+    "Separate engineering prototype readiness from verified16h product claim",
+    "Any failed runtime/size requirement triggers alternatives and user consultation, not silent specification change"
+  ],
+  "orders_or_payments_authorized": false,
+  "charge_guard_bench_plan": "charge-guard-bench-plan.json",
+  "charge_guard_measurements_template": "charge-guard-measurements.csv",
+  "usb_detach_bench_plan": "usb-detach-bench-plan.json",
+  "usb_detach_measurements_template": "usb-detach-measurements.csv"
+}

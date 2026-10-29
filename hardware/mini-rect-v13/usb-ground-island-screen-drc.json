@@ -1,0 +1,244 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T03:35:19",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-ground-island-screen.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0559 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 0.4879 mm )",
+                    "pos": {
+                        "x": 16.0156,
+                        "y": 9.5
+                    },
+                    "uuid": "3e934275-64f7-4b3b-a849-5fb053bcef74"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWDIO と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( B.Cu 上、長さ: 1.8624 mm )",
+                    "pos": {
+                        "x": 15.5925,
+                        "y": 9.655
+                    },
+                    "uuid": "87446885-6562-4ac7-8299-47d8e27ce77c"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0863 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( F.Cu 上、長さ: 1.5333 mm )",
+                    "pos": {
+                        "x": 15.4524,
+                        "y": 9.6025
+                    },
+                    "uuid": "820acec3-a9fa-452b-84c0-d6534d9e9adf"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_MISO と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( F.Cu 上、長さ: 1.5098 mm )",
+                    "pos": {
+                        "x": 15.4524,
+                        "y": 9.6025
+                    },
+                    "uuid": "26a22ec6-d12c-449b-8403-82df0cf27d76"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0341 mm)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                },
+                {
+                    "description": "配線 [/SD_MISO] ( F.Cu 上、長さ: 0.4412 mm )",
+                    "pos": {
+                        "x": 15.4524,
+                        "y": 10.0437
+                    },
+                    "uuid": "a72f200e-e9f8-4207-a0f7-b88f6f2a3c9a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWDIO と /GND)",
+            "items": [
+                {
+                    "description": "パッド 34 [/SWDIO] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.5925,
+                        "y": 9.655
+                    },
+                    "uuid": "59c29d1d-72fc-4acb-9d9b-eb412de38f57"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /USB_DP)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( In2.Cu 上、長さ: 0.7422 mm )",
+                    "pos": {
+                        "x": 15.2734,
+                        "y": 9.5
+                    },
+                    "uuid": "e54ac990-b956-4812-bba6-ff8290b8c3dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 34 [/SWDIO] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.5925,
+                        "y": 9.655
+                    },
+                    "uuid": "59c29d1d-72fc-4acb-9d9b-eb412de38f57"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.8,
+                        "y": 9.8
+                    },
+                    "uuid": "8ed0e687-2159-447b-aa2e-9a6857ce2563"
+                },
+                {
+                    "description": "パッド 34 [/SWDIO] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.5925,
+                        "y": 9.655
+                    },
+                    "uuid": "59c29d1d-72fc-4acb-9d9b-eb412de38f57"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

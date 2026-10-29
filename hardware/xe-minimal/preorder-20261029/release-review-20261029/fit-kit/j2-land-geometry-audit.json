@@ -1,0 +1,136 @@
+{
+  "status": "RECOMMENDED_LAND_DIMENSIONS_MATCH_BODY_DATUM_UNRESOLVED",
+  "pcb_sha256": "d64e60a6290d90dc344157f867ef617c2f95d880290294fa0b9c7988d86a0c1d",
+  "drawing_sha256": "861b90161910159a8eb8b5e168b7e63ab14bfcfdcec0049fe8ff10e9d37fa0ca",
+  "drawing": "SD-78171-008 Rev G sheet2, visually reviewed",
+  "pads": [
+    {
+      "number": "1",
+      "x": 4.725,
+      "y": 1.25,
+      "width": 0.6,
+      "height": 0.85
+    },
+    {
+      "number": "2",
+      "x": 3.525,
+      "y": 1.25,
+      "width": 0.6,
+      "height": 0.85
+    },
+    {
+      "number": "3",
+      "x": 2.325,
+      "y": 1.25,
+      "width": 0.6,
+      "height": 0.85
+    },
+    {
+      "number": "MP",
+      "x": 5.875,
+      "y": 5.025,
+      "width": 0.7,
+      "height": 0.8
+    },
+    {
+      "number": "MP",
+      "x": 1.175,
+      "y": 5.025,
+      "width": 0.7,
+      "height": 0.8
+    }
+  ],
+  "checks": [
+    {
+      "dimension": "signal_pitch",
+      "actual_mm": 1.1999999999999997,
+      "drawing_nominal_mm": 1.2,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "DIM_A",
+      "actual_mm": 2.3999999999999995,
+      "drawing_nominal_mm": 2.4,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "signal_width_3",
+      "actual_mm": 0.6,
+      "drawing_nominal_mm": 0.6,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "signal_height_3",
+      "actual_mm": 0.85,
+      "drawing_nominal_mm": 0.85,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "signal_width_2",
+      "actual_mm": 0.6,
+      "drawing_nominal_mm": 0.6,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "signal_height_2",
+      "actual_mm": 0.85,
+      "drawing_nominal_mm": 0.85,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "signal_width_1",
+      "actual_mm": 0.6,
+      "drawing_nominal_mm": 0.6,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "signal_height_1",
+      "actual_mm": 0.85,
+      "drawing_nominal_mm": 0.85,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "mount_width_0",
+      "actual_mm": 0.7,
+      "drawing_nominal_mm": 0.7,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "mount_height_0",
+      "actual_mm": 0.8,
+      "drawing_nominal_mm": 0.8,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "mount_width_1",
+      "actual_mm": 0.7,
+      "drawing_nominal_mm": 0.7,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "mount_height_1",
+      "actual_mm": 0.8,
+      "drawing_nominal_mm": 0.8,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "signal_bottom_to_mount_bottom",
+      "actual_mm": 3.750000000000001,
+      "drawing_nominal_mm": 3.75,
+      "nominal_matches": true
+    },
+    {
+      "dimension": "outer_signal_center_to_mount_inner_edge",
+      "actual_mm": 0.8000000000000007,
+      "drawing_nominal_mm": 0.8,
+      "nominal_matches": true
+    }
+  ],
+  "interpretation": [
+    "Drawing .60 MIN signal width is met at .60 nominal; dimensions do not certify fabrication tolerance",
+    "Drawing 3.75 is signal-pad lower edge to mounting-pad lower edge, not row center distance",
+    "Drawing connector outline lacks a directly dimensioned longitudinal pad-to-body offset; do not infer a certified datum from rendered pixels",
+    "Existing body Y offset .27 remains library-derived provisional geometry"
+  ],
+  "release_allowed": false
+}

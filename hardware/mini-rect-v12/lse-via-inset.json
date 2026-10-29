@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:10:07",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "lse-via-inset.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.9375,
+                        "y": 11.65
+                    },
+                    "uuid": "ea078e87-d8ee-44b9-9443-a3860ef6123e"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.25,
+                        "y": 13.2
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_MISO と /LSE_IN)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.9441 mm )",
+                    "pos": {
+                        "x": 15.4374,
+                        "y": 11.9929
+                    },
+                    "uuid": "ac9786db-8d37-4acc-a1fa-1c29edfa5f97"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.9375,
+                        "y": 11.65
+                    },
+                    "uuid": "ea078e87-d8ee-44b9-9443-a3860ef6123e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        }
+    ]
+}

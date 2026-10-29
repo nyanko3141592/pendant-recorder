@@ -1,0 +1,28 @@
+{
+  "status": "PARTIAL_LAYOUT_ACCEPTABLE_WITH_SI_QUALIFICATION_PENDING",
+  "source_sha256": "3192ac3c15eb653ca9fa9aeda9feafba0c44f41a85ba1a569f76fa67dcab8bdf",
+  "candidate_sha256": "76f5fd66d108494a84fe8955031bceb2027f6cad1f88f7d9be3ff5a11014fb78",
+  "all_other_existing_tracks_vias_preserved": true,
+  "removed_power_segments": [
+    "5cc594d5-b246-43e6-ab71-9aafc28f28cf",
+    "7dc9572c-1c6d-4b91-96fc-af7a78d86e6c",
+    "ac67f771-11d7-487a-a0a1-85b20e789f18"
+  ],
+  "shifted_miso_items": [
+    "04cd1f40-0c78-4f3a-bc9d-ffe5c9d268c9",
+    "23d9fbb0-2824-4103-8635-bffdf0c21446",
+    "d07ee42b-d474-4d0e-96ec-1b5326850753"
+  ],
+  "footprint_placement_unchanged": true,
+  "added_items": 11,
+  "usb_projection_screen": [
+    "led-branch-plane-review.json",
+    "led-sdv3-branch-plane-review.json"
+  ],
+  "limitations": [
+    "USB signal integrity and plane return-current behavior remain unmeasured; LED trace nearest USB projected centerline0.3541mm.",
+    "SD_V3 now uses shared0.15mm upstream segment; DC estimate excludes vias, temperature and load transients. See led-branch-power-review.json.",
+    "MISO via shifted0.1mm; SPI integrity requires hardware qualification."
+  ],
+  "adopted": true
+}

@@ -1,0 +1,26 @@
+{
+  "status": "ELECTRICAL_DRAFT_NOT_RELEASED",
+  "removed": [
+    "U11"
+  ],
+  "added": [
+    "J4",
+    "R29",
+    "R30"
+  ],
+  "mcu_pin_assignment_changed": false,
+  "sources": [
+    "https://www.hirose.com/de/product/document?clcode=CL0609-0032-3-00&documentid=D49662_en&documenttype=Catalog&lang=de&productname=DM3CS-SF&series=DM3",
+    "https://www.sdcard.org/downloads/pls/"
+  ],
+  "open_items": [
+    "Actual card current peaks/standby and procurement",
+    "Local socket lands reviewed: see socket-land-verification.json; current orderable suffix/drawing revision still pending",
+    "Existing 4.7uF capacitor and supply switch/LDO must be requalified for card transients",
+    "Socket insertion/retention and no-copper zones",
+    "All SD lines must be tristated before switched rail off",
+    "Complete placement and 4-layer routing",
+    "No hot-swap support; card is enclosed during operation"
+  ],
+  "socket_audit": "socket-land-verification.json"
+}

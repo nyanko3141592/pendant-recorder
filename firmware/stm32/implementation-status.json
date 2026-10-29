@@ -1,0 +1,630 @@
+{
+  "target": "STM32U585CIU6 / xe-minimal production candidate",
+  "flashable": false,
+  "implemented": [
+    "App boot/runtime connects PDM DMA queue, IMA WAV, age encryption, FatFs SPI storage and USB MSC ownership adapters; ARM compile/link only",
+    "Host age-to-PCM import with dedup, read-only MSC cleanup opt-in gated by a two-second physical button hold, discovery/watch retry, OS destination lock and macOS launch-agent generation",
+    "Battery ADC with factory14bit calibration, ES0587 analog-switch workaround, VREFINT startup delay,60s monitor and button-requested LED voltage bands",
+    "Native/mock tests recorded in individual sections; canonical cooperative FAT32 capacity test saves and reads25920 five-second files at64KiB ceiling on2GB volume"
+  ],
+  "integration_pending": [
+    "Physical qualification of common-image HID recipient provisioning, reserved-flash commit and allocated USB IDs",
+    "Actual board execution and battery/charge qualification",
+    "Low-power clock lifetime/Stop2 and16h power-budget verification",
+    "Physical USB/PDM/storage timing, loss-free recording and power-loss behavior",
+    "Physical ADC accuracy/LED visibility and voltage-band validation"
+  ],
+  "driver_contract": {
+    "USB_CONFIGURED": "actual USB enumeration, never VBUS-only",
+    "ACT_STOP_AND_FLUSH": "stop microphone DMA; finish encryption; close files; CTRL_SYNC; unmount; emit DEVICE_RELEASED only after success",
+    "ACT_EXPOSE_MSC": "make LUN ready; driver block callbacks gated by owner_host_can_access",
+    "ACT_REVOKE_MSC": "mark LUN unavailable; stop/drain in-flight callbacks; only then emit HOST_RELEASED",
+    "ACT_RECOVER_FS": "check/remount without formatting or deleting incomplete files; emit RECOVERY_OK or IO_FAILED",
+    "ACT_RESUME_RECORDING": "restart capture only if recording was active before sync"
+  },
+  "power_strategy": [
+    "Continuous capture including silence; no VAD deletion",
+    "DMA audio buffers; no per-sample CPU wakeups",
+    "Batch encrypted SD writes and stop SPI clock between transfers",
+    "Do not power-cycle SD during filesystem ownership or busy intervals",
+    "LED normally off; indicate on request",
+    "No Stop mode assumption until PDM/DMA clock retention is validated"
+  ],
+  "validation_command": "cc -std=c11 -Wall -Wextra -Werror firmware/stm32/core/storage_owner.c firmware/stm32/tests/test_storage_owner.c -o /tmp/pendant-storage-owner-test && /tmp/pendant-storage-owner-test",
+  "audio_configuration": {
+    "mcu_clock": "MSIK3.072MHz range8",
+    "output_divider": 4,
+    "pdm_clock_Hz": 768000,
+    "cic_decimation": 48,
+    "sample_rate_Hz": 16000,
+    "pins": {
+      "PB3": "AF3 ADF1_CCK0",
+      "PB4": "AF3 ADF1_SDI0"
+    },
+    "silence_preserved": true,
+    "edge_gain_acoustic_validation": "pending",
+    "dma_and_stop_mode": "LPDMA configuration compiles; linker .lpbam to SRAM4, memory retention, security attributes and IRQ/callback integration pending",
+    "reference": "STMicroelectronics STM32U585 datasheet DS13086, ST U575 ADF recorder example; sdk-sources.json records revisions; hardware operation pending"
+  },
+  "audio_buffer_budget": {
+    "dma_sram4_bytes": 4096,
+    "queue_pcm_bytes": 32768,
+    "samples_per_block": 1024,
+    "block_ms": 64,
+    "max_queued_ms": 1024,
+    "includes_encoder_crypto_memory": false,
+    "remaining": [
+      "linker memory placement",
+      "Stop2 retained RAM configuration",
+      "final partial DMA block drain",
+      "encoder/encryption/storage integration",
+      "interrupt masking/capture overrun hardware test"
+    ]
+  },
+  "age_candidate_review": "age-candidate-review.json",
+  "pipeline_memory": {
+    "pipeline_struct_arm_bytes": 87128,
+    "queue_struct_arm_bytes": 32844,
+    "dma_bytes": 4096,
+    "experimental_age_payload_bytes": 65552,
+    "full_linker_map_available": false,
+    "strategy": "one WAV chunk plus1.024s PCM backlog; synchronous encryption/storage must stay within available backlog with margin",
+    "remaining": "Bounded storage latency, age/HAL/USB/FatFs integration, final DMA tail and full stack map"
+  },
+  "age_adapter": {
+    "source": "crypto/age_writer.c",
+    "vendored": "vendor/agec",
+    "tests": [
+      "tests/check_age_writer.py",
+      "tests/check_recording_end_to_end.py"
+    ],
+    "real_device_tested": false,
+    "encryption_function_stack_bytes": 65656,
+    "adapter_function_stack_bytes": 1648,
+    "stack_note": "Individual GCC-fstack-usage entries, not complete call-chain bound; allocate/measure complete stack after link"
+  },
+  "dma_stop_review": "dma-stop-review.json",
+  "handoff": {
+    "source": "core/recording_handoff.c",
+    "test": "tests/check_handoff.sh",
+    "hardware_hooks_implemented": true,
+    "flashable": false,
+    "verified": "1024 captured samples plus137 tail preserved through actual WAV pipeline; no MSC action before stop/commit/unmount; each stage failure faults closed; disconnect yields recovery action"
+  },
+  "charge_inhibit": {
+    "source": "board/charge_inhibit.c",
+    "pin": "PB2 / CHG_ALLOW",
+    "behavior": "Set output latch low before configuring output; experimental enable API is compile-time opt-in and production default remains disabled until battery qualification",
+    "compile": "Cortex-M33 compile passed",
+    "startup_integrated": true,
+    "hardware_validated": false
+  },
+  "link_check": {
+    "report": "linkcheck/result.json",
+    "linked": true,
+    "recorder_complete": false,
+    "flashable": false
+  },
+  "hardware_rng_adapter": {
+    "source": "board/secure_random.c",
+    "linked": true,
+    "runtime_tested": false,
+    "init_integrated": true,
+    "age_call_integrated": true,
+    "behavior": "Fail closed on clock/seed status and HAL errors, wipe output, sticky session failure; no fallback",
+    "prerequisites": [
+      "validated RNG clock",
+      "HAL RNG init with CED enabled",
+      "HAL tick running",
+      "serialized main-task access"
+    ],
+    "host_fault_injection": {
+      "test": "tests/check_secure_random.sh",
+      "result": "passed ASAN/UBSAN",
+      "scope": "mock HAL: lengths0..17, 6 fault types at each of5 word positions, full buffer wipe, sticky refusal, invalid peripheral/state/CED",
+      "hardware_entropy_tested": false
+    }
+  },
+  "recording_store": {
+    "source": "crypto/recording_store.c",
+    "linked": true,
+    "transaction_test": "ASAN/UBSAN pass: begin/RNG/write/commit failures, DEVICE/DRAINING allowed, HOST denied",
+    "filesystem_integrated": false,
+    "crypto_test_scope": "transaction test mocks crypto; real age linked, prior age interoperability test separate",
+    "real_age_host_integration": {
+      "test": "tests/check_recording_end_to_end.py /tmp/pendant-host-tools/age",
+      "result": "pass ASAN/UBSAN",
+      "samples": 327680,
+      "files_samples": [
+        160000,
+        160000,
+        7680
+      ],
+      "checks": [
+        "actual recording_store adapter",
+        "DEVICE then DRAINING ownership",
+        "real age encryption and production host decryption",
+        "PCM frame counts",
+        "deduplication",
+        "source preservation",
+        "no partial files after success"
+      ],
+      "limits": [
+        "host arc4random replaces hardware RNG",
+        "temporary POSIX file hooks replace SD/FatFs",
+        "does not qualify power-loss durability or real-time throughput"
+      ]
+    }
+  },
+  "storage_spi": {
+    "source": "board/storage_spi.c",
+    "linked": true,
+    "runtime_tested": false,
+    "clock": "PCLK2 16MHz/256 =62.5kHz initialization only",
+    "pins": "PA4 CS,PA5/6/7 AF5SPI1",
+    "prerequisites": [
+      "SD_V3 already stable with qualified ramp delay",
+      "qualified PCLK2 at 16MHz",
+      "HAL tick running",
+      "caller owns storage and serializes IO"
+    ],
+    "power_off": "release_pins sets signals analog before external power-off; caller must first flush/stop IO",
+    "missing": [
+      "power sequencing coordinator",
+      "FatFs diskio",
+      "real-time throughput/power qualification"
+    ],
+    "transfer_clock": "PCLK2 16MHz/4=4MHz after successful SD init, deselected/READY gate",
+    "transfer_speed_linked": true,
+    "bandwidth_screen": {
+      "wire_bytes_per_second": 500000,
+      "initialization_wire_bytes_per_second": 7812.5,
+      "note": "Raw wire rate only; per-byteHAL CPU overhead, card busy/flush and filesystem overhead unmeasured. Not proof of recording throughput."
+    }
+  },
+  "sd_capacity_parser": {
+    "source": "https://www.sdcard.org/cms/wp-content/themes/sdcard-org/dl.php?f=Part1_Physical_Layer_Simplified_Specification_Ver6.00.pdf",
+    "test": "tests/test_sd_capacity.c native ASANUBSAN and ARM compile passed",
+    "supports": [
+      "CSDv1 SDSC",
+      "CSDv2 SDHC/SDXC"
+    ],
+    "requires": [
+      "transport CRC verification",
+      "OCR powerup ready then CCS",
+      "filesystem free-space check separately"
+    ],
+    "fixture_bytes": [
+      1073741824,
+      2147483648,
+      34359738368,
+      2199023255552
+    ],
+    "integration": false,
+    "implementation": "core/sd_capacity.c"
+  },
+  "sd_crc": {
+    "implementation": "core/sd_crc.c",
+    "test": "tests/test_sd_crc.c ASAN/UBSAN passed",
+    "vectors": [
+      "CMD0 CRC95",
+      "CMD8 CRC87",
+      "CRC16 123456789=31c3",
+      "512bytes FF=7fa1",
+      "all4096 singlebit mutations detected"
+    ],
+    "linked": true,
+    "SPI_protocol_integrated": false
+  },
+  "sd_initialization": {
+    "source": "core/sd_init.c",
+    "sequence": [
+      "80idle clocks",
+      "CMD0",
+      "CMD8 voltage/echo",
+      "CMD55/ACMD41 bounded",
+      "CMD58 ready/voltage/CCS",
+      "CMD59 CRC enable",
+      "CMD16 for SDSC",
+      "CMD9 CSD CRC16 and CRC7 then capacity"
+    ],
+    "test": "test_sd_init.c ASANUBSAN: simulated4GiB, all transfer failure positions, wrong echo, busy timeout with tick wrap, corrupt CRC",
+    "linked": true,
+    "physical_SPI_binding": "board/storage_probe.c, called through recorder_boot_start and export_runtime",
+    "hardware_tested": false,
+    "limitations": [
+      "SDv2 capable cards only",
+      "sector read/write and FatFs implemented and non-hardware tested; physical media remains unqualified",
+      "transport callbacks must time out and medium must be exclusively owned"
+    ],
+    "binding_preconditions": [
+      "DEVICE or startedRECOVERING owner",
+      "stable SD_V3",
+      "HSI ready and HALtick active",
+      "serialized main task; interrupts enqueue only"
+    ]
+  },
+  "sd_sector_read": {
+    "implementation": "core/sd_init.c sd_read_sector",
+    "test": "test_sd_read.c ASAN/UBSAN pass: SDSC byte and SDHC block addresses, all transfer failure positions, CRC failure, bounds",
+    "linked": true,
+    "hardware_tested": false,
+    "notes": [
+      "512byte stack staging, no output on failure",
+      "OCR CCS must be retained by future device context",
+      "512 bytewise transfers prioritize correctness; performance/power not qualified",
+      "sector writes and filesystem are implemented separately; physical behavior remains unqualified"
+    ]
+  },
+  "sd_sector_write": {
+    "implementation": "core/sd_init.c sd_write_sector",
+    "test": "test_sd_write.c ASAN/UBSAN pass: packet payload CRC, every exchange failure, response reject, busy timeout, CMD13 error, bounds",
+    "linked": true,
+    "hardware_tested": false,
+    "automatic_retry": false,
+    "remaining": [
+      "HAL caller ownership/device context",
+      "FatFs diskio",
+      "throughput/power measurement",
+      "physical power-loss recovery"
+    ]
+  },
+  "sd_device_context": {
+    "implementation": "board/storage_probe.c board_storage_open/read/write",
+    "addressing": "retains actual OCR CCS from sd_initialize_card, never inferred from capacity",
+    "ownership": "DEVICE/DRAINING/startedRECOVERING for IO; HOST denied. DRAINING only stop coordinator",
+    "failure": "mark not ready and owner IO_FAILED",
+    "linked": true,
+    "hardware_tested": false,
+    "main_integrated": true
+  },
+  "fatfs": {
+    "version": "R0.16 + official patches1/2",
+    "provenance": "vendor/fatfs/provenance.json",
+    "arm_compiled": true,
+    "linked": true,
+    "diskio_integrated": true,
+    "filesystem_tested": "Synthetic RAM FAT16 and FAT32",
+    "config": [
+      "FAT12/16/32",
+      "512byte sectors",
+      "LFN64chars stack",
+      "CP437",
+      "no mkfs",
+      "no exFAT",
+      "placeholder timestamp, not recording timestamp"
+    ],
+    "diskio_test": "test_storage_diskio.c ASANUBSAN: bounds, multi-sector IO, HOST and pre-recovery rejection, failed-write sync rejection",
+    "filesystem_test": {
+      "command": "tests/check_fatfs_volume.sh",
+      "result": "ASAN/UBSAN pass",
+      "coverage": [
+        "real FatFs + real diskio adapter",
+        "PENDANT.JSON long filename creation",
+        "file sync and close",
+        "TMP to AGE rename",
+        "existing-file no-overwrite",
+        "unmount/remount and exact byte readback",
+        "free-cluster query"
+      ],
+      "not_covered": [
+        "physical SD or MCU",
+        "power-loss during FAT writes",
+        "physical FAT32 volume",
+        "encrypted recording_store hooks"
+      ]
+    }
+  },
+  "fatfs_recording_hooks": {
+    "source": "crypto/fatfs_recording.c",
+    "linked": true,
+    "test": "real FatFs RAMvolume success/readback/existingAGE refusal/abort leaves TMP with noAGE; recovery skips TMP/AGE and directories, ignores unrelated names, rejects open handle, fails closed on unavailable disk and exhausted IDs (ASAN/UBSAN)",
+    "main_integrated": true,
+    "remaining": [
+      "physical startup and write timing",
+      "powerloss recovery; FAT rename is not guaranteed atomic"
+    ],
+    "recovery_scan": "Exact case-insensitive 8hex TMP/AGE scan of legacy root and REC; directories also reserve IDs; absent REC tolerated; failures and UINT32_MAX exhaustion disable begin.",
+    "end_to_end": {
+      "command": "python3 firmware/stm32/tests/check_recording_end_to_end.py /tmp/pendant-host-tools/age --fatfs",
+      "result": "PASS with ASAN/UBSAN",
+      "scope": "Synthetic PCM -> actual pipeline/IMA/WAV/recording_store/age/fatfs_recording/FatFs/diskio -> RAM FAT16; unmount/remount/recover -> export ciphertext -> production host importer/age/ffmpeg PCM; 327680 samples in 160000/160000/7680 chunks; repeat import deduplicated and sources retained",
+      "limitations": [
+        "RAM block storage, not SD hardware",
+        "host arc4random, not STM32 RNG",
+        "file extraction fixture, not USB MSC",
+        "no power loss injection or throughput/current measurement"
+      ]
+    },
+    "fat32_validation": {
+      "command": "python3 firmware/stm32/tests/check_recording_end_to_end.py /tmp/pendant-host-tools/age --fat32",
+      "result": "PASS ASAN/UBSAN",
+      "scope": "64MiB synthetic RAM FAT32 with rootcluster2, two FATs and FSInfo disabled. Actual FatFs mount/file hooks/recovery/crypto pipeline/production host importer. 327680samples threefiles160000/160000/7680 and dedup/sourcepreservation.",
+      "additional": "check_fatfs_volume.sh now runs both FAT16 and FAT32, explicitly asserts mounted fs_type; identity/write/rename/recovery/abort/unmount tests pass",
+      "limitations": [
+        "not 2GB full-capacity qualification",
+        "no physical SD/USB/power loss",
+        "no current or throughput measurements",
+        "no FSInfo or partitioned-volume variation yet"
+      ]
+    },
+    "capacity_gate": {
+      "implemented": "Canonical cooperative profile: before begin f_getfree requires ceil64KiB/cluster +2clusters; write caps total ciphertext at64KiB. Current5s encrypted segment estimate is41472bytes. No automatic deletion or overwrite.",
+      "tests": "FAT16/FAT32 actual RAM FAT allocation leaves64KiB; begin refuses with unchanged ID/noTMP. Oversizewrite rejected. ASANUBSAN and FAT32 age-host integration pass.",
+      "limitations": [
+        "snapshot not preallocation or integrity check",
+        "FAT16 root-directory exhaustion can still reject create",
+        "IO/powerfail can still interrupt writes",
+        "not a 36hour capacity or throughput proof"
+      ]
+    }
+  },
+  "fatfs_handoff": {
+    "source": "board/storage_handoff.c",
+    "linked": true,
+    "main_integrated": true,
+    "scope": "DRAINING-only fixed PENDANT.JSON write/sync/close; no recording handle open; CTRL_SYNC/unmount and diskio unbind",
+    "test": "RAM FatFs ASAN/UBSAN: wrong phase/path and open recording rejected; unavailable disk prevents unmount; successful unmount disables diskio; explicit remount verifies exact marker",
+    "remaining": [
+      "physical coordinator timing and power-loss behavior",
+      "enforce sole filesystem client in application",
+      "USB MSC backend and recovery rebinding",
+      "hardware/power-loss testing"
+    ]
+  },
+  "host_block_backend": {
+    "source": "board/storage_probe.c",
+    "linked": true,
+    "usb_integrated": true,
+    "contract": "Main-task serialized host-only sector read/write using existing SD protocol. USB IRQ must enqueue. Failure invalidates media and transitions owner; USB adapter must revoke MSC on false/fault.",
+    "test": "check_storage_probe.sh ASAN/UBSAN; SD protocol and HAL mocked; device/draining/host/recovering gates and host write failure invalidation",
+    "remaining": [
+      "physical USB MSC and deferred main-task timing",
+      "propagate backend failure to SCSI/MSC revocation",
+      "real USB/SD throughput, write/eject/disconnect tests"
+    ]
+  },
+  "usb_stack": {
+    "name": "TinyUSB",
+    "version": "0.21.0",
+    "commit": "dae3f9a366bfcddbf9dcf1b48d7500286a849539",
+    "source": "vendor/tinyusb/provenance.json",
+    "configuration": "usb/tusb_config.h: OS_NONE, composite read-only MSC plus vendor HID, FS, EP0 64, MSC buffer512, HID feature payload64",
+    "compile_test": "tests/compile_usb_check.sh PASS for tusb/fifo/usbd/msc/STM32 FSDEV on Cortex M33 STM32U535xx",
+    "linked": true,
+    "runtime_verified": false,
+    "remaining": [
+      "allocated production VID/PID",
+      "disconnect/eject/failure handling and hardware enumeration"
+    ],
+    "msc_callbacks": {
+      "source": "usb/msc_storage.c",
+      "test": "check_msc_storage.sh ASAN/UBSAN pass with mock sector backend; compile_usb_check.sh CortexM33 pass",
+      "implemented": [
+        "inquiry/capacity/readiness",
+        "512byte aligned READ10 with range validation; WRITE10 always rejected DATA PROTECT",
+        "SCSI sense errors",
+        "synchronous no-cache SYNCHRONIZE CACHE",
+        "eject and IO failure deferred revoke actions"
+      ],
+      "limitations": [
+        "physical application execution not verified",
+        "main must consume actions after tud_task and drain before HOST_RELEASED",
+        "USB transport/BOT protocol not exercised by callback unit test"
+      ]
+    },
+    "descriptors": {
+      "source": "usb/usb_descriptors.c",
+      "test": "check_usb_descriptors.sh native ASAN/UBSAN binary layout/UID/indices pass; compile_usb_check.sh ARM pass",
+      "configuration": "USB2 FS composite read-only MSC SCSI/BOT plus vendor HID feature interface, bus-powered 100mA declaration, no remote wake, serial96bit UID",
+      "production_vid_pid_allocated": false,
+      "build_policy": "explicit PENDANT_USB_VID/PID required, no default; tests 1234:5678 synthetic only, not flashed",
+      "remaining": [
+        "obtain permitted VID/PID",
+        "actual enumeration/current measurement"
+      ]
+    },
+    "link_scope": "Non-flashable full candidate link, synthetic VID/PID1234:5678, no USB init/runtime; fsdev_common included; GNU11 for upstream asm; HAL tick time adapter.",
+    "session_adapter": {
+      "source": "usb/usb_session.c",
+      "linked": true,
+      "test": "test_usb_session.c ASAN/UBSAN mocked tud_task/mounted: reset revocation, reconnect during recovery deferred replay, eject no remount loop, disconnect during drain",
+      "implementation": "One TinyUSB event per service; observe configured state after every event; collect MSC actions; no filesystem or recovery in USB callbacks",
+      "remaining": [
+        "endpoint/IRQ drain proof before HOST_RELEASED",
+        "physical VBUS disconnect detection",
+        "real USB event sequences"
+      ]
+    },
+    "board_prepare": {
+      "source": "board/usb_board.c",
+      "linked": true,
+      "runtime_verified": false,
+      "scope": "PA0 VBUS_N input; PA11/12 AF10 USB; HSI48 CLK48; CRS SOF1kHz reload47999; VddUSB enable; peripheral reset; UID serial; USB IRQ forwarding",
+      "pin_evidence": "design-iset-50pf-candidate.json U1 PA0 VBUS_N, Q3 sourceGND/drainVBUS_N and R15pullup3.3V; PA11DM PA12DP",
+      "remaining": [
+        "stable rail qualification",
+        "disconnect and init-failure clock/power cleanup with shared resource ownership",
+        "HSI48 CRS initial acquisition and suspend/resume validation",
+        "actual pin/peripheral startup/USB enumeration testing"
+      ]
+    },
+    "board_stop": {
+      "source": "board/usb_board.c",
+      "linked": true,
+      "runtime_verified": false,
+      "contract": "Main task after tud_task returns, synchronous MSC only. Disable USB IRQ -> tud_deinit clears controller/classes/queue -> clear pending IRQ -> USB reset/clock off, PA11/12 analog, VddUSB off, CRS stop; UID clear. No HOST_RELEASED on false.",
+      "remaining": [
+        "hardware verification",
+        "shared HSI48/CLK48 release manager (currently retained for RNG safety)",
+        "prepare failure rollback before USB resources acquired",
+        "real disconnect race and suspend/resume testing"
+      ]
+    }
+  },
+  "storage_mount_adapter": {
+    "source": "board/storage_mount.c",
+    "linked": true,
+    "main_integrated": true,
+    "scope": "Probed disk bind -> mount -> recording ID recovery -> freecluster snapshot -> handoff context. Device or started recovery only; no automatic RECOVERY_OK, formatting, deletion or repair. Failure unmount/unbind and owner fault.",
+    "test": "FAT16/FAT32 RAM ASANUBSAN startup/recovery gates, duplicate mounted refusal, HOST and pre-HOST_RELEASED refusal, free bytes, invalid BPB sector size failclosed/output unchanged",
+    "limitations": [
+      "not FAT structural consistency proof",
+      "no actual SD or USB recovery tests",
+      "application startup/action calls remain"
+    ]
+  },
+  "host_case_compatibility": {
+    "fixed": "import_recordings now enumerates .age suffix case-insensitively; actual firmware uppercase .AGE was previously missed on case-sensitive hosts",
+    "tests": "3hostunittests pass; uppercase/lowercase/mixed nested names enumerated, TMP excluded. FAT32 end-to-end now exports uppercase filename exactly as firmware.",
+    "root_directory_capacity_issue": "Resolved by saving new recordings under REC and recovering IDs across both legacy root and REC. FAT16/FAT32 actual FatFs tests save 520 files and remount/recover beyond the fixed-root limit. Canonical synthetic FAT32 test creates, remounts, recovers and reads all25920 five-second files at the64KiB ciphertext ceiling on a2GB volume; physical capacity and performance remain unverified."
+  },
+  "recording_directory": {
+    "path": "0:/REC",
+    "legacy": "Root recordings remain untouched and included in ID recovery and recursive host import.",
+    "verification": "FAT16/FAT32 ASANUBSAN: 520 production begin/write/commit cycles; remount ID520; ordinary REC file rejected without overwrite. Actual FAT32 encrypted recording to host PCM WAV and dedup passed.",
+    "limitations": [
+      "520 small payloads are a namespace regression, not a 36-hour recording test.",
+      "Root must still have room to create REC and device identity.",
+      "Runtime, physical USB and power-failure qualification remain incomplete."
+    ]
+  },
+  "recording_session": {
+    "implementation": "board/recording_session.c/h",
+    "scope": "Main-task shared context joins recording_store encryption with storage_handoff identity/sync/unmount through recording_handoff_finish. Validates common owner and exact FatFs IO hooks/context. Normal service requires DEVICE; pipeline failure faults owner.",
+    "verified": "Actual FAT32 RAM fixture: synthetic capture -> final encrypted chunk -> identity -> unmount -> HOST -> synthetic host release -> recovery mount -> DEVICE; production host decrypt/dedup. Missing capture stop hook faults without host access. ASAN/UBSAN passed; ARM full link passed.",
+    "remaining": [
+      "Actual capture DMA residual stop hardware validation",
+      "Physical USB endpoint drain and media recovery validation",
+      "No real device recording or battery-runtime proof"
+    ]
+  },
+  "audio_callback_order": {
+    "implementation": "board/audio_callbacks.c",
+    "verification": "tests/check_audio_callbacks.sh native mock HAL ASANUBSAN passed: normal alternating halves, duplicate/out-of-order halves, foreign handles, sticky fault, stopped rebind.",
+    "limitations": [
+      "Hardware ISR latency and continuity remain unmeasured; both-pending guard is ARM compile checked, not hardware tested."
+    ]
+  },
+  "audio_boundary_stop": {
+    "implementation": [
+      "board/audio_callbacks.c",
+      "board/audio_dma.c",
+      "board/audio_stop.c"
+    ],
+    "policy": "On USB handoff request, continue accepting audio to the next 1024-sample half-buffer boundary (nominal <=64ms). ISR queues that entire half then acknowledges and rejects later halves. Main waits at most150ms with working HAL tick/interrupts, disables DMA IRQ, HAL-stops DMA and clears pending IRQ before success. Failure/overflow does not grant host access.",
+    "verified": "Mock callback ASANUBSAN: requests in either half, exactly next full half accepted, no post-boundary blocks, repeated request, stopped rebind, overflow refusal. Full CortexM33 link succeeds.",
+    "unverified": [
+      "Physical DMA stop and interrupt timing",
+      "HAL timeout behavior and real audio continuity",
+      "Runtime startup and recording_session capture hook wiring"
+    ],
+    "note": "Boundary rounding replaces arbitrary residual-count extraction; no pre-request partial half is intentionally discarded. Both HT and TC flags pending faults the queue before HAL callbacks.",
+    "stop_coordinator_verification": "tests/check_audio_callbacks.sh additionally compiles actual audio_stop.c against mock HAL and real callbacks/queue: success, repeated stopped call, missing notification150ms timeout, HAL abort failure, ISR/masked IRQ rejection, foreign device, preexisting queue fault, uint32 tick wrap. ASANUBSAN passed. Hardware DMA timeout and IRQ behavior not simulated."
+  },
+  "audio_start_binding": {
+    "implementation": "audio_callbacks.c pendant_audio_claim_buffer, enforced by audio_dma.c before HAL start",
+    "contract": "Exact bound2048-sample buffer; one start attempt per READY-state bind; foreign active handle cannot be rebound. Caller must keep handle and queue alive throughout binding and rebind after stop/start failure.",
+    "tests": "Mock HAL native ASANUBSAN: wrong handle, pointer, length, second start rejected; rebind permits start; active owner replacement rejected. Full ARM link passed.",
+    "remaining": "Actual startup/restart orchestrator and hardware capture qualification."
+  },
+  "recording_capture_start": {
+    "implementation": [
+      "board/recording_capture.c/h",
+      "board/recording_session.c recording_session_can_start"
+    ],
+    "scope": "Common startup/restart path: main-task/READY/owned DMA; mounted DEVICE filesystem; provisioned key and RNG callback; no active/failed store or pending/failed PCM. Bind exact buffer; install real boundary-stop callback; DMA start. Start failure faults queue and owner. Cumulative pipeline count preserved.",
+    "verified": "FAT32 actual store/age/host integration checks start gate before capture, refuses unprovisioned key/pending chunk/queued PCM, permits restart after handoff/recovery; native ASANUBSAN pass. Capture adapter full ARM link pass only.",
+    "remaining": [
+      "Board capture adapter hardware/mocked-start execution tests",
+      "Top-level power/clock/storage/RNG/key initialization and event loop",
+      "Physical capture/USB timing and low-power qualification"
+    ],
+    "adapter_test": "tests/test_recording_capture.c with actual capture adapter + callbacks and mock HAL/precondition result: hook binding, preserved committed count, no rebind on rejected gate with queued audio, duplicate start, ISR/masked/foreign rejection, start failure invokes fault-stop and faults queue/owner; ASANUBSAN passed."
+  },
+  "audio_fault_stop": {
+    "implementation": "board/audio_dma.c pendant_audio_fault_stop",
+    "behavior": "On owned ADF/LPDMA start failure or boundary-stop failure, disable DMA IRQ, clear ADF DMA/filter enable, request channel-only reset, DSB, clear pending IRQ and leave HAL handles ERROR; fail queue. Does not claim successful capture or confirmed hardware quiescence.",
+    "verified": "Calls verified by native mock tests; register implementation ARM compile/link only.",
+    "remaining": "Actual reset completion/IRQ/power behavior and top-level runtime fault path."
+  },
+  "recorder_runtime": {
+    "implementation": "board/recorder_runtime.c/h",
+    "scope": "Main-task lifecycle: start capture after preconditions, VBUS-controlled TinyUSB start, one USB event/service then ownership actions, final save/unmount -> HOST; stop/deinit before recovery mount -> restart capture; eject suppresses reconnect until unplug; faults request audio stop and USB teardown.",
+    "tests": "tests/check_recorder_runtime.sh: actual runtime + storage_owner + usb_session, mock storage/capture/USB hardware; recording/configuration/handoff/physical disconnect/restart/eject/no-remount-loop/USB teardown failure pass ASANUBSAN. Full ARM link passed.",
+    "limitations": [
+      "Requires preinitialized and powered hardware, mounted filesystem and provisioned key/RNG; main still link fixture.",
+      "Hardware callbacks, filesystem actions and capture actions mocked in runtime test; their separate integration tests do not prove physical system behavior.",
+      "No Stop2/clock release policy; HSI48 remains shared.",
+      "No battery runtime, actual USB enumeration or power-loss qualification."
+    ]
+  },
+  "rng_startup": {
+    "implementation": "board/rng_board.c/h",
+    "scope": "One startup attempt per reset before USB; shared HSI48 on, RNG clock selection/frequency48MHz checked, RNG peripheral reset/HAL init with CED, pinned NIST constant compile assertions,16-byte readiness probe through secure_random wiped. Failure disables initialized RNG clock and remains failed; shared HSI48 retained.",
+    "verified": "Mock HAL ASANUBSAN successful startup and oscillator/peripheral clock/frequency/HAL init/random generation failure; full ARM link passed.",
+    "source": "https://www.st.com/content/st_com/en/technical-documents/an4230-introduction-to-random-number-generation-validation-using-the-nist-statistical-test-suite-for-stm32-mcus-and-mpus-stmicroelectronics_asset/chunk-002-topic-an4230-nist-sp800-22b-test-suite-steps.html",
+    "remaining": [
+      "Top-level startup call and recording_store RNG binding",
+      "Global clock lifetime / low-power shutdown",
+      "Hardware entropy/health and timing qualification; probe is not entropy certification"
+    ]
+  },
+  "storage_power_startup": {
+    "implementation": "board/storage_power.c/h",
+    "hardware": "Canonical xe-minimal U1 PB5->SD_EN->U10 TPS22917DBVT; CT open, QOD tied SD_V3; U8 mic VDD directly V3V3; SD C26 100nF+C27 4.7uF.",
+    "sequence": "Cold startup once per reset only: release/float all SPI signal pins, PB5 low before output configuration, wait50ms, PB5 high, wait40ms. Never use for mounted/host recovery.",
+    "verified": "Mock HAL ASANUBSAN sequence/repeat/release failure/masked IRQ rejection; ARM full link.",
+    "sources": [
+      "hardware/xe-minimal/design.json",
+      "docs/procurement/xe-load-switch-production-review-2026-10-28.md",
+      "https://www.ti.com/lit/gpn/TPS22917"
+    ],
+    "hardware_checks": [
+      "SD VCC below0.5V for>=1ms before startup",
+      "Monotonic0.1..35ms supply ramp per memory datasheet recommendations",
+      "Final effective capacitance/QOD variation/inrush/battery pulse current; delays are provisional, not rail measurement"
+    ]
+  },
+  "boot_coordinator": {
+    "implementation": "board/recorder_boot.c/h",
+    "scope": "Static recorder_app owns runtime/FS/crypto/audio contexts. One boot attempt: charge inhibit, provisioned public key check, MSIS16/HSI-off preflight, RNG, cold SD power, probe, mount/recover, wire encrypted store, initialize queue/pipeline, configure ADF/DMA, runtime capture start. Stage retained on failure and opened FS unmounted. No format/charging enable.",
+    "verified": "tests/check_recorder_boot.sh mock peripherals ASANUBSAN: successful pointer wiring, every init stage failure, zero key and repeat refusal, mounted cleanup. Full ARM link includes complete recorder_app RAM (not only pipeline/queue).",
+    "remaining": [
+      "Persistent provisioned key and allocated USB IDs",
+      "Hardware clock/rails/audio/USB/power qualification",
+      "Low-power clock lifetime/Stop2 implementation"
+    ]
+  },
+  "application_entry": {
+    "implementation": [
+      "app/main.c",
+      "board/system_clock.c/h"
+    ],
+    "scope": "HAL/init charge inhibit -> MSIS16 CPU/range4/2WS with HSI16 off -> public age recipient decode -> recorder_boot_start -> runtime_poll/WFI. Failures halt with charging inhibited.",
+    "verified": "Existing fixture and actual app entry compile/link separately; app uses generated disposable public recipient with deleted private key, synthetic VID/PID. Never flashed/executed.",
+    "remaining": [
+      "Persistent recipient provisioning and allocated USB IDs",
+      "16MHz encryption latency/backlog and USB throughput measurement",
+      "Clock lifetime and Stop2: WFI baseline only, not16h proof",
+      "Battery/charge qualification, ADC accuracy and LED visibility"
+    ]
+  },
+  "low_battery_terminal": {
+    "implementation": [
+      "app/main.c",
+      "board/low_battery_standby.c/h"
+    ],
+    "scope": "After qualified cutoff or persistent ADC failure, controlled recording finalization powers down USB/audio/storage. With VBUS absent, charge is revoked, LED is off and PA0 VBUS_N is configured as active-low WKUP1 before entering Standby. USB insertion reset-wakes and reruns BOR/ADC/cutoff checks before export and charging.",
+    "verified": "Native ASan/UBSan covers context rejection, VBUS-present path, attach race and Standby entry; real application lifecycle test covers cold and recording-triggered low voltage; U585 application cross-links with pinned HAL. No hardware execution.",
+    "remaining": [
+      "Five-pack physical cutoff selection and finalization energy margin",
+      "Completed-device Standby current <=150uA",
+      "PA0 wake/reset to 9-11mA charge <=1000ms and file-integrity verification",
+      "Pack protection cutoff/recovery and long-storage behavior"
+    ]
+  },
+  "battery_monitor_current": "board/battery-io-review.json",
+  "capacity_current": "tests/storage-36h-result.json",
+  "current_app_link": "app/link-result.json"
+}

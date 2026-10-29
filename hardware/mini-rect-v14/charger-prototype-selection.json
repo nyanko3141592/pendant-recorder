@@ -1,0 +1,60 @@
+{
+  "status": "PROTOTYPE_SETTING_SELECTED_CHARGING_STILL_DISABLED",
+  "source": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+  "source_revision": "SLUSF65B August2026",
+  "resistor_ref": "R10",
+  "resistor_ohms": 3320,
+  "resistor_tolerance": 0.01,
+  "nominal_mA": 90.36144578313252,
+  "bound_mA": {
+    "minimum_using_minus10percent_IC_plus1percent_R": 80.52010020279135,
+    "maximum_using_plus10percent_IC_minus1percent_R": 100.40160642570281
+  },
+  "bound_note": "Conservative engineering screen using10% accuracy; not claim of separately guaranteed90mA electrical-characteristic row. KISET table285..315Aohm separately narrower. Exact current requires measurement.",
+  "pack_max_charge_mA": 150,
+  "input_selection": "R42 retained24k,100mA class,minimum80mA at datasheet stated conditions",
+  "ideal_cc_screen": [
+    {
+      "SYS_mA_assumption": 5,
+      "charge_available_mA_screen": 75,
+      "ideal_300mAh_CC_hours": 4.0,
+      "remaining_of_typical6h_hours": 2.0
+    },
+    {
+      "SYS_mA_assumption": 10,
+      "charge_available_mA_screen": 70,
+      "ideal_300mAh_CC_hours": 4.285714285714286,
+      "remaining_of_typical6h_hours": 1.7142857142857144
+    },
+    {
+      "SYS_mA_assumption": 20,
+      "charge_available_mA_screen": 60,
+      "ideal_300mAh_CC_hours": 5.0,
+      "remaining_of_typical6h_hours": 1.0
+    },
+    {
+      "SYS_mA_assumption": 30,
+      "charge_available_mA_screen": 50,
+      "ideal_300mAh_CC_hours": 6.0,
+      "remaining_of_typical6h_hours": 0.0
+    },
+    {
+      "SYS_mA_assumption": 40,
+      "charge_available_mA_screen": 40,
+      "ideal_300mAh_CC_hours": 7.5,
+      "remaining_of_typical6h_hours": -1.5
+    }
+  ],
+  "nominal_termination_mA": 9.036144578313253,
+  "termination_note": "Earlier than manufacturer standard3mA termination. Must measure usable capacity; do not claim full300mAh.",
+  "qualification_before_enable": [
+    "Verify completed-pack connector polarity and temperature guard with sensor attached and detached",
+    "Resolve4.2V regulation tolerance against completed-pack charge voltage specification",
+    "Measure USB-attached SYS current, including MSC, startup and suspended state; retain suspend charge inhibition",
+    "Charge from manufacturer discharge endpoint under actual product load at temperature corners: complete within safety timer without CE/power cycling to evade timeout",
+    "Measure charge maximum and termination, pouch temperature and rail behavior",
+    "After normal charge, demonstrate16h recording on exact selected card and firmware; record measured usable capacity rather than rated capacity",
+    "Check power loss, unplug, hot/cold and timer fault recovery; no automatic timer reset loop"
+  ],
+  "release_allowed": false
+}

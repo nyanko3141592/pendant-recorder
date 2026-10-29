@@ -1,0 +1,49 @@
+{
+  "status": "SENSITIVITY_ONLY_NOT_TOLERANCE_APPROVAL",
+  "source": "recessed-screw-joint-review.json",
+  "scenarios": [
+    {
+      "independent_seat_and_nut_position_error_mm": 0,
+      "screw_length_error_mm": 0,
+      "minimum_geometric_overlap_mm": 0.8000000000000003,
+      "minimum_geometric_turns_at_pitch_025": 3.200000000000001,
+      "maximum_tip_projection_mm": 0.09999999999999964
+    },
+    {
+      "independent_seat_and_nut_position_error_mm": 0.05,
+      "screw_length_error_mm": 0.05,
+      "minimum_geometric_overlap_mm": 0.7500000000000004,
+      "minimum_geometric_turns_at_pitch_025": 3.0000000000000018,
+      "maximum_tip_projection_mm": 0.24999999999999956
+    },
+    {
+      "independent_seat_and_nut_position_error_mm": 0.1,
+      "screw_length_error_mm": 0.1,
+      "minimum_geometric_overlap_mm": 0.6000000000000005,
+      "minimum_geometric_turns_at_pitch_025": 2.400000000000002,
+      "maximum_tip_projection_mm": 0.40000000000000036
+    },
+    {
+      "independent_seat_and_nut_position_error_mm": 0.15,
+      "screw_length_error_mm": 0.1,
+      "minimum_geometric_overlap_mm": 0.5000000000000009,
+      "minimum_geometric_turns_at_pitch_025": 2.0000000000000036,
+      "maximum_tip_projection_mm": 0.5
+    },
+    {
+      "independent_seat_and_nut_position_error_mm": 0.2,
+      "screw_length_error_mm": 0.15,
+      "minimum_geometric_overlap_mm": 0.34999999999999964,
+      "minimum_geometric_turns_at_pitch_025": 1.3999999999999986,
+      "maximum_tip_projection_mm": 0.6500000000000004
+    }
+  ],
+  "excluded": [
+    "Nut thickness tolerance",
+    "Thread chamfer/runout; geometric turns overestimate full-thread engagement",
+    "Screw head seating deformation",
+    "Thermal creep and tightening preload"
+  ],
+  "necessary_condition_for_full_nominal_nut_thickness": "Sum of seat-to-nut position increase and screw length shortfall <=0.1mm nominal tip allowance",
+  "decision": "Do not release current joint from nominal overlap alone; specify real tolerances or increase engagement allowance and recheck clearance."
+}

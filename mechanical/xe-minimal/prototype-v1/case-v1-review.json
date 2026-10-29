@@ -1,0 +1,57 @@
+{
+  "version": "XE-PROTOTYPE-V1",
+  "status": "COMPLETE_EXTERIOR_CANDIDATE_EXPORTED_NOT_PHYSICALLY_QUALIFIED",
+  "complete_exterior_bbox_mm": [
+    26.20114454764148,
+    33.60057227382074,
+    12.972544647641467
+  ],
+  "complete_exterior_bounds_mm": [
+    -1.1005722738207377,
+    25.10057227382074,
+    -28.30057227382074,
+    5.3,
+    -7.720572273820728,
+    5.251972373820739
+  ],
+  "process_target": "Bambu Lab A1 mini, PLA, 0.4mm nozzle",
+  "closure": "Glue at the existing case mating seam only",
+  "neck_cord_feature": {
+    "type": "integral two-half rounded tab with vertical through-hole",
+    "center_xy_mm": [
+      12.0,
+      2.8
+    ],
+    "hole_diameter_mm": 2.5,
+    "outer_diameter_mm": 5.0,
+    "minimum_radial_wall_mm": 1.25,
+    "seam_note": "Bond both tab halves over their full mating annulus/bridge; proof-load physically before wear."
+  },
+  "geometry_checks": {
+    "lower_single_valid_solid": true,
+    "upper_single_valid_solid": true,
+    "tab_internal_intersection_mm3": 0.0,
+    "tab_to_usb_center_distance_mm": 22.795,
+    "tab_to_mic_center_distance_mm": 8.8810542730016
+  },
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/case-lower-v1.step": "a9e6f8e118894d3f1dcac8676eb93e2831bd6853797e6022be72d886b7943428",
+    "mechanical/xe-minimal/prototype-v1/case-upper-v1.step": "dbb1a15b189dbbfb2816e2738b219a50675765a8dcc2ad0fcd7ad008731106ec",
+    "mechanical/xe-minimal/prototype-v1/case-lower-v1.stl": "7785575f48a74c8855e9617820d8d86aa46f36633a38b35091b0ac79e5f7be18",
+    "mechanical/xe-minimal/prototype-v1/case-upper-v1.stl": "d421976c8baa466234d1ed71187c29ffa5880d4fa239ed7d03b9def434c67099",
+    "mechanical/xe-minimal/prototype-v1/case-assembly-v1.step": "5d6873a186ca932db7cab4302a9604dfc07e10140358ca6efcccae5ccb037384",
+    "mechanical/xe-minimal/prototype-v1/case-exploded-v1.step": "04f25ff4390eb15ddd6423c7b445b591ba25680ef58e215fd64b5bf612db6cdb"
+  },
+  "sources_sha256": {
+    "mechanical/xe-minimal/rounded-glue-reinforced-lower-study.step": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+    "mechanical/xe-minimal/rounded-glue-reinforced-upper-study.step": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7",
+    "mechanical/xe-minimal/prototype-v1/integrated-assembly-v1.step": "f4c41bef13ac79b336eef7b44ddc193677a3f791613bc30f6cac977a490bf347"
+  },
+  "release_gates": [
+    "Slice both final STLs with the exact A1 mini/PLA/0.4mm profile.",
+    "Print and inspect seam fit, USB insertion, microphone opening, LED visibility and plug/harness assembly motion.",
+    "Proof-load the cord loop and bonded seam in all wear directions; CAD wall width is not strength qualification.",
+    "Verify acoustic response and that adhesive cannot enter the microphone duct or device interior.",
+    "Verify sensor-pad compression, pouch pressure, thermal response and battery swelling clearance physically."
+  ]
+}

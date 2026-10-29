@@ -1,0 +1,131 @@
+{
+  "observed_date": "2026-10-26",
+  "method": "Rendered JLC public catalog through in-app browser; read-only",
+  "status": "EXACT_MCU_GLOBAL_SOURCING_CANDIDATE_FOUND_NOT_RESERVED",
+  "mcu": {
+    "mpn": "STM32U535CEU6",
+    "jlc_id": "C22454224",
+    "url": "https://jlcpcb.com/partdetail/STM32U535CEU6/C22454224",
+    "displayed_stock": 1,
+    "displayed_available_order_quantity": 1,
+    "displayed_price_USD_1plus": 10.0792,
+    "displayed_price_USD_10plus": 9.765,
+    "prototype_required_units": 5,
+    "shortfall_before_attrition": 4
+  },
+  "existing_quote": {
+    "name": "GERBER-QUOTE-PRELIMINARY",
+    "displayed_last_updated": "25 October15:29",
+    "evidence_old_design": [
+      "BQ25101YFPR charger",
+      "MMICT5838-00-012 microphone",
+      "CSNP32GCR01-BOW storage"
+    ],
+    "decision": "Not currentV13. Do not reuse its totals or upload a partialBOM as a final order."
+  },
+  "next_required": [
+    "Confirm JLC restock or consigned/global sourcing exactMCU before5unit release",
+    "CurrentV13 full manufacturing upload and matching after unresolved electrical qualifications",
+    "Shipping/tax/assembly quote remains unobtained"
+  ],
+  "limitations": [
+    "Displayed stock can change and is not reserved",
+    "Price excludes PCB/assembly/shipping/tax and is not a landed quotation",
+    "No checkout, purchase, part-library reservation or BOM checkbox change performed"
+  ],
+  "global_sourcing": {
+    "url": "https://jlcpcb.com/user-center/smtPrivateLibrary/orderParts/?global=1",
+    "search": "STM32U535CEU6",
+    "method": "Logged-in rendered catalog; quantity5 entered, no Add or checkout",
+    "exact_mpn": "STM32U535CEU6",
+    "supplier": "Element",
+    "MOQ": 1,
+    "displayed_stock": 171,
+    "lead_time_business_days": [
+      8,
+      18
+    ],
+    "unit_USD_1plus": 9.6261,
+    "quantity_entered": 5,
+    "displayed_extended_USD": 48.13,
+    "other_exact_candidate": {
+      "supplier": "Digikey",
+      "stock": 1374,
+      "MOQ": 1,
+      "lead_time_business_days": [
+        8,
+        14
+      ],
+      "unit_USD_1plus": 10.8909,
+      "unit_USD_10plus": 8.3786
+    },
+    "restrictions": [
+      "Whole MCU line must use compatible sourcing type; do not combine publicstock1 + global4 withoutJLC approval",
+      "Parts must reachJLC warehouse beforeassembly order",
+      "Review attrition and packaging/minimum assembly quantity",
+      "Taxes/extra handling/finalPCBA shipping not included"
+    ],
+    "policy_sources": [
+      "https://jlcpcb.com/help/article/how-to-use-jlcpcb-global-sourcing-parts-service",
+      "https://jlcpcb.com/help/article/consignment-part-terms-conditions"
+    ],
+    "not_substituted": [
+      "STM32U535CEU6Q",
+      "STM32U535CEU6QTR",
+      "STM32U535CEU6TR"
+    ]
+  },
+  "charger": {
+    "mpn": "BQ25185DLHR",
+    "jlc_id": "C19725033",
+    "url": "https://jlcpcb.com/partdetail/TEXASINSTRUMENTS-BQ25185DLHR/C19725033",
+    "displayed_stock": 4903,
+    "available_order_qty": 4773,
+    "unit_USD_1plus": 1.5514,
+    "unit_USD_10plus": 1.2831,
+    "status": "CATALOG_PURCHASABLE_NOT_RESERVED"
+  },
+  "microphone": {
+    "mpn": "IM69D130V01XTSA1",
+    "old_id": "C9900015304",
+    "url": "https://jlcpcb.com/partdetail/3489366-IM69D130V01XTSA1/C9900015304",
+    "manufacturer_display": "JLCPCB Assembly",
+    "stock": 0,
+    "displayed_MOQ": 3000,
+    "status": "UNAVAILABLE_FOR_PURCHASE_CONSIGN_PART_REGISTRATION",
+    "excluded_estimated_unit_price_USD": 0.0021,
+    "decision": "Remove purchasable candidateID from generated reviewBOM; preserve oldID here as consignment reference only. Do not count estimated assembly registration price as microphone acquisition cost.",
+    "next": "Select exact-MPN global sourcing route at final cost review; no change to microphone electrical/mechanical design needed for these exact-MPN candidates",
+    "global_sourcing": {
+      "exact_mpn": "IM69D130V01XTSA1",
+      "supplier": "RS Components",
+      "packaging_display": "PK",
+      "MOQ": 5,
+      "displayed_stock": 895,
+      "lead_time_business_days": [
+        8,
+        16
+      ],
+      "unit_USD_5plus": 2.6164,
+      "quantity_displayed": 5,
+      "extended_USD_displayed": 13.08,
+      "status": "CANDIDATE_NOT_RESERVED",
+      "alternative_cut_tape": {
+        "supplier": "Digikey",
+        "supplier_part": "IM69D130V01XTSA1CT-ND",
+        "MOQ": 1,
+        "stock": 66643,
+        "unit_USD_1plus": 3.5446,
+        "lead_time_business_days": [
+          8,
+          14
+        ]
+      },
+      "pending": [
+        "Confirm required attrition quantity and actual assembly packaging handling",
+        "Obtain private inventory mapping after sourcing; do not label C9900015304 as public component stock",
+        "Final landedPCBA price and leadtime"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T11:22:37",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "ground-final.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1703 mm )",
+                    "pos": {
+                        "x": 19.265,
+                        "y": 0.794999
+                    },
+                    "uuid": "31250e19-47da-4bc1-b31a-37cf64742543"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1180 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.999999
+                    },
+                    "uuid": "37e16e63-d5a5-44f9-82ea-419a732e2b74"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

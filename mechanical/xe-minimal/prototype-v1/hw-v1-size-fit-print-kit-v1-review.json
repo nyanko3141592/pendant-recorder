@@ -1,0 +1,53 @@
+{
+  "version": "HW-V1.0-SIZE-FIT-PRINT-KIT-V1",
+  "status": "PRINTABLE_DIMENSIONAL_GAUGE_NOT_ELECTRICAL_OR_FIT_QUALIFICATION",
+  "one_job_plate_bbox_mm": [
+    85.50120485020766,
+    67.6004970823567,
+    29.90812902996393
+  ],
+  "parts": {
+    "case_lower": "exact v5 case lower, rotated -90 degrees about CAD Y for the reviewed print orientation",
+    "case_upper": "exact v5 case upper",
+    "pcb_gauge_mm": [
+      27.5,
+      27.5,
+      0.8
+    ],
+    "usb_cue_mm": [
+      9.4,
+      3.6,
+      3.2
+    ],
+    "battery_max_gauge_mm": [
+      15.5,
+      27.0,
+      4.2
+    ]
+  },
+  "print_contract": {
+    "single_import": "mechanical/xe-minimal/prototype-v1/hw-v1-size-fit-print-kit-v1.stl",
+    "disconnected_parts": 4,
+    "recommended_material": "PETG",
+    "nozzle_mm": 0.4,
+    "layer_height_mm": 0.2,
+    "supports": "disabled unless slicer flags the lower-case USB region"
+  },
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/hw-v1-size-fit-print-kit-v1.stl": "91651b3e20454e1345d4db8aa009aa7ff768c80f91d461faae801eb4b641e70f",
+    "mechanical/xe-minimal/prototype-v1/hw-v1-size-fit-print-kit-v1.step": "b3768e5f30bcbfcd867ecf548df25e098b36b12a84ee6eb498b0b1ffc1f8edad",
+    "mechanical/xe-minimal/prototype-v1/hw-v1-size-fit-print-kit-v1-assembly.step": "00af09638a734cd4ea068a6b4c1d10aa58488adf5b222c2bce5b49b598fcb0c9",
+    "mechanical/xe-minimal/prototype-v1/hw-v1-pcb-outline-gauge-v1.stl": "e1e74b49a45a94d13f4bdbdf14915e0ed3ba913e970bad544e3db38feb15b34e",
+    "mechanical/xe-minimal/prototype-v1/dtp401525-xe-max-gauge-v1.stl": "c1cff00001a649946cdcf24c36136be0047322ff77a68592afb05383dd5cbd21"
+  },
+  "sources_sha256": {
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-lower.step": "80309d7913ef6dc82d14450fc9961708f7c92e8304208a239a26af05071db88f",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-upper.step": "d48775ca62330cd1627c0081751ab2a4e471543097261947f4174ce490efea59"
+  },
+  "limitations": [
+    "PCB and battery pieces are dimensional gauges, not working parts.",
+    "The PCB gauge omits individual components, solder, harness and connector retention geometry.",
+    "The battery gauge is the published maximum body envelope and omits flexible leads and swelling behavior.",
+    "A successful print does not qualify electrical safety, thermal behavior, USB cable fit, cord strength or case closure tolerance."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "status": "CANDIDATE_COMPARISON_NOT_PRINT_OR_STRENGTH_APPROVAL",
+  "rows": [
+    {
+      "prefix": "film-bridge",
+      "rib_width_mm": 1.2,
+      "positions_y_mm": [
+        -8,
+        -25
+      ],
+      "bridge_feature_paths": 0,
+      "estimated_filament_g": 0.21071699261665344,
+      "estimated_print_s": 89.31666564941406,
+      "visual_review": "7-layer PNG inspected; feet and spanning roof paths present.",
+      "source_sha256": "1c15cf25c5a39da3139c27f09c9406f9503f9591f8cee1d5569cbaded288b800"
+    },
+    {
+      "prefix": "film-wide-bridge",
+      "rib_width_mm": 2.4,
+      "positions_y_mm": [
+        -8,
+        -25
+      ],
+      "bridge_feature_paths": 6,
+      "estimated_filament_g": 0.21827943623065948,
+      "estimated_print_s": 94.69141387939453,
+      "visual_review": "7-layer PNG inspected; feet and spanning roof paths present.",
+      "source_sha256": "ca477c2d9ea344fb7362675fd0422371242ec8036f89d94ba9eeafaa290386aa",
+      "ordered_endpoint_review": {
+        "segments": 6,
+        "both_ends_touch_earlier_same_layer_commanded_beads": true,
+        "minimum_endpoint_bead_overlap_mm2": 0.05875025793863253,
+        "qualification": "Commanded geometry only; does not establish sag or adhesion"
+      }
+    }
+  ],
+  "decision": "Continue2.4mm rib candidate: now generates6 Bridge paths while retaining nominal CAD clearance. No final adoption.",
+  "remaining": [
+    "Bridge endpoint anchoring and sag",
+    "As-built sensor clearance",
+    "Assembly path and leads",
+    "Joint insulation and attachment",
+    "Physical strength"
+  ]
+}

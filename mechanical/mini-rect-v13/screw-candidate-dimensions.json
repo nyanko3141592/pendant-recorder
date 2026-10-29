@@ -1,0 +1,53 @@
+{
+  "status": "DIMENSIONAL_SCREW_CANDIDATE_NOT_SELECTED_FOR_PURCHASE",
+  "mpn": "SNZ-M1.2-2-TZB",
+  "manufacturer": "NBK",
+  "source": "https://static.nbk1560.com/en-US/products/specialscrew/nedzicom/miniaturescrew/SNZ-TZB/SNZ-M1.2-TZB/SNZ-M1.2-2-TZB/",
+  "verified_dimensions_mm": {
+    "thread_diameter": 1.2,
+    "pitch": 0.25,
+    "under_head_length": 2,
+    "head_diameter": 1.8,
+    "head_height": 0.5
+  },
+  "pack_quantity": 50,
+  "regional_catalog_price": {
+    "USD_per_pack": 7.73,
+    "not_japan_delivered_quote": true
+  },
+  "rejected_reference": {
+    "mpn": "SNZ-M1-3-TZB",
+    "reason": "At same head seat,3mm length reaches11.21 below11.6mm boss bottom; do not assume it fits because diameter is smaller"
+  },
+  "open": [
+    "Manufacturable female thread or specified plastic fastener",
+    "Root strength and print tolerances",
+    "Torque and repeat assembly qualification",
+    "Japan stock and shipping-inclusive quote"
+  ],
+  "limitations": [
+    "Nominal axial arithmetic only, not CAD collision or strength proof",
+    "Manufacturer screw maximum torque is not permitted torque for printed plastic",
+    "No order or purchase action"
+  ],
+  "superseded_provisional_geometry_mm": {
+    "head_seat_z": 14.21,
+    "head_top_z": 14.71,
+    "screw_tip_z": 12.21,
+    "boss_top_z": 13.2,
+    "boss_bottom_z": 11.6,
+    "nominal_engagement": 0.99,
+    "nominal_tip_to_boss_bottom": 0.61,
+    "outer_height": 14.81
+  },
+  "current_geometry_mm": {
+    "head_seat_z": 13.5,
+    "head_top_z": 14,
+    "screw_tip_z": 11.5,
+    "boss_top_z": 12.5,
+    "boss_bottom_z": 11.6,
+    "nominal_engagement": 0.9,
+    "outer_height": 14.81
+  },
+  "geometry_evidence": "recessed-screw-root-trial/exterior-review.json"
+}

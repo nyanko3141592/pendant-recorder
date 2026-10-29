@@ -1,0 +1,41 @@
+{
+  "status": "DRC_PARITY_PASS_PARTIAL_REFERENCE_IMPROVEMENT",
+  "source_sha256": "63c5f7002c30a90ee451bf1c59fd2c0d0b6b660608aaf4d7d60e2a3936a2fc1f",
+  "candidate_sha256": "13c450e74462fa9bdfec05043683bca567df2de1b6ccbd46ff28e10f26e1a9c7",
+  "changes": [
+    {
+      "net": "/SD_V3",
+      "uuid": "6fc3c13d-6bc9-4768-b85a-b4214e23291f",
+      "delta_x_mm": -0.12,
+      "track_ends": 2
+    }
+  ],
+  "drc": 0,
+  "unconnected": 0,
+  "checked_pads": 254,
+  "reference_counts": [
+    {
+      "net": "/USB_DP",
+      "counts": {
+        "both": 209,
+        "top_only": 0,
+        "bottom_only": 0,
+        "neither": 21
+      }
+    },
+    {
+      "net": "/USB_DM",
+      "counts": {
+        "both": 206,
+        "top_only": 0,
+        "bottom_only": 0,
+        "neither": 19
+      }
+    }
+  ],
+  "limitations": [
+    "SD_EN relocation was rejected: R22 pad/ground trace/SD_V3 spacing conflicts",
+    "Only SD_V3 via moved; SD_EN and USB transition reference gaps remain",
+    "Not a signal-integrity or manufacturing approval"
+  ]
+}

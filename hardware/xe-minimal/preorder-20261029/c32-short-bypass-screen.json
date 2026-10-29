@@ -1,0 +1,62 @@
+{
+  "source_sha256": "d64e60a6290d90dc344157f867ef617c2f95d880290294fa0b9c7988d86a0c1d",
+  "net": "/VBUS_CHARGER",
+  "u_layer": "F.Cu",
+  "c_layer": "B.Cu",
+  "physical_pad_contacts": {
+    "U13.6": [
+      {
+        "type": "track",
+        "start": [
+          11.0609,
+          4.1497
+        ],
+        "end": [
+          11.0609,
+          2.2016
+        ],
+        "layer": "F.Cu"
+      },
+      {
+        "type": "track",
+        "start": [
+          11.0609,
+          2.2016
+        ],
+        "end": [
+          11.3625,
+          1.9
+        ],
+        "layer": "F.Cu"
+      }
+    ],
+    "C32.1": [
+      {
+        "type": "track",
+        "start": [
+          11.28,
+          1.8
+        ],
+        "end": [
+          10.5484,
+          1.0684
+        ],
+        "layer": "B.Cu"
+      }
+    ]
+  },
+  "screen_counts": {
+    "grid": 5025,
+    "copper_clear": 36,
+    "pad_hole_clear": 18,
+    "drill_clear": 18,
+    "segments_clear": 0
+  },
+  "candidates": [],
+  "limitations": [
+    "Screen only; rule areas, GND reference and full DRC not yet certified",
+    "Via .45/.2, trace .127, clearance .101, grid .05, radius2mm",
+    "Filled GND excluded as connectable clearance cut; refill required if candidate created"
+  ],
+  "release_allowed": false
+}

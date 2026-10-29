@@ -1,0 +1,9 @@
+from pathlib import Path
+import pcbnew as k,wx,re,shutil,json,hashlib
+app=wx.App(False);w=Path(__file__).resolve().parent;base=w.parent;out=w/'release-review-20261029-aligned';design=out/'design';b=k.LoadBoard(str(design/'pendant-review.kicad_pcb'));table=(base/'fp-lib-table').read_text();mapping={n:uri.replace('${KICAD10_FOOTPRINT_DIR}','/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints').replace('${KIPRJMOD}',str(base)) for n,uri in re.findall(r'\(lib \(name "([^"]+)"\).*?\(uri "([^"]+)"\)',table)};records=[];missing=[];libs=set()
+for f in b.GetFootprints():
+ fid=f.GetFPID();lib=str(fid.GetLibNickname());name=str(fid.GetLibItemName());src=Path(mapping.get(lib,'/missing'))/(name+'.kicad_mod');dst=design/'footprints'/(lib+'.pretty')/(name+'.kicad_mod')
+ if not src.is_file():missing.append({'reference':f.GetReference(),'lib':lib,'footprint':name,'expected_source':str(src)});continue
+ dst.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,dst);libs.add(lib);records.append({'reference':f.GetReference(),'library':lib,'footprint':name,'source':str(src.resolve()),'packaged_file':str(dst.relative_to(out)),'sha256':hashlib.sha256(dst.read_bytes()).hexdigest()})
+(design/'fp-lib-table').write_text('(fp_lib_table\n'+''.join('(lib (name "'+lib+'") (type "KiCad") (uri "${KIPRJMOD}/footprints/'+lib+'.pretty") (options "") (descr "Original library source snapshot, not board-extracted footprint"))\n' for lib in sorted(libs))+')\n')
+o={'status':'SOURCE_LIBRARIES_PACKAGED_FOR_INDEPENDENT_DRC_COMPARISON','records':records,'missing':missing,'board_sha256':hashlib.sha256((design/'pendant-review.kicad_pcb').read_bytes()).hexdigest(),'limitations':['Source snapshot is not a manufacturer pinout certification','Board geometry is not overwritten to force library equality'],'release_allowed':False};(out/'footprint-provenance.json').write_text(json.dumps(o,indent=2)+'\n');print('sources',len(records),'missing',missing)

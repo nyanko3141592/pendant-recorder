@@ -1,0 +1,97 @@
+{
+  "status": "SLICED_NOT_PRINTED_OR_FIT_QUALIFIED",
+  "parts": [
+    {
+      "part": "film-roomier-joint-supported-fine-separator",
+      "source": "film-roomier-joint-separator-trial.step",
+      "source_sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+      "stl_sha256": "0d1dcfe7291fc0e997dc7b6fa1a16faec33381a1f95446d8cf65ac735f2e92a0",
+      "3mf_sha256": "7d74e91ed5c4f86a3a4414f025ea5a82bfb7a59d9bea062a8174228fffa60aef",
+      "first_layer_mm": 0.08,
+      "regular_layer_mm": 0.08,
+      "CAD_height_mm": 1.5000000999999998,
+      "translation_mm": [
+        -0.3,
+        27.2,
+        2.4200000999999998
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 378,
+        "layer_height": 0.07999999821186066,
+        "plate_index": 0,
+        "prepare_time": 6,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 12.820483207702637,
+              "Bridge": 0.5382129549980164,
+              "Custom": 34.62093734741211,
+              "Gap infill": 2.5008413791656494,
+              "Inner wall": 13.352690696716309,
+              "Internal solid infill": 31.255088806152344,
+              "Outer wall": 34.01286697387695,
+              "Overhang wall": 1.164507508277893,
+              "Support": 14.114518165588379,
+              "Support interface": 12.604117393493652,
+              "Support transition": 7.0914106369018555,
+              "Top surface": 13.535605430603027,
+              "Travel": 45.15952682495117,
+              "Undefined": 29.682451248168945
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 0.3144680857658386,
+                "total_used_g": 0.3692592680454254
+              }
+            ],
+            "generate_support_material_time": 8,
+            "id": 1,
+            "infill_time": 5,
+            "layer_filament_change": 0,
+            "main_predication": 188.18026733398438,
+            "make_perimeters_time": 7,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 27.400001525878906,
+                  "height": 1.5,
+                  "width": 21.374446868896484,
+                  "x": 79.16216278076172,
+                  "y": 76.30001831054688,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "film-roomier-joint-supported-fine-separator.stl",
+                "triangle_count": 2326
+              }
+            ],
+            "sliced_time": 100,
+            "sliced_time_with_cache": 76,
+            "total_predication": 207.29391479492188,
+            "triangle_count": 2326,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 2
+      },
+      "profile_sha256": {
+        "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+        "process": "794307311eba1748616307f639f9912b468e247aca2daa2af4706b31f0e4355e",
+        "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+      }
+    }
+  ],
+  "limits": [
+    "Toolpath review still required",
+    "Raised rib bridge sag, fine webs and strength not physically verified",
+    "Current plug and original lead fit unresolved",
+    "No print job sent"
+  ]
+}

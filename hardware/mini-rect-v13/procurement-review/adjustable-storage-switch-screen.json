@@ -1,0 +1,31 @@
+{
+  "status": "ALTERNATIVE_SCREEN_NOT_ADOPTED",
+  "existing": "TPS22916CYFPR U10",
+  "candidate": "TPS22917DBVR / DBVT (active high)",
+  "manufacturer_source": "https://www.ti.com/lit/ds/symlink/tps22917.pdf",
+  "advantages": [
+    "Adjustable turn-on slew with CT capacitor to VIN",
+    "Typical ON quiescent0.5uA and OFF10nA, similar to current family"
+  ],
+  "costs": [
+    "6pin SOT23 body2.9x1.6mm plus timing capacitor; larger than current YFP4",
+    "New footprint, placement, routing, mechanical clearance and supplier matching needed"
+  ],
+  "timing_capacitor_voltage_rating_min_v": 7,
+  "screen_at_3_6V_typical": {
+    "ct_pf": 4700,
+    "slew_mV_per_us": 0.40425531914893614,
+    "turn_on_us": 17860.0,
+    "capacitor22uF_inrush_mA": 8.893617021276595,
+    "capacitor26_4uF_inrush_mA": 10.672340425531916
+  },
+  "limitations": [
+    "Typical3.6V constants, not worst-case3.3V prediction",
+    "Does not limit operating card current; card plus MCU can still exceed50mA battery",
+    "No drop-in replacement; no circuit or BOM change",
+    "Pin numbering must be checked from rendered datasheet before implementing",
+    "CT value subject to exact card allowable power ramp and guaranteed switch timing"
+  ],
+  "procurement_lead": "LCSC TPS22917DBVT C2680344 search listing, JLC stock/price not confirmed",
+  "next_decision": "Only route this larger alternative if selected card and battery peak qualification shows ramp control is necessary; do not spend board area to solve only an unqualified capacitor scenario."
+}

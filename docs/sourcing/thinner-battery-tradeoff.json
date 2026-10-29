@@ -1,0 +1,45 @@
+{
+  "status": "TRADEOFF_SCREEN_NOT_SELECTED",
+  "source": "https://www.grepow.com/wearables/smart-shoes.html",
+  "candidate": {
+    "model": "GRP2442RR",
+    "nominal_voltage_V": 3.7,
+    "capacity_mAh": 200,
+    "published_discharge_C": 2,
+    "derived_discharge_mA": 400,
+    "published_cell_dimensions_mm": [
+      24,
+      24,
+      4.2
+    ],
+    "shape": "round button cell"
+  },
+  "mechanical_screen": {
+    "existing_case_mm": [
+      23,
+      25,
+      14.81
+    ],
+    "candidate_lower_bound_case_mm": [
+      27,
+      27,
+      13.01
+    ],
+    "assumptions": "24mm cell +0.5mm clearance each side +1mm wall each side; thickness14.81-(6-4.2). Excludes protection/NTC/wires/tolerance/retention, not a fit-checked design.",
+    "bounding_volume_change_percent": 11.4,
+    "issue": "Current through-board microphone bore would intersect centered24mm battery footprint; needs mic/acoustic-path redesign. Do not reuse existing case."
+  },
+  "power_screen": {
+    "usable_fraction_assumed": 0.7,
+    "16h_average_budget_mA": 8.75,
+    "existing_100mAh_budget_mA": 4.375,
+    "note": "Capacity assumption only, no16h runtime proof.400mA published cell discharge does not qualify finished pack.200mA TPS7A02 still inadequate for218mA reference card."
+  },
+  "procurement_missing": [
+    "small quantity availability",
+    "NTC/protection/harness maximum dimensions",
+    "signed datasheet including current-duration/temperature/voltage conditions",
+    "5/10Japan quote"
+  ],
+  "decision": "A larger footprint/thinner battery is a concrete tradeoff route if same-envelope current qualification fails, not yet a recommended replacement or production model."
+}

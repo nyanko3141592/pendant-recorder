@@ -1,0 +1,170 @@
+{
+  "status": "CONNECTED_GEOMETRY_CANDIDATE_NOT_RELEASE",
+  "source_sha256": "3a851028fb82162c8609f19b0dd82206dde4240f908963f8af3d5767cba4a1c8",
+  "escape_source_sha256": "a33744f8656caf7d3f5d2a6b00ea5d9a1591faf74a7c0424067c1f90a8872ed9",
+  "accepted": {
+    "layer": "In1.Cu",
+    "via_mm": [
+      11.75,
+      3.2
+    ],
+    "visited": 856,
+    "found": true,
+    "path_mm": [
+      [
+        11.75,
+        3.2
+      ],
+      [
+        16.9,
+        2.3
+      ],
+      [
+        19.7,
+        2.2
+      ],
+      [
+        20.1,
+        1.9
+      ],
+      [
+        21.3,
+        1.9
+      ]
+    ],
+    "bottom_escape_mm": [
+      [
+        12.75,
+        1.5
+      ],
+      [
+        12.35,
+        2.75
+      ],
+      [
+        11.75,
+        3.2
+      ]
+    ],
+    "unconnected": 0,
+    "violation_types": {
+      "missing_courtyard": 1,
+      "silk_edge_clearance": 1,
+      "silk_overlap": 1,
+      "silk_over_copper": 2
+    }
+  },
+  "attempts": [
+    {
+      "layer": "In4.Cu",
+      "via_mm": [
+        11.75,
+        3.2
+      ],
+      "visited": 370,
+      "found": false
+    },
+    {
+      "layer": "In4.Cu",
+      "via_mm": [
+        11.75,
+        3.25
+      ],
+      "visited": 370,
+      "found": false
+    },
+    {
+      "layer": "In2.Cu",
+      "via_mm": [
+        11.75,
+        3.2
+      ],
+      "visited": 290,
+      "found": false
+    },
+    {
+      "layer": "In2.Cu",
+      "via_mm": [
+        11.75,
+        3.25
+      ],
+      "visited": 290,
+      "found": false
+    },
+    {
+      "layer": "In3.Cu",
+      "via_mm": [
+        11.75,
+        3.2
+      ],
+      "visited": 307,
+      "found": false
+    },
+    {
+      "layer": "In3.Cu",
+      "via_mm": [
+        11.75,
+        3.25
+      ],
+      "visited": 307,
+      "found": false
+    },
+    {
+      "layer": "In1.Cu",
+      "via_mm": [
+        11.75,
+        3.2
+      ],
+      "visited": 856,
+      "found": true,
+      "path_mm": [
+        [
+          11.75,
+          3.2
+        ],
+        [
+          16.9,
+          2.3
+        ],
+        [
+          19.7,
+          2.2
+        ],
+        [
+          20.1,
+          1.9
+        ],
+        [
+          21.3,
+          1.9
+        ]
+      ],
+      "bottom_escape_mm": [
+        [
+          12.75,
+          1.5
+        ],
+        [
+          12.35,
+          2.75
+        ],
+        [
+          11.75,
+          3.2
+        ]
+      ],
+      "unconnected": 0,
+      "violation_types": {
+        "missing_courtyard": 1,
+        "silk_edge_clearance": 1,
+        "silk_overlap": 1,
+        "silk_over_copper": 2
+      }
+    }
+  ],
+  "limits": [
+    "Schematic parity and thermistor/R13 substitutions remain unresolved.",
+    "Library/courtyard/silk violations are not accepted for manufacturing and must be repaired.",
+    "No runtime, thermal, SI, solder process or case-fit qualification."
+  ]
+}

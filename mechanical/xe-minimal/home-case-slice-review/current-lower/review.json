@@ -1,0 +1,82 @@
+{
+  "part": "current-lower",
+  "source": "offset-pack-lower-trial.step",
+  "source_sha256": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b",
+  "stl_sha256": "f3049e4c3c521f97962d8e21a5db674a37e3913dead1f34f7df41433add1579b",
+  "3mf_sha256": "5617c3ac2f2daf1176448f4c8bc64981e02759ad2fe476b6b15ee6fad0c4afe9",
+  "first_layer_mm": 0.28,
+  "regular_layer_mm": 0.16,
+  "CAD_height_mm": 8.120000000000001,
+  "translation_mm": [
+    1.1000000000000014,
+    28.3,
+    7.720000000000001
+  ],
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 369,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 20,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 31.229948043823242,
+          "Custom": 34.72152328491211,
+          "Gap infill": 36.244667053222656,
+          "Inner wall": 4.580585956573486,
+          "Internal solid infill": 26.845050811767578,
+          "Outer wall": 325.53033447265625,
+          "Overhang wall": 1.8593554496765137,
+          "Top surface": 18.390167236328125,
+          "Travel": 65.75149536132812,
+          "Undefined": 50.15543746948242
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 1.6408510208129883,
+            "total_used_g": 1.6408510208129883
+          }
+        ],
+        "generate_support_material_time": 8,
+        "id": 1,
+        "infill_time": 11,
+        "layer_filament_change": 0,
+        "main_predication": 510.4633483886719,
+        "make_perimeters_time": 30,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 29.60000228881836,
+              "height": 8.119999885559082,
+              "width": 26.19999885559082,
+              "x": 76.9000015258789,
+              "y": 75.19999694824219,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "current-lower.stl",
+            "triangle_count": 10700
+          }
+        ],
+        "sliced_time": 156,
+        "sliced_time_with_cache": 103,
+        "total_predication": 529.55859375,
+        "triangle_count": 10700,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 2
+  },
+  "profile_sha256": {
+    "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+    "process": "1ba02a9216d27f2d4d7d44e2fdf0b481608a2f2280558cbdf5a928046c17b036",
+    "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+  }
+}

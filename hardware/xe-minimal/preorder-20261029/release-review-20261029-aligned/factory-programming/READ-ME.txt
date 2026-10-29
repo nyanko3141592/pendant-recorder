@@ -1,0 +1,13 @@
+現4層候補の工場書込み入力（未完成）
+
+current-j3-interface.jsonは現PCBから抽出した表面J3の実座標。pin1 V3V3=VTREF、2 SWDIO、3 NRST、4 SWCLK、5 GND。実治具・接触・通電方式は未認定。
+manifestと5台記録はテンプレートであり、書込み用binaryは含まない。リンク確認用NOT-FOR-FLASH ELF、仮USB ID、仮停止電圧を工場用へ転用しない。
+readiness.jsonの不足入力が揃ってから現sourceをbuildし、image/ELF/MAP hash、BOR4、readback、reset時charge request、storage rail状態を記録する。購入者の秘密鍵も公開鍵も工場へ渡さない。
+
+媒体読戻しの読み取り専用検査
+python3 verify_factory_storage.py /absolute/path/to/readback.img
+通常ファイルの完全なFAT32 superfloppyイメージのみ受け付ける。512-byte sector/4KiB cluster/2 FATの一致、全ファイルの割当、孤立/循環/重複領域、30h用の残容量を検査。終了0は容量・割当検査のみ合格。媒体上のフォーマットや書込みはしない。PENDANT.JSONの内容、ファイル名LFN、実媒体信頼性・暗号化録音の合格ではない。既存割当を除いた空き226997clusters以上を要求し、REC用85clustersを追加予約する保守的判定。
+
+空媒体イメージの新規生成（既存パス上書き不可）
+python3 create_factory_storage_image.py /absolute/path/to/new.img --sectors MEASURED_SECTOR_COUNT
+sector数は実媒体のaddressable容量から取得する。1882812は試験用値であり製品保証値ではない。生成後に同梱verify_factory_storage.pyで容量と割当を検査する。空イメージに機器ID/鍵は含まれない。実媒体書込み・identity設定・完全読戻しは別工程で未実施。

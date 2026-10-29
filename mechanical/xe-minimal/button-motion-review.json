@@ -1,0 +1,127 @@
+{
+  "status": "SAMPLED_MOTION_SCREEN_NOT_FORCE_OR_OVERTRAVEL_QUALIFICATION",
+  "sources": {
+    "button-accessible-plunger-trial.step": "ac770f2da8330cd38b765c0456d187febe2fc52521201a80286ddc63da0437c4",
+    "button-accessible-upper-case-trial.step": "381c853e90535b0d0fa700968e4454a97fe3c503f471f15e21c135808a783f0c",
+    "tmux-candidate-integrated-board.step": "cb9fe5974afeb5bed5dba6a2cb542430b592ab98ef1424a1530665a7f1150a5d"
+  },
+  "samples": [
+    {
+      "travel_mm": 0.0,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.0,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.05,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.0,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.1,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.0,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.15,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.0,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.2,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.0,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.25,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.0,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.3,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.011557855808603726,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.35,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.050806130424087076,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.4,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.09007613061310465,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.45,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.1293460387724976,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.5,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.16861594695836082,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.55,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.20788585511777766,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.6,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.2471557633417022,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.65,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.28642567138999636,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.7,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.3256955796605622,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    },
+    {
+      "travel_mm": 0.75,
+      "case_intersection_mm3": 0.0,
+      "rigid_board_intersection_mm3": 0.36496548779366683,
+      "intersection_outside_actuator_screen_mm3": 0.0
+    }
+  ],
+  "actuator_screen": {
+    "center_step_xy_mm": [
+      15.725,
+      -5.975
+    ],
+    "radius_mm": 0.9,
+    "z_mm": [
+      0.8264,
+      2.8264
+    ],
+    "qualification": "Region of expected switch contact, not permission for rigid penetration"
+  },
+  "max_case_intersection_mm3": 0.0,
+  "max_non_actuator_intersection_mm3": 0.0,
+  "limitations": [
+    "Rigid switch model cannot simulate its travel, return force or allowable compression",
+    "Sampled positions are not a continuous swept-solid proof",
+    "No solder, case or plunger tolerance expansion",
+    "Return spring and hard stop remain undesigned",
+    "Do not infer safe0.75mm switch compression from total pusher travel"
+  ]
+}

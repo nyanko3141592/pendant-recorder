@@ -1,0 +1,41 @@
+{
+  "status": "ADOPTED_DESIGN_NOT_HARDWARE_QUALIFIED",
+  "evidence_hashes": {
+    "docs/requirements.md": "444db0a97b9d689ff0e6b6b9dd00f2772aa7b997d056e48f25861661aaf12f2d",
+    "docs/v1-scope.md": "8c71d3e13b3ddc6c1dcd0019e5c05b43e882556b246b150b483855746d0d9b82",
+    "firmware/stm32/board/system_clock.c": "d99a5c409c44e9a77a1e90e14b24656364a1c0fbf1983377ba68bc69d556b7fd",
+    "firmware/stm32/board/usb_board.c": "9954b91cb12345c1652fd2ac97120cc0337cdbe8dd3eeafcdf6fcf1d0e5b2a6b",
+    "firmware/stm32/board/stm32u5xx_hal_conf.h": "2a2fb3c0c0813dfb1c2ae84a6756132998117e7db10b626aab22fc9454c71cbd",
+    "firmware/stm32/app/main.c": "46190692b3f27a4e7d39b308f2d80842a610ec830d2abbcdd64cc35f98e7cd91",
+    "firmware/stm32/board/audio_adf.c": "c85d5772e81be2a2bf9b8394ac15f2980287d86ff4a1770cc116dae3b9b843d4"
+  },
+  "findings": [
+    "Requirements and scope reviewed contain no mandatory calendar RTC/timestamp feature.",
+    "System clock startup uses HSI16.",
+    "USB CRS synchronization source is USB.",
+    "HAL RTC module is commented out.",
+    "No board C/H implementation configuring LSE/RTC found; LSE frequency macros alone do not enable oscillator."
+  ],
+  "proposal": "Evaluate removing Y1 and C11/C12 plus LSE routing, preserving required continuous recording, USB, encryption and storage functions.",
+  "benefit": "Three fewer parts and removal of two oscillator routes in crowded area.",
+  "required_before_adoption": [],
+  "not_claimed": [
+    "No measured runtime benefit.",
+    "No complete routing or enclosure-fit proof yet."
+  ],
+  "audio_clock_review": {
+    "source": "MSIK",
+    "nominal_hz": 3072000,
+    "output_divider": 4,
+    "decimation": 48,
+    "nominal_sample_rate_hz": 16000,
+    "mode": "ASYNC_CONT; sound activity detection disabled",
+    "LSE_dependency_in_audio_configuration": false,
+    "qualification": "Source review only; actual audio frequency and tolerance unmeasured."
+  },
+  "adoption_evidence": "no-lse-candidate/adoption-readiness.json",
+  "remaining_qualification": [
+    "Measure audio frequency and complete system current",
+    "Complete enclosure, manufacturing process and prototype validation"
+  ]
+}

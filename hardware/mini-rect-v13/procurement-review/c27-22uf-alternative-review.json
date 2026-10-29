@@ -1,0 +1,37 @@
+{
+  "status": "CAPACITY_PROMISING_POWER_QUALIFICATION_OPEN",
+  "part": "CL10A226MQ8NRNC",
+  "nominal_uF": 22,
+  "source": "https://product.samsungsem.com/mlcc/CL10A226MQ8NRN.do",
+  "source_html_sha256": "361f8b5cca076dac13dc4118910a4fec510fcf93146ebfb3d7586e47fca88881",
+  "voltage_v": 3.3,
+  "interpolation_bracket": [
+    [
+      3.2464749999999998,
+      -54.86064948956106
+    ],
+    [
+      3.3367999999999998,
+      -56.09569444068348
+    ]
+  ],
+  "typical_uF": 9.769646629905843,
+  "typical_times_tolerance_minus20_uF": 7.815717303924675,
+  "inrush_screen": {
+    "source": "https://www.ti.com/lit/gpn/tps22916",
+    "formula": "I=C*dV/dt",
+    "typical_slew_at_3_6V_mV_per_us": 3.2,
+    "nominal22uF_current_mA": 70.4,
+    "nominal_plus20percent_current_mA": 84.48,
+    "scope": "Illustrative 3.6V typical slew and low-bias nominal capacitor; not actual 3.3V startup prediction or guaranteed maximum"
+  },
+  "procurement": "LCSC C59461 lead; JLC C59461 page unavailable, Assembly C9900273674 is not accepted as procurement ID",
+  "decision": "Do not adopt yet; examine supply ramp/current budget and exact card load first",
+  "limitations": [
+    "25C typical capacitance curve only",
+    "Temperature/aging/guaranteed minimum unresolved",
+    "Maximum body height up to1mm requires mechanical envelope check",
+    "50mA battery candidate cannot be declared compatible from this screen",
+    "No BOM or board change"
+  ]
+}

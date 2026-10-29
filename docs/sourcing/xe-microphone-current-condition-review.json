@@ -1,0 +1,40 @@
+{
+  "status": "MICROPHONE_CURRENT_CONDITION_AUDIT_NOT_MEASUREMENT",
+  "part": "IM69D130V01XTSA1",
+  "source": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-im69d130-datasheet-en.pdf",
+  "revision": "1.0 2017-12-19",
+  "datasheet_conditions": {
+    "table": 5,
+    "page": 8,
+    "VDD_V": 1.8,
+    "TA_C": 25,
+    "DATA_load": "none",
+    "clock_kHz": 768,
+    "typical_mA": 0.3,
+    "maximum_mA": 0.38
+  },
+  "actual_design": {
+    "supply_net": "/V3V3",
+    "pin": 2,
+    "nominal_supply_V": 3.3,
+    "configured_clock_kHz": 768,
+    "configured_audio_rate_Hz": 16000
+  },
+  "source_sha256": {
+    "hardware/xe-minimal/film-integration-trial/identity-netlist.xml": "2fb7e59b665737b9a0a3a5f9cb13b7c2a1b7b6f8e77178223b1ffc2ce543fcef",
+    "firmware/stm32/board/audio_adf.c": "c85d5772e81be2a2bf9b8394ac15f2980287d86ff4a1770cc116dae3b9b843d4",
+    "firmware/stm32/board/audio_adf.h": "45418230d4bfc7a3cd5c2f6733504700148c99751af7149b6c7a12f099878f5c"
+  },
+  "conclusion": "Clock matches the low-power mode, but the published0.38mA maximum cannot be applied as a guaranteed3.3V loaded-output/full-temperature limit. Do not subtract0.38 from2.8mA and declare the remainder a validated MCU budget.",
+  "budget_effect": {
+    "existing_base_allocation_mA": 2.8,
+    "revised_validated_base_mA": null,
+    "unchanged_pending_measurement": true
+  },
+  "required_evidence": [
+    "Microphone rail current at actual3.3V tolerance, clock and output load over intended temperature range.",
+    "Separate MCU GPIO clock-drive load from microphone DATA output-drive current to avoid double counting.",
+    "MCU/core+ADF+DMA+oscillator+codec+crypto duty and analog/protection/regulator currents remain independent line items."
+  ],
+  "not_adopted": "No microphone, rail voltage or audio configuration change."
+}

@@ -1,0 +1,561 @@
+CSNP4GCR01-DPW
+
+
+
+    Version：V1.0
+     Aug05, 2024
+                                CSNP4GCR01-DPW
+Revision History
+
+        Version      Date       Description
+         V1.0      05/08/2024   Origin Draft
+                                                                                                      CSNP4GCR01-DPW
+                                                               Contents
+REVISION HISTORY ......................................................................................................................... I
+1. INTRODUCTION ........................................................................................................................... 1
+  1.1 OVERVIEW.................................................................................................................................. 1
+  1.2 FEATURES .................................................................................................................................. 1
+  1.4 BLOCK DIAGRAM ......................................................................................................................... 1
+2. PRODUCT SPECIFICATIONS ...................................................................................................... 2
+  2.1 PIN ASSIGNMENTS (TOP VIEW) .................................................................................................... 2
+  2.2 PACKAGE DIMENSIONS ................................................................................................................ 2
+3. PERFORMANCE .......................................................................................................................... 4
+4. DC CHARACTERISTICS .............................................................................................................. 5
+5. AC CHARACTERISTICS .............................................................................................................. 6
+  5.1 BUS TIMING (DEFAULT MODE) ...................................................................................................... 6
+  5.2 BUS TIMING (HIGH-SPEED MODE) ................................................................................................ 6
+6. SDNAND INITIALIZATION ........................................................................................................... 8
+7. DATA TRANSFER MODE ............................................................................................................. 9
+8. SDNAND REGISTERS ............................................................................................................... 10
+  8.1 OCR REGISTER ........................................................................................................................ 10
+  8.2 CID REGISTER .......................................................................................................................... 11
+  8.3 CSD REGISTER ........................................................................................................................ 11
+  8.4 RCA REGISTER ......................................................................................................................... 12
+  8.5 DSR REGISTER......................................................................................................................... 12
+  8.6 SCR REGISTER......................................................................................................................... 12
+9. POWER UP ................................................................................................................................. 14
+  9.2 POWER UP TIME ....................................................................................................................... 14
+    9.2.1Power On or Power Cycle ................................................................................................. 14
+    9.2.2 Power Supply Ramp Up ................................................................................................... 15
+10. REFERENCE DESIGN ............................................................................................................. 16
+                                                                                             CSNP4GCR01-DPW
+
+   1. Introduction
+   1.1 Overview
+    CSNP4GCR01-DPW is an 4Gb density of embedded storage based on NAND Flash and SD controller. This product has many
+advantages comparing to raw NAND, it has embedded bad block management, and stronger embedded ECC. Even on abnormal
+power down it still keep your data safely.
+    CSNP4GCR01-DPW is LGA-8 package. The size is 8mm x 6mm x0.8mm.
+
+   1.2 Features
+    l     Interface: Standard SD Specification Version 2.0 with 1-I/O and 4-I/O.
+    l     Power supply: Vcc = 2.7V - 3.6V
+    l     Default mode: Variable clock rate 0 - 25 MHz, up to 12.5 MB/sec interface speed (using 4 parallel data lines)
+    l     High-Speed mode: Variable clock rate 0 - 50 MHz, up to 25 MB/sec interface speed (using 4 parallel data lines)
+
+    l     Operating Temperature: -40°C to +85°C
+    l     Storage Temperature: -55°C to +125°C
+    l     Standby Current：< 100uA
+    l     Switch function command supports High-Speed, eCommerce, and future functions
+    l     Correction of memory field errors
+    l     Content Protection Mechanism - Complies with highest security of SDMI standard.
+    l     Password Protection of SDNAND (CMD42 - LOCK_UNLOCK)
+    l     Write Protect feature using mechanical switch
+    l     Built-in write protection features (permanent and temporary)
+    l     Application specific commands
+    l     Comfortable erase mechanism
+
+   1.4 Block Diagram
+
+
+
+
+                                                                     1
+                                                                                                CSNP4GCR01-DPW
+
+ 2. Product Specifications
+ 2.1 Pin Assignments (Top View)
+
+
+
+
+PIN#                           SD MODE                                                         SPI MODE
+             NAME            TYPE1   DESCRIPTION                             NAME           TYPE     DESCRIPTION
+ 1            SDD2            I/O/PP            Data Line [Bit2]               RSV                             Reserved
+                       2             3                                                          3
+ 2         CD/SDD3            I/O/PP           SDNAND Detect/                   CS             I         Chip Select (Neg True)
+                                                Data Line [Bit3]
+ 3            SCLK               I                   Clock                    SCLK             I                 Clock
+ 4             VSS               S           Supply Voltage Ground             VSS            S          Supply Voltage Ground
+ 5            CMD               PP            Command/Response                  DI             I                Data In
+ 6            SDD0            I/O/PP            Data Line [Bit0]               DO            O/PP              Data Out
+ 7            SDD1            I/O/PP            Data Line [Bit1]               RSV                             Reserved
+ 8            VCC                S              Supply Voltage                VCC               S           Supply Voltage
+     1) S: power supply; I: input; O: output using push-pull drivers; PP: I/O using push-pull drivers;
+     2) The extended SDD lines (SDD1-SDD3) are input on power up. They start to operate as SDD lines after
+     SET_BUS_WIDTH command. The Host shall keep its own SDD1-SDD3 lines in input mode, as well,
+     while they are not used. It is defined so, in order to keep compatibility to SDNAND.
+
+ 2.2 Package Dimensions
+
+
+
+
+                                                               TOP VIEW
+
+
+
+
+                                                              SIDE VIEW
+
+
+
+
+                                                                        2
+                                                       CSNP4GCR01-DPW
+
+
+                 Common Dimensions
+Symbol   Min               Nom              Max             Note
+  b      0.65              0.70             0.75
+   L     0.75              0.80             0.85
+  B        -            1.27(Typ)             -
+  C      6.90              7.00             7.10
+  D      7.90              8.00             8.10
+  E      5.90              6.00             6.10
+  H      0.75              0.80             0.85
+  M      -               3.5(Typ)            -
+  N      -               2.5(Typ)            -
+                SDNAND Package Dimensions (unit: mm)
+
+
+
+
+                                    3
+                                                                         CSNP4GCR01-DPW
+
+3. Performance
+
+
+                 Test Item                                  Test Mode                            Result
+
+                                                      Sequential Read (MB/s)                     23.40
+         HD Bench (100MB)
+                                                      Sequential Write (MB/s)                    19.20
+
+                                                      Sequential Read (MB/s)                     23.88
+      Crystal Disk Mark (100MB)
+                                                      Sequential Write (MB/s)                    18.24
+
+                                                      Random Read (IOPS)                        1185.42
+          IO Meter (100MB)
+                                                      Random Write (IOPS)                        110.41
+
+                                                      Sequential Read (MB/s)                     24.25
+                Test Metrix
+                                                      Sequential Write (MB/s)                    19.01
+
+                                                      Sequential Read (MB/s)                      21.4
+                  H2test
+                                                      Sequential Write (MB/s)                     17.5
+
+
+
+     Parameter                                                Range
+
+                                   Work Model                                     -40°~ 85℃
+    Temperature
+                                  Storage Model                                  -55°~ 125℃
+
+                                   Work Model                              8% to 95%, Non-condensing
+     Humidity
+                                  Storage Model                            8% to 95%, Non-condensing
+
+
+
+
+                                                  4
+                                                                  CSNP4GCR01-DPW
+
+4. DC Characteristics
+
+
+Symbol       PARAMETER              CONDITIONS           MIN      TYP      MAX      UNITS
+
+ VIL        Input low voltage                          VSS-0.3           0.25VCC     V
+
+ VIH       Input high voltage                          0.625VCC          VCC+0.3     V
+                                     IOL=100μA
+ VOL       Output low voltage                                            0.125VCC    V
+                                     @VCC_min
+                                     IOH=100μA
+ VOH       Output high voltage                         0.75VCC                       V
+                                     @VCC_min
+  IIN     Input leakage current     VIN=VCC or 0         -10      +/-1      10       μA
+         Tri-state output leakage
+ IOUT                                                    -10      +/-1      10       μA
+                 current
+                                    3.3V@clock
+ ISTBY      Standby current                                       70       100       μA
+                                        stop
+                                    3.3v@50MHz
+ IOP        Operation current                                     15        30       mA
+                                       (Write)
+                                    3.3v@50MHz
+                                                                  15        30       mA
+                                       (Read)
+
+
+
+
+                                                   5
+                                                     CSNP4GCR01-DPW
+
+5. AC Characteristics
+5.1 Bus Timing (Default Mode)
+
+
+
+
+SYMBOL            PARAMETER          MIN       MAX     UNIT     NOTE
+  FSD           SD clock frequency    0        25      MHz
+  TWL             Clock low time     10                 ns
+  TWH            Clock high time     10                 ns
+  TTLH            Clock rise time              10       ns
+  TTHL            Clock fall time              10       ns
+  TISU           Input setup time     5                 ns
+  TIH             Input hold time     5                 ns
+ TODLY          Output delay time     0        14       ns
+
+5.2 Bus Timing (High-speed Mode)
+
+
+
+
+                                           6
+                                              CSNP4GCR01-DPW
+
+SYMBOL     PARAMETER          MIN       MAX     UNIT     NOTE
+ FSD     SD clock frequency    0        50      MHz
+ TWL       Clock low time     10                 ns
+ TWH      Clock high time     10                 ns
+ TTLH      Clock rise time              10       ns
+ TTHL      Clock fall time              10       ns
+ TISU     Input setup time     5                 ns
+  TIH      Input hold time     5                 ns
+ TODLY   Output delay time     0        14       ns
+ TOH      Output hold time    2.5                ns
+
+
+
+
+                                    7
+                                                                                                 CSNP4GCR01-DPW
+
+   6. SDNAND Initialization
+    After the bus is activated the host starts SDNAND initialization and identification process. The initialization process starts with
+SD_ SEND_OP_COND (ACMD41) by setting its operational conditions and the HCS bit in the OCR. The HCS (Host Capacity
+Support) bit set to 1 indicates that the host supports High Capacity SDNAND. The HCS (Host Capacity Support) bit set to 0 indicates
+that the host does not support High Capacity SDNAND.
+    Receiving of CMD8 expands the ACMD41 function; HCS in the argument and CCS (SDNAND Capacity Status) in the response.
+HCS is ignored by SDNANDs, which didn’t respond to CMD8. However, the host should set HCS to 0 if the SDNAND returns no
+response to CMD8. Standard Capacity SDNAND ignores HCS. If HCS is set to 0, High Capacity SDNAND never return ready statue
+(keep busy bit to 0). The busy bit in the OCR is used by the SDNAND to inform the host that initialization of ACMD41 is completed.
+Setting the busy bit to 0 indicates that the SDNAND is still initializing. Setting the busy bit to 1 indicates completion of initialization.
+The host repeatedly issues ACMD41 until the busy bit is set to 1.
+    The SDNAND checks the operational conditions and the HCS bit in the OCR only at the first ACMD41. While repeating ACMD41,
+the host shall not issue another command except CMD0.
+    If the SDNAND responds to CMD8, the response of ACMD41 includes the CCS field information. CCS is valid when the
+SDNAND returns ready (the busy bit is set to 1). CCS=1 means that the SDNAND is a High Capacity SDNAND.
+    CCS=0 means that the SDNAND is a Standard Capacity SDNAND.
+    The host performs the same initialization sequence to all of the new SDNANDs in the system. Incompatible SDNANDs are sent
+into Inactive State. The host then issues the command ALL_SEND_CID (CMD2), to each SDNAND to get its unique SDNAND
+identification (CID) number. SDNAND that is unidentified (i.e. which is in Ready State) sends its CID number as the response (on the
+CMD line). After the CID was sent by the SDNAND it goes into Identification State. Thereafter, the host issues CMD3
+(SEND_RELATIVE_ADDR) asks the SDNAND to publish a new relative SDNAND address (RCA), which is shorter than CID and
+which is used to address the SDNAND in the future data transfer mode. Once the RCA is received the SDNAND state changes to the
+Stand-by State. At this point, if the host wants to assign another RCA number, it can ask the SDNAND to publish a new number by
+sending another CMD3 command to the SDNAND. The last published RCA is the actual RCA number of the SDNAND.
+    The host repeats the identification process, i.e. the cycles with CMD2 and CMD3 for each SDNAND in the system.
+
+
+
+
+                                       SDNAND Initialization and Identification Flow
+
+
+
+
+                                                                         8
+                                                                                           CSNP4GCR01-DPW
+
+   7. Data Transfer Mode
+    Until the end of SDNAND Identification Mode the host shall remain at FOD frequency because some SDNAND may have
+operating frequency restrictions during the SDNAND identification mode. In Data Transfer Mode the host may operate the SDNAND
+in f PP frequency range. The host issues SEND_CSD (CMD9) to obtain the SDNAND Specific Data (CSD register), e.g. block length,
+SDNAND storage capacity, etc.
+    The broadcast command SET_DSR (CMD4) configures the driver stages of all identified SDNAND. It programs their DSR
+registers corresponding to the application bus layout (length) and the number of SDNAND on the bus and the data transfer frequency.
+The clock rate is also switched from FOD to FPP at that point. SET_DSR command is an option for the SDNAND and the host.
+
+
+
+
+                                     SDNAND State Diagram (data transfer mode)
+
+
+
+
+                                                                    9
+                                                                                            CSNP4GCR01-DPW
+
+   8. SDNAND Registers
+    Six registers are defined within the SDNAND interface: OCR, CID, CSD, RCA, DSR and SCR. These can be accessed only by
+corresponding commands. The OCR, CID, CSD and SCR registers carry the SDNAND/content specific information, while the RCA
+and DSR registers are configuration registers storing actual configuration parameters. In order to enable future extension, The
+SDNAND shallreturn0inthereserved bits of the registers.
+
+ Name            Width                                                    Description
+  CID            128                 SDNAND identification number; SDNAND individual number for identification
+                               Relative SDNAND address; local system address of a SDNAND, dynamically suggested by
+ RCA1             16
+                                            the SDNAND and approved by the host during initialization
+  DSR             16                         Driver Stage Register; to configure the SDNAND’s output drivers
+  CSD            128                  SDNAND Specific Data; information about the SDNAND operation conditions
+  SCR             64           SD Configuration Register; information about the SDNAND’s Special Features capabilities
+  OCR             32                                            Operation conditions register.
+  SSR            512                          SD Status; information about the SDNAND proprietary features
+  CSR             32                             SDNAND Status; information about the SDNAND status
+                                                      SDNAND Registers
+   8.1 OCR register
+    The32-bit operation conditions register stores the VCC voltage profile of the SDNAND. Additionally, this register includes status
+information bits. One status bit is set if the SDNAND power up procedure has been finished. This register includes another status bit
+indicating the SDNAND capacity status after set powerup status bit. The OCR register shall be implemented by the SDNAND. The
+32-bit operation conditions register stores the VCC voltage profile of the SDNAND. Bit 7 of OCR is newly defined for Dual Voltage
+SDNAND and set to0 in default. If a Dual Voltage SDNAND does not receive CMD8, OCR bit 7in the response indicates 0, and the
+Dual Voltage SDNAND which received CMD8, sets this bit to1. Additionally, this register includes 2 more status information bits. Bit
+31 - SDNAND power up status bit, this status bit is set if the SDNAND power up procedure has been finished. Bit30 - SDNAND
+capacity status bit, this status bit is set to 1 if SDNAND is High Capacity SDNAND.0 indicates that the SDNAND is Standard Capacity
+SDNAND. The SDNAND Capacity status bit is valid after the SDNAND power up procedure is completed and the SDNAND powerup
+status bit is set to 1. The Host shall read this status bit to identify a Standard or High Capacity SDNAND. The OCR register shall be
+implemented by the SDNANDs.
+                                                                                                     Initial Value
+   OCR bit position                       VCC voltage window
+                                                                                                         4Gb
+                                                                                                     “0” = busy
+          31                      SDNAND powerup status bit (busy)
+                                                                                                     “1” = ready
+                                                                                                   “0” =SDNAND
+          30                           SDNAND Capacity Status
+                                                                                           “1” = SDHC Memory SDNAND
+         29-25                                 Reserved                                                 All ‘0’
+          24                       Switching to1.8V Accepted (S18A)                                       0
+          23                                     3.6-3.5                                                  1
+          22                                     3.5-3.4                                                  1
+          21                                     3.4-3.3                                                  1
+          20                                     3.3-3.2                                                  1
+          19                                     3.2-3.1                                                  1
+          18                                     3.1-3.0                                                  1
+
+
+                                                                    10
+                                                                                            CSNP4GCR01-DPW
+
+           17                                       3.0-2.9                                                1
+           16                                       2.9-2.8                                                1
+           15                                       2.8-2.7                                                1
+           14                                    Reserved                                                  0
+           13                                    Reserved                                                  0
+           12                                    Reserved                                                  0
+           11                                    Reserved                                                  0
+           10                                    Reserved                                                  0
+           9                                     Reserved                                                  0
+           8                                     Reserved                                                  0
+           7                        Reserved for Low Voltage Range                                         0
+           6                                     Reserved                                                  0
+           5                                     Reserved                                                  0
+           4                                     Reserved                                                  0
+          3-0                                    Reserved                                                All ‘0’
+
+   8.2 CID register
+    The SDNAND Identification (CID) register is 128 bits wide. It contains the SDNAND identification information used during the
+SDNAND identification phase. Every individual Read/Write (RW) SDNAND shall have a unique identification number. The structure
+of the CID register is defined in the following paragraphs:
+                                                                                                        Initial Value
+                  Name                        Field       Width       CID-slice
+                                                                                                             4Gb
+            Manufacturer ID                   MID             8      [127:120]                                 66
+          OEM/Application ID                  OID             16      [119:104]                             2346
+               Product name                   PNM             40      [103:64]                             CS041
+            Product revision                  PRV             8        [63:56]                                 01
+         Product serial number                PSN             32       [55:24]                   (a) (Product serial number)
+                 Reserved                       -             4        [23:20]                             All “0b”
+          Manufacturing date                  MDT             12         [19:8]                    (a)(Manufacture date)
+            CRC7 checksum                     CRC             7          [7:1]                           (b)(CRC)
+          Not used, always 1                    -             1          [0:0]                                 1b
+
+
+
+
+   8.3 CSD Register
+    The SDNAND-Specific Data register provides information regarding access to the SDNAND contents.
+The CSD defines the data format, error correction type, maximum data access time, whether the DSR register can be used, etc. The
+programmable part of the register (entries marked by W or E, see below) can be changed by CMD27. The types of the entries in the
+table below are coded as follows: R = readable, W (1) = writable once, W = multiple writable.
+                 Name                                   Field               Width         Value             Cell Type      CSD-slice
+            CSD structure                      CSD_STRUCTURE                      2        00b                     R       [127:126]
+                Reserved                                  -                       6     00 0000b                   R       [125:120]
+       Data read access-time                           (TAAC)                     8     00001110b                  R       [119:112]
+   Data read access-time in CLK                        (NSAC)                     8    00000000b                   R       [111:104]
+
+
+
+                                                                    11
+                                                                                              CSNP4GCR01-DPW
+
+        Cycles (NSAC*100)
+       Max. data transfer rate                  (TRAN_SPEED)                   8          00110010b              R           [103:96]
+    SDNAND command classes                            CCC                     12            0xdf5h               R           [95:84]
+    Max. read data block length                 (READ_BL_LEN)                  4            1010b                R           [83:80]
+   Partial blocks for read allowed           (READ_BL_PARTIAL)                 1              1b                 R           [79:79]
+      Write block misalignment             (WRITE_BLK_MISALIGN)                1              0b                 R           [78:78]
+      Read block misalignment               (READ_BLK_MISALIGN)                1              0b                 R           [77:77]
+         DSR implemented                            DSR_IMP                    1              0b                 R           [76:76]
+             Reserved                                     -                    2             00b                 R           [75:74]
+             Device size                             C_SIZE                   12           0x3C3h                R           [73:62]
+             Reserved                                     -                   12               x                 R           [61:50]
+        Device size multiplier                   C_SIZE_MULT                   3             111b                R           [49:47]
+     Erase single block enable                 (ERASE_BLK_EN)                  1              1b                 R           [46:46]
+          Erase sector size                     (SECTOR_SIZE)                  7            0x7fh                R           [45:39]
+      Write protect group size                  (WP_GRP_SIZE)                  7            0x7fh                R           [38:32]
+     Write protect group enable               (WP_GRP_ENABLE)                  1              0b                 R           [31:31]
+             Reserved                                                          2             00b                 R           [30:29]
+         Write speed factor                     (R2W_FACTOR)                   3             010b                R           [28:26]
+    Max. write data block length               (WRITE_BL_LEN)                  4            1010b                R           [25:22]
+   Partial blocks for write allowed          (WRITE_BL_PARTIAL)                1              1b                 R           [21:21]
+             Reserved                                     -                    5           00000b                R           [20:16]
+          File format group                  (FILE_FORMAT_GRP)                 1              0b                 R           [15:15]
+          Copy flag (OTP)                             COPY                     1              0b              R/W(1)         [14:14]
+     Permanent write protection            PERM_WRITE_PROTECT                  1              0b              R/W(1)         [13:13]
+     Temporary write protection             TMP_WRITE_PROTECT                  1              0b               R/W           [12:12]
+             File format                        (FILE_FORMAT)                  2             00b                 R           [11:10]
+             Reserved                                     -                    2             00b                 R             [9:8]
+                CRC                                   CRC                      7          1010011b             R/W             [7:1]
+         Not used, always’1’                              -                    1              1b                 -             [0:0]
+
+   8.4 RCA register
+    The writable 16-bit relative SDNAND address register carries the SDNAND address that is published by the SDNAND during the
+SDNAND identification. This address is used for the addressed host-SDNAND communication after the SDNAND identification
+procedure. The default value of the RCA register is 0x0000. The value 0x0000 is reserved to set all SDNANDs into the Stand-by
+State with CMD7.
+
+   8.5 DSR register
+    The 16-bit driver stage register is described in detail in Chapter 6.5. It can be optionally used to improve the bus performance for
+extended operating conditions (depending on parameters like bus length, transfer rate or number of SDNANDs). The CSD register
+carries the information about the DSR register usage. The default value of the DSR register is 0x404.
+
+   8.6 SCR register
+    In addition to the CSD register, there is another configuration register named SDNAND Configuration Register (SCR). SCR
+provides information on the SDNAND's special features that were configured into the given card. The size of SCR register is 64 bits.
+This register shall be set in the factory by the SDNAND
+
+
+
+                                                                     12
+                                                                           CSNP4GCR01-DPW
+
+The following table describes the SCR register content.
+
+            Description                                     Field         Width      Cell Type       SCR Slice
+
+          SCR Structure                             SCR_STRUCTURE          4             R              [63:60]
+
+ SD Memory Card - Spec. Version                           SD_SPEC          4             R              [59:56]
+  DATA_STAT_AFTER_ERASE                        DATA_STAT_AFTER_ERASE       1             R              [55:55]
+       SD Security Support                            SD_SECURITY          3             R              [54:52]
+    DAT Bus widths supported                        SD_BUS_WIDTHS          4             R              [51:48]
+            Reserved                                          -            16            R              [47:32]
+Reserved for manufacturer usage                               -            32            R              [31:0]
+
+                                                   The SCR Fields
+      SCR_STRUCTURE                               SCR structure version   SD Physical Layer Specification Version
+               0                                   SCR version No. 1.0              Version 1.01-2.00
+              1-15                                        reserved
+
+                                         SCR Register Structure Version
+
+
+
+
+                                                                  13
+                                                                                              CSNP4GCR01-DPW
+
+  9. Power Up
+
+
+
+
+                                                       Power-up Diagram
+    'Power up time' is defined as voltage rising time from 0 volt to VCC min.
+    'Supply ramp up time' provides the time that the power is built up to the operating level (Host SupplyVoltage) and the time to wait
+until the SDNAND can accept the first command,
+    The host shall supply power to the SDNAND so that the voltage is reached to Vcc_min within 250ms andstart to supply at least
+74 SD clocks to the SDNAND with keeping CMD line to high.
+
+   9.2 Power Up Time
+    Host needs to keep power line level less than 0.5V and more than 1ms before power ramp up.
+
+
+
+
+   9.2.1Power On or Power Cycle
+    Followings are requirements for Power on and Power cycle to assure a reliable SDNAND hard reset.
+    (1) Voltage level shall be below 0.5V
+
+
+                                                                     14
+                                                                                            CSNP4GCR01-DPW
+
+    (2) Duration shall be at least 1ms.
+
+   9.2.2 Power Supply Ramp Up
+    The power ramp up time is defined from 0.5V threshold level up to the operating supply voltage which is stable between VCC
+(min.) and VCC (max.) and host can supply SDCLK.
+    Followings are recommendation of Power ramp up:
+    (1) Voltage of power ramp up should be monotonic as much as possible.
+    (2) The minimum ramp up time should be 0.1ms.
+    (3) The maximum ramp up time should be 35ms for 2.7-3.6V power supply.
+    When the host shuts down the power, the VCC shall be lowered to less than 0.5Volt for a minimum period of 1ms. During power
+down, DAT, CMD, and CLK should be disconnected or driven to logical 0 by the host to avoid a situation that the operating current is
+drawn through the signal lines.
+    If the host needs to change the operating voltage, a power cycle is required. Power cycle means the power is turned off and
+supplied again. Power cycle is also needed for accessing SDNAND that are already in Inactive State. To create a power cycle the
+host shall follow the power down description before power up the SDNAND (i.e. the VCC shall be once lowered to less than 0.5Volt
+for a minimum period of 1ms).
+
+
+
+
+                                                                    15
+                                                                                           CSNP4GCR01-DPW
+
+   10. Reference Design
+
+
+
+
+Note：
+RDAT and RCMD (10K~100 kΩ) are pull-up resistors protecting the CMD and the DAT lines against bus floating when SDNAND is in a
+
+high-impedance mode.
+
+The host shall pull-up all DAT0-3 lines by RDAT, even if the host uses the SDNAND as 1-bit mode only in SD mode. It is
+
+recommended to have 2.2uF capacitance on VCC.
+RCLK reference 0~120 Ω.
+
+
+
+
+                                                                   16
+

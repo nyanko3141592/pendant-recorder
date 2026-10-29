@@ -1,0 +1,380 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T08:20:46",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "panel.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [P6/V3V3] - P6_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 46.715
+                    },
+                    "uuid": "844bfc86-b7b0-4f79-b3e0-9042cececaca"
+                },
+                {
+                    "description": "パッド 5 [P6/GND] - P6_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 80.93,
+                        "y": 46.755
+                    },
+                    "uuid": "0a523d07-db40-4559-b593-0593fab9b1fc"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [P5/V3V3] - P5_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 53.45,
+                        "y": 46.715
+                    },
+                    "uuid": "899f5d64-4dbb-4230-b8bf-632605a52124"
+                },
+                {
+                    "description": "パッド 5 [P5/GND] - P5_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 54.93,
+                        "y": 46.755
+                    },
+                    "uuid": "8d767186-9124-495f-844a-c315619633f9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [P4/V3V3] - P4_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 27.45,
+                        "y": 46.715
+                    },
+                    "uuid": "102d3098-dd92-4ff1-bdeb-a79626985591"
+                },
+                {
+                    "description": "パッド 5 [P4/GND] - P4_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 28.93,
+                        "y": 46.755
+                    },
+                    "uuid": "4dc4bfe4-6b92-4c9b-9b36-7f575db96520"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [P1/V3V3] - P1_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 27.45,
+                        "y": 10.715
+                    },
+                    "uuid": "a11b782c-f687-402b-91f1-cb7e409ceddd"
+                },
+                {
+                    "description": "パッド 5 [P1/GND] - P1_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 28.93,
+                        "y": 10.755
+                    },
+                    "uuid": "f7417bf9-b8ef-4a09-ba5e-6c2c3dfcc7cd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [P3/V3V3] - P3_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 10.715
+                    },
+                    "uuid": "7cabe6fa-d984-48fb-97ae-001661e85c1f"
+                },
+                {
+                    "description": "パッド 5 [P3/GND] - P3_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 80.93,
+                        "y": 10.755
+                    },
+                    "uuid": "be0c5e18-dc71-45dc-97f5-59c2a77cb354"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "パッド 2 [P2/V3V3] - P2_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 53.45,
+                        "y": 10.715
+                    },
+                    "uuid": "b136a6f4-d8fc-46e1-89cf-1641f15934d2"
+                },
+                {
+                    "description": "パッド 5 [P2/GND] - P2_U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 54.93,
+                        "y": 10.755
+                    },
+                    "uuid": "7ad48855-2dd6-4055-9746-d32513caf139"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID3F",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "07f2b9c3-3e61-40bc-8ec5-50cae55eb715"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント PERF5",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "301f3fa8-bd6c-4c2a-9133-e646e10071e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TOOL1",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "3a4f3320-71ae-4b78-8585-ffbcb2c31f39"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TOOL3",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "6b411e49-c20f-4c99-b515-6c0497b4ff89"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID2F",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "70536f41-2752-4e25-9a65-c17ad5f6d855"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント PERF3",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "7538b423-5a3a-4053-9e84-a6192b1b55cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID1F",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "8e681618-6442-495a-80c9-64ea55587995"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント PERF2",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a1cfc762-ad19-4a0a-97fe-dc9b322bcf58"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント PERF6",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a31b1969-b1ec-4773-8d1b-4a39eebb4fff"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TOOL2",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "c5bf7d1d-c960-47b7-b90d-b33795f5b73f"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント PERF4",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "c790ee93-3e86-40c0-8f6b-d95b899e9df2"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント PERF1",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "f2b29dc4-9f26-4c24-a97b-d7403ef07866"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID1B",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "221fb197-a110-409c-87be-f5d433be550c"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID3B",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "7c0e6611-c117-4885-b4d1-e55a9726c485"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント FID2B",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "aa406e46-c39f-4557-a5fb-d0b9631574ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        }
+    ]
+}

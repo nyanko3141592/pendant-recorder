@@ -1,0 +1,93 @@
+{
+  "status": "LOCALIZED_SLICE_TRANSITIONS_NOT_FIT_APPROVAL",
+  "rows": [
+    {
+      "print_height_bracket_mm": [
+        7.56,
+        7.6
+      ],
+      "case_z_bracket_mm": [
+        -0.16000000000000103,
+        -0.120000000000001
+      ],
+      "commanded_layer_top_mm": 7.64,
+      "maximum_quantization_overrun_within_bracket_mm": 0.08000000000000007,
+      "removed_regions": [
+        {
+          "area_mm2": 1.7585631000507926,
+          "original_xy_bounds_mm": [
+            21.029999200000002,
+            -5.464720500000006,
+            22.83000029999999,
+            -3.665280100000011
+          ]
+        }
+      ]
+    },
+    {
+      "print_height_bracket_mm": [
+        7.68,
+        7.72
+      ],
+      "case_z_bracket_mm": [
+        -0.040000000000000924,
+        -8.881784197001252e-16
+      ],
+      "commanded_layer_top_mm": 7.8,
+      "maximum_quantization_overrun_within_bracket_mm": 0.1200000000000001,
+      "removed_regions": [
+        {
+          "area_mm2": 1.4999999999999998,
+          "original_xy_bounds_mm": [
+            -0.29999979999999893,
+            -3.7500007999999987,
+            0.7000002000000012,
+            -2.2500007999999987
+          ]
+        },
+        {
+          "area_mm2": 1.5,
+          "original_xy_bounds_mm": [
+            -0.29999980000000126,
+            -22.7499998,
+            0.700000199999999,
+            -21.2499998
+          ]
+        },
+        {
+          "area_mm2": 1.7999997000000008,
+          "original_xy_bounds_mm": [
+            20.250000399999998,
+            -27.499999800000005,
+            21.750000399999998,
+            -26.300000000000004
+          ]
+        },
+        {
+          "area_mm2": 1.5,
+          "original_xy_bounds_mm": [
+            23.299999600000003,
+            -8.750000800000002,
+            24.299999600000003,
+            -7.250000800000002
+          ]
+        }
+      ]
+    }
+  ],
+  "sources_sha256": {
+    "current-lower.3mf": "5617c3ac2f2daf1176448f4c8bc64981e02759ad2fe476b6b15ee6fad0c4afe9",
+    "review.json": "6f9adf94797f87445512fc72ac12169f49e4f356f62c2f5fe4c193ea4121a441"
+  },
+  "limits": [
+    "Bracketed transitions, not exact analytic CAD step heights",
+    "XY boxes enclose mesh difference regions",
+    "Layer-top minus lower bracket is a sensitivity bound, not measured print error"
+  ],
+  "identified_features": {
+    "first": "Annular support at21.93,-4.565; CAD top-.15",
+    "second": "Four PCB edge supports atleft3,left22,right8,rear21; CAD top0"
+  },
+  "fit_consequence": "PCB support print layer ends7.80mm above bed vs CAD board seating7.72mm: nominal +0.08mm. This consumes upper retention clearance and invalidates treating the CAD seating plane as printed datum.",
+  "next_action": "Evaluate finer layer grid while preserving adhesive-pocket depth; do not silently shift PCB in fit reports."
+}

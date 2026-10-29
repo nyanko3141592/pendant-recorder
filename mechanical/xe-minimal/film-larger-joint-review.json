@@ -1,0 +1,88 @@
+{
+  "status": "JOINT_ENVELOPE_EXPANSION_SCREEN_NOT_ADOPTED",
+  "sources_sha256": {
+    "lower": "53d63eef6437679eeb17338ea7464a2f98084a4add5ae08450ad5dcf48b22ca1",
+    "separator": "63d2986eb0404d397b91a6681831f76cec5bbb167c59b42b6f1fa5bc622deaac",
+    "board": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "rows": [
+    {
+      "width_mm": 0.9,
+      "height_mm": 0.8,
+      "center_z_mm": -1.92,
+      "checks": {
+        "lower": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.09999999999926512
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.09999999999968266
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.635
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.8120474912470683
+        }
+      },
+      "joint_to_joint_gap_mm": 0.8999999999999972
+    },
+    {
+      "width_mm": 1.1,
+      "height_mm": 1.0,
+      "center_z_mm": -1.92,
+      "checks": {
+        "lower": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.6050246640129043e-13
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.5349999999999999
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.7175719344300475
+        }
+      },
+      "joint_to_joint_gap_mm": 0.6999999999999962
+    },
+    {
+      "width_mm": 1.1,
+      "height_mm": 1.1,
+      "center_z_mm": -1.92,
+      "checks": {
+        "lower": {
+          "overlap_mm3": 0.3300000000000048,
+          "gap_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 1.6050246640129043e-13
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.4849999999999999
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "gap_mm": 0.7175719344300475
+        }
+      },
+      "joint_to_joint_gap_mm": 0.6999999999999962
+    }
+  ],
+  "limits": [
+    "Center placement held at wire axis; old .8 mm box was asymmetric vertically, so first row is a new centered comparison.",
+    "No realized wrap, minimum collar, pull strength or assembly path.",
+    "No geometry is changed by this screen."
+  ]
+}

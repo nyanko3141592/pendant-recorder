@@ -1,0 +1,50 @@
+{
+  "status": "PASS_COOPERATIVE_STORAGE_BOUNDARY_ARRIVALS_RAM_FAT32",
+  "command": "python3 firmware/stm32/tests/check_recording_end_to_end.py /tmp/pendant-host-tools/age --storage-arrivals",
+  "base_samples": 327680,
+  "injected_samples_during_encryption": 1024,
+  "decoded_samples": 331776,
+  "decoded_file_sample_counts": [
+    80000,
+    80000,
+    80000,
+    80000,
+    11776
+  ],
+  "ciphertext_sizes_bytes": [
+    41220,
+    41220,
+    41220,
+    41220,
+    6404
+  ],
+  "checks": [
+    "One1024-sample block at first begin completion, first write completion and before first commit, plus one at first encryption RNG callback; stage mask7 asserted.",
+    "Distinct nonzero storage-stage patterns preserve an observable sequence; cooperative pipeline pumps while saving flag is true.",
+    "All5 ordered decrypted encoded WAVs and imported PCM WAVs byte-match synchronous reference given identical arrivals.",
+    "Real codec/age/FatFs recording implementation in RAM FAT32; production host importer retry/deduplication and source preservation.",
+    "ASan and UBSan pass.",
+    "Temporary test-build wrappers preserve recording_session exact callback-identity checks; product firmware code unchanged."
+  ],
+  "limitations": [
+    "Callback-boundary injections only, not preemption inside FatFs or encryption instructions.",
+    "Four arrivals in the first transaction only; not continuous DMA cadence or real SD busy timing.",
+    "No actual ADC/interrupts, hardware SD, power measurement,36h capture or16h runtime proof.",
+    "Reference shares codec/importer and checks scheduling equivalence, not independent codec fidelity."
+  ],
+  "source_sha256": {
+    "tests/check_recording_end_to_end.py": "990506f2d8094477d90859aa6169d340c2a44768fbbe12d1a4d90c4b9e988186",
+    "core/cooperative_pipeline.c": "3fb70f71c0ebf57c3987c4d870398c4fffee6747177aa9d65f8550adc1f06edb",
+    "core/recording_pipeline.c": "0ad419bc7f1f3393ebad895f48af1e8c07aeb3243b4fd27f449b559f664fda4e",
+    "core/wav_chunk.c": "8f20f25da2777464a0acb81e610f405d083a585a3eb158a4bf1ae77f1388d2f8",
+    "crypto/age_writer.c": "5cae078a794c0a4f94ec6d936fcfe16b523c528d72f3e565b7568ef9ce9e523b",
+    "crypto/recording_store.c": "968fbc75c147c40d04107a0b6f8cd49782bc642a29a6666c23623a947b4be482",
+    "crypto/fatfs_recording.c": "8a3ca767b99bbbeac90913ea222aa84610db0cbd5b939bca1c4a65a51c956eaf",
+    "board/recording_session.c": "237ac206dd2a9c92f1f3c0bfcec82e79d7f8ccd5ae18be021a3e3057a57e283f",
+    "tests/test_fatfs_volume.c": "cc39c129f1b68bfa0a5add27e279a87fe1a374ac0ce2844e172e27894844da51",
+    "core/audio_queue.c": "ffe5793771f6373d7e0a447d78ae9c6404a2aff928424a6223bfd4b16d9bb59e",
+    "core/audio_queue.h": "f92a359feb335e501df4f9213d846bbeea2ae3e38a4011ba0c16b7ebf1c90c9e"
+  },
+  "release_allowed": false,
+  "injected_samples_at_storage_boundaries": 3072
+}

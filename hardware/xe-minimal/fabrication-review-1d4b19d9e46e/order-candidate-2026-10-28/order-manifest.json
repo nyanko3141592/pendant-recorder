@@ -1,0 +1,75 @@
+{
+  "status": "SUPERSEDED_DO_NOT_UPLOAD_OR_ORDER",
+  "date": "2026-10-28",
+  "units": 5,
+  "source_board_sha256": "1d4b19d9e46e8a08db9c79e3ff39182ff5b3d2388e780a8fd682c304eadb5433",
+  "assembled_placements_per_board": 75,
+  "dnp_references": [
+    "D6",
+    "Q5",
+    "R32",
+    "R45",
+    "R46"
+  ],
+  "external_or_non_component_references": [
+    "J3",
+    "TP1",
+    "TP2",
+    "TP3",
+    "TP5",
+    "TP6"
+  ],
+  "decisions": [
+    "Q5/R45/R46 omitted: fixed low USB input-current limit through R44 only.",
+    "Q6/Q7 exact MPN changed to DMN2056U-7.",
+    "D6/R32 omitted for prototype because the selected amber LED is unavailable at JLCPCB; status indication is nonessential for bring-up.",
+    "TH1 changed from a hand-installed 103JT-025 contact sensor to JLC-stock NCU18XH103F60RB (C440252) on the existing 0603 board land.",
+    "No board geometry or case envelope changed."
+  ],
+  "reference_costs": {
+    "buyer_final_assembly_only_JPY_ex_tax": 9750.0,
+    "known_all_parts_JPY_ex_tax": 34151.7,
+    "jlc_partial_assembly_USD_low": 151.54,
+    "jlc_partial_assembly_USD_high": 163.78,
+    "jlc_live_pcb_special_process_USD": 103.81,
+    "jlc_live_shipping_display_USD": 9.75,
+    "excludes": [
+      "JLC component minimums/attrition",
+      "exact PCBA BOM/CPL quote",
+      "tax",
+      "inspection",
+      "programming labor"
+    ]
+  },
+  "jlc_live_quote_observation": {
+    "upload_completed": true,
+    "login_required_before_bom_cpl_upload": true,
+    "detected": "6 layers, 27 x 24 mm",
+    "selected": [
+      "0.8 mm",
+      "ENIG",
+      "0.15 mm/(0.25/0.3 mm)",
+      "Epoxy Filled & Capped",
+      "JLC06081H-2116",
+      "Standard PCBA",
+      "Both Sides"
+    ],
+    "pcb_and_selected_process_USD": 103.81,
+    "shipping_display_USD": 9.75,
+    "pcba_components_and_assembly": "not calculated before login and BOM/CPL upload"
+  },
+  "remaining_checkout_gates": [
+    "SUPERSEDED: source circuit changed to BQ25185 ILIM100 and removed the MAX4995/latch network; this directory no longer matches the active source.",
+    "JLC CAM/DFM acceptance for 14 specified filled/planarized/copper-capped vias, including 13 pad-overlap vias.",
+    "JLC BOM/CPL preview: confirm all 75 placements, bottom-side mirror convention, rotations and pin 1.",
+    "JLC pre-order/manual-match acceptance for zero-stock or non-library parts; no buyer consignment is planned.",
+    "Physical first print, USB-C plug clearance, battery/header polarity, and necklace load test.",
+    "Bench-check temperature lag and trip behavior of the board-mounted NCU sensor against actual battery temperature."
+  ],
+  "files_sha256": {
+    "bom-jlc.csv": "1143fd687b6739439d529b213d9b40ca81ed0ac2afe9a8ccbc70451d6845b110",
+    "cpl-jlc.csv": "da0d0d439637731040397a405f44a13dbb2d2be2fe0cd61adbde59e41342d4e8",
+    "gerber-drill-jlc.zip": "df7eaa509703281aff3b593b10c99fbb9109c9357250dc1c4c22aa5a023f84e3",
+    "procurement-plan.csv": "e8a4209103b6c5d0f7d8dd8caae7a010453d96d6dcfb04bbdd3dc4c1b1f7ced7"
+  }
+}

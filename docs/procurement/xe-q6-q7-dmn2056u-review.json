@@ -1,0 +1,141 @@
+{
+  "status": "PREFERRED_REVIEW_CANDIDATE_NOT_ADOPTED",
+  "manufacturer": "Diodes Incorporated",
+  "mpn": "DMN2056U-7",
+  "jlc_part": "C332302",
+  "sources": {
+    "datasheet": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+    "assembly": "https://jlcpcb.com/partdetail/DMN2056U-7/C332302"
+  },
+  "document": "DS38480 Rev2-2 July2021 page3",
+  "package": "SOT23",
+  "specs": {
+    "RDSon_max_ohm": 0.085,
+    "conditions": "VGS1.5V ID2A TA25C pulse test",
+    "IDSS_max_uA_at_25C": 1,
+    "IDSS_test": "VDS20V VGS0",
+    "IGSS_max_abs_nA_at_25C": 100,
+    "IGSS_test": "VGS+/-8V VDS0",
+    "Ciss_typ_pF": 339,
+    "Ciss_test": "VDS10V VGS0 1MHz",
+    "Qg_typ_nC": 4.3,
+    "Qg_test": "VDS10V VGS4.5V ID3.6A"
+  },
+  "screen": {
+    "historical_unqualified_arithmetic": {
+      "minimum_mcu_supply_V_from_VOH_minus_0_4": 1.9,
+      "BOR4_static_margin_V": 0.77,
+      "drain_low_V_at_25C_using_bound": 4.5075370565000205e-05
+    },
+    "minimum_mcu_supply_V_qualified": null,
+    "BOR4_static_margin_V_qualified": null,
+    "correction": "The cited MCU VDDIO-0.4 V CMOS row is scoped to 2.7..3.6 V. Solving it for 1.9 V and claiming 0.77 V BOR4 margin extrapolates beyond its stated supply range. BOR4 falling minimum 2.67 V leaves 2.67..2.7 V without support from that cited row. Obtain an applicable low-supply row and verify load/pin scope before closing this gap. Subsequent low_supply_gpio_evidence resolves the row-domain gap conditionally using the4mA row; the8mA extrapolation remains invalid.",
+    "in_scope_check": {
+      "VDDIO_V": 2.7,
+      "VOH_bound_V": 2.3,
+      "candidate_RDS_test_VGS_V": 1.5,
+      "gate_voltage_difference_V": 0.8,
+      "limitation": "Gate-level screen at 2.7 V only; MOSFET RDS bound remains a 25 C pulse condition, not full circuit qualification."
+    }
+  },
+  "remaining": [
+    "Verify pin orientation and recommended solder land from manufacturer drawing",
+    "Temperature-dependent leakage and on-state limit",
+    "Actual gate/drain pulse and reset release times; capacitance and charge above are typical only",
+    "BOR4 programming and reset sequencing",
+    "Live stock/price revalidation and assembly orientation"
+  ],
+  "no_substitutions": "Do not substitute VBsemi -VB, ElecSuper (ES), or HXY similarly named products.",
+  "land_review": {
+    "source_page": 7,
+    "pdf_sha256": "4bf71d7780cec6ebb11681b05d7f5f5cb270d146d749d2f1d603a74777b46e39",
+    "diagram_visually_inspected": true,
+    "manufacturer_rotated_to_kicad_axes": {
+      "pad_size_mm": [
+        0.9,
+        0.8
+      ],
+      "row_center_spacing_mm": 2.0,
+      "split_pair_center_spacing_mm": 1.9
+    },
+    "existing": {
+      "pad_size_mm": [
+        1.475,
+        0.6
+      ],
+      "row_center_spacing_mm": 1.875,
+      "split_pair_center_spacing_mm": 1.9,
+      "Q7_layer": "F.Cu",
+      "Q6_layer": "B.Cu mirrored"
+    },
+    "delta_existing_minus_recommended_mm": {
+      "pad_length": 0.575,
+      "pad_width": -0.2,
+      "row_spacing": -0.125,
+      "split_pair_spacing": 0
+    },
+    "result": "NOT_IDENTICAL_TO_MANUFACTURER_SUGGESTED_LAND. This difference is not itself proof of assembly failure. Evaluate exact recommended-land candidate against routes, clearance and stencil before adoption.",
+    "package_max_mm": {
+      "body_length_D": 3.0,
+      "lead_span_E": 2.55,
+      "height_A": 1.15
+    }
+  },
+  "procurement_observation": {
+    "assembly_listing_verified": true,
+    "stock_price_in_opened_page": null,
+    "note": "Search index contained quantities and pricing; opened page omitted them. Do not treat as a current quote."
+  },
+  "pin_orientation_review": {
+    "source_page": 1,
+    "visual_top_view": "Single drain at top; gate lower-left and source lower-right. Rotating into footprint axes puts gate upper-left, source lower-left, drain right.",
+    "footprint_pins": {
+      "1": "gate",
+      "2": "source",
+      "3": "drain"
+    },
+    "result": "Top-view function mapping matches Q7; Q6 is mirrored for bottom placement. Assembly-machine rotation still requires vendor preview."
+  },
+  "datasheet_recheck_2026_10_27": {
+    "url": "https://www.diodes.com/datasheet/download/DMN2056U.pdf",
+    "revision": "DS38480 Rev2-2 July2021",
+    "result": "Official current PDF still specifies IDSS and RDS limits at25C unless otherwise stated; no elevated-temperature maximum established here."
+  },
+  "low_supply_gpio_evidence": {
+    "source": "https://www.st.com/resource/en/datasheet/stm32u535cb.pdf",
+    "document": "DS14217 Rev5 May2025",
+    "table": 94,
+    "page": 205,
+    "supply_range_V": [
+      1.58,
+      3.6
+    ],
+    "load_mA": 4,
+    "VOH_min": "VDDIOx - 0.4 V",
+    "qualification": "Specified by design, not tested in production (footnote5). MCU operating supply limits still apply.",
+    "pin_scope": "PA2/PB1 FT_ha as recorded in prior pin audit; not excluded classes.",
+    "load_screen": {
+      "external_pulldown_min_ohm": 99000,
+      "internal_pulldown_min_ohm": 30000,
+      "internal_pulldown_source": "DS14217 Rev5 I/O characteristics p203, min30k; firmware config enables GPIO_PULLDOWN",
+      "gate_leakage_A_at25C": 1e-07,
+      "at_VDD_3_6_current_mA": 0.15646363636363636,
+      "at_VDD_2_67_current_mA": 0.11606969696969696,
+      "scope": "Resistive steady state plus25C MOSFET gate-leakage screen; excludes charging gate capacitance, high-temperature gate leakage and whole-MCU aggregate currents."
+    },
+    "conditional_result": {
+      "BOR4_min_falling_V": 2.67,
+      "VOH_min_V": 2.27,
+      "DMN_gate_test_V": 1.5,
+      "gate_voltage_margin_V": 0.77,
+      "minimum_VDD_for_1_5V_gate_V": 1.9,
+      "status": "STATIC_SUPPLY_DOMAIN_GAP_RESOLVED_UNDER_LOAD_CONDITIONS_NOT_FULL_APPROVAL"
+    },
+    "remaining": [
+      "Dynamic supply collapse and reset response",
+      "Gate charge transient and actual valid drain pulse",
+      "High-temperature transistor leakage/on-state behavior",
+      "Per-pin and aggregate current limits in complete hardware"
+    ]
+  }
+}

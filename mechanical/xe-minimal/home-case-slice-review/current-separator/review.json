@@ -1,0 +1,80 @@
+{
+  "part": "current-separator",
+  "source": "support-notched-separator-trial.step",
+  "source_sha256": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+  "stl_sha256": "79b08bb944ed1fc1292dec85766f2c679b4b07ac5fc5ba6fde068f6d44250313",
+  "3mf_sha256": "8f8713fafb9bcc7834dcfb27fe24cdcff7f0fd3e62413cd626c126e7b8c9c11f",
+  "first_layer_mm": 0.14,
+  "regular_layer_mm": 0.16,
+  "CAD_height_mm": 0.30000000000000027,
+  "translation_mm": [
+    -0.3,
+    27.2,
+    2.22
+  ],
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 290,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 4,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 17.555728912353516,
+          "Custom": 34.594478607177734,
+          "Gap infill": 0.5546174049377441,
+          "Inner wall": 2.880998134613037,
+          "Outer wall": 4.303927898406982,
+          "Top surface": 14.807794570922852,
+          "Travel": 19.030250549316406,
+          "Undefined": 3.5640764236450195
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 0.24760125577449799,
+            "total_used_g": 0.24760125577449799
+          }
+        ],
+        "generate_support_material_time": 0,
+        "id": 1,
+        "infill_time": 3,
+        "layer_filament_change": 0,
+        "main_predication": 59.16352081298828,
+        "make_perimeters_time": 1,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 17.10000228881836,
+              "height": 0.30000001192092896,
+              "width": 27.399999618530273,
+              "x": 76.30001068115234,
+              "y": 81.44999694824219,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "current-separator.stl",
+            "triangle_count": 536
+          }
+        ],
+        "sliced_time": 14,
+        "sliced_time_with_cache": 9,
+        "total_predication": 78.26160430908203,
+        "triangle_count": 536,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 2
+  },
+  "profile_sha256": {
+    "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+    "process": "20f5b956df743e537f69ef47ff120297ffa169068bde0baf1ccda709e8a5b38b",
+    "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+  }
+}

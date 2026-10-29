@@ -1,0 +1,735 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T01:32:12",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "mic-ground-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "5b965ce2-8495-4731-ab67-4343f6346ca5"
+                },
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "3c514444-748c-4af0-ab85-868ab8203d11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHG_ALLOW] - R43 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.245,
+                        "y": 14.215
+                    },
+                    "uuid": "2821c9db-e500-46fe-b02c-efd866e6e67d"
+                },
+                {
+                    "description": "パッド 20 [/CHG_ALLOW] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 4.4675
+                    },
+                    "uuid": "aebc0b89-873f-4cbd-90d4-5b548b908f96"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.9594 mm )",
+                    "pos": {
+                        "x": 17.0168,
+                        "y": 12.6223
+                    },
+                    "uuid": "6070d5ad-bdaf-4b70-a9ce-d7dffbedec72"
+                },
+                {
+                    "description": "パッド 40 [/PDM_DATA] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.405,
+                        "y": 11.3425
+                    },
+                    "uuid": "5a0b78b0-1752-4061-a1b1-2cd04306db2a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/CHG_INHIBIT_GATE] - Q4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.8925,
+                        "y": 15.975
+                    },
+                    "uuid": "39e1da35-765b-4190-836c-3f6d4bc685d2"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 2.3345 mm )",
+                    "pos": {
+                        "x": 0.943,
+                        "y": 10.6625
+                    },
+                    "uuid": "e6170b16-c7cc-4431-b07f-d8dc2e740723"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 1.3700 mm )",
+                    "pos": {
+                        "x": 0.745,
+                        "y": 16.215
+                    },
+                    "uuid": "eec0561c-2b31-4111-9573-3e591060df6f"
+                },
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 9.275
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0297 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2864 mm )",
+                    "pos": {
+                        "x": 15.4719,
+                        "y": 16.42
+                    },
+                    "uuid": "20d41db3-5824-46ac-8f1b-1630099ed8b3"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.3
+                    },
+                    "uuid": "85c56b52-ba0f-4154-aef2-8d8ba2d57fd8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SWCLK)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2733 mm )",
+                    "pos": {
+                        "x": 15.0933,
+                        "y": 17.1002
+                    },
+                    "uuid": "54394116-88bd-4281-abbe-3c1c30306822"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.85,
+                        "y": 17.1
+                    },
+                    "uuid": "5a97113d-401a-4528-8964-4e5486ee3406"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0065 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 14.65,
+                        "y": 17.15
+                    },
+                    "uuid": "086c8b74-c92e-4503-80a2-5618631de096"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2733 mm )",
+                    "pos": {
+                        "x": 15.0933,
+                        "y": 17.1002
+                    },
+                    "uuid": "54394116-88bd-4281-abbe-3c1c30306822"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.8,
+                        "y": 17.1
+                    },
+                    "uuid": "3332a9b6-6fbe-4dc8-9ce9-5eff1cdec98c"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2733 mm )",
+                    "pos": {
+                        "x": 15.0933,
+                        "y": 17.1002
+                    },
+                    "uuid": "54394116-88bd-4281-abbe-3c1c30306822"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0663 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 16.7
+                    },
+                    "uuid": "3d360281-5dd2-4388-b107-3ce0e2fb1040"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.1624 mm )",
+                    "pos": {
+                        "x": 15.6391,
+                        "y": 16.5348
+                    },
+                    "uuid": "e8c39dc6-fa15-4249-922f-772748145ae1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.75,
+                        "y": 17.1
+                    },
+                    "uuid": "4f838c33-8f86-4cc5-b8fa-e5fcc4db753a"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2733 mm )",
+                    "pos": {
+                        "x": 15.0933,
+                        "y": 17.1002
+                    },
+                    "uuid": "54394116-88bd-4281-abbe-3c1c30306822"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 17.1
+                    },
+                    "uuid": "46510fa5-406a-40d1-82f6-772e63df97d1"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2733 mm )",
+                    "pos": {
+                        "x": 15.0933,
+                        "y": 17.1002
+                    },
+                    "uuid": "54394116-88bd-4281-abbe-3c1c30306822"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0165 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 16.6
+                    },
+                    "uuid": "6511eea3-9264-4132-b7e1-f2fd8e48327f"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0524 mm )",
+                    "pos": {
+                        "x": 15.5243,
+                        "y": 16.42
+                    },
+                    "uuid": "e0f3a4c6-f576-4b01-83e7-cfbb4805d8e7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.85,
+                        "y": 17.1
+                    },
+                    "uuid": "5a97113d-401a-4528-8964-4e5486ee3406"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.2152 mm )",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 15.885
+                    },
+                    "uuid": "82501d00-576e-40a8-9555-6bf8a73e6b39"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.45
+                    },
+                    "uuid": "58b6d8cb-7887-4956-a688-56e2c3178e5f"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0524 mm )",
+                    "pos": {
+                        "x": 15.5243,
+                        "y": 16.42
+                    },
+                    "uuid": "e0f3a4c6-f576-4b01-83e7-cfbb4805d8e7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.35
+                    },
+                    "uuid": "e2f515cf-5d8f-4894-8e9f-e04312a7e091"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.1624 mm )",
+                    "pos": {
+                        "x": 15.6391,
+                        "y": 16.5348
+                    },
+                    "uuid": "e8c39dc6-fa15-4249-922f-772748145ae1"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.4
+                    },
+                    "uuid": "946b4c73-4c4f-468d-8f7a-177bcd2daa2c"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0524 mm )",
+                    "pos": {
+                        "x": 15.5243,
+                        "y": 16.42
+                    },
+                    "uuid": "e0f3a4c6-f576-4b01-83e7-cfbb4805d8e7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0092 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.3
+                    },
+                    "uuid": "85c56b52-ba0f-4154-aef2-8d8ba2d57fd8"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0524 mm )",
+                    "pos": {
+                        "x": 15.5243,
+                        "y": 16.42
+                    },
+                    "uuid": "e0f3a4c6-f576-4b01-83e7-cfbb4805d8e7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.7,
+                        "y": 17.1
+                    },
+                    "uuid": "3815430f-04e5-4a89-89cb-161c4d4bdfa4"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2733 mm )",
+                    "pos": {
+                        "x": 15.0933,
+                        "y": 17.1002
+                    },
+                    "uuid": "54394116-88bd-4281-abbe-3c1c30306822"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0665 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 16.65
+                    },
+                    "uuid": "2238d9fd-bbf9-4a08-949c-61415c1d9702"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0524 mm )",
+                    "pos": {
+                        "x": 15.5243,
+                        "y": 16.42
+                    },
+                    "uuid": "e0f3a4c6-f576-4b01-83e7-cfbb4805d8e7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SWCLK と /GND)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 16.5
+                    },
+                    "uuid": "2621e6d4-6fa7-40b4-8263-6874c37cc4b6"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0524 mm )",
+                    "pos": {
+                        "x": 15.5243,
+                        "y": 16.42
+                    },
+                    "uuid": "e0f3a4c6-f576-4b01-83e7-cfbb4805d8e7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0736 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.25
+                    },
+                    "uuid": "176b1e21-12b7-41ca-90ac-91e2733d5181"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2864 mm )",
+                    "pos": {
+                        "x": 15.4719,
+                        "y": 16.42
+                    },
+                    "uuid": "20d41db3-5824-46ac-8f1b-1630099ed8b3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0624 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.25,
+                        "y": 17.1
+                    },
+                    "uuid": "0dfd1dd0-238b-4a46-a837-34be8ccefe4c"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.3016 mm )",
+                    "pos": {
+                        "x": 15.2694,
+                        "y": 16.6225
+                    },
+                    "uuid": "5b44bb17-d488-473a-af84-83efbf4172f4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SWCLK)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0524 mm )",
+                    "pos": {
+                        "x": 15.5243,
+                        "y": 16.42
+                    },
+                    "uuid": "e0f3a4c6-f576-4b01-83e7-cfbb4805d8e7"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.35
+                    },
+                    "uuid": "e2f515cf-5d8f-4894-8e9f-e04312a7e091"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SWCLK)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.1624 mm )",
+                    "pos": {
+                        "x": 15.6391,
+                        "y": 16.5348
+                    },
+                    "uuid": "e8c39dc6-fa15-4249-922f-772748145ae1"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 16.55
+                    },
+                    "uuid": "f6f5053d-c612-4272-ae60-e8e9a41ff699"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0165 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.2152 mm )",
+                    "pos": {
+                        "x": 14.82,
+                        "y": 15.885
+                    },
+                    "uuid": "82501d00-576e-40a8-9555-6bf8a73e6b39"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 17.1
+                    },
+                    "uuid": "96c577da-249b-43b7-9774-2ccdd79fa379"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0798 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.2490 mm )",
+                    "pos": {
+                        "x": 15.2694,
+                        "y": 16.9241
+                    },
+                    "uuid": "5513dbf7-aa7a-44e2-bd67-7ec473938381"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.85,
+                        "y": 17.1
+                    },
+                    "uuid": "5a97113d-401a-4528-8964-4e5486ee3406"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0917 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 2.0109 mm )",
+                    "pos": {
+                        "x": 17.65,
+                        "y": 16.5348
+                    },
+                    "uuid": "0b168f11-69e0-486f-89c7-a9aac640952b"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.55,
+                        "y": 16.35
+                    },
+                    "uuid": "e2f515cf-5d8f-4894-8e9f-e04312a7e091"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0800 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.3016 mm )",
+                    "pos": {
+                        "x": 15.2694,
+                        "y": 16.6225
+                    },
+                    "uuid": "5b44bb17-d488-473a-af84-83efbf4172f4"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 15.35,
+                        "y": 17.1
+                    },
+                    "uuid": "b68faaf9-3b68-4e7c-9170-c35a99958579"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/CHG_ALLOW] ( B.Cu 上、長さ: 0.0950 mm )",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 3.7492
+                    },
+                    "uuid": "bb13d1d4-0605-4283-a50c-3edddddf8cec"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.9594 mm )",
+                    "pos": {
+                        "x": 17.0168,
+                        "y": 12.6223
+                    },
+                    "uuid": "6070d5ad-bdaf-4b70-a9ce-d7dffbedec72"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

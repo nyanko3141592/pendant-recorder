@@ -1,0 +1,59 @@
+{
+  "status": "HEADER_PROJECTION_ACCESS_SCREEN_NOT_PLUG_FIT",
+  "access_bounds_mm": [
+    0.725,
+    6.325,
+    -5.745,
+    -1.045,
+    -12,
+    -1.7200000000000002
+  ],
+  "header_pose_source": "j2-position-review.json",
+  "access_type": "Straight approach from bottom, entire provisional header XY silhouette; actual plug/finger envelope unknown",
+  "objects": [
+    {
+      "part": "separator",
+      "source": "battery-separator-study.step",
+      "sha256": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+      "translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "access_intersection_mm3": 7.896000000000014,
+      "blocks_header_projection": true
+    },
+    {
+      "part": "battery",
+      "source": "dtp401525-xe-pack-max.step",
+      "sha256": "e4c9bb308a5120fcc3943aa438e41ea36d7462cdcddac260d87ced0f222285d3",
+      "translation_mm": [
+        8.25,
+        -13.5,
+        -6.62
+      ],
+      "access_intersection_mm3": 110.544,
+      "blocks_header_projection": true
+    },
+    {
+      "part": "lower_case",
+      "source": "retained-lower-case-study.step",
+      "sha256": "05c7f92960bfab469b2026331f3f68b1c0a2262bf460e1a8a68547b105a27cd2",
+      "translation_mm": [
+        0,
+        0,
+        0
+      ],
+      "access_intersection_mm3": 21.055999999999994,
+      "blocks_header_projection": true
+    }
+  ],
+  "conclusion": "Do not instruct buyer to mate connector after seating battery and separator in the lower case. This straight approach is obstructed in the current study. Connect with lower case, battery and separator clear, then route and install them. That alternative sequence still needs cable reach and handling validation.",
+  "limitations": [
+    "Header silhouette is a screening keepout, not minimum required mating area",
+    "No actual housing pose, wire bend, finger or tool geometry",
+    "No claim that angled approaches are impossible",
+    "No proof that pre-mating and subsequent battery placement works with 12mm length datum",
+    "PCB support during connection must be designed"
+  ]
+}

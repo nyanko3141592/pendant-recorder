@@ -1,0 +1,22 @@
+{
+  "status": "TEMPLATE_NOT_FLASHABLE",
+  "target_mpn": "STM32U585CIU6",
+  "interface": "SWD_J3",
+  "pinout": {"1": "VTREF_3V3_SENSE_ONLY", "2": "SWDIO", "3": "NRST", "4": "SWCLK", "5": "GND"},
+  "firmware_hex_or_bin": null,
+  "firmware_sha256": null,
+  "elf_sha256": null,
+  "map_sha256": null,
+  "hardware_revision": null,
+  "firmware_version": null,
+  "source_revision": null,
+  "source_commit": null,
+  "toolchain": null,
+  "usb_vid": null,
+  "usb_pid": null,
+  "recipient_provisioning": "FIRST_USE_USB_HID_WRITE_ONCE_IMPLEMENTED_NONHARDWARE_TEST_ONLY",
+  "option_bytes": {"BOR": "LEVEL_4"},
+  "post_program_checks": ["FLASH_VERIFY", "OPTION_BYTE_READBACK", "PENDANT_JSON_REVISION_MATCH", "MCU_UID_CAPTURE", "USB_ENUMERATION", "CHARGE_REQUEST_LOW_BEFORE_USB_CONFIGURATION", "STORAGE_RAIL_DEFAULT_OFF"],
+  "forbidden_inputs": ["BUYER_PUBLIC_RECIPIENT", "PRIVATE_DECRYPTION_KEY", "TEST_USB_IDS_0001_0002", "NOT_FOR_FLASH_BUILD", "UNQUALIFIED_CUTOFF"],
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

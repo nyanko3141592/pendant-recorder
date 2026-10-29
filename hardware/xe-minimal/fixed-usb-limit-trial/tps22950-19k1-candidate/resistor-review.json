@@ -1,0 +1,40 @@
+{
+  "status": "ROUTED_19K1_CANDIDATE_NOT_ADOPTED",
+  "part": "TNPW040219K1BEED",
+  "resistance_ohm": 19100,
+  "tolerance_fraction": 0.001,
+  "TCR_ppm_per_K": 25,
+  "source": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+  "procurement_lead": "https://www.digikey.com/en/products/detail/vishay-dale/TNPW040219K1BEED/1606454",
+  "procurement_status": "Listed cut tape; current Japanese delivery and assembler availability unverified",
+  "checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "pcb_sha256": "2c2bc574e7f340dfb4e7fc578a736347e286215a058e430c974e25c2fd224a43",
+  "geometry_change": "None; R44 value only; schematic regenerated",
+  "physical_tests": 0,
+  "conditional_screen": {
+    "film_temperature_C": [
+      -40,
+      125
+    ],
+    "reference_C": 25,
+    "resistor_range_ohm": [
+      19033.15,
+      19166.850000000002
+    ],
+    "excludes": [
+      "soldering drift",
+      "aging",
+      "self heating beyond temperature range"
+    ],
+    "typical_formula_current_mA_range": [
+      49.7722884837973,
+      50.14718612415014
+    ],
+    "guaranteed_current_bounds_mA": null,
+    "reason": "TI 34/50/66 mA table is at 19.2k; typical formula cannot extend min/max guarantee to 19.1k or its tolerance."
+  }
+}

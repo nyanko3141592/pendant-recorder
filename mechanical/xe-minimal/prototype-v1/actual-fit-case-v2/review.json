@@ -1,0 +1,97 @@
+{
+  "version": "HW-V1.4-EVT-CASE-V2-ACTUAL-FIT",
+  "status": "REBUILT_ROUNDED_CASE_CAD_PASS_PHYSICAL_REPRINT_REQUIRED",
+  "complete_bbox_mm": [
+    31.402700402791464,
+    31.402700402791467,
+    13.902700402791467
+  ],
+  "actual_internal_bbox_mm": [
+    0,
+    27.5,
+    -27.2,
+    0.5,
+    -6.62,
+    4.1514
+  ],
+  "clearance_mm": {
+    "pcb_xy_each_side": 0.25,
+    "battery_floor": 0.25,
+    "top_over_tallest_envelope": 1.1286000000000005
+  },
+  "style": {
+    "plan_corner_radius_mm": 3.2,
+    "top_bottom_edge_radius_mm": 1.2,
+    "seam": "recessed tongue/groove"
+  },
+  "usb": {
+    "outer_bay_mm": [
+      13.8,
+      6.7
+    ],
+    "throat_mm": [
+      9.4,
+      3.6
+    ],
+    "mating_plane_y_mm": -26.17,
+    "front_roof_remaining_mm": 0.8300000000000001
+  },
+  "cord": {
+    "diameter_mm": 2.4,
+    "recommended_cord_mm": "1.0-1.5 braided polyester/nylon",
+    "integral_lower_boss": true
+  },
+  "checks": {
+    "lower_to_internals_mm3": 0.0,
+    "upper_to_internals_mm3": 0.0,
+    "boss_to_internals_mm3": 0.0,
+    "cord_tunnel_to_internals_mm3": 0.0,
+    "lower_upper_overlap_mm3": 0.0
+  },
+  "files": {
+    "case-v2-lower.step": {
+      "sha256": "e8306fa2f66de0530d6dd8ae4e2d15e38affde63ffe192f92b74d5353230e0aa",
+      "bytes": 239424
+    },
+    "case-v2-lower.stl": {
+      "sha256": "5187c2e0afd8b3ce10cbc44d7e7e74a4803a13ae7fa73555e57a4e34d9648b48",
+      "bytes": 596884
+    },
+    "case-v2-upper.step": {
+      "sha256": "f5acbe1f70e2082cd945ea0de8c95002c085510e03c2db3b8b73c4a66e0a2282",
+      "bytes": 178219
+    },
+    "case-v2-upper.stl": {
+      "sha256": "b6fd5d45f29fab74d73c8f84457771f78bf69a555d51401b738c2956f326d8e6",
+      "bytes": 593284
+    },
+    "actual-populated-pcb.step": {
+      "sha256": "6f99e98fa016ecf6f34828ea8577fe7e174199c41fb94a71b16b1edb4fd65b0e",
+      "bytes": 21812117
+    },
+    "actual-populated-pcb.stl": {
+      "sha256": "8e7033d4aa8c279294ee8c147692549238042012dcdd78932dc4181822dbd4a6",
+      "bytes": 40640784
+    },
+    "dtp401525-xe-max-body.step": {
+      "sha256": "111dd1fa71758de7db7cfe6b207647437b71446ef084b560165ecad139ceff47",
+      "bytes": 15530
+    },
+    "dtp401525-xe-max-body.stl": {
+      "sha256": "e292643f312d591ec65d156054205150c8dc0750f9c578e15499863d735d701f",
+      "bytes": 684
+    },
+    "case-v2-actual-assembly.step": {
+      "sha256": "99e1f62af61aac0a5ae7d238930c717a28100b47eaf2fb2c0c2cd78cd32cef50",
+      "bytes": 27701694
+    }
+  },
+  "physical_gates": [
+    "reprint and inspect all four outer corners",
+    "fit real PCBA without force",
+    "fit maximum battery and factory harness without pinch",
+    "six representative USB-C cables",
+    "mic/button access",
+    "cord proof/fatigue"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "status": "USER_SIZE_DECISION_REQUIRED_NOT_DESIGN_RELEASE",
+  "fixed_battery": "DTP401525-XE 110mAh",
+  "unchanged_requirements": [
+    "Continuous16h recording",
+    "16kHz mono or better",
+    "36h encrypted storage",
+    "USB-C charge and transfer",
+    "Buyer plugs in unmodified separately purchased battery"
+  ],
+  "reference": {
+    "product": "Omi consumer wearable, current official product page",
+    "url": "https://www.omi.me/pages/product",
+    "checked_date": "2026-10-27",
+    "published_size_cm": [
+      2.5,
+      1.5
+    ],
+    "interpretation": "25mm diameter x15mm thickness inferred from round form; page gives two dimensions without explicit axis labels",
+    "cad_association": "Public consumer cover STEP approx25.5mm diameter; exact released SKU association unconfirmed"
+  },
+  "geometry_check": {
+    "pack_max_box_mm": [
+      15.5,
+      27,
+      4.2
+    ],
+    "box_diagonal_mm": 31.41480542674107,
+    "diameter25_height15_max_chord_mm": 29.154759474226502,
+    "box_fit_in_reference_cylinder": false,
+    "necessary_minimum_cylinder_diameter_at15mm_height_mm": 27.602354971994693,
+    "limitation": "Necessary envelope bound only; actual pack corner geometry unmeasured. Minimum diameter excludes electronics, case and leads and is not a feasible product size."
+  },
+  "current_candidates": {
+    "case_body_mm": [
+      26.2,
+      29.6,
+      12.9714001
+    ],
+    "with_accessible_button_height_mm": 13.8714001,
+    "status": "Incomplete studies, not guaranteed fit or runtime"
+  },
+  "decision_to_request": "Whether to retain fixed110mAh/16h and use30x32x15mm as a development ceiling. Prior acceptance predates renewedOmi requirement and is not silently reused.",
+  "ceiling_is_not_a_feasibility_claim": true,
+  "before_release": [
+    "Resolve full unmodified battery lead and connector fit",
+    "Complete closure, return/overtravel mechanism and acoustic/thermal interfaces",
+    "Bound USB power switching transients and adopt circuit",
+    "Complete current BOM and five-unit manufacturing estimate",
+    "Validate firmware and host delivery against test plan"
+  ],
+  "evidence_sha256": {
+    "omi-size-conflict-review.json": "325fe5bf3913ee1d2379b1c2e0aa19fb34b0090128e7dd8c100e99ce96e4192c",
+    "button-travel-access-review.json": "56fbd7d0dd8cc6ee5cc37d52e6c5adad1f422032eace2096f444c57249339256",
+    "dimension-comparison.json": "91f1a8a29553f97500fe36eafa570cfada3d069f8a32013705aa9f062cd5db31"
+  }
+}

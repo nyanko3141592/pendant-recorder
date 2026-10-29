@@ -1,0 +1,268 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T13:55:19",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "boot-via-trial.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_RESUME_PULSE] ( F.Cu 上、長さ: 0.9775 mm )",
+                    "pos": {
+                        "x": 21.49,
+                        "y": 2.4775
+                    },
+                    "uuid": "5dc3881e-b06b-4293-8754-5434634d0c90"
+                },
+                {
+                    "description": "パッド 43 [/USB_RESUME_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "593c7cd6-e14b-4fc6-bd52-2e394d9fec73"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_HIGH_BUDGET] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 17.4375
+                    },
+                    "uuid": "70dc58a5-5e97-4a48-9a55-95fad2637a4d"
+                },
+                {
+                    "description": "パッド 42 [/USB_HIGH_BUDGET] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.405,
+                        "y": 11.3425
+                    },
+                    "uuid": "69a4e4be-91c9-4dde-b3b8-3c89550ff4f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_SUSPEND_PULSE] ( B.Cu 上、長さ: 1.2906 mm )",
+                    "pos": {
+                        "x": 22.0625,
+                        "y": 4.45
+                    },
+                    "uuid": "4acae404-8d62-4220-b077-bf75387d4659"
+                },
+                {
+                    "description": "パッド 41 [/USB_SUSPEND_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_DAT1 と /BOOT0)",
+            "items": [
+                {
+                    "description": "パッド 8 [/SD_DAT1] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 11.73
+                    },
+                    "uuid": "a7bac408-44fe-446d-94da-924339f79ecf"
+                },
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 12.15
+                    },
+                    "uuid": "ec165197-9a0e-4e88-b851-1eb5da910a63"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0870 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( B.Cu 上、長さ: 0.4470 mm )",
+                    "pos": {
+                        "x": 13.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "b70c7b32-7da1-40f9-998b-f7d84bad2ce2"
+                },
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 12.15
+                    },
+                    "uuid": "ec165197-9a0e-4e88-b851-1eb5da910a63"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0407 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( B.Cu 上、長さ: 1.1360 mm )",
+                    "pos": {
+                        "x": 13.905,
+                        "y": 11.7895
+                    },
+                    "uuid": "66e58a6b-5555-476c-9228-b9c2df42524a"
+                },
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 12.15
+                    },
+                    "uuid": "ec165197-9a0e-4e88-b851-1eb5da910a63"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 8 [/SD_DAT1] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 11.73
+                    },
+                    "uuid": "a7bac408-44fe-446d-94da-924339f79ecf"
+                },
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 12.15
+                    },
+                    "uuid": "ec165197-9a0e-4e88-b851-1eb5da910a63"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0300 mm)",
+            "items": [
+                {
+                    "description": "パッド SH [/GND] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.175,
+                        "y": 12.93
+                    },
+                    "uuid": "ecb22b67-3daa-4791-b760-98b57fc32a0c"
+                },
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 12.15
+                    },
+                    "uuid": "ec165197-9a0e-4e88-b851-1eb5da910a63"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 12.15
+                    },
+                    "uuid": "ec165197-9a0e-4e88-b851-1eb5da910a63"
+                },
+                {
+                    "description": "パッド 8 [/SD_DAT1] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 11.73
+                    },
+                    "uuid": "a7bac408-44fe-446d-94da-924339f79ecf"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 12.15
+                    },
+                    "uuid": "ec165197-9a0e-4e88-b851-1eb5da910a63"
+                },
+                {
+                    "description": "パッド SH [/GND] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.175,
+                        "y": 12.93
+                    },
+                    "uuid": "ecb22b67-3daa-4791-b760-98b57fc32a0c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

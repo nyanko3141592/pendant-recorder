@@ -1,0 +1,31 @@
+{
+  "status": "PASS_GPIO_DRIVER_HOST_SIMULATION_NOT_HARDWARE_TIMING",
+  "profiles_ms": [
+    0,
+    60000
+  ],
+  "source_sha256": {
+    "firmware/stm32/board/battery_io.c": "4ea57a118bc32a9527c101f13812a5cf1e9d33949ca99289c955e14ef5e4faf1",
+    "firmware/stm32/core/led_timeout.h": "51a310595faa9b52cc6d5b563bf51f03f42eb334e8dd466a93ec6fe9955a512a",
+    "firmware/stm32/tests/test_battery_io.c": "636656ab0cf619020a97351c68e777fec5c6f9df3fd9e584ff01d855209abdd6",
+    "firmware/stm32/tests/battery_io_mock/stm32u5xx_hal.h": "b1e99a917ce4e9b4597ceb14a780c6188711b88442638475fd84bd69bd0d3733",
+    "firmware/stm32/tests/check_battery_io.sh": "dee8d311fc9b78f9d1d9ac1d83763b8fbfeeb2129a9e3c7a500ded8e1131f41e"
+  },
+  "coverage": [
+    "No writes before initialization",
+    "Output off before GPIO output initialization",
+    "Preserve initially masked/unmasked PRIMASK",
+    "Timeout immediately before repeated ON request does not relight",
+    "Tick queued during main GPIO write runs after mask restoration",
+    "Held ON cannot rearm after timeout",
+    "Low request rearms",
+    "Reinitialization cancels outstanding pulse",
+    "PA15 analog/no reads for periodic profile; input for legacy",
+    "IRQ starvation coalesces pending ticks and does not enforce wall time"
+  ],
+  "limits": [
+    "Mock GPIO/IRQ semantics, not measured on STM32",
+    "Factory calibration memory is not exercised",
+    "No proof of maximum interrupt latency or 16h runtime"
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "status": "A1_MINI_PLA_04MM_SLICED_NOT_PRINTED",
+  "slicer": "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+  "intentional_process_overrides": {
+    "wall_loops": 4
+  },
+  "parts": [
+    {
+      "part": "case-lower-v1",
+      "source_sha256": "a9e6f8e118894d3f1dcac8676eb93e2831bd6853797e6022be72d886b7943428",
+      "stl_sha256": "a76a3243a643b9194f98b4d3ec550c976c483f03c5bb4c2f51b10390f0ee982d",
+      "valid_solid": true,
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        26.200000000000003,
+        33.6,
+        8.121000000000002
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 352,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 19,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 26.292821884155273,
+              "Custom": 34.71245193481445,
+              "Gap infill": 52.058475494384766,
+              "Inner wall": 30.923568725585938,
+              "Internal solid infill": 35.50274658203125,
+              "Outer wall": 314.79461669921875,
+              "Overhang wall": 1.8610422611236572,
+              "Top surface": 18.770299911499023,
+              "Travel": 85.72457885742188,
+              "Undefined": 70.14154815673828
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.8625761270523071,
+                "total_used_g": 1.8625761270523071
+              }
+            ],
+            "generate_support_material_time": 12,
+            "id": 1,
+            "infill_time": 14,
+            "layer_filament_change": 0,
+            "main_predication": 565.9591064453125,
+            "make_perimeters_time": 61,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 33.59922409057617,
+                  "height": 8.121000289916992,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 73.20038604736328,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "case-lower-v1.stl",
+                "triangle_count": 11710
+              }
+            ],
+            "sliced_time": 233,
+            "sliced_time_with_cache": 138,
+            "total_predication": 585.0582885742188,
+            "triangle_count": 11710,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 4
+      },
+      "outputs_sha256": {
+        "case-lower-v1.3mf": "826952e7a3f15d432b214a53bea361b2bc2d286ca6f0a9348d93239869f524fe",
+        "plate_1.gcode": "2a141e39adfd0f49b08d8ed21be3595bd0eee3a1eb30ca9ae4654d54875f53eb"
+      }
+    },
+    {
+      "part": "case-upper-v1",
+      "source_sha256": "dbb1a15b189dbbfb2816e2738b219a50675765a8dcc2ad0fcd7ad008731106ec",
+      "stl_sha256": "f28d55a878d030eed8dac4b81700285aa0d8f505085d2ff052009c90baa40e8b",
+      "valid_solid": true,
+      "rotation_x_deg": 180,
+      "bounds_mm": [
+        26.200000000000003,
+        33.6,
+        4.852400100000005
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 332,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 17,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 27.283884048461914,
+              "Custom": 34.545387268066406,
+              "Gap infill": 11.443244934082031,
+              "Inner wall": 26.288711547851562,
+              "Internal solid infill": 36.05318069458008,
+              "Outer wall": 192.6605987548828,
+              "Overhang wall": 1.2123243808746338,
+              "Top surface": 21.50092315673828,
+              "Travel": 38.627037048339844,
+              "Undefined": 23.18196678161621
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.3090717792510986,
+                "total_used_g": 1.3090717792510986
+              }
+            ],
+            "generate_support_material_time": 7,
+            "id": 1,
+            "infill_time": 11,
+            "layer_filament_change": 0,
+            "main_predication": 355.10125732421875,
+            "make_perimeters_time": 30,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 33.59922790527344,
+                  "height": 4.852400302886963,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 73.20037841796875,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "case-upper-v1.stl",
+                "triangle_count": 11154
+              }
+            ],
+            "sliced_time": 134,
+            "sliced_time_with_cache": 82,
+            "total_predication": 374.1713562011719,
+            "triangle_count": 11154,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 4
+      },
+      "outputs_sha256": {
+        "case-upper-v1.3mf": "10c596f97e96acdb393f60f8a6ab95aa1f0702a3614e0cceec8c78ba8b49482c",
+        "plate_1.gcode": "63ab74aa8e48e6d874ecdaa819b1f1857ac6ef4db7da990aeca9c98b5225e83b"
+      }
+    },
+    {
+      "part": "sensor-carrier-v1",
+      "source_sha256": "1ee3a31c1f44078daadde946802a194c01060a5015c0e8a4fc0004b5a49849e3",
+      "stl_sha256": "ab58fb19541ec64a1222e3a32e68e3b1ebbb6e99a81f68bdef3b85630e423d0a",
+      "valid_solid": true,
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        17.099999999999998,
+        27.4,
+        0.9000000000000001
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 304,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 4,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 14.43270492553711,
+              "Custom": 34.64702606201172,
+              "Gap infill": 0.9352965354919434,
+              "Inner wall": 6.8650593757629395,
+              "Outer wall": 11.26290512084961,
+              "Top surface": 11.777811050415039,
+              "Travel": 22.895109176635742,
+              "Undefined": 7.358062744140625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 0.2758179008960724,
+                "total_used_g": 0.2758179008960724
+              }
+            ],
+            "generate_support_material_time": 0,
+            "id": 1,
+            "infill_time": 3,
+            "layer_filament_change": 0,
+            "main_predication": 68.1990737915039,
+            "make_perimeters_time": 1,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 17.10000228881836,
+                  "height": 0.8999999761581421,
+                  "width": 27.399999618530273,
+                  "x": 76.30001068115234,
+                  "y": 81.44999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "sensor-carrier-v1.stl",
+                "triangle_count": 574
+              }
+            ],
+            "sliced_time": 24,
+            "sliced_time_with_cache": 18,
+            "total_predication": 87.2788314819336,
+            "triangle_count": 574,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 4
+      },
+      "outputs_sha256": {
+        "sensor-carrier-v1.3mf": "0da20adfd7ec639cf0a9211d072cfaf1081ab1e3caf364115d81719c55c5d542",
+        "plate_1.gcode": "c5f02610fa1a7411277b84e5cbc0aafec914b16259d0d4fc58cf22da85cd4ae2"
+      }
+    }
+  ],
+  "limits": [
+    "Successful slicing is not a physical fit, seam, strength, acoustic or thermal qualification.",
+    "Cord loop requires proof-load testing after bonding the seam.",
+    "Carrier orientation and pad compression require a first-article assembly check."
+  ]
+}

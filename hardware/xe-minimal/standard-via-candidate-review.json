@@ -1,0 +1,15 @@
+{
+  "status": "REJECTED_NOT_ADOPTED",
+  "source_board": "pendant-xe-minimal.kicad_pcb",
+  "candidate_board": "standard-via-candidate.kicad_pcb",
+  "intent": "Move the four current hole-over-pad vias to ordinary dogbone positions",
+  "result": {
+    "hole_over_pad_count_before": 4,
+    "hole_over_pad_count_after": 0,
+    "near_pad_annulus_flags_after": 1,
+    "drc_violations_after": 45,
+    "unconnected_after": 0
+  },
+  "decision": "Reject. The simple endpoint moves cross or violate adjacent power, USB, PDM, storage and charger routing. Canonical board remains unchanged.",
+  "next_safe_route": "Reroute each affected net together with neighboring tracks and refill zones, accepting only a candidate with zero DRC, zero unconnected, zero parity, and zero hole-over-pad results."
+}

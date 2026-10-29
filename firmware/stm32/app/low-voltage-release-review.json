@@ -1,0 +1,103 @@
+{
+  "status": "CONTROLLED_STOP_AND_PA0_STANDBY_WAKE_IMPLEMENTED_THRESHOLD_AND_PHYSICAL_CURRENT_UNQUALIFIED",
+  "evidence": {
+    "firmware/stm32/app/main.c": "5c238c6ea340910435b3b9c7a090c223e204633c441bce768802102823f9758f",
+    "firmware/stm32/core/battery_monitor.c": "d82eb025f7197a529d8b779a56e0a9b91b9e56471618ef2f799ae1aa3c30340d",
+    "firmware/stm32/core/storage_owner.c": "97335ad7e39bf323fefbee3f01231fe31e9176596cdfc6d486a6e19a5097d5e6",
+    "firmware/stm32/board/recorder_runtime.c": "20f82482ff358b462ce5e6e054929eedea856b0dec7a2bda02b4a8f5017b8ce1",
+    "firmware/stm32/board/low_battery_standby.c": "64c755670e9f02bfd772c510ff20588829b112d37e5495be0550f3be3da5b58d",
+    "firmware/stm32/board/terminal_fault.c": "aeb23108c7265067f95a5b7c7d1d562e428726c7207b6305ececd1ad17612496",
+    "firmware/stm32/board/storage_power.c": "0e7a6548d2bc69cfb64f477f00de1a62f8f646fa627cf9f475bad69d641d8a99",
+    "firmware/stm32/tests/prototype-v1-regression.json": "4b3684bdcb653b1729388c349cfbd7446572096cb9df89c184cfe2aee67d6503"
+  },
+  "implementation_required": [
+    "Select warning/stop threshold after battery+card power qualification, including ADC error and regulator dropout",
+    "Physically verify that one-second acquisition succeeds during worst-case recording/storage activity; firmware now stops after three consecutive failures or five seconds without any valid sample",
+    "Physically qualify PA0/WKUP1-low Standby entry current, VBUS reset wake and post-wake charging on all five packs"
+  ],
+  "qualification_required": [
+    "Demonstrate voltage headroom through worst-case tail encrypt/write/sync, not only idle ADC threshold",
+    "Test low-voltage event during recording, handoff, host ownership and USB disconnect",
+    "Power-loss recovery remains necessary for rapid droop/battery removal"
+  ],
+  "hardware_runtime_claim": "16h remains a budget target; usable capacity above controlled stop voltage is unverified",
+  "controlled_stop": {
+    "event": "STOP_RECORDING",
+    "terminal_state": "OWN_STOPPED",
+    "api": "recorder_runtime_stop",
+    "behavior": "Device-owned stop drains/finalizes/unmounts via the handoff coordinator, tears down USB and does not automatically resume. Terminal faults then revoke charge, force the storage rail off and enter PA0/WKUP1-low Standby without VBUS. Host/recovery faults prioritize emergency rail cutoff over an incomplete tail.",
+    "tests": [
+      "ASan/UBSan storage owner event sequences incl USB race/host rejection/fault",
+      "Runtime host tests legacy and cooperative; recording session and hardware mocked",
+      "Existing real handoff sequencing suites legacy and cooperative",
+      "ARM application compile/link with bench credentials; unused stop API may be GC removed until policy wired"
+    ],
+    "build_log": "/tmp/pendant-controlled-stop-link.log",
+    "automatic_trigger": "main wired when PENDANT_BATTERY_STOP_MV explicitly configured; unspecified build retains LED-only behavior",
+    "tail_pipeline_validation": {
+      "test": "firmware/stm32/tests/test_recording_handoff.c",
+      "sha256": "3ac5ec2da6ce2204e3e08880acf3867c508d95d20cd394ebb35a46fbfc7012d3",
+      "result": "Legacy and cooperative suites pass ASan/UBSan plus ARM compile",
+      "coverage": [
+        "STOP_RECORDING from device state drains1024 queued plus137 final samples exactly once",
+        "Successful commit/identity/unmount transitions toOWN_STOPPED withoutMSC",
+        "Stop, sink, identity and unmount failures each transition toOWN_FAULT",
+        "Duplicate finish does not duplicate saved samples"
+      ],
+      "limits": "Actual encryption and filesystem are callback fakes in this test; no power reserve or board voltage validation"
+    }
+  },
+  "original_audit_findings": [
+    "Battery sampled at most once per60s, valid for120s, only when audio queue empty and device owns storage",
+    "main passes voltage only to battery LED indicator; no low-voltage stop path",
+    "Owner state machine has USB drain/finalize but no powered-down storage state; faking USB connection would incorrectly expose MSC or resume acquisition",
+    "Battery protected cutoff is not a controlled filesystem shutdown"
+  ],
+  "voltage_policy": {
+    "threshold": "No production default.3600mV used only for build/test, not battery qualification",
+    "sampling": "Configured mode attempts every1000ms only during quiet device ownership; value stale at2500ms",
+    "invalid": "Three consecutive attempted acquisition failures latch a terminal fault. Independently, five seconds without a valid sample during device ownership is terminal, covering a permanently busy queue or lost acquisition opportunity. These are firmware bounds; blocked synchronous storage can still delay main-loop observation and must be measured.",
+    "latch": "No automatic restart on voltage rebound; host ownership pauses missing-data grace",
+    "tests": "Threshold equality, healthy reading, latch, timer wrap, invalid timeout and ownership grace reset; fast-monitor three-failure and five-second freshness bounds; real main runtime ADC-failure controlled-stop and terminal-Standby integration; full38-check non-hardware regression",
+    "arm": "/tmp/pendant-voltage-stop-link/candidate-NOT-FOR-FLASH.elf; build pass, nm confirms battery_stop_poll and recorder_runtime_stop retained",
+    "elf_sha256": "72a8e85065834855221f90419498cff3ff92b02f114913e36279f8c83fdca786",
+    "remaining": [
+      "Real battery/card threshold and shutdown energy margin",
+      "Physical PA0/WKUP1-low Standby current, reset wake and post-wake charging",
+      "Real droop, storage-blocking latency and completed-file recovery tests",
+      "Validate startup threshold,100mV margin, ADC settling and main preflight behavior on all five physical units"
+    ]
+  },
+  "startup_preflight": {
+    "status": "BENCH_MAIN_IMPLEMENTED_ARM_LINK_PASS",
+    "ordering": "After GPIO and16MHz clock setup, before recorder_boot_start, therefore before SD power startup/probe/mount/recovery/audio DMA",
+    "settle_ms": 100,
+    "qualification": "100ms is20x nominal1M||1M with10nF time constant; ADC/rail settling still needs hardware verification",
+    "gate": "Measurement must succeed and exceed configured stop threshold+100mV; <=margin or >4500mV halts with charge inhibited",
+    "margin": "100mV provisional bench margin, not guaranteed shutdown reserve",
+    "limitation": "Low voltage blocks recording boot. USB insertion reset-wakes into the export-only/charge path, covered by mocked main integration; physical wake, charge current, rail margin and import behavior remain NOT_RUN."
+  },
+  "terminal_storage_poweroff": {
+    "status": "IMPLEMENTED_HOST_TESTED_ARM_LINKED",
+    "sequence": "drain/finalize/identity/sync/unmount -> USB teardown -> SPI deinit and analog no-pull pins -> SD_EN low -> disk.ready false",
+    "fault": "Normal shutdown requires SPI release. In an already-latched terminal fault, the irreversible emergency path attempts SPI release but always drives SD_EN low, forbids same-reset restart and may discard only the incomplete tail.",
+    "tests": "Power driver ordering/release failure, irreversible emergency SD_EN-low behavior, runtime normal/cooperative shutdown/repeat rejection/failure and terminal-fault Standby integration; mocked electrical behavior",
+    "limitation": "Card rail decay/backpower and final write completion margin need physical measurement; no restart before reset"
+  },
+  "terminal_audio_shutdown": {
+    "status": "IMPLEMENTED_ARM_LINKED_RUNTIME_MOCK_TESTED",
+    "basis": "Pinned STM32 HAL AcqStop_DMA disables filter/DMA, leaves common clock generator; DeInit disables generator for last ADF instance",
+    "sequence": "Require stopped boundary and HAL_READY -> HAL_MDF_DeInit -> latchPB3low -> outputPB3low -> PB4analog/no pull -> disableADF1 peripheral clock",
+    "scope": "Terminal controlled stop only; normalUSB handoff remains resumable",
+    "tests": "check_audio_shutdown.sh ASan/UBSan pass: null/state/IRQ/masked IRQ/unacknowledged boundary rejected without IO; HAL deinit failure prevents GPIO changes; deinit->GPIO latch low->CLK output->DATA analog->ADF clock disable ordered. ARM application link pass after split into audio_shutdown.c.",
+    "remaining": "Physical clock-low/rail current not measured; MSIK oscillator and shared LPDMA clock remain. HAL is mocked in driver test."
+  },
+  "low_battery_standby": {
+    "status": "IMPLEMENTED_HOST_TESTED_ARM_LINKED_PHYSICAL_NOT_RUN",
+    "sequence": "After controlled recording/storage/audio stop, revoke charge request, force LED off, configure PA0 VBUS_N as active-low WKUP1, close the VBUS race, then enter Standby. USB insertion reset-wakes the MCU; startup ADC and cutoff checks run again before export and charging.",
+    "safety_basis": "STM32U585 Standby keeps BOR active while switching off VCORE and HSI/MSI/PLL clocks. It avoids the former 1ms SysTick wake loop. The protected pack remains the final over-discharge barrier; firmware Standby is not an indefinite-storage guarantee.",
+    "tests": "check_low_battery_standby.sh ASan/UBSan covers IRQ rejection, charge revoke, LED off, VBUS-already-present, attach race and Standby entry; check_application_export.sh covers cold and recording-triggered low-voltage paths; configured U585 application links.",
+    "physical_acceptance": "All five packs: completed-device standby current <=150uA, wake/reset to 9-11mA charge <=1000ms, no completed-file corruption, pack protection behavior recorded.",
+    "result": "NOT_RUN"
+  }
+}

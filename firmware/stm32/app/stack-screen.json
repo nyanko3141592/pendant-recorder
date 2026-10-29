@@ -1,0 +1,272 @@
+{
+  "status": "PARTIAL_STATIC_SCREEN_NOT_STACK_PROOF",
+  "roots": {
+    "main": {
+      "known_direct_frame_sum_bytes": 1536,
+      "chain": [
+        "main",
+        "recorder_boot_start",
+        "storage_mount_recordings",
+        "fatfs_recording_recover",
+        "f_opendir",
+        "follow_path",
+        "dir_find",
+        "dir_next",
+        "create_chain",
+        "put_fat",
+        "move_window",
+        "disk_read",
+        "board_storage_read",
+        "sd_read_sector",
+        "command",
+        "end",
+        "byte"
+      ]
+    },
+    "age_write_recording": {
+      "known_direct_frame_sum_bytes": 3328,
+      "chain": [
+        "age_write_recording",
+        "age_encipher",
+        "encipher",
+        "x25519stanza",
+        "wrap",
+        "hkdfsha256",
+        "hmacsha256",
+        "hmacsha256init",
+        "sha256update",
+        "processblock"
+      ]
+    },
+    "plencrypt": {
+      "known_direct_frame_sum_bytes": 736,
+      "chain": [
+        "plencrypt",
+        "bwrite",
+        "bflush",
+        "aflush",
+        "writeall",
+        "agewrite",
+        "eset",
+        "strncpy"
+      ]
+    },
+    "pldecrypt": {
+      "present_in_elf": false
+    }
+  },
+  "largest_frames": [
+    {
+      "function": "pldecrypt",
+      "bytes": 131176,
+      "kind": "static"
+    },
+    {
+      "function": "age_write_recording",
+      "bytes": 1648,
+      "kind": "static"
+    },
+    {
+      "function": "pbkdf2.constprop",
+      "bytes": 736,
+      "kind": "static"
+    },
+    {
+      "function": "aread.constprop",
+      "bytes": 616,
+      "kind": "static"
+    },
+    {
+      "function": "scalarmult.constprop",
+      "bytes": 584,
+      "kind": "static"
+    },
+    {
+      "function": "storage_handoff_identity",
+      "bytes": 576,
+      "kind": "static"
+    },
+    {
+      "function": "sd_read_sector",
+      "bytes": 552,
+      "kind": "static"
+    },
+    {
+      "function": "aflush",
+      "bytes": 544,
+      "kind": "static"
+    },
+    {
+      "function": "board_usb_prepare",
+      "bytes": 376,
+      "kind": "static"
+    },
+    {
+      "function": "board_battery_measure_mv",
+      "bytes": 352,
+      "kind": "static"
+    },
+    {
+      "function": "pendant_audio_configure",
+      "bytes": 344,
+      "kind": "static"
+    },
+    {
+      "function": "board_rng_init",
+      "bytes": 336,
+      "kind": "static"
+    }
+  ],
+  "indirect_call_functions": [
+    "HAL_DMA_IRQHandler",
+    "__libc_init_array",
+    "__sflush_r",
+    "__sfvwrite_r",
+    "__sigtramp_r",
+    "_fclose_r",
+    "_fwalk",
+    "_fwalk_reent",
+    "_raise_r",
+    "_wcrtomb_r",
+    "agewrite",
+    "battery_monitor_poll",
+    "byte",
+    "ciphertext",
+    "command",
+    "commit",
+    "configuration_reset",
+    "dcd_event_handler",
+    "end",
+    "random_bytes",
+    "randombuf",
+    "recording_handoff_finish",
+    "recording_store_save",
+    "sd_initialize_card",
+    "sd_read_sector",
+    "sd_write_sector",
+    "stop",
+    "tud_deinit",
+    "tud_rhport_init",
+    "tud_task_ext",
+    "wcrtomb"
+  ],
+  "missing_frame_metadata": [
+    "_Balloc",
+    "_Bfree",
+    "__NVIC_DisableIRQ.constprop.4",
+    "__NVIC_EnableIRQ.constprop.5",
+    "__adddf3",
+    "__addsf3",
+    "__aeabi_cdcmpeq",
+    "__aeabi_cdrcmple",
+    "__aeabi_d2iz",
+    "__aeabi_dcmpeq",
+    "__aeabi_dcmpge",
+    "__aeabi_dcmpgt",
+    "__aeabi_dcmple",
+    "__aeabi_dcmplt",
+    "__aeabi_dcmpun",
+    "__aeabi_ddiv",
+    "__aeabi_dmul",
+    "__aeabi_dsub",
+    "__aeabi_f2uiz",
+    "__aeabi_fdiv",
+    "__aeabi_fmul",
+    "__aeabi_i2d",
+    "__aeabi_idiv0",
+    "__aeabi_ui2d",
+    "__aeabi_ui2f",
+    "__aeabi_uldivmod",
+    "__assert_func",
+    "__cmpdf2",
+    "__d2b",
+    "__fputwc",
+    "__hi0bits",
+    "__i2b",
+    "__lo0bits",
+    "__locale_mb_cur_max",
+    "__lshift",
+    "__malloc_lock",
+    "__malloc_unlock",
+    "__mcmp",
+    "__mdiff",
+    "__multadd",
+    "__multiply",
+    "__pow5mult",
+    "__retarget_lock_acquire_recursive",
+    "__retarget_lock_close_recursive",
+    "__retarget_lock_init_recursive",
+    "__retarget_lock_release_recursive",
+    "__sbprintf",
+    "__sflush_r",
+    "__sfvwrite_r",
+    "__sinit",
+    "__smakebuf_r",
+    "__sprint_r.part.0",
+    "__ssprint_r",
+    "__swbuf_r",
+    "__swhatbuf_r",
+    "__swsetup_r",
+    "__udivmoddi4",
+    "_calloc_r",
+    "_dtoa_r",
+    "_exit",
+    "_fflush_r",
+    "_fputwc_r",
+    "_free_r",
+    "_fstat",
+    "_fstat_r",
+    "_getpid",
+    "_getpid_r",
+    "_isatty",
+    "_isatty_r",
+    "_kill",
+    "_kill_r",
+    "_localeconv_r",
+    "_malloc_r",
+    "_malloc_trim_r",
+    "_raise_r",
+    "_realloc_r",
+    "_sbrk",
+    "_sbrk_r",
+    "_svfprintf_r",
+    "_vfiprintf_r",
+    "_vsnprintf_r",
+    "_wcrtomb_r",
+    "abort",
+    "aread.constprop.1",
+    "dir_read.constprop.12",
+    "fiprintf",
+    "free",
+    "frexp",
+    "invoke_class_control.isra.0.constprop.13",
+    "malloc",
+    "memchr",
+    "memcmp",
+    "memcpy",
+    "memmove",
+    "memset",
+    "pbkdf2.constprop.1",
+    "quorem",
+    "raise",
+    "realloc",
+    "scalarmult.constprop.0",
+    "std",
+    "strchr",
+    "strcmp",
+    "strlen",
+    "strncpy",
+    "tud_control_xfer.part.6",
+    "vsnprintf"
+  ],
+  "cycles": [
+    "_vfiprintf_r"
+  ],
+  "reserved_stack_bytes": 24576,
+  "limitations": [
+    "Known frames only; missing metadata treated as zero, so sums are not safe upper bounds",
+    "Function-pointer callbacks through IO/storage and interrupt nesting excluded",
+    "Tail calls conservatively add frames; compiler inlining reflected by SU files",
+    "Stack reservation must be qualified by full call graph and runtime high-water/canary tests"
+  ]
+}

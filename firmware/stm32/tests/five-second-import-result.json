@@ -1,0 +1,43 @@
+{
+  "status": "PASS_FIVE_SECOND_CODEC_STORE_IMPORT_RAM_FAT32",
+  "command": "python3 firmware/stm32/tests/check_recording_end_to_end.py /tmp/pendant-host-tools/age --fat32 --five-second",
+  "chunk_samples": 80000,
+  "sample_rate": 16000,
+  "files": 5,
+  "decoded_samples": 327680,
+  "ciphertext_sizes_bytes": [
+    4356,
+    41220,
+    41220,
+    41220,
+    41220
+  ],
+  "full_chunk_plaintext_bytes": 41020,
+  "observed_encryption_overhead_bytes": 200,
+  "storage_ceiling_bytes": 65536,
+  "full_chunks_for_36h": 25920,
+  "derived_ciphertext_payload_36h_bytes": 1068422400,
+  "derived_16KiB_cluster_file_allocation_36h_bytes": 1274019840,
+  "scope": [
+    "Real C codec/store/age writer and FatFs on synthetic RAM FAT32",
+    "Standard age decryption and production host importer",
+    "ASan and UBSan",
+    "Five decoded files with expected sample counts",
+    "Retry deduplication and source preservation"
+  ],
+  "limitations": [
+    "Five-second codec exercised through synchronous pipeline; cooperative save scheduling is not exercised.",
+    "36h sizes are arithmetic extrapolation, not a 36h physical encryption/capture test.",
+    "Cluster allocation excludes FAT/directories/marker/other files.",
+    "No physical storage timing, capacity, power, endurance or uninterrupted ADC capture validation."
+  ],
+  "source_sha256": {
+    "tests/check_recording_end_to_end.py": "5496d2185535af55530f7617d154ca9df2cf1b6c91dcfbe2ed5064509d618446",
+    "core/wav_chunk.c": "8f20f25da2777464a0acb81e610f405d083a585a3eb158a4bf1ae77f1388d2f8",
+    "core/wav_chunk.h": "0a95ee154eee2333616eb03b7db6a91d8b7a44f594b86130719b4ead4aac2645",
+    "crypto/age_writer.c": "5cae078a794c0a4f94ec6d936fcfe16b523c528d72f3e565b7568ef9ce9e523b",
+    "crypto/fatfs_recording.c": "c0821b2d525f9740d1a13f3b5b0d6955c484d93e4045e80771ea6412b214d1b5",
+    "core/recording_pipeline.c": "0ad419bc7f1f3393ebad895f48af1e8c07aeb3243b4fd27f449b559f664fda4e"
+  },
+  "release_allowed": false
+}

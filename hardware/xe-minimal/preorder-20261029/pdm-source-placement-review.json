@@ -1,0 +1,24 @@
+{
+  "status": "REJECTED_INITIAL_PLACEMENT",
+  "R21_xy_mm": [
+    19.1,
+    12.4
+  ],
+  "R21_angle_deg": 0,
+  "initial_geometric_drc": 1,
+  "violation": "R21 overlaps TP6 courtyard",
+  "parity": 0,
+  "autorouter_run": false,
+  "screen_correction": "Use graphical-item bounding boxes rather than endpoints; endpoints under-represent circular TP6 courtyard",
+  "corrected_fixed_TP6_sites": 0,
+  "corrected_TP6_excluded_best_R21": {
+    "xy_mm": [
+      18.1,
+      12.9
+    ],
+    "angle_deg": 270,
+    "source_straight_distance_mm": 1.2871407265718844
+  },
+  "next_action": "Relocate TP6 with courtyard/copper/probe access checks and evaluate R21/R23 + paired MCU signal fanout together",
+  "release_allowed": false
+}

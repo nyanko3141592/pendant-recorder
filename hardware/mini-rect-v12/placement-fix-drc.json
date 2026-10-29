@@ -1,0 +1,352 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:38:04",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "placement-fix.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 1.5728 mm )",
+                    "pos": {
+                        "x": 13.7471,
+                        "y": 3.6161
+                    },
+                    "uuid": "6be71f36-401e-4bc8-ab5b-cfe6f80a1dd1"
+                },
+                {
+                    "description": "パッド 15 [/SD_CLK_MCU] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 6.4625
+                    },
+                    "uuid": "0ad46389-a20e-4383-b1c5-7bdb0691d4c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5585 mm )",
+                    "pos": {
+                        "x": 3.8551,
+                        "y": 11.8849
+                    },
+                    "uuid": "0b90d9a0-3a64-4d31-9ad9-c236713b6868"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /SD_MOSI)",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.74,
+                        "y": 5.0
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                },
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 0.3577 mm )",
+                    "pos": {
+                        "x": 13.1113,
+                        "y": 4.9337
+                    },
+                    "uuid": "74fa2b24-c2a0-495d-8326-c81ea3164606"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_MOSI と /V3V3)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 1.0400 mm )",
+                    "pos": {
+                        "x": 13.469,
+                        "y": 4.9337
+                    },
+                    "uuid": "3d04e83f-f0d6-4f93-9190-40e6446536cb"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.74,
+                        "y": 5.0
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /NRST)",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.74,
+                        "y": 5.0
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                },
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 1.9922 mm )",
+                    "pos": {
+                        "x": 14.76,
+                        "y": 5.9367
+                    },
+                    "uuid": "e116f63d-73e1-496a-abf9-88ac1dabc0c2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0988 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.74,
+                        "y": 5.0
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                },
+                {
+                    "description": "J3のNPTHパッド",
+                    "pos": {
+                        "x": 14.54,
+                        "y": 4.516
+                    },
+                    "uuid": "2b660b73-4a05-497b-a000-8c695665f269"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.76,
+                        "y": 5.0
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                },
+                {
+                    "description": "J3のNPTHパッド",
+                    "pos": {
+                        "x": 14.54,
+                        "y": 4.516
+                    },
+                    "uuid": "2b660b73-4a05-497b-a000-8c695665f269"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "items": [
+                {
+                    "description": "J3のNPTHパッド",
+                    "pos": {
+                        "x": 14.54,
+                        "y": 4.516
+                    },
+                    "uuid": "2b660b73-4a05-497b-a000-8c695665f269"
+                },
+                {
+                    "description": "フットプリント R2",
+                    "pos": {
+                        "x": 14.25,
+                        "y": 5.0
+                    },
+                    "uuid": "02bed081-ba13-468f-a062-5b98e59aa675"
+                }
+            ],
+            "severity": "error",
+            "type": "npth_inside_courtyard"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 1.0400 mm )",
+                    "pos": {
+                        "x": 13.469,
+                        "y": 4.9337
+                    },
+                    "uuid": "3d04e83f-f0d6-4f93-9190-40e6446536cb"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.74,
+                        "y": 5.0
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( B.Cu 上、長さ: 0.3577 mm )",
+                    "pos": {
+                        "x": 13.1113,
+                        "y": 4.9337
+                    },
+                    "uuid": "74fa2b24-c2a0-495d-8326-c81ea3164606"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.74,
+                        "y": 5.0
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 1.9922 mm )",
+                    "pos": {
+                        "x": 14.76,
+                        "y": 5.9367
+                    },
+                    "uuid": "e116f63d-73e1-496a-abf9-88ac1dabc0c2"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.74,
+                        "y": 5.0
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "J3のNPTHパッド",
+                    "pos": {
+                        "x": 14.54,
+                        "y": 4.516
+                    },
+                    "uuid": "2b660b73-4a05-497b-a000-8c695665f269"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.76,
+                        "y": 5.0
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SD_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.3294,
+                        "y": 3.6066
+                    },
+                    "uuid": "b78876ae-7f13-4aef-9179-90fd568bdeb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "セグメント of R2 、B.Silkscreen 上",
+                    "pos": {
+                        "x": 14.096359,
+                        "y": 4.62
+                    },
+                    "uuid": "f9cd27f0-eea1-434e-b7c2-277d9a399111"
+                },
+                {
+                    "description": "J3のNPTHパッド",
+                    "pos": {
+                        "x": 14.54,
+                        "y": 4.516
+                    },
+                    "uuid": "2b660b73-4a05-497b-a000-8c695665f269"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

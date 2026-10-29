@@ -1,0 +1,70 @@
+{
+  "status": "MATERIAL_AND_ADHESIVE_SCREEN_NO_SELECTION",
+  "checked_date": "2026-10-27",
+  "current_wall_assumption_mm": 0.8,
+  "sources": [
+    {
+      "url": "https://jlc3dp.com/help/article/abs-plastic",
+      "material": "ABS FDM",
+      "wall_mm": 1.6,
+      "minimum_wall_mm": 1.2,
+      "tolerance": "±0.3mm or within 0.4%",
+      "decision": "Current 0.8mm wall is below published minimum"
+    },
+    {
+      "url": "https://jlc3dp.com/help/article/pa12-hp-nylon",
+      "material": "PA12-HP MJF",
+      "wall_mm": 1.0,
+      "tolerance": "±0.3mm within100mm",
+      "decision": "Current 0.8mm wall is below published wall value"
+    },
+    {
+      "url": "https://jlc3dp.com/help/article/photosensitive-8001-resin",
+      "material": "8001 SLA resin",
+      "recommended_wall": "greater than0.8mm",
+      "tolerance": "±0.2mm or within0.3%",
+      "decision": "0.8mm nominal does not meet greater-than recommendation; adhesive compatibility not established"
+    },
+    {
+      "url": "https://www.cemedine.co.jp/home/products/superx/superx2.html",
+      "adhesive": "Cemedine Super X2",
+      "supported_material_examples": [
+        "ABS",
+        "nylon",
+        "acrylic",
+        "polycarbonate"
+      ],
+      "constraints": [
+        "Manufacturer excludes bonding areas directly touching skin",
+        "Small bonding areas may not provide sufficient strength",
+        "No quantified bond-line thickness for this joint on product page"
+      ],
+      "decision": "Candidate only; resin compatibility cannot be inferred from ABS-like designation; current exposed butt seam not qualified"
+    },
+    {
+      "url": "https://files.microcms-assets.io/assets/e9913f16e52248d88e517f6a5e5ad570/f89d5e9072674ac4a69705d178e191bc/dmm_design_guideline_PA12-SLS_rev023.pdf",
+      "material": "DMM.make PA12 SLS unpolished",
+      "document": "REV023",
+      "local_pdf_sha256": "569c47c9cbccc71b7c659312a807946060e795063236d29f3f82330988bc6afe",
+      "supported_and_unsupported_wall_min_mm": 0.8,
+      "unsupported_wire_min_mm": 1,
+      "polished_wall_min_mm": 2,
+      "accuracy_guide": "±0.30mm and ±0.15% in long-axis direction; shape dependent, not guarantee",
+      "in_print_part_separation_mm": 0.5,
+      "decision": "Thin-wall supplier candidate, not qualified. Existing acoustic duct wall0.4mm below wall guideline. Component clearance and narrow support features need process-specific audit.",
+      "visual_review": "PDFpage4 wall categories inspected; accuracy read from PDFtext"
+    }
+  ],
+  "engineering_inferences": [
+    "Need process-specific dimensional budget before declaring fit",
+    "Increasing shell thickness outward affects minimum external size and must remain an unadopted alternative",
+    "Do not infer exact 3D print resin adhesion from generic plastic list"
+  ],
+  "next_actions": [
+    "Evaluate microphone duct wall >=0.8mm and clearance under DMM dimensional guidance before material adoption",
+    "Evaluate a thin-wall manufacturing route or thicker unadopted case alternative",
+    "Select case material before final adhesive specification",
+    "Provide recessed glue land and test adhesion on actual finished case material"
+  ],
+  "no_orders_or_supplier_messages": true
+}

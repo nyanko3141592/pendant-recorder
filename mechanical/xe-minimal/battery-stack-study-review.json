@@ -1,0 +1,33 @@
+{
+  "status": "PROVISIONAL_STACK_NOT_FINISHED_PRODUCT",
+  "source_step_sha256": "174dc3ed85513977b7002a7b362c44bd9ee7dfab60f11169c3be24ea174aff48",
+  "output_sha256": "782641a0130eb3d12112cd4bfcbe930b0c19693dd22bbdb18f528d4c475994ff",
+  "selected_geometric_candidate": {
+    "side": "B",
+    "pack_x_min_mm": 6.5,
+    "pack_y_range_mm": [
+      -27,
+      0
+    ],
+    "pack_z_range_mm": [
+      -5.6850001,
+      -1.4850001000000002
+    ],
+    "assumed_clearance_mm": 0.2,
+    "total_z_extent_without_case_mm": 9.8364002,
+    "limiting_solid_indices": [
+      74,
+      90,
+      106
+    ]
+  },
+  "selection_reason": "Minimum total Z extent in bounding-box screen; first tied X position. Not a final mechanical decision.",
+  "limitations": [
+    "Bounding-box overlap is conservative; not exact solid collision.",
+    "No lead path, connector mating, assembly access, swelling, insulation thickness, retention, acoustic seal or case walls.",
+    "0.2mm gap is a study assumption, not qualified clearance.",
+    "Package geometries include provisional envelopes; this cannot establish final product size.",
+    "Connector access and uncut lead reach not yet verified.",
+    "Unverified package/library geometries retained."
+  ]
+}

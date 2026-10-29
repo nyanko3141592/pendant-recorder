@@ -1,0 +1,33 @@
+{
+  "status": "PUBLIC_TAB_WIDTH_SCREEN_REQUIRES_PANEL_SUPPORT_REDESIGN",
+  "source_url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+  "review_date": "2026-10-27",
+  "public_parameters": {
+    "plain_breakaway_min_width_mm": 4,
+    "mouse_bite_breakaway_min_width_mm": 5,
+    "mouse_bite_diameter_recommended_mm": [
+      0.5,
+      0.8
+    ],
+    "mouse_bite_gap_recommended_mm": [
+      0.2,
+      0.3
+    ],
+    "assembly_rail_width_mm": 5,
+    "assembly_tooling_hole_diameter_mm": 2,
+    "assembly_fiducial_diameter_mm": 1,
+    "fiducial_center_from_panel_edge_mm": 3.85
+  },
+  "screen_reports": [
+    "assembly-panel-tab-site-screen-4mm.json",
+    "assembly-panel-tab-site-screen-5mm.json"
+  ],
+  "finding": "At hypothetical 1 mm inboard depth and 1 mm corner exclusion, only two bottom-edge intervals remain for either public minimum tab width. Earlier 3 mm left-edge candidate is insufficient for these published tab widths.",
+  "decision": "Do not adopt the existing 6-up packing as fabrication-ready. Evaluate supported carrier or panel topology with sufficient support, or revise edge component layout after reviewing copper and cutting process.",
+  "limitations": [
+    "Published dimensional minima do not establish acceptable depanelization stress.",
+    "A bottom-only attachment is not automatically impossible, but mechanical stability and cutting fixture are not demonstrated.",
+    "Source does not establish a qualified inboard tool depth or body clearance for this board.",
+    "No final product size or board geometry changed."
+  ]
+}

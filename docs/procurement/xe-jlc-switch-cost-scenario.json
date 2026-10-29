@@ -1,0 +1,43 @@
+{
+  "status": "CONDITIONAL_JLC_SWITCH_CHARGER_SENSOR_MEMORY_MOSFET_SCENARIO_NOT_QUOTE",
+  "sources_sha256": {
+    "docs/procurement/xe-jlc-charger-cost-scenario.json": "858f53fb35e2a268fff4896a40129d96f2f6e7a44e4fd6dbf0189104425e7768",
+    "docs/procurement/xe-tps22950-jlc-availability.json": "636432a4a5800c3c7f6b7679c77c909335b77309916cbfbe198b41fcd112b749",
+    "hardware/xe-minimal/fixed-usb-limit-trial/dmn-land-trial/five-unit-cost-coverage.json": "5969299b0ca785548c3209f87c3b7578477fbf92ae6cb426d4c8c531edb3e16a"
+  },
+  "switch_replacement": {
+    "mpn": "TPS22950YBHR",
+    "installed_quantity": 5,
+    "removed_retail_JPY": 810,
+    "removed_quantity_proposal_JPY": 810,
+    "added_PCBA_USD": 4.4685
+  },
+  "subtotals": {
+    "mixed_date_parts_reference_subtotals_by_currency": {
+      "JPY": 16506.7,
+      "USD": 215.302
+    },
+    "mixed_date_quantity_proposal_reference_subtotals_by_currency": {
+      "JPY": 16427.7,
+      "USD": 215.302
+    }
+  },
+  "complete_five_unit_total_JPY": null,
+  "limits": [
+    "Availability is observed, not allocated or a binding quotation",
+    "This does not qualify the MOSFET circuit or whole BOM procurement",
+    "Do not substitute ElecSuper DMN2056U-7(ES)",
+    "All other historical mixed-date source limitations remain; no blanket current availability claim.",
+    "JLC assembly of the entire mixed-source BOM has not been confirmed.",
+    "Stock not allocated; no purchase or upload",
+    "PCBA inventory only; not a standalone shipment",
+    "Attrition, process, feeder, inspection, shipping and tax charges excluded",
+    "C9900196853 is a separate consignment/assembly-service entry, not equivalent component pricing",
+    "Full BOM, assembly process and footprint approval remain pending",
+    "Five sensors price only; assembler attrition and purchasing quantity remain unknown",
+    "Stock and prices are recorded observations, not freshly reserved or quoted",
+    "Charger cost is five installed pieces only; attrition and final purchase quantity unknown",
+    "U13 requires Standard PCBA and X-ray inspection per listing; inspection cost remains unpriced",
+    "No TPS22950L substitution; same exact part retained"
+  ]
+}

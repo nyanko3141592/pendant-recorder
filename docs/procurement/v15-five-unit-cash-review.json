@@ -1,0 +1,184 @@
+{
+  "status": "INCOMPLETE_CASH_REQUIREMENT_SAVED_PRICE_SNAPSHOT_NOT_QUOTE",
+  "prototype_units": 5,
+  "source_sha256": {
+    "v15-five-unit-cost-review.json": "93b2e28643afaca789f016b6f40b92e74510889e2039e187cbb3d5f1dcaada45",
+    "v15-five-unit-quantity-review.json": "dee30daff965a10fc3efeda7bc8597f828e300f16dd3f868d8784e72dd707e38",
+    "v15-supplemental-cost-review.json": "104a4fc40a5c671b0b3e4fcc90bd258da602b56ae632ebe133167136d33ee179",
+    "v15-assembly-rate-review.json": "4b738ed389610a247f050ce47215045838def2a0cfdbb83cb65beac4ab61cf24",
+    "v15-retention-pad-candidates.json": "d0dc813d0cd7deaf687991e5d1baf30d91e0eb500796c08bc4cacd14153f8dcd"
+  },
+  "complete_total_JPY": null,
+  "complete_per_unit_JPY": null,
+  "release_allowed": false,
+  "separate_reference_buckets": [
+    {
+      "item": "37 board MPNs, installed demand only",
+      "currency": "JPY",
+      "tax_basis": "exclusive",
+      "amount": 29217.7,
+      "actual_procurement_cost": false
+    },
+    {
+      "item": "Five XE batteries",
+      "currency": "JPY",
+      "tax_basis": "inclusive",
+      "amount": 7500,
+      "actual_procurement_cost": false
+    },
+    {
+      "item": "Remaining board resistor, five installed",
+      "currency": "USD",
+      "tax_basis": "destination charges excluded",
+      "amount": 0.55,
+      "actual_procurement_cost": false
+    }
+  ],
+  "alternative_purchase_quantities": [
+    {
+      "item": "Same37 JPY board MPNs, listed price-break proposals",
+      "currency": "JPY",
+      "tax_basis": "exclusive",
+      "amount": 29025.7,
+      "extra_units": 25,
+      "replaces": "37 board MPNs, installed demand only",
+      "attrition_included": false
+    },
+    {
+      "item": "390k resistor10-piece price break",
+      "currency": "USD",
+      "amount": 0.22,
+      "replaces": "Remaining board resistor, five installed",
+      "attrition_included": false
+    }
+  ],
+  "conditional_assembly_scenarios": [
+    {
+      "assumed_feeder_loads": 38,
+      "setup_USD": 51.12,
+      "stencil_USD": 16.42,
+      "two_fixtures_USD": 16.42,
+      "feeder_USD": 58.14,
+      "SMT_1610_pad_proxy_USD": 2.576,
+      "manual_20_pad_proxy_USD": 0.328,
+      "hand_solder_labor_USD": 3.58,
+      "modeled_partial_assembly_USD": 148.584,
+      "partial_assembly_with_20_aggregate_xray_components_USD": 164.984,
+      "partial_assembly_with_per_type_xray_sensitivity_USD": 181.384
+    },
+    {
+      "assumed_feeder_loads": 47,
+      "setup_USD": 51.12,
+      "stencil_USD": 16.42,
+      "two_fixtures_USD": 16.42,
+      "feeder_USD": 71.91,
+      "SMT_1610_pad_proxy_USD": 2.576,
+      "manual_20_pad_proxy_USD": 0.328,
+      "hand_solder_labor_USD": 3.58,
+      "modeled_partial_assembly_USD": 162.354,
+      "partial_assembly_with_20_aggregate_xray_components_USD": 178.754,
+      "partial_assembly_with_per_type_xray_sensitivity_USD": 195.154
+    }
+  ],
+  "candidate_material_purchase": {
+    "item": "4701-30-20093-04",
+    "currency": "USD",
+    "full_sheet_price": 17.95,
+    "sheet_count": 1,
+    "consumption_mm2": 60,
+    "shipping_tax_excluded": true,
+    "adopted": false,
+    "not_prorated": true,
+    "alternative_3_18mm_sheet_excluded": true
+  },
+  "unpriced_items": [
+    {
+      "item": "Qualified microSD card at least2GB",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Case body",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Case lid",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Removable left support key (current comparison)",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Thermal contact material",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "PORON support pads 2x2mm (three per unit; purchase full sheet)",
+      "required_quantity": 15,
+      "price": null
+    },
+    {
+      "item": "Pad adhesive pieces (three per unit; purchase pack/roll)",
+      "required_quantity": 15,
+      "price": null
+    },
+    {
+      "item": "Case closure tape (purchase pack/roll; not selected)",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "Pendant cord/accessory set (not selected)",
+      "required_quantity": 5,
+      "price": null
+    },
+    {
+      "item": "SWD pogo fixture/cable set",
+      "required_quantity": 1,
+      "price": null
+    },
+    {
+      "item": "Debug probe (reuse ownership not confirmed)",
+      "required_quantity": 1,
+      "price": null
+    },
+    {
+      "item": "Assembly support fixture (not yet designed)",
+      "required_quantity": 1,
+      "price": null
+    },
+    {
+      "item": "USB-C data cable (reuse ownership not confirmed)",
+      "required_quantity": 1,
+      "price": null
+    }
+  ],
+  "unpriced_services": [
+    "Six-layer PCB fabrication and panelization",
+    "Assembler attrition, sourcing and consignment acceptance/fees",
+    "Case print material/process and finishing",
+    "Shipping for each supplier",
+    "Destination taxes, import fees and payment conversion",
+    "Any additional inspection/process fees required by supplier"
+  ],
+  "known_stock_shortfalls": [
+    "CC0603KRX5R6BB106",
+    "CC0603KRX5R6BB475",
+    "SN74HCS74DYYR"
+  ],
+  "interpretation": [
+    "Reference buckets are deliberately not summed across currency or tax bases. No exchange rate or destination tax is assumed.",
+    "37 JPY MPN prices include unavailable parts. A price is not evidence of stock, assembly acceptance or correct electrical qualification.",
+    "Price-break alternatives replace installed-demand rows; never add both. Proposed quantities contain no supplier-confirmed attrition allowance.",
+    "Assembly scenarios include setup/stencil/fixtures/feeder and soldering proxies; do not add these services again. X-ray columns are alternative scenarios, not cumulative charges.",
+    "The five-unit cash requirement includes the entire material sheet/roll purchase, even where only small pieces are consumed. Retention and closure materials are not yet adopted.",
+    "Tools and fixtures are one-time costs; reuse and compatibility are not confirmed. Do not assign zero merely because an item might already be owned.",
+    "5000JPY product target is separate from five-prototype expenditure. This file neither proves the target nor provides a complete spending ceiling.",
+    "All prices come from saved observations. No new availability check, quote request, order, payment or upload occurred."
+  ]
+}

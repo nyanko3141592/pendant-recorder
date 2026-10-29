@@ -1,0 +1,60 @@
+{
+  "status": "SUPERSEDED_DTP301120_40MAH_SCREEN_NOT_DTP401525_XE_DO_NOT_USE",
+  "superseded_by": "docs/sourcing/dtp401525-xe-purchase-specification.json",
+  "date": "2026-10-26",
+  "part": "DTP301120(PHR)",
+  "sources": {
+    "marutsu": "https://www.marutsu.co.jp/pc/i/836347/",
+    "sengoku": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-4YZK",
+    "datasheet": "https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/836347.pdf"
+  },
+  "datasheet_revision": "E-SPE-0929-01 Ver1.0 2016-09-29",
+  "pdf_sha256": "17654a65ce7e74527bff5363af8780c55867507149dc931a72a6af159e84686d",
+  "drawing_page9_visually_checked": true,
+  "pack_max_mm": [
+    11.5,
+    22,
+    3.4
+  ],
+  "cell_not_pack_mm": [
+    11,
+    20,
+    3
+  ],
+  "lead": {
+    "length_mm": 100,
+    "tolerance_mm": 3,
+    "spec": "UL3302 AWG26",
+    "connector_drawing_label": "JST-PHR-2P",
+    "red": "+",
+    "black": "-"
+  },
+  "electrical": {
+    "capacity_mAh": 40,
+    "charge_limit_V": 4.2,
+    "standard_charge_mA": 8,
+    "max_continuous_charge_mA": 40,
+    "max_continuous_discharge_mA": 40,
+    "termination_mA": 0.4,
+    "charge_temperature_C": [
+      0,
+      45
+    ],
+    "discharge_temperature_C": [
+      -20,
+      60
+    ],
+    "datasheet_discharge_cutoff_V": 2.4
+  },
+  "compatibility_findings": [
+    "Two domestic product pages found, but live stock/price not extracted; do not claim5units secured.",
+    "100+/-3mm leads must be stored uncut. WireOD/bendradius and routing remain unverified.",
+    "CSNP16GCR01-AOW publishedwrite50/read60mA maxima exceed40mA pack discharge beforeotherloads. Cannot directly qualify existing linearpower design.",
+    "Existing V15charge39.31..49.02mA estimate reaches beyond40mA and termination approximately4.41mA differsfrom.4mA reference. Charging requires redesign and fullregulatorerror review.",
+    "Average1.75mA for16h assumes70% usable capacity. No physical runtime or lowcurrent bound established.",
+    "Manufacturer2025DTP301120 barecell specification is not automatic replacement for2016finishedPHR pack."
+  ],
+  "next_action": "Assess bounded low-peak storage/power architecture and100mm harness packing; do notadopt40mAh bycapacityorbodydimensionsalone.",
+  "inquiries_sent": false,
+  "release_allowed": false
+}

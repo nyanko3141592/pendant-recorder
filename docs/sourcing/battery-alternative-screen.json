@@ -1,0 +1,64 @@
+{
+  "status": "ALTERNATIVE_RESEARCH_NOT_SELECTED",
+  "date": "2026-10-26",
+  "candidate": {
+    "manufacturer": "Benzo Energy",
+    "model": "BZ601515",
+    "source": "https://www.bzbattery.com/li-ion-cell-manufacturer-wholesale-portable-medical-equipment-battery-bz-601515-3-7v-100mah-li-polymer-battery.html",
+    "published_capacity_mAh": 100,
+    "published_initial_max_dimensions_mm": [
+      15,
+      17,
+      6
+    ],
+    "published_max_continuous_discharge_C": 1,
+    "derived_continuous_mA": 100,
+    "charge_voltage_V": 4.2,
+    "charge_voltage_tolerance_V": 0.03,
+    "discharge_cutoff_V": 3.0,
+    "standard_charge_mA": 20,
+    "standard_termination_mA": 1,
+    "published_ac_impedance_max_mohm": 325,
+    "screen": "Same nominal envelope as model and higher published current than YDL candidate; NOT a qualified replacement",
+    "unresolved": [
+      "NTC value/curve and 3pin finished harness",
+      "protected completed-pack maximum dimensions including leads",
+      "discharge rating of protected pack versus cell",
+      "5/10 piece availability and Japan landed quote",
+      "signed cell/pack datasheet and shipping documentation",
+      "existing charge termination2mA differs from published1mA, requires review"
+    ],
+    "pricing": "Page display1USD and inconsistent MOQ/Ampere fields are not a usable small-batch quote"
+  },
+  "system_consequence": "100mA still does not support the218mA reference card maximum; must select exact lower-current media or redesign qualified power path. Do not use1C charge as discharge evidence; table explicitly lists both separately.",
+  "secondary_supplier_screen": {
+    "source": "https://www.powerstream.com/li-pol.htm",
+    "finding": "Protected60mAh small cell listed no stock, protected150mAh20x20x5 also not stocked; does not establish available same-envelope100mAh substitute."
+  },
+  "actions": "No supplier contact, order, BOM substitution or model revision.",
+  "DNK601515_screen": {
+    "source": "https://www.fpbattery.com/wp-content/uploads/2024/05/fpbattery-601515-3.7V-90mAh-Lithium-Polymer-Battery-Specification.pdf",
+    "document": "A/FP1515-2315 version01 PRELIMINARY",
+    "capacity_mAh": 90,
+    "dimensions_mm": [
+      17,
+      15,
+      6
+    ],
+    "continuous_mA": 90,
+    "pulse_mA": 270,
+    "pulse_duration_ms": 10,
+    "recommended_charge_mA": 18,
+    "max_charge_mA": 45,
+    "runtime_16h_average_budget_mA_at_70pct_usable": 3.9374999999999996,
+    "decision": "Same nominal envelope candidate only. 270mA is limited to10ms: cannot approve arbitrary SD writes/inrush or repeated pulse duty without specification. Does not remove200mA LDO limit. Capacity loss lowers16h average budget from4.375 to3.9375mA.",
+    "unresolved": [
+      "Completed protected pack maximum dimensions/tolerances, swelling and leads",
+      "NTC and finished3pin harness",
+      "Pulse repetition/duty/SOC/temperature bounds and card load waveform",
+      "Final signed specification: preliminary protection overcurrent3–5A does not authorize3–5A cell discharge",
+      "5/10piece availability, price, Japan freight and shipping documentation"
+    ],
+    "action": "Not selected. No contact or BOM/model modification."
+  }
+}

@@ -1,6 +1,6 @@
-# 非円形の高密度配置 — v1の最新方針
+# 非円形の高密度配置 — 履歴検討
 
-> Rev A1更新: [実フットプリントでの配置検討と未解決項目](../hardware/rev-a/layout-review.md)。基板20×34mmは未配線の検討値。充電は6.19kΩで公称21.8mAへ変更。旧50mA設定や外形枠よりこの更新を優先する。
+> **履歴資料・発注禁止。** Rev A1、20×34mm、24時間、旧充電設定は失効済み。現行候補は [`requirements.md`](requirements.md) と [`hardware/xe-minimal/active-design.json`](../hardware/xe-minimal/active-design.json)を正本とする。
 
 > 最新: [既製電池の調達を起点に最小化](battery-sourcing.md)。DTP401525(PHR) 110mAhを第一候補とし、外形24×24×14mm・基板21×21mmへの固定を解除。メーカー最大充電55mAに対する現回路50mAの公差確認は未完了。
 

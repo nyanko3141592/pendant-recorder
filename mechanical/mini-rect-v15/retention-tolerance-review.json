@@ -1,0 +1,99 @@
+{
+  "status": "FIXED_1MM_PAD_NOT_ROBUST_IN_TOLERANCE_SENSITIVITY",
+  "source_sha256": "1ace067267bfc4ac38d0601fe3aefd4d1e6125ac3ff2b8de23ae5fcd774c3ff2",
+  "guideline_source": "https://jlc3dp.com/help/article/3d-printing-design-guideline",
+  "independent_feature_error_assumed_mm": 0.2,
+  "tolerance_is_supplier_feature_guarantee": false,
+  "cases": [
+    {
+      "pcb_mm": 0.8,
+      "ledge_error_mm": -0.2,
+      "post_error_mm": -0.2,
+      "gap_mm": 0.8,
+      "signed_compression_fraction": 0.2,
+      "contact": true
+    },
+    {
+      "pcb_mm": 0.8,
+      "ledge_error_mm": -0.2,
+      "post_error_mm": 0.2,
+      "gap_mm": 1.2,
+      "signed_compression_fraction": -0.2,
+      "contact": false
+    },
+    {
+      "pcb_mm": 0.8,
+      "ledge_error_mm": 0.2,
+      "post_error_mm": -0.2,
+      "gap_mm": 0.4,
+      "signed_compression_fraction": 0.6,
+      "contact": true
+    },
+    {
+      "pcb_mm": 0.8,
+      "ledge_error_mm": 0.2,
+      "post_error_mm": 0.2,
+      "gap_mm": 0.8,
+      "signed_compression_fraction": 0.2,
+      "contact": true
+    },
+    {
+      "pcb_mm": 0.93,
+      "ledge_error_mm": -0.2,
+      "post_error_mm": -0.2,
+      "gap_mm": 0.67,
+      "signed_compression_fraction": 0.33,
+      "contact": true
+    },
+    {
+      "pcb_mm": 0.93,
+      "ledge_error_mm": -0.2,
+      "post_error_mm": 0.2,
+      "gap_mm": 1.07,
+      "signed_compression_fraction": -0.07,
+      "contact": false
+    },
+    {
+      "pcb_mm": 0.93,
+      "ledge_error_mm": 0.2,
+      "post_error_mm": -0.2,
+      "gap_mm": 0.27,
+      "signed_compression_fraction": 0.73,
+      "contact": true
+    },
+    {
+      "pcb_mm": 0.93,
+      "ledge_error_mm": 0.2,
+      "post_error_mm": 0.2,
+      "gap_mm": 0.67,
+      "signed_compression_fraction": 0.33,
+      "contact": true
+    }
+  ],
+  "gap_range_mm": [
+    0.27,
+    1.2
+  ],
+  "signed_compression_range": [
+    -0.2,
+    0.73
+  ],
+  "hypothetical_compression_window": {
+    "min": 0.2,
+    "max": 0.6,
+    "material_rating": false,
+    "required_pad_min_mm": 1.4999999999999998,
+    "required_pad_max_mm": 0.675,
+    "feasible": false
+  },
+  "limitations": [
+    "Only nominal and maximum PCB thickness considered; lower PCB thickness limit is not established.",
+    "General model tolerance does not specify independent internal feature heights or datum correlation.",
+    "Pad thickness tolerance, lid seating, adhesive, warpage and compression set omitted.",
+    "Negative signed compression means a gap, not tensile foam strain.",
+    "Right ledge nominal R37 clearance 0.2mm has no verified relative feature tolerance."
+  ],
+  "next_required_action": "Specify and measure assembled support-to-post gap at all three sites before selecting pad thickness and force curve; use measured fitted shims/pads for prototypes if required. Recheck R37 clearance and enclosure limits after adjustment.",
+  "adopted": false,
+  "release_allowed": false
+}

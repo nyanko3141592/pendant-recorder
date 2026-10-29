@@ -1,0 +1,34 @@
+{
+  "status": "FILLED_REGION_VIA_TOPOLOGY_PATH_FOUND",
+  "pcb_sha256": "10f561cc51b6607472c4707a498bdfe15dab6a2218a55a7aa12a6c14edf36e5c",
+  "start_region": "In3.Cu:5b231fb3-05ee-44a9-97b0-c06c95af5573:3",
+  "target_region": "In3.Cu:5b231fb3-05ee-44a9-97b0-c06c95af5573:0",
+  "path": [
+    {
+      "from": "In3.Cu:5b231fb3-05ee-44a9-97b0-c06c95af5573:3",
+      "to": "In1.Cu:677b077b-c24a-47bc-af4c-e8d94aca8a14:0",
+      "via_uuid": "28e662aa-59b0-4121-9606-0d311a774d58",
+      "via_position_mm": [
+        22.372962,
+        8.746909
+      ]
+    },
+    {
+      "from": "In1.Cu:677b077b-c24a-47bc-af4c-e8d94aca8a14:0",
+      "to": "In3.Cu:5b231fb3-05ee-44a9-97b0-c06c95af5573:0",
+      "via_uuid": "ce2693b5-898d-460e-846b-4133de21b0ee",
+      "via_position_mm": [
+        21.265,
+        10.895
+      ]
+    }
+  ],
+  "region_count": 10,
+  "ground_vias_examined": 60,
+  "limits": [
+    "Graph uses filled polygon membership of via centers on In1/In3 only",
+    "Assumes normal plated through-via electrical continuity; physical plating unmeasured",
+    "Path minimizes graph hops, not geometric distance, loop area or inductance",
+    "A connection path does not qualify USB return currents or signal integrity"
+  ]
+}

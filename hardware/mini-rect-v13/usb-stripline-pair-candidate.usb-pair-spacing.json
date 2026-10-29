@@ -1,0 +1,39 @@
+{
+  "status": "GEOMETRIC_SPACING_SCREEN_NOT_IMPEDANCE_APPROVAL",
+  "source_sha256": "63c5f7002c30a90ee451bf1c59fd2c0d0b6b660608aaf4d7d60e2a3936a2fc1f",
+  "rows": [
+    {
+      "net": "/USB_DP",
+      "inner_length_mm": 11.252,
+      "edge_gap_range_mm": [
+        0.1199,
+        0.4714
+      ],
+      "length_by_gap_mm": {
+        "gap_0.10_to_0.15_mm": 9.892,
+        "gap_0.15_to_0.30_mm": 0.593,
+        "gap_above_0.30_mm": 0.767,
+        "gap_below_0.10_mm": 0
+      }
+    },
+    {
+      "net": "/USB_DM",
+      "inner_length_mm": 10.977,
+      "edge_gap_range_mm": [
+        0.1199,
+        0.4198
+      ],
+      "length_by_gap_mm": {
+        "gap_0.10_to_0.15_mm": 10.109,
+        "gap_0.15_to_0.30_mm": 0.603,
+        "gap_above_0.30_mm": 0.265,
+        "gap_below_0.10_mm": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Nearest opposite-net segment distance, not proof of parallel orientation or coupling",
+    "Via transitions and outer-layer branches excluded",
+    "No selected laminate or field-solver validation; constant trace width alone does not establish90ohm"
+  ]
+}

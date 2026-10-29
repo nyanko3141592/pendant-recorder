@@ -1,0 +1,160 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:38:44",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "r2-search-0.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.09,
+                        "y": 0.75
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - J3 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.73,
+                        "y": 4.135
+                    },
+                    "uuid": "e8f6a79b-4b18-47a4-8af1-c29b7e9e0306"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 0.4914 mm )",
+                    "pos": {
+                        "x": 13.3513,
+                        "y": 4.528
+                    },
+                    "uuid": "b34b83f1-c2c0-40d8-8de5-254eec6361cd"
+                },
+                {
+                    "description": "パッド 2 [/NRST] - R2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.11,
+                        "y": 0.75
+                    },
+                    "uuid": "27d2a68e-3ddc-45f9-b514-ee6b1df7ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 0.1260 mm )",
+                    "pos": {
+                        "x": 13.658,
+                        "y": 3.527
+                    },
+                    "uuid": "63f51b19-eb5b-4c00-b1ca-a50e21e02d9c"
+                },
+                {
+                    "description": "パッド 15 [/SD_CLK_MCU] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 6.4625
+                    },
+                    "uuid": "0ad46389-a20e-4383-b1c5-7bdb0691d4c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5585 mm )",
+                    "pos": {
+                        "x": 3.8551,
+                        "y": 11.8849
+                    },
+                    "uuid": "0b90d9a0-3a64-4d31-9ad9-c236713b6868"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.3677 mm )",
+                    "pos": {
+                        "x": 13.48,
+                        "y": 6.26
+                    },
+                    "uuid": "697205a3-a536-4c46-b1c5-0fc949b5827e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SD_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 15.3294,
+                        "y": 3.6066
+                    },
+                    "uuid": "b78876ae-7f13-4aef-9179-90fd568bdeb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

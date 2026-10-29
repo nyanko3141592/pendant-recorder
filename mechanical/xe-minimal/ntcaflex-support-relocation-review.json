@@ -1,0 +1,116 @@
+{
+  "status": "SUPPORT_RELOCATION_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "film-sensor-clearance-200um-lower-trial.step": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97",
+    "ntcaflex-diagonal-positioned-reference.step": "98c8c667fa13ff247d718b7f6ab66a1f3df63a16cc2e4718da33b4f494d89d08",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "film-sensor-clearance-200um-separator-trial.step": "69dbd7dcedd2c4b0f85c3339cb82fb253a16aa2a17e269174d81429b5aec0342"
+  },
+  "exported_y_start_mm": -25,
+  "output_sha256": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+  "cases": [
+    {
+      "post_y_start_mm": -25,
+      "valid": true,
+      "solids": 1,
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.08589838486200004
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.15811388300841847
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        }
+      },
+      "post_seat_proxy_mm3": 0.0
+    },
+    {
+      "post_y_start_mm": -24,
+      "valid": true,
+      "solids": 1,
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.08589838486200004
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.15811388300841847
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        }
+      },
+      "post_seat_proxy_mm3": 0.0
+    },
+    {
+      "post_y_start_mm": -10,
+      "valid": true,
+      "solids": 1,
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.023309565168527276,
+          "distance_mm": 0.0
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.15811388300841847
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        }
+      },
+      "post_seat_proxy_mm3": 0.0
+    },
+    {
+      "post_y_start_mm": -8,
+      "valid": true,
+      "solids": 1,
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.08589838486200004
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.15811388300841847
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        },
+        "separator": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        }
+      },
+      "post_seat_proxy_mm3": 0.0
+    }
+  ],
+  "limits": [
+    "Current separator was designed for JT and still needs replacement for NTCAFLEX.",
+    "Downshift contact proxy is not measured seating or strength.",
+    "Nominal related-part sensor, no tolerance or thermal-contact qualification.",
+    "Slicing, wall continuity, full sensor carrier, harness and assembly remain unchecked."
+  ]
+}

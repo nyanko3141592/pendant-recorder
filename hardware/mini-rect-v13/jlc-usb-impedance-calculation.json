@@ -1,0 +1,50 @@
+{
+  "status": "OFFICIAL_CALCULATOR_RESULTS_CONDITIONAL_NOT_SELECTED",
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "observed_date": "2026-10-26",
+  "input": {
+    "layers": 4,
+    "nominal_thickness_mm": 0.8,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "target_diff_ohm": 90,
+    "type": "Differential Pair (Non coplanar)",
+    "signal": "L3",
+    "top_reference": "L2",
+    "bottom_reference": "L4",
+    "requested_spacing_mm": 0.12
+  },
+  "results": [
+    {
+      "stackup": "JLC04081H-3313",
+      "label": "Standard",
+      "width_mm": 0.1064,
+      "spacing_mm": 0.1199,
+      "finished_thickness_mm": 0.8,
+      "thickness_tolerance_mm": 0.1
+    },
+    {
+      "stackup": "JLC04081H-7628B",
+      "label": "Special",
+      "width_mm": 0.0866,
+      "spacing_mm": 0.1199,
+      "finished_thickness_mm": 0.81,
+      "thickness_tolerance_mm": 0.1
+    },
+    {
+      "stackup": "JLC04081H-2116B",
+      "width_mm": 0.1171,
+      "spacing_mm": 0.1199,
+      "finished_thickness_mm": 0.78,
+      "thickness_tolerance_mm": 0.1
+    }
+  ],
+  "limitations": [
+    "Calculator assumes both reference planes; actual board L4 pour is interrupted",
+    "Not a calculation of actual0.127mm track or varying0.1017\u20130.4327mm spacing",
+    "7628B result below existing0.1mm rule; do not adopt or relax rule",
+    "Displayed tolerance0.5% is calculator setting, not purchased manufacturing tolerance",
+    "No quote or stackup order acceptance"
+  ],
+  "decision": "Do not relabel current traces90ohm or apply widths without reference-plane redesign/qualification"
+}

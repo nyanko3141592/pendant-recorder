@@ -1,0 +1,70 @@
+{
+  "status": "SEPARATE_ROUTED_CANDIDATE_NOT_RELEASED",
+  "candidate": "CSNP32GCR01-BOW",
+  "jlc": "C5440134",
+  "capacity_gb": 4,
+  "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/bfa5f23b6901abecebf24c347afa6e3d.pdf?productCode=C5440134",
+  "catalog": "https://jlcpcb.com/partdetail/Creat_StorageWorld-CSNP32GCR01BOW/C5440134",
+  "verified_datasheet": {
+    "body_nominal_mm": [
+      8,
+      6.2
+    ],
+    "height_table_nominal_max_mm": [
+      0.8,
+      0.9
+    ],
+    "read_write_max_ma_at_3v3_50mhz": 25,
+    "standby_max_ua": 200,
+    "temperature_c": [
+      0,
+      70
+    ],
+    "spi_pins": {
+      "1": "reserved",
+      "2": "CS_N",
+      "3": "CLK",
+      "4": "GND",
+      "5": "DI",
+      "6": "DO",
+      "7": "reserved",
+      "8": "VCC"
+    }
+  },
+  "current_2gb_comparison": {
+    "read_max_ma": 60,
+    "write_max_ma": 50,
+    "standby_max_ua": 250,
+    "jlc_observed_5pcs_usd": "216.4670"
+  },
+  "cad_comparison": "Existing local 32G and16G footprint signal pads match, but unnumbered auxiliary land center differs y2.6 vs2.5mm. Datasheet/mechanical/paste review and regenerated DRC/parity/manufacturing data required.",
+  "price": "JLC live observed 2026-10-25: 40.1579USD at1+, stock638 available635; see docs/sourcing/storage-live-price-review.json",
+  "battery_implication": "25mA stated operating max may reduce the50mA-cell conflict, but MCU/mic/rail/inrush/busy conditions and actual battery limits still need qualification.",
+  "rfq": "docs/sourcing/jlc-v12-r5-inquiry-en.txt; local only, not sent",
+  "mechanical_review": {
+    "source_local": "reference/csnp32gcr01-bow.pdf",
+    "source_sha256": "966792b6c65fd066decbb1d7e058a68d2896b4d50a6bcf6bf45722a709f25df0",
+    "visual_review": "PDF page 5 top-view pinout and package drawing; page 6 dimension table",
+    "signal_lands": "Top-view pins 1..4 left top to bottom; 8..5 right top to bottom. Local 32G footprint matches nominal 1.27mm pitch, 7mm row spacing, 0.8x0.7mm terminals.",
+    "auxiliary_land": "Drawing M=3.5mm and N=2.6mm agrees with local 32G unnumbered land (0,2.6), size 0.7x0.8. Current 16G land is (0,2.5); not an exact footprint replacement.",
+    "body_max_mm": [
+      8.1,
+      6.3,
+      0.9
+    ],
+    "existing_u11_model_envelope_mm": [
+      8.55,
+      6.75,
+      0.9
+    ],
+    "envelope_contains_candidate_max": true,
+    "pcb_bottom_z_mm": 8.5,
+    "candidate_bottom_z_mm": 7.6,
+    "battery_nominal_top_z_mm": 7.4,
+    "nominal_vertical_gap_mm": 0.2,
+    "qualification": "Arithmetic envelope check only. The 0.2mm nominal gap does not cover unconfirmed pack tolerance, swelling, PCB warp, assembly tolerance or insulation. No final mechanical release.",
+    "next": "Candidate generated and ERC/DRC/parity passed. Confirm auxiliary pad/paste requirements and power-on current/ramp; assess output capacitor/ramp tradeoff before adoption."
+  },
+  "cad_candidate": "storage-4gb-candidate.kicad_pcb/.kicad_sch; signal pads/nets unchanged, auxiliary pad shifted0.1mm; ERC DRC parity unconnected all0",
+  "startup_current_screen": "storage-inrush-screen.json: existing22uF+0.1uF output bulk, +20% assumed tolerance and TI3.6V typical3.2mV/us yields84.864mA capacitor-only, before internal startup/system load. Sensitivity screen, not measured or guaranteed actual3.3V current. Lower operation current does not qualify battery startup."
+}

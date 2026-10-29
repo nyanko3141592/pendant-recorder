@@ -1,0 +1,69 @@
+{
+  "status": "BATTERY_SELECTION_POWER_SCREEN_NOT_QUALIFIED",
+  "battery": "DTP401525-XE",
+  "capacity_mAh": 110,
+  "usable_fraction_hypothesis": 0.7,
+  "average_battery_limit_mA": 4.4,
+  "nonstorage_average_allocation_mA": 2.9007248062015503,
+  "storage_average_allocation_mA": 1.49927519379845,
+  "nonstorage_peak_reserve_mA": 20,
+  "storage_peak_allocation_mA": 90,
+  "topology": "Existing linear regulator: card current substantially passes through to battery; do not multiply by3.3/3.7 as if buck efficiency were known.",
+  "scenarios": [
+    {
+      "storage_active_mA_hypothesis": 34,
+      "storage_idle_mA_hypothesis": 0.06,
+      "total_peak_with20mA_reserve": 54,
+      "within110mA_peak_allocation": true,
+      "max_active_ms_per5s_for_average_budget": 212.032,
+      "important": "Active/idle examples are not guaranteed startup or programming bounds; no card approved."
+    },
+    {
+      "storage_active_mA_hypothesis": 50,
+      "storage_idle_mA_hypothesis": 0.1,
+      "total_peak_with20mA_reserve": 70,
+      "within110mA_peak_allocation": true,
+      "max_active_ms_per5s_for_average_budget": 140.208,
+      "important": "Active/idle examples are not guaranteed startup or programming bounds; no card approved."
+    },
+    {
+      "storage_active_mA_hypothesis": 80,
+      "storage_idle_mA_hypothesis": 0.135,
+      "total_peak_with20mA_reserve": 100,
+      "within110mA_peak_allocation": true,
+      "max_active_ms_per5s_for_average_budget": 85.411,
+      "important": "Active/idle examples are not guaranteed startup or programming bounds; no card approved."
+    },
+    {
+      "storage_active_mA_hypothesis": 115,
+      "storage_idle_mA_hypothesis": 0.265,
+      "total_peak_with20mA_reserve": 135,
+      "within110mA_peak_allocation": false,
+      "max_active_ms_per5s_for_average_budget": 53.788,
+      "important": "Active/idle examples are not guaranteed startup or programming bounds; no card approved."
+    },
+    {
+      "storage_active_mA_hypothesis": 218.2,
+      "storage_idle_mA_hypothesis": 0.25,
+      "total_peak_with20mA_reserve": 238.2,
+      "within110mA_peak_allocation": false,
+      "max_active_ms_per5s_for_average_budget": 28.66,
+      "important": "Active/idle examples are not guaranteed startup or programming bounds; no card approved."
+    }
+  ],
+  "decision": "110mAh is potentially feasible only with controlled storage power; generic microSD is not qualified. Prefer exact SKU with bound<=90mA inclusive startup or revise buffering/power architecture before selecting battery as fully compatible.",
+  "bench_acceptance": [
+    "Whole-system battery current never exceeds110mA over supplier specified conditions; no unsupported pulse allowance",
+    "Average<=4.4mA and <=70.4mAh/16h are design allocations only: actual16h acceptance uses measured usable pack energy and selected voltage cutoff",
+    "Record16h continuously and preserve>=36h storage without overflow or corruption",
+    "Capture startup, each write/busy interval, nearly full card, temperature/voltage endpoints and USB detach",
+    "Include connector/protection/LDO drops; pack2.4V cutoff cannot be assumed usable with3.3V regulator"
+  ],
+  "no_PCB_or_case_change": true,
+  "current_budget_source": {
+    "path": "docs/sourcing/xe-integrated-16h-budget.json",
+    "sha256": "60e691fa0235af81f670652b7dff092ad07671de4f2b7c36e6e7e93680242c4e"
+  },
+  "additional_guard_and_BOR_reserve_mA": 0.10072480620155037,
+  "LED_during_ordinary_recording_mA": 0.0
+}

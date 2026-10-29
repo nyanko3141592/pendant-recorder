@@ -1,0 +1,138 @@
+{
+  "status": "DRAFT_NOT_FOR_ORDER",
+  "parts_before": 80,
+  "parts_after": 68,
+  "removed_refs": [
+    "C18",
+    "C19",
+    "C23",
+    "C24",
+    "D1",
+    "D2",
+    "Q1",
+    "Q2",
+    "Q5",
+    "Q6",
+    "R16",
+    "R17",
+    "R5",
+    "TP4",
+    "U6",
+    "U9"
+  ],
+  "added_refs": [
+    "C30",
+    "R42",
+    "R43"
+  ],
+  "charge_logic_ideal_truth_table": [
+    {
+      "mcu_allow": false,
+      "cold_ok": false,
+      "hot_ok": false,
+      "gate_high": false,
+      "charging_permitted": false
+    },
+    {
+      "mcu_allow": false,
+      "cold_ok": false,
+      "hot_ok": true,
+      "gate_high": false,
+      "charging_permitted": false
+    },
+    {
+      "mcu_allow": false,
+      "cold_ok": true,
+      "hot_ok": false,
+      "gate_high": false,
+      "charging_permitted": false
+    },
+    {
+      "mcu_allow": false,
+      "cold_ok": true,
+      "hot_ok": true,
+      "gate_high": false,
+      "charging_permitted": false
+    },
+    {
+      "mcu_allow": true,
+      "cold_ok": false,
+      "hot_ok": false,
+      "gate_high": false,
+      "charging_permitted": false
+    },
+    {
+      "mcu_allow": true,
+      "cold_ok": false,
+      "hot_ok": true,
+      "gate_high": false,
+      "charging_permitted": false
+    },
+    {
+      "mcu_allow": true,
+      "cold_ok": true,
+      "hot_ok": false,
+      "gate_high": false,
+      "charging_permitted": false
+    },
+    {
+      "mcu_allow": true,
+      "cold_ok": true,
+      "hot_ok": true,
+      "gate_high": true,
+      "charging_permitted": true
+    }
+  ],
+  "charge": {
+    "voltage_V": 4.2,
+    "input_limit_mA": 100,
+    "charge_nominal_mA": 20.0,
+    "termination_nominal_mA": 2,
+    "temperature_guard": "Independent TLV7042 open-drain window clamp plus MCU permission, Q4 pulls CE low only if all true",
+    "gate_V_nominal": 3.0,
+    "fault_clamp_current_mA": 0.33,
+    "ntc": "Retained 10k/B3370 assumption, nominal20.06..30.16 C. Pack data pending. Internal TS uses fixed10k; it is not the battery sensor."
+  },
+  "runtime": {
+    "capacity_mAh": 100,
+    "usable_fraction_assumed": 0.7,
+    "target_h": 16,
+    "max_average_mA": 4.375,
+    "measured": false,
+    "mic_note": "768kHz mode nominal0.3mA at1.8V per datasheet; actual3.3V draw unmeasured. MCU/storage/encryption remain budget risks."
+  },
+  "storage": {
+    "nominal_capacity_bytes": 536870912,
+    "profile": "16kHz mono IMA ADPCM1024-byte2041-sample blocks,10s files,age v1",
+    "chunk_count": 5760,
+    "bytes_per_chunk_with_assumed_age_overhead_and_4KiB_clusters": 86016,
+    "bytes_16h": 495452160,
+    "filesystem_reserve_bytes": 16777216,
+    "remaining_bytes": 24641536,
+    "qualified": false,
+    "conditions": [
+      "Read actual CSD usable capacity",
+      "Measure real age header and filesystem allocation",
+      "Must have >= calculated free space before16h recording",
+      "No auto delete or overwrite",
+      "PCM16 does not fit16h in512MiB"
+    ]
+  },
+  "preorder_blockers": [
+    "Full routing/ground plane/USB impedance and return path review",
+    "Battery vendorNTC/charge/finished pack/harness qualification",
+    "New part supply and JLC rotation/footprint review",
+    "Temperature gate transient and tolerance analysis",
+    "Battery swelling and enclosure tolerances, retention, lanyard, wiring space",
+    "Firmware power budget and storage implementation",
+    "Shipping-inclusive refreshed price"
+  ],
+  "prototype_tests": [
+    "16hcontinuous encrypted recording",
+    "PDM microphone noise and acoustic duct",
+    "USB-C sync throughput and simultaneous charging",
+    "Power removal/random reset/data recovery",
+    "Charge fault injection NTC open/short and hot/cold",
+    "Temperature rise and current peaks"
+  ]
+}

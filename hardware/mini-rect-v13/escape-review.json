@@ -1,0 +1,36 @@
+{
+  "status": "RIPUP_EXPERIMENT_NOT_ADOPTED",
+  "board": "escape-repair.kicad_pcb",
+  "sha256": "1607d592085f4685875036a87248c424342811ce51a451394141b3ff3d4feda4",
+  "signal_connected": "PDM_DATA",
+  "total_unconnected": 14,
+  "drc_types": [
+    "track_dangling"
+  ],
+  "removed_nets": [
+    "SD_DAT1",
+    "SD_DAT2",
+    "USB_DP",
+    "USB_DM",
+    "PDM_CLK_MCU"
+  ],
+  "remaining_original_signals": [
+    "CHG_ALLOW",
+    "CHG_INHIBIT_GATE",
+    "ISET"
+  ],
+  "next": {
+    "candidate_change": "Evaluate CHG_ALLOW from PB2/pin20 to unused PA2/pin12",
+    "hardware_changed": false,
+    "firmware_changed": false,
+    "firmware_location": "firmware/stm32/board/charge_inhibit.c",
+    "reason": "Current PB2 escape corridor remains blocked; PA2 lies on left MCU edge closer to external gate network",
+    "requirements": [
+      "Change schematic and PCB together in isolated candidate",
+      "Update board GPIO configuration and tests if adopted",
+      "Preserve startup charge inhibit and external pulldown",
+      "Check route and pin assignment against MCU documentation"
+    ]
+  },
+  "retained_baseline": "mic-ground-route.kicad_pcb"
+}

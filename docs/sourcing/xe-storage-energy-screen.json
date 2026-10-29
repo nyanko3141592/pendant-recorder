@@ -1,0 +1,75 @@
+{
+  "status": "MEASUREMENT_ALLOCATION_NOT_RUNTIME_PROOF",
+  "source_hashes": {
+    "firmware/stm32/crypto/fatfs_recording.h": "b1d62a1d7741cedb29adcb0431169e3ab16b53eb6164e1972df36c5bcce938d3",
+    "firmware/stm32/crypto/fatfs_recording.c": "c0821b2d525f9740d1a13f3b5b0d6955c484d93e4045e80771ea6412b214d1b5",
+    "docs/sourcing/xe-integrated-16h-budget.json": "60e691fa0235af81f670652b7dff092ad07671de4f2b7c36e6e7e93680242c4e"
+  },
+  "profile": "PENDANT_COOPERATIVE_SAVE with 160000 samples at assumed/required 16000 Hz",
+  "period_s": 10.0,
+  "storage_average_allocation_mA": 1.49927519379845,
+  "storage_charge_per_period_mC": 14.992751937984501,
+  "system_average_allocation_mA": 4.4,
+  "system_charge_per_period_mC": 44.0,
+  "rows": [
+    {
+      "active_current_hypothesis_mA": 40.0,
+      "idle_current_hypothesis_mA": 0.13,
+      "max_aggregate_active_ms_per_10s": 343.43496207636076,
+      "payload_only_4MHz_ms": 162.344,
+      "remaining_ms_after_payload_only": 181.09096207636077,
+      "payload_only_fits_assumed_current_budget": true,
+      "ceiling_131072_byte_file_min_effective_service_rate_Bps": 381650.1360477589,
+      "peak_with_20mA_nonstorage_reserve": 60.0
+    },
+    {
+      "active_current_hypothesis_mA": 60.0,
+      "idle_current_hypothesis_mA": 1.05,
+      "max_aggregate_active_ms_per_10s": 76.2129251566497,
+      "payload_only_4MHz_ms": 162.344,
+      "remaining_ms_after_payload_only": -86.13107484335029,
+      "payload_only_fits_assumed_current_budget": false,
+      "ceiling_131072_byte_file_min_effective_service_rate_Bps": 1719813.2696073763,
+      "peak_with_20mA_nonstorage_reserve": 80.0
+    },
+    {
+      "active_current_hypothesis_mA": 80.0,
+      "idle_current_hypothesis_mA": 0.2,
+      "max_aggregate_active_ms_per_10s": 162.8164403256203,
+      "payload_only_4MHz_ms": 162.344,
+      "remaining_ms_after_payload_only": 0.4724403256203118,
+      "payload_only_fits_assumed_current_budget": true,
+      "ceiling_131072_byte_file_min_effective_service_rate_Bps": 805029.26938991,
+      "peak_with_20mA_nonstorage_reserve": 100.0
+    },
+    {
+      "active_current_hypothesis_mA": 90.0,
+      "idle_current_hypothesis_mA": 0.2,
+      "max_aggregate_active_ms_per_10s": 144.68543360784523,
+      "payload_only_4MHz_ms": 162.344,
+      "remaining_ms_after_payload_only": -17.658566392154768,
+      "payload_only_fits_assumed_current_budget": false,
+      "ceiling_131072_byte_file_min_effective_service_rate_Bps": 905910.1302157133,
+      "peak_with_20mA_nonstorage_reserve": 110.0
+    }
+  ],
+  "bench_method": [
+    "Integrate storage-rail current over complete consecutive 10-second periods, including wake, data, metadata, sync, close, rename and final CTRL_SYNC; mA*s equals mC.",
+    "Separately integrate whole-system battery current; do not infer MCU encryption, microphone or regulator loss from storage-rail current.",
+    "Retain waveform sample rate/bandwidth, board/ELF/card revision, battery voltage, temperature and filesystem occupancy.",
+    "Capture initial boot/mount/recovery and final commit separately and include their charge in full-session total.",
+    "Run selected card through nearly-full and aged/fragmented media as well as empty media; average over complete sessions and inspect peaks."
+  ],
+  "limits": [
+    "110mAh x 70% usable is an assumption; the adopted 4.4mA target does not prove16h at actual voltage cutoff.",
+    "Hypothetical active/idle levels are not guaranteed card limits; peak remains independently limited by pack and regulator.",
+    "131072 bytes is a firmware safety ceiling, not an observed file size. Effective service rate includes all overhead and is not a card advertised sequential speed.",
+    "A 10-second local allocation can be exceeded transiently if measured full-session charge and buffering remain within independently verified limits; this is a design screen, not an invented battery peak rating.",
+    "Selected storage candidate remains unqualified; no measured charge, validated usable battery energy or runtime result.",
+    "Payload-only comparison assumes the hypothetical active current applies throughout SPI transfer; negative remaining time rejects that scenario, not the actual unmeasured storage part. Metadata, busy and commands add time beyond this lower bound."
+  ],
+  "usable_fraction_hypothesis": 0.7,
+  "nonstorage_base_allocation_mA": 2.8,
+  "additional_guard_and_BOR_reserve_mA": 0.10072480620155037,
+  "LED_during_ordinary_recording_mA": 0.0
+}

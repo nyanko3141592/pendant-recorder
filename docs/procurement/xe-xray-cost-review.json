@@ -1,0 +1,79 @@
+{
+  "status": "CONDITIONAL_XRAY_SCOPE_AND_TARIFF_NOT_QUOTE",
+  "observed_date": "2026-10-27",
+  "source_url": "https://jlcpcb.com/help/article/pcb-assembly-price",
+  "source_update_date": "2026-10-22",
+  "tariff_basis": "Component Quantity; published text does not resolve grouping across part numbers",
+  "tariff_USD_per_component": {
+    "1-10": 1.64,
+    "11-50": 0.82,
+    "51-200": 0.49
+  },
+  "inventory_sha256": "bc9b8f01affd8cb810bf956c0782f864af63b45234bbc33f74859c7dc86695cf",
+  "pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "candidate_scope": [
+    {
+      "reference": "U1",
+      "value": "STM32U535CEU6",
+      "footprint": "QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+      "reason": "QFN hidden pad package",
+      "five_unit_component_count": 5
+    },
+    {
+      "reference": "U3",
+      "value": "BQ25185DLHR",
+      "footprint": "Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+      "reason": "WSON exposed-pad package",
+      "five_unit_component_count": 5
+    },
+    {
+      "reference": "U8",
+      "value": "IM69D130V01XTSA1",
+      "footprint": "IM69D130_JLC_SMD_trial",
+      "reason": "Bottom-land microphone package; supplier classification unconfirmed",
+      "five_unit_component_count": 5
+    },
+    {
+      "reference": "U10",
+      "value": "TPS22916CYFPR",
+      "footprint": "TPS22916_YFP4",
+      "reason": "Wafer-level 4-ball package",
+      "five_unit_component_count": 5
+    },
+    {
+      "reference": "U11",
+      "value": "CSNP32GCR01-BOW candidate",
+      "footprint": "CSNP32GCR01_LGA8",
+      "reason": "LGA hidden lands",
+      "five_unit_component_count": 5
+    },
+    {
+      "reference": "U13",
+      "value": "TPS22950YBHR",
+      "footprint": "TPS22950_YBH0006-C02_SMD_TI_4226594A",
+      "reason": "JLC exact-part listing explicitly requires X-ray",
+      "five_unit_component_count": 5
+    }
+  ],
+  "scenarios": [
+    {
+      "assumption": "All six candidate references aggregated across five boards",
+      "components": 30,
+      "USD": 24.6
+    },
+    {
+      "assumption": "Five units priced separately for each of six reference groups",
+      "components": 30,
+      "USD": 49.2
+    }
+  ],
+  "confirmed_complete_inspection_USD": null,
+  "limits": [
+    "Candidate scope is based on package geometry, not supplier BOM acceptance",
+    "U10 and U13 have explicit exact-part listing evidence captured for required X-ray",
+    "Scenarios are alternative grouping interpretations, not proven lower/upper bounds",
+    "Do not add the U13-only charge to a full-scope scenario; it is already included",
+    "No price added to the main subtotal until scope/grouping are confirmed",
+    "No upload, inquiry or order"
+  ]
+}

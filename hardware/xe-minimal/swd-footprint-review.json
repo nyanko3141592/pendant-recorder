@@ -1,0 +1,29 @@
+{
+  "status": "FOOTPRINT_PARSE_AND_GEOMETRY_PASS_NOT_FIXTURE_QUALIFIED",
+  "pad_count": 5,
+  "pitch_mm": 1.27,
+  "pad_size_mm": 1,
+  "minimum_copper_gap_mm": 0.27,
+  "nominal_mask_web_mm": 0.17,
+  "courtyard_mm": [
+    2.77,
+    4.04
+  ],
+  "courtyard_area_mm2": 11.1908,
+  "previous_library_envelope_area_mm2": 28.5525,
+  "pin_map": {
+    "1": "V3V3 sense only",
+    "2": "SWDIO",
+    "3": "NRST",
+    "4": "SWCLK",
+    "5": "GND"
+  },
+  "constraints": [
+    "No power through VTref. Power board through current-limited USB bench source; battery disconnected.",
+    "Factory fixture must locate edges and prevent reversed contact before applying power.",
+    "Keep component-free probe approach and board support; courtyard alone is insufficient.",
+    "Exact pogo pin, alignment tolerance, finish and contact force remain to be selected.",
+    "Not compatible with Tag-Connect cable; separate fixture required.",
+    "Footprint candidate only; not applied to routed V15 board."
+  ]
+}

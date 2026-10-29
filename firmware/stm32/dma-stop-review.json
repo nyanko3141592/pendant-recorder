@@ -1,0 +1,26 @@
+{
+  "status": "REVIEWED_NOT_INTEGRATED",
+  "hal_source_sha256": {
+    "stm32u5xx_hal_dma.c": "55390442b90c03dbe0ec51487db7e15e3cc1b05a90cca161dd32c2d53544c3f9",
+    "stm32u5xx_hal_dma_ex.c": "228b0a50e01cf75fd85c6963780747d7fbfb9d6dbb0e531aa2f9b41eab5b55e5",
+    "stm32u5xx_hal_mdf.c": "f4515ab2ce9dd36ec81932c8b9b4e7e93175d74c26355f6229ce532efbf37619"
+  },
+  "findings": [
+    "HAL_MDF_AcqStop_DMA calls HAL_DMA_Abort before disabling filter.",
+    "HAL_DMA_Abort suspends then resets channel, clears HT/TC/error flags and sets CBR1=0 for linked list. Residual count cannot be read after this call.",
+    "HAL_DMAEx_Suspend preserves snapshot but sets state SUSPEND; HAL_DMA_Abort requires BUSY, so naive Suspend then AcqStop_DMA fails."
+  ],
+  "required_next_work": [
+    "Coordinator must preserve stable DMA residual count and pending boundary flags before reset without racing half/full callbacks.",
+    "Reconcile already-enqueued halves versus pending boundary flags; detect missed wraps/overrun rather than claim lossless recovery.",
+    "Account for ADF output FIFO at selected stop boundary and validate sample loss contract.",
+    "Do not globally mask SysTick around polling HAL functions with tick-based timeouts.",
+    "Only after final tail encrypted/closed/synced and FS unmounted send DEVICE_RELEASED."
+  ],
+  "storage_permissions": "Added explicit finalize and recovery predicates; regular acquisition remains DEVICE-only; host/recovery/finalize exclusion tested across all state/flag combinations.",
+  "tests": [
+    "ASAN/UBSAN storage-owner test passed",
+    "Cortex-M33 storage-owner compilation passed"
+  ],
+  "real_device_tested": false
+}

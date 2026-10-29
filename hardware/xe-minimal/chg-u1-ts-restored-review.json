@@ -1,0 +1,46 @@
+{
+  "accepted": true,
+  "visited": 114,
+  "paths": [
+    {
+      "layer": 6,
+      "points": [
+        [
+          22.3,
+          6.5
+        ],
+        [
+          22.5,
+          5.300000000000001
+        ],
+        [
+          22.700000000000003,
+          5.2
+        ],
+        [
+          22.7,
+          4.9
+        ]
+      ]
+    }
+  ],
+  "switches": [],
+  "violations": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 22.75,
+            "y": 6.0
+          },
+          "uuid": "af5fd80e-e779-4d76-9ece-1d0992e0d1cc"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "unconnected_items": 6
+}

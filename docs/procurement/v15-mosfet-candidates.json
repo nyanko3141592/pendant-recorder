@@ -1,0 +1,90 @@
+{
+  "status": "SUPPORTED_LOW_VOLTAGE_ALTERNATIVE_IDENTIFIED_NOT_ADOPTED",
+  "entries": [
+    {
+      "reference": "Q3",
+      "design_value": "2N7002 (VBUS detect)",
+      "mpn": "BSS138BK,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "qualification": "ALTERNATIVE_CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Temperature-range and minimum GPIO VOH validation",
+        "Leakage/reset-state analysis",
+        "Supplier availability and price"
+      ]
+    },
+    {
+      "reference": "Q4",
+      "design_value": "2N7002",
+      "mpn": "BSS138BK,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "qualification": "ALTERNATIVE_CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Temperature-range and minimum GPIO VOH validation",
+        "Leakage/reset-state analysis",
+        "Supplier availability and price"
+      ]
+    },
+    {
+      "reference": "Q5",
+      "design_value": "2N7002",
+      "mpn": "BSS138BK,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "qualification": "ALTERNATIVE_CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Temperature-range and minimum GPIO VOH validation",
+        "Leakage/reset-state analysis",
+        "Supplier availability and price",
+        "R45 plus SETI dynamic network analysis"
+      ]
+    },
+    {
+      "reference": "Q6",
+      "design_value": "2N7002",
+      "mpn": "BSS138BK,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "qualification": "ALTERNATIVE_CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Temperature-range and minimum GPIO VOH validation",
+        "Leakage/reset-state analysis",
+        "Supplier availability and price"
+      ]
+    },
+    {
+      "reference": "Q7",
+      "design_value": "2N7002",
+      "mpn": "BSS138BK,215",
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BSS138BK.pdf",
+      "qualification": "ALTERNATIVE_CANDIDATE_NOT_ADOPTED",
+      "remaining": [
+        "Temperature-range and minimum GPIO VOH validation",
+        "Leakage/reset-state analysis",
+        "Supplier availability and price"
+      ]
+    }
+  ],
+  "lifecycle_source": "https://www.nexperia.com/product/BSS138BK",
+  "ordering_suffix_source": "https://www.nexperia.com/chemical-content/BSS138BK.html",
+  "verified": {
+    "lifecycle": "Production",
+    "package": "SOT23",
+    "pin_map": {
+      "1": "G",
+      "2": "S",
+      "3": "D"
+    },
+    "RDSon_max_ohm": 6.5,
+    "RDSon_conditions": "VGS2.5V,ID10mA,Tj25C",
+    "Coss_typ_pF": 7,
+    "Coss_conditions": "VDS10V,VGS0V,1MHz,Tj25C",
+    "Coss_max_pF": null
+  },
+  "conditional_Q6_Q7_screen": {
+    "assumed_VBUS_max_V": 5.5,
+    "pullup_min_ohm": 9900,
+    "drain_current_upper_A": 0.0005555555555555556,
+    "VOL_estimate_V": 0.0036087417352243475,
+    "scope": "25C ohmic estimate assuming gate at least2.5V and6.5ohm applies at sub-mA load; not temperature-wide guarantee"
+  },
+  "note": "BSS138BK is a proposed substitution for generic2N7002. Board/schematic still unchanged. Candidate count is not qualification count."
+}

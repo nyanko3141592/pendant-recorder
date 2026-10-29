@@ -1,0 +1,60 @@
+{
+  "checked": "2026-10-25",
+  "sources": {
+    "pofv": "https://jlcpcb.com/blog/via-in-pad-design-deep-dive",
+    "covering": "https://jlcpcb.com/help/article/pcb-via-covering",
+    "calculator": "https://jlcpcb.com/pcb-impedance-calculator"
+  },
+  "published_pofv_limits": {
+    "min_drill_mm": 0.2,
+    "max_drill_mm": 0.5,
+    "min_annular_ring_mm": 0.05,
+    "max_aspect_ratio": 10
+  },
+  "published_cost_note": "Help page says resin filling free on6+layers; actual option compatibility and quote still required. Do not assume total or no extra fabrication charges.",
+  "calculator": {
+    "layers": 6,
+    "thickness_mm": 0.8,
+    "inner_copper_oz": 0.5,
+    "outer_copper_oz": 1,
+    "differential_target_ohm": 90,
+    "gap_mil": 5.9055,
+    "signal": "L1",
+    "reference": "L2",
+    "result_obtained": false,
+    "failure": "UI TypeError in removeSpecially/changePictureMuban: null.classList; no stackup/width result displayed",
+    "iab_tab_id": "2"
+  },
+  "trials": {
+    "all_vias_drill_0_2": {
+      "violations": 274,
+      "unconnected": 0,
+      "adopted": false,
+      "reason": "118 annular width and156 hole clearance violations"
+    },
+    "pad_center_only_0_4_outer_0_2_drill": {
+      "selected_vias": 17,
+      "violations": 19,
+      "unconnected": 0,
+      "adopted": false,
+      "reason": "18 copper clearance and1 hole clearance violations; inventory only center-in-pad, not complete mask-overlap inventory"
+    }
+  },
+  "next": [
+    "Determine POFV acceptance for0.15mm from actual fabrication option or change all affected via geometries without relaxing minimum rules",
+    "Inventory full pad/mask overlap, not only center containment; review selective filling process feasibility",
+    "Obtain working calculator stackup and90ohm width/gap before changing USB geometry"
+  ],
+  "order_ready": false,
+  "latest_candidate": {
+    "file": "pofv-final-trial.kicad_pcb",
+    "screened_pad_overlap_vias": 18,
+    "pad_via_outer_mm": 0.4,
+    "pad_via_drill_mm": 0.2,
+    "violations": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "selective_filling_accepted": false,
+    "gerber_mask_intersection_checked": false
+  }
+}

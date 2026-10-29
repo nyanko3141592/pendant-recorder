@@ -1,0 +1,82 @@
+{
+  "part": "diagonal-tapered-tray-lower",
+  "source": "diagonal-tapered-tray-lower-trial.step",
+  "source_sha256": "7eaea3d141df0e929cf9b8edeb7a9c02fe2d2ff728e7942fc26d9690f9c05519",
+  "stl_sha256": "bb16138ac8b89f63082e4475a848c292bd5c2705de6b25669a910c687f04f260",
+  "3mf_sha256": "56aa0ee309e28a78fd2ced17a669f5f9b6e2363f63efbb6ea1926c6409f04fc9",
+  "first_layer_mm": 0.28,
+  "regular_layer_mm": 0.08,
+  "CAD_height_mm": 8.120000000000001,
+  "translation_mm": [
+    1.1000000000000014,
+    28.3,
+    7.720000000000001
+  ],
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 350,
+    "layer_height": 0.07999999821186066,
+    "plate_index": 0,
+    "prepare_time": 19,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 31.248022079467773,
+          "Custom": 34.72392654418945,
+          "Gap infill": 0.8409976959228516,
+          "Inner wall": 70.91541290283203,
+          "Internal solid infill": 63.265296936035156,
+          "Outer wall": 655.9309692382812,
+          "Overhang wall": 1.2899518013000488,
+          "Top surface": 17.65149688720703,
+          "Travel": 122.47317504882812,
+          "Undefined": 106.87712097167969
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 1.6769827604293823,
+            "total_used_g": 1.6769827604293823
+          }
+        ],
+        "generate_support_material_time": 14,
+        "id": 1,
+        "infill_time": 17,
+        "layer_filament_change": 0,
+        "main_predication": 963.6492919921875,
+        "make_perimeters_time": 94,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 29.60000228881836,
+              "height": 8.119999885559082,
+              "width": 26.19999885559082,
+              "x": 76.9000015258789,
+              "y": 75.19999694824219,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "diagonal-tapered-tray-lower.stl",
+            "triangle_count": 10818
+          }
+        ],
+        "sliced_time": 289,
+        "sliced_time_with_cache": 158,
+        "total_predication": 982.7469482421875,
+        "triangle_count": 10818,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 2
+  },
+  "profile_sha256": {
+    "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+    "process": "4d1014d71dc6c2612ac0336a1c5c584c89861455ac803587d43745e34ba118be",
+    "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+  }
+}

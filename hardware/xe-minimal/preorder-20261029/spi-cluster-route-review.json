@@ -1,0 +1,17 @@
+{
+  "status": "REJECTED_INCOMPLETE_NOT_ADOPTED",
+  "sha256": "8bd8aa84486b06f8de715f9ba78567b074c35147325cca1bf7780462f4f259fe",
+  "types": {
+    "clearance": 1,
+    "via_dangling": 7,
+    "track_dangling": 1,
+    "lib_footprint_issues": 74
+  },
+  "geometric": 9,
+  "unconnected": 11,
+  "parity": 0,
+  "vias": 123,
+  "release_allowed": false,
+  "conclusion": "Short XY pullup-to-storage distance did not establish routability; SD_V3 and SPI/power branches remain unconnected. Two-full-GND-plane constraint not proven feasible by these bounded fixed/partially moved placement trials.",
+  "next_strategy": "Maintain4layers and throughvias; reconsider inner-layer assignment with critical signal return constraints, rather than repeatedly forcing all40nets onto outer2layers. No proof of4layer impossibility."
+}

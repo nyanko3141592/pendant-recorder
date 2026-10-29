@@ -1,0 +1,22 @@
+{
+  "status": "OSCILLATOR_SELECTION_SCREEN_NOT_HARDWARE_QUALIFICATION",
+  "part": "ABS06-32.768KHZ-7-T",
+  "sources": [
+    "https://www.st.com/resource/en/datasheet/stm32u535vc.pdf",
+    "https://www.st.com/resource/en/application_note/an2867-guidelines-for-oscillator-design-on-stm8afals-and-stm32-mcusmpus-stmicroelectronics.pdf"
+  ],
+  "evidence": [
+    "DS14217 Rev5 Table80: Gmcritmax0.5/0.75/1.7/2.7uA/V for low/medium-low/medium-high/high; internal equivalent stray capacitance3pF typical.",
+    "AN2867 Rev24 p34 lists ABS06-32.768kHz-7 and U5 compatibility with gmcrit0.7477uA/V; C0 column unspecified. Do not treat missing C0 as a guaranteed zero."
+  ],
+  "decision": "Medium-high is a prototype drive candidate; retain drive-power/startup measurements. Do not select medium-low from a nearly equal tabulated threshold.",
+  "medium_high_C0_limit_pF_at_CL7_ESR90k": 3.5546395650693245,
+  "load_capacitor_issue": "Existing10pF+10pF gives5pF series plus3pF internal typical =8pF before PCB stray, exceeding7pF target. Recalculate C11/C12; do not claim tuned frequency.",
+  "prototype_cap_sweep_pF": [
+    4.7,
+    5.6,
+    6.8
+  ],
+  "formula": "Equal Cext =2*(7pF -3pF internal_typ -PCB_stray_pF). Internal3pF is typical, not a worst-case bound.",
+  "adopted": false
+}

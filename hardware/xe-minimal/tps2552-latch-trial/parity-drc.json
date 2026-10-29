@@ -1,0 +1,77 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T08:07:45",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-tps2552-latch-trial.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "フットプリントライブラリ 'PendantD1' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント J1",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 22.495
+                    },
+                    "uuid": "7727b2fe-a090-4f44-8e0d-1481f25e6834"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "フットプリントライブラリ 'PendantMinimal' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 2.71,
+                        "y": 7.845
+                    },
+                    "uuid": "a33299a6-9b49-48b8-a0f1-ed4ca11872ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "フットプリントライブラリ 'Pendant' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント U8",
+                    "pos": {
+                        "x": 21.25,
+                        "y": 4.565
+                    },
+                    "uuid": "d94a7b73-f065-4f9f-a619-ba29abe430e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "フットプリントライブラリ 'Pendant' は現在の設定では有効化されていません",
+            "items": [
+                {
+                    "description": "フットプリント U11",
+                    "pos": {
+                        "x": 4.575,
+                        "y": 14.175
+                    },
+                    "uuid": "36be6cc9-a446-4db4-a3b0-ce16c16a683c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+  "status": "KEEPER_INSERTION_GEOMETRY_STUDY_NOT_RETAINED",
+  "source_sha256": {
+    "nut-keeper-recess-lower-study.step": "2aaa52bd428f1b85bc193631c9610177993218cd11f08daafecdc9fefd9b34be",
+    "top-led-candidate-integrated-board.step": "020427a23da2024d4c3fb1e6a4e55a2542201a356185df239f8b6ed528e11fea",
+    "battery-separator-study.step": "baef7a293711376888ebfe6d98600962f334ea12647dd7f004b1ec848b73dd67",
+    "dtp401525-xe-pack-max.step": "e4c9bb308a5120fcc3943aa438e41ea36d7462cdcddac260d87ced0f222285d3"
+  },
+  "exact_sweeps": [
+    {
+      "axis": "X",
+      "approach_side": -1,
+      "translation_mm": 5,
+      "collision_mm3": {
+        "lower": 3.958791055295312,
+        "board": 0.0,
+        "separator": 0.7851615038379012,
+        "battery": 1.9158999999999973
+      }
+    },
+    {
+      "axis": "X",
+      "approach_side": 1,
+      "translation_mm": 5,
+      "collision_mm3": {
+        "lower": 2.545363417713121,
+        "board": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    },
+    {
+      "axis": "Y",
+      "approach_side": -1,
+      "translation_mm": 5,
+      "collision_mm3": {
+        "lower": 0.3519999999999991,
+        "board": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    },
+    {
+      "axis": "Y",
+      "approach_side": 1,
+      "translation_mm": 5,
+      "collision_mm3": {
+        "lower": 0.0,
+        "board": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    },
+    {
+      "axis": "Z",
+      "approach_side": -1,
+      "translation_mm": 5,
+      "collision_mm3": {
+        "lower": 1.4979278349745009,
+        "board": 0.0,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    },
+    {
+      "axis": "Z",
+      "approach_side": 1,
+      "translation_mm": 5,
+      "collision_mm3": {
+        "lower": 0.07459788415909782,
+        "board": 0.7412719999999969,
+        "separator": 0.0,
+        "battery": 0.0
+      }
+    }
+  ],
+  "preferred_approach": {
+    "axis": "Y",
+    "side": 1,
+    "translation_mm": 5,
+    "reason": "No collision with current lower, board, separator or battery in the exact rectangular sweep",
+    "top_channel_required": false,
+    "caveat": "Five millimetre local stroke only; tool access and original battery leads absent"
+  },
+  "top_entry_candidate": {
+    "lower_valid": true,
+    "lower_solids": 1,
+    "additional_removed_mm3": 0.07459788415781077,
+    "swept_lower_collision_mm3": 0.0,
+    "swept_board_collision_mm3": 0.7412719999999969
+  },
+  "limits": [
+    "Sweeps cover rigid nominal rectangular keeper only",
+    "Requires insertion before any intersecting component is fitted",
+    "No keeper lock, tolerance, finger access, or load verification",
+    "Original battery wiring and mating housing absent",
+    "Top channel is unadopted and may weaken nut support"
+  ]
+}

@@ -1,0 +1,474 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:14:26",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pofv-pad-only.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0979 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 13.65
+                    },
+                    "uuid": "7767d305-7d75-4c7a-8736-271b063e3579"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( F.Cu 上、長さ: 1.5359 mm )",
+                    "pos": {
+                        "x": 14.4332,
+                        "y": 13.9914
+                    },
+                    "uuid": "c2e0b8cb-136c-413f-a3a6-46622e03cdba"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0900 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 13.65
+                    },
+                    "uuid": "7767d305-7d75-4c7a-8736-271b063e3579"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C26 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.48,
+                        "y": 14.25
+                    },
+                    "uuid": "d670f5b5-589b-449d-9ac0-0ca27446fdfb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0908 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In3.Cu 上、長さ: 3.3657 mm )",
+                    "pos": {
+                        "x": 3.4571,
+                        "y": 10.7775
+                    },
+                    "uuid": "44f9bb5a-e475-43db-9b00-2083f7f9edfa"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 5.7,
+                        "y": 13.55
+                    },
+                    "uuid": "60e3d41c-7ab1-42a3-bd37-ea45b778ed40"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0837 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In3.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 4.05,
+                        "y": 16.2
+                    },
+                    "uuid": "3959e163-0c5f-4a00-b03e-f6f773a3928f"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0873 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.75,
+                        "y": 16.25
+                    },
+                    "uuid": "05743709-c606-4099-9fe6-2c6e39d29843"
+                },
+                {
+                    "description": "配線 [/BAT] ( In2.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 5.15,
+                        "y": 16.15
+                    },
+                    "uuid": "568c4dae-9a8f-4893-a6c9-6890eeb56c3d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0908 mm)",
+            "items": [
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 5.7,
+                        "y": 13.55
+                    },
+                    "uuid": "60e3d41c-7ab1-42a3-bd37-ea45b778ed40"
+                },
+                {
+                    "description": "配線 [/V3V3] ( In3.Cu 上、長さ: 1.9681 mm )",
+                    "pos": {
+                        "x": 5.837,
+                        "y": 13.1574
+                    },
+                    "uuid": "dd8479d7-0ffb-4f98-92b1-d0006f49f5e4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0768 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 6.4625
+                    },
+                    "uuid": "86db98f3-7161-4f98-af2e-93b48d2ed5e3"
+                },
+                {
+                    "description": "配線 [/SD_CS_N] ( In3.Cu 上、長さ: 7.0876 mm )",
+                    "pos": {
+                        "x": 13.1775,
+                        "y": 5.6778
+                    },
+                    "uuid": "d4e50311-67fb-477d-b261-b3b2b6948b4e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0912 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.6,
+                        "y": 11.55
+                    },
+                    "uuid": "45648a86-4c3b-4eeb-ab5a-ed5edcd2f4c6"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.9375,
+                        "y": 11.65
+                    },
+                    "uuid": "ea078e87-d8ee-44b9-9443-a3860ef6123e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0875 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.6,
+                        "y": 11.65
+                    },
+                    "uuid": "744ea135-d0cf-41e1-8122-245a74fe2218"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.9375,
+                        "y": 11.65
+                    },
+                    "uuid": "ea078e87-d8ee-44b9-9443-a3860ef6123e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0912 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.6,
+                        "y": 11.7
+                    },
+                    "uuid": "7cb86361-a451-4b4e-9786-4762121644b5"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.9375,
+                        "y": 11.65
+                    },
+                    "uuid": "ea078e87-d8ee-44b9-9443-a3860ef6123e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0875 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 14.6,
+                        "y": 11.6
+                    },
+                    "uuid": "9f29130a-e915-486d-b196-8a544ad854d4"
+                },
+                {
+                    "description": "ビア [/LSE_IN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.9375,
+                        "y": 11.65
+                    },
+                    "uuid": "ea078e87-d8ee-44b9-9443-a3860ef6123e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0912 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( In3.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 13.45,
+                        "y": 6.8
+                    },
+                    "uuid": "60947fb0-34b5-45f9-b689-319f12638b0f"
+                },
+                {
+                    "description": "ビア [/SD_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 6.4625
+                    },
+                    "uuid": "86db98f3-7161-4f98-af2e-93b48d2ed5e3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0875 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( In3.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 6.8
+                    },
+                    "uuid": "73f0270c-9fdf-44fa-9dae-97fdf0dfe3ae"
+                },
+                {
+                    "description": "ビア [/SD_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 6.4625
+                    },
+                    "uuid": "86db98f3-7161-4f98-af2e-93b48d2ed5e3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0750 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                },
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.2591 mm )",
+                    "pos": {
+                        "x": 4.7275,
+                        "y": 15.6409
+                    },
+                    "uuid": "6e8bb06a-9804-4adc-9ec3-0774c094e695"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0948 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In3.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 4.15,
+                        "y": 16.3
+                    },
+                    "uuid": "8dc61654-da30-47d4-9b75-3c8fa4b1bad5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0873 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In2.Cu 上、長さ: 0.0500 mm )",
+                    "pos": {
+                        "x": 5.15,
+                        "y": 16.1
+                    },
+                    "uuid": "0082bc06-de03-4002-a34b-4a9c0260712d"
+                },
+                {
+                    "description": "ビア [/VBUS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.75,
+                        "y": 16.25
+                    },
+                    "uuid": "05743709-c606-4099-9fe6-2c6e39d29843"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0751 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( In3.Cu 上、長さ: 1.0123 mm )",
+                    "pos": {
+                        "x": 4.1061,
+                        "y": 15.662
+                    },
+                    "uuid": "20e351f1-a071-47f6-ad7f-4d20e08e1e50"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "3a4c2b99-517b-4521-a889-8690a7a93e7b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0905 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In3.Cu 上、長さ: 3.8960 mm )",
+                    "pos": {
+                        "x": 11.4924,
+                        "y": 18.48
+                    },
+                    "uuid": "7e11f0fb-7ba9-438a-8a4e-8143f6186a2a"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.25,
+                        "y": 19.65
+                    },
+                    "uuid": "a0226ed6-5a4a-4d3f-89f5-7bb04ab66b5a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1900 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - C26 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.48,
+                        "y": 14.25
+                    },
+                    "uuid": "d670f5b5-589b-449d-9ac0-0ca27446fdfb"
+                },
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.5,
+                        "y": 13.65
+                    },
+                    "uuid": "7767d305-7d75-4c7a-8736-271b063e3579"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        }
+    ]
+}

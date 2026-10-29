@@ -1,0 +1,26 @@
+{
+  "status": "FILL_CAP_PROCESS_CANDIDATE_NOT_FAB_APPROVED",
+  "source_sha256": "9b65897c16ed3d470b82b152bc7766614a9c00eb1ad511854044fa6e2f60145a",
+  "output_sha256": "dedfe7ece3be60342a13023ee30e0ee2e45b1eb0313b1e58c96e3a74ef89ef4c",
+  "changed_via_uuid": "e36f44c3-4fef-4881-bc59-302cc8a3055d",
+  "filled_capped_count": 12,
+  "checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "rationale": "Reuse existing filled/capped via process; avoid relocating through dense signal/power routes",
+  "limits": [
+    "Properties express design intent only; vendor acceptance and fabrication drawing still required",
+    "Mask registration and solderability not proven by fill/cap flags",
+    "Parent fabrication and models are not automatically relabeled"
+  ],
+  "exact_text_delta": {
+    "only_added_lines": [
+      "\t\t(capping yes)",
+      "\t\t(filling yes)"
+    ],
+    "removed_lines": 0,
+    "all_copper_geometry_and_other_serialized_settings_unchanged": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "ESCAPE_GEOMETRY_CLEAR_WITH_TEMPORARY_MOSI_OPEN",
+  "remaining": 19,
+  "expected_warnings": [
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "\u914d\u7dda [/SD_MOSI] ( In4.Cu \u4e0a\u3001\u9577\u3055: 0.5657 mm )",
+          "pos": {
+            "x": 12.6,
+            "y": 4.8
+          },
+          "uuid": "3c23b0bd-8e97-45c9-bd5d-1bbfc28c708c"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+          "pos": {
+            "x": 11.75,
+            "y": 3.2
+          },
+          "uuid": "9fe0e486-3e63-4ed4-9e44-aa851844a6b4"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    }
+  ],
+  "next": "Restore removed SD_MOSI segment before considering adoption. Original escape script rejects track_dangling, so accepted:null does not signify physical clearance failure."
+}

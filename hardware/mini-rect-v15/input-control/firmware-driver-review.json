@@ -1,0 +1,21 @@
+{
+  "status": "DRIVER_TESTED_NOT_APPLICATION_INTEGRATED",
+  "driver": "firmware/stm32/board/usb_input_v15.c",
+  "header": "firmware/stm32/board/usb_input_v15.h",
+  "driver_sha256": "f781b1b5c8ea78f9066e67009c86522068d3dbd11083f1403f8d62da0cb7273c",
+  "checks": {
+    "host_mock": "PASS - ASan/UBSan - init retainsOFF, GPIOoutputlatcheslowbeforemode, invalidbudgetrevokes, suspendchargeinhibit/lowbudgetbeforeclock, resumeCLKreleasebeforeCLR, detached/IRQ/maskedreject",
+    "ARM_compile": "PASS - CortexM33 STM32U535xx actualHALheaders -Wall -Wextra -Werror",
+    "shell_syntax": "PASS"
+  },
+  "application_linked": false,
+  "descriptor_current_mA": 100,
+  "charge_enabled": false,
+  "remaining": [
+    "Select candidatehardware atbuildtime and integrate earlyinit",
+    "USB reset/deconfigure/detach/suspend/resume callbacks must drivepolicy withoutstalepermission",
+    "Change descriptor500mA onlywithhardwareintegration andtestedpolicy",
+    "Measure HALpulse andUSBsuspend timing including eventdispatch andstoragework",
+    "Do not infer100mAor500mA currentqualification frommocktests"
+  ]
+}

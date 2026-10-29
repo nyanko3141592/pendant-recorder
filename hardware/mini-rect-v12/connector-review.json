@@ -1,0 +1,68 @@
+{
+  "checked": "2026-10-25",
+  "reference": "J2",
+  "board": "pofv-final-trial.kicad_pcb",
+  "board_sha256": "1ad52f4eb96eb8eec2d3e07c5cfad96841169a72319f3abfe760584933bf1696",
+  "mpn": "0781710003",
+  "manufacturer_source": "https://www.molex.com/en-us/products/part-detail/781710003",
+  "confirmed_manufacturer_specs": {
+    "aliases": [
+      "781710003",
+      "78171-0003",
+      "0781710003"
+    ],
+    "orientation": "Vertical",
+    "circuits": 3,
+    "pitch_mm": 1.2,
+    "mated_height_mm": 1.55,
+    "termination": "Surface Mount",
+    "maximum_mating_cycles": 10
+  },
+  "board_observation": {
+    "footprint": "Molex_Pico-EZmate_78171-0003_1x03-1MP_P1.20mm_Vertical",
+    "side": "F.Cu",
+    "rotation_deg": 90,
+    "pins": {
+      "1": {
+        "net": "/BAT",
+        "xy_mm": [
+          2.515,
+          8.4
+        ]
+      },
+      "2": {
+        "net": "/BAT_TS",
+        "xy_mm": [
+          2.515,
+          7.2
+        ]
+      },
+      "3": {
+        "net": "/GND",
+        "xy_mm": [
+          2.515,
+          6.0
+        ]
+      }
+    },
+    "electrical_pad_size_mm": [
+      0.6,
+      0.85
+    ]
+  },
+  "conclusions": {
+    "vertical_orientation_matches": true,
+    "nominal_pitch_matches": true,
+    "board_nets_match_requested_harness_assignment": true,
+    "physical_harness_polarity_verified": false,
+    "manufacturer_land_pattern_verified": false,
+    "release_ready": false
+  },
+  "remaining": [
+    "Obtain/read official drawing and compare land pattern, pin 1 viewpoint and recommended pattern exclusion area; PDF retrieval failed in this check.",
+    "Confirm finished mating harness part numbers and polarity drawing from battery supplier; email remains unsent.",
+    "Confirm mating clearance, lead bend and assembly access in mechanical model.",
+    "Confirm JLC actual component and placement orientation; catalog right-angle text conflicts with manufacturer vertical specification."
+  ],
+  "bundle_note": "Existing manufacturing-review-pofv-r2 is immutable historical review package; this evidence is not included in it."
+}

@@ -1,0 +1,35 @@
+{
+  "status": "PACKAGE_BODY_ENVELOPE_NOT_ASSEMBLY_APPROVAL",
+  "part": "IM69D130",
+  "source_pdf": "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v13/reference/infineon-im69d130-v1-timing.pdf",
+  "source_sha256": "7d6c2bebd1da22cec7376747a6cad97b2d1548825e917f51ba3b73939bd8b541",
+  "source_revision": "1.0 2017-12-19",
+  "source_page": 12,
+  "figure": 11,
+  "drawing_visually_checked": true,
+  "dimensions_nominal_mm": [
+    3,
+    4,
+    1.2
+  ],
+  "dimensions_max_mm": [
+    3.1,
+    4.1,
+    1.3
+  ],
+  "source_tolerance_mm": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "output": "u8-im69d130-body-max.step",
+  "output_sha256": "e4db75075a23683a4fec0c1715adfcb55c981534415c97be137b8a1af98cbe30",
+  "reimport_valid": true,
+  "local_frame": "XY body center, Z=0..H; unpositioned",
+  "limitations": [
+    "Cuboid body envelope only; omits terminals and acoustic port.",
+    "No solder standoff, acoustic seal or required sound-path clearance.",
+    "Must map bottom-view orientation to footprint before placing.",
+    "Not a complete recorder assembly or enclosure-fit approval."
+  ]
+}

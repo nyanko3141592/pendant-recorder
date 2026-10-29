@@ -1,0 +1,41 @@
+{
+  "status": "NATIVE_EXPORT_IGNORES_GENERAL_THICKNESS_NOT_VALID_TOLERANCE_GAUGES",
+  "source_pcb": "hardware/xe-minimal/preorder-20261029/usb-3313-width-trial.kicad_pcb",
+  "source_sha256": "8ff2553abf8e12a10e8251f214e554d707a4d6510ac05c312dc8ef98a4e7434d",
+  "supplier_finished_thickness_mm": [
+    0.7,
+    0.8,
+    0.9
+  ],
+  "trials": [
+    {
+      "label": "min",
+      "finished_thickness_mm": 0.7,
+      "pcb": "board-thickness-min.kicad_pcb",
+      "step": "board-thickness-min.step",
+      "step_sha256": "b25bdf0b2e22b7784498e44b2c59db8b78db748b1ff9212342907ee1a066edcc"
+    },
+    {
+      "label": "nominal",
+      "finished_thickness_mm": 0.8,
+      "pcb": "board-thickness-nominal.kicad_pcb",
+      "step": "board-thickness-nominal.step",
+      "step_sha256": "9318a6474659d672b00672cf9b6956f3f32de981e0e060685ae0f090ea29d9b5"
+    },
+    {
+      "label": "max",
+      "finished_thickness_mm": 0.9,
+      "pcb": "board-thickness-max.kicad_pcb",
+      "step": "board-thickness-max.step",
+      "step_sha256": "d96d2f3cdeceee4fb608f7797a4bc9cc022e0d6080afe38ae6f6bcd92dc6e724"
+    }
+  ],
+  "limitations": [
+    "General thickness changed only for mechanical exports; layer stackup remains nominal candidate",
+    "No components, solder or dimensional fabrication XY tolerance included",
+    "Existing enclosure U1 and U11 models not qualified; no assembly fit claim"
+  ],
+  "release_allowed": false,
+  "native_export_measured_z_mm": 0.7292,
+  "corrected_envelope_evidence": "board-thickness-fit.json"
+}

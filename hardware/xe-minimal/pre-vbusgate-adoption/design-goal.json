@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-26",
+  "status": "ARCHITECTURE_DESIGN_IN_PROGRESS_NOT_RELEASED",
+  "objective": "DTP401525-XE\u56fa\u5b9a\u3067\u9023\u7d9a16\u6642\u9593\u9332\u97f3\u53ef\u80fd\u306aUSB\u30ec\u30b3\u30fc\u30c0\u30fc\u306e\u5b8c\u6210\u5bf8\u6cd5\u3092\u6700\u5c0f\u5316\u3057\u30015\u53f0\u8a66\u4f5c\u306e\u767a\u6ce8\u5224\u65ad\u306b\u5fc5\u8981\u306a\u8a2d\u8a08\u30fb\u88fd\u9020\u8cc7\u6599\u3092\u63c3\u3048\u308b\u3002",
+  "battery": "DTP401525-XE 3.7V 110mAh; Marutsu DTP401525(EZ3) is same pack",
+  "sales": "Programmed assembled PCB and case; user purchases battery separately and assembles without soldering or wire modification.",
+  "constraints": {
+    "recording_hours": 16,
+    "sample_rate_Hz_min": 16000,
+    "channels": 1,
+    "encrypted_storage_hours": 36,
+    "interface": "USB-C charging and MSC; macOS/Windows/Linux importer",
+    "wireless": false,
+    "procurement": "Ordinary small-quantity retail; no inquiry/customization",
+    "size": "Aim for Omi size; compare identified reference and complete assembly. Consult before relaxation.25x25x15 is historical engineering assumption, not a user dimension."
+  },
+  "optimization_order": [
+    "Meet battery electrical limits and continuous recording requirements",
+    "Minimize complete assembled footprint and thickness, reporting both and volume",
+    "Reduce parts and assembly complexity without removing required protection",
+    "Report five-unit total cost and remaining risks"
+  ],
+  "deliverables": [
+    "Adopted circuit and BOM",
+    "Routed PCB and matching manufacturing files",
+    "Case CAD and unmodified-battery assembly instructions",
+    "Firmware and three-OS importer",
+    "Five-prototype cost",
+    "Verification plan distinguishing calculations from actual measurements",
+    "Complete exterior 3D model and internal/exploded assembly model including battery, original leads, connectors, insulation and retention",
+    "Same-scale Omi comparison models and front/side/overlay views, identifying reference product/version, dimension sources and uncertain geometry"
+  ],
+  "authorization": {
+    "design": true,
+    "purchase": false,
+    "payment": false,
+    "supplier_inquiry": false
+  },
+  "current_stage": "Prototype circuit selected with qualification work remaining; 24x27 mm PCB partially routed (3 unconnected items). Complete case dimensions and Omi fit are not established."
+}

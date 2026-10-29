@@ -1,0 +1,43 @@
+{
+  "status": "DIMENSIONAL_COMPARISON_NOT_FINAL_PRODUCT",
+  "case_envelope_mm": [
+    26.200000000000003,
+    29.6,
+    12.9714001
+  ],
+  "omi_reference": {
+    "product": "Omi consumer wearable, current official product page",
+    "url": "https://www.omi.me/pages/product",
+    "checked_date": "2026-10-27",
+    "published_size_cm": [
+      2.5,
+      1.5
+    ],
+    "interpretation": "25mm diameter x15mm thickness inferred from round form; page gives two dimensions without explicit axis labels",
+    "cad_association": "Public consumer cover STEP approx25.5mm diameter; exact released SKU association unconfirmed"
+  },
+  "omi_cylinder_diameter_height_mm": [
+    25.0,
+    15.0
+  ],
+  "case_sources": {
+    "top-led-window-upper-trial.step": "181b9bb97bb302d3c10baf2968506b63d2df48f602c5dd5fc56a26d39ae77172",
+    "closure-acoustic-slim-lower-case-trial.step": "e01f239aef0fc4a07e47e19b585c4533645b0741859f4921862c81de102e4b75"
+  },
+  "equal_scale": true,
+  "comparison_offset_mm": 43,
+  "case_bounding_box_volume_mm3": 10059.580205552002,
+  "omi_reference_cylinder_volume_mm3": 7363.1077818510785,
+  "case_bounding_box_to_omi_cylinder_ratio": 1.3662139009220142,
+  "ratio_limit": "Bounding box versus ideal cylinder only; neither actual material volume nor final device volume",
+  "unresolved": [
+    "Original leads and mating housing",
+    "Closure and manufacturing tolerance",
+    "Thermal contact and swelling",
+    "16h runtime"
+  ],
+  "outputs": [
+    "top-led-dimension-comparison.png",
+    "top-led-dimension-comparison.step"
+  ]
+}

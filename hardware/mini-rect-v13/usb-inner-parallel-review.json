@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_USB_TRANSITION_IMPROVED_NOT_RELEASED",
+  "candidate": "usb-inner-parallel.kicad_pcb",
+  "board_sha256": "cea2e8a7037a5a1b00d8b50c7d0af7aaf86da940e9395447f54ddeb0bb644887",
+  "drc": 0,
+  "unconnected": 0,
+  "pad_parity": 254,
+  "changes": [
+    "DM MCU-side via y+0.44mm preserves minimum0.1mm gap to DPvia",
+    "DM inner corner moved x-0.44/y+0.44 to preserve45degree parallel diagonal"
+  ],
+  "inner_edge_gap_max_mm": {
+    "before": 0.8727,
+    "after": 0.4327
+  },
+  "rejected": "usb-inner-corner moved y alone and had3DRC; do not use",
+  "remaining": [
+    "Differential impedance/stackup qualification",
+    "Connector-side branches and return path",
+    "Power/current, battery/card sourcing, firmware, mechanics, quote"
+  ]
+}

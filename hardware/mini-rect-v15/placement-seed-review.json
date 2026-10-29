@@ -1,0 +1,31 @@
+{
+  "status": "PLACEMENT_SEED_INCOMPLETE_NOT_FOR_MANUFACTURE",
+  "source_sha256": "8c98180835f975a3c1ba9a2a7714d9da121132c44831814c5668da0da8915fed",
+  "board_sha256": "e3518599437fae1105e0f686aaf4e055057352afa6fb58bb40b128e94c0ab7e8",
+  "board_mm": [
+    26,
+    29
+  ],
+  "layers": 6,
+  "retained_tracks_and_vias": 1319,
+  "footprints": 75,
+  "unresolved": [
+    "J2 packing-study allocation collides with existing components: relocation required",
+    "USB cluster still at original position; must move 6mm toward edge and reroute",
+    "J2 and TH1 unrouted; old connector track stubs retained",
+    "Zones need extension; no DRC or mechanical fit claim",
+    "Battery polarity, charging voltage and storage power qualification pending"
+  ],
+  "backside_new_part_overlap_screen": {
+    "J2": [
+      "J3",
+      "R21",
+      "R37",
+      "R6",
+      "R7",
+      "TP6",
+      "U2"
+    ],
+    "TH1": []
+  }
+}

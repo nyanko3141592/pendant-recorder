@@ -1,0 +1,65 @@
+{
+  "status": "PRINTABLE_SIZE_GAUGES_NOT_ELECTRICAL_OR_CASE_FIT_QUALIFICATION",
+  "plate_bbox_mm": [
+    109.00060256260761,
+    36.00060256260761,
+    0.8006025626076161
+  ],
+  "gauge_thickness_mm": 0.8,
+  "usb_side_cue": "9.4 x 2.0 mm centered shallow edge notch",
+  "identification": {
+    "one_corner_hole": "HW-V1.0",
+    "two_corner_holes": "HW-V1.1",
+    "three_corner_holes": "HW-V1.2"
+  },
+  "versions": [
+    {
+      "version": "HW-V1.0",
+      "board_mm": [
+        27.5,
+        27.5
+      ],
+      "layers": 6,
+      "assembly_sides": 2,
+      "construction": "6-layer / double-side / POFV"
+    },
+    {
+      "version": "HW-V1.1",
+      "board_mm": [
+        31.5,
+        31.5
+      ],
+      "layers": 4,
+      "assembly_sides": 2,
+      "construction": "4-layer / double-side / ordinary via"
+    },
+    {
+      "version": "HW-V1.2",
+      "board_mm": [
+        36.0,
+        36.0
+      ],
+      "layers": 4,
+      "assembly_sides": 1,
+      "construction": "4-layer / single-side / ordinary via"
+    }
+  ],
+  "single_import": "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-0-v1-1-v1-2-pcb-comparison-plate.stl",
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-0-pcb-envelope-gauge.stl": "383d7d62fbc1776ef0c6005cc3467b0c5f2f0b606d5f5c7878d978e53b7ee9af",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-0-pcb-envelope-gauge.step": "d8d7cd5932f47e6fd015fcbb3bc40cd3c4c9fd399c4ee8713eb3768cc9217f5b",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-1-pcb-envelope-gauge.stl": "14c4d00bdc82bb117a296fe0a9d7d5b5051b118a34370c39b8b54ace18e78a10",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-1-pcb-envelope-gauge.step": "474ad0683906b92b735712c30a0a0b616eb9f23ffed350810d035a5ee1bbf2c0",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-2-pcb-envelope-gauge.stl": "736a71211114d1e4ec0e6404a14f29f63184cbde6ae01576f1d7344ee449c085",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-2-pcb-envelope-gauge.step": "d7ed29f5b587c82805641727925a07d07b6671c07fb6c8efb84fc59b77eee68f",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-0-v1-1-v1-2-pcb-comparison-plate.stl": "8e75cfa243583c79bd5add3dfb21023f93523191c57a8882af2b116f8ccabd41",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-0-v1-1-v1-2-pcb-comparison-plate.step": "3eb0cf0f7450cd05a6e6949787f8e51c3bfaee2272898ec75ccc811658d5ed49",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/hw-v1-0-v1-1-v1-2-pcb-comparison-assembly.step": "457838a8463a627b4b1ae631cc8c4f828f284c9ea02fc720197091ef7ff70635",
+    "mechanical/xe-minimal/prototype-v1/pcb-costdown-comparison-kit/pcb-size-comparison.svg": "857a476bbb4cdf91faf91a4448c4f3a357cc018611f714cf74ac7b012cce54a3"
+  },
+  "limitations": [
+    "These are board-outline and USB-side orientation gauges, not populated PCB models.",
+    "A successful print does not qualify routing, signal integrity, thermal behavior, acoustics, assembly, USB cable clearance or case fit.",
+    "HW-V1.2 remains an unreleased routed candidate until its DRC and engineering gates pass."
+  ]
+}

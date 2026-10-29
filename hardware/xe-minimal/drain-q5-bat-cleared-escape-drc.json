@@ -1,0 +1,155 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T06:27:16",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "drain-q5-bat-cleared-escape-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.295,
+                        "y": 9.245
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                },
+                {
+                    "description": "配線 [/USB_HIGH_BUDGET_DRAIN] ( F.Cu 上、長さ: 0.9990 mm )",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "d6fc91c8-9900-4d4b-b7af-7e8c89e2a2bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In2.Cu 上、長さ: 3.0000 mm )",
+                    "pos": {
+                        "x": 10.4,
+                        "y": 5.6
+                    },
+                    "uuid": "ebf49731-df9a-4f93-ab22-86f436b45d5b"
+                },
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 2.0000 mm )",
+                    "pos": {
+                        "x": 4.725,
+                        "y": 1.25
+                    },
+                    "uuid": "10d89f65-a9da-494a-9baa-daa1100e53a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - Q3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.3175,
+                        "y": 23.475
+                    },
+                    "uuid": "80905ce2-b930-431a-9044-931160fed9bc"
+                },
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                },
+                {
+                    "description": "パッド 2 [/VBUS_GATE] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.77,
+                        "y": 3.0
+                    },
+                    "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.4,
+                        "y": 4.45
+                    },
+                    "uuid": "05b00199-f636-4586-9c73-51b5e102bda0"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.4,
+                        "y": 5.6
+                    },
+                    "uuid": "0163a565-0d6a-4aa5-b495-e278397515f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 6.656851,
+                        "y": 1.767638
+                    },
+                    "uuid": "b61dba9d-9a1c-4a01-a6d0-fa770c0d1537"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

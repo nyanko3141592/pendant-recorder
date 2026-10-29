@@ -1,0 +1,137 @@
+{
+  "status": "RECONNECTION_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "ntcaflex-open-separator-trial.step": "7ec8e86f7e723fcedcd83270956af3226e923d6ae83e9fe4f489b40a885f7590",
+    "ntcaflex-diagonal-positioned-reference.step": "98c8c667fa13ff247d718b7f6ab66a1f3df63a16cc2e4718da33b4f494d89d08",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "ntcaflex-relocated-support-lower-trial.step": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "cases": [
+    {
+      "bridge_span_mm": 6.4,
+      "valid": true,
+      "solid_count": 3,
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.1999999999950381
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.020000000000000018
+        },
+        "lower": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.19999999999999973
+        }
+      },
+      "output": "ntcaflex-reconnect-64-separator-trial.step",
+      "output_sha256": "63a22dc8ba54bd997683f730d9425b47e4e26fb49486f73ebe08237f9f7f29eb",
+      "pieces": [
+        {
+          "volume_mm3": 105.0118805257938,
+          "bounds_mm": [
+            0.3,
+            -27.2,
+            -2.22,
+            21.47128129211,
+            0.410511776652,
+            -1.12
+          ]
+        },
+        {
+          "volume_mm3": 3.558574733592992,
+          "bounds_mm": [
+            14.58985047312,
+            -6.237317273970812,
+            -2.4200000999999998,
+            21.674449560615002,
+            -1.233366298085,
+            -0.9199999999999999
+          ]
+        },
+        {
+          "volume_mm3": 2.0479999999792886,
+          "bounds_mm": [
+            13.52871870789,
+            -13.874613391781038,
+            -1.94,
+            19.47128129211,
+            -9.9817930687597,
+            -1.54
+          ]
+        }
+      ]
+    },
+    {
+      "bridge_span_mm": 8.0,
+      "valid": true,
+      "solid_count": 3,
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.1999999999950381
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.020000000000000018
+        },
+        "lower": {
+          "overlap_mm3": 0.04453336496502526,
+          "distance_mm": 0.0
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.19999999999999973
+        }
+      },
+      "output": "ntcaflex-reconnect-80-separator-trial.step",
+      "output_sha256": "e8b500862a800a7c140c4a8e44db60a0f7df6ea53f3d27bc969171ec68fa37db",
+      "pieces": [
+        {
+          "volume_mm3": 106.00511295731361,
+          "bounds_mm": [
+            0.3,
+            -27.2,
+            -2.22,
+            22.164101615138,
+            0.810511776652,
+            -1.12
+          ]
+        },
+        {
+          "volume_mm3": 3.558574733592992,
+          "bounds_mm": [
+            14.58985047312,
+            -6.237317273970812,
+            -2.4200000999999998,
+            21.674449560615002,
+            -1.233366298085,
+            -0.9199999999999999
+          ]
+        },
+        {
+          "volume_mm3": 2.559999999974437,
+          "bounds_mm": [
+            12.835898384862,
+            -14.274613391781735,
+            -1.94,
+            20.164101615138,
+            -9.5817930687597,
+            -1.54
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Nominal related HH sensor; no GL tolerance envelope.",
+    "Bridge positions and dimensions provisional; no printed strength or load qualification.",
+    "Complete carrier/thermal contact/strain relief and harness remain unresolved."
+  ]
+}

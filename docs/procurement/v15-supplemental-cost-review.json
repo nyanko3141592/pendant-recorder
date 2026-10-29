@@ -1,0 +1,99 @@
+{
+  "status": "PARTIAL_REFERENCE_NOT_ORDER_TOTAL",
+  "observed_date": "2026-10-26",
+  "prototype_units": 5,
+  "battery": {
+    "mpn": "DTP401525-XE",
+    "supplier": "Sengoku",
+    "sku": "EEHD-5VAC",
+    "url": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5VAC",
+    "source_crawl_label": "today",
+    "quantity": 5,
+    "unit_JPY_tax_included": 1500,
+    "total_JPY_tax_included": 7500,
+    "quantity_stock_confirmed": false,
+    "shipping_included": false,
+    "fit_qualified": false
+  },
+  "foreign_currency_board_parts": [
+    {
+      "mpn": "RC0402FR-07390KL",
+      "url": "https://www.digikey.com/en/products/detail/yageo/RC0402FR-07390KL/5282008",
+      "source_crawl_label": "today (find result; initial open said last week)",
+      "displayed_stock": 80565,
+      "stock_requires_recheck": true,
+      "currency": "USD",
+      "tax_basis": "Listed US price; destination taxes and charges not included",
+      "installed_quantity": 5,
+      "tiers": [
+        {
+          "min_quantity": 1,
+          "unit_price": 0.11
+        },
+        {
+          "min_quantity": 10,
+          "unit_price": 0.022
+        },
+        {
+          "min_quantity": 25,
+          "unit_price": 0.016
+        },
+        {
+          "min_quantity": 50,
+          "unit_price": 0.0128
+        },
+        {
+          "min_quantity": 100,
+          "unit_price": 0.0103
+        },
+        {
+          "min_quantity": 250,
+          "unit_price": 0.00784
+        },
+        {
+          "min_quantity": 500,
+          "unit_price": 0.0065
+        },
+        {
+          "min_quantity": 1000,
+          "unit_price": 0.00543
+        },
+        {
+          "min_quantity": 5000,
+          "unit_price": 0.00377
+        }
+      ],
+      "installed_total_USD": 0.55,
+      "price_break_purchase_proposal": {
+        "quantity": 10,
+        "total_USD": 0.22,
+        "status": "REFERENCE_ONLY_NOT_ORDERED"
+      },
+      "JPY_conversion": null,
+      "limitations": [
+        "US listing does not establish Japan checkout price or delivery conditions.",
+        "Do not add USD to JPY subtotal or count this as a JPY-priced line."
+      ]
+    }
+  ],
+  "excluded_old_estimates": [
+    {
+      "path": "docs/procurement/quote-v4.json",
+      "reason": "Quoted 18x33 mm old board; current board 26x29 mm. No current fabrication/assembly quote."
+    },
+    {
+      "path": "docs/procurement/budget.json",
+      "reason": "Historical allowances and fixed planning FX are not current supplier quotations."
+    }
+  ],
+  "remaining_unpriced": [
+    "Current six-layer 26x29 mm PCB fabrication and stackup acceptance",
+    "Double-sided assembly, setup, stencil, panelization, sourcing, attrition and consigned-part handling",
+    "Qualified microSD cards for five units",
+    "Five case bodies and lids, print material/process and finishing",
+    "Thermal coupling material, acoustic gasket and battery retention",
+    "Programming/test fixture and debug hardware, accounting for already-owned tools",
+    "Shipping by supplier, taxes, import fees and payment FX"
+  ],
+  "combined_total": null
+}

@@ -1,0 +1,16 @@
+{
+  "status": "LINK_CHECK_ONLY_NOT_FOR_FLASH",
+  "elf": "/tmp/pendant-input-init-link/candidate-NOT-FOR-FLASH.elf",
+  "sha256": "828e4b8c876519a1bba0560474a51d2ae83fa7c0b554e8dd75ecc26252763566",
+  "change": "main initializes USB input GPIO before battery IO; halted revokes input budget",
+  "mock_tests": "Actual main cold-low/recording-low export, ADC/overvoltage/stop failure gating, init order and fault revoke PASS; input driver mock HAL PASS",
+  "actual_link": "Cortex M33 actual STM32U535 HAL app link exit0; BL callsites 0x0800f046 init and 0x0800efe6 revoke verified",
+  "configuration": "Disposable public recipient, synthetic USB IDs, cooperative saves, provisional bench3600mV cutoff",
+  "missing": [
+    "USB event policy integration",
+    "Canonical 100mA descriptor, TPS2552DBVR-1 guaranteed 50..100mA latch-off limiter and suspend timing physical qualification",
+    "Charging enable/qualification",
+    "Physical firmware execution"
+  ],
+  "main_source_sha256": "46190692b3f27a4e7d39b308f2d80842a610ec830d2abbcdd64cc35f98e7cd91"
+}

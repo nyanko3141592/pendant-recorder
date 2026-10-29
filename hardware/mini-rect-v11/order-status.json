@@ -1,0 +1,169 @@
+{
+  "revision": "mini-rect-v11",
+  "status": "IN_DEVELOPMENT",
+  "order_ready": false,
+  "baseline": "mini-rect-v10",
+  "requirements": {
+    "usb": "USB-C data and charging; automatic host import after USB data connection and safe recording finalization",
+    "recording_hours_min": 16,
+    "storage_hours_min": 36,
+    "wireless": false,
+    "case_baseline_mm": [
+      23,
+      25,
+      14
+    ],
+    "thickness_limit_mm": 15,
+    "average_battery_current_target_mA": 4,
+    "battery_candidate_mAh": 100
+  },
+  "release_gates": {
+    "schematic_review": "pending",
+    "routing_and_drc": "ERC/DRC/parity/unconnected all0; geometry review rejects release: no ground plane, USB on mixed layers with unmatched via counts, power nets0.1mm. Rework required despite clean DRC.",
+    "storage_36h": "2GB CSNP16GCR01-AOW selected for engineering: allocation fits nominal capacity; actual CSD and supply pending",
+    "power_budget": "4mA allocation in power-budget.json; STM32 ADF 768kHz/16kHz configuration cross-compiles, DMA/crypto/storage and actual current pending",
+    "usb_sync": "Host import/watch and verified cleanup plus ownership reducer implemented. Hardware USB/SD drivers, automatic volume identity discovery and cross-platform durability qualification pending.",
+    "microphone_acoustic_path": "Local model has0.6mm bore in1.4mm riser,0.3mm gasket allowance; 5closed meshes and envelope overlap0. Acoustic/print tolerance/seal unverified.",
+    "battery_ntc_and_harness": "pending vendor qualification",
+    "jlc_parts_and_dfm": "pending",
+    "shipping_inclusive_quote": "pending"
+  },
+  "prototype_only_validation": [
+    "16h continuous encrypted recording",
+    "USB throughput and reconnect/power-loss recovery",
+    "acoustic response and clothing noise",
+    "charging thermal and NTC fault injection",
+    "fit, retention and lanyard strength"
+  ],
+  "purchase_authorized": false,
+  "storage": {
+    "part": "CSNP16GCR01-AOW",
+    "jlc": "C7527488",
+    "required_36h_bytes_with_reserve": 1131544576,
+    "conservative_nominal_bytes": 2000000000,
+    "hours_after_16MiB_reserve": 64.04566798941799,
+    "package_max_mm": [
+      8.1,
+      6.3,
+      0.9
+    ],
+    "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/994e28355d17ba74bc25089be28d0050.pdf?productCode=C7527488",
+    "standby_typ_mA": 0.18,
+    "standby_max_mA": 0.25,
+    "write_50MHz_typ_mA": 15,
+    "write_50MHz_max_mA": 50,
+    "stock_confirmed": false
+  },
+  "checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "erc": 0
+  },
+  "routing_trial": {
+    "board": "route-trial.kicad_pcb",
+    "tracks_and_vias": 1087,
+    "violations": 0,
+    "unconnected": 0,
+    "adopted": true,
+    "review_pending": [
+      "USB differential geometry and reference plane",
+      "Power/GND widths and return paths",
+      "Crystal and decoupling placement"
+    ]
+  },
+  "board_sha256": "08094769eb1dd12ca24f5de8dad3da57114ac3aa03ff86dfdf8717fbf9c3a0f3",
+  "routing_review": {
+    "passed": false,
+    "evidence": "route-geometry.json",
+    "findings": [
+      "No reference ground plane",
+      "USB_DM has2vias versus USB_DP1via before series resistors; routes do not form qualified differential pair",
+      "All power and ground tracks0.1mm; power distribution/return paths require redesign"
+    ],
+    "next_action": "Reserve reference plane and pre-route USB/power before remaining signal routing"
+  },
+  "mechanical_artifacts": {
+    "directory": "/Users/takahashinaoki/Downloads/Pendant-mini-rect-v11",
+    "print_zip": "/Users/takahashinaoki/Downloads/Pendant-mini-rect-v11/Pendant-mini-rect-v11-print.zip",
+    "mesh_pairs_passed": 5,
+    "envelope_overlap_count": 0,
+    "acoustic_bore_diameter_mm": 0.6,
+    "riser_outer_mm": [
+      1.4,
+      1.4
+    ],
+    "gasket_allowance_mm": 0.3,
+    "sliced_project_ready": false,
+    "limitations": [
+      "0.6mm acoustic bore and0.4mm wall require physical print check",
+      "0.3mm gasket required, not supplied by rigid print",
+      "Tape closure; retention and lanyard unfinished",
+      "Actual battery harness and component dimensions unqualified"
+    ]
+  },
+  "host_import": {
+    "source": "host/import_recordings.py",
+    "test": "host/test_import_recordings.py",
+    "tested": [
+      "age decrypt and standard PCM WAV output",
+      "retry deduplication with hash revalidation",
+      "wrong key rejected",
+      "truncated age rejected with source preserved",
+      "damaged previous output rejected",
+      "damaged saved PCM prevents deletion",
+      "verified source deletion preserves saved WAV"
+    ],
+    "device_deletion_implemented": true,
+    "watch_mode": "poll explicit volume path every3seconds",
+    "real_device_tested": false,
+    "cleanup_policy": "--cleanup-verified opt-in during development. Reauthenticate source, decode and compare stored PCM, fsync files/directories (macOS F_FULLFSYNC), recheck source then unlink. Windows copy-only pending durable directory support.",
+    "age_test_version": "1.3.2"
+  },
+  "plane_trial": {
+    "file": "plane-routed.kicad_pcb",
+    "ground_plane_layer": "In1.Cu",
+    "power_target_width_mm": 0.25,
+    "unconnected": 12,
+    "violations": 4,
+    "adopted": false,
+    "next": "Inspect 12 gaps and dangling vias; complete USB pair routing before adoption"
+  },
+  "plane6_trial": {
+    "status": "ground repaired; 5 signal gaps remain, not adopted",
+    "session": null,
+    "adopted": false,
+    "layers": 6,
+    "reference_planes": [
+      "In1.Cu",
+      "In4.Cu"
+    ],
+    "board_mm": [
+      21,
+      23,
+      0.8
+    ],
+    "reason": "Compare routing feasibility with two adjacent reference planes without increasing exterior; cost/stackup pending",
+    "unconnected": 5,
+    "violations": 4,
+    "source": "plane6-repair-drc.json",
+    "repair_file": "plane6-repair.kicad_pcb"
+  },
+  "plane6_fixedvia_trial": {
+    "status": "GND repaired; DRC0/unconnected0, geometry review pending, not adopted",
+    "adopted": false,
+    "session": null,
+    "dsn": "plane6-fixedvia.dsn",
+    "log": "plane6-fixedvia.log",
+    "correction": "All via copper diameters0.35mm: previous DSN inner layers wrongly retained0.6mm despite outer layers0.35mm",
+    "import_script": "import_fixedvia_trial.py",
+    "last_router_unconnected": 6,
+    "kicad_drc": "plane6-fixedvia-repair-drc.json",
+    "unconnected": 0,
+    "violations": 0,
+    "tracks_and_vias": 1042,
+    "repair_board": "plane6-fixedvia-repair.kicad_pcb",
+    "geometry": "plane6-fixedvia-geometry.json",
+    "next": "Qualify USB pair geometry/stackup/reference continuity and power bottlenecks; retain candidate until reviewed"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "NOMINAL_DIAGONAL_DETAIL_NOT_ADOPTED",
+  "sources_sha256": {
+    "vendor/ntcaflex/NTCAFLEX05103HH.STEP": "d5e5c08a12972dd859328ad3827204877c32e1ef302d0606142bc965f6c703fe",
+    "film-sensor-clearance-200um-lower-trial.step": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc"
+  },
+  "head_xy_mm": [
+    12.5,
+    -5
+  ],
+  "rotation_deg": 120,
+  "sensor_bounds_mm": [
+    8.633974596215559,
+    -23.220508075688773,
+    -2.52,
+    24.132050807568877,
+    -0.03589838486224328,
+    -0.8199999000000004
+  ],
+  "within_outer_xy_bbox": true,
+  "board_minimum_distance_mm": 0.11465887140585572,
+  "lower_overlap_regions": [
+    {
+      "bounds_mm": [
+        16.6,
+        -16.0,
+        -2.3200000000000003,
+        17.6,
+        -14.0,
+        -2.22
+      ],
+      "volume_mm3": 0.17669043483155594
+    }
+  ],
+  "limits": [
+    "Bounding-box containment does not establish interior clearance.",
+    "Nominal related HH STEP only, no GL maximum tolerance.",
+    "No carrier, solder, thermal pad, preload, original harness or assembly path."
+  ]
+}

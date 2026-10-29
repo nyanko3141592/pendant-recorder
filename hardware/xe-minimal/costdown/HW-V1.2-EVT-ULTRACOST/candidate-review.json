@@ -1,0 +1,40 @@
+{
+  "version": "HW-V1.2-EVT-ULTRACOST",
+  "status": "FOUR_LAYER_SINGLE_SIDE_ROUTED_CANDIDATE_SIGNAL_MECHANICAL_AND_MANUFACTURING_REVIEW_REQUIRED",
+  "parent_version": "HW-V1.1-EVT-COSTDOWN",
+  "return_point": "hardware/xe-minimal/snapshots/HW-V1.0-2026-10-28/snapshot-manifest.json",
+  "board_mm": [
+    36.0,
+    36.0
+  ],
+  "growth_from_hw_v1_0_mm": [
+    8.5,
+    8.5
+  ],
+  "copper_layers": 4,
+  "assembly_sides": 1,
+  "top_footprints": 74,
+  "bottom_footprints": 0,
+  "footprints": 74,
+  "tracks_and_vias": 1112,
+  "zones": 2,
+  "drc_geometric_violations": 0,
+  "drc_violation_types": {
+    "lib_footprint_issues": 74
+  },
+  "drc_library_provenance_warnings": 74,
+  "unconnected_items": 0,
+  "hole_over_pad_vias": 0,
+  "hole_over_pad_detail": [],
+  "candidate_sha256": "18c5ea4ba34577eca586ee9a26cf7bb3e37dbd287d6f9123cbd4e8eda4586a5f",
+  "function_changes": [],
+  "release_allowed": false,
+  "remaining_gates": [
+    "Review/replace autorouted USB D+/D- as a controlled pair for the selected stackup.",
+    "Review PDM, SPI, power and charger routes; completed autorouting is not signal/power qualification.",
+    "Review the new one-side placement for heat, microphone acoustics, USB/button/LED access and case fit.",
+    "Resolve footprint-library provenance warnings without changing pad geometry.",
+    "Regenerate schematic parity, CAM and assembly data only after these reviews pass.",
+    "Obtain a live one-unit PCB/PCBA quotation; no upload or order has been performed."
+  ]
+}

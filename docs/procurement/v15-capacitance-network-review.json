@@ -1,0 +1,432 @@
+{
+  "status": "CAPACITANCE_REQUIREMENTS_SCREEN_NOT_QUALIFICATION",
+  "source_sha256": {
+    "hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "docs/procurement/v15-capacitor-candidates.json": "f34c4af3c1c9ae2e8a64dc7051be3839189c5dbefbd6de16ffe14b832252763a",
+    "docs/procurement/check_v15_capacitance.py": "2932427a1f8b70542ed3dc30c9294b950225906cbb8c23fb70582749f236b8c9"
+  },
+  "board_connections": {
+    "U4": {
+      "value": "TPS7A0233PDBVR",
+      "pads": {
+        "1": "/SYS",
+        "2": "/GND",
+        "3": "/SYS",
+        "4": "",
+        "5": "/V3V3"
+      }
+    },
+    "U3": {
+      "value": "BQ25185DLHR",
+      "pads": {
+        "": "",
+        "1": "/SYS",
+        "2": "/BAT",
+        "3": "",
+        "4": "/CHG_INHIBIT_GATE",
+        "5": "/GND",
+        "6": "/CHARGER_TS",
+        "7": "/ILIM_VSET",
+        "8": "/ISET",
+        "9": "/CHG_N",
+        "10": "/VBUS_LIMITED",
+        "11": "/GND"
+      }
+    },
+    "R1": {
+      "value": "0R",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/VDDA"
+      }
+    },
+    "U10": {
+      "value": "TPS22916CYFPR",
+      "pads": {
+        "A1": "/SD_V3",
+        "A2": "/V3V3",
+        "B1": "/GND",
+        "B2": "/SD_EN"
+      }
+    }
+  },
+  "capacitors": [
+    {
+      "reference": "C31",
+      "design_value": "1u 10V",
+      "pads": {
+        "1": "/VBUS",
+        "2": "/GND"
+      },
+      "nominal_uF": 1.0,
+      "mpn": "CC0402KRX5R6BB105",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C33",
+      "design_value": "100n 10V",
+      "pads": {
+        "1": "/VBUS",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C16",
+      "design_value": "1u",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 1.0,
+      "mpn": "CC0402KRX5R6BB105",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C29",
+      "design_value": "100n 10V",
+      "pads": {
+        "1": "/VBUS_LIMITED",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C22",
+      "design_value": "100n",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C27",
+      "design_value": "4.7u effective TBD",
+      "pads": {
+        "1": "/SD_V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 4.7,
+      "mpn": "CC0603KRX5R6BB475",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C13",
+      "design_value": "2.2u 10V",
+      "pads": {
+        "1": "/VBUS_LIMITED",
+        "2": "/GND"
+      },
+      "nominal_uF": 2.2,
+      "mpn": "CC0402KRX5R6BB225",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C15",
+      "design_value": "10u 10V effective >=1u",
+      "pads": {
+        "1": "/SYS",
+        "2": "/GND"
+      },
+      "nominal_uF": 10.0,
+      "mpn": "CC0603KRX5R6BB106",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C2",
+      "design_value": "100n",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C11",
+      "design_value": "10p tentative",
+      "pads": {
+        "1": "/LSE_IN",
+        "2": "/GND"
+      },
+      "nominal_uF": 9.999999999999999e-06,
+      "mpn": "CC0402JRNPO9BN100",
+      "tolerance_percent": 5,
+      "dielectric": "C0G"
+    },
+    {
+      "reference": "C4",
+      "design_value": "10u",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 10.0,
+      "mpn": "CC0603KRX5R6BB106",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C28",
+      "design_value": "10n",
+      "pads": {
+        "1": "/BAT_ADC",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.01,
+      "mpn": "CC0402KRX7R9BB103",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C32",
+      "design_value": "100n 10V",
+      "pads": {
+        "1": "/VBUS",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C30",
+      "design_value": "50p 50V C0G",
+      "pads": {
+        "1": "/ISET",
+        "2": "/GND"
+      },
+      "nominal_uF": 4.9999999999999996e-05,
+      "mpn": "CC0402JRNPO9BN500",
+      "tolerance_percent": 5,
+      "dielectric": "C0G"
+    },
+    {
+      "reference": "C12",
+      "design_value": "10p tentative",
+      "pads": {
+        "1": "/LSE_OUT",
+        "2": "/GND"
+      },
+      "nominal_uF": 9.999999999999999e-06,
+      "mpn": "CC0402JRNPO9BN100",
+      "tolerance_percent": 5,
+      "dielectric": "C0G"
+    },
+    {
+      "reference": "C7",
+      "design_value": "1u",
+      "pads": {
+        "1": "/VDDA",
+        "2": "/GND"
+      },
+      "nominal_uF": 1.0,
+      "mpn": "CC0402KRX5R6BB105",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C5",
+      "design_value": "4.7u",
+      "pads": {
+        "1": "/VCAP",
+        "2": "/GND"
+      },
+      "nominal_uF": 4.7,
+      "mpn": "CC0603KRX5R6BB475",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C3",
+      "design_value": "100n",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C26",
+      "design_value": "100n",
+      "pads": {
+        "1": "/SD_V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C14",
+      "design_value": "2.2u",
+      "pads": {
+        "1": "/BAT",
+        "2": "/GND"
+      },
+      "nominal_uF": 2.2,
+      "mpn": "CC0402KRX5R6BB225",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    },
+    {
+      "reference": "C1",
+      "design_value": "100n",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C9",
+      "design_value": "100n",
+      "pads": {
+        "1": "/NRST",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C6",
+      "design_value": "100n",
+      "pads": {
+        "1": "/VDDA",
+        "2": "/GND"
+      },
+      "nominal_uF": 0.1,
+      "mpn": "CC0402KRX7R7BB104",
+      "tolerance_percent": 10,
+      "dielectric": "X7R"
+    },
+    {
+      "reference": "C25",
+      "design_value": "1u",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/GND"
+      },
+      "nominal_uF": 1.0,
+      "mpn": "CC0402KRX5R6BB105",
+      "tolerance_percent": 10,
+      "dielectric": "X5R"
+    }
+  ],
+  "release_allowed": false,
+  "regulator_requirements": {
+    "part": "TPS7A0233PDBVR",
+    "source": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+    "revision": "SBVS277C, September2022",
+    "page": 5,
+    "minimum_effective_output_uF": 0.5,
+    "maximum_derated_output_uF": 22,
+    "nominal_recommended_output_uF": 1
+  },
+  "output_network_scenarios": [
+    {
+      "nets": [
+        "/V3V3",
+        "/VDDA"
+      ],
+      "references": [
+        "C1",
+        "C16",
+        "C2",
+        "C22",
+        "C25",
+        "C3",
+        "C4",
+        "C6",
+        "C7"
+      ],
+      "nominal_uF": 13.5,
+      "initial_tolerance_high_uF": 14.85,
+      "hypothetical_additional_15_percent_high_uF": 17.0775
+    },
+    {
+      "nets": [
+        "/V3V3",
+        "/VDDA",
+        "/SD_V3"
+      ],
+      "references": [
+        "C1",
+        "C16",
+        "C2",
+        "C22",
+        "C25",
+        "C26",
+        "C27",
+        "C3",
+        "C4",
+        "C6",
+        "C7"
+      ],
+      "nominal_uF": 18.3,
+      "initial_tolerance_high_uF": 20.13,
+      "hypothetical_additional_15_percent_high_uF": 23.1495
+    }
+  ],
+  "output_network_interpretation": [
+    "R1=0R joins VDDA decoupling; SD capacitors are connected through U10 when enabled. Treat full-network sum as a conservative stability screening scenario, not proof of exact loop impedance.",
+    "Board-only capacitors exclude capacitance inside the chosen microSD and other connected devices.",
+    "15% added positive capacitance is a sensitivity corner; DC-bias reduction, temperature correlation, aging and ESR have not been characterized. Crossing22uF does not prove actual instability; it prevents qualification from nominal capacitance alone.",
+    "Do not blindly increase C4 or C27 to improve transient response. Check actual effective total against regulator stability range and load-step performance."
+  ],
+  "vcap_requirements": {
+    "reference": "C5",
+    "net": "/VCAP",
+    "source": "https://www.st.com/resource/en/datasheet/stm32u535ce.pdf",
+    "revision": "DS14217Rev5,May2025",
+    "page": 127,
+    "nominal_uF": 4.7,
+    "tolerance_percent": 20,
+    "minimum_voltage_rating_V": 10,
+    "ESR_strictly_below_ohm": 0.02,
+    "ESR_frequency_Hz": 3000000,
+    "candidate_nominal_capacity_tolerance_voltage_match": true,
+    "candidate_ESR_qualified": false,
+    "remaining": "Confirm ESR at3MHz and effective capacitance under actual core rail conditions; K-SIM typical curves are not guaranteed limits."
+  },
+  "charger_requirements": {
+    "source": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+    "revision": "SLUSF65B,August2026",
+    "page": 21,
+    "minimum_derated_capacitance_uF": 1,
+    "recommendation": "X5R/X7R;25V rating recommended by TI for IN/SYS operating around5V, not a blanket assertion that10V parts fail.",
+    "rails": {
+      "/VBUS_LIMITED": "C13 plus C29",
+      "/SYS": "C15",
+      "/BAT": "C14"
+    },
+    "remaining": "Verify effective capacitance of chosen parts at rail extremes; nominal rating alone is insufficient."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "SIZE_CONSTRAINED_RESELECTION_NOT_QUALIFIED",
+  "case_limit_mm": [
+    30,
+    30,
+    15
+  ],
+  "source": "https://www.sengoku.co.jp/item/pdf/SPE-DTP401525%28PHR%29-3.7V-110mAh-en-2.0ver.pdf",
+  "candidate": "DTP401525(PHR)",
+  "pack_max_mm": [
+    15.5,
+    27,
+    4.2
+  ],
+  "leads_mm": 100,
+  "finding": "27mm pack leaves3mm total inside30mm case before walls, end clearance and wire exit. At1.2mm walls only0.6mm remains; full fit is not established. PH header should sit beside pack, not add length. Must model connector and unmodified100mm leads.",
+  "runtime_battery_budget_mA": 4.8125,
+  "assumed_usable_fraction": 0.7,
+  "comparison": "300mAh35x47x14.8 case rejected, not release baseline",
+  "required": [
+    "Verify exact pack current/charge limits from manufacturer PDF, not old retail values",
+    "Fit pack, lead exit,100mm harness, connector, thermal pad and swelling within30x30x15",
+    "Verify peak draw against110mAh pack; select actual storage",
+    "Do not copy300mAh90mA charging setting without recalculation"
+  ],
+  "release_allowed": false
+}

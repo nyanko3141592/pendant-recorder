@@ -1,0 +1,78 @@
+{
+  "status": "ALTERNATIVE_THERMAL_ARCHITECTURE_NOT_ADOPTED",
+  "part": "103JT-025",
+  "manufacturer": "SEMITEC",
+  "manufacturer_url": "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf",
+  "local_pdf": "mechanical/xe-minimal/thermal-reference-documents/semitec-jt.pdf",
+  "sha256": "b430302b8002752e077803c594dac29ce98e86361444394faba51096d723b266",
+  "drawing_visually_reviewed": true,
+  "dimensions_mm": {
+    "overall_length": [
+      24,
+      26
+    ],
+    "width": [
+      3.1,
+      4.1
+    ],
+    "maximum_thickness": 0.5,
+    "exposed_lead_length": [
+      4,
+      6
+    ],
+    "lead_pitch": [
+      1.7,
+      1.9
+    ]
+  },
+  "electrical": {
+    "R25_ohm": 10000,
+    "R25_tolerance": 0.01,
+    "B25_85_K": 3435,
+    "B_tolerance": 0.01,
+    "dissipation_mW_K_typical": 0.7,
+    "air_time_constant_s_typical": 5
+  },
+  "manufacturer_handling_constraints": [
+    "Do not press or insert into tight gaps without manufacturer consultation; avoid clamp/press-fit architecture.",
+    "Keep hot soldering parts above150C away from film.",
+    "Bend only once90degrees, at least7mm from sensor head; fixation at least3mm from head."
+  ],
+  "retail": {
+    "url": "https://akizukidenshi.com/catalog/g/g110160",
+    "date": "2026-10-27",
+    "stock_displayed": 1564,
+    "minimum": 1,
+    "unit_JPY_including_tax": 70,
+    "five_sensor_JPY_including_tax": 350,
+    "not_reserved": true
+  },
+  "proposed_assembly": "Seller preconnects sensor to PCB and prepares insulated joints/strain relief and a peelable attachment patch. Buyer plugs battery and places sensor using locating feature; no soldering, lead cutting or connector replacement. Attachment chemistry and exact process unselected.",
+  "potential_benefit": "Sensor follows battery surface; eliminates need for a thick pad bridging board-to-battery gap.",
+  "electrical_screen": [
+    {
+      "boundary": "cold",
+      "beta_model_temperature_range_C": [
+        6.9928735064400485,
+        9.154198698374046
+      ],
+      "status": "APPROXIMATION_NOT_TRIP_SPECIFICATION"
+    },
+    {
+      "boundary": "hot",
+      "beta_model_temperature_range_C": [
+        31.484218148616378,
+        33.819052340096846
+      ],
+      "status": "APPROXIMATION_NOT_TRIP_SPECIFICATION"
+    }
+  ],
+  "limits": [
+    "No circuit or BOM substitution performed.",
+    "B3380 existing sensor and B3435 candidate are not interchangeable without threshold/error review.",
+    "Beta model is only approximate, especially below25C; use manufacturer R-T tolerance and comparator errors before qualification.",
+    "5s air time constant is not installed battery sensing lag.",
+    "Tape adhesion to pouch, removability, insulation, lead routing, strain relief and misplaced/detached-sensor fault behavior remain unresolved.",
+    "Full25mm strip and solder joints must be fitted in3D; dimensions alone do not prove assembly fit."
+  ]
+}

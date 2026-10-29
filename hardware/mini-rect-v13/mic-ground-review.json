@@ -1,0 +1,23 @@
+{
+  "status": "MIC_GROUND_CONNECTED_NOT_RELEASED",
+  "board": "mic-ground-route.kicad_pcb",
+  "sha256": "df405ced433423adbbdfe10bbecdafc5c60fc5844162cf7462e358f8d6722b78",
+  "drc": [
+    "track_dangling",
+    "track_dangling"
+  ],
+  "unconnected": 5,
+  "remaining_ground": "J4 shield island",
+  "remaining_signal_nets": [
+    "CHG_ALLOW",
+    "PDM_DATA",
+    "CHG_INHIBIT_GATE",
+    "ISET"
+  ],
+  "method": "Connected U8 pad5 anchor along its actual ring copper to a grid escape, then existing GND via. New direct mic via was not required.",
+  "limitations": [
+    "Ground route connectivity verified, not audio noise/return impedance qualification",
+    "J4 shield route not found with unchanged neighbors and current via constraints",
+    "USB/power routing and manufacturing/price remain unqualified"
+  ]
+}

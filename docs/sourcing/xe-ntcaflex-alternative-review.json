@@ -1,0 +1,50 @@
+{
+  "status": "ALTERNATIVE_SENSOR_RESEARCH_NOT_ADOPTED",
+  "candidate": "NTCAFLEX05103GL",
+  "manufacturer": "Vishay",
+  "source_url": "https://www.vishay.com/docs/29132/ntcaflex05.pdf",
+  "datasheet_revision": "09-Apr-2025",
+  "observed": "2026-10-27",
+  "electrical": {
+    "r25_ohm": 10000,
+    "r25_tolerance_percent": 2,
+    "b25_85_K": 3435,
+    "b_tolerance_percent": 1
+  },
+  "mechanical_table_mm": {
+    "L1": [
+      20,
+      1
+    ],
+    "L15": [
+      25,
+      1
+    ],
+    "D1": [
+      6,
+      0.5
+    ],
+    "H1": [
+      1.4,
+      0.2
+    ]
+  },
+  "mounting_evidence": [
+    "Manufacturer describes flat sensing area held by insulating silicone foam, spring force, or double-sided temperature-resistant adhesive.",
+    "Flex has strain-relief hole intended to prevent traction on sensing head."
+  ],
+  "comparison": [
+    "Same nominal resistance and B as current 103JT but R25 tolerance doubles from 1% to 2%; recompute temperature bounds, not drop-in qualification.",
+    "H1 maximum 1.6mm versus current JT 0.5mm; local stack increases by 1.1mm before foam or retaining structure.",
+    "Head maximum diameter 6.5mm requires different placement from current 4.1mm-wide film envelope."
+  ],
+  "unresolved": [
+    "Exact orderable domestic retail availability, MOQ and price",
+    "Drawing datum and strain-relief hole dimensions via official 3D model",
+    "Battery pouch allowable pressure and constrained spring travel",
+    "Electrical thresholds and sensor attachment thermal lag",
+    "Complete case packing and user battery insertion"
+  ],
+  "decision": "Investigate standardized strain-relief attachment and compliant sensing head; do not change BOM or case yet. Battery remains fixed.",
+  "mechanical_correction": "H1 maximum 1.6mm is a drawing dimension, not yet proven full assembled thickness. Related HH official STEP total thickness axis is 1.7000001mm nominal. Previous +1.1mm stack comparison is provisional and must not drive enclosure dimensions until datums are reconciled."
+}

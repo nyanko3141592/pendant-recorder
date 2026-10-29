@@ -1,0 +1,57 @@
+Pendant recorder 現行設計レビュー・実寸組立キット — 2026-10-29
+
+状態：初号試作の設計レビュー中／発注HOLD。製造へ渡す完成版ではありません。
+最新方針：基本安全対策を前提に、使い勝手（特に電池持ち）→小型化→初回費用。
+性能は根拠ある理論見積りで成立を見込めれば試作判断可。実測ログの不在だけで設計を停止しない。
+量産認定は後段。現時点の電力配分・配線・接合・調達の不足を合格へ変更したものではない。
+基準PCB SHA256：b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0
+要件：27.5mm角・4層・通常through via、DTP401525-XE固定、16時間録音、暗号化保存30時間以上。
+
+最初に見るもの
+1. mechanical-captured-carrier/assembly-order.png：現行ダミー組立順の図。
+2. mechanical-captured-carrier/FIT-CHECK-INSTRUCTIONS.txt：組立と確認手順。
+3. mechanical-captured-carrier/a1mini-fit-kit/captured-carrier-fit-kit.3mf：5物体の実寸キット。
+   下ケース・電池ダミー・一体キャリア・基板/部品ゲージ・上ケース。
+   STEP/STLも同フォルダに収録。3MFとの寸法・メッシュ照合済み。
+4. release-gates.json：発注前に残る判断と各根拠。
+5. ASSEMBLY-AND-EVT.txt：基板実装・実機試験の手順と合否条件。
+
+設計・製造確認ファイル
+- design/pendant-review.kicad_sch / .kicad_pcb：現版回路図とPCB。シンボル・フットプリントを同梱。
+- gerbers/・drills/：同じPCBから出力した製造確認データ。
+- assembly-bom-review.csv・cpl-review-unverified-rotation.csv：68点の部品と搭載座標。
+  座標/表裏/角度はPCBと一致。業者のテープ方向・搭載角度の承認は未了。
+- sourcing-bom.csv・live-full-bom-summary.json：36型番の調達観測。未予約・納期未保証。
+- evidence/current-firmware-regression/result.json：現ソース40項目のshell/ARMリンク検証。
+  書込み禁止fixture。正式USB ID・実測cutoffを備えた製造用imageではない。
+- factory-programming/：J3端子、記録テンプレート、空FAT32イメージ生成・読戻し検査。
+  実媒体書込み、機器identity設定、実媒体読戻しは未実施。
+
+現行機構
+外形公称30.8×30.8×14.2mm。ケース3部品、基板は27.5mm角。
+mechanical-captured-carrier/が現優先候補。fit-kit/とmechanical-cradle-study/は履歴・比較資料。
+current-native-pcba.stepには欠落モデルがあり、単独で全実部品の包絡保証に使わない。
+CAD干渉、挿入掃引、offline sliceと実寸メッシュの確認済み範囲は各review.jsonを参照。
+純正配線込みの挿入、蓋の接合、実物公差・保持・膨張・衝撃保護は未認定。
+
+固定電池の購入先（購入はしていない）
+マルツ DTP401525(EZ3)：https://www.marutsu.co.jp/pc/i/2228265/
+内容はDTP401525-XEと単体ヘッダ。単体ヘッダを購入者がはんだ付けする運用ではない。
+千石電商 DTP401525-XE：https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5VAC
+価格/在庫はevidence/battery-purchase-and-harness-review.jsonの観測日時に限定。
+購入者の組立は電池の純正プラグ接続・ケース・紐。配線加工や追加センサーは要求しない。
+
+発注前に残る条件
+- USB全経路のインピーダンス/帰路、電源起動・電圧余裕、温度監視の設計認定。
+- 0.15mm through穴6本とインピーダンスサービスの併用条件、DFM、最終費用。
+- U1/U12/J1の調達時期、C30の実装ロス分、全極性部品の実装方向。
+- 純正電池ハーネスの最大包絡と接続状態の組立経路、蓋接合の確定。
+- 正式USB VID/PID、実測に基づく電池終止電圧、工場書込み工程。
+
+実機で初めて確認できる条件
+16時間駆動、実媒体30時間保存、NTC温度特性と充電遮断/復帰、異常USB入力、
+三OSのUSB、音質、落下、紐、実ケーブル、印刷公差と接合強度。
+4.4mA/70.4mAhは設計配分であり実測値ではない。合成保存試験やCADを実機合格と扱わない。
+
+manifest.jsonは収録ファイルのSHA256一覧。整合性を示すもので設計合格証ではない。
+注文・支払い・upload・業者連絡・実印刷は行っていない。

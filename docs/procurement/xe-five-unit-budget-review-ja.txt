@@ -1,0 +1,29 @@
+【失効・履歴のみ】この表は旧STM32U535、旧TH1、旧LED、TPS22950統合前の構成を含むため、現行XE prototype v1の見積りには使用しない。現行正本は xe-production-readiness-2026-10-28.md。
+
+5台試作費：未確定（旧構成の費用棚卸し）
+
+候補基板: d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5
+実装用在庫状況を今回照合できた型番: 17/38。他の型番が欠品という意味ではない。
+
+条件付き参考小計（異なる日時・販売店の部品価格を含む）
+フィーダー38本を仮定: JPY 13520.7 + USD 375.722
+フィーダー46本を仮定: JPY 13520.7 + USD 387.962
+在庫表示あり: 12型番。在庫0・予約見積のみ: STM32U535CEU6, TLV7042DDFR, USB4105-GF-A, APHHS1005LSYCK/J3-PF。マイクの確認済掲載は持込実装用で、部品在庫ではない。
+先行調達の表示最小数量: TLV7042DDFRは11個、USB4105-GF-Aは7個、APHHS1005LSYCK/J3-PFは27個。各5台分の実装必要数は5個。最終購入数と納期は未確定。USBコネクターは実装難度High表示で、見積への影響も未確定。
+TLV7042DDFRは同型番のDigiKeyカットテープ在庫3431個を確認。5個1535円（税抜）を参考部品小計に反映。実装業者の調達・持込受入は未確定。
+USB4105-GF-Aは同型番のDigiKeyカットテープ在庫87848個を確認。5個660円（税抜）を参考部品小計に反映。実装業者の受入・予備数・追加費用は未確定。
+数量表: 38型番・5台で375個実装。表裏別の実装ロス確認は46区分。購入個数は未確定。公開記事ではフィーダー料は型番ごとで、表裏別の実装ロスとは区別する。46本の費用は未確認の感度比較。
+X線検査は別レビュー: 対象候補6部品×5台=30個。合算課金の仮定24.60USD、型番別課金の仮定49.20USD。対象と課金単位は未確定、小計へ未加算。
+これは上下限でも見積金額でもない。円換算していない。未確定費用を0円としていない。
+
+未算入・未確定:
+Carrier removal / depanelization and edge finishing by seller or assembler (not buyer)
+Bare PCB including six-layer stack and filled/capped vias
+Assembly attrition and purchasing minimums for every part
+Sourcing or consignment costs for other BOM entries
+X-ray and required assembly inspection
+Printed case material, adhesive, insulation and thermal contact material
+Firmware programming and test fixture/labor
+Shipping, tax and currency conversion
+
+電池は販売・同梱しない。購入者が別途調達する。注文・支払い・見積依頼は実施していない。

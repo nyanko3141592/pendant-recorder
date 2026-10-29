@@ -1,0 +1,53 @@
+{
+  "status": "RETAIL_PRICE_OBSERVATION_NOT_ORDER_QUOTE",
+  "checked_date": "2026-10-27",
+  "bom_sha256": "66a390a9d13bca7b1cf3f6dd08b2da958cfd64183dec3f6539934421bb71ff95",
+  "items": [
+    {
+      "reference": "TH1",
+      "mpn": "103JT-025",
+      "installed_five": 5,
+      "source": "https://www.marutsu.co.jp/pc/i/40940/",
+      "display_unit_JPY_ex_tax": 104,
+      "display_unit_JPY_including_tax": 114,
+      "price_break_quantity": 1,
+      "display_stock": 671,
+      "stock_timestamp": "2026-10-24 00:10",
+      "five_at_display_unit_including_tax_JPY": 570,
+      "note": "Use displayed tax-inclusive price; final invoice rounding/shipping not established. No process spare quantity yet."
+    },
+    {
+      "reference": "R13",
+      "mpn": "RC0201FR-07100KL",
+      "installed_five": 5,
+      "source": "https://www.digikey.jp/ja/products/detail/yageo/RC0201FR-07100KL/1948859",
+      "display_stock": 1447947,
+      "packaging": "Cut tape",
+      "tiers_JPY_ex_tax": [
+        {
+          "quantity": 1,
+          "unit": 17
+        },
+        {
+          "quantity": 10,
+          "unit": 5.7
+        },
+        {
+          "quantity": 25,
+          "unit": 4.2
+        }
+      ],
+      "five_purchase_JPY_ex_tax": 85,
+      "ten_purchase_JPY_ex_tax": 57,
+      "note": "10 cut-tape pieces cost less than five at the shown tiers; assembler feeder/leader/attrition requirement may need more. Digi-Reel fee is separate and not selected."
+    }
+  ],
+  "unresolved": [
+    "Live checkout availability and invoice rounding",
+    "Shipping/consolidation",
+    "Seller sensor-process spares and SMT assembler accepted cut-tape quantity",
+    "Full prototype bill, labor and PCB costs"
+  ],
+  "complete_five_unit_total": null,
+  "ordered": false
+}

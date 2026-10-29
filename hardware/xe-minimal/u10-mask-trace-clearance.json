@@ -1,0 +1,148 @@
+{
+  "status": "LOCAL_STRAIGHT_TRACK_SCREEN_NOT_FULL_MASK_QUALIFICATION",
+  "source_pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "source_mask_review": "u10-mask-source-review.json",
+  "screening_threshold_mm": 0.09,
+  "all_different_net_gaps_at_least_threshold": true,
+  "pads": [
+    {
+      "pad": "A1",
+      "net": "/SD_V3",
+      "nominal_opening_diameter_mm": 0.23,
+      "minimum_nonoverlapping_track_gap_mm": 0.15633206721771814,
+      "minimum_different_net_track_gap_mm": 0.15633206721771814,
+      "nearest_tracks": [
+        {
+          "uuid": "3c03de77-5f99-4872-9d64-90ef0d0f2c76",
+          "net": "/V3V3",
+          "gap_mm": 0.15633206721771814
+        },
+        {
+          "uuid": "e21ebf94-4b66-4a72-88c8-ce9511f4f268",
+          "net": "/V3V3",
+          "gap_mm": 0.1599999999999986
+        },
+        {
+          "uuid": "080e3444-c0e7-4483-84ef-76fb8895ac20",
+          "net": "/V3V3",
+          "gap_mm": 0.17999999999999994
+        }
+      ],
+      "excluded_same_net_overlapping_tracks": [
+        {
+          "uuid": "27eb8e07-99dc-44ec-81f6-1b1e389e8917",
+          "net": "/SD_V3",
+          "gap_mm": -0.19
+        }
+      ]
+    },
+    {
+      "pad": "A2",
+      "net": "/V3V3",
+      "nominal_opening_diameter_mm": 0.23,
+      "minimum_nonoverlapping_track_gap_mm": 0.0004163056034273138,
+      "minimum_different_net_track_gap_mm": 0.20999999999999858,
+      "nearest_tracks": [
+        {
+          "uuid": "e84a329c-a162-412b-8b28-2324691dbe93",
+          "net": "/V3V3",
+          "gap_mm": 0.0004163056034273138
+        },
+        {
+          "uuid": "90eb48ab-ff82-4d70-8d9b-14c009bcee6f",
+          "net": "/V3V3",
+          "gap_mm": 0.08062439083762829
+        },
+        {
+          "uuid": "080e3444-c0e7-4483-84ef-76fb8895ac20",
+          "net": "/V3V3",
+          "gap_mm": 0.18755116652863862
+        }
+      ],
+      "excluded_same_net_overlapping_tracks": [
+        {
+          "uuid": "3c03de77-5f99-4872-9d64-90ef0d0f2c76",
+          "net": "/V3V3",
+          "gap_mm": -0.24
+        },
+        {
+          "uuid": "3f4398da-8e99-4d5f-b7d2-3938dc69a00c",
+          "net": "/V3V3",
+          "gap_mm": -0.19
+        },
+        {
+          "uuid": "e21ebf94-4b66-4a72-88c8-ce9511f4f268",
+          "net": "/V3V3",
+          "gap_mm": -0.24
+        }
+      ]
+    },
+    {
+      "pad": "B1",
+      "net": "/GND",
+      "nominal_opening_diameter_mm": 0.23,
+      "minimum_nonoverlapping_track_gap_mm": 0.1592513000523192,
+      "minimum_different_net_track_gap_mm": 0.1592513000523192,
+      "nearest_tracks": [
+        {
+          "uuid": "8f742083-fd25-47bc-8532-984b7dac162d",
+          "net": "/SD_EN",
+          "gap_mm": 0.1592513000523192
+        },
+        {
+          "uuid": "eb1f159e-0efe-4923-bfc7-437ff57de84f",
+          "net": "/SD_EN",
+          "gap_mm": 0.19460957905632847
+        },
+        {
+          "uuid": "ae89e4b1-ea3e-42d8-8223-f49effb7a547",
+          "net": "/SD_EN",
+          "gap_mm": 0.19832975677895226
+        }
+      ],
+      "excluded_same_net_overlapping_tracks": [
+        {
+          "uuid": "7362bd83-a0b0-4e05-a284-8af044d9caf2",
+          "net": "/GND",
+          "gap_mm": -0.19
+        }
+      ]
+    },
+    {
+      "pad": "B2",
+      "net": "/SD_EN",
+      "nominal_opening_diameter_mm": 0.23,
+      "minimum_nonoverlapping_track_gap_mm": 0.10120439557122003,
+      "minimum_different_net_track_gap_mm": 0.16000000000000036,
+      "nearest_tracks": [
+        {
+          "uuid": "8f742083-fd25-47bc-8532-984b7dac162d",
+          "net": "/SD_EN",
+          "gap_mm": 0.10120439557122003
+        },
+        {
+          "uuid": "3c03de77-5f99-4872-9d64-90ef0d0f2c76",
+          "net": "/V3V3",
+          "gap_mm": 0.16000000000000036
+        },
+        {
+          "uuid": "e21ebf94-4b66-4a72-88c8-ce9511f4f268",
+          "net": "/V3V3",
+          "gap_mm": 0.16000000000000036
+        }
+      ],
+      "excluded_same_net_overlapping_tracks": [
+        {
+          "uuid": "eb1f159e-0efe-4923-bfc7-437ff57de84f",
+          "net": "/SD_EN",
+          "gap_mm": -0.19
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Uses current 1:1 circular mask openings; recheck if mask changes.",
+    "Tracks overlapping their own pad on the same net are excluded as intentional connections.",
+    "Other pads, vias, zones, registration shifts and mask fabrication tolerances are not covered."
+  ]
+}

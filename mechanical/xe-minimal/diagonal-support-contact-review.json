@@ -1,0 +1,101 @@
+{
+  "status": "NOMINAL_BEARING_AND_ENVELOPE_REVIEW_NOT_ADOPTED",
+  "sources_sha256": {
+    "separator": "84815617c490886c9a8128b52b7a1e9af7d0d118b7c7f1a9af8541e55fdf2bb7",
+    "lower": "54fd2bc82ec4af2bb6225e6b9eedbb01c9931416a7af20835af1fd835ea03d5b",
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10"
+  },
+  "checks": {
+    "film": {
+      "separator": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.19999999999998516
+      },
+      "lower": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.4976053636925995
+      },
+      "board": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.6512066890216889
+      },
+      "battery": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.10000000000000009
+      },
+      "upper": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 3.0200953911065134
+      }
+    },
+    "holder_budget": {
+      "separator": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.6000000000000892
+      },
+      "lower": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.17425183874579894
+      },
+      "board": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.2350000000000001
+      },
+      "battery": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 0.2648990314580111
+      },
+      "upper": {
+        "overlap_mm3": 0.0,
+        "distance_mm": 2.408754248535583
+      }
+    }
+  },
+  "bearing_contacts": [
+    {
+      "area_mm2": 2.1717044723513044,
+      "bounds_xy_mm": [
+        0.3063508326896279,
+        0.0499999999999974,
+        16.13774977314,
+        0.2
+      ]
+    },
+    {
+      "area_mm2": 2.368042184500634,
+      "bounds_xy_mm": [
+        0.306350832689628,
+        -27.2,
+        16.193649167310372,
+        -27.049999999999997
+      ]
+    },
+    {
+      "area_mm2": 1.599999999999994,
+      "bounds_xy_mm": [
+        16.6,
+        -21.0,
+        17.4,
+        -19.0
+      ]
+    },
+    {
+      "area_mm2": 1.599999999999994,
+      "bounds_xy_mm": [
+        16.6,
+        -16.0,
+        17.4,
+        -14.0
+      ]
+    }
+  ],
+  "bearing_area_total_mm2": 7.739746656851926,
+  "limits": [
+    "Coplanar area is nominal geometry, not load capacity or printed contact qualification.",
+    "Holder boxes are packaging budgets, not hollow fabricated holders.",
+    "Terminal width 0.7 mm is assumed, not manufacturer maximum.",
+    "Wire route, battery harness, assembly path, diagonal slot stiffness and printing remain unresolved."
+  ]
+}

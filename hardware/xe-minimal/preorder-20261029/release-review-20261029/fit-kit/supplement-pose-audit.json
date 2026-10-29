@@ -1,0 +1,65 @@
+{
+  "status": "SUPPLEMENT_POSES_MATCH_CURRENT_PCB_NOT_FULL_DIMENSIONAL_APPROVAL",
+  "pcb_sha256": "d64e60a6290d90dc344157f867ef617c2f95d880290294fa0b9c7988d86a0c1d",
+  "parts": [
+    {
+      "ref": "U8",
+      "position_mm": [
+        21.25,
+        4.565
+      ],
+      "side": "F",
+      "rotation_deg": 0.0,
+      "pose_matches_original_model_inventory": true,
+      "pad_positions_match": true,
+      "supplement_sha256": "ebef70a66ae2e0835da33ec48dfa06c66bc7c1e774448f339302f9f273d125ee",
+      "source_model_review": "mechanical/xe-minimal/u8-position-review.json",
+      "source_review_limitations": [
+        "Zero standoff is visualization datum only.",
+        "Terminals, acoustic hole, sealing gasket and acoustic clearance omitted.",
+        "Not combined with latest full board; no fit approval."
+      ]
+    },
+    {
+      "ref": "J2",
+      "position_mm": [
+        3.525,
+        3.125
+      ],
+      "side": "B",
+      "rotation_deg": 180.0,
+      "pose_matches_original_model_inventory": true,
+      "pad_positions_match": true,
+      "supplement_sha256": "3ba985d8df4b709b07a348f405fbfcce22971e4070a721e3c92e1b771ecf1ea0",
+      "source_model_review": "mechanical/xe-minimal/j2-position-review.json",
+      "source_review_limitations": [
+        "Footprint outline supplies longitudinal pose; exact manufacturer datum mapping still pending.",
+        "Conservatively add maximum stand-off0.12mm outside1.6mm height; possible datum double-counting must be resolved.",
+        "Header only; mating housing781720003, leads and insertion/removal space excluded.",
+        "Not an enclosure fit approval."
+      ]
+    }
+  ],
+  "release_allowed": false,
+  "current_scope": {
+    "assembled_with_current_native_step": true,
+    "current_assembly_review": "current-pcba-envelope-review.json",
+    "U8_body_dimension_evidence": "mechanical/xe-minimal/u8-body-model-review.json; 3.1x4.1x1.3mm maximum body; solder/acoustic geometry excluded",
+    "J2_sheet1_visual_recheck": {
+      "drawing": "SD-78171-008 Rev G, sheet 1",
+      "image_sha256": "c74dd6e5124e1f960c409930b544ce597355424c9fb50daad1a03242f2e6165c",
+      "observations": [
+        "1.4mm height arrow spans housing top to housing bottom; separate .05(+.07/-.03) stand-off callout is shown",
+        "Retain conservative 1.6mm body plus .12mm stand-off; not a guaranteed soldered assembly maximum",
+        "Mated height (1.55) is reference only, not a tolerance limit",
+        "Plan 5.4x4.5 with general .2 tolerance supports 5.6x4.7 body envelope; exact pad-to-body datum still requires sheet2 mapping"
+      ]
+    },
+    "remaining": [
+      "J2 footprint-to-manufacturer datum mapping",
+      "Mated housing and original wire routing",
+      "Solder and assembly tolerances",
+      "U8 acoustic opening/seal clearance"
+    ]
+  }
+}

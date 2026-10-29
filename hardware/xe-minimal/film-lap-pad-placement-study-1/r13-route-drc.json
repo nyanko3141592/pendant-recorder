@@ -1,0 +1,293 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T19:36:18",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-film-lap-r13-trial.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 1.0000 mm )",
+                    "pos": {
+                        "x": 15.7,
+                        "y": 3.3
+                    },
+                    "uuid": "f4428f6e-35a1-4133-a680-628b71b20cf3"
+                },
+                {
+                    "description": "配線 [/SD_MISO] ( In2.Cu 上、長さ: 4.8104 mm )",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 1.7
+                    },
+                    "uuid": "26c96eac-da26-491d-aab9-2ae247ae57bb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0050 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CS_N] ( B.Cu 上、長さ: 0.8246 mm )",
+                    "pos": {
+                        "x": 13.8,
+                        "y": 3.7
+                    },
+                    "uuid": "b9262e20-e52d-4437-8646-0843bf79b540"
+                },
+                {
+                    "description": "パッド 2 [/VBUS_GATE] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.77,
+                        "y": 3.3
+                    },
+                    "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0050 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CS_N] ( B.Cu 上、長さ: 0.6000 mm )",
+                    "pos": {
+                        "x": 14.4,
+                        "y": 3.7
+                    },
+                    "uuid": "1f1db1c6-cb00-405d-9684-fd033b47ea30"
+                },
+                {
+                    "description": "パッド 2 [/VBUS_GATE] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.77,
+                        "y": 3.3
+                    },
+                    "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0253 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.2,
+                        "y": 3.6
+                    },
+                    "uuid": "0d5fa8a3-463c-4e3f-8a08-7283b3a246c7"
+                },
+                {
+                    "description": "パッド 1 [/VBUS] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.75,
+                        "y": 3.3
+                    },
+                    "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1253 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS] - R13 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.75,
+                        "y": 3.3
+                    },
+                    "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+                },
+                {
+                    "description": "ビア [/VBUS_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.2,
+                        "y": 3.6
+                    },
+                    "uuid": "0d5fa8a3-463c-4e3f-8a08-7283b3a246c7"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント R13",
+                    "pos": {
+                        "x": 13.26,
+                        "y": 3.3
+                    },
+                    "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+                },
+                {
+                    "description": "フットプリント U1",
+                    "pos": {
+                        "x": 16.8525,
+                        "y": 7.7675
+                    },
+                    "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SD_MISO] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.7,
+                        "y": 1.7
+                    },
+                    "uuid": "6199be9f-d188-4a7b-bd5a-2f60e4f9db37"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( B.Cu 上、長さ: 1.0000 mm )",
+                    "pos": {
+                        "x": 15.7,
+                        "y": 3.3
+                    },
+                    "uuid": "f4428f6e-35a1-4133-a680-628b71b20cf3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Footprint has no courtyard defined",
+            "items": [
+                {
+                    "description": "フットプリント TH1",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a9164630-f6dd-4b53-9fab-4eb8d745cb83"
+                }
+            ],
+            "severity": "warning",
+            "type": "missing_courtyard"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "セグメント (Edge.Cuts 上)",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "c6351f77-ca06-4dab-8c41-3a15c5f1825d"
+                },
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "1d2011a7-f68c-4116-b196-be90defc0d5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "セグメント of R50 、F.Silkscreen 上",
+                    "pos": {
+                        "x": 1.101359,
+                        "y": 0.415
+                    },
+                    "uuid": "0c8d61d0-3231-43b4-b6c6-e25fc9de6e69"
+                },
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "1d2011a7-f68c-4116-b196-be90defc0d5f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "1d2011a7-f68c-4116-b196-be90defc0d5f"
+                },
+                {
+                    "description": "パッド 1 [/USB_RESUME_PULSE] - R50 ( F.Cu 上)",
+                    "pos": {
+                        "x": 0.745,
+                        "y": 0.795
+                    },
+                    "uuid": "74dc3145-115c-4937-8004-d3a56ecc0ead"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "TH1のリファレンスフィールド",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "1d2011a7-f68c-4116-b196-be90defc0d5f"
+                },
+                {
+                    "description": "パッド 2 [/GND] - R50 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.765,
+                        "y": 0.795
+                    },
+                    "uuid": "a9bd1c90-e567-412e-b7bf-b87b55a86723"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

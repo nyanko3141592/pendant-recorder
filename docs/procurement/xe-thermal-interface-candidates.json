@@ -1,0 +1,75 @@
+{
+  "status": "THERMAL_INTERFACE_RESEARCH_CANDIDATE_NOT_SELECTED",
+  "checked_date": "2026-10-27",
+  "candidates": [
+    {
+      "name": "BERGQUIST GAP PAD TGP 1000VOUS",
+      "source": "https://next.henkel-adhesives.com/us/en/products/thermal-management-materials/central-pdp.html/bergquist-gap-pad-tgp-1000vous/112208IB.html",
+      "page_IDH": 2877469,
+      "published_thermal_conductivity_W_mK": 1.0,
+      "published_Young_modulus_kPa": 55,
+      "published_thickness_range_mm": [
+        0.508,
+        6.35
+      ],
+      "electrical_insulation_described": true,
+      "exact_sheet_SKU": null,
+      "purchasable_quantity_price": null,
+      "sheet_SKUs_identified_not_selected": [
+        "GPVOUS-0.060-01-0816",
+        "GPVOUS-0.080-01-0816"
+      ],
+      "manufacturer_authored_TDS": "https://www.mouser.com/datasheet/2/48/BERGQUIST_GAP_PAD_TGP_1000VOUS_en_GL-3432650.pdf"
+    },
+    {
+      "name": "LOCTITE BERGQUIST TGP 1000VOUS WH",
+      "source": "https://datasheets.tdx.henkel.com/LOCTITE-BERGQUIST-TGP-1000VOUS-WH-en_GL.pdf",
+      "revision": "May2026",
+      "variant_warning": "WH white formulation, do not silently treat as the pink non-WH product",
+      "published_typical_thermal_conductivity_W_mK": 1.0,
+      "published_typical_Young_modulus_kPa": 55,
+      "published_thickness_range_mm": [
+        0.508,
+        6.35
+      ],
+      "published_typical_density_g_cc": 1.6,
+      "published_typical_heat_capacity_J_gK": 1.0,
+      "exact_sheet_SKU": null,
+      "purchasable_quantity_price": null,
+      "reference_only": true
+    }
+  ],
+  "sensor_dimension_status": {
+    "part": "NCP18XH103F03RB",
+    "official_url": "https://www.murata.com/en-us/api/pdfdownloadapi?cate=luNTCforTempeSenso&partno=NCP18XH103F03RB",
+    "retrieval": "Redirect to pim.murata.com then403; current dimension drawing not obtained",
+    "historical_manufacturer_authored_mirror": "https://www.farnell.com/datasheets/2048079.pdf",
+    "historical_date": "2015-12-04",
+    "use_limit": "Historical summary typical specifications only. Diagram dimensions not visually verified this turn; no body-height value adopted.",
+    "historical_only": true,
+    "superseded_for_current_candidate_by": "mechanical/xe-minimal/ncu-body-space-review.json"
+  },
+  "required_before_adoption": [
+    "Current sensor body height and solder standoff envelope",
+    "Compressed interface thickness over battery/support/board tolerances",
+    "Contact patch position and lateral tolerance;2mm probe had only0.095mm battery edge margin",
+    "Exact normally purchasable sheet SKU and MOQ; manufacturer/seller prepares part, buyer need not cut",
+    "Measured force/compression and cell-to-sensor thermal lag",
+    "Retention without gluing battery or leads; material compatibility and life review"
+  ],
+  "no_supplier_inquiry_or_order": true,
+  "thickness_sensitivity_review": "mechanical/xe-minimal/thermal-pad-thickness-sensitivity.json",
+  "current_sheet_supply_check": {
+    "date": "2026-10-27",
+    "candidate": "GPVOUS-0.080-01-0816",
+    "Mouser_SKU": "951-GPVOUS-80-01-816",
+    "status": "SEARCH_LISTING_ONLY_NOT_CURRENT_PRICE_OR_STOCK",
+    "direct_JP_page": "inaccessible",
+    "direct_SG_page": "403",
+    "excluded_as_equivalence_proof": [
+      "GPVOUS-B-0.080-01-0816 is another variant",
+      "GPVOUS-0.080-00-0816 alias listing does not prove identical tack/liner construction"
+    ],
+    "next_source": "Henkel Application Note116 for pressure vs deflection; current exact sheet tolerance remains unverified"
+  }
+}

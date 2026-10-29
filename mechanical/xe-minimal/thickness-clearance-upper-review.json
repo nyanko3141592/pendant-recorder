@@ -1,0 +1,22 @@
+{
+  "status": "THICKNESS_CLEARANCE_CANDIDATE_NOT_RETENTION_APPROVAL",
+  "source_sha256": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7",
+  "output_sha256": "07a796a9656f0cf5c420769c411543abae728b8d9bec39311227b6c28d915a3b",
+  "old_stop_z_mm": 0.9264,
+  "new_stop_z_mm": 1.03,
+  "removed_volume_mm3": 0.435119999999074,
+  "finished_board_mm": [
+    0.73,
+    0.93
+  ],
+  "vertical_play_mm": [
+    0.1,
+    0.3
+  ],
+  "external_bbox_unchanged": true,
+  "limitations": [
+    "0.1..0.3mm free play excludes printed-case error and warpage",
+    "Rigid stops do not eliminate movement; compliant retention or a qualified pad remains unresolved",
+    "No slicing or physical fit confirmation"
+  ]
+}

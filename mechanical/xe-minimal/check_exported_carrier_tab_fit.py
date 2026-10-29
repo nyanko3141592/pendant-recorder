@@ -1,0 +1,7 @@
+from pathlib import Path
+import cadquery as cq,json,hashlib
+P=Path(__file__).resolve().parent;H=P.parents[1]/'hardware/xe-minimal/current-single-carrier-trial/rounded-fabrication-review';src=H/'carrier-max-thickness-envelope.step';s=cq.importers.importStep(str(src)).val().translate((-23,21.5,0));files=['tab-clearance-upper-trial.step','wider-right-support-lower-trial.step','support-notched-separator-trial.step','offset-pack-assembly-trial.step'];parts={f:cq.importers.importStep(str(P/f)).val() for f in files};rows=[]
+for depth in [.1,.2,.3]:
+ clip=cq.Workplane('XY').box(24,depth,.93,centered=(False,False,False)).translate((0,-27-depth,0)).val();tabs=s.intersect(clip);assert len(tabs.Solids())==2
+ checks={f:tabs.intersect(v).Volume() for f,v in parts.items()};rows.append({'residual_depth_mm':depth,'solid_count':len(tabs.Solids()),'residual_volume_mm3':tabs.Volume(),'overlap_mm3':checks});assert max(checks.values())<1e-7
+out={'status':'EXPORTED_ROUNDED_OUTLINE_NOMINAL_TAB_FIT_NOT_ASSEMBLY_APPROVAL','source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'case_sha256':{f:hashlib.sha256((P/f).read_bytes()).hexdigest() for f in files},'rows':rows,'limits':['Uses exact exported panel outline plus conservative .93mm thickness.','Assumes straight final cutting across full root at each sampled depth.','No cut/print tolerances, burrs, strength, mating plug or leads included.']};(P/'exported-carrier-tab-fit-review.json').write_text(json.dumps(out,indent=2)+'\n');print(rows)

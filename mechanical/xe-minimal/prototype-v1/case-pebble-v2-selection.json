@@ -1,0 +1,18 @@
+{
+  "status": "PREFERRED_CASE_CANDIDATE_NOT_PHYSICALLY_QUALIFIED",
+  "selected": "case-pebble-v2",
+  "supersedes": "case-pebble-r23",
+  "reasons": [
+    "The complete YZ-plane lanyard bail was rotated 90 degrees in top view; its 3.2 mm cord-hole axis runs along X.",
+    "The full-height lug is integral to the lower print and does not rely on the glue seam for its primary load path.",
+    "R3 plan corners and R1.5 top/bottom perimeter fillets round every exterior edge within the fixed internal envelope.",
+    "The recessed 14 x 7.5 mm USB cable bay removes the former 2.13 mm deep outer-wall tunnel.",
+    "Both parts slice without warnings in the specified broad-face-down orientations."
+  ],
+  "release_blockers": [
+    "Print and inspect wall continuity.",
+    "Proof-load and fatigue-test the cord lug in the specified print orientation.",
+    "Fit-test representative USB-C cable overmolds and verify plug strain loading.",
+    "Verify enclosure fit, glue seam, acoustics, and thermals with physical internals."
+  ]
+}

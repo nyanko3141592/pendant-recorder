@@ -1,0 +1,224 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T11:20:37",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "resistor-scan.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 14.48,
+                        "y": 1.055
+                    },
+                    "uuid": "3dfd6012-f35d-40ec-9637-e70c660f6c2a"
+                },
+                {
+                    "description": "パッド C1 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.45
+                    },
+                    "uuid": "ef3657e9-35ed-47b1-86c2-09a3ccda505c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド C1 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.45
+                    },
+                    "uuid": "ef3657e9-35ed-47b1-86c2-09a3ccda505c"
+                },
+                {
+                    "description": "パッド 2 [/GND] - R44 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.7,
+                        "y": 2.31
+                    },
+                    "uuid": "9b30e075-770c-4387-bd2e-38231eae9cd1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( F.Cu 上、長さ: 1.1180 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.999999
+                    },
+                    "uuid": "37e16e63-d5a5-44f9-82ea-419a732e2b74"
+                },
+                {
+                    "description": "パッド C2 [/USB_ILIM_SET] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.05
+                    },
+                    "uuid": "3a0645f4-9242-4e6b-8962-9a6cd229e99c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_ILIM_SET] - R44 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.7,
+                        "y": 1.29
+                    },
+                    "uuid": "f885588d-d0e4-4abd-8a52-d76a47945c15"
+                },
+                {
+                    "description": "パッド C2 [/USB_ILIM_SET] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.05
+                    },
+                    "uuid": "3a0645f4-9242-4e6b-8962-9a6cd229e99c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /VBUS)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - R44 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.7,
+                        "y": 2.31
+                    },
+                    "uuid": "9b30e075-770c-4387-bd2e-38231eae9cd1"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.7614 mm )",
+                    "pos": {
+                        "x": 16.7625,
+                        "y": 2.199999
+                    },
+                    "uuid": "f8a3e172-77f9-4909-ba6f-1c262cc4a90a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント U13",
+                    "pos": {
+                        "x": 14.55,
+                        "y": 1.25
+                    },
+                    "uuid": "71ec2fe6-f269-4458-b98e-7630f0768faf"
+                },
+                {
+                    "description": "フットプリント R44",
+                    "pos": {
+                        "x": 15.7,
+                        "y": 1.8
+                    },
+                    "uuid": "82b6d6dc-3ef1-4567-b6eb-568e3e93c518"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.7614 mm )",
+                    "pos": {
+                        "x": 16.7625,
+                        "y": 2.199999
+                    },
+                    "uuid": "f8a3e172-77f9-4909-ba6f-1c262cc4a90a"
+                },
+                {
+                    "description": "パッド 2 [/GND] - R44 ( F.Cu 上)",
+                    "pos": {
+                        "x": 15.7,
+                        "y": 2.31
+                    },
+                    "uuid": "9b30e075-770c-4387-bd2e-38231eae9cd1"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1703 mm )",
+                    "pos": {
+                        "x": 19.265,
+                        "y": 0.794999
+                    },
+                    "uuid": "31250e19-47da-4bc1-b31a-37cf64742543"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( F.Cu 上、長さ: 1.1180 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.999999
+                    },
+                    "uuid": "37e16e63-d5a5-44f9-82ea-419a732e2b74"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/USB_ILIM_SET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.8375,
+                        "y": 2.199999
+                    },
+                    "uuid": "7fdbfb31-385e-4b1c-b846-4cd48f4d95d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

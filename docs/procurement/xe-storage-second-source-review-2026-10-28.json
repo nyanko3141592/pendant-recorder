@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-28",
+  "status": "ALTERNATES_IDENTIFIED_NOT_PIN_OR_FIRMWARE_QUALIFIED",
+  "selected": {
+    "mpn": "MKDV8GIL-AST",
+    "jlc_part": "C26159627",
+    "package": "LGA-8(6x8mm)",
+    "capacity_Gbit": 8,
+    "actual_capacity_MByte": 964,
+    "interface": "SPI and SD",
+    "temperature_C": [-40, 85],
+    "standby_uA": 130,
+    "stock_observed": 0,
+    "available_order_quantity_observed": 0,
+    "pcba_type": "Standard Only",
+    "procurement": "JLC pre-order required; not reserved",
+    "source": "https://jlcpcb.com/partdetail/MK-MKDV8GILAST/C26159627"
+  },
+  "candidates": [
+    {
+      "mpn": "CSNP32GCR01-AOW",
+      "manufacturer": "Creat Storage World",
+      "jlc_part": "C2841139",
+      "package": "LGA-8(6.2x8mm)",
+      "capacity_Gbit": 32,
+      "interface": "SPI and SD",
+      "temperature_C": [-25, 85],
+      "standby_uA": 250,
+      "stock_observed": 468,
+      "available_order_quantity_observed": 450,
+      "pcba_type": "Standard Only",
+      "qualification": "NOT_QUALIFIED",
+      "source": "https://jlcpcb.com/partdetail/Creat_StorageWorld-CSNP32GCR01AOW/C2841139"
+    },
+    {
+      "mpn": "ZDSD32GLGEAG",
+      "manufacturer": "Zetta",
+      "jlc_part": "C5188571",
+      "package": "LGA-8(6.2x8mm)",
+      "capacity_Gbit": 32,
+      "interface": "SPI and SD",
+      "temperature_C": [-25, 85],
+      "standby_uA": 200,
+      "stock_observed": null,
+      "pcba_type": "Standard Only",
+      "qualification": "NOT_QUALIFIED",
+      "source": "https://jlcpcb.com/partdetail/Zetta-ZDSD32GLGEAG/C5188571"
+    }
+  ],
+  "automatic_substitution_allowed": false,
+  "qualification_gates": [
+    "Manufacturer datasheet pinout and exposed-pad geometry match every canonical U11 pad; a package-name match is insufficient.",
+    "SPI command set, initialization, busy behavior, capacity reporting and power-loss recovery pass the same firmware tests without a part-specific manual process.",
+    "Complete-device 16h battery integral, storage startup/write peak and 30h encrypted retention pass on five units.",
+    "JLC stock and Standard-only assembly eligibility are rechecked immediately before release.",
+    "BOM, CPL, firmware-supported-device list and release manifest identify the actually fitted MPN."
+  ],
+  "not_claimed": [
+    "Neither alternate is proven pin-compatible from the currently captured public catalog data.",
+    "No alternate has passed firmware or physical EVT.",
+    "Observed inventory is not reserved and does not prove long-term supply."
+  ]
+}

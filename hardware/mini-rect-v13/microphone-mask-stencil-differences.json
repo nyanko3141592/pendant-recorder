@@ -1,0 +1,44 @@
+{
+  "status": "MANUFACTURER_FOOTPRINT_DIFFERENCE_FOUND_NOT_RELEASED",
+  "board_sha256": "ad5ef8ccfe065424df59368025efdfcf99418fb3c71aebe2e62ae01f7108357b",
+  "manufacturer_pdf": "reference/infineon-im69d130-v1-timing.pdf",
+  "figure": "12, page13, visually reviewed",
+  "manufacturer_recommendation": {
+    "signal_mask_opening_mm": [
+      0.45,
+      0.75
+    ],
+    "signal_paste_capsule_mm": [
+      0.4,
+      0.6
+    ],
+    "sound_hole_diameter_mm": 0.8,
+    "annular_mask_radii_mm": [
+      0.58,
+      1.03
+    ],
+    "pad_definition": "Solder Mask Defined; adapt to board manufacturer rules"
+  },
+  "current_footprint": {
+    "signal_copper_mm": [
+      0.45,
+      0.7
+    ],
+    "signal_mask_uses_same_pad_geometry": true,
+    "local_mask_margin": null,
+    "signal_paste_capsule_height_mm": 0.65,
+    "signal_paste_capsule_width_mm": 0.4,
+    "annular_copper_radii_mm": [
+      0.58,
+      1.04
+    ],
+    "annular_mask_uses_same_custom_shape": true
+  },
+  "implication": "Library shape is not a literal implementation of the inspected recommendation. Do not treat pin/net match or DRC pass as stencil/mask approval. Effective board mask expansion still must be verified from emitted Gerber.",
+  "next": [
+    "Measure effective Gerber mask/paste apertures",
+    "Evaluate separate copper and smaller mask opening to implement SMD pads using feasible mask registration allowance",
+    "Create isolated candidate and rerun clearance, DRC, parity and Gerber verification before adoption"
+  ],
+  "decision": "Existing board retained; manufacturing approval withheld pending resolution."
+}

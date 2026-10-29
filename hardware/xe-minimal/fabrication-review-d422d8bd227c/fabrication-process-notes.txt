@@ -1,0 +1,21 @@
+DRAFT — ENGINEERING REVIEW ONLY — DO NOT UPLOAD OR ORDER
+Source PCB SHA256: d422d8bd227c07df80105b645c2fc55527e951c5a9cf8decd64e9083a6e8d735
+This schedule supersedes historical via counts and coordinates.
+
+Six copper layers; nominal design thickness 0.8264 mm. Stackup/impedance and production tolerances remain unapproved.
+Required process for the four listed through vias: epoxy fill, planarization, copper cap, ENIG finish.
+Solder-mask ink plugging or tenting alone is not a substitute. Process capability and surface flatness remain unqualified.
+Coordinates: KiCad board X right/Y down in mm, top view for both sides. Excellon/position export uses negative Y.
+Only these four current hole-over-pad vias receive this POFV intent; do not infer old totals or coordinates.
+
+Net | Pad | X mm | Y board mm | Drill mm | Copper diameter mm | Via UUID
+/VBUS_OVP | U13.5 | 11.362500 | 0.950000 | 0.150 | 0.350 | e11df905-3d9d-4a69-bc7e-e4a029e6f6f8
+/PDM_DATA | U1.40 | 18.100000 | 11.500000 | 0.150 | 0.350 | 8f964d3b-bdf3-4c9d-8694-c27cc84126d0
+/VBUS_N | U1.10 | 13.150000 | 5.950000 | 0.150 | 0.350 | c2faa17a-0df5-46e8-b7e0-a5c8f86431a4
+/CHG_N | U3.9 | 21.350000 | 15.200000 | 0.150 | 0.350 | cd6f76be-442e-464d-affc-2baf7a4eb158
+
+Use the current exported paste apertures; do not add paste apertures at filled vias.
+U10 paste uses four 0.25 mm rounded squares R0.05 per manufacturer example. Stencil thickness remains to be qualified for the whole board.
+Gerber job and board metadata specify ENIG consistently; process capability remains unqualified.
+Remaining: exact BOM and assembly orientation, solder-mask registration, stencil/paste process, stackup/impedance, thermal/runtime tests and final enclosure.
+No fabrication, assembly or purchase approval is granted by this draft.

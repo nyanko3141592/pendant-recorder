@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-27",
+  "status": "SUPERSEDED_DO_NOT_USE",
+  "superseded_by": [
+    "hardware/xe-minimal/active-design.json",
+    "docs/procurement/xe-production-readiness-2026-10-28.md",
+    "docs/validation/xe-current-five-unit-evt-plan.json"
+  ],
+  "requirements_authority": "docs/requirements.md; latest user goal and corrections take precedence",
+  "fixed_battery": "DTP401525-XE 110mAh, buyer purchased separately; Marutsu DTP401525(EZ3) same-battery purchase route",
+  "prototype_quantity": 5,
+  "current_candidate": {
+    "board": "hardware/xe-minimal/fixed-usb-limit-trial/usb-margin-detour-trial/pendant-xe-minimal.kicad_pcb",
+    "board_sha256": "3f7962550e31d2a3133989344962d543977c8cea504f3f3c498273edb25d8127",
+    "manufacturing_review_manifest": "hardware/xe-minimal/fixed-usb-limit-trial/usb-margin-detour-trial/fabrication-review-3f7962550e31/REVIEW-ONLY.json",
+    "status": "UNADOPTED_ENGINEERING_CANDIDATE",
+    "outer_limit_decision": "30x32x15mm development ceiling requested; no response yet; not adopted",
+    "case_body_candidate_mm": [
+      26.2,
+      29.6,
+      12.9714
+    ],
+    "mechanical_fit": "Full original battery plug/leads and print tolerances unverified",
+    "printer": "Bambu Lab A1 mini; PLA; user4mm interpreted as0.4mm nozzle",
+    "closure": "Initial adhesive closure allowed by user; process unqualified",
+    "model_manifest": "mechanical/xe-minimal/current-model-delivery.json",
+    "print_manifest": "mechanical/xe-minimal/home-case-slice-review/current-print-files.json"
+  },
+  "cost": {
+    "parts_reference": "hardware/xe-minimal/fixed-usb-limit-trial/dmn-land-trial/five-unit-cost-coverage.json",
+    "parts_quantity_proposal_subtotals_by_currency": {
+      "JPY": 19863.7,
+      "USD": 202.821
+    },
+    "parts_status": "Mixed-date price evidence including unavailable parts; not a procurable kit or quote",
+    "partial_assembly": "docs/procurement/xe-current-assembly-cost.json",
+    "partial_assembly_scenarios_USD": [
+      148.408,
+      160.648
+    ],
+    "complete_five_unit_total": null,
+    "missing_total_items": [
+      "Bare PCB fabrication and via fill/cap",
+      "All parts, sourcing, attrition and minimum purchase quantities",
+      "X-ray and other inspection, packaging, placement confirmation and applicable options",
+      "Case, insulation, thermal contact parts and adhesive",
+      "Programming fixtures and test labor",
+      "Shipping, taxes and exchange costs",
+      "User-supplied batteries"
+    ]
+  },
+  "remaining_release_gates": [
+    "Review TH1 replacement: NCP18XH103F03RB is NRND; manufacturer suggests NCU18XH103F60RB; no substitution adopted",
+    "Adopt electrical candidates and complete electrical/thermal/USB qualification review",
+    "Resolve battery original lead and plug geometry and unmodified assembly fit",
+    "Resolve external size decision without changing110mAh or16h",
+    "Complete case retention, acoustic and thermal contact details and print-fit checks",
+    "Finalize firmware release configuration and cross-platform host delivery",
+    "Complete manufacturing/CAM/rotation/availability review and five-unit total costs",
+    "Publish coherent assembly and physical test plan with calculated versus measured evidence separated",
+    "Regenerate panel from current PCB; old six-unit panel source is stale. Resolve five populated units versus panel purchase minimums."
+  ],
+  "physical_tests": "Not performed; do not guarantee16h runtime",
+  "authorization": "Local design and read-only public sourcing; no orders, payments, uploads or supplier inquiries",
+  "history": "docs/history/preorder-target-before-current-xe-20261027.json",
+  "evidence_sha256": {
+    "hardware/xe-minimal/fixed-usb-limit-trial/dmn-land-trial/five-unit-cost-coverage.json": "5969299b0ca785548c3209f87c3b7578477fbf92ae6cb426d4c8c531edb3e16a",
+    "docs/procurement/xe-current-assembly-cost.json": "15c11c27ca5c539083914701b8b14b591649f41c566e812519d5bb0f3bd69c68",
+    "hardware/xe-minimal/fixed-usb-limit-trial/usb-margin-detour-trial/fabrication-review-3f7962550e31/REVIEW-ONLY.json": "a440d6ffe771826c4dc2bf79d5cba9eff61322f46066bd4f371963d71623d387"
+  },
+  "trial_test_plan": "docs/validation/xe-five-unit-trial-plan-ja.txt",
+  "ncu_replacement_trial_review": {
+    "status": "ENGINEERING_TRIAL_NOT_CANONICAL_OR_RELEASED",
+    "manufacturing_manifest": "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/fabrication-review-d0b5c957bfb8/REVIEW-ONLY.json",
+    "conditional_cost_delta": "hardware/xe-minimal/fixed-usb-limit-trial/ncu-sensor-trial/five-unit-cost-delta.json",
+    "remaining": "Full sensor specification, land/process and thermal contact qualification; original plug/leads absent from candidate assembly.",
+    "integrated_model": "mechanical/xe-minimal/ncu-candidate-integrated-board.step",
+    "assembled_model": "mechanical/xe-minimal/ncu-offset-stack-candidate.step",
+    "geometry_review": "mechanical/xe-minimal/ncu-candidate-integrated-review.json"
+  },
+  "dmn_alternate_assembler_source": {
+    "evidence": "docs/procurement/xe-dmn-jlc-availability.json",
+    "cost_scenario": "docs/procurement/xe-ncu-jlc-dmn-cost-scenario.json",
+    "status": "JLC_STOCK_OBSERVED_NOT_RESERVED_OR_FULL_BOM_QUALIFIED"
+  },
+  "u11_assembler_inventory_review": {
+    "evidence": "docs/procurement/xe-u11-jlc-availability.json",
+    "conditional_cost_scenario": "docs/procurement/xe-jlc-memory-mosfet-cost-scenario.json",
+    "process": "STANDARD_ONLY",
+    "status": "OBSERVED_NOT_RESERVED_NOT_FULL_BOM_APPROVAL"
+  },
+  "five_unit_budget_review": {
+    "machine_readable": "docs/procurement/xe-five-unit-budget-review.json",
+    "human_readable": "docs/procurement/xe-five-unit-budget-review-ja.txt",
+    "status": "PARTIAL_NOT_QUOTATION",
+    "conditional_parts_scenario": "docs/procurement/xe-power-mic-cost-scenario.json"
+  },
+  "mcu_external_route": {
+    "evidence": "docs/procurement/xe-mcu-retail-availability.json",
+    "route_review": "docs/procurement/xe-external-parts-route-review.json",
+    "status": "RETAIL_AVAILABLE_ASSEMBLER_PROCUREMENT_PENDING"
+  },
+  "charger_procurement_evidence": "docs/procurement/xe-bq25185-jlc-availability.json",
+  "load_switch_procurement_evidence": "docs/procurement/xe-tps22950-jlc-availability.json",
+  "inspection_cost_review": "docs/procurement/xe-xray-cost-review.json",
+  "additional_power_and_microphone_procurement": [
+    "docs/procurement/xe-tps7a02-jlc-availability.json",
+    "docs/procurement/xe-tps22916-jlc-availability.json",
+    "docs/procurement/xe-microphone-jlc-availability.json"
+  ],
+  "microphone_retail_evidence": "docs/procurement/xe-microphone-retail-availability.json",
+  "purchase_quantity_review": "docs/procurement/xe-purchase-quantity-review.json",
+  "panel_source_readiness": "docs/procurement/xe-panel-source-readiness.json"
+}

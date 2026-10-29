@@ -1,0 +1,36 @@
+{
+  "status": "TARGETED_LINK_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "ntcaflex-reconnect-64-separator-trial.step": "63a22dc8ba54bd997683f730d9425b47e4e26fb49486f73ebe08237f9f7f29eb",
+    "ntcaflex-diagonal-positioned-reference.step": "98c8c667fa13ff247d718b7f6ab66a1f3df63a16cc2e4718da33b4f494d89d08",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "ntcaflex-relocated-support-lower-trial.step": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "output_sha256": "54454cf1771877ca84c316ca0f1d7f6d75e6fe2cf5c799324fee9d9b4e4e948b",
+  "valid": true,
+  "solids": 1,
+  "checks": {
+    "sensor": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.1999999999950381
+    },
+    "board": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.020000000000000018
+    },
+    "lower": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.0
+    },
+    "battery": {
+      "overlap_mm3": 0.0,
+      "distance_mm": 0.19999999999999973
+    }
+  },
+  "limits": [
+    "Nominal topology only, no print strength or GL tolerance qualification.",
+    "Current board nearest gap may come from old features.",
+    "Sensor carrier load, thermal coupling, harness and assembly still incomplete."
+  ]
+}

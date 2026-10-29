@@ -1,0 +1,37 @@
+{
+  "status": "TOPOLOGY_STUDY_NOT_MANUFACTURING_RELEASE",
+  "source_sha256": "287ac6f8bf673e8fa24541649612b5a5f9900679c7ad1640ea93ba507090f46e",
+  "candidate_sha256": "2817df5a1ef46b5d4941b48f28bb67895229dbd26504e2401a8c171e5f9ac2ec",
+  "layers": 6,
+  "nominal_thickness_mm": 0.8,
+  "manufacturer_source": "https://jlcpcb.com/6-layer-pcb",
+  "limitations": [
+    "Manufacturer supports 0.8 mm six-layer but actual laminate/impedance is not configured",
+    "Cost and stackup must be quoted before selection",
+    "Plane geometry and DRC do not establish USB signal integrity",
+    "Remaining gaps include signal via antipads and must be reviewed individually",
+    "4-layer original remains authoritative; six-layer option not selected until stackup and cost review"
+  ],
+  "drc_violations": 0,
+  "unconnected": 0,
+  "B_reference_baseline": {
+    "DP": [
+      0,
+      69
+    ],
+    "DM": [
+      0,
+      87
+    ]
+  },
+  "B_reference_candidate": {
+    "DP": [
+      43,
+      69
+    ],
+    "DM": [
+      71,
+      87
+    ]
+  }
+}

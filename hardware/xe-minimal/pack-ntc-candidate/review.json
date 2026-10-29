@@ -1,0 +1,28 @@
+{
+  "status": "ADOPTED_ELECTRICALLY_CLEAN_PHYSICAL_TEMPERATURE_EVT_REQUIRED",
+  "source_board_sha256": "9e76a15a1101025b694a62bd4873c610833445c1afbfd374f221d8e7d29e351d",
+  "candidate_board_sha256": "2b2012822687cecec63e56ee356ed5eccbffcce851ae385e0ddf1df692e2331d",
+  "drc": {
+    "violations": 0,
+    "schematic_parity": 0,
+    "unconnected_items": 0
+  },
+  "removed": [
+    "TH1 NCU18XH103F60RB",
+    "case thermal-gap-pad dependency"
+  ],
+  "added": [
+    "J2 pin 2 PACK_NTC_10K to BAT_TS"
+  ],
+  "safety_basis": [
+    "DTP401525-XE public product specification identifies the middle lead as NTC.",
+    "Retail product specification identifies the embedded thermistor as 10k 0603.",
+    "The existing dual-comparator resistance window is retained, so the MCU cannot override hot/cold charge inhibit."
+  ],
+  "release_blockers": [
+    "Confirm actual NTC resistance at controlled 0C, 10C, 25C, 35C and 45C for every approved pack lot.",
+    "Confirm connector pin order from the mating side and open/short fault behavior.",
+    "Run installed charge cutoff/recovery and thermal-lag EVT before enabling charge by default."
+  ],
+  "adopted_board_sha256": "88c8de8b93d381bebcbaff40389bf0d45dbb30cb603bd6cb336945f068493c63"
+}

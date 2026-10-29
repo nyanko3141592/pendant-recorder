@@ -1,0 +1,220 @@
+{
+  "version": "HW-V1.4-EVT-4LAYER-27P5-ROUTED-CANDIDATE",
+  "status": "ROUTED_ENGINEERING_CANDIDATE_NOT_RELEASED",
+  "board_outline_mm": [
+    27.5,
+    27.5
+  ],
+  "copper_layers": 4,
+  "assembly_sides": 2,
+  "footprints": 74,
+  "tracks_and_vias": 1018,
+  "zones": 2,
+  "drc_geometric_violations": 0,
+  "drc_violation_types": {
+    "lib_footprint_issues": 74
+  },
+  "drc_library_provenance_warnings": 74,
+  "unconnected_items": 0,
+  "schematic_parity_items": 0,
+  "schematic_parity_checked": true,
+  "schematic_sha256": "319354c1d3485c47e6379a3ca711706992938b790af50b5af0dd481d1f19f7e9",
+  "hole_over_pad_vias": 0,
+  "hole_over_pad_detail": [],
+  "critical_routes": {
+    "/USB_DP": {
+      "length_mm": 19.606,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "minimum_width_mm": 0.1
+    },
+    "/USB_DM": {
+      "length_mm": 20.558,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "minimum_width_mm": 0.1172
+    },
+    "/PDM_CLK": {
+      "length_mm": 21.703,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/PDM_DATA": {
+      "length_mm": 10.69,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/SD_CLK": {
+      "length_mm": 7.963,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/SD_CLK_MCU": {
+      "length_mm": 25.992,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/SD_MOSI": {
+      "length_mm": 19.714,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/SD_MISO": {
+      "length_mm": 23.096,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/SD_CS_N": {
+      "length_mm": 50.794,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "minimum_width_mm": 0.1
+    },
+    "/VBUS_CHARGER": {
+      "length_mm": 35.488,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/BAT": {
+      "length_mm": 26.866,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.15
+    },
+    "/SYS": {
+      "length_mm": 48.847,
+      "vias": 2,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.125
+    },
+    "/V3V3": {
+      "length_mm": 129.235,
+      "vias": 7,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "minimum_width_mm": 0.125
+    },
+    "/SD_V3": {
+      "length_mm": 51.142,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/VBUS": {
+      "length_mm": 33.742,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/VBUS_OVP": {
+      "length_mm": 13.386,
+      "vias": 2,
+      "layers": [
+        "F.Cu",
+        "In1.Cu"
+      ],
+      "minimum_width_mm": 0.125
+    },
+    "/VBUS_N": {
+      "length_mm": 29.906,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "minimum_width_mm": 0.127
+    },
+    "/CHG_N": {
+      "length_mm": 38.345,
+      "vias": 3,
+      "layers": [
+        "B.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ],
+      "minimum_width_mm": 0.1
+    }
+  },
+  "usb_pair_length_mismatch_mm": 0.952,
+  "candidate_sha256": "8141cc8b00ca4c676ce53ab15a0812420c48636e137fa0559d9ac4d8399db288",
+  "release_allowed": false,
+  "remaining_gates": [
+    "Maintain geometric DRC=0, unconnected=0 and schematic parity=0 after further routing.",
+    "Manually replace/qualify USB D+/D- as a controlled pair over a continuous reference.",
+    "Qualify power widths, charger/decoupling loops, PDM/SPI return paths and inner-plane continuity.",
+    "Maintain hole-over-pad=0; resolve footprint library provenance warnings.",
+    "Regenerate synchronized CAM/BOM/CPL only after the engineering checks pass."
+  ],
+  "external_actions": {
+    "upload": false,
+    "order": false,
+    "payment": false,
+    "supplier_contact": false
+  }
+}

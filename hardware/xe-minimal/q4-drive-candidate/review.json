@@ -1,0 +1,37 @@
+{
+  "status": "ADOPTED_ENGINEERING_DESIGN_NOT_PRODUCTION_RELEASE",
+  "values": {
+    "Q3": "DMN63D8L-7",
+    "Q4": "DMN63D8L-7",
+    "R43": "4.7k 1%",
+    "R36": "100k 1%",
+    "R12": "100k 1%"
+  },
+  "source_pcb_sha256": "db414a2702f03d32803c82ec38f2ab559c28d95b7c37003776195f44c7af9b36",
+  "gate_screen": {
+    "assumed_VDD_min_V": 3.2504999999999997,
+    "assumed_GPIO_VOH_V": 2.8505,
+    "hypothetical_total_gate_sink_uA": 10,
+    "resistor_tolerance_and_0_to_70C_TCR_envelope": true,
+    "gate_min_V": 2.673466098453753,
+    "margin_above_2_5V_V": 0.17346609845375305,
+    "maximum_zero_volt_fault_clamp_current_mA": 0.7231121607517516
+  },
+  "limitations": [
+    "Regulator must actually be regulating; USB supply and dropout qualification not implied",
+    "Comparator output leakage is not bounded by the assumed total 10uA",
+    "Comparator VOL at actual 3.3V and this load needs measurement",
+    "DMN63D8L threshold min0.8V at250uA is not a guaranteed off-current limit at0.35V",
+    "Q4 off drain current and CE high level require thermal/fault bench qualification",
+    "Only values changed; no placement/routing intentionally changed"
+  ],
+  "next": "Refresh fabrication exports; physical guard tests remain NOT_RUN",
+  "CAD_checks": {
+    "drc": 0,
+    "parity": 0,
+    "unconnected": 0,
+    "erc": 0
+  },
+  "adopted_pcb_sha256": "0753b2e85892a530bba429b7b49dae4a322f1b8d5d0805760657e1b43a72a44d",
+  "geometry_comparison": "Exact board/schematic text equality after normalizing Value properties; only five board values changed"
+}

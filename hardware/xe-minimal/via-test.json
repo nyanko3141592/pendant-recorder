@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T05:43:16",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "via-test.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0894 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/USB_ILIM_SET] - R51 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.71,
+                        "y": 0.03
+                    },
+                    "uuid": "450fd291-7459-4cd7-b65f-cc15e0e0d8e6"
+                },
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.4318 mm )",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 0.5
+                    },
+                    "uuid": "ece75659-e0c3-42ba-9039-c5bae6d9daec"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0894 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/USB_ILIM_SET] - R51 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.71,
+                        "y": 0.03
+                    },
+                    "uuid": "450fd291-7459-4cd7-b65f-cc15e0e0d8e6"
+                },
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 1.4349 mm )",
+                    "pos": {
+                        "x": 11.3625,
+                        "y": 0.95
+                    },
+                    "uuid": "bdf15a0b-44a1-4c99-9009-be205a9b3d9d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

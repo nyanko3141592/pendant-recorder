@@ -1,0 +1,63 @@
+{
+  "status": "ARCHITECTURE_SCREEN_NOT_RELEASED",
+  "date": "2026-10-26",
+  "source_placement_sha256": "c1ffc504cd7dd7af5a678934c463a838433052cb857b3e00d6843eaea6e750ad",
+  "socket": {
+    "ref": "J4",
+    "w": 11.95,
+    "h": 15.8,
+    "height": 1.55,
+    "mpn": "Hirose DM3D-SF",
+    "source": "https://www.hirose.com/de/product/document?clcode=CL0609-0032-3-00&documentid=D49662_en&documenttype=Catalog&lang=de&productname=DM3CS-SF&series=DM3"
+  },
+  "assumptions": {
+    "battery_top_mm": 7.4,
+    "battery_reserve_mm": 0.5,
+    "pcb_thickness_mm": 0.8,
+    "roof_reserve_mm": 0.2,
+    "lid_mm": 0.8
+  },
+  "variants": [
+    {
+      "name": "socket_front_cpu_back",
+      "board_bottom_z_mm": 9.1,
+      "front_max_height_mm": 3.56,
+      "back_max_height_mm": 1.2,
+      "planar_minimum_case_height_mm": 14.46,
+      "margin_to_15mm_mm": 0.54,
+      "envelope_area_sum_mm2": {
+        "F": 462.524,
+        "B": 203.23
+      },
+      "retained_components": 71,
+      "socket_added": 1,
+      "placement_complete": false,
+      "routing_complete": false
+    },
+    {
+      "name": "socket_back_cpu_front",
+      "board_bottom_z_mm": 9.45,
+      "front_max_height_mm": 3.56,
+      "back_max_height_mm": 1.55,
+      "planar_minimum_case_height_mm": 14.81,
+      "margin_to_15mm_mm": 0.19,
+      "envelope_area_sum_mm2": {
+        "F": 342.77,
+        "B": 322.984
+      },
+      "retained_components": 71,
+      "socket_added": 1,
+      "placement_complete": false,
+      "routing_complete": false
+    }
+  ],
+  "decision": "Investigate front socket and back MCU first: better vertical margin. Neither alternative has a complete placement.",
+  "limitations": [
+    "Summed area is not a packing or routing proof; ignores overlaps and inaccessible spaces.",
+    "Rounded lid, case fasteners, cable routing, socket no-copper zones, battery swelling and actual tolerances remain unchecked.",
+    "Back maximum height is conservatively counted over battery regardless of eventual XY position.",
+    "Socket envelope includes inserted card; card inserted before closing enclosure, retention structure required.",
+    "Four-layer routability, card model/price/current and 16h runtime unqualified.",
+    "Socket catalogue dimensions are nominal; exact procurement suffix and engineering drawing required before PCB release."
+  ]
+}

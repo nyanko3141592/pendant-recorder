@@ -1,0 +1,186 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T11:17:04",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "ilim-via.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( In1.Cu 上、長さ: 3.4033 mm )",
+                    "pos": {
+                        "x": 11.75,
+                        "y": 3.2
+                    },
+                    "uuid": "21353899-3d13-4aa4-b285-aaaa9007ef40"
+                },
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( F.Cu 上、長さ: 1.1885 mm )",
+                    "pos": {
+                        "x": 14.95,
+                        "y": 1.05
+                    },
+                    "uuid": "0ac8a12f-e2d7-42ae-89c9-d3b871324684"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0100 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_ILIM_SET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.1,
+                        "y": 0.75
+                    },
+                    "uuid": "6585db89-93c7-4703-8adc-a6eaa28f0873"
+                },
+                {
+                    "description": "配線 [/BAT_TS] ( B.Cu 上、長さ: 1.6526 mm )",
+                    "pos": {
+                        "x": 16.129999,
+                        "y": 1.055
+                    },
+                    "uuid": "99466c0f-eb67-4bdc-a5db-5100623c3574"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_ILIM_SET と /SYS)",
+            "items": [
+                {
+                    "description": "ビア [/USB_ILIM_SET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.1,
+                        "y": 0.75
+                    },
+                    "uuid": "6585db89-93c7-4703-8adc-a6eaa28f0873"
+                },
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 2.4331 mm )",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 0.6
+                    },
+                    "uuid": "a0b29333-604d-4067-b195-acf41d5a0550"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_ILIM_SET と /V3V3)",
+            "items": [
+                {
+                    "description": "ビア [/USB_ILIM_SET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.1,
+                        "y": 0.75
+                    },
+                    "uuid": "6585db89-93c7-4703-8adc-a6eaa28f0873"
+                },
+                {
+                    "description": "配線 [/V3V3] ( In4.Cu 上、長さ: 14.6003 mm )",
+                    "pos": {
+                        "x": 17.3,
+                        "y": 0.6
+                    },
+                    "uuid": "e2389b90-b4be-4836-81c7-fd723011b191"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BAT_TS] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.13,
+                        "y": 1.055
+                    },
+                    "uuid": "43de8b1a-5c3e-4149-9a68-60c3570030b9"
+                },
+                {
+                    "description": "ビア [/USB_ILIM_SET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.1,
+                        "y": 0.75
+                    },
+                    "uuid": "6585db89-93c7-4703-8adc-a6eaa28f0873"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/USB_ILIM_SET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.1,
+                        "y": 0.75
+                    },
+                    "uuid": "6585db89-93c7-4703-8adc-a6eaa28f0873"
+                },
+                {
+                    "description": "パッド 1 [/BAT_TS] - TH1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.13,
+                        "y": 1.055
+                    },
+                    "uuid": "43de8b1a-5c3e-4149-9a68-60c3570030b9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1180 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 1.999999
+                    },
+                    "uuid": "37e16e63-d5a5-44f9-82ea-419a732e2b74"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/USB_ILIM_SET] ( F.Cu 上、長さ: 1.0187 mm )",
+                    "pos": {
+                        "x": 12.7375,
+                        "y": 2.95
+                    },
+                    "uuid": "8294ad2a-c819-407e-8a24-0f7686408969"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

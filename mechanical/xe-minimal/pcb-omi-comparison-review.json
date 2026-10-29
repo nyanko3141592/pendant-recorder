@@ -1,0 +1,34 @@
+{
+  "status": "BARE_PCB_COMPARISON_NOT_FINISHED_PRODUCT",
+  "board_sha256": "337d9c5c6121f58c9a47e0f14d5fa4b0e18af633092b8fa4dbd73ebde4142c34",
+  "board_nominal_mm": [
+    24.0,
+    27.0,
+    0.8264
+  ],
+  "omi_sources": [
+    {
+      "file": "reference/omi/mechanical-size-check/case-a.step",
+      "sha256": "6a23a0693e3d0e0c3068474cb46931f32e7850d6e22266a902060762f165eb1b"
+    },
+    {
+      "file": "reference/omi/mechanical-size-check/case-b.step",
+      "sha256": "ddeba686dd58d06fc5f3b7934e32dd6d720d037b2a4c1828ee44973795fb7a11"
+    }
+  ],
+  "source_reference": "reference/omi/mechanical-size-check/dimension-review.json",
+  "equal_scale": true,
+  "alignment": "Bare PCB centered at origin for overlay; Omi covers preserve original coordinates. No claimed assembled pose.",
+  "excluded": [
+    "Battery",
+    "PCB components",
+    "Battery wiring and connectors",
+    "Recorder case",
+    "Omi wrapper and attachment"
+  ],
+  "figures": [
+    "pcb-vs-omi-covers-study.png",
+    "pcb-vs-omi-covers-study.pdf"
+  ],
+  "visual_review": "PNG inspected: front and side axes use identical mm scale, labels legible; rectangular board extends outside circular cover at corners and along height. Source-coordinate side view is not verified assembly placement."
+}

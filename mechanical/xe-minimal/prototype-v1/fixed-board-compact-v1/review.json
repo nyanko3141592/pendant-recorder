@@ -1,0 +1,132 @@
+{
+  "version": "HW-V1.4-COMPACT-30P8-CORD-BARRIER-CANDIDATE",
+  "status": "COMPACT_CAD_CANDIDATE_NOT_RELEASED",
+  "complete_bbox_mm": [
+    30.803169272452845,
+    30.803169272452845,
+    13.903169272452844
+  ],
+  "actual_internal_bbox_mm": [
+    0,
+    27.5,
+    -27.2,
+    0.5,
+    -6.62,
+    4.1514
+  ],
+  "clearance_mm": {
+    "pcb_xy_each_side": 0.25,
+    "battery_floor": 0.25,
+    "top_over_tallest_envelope": 1.1286000000000005
+  },
+  "style": {
+    "plan_corner_radius_mm": 2.1,
+    "top_bottom_edge_radius_mm": 1.2,
+    "seam": "recessed tongue/groove"
+  },
+  "usb": {
+    "outer_bay_mm": [
+      13.8,
+      6.7
+    ],
+    "throat_mm": [
+      9.4,
+      3.6
+    ],
+    "mating_plane_y_mm": -26.17,
+    "front_roof_remaining_mm": 0.8300000000000001
+  },
+  "cord": {
+    "diameter_mm": 2.0,
+    "recommended_cord_mm": "1.0-1.5 braided polyester/nylon",
+    "integral_lower_boss": false,
+    "load_path": "diagonal through two existing exterior walls; entirely in one-piece lower shell",
+    "cavity_volume_consumed_by_reinforcement_mm3": 19.379738761324916,
+    "nominal_isolation_wall_mm": 0.8,
+    "integral_isolation_sleeve": true
+  },
+  "checks": {
+    "lower_to_internals_mm3": 0.0,
+    "upper_to_internals_mm3": 0.0,
+    "cord_barrier_added_inside_cavity_mm3": 19.379738761324916,
+    "cord_barrier_to_internals_mm3": 0.0,
+    "cord_tunnel_to_internals_mm3": 0.0,
+    "lower_upper_overlap_mm3": 0.0,
+    "cord_barrier_no_internal_interference": true,
+    "lower_net_material_added_mm3": 7.385341007305215
+  },
+  "files": {
+    "case-compact-v1-lower.step": {
+      "sha256": "55a4e71a095d29828d8507551ee44817d8feba20e1469d7d6acef090e77bd45a",
+      "bytes": 232353
+    },
+    "case-compact-v1-lower.stl": {
+      "sha256": "8d81ed32d878dde0737ca840dfd217b0d1d96d756db51a75848f3cf13e5fa0d8",
+      "bytes": 487484
+    },
+    "case-compact-v1-upper.step": {
+      "sha256": "956bb9ac229781ea4aa2fdb9dba1d60d2f8b978ed1673203f417ba355a84d7cf",
+      "bytes": 181388
+    },
+    "case-compact-v1-upper.stl": {
+      "sha256": "181bfbf2ef18b8337658dab2a948b3f27c38ac0689bab0f025396f6248d54700",
+      "bytes": 481684
+    },
+    "actual-populated-pcb.step": {
+      "sha256": "7226177baa4eb22e83391f336ac2e1685446564037d8546d0c8a19025bba0f87",
+      "bytes": 21812117
+    },
+    "actual-populated-pcb.stl": {
+      "sha256": "8e7033d4aa8c279294ee8c147692549238042012dcdd78932dc4181822dbd4a6",
+      "bytes": 40640784
+    },
+    "dtp401525-xe-max-body.step": {
+      "sha256": "fc62305e099c5bd0afcfe736ba86e18f66e1d6066662e87561387be03b87e2c9",
+      "bytes": 15530
+    },
+    "dtp401525-xe-max-body.stl": {
+      "sha256": "e292643f312d591ec65d156054205150c8dc0750f9c578e15499863d735d701f",
+      "bytes": 684
+    },
+    "case-compact-v1-actual-assembly.step": {
+      "sha256": "df4edfb3b9b6b883c90d248fa6f31fff8b6140c9acc6fdd0d133a46345ac5f7e",
+      "bytes": 27696884
+    }
+  },
+  "physical_gates": [
+    "reprint and inspect all four outer corners",
+    "fit real PCBA without force",
+    "fit maximum battery and factory harness without pinch",
+    "six representative USB-C cables",
+    "mic/button access",
+    "cord proof/fatigue"
+  ],
+  "physical_release_allowed": false,
+  "baseline_replaced": false,
+  "board_outline_mm": [
+    27.5,
+    27.5
+  ],
+  "battery_impact_qualified": false,
+  "remaining_gates": [
+    "Inspect real printed integral cord sleeve/seam, support removal and cord isolation; slicing passed but strength/accessibility are not qualified.",
+    "Define and verify battery retention, swelling clearance, insulation and impact protection without adding customer wiring or loose assembly parts.",
+    "Drop/cord fatigue/USB real cable/thermal/assembly physical checks."
+  ],
+  "source_builder_sha256": "a83b4648728b6170615965367d4707586d19f782dfb7573b6194d9ac23485b54",
+  "slice": {
+    "profile": "A1 mini / Bambu PETG Basic / 0.4 mm nozzle / 0.16 mm layer / 6 walls / 40% gyroid / tree support",
+    "return_code": 0,
+    "warning_messages": [
+      ""
+    ],
+    "project": {
+      "file": "hw-v1.4-4layer-case-compact-v1-4objects-a1mini.3mf",
+      "sha256": "7054cb2427d7f71f8e5038bb57164a987857447b8c278ae1355f567fe276ac95"
+    },
+    "limits": [
+      "Board is a mechanical populated-envelope gauge; it does not function electrically.",
+      "Slicing does not qualify real fit, USB access, cord proof load, fatigue, sweat, drop, heat or acoustics."
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "status": "REJECTED_DRC_FAILURE",
+  "source_sha256": "13c450e74462fa9bdfec05043683bca567df2de1b6ccbd46ff28e10f26e1a9c7",
+  "candidate_sha256": "3cc4103af9c4ef8fccf57cfaa752c5430f4345f1ed940619bebf31408fcdcc61",
+  "width_mm": 0.1171,
+  "target_edge_gap_mm": 0.1199,
+  "paths": {
+    "/USB_DP": [
+      [
+        16.3606,
+        9.155
+      ],
+      [
+        15.7659,
+        8.993649999999999
+      ],
+      [
+        15.096594927162663,
+        8.993649999999999
+      ],
+      [
+        12.30645,
+        11.861879162163367
+      ],
+      [
+        12.30645,
+        12.552949746909476
+      ],
+      [
+        12.44375,
+        12.770249746909478
+      ],
+      [
+        12.44375,
+        14.618934307141213
+      ],
+      [
+        10.909156153570606,
+        16.153528153570605
+      ],
+      [
+        10.6,
+        16.7731
+      ],
+      [
+        10.4011,
+        16.7731
+      ]
+    ],
+    "/USB_DM": [
+      [
+        16.3712,
+        8.5953
+      ],
+      [
+        15.7659,
+        8.75665
+      ],
+      [
+        14.996505072837337,
+        8.75665
+      ],
+      [
+        12.069450000000002,
+        11.765620837836634
+      ],
+      [
+        12.069450000000002,
+        12.621550253090522
+      ],
+      [
+        12.206750000000001,
+        12.838850253090524
+      ],
+      [
+        12.206750000000001,
+        14.520765692858788
+      ],
+      [
+        10.741571846429395,
+        15.985943846429393
+      ],
+      [
+        10.4011,
+        16.2149
+      ]
+    ]
+  },
+  "limitations": [
+    "Fixed via fanouts are not uniformly spaced",
+    "Miter bends and nearby coplanar copper need SI review",
+    "DRC/parity/reference checks pending; do not manufacture"
+  ],
+  "reason": "Pair centerline +0.08 mm X clears SD_EN reference interruption but violates five VBUS_N clearances",
+  "violations": 5,
+  "unconnected": 0
+}

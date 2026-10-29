@@ -1,5 +1,7 @@
 # 設計書（たたき台）
 
+> **履歴資料・現行設計ではない。** 以下はXIAO/ESP32/microSDを比較した初期案。現行XE量産候補は `hardware/xe-minimal/active-design.json`、要件は `docs/requirements.md`、電流・保存容量は `docs/sourcing/xe-integrated-16h-budget.md` を正とする。現行は32Gbit（4GB公称）の基板実装SD NANDで、購入者がmicroSDを用意しない。
+
 ## 1. 要件
 | # | 要件 |
 |---|---|

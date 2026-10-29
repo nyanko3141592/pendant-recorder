@@ -1,0 +1,13 @@
+{
+  "status": "DRC_PASS_LOCAL_RETURN_VIA_IMPROVEMENT_NOT_RELEASED",
+  "source_sha256": "287ac6f8bf673e8fa24541649612b5a5f9900679c7ad1640ea93ba507090f46e",
+  "candidate_sha256": "580125c4b9824b7b19f30e17345c3f5c3f45ea4d5ea5b40244b551cf27aed1bd",
+  "change": "SD_V3 existing width retained; local y7.7097->7.52 dogleg enables GND through-via16.5,8.055 diameter.45/drill.2",
+  "drc": 0,
+  "unconnected": 0,
+  "DM_nearest_ground_via_mm_before": 1.556,
+  "DM_nearest_ground_via_mm_after": 0.555,
+  "adjacent_ground_coverage": "B.Cu remainsDP0/69 DM0/87 sampled centers; continuous reference not solved",
+  "decision": "Retain comparison only. Do not promote on via proximity alone; electrical connection across reference planes and pair impedance/return geometry still require review.",
+  "tradeoff": "Power trace slightly longer; extra via. No component relocation or model-envelope change."
+}

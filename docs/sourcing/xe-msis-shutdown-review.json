@@ -1,0 +1,51 @@
+{
+  "status": "SUPERSEDED_BY_MSIS16_SYSTEM_CLOCK_AND_HSI16_OFF_RUNTIME_AUDIT",
+  "sources_sha256": {
+    "firmware/stm32/board/system_clock.c": "dbe3c8a7ab3a315ba674a7420fb13b393d5715b239662e48417f4ca76a83b5fc",
+    "/tmp/pendant-stm32-sdk/device/Source/Templates/system_stm32u5xx.c": "28d00434c85c76af756649577d6b2096f3810e2adb137203b5ebe4c33020622f",
+    "/tmp/pendant-stm32-sdk/hal/Src/stm32u5xx_hal_rcc.c": "732be0a667d4c5b23f0a5ca6b52b9fe4fa265be64f0c865b6b5aa3ed9fa9a05f",
+    "/tmp/pendant-stm32-sdk/hal/Inc/stm32u5xx_hal_rcc.h": "d9d216430330714c842b47a11deb9c860442ec6a05ec496cb626b042c12434a5"
+  },
+  "evidence": [
+    "PinnedSystemInit writes RCC_CR_MSISON and clears clock selection/PLL configuration.",
+    "Pinned HAL RCC_MSI_OFF clears MSISON and waits for MSISRDY to clear; it does not clear MSIKON.",
+    "Application uses HSI for SYSCLK and separate MSIK for ADF; no board C source selects MSIS for another consumer."
+  ],
+  "implementation": [
+    "Require HCLK16MHz and SYSCLK sourceHSI after switch.",
+    "Request only MSIS off through HAL, propagate failure.",
+    "Confirm MSISON/MSISRDY clear and HCLK unchanged before returning success."
+  ],
+  "build": {
+    "path": "/tmp/pendant-msis-off-build",
+    "elf_sha256": "777cf6e88b0fcc6d7ae5d27822b7d7f55d1d0e069d41e3527159ee7bc32aa78e",
+    "result": "Configured application cross-compiled and linked successfully",
+    "flash_sections_bytes": 114683
+  },
+  "limits": [
+    "Reset-startup clock-tree assumption; not a general clock shutdown routine for arbitrary bootloader peripheral state.",
+    "Actual RCC readback, audio continuity, USB/RNG and current reduction remain hardware tests.",
+    "Shared oscillator analog circuitry may remain powered for MSIK; no savings claimed from clearing MSISON alone.",
+    "No flashing performed; build remains unqualified."
+  ],
+  "measured_saving_mA": null,
+  "superseded_by": "docs/sourcing/xe-u585-runtime-feasibility-audit.json",
+  "host_sequence_test": {
+    "command": "sh firmware/stm32/tests/check_system_clock.sh",
+    "result": "PASS",
+    "cases": 13,
+    "coverage": [
+      "Success with voltage scaling, HSI enable, SYSCLK switch, then MSIS disable in order",
+      "ISR, interrupt mask, initial SYSCLK above 16MHz rejected before mutation",
+      "Voltage scaling, HSI enable, SYSCLK switch and MSIS disable HAL failures propagated",
+      "Wrong HCLK or source prevents MSIS shutdown",
+      "Stuck MSISON or MSISRDY and changed final HCLK reject success"
+    ],
+    "source_sha256": {
+      "firmware/stm32/tests/check_system_clock.sh": "51c7bcdbc8d107f93257f85068268e2d01ccad2bd0e82377111e3f03ef72238a",
+      "firmware/stm32/tests/test_system_clock.c": "29e1eaf3155640607945ddb8731f15f8c9bfe296e405e4fda409f86c9cb3a0b3",
+      "firmware/stm32/tests/system_clock_mock/stm32u5xx_hal.h": "566b9b9a82a6613f28d9b42d1223076001d3c28f840004c4f03a8d5399897217"
+    },
+    "limit": "Mock HAL checks application control flow and requested oscillator selection; does not prove hardware register behavior, timing, audio continuity or power savings."
+  }
+}

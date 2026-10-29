@@ -1,0 +1,54 @@
+[
+  {
+    "dy": -0.2,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 4 [/USB_INPUT_ON] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0125,
+              "y": 2.949999
+            },
+            "uuid": "1405c6b4-873d-456f-b095-f27e817a349e"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 2.6924 mm )",
+            "pos": {
+              "x": 16.7625,
+              "y": 2.199999
+            },
+            "uuid": "6ffc3bf9-56bb-4659-ae89-6a2c797ce8d4"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u8868\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 2.6924 mm )",
+            "pos": {
+              "x": 16.7625,
+              "y": 2.199999
+            },
+            "uuid": "6ffc3bf9-56bb-4659-ae89-6a2c797ce8d4"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 4 [/USB_INPUT_ON] - U13 ( F.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0125,
+              "y": 2.949999
+            },
+            "uuid": "1405c6b4-873d-456f-b095-f27e817a349e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ]
+  }
+]

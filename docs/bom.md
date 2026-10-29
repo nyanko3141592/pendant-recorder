@@ -1,6 +1,8 @@
 # 部品表（概算）
 
-> 2026-10-24 回路照合による訂正: 最新の回路原本は [hardware/rev-a/README.md](../hardware/rev-a/README.md)。48ピンSTM32U535CBU6はSDMMC端子がないため試作はSTM32U535RCT6（LQFP64）へ変更。T5838は底面音孔・1.8V専用でレベル変換が必須。BQ25101は50mA設定＋USB給電の負荷分離、USB PHYは専用3.3V。以下は初期調査/見積りを含み、矛盾時はRev A0を優先する。
+> **履歴資料・発注禁止。** この文書は初期のXIAO/microSD比較であり、現行XE量産版のBOMではない。現行の正本は `hardware/xe-minimal/bom.csv` と `docs/procurement/xe-production-bom-2026-10-28.csv`。現行保存部品は32Gbit（4GB公称）の基板実装SD NANDで、購入者が32GB microSDを用意する構成ではない。
+
+> 2026-10-24時点の履歴訂正（現在は失効）: 当時はRev A0を優先していた。以下のSTM32U535、T5838、BQ25101、microSD/XIAO案を現行設計や発注へ使用しない。
 価格はすべて目安で、**未確認**です。購入前に各店で確認してください。
 
 | 部品 | 数量 | 概算価格 | 買える所（日本） | 備考 |

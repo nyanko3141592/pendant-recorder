@@ -1,0 +1,64 @@
+{
+  "status": "NOMINAL_PRINT_MATING_SCREEN_NOT_TOLERANCE_QUALIFICATION",
+  "sources": {
+    "lower": {
+      "source_sha256": "cb3e11bc0664f14e27b75f263665a91d96cfd46c8eeba3a17edcecf273a25e69",
+      "gcode_sha256": "f81883bfcc3bf608500a70f4983d9f28e0adb673d24442c6f4502706b560af8c",
+      "3mf_sha256": "38b2e50dc7e0de271ef97f143a03e23c2520d4b13faca39d7dd8d6b87689b886"
+    },
+    "separator": {
+      "source_sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+      "gcode_sha256": "ea992b830e62ed5c1efa73c84956b419f51f52d42c93364bdf53a0a55ab794c8",
+      "3mf_sha256": "d579cba4d19c08cf3154a5ee2ea520cf5ed338635a433848f8ae653afcfc97a5"
+    }
+  },
+  "roi": "Full part XY bounding region -2..27, -30..3",
+  "separator_lowest_part_bottom_in_roi_mm": -2.339999999999999,
+  "contacts": [],
+  "overlaps": [],
+  "limits": [
+    "Rectangular bead cross-section is an approximation, not measured deposited geometry.",
+    "Excludes support; support removal residue and sag are unknown.",
+    "Assembly positioning uses CAD origin; mounting datum tolerances are not characterized.",
+    "Zero nominal gap does not establish fit or seating force.",
+    "Full XY for lower/separator only; board, lid, sensor, battery and wires excluded."
+  ],
+  "support_vertical_gaps": [
+    {
+      "region": "front",
+      "nearest_vertical_pair": {
+        "gap_mm": 0.06000000000000094,
+        "projected_overlap_area_mm2": 2.1543558377879215,
+        "lower_print_z_mm": 5.48,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "rear",
+      "nearest_vertical_pair": {
+        "gap_mm": 0.06000000000000094,
+        "projected_overlap_area_mm2": 2.0440902125086144,
+        "lower_print_z_mm": 5.48,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "middle1",
+      "nearest_vertical_pair": {
+        "gap_mm": 0.06000000000000094,
+        "projected_overlap_area_mm2": 1.558424219023181,
+        "lower_print_z_mm": 5.48,
+        "separator_print_z_mm": 1.26
+      }
+    },
+    {
+      "region": "middle2",
+      "nearest_vertical_pair": {
+        "gap_mm": 0.06000000000000094,
+        "projected_overlap_area_mm2": 1.5394164352550845,
+        "lower_print_z_mm": 5.48,
+        "separator_print_z_mm": 1.26
+      }
+    }
+  ]
+}

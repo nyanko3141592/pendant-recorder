@@ -1,0 +1,28 @@
+{
+  "status": "ROUTING_TARGET_DEFINED_NOT_IMPEDANCE_QUALIFIED",
+  "signal_layer": "In2.Cu",
+  "reference_layers": [
+    "In1.Cu",
+    "In3.Cu"
+  ],
+  "model": "non-coplanar differential stripline",
+  "target_diff_ohm": 90,
+  "width_mm": 0.1171,
+  "edge_gap_mm": 0.1199,
+  "source_record": "hardware/mini-rect-v13/jlc-six-layer-usb-impedance.json",
+  "source_sha256": "bf639c711ea1013045702cee06be33474dfb499cc7cfd7f02daf3aab84d9462b",
+  "source_date": "2026-10-26",
+  "application": "Added USB_FS_PAIR class for exact USB_DP/USB_DM nets; no USB tracks added in this step.",
+  "protection_reference": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+  "protection_findings": [
+    "USBLC6-2P6 I/O1 pins1/6, I/O2 pins3/4, GND2,VBUS5 match current pin table.",
+    "ST section2.3 requires short data/GND/VBUS paths; DRC connectivity alone cannot prove ESD performance."
+  ],
+  "remaining": [
+    "Via fanout and connector interleaved DP/DM pins",
+    "Protective IC flow-through physical connection diagram needs visual inspection; web screenshot failed and local PDF retrieval did not finish",
+    "Continuous reference copper under actual routed pair",
+    "Pair skew, stubs, transitions and outer-layer geometry",
+    "Actual fabrication stackup and tolerance confirmation without claiming nominal calculator precision as manufacturing tolerance"
+  ]
+}

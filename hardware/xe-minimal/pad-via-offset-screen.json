@@ -1,0 +1,4303 @@
+{
+  "status": "SCREEN_ONLY_NO_ADOPTION",
+  "method": "Filled/capped .35/.15 through via at unconnected SMD pad center. Ignore only dangling warning; full physical/parity checks. Stencil/manufacturing qualification remains separate.",
+  "results": [
+    {
+      "ref": "U13",
+      "pad": "4",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        15.0125,
+        3.0
+      ],
+      "offset_mm": [
+        0,
+        0.05
+      ],
+      "geometry_screen_pass": true,
+      "violations": [
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.0125,
+                "y": 3.0
+              },
+              "uuid": "e71d5545-68b9-4075-892a-e0c29c1aae7b"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.125,
+        19.225
+      ],
+      "offset_mm": [
+        0,
+        0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0173 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.225
+              },
+              "uuid": "0c0c9384-5033-4382-83d4-f33a5338a460"
+            },
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 /SD_CS_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.225
+              },
+              "uuid": "0c0c9384-5033-4382-83d4-f33a5338a460"
+            },
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.125,
+        19.125
+      ],
+      "offset_mm": [
+        0,
+        -0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.125
+              },
+              "uuid": "9a6da111-24b2-48ca-83d5-9684141484c4"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0070 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.125
+              },
+              "uuid": "9a6da111-24b2-48ca-83d5-9684141484c4"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.175,
+        19.175
+      ],
+      "offset_mm": [
+        0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.175,
+                "y": 19.175
+              },
+              "uuid": "dfc41331-cbc4-4af6-a2af-b6f1db27b055"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_LIMITED \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.175,
+                "y": 19.175
+              },
+              "uuid": "dfc41331-cbc4-4af6-a2af-b6f1db27b055"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.075,
+        19.175
+      ],
+      "offset_mm": [
+        -0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.075,
+                "y": 19.175
+              },
+              "uuid": "4aaa1c94-fcca-4b5f-bcfb-6775746ef420"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0619 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.075,
+                "y": 19.175
+              },
+              "uuid": "4aaa1c94-fcca-4b5f-bcfb-6775746ef420"
+            },
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.125,
+        19.275
+      ],
+      "offset_mm": [
+        0,
+        0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.275
+              },
+              "uuid": "4ddd05fb-4abc-4195-a030-f175a90d3ae1"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.275
+              },
+              "uuid": "4ddd05fb-4abc-4195-a030-f175a90d3ae1"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 5 [unconnected-(U14-1Q-Pad5)] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.675
+              },
+              "uuid": "efb0c70a-fc96-4aa5-85d7-6cf8d8249718"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0224 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.275
+              },
+              "uuid": "4ddd05fb-4abc-4195-a030-f175a90d3ae1"
+            },
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0835 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.275
+              },
+              "uuid": "4ddd05fb-4abc-4195-a030-f175a90d3ae1"
+            },
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 2.6000 mm )",
+              "pos": {
+                "x": 4.2,
+                "y": 22.0
+              },
+              "uuid": "52e8dd52-1e8e-45f9-9bea-9b067b0d366f"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 5 [unconnected-(U14-1Q-Pad5)] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.675
+              },
+              "uuid": "efb0c70a-fc96-4aa5-85d7-6cf8d8249718"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.275
+              },
+              "uuid": "4ddd05fb-4abc-4195-a030-f175a90d3ae1"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.125,
+        19.075
+      ],
+      "offset_mm": [
+        0,
+        -0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.075
+              },
+              "uuid": "ff955fa2-970d-45f5-912b-c4d68f0c8bd3"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 7 [/GND] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.675
+              },
+              "uuid": "4513138b-00bb-444d-b3cc-45d014061049"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.075
+              },
+              "uuid": "ff955fa2-970d-45f5-912b-c4d68f0c8bd3"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0018 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.075
+              },
+              "uuid": "ff955fa2-970d-45f5-912b-c4d68f0c8bd3"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0889 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 7.6000 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 11.2
+              },
+              "uuid": "7501a456-43f6-4899-b1c9-5435c3e64b5e"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.075
+              },
+              "uuid": "ff955fa2-970d-45f5-912b-c4d68f0c8bd3"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 7 [/GND] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.675
+              },
+              "uuid": "4513138b-00bb-444d-b3cc-45d014061049"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.075
+              },
+              "uuid": "ff955fa2-970d-45f5-912b-c4d68f0c8bd3"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.225,
+        19.175
+      ],
+      "offset_mm": [
+        0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0848 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_GUARD_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 15.8316 mm )",
+              "pos": {
+                "x": 2.6,
+                "y": 4.0
+              },
+              "uuid": "08cde4b0-521c-4aa2-888f-3bf939211111"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.225,
+                "y": 19.175
+              },
+              "uuid": "2fa90570-1e58-43b8-9275-85ecc100f43f"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 /VBUS_LIMITED)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.225,
+                "y": 19.175
+              },
+              "uuid": "2fa90570-1e58-43b8-9275-85ecc100f43f"
+            },
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 /SD_CS_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.225,
+                "y": 19.175
+              },
+              "uuid": "2fa90570-1e58-43b8-9275-85ecc100f43f"
+            },
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.025,
+        19.175
+      ],
+      "offset_mm": [
+        -0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.025,
+                "y": 19.175
+              },
+              "uuid": "fd938d96-e2c2-4c5c-a255-5759b5f2ae55"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.125,
+        19.375
+      ],
+      "offset_mm": [
+        0,
+        0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.375
+              },
+              "uuid": "ca921895-83e6-47ee-b598-b93c3bdccba3"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 2.6000 mm )",
+              "pos": {
+                "x": 4.2,
+                "y": 22.0
+              },
+              "uuid": "52e8dd52-1e8e-45f9-9bea-9b067b0d366f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.375
+              },
+              "uuid": "ca921895-83e6-47ee-b598-b93c3bdccba3"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 unconnected-(U14-1Q-Pad5))",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.375
+              },
+              "uuid": "ca921895-83e6-47ee-b598-b93c3bdccba3"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 5 [unconnected-(U14-1Q-Pad5)] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.675
+              },
+              "uuid": "efb0c70a-fc96-4aa5-85d7-6cf8d8249718"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0327 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.375
+              },
+              "uuid": "ca921895-83e6-47ee-b598-b93c3bdccba3"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 5 [unconnected-(U14-1Q-Pad5)] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.675
+              },
+              "uuid": "efb0c70a-fc96-4aa5-85d7-6cf8d8249718"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.375
+              },
+              "uuid": "ca921895-83e6-47ee-b598-b93c3bdccba3"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        },
+        {
+          "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.375
+              },
+              "uuid": "ca921895-83e6-47ee-b598-b93c3bdccba3"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 5 [unconnected-(U14-1Q-Pad5)] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 19.675
+              },
+              "uuid": "efb0c70a-fc96-4aa5-85d7-6cf8d8249718"
+            }
+          ],
+          "severity": "error",
+          "type": "solder_mask_bridge"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.125,
+        18.975
+      ],
+      "offset_mm": [
+        0,
+        -0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 /GND)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.975
+              },
+              "uuid": "381f6199-db7d-426e-bccf-c4929e3e5166"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 7 [/GND] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.675
+              },
+              "uuid": "4513138b-00bb-444d-b3cc-45d014061049"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0260 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.975
+              },
+              "uuid": "381f6199-db7d-426e-bccf-c4929e3e5166"
+            },
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 7.6000 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 11.2
+              },
+              "uuid": "7501a456-43f6-4899-b1c9-5435c3e64b5e"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_INPUT_ON \u3068 /SD_CS_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.975
+              },
+              "uuid": "381f6199-db7d-426e-bccf-c4929e3e5166"
+            },
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 7 [/GND] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.675
+              },
+              "uuid": "4513138b-00bb-444d-b3cc-45d014061049"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.975
+              },
+              "uuid": "381f6199-db7d-426e-bccf-c4929e3e5166"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        },
+        {
+          "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.975
+              },
+              "uuid": "381f6199-db7d-426e-bccf-c4929e3e5166"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 7 [/GND] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 18.675
+              },
+              "uuid": "4513138b-00bb-444d-b3cc-45d014061049"
+            }
+          ],
+          "severity": "error",
+          "type": "solder_mask_bridge"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        3.325,
+        19.175
+      ],
+      "offset_mm": [
+        0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_GUARD_GATE \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_GUARD_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 15.8316 mm )",
+              "pos": {
+                "x": 2.6,
+                "y": 4.0
+              },
+              "uuid": "08cde4b0-521c-4aa2-888f-3bf939211111"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.325,
+                "y": 19.175
+              },
+              "uuid": "58879f90-1a93-4366-8e44-9cdd39da0ce9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.325,
+                "y": 19.175
+              },
+              "uuid": "58879f90-1a93-4366-8e44-9cdd39da0ce9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0824 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.325,
+                "y": 19.175
+              },
+              "uuid": "58879f90-1a93-4366-8e44-9cdd39da0ce9"
+            },
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 7.6000 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 11.2
+              },
+              "uuid": "7501a456-43f6-4899-b1c9-5435c3e64b5e"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "6",
+      "net": "/USB_INPUT_ON",
+      "xy_mm": [
+        2.925,
+        19.175
+      ],
+      "offset_mm": [
+        -0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_CS_N \u3068 /USB_INPUT_ON)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.3284 mm )",
+              "pos": {
+                "x": 3.2,
+                "y": 19.6
+              },
+              "uuid": "48630b91-ecee-4ebf-a683-038f4642298f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_INPUT_ON] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 2.925,
+                "y": 19.175
+              },
+              "uuid": "6accf102-cff1-4291-9bf5-54def804f109"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.265,
+        23.345
+      ],
+      "offset_mm": [
+        0,
+        0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /V3V3 \u3068 /CHG_N)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            },
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.265,
+                "y": 23.345
+              },
+              "uuid": "f6acd1da-30f4-473d-ab6d-67ec6c0a8d0e"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.265,
+        23.245
+      ],
+      "offset_mm": [
+        0,
+        -0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.265,
+                "y": 23.245
+              },
+              "uuid": "29d27a52-2795-4b12-8c7b-eed97740a34e"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.315,
+        23.295
+      ],
+      "offset_mm": [
+        0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.315,
+                "y": 23.295
+              },
+              "uuid": "b5ded29f-90d6-43be-9099-9e7bf0537bd2"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.215,
+        23.295
+      ],
+      "offset_mm": [
+        -0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.215,
+                "y": 23.295
+              },
+              "uuid": "c0103d9b-5f41-402e-92ab-25c3defe092b"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.265,
+        23.395
+      ],
+      "offset_mm": [
+        0,
+        0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /V3V3 \u3068 /CHG_N)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            },
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.265,
+                "y": 23.395
+              },
+              "uuid": "fee73c3c-95a0-46c1-9a6f-41bee1dabfd1"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.265,
+        23.195
+      ],
+      "offset_mm": [
+        0,
+        -0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.265,
+                "y": 23.195
+              },
+              "uuid": "8c970300-c9f9-4a10-b72b-23ec4bff1a53"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.365,
+        23.295
+      ],
+      "offset_mm": [
+        0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.365,
+                "y": 23.295
+              },
+              "uuid": "55475701-308d-4f38-86ea-7b2a16e7e802"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.165,
+        23.295
+      ],
+      "offset_mm": [
+        -0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.165,
+                "y": 23.295
+              },
+              "uuid": "2963e9a9-183b-47c0-b23a-303236f4015d"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.265,
+        23.495
+      ],
+      "offset_mm": [
+        0,
+        0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0032 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.265,
+                "y": 23.495
+              },
+              "uuid": "2163ac4c-ad15-4451-bfd2-8496a3c30b1a"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.265,
+                "y": 23.495
+              },
+              "uuid": "2163ac4c-ad15-4451-bfd2-8496a3c30b1a"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.265,
+        23.095
+      ],
+      "offset_mm": [
+        0,
+        -0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.265,
+                "y": 23.095
+              },
+              "uuid": "02eac958-bdfa-4d63-9fa7-44a5e278dd6f"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.465,
+        23.295
+      ],
+      "offset_mm": [
+        0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /V3V3 \u3068 /CHG_N)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            },
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.465,
+                "y": 23.295
+              },
+              "uuid": "f8cf1310-22fe-496c-bc8d-4c89a6eb668f"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R11",
+      "pad": "2",
+      "net": "/CHG_N",
+      "xy_mm": [
+        6.065,
+        23.295
+      ],
+      "offset_mm": [
+        -0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_N \u3068 /V3V3)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/CHG_N] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 6.065,
+                "y": 23.295
+              },
+              "uuid": "d98d803d-464b-4e0d-baf5-4f24fb320560"
+            },
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In2.Cu \u4e0a\u3001\u9577\u3055: 2.2725 mm )",
+              "pos": {
+                "x": 5.413232,
+                "y": 23.922851
+              },
+              "uuid": "e37751b0-6684-4af1-8223-0876ea2e26fc"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.295,
+        13.815
+      ],
+      "offset_mm": [
+        0,
+        0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0990 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.815
+              },
+              "uuid": "150722d9-c257-46d1-b13d-eaf462119332"
+            },
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.295,
+        13.715
+      ],
+      "offset_mm": [
+        0,
+        -0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /BAT)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.715
+              },
+              "uuid": "b513a11b-a6b8-492c-a7c0-4595701614ec"
+            },
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0246 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.715
+              },
+              "uuid": "b513a11b-a6b8-492c-a7c0-4595701614ec"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.345,
+        13.765
+      ],
+      "offset_mm": [
+        0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BAT \u3068 /VBUS_GATE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.345,
+                "y": 13.765
+              },
+              "uuid": "e4424da4-df97-4bb5-8102-c8c0b7a25d3a"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0284 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.345,
+                "y": 13.765
+              },
+              "uuid": "e4424da4-df97-4bb5-8102-c8c0b7a25d3a"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.245,
+        13.765
+      ],
+      "offset_mm": [
+        -0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BAT \u3068 /VBUS_GATE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.245,
+                "y": 13.765
+              },
+              "uuid": "e0fabdb5-bc87-4b05-804d-cfe2ee33790d"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0953 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.245,
+                "y": 13.765
+              },
+              "uuid": "e0fabdb5-bc87-4b05-804d-cfe2ee33790d"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.295,
+        13.865
+      ],
+      "offset_mm": [
+        0,
+        0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /BAT)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.865
+              },
+              "uuid": "02754d2d-5c4a-4760-9fd8-06f3f19b2474"
+            },
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.295,
+        13.665
+      ],
+      "offset_mm": [
+        0,
+        -0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /BAT)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.665
+              },
+              "uuid": "cfa1d632-55fa-4149-83fd-362ba8eb356c"
+            },
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_INHIBIT_GATE \u3068 /VBUS_GATE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.665
+              },
+              "uuid": "cfa1d632-55fa-4149-83fd-362ba8eb356c"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.395,
+        13.765
+      ],
+      "offset_mm": [
+        0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /CHG_INHIBIT_GATE)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.395,
+                "y": 13.765
+              },
+              "uuid": "09e5c90e-7550-443f-865f-31479f7e6240"
+            },
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.195,
+        13.765
+      ],
+      "offset_mm": [
+        -0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /BAT)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.195,
+                "y": 13.765
+              },
+              "uuid": "932dbb70-960a-42ec-8362-7655c302bfeb"
+            },
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0716 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/V3V3] ( In4.Cu \u4e0a\u3001\u9577\u3055: 2.4083 mm )",
+              "pos": {
+                "x": 14.9,
+                "y": 14.0
+              },
+              "uuid": "7f84180a-6e64-4664-8299-4e636391c17a"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.195,
+                "y": 13.765
+              },
+              "uuid": "932dbb70-960a-42ec-8362-7655c302bfeb"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.295,
+        13.965
+      ],
+      "offset_mm": [
+        0,
+        0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /BAT)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.965
+              },
+              "uuid": "469b933c-d86d-45be-a306-576970f9b384"
+            },
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.295,
+        13.565
+      ],
+      "offset_mm": [
+        0,
+        -0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BAT \u3068 /VBUS_GATE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.565
+              },
+              "uuid": "fe18d3a7-6e26-47f0-83ee-2b783fd3dd51"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_INHIBIT_GATE \u3068 /VBUS_GATE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.295,
+                "y": 13.565
+              },
+              "uuid": "fe18d3a7-6e26-47f0-83ee-2b783fd3dd51"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.495,
+        13.765
+      ],
+      "offset_mm": [
+        0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /BAT)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.495,
+                "y": 13.765
+              },
+              "uuid": "c1e8492f-d4ba-4dd9-849f-f22f94058d75"
+            },
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0737 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BAT] ( F.Cu \u4e0a\u3001\u9577\u3055: 7.7009 mm )",
+              "pos": {
+                "x": 15.295,
+                "y": 9.765
+              },
+              "uuid": "382bd06a-333d-4029-8c39-f2f39817b3ec"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.495,
+                "y": 13.765
+              },
+              "uuid": "c1e8492f-d4ba-4dd9-849f-f22f94058d75"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_INHIBIT_GATE \u3068 /VBUS_GATE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+              "pos": {
+                "x": 3.8,
+                "y": 3.0
+              },
+              "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.495,
+                "y": 13.765
+              },
+              "uuid": "c1e8492f-d4ba-4dd9-849f-f22f94058d75"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "R14",
+      "pad": "1",
+      "net": "/VBUS_GATE",
+      "xy_mm": [
+        15.095,
+        13.765
+      ],
+      "offset_mm": [
+        -0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_GATE \u3068 /BAT)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/VBUS_GATE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 15.095,
+                "y": 13.765
+              },
+              "uuid": "73740e9b-56d6-494c-9af9-5dd088ebeefe"
+            },
+            {
+              "description": "\u914d\u7dda [/BAT] ( In4.Cu \u4e0a\u3001\u9577\u3055: 7.7897 mm )",
+              "pos": {
+                "x": 11.0,
+                "y": 10.0
+              },
+              "uuid": "daf16ff4-6333-407d-9d2d-8773b3a3ebb9"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.1025,
+        4.38
+      ],
+      "offset_mm": [
+        0,
+        0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_RESUME_PULSE \u3068 /PDM_CLK)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1025,
+                "y": 4.38
+              },
+              "uuid": "3d6ec38a-75ae-4961-a891-3b5841b1c5e7"
+            },
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.1025,
+        4.28
+      ],
+      "offset_mm": [
+        0,
+        -0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_RESUME_PULSE \u3068 /PDM_CLK)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1025,
+                "y": 4.28
+              },
+              "uuid": "119fe85c-d9f7-4726-9f36-4467d9e93c40"
+            },
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.1525,
+        4.33
+      ],
+      "offset_mm": [
+        0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /PDM_CLK \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1525,
+                "y": 4.33
+              },
+              "uuid": "db28bc33-dd48-491b-9247-8a726cd75c5f"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.0525,
+        4.33
+      ],
+      "offset_mm": [
+        -0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /PDM_CLK \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.0525,
+                "y": 4.33
+              },
+              "uuid": "d41083b2-58f9-4e4e-884c-0a3075ab0867"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0557 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 3.7005 mm )",
+              "pos": {
+                "x": 16.7,
+                "y": 7.1
+              },
+              "uuid": "7df0c50e-8eb8-4f1b-913a-b211b8e4d60a"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.0525,
+                "y": 4.33
+              },
+              "uuid": "d41083b2-58f9-4e4e-884c-0a3075ab0867"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.1025,
+        4.43
+      ],
+      "offset_mm": [
+        0,
+        0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /PDM_CLK \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1025,
+                "y": 4.43
+              },
+              "uuid": "eefae6ea-c409-4ee1-b79f-7b40c0f4e0d3"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.1025,
+        4.23
+      ],
+      "offset_mm": [
+        0,
+        -0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_RESUME_PULSE \u3068 /PDM_CLK)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1025,
+                "y": 4.23
+              },
+              "uuid": "5d045227-c26b-4486-83b8-95884e7c2071"
+            },
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.2025,
+        4.33
+      ],
+      "offset_mm": [
+        0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /PDM_CLK \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.2025,
+                "y": 4.33
+              },
+              "uuid": "cf04ea4a-2bc3-4f1b-b0d3-76bffa721975"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.0025,
+        4.33
+      ],
+      "offset_mm": [
+        -0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /PDM_CLK \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.0025,
+                "y": 4.33
+              },
+              "uuid": "d52b15ab-ec35-46fc-8a3a-b32f56e7cce6"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0057 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 3.7005 mm )",
+              "pos": {
+                "x": 16.7,
+                "y": 7.1
+              },
+              "uuid": "7df0c50e-8eb8-4f1b-913a-b211b8e4d60a"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.0025,
+                "y": 4.33
+              },
+              "uuid": "d52b15ab-ec35-46fc-8a3a-b32f56e7cce6"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.1025,
+        4.53
+      ],
+      "offset_mm": [
+        0,
+        0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0024 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1025,
+                "y": 4.53
+              },
+              "uuid": "7de8761a-2c2e-4b66-aa4c-6ef20d1cfd7d"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1025,
+                "y": 4.53
+              },
+              "uuid": "7de8761a-2c2e-4b66-aa4c-6ef20d1cfd7d"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.1025,
+        4.13
+      ],
+      "offset_mm": [
+        0,
+        -0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /PDM_CLK \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.1025,
+                "y": 4.13
+              },
+              "uuid": "e4952bc9-ba23-4f2e-92e8-6e250202975c"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        17.3025,
+        4.33
+      ],
+      "offset_mm": [
+        0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0536 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.3025,
+                "y": 4.33
+              },
+              "uuid": "1da1b8f2-8dd3-4e65-be2f-91d6c4020d77"
+            },
+            {
+              "description": "\u914d\u7dda [/GND] ( F.Cu \u4e0a\u3001\u9577\u3055: 2.6915 mm )",
+              "pos": {
+                "x": 17.425,
+                "y": 5.975
+              },
+              "uuid": "25f398f6-0551-4b70-a7c1-32d20f8b1b1e"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_RESUME_PULSE \u3068 /CHG_ALLOW)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.3025,
+                "y": 4.33
+              },
+              "uuid": "1da1b8f2-8dd3-4e65-be2f-91d6c4020d77"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 20 [/CHG_ALLOW] - U1 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.6025,
+                "y": 4.33
+              },
+              "uuid": "aebc0b89-873f-4cbd-90d4-5b548b908f96"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_RESUME_PULSE \u3068 /PDM_CLK)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.3025,
+                "y": 4.33
+              },
+              "uuid": "1da1b8f2-8dd3-4e65-be2f-91d6c4020d77"
+            },
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1000 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 20 [/CHG_ALLOW] - U1 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.6025,
+                "y": 4.33
+              },
+              "uuid": "aebc0b89-873f-4cbd-90d4-5b548b908f96"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 17.3025,
+                "y": 4.33
+              },
+              "uuid": "1da1b8f2-8dd3-4e65-be2f-91d6c4020d77"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U1",
+      "pad": "19",
+      "net": "/USB_RESUME_PULSE",
+      "xy_mm": [
+        16.9025,
+        4.33
+      ],
+      "offset_mm": [
+        -0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /PDM_CLK \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/PDM_CLK] ( In4.Cu \u4e0a\u3001\u9577\u3055: 6.7039 mm )",
+              "pos": {
+                "x": 18.7,
+                "y": 3.6
+              },
+              "uuid": "72fd26e6-36d4-4e0a-b182-3bdb7ce3a5ee"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 16.9025,
+                "y": 4.33
+              },
+              "uuid": "cc9b50c4-cdf5-4d17-b5b2-3498a5d441b7"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 unconnected-(U1-PB0-Pad18) \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 18 [unconnected-(U1-PB0-Pad18)] - U1 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 16.6025,
+                "y": 4.33
+              },
+              "uuid": "33ae186c-f084-4a76-ae07-d4ebc0918f3d"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 16.9025,
+                "y": 4.33
+              },
+              "uuid": "cc9b50c4-cdf5-4d17-b5b2-3498a5d441b7"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_RESUME_PULSE)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 3.7005 mm )",
+              "pos": {
+                "x": 16.7,
+                "y": 7.1
+              },
+              "uuid": "7df0c50e-8eb8-4f1b-913a-b211b8e4d60a"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 16.9025,
+                "y": 4.33
+              },
+              "uuid": "cc9b50c4-cdf5-4d17-b5b2-3498a5d441b7"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1000 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 18 [unconnected-(U1-PB0-Pad18)] - U1 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 16.6025,
+                "y": 4.33
+              },
+              "uuid": "33ae186c-f084-4a76-ae07-d4ebc0918f3d"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_RESUME_PULSE] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 16.9025,
+                "y": 4.33
+              },
+              "uuid": "cc9b50c4-cdf5-4d17-b5b2-3498a5d441b7"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.125,
+        20.725
+      ],
+      "offset_mm": [
+        0,
+        0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0432 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.725
+              },
+              "uuid": "31820a1b-9946-4f3c-928c-4c1cefb0e7da"
+            },
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.725
+              },
+              "uuid": "31820a1b-9946-4f3c-928c-4c1cefb0e7da"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.125,
+        20.625
+      ],
+      "offset_mm": [
+        0,
+        -0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BOOT0 \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.625
+              },
+              "uuid": "a5206511-a749-477b-a5b3-d4f84a688a96"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.175,
+        20.675
+      ],
+      "offset_mm": [
+        0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /BOOT0)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.175,
+                "y": 20.675
+              },
+              "uuid": "531f9382-09d6-457f-bc08-c305ce9dae8c"
+            },
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.075,
+        20.675
+      ],
+      "offset_mm": [
+        -0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0083 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.075,
+                "y": 20.675
+              },
+              "uuid": "65ff0326-14ac-4bc0-9420-5c7d737447e3"
+            },
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.075,
+                "y": 20.675
+              },
+              "uuid": "65ff0326-14ac-4bc0-9420-5c7d737447e3"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.125,
+        20.775
+      ],
+      "offset_mm": [
+        0,
+        0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0914 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.775
+              },
+              "uuid": "79b7f180-ac6d-41fc-a7ae-fbab15b38b27"
+            },
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.775
+              },
+              "uuid": "79b7f180-ac6d-41fc-a7ae-fbab15b38b27"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 2 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 21.175
+              },
+              "uuid": "b38c5b39-e9c6-4f3a-a8f6-ee8a410b62e0"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 2 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 21.175
+              },
+              "uuid": "b38c5b39-e9c6-4f3a-a8f6-ee8a410b62e0"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.775
+              },
+              "uuid": "79b7f180-ac6d-41fc-a7ae-fbab15b38b27"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.775
+              },
+              "uuid": "79b7f180-ac6d-41fc-a7ae-fbab15b38b27"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.125,
+        20.575
+      ],
+      "offset_mm": [
+        0,
+        -0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /BOOT0)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.575
+              },
+              "uuid": "3697f90c-8f3e-4c42-aaa6-8c5f416094a6"
+            },
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.575
+              },
+              "uuid": "3697f90c-8f3e-4c42-aaa6-8c5f416094a6"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 4 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.175
+              },
+              "uuid": "9c53e719-20b4-471a-b2d0-f4c17bb8f9fc"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 4 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.175
+              },
+              "uuid": "9c53e719-20b4-471a-b2d0-f4c17bb8f9fc"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.575
+              },
+              "uuid": "3697f90c-8f3e-4c42-aaa6-8c5f416094a6"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.225,
+        20.675
+      ],
+      "offset_mm": [
+        0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BOOT0 \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.225,
+                "y": 20.675
+              },
+              "uuid": "dff6856b-4ebd-40db-80cb-bd7f90cfa8cf"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0670 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.225,
+                "y": 20.675
+              },
+              "uuid": "dff6856b-4ebd-40db-80cb-bd7f90cfa8cf"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.025,
+        20.675
+      ],
+      "offset_mm": [
+        -0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0216 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.025,
+                "y": 20.675
+              },
+              "uuid": "d928cc42-a225-4fc7-964d-7c55453d32b3"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.025,
+                "y": 20.675
+              },
+              "uuid": "d928cc42-a225-4fc7-964d-7c55453d32b3"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.125,
+        20.875
+      ],
+      "offset_mm": [
+        0,
+        0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 2 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 21.175
+              },
+              "uuid": "b38c5b39-e9c6-4f3a-a8f6-ee8a410b62e0"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.875
+              },
+              "uuid": "ff359889-b228-4274-9ea5-ccbb97ce70de"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.8000 mm )",
+              "pos": {
+                "x": 3.925,
+                "y": 21.175
+              },
+              "uuid": "f429b053-b9ea-47a6-965e-1b78e62c0670"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.875
+              },
+              "uuid": "ff359889-b228-4274-9ea5-ccbb97ce70de"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 2 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 21.175
+              },
+              "uuid": "b38c5b39-e9c6-4f3a-a8f6-ee8a410b62e0"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.875
+              },
+              "uuid": "ff359889-b228-4274-9ea5-ccbb97ce70de"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        },
+        {
+          "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.875
+              },
+              "uuid": "ff359889-b228-4274-9ea5-ccbb97ce70de"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 2 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 21.175
+              },
+              "uuid": "b38c5b39-e9c6-4f3a-a8f6-ee8a410b62e0"
+            }
+          ],
+          "severity": "error",
+          "type": "solder_mask_bridge"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.875
+              },
+              "uuid": "ff359889-b228-4274-9ea5-ccbb97ce70de"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.125,
+        20.475
+      ],
+      "offset_mm": [
+        0,
+        -0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BOOT0 \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.475
+              },
+              "uuid": "d1093e05-23c0-4802-87fc-9c3bd07e62ab"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /VBUS)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.475
+              },
+              "uuid": "d1093e05-23c0-4802-87fc-9c3bd07e62ab"
+            },
+            {
+              "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.8000 mm )",
+              "pos": {
+                "x": 3.125,
+                "y": 20.175
+              },
+              "uuid": "fbf22748-b521-44fe-be54-e585cda3bd51"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 3.0414 mm )",
+              "pos": {
+                "x": 3.125,
+                "y": 20.175
+              },
+              "uuid": "04d9c62f-16c6-42f8-ad36-2777dd97c456"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.475
+              },
+              "uuid": "d1093e05-23c0-4802-87fc-9c3bd07e62ab"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+          "items": [
+            {
+              "description": "\u30d1\u30c3\u30c9 4 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.175
+              },
+              "uuid": "9c53e719-20b4-471a-b2d0-f4c17bb8f9fc"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.475
+              },
+              "uuid": "d1093e05-23c0-4802-87fc-9c3bd07e62ab"
+            }
+          ],
+          "severity": "error",
+          "type": "hole_clearance"
+        },
+        {
+          "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.475
+              },
+              "uuid": "d1093e05-23c0-4802-87fc-9c3bd07e62ab"
+            },
+            {
+              "description": "\u30d1\u30c3\u30c9 4 [/VBUS] - U14 ( B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.125,
+                "y": 20.175
+              },
+              "uuid": "9c53e719-20b4-471a-b2d0-f4c17bb8f9fc"
+            }
+          ],
+          "severity": "error",
+          "type": "solder_mask_bridge"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        3.325,
+        20.675
+      ],
+      "offset_mm": [
+        0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /BOOT0 \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.325,
+                "y": 20.675
+              },
+              "uuid": "a16a5b64-e299-4c64-9825-7d9d14bbb9da"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        },
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0481 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/SD_CS_N] ( In4.Cu \u4e0a\u3001\u9577\u3055: 2.6000 mm )",
+              "pos": {
+                "x": 4.2,
+                "y": 22.0
+              },
+              "uuid": "52e8dd52-1e8e-45f9-9bea-9b067b0d366f"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.325,
+                "y": 20.675
+              },
+              "uuid": "a16a5b64-e299-4c64-9825-7d9d14bbb9da"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_LIMITED \u3068 /USB_LATCH_CLOCK)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/VBUS_LIMITED] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.8310 mm )",
+              "pos": {
+                "x": 3.4,
+                "y": 18.8
+              },
+              "uuid": "90d3cdeb-883b-4fcb-b3b2-a2ba3ea79da6"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.325,
+                "y": 20.675
+              },
+              "uuid": "a16a5b64-e299-4c64-9825-7d9d14bbb9da"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "U14",
+      "pad": "3",
+      "net": "/USB_LATCH_CLOCK",
+      "xy_mm": [
+        2.925,
+        20.675
+      ],
+      "offset_mm": [
+        -0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0483 mm)",
+          "items": [
+            {
+              "description": "\u914d\u7dda [/BOOT0] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.2014 mm )",
+              "pos": {
+                "x": 9.2,
+                "y": 22.1
+              },
+              "uuid": "80a5d0e8-1d7e-4338-b7ad-f6bd26cbedf5"
+            },
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 2.925,
+                "y": 20.675
+              },
+              "uuid": "bb71b06e-3ec9-4364-9e26-fc5b73b74032"
+            }
+          ],
+          "severity": "error",
+          "type": "clearance"
+        },
+        {
+          "description": "Via is not connected or connected on only one layer",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/USB_LATCH_CLOCK] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 2.925,
+                "y": 20.675
+              },
+              "uuid": "bb71b06e-3ec9-4364-9e26-fc5b73b74032"
+            }
+          ],
+          "severity": "warning",
+          "type": "via_dangling"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.345,
+        6.625
+      ],
+      "offset_mm": [
+        0,
+        0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.345,
+                "y": 6.625
+              },
+              "uuid": "dfe499ec-6ab0-4f1e-8189-76a6510720ad"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.345,
+        6.525
+      ],
+      "offset_mm": [
+        0,
+        -0.05
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.345,
+                "y": 6.525
+              },
+              "uuid": "2b008ea1-6abc-4947-aac7-17ccfa6f4300"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.395,
+        6.575
+      ],
+      "offset_mm": [
+        0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.395,
+                "y": 6.575
+              },
+              "uuid": "0240504c-a57b-4bbf-b890-5c42a8319104"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.295,
+        6.575
+      ],
+      "offset_mm": [
+        -0.05,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.295,
+                "y": 6.575
+              },
+              "uuid": "4c798229-8106-4b2b-802e-310807936c78"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.345,
+        6.675
+      ],
+      "offset_mm": [
+        0,
+        0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.345,
+                "y": 6.675
+              },
+              "uuid": "d1aa4922-584a-401e-9abe-8c796cd0a01c"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.345,
+        6.475
+      ],
+      "offset_mm": [
+        0,
+        -0.1
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.345,
+                "y": 6.475
+              },
+              "uuid": "99d0a41c-fc02-4dc1-9e20-9756130ced84"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.445,
+        6.575
+      ],
+      "offset_mm": [
+        0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.445,
+                "y": 6.575
+              },
+              "uuid": "6b86a034-ee54-409c-9f40-e0315b6eaaf1"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.245,
+        6.575
+      ],
+      "offset_mm": [
+        -0.1,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.245,
+                "y": 6.575
+              },
+              "uuid": "0c32f5fa-b220-40dd-9946-1d6750079cc7"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.345,
+        6.775
+      ],
+      "offset_mm": [
+        0,
+        0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.345,
+                "y": 6.775
+              },
+              "uuid": "5bb0c1c2-5f22-486d-8fa8-cd6afae11c17"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.345,
+        6.375
+      ],
+      "offset_mm": [
+        0,
+        -0.2
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.345,
+                "y": 6.375
+              },
+              "uuid": "46cd0245-12eb-40de-9c6b-fd45b91ef654"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.545,
+        6.575
+      ],
+      "offset_mm": [
+        0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.545,
+                "y": 6.575
+              },
+              "uuid": "fbd197a7-e732-45d6-95a7-a8e9dada7535"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    },
+    {
+      "ref": "J3",
+      "pad": "2",
+      "net": "/SWDIO",
+      "xy_mm": [
+        3.145,
+        6.575
+      ],
+      "offset_mm": [
+        -0.2,
+        0
+      ],
+      "geometry_screen_pass": false,
+      "violations": [
+        {
+          "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SWDIO \u3068 /USB_LATCH_CLEAR_N)",
+          "items": [
+            {
+              "description": "\u30d3\u30a2 [/SWDIO] (F.Cu - B.Cu \u4e0a)",
+              "pos": {
+                "x": 3.145,
+                "y": 6.575
+              },
+              "uuid": "f63d8737-1147-4dd0-82eb-8d7b5f195d1d"
+            },
+            {
+              "description": "\u914d\u7dda [/USB_LATCH_CLEAR_N] ( In2.Cu \u4e0a\u3001\u9577\u3055: 5.0181 mm )",
+              "pos": {
+                "x": 6.275,
+                "y": 3.5561
+              },
+              "uuid": "fe7f3b86-f4b5-4676-9749-059aa0013544"
+            }
+          ],
+          "severity": "error",
+          "type": "shorting_items"
+        }
+      ],
+      "unconnected": 21
+    }
+  ]
+}

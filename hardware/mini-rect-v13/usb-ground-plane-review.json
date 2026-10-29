@@ -1,0 +1,26 @@
+{
+  "status": "DRC_PARITY_AND_ALTERNATE_GROUND_CONNECTION_PASS_NOT_RELEASED",
+  "source_sha256": "05ec09fadaf8f9f9ac2237fbe71cac92d3846826541ea71ba144e19cada8e4ec",
+  "candidate_sha256": "ad5ef8ccfe065424df59368025efdfcf99418fb3c71aebe2e62ae01f7108357b",
+  "removed_ground_track": "44e52ca4-2b96-4600-a2ba-8471534903d3",
+  "endpoints_in_F_ground_after_fill": [
+    false,
+    false
+  ],
+  "limitations": [
+    "Endpoint plane presence alone does not establish connectivity or ground current capacity",
+    "No layer/zone deleted; retained all existing GND vias",
+    "Requires DRC and ground topology review",
+    "After refill both former track endpoints are outside F ground fill, so the initial endpoint-plane hypothesis is not established",
+    "Alternate geometry connectivity found; ground-plane neck width/current/EMI not qualified"
+  ],
+  "drc": 0,
+  "unconnected": 0,
+  "checked_pads": 254,
+  "reference_gap_classification": {
+    "own_usb_via_samples": 34,
+    "opposite_usb_via_samples": 3,
+    "other_signal_via_samples": 0
+  },
+  "ground_path_evidence": "J4 GND pin6 overlaps F.Cu filled polygon0 at 81 sampled pad points; same polygon contacts 14 ground nodes in other branch"
+}

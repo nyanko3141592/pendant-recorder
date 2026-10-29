@@ -1,0 +1,651 @@
+[
+  {
+    "xy_mm": [
+      15,
+      12.5
+    ],
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /CHG_INHIBIT_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_EN] ( In4.Cu \u4e0a\u3001\u9577\u3055: 2.1932 mm )",
+            "pos": {
+              "x": 15.0,
+              "y": 12.5
+            },
+            "uuid": "55c468f7-f9b8-427e-8617-0da4cb045aed"
+          },
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /GND)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_INHIBIT_GATE \u3068 /SD_EN)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.0,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ]
+  },
+  {
+    "xy_mm": [
+      15.2,
+      12.5
+    ],
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0732 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_EN] ( In4.Cu \u4e0a\u3001\u9577\u3055: 2.3431 mm )",
+            "pos": {
+              "x": 15.2,
+              "y": 12.5
+            },
+            "uuid": "55c468f7-f9b8-427e-8617-0da4cb045aed"
+          },
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /GND)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.2,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0128 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.8000 mm )",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "77f3ae06-6011-4883-8b89-2c79de2cf453"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.2,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_INHIBIT_GATE \u3068 /SD_EN)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.2,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.2,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.2,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ]
+  },
+  {
+    "xy_mm": [
+      14.8,
+      12.5
+    ],
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /CHG_INHIBIT_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_EN] ( In4.Cu \u4e0a\u3001\u9577\u3055: 2.0518 mm )",
+            "pos": {
+              "x": 14.8,
+              "y": 12.5
+            },
+            "uuid": "55c468f7-f9b8-427e-8617-0da4cb045aed"
+          },
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /GND)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.8,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.4600 mm )",
+            "pos": {
+              "x": 14.6025,
+              "y": 13.665
+            },
+            "uuid": "b743478c-d1c3-4c90-abb2-0a185330898c"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_INHIBIT_GATE \u3068 /SD_EN)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.8,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0473 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+            "pos": {
+              "x": 3.8,
+              "y": 3.0
+            },
+            "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.8,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1189 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.8,
+              "y": 12.5
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u5c0e\u4f53\u30b9\u30e9\u30a4\u30d0\u30fc (In4.Cu)",
+        "items": [],
+        "severity": "warning",
+        "type": "copper_sliver"
+      }
+    ]
+  },
+  {
+    "xy_mm": [
+      15.3,
+      12.4
+    ],
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /GND)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.3,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0889 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/BAT] ( F.Cu \u4e0a\u3001\u9577\u3055: 7.7009 mm )",
+            "pos": {
+              "x": 15.295,
+              "y": 9.765
+            },
+            "uuid": "382bd06a-333d-4029-8c39-f2f39817b3ec"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.3,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0950 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.8000 mm )",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "77f3ae06-6011-4883-8b89-2c79de2cf453"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.3,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.3,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.3,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/GND] - R14 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 15.295,
+              "y": 12.745
+            },
+            "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ]
+  },
+  {
+    "xy_mm": [
+      14.7,
+      12.4
+    ],
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /CHG_INHIBIT_GATE)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_EN] ( In4.Cu \u4e0a\u3001\u9577\u3055: 1.9105 mm )",
+            "pos": {
+              "x": 14.7,
+              "y": 12.4
+            },
+            "uuid": "55c468f7-f9b8-427e-8617-0da4cb045aed"
+          },
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_EN \u3068 /GND)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.7,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          },
+          {
+            "description": "\u914d\u7dda [/GND] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.4600 mm )",
+            "pos": {
+              "x": 14.6025,
+              "y": 13.665
+            },
+            "uuid": "b743478c-d1c3-4c90-abb2-0a185330898c"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0887 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( F.Cu \u4e0a\u3001\u9577\u3055: 8.4380 mm )",
+            "pos": {
+              "x": 14.1,
+              "y": 14.6
+            },
+            "uuid": "13b1c402-e4cc-4b95-991b-92e05dd50916"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.7,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /CHG_INHIBIT_GATE \u3068 /SD_EN)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 4.5317 mm )",
+            "pos": {
+              "x": 14.0,
+              "y": 12.2
+            },
+            "uuid": "58bd9915-3911-43c8-9968-bf0469856ace"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.7,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0548 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/CHG_INHIBIT_GATE] ( In4.Cu \u4e0a\u3001\u9577\u3055: 16.1443 mm )",
+            "pos": {
+              "x": 3.8,
+              "y": 3.0
+            },
+            "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_EN] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 14.7,
+              "y": 12.4
+            },
+            "uuid": "7f176e35-dc51-4cb8-8ee4-74bc8adb5857"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      }
+    ]
+  }
+]

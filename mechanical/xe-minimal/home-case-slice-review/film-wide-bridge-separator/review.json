@@ -1,0 +1,82 @@
+{
+  "part": "film-wide-bridge-separator",
+  "source": "film-wide-bridge-separator-trial.step",
+  "source_sha256": "b7d1f4d2b4356a497543c208831ebac07a7ef0b1f5e6204a5e49904d07d3b649",
+  "stl_sha256": "017e1dc9d04e6bef1e20040e94ef9ba482546aa11e7281c1c33dac5d5b0a1edf",
+  "3mf_sha256": "1aaba64bae247951f30e23ee25719a48ae033f90252482d46516e7734b487223",
+  "first_layer_mm": 0.14,
+  "regular_layer_mm": 0.16,
+  "CAD_height_mm": 1.1,
+  "translation_mm": [
+    -0.3,
+    27.2,
+    2.22
+  ],
+  "slice_result": {
+    "error_string": "Success.",
+    "export_time": 313,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 5,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 15.578004837036133,
+          "Bridge": 3.5454156398773193,
+          "Custom": 34.62871551513672,
+          "Gap infill": 0.5791250467300415,
+          "Inner wall": 4.521768093109131,
+          "Outer wall": 13.107258796691895,
+          "Overhang wall": 0.7392005920410156,
+          "Top surface": 13.51685619354248,
+          "Travel": 23.96930503845215,
+          "Undefined": 8.475274085998535
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFL99",
+            "id": 1,
+            "main_used_g": 0.21827943623065948,
+            "total_used_g": 0.21827943623065948
+          }
+        ],
+        "generate_support_material_time": 1,
+        "id": 1,
+        "infill_time": 3,
+        "layer_filament_change": 0,
+        "main_predication": 75.58695220947266,
+        "make_perimeters_time": 2,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 17.10000228881836,
+              "height": 1.100000023841858,
+              "width": 27.399999618530273,
+              "x": 76.30001068115234,
+              "y": 81.44999694824219,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "film-wide-bridge-separator.stl",
+            "triangle_count": 708
+          }
+        ],
+        "sliced_time": 31,
+        "sliced_time_with_cache": 23,
+        "total_predication": 94.69141387939453,
+        "triangle_count": 708,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 15.0,
+    "wall_loops": 2
+  },
+  "profile_sha256": {
+    "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+    "process": "20f5b956df743e537f69ef47ff120297ffa169068bde0baf1ccda709e8a5b38b",
+    "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+  }
+}

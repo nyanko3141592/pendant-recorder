@@ -1,0 +1,65 @@
+{
+  "status": "REJECTED",
+  "reason": "Seat support top14.01 exceeds curved exterior near side. Revision lowers support top13.5. Case/lid pair also unchecked by Boolean kernel.",
+  "component_clearance": {
+    "bodies": 4,
+    "ms": 1375.005875,
+    "near": [
+      {
+        "a": "case_body",
+        "b": "pcb_dummy",
+        "distance_mm": 0.0,
+        "from": [
+          1.100049821982433,
+          18.99997152524425,
+          9.449999999999996
+        ],
+        "to": [
+          1.100049821982433,
+          18.99997152524425,
+          9.449999999999996
+        ]
+      },
+      {
+        "a": "case_body",
+        "b": "battery_dummy",
+        "distance_mm": 0.0,
+        "from": [
+          4.4,
+          6.0,
+          1.4
+        ],
+        "to": [
+          4.4,
+          6.0,
+          1.4
+        ]
+      }
+    ],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 85,
+    "pairs_pruned": 235,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": []
+  },
+  "case_lid_clearance": {
+    "bodies": 1,
+    "ms": 14782.477,
+    "near": [],
+    "nearest": {},
+    "overlaps": [],
+    "pairs_checked": 1,
+    "pairs_pruned": 0,
+    "pairs_reused": 0,
+    "truncated": false,
+    "unchecked": [
+      {
+        "a": "case_body",
+        "b": "case_lid",
+        "reason": "a pin on one cylinder with its hole, whose walls could not be intersected (the operation failed: boolean Intersect: the operation failed: no result in the tries it was given)"
+      }
+    ]
+  }
+}

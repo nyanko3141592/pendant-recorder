@@ -1,0 +1,130 @@
+{
+  "status": "NCP360_OVP_PLACEMENT_SCREENED_ROUTING_PENDING_NOT_ADOPTED",
+  "source": "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb",
+  "source_sha256": "21b4536919ef4e039327b12a89fcdf8b9e9252e9e817824e89a079d726ca528b",
+  "candidate": "hardware/xe-minimal/ncp360-ovp-candidate/pendant-xe-ncp360-ovp.kicad_pcb",
+  "candidate_sha256": "f4e203021f4a75a4c0c7679eba409d15b67bd7ad7d89d5b0ea26de01c4d513cf",
+  "added": {
+    "U14": "NCP360SNT1G",
+    "C33": "1u 25V X5R"
+  },
+  "power_path": [
+    "J1 /VBUS",
+    "U14 NCP360SNT1G",
+    "/VBUS_OVP",
+    "U13 TPS22950CDDCR",
+    "/VBUS_CHARGER",
+    "U3 BQ25185DLHR"
+  ],
+  "placement": {
+    "U14_xy_rotation": [
+      7.0,
+      7.0,
+      90
+    ],
+    "C33_xy_rotation": [
+      10.0,
+      8.0,
+      180
+    ]
+  },
+  "routes": {
+    "raw_vbus": [
+      [
+        [
+          6.05,
+          8.1375
+        ],
+        [
+          6.6,
+          10.049999999999999
+        ],
+        [
+          7.199999999999999,
+          10.2
+        ],
+        [
+          10.049999999999999,
+          8.549999999999999
+        ],
+        [
+          10.48,
+          8.0
+        ]
+      ],
+      [
+        [
+          10.48,
+          8.0
+        ],
+        [
+          12.75,
+          6.75
+        ],
+        [
+          13.35,
+          7.05
+        ],
+        [
+          14.7,
+          7.05
+        ],
+        [
+          14.7,
+          4.95
+        ],
+        [
+          13.65,
+          4.05
+        ],
+        [
+          12.646924,
+          4.294999
+        ]
+      ]
+    ],
+    "protected_vbus": [
+      [
+        [
+          6.05,
+          5.8625
+        ],
+        [
+          5.3,
+          6.5
+        ]
+      ],
+      [
+        [
+          5.3,
+          6.5
+        ],
+        [
+          4.6000000000000005,
+          2.8000000000000003
+        ],
+        [
+          5.0,
+          2.4000000000000004
+        ],
+        [
+          7.6000000000000005,
+          2.6
+        ],
+        [
+          8.200000000000001,
+          2.2
+        ],
+        [
+          15.0125,
+          2.0
+        ]
+      ]
+    ]
+  },
+  "limits": [
+    "Not schematic-synchronized",
+    "No abnormal-voltage or thermal result",
+    "Not adopted; do not fabricate"
+  ]
+}

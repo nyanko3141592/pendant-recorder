@@ -1,0 +1,38 @@
+{
+  "status": "MATERIAL_METADATA_CORRECTED_NOT_IMPEDANCE_QUALIFIED",
+  "source_pcb_sha256": "61498be19440afb6830a9f17f8568268e5987578d10d6fef85bffd0cdb5ac19f",
+  "output_pcb_sha256": "202732ca2a5996ed7491276b2a8a08397579740211ab8ce4e178e00bdd9f0bf0",
+  "source": "https://jlcpcb.com/impedance",
+  "observed_date": "2026-10-27",
+  "changes": [
+    {
+      "material": "2116 RC54%",
+      "old_epsilon_r": 4.5,
+      "new_epsilon_r": 4.16,
+      "layers_changed": 2
+    },
+    {
+      "material": "FR4 core",
+      "old_epsilon_r": 4.5,
+      "new_epsilon_r": 4.6,
+      "layers_changed": 2
+    },
+    {
+      "material": "7628 RC49%",
+      "old_epsilon_r": 4.5,
+      "new_epsilon_r": 4.4,
+      "layers_changed": 1
+    }
+  ],
+  "exact_inverse_text_comparison": true,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "limits": [
+    "Only nominal public Dk values changed; frequency, material tolerance and actual fabrication are not qualified",
+    "Layer thicknesses, tracks, zones, pads and placement unchanged byte-for-byte",
+    "Existing loss tangent0.02 remains an unqualified placeholder",
+    "USB fanouts, reference transitions and impedance not qualified",
+    "Previous manufacturing package remains linked to its previous hash; this is a separate candidate"
+  ]
+}

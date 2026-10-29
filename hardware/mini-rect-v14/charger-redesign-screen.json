@@ -1,0 +1,45 @@
+{
+  "status": "CHARGER_REDESIGN_REQUIRED_NOT_QUALIFIED",
+  "source": "https://www.ti.com/lit/ds/symlink/bq25185.pdf",
+  "revision": "SLUSF65B August2026",
+  "sha256": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+  "retained_ISET_ohms": 15000,
+  "retained_charge_typical_mA": 20,
+  "retained_termination_typical_mA": 2,
+  "charge_safety_timer_typical_hours": 6,
+  "ideal_300mAh_CC_only_hours": 15,
+  "finding": "Retained20mA setting cannot replenish nominal300mAh in a6h charge cycle, even before CV. Do not fix by automatically clearing safety timer faults.",
+  "candidates": [
+    {
+      "ISET_ohms": 10000,
+      "charge_typical_mA": 30,
+      "termination_typical_mA": 3,
+      "ideal_CC_hours": 10,
+      "decision": "Matches nominal battery standard termination but not safety timer; not selected"
+    },
+    {
+      "ISET_ohms": 5000,
+      "charge_typical_mA": 60,
+      "termination_typical_mA": 6,
+      "ideal_CC_hours": 5,
+      "decision": "Standard battery CC rate but timer/CV margin uncertain; earlier termination than3mA capacity-test condition"
+    },
+    {
+      "ISET_ohms": 3320,
+      "charge_typical_mA": 90.36144578313252,
+      "termination_typical_mA": 9.036144578313253,
+      "ideal_CC_hours": 3.3200000000000003,
+      "decision": "Below battery150mA ceiling but limited by80mA minimum input budget minus SYS load; full-cycle/early-termination capacity unresolved"
+    }
+  ],
+  "constraints": [
+    "Battery maximum150mA including resistor/IC tolerance",
+    "Input100mA selection actual80/90/98mA min/typ/max at stated5V; SYS has priority",
+    "10% fixed termination; battery standard capacity assumes3mA end current",
+    "No datasheet-derived full300mAh capacity claim with early termination",
+    "VBAT tolerance, cell cutoff and USB load/suspend review remain",
+    "No firmware change to allow charging"
+  ],
+  "order_ready": false,
+  "superseded_current_setting": "charger-prototype-selection.json selects3.32k prototype; retained20mA entries are historical comparison, not current design"
+}

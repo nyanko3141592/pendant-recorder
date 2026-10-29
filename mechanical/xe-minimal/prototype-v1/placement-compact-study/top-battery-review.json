@@ -1,0 +1,164 @@
+{
+  "status": "NOT_ADOPTED_AFTER_USER_REJECTION",
+  "copper_layers": 4,
+  "board_mm": [
+    27.5,
+    27.5
+  ],
+  "same_bom": true,
+  "same_assembly_sides": true,
+  "moves": [
+    {
+      "ref": "SW1",
+      "from_mm": [
+        15.725,
+        5.975
+      ],
+      "to_mm": [
+        3.5,
+        20.0
+      ],
+      "side": "F.Cu",
+      "courtyard_bbox_mm": [
+        1.1,
+        5.9,
+        18.35,
+        21.65
+      ],
+      "nets": [
+        "/BUTTON_N",
+        "/GND"
+      ]
+    },
+    {
+      "ref": "U8",
+      "from_mm": [
+        21.25,
+        4.565
+      ],
+      "to_mm": [
+        19.75,
+        19.0
+      ],
+      "side": "F.Cu",
+      "courtyard_bbox_mm": [
+        17.5,
+        22.0,
+        17.25,
+        20.75
+      ],
+      "nets": [
+        "",
+        "/GND",
+        "/PDM_CLK",
+        "/PDM_DATA",
+        "/V3V3"
+      ]
+    }
+  ],
+  "battery_max_body_mm": [
+    27,
+    15.5,
+    4.2
+  ],
+  "battery_bounds_mm": [
+    0.25,
+    27.25,
+    -16.0,
+    -0.4999999999999982,
+    2.8914001,
+    7.0914000999999995
+  ],
+  "highest_represented_part_under_battery_z_mm": 2.3914001,
+  "bottommost_represented_component_z_mm": -1.7200000000000002,
+  "battery_to_components_reserved_mm": 0.5,
+  "provisional_outer_envelope_mm": [
+    30.8,
+    30.8,
+    11.0114001
+  ],
+  "height_reduction_vs_13p9_percent": 20.78129424460432,
+  "represented_battery_board_overlap_mm3": 0.0,
+  "highest_under_battery_solids": [
+    [
+      2.3914001,
+      54,
+      [
+        11.1,
+        13.9,
+        -2.4000000999999997,
+        0.5000001,
+        0.8414,
+        2.3914001
+      ]
+    ],
+    [
+      2.3914001,
+      52,
+      [
+        1.475,
+        4.275,
+        -4.9350001,
+        -2.0349999,
+        0.8414,
+        2.3914001
+      ]
+    ],
+    [
+      2.3914001,
+      45,
+      [
+        5.5499998999999995,
+        8.4500001,
+        -8.4,
+        -5.6,
+        0.8414,
+        2.3914001
+      ]
+    ],
+    [
+      1.6414000000000002,
+      5,
+      [
+        24.7,
+        26.3,
+        -7.9,
+        -7.1,
+        0.8414,
+        1.6414000000000002
+      ]
+    ],
+    [
+      1.3414000000000001,
+      53,
+      [
+        20.2,
+        20.7,
+        -1.735,
+        -0.7350000000000001,
+        0.8414,
+        1.3414000000000001
+      ]
+    ]
+  ],
+  "unqualified_envelopes": [
+    "U1 uses legacy U535 7.4x7.4x0.6 mm screening envelope; replace with exact U585 max drawing before qualification.",
+    "U11 uses explicit 8.2x6.4x1.2 mm assumed envelope; exact MKDV8GIL-AST drawing required."
+  ],
+  "engineering_decision": "Prefer pursuing top-battery architecture over 0.2 mm shell-only shrink. Preserve existing routed board; this placement-only candidate requires a new 4-layer route.",
+  "remaining_gates": [
+    "Factory 15+/-3 mm harness routing from top battery around board to underside J2, no extension/pinch",
+    "Integrated insulating battery carrier, swelling allowance and drop retention without pressure on components",
+    "Stepped/recessed lid for USB/mic/button; enclosing box is not finished enclosure",
+    "Reserve continuous GND and reroute USB/PDM/power with 4 layers and ordinary vias",
+    "Confirm exact storage capacity, availability and Standard-only JLC assembly cost before final placement"
+  ],
+  "external_actions": {
+    "order": false,
+    "upload": false,
+    "payment": false,
+    "supplier_contact": false
+  },
+  "release_allowed": false,
+  "user_feedback": "2026-10-29: user rejected the presented proposal. Do not adopt the top-battery architecture or its approximately 11 mm envelope as a requirement or validated result."
+}

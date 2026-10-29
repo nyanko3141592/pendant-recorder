@@ -1,0 +1,31 @@
+{
+  "status": "PRELIMINARY_PIN_REVIEW_NOT_ADOPTED",
+  "part": "STM32U535CEU6",
+  "source": "https://www.st.com/resource/en/datasheet/stm32u535vc.pdf",
+  "evidence": "STM32U535xx pin table: non-SMPS UFQFPN48 pin38 PA15 (JTDI), FT I/O; SWDIO PA13 and SWCLK PA14 are separate.",
+  "firmware_change_required": [
+    "Configure PA15 as GPIO input with no internal pulls; external R4 remains.",
+    "Change button read from GPIOB pin13 to GPIOA pin15. GPIOA clock is already enabled.",
+    "Retain PA13/PA14 SWD operation and verify connect-under-reset and held-button behavior."
+  ],
+  "not_yet_proved": [
+    "Reference-manual GPIO/JTAG switching semantics and reset bias details",
+    "Cold/warm reset button operation and SWD hardware tests",
+    "Routing and firmware integration"
+  ],
+  "an5373_review": {
+    "url": "https://www.st.com/content/st_com/en/technical-documents/an5373-getting-started-with-stm32u5-mcu-hardware-development-stmicroelectronics_asset/chunk-006-topic-an5373-an5611-embedded-bootloader-rss.html",
+    "findings": [
+      "Table6 PA15 JTDI is not a SWD signal; SWD uses PA13/PA14.",
+      "Table7 permits PA15 release with JTAG disabled and SWD enabled.",
+      "JTDI has internal pull-up after reset; configure GPIO input explicitly."
+    ],
+    "remaining": "RM0456 exact MODER switching semantics not yet inspected. Official PDF HTTP2 failure and HTTP1.1 timeout; no substitute MCU evidence used."
+  },
+  "hal_implementation_review": {
+    "source": "https://github.com/STMicroelectronics/stm32u5xx-hal-driver/blob/6555ec181c456cf8f0cd04d2c8a4501003271a7e/Src/stm32u5xx_hal_gpio.c",
+    "lines": "277-281 and 310-314",
+    "observed": "HAL_GPIO_Init changes selected MODER bits to input and selected PUPDR bits to no-pull; other pins retained.",
+    "inference": "Combined with AN5373 PA15 release while SWD remains available, GPIO input init is candidate configuration. Exact RM switching wording and hardware debug/recovery validation remain pending."
+  }
+}

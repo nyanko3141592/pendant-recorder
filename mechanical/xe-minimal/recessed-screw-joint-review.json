@@ -1,0 +1,104 @@
+{
+  "status": "RECESSED_SCREW_JOINT_TRIAL_NOT_ADOPTED",
+  "nominal_dimensions_mm": {
+    "screw_length": 5,
+    "seat_z": 1.7,
+    "tip_z": -3.3,
+    "nut_top_z": -2.4,
+    "nut_bottom_z": -3.2,
+    "nut_roof_thickness": 0.6,
+    "upper_seat_thickness": 0.6,
+    "nominal_thread_overlap": 0.8,
+    "tip_beyond_nut": 0.1
+  },
+  "checks": {
+    "roof_component_collision_mm3": 0.0,
+    "lower_support_component_collision_mm3": 0.0,
+    "upper_support_component_collision_mm3": 0.0,
+    "upper_valid": true,
+    "lower_valid": true,
+    "upper_solids": 1,
+    "lower_solids": 1,
+    "case_halves_intersection_mm3": 0.0
+  },
+  "limitations": [
+    "Nut side-loading slot needs retention and insertion access",
+    "Thread runout/chamfer and dimensional tolerances not included in nominal overlap",
+    "Case stiffness/creep/torque not qualified",
+    "One fixing point only",
+    "Original battery leads/plug omitted",
+    "Component model is pre-hole PCB; supports are outside PCB z band",
+    "Sampled nut path is not a continuous sweep proof; install nut before PCB and battery is a proposed sequence only"
+  ],
+  "nut_insertion_samples": [
+    {
+      "offset_x_mm": 0.0,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 0.25,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 0.5,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 0.75,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 1.0,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 1.25,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 1.5,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 1.75,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 2.0,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 2.25,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 2.5,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 2.75,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 3.0,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 3.25,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 3.5,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 3.75,
+      "lower_case_collision_mm3": 0.0
+    },
+    {
+      "offset_x_mm": 4.0,
+      "lower_case_collision_mm3": 0.0
+    }
+  ],
+  "nut_insertion_max_collision_mm3": 0.0
+}

@@ -1,0 +1,222 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T14:33:48",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "r10-ground-shift.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "ゾーン [/GND] In3.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "95b4bfd6-f959-43c6-a1fb-05bfe9cc170f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                },
+                {
+                    "description": "ゾーン [/GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": -1.0,
+                        "y": -1.0
+                    },
+                    "uuid": "785b34f1-d73d-4939-94dd-91b67ef5bcde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 1.5012 mm )",
+                    "pos": {
+                        "x": 5.035,
+                        "y": 7.635
+                    },
+                    "uuid": "7a2f117f-9fcc-4e56-a1cd-db58330745ab"
+                },
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 1.8864 mm )",
+                    "pos": {
+                        "x": 4.4044,
+                        "y": 8.6341
+                    },
+                    "uuid": "84084d85-ca02-467f-8e91-5c51f648c4b2"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 1.8864 mm )",
+                    "pos": {
+                        "x": 4.4044,
+                        "y": 8.6341
+                    },
+                    "uuid": "84084d85-ca02-467f-8e91-5c51f648c4b2"
+                },
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 2.1574 mm )",
+                    "pos": {
+                        "x": 2.915,
+                        "y": 7.235
+                    },
+                    "uuid": "c1be3827-6036-4054-a250-21dc028c0db8"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0941 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.6702 mm )",
+                    "pos": {
+                        "x": 4.4044,
+                        "y": 6.7477
+                    },
+                    "uuid": "73bb3d08-82ed-485e-b7d4-acc069cbf379"
+                },
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 1.5012 mm )",
+                    "pos": {
+                        "x": 5.035,
+                        "y": 7.635
+                    },
+                    "uuid": "7a2f117f-9fcc-4e56-a1cd-db58330745ab"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント C13",
+                    "pos": {
+                        "x": 5.235,
+                        "y": 8.935
+                    },
+                    "uuid": "0fdd8d60-fbe0-485f-8e0e-bf1e12968f20"
+                },
+                {
+                    "description": "フットプリント R10",
+                    "pos": {
+                        "x": 5.555,
+                        "y": 7.645
+                    },
+                    "uuid": "76263337-8bfb-4d16-8c6e-5fce27d86bff"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント R10",
+                    "pos": {
+                        "x": 5.555,
+                        "y": 7.645
+                    },
+                    "uuid": "76263337-8bfb-4d16-8c6e-5fce27d86bff"
+                },
+                {
+                    "description": "フットプリント C7",
+                    "pos": {
+                        "x": 6.935,
+                        "y": 7.985
+                    },
+                    "uuid": "7cebc256-b404-403e-895c-57ab67f24f9d"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント R10",
+                    "pos": {
+                        "x": 5.555,
+                        "y": 7.645
+                    },
+                    "uuid": "76263337-8bfb-4d16-8c6e-5fce27d86bff"
+                },
+                {
+                    "description": "フットプリント C6",
+                    "pos": {
+                        "x": 6.935,
+                        "y": 6.735
+                    },
+                    "uuid": "ead018a5-d76b-4da3-9b23-b9c9fd720420"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        }
+    ]
+}

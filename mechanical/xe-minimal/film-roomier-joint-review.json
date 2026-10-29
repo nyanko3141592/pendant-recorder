@@ -1,0 +1,55 @@
+{
+  "status": "ROOMIER_JOINT_GEOMETRY_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "lower": "53d63eef6437679eeb17338ea7464a2f98084a4add5ae08450ad5dcf48b22ca1",
+    "separator": "63d2986eb0404d397b91a6681831f76cec5bbb167c59b42b6f1fa5bc622deaac",
+    "board": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "joint_envelope_mm": [
+    1.1,
+    2.8,
+    1.1
+  ],
+  "joint_local_y_start_mm": 23.2,
+  "joint_center_z_mm": -1.92,
+  "nominal_clearance_mm": 0.1,
+  "parts": {
+    "lower": {
+      "valid": true,
+      "solid_count": 1,
+      "removed_volume_mm3": 1.9254000000055385,
+      "sha256": "4cf4195b87a6be842328bc00527f78eee5d1f5a155a90ceb96a6350e99d65949"
+    },
+    "separator": {
+      "valid": true,
+      "solid_count": 1,
+      "removed_volume_mm3": 0.35773573946522674,
+      "sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2"
+    }
+  },
+  "checks": {
+    "lower": {
+      "joint_overlap_mm3": 0.0,
+      "joint_gap_mm": 0.0999999999999947
+    },
+    "separator": {
+      "joint_overlap_mm3": 0.0,
+      "joint_gap_mm": 0.09999999999953316
+    },
+    "board": {
+      "joint_overlap_mm3": 0.0,
+      "joint_gap_mm": 0.4849999999999999
+    },
+    "battery": {
+      "joint_overlap_mm3": 0.0,
+      "joint_gap_mm": 0.8114662469872229
+    }
+  },
+  "limits": [
+    "Enlarged envelope is a process budget, not a manufactured insulated joint.",
+    "Minimum retaining collar, actual wrapping/solder process, load and printability unqualified.",
+    "Cutting near rails can weaken or disconnect retention; inspect solid count and dimensions before adoption."
+  ],
+  "disposition": "NOT_ADOPTED: sampled remaining lower material interval reaches 0.15 mm; redesign supporting structure before printing or adoption."
+}

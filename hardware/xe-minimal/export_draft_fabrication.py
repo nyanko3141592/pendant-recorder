@@ -1,0 +1,12 @@
+"""Local review exports only. Never uploads or releases a manufacturing package."""
+from pathlib import Path
+import subprocess,json,hashlib,shutil
+O=Path(__file__).resolve().parent;pcb=O/'pendant-xe-minimal.kicad_pcb';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();a=json.loads((O/'active-design.json').read_text());assert sha(pcb)==a['sha256'][pcb.name]
+d=json.loads((O/'current-drc.json').read_text());assert all(not d[k] for k in ['violations','schematic_parity','unconnected_items'])
+D=O/('fabrication-review-'+sha(pcb)[:12]);D.mkdir(exist_ok=False);cli='/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli'
+commands=[['pcb','export','gerbers','--layers','F.Cu,In1.Cu,In2.Cu,In3.Cu,In4.Cu,B.Cu,F.Paste,B.Paste,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts','--subtract-soldermask','--output',str(D/'gerbers'),str(pcb)],['pcb','export','drill','--format','excellon','--drill-origin','absolute','--excellon-units','mm','--excellon-separate-th','--generate-map','--map-format','pdf','--generate-report','--report-path',str(D/'drill-report.txt'),'--output',str(D/'drill'),str(pcb)],['pcb','export','pos','--format','csv','--units','mm','--side','both','--exclude-dnp','--output',str(D/'positions-raw.csv'),str(pcb)]]
+for command in commands:subprocess.run([cli]+command,check=True)
+assert sha(pcb)==a['sha256'][pcb.name]
+for n in ['bom.csv','fabrication-process-notes.txt','exact-via-pad-overlap-audit.json','current-drc.json','current-erc.json']:shutil.copyfile(O/n,D/n)
+shutil.copyfile(O/'../../docs/procurement/xe-production-bom-2026-10-28.csv',D/'production-bom.csv')
+r={'status':'ENGINEERING_REVIEW_ONLY_DO_NOT_UPLOAD_OR_ORDER','source_pcb_sha256':sha(pcb),'source_schematic_sha256':sha(O/'pendant-xe-minimal.kicad_sch'),'commands':commands,'units':'mm','origin':'absolute board origin; bottom X not negated','copper_layers':6,'files_sha256':{str(p.relative_to(D)):sha(p) for p in sorted(D.rglob('*')) if p.is_file()},'unresolved':['Four published hole-over-pad vias require fabricator acceptance of the specified fill/planarize/copper-cap process','Raw position file must be filtered to the 68 JLC-assembled references and orientation verified with assembler convention','Live stock, substitution, feeder, attrition and quotation remain unverified','Gerber visual/CAM review and six-layer stackup approval pending','Physical EVT A-F is not run'],'upload_or_order_performed':False,'archive_or_upload_package_created':False};(D/'REVIEW-ONLY.json').write_text(json.dumps(r,indent=2)+'\n');print(D)

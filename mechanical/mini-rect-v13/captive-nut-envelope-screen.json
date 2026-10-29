@@ -1,0 +1,91 @@
+{
+  "status": "METAL_NUT_ENVELOPE_CANDIDATE_NOT_CAD_APPROVED",
+  "handoff_sha256": "d81d4754055e8ecfbdb37122ac524df9e7602294793ca5f22ac37e7770ce2020",
+  "screw": {
+    "mpn": "SNZS-M1-2",
+    "pitch_mm": 0.25,
+    "length_mm": 2,
+    "head_diameter_mm": 1.8,
+    "head_height_mm": 0.45,
+    "source": "https://static.nbk1560.com/products/specialscrew/nedzicom/miniaturescrew/SNZS-M/SNZS-M1/"
+  },
+  "nut": {
+    "mpn": "SHNS-M1",
+    "across_flats_mm": 2.5,
+    "height_mm": 0.8,
+    "source": "https://www.nbk1560.com/images/ja-JP/product/miniaturescrew/SHNS/SHNS_1.pdf"
+  },
+  "stack_mm": {
+    "carrier_bottom": 12.3,
+    "nut_bottom": 12.6,
+    "nut_top": 13.4,
+    "carrier_cap_top": 13.7,
+    "lid_support_bottom": 13.8,
+    "head_seat": 14.1,
+    "head_top": 14.55,
+    "screw_tip": 12.1
+  },
+  "rows": [
+    {
+      "x": 2.2,
+      "y": 5,
+      "component_conflicts": {
+        "nut_carrier": [],
+        "screw": []
+      },
+      "head_to_curved_roof_mm": 0.1334993995195184
+    },
+    {
+      "x": 2.2,
+      "y": 9,
+      "component_conflicts": {
+        "nut_carrier": [],
+        "screw": []
+      },
+      "head_to_curved_roof_mm": 0.1334993995195184
+    },
+    {
+      "x": 2.2,
+      "y": 13,
+      "component_conflicts": {
+        "nut_carrier": [],
+        "screw": []
+      },
+      "head_to_curved_roof_mm": 0.1334993995195184
+    },
+    {
+      "x": 20.8,
+      "y": 5,
+      "component_conflicts": {
+        "nut_carrier": [],
+        "screw": []
+      },
+      "head_to_curved_roof_mm": 0.1334993995195184
+    },
+    {
+      "x": 20.8,
+      "y": 9,
+      "component_conflicts": {
+        "nut_carrier": [],
+        "screw": []
+      },
+      "head_to_curved_roof_mm": 0.1334993995195184
+    },
+    {
+      "x": 20.8,
+      "y": 13,
+      "component_conflicts": {
+        "nut_carrier": [],
+        "screw": []
+      },
+      "head_to_curved_roof_mm": 0.1334993995195184
+    }
+  ],
+  "limitations": [
+    "Carrier cap must retain nut against upward screw load; an open-top pocket alone is insufficient",
+    "Side loading slot and keeper, lid relief and carrier/root connection not modeled",
+    "Envelope includes screw shaft but not carrier root or lid support",
+    "Straight side roof approximation only",
+    "Print and supplier tolerances, strength and costs unqualified"
+  ]
+}

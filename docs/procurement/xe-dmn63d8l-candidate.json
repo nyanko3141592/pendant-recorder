@@ -1,0 +1,31 @@
+{
+  "status": "SELECTED_FOR_Q3_ENGINEERING_PROTOTYPE_ONLY",
+  "mpn": "DMN63D8L-7",
+  "source": "https://www.diodes.com/datasheet/download/DMN63D8L.pdf",
+  "revision": "DS38026 Rev. 1-2, August 2015",
+  "pdf_sha256": "c673cd0d1ed8a489f18db0b231c9d1570571ba265870a8c0841206701b38c3a1",
+  "electrical_25C": {
+    "RDS_max_ohm_at_VGS2_5V_ID10mA": 13,
+    "IGSS_max_uA_at_VGS20V": 10,
+    "IDSS_max_uA_at_VDS30V": 1,
+    "Ciss_typ_pF_at_VDS25V": 23.2,
+    "Coss_typ_pF_at_VDS25V": 3.0
+  },
+  "procurement_observation": {
+    "date": "2026-10-27",
+    "url": "https://www.digikey.jp/en/products/detail/diodes-incorporated/DMN63D8L-7/5699705",
+    "displayed_stock": 52399,
+    "JPY_ex_tax_qty1": 40,
+    "JPY_ex_tax_qty25_total": 499,
+    "scope": "Read-only page observation, not reserved stock; no order"
+  },
+  "screening": [
+    "Datasheet has no 1.8 V on-resistance guarantee; 2.5 V minimum gate drive must be established for each branch.",
+    "Typical capacitances are not maxima and were measured at 25 V, not the low-voltage circuit operating point.",
+    "10 uA leakage specified at +/-20 V cannot be treated as actual GPIO-voltage leakage or a full-temperature guarantee.",
+    "If 10 uA is used as a conservative hypothetical sink, Q3 100k/1M gate network shifts by 0.909 V and Q4 10k/100k by 0.0909 V. These are sensitivity calculations, not measured device behavior.",
+    "Manufacturer product webpage Ciss 22 pF differs from downloaded PDF 23.2 pF; use versioned PDF for this screening.",
+    "Pin drawing, actual drive minima, temperature behavior and SETI transient assessment remain pending."
+  ],
+  "selection_review": "xe-q3-prototype-selection.json"
+}

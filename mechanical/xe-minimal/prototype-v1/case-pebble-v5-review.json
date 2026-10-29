@@ -1,0 +1,116 @@
+{
+  "version": "HW-V1.0-CASE-PEBBLE-V5-1GB",
+  "status": "HW_V1_1GB_CASE_CAD_PASS_NOT_PHYSICALLY_QUALIFIED",
+  "complete_bbox_mm": [
+    29.908119004044224,
+    36.354064614981965,
+    12.978077853130117
+  ],
+  "case_body_bbox_mm": [
+    -1.1000001000000001,
+    28.800000100000002,
+    -28.300000100000002,
+    2.0000001,
+    -7.720000100000002,
+    5.251400200000002
+  ],
+  "x_stretch_mm": {
+    "pcb_width_delta": 3.5,
+    "assembly_clearance_added": 0.2,
+    "inserted": 3.7,
+    "split": 12.0,
+    "usb_datum_shift": 0.0
+  },
+  "y_stretch_mm": {
+    "pcb_length_delta": 0.5,
+    "assembly_clearance_added": 0.2,
+    "inserted": 0.7,
+    "split": 0.0,
+    "usb_datum_shift": 0.0
+  },
+  "rounding_mm": {
+    "plan_vertical_edges": 3.0,
+    "top_bottom_perimeter_edges": 1.5
+  },
+  "lanyard": {
+    "center_x_mm": 13.850000000000001,
+    "outer_mm": [
+      4.8,
+      7.0,
+      6.0
+    ],
+    "hole_diameter_mm": 3.2,
+    "hole_axis": "X",
+    "minimum_radial_ligament_mm": 1.4,
+    "nominal_ligament_extrusion_widths_at_0p4mm": 3.4999999999999996,
+    "construction": "integral with lower shell; primary path does not cross glue seam"
+  },
+  "usb": {
+    "center_x_mm": 12.0,
+    "connector_model_front_y_mm": -26.17,
+    "local_bezel_y_mm": -26.17,
+    "bezel_to_connector_face_mm": 0.0,
+    "outer_bay_mm": [
+      14.0,
+      7.5
+    ],
+    "inner_throat_mm": [
+      9.4,
+      3.6
+    ]
+  },
+  "storage": {
+    "mpn": "MKDV8GIL-AST",
+    "package_nominal_mm": [
+      8.0,
+      6.0,
+      0.8
+    ],
+    "previous_envelope_mm": [
+      8.0,
+      6.2
+    ],
+    "case_growth_required_mm": 0.0,
+    "clearance_basis": "existing integrated assembly retains the larger previous 8.0x6.2mm envelope"
+  },
+  "printing": {
+    "lower_orientation": "side face down; CAD X/lanyard-hole axis rotated onto printer build Z",
+    "lower_cad_axis_aligned_to_printer_build_z": "X",
+    "lower_cad_layer_plane_after_orientation": "YZ",
+    "upper_orientation": "broad exterior face down",
+    "upper_cad_axis_aligned_to_printer_build_z": "Z",
+    "lug_hole_cad_axis": "X",
+    "hole_axis_parallel_to_printer_build_z": true,
+    "qualification": "50N three-direction proof plus 15N/10000-cycle fatigue and cord wear required"
+  },
+  "checks": {
+    "lower_to_internals_mm3": 5.337791054432941e-05,
+    "upper_to_internals_mm3": 0.0,
+    "lug_to_internals_mm3": 0.0,
+    "pcb_right_clearance_to_shell_outer_mm": 1.3000001000000019,
+    "usb_center_x_mm": 12.0,
+    "right_bottom_component_relief_mm": [
+      1.62,
+      0.62,
+      0.54
+    ]
+  },
+  "outputs_sha256": {
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-lower.step": "80309d7913ef6dc82d14450fc9961708f7c92e8304208a239a26af05071db88f",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-upper.step": "d48775ca62330cd1627c0081751ab2a4e471543097261947f4174ce490efea59",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-lower.stl": "ee776ff475455817443c126c276d44ec3c9a204e425e13f427f4002983c8ea13",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-upper.stl": "e51c9c526d92bbf932ccd1bc90b829e4be68ad7daa7e7c01bce5eec1a85a1da4",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-assembly.step": "23cf03bb623810d3593ff3ad4bec5a7d141141d3933f199c8ad4f1b407368d3a"
+  },
+  "sources_sha256": {
+    "mechanical/xe-minimal/rounded-glue-reinforced-lower-study.step": "efe76149b38f7edd4446a0604d22d7d2928021ad058f43c80c860dd2dc374bc9",
+    "mechanical/xe-minimal/rounded-glue-reinforced-upper-study.step": "1e58a7b346945110612e492e9e5dcbc238cbb6a3de296bc7aca93558db1639c7",
+    "mechanical/xe-minimal/prototype-v1/integrated-assembly-v1.step": "f18230fd88b103f1b325016c0ccf408105fb3f4ce556f91b6a883f55f5728051"
+  },
+  "limits": [
+    "CAD intersections are nominal and do not prove printed tolerances, pouch swelling, harness motion or acoustic performance.",
+    "The transverse lug still requires print-orientation-specific proof-load, wear and fatigue testing.",
+    "Centering the lug on the enclosure is a static design choice; worn orientation remains unverified.",
+    "The 14 mm USB bay is a cable-overmold allowance, not a universal USB-C guarantee."
+  ]
+}

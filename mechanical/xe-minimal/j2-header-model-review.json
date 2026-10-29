@@ -1,0 +1,51 @@
+{
+  "status": "HEADER_ENVELOPE_ONLY_NOT_MATED_ASSEMBLY",
+  "drawing": "mechanical/mini-rect-v15/evidence/Molex-SD-78171-008-RevG.pdf",
+  "drawing_sha256": "861b90161910159a8eb8b5e168b7e63ab14bfcfdcec0049fe8ff10e9d37fa0ca",
+  "models": [
+    {
+      "file": "j2-header-envelope-nominal.step",
+      "dimensions_mm": [
+        5.4,
+        4.5,
+        1.4
+      ],
+      "sha256": "ab665264bf73ce38ac77ab6a77d53665465b074413d940dbd52da3ca2dffb79a",
+      "valid": true
+    },
+    {
+      "file": "j2-header-envelope-tolerance.step",
+      "dimensions_mm": [
+        5.6,
+        4.7,
+        1.6
+      ],
+      "sha256": "39435fd9b0df16984f3bc852850b081c0e4eb021be358b72f270d9e1e98fd49f",
+      "valid": true
+    }
+  ],
+  "axes": "X across three contacts; Y header depth; Z body height. XY origin at envelope center, Z0 at envelope bottom. Not yet placed at footprint origin.",
+  "tolerance_method": "Add drawing general +/-0.2 mm once to each overall dimension for maximum dimension; this is not position tolerance.",
+  "stand_off_mm": {
+    "nominal": 0.05,
+    "min": 0.02,
+    "max": 0.12
+  },
+  "limitations": [
+    "Solid cuboids are interference envelopes, not detailed connector geometry.",
+    "Header drawing reviewed visually: 5.4 overall width,4.5 depth,1.4 height.",
+    "Do not assume the 1.55 parenthesized mating height is a maximum.",
+    "78172 housing, terminals, AWG30 leads, insertion/extraction space and board-relative pose remain to be modeled.",
+    "Solder stand-off is separately recorded; exact datum relation must be checked before stacking height."
+  ],
+  "housing_drawing_lookup": {
+    "url": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/781/78172/781720002_sd.pdf",
+    "status": "SEARCH_IDENTIFIED_NOT_RETRIEVED",
+    "attempts": [
+      "web fetch timeout",
+      "curl HTTP2 error",
+      "curl HTTP1.1 timeout after25s"
+    ],
+    "do_not_infer_dimensions_from_search_snippet": true
+  }
+}

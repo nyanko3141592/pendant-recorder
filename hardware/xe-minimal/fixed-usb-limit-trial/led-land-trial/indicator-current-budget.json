@@ -1,0 +1,122 @@
+{
+  "status": "CANDIDATE_CURRENT_ALLOCATION_NOT_RUNTIME_PROOF",
+  "source_sha256": {
+    "hardware/xe-minimal/recording-current-budget.json": "1a97988fb333291125ab20e0be9711a384ec8ad64fbbe1e54e567fbde07ebb10",
+    "hardware/xe-minimal/fixed-usb-limit-trial/led-land-trial/design.json": "b43224dd0db5ee5926a33f50e1307569c6e21f738d98b5929dc8271d9551addc",
+    "firmware/stm32/tests/measure_indicator_duty.c": "a36138643e3b7093db1e98fd2149c43f78fed4845e2cd8b170fc8bceb9f53ed7",
+    "firmware/stm32/core/battery_indicator.c": "6e0c3e4cfa7bd00d162cff4c08f0e661985385f45fcb62c6b1fd5e515e783889",
+    "firmware/stm32/core/battery_indicator.h": "d80137bd6f65c429be6640351080c0b27f27aba1e4e2d3f57a871a37d5997cbf",
+    "firmware/stm32/core/terminal_indicator.h": "11e97c1c687bca6024c381752d014fcebc168688bd8a16a219562e3b0d0d76a3",
+    "firmware/stm32/core/led_timeout.h": "51a310595faa9b52cc6d5b563bf51f03f42eb334e8dd466a93ec6fe9955a512a"
+  },
+  "assumptions": {
+    "rail_ceiling_V": 3.35,
+    "R32_nominal_ohm": 6800,
+    "R32_tolerance_fraction_hypothesis": 0.01,
+    "LED_forward_voltage_lower_bound_V": 0,
+    "battery_to_LED_current_scaling": 1,
+    "MCU_GPIO_switching_cost_included": false
+  },
+  "LED_on_current_upper_mA": 0.4976232917409388,
+  "regular_periodic_simulations": [
+    {
+      "poll_gap_ms": 1,
+      "duration_ms": 120000,
+      "max_on_ms_across_voltage_bands": 1200,
+      "limited_on_ms_with_1ms_ticks": 1200,
+      "LED_only_average_upper_mA": 0.004976232917409388
+    },
+    {
+      "poll_gap_ms": 10,
+      "duration_ms": 120000,
+      "max_on_ms_across_voltage_bands": 1200,
+      "limited_on_ms_with_1ms_ticks": 1200,
+      "LED_only_average_upper_mA": 0.004976232917409388
+    },
+    {
+      "poll_gap_ms": 100,
+      "duration_ms": 120000,
+      "max_on_ms_across_voltage_bands": 1200,
+      "limited_on_ms_with_1ms_ticks": 1200,
+      "LED_only_average_upper_mA": 0.004976232917409388
+    },
+    {
+      "poll_gap_ms": 1000,
+      "duration_ms": 120000,
+      "max_on_ms_across_voltage_bands": 2000,
+      "limited_on_ms_with_1ms_ticks": 1300,
+      "LED_only_average_upper_mA": 0.008293721529015646
+    },
+    {
+      "poll_gap_ms": 5000,
+      "duration_ms": 120000,
+      "max_on_ms_across_voltage_bands": 10000,
+      "limited_on_ms_with_1ms_ticks": 1300,
+      "LED_only_average_upper_mA": 0.04146860764507823
+    },
+    {
+      "poll_gap_ms": 60000,
+      "duration_ms": 120000,
+      "max_on_ms_across_voltage_bands": 120000,
+      "limited_on_ms_with_1ms_ticks": 650,
+      "LED_only_average_upper_mA": 0.4976232917409388
+    }
+  ],
+  "limiter_scope": "Limited duty assumes every 1ms tick is delivered; measured IRQ latency not established. Continuous reserve retained.",
+  "simulation_scope": "Uniform poll intervals with state held between polls over two 60s periods; not a worst-case arbitrary scheduling proof. Poll delays can increase on-time or suppress flashes.",
+  "terminal_ideal_LED_only_average_upper_mA": {
+    "capacity": 0.1194295900178253,
+    "fault": 0.05971479500891265
+  },
+  "scenarios": [
+    {
+      "usable_fraction_hypothesis": 0.5,
+      "whole_battery_average_allocation_mA": 3.4375,
+      "LED_reserve_until_poll_timing_qualified_mA": 0.4976232917409388,
+      "remaining_storage_allocation_mA": 0.03915190205751107,
+      "remaining_storage_if_ideal_1ms_poll_mA": 0.5317989608810405
+    },
+    {
+      "usable_fraction_hypothesis": 0.6,
+      "whole_battery_average_allocation_mA": 4.125,
+      "LED_reserve_until_poll_timing_qualified_mA": 0.4976232917409388,
+      "remaining_storage_allocation_mA": 0.726651902057511,
+      "remaining_storage_if_ideal_1ms_poll_mA": 1.2192989608810403
+    },
+    {
+      "usable_fraction_hypothesis": 0.7,
+      "whole_battery_average_allocation_mA": 4.8125,
+      "LED_reserve_until_poll_timing_qualified_mA": 0.4976232917409388,
+      "remaining_storage_allocation_mA": 1.4141519020575108,
+      "remaining_storage_if_ideal_1ms_poll_mA": 1.9067989608810403
+    },
+    {
+      "usable_fraction_hypothesis": 0.8,
+      "whole_battery_average_allocation_mA": 5.5,
+      "LED_reserve_until_poll_timing_qualified_mA": 0.4976232917409388,
+      "remaining_storage_allocation_mA": 2.101651902057511,
+      "remaining_storage_if_ideal_1ms_poll_mA": 2.5942989608810403
+    },
+    {
+      "usable_fraction_hypothesis": 0.9,
+      "whole_battery_average_allocation_mA": 6.1875,
+      "LED_reserve_until_poll_timing_qualified_mA": 0.4976232917409388,
+      "remaining_storage_allocation_mA": 2.789151902057511,
+      "remaining_storage_if_ideal_1ms_poll_mA": 3.2817989608810403
+    }
+  ],
+  "decision": "Reserve continuous LED current until main-loop maximum latency or independent hardware turn-off is qualified. Do not use ideal 1% duty to certify 16h.",
+  "limits": [
+    "Usable battery fraction is hypothetical and must include the actual 4.1V nominal on-board charge regulation and early termination, BOR4, LDO dropout, temperature and ageing",
+    "Guard reserve includes shorted NTC as electrical worst case; no assertion this is ordinary recording consumption",
+    "Base2.8mA excludes new explicit reserves by accounting choice, not by an established measurement",
+    "Comparator/BOR2uA entries are reserves requiring later verification against final conditions",
+    "Storage current examples omit startup, metadata, busy and frequency dependence; not part qualification",
+    "MCU microphone codec encryption and actual storage integrated charge remain unmeasured",
+    "Final16h test starts from the actual approved 4.1V nominal on-board charging profile, not an external laboratory charge",
+    "Base2.8mA allocation is not a measured candidate BOM sum.",
+    "R32 final tolerance/TCR and rail ceiling require confirmation.",
+    "No actual battery, MCU, storage or LED-current measurement.",
+    "Terminal display occurs after recording stops; do not add it to regular-recording duty."
+  ]
+}

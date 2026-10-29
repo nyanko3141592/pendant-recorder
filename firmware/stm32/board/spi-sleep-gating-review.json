@@ -1,0 +1,25 @@
+{
+  "status": "IMPLEMENTED_ARM_LINK_PASS_NOT_MEASURED",
+  "change": "__HAL_RCC_SPI1_CLK_SLEEP_DISABLE after SPI1 run clock enable",
+  "evidence": {
+    "hal": "/tmp/pendant-stm32-sdk/hal/Inc/stm32u5xx_hal_rcc.h APB2 Clock Sleep documentation",
+    "build_log": "/tmp/pendant-spi-sleep-link.log",
+    "elf_sha256": "d0122edf86ee8539b243e02f79646589547b7763702dfe713b47b5def8357d43",
+    "source_sha256": {
+      "firmware/stm32/board/storage_spi.c": "14705098267dd0c5807b2e414c1f0a7d0db3a53a97ea88390293878af5399301",
+      "firmware/stm32/app/main.c": "70bdb250df6d0ae675cc475be516a8850c28c4396277b5131b287c6c5c8c1181",
+      "firmware/stm32/board/audio_stop.c": "c8df496814e0595f2880c8e56081d66cd5e0cb9ce9d44b22f23229c38ee086af"
+    }
+  },
+  "rationale": [
+    "All current SPI exchanges use synchronous HAL_SPI_TransmitReceive",
+    "WFI locations are main idle/fault and audio boundary stop; no SPI DMA/IT transactions",
+    "Run clock automatically resumes after ordinary Sleep per pinned HAL documentation"
+  ],
+  "limits": [
+    "Not a card power-down policy; internal card busy/standby consumption unaffected",
+    "Review before adding asynchronous SPI or WFI inside transfers",
+    "No measured current reduction or16h guarantee",
+    "Physical write/read/sleep/wake and USB transfer regression required"
+  ]
+}

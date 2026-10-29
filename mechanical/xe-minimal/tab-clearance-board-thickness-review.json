@@ -1,0 +1,29 @@
+{
+  "status": "CONSERVATIVE_THICKNESS_SCREEN_NOT_ASSEMBLY_APPROVAL",
+  "datum": "PCB bottom seating plane fixed at Z=0; upper and crossing solids translated by finished thickness delta; bottom bodies fixed",
+  "nominal_mm": 0.8264,
+  "finished_range_mm": [
+    0.73,
+    0.93
+  ],
+  "counts": {
+    "bottom_fixed": 51,
+    "upper_or_crossing": 59,
+    "substrate": 1
+  },
+  "flags": [],
+  "source_sha256": {
+    "board": "5965f500390e21538c1c89e39c8ef3a9e129709b5050e159d9ba0ecdc1fdc3a4",
+    "lower": "e4d0bde292b5a6c517542001bf5fd13c179a215cac58bfc973c4273bb5ee9887",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+    "separator": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "limitations": [
+    "Bounding prism may flag empty space; endpoint exact checks cannot alone prove continuous clearance",
+    "Upper/crossing solid classification from geometry, not original STEP component labels",
+    "PCB rectangular envelope deliberately encloses substrate including holes and entire finished thickness",
+    "Solder standoff, component tolerances, case print error, warpage, leads and mating plug not included",
+    "No geometry changed or release approval"
+  ]
+}

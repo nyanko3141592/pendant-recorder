@@ -1,0 +1,46 @@
+{
+  "status": "SHARED_RAIL_BOR4_DESIGN_TARGET_NOT_PROGRAMMED",
+  "mcu": "STM32U535CEU6",
+  "source": "https://www.st.com/resource/en/datasheet/stm32u535re.pdf",
+  "source_revision": "DS14217 Rev5",
+  "brownout_level_target": 4,
+  "rising_threshold_V": [
+    2.76,
+    3.0
+  ],
+  "falling_threshold_V": [
+    2.67,
+    2.9
+  ],
+  "comparator_min_operating_V": 1.6,
+  "static_falling_voltage_margin_V": 1.07,
+  "limitations": [
+    "Static threshold margin is not a transient timing proof",
+    "BOR option-byte encoding, actual programmer command and readback not yet integrated",
+    "Shared V3V3 supply proposal not yet applied to schematic/PCB",
+    "Actual V3V3 regulator minimum must exceed 3.0V reset release maximum with margin"
+  ],
+  "firmware_change": {
+    "file": "firmware/stm32/board/usb_input_v15.c",
+    "new_grant_settle_ms": 10,
+    "status": "ENGINEERING_DELAY_NOT_HARDWARE_TIMING_QUALIFIED",
+    "default_policy_charging": "unchanged; experimental charge request remains gated by existing policy"
+  },
+  "verified": [
+    "check_usb_input_v15.sh with ASAN/UBSAN: pre-settle denial, 9ms denial, 10ms permission across tick rollover, revoke and IRQ races",
+    "check_usb_input_policy.sh: mocked integration policy regression passed"
+  ],
+  "next": [
+    "Confirm shared-rail regulator/startup behavior and comparator startup maximum",
+    "Apply shared-rail net changes together with local bypass and updated energy budget",
+    "Add factory BOR4 programming/readback and on-device verification before release"
+  ],
+  "shared_rail_schematic_pcb_applied": true,
+  "regulator_evidence": {
+    "part": "TPS7A0233PDBVR",
+    "source": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+    "voltage_nominal": 3.3,
+    "accuracy_over_temperature_percent": 1.5,
+    "caveat": "Specified regulation conditions only; dropout and load transient bounds must be handled separately"
+  }
+}

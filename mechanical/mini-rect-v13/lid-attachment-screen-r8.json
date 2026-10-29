@@ -1,0 +1,185 @@
+{
+  "status": "ATTACHMENT_CORRIDOR_SCREEN_ONLY",
+  "board_max_thickness_mm": 0.93,
+  "board_bottom_z_mm": 9.45,
+  "handoff_sha256": "d81d4754055e8ecfbdb37122ac524df9e7602294793ca5f22ac37e7770ce2020",
+  "candidates": [
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        5
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        9
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        13
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        17
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "SW1"
+      ]
+    },
+    {
+      "side": "left",
+      "center_xy_mm": [
+        1.2,
+        21
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "SW1"
+      ]
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        5
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        9
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        13
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": []
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        17
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "U8"
+      ]
+    },
+    {
+      "side": "right",
+      "center_xy_mm": [
+        21.8,
+        21
+      ],
+      "envelope_mm": [
+        1.6,
+        4,
+        1.7
+      ],
+      "z_min_mm": 11.3,
+      "required_component_gap_mm": 0.2,
+      "conflicts": [
+        "U4",
+        "U8"
+      ]
+    }
+  ],
+  "limitations": [
+    "AABB screen of current component envelopes only; not a CAD interference result",
+    "Does not include unqualified harness, fillets, battery swelling or supplier tolerance",
+    "No retention strength or printability established",
+    "Currentr8 still uses temporary tape; no released latch",
+    "Passing envelope is not an engineered latch: flex length, undercut, root radius and material strain not selected",
+    "Case wall/fillets and case-lid retention are not included in this component-only screen"
+  ],
+  "next_design": "Only use corridors above z11.3 with max0.93mm board; old z11.1 corridor results are obsolete. Existing0.9mm tall tongues are alignment features, not qualified flexible snaps. Develop retention coupons before adoption.",
+  "rejected_previous_vertical_envelope": {
+    "z_min_mm": 11.1,
+    "reason": "With0.93mm PCB maximum, 0.2mm component clearance test fails at every screened location; old4-layer result not applicable"
+  },
+  "retained_candidate_vertical_envelope": {
+    "z_min_mm": 11.3,
+    "z_max_mm": 13,
+    "reason": "Matches raised R6 alignment tongue bottom; 6 candidate regions pass rectangular component screen"
+  }
+}

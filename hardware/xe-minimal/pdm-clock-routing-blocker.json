@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_REROUTE_REQUIRED_NOT_IMPOSSIBILITY_PROOF",
+  "canonical_unconnected": 29,
+  "clock_pin": "U1.39 B (18.6025,11.205)",
+  "surface_obstacle": {
+    "net": "PDM_DATA",
+    "uuid": "c8b6ac20-475d-43b6-a0c8-93724395bddb",
+    "start_mm": [
+      18.3,
+      11.9
+    ],
+    "end_mm": [
+      19,
+      12.5
+    ]
+  },
+  "failed_simple_shift": "PDM_DATA dogleg +/-0.3..0.6mm interferes with SD_EN via and B track; see clearance review",
+  "next_action": "Jointly reroute PDM_DATA and SD_EN escape geometry reserving PDM_CLK_MCU corridor; maintain current DRC and connections. Consider R21 placement near source after escape established.",
+  "production_change": false
+}

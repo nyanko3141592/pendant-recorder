@@ -1,0 +1,152 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T04:17:46",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-boot-ground-candidate.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_MISO)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 2.4615 mm )",
+                    "pos": {
+                        "x": 13.3798,
+                        "y": 12.81
+                    },
+                    "uuid": "43390470-ef71-44ca-ac19-8d7e4f3875b6"
+                },
+                {
+                    "description": "パッド 7 [/SD_MISO] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 10.63
+                    },
+                    "uuid": "e9d02e57-4ee2-4276-ab1b-906a5ea8865c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /SD_MISO)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.1697 mm )",
+                    "pos": {
+                        "x": 13.3798,
+                        "y": 10.3485
+                    },
+                    "uuid": "318a27e5-372a-4723-acdc-f3b50f3143ab"
+                },
+                {
+                    "description": "パッド 7 [/SD_MISO] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 10.63
+                    },
+                    "uuid": "e9d02e57-4ee2-4276-ab1b-906a5ea8865c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.1697 mm )",
+                    "pos": {
+                        "x": 13.3798,
+                        "y": 10.3485
+                    },
+                    "uuid": "318a27e5-372a-4723-acdc-f3b50f3143ab"
+                },
+                {
+                    "description": "パッド 7 [/SD_MISO] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 10.63
+                    },
+                    "uuid": "e9d02e57-4ee2-4276-ab1b-906a5ea8865c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 2.4615 mm )",
+                    "pos": {
+                        "x": 13.3798,
+                        "y": 12.81
+                    },
+                    "uuid": "43390470-ef71-44ca-ac19-8d7e4f3875b6"
+                },
+                {
+                    "description": "パッド 7 [/SD_MISO] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 10.63
+                    },
+                    "uuid": "e9d02e57-4ee2-4276-ab1b-906a5ea8865c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 2.4615 mm )",
+                    "pos": {
+                        "x": 13.3798,
+                        "y": 12.81
+                    },
+                    "uuid": "43390470-ef71-44ca-ac19-8d7e4f3875b6"
+                },
+                {
+                    "description": "パッド 8 [/SD_DAT1] - J4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 11.73
+                    },
+                    "uuid": "a7bac408-44fe-446d-94da-924339f79ecf"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

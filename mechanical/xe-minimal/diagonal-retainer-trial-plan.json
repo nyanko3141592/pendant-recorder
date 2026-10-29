@@ -1,0 +1,102 @@
+{
+  "status": "MECHANICAL_TRIAL_PLAN_NOT_RUN_NOT_MANUFACTURING_RELEASE",
+  "model_sha256": {
+    "diagonal-recessed-cap-lower-trial.step": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+    "diagonal-integral-retainer-separator-trial.step": "6a46f6a9cd1d6c8dd7416ece8ba3f0160735c4ede691c44ca1e371945cf5c4ad",
+    "tab-clearance-upper-trial.step": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10"
+  },
+  "printer_assumption": "Bambu Lab A1 mini, 0.4 mm nozzle, PLA",
+  "seller_only_operations": [
+    "Remove print support, inspect and clean parts before any battery or electronics assembly.",
+    "Join, insulate and retain sensor wires; flash and test board.",
+    "Do not pass miniature cap installation or soldering to buyer."
+  ],
+  "tests": [
+    {
+      "id": "support-removal",
+      "status": "NOT_RUN",
+      "method": "Print supported separator. Remove supports with the intended production tools and inspect all ribs, retainer arm and underside. Record method, time, fractures, whitening, residual material and before/after photographs.",
+      "decision": "Any broken arm, rib, or residual material in sensor/joint clearance rejects that specimen. Removal force and repeatability not yet characterized."
+    },
+    {
+      "id": "printed-envelope",
+      "status": "NOT_RUN",
+      "method": "Measure case, separator, retainer underside and cap recess. Compare to exact source STEP dimensions. Use rigid nonconductive dummy pack before any real battery. Specifically inspect the recessed seat and integral cap: paired commanded surfaces both shift 0.04 mm above CAD and nominally touch. Record actual seating, support residue and mounting datum deviations; do not force the retainer into position.",
+      "decision": "Do not infer manufacturing capability from one fit. Record deviations and update tolerance budget; no approved dimensional acceptance bands yet."
+    },
+    {
+      "id": "seller-preassembly",
+      "status": "NOT_RUN",
+      "method": "Demonstrate complete sensor + insulated joint + connected wire installation into separator without heating or altering the printed retainer. Document tools and order.",
+      "decision": "Current bare-sensor geometric sweep alone is insufficient; a complete connected harness demonstration is required."
+    },
+    {
+      "id": "buyer-assembly",
+      "status": "NOT_RUN",
+      "method": "After original battery lead/plug geometry is verified, demonstrate plugging the unchanged retail battery and closing the case using the intended instructions.",
+      "decision": "No soldering, wire work, connector exchange, miniature cap handling or pinched leads allowed. Battery harness currently unmodeled; this test cannot yet be declared ready."
+    },
+    {
+      "id": "axial-retention",
+      "status": "NOT_RUN",
+      "method": "Develop and then test a retention mechanism with a defined load and displacement criterion, measuring load at the insulated wire rather than at the sensor body or cell.",
+      "decision": "Test load requirement and mechanism are not selected; integral cap alone does not establish axial retention."
+    },
+    {
+      "id": "thermal-and-runtime",
+      "status": "NOT_RUN",
+      "method": "After mechanical and circuit adoption, validate installed temperature response and record continuous runtime and charge protection with the actual firmware and storage.",
+      "decision": "No 16-hour runtime or charging-temperature qualification claimed by this mechanical plan."
+    }
+  ],
+  "blocking_unknowns": [
+    "Original retail battery lead routing and connector envelope",
+    "Actual insulated solder-joint dimensions and strain relief",
+    "Sensor attachment material and installed thermal response",
+    "Film thermistor electrical substitution not adopted",
+    "Manufacturing and assembly tolerance budget"
+  ],
+  "limits": [
+    "This is a review plan, not authorization to print on a connected printer or place orders.",
+    "Matching lower and supported separator have been sliced and paired locally in assembly coordinates. Cap-region nominal bead prisms touch without overlap; manufacturing tolerance and physical fit remain unqualified."
+  ],
+  "matching_lower_slice": {
+    "review": "home-case-slice-review/diagonal-recessed-cap-lower/review.json",
+    "source_sha256": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+    "3mf_sha256": "cd38e0f9828cb37067ad2524ee5c208180f570061bfca4f3d9fb2f857d1143c1",
+    "status": "SLICED_NOT_PRINTED_OR_FIT_QUALIFIED",
+    "toolpath_review": "home-case-slice-review/diagonal-recessed-cap-lower/recess-toolpath-review.json",
+    "nominal_layer_quantization": {
+      "cad_recess_floor_print_z_mm": 6.4,
+      "commanded_floor_layer_top_mm": 6.44,
+      "cad_rail_top_print_z_mm": 6.6,
+      "commanded_step_depth_mm": 0.16,
+      "floor_upward_shift_mm": 0.04,
+      "interpretation": "Paired nominal bead-prism analysis places both lower seat top and separator cap underside at assembly Z -1.28 mm. No positive-volume overlap in cap XY; contact area 1.77490175 mm2. Both shift +0.04 mm from CAD. Zero nominal gap is not a tolerance qualification; support residue, sag and mounting datum errors remain unknown."
+    },
+    "paired_mating_review": "diagonal-printed-mating-review.json"
+  },
+  "seller_preassembly_candidate": {
+    "source": "diagonal-entry-notched-separator-trial.step",
+    "review": "diagonal-notched-wired-preassembly-review.json",
+    "status": "WIRE_INSERTION_CLEAR_PCB_ATTACHMENT_UNRESOLVED",
+    "process_hypothesis": [
+      "Seller joins and insulates sensor wires outside the separator, without a battery present.",
+      "PCB ends remain loose while sensor and preformed wires enter from below the loose notched separator.",
+      "Seller then connects PCB ends; soldering tool access, fixture and final restraint still need design.",
+      "Buyer receives the assembled module and performs no wire processing."
+    ],
+    "limits": [
+      "The prior unnotched separator collides with wire 0 during insertion.",
+      "Current print and assembly reviews remain tied to the unnotched source.",
+      "Real insulation and strain-relief geometry must be included before adoption.",
+      "Hypothetical 0.3 mm tip / 1.3 mm diameter at 4 mm length: pad 1 has nominal access, pad 2 fails all 7 tested axes. This does not rule out every tool or approach.",
+      "Current vertical end-on wire termination is not qualified. Supported lap termination and strain relief should be evaluated together with PCB pad layout and solder access.",
+      "25 local pad size/offset candidates fail a trial 0.2 mm other-net bottom-copper clearance; pad relocation and routing changes are needed for this lap-pad approach. No PCB changed yet.",
+      "Diversified 26-pair study has nominal lap-solder and hypothetical tool clearance at z=-0.2 mm; this supersedes neither the earlier z=-0.1 end-on test nor real process validation. Candidate 1 has a separate unrouted PCB; no adoption."
+    ],
+    "solder_access_review": "diagonal-solder-access-review.json",
+    "lap_pad_copper_review": "film-lap-pad-candidates-review.json",
+    "lap_pad_mechanical_review": "film-lap-pad-mechanical-candidates-review.json"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "SIZE_REQUIREMENT_CONFLICT_REQUIRES_USER_DECISION",
+  "official_reference": {
+    "product": "Omi consumer wearable, current official product page",
+    "url": "https://www.omi.me/pages/product",
+    "checked_date": "2026-10-27",
+    "published_size_cm": [
+      2.5,
+      1.5
+    ],
+    "interpretation": "25mm diameter x15mm thickness inferred from round form; page gives two dimensions without explicit axis labels",
+    "cad_association": "Public consumer cover STEP approx25.5mm diameter; exact released SKU association unconfirmed"
+  },
+  "fixed_pack_max_envelope_mm": [
+    15.5,
+    27,
+    4.2
+  ],
+  "envelope_space_diagonal_mm": 31.41480542674107,
+  "reference_cylinder_max_point_distance_mm": 29.154759474226502,
+  "minimum_cylinder_diameter_at15mm_height_for_box_diagonal_mm": 27.602354971994693,
+  "geometric_limit": "A rigid full cuboid with these maximum dimensions cannot fit in25mm diameter x15mm cylinder at any orientation, because its opposite corners are farther apart than any points in cylinder. This is an envelope design bound; actual rounded pack shape and correlated tolerances are not measured. It does not prove every physical unit impossible.",
+  "current_case_study_mm": [
+    26.2,
+    29.6,
+    12.9714001
+  ],
+  "current_case_incomplete": [
+    "Lead/housing",
+    "Closure",
+    "Acoustic/button openings",
+    "Thermal interface",
+    "Production tolerances"
+  ],
+  "decision": "Do not silently treat current larger case as Omi-size compliant. Ask whether to investigate approx30x30x15mm envelope with fixed battery/runtime, or preserve Omi-size and revisit constraints. Neither option proves16h runtime.",
+  "user_question_status": "ASKED_ASYNC_PENDING; no size relaxation authorized"
+}

@@ -1,0 +1,50 @@
+{
+  "status": "EXACT_MPN_QUALIFICATION_REQUIRED",
+  "board_bom": "hardware/xe-minimal/bom.csv",
+  "parts": [
+    {
+      "Reference": "Q3",
+      "Part/value": "DMN63D8L-7",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Design note": "Diodes DMN63D8L-7 selected for engineering prototype VBUS presence detection; pin1 G pin2 S pin3 D. Temperature, detection and solder process qualification pending."
+    },
+    {
+      "Reference": "Q4",
+      "Part/value": "DMN63D8L-7",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Design note": "Diodes DMN63D8L-7 engineering prototype; pulls charger CE low only with permission and both temperature comparators released. Off-current and thermal fault behavior require bench qualification."
+    },
+    {
+      "Reference": "Q5",
+      "Part/value": "2N7002",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Design note": "Ground-referenced gate; verify exact vendor leakage/capacitance and low-current sink at3.3V"
+    },
+    {
+      "Reference": "Q6",
+      "Part/value": "2N7002",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Design note": "Ground-referenced gate; verify exact vendor leakage/capacitance and low-current sink at3.3V"
+    },
+    {
+      "Reference": "Q7",
+      "Part/value": "2N7002",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Design note": "Ground-referenced gate; verify exact vendor leakage/capacitance and low-current sink at3.3V"
+    }
+  ],
+  "next_checks": [
+    "Resolve exact manufacturer and ordering suffix for each symbolic MOSFET value.",
+    "Verify gate drive voltage versus guaranteed on resistance, leakage and pin mapping in the adopted circuit.",
+    "Use ordinary distributor availability and current price only after exact MPN qualification."
+  ],
+  "engineering_selection": {
+    "Q3": "DMN63D8L-7; xe-q3-prototype-selection.json",
+    "Q4": "DMN63D8L-7 with R43 4.7k; hardware/xe-minimal/q4-drive-candidate/review.json"
+  },
+  "unresolved_exact_mpn": [
+    "Q5",
+    "Q6",
+    "Q7"
+  ]
+}

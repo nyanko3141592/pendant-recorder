@@ -1,0 +1,374 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T18:47:50",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "ldo-shift.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 5 [/V3V3] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 12.8625
+                    },
+                    "uuid": "dd298e5e-b1d8-4caf-9a43-ac0c8de9b702"
+                },
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.2450 mm )",
+                    "pos": {
+                        "x": 1.77,
+                        "y": 11.25
+                    },
+                    "uuid": "cf62d42f-3ef2-416b-978c-035bd75f2a05"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 2.1875,
+                        "y": 15.1375
+                    },
+                    "uuid": "297d6570-60b6-4a75-9d6d-8534a8536520"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.7219 mm )",
+                    "pos": {
+                        "x": 2.0,
+                        "y": 14.7981
+                    },
+                    "uuid": "904d45bd-0e53-414f-89eb-295b7960d19c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 4.3275,
+                        "y": 15.9
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.5585 mm )",
+                    "pos": {
+                        "x": 3.8551,
+                        "y": 11.8849
+                    },
+                    "uuid": "0b90d9a0-3a64-4d31-9ad9-c236713b6868"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.6774 mm )",
+                    "pos": {
+                        "x": 3.4645,
+                        "y": 14.2224
+                    },
+                    "uuid": "098ece5d-2406-40e3-bd29-786fe2a46987"
+                },
+                {
+                    "description": "パッド 1 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 15.1375
+                    },
+                    "uuid": "df8a2cad-6856-453a-8a3c-4ca2b9c6febb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 3.1375,
+                        "y": 15.1375
+                    },
+                    "uuid": "ee22c1ac-efab-4f67-ab08-3ea0009714aa"
+                },
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.6774 mm )",
+                    "pos": {
+                        "x": 3.4645,
+                        "y": 14.2224
+                    },
+                    "uuid": "098ece5d-2406-40e3-bd29-786fe2a46987"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.1048 mm )",
+                    "pos": {
+                        "x": 4.1116,
+                        "y": 17.7792
+                    },
+                    "uuid": "db2b33f9-9344-43a5-8648-03169f85ebbd"
+                },
+                {
+                    "description": "パッド 3 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 3.1375,
+                        "y": 15.1375
+                    },
+                    "uuid": "ee22c1ac-efab-4f67-ab08-3ea0009714aa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /CHARGER_TS)",
+            "items": [
+                {
+                    "description": "パッド 5 [/V3V3] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 12.8625
+                    },
+                    "uuid": "dd298e5e-b1d8-4caf-9a43-ac0c8de9b702"
+                },
+                {
+                    "description": "ビア [/CHARGER_TS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 1.0164,
+                        "y": 13.6494
+                    },
+                    "uuid": "f9669ea1-f489-4824-b221-b751df4e65cf"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SYS と /ILIM_VSET)",
+            "items": [
+                {
+                    "description": "パッド 1 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 15.1375
+                    },
+                    "uuid": "df8a2cad-6856-453a-8a3c-4ca2b9c6febb"
+                },
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 1.3209,
+                        "y": 15.1485
+                    },
+                    "uuid": "f5042578-e30b-4ece-87e4-d70ea8785a5d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 15.1375
+                    },
+                    "uuid": "df8a2cad-6856-453a-8a3c-4ca2b9c6febb"
+                },
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 1.3209,
+                        "y": 15.1485
+                    },
+                    "uuid": "f5042578-e30b-4ece-87e4-d70ea8785a5d"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0585 mm)",
+            "items": [
+                {
+                    "description": "パッド 5 [/V3V3] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 12.8625
+                    },
+                    "uuid": "dd298e5e-b1d8-4caf-9a43-ac0c8de9b702"
+                },
+                {
+                    "description": "ビア [/CHARGER_TS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 1.0164,
+                        "y": 13.6494
+                    },
+                    "uuid": "f9669ea1-f489-4824-b221-b751df4e65cf"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 1.3209,
+                        "y": 15.1485
+                    },
+                    "uuid": "f5042578-e30b-4ece-87e4-d70ea8785a5d"
+                },
+                {
+                    "description": "パッド 1 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 15.1375
+                    },
+                    "uuid": "df8a2cad-6856-453a-8a3c-4ca2b9c6febb"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/CHARGER_TS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 1.0164,
+                        "y": 13.6494
+                    },
+                    "uuid": "f9669ea1-f489-4824-b221-b751df4e65cf"
+                },
+                {
+                    "description": "パッド 5 [/V3V3] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.2375,
+                        "y": 12.8625
+                    },
+                    "uuid": "dd298e5e-b1d8-4caf-9a43-ac0c8de9b702"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.2450 mm )",
+                    "pos": {
+                        "x": 1.77,
+                        "y": 11.25
+                    },
+                    "uuid": "cf62d42f-3ef2-416b-978c-035bd75f2a05"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0246 mm )",
+                    "pos": {
+                        "x": 2.5102,
+                        "y": 15.8669
+                    },
+                    "uuid": "0b65f32b-828f-4b92-8639-d9b758db0972"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.6774 mm )",
+                    "pos": {
+                        "x": 3.4645,
+                        "y": 14.2224
+                    },
+                    "uuid": "098ece5d-2406-40e3-bd29-786fe2a46987"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.1048 mm )",
+                    "pos": {
+                        "x": 4.1116,
+                        "y": 17.7792
+                    },
+                    "uuid": "db2b33f9-9344-43a5-8648-03169f85ebbd"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

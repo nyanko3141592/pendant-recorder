@@ -1,0 +1,74 @@
+{
+  "status": "SHARED_SUPPLY_CANDIDATE_NOT_APPLIED",
+  "design_sha256": "3361fd0c0509f799f309271c29a2f70d5b8375f654cc81d4271b5c413782291f",
+  "results": {
+    "present_usb": {
+      "cold": {
+        "resistance_ohm": [
+          18432.138660642453,
+          21633.90264635771
+        ],
+        "constant_beta_temperature_C": [
+          5.585330892074637,
+          10.117603351919229
+        ]
+      },
+      "hot": {
+        "resistance_ohm": [
+          6491.205998245187,
+          8547.32901105509
+        ],
+        "constant_beta_temperature_C": [
+          28.875332476528172,
+          37.22583847372573
+        ]
+      },
+      "divider_upper_current_uA": 146.55273666901576,
+      "logic_rail_charge_16h_mAh": 2.344843786704252
+    },
+    "shared_logic_exploratory_5pct": {
+      "cold": {
+        "resistance_ohm": [
+          17935.712962391157,
+          22169.139977169445
+        ],
+        "constant_beta_temperature_C": [
+          5.019036004244128,
+          10.760785980409537
+        ]
+      },
+      "hot": {
+        "resistance_ohm": [
+          6090.43198664389,
+          8974.22950660999
+        ],
+        "constant_beta_temperature_C": [
+          27.57860142665254,
+          39.07144046268127
+        ]
+      },
+      "divider_upper_current_uA": 96.7248062015504,
+      "logic_rail_charge_16h_mAh": 1.5475968992248061
+    }
+  },
+  "proposed_net_changes": [
+    "U12.8, R37.1, R38.1, R40.1 and U12 local bypass positive to V3V3 together",
+    "Keep R12 charge-disable pullup on VBUS_LIMITED"
+  ],
+  "advantage": "With a live MCU rail, USB insertion no longer power-cycles the comparator or divider references.",
+  "required_before_adoption": [
+    "Check actual 3.3V regulator tolerance and startup/brownout waveform",
+    "Specify and enforce MCU BOR threshold above comparator minimum operating voltage plus margin",
+    "Keep CHG_ALLOW low during reset/boot and until comparator readiness delay expires",
+    "Verify removal of USB also clears permission; retained-high hotplug is handled only if logic supply remains valid",
+    "Recalculate qualified sensor R-T envelope and comparator error at actual input common mode",
+    "Add comparator and divider consumption to battery-side budget through actual regulator efficiency"
+  ],
+  "limits": [
+    "33mV offset-plus-hysteresis is a sensitivity allowance, not a guaranteed composite bound",
+    "Constant beta approximation and +/-1% NTC assumptions do not replace manufacturer R-T tolerances",
+    "3.3V +/-5% is an exploration range, not a measured or sourced rail specification",
+    "Logic-rail mAh is not battery mAh; regulator loss and voltage conversion not included",
+    "No hardware startup or cell temperature qualification claim"
+  ]
+}

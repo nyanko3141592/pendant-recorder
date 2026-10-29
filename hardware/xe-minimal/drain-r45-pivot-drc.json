@@ -1,0 +1,478 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T06:34:58",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "drain-r45-pivot-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_HIGH_BUDGET_DRAIN と /V3V3)",
+            "items": [
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                },
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.5252 mm )",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 9.765
+                    },
+                    "uuid": "7462dfba-59ba-41cf-ae49-f21926d7bd4d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_HIGH_BUDGET_DRAIN と /V3V3)",
+            "items": [
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                },
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 2.0160 mm )",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 11.0
+                    },
+                    "uuid": "d638ef6d-3a10-49e3-8dbc-e74ea604fd6e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_HIGH_BUDGET_DRAIN と /SD_EN)",
+            "items": [
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_HIGH_BUDGET_DRAIN と /V3V3)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                },
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 2.0160 mm )",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 11.0
+                    },
+                    "uuid": "d638ef6d-3a10-49e3-8dbc-e74ea604fd6e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0340 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0340 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0340 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0340 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0340 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_INHIBIT_GATE と /USB_HIGH_BUDGET_DRAIN)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( In4.Cu 上、長さ: 16.1443 mm )",
+                    "pos": {
+                        "x": 3.8,
+                        "y": 3.0
+                    },
+                    "uuid": "71173a99-b29e-4cd6-be3e-a06184e7184f"
+                },
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_INHIBIT_GATE と /USB_HIGH_BUDGET_DRAIN)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( In4.Cu 上、長さ: 13.7361 mm )",
+                    "pos": {
+                        "x": 3.8,
+                        "y": 3.0
+                    },
+                    "uuid": "133799f3-1f3a-4d12-a5c4-8eea73ca5f19"
+                },
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0287 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( F.Cu 上、長さ: 1.0000 mm )",
+                    "pos": {
+                        "x": 12.8,
+                        "y": 9.8
+                    },
+                    "uuid": "87844617-6fd2-4b55-b235-6e15d4dda5b5"
+                },
+                {
+                    "description": "パッド 1 [/USB_ILIM_SET] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.295,
+                        "y": 10.265
+                    },
+                    "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.5252 mm )",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 9.765
+                    },
+                    "uuid": "7462dfba-59ba-41cf-ae49-f21926d7bd4d"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 2.0160 mm )",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 11.0
+                    },
+                    "uuid": "d638ef6d-3a10-49e3-8dbc-e74ea604fd6e"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 1.5252 mm )",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 9.765
+                    },
+                    "uuid": "7462dfba-59ba-41cf-ae49-f21926d7bd4d"
+                },
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 2.0160 mm )",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 11.0
+                    },
+                    "uuid": "d638ef6d-3a10-49e3-8dbc-e74ea604fd6e"
+                },
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2500 mm; 現状 0.2340 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.016248,
+                        "y": 10.986248
+                    },
+                    "uuid": "996f9e06-b2d0-40d2-852c-2894fb04600e"
+                },
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 11.0
+                    },
+                    "uuid": "9d71dcd6-a6a0-4b56-b4ab-c47f6d527223"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        }
+    ]
+}

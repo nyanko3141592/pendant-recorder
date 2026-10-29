@@ -1,0 +1,22 @@
+{
+  "candidate": "battery_io_pa15.c",
+  "sha256": "7fa50e1403c9b0404507c5cc4db0bda91c7be7bec6c7bd1dc89acd2033bed32b",
+  "arm_compile": {
+    "passed": true,
+    "cpu": "cortex-m33",
+    "device": "STM32U535xx",
+    "flags": [
+      "-Wall",
+      "-Wextra",
+      "-Werror"
+    ],
+    "output": "/tmp/pendant-battery-io-pa15.o"
+  },
+  "scope": "Compile-only isolated candidate. Not linked or flashed; canonical firmware remains PB13.",
+  "pending": [
+    "Confirm exact reference-manual debug-to-GPIO switching",
+    "Combined firmware link check when adopted",
+    "SWD attach/recover across reset with button held/released",
+    "Button indication/debounce and power draw on hardware"
+  ]
+}

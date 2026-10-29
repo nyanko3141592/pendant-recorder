@@ -1,0 +1,72 @@
+{
+  "status": "LOCATOR_TRIAL_NOT_RETENTION_APPROVAL",
+  "sources_sha256": {
+    "ntcaflex-trimmed-separator-trial.step": "b565558ef93293655bdcaf166f3f6cfd9763b0da73f616d31f04d143e2be58b0",
+    "ntcaflex-diagonal-positioned-reference.step": "98c8c667fa13ff247d718b7f6ab66a1f3df63a16cc2e4718da33b4f494d89d08",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "ntcaflex-relocated-support-lower-trial.step": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df"
+  },
+  "peg_center_xy_mm": [
+    16.5,
+    -11.92820323027551
+  ],
+  "cases": [
+    {
+      "diameter_mm": 0.5,
+      "valid": true,
+      "solids": 1,
+      "anchor_overlap_mm3": 0.0981747704246811,
+      "checks": {
+        "sensor": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 0.14999999999730843
+        },
+        "battery": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 0.040000000000000036
+        },
+        "board": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 0.8466379694110907
+        },
+        "lower": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 1.8556232080110486
+        }
+      }
+    },
+    {
+      "diameter_mm": 0.6,
+      "valid": true,
+      "solids": 1,
+      "anchor_overlap_mm3": 0.14137166941154058,
+      "checks": {
+        "sensor": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 0.0999999999973082
+        },
+        "battery": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 0.040000000000000036
+        },
+        "board": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 0.8355989039132253
+        },
+        "lower": {
+          "peg_overlap_mm3": 0.0,
+          "peg_gap_mm": 1.8064929053619034
+        }
+      },
+      "output_sha256": "0c3447e3aeb5dff575a9802da8918e5b4ad5c974ca8cc07770c1fd4ae8b9d104"
+    }
+  ],
+  "limits": [
+    "Hole comes from related HH nominal model; GL hole diameter, position and tolerances not established.",
+    "Peg locates laterally only; axial pull-off and rotation are not restrained by a single uncapped circular peg.",
+    "0.5/0.6mm peg print strength and reproducibility unqualified.",
+    "Battery gap is nominal, excluding swelling and tolerance.",
+    "No thermal preload or complete sensor retention provided."
+  ]
+}

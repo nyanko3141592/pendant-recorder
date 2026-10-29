@@ -1,0 +1,63 @@
+{
+  "status": "PARTIALLY_UNROUTED_TRIAL_NOT_FOR_FABRICATION",
+  "source_sha256": "8141cc8b00ca4c676ce53ab15a0812420c48636e137fa0559d9ac4d8399db288",
+  "output_sha256": "ed88030a3944b2c85adcb04179d315aafae0d3cd010487981a663c73428cda92",
+  "reserved_rule_areas": 26,
+  "margin_beyond_USB_copper_mm": 0.5,
+  "removed_components": [
+    {
+      "net": "/SD_EN",
+      "segments": 4,
+      "length_mm": 14.635217501357346
+    },
+    {
+      "net": "/VBUS_N",
+      "segments": 3,
+      "length_mm": 11.71290185310159
+    },
+    {
+      "net": "/VBUS_GATE",
+      "segments": 10,
+      "length_mm": 26.009158500260206
+    },
+    {
+      "net": "/VBUS_CHARGER",
+      "segments": 6,
+      "length_mm": 23.50933394543399
+    },
+    {
+      "net": "/PDM_CLK",
+      "segments": 6,
+      "length_mm": 15.635054275620234
+    },
+    {
+      "net": "/PDM_DATA",
+      "segments": 2,
+      "length_mm": 8.517886904245653
+    },
+    {
+      "net": "/BAT",
+      "segments": 2,
+      "length_mm": 4.507681988477485
+    },
+    {
+      "net": "/SYS",
+      "segments": 13,
+      "length_mm": 28.5186543125706
+    },
+    {
+      "net": "/V3V3",
+      "segments": 7,
+      "length_mm": 18.284595054496478
+    }
+  ],
+  "via_count_changed": false,
+  "layers": 4,
+  "limitations": [
+    "Existing via antipads remain; track corridor does not certify full GND continuity",
+    "DSN keepout handling must be inspected before routing",
+    "Existing pours require refill after rerouting",
+    "All branch endpoints must reconnect; no local whole-net layer swaps"
+  ],
+  "release_allowed": false
+}

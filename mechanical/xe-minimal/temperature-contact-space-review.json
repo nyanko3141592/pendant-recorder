@@ -1,0 +1,104 @@
+{
+  "status": "THERMAL_CONTACT_GEOMETRY_SCREEN_NOT_DESIGN_APPROVAL",
+  "pcb_sha256": "3f7962550e31d2a3133989344962d543977c8cea504f3f3c498273edb25d8127",
+  "TH1": {
+    "ref": "TH1",
+    "value": "NCP18XH103F03RB 10k 1% B3380 candidate",
+    "footprint": "R_0603_1608Metric",
+    "position_mm": [
+      15.305,
+      1.055
+    ],
+    "rotation_deg": 180.0,
+    "side": "B",
+    "courtyard_geometry": [
+      {
+        "start_mm": [
+          16.785,
+          0.325
+        ],
+        "end_mm": [
+          13.825,
+          1.785
+        ],
+        "shape": "1"
+      }
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "position_mm": [
+          16.13,
+          1.055
+        ],
+        "size_mm": [
+          0.8,
+          0.95
+        ],
+        "net": "/BAT_TS"
+      },
+      {
+        "number": "2",
+        "position_mm": [
+          14.48,
+          1.055
+        ],
+        "size_mm": [
+          0.8,
+          0.95
+        ],
+        "net": "/GND"
+      }
+    ],
+    "models": [
+      "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "body_height_mm": null
+  },
+  "assembly_center_xy_mm": [
+    15.305,
+    -1.055
+  ],
+  "probe_size_mm": [
+    2,
+    2,
+    3
+  ],
+  "probe_z_mm": [
+    -3,
+    0
+  ],
+  "intersection_mm3": {
+    "separator": 0.0,
+    "battery": 2.3200000000000003,
+    "lower": 0.0
+  },
+  "battery_top_z_mm": -2.42,
+  "board_bottom_datum_z_mm": 0,
+  "board_to_battery_nominal_gap_mm": 2.42,
+  "nearest_battery_x_edge_distance_from_sensor_center_mm": 1.0949999999999989,
+  "nearby_bottom_components": [
+    {
+      "ref": "TH1",
+      "xy_mm": [
+        15.305,
+        1.055
+      ],
+      "side": "B",
+      "footprint": "R_0603_1608Metric"
+    }
+  ],
+  "source_sha256": {
+    "separator": "e6726df750865a5f584cabc76024d517eeefcbcaf7e528df6dd950ccba8380b3",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "lower": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b"
+  },
+  "limits": [
+    "Probe dimensions are an investigation choice, not a thermal pad specification",
+    "Actual NTC body height, solder standoff and compressed interface thickness not qualified",
+    "Intervening PLA cannot be treated as characterized thermal contact",
+    "Need source-backed interface material, contact pressure and measured thermal lag before charge qualification"
+  ],
+  "probe_edge_to_nearest_battery_x_edge_mm": 0.09499999999999886,
+  "conclusion": "No separator/lower obstruction in2x2mm probe. This is not adequate fit evidence for a2mm pad: nominal battery-side margin is only0.095mm and interface gap/body/tolerances remain unqualified."
+}

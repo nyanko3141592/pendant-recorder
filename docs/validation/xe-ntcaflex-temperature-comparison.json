@@ -1,0 +1,99 @@
+{
+  "status": "COMPARATIVE_BETA_SENSITIVITY_NOT_CHARGE_LIMITS",
+  "rows": [
+    {
+      "sensor": "103JT-025",
+      "transition": "cold_stop",
+      "temperature_range_C": [
+        5.992349320209087,
+        9.48636421150303
+      ]
+    },
+    {
+      "sensor": "103JT-025",
+      "transition": "cold_recover",
+      "temperature_range_C": [
+        6.671753633315575,
+        10.215767114280595
+      ]
+    },
+    {
+      "sensor": "103JT-025",
+      "transition": "hot_stop",
+      "temperature_range_C": [
+        30.69827872701751,
+        36.664393005569536
+      ]
+    },
+    {
+      "sensor": "103JT-025",
+      "transition": "hot_recover",
+      "temperature_range_C": [
+        29.08251869170664,
+        34.68872802274848
+      ]
+    },
+    {
+      "sensor": "NTCAFLEX05103GL",
+      "transition": "cold_stop",
+      "temperature_range_C": [
+        5.759917678074146,
+        9.713399910291571
+      ]
+    },
+    {
+      "sensor": "NTCAFLEX05103GL",
+      "transition": "cold_recover",
+      "temperature_range_C": [
+        6.438189657302416,
+        10.443976625485504
+      ]
+    },
+    {
+      "sensor": "NTCAFLEX05103GL",
+      "transition": "hot_stop",
+      "temperature_range_C": [
+        30.428351332245825,
+        36.94272857324796
+      ]
+    },
+    {
+      "sensor": "NTCAFLEX05103GL",
+      "transition": "hot_recover",
+      "temperature_range_C": [
+        28.815453163476775,
+        34.96352348133223
+      ]
+    }
+  ],
+  "source_sha256": {
+    "docs/sourcing/xe-ntcaflex-alternative-review.json": "cc85d07f23cd48ebddbd7e19a22f213efc34bf6fa47fcaad30c6e4efba9afa10",
+    "hardware/xe-minimal/film-integration-trial/reconciled-candidate-bom.csv": "96e8fc1bf2f24b533b0813c2619f3a6fcb569146a30012d64e9d2253b6fff9d7",
+    "docs/validation/check_film_temperature_direction.py": "138b45404bbbe90d82b24353e83da92d6c398e918fc1eade7027b0e5fd2a0382"
+  },
+  "model": {
+    "supply_V": 3.3,
+    "sensor_pullup_ohm": 100000,
+    "reference_top_ohm": 100000,
+    "cold_bottom_ohm": 20000,
+    "hot_bottom_ohm": 7500,
+    "divider_tolerance_fraction": 0.01,
+    "B_K": 3435,
+    "B_tolerance_fraction": 0.01,
+    "offset_assumed_V": [
+      -0.008,
+      0.008
+    ],
+    "hysteresis_assumed_V": [
+      0.003,
+      0.025
+    ]
+  },
+  "limits": [
+    "Same nominal circuit model, not fresh netlist validation or measured trip limits.",
+    "Comparator extrema at specified datasheet conditions do not bound application common-mode behavior.",
+    "Independent beta/R25 model is a screen; full manufacturer R-T tolerance and aging not included.",
+    "Thermal contact, lag, leakage, resistor temperature coefficients and rail variation excluded.",
+    "No sensor adoption or protection qualification."
+  ]
+}

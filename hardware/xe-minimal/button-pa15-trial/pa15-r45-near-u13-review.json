@@ -1,0 +1,4175 @@
+[
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0.6,
+      0
+    ],
+    "angle": 0,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0236 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0554 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bd2ef686-5205-48c2-98d9-2460b09ce45f"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0800 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 13.37,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /VBUS_GATE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 13.37,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 13.77,
+              "y": 3.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.26,
+              "y": 3.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.86,
+              "y": 3.2
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U1",
+            "pos": {
+              "x": 16.8525,
+              "y": 7.7675
+            },
+            "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.86,
+              "y": 3.2
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 13.37,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/VBUS_GATE] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 13.77,
+              "y": 3.0
+            },
+            "uuid": "fa9a78c3-9075-498f-a4af-b42a1e967176"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R13 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 13.106359,
+              "y": 3.38
+            },
+            "uuid": "93ebffec-9a1c-48be-9ffb-9dfa5c701663"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 13.37,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.706359,
+              "y": 2.82
+            },
+            "uuid": "9186bb20-1c4c-4020-b26f-c720be17dd86"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0.6,
+      0
+    ],
+    "angle": 90,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0554 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "b732aecc-dcfd-49d4-9c0a-20253f6135b8"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 2.18
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0823 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 2.18
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.26,
+              "y": 3.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.35,
+              "y": 2.69
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.35,
+              "y": 2.69
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 2.18
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.73,
+              "y": 2.843641
+            },
+            "uuid": "e4c40266-6e71-46e5-8f57-f6669fd357b3"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0.6,
+      0
+    ],
+    "angle": 180,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0236 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0750 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "eb7ecf7a-0407-45d8-9456-0f1967c2b4ad"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0388 mm)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0830 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1830 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1388 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.26,
+              "y": 3.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.84,
+              "y": 3.2
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.84,
+              "y": 3.2
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.33,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0.6,
+      0
+    ],
+    "angle": 270,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0554 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "a188538c-ba5f-4dae-8be5-b95a36bc3919"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /STATUS_LED_A \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/STATUS_LED_A] - D6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.975,
+              "y": 4.795
+            },
+            "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.26,
+              "y": 3.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.35,
+              "y": 3.71
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 D6",
+            "pos": {
+              "x": 11.49,
+              "y": 4.795
+            },
+            "uuid": "3830735a-7131-47ec-8018-817416eb2912"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.35,
+              "y": 3.71
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/STATUS_LED_A] - D6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.975,
+              "y": 4.795
+            },
+            "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.35,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      -0.6,
+      0
+    ],
+    "angle": 0,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0750 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "0eef88ff-b45d-4d7f-8656-dc43c18363f7"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.17,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.17,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /GND \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0108 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.17,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0400 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.17,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.26,
+              "y": 3.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.66,
+              "y": 3.2
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.66,
+              "y": 3.2
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.17,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      -0.6,
+      0
+    ],
+    "angle": 90,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /GND \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0380 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 2.18
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.15,
+              "y": 2.69
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 2.18
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      -0.6,
+      0
+    ],
+    "angle": 180,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /GND \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0108 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /USB_SUSPEND_PULSE)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.13,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_SUSPEND_PULSE] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 9.3175,
+              "y": 2.975
+            },
+            "uuid": "cb6a303c-4d4b-4c90-8a71-14af8b7f410f"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 10.64,
+              "y": 3.2
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.13,
+              "y": 3.2
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_SUSPEND_PULSE] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 9.3175,
+              "y": 2.975
+            },
+            "uuid": "cb6a303c-4d4b-4c90-8a71-14af8b7f410f"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 10.793641,
+              "y": 3.58
+            },
+            "uuid": "9186bb20-1c4c-4020-b26f-c720be17dd86"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 9.495,
+              "y": 3.585
+            },
+            "uuid": "a411456b-ab29-4966-92a8-0765f928942a"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      -0.6,
+      0
+    ],
+    "angle": 270,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /GND \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0380 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /GND)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/GND] - D6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.005,
+              "y": 4.795
+            },
+            "uuid": "ed755674-e59d-4650-8eb8-d48befb00d60"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 D6",
+            "pos": {
+              "x": 11.49,
+              "y": 4.795
+            },
+            "uuid": "3830735a-7131-47ec-8018-817416eb2912"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.15,
+              "y": 3.71
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.15,
+              "y": 3.71
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 4.22
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/GND] - D6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.005,
+              "y": 4.795
+            },
+            "uuid": "ed755674-e59d-4650-8eb8-d48befb00d60"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 9.495,
+              "y": 3.585
+            },
+            "uuid": "a411456b-ab29-4966-92a8-0765f928942a"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 10.77,
+              "y": 3.556359
+            },
+            "uuid": "e4c40266-6e71-46e5-8f57-f6669fd357b3"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.15,
+              "y": 3.2
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      0.6
+    ],
+    "angle": 0,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 3.8
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 3.8
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.1000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 3.8
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.26,
+              "y": 3.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.26,
+              "y": 3.8
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 U1",
+            "pos": {
+              "x": 16.8525,
+              "y": 7.7675
+            },
+            "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.26,
+              "y": 3.8
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.646924,
+              "y": 4.294999
+            },
+            "uuid": "d6ed727a-d84f-4fef-bde6-8b7a2b561719"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 3.8
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 3.8
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      0.6
+    ],
+    "angle": 90,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0750 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 3.8
+            },
+            "uuid": "175cbc79-a6f4-4574-98b1-8786103f905b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.75,
+              "y": 3.29
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.78
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      0.6
+    ],
+    "angle": 180,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.24,
+              "y": 3.8
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.393641,
+              "y": 3.42
+            },
+            "uuid": "e4c40266-6e71-46e5-8f57-f6669fd357b3"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 9.495,
+              "y": 3.585
+            },
+            "uuid": "a411456b-ab29-4966-92a8-0765f928942a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 3.8
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 3.8
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      0.6
+    ],
+    "angle": 270,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /STATUS_LED_A \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/STATUS_LED_A] - D6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.975,
+              "y": 4.795
+            },
+            "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 4.82
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 D6",
+            "pos": {
+              "x": 11.49,
+              "y": 4.795
+            },
+            "uuid": "3830735a-7131-47ec-8018-817416eb2912"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.75,
+              "y": 4.31
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 4.82
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/STATUS_LED_A] - D6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.975,
+              "y": 4.795
+            },
+            "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 12.13,
+              "y": 4.156359
+            },
+            "uuid": "9186bb20-1c4c-4020-b26f-c720be17dd86"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/STATUS_LED_A] - D6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.975,
+              "y": 4.795
+            },
+            "uuid": "6e5983e8-7243-40de-a3f5-84add7e83a76"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      -0.6
+    ],
+    "angle": 0,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0050 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u914d\u7dda [/VBUS] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.2991 mm )",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "d556a212-ba3c-42ab-af9e-bbdd9f7f01b7"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "6802dafe-b9f1-46af-996e-3a05a8fd1531"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0050 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "Tracks crossing",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "6802dafe-b9f1-46af-996e-3a05a8fd1531"
+          }
+        ],
+        "severity": "error",
+        "type": "tracks_crossing"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /VBUS)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R13",
+            "pos": {
+              "x": 13.26,
+              "y": 3.0
+            },
+            "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.26,
+              "y": 2.6
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 12.26,
+              "y": 2.6
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/VBUS] - R13 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.75,
+              "y": 3.0
+            },
+            "uuid": "81607c4d-607e-46c2-9719-2d3ded9dc784"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 12.77,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      -0.6
+    ],
+    "angle": 90,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /VBUS_LIMITED \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS_LIMITED] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.5375,
+              "y": 1.249999
+            },
+            "uuid": "33e8a797-a68a-4309-b9ba-07fc102282de"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 1.58
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Tracks crossing",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "e4396b27-496e-4559-9a8e-b0f04e09e01c"
+          }
+        ],
+        "severity": "error",
+        "type": "tracks_crossing"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "e4396b27-496e-4559-9a8e-b0f04e09e01c"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 1.58
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/VBUS_LIMITED] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.5375,
+              "y": 1.249999
+            },
+            "uuid": "33e8a797-a68a-4309-b9ba-07fc102282de"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0050 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 1.58
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.75,
+              "y": 2.09
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 1.58
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/VBUS_LIMITED] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.5375,
+              "y": 1.249999
+            },
+            "uuid": "33e8a797-a68a-4309-b9ba-07fc102282de"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 1.58
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.37,
+              "y": 2.243641
+            },
+            "uuid": "9186bb20-1c4c-4020-b26f-c720be17dd86"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      -0.6
+    ],
+    "angle": 180,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "4d7dc2cb-e23a-4e8c-b57c-e2a6f61dc256"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /GND \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0050 mm)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "Tracks crossing",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "4d7dc2cb-e23a-4e8c-b57c-e2a6f61dc256"
+          }
+        ],
+        "severity": "error",
+        "type": "tracks_crossing"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /USB_HIGH_BUDGET_DRAIN)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_LATCH_CLOCK \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.24,
+              "y": 2.6
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/GND] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.9025,
+              "y": 2.825
+            },
+            "uuid": "48fa5b48-3261-4748-bdcf-d75b4a4de2e5"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "Silkscreen clearance",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.393641,
+              "y": 2.98
+            },
+            "uuid": "9186bb20-1c4c-4020-b26f-c720be17dd86"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_overlap"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of Q6 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.015,
+              "y": 3.585
+            },
+            "uuid": "17fdece4-34ba-48dd-9e5b-3496375d1f23"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 10.73,
+              "y": 2.6
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      },
+      {
+        "description": "Silkscreen clipped by solder mask",
+        "items": [
+          {
+            "description": "\u30bb\u30b0\u30e1\u30f3\u30c8 of R45 \u3001B.Silkscreen \u4e0a",
+            "pos": {
+              "x": 11.393641,
+              "y": 2.22
+            },
+            "uuid": "e4c40266-6e71-46e5-8f57-f6669fd357b3"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          }
+        ],
+        "severity": "warning",
+        "type": "silk_over_copper"
+      }
+    ],
+    "unconnected": 24
+  },
+  {
+    "target": [
+      11.75,
+      3.2
+    ],
+    "offset": [
+      0,
+      -0.6
+    ],
+    "angle": 270,
+    "accepted": false,
+    "violations": [
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_ILIM_SET \u3068 /SD_MOSI)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/USB_ILIM_SET] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.6000 mm )",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "15feaa63-5ca5-4aeb-8739-597546c17a70"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /USB_HIGH_BUDGET_DRAIN \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.62
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\uff12\u3064\u306e\u30cd\u30c3\u30c8\u3092\u77ed\u7d61\u3059\u308b\u30a2\u30a4\u30c6\u30e0 (\u30cd\u30c3\u30c8 /SD_MOSI \u3068 /USB_ILIM_SET)",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "shorting_items"
+      },
+      {
+        "description": "\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u30cd\u30c3\u30c8\u30af\u30e9\u30b9 'Default' \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.1000 mm; \u73fe\u72b6 0.0050 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 3 [/USB_LATCH_CLOCK] - Q6 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.1925,
+              "y": 2.025
+            },
+            "uuid": "6fe38c17-9a56-46f2-ab69-2b8a51dc3987"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0000 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          },
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "\u7a74\u306e\u30af\u30ea\u30a2\u30e9\u30f3\u30b9\u9055\u53cd (\u57fa\u677f\u306e\u8a2d\u5b9a\u306e\u7a74\u306e\u5236\u7d04 \u30af\u30ea\u30a2\u30e9\u30f3\u30b9 0.2000 mm; \u73fe\u72b6 0.0750 mm)",
+        "items": [
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.62
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          },
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          }
+        ],
+        "severity": "error",
+        "type": "hole_clearance"
+      },
+      {
+        "description": "Courtyards overlap",
+        "items": [
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 Q6",
+            "pos": {
+              "x": 10.255,
+              "y": 2.025
+            },
+            "uuid": "4b50fa5c-0717-4196-8330-78671342323d"
+          },
+          {
+            "description": "\u30d5\u30c3\u30c8\u30d7\u30ea\u30f3\u30c8 R45",
+            "pos": {
+              "x": 11.75,
+              "y": 3.11
+            },
+            "uuid": "6c9403dd-07c3-45f6-9d24-2498b6cdd54d"
+          }
+        ],
+        "severity": "error",
+        "type": "courtyards_overlap"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/SD_MOSI] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.7,
+              "y": 2.7
+            },
+            "uuid": "89aa5f9d-2f26-4ad8-a776-d9f9d4654956"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4123 mm )",
+            "pos": {
+              "x": 12.1,
+              "y": 2.6
+            },
+            "uuid": "291a0d5c-25bc-4a5a-b05d-11f44c85ee53"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u914d\u7dda [/SD_MOSI] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.0809 mm )",
+            "pos": {
+              "x": 13.3,
+              "y": 0.9
+            },
+            "uuid": "ba960448-a472-4d6a-9411-b8a6b3d9728a"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 1 [/USB_ILIM_SET] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 2.6
+            },
+            "uuid": "bf9090d4-56f6-419d-8681-523d0be9d40b"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      },
+      {
+        "description": "\u7570\u306a\u308b\u30cd\u30c3\u30c8\u306e\u30a2\u30a4\u30c6\u30e0\u304c\u88cf\u9762\u30cf\u30f3\u30c0\u30de\u30b9\u30af\u306e\u958b\u53e3\u90e8\u3067\u63a5\u7d9a\u3055\u308c\u3066\u3044\u308b",
+        "items": [
+          {
+            "description": "\u30d3\u30a2 [/USB_ILIM_SET] (F.Cu - B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.2
+            },
+            "uuid": "a031a92e-eeb0-422c-81d2-c4ee229a8744"
+          },
+          {
+            "description": "\u30d1\u30c3\u30c9 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( B.Cu \u4e0a)",
+            "pos": {
+              "x": 11.75,
+              "y": 3.62
+            },
+            "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+          }
+        ],
+        "severity": "error",
+        "type": "solder_mask_bridge"
+      }
+    ],
+    "unconnected": 24
+  }
+]

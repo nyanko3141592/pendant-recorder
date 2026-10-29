@@ -1,0 +1,69 @@
+{
+  "status": "GEOMETRY_ONLY_NOT_POWER_APPROVAL",
+  "source_sha256": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+  "rows": [
+    {
+      "net": "/BAT",
+      "segment_count": 35,
+      "length_by_width_mm": {
+        "0.1": 5.5057,
+        "0.127": 31.7012
+      },
+      "all_branch_trace_resistance_ohm_at_assumed_35um": 0.150073
+    },
+    {
+      "net": "/SYS",
+      "segment_count": 19,
+      "length_by_width_mm": {
+        "0.1": 1.0459,
+        "0.127": 30.2658
+      },
+      "all_branch_trace_resistance_ohm_at_assumed_35um": 0.122538
+    },
+    {
+      "net": "/V3V3",
+      "segment_count": 92,
+      "length_by_width_mm": {
+        "0.1": 2.855,
+        "0.127": 83.9254
+      },
+      "all_branch_trace_resistance_ohm_at_assumed_35um": 0.339569
+    },
+    {
+      "net": "/VBUS",
+      "segment_count": 68,
+      "length_by_width_mm": {
+        "0.1": 5.3578,
+        "0.127": 57.9513
+      },
+      "all_branch_trace_resistance_ohm_at_assumed_35um": 0.251156
+    },
+    {
+      "net": "/VBUS_LIMITED",
+      "segment_count": 44,
+      "length_by_width_mm": {
+        "0.1": 0.2228,
+        "0.127": 73.7343
+      },
+      "all_branch_trace_resistance_ohm_at_assumed_35um": 0.287077
+    },
+    {
+      "net": "/SD_V3",
+      "segment_count": 57,
+      "length_by_width_mm": {
+        "0.1": 3.3046,
+        "0.127": 65.3391
+      },
+      "all_branch_trace_resistance_ohm_at_assumed_35um": 0.269696
+    }
+  ],
+  "assumptions": [
+    "35um uniform copper, resistivity0.01724 ohm mm2/m",
+    "Resistance sums every branch and excludes vias/pads/planes; not an operating voltage-drop prediction"
+  ],
+  "remaining": [
+    "Verify fabrication copper and power-current paths including necks and vias",
+    "USB supply startup/suspend and charger voltage constraints",
+    "Exact storage peak and average current and 16h runtime"
+  ]
+}

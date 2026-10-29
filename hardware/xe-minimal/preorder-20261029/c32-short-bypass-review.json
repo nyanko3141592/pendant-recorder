@@ -1,0 +1,62 @@
+{
+  "status": "SHORT_BYPASS_GEOMETRICALLY_CLEAN_NOT_RELEASED",
+  "sha256": "fdc805c925f1fa8f12b71aef821cefce9bb66bb401b25c1bf47db8b887f303dd",
+  "added_vias": 1,
+  "new_track_path_mm": 4.417350274847712,
+  "geometric_drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "library_warnings": 74,
+  "critical_geometry_unchanged": true,
+  "hole_over_pad": 0,
+  "return_samples": {
+    "/USB_DP": {
+      "before_mm": 1.6052,
+      "after_mm": 1.6052
+    },
+    "/USB_DM": {
+      "before_mm": 1.5843,
+      "after_mm": 1.5843
+    },
+    "/PDM_CLK": {
+      "before_mm": 2.1598,
+      "after_mm": 2.1598
+    },
+    "/PDM_CLK_MCU": {
+      "before_mm": 0.0,
+      "after_mm": 0.0
+    },
+    "/PDM_DATA": {
+      "before_mm": 2.1578,
+      "after_mm": 2.1578
+    },
+    "/SD_CLK_MCU": {
+      "before_mm": 0.0,
+      "after_mm": 0.0
+    },
+    "/SD_CLK": {
+      "before_mm": 1.4504,
+      "after_mm": 1.4504
+    },
+    "/SD_MOSI": {
+      "before_mm": 2.1361,
+      "after_mm": 2.1361
+    },
+    "/SD_MISO": {
+      "before_mm": 2.2726,
+      "after_mm": 2.2726
+    },
+    "/SD_CS_N": {
+      "before_mm": 1.4401,
+      "after_mm": 1.4401
+    }
+  },
+  "remaining": [
+    "Full GND return/loop analysis",
+    "Added parallel path and old route branch review",
+    "Exact shortest copper path includes midsegment/pad interior contacts not represented in previous graph",
+    "Power transient/thermal qualification",
+    "Manufacturing and mechanical manifests remain referenced to prior PCB hash"
+  ],
+  "release_allowed": false
+}

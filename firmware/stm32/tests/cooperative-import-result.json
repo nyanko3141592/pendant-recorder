@@ -1,0 +1,46 @@
+{
+  "status": "PASS_COOPERATIVE_ENCRYPTION_CAPTURE_INJECTION_RAM_FAT32",
+  "command": "python3 firmware/stm32/tests/check_recording_end_to_end.py /tmp/pendant-host-tools/age --fat32 --cooperative",
+  "base_samples": 327680,
+  "injected_samples_during_encryption": 1024,
+  "decoded_samples": 328704,
+  "decoded_file_sample_counts": [
+    80000,
+    80000,
+    80000,
+    80000,
+    8704
+  ],
+  "ciphertext_sizes_bytes": [
+    41220,
+    41220,
+    41220,
+    41220,
+    5380
+  ],
+  "checks": [
+    "Actual cooperative double-buffer pipeline",
+    "Single synthetic PCM block queued and pumped while saving flag active inside real encryption RNG callback",
+    "Real age encryption, RAM FatFs commit/remount and production host importer",
+    "ASan and UBSan; repeat import deduplicated",
+    "All five ordered decrypted encoded WAV files and imported PCM WAV files byte-match synchronous reference fed identical sample sequence"
+  ],
+  "limitations": [
+    "Synthetic input, no real ADC/interrupt scheduling or SD latency",
+    "No claim of36h run or16h battery life",
+    "Single injection point does not cover all preemption interleavings",
+    "Reference shares codec and importer; comparison isolates scheduling differences and does not independently establish codec fidelity."
+  ],
+  "source_sha256": {
+    "tests/check_recording_end_to_end.py": "990506f2d8094477d90859aa6169d340c2a44768fbbe12d1a4d90c4b9e988186",
+    "core/cooperative_pipeline.c": "3fb70f71c0ebf57c3987c4d870398c4fffee6747177aa9d65f8550adc1f06edb",
+    "core/recording_pipeline.c": "0ad419bc7f1f3393ebad895f48af1e8c07aeb3243b4fd27f449b559f664fda4e",
+    "core/wav_chunk.c": "8f20f25da2777464a0acb81e610f405d083a585a3eb158a4bf1ae77f1388d2f8",
+    "crypto/age_writer.c": "5cae078a794c0a4f94ec6d936fcfe16b523c528d72f3e565b7568ef9ce9e523b",
+    "crypto/recording_store.c": "968fbc75c147c40d04107a0b6f8cd49782bc642a29a6666c23623a947b4be482",
+    "crypto/fatfs_recording.c": "8a3ca767b99bbbeac90913ea222aa84610db0cbd5b939bca1c4a65a51c956eaf",
+    "board/recording_session.c": "237ac206dd2a9c92f1f3c0bfcec82e79d7f8ccd5ae18be021a3e3057a57e283f"
+  },
+  "release_allowed": false,
+  "latest_regression": "Rerun after optional storage-arrivals instrumentation; original sample counts and ciphertext sizes unchanged."
+}

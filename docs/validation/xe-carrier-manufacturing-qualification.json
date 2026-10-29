@@ -1,0 +1,89 @@
+{
+  "plan_id": "XE-CANONICAL-70MM-CARRIER-MFG1",
+  "status": "READY_FOR_EXTERNAL_AND_PHYSICAL_EXECUTION_NOT_RUN",
+  "release_allowed": false,
+  "sample_scope": "all_5_ordered_carriers_and_all_5_separated_product_boards",
+  "canonical_inputs": {
+    "product_pcb": "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb",
+    "carrier_pcb": "hardware/xe-minimal/canonical-single-carrier-v1/carrier.kicad_pcb",
+    "carrier_review": "hardware/xe-minimal/canonical-single-carrier-v1/carrier-review.json",
+    "equivalence_review": "hardware/xe-minimal/canonical-single-carrier-v1/carrier-equivalence-review.json",
+    "cam_review": "hardware/xe-minimal/canonical-single-carrier-v1/carrier-cam-review.json",
+    "case_review": "mechanical/xe-minimal/prototype-v1/case-pebble-v4-review.json"
+  },
+  "execution_order": [
+    "supplier_DFM_before_order_release",
+    "bare_carrier_incoming_measurement",
+    "post_first_reflow_inspection",
+    "post_second_reflow_inspection",
+    "fabricator_panel_removal_before_shipment",
+    "separated_board_dimensional_and_microscope_inspection",
+    "case_and_USB_fit"
+  ],
+  "supplier_DFM_acceptance": {
+    "result": "NOT_RUN",
+    "required": [
+      "Standard_PCBA_double_sided_route_accepted",
+      "70x70mm_carrier_and_three_2mm_tooling_holes_accepted",
+      "front_and_back_1mm_fiducials_with_2mm_mask_openings_accepted",
+      "2mm_nominal_route_moat_cutter_compensation_accepted",
+      "two_5mm_retention_tabs_and_JLCPCB_panel_removal_service_accepted",
+      "four_POFV_features_accepted_as_filled_planarized_copper_capped",
+      "all_68_placements_and_both_reflow_sides_accepted"
+    ]
+  },
+  "per_carrier_before_and_after_reflow": {
+    "units": ["U1", "U2", "U3", "U4", "U5"],
+    "limits": {
+      "carrier_width_mm": [69.8, 70.2],
+      "carrier_height_mm": [69.8, 70.2],
+      "tooling_hole_diameter_mm": [1.9, 2.1],
+      "maximum_70mm_span_bow_mm_after_each_reflow": [0, 0.5],
+      "retention_tab_crack_delamination_or_whitening_count": [0, 0],
+      "unit_shift_or_partial_separation_count": [0, 0]
+    },
+    "required_evidence": [
+      "calibrated_dimension_measurements",
+      "flatness_measurement_after_each_reflow",
+      "timestamped_front_and_back_photographs_after_each_reflow",
+      "carrier_and_unit_ID_traceability"
+    ],
+    "result": "NOT_RUN"
+  },
+  "depanelization": {
+    "responsibility": "JLCPCB_panel_removal_service_before_shipment_only",
+    "buyer_breakout_or_edge_finishing_allowed": false,
+    "seller_breakout_or_edge_finishing_allowed": false,
+    "required_delivery_state": "five_individually_separated_edge_inspected_product_boards",
+    "method": "routed_separation_without_flexing_the_product_board",
+    "all_5_units_required": true,
+    "result": "NOT_RUN"
+  },
+  "per_finished_board": {
+    "units": ["U1", "U2", "U3", "U4", "U5"],
+    "limits": {
+      "finished_width_mm": [27.3, 27.7],
+      "finished_height_mm": [27.3, 27.7],
+      "residual_tab_protrusion_mm": [0, 0.15],
+      "sharp_burr_count": [0, 0],
+      "edge_or_via_crack_count_at_10x": [0, 0],
+      "delamination_or_exposed_internal_copper_count_at_10x": [0, 0],
+      "case_interference_count": [0, 0],
+      "USB_C_full_insertion_failures_across_6_cables": [0, 0]
+    },
+    "required_evidence": [
+      "calibrated_finished_outline_and_tab_measurements",
+      "10x_photographs_of_all_edges_and_both_tab_sites",
+      "case_v4_installation_and_closure_without_edge_rework",
+      "six_cable_full_insertion_charge_and_data_result"
+    ],
+    "result": "NOT_RUN"
+  },
+  "release_rule": "Any missing, NOT_RUN, NOT_VERIFIED or FAIL item keeps manufacturing release false; CAD DRC and equivalence alone never pass this plan.",
+  "limitations": [
+    "The 0.5mm bow and 0.15mm residual-tab limits are prototype process limits and require supplier DFM confirmation; they are not measured results.",
+    "Passing five carriers does not establish population lifetime capability.",
+    "No order, upload, payment or supplier contact has occurred."
+  ],
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

@@ -1,0 +1,212 @@
+{
+  "status": "BENCH_INTEGRATION_NOT_RELEASED",
+  "declared_usb_budget_ma": 100,
+  "high_current_grants": false,
+  "charging_enabled": false,
+  "behavior": [
+    "Session init, mount, unmount and unconfigured state revoke input budget without clearing retained OFF",
+    "Task-context suspend callback and suspended-state fallback apply hardware OFF",
+    "Only real resume callback may clear OFF; stale suspended or detached resume is ignored",
+    "Suspend arriving during resume pulse is reapplied afterward",
+    "Driver failure is sticky and reaches ACT_REPORT_FAULT, runtime shutdown and app halt"
+  ],
+  "tests_passed": [
+    "check_usb_input_policy.sh ASan/UBSan: retained OFF, reset/configuration, stale resume, pulse interleavings, sticky failures",
+    "check_usb_session.sh ASan/UBSan: owner reset/deconfiguration/recovery plus sticky power fault propagation",
+    "check_export_runtime.sh",
+    "check_recorder_runtime.sh normal and cooperative",
+    "check_usb_descriptors.sh actual descriptor bytes",
+    "check_usb_input_v15.sh actual driver mock HAL and schematic pinmap",
+    "check_application_export.sh actual app entry mocks"
+  ],
+  "link": {
+    "elf": "/tmp/pendant-usb-overflow-link/candidate-NOT-FOR-FLASH.elf",
+    "sha256": "c73ea6268749551e34fea485d72e15030df449eb8c4bf7cded90715c9daa7343",
+    "current_source_match": false,
+    "status": "FULL_APPLICATION_LINK_PASS_NOT_FOR_FLASH",
+    "strong_symbols_verified": [
+      "tud_event_hook_cb",
+      "board_usb_input_v15_revoke_from_isr",
+      "board_usb_input_v15_revoke",
+      "usb_input_policy_poll",
+      "tud_event_queue_overflowed",
+      "tud_event_queue_overflow_cb"
+    ],
+    "high_current_grant_symbol_absent": true,
+    "sections_bytes": {
+      "text": 106032,
+      "rodata": 4582,
+      "data": 2573,
+      "bss": 194852,
+      "heap_stack": 25092,
+      "lpbam": 4192
+    },
+    "configuration": {
+      "synthetic_vid": "0x1234",
+      "synthetic_pid": "0x5678",
+      "disposable_public_recipient": true,
+      "cooperative_save": 1,
+      "wav_chunk_samples": 80000,
+      "unqualified_battery_stop_mv": 3600
+    },
+    "source_manifest": "firmware/stm32/usb/input-policy-link-source-hashes.json",
+    "tests_this_turn": [
+      "check_application_export.sh",
+      "check_export_runtime.sh",
+      "check_recorder_runtime.sh"
+    ],
+    "limitations": [
+      "Link and mocked runtime tests do not prove physical power timing, recording current or audio operation",
+      "100mA remains declared; high-current grant is not reachable in application",
+      "Never flash this fixture with synthetic IDs and disposable recipient"
+    ],
+    "note": "Previous default100mA ELF predates conditional500mA policy. New experimental500mA ELF below matches current sources."
+  },
+  "source_sha256": {
+    "firmware/stm32/usb/usb_input_policy.c": "24877661cbf2010c10817d89a3feb15f02aac2bcf72ff89d90e1d46bb1cdcaac",
+    "firmware/stm32/usb/usb_session.c": "3104196dc399ec2f7cb9a0b6aec7d6500bbfaf790bf9be01e841d9663c74ab6a",
+    "firmware/stm32/usb/usb_power_budget.h": "91363f36c7b9d80e499f4e9d9d8c041320f713ed30b574ead6d6e02833092f22",
+    "firmware/stm32/usb/usb_descriptors.c": "491f1f5833186c5ed0180ef30f24fb2366efa22216505a3c4455df5d3ca0f275",
+    "firmware/stm32/board/usb_input_v15.c": "c665150ce11475a20ee648cd4f02889e6f2ffddc2408c302178d143f803c85a4"
+  },
+  "limitations": [
+    "100mA-only policy; compile-time guard blocks raising descriptor until high-current configuration grants and IRQ-safe revocation are implemented",
+    "No physical USB enumeration/current/suspend timing or voltage qualification",
+    "HAL pulse callbacks run in task context; task latency and interrupt interleavings require measured suspend-current timing",
+    "Charge enable and thermal/voltage qualification remain incomplete"
+  ],
+  "tinyusb_evidence": "vendored device/usbd.c callbacks execute in task switch; bus reset clears mounted state; usb_session processes one event per service",
+  "irq_revoke_primitive": {
+    "status": "EVENT_HOOK_QUEUE_OVERFLOW_COVERED_HOST_TESTED",
+    "function": "board_usb_input_v15_revoke_from_isr",
+    "behavior": "After board init, reset PB6 budget then PB2 charge request with GPIO writes only; preinit no-op relies on external pulldowns",
+    "tests": [
+      "ASan/UBSan driver tests: before init, IRQ and masked context; init/delay hooks assert task-only",
+      "Existing USB policy host regression passed",
+      "Actual STM32U535 HAL/CMSIS Cortex-M33 compilation passed"
+    ],
+    "object_file": "/tmp/pendant-usb-input-irq-revoke.o",
+    "object_sha256": "bb64df48c671830c165870ef427b0a0ae24bcf1c2e6317c2021aa45733038421",
+    "limitations": [
+      "Does not pulse retained OFF latch",
+      "500mA grant races and suspend timing remain unresolved",
+      "No charge enable implemented"
+    ]
+  },
+  "event_hook": {
+    "source": "firmware/stm32/board/usb_board.c",
+    "events": [
+      "BUS_RESET",
+      "UNPLUGGED",
+      "SUSPEND"
+    ],
+    "controller": 0,
+    "ignored": [
+      "RESUME",
+      "XFER_COMPLETE",
+      "other controller"
+    ],
+    "tests": [
+      "check_usb_board.sh real board source, actual vendored dcd event enum, simulated ISR/task callback calls",
+      "check_usb_input_v15.sh",
+      "check_usb_input_policy.sh",
+      "check_usb_session.sh"
+    ],
+    "arm_object": "/tmp/pendant-usb-board-event-hook.o",
+    "arm_sha256": "e714392a6706a62901532fd084724b3ae17f54b973d069b5eb9857cdc9da1f9f",
+    "symbol_check": "tud_event_hook_cb strong T, board_usb_input_v15_revoke_from_isr unresolved U for final link",
+    "full_link_rerun": false,
+    "queue_overflow_test": {
+      "test": "firmware/stm32/tests/check_usb_event_queue.sh",
+      "coverage": "Actual queue_event and OS_NONE FIFO, fill16events then reset/unplug/suspend attempted while full; hook once per failed enqueue; ISR/task modes and normal queue checked",
+      "arm_compile": "Actual modified usbd.c Cortex-M33 compilation passed",
+      "limitation": "Does not validate electrical current/timing, recover dropped USB events, or implement high-current grant race protection"
+    }
+  },
+  "grant_epoch_driver": {
+    "status": "DRIVER_TESTED_POLICY_NOT_ENABLED",
+    "api": "Capture board_usb_input_v15_epoch BEFORE validating host grant; pass expected_epoch to configured(500,epoch)",
+    "mechanism": [
+      "Every task/ISR revoke and reinit invalidates prior epoch",
+      "Epoch increment and GPIO revocation preserve PRIMASK in short critical section",
+      "Final epoch/VBUS/suspend check plus budget GPIO write are atomic with respect to maskable interrupts",
+      "Pending revoke on PRIMASK restore drops output; return checks epoch again",
+      "Epoch saturates at UINT32_MAX and refuses further grants, never wraps"
+    ],
+    "tests": [
+      "ASan/UBSan stale epoch after IRQ",
+      "IRQ injected during charge-inhibit preparation rejects grant",
+      "Pending IRQ on critical-section exit drops budget and returns false",
+      "Existing driver/queue/board/policy regressions passed",
+      "STM32U535 actual HAL/CMSIS compile passed"
+    ],
+    "limitations": [
+      "Policy remains100mA and never calls grant",
+      "Does not prove host configuration freshness: queued old mount/reset events must be handled by policy",
+      "Return value is not a durable charging permit; later charging enable requires same invalidation protections",
+      "Physical IRQ latency and current limits not measured",
+      "Saturation logic inspected, not exercised through billions of events"
+    ],
+    "arm_object": "/tmp/pendant-usb-input-epoch.o",
+    "sha256": "9b69411d499d5fed497186fa9d91af47555516308a86fc7ee11088a34f1b6521"
+  },
+  "queue_loss_fault": {
+    "status": "INTEGRATED_HOST_TESTED_NOT_PHYSICALLY_VALIDATED",
+    "behavior": [
+      "Any failed enqueue sets sticky overflow flag before invoking nonblocking board revoke callback",
+      "Sticky flag survives queue reinitialization and USB session restart; MCU reset required",
+      "Policy poll returns false and propagates ACT_REPORT_FAULT; resume checks sticky fault before clearing OFF"
+    ],
+    "tests": [
+      "Actual FIFO full failure and sticky flag across queue reset, task/ISR contexts",
+      "Board overflow callback only acts for controller0",
+      "Policy stale resume suppressed and repeated session init cannot clear fault",
+      "Session ACT_REPORT_FAULT on queue loss, including after reinit",
+      "Export/recorder runtime regressions",
+      "Full ARM application link"
+    ],
+    "limitations": [
+      "Overflow during an already-running resume pulse still needs physical/timing review",
+      "This handles loss by fault shutdown, not queue recovery",
+      "500mA configuration freshness and charging enable remain unimplemented"
+    ]
+  },
+  "experimental_500ma_policy": {
+    "status": "IMPLEMENTED_HOST_TESTED_FULL_LINK_NOT_FOR_FLASH",
+    "default_budget_ma": 100,
+    "experimental_budget_ma": 500,
+    "charging_enabled": false,
+    "behavior": [
+      "Snapshot revoke epoch before stack observations",
+      "Grant only VBUS present, mounted, not suspended, no fault, task queue empty",
+      "SETUP_RECEIVED now revokes in event hook so queued deconfiguration invalidates old decisions",
+      "Race rejection is retried only on next poll with fresh state, not sticky hardware fault",
+      "Require successful nonzero matching SET_CONFIGURATION status ACK before granting; mounted alone is insufficient"
+    ],
+    "tests": [
+      "Policy built/tested with100and500: queued event prevents grant, valid state grants, raced epoch rejects, unmount revokes",
+      "Board real callback SETUP revocation tested",
+      "Driver/session/queue/defaultdescriptor regressions passed",
+      "Actual usbd_control_xfer_cb invoked with synthetic request state: preACK false, success true, failed result false, mismatching configuration false, zero configuration false"
+    ],
+    "elf": "/tmp/pendant-usb-500-ack-link/candidate-NOT-FOR-FLASH.elf",
+    "sha256": "dcdd4ab635240d803dde1708a6e1aa8eab071bad3504e091d97a596988137e43",
+    "strong_grant_symbols": true,
+    "sections_bytes": {
+      "text": 106328,
+      "rodata": 4582,
+      "data": 2573,
+      "bss": 194852,
+      "lpbam": 4192,
+      "heap_stack": 25092
+    },
+    "limitations": [
+      "Default100mA not changed; experimental build uses synthetic IDs/disposable recipient, never flash",
+      "Electrical current limit tolerance at5V remains unqualified",
+      "Charge enable and sustained charging policy not implemented",
+      "Physical suspend timing, IRQ latency and resume-pulse races remain qualification work",
+      "EP0 completion function tested directly; full host enumeration and interrupt event-order interleavings still need integration/bench validation"
+    ]
+  },
+  "charge_request_current_review": "charge-request-review.json"
+}

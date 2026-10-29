@@ -1,0 +1,24 @@
+{
+  "status": "PASS_MACOS_HOST_TESTS_NOT_THREE_OS_HARDWARE_QUALIFICATION",
+  "tests_run": 7,
+  "skipped": 0,
+  "exit_code": 0,
+  "source_sha256": {
+    "host/import_recordings.py": "20ec10fffbfb82852db4228743fdcb81a20a9fb273b4bdbe699659fe516a1699",
+    "host/import_lock.py": "c2e4f6722ecd2f4f4a448cba91cafbc7436d0861f9689ba5f77a430dc7cc9998",
+    "host/device_discovery.py": "1448cbe18bf6b476b51a8611c15360daedfc9aae6155c360ae08f8b3bed147b7",
+    "host/test_import_recordings.py": "f8ef0674f37457a8e33e0012ea3c45a36a5936e2555c89d76def45ae4384b3f7",
+    "host/test_import_lock.py": "40aa6a27aa4719514f6d0ed8e2c46bfa746a02597d5e9de35ed19f2280cd6fef",
+    "host/test_device_discovery.py": "db5adae4e8b42dfda7f0cffb98aac2ca2d9853359df77ed7cb0d800202a611b1"
+  },
+  "log": "test_discovery_failure_then_reconnect (test_import_recordings.HotplugTests.test_discovery_failure_then_reconnect) ... ok\ntest_scan_failure_then_reconnect (test_import_recordings.HotplugTests.test_scan_failure_then_reconnect) ... ok\ntest_change_between_initial_hash_and_copy_is_rejected (test_import_recordings.ImportMutationTests.test_change_between_initial_hash_and_copy_is_rejected) ... ok\ntest_roundtrip_retry_corruption_wrong_key (test_import_recordings.ImportTests.test_roundtrip_retry_corruption_wrong_key) ... ok\ntest_cli_mixed_case_and_incomplete_files (test_import_recordings.RecordingDiscoveryTests.test_cli_mixed_case_and_incomplete_files) ... ok\ntest_contention_and_forced_exit (test_import_lock.LockTests.test_contention_and_forced_exit) ... ok\ntest_marker_validation (test_device_discovery.DiscoveryTests.test_marker_validation) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.416s\n\nOK\n",
+  "tools": {
+    "age_sha256": "e1f58a2bb4393c3273908641d7e18248b489c1783eee0983146016e8c11cc0f8",
+    "age_keygen_sha256": "c7226c6bd25c91b41ba2745f3acae8f5e7a7bb61cb9a69a02bbfd40cf4d63413"
+  },
+  "limitations": [
+    "No real recorder USB device",
+    "Windows/Linux actual OS runs pending",
+    "Short generated audio fixture only; no25920-file encrypted host-import stress run"
+  ]
+}

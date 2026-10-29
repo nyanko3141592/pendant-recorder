@@ -1,0 +1,42 @@
+{
+  "status": "PROVISIONAL_INTEGRATION_BASE_NOT_MANUFACTURING_RELEASE",
+  "selected_candidate": "pendant-xe-film-lap-anynet-footprint-trial.kicad_pcb",
+  "selected_sha256": "8a15e07c6cba4a34b63e1a68ecd6f066f9f7a6d26d3792a4326b84ecf423718b",
+  "alternatives_retained": [
+    "pendant-xe-film-lap-guarded-footprint-trial.kicad_pcb"
+  ],
+  "rationale": [
+    "Both alternatives have zero DRC violations and zero unconnected items, without schematic parity yet.",
+    "Any-net route avoids the added In2 V3V3 double-reference loss observed in the short candidate and adds no new fast-signal ground-loss projection in the reviewed layers.",
+    "Longer routing does not change board outline, wire-pad locations or intended case envelope.",
+    "Conditional copper-only series resistance to R37 is about 0.301 ohm versus about 0.194 ohm for the short candidate; this alone does not disqualify either path.",
+    "Select a working integration base to advance schematic/BOM/mechanics; do not treat this choice as validated PI, thermistor protection or a manufacturing release."
+  ],
+  "length_clarification": {
+    "new_route_section_mm": 45.45959074912268,
+    "full_sensor_to_R37_mm": 54.69519444975281,
+    "short_candidate_full_sensor_to_R37_mm": 20.637542880138508
+  },
+  "required_before_release": [
+    "Synchronize film sensor interface and R13 package/MPN with schematic and BOM; rerun parity/ERC/DRC.",
+    "Review battery sensor R-T bounds, comparator common-mode limits and installed thermal lag.",
+    "Update board model and wire endpoints in case/assembly, qualify seller joining and strain relief.",
+    "Evaluate BAT_TS and both comparator thresholds during charging, USB transfers and memory writes; no false hot/cold release or oscillation.",
+    "Evaluate VBUS_LIMITED reference change with charger/input decoupling and grounding.",
+    "Confirm filled/capped via manufacture and actual battery harness fit."
+  ],
+  "evidence": [
+    "anynet-footprint-trial-review.json",
+    "anynet-full-projections-review.json",
+    "batts-route-comparison.json",
+    "batts-dc-path-comparison.json"
+  ],
+  "limits": [
+    "Declared resistivity scenario and nominal CAD copper geometry; not supplier worst-case process limits.",
+    "Vias treated as ideal; external wires, joints, contact and ground-return resistance excluded.",
+    "Each endpoint path is an isolated series-resistance sensitivity, not a full distributed circuit solution.",
+    "Beta sensitivity is approximate and does not bound the actual thermistor R-T curve.",
+    "No capacitance, inductive/capacitive pickup, comparator common-mode guarantees, leakage or PDN solution.",
+    "Longer path alone is not a rejection criterion; geometry/DRC alone is not acceptance."
+  ]
+}

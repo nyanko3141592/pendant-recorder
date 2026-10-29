@@ -1,0 +1,179 @@
+{
+  "status": "OFFSET_AND_SUPPLY_SENSITIVITY_NOT_THERMAL_QUALIFICATION",
+  "sensor": "103JT-025",
+  "rows": [
+    {
+      "assumed_supply_V": 2.9,
+      "boundary": "cold",
+      "assumed_total_input_error_V": 0,
+      "sensor_resistance_range_ohm": [
+        19407.920792079207,
+        20608.08080808081
+      ],
+      "approximate_temperature_range_C": [
+        6.9928735064400485,
+        9.154198698374046
+      ]
+    },
+    {
+      "assumed_supply_V": 2.9,
+      "boundary": "cold",
+      "assumed_total_input_error_V": 0.008,
+      "sensor_resistance_range_ohm": [
+        19018.528147484707,
+        21013.347013976065
+      ],
+      "approximate_temperature_range_C": [
+        6.54416099399009,
+        9.620541996276017
+      ]
+    },
+    {
+      "assumed_supply_V": 2.9,
+      "boundary": "cold",
+      "assumed_total_input_error_V": 0.0205,
+      "sensor_resistance_range_ohm": [
+        18415.203110336504,
+        21652.011337177035
+      ],
+      "approximate_temperature_range_C": [
+        5.857098230053737,
+        10.365477470614167
+      ]
+    },
+    {
+      "assumed_supply_V": 2.9,
+      "boundary": "hot",
+      "assumed_total_input_error_V": 0,
+      "sensor_resistance_range_ohm": [
+        7277.970297029703,
+        7728.030303030304
+      ],
+      "approximate_temperature_range_C": [
+        31.484218148616378,
+        33.819052340096846
+      ]
+    },
+    {
+      "assumed_supply_V": 2.9,
+      "boundary": "hot",
+      "assumed_total_input_error_V": 0.008,
+      "sensor_resistance_range_ohm": [
+        6964.165867281394,
+        8051.881344599113
+      ],
+      "approximate_temperature_range_C": [
+        30.39006452584647,
+        35.045199946103025
+      ]
+    },
+    {
+      "assumed_supply_V": 2.9,
+      "boundary": "hot",
+      "assumed_total_input_error_V": 0.0205,
+      "sensor_resistance_range_ohm": [
+        6477.539279529359,
+        8561.778839731136
+      ],
+      "approximate_temperature_range_C": [
+        28.768101205683138,
+        37.081827393669926
+      ]
+    },
+    {
+      "assumed_supply_V": 3.3,
+      "boundary": "cold",
+      "assumed_total_input_error_V": 0,
+      "sensor_resistance_range_ohm": [
+        19407.92079207921,
+        20608.08080808081
+      ],
+      "approximate_temperature_range_C": [
+        6.9928735064400485,
+        9.154198698374046
+      ]
+    },
+    {
+      "assumed_supply_V": 3.3,
+      "boundary": "cold",
+      "assumed_total_input_error_V": 0.008,
+      "sensor_resistance_range_ohm": [
+        19065.590798237576,
+        20964.080032810798
+      ],
+      "approximate_temperature_range_C": [
+        6.598169112512494,
+        9.563591773692167
+      ]
+    },
+    {
+      "assumed_supply_V": 3.3,
+      "boundary": "cold",
+      "assumed_total_input_error_V": 0.0205,
+      "sensor_resistance_range_ohm": [
+        18534.645079284906,
+        21524.5207187892
+      ],
+      "approximate_temperature_range_C": [
+        5.992349320209087,
+        10.215767114280595
+      ]
+    },
+    {
+      "assumed_supply_V": 3.3,
+      "boundary": "hot",
+      "assumed_total_input_error_V": 0,
+      "sensor_resistance_range_ohm": [
+        7277.970297029704,
+        7728.030303030305
+      ],
+      "approximate_temperature_range_C": [
+        31.484218148616378,
+        33.819052340096846
+      ]
+    },
+    {
+      "assumed_supply_V": 3.3,
+      "boundary": "hot",
+      "assumed_total_input_error_V": 0.008,
+      "sensor_resistance_range_ohm": [
+        7002.104035282915,
+        8012.523960602419
+      ],
+      "approximate_temperature_range_C": [
+        30.52025001815855,
+        34.8935287845307
+      ]
+    },
+    {
+      "assumed_supply_V": 3.3,
+      "boundary": "hot",
+      "assumed_total_input_error_V": 0.0205,
+      "sensor_resistance_range_ohm": [
+        6573.91848696383,
+        8460.038025181946
+      ],
+      "approximate_temperature_range_C": [
+        29.08251869170664,
+        36.664393005569536
+      ]
+    }
+  ],
+  "evidence": {
+    "TI_product_page": "https://www.ti.com/product/TLV7042",
+    "listed_offset_max_at25C_mV": 8
+  },
+  "assumptions": [
+    "2.9V and3.3V are sensitivity points, not qualified supply extrema.",
+    "20.5mV=8mV offset+25mV/2 hysteresis per RevJ at specified supply/common-mode conditions; application common-mode bound remains unverified.",
+    "Beta3435 with independent1% B andR25 is approximate, particularly below25C.",
+    "Divider resistors independently1%."
+  ],
+  "excluded": [
+    "Actual common-mode and supply dependence beyond datasheet test conditions",
+    "Bias/leakage and PCB contamination",
+    "Sensor R-T tolerance curve and installed thermal lag",
+    "Measured trip/recovery and cell temperature"
+  ],
+  "no_circuit_change": true
+}

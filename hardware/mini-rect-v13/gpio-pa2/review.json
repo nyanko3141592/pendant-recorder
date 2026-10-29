@@ -1,0 +1,11 @@
+{
+  "status": "EXPERIMENT_NOT_ADOPTED_NOT_ORDER_READY",
+  "change": "CHG_ALLOW from U1 PB2 pin20 to unused PA2 pin12 in isolated design and PCB only",
+  "erc_violations": 0,
+  "drc_violations": 1,
+  "unconnected": 5,
+  "routing_result": "NO_PATH with conservative 0.05mm grid and existing routing; not proof impossible",
+  "firmware": "Unchanged PB2 baseline; this candidate cannot be used with current firmware",
+  "decision": "Keep mic-ground-route as baseline; pin swap alone did not solve escape. Rework placement/escape rather than promote incomplete candidate.",
+  "board_sha256": "78ab21fdaa0f94badcc4558f66b0fca819cd1553416d87bf2a28a511d7e4df75"
+}

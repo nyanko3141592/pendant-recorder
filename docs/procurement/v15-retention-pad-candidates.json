@@ -1,0 +1,52 @@
+{
+  "status": "RETENTION_PAD_PROCUREMENT_CANDIDATES_NOT_SELECTED",
+  "observed_date": "2026-10-26",
+  "candidates": [
+    {
+      "mpn": "4701-30-20125-04",
+      "nominal_thickness_mm": 3.18,
+      "vendor": "LGS Technologies",
+      "url": "https://lgstechnologies.com/product/4701-30-20125-04-125-x-54-poron/",
+      "evidence": "Search indexed supplier content, crawled 3 days ago; direct page later timed out. Reconfirm before cost commitment.",
+      "currency": "USD",
+      "price_per_square_foot": 2.68,
+      "minimum_square_feet": 45,
+      "minimum_material_subtotal": 120.6,
+      "stock_indexed_square_feet": 83,
+      "stock_update_text": "10/22/2026 11:26AM",
+      "adhesive_included": false,
+      "adhesive_evidence_url": "https://parafix.com/product/rogers-4701-30-20125-04/",
+      "shipping_tax_import_cost": null
+    },
+    {
+      "mpn": "4701-30-20093-04",
+      "supplier_sku": "PORON-09-6X6",
+      "nominal_thickness_mm": 2.36,
+      "vendor": "Pres-Bond",
+      "url": "https://presbond.com/collections/new-arrivals/products/poron%C2%AE-4701-30?_fid=2c2952df2&_pos=5&_ss=c",
+      "evidence": "Supplier product page, crawl today; selected 6x6 inch SKU and displayed sale price.",
+      "currency": "USD",
+      "sheet_inches": [
+        6,
+        6
+      ],
+      "price_per_sheet": 17.95,
+      "displayed_regular_price": 23.33,
+      "stock": "In stock; quantity not confirmed",
+      "adhesive_included": false,
+      "shipping_to_Japan_confirmed": false,
+      "shipping_tax_import_cost": null,
+      "geometry_note": "Different from 3.18mm candidate. Prior 1.5mm gap screen yields 10.5..62.6% compression; not qualified."
+    }
+  ],
+  "five_unit_pad_consumption_mm2": 60,
+  "cost_policy": "Use complete purchased sheet/MOQ, never prorate 60mm2 consumption as procurement cost. Alternatives are not summed. Neither included in adopted five-unit total.",
+  "remaining": [
+    "Japan delivery and landed cost",
+    "Selected adhesive and thickness tolerance",
+    "Full force curve and retention at actual compression",
+    "Small cut-pad stability and manufacturing tolerance"
+  ],
+  "selected": null,
+  "release_allowed": false
+}

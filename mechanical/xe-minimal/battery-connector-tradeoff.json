@@ -1,0 +1,164 @@
+{
+  "status": "ASSEMBLY_TRADEOFF_NOT_REACH_PROOF",
+  "pcb_sha256": "31ebfc3b10417e6fc9de09c4847dfb462e195d9303b57f0c9475281781354e4f",
+  "source_screen_sha256": "a18fe54176f48027615da93ef2058d9c848d68d315f07e233541d98fd4a95a7f",
+  "selected_comparison_rows": [
+    {
+      "side": "B",
+      "pack_x_min_mm": 6.5,
+      "pack_y_range_mm": [
+        -27,
+        0
+      ],
+      "pack_z_range_mm": [
+        -5.6850001,
+        -1.4850001000000002
+      ],
+      "assumed_clearance_mm": 0.2,
+      "total_z_extent_without_case_mm": 9.8364002,
+      "limiting_solid_indices": [
+        74,
+        90,
+        106
+      ],
+      "sensor_distance_to_pack_edge_mm": 1.055,
+      "header_overlap_x_mm": 0,
+      "hypothetical_center_exit_to_header_front_distance_xy_mm": 12.119886550624143
+    },
+    {
+      "side": "B",
+      "pack_x_min_mm": 8.5,
+      "pack_y_range_mm": [
+        -27,
+        0
+      ],
+      "pack_z_range_mm": [
+        -5.6850001,
+        -1.4850001000000002
+      ],
+      "assumed_clearance_mm": 0.2,
+      "total_z_extent_without_case_mm": 9.8364002,
+      "limiting_solid_indices": [
+        74,
+        90,
+        106
+      ],
+      "sensor_distance_to_pack_edge_mm": 1.055,
+      "header_overlap_x_mm": 0,
+      "hypothetical_center_exit_to_header_front_distance_xy_mm": 13.920906938845615
+    },
+    {
+      "side": "B",
+      "pack_x_min_mm": 0.0,
+      "pack_y_range_mm": [
+        -27,
+        0
+      ],
+      "pack_z_range_mm": [
+        -6.12,
+        -1.9200000000000002
+      ],
+      "assumed_clearance_mm": 0.2,
+      "total_z_extent_without_case_mm": 10.271400100000001,
+      "limiting_solid_indices": [
+        115
+      ],
+      "sensor_distance_to_pack_edge_mm": 0.19500000000000028,
+      "header_overlap_x_mm": 5.6000000000000005,
+      "hypothetical_center_exit_to_header_front_distance_xy_mm": 7.0510034746835855
+    },
+    {
+      "side": "B",
+      "pack_x_min_mm": 0.5,
+      "pack_y_range_mm": [
+        -27,
+        0
+      ],
+      "pack_z_range_mm": [
+        -6.12,
+        -1.9200000000000002
+      ],
+      "assumed_clearance_mm": 0.2,
+      "total_z_extent_without_case_mm": 10.271400100000001,
+      "limiting_solid_indices": [
+        115
+      ],
+      "sensor_distance_to_pack_edge_mm": 0.6950000000000003,
+      "header_overlap_x_mm": 5.6000000000000005,
+      "hypothetical_center_exit_to_header_front_distance_xy_mm": 7.361497809549357
+    },
+    {
+      "side": "B",
+      "pack_x_min_mm": 1.0,
+      "pack_y_range_mm": [
+        -27,
+        0
+      ],
+      "pack_z_range_mm": [
+        -6.12,
+        -1.9200000000000002
+      ],
+      "assumed_clearance_mm": 0.2,
+      "total_z_extent_without_case_mm": 10.271400100000001,
+      "limiting_solid_indices": [
+        115
+      ],
+      "sensor_distance_to_pack_edge_mm": 1.055,
+      "header_overlap_x_mm": 5.325,
+      "hypothetical_center_exit_to_header_front_distance_xy_mm": 7.691986089430999
+    },
+    {
+      "side": "B",
+      "pack_x_min_mm": 2.0,
+      "pack_y_range_mm": [
+        -27,
+        0
+      ],
+      "pack_z_range_mm": [
+        -6.12,
+        -1.9200000000000002
+      ],
+      "assumed_clearance_mm": 0.2,
+      "total_z_extent_without_case_mm": 10.271400100000001,
+      "limiting_solid_indices": [
+        115
+      ],
+      "sensor_distance_to_pack_edge_mm": 1.055,
+      "header_overlap_x_mm": 4.325,
+      "hypothetical_center_exit_to_header_front_distance_xy_mm": 8.403371347262954
+    },
+    {
+      "side": "B",
+      "pack_x_min_mm": 4.0,
+      "pack_y_range_mm": [
+        -27,
+        0
+      ],
+      "pack_z_range_mm": [
+        -6.12,
+        -1.9200000000000002
+      ],
+      "assumed_clearance_mm": 0.2,
+      "total_z_extent_without_case_mm": 10.271400100000001,
+      "limiting_solid_indices": [
+        115
+      ],
+      "sensor_distance_to_pack_edge_mm": 1.055,
+      "header_overlap_x_mm": 2.325,
+      "hypothetical_center_exit_to_header_front_distance_xy_mm": 9.97580322580593
+    }
+  ],
+  "drawing_observation": "SD-78171-008 RevG sheet1 mating view: wires exit toward fitting-nail/open end, opposite signal solder tails. With current J2 footprint this is board +Y. Sheet3 is tape packaging, not additional mating geometry.",
+  "assumptions": [
+    "Center pack lead exit is not dimensioned by battery drawing.",
+    "Header nominal front boardY5.645 is used as proxy, not verified plug wire-exit coordinate.",
+    "No lead usable length inferred from overall15+/-3mm dimension."
+  ],
+  "conclusion": "Allow battery above the pre-mated connector as a candidate. Small thickness increase may shorten required reach; horizontal adjacency is not mandatory. Connect before seating battery.",
+  "remaining": [
+    "Confirm plug body and wire-exit pose",
+    "Calculate actual cable path including bend radius and tolerance",
+    "Design insulation/support to prevent battery load on connector",
+    "Validate thermistor contact and assembly sequence"
+  ]
+}

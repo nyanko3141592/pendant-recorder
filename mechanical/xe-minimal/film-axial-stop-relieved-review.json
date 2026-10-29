@@ -1,0 +1,107 @@
+{
+  "status": "GEOMETRY_CANDIDATE_NOT_RETENTION_QUALIFICATION",
+  "sources_sha256": {
+    "separator": "ba290fc832d18d4615adcd9545e65803344a2929de2d7ed857db0cbcc006f328",
+    "lower": "086dc7dadcee621f4ea469898181f2b0d45188b99d969465bdd4d354ad62a134",
+    "board": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "wire_review_sha256": "2ce9018076e28973d23542a01735de162f9c382a853d91b0f1a85e125b54c921",
+  "valid": {
+    "separator": true,
+    "lower": true
+  },
+  "solid_count": {
+    "separator": 1,
+    "lower": 1
+  },
+  "original_separator_board_gap_mm": 0.020000000000000018,
+  "wire_relief_radial_allowance_mm": 0.1,
+  "rail_top_z_mm": -1.42,
+  "rail_relief_top_z_mm": -1.07,
+  "stop_hole_diameter_mm": 0.5,
+  "wall_thickness_mm": 0.4,
+  "joint_to_stop_gap_mm": 0.1,
+  "checks": {
+    "lower": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.0
+    },
+    "board": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.020000000000000018
+    },
+    "upper": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.339316139387748
+    },
+    "battery": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.19999999999999973
+    },
+    "wires": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.09999998803115547
+    },
+    "sensor": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.09999999999999976
+    },
+    "joints": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.09999999999999792
+    }
+  },
+  "joint_translation_screen": [
+    {
+      "joint_translation_mm": 0,
+      "intersection_with_stop_mm3": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "joint_translation_mm": 0.05,
+      "intersection_with_stop_mm3": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "joint_translation_mm": 0.1,
+      "intersection_with_stop_mm3": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "joint_translation_mm": 0.2,
+      "intersection_with_stop_mm3": [
+        0.051571793770033014,
+        0.05157179377003223
+      ]
+    },
+    {
+      "joint_translation_mm": 0.5,
+      "intersection_with_stop_mm3": [
+        0.2062839129871193,
+        0.20628717508012914
+      ]
+    },
+    {
+      "joint_translation_mm": 1,
+      "intersection_with_stop_mm3": [
+        0.20628391298712168,
+        0.20628717508013159
+      ]
+    }
+  ],
+  "limits": [
+    "Retention screen uses provisional maximum joint boxes, not a guaranteed minimum finished joint size. Actual joint/insulation collar must be dimensioned and pull-tested before claiming retention.",
+    "Wire holes require seller threading before PCB soldering; assembly sequence not yet verified.",
+    "No force, PLA creep, fracture, print tolerance, insulation crush or thermal process qualification.",
+    "Lower rail relief and new separator must be re-sliced and assembly/tool-clearance checked.",
+    "Battery and case outside dimensions are unchanged by intended local relief, but complete envelope/assembly validation remains required."
+  ]
+}

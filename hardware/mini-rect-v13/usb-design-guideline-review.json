@@ -1,0 +1,12 @@
+{
+  "status": "REVIEW_OPEN_NO_FS_LAYOUT_WAIVER_FOUND",
+  "source": "https://www.st.com/content/st_com/en/technical-documents/an4879-introduction-to-usb-hardware-and-pcb-guidelines-using-stm32-mcus-stmicroelectronics_asset/chunk-002-topic-an4879-supported-usb-speeds.html",
+  "source_HS_context": "https://www.st.com/content/st_com/en/technical-documents/an4879-introduction-to-usb-hardware-and-pcb-guidelines-using-stm32-mcus-stmicroelectronics_asset/chunk-004-topic-an4879-otg-hs-phy-connected-through-ulpi.html",
+  "findings": [
+    "Current note distinguishes Full Speed12Mbps from High Speed480Mbps; clock accuracy/power/ESD remain relevant",
+    "45ohm +/-10% note describes a full-speed driver within a high-speed driver, not qualification of current PCB differential impedance",
+    "No examined text establishes permission to ignore current reference-plane discontinuities solely because traces are short or Full Speed",
+    "OTG_FS AHB14.2MHz statement must not be blindly applied to U535 USB_DRD_FS; MCU-specific datasheet/reference manual remains authoritative"
+  ],
+  "decision": "Keep USB routing review open. Electrical waveform/ESD/actual transfer are prototype tests; do not turn unresolved layout into a verified pass based on bitrate alone."
+}

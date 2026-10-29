@@ -1,0 +1,71 @@
+{
+  "status": "CASE_EXPANSION_TRIAL_NOT_ADOPTED",
+  "split_x_mm": 23.0,
+  "right_strip_x_scale": 1.3461538461538463,
+  "inner_wall_shift_at_x24_3_mm": 0.45,
+  "outer_wall_shift_at_x25_mm": 0.6923076923076925,
+  "case_results": {
+    "lower": {
+      "valid": true,
+      "solids": 1,
+      "size_mm": [
+        26.926923176923086,
+        29.600000200000007,
+        8.120000200000003
+      ],
+      "sha256": "dacf6cd34bf0970553910a58971a803d4c19d35b8a09fc4f3d59dc1293fd0c0f",
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.08589838486224328
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.15811388300841847
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.0
+        }
+      }
+    },
+    "upper": {
+      "valid": true,
+      "solids": 1,
+      "size_mm": [
+        26.92692327692308,
+        29.600000200000007,
+        4.8514003000000026
+      ],
+      "sha256": "5232a286f18ad9ce6e8be8a3826751b04f2e8a7c977fae6f439123e0d1596964",
+      "checks": {
+        "sensor": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 2.6008098890341738
+        },
+        "battery": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 2.863983240174425
+        },
+        "board": {
+          "overlap_mm3": 0.0,
+          "distance_mm": 0.17000000000000004
+        }
+      }
+    }
+  },
+  "halves_overlap_mm3": 0.0,
+  "sources_sha256": {
+    "ntcaflex-relocated-support-lower-trial.step": "4d241f3387d466c05e9fdecdeb09481266f140576fdb6eb37ace7314c58a53df",
+    "tab-clearance-upper-trial.step": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+    "vendor/ntcaflex/NTCAFLEX05103HH.STEP": "d5e5c08a12972dd859328ad3827204877c32e1ef302d0606142bc965f6c703fe",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc"
+  },
+  "limits": [
+    "Affine strip expansion changes corner radii and wall thickness; not final rounded-case design.",
+    "Exact GL maximum dimensions, sensor carrier, harness and print tolerances unqualified.",
+    "Original separator and fixed peg not updated; assembly not qualified.",
+    "No 16-hour runtime measurement."
+  ]
+}

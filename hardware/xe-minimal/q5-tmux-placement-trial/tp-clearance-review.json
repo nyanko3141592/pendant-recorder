@@ -1,0 +1,24 @@
+{
+  "status": "PLACEMENT_CANDIDATE_NOT_ROUTED_NOT_ADOPTED",
+  "board": "tp-clearance.kicad_pcb",
+  "sha256": "2f7f8429a8dd03ce518e289fd74729107c2f28933a747e6056d42db155466e4f",
+  "source": "side-search.kicad_pcb",
+  "TP1": {
+    "side": "B.Cu",
+    "center_mm": [
+      10.2929,
+      10.3
+    ]
+  },
+  "violations": {
+    "track_dangling": 4,
+    "via_dangling": 1
+  },
+  "unconnected_count": 10,
+  "next": [
+    "Reconnect moved TP1 BAT on B.Cu; do not treat existing F.Cu endpoint as connected.",
+    "Remove obsolete Q5 stubs and route U16/C34 nets, refill zones, rerun full DRC and schematic parity.",
+    "Verify TMUX power sequencing and manufacturer land pattern before adoption."
+  ],
+  "canonical_changed": false
+}

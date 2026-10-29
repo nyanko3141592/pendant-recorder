@@ -1,0 +1,194 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T06:24:35",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "vbusgate-latest-combined-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.295,
+                        "y": 9.245
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 0.6252 mm )",
+                    "pos": {
+                        "x": 12.3175,
+                        "y": 23.475
+                    },
+                    "uuid": "510ddb13-439a-401b-a6a1-391fed4a6f51"
+                },
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 1.2630 mm )",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "a0b6b904-b3ae-4fc4-bbc7-b2a54b15e321"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 2 [/CHG_N] - R11 ( B.Cu 上)",
+                    "pos": {
+                        "x": 6.265,
+                        "y": 23.295
+                    },
+                    "uuid": "309ee24f-5040-4dc2-8318-5b1279f76949"
+                },
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "パッド 27 [/CHG_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 6.0175
+                    },
+                    "uuid": "59f8625a-35e8-4d8f-b79a-b9608e272ce7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_GATE と /BUTTON_N)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( In3.Cu 上、長さ: 4.6861 mm )",
+                    "pos": {
+                        "x": 12.4,
+                        "y": 3.4
+                    },
+                    "uuid": "c7d1b44b-cb77-4aae-b9cc-ec233e8f410b"
+                },
+                {
+                    "description": "配線 [/BUTTON_N] ( In3.Cu 上、長さ: 0.3606 mm )",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 3.4
+                    },
+                    "uuid": "da8a0c08-25a3-4711-9c5b-e878460048e4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS_GATE と /BUTTON_N)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( In3.Cu 上、長さ: 0.8246 mm )",
+                    "pos": {
+                        "x": 13.2,
+                        "y": 3.6
+                    },
+                    "uuid": "66e19eb9-44de-42bb-aff1-dfd7a004f69b"
+                },
+                {
+                    "description": "配線 [/BUTTON_N] ( In3.Cu 上、長さ: 1.0595 mm )",
+                    "pos": {
+                        "x": 12.8,
+                        "y": 3.6
+                    },
+                    "uuid": "7155c515-950e-4bdb-855a-45399d5179b8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( In3.Cu 上、長さ: 0.8544 mm )",
+                    "pos": {
+                        "x": 11.4,
+                        "y": 3.9
+                    },
+                    "uuid": "1ec6fd73-6be3-47ee-ad8e-e29e241c40ca"
+                },
+                {
+                    "description": "配線 [/VBUS_GATE] ( In3.Cu 上、長さ: 4.6861 mm )",
+                    "pos": {
+                        "x": 12.4,
+                        "y": 3.4
+                    },
+                    "uuid": "c7d1b44b-cb77-4aae-b9cc-ec233e8f410b"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.3,
+                        "y": 24.1
+                    },
+                    "uuid": "cc2e4a38-a95f-488c-b75f-c1909de97491"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

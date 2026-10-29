@@ -1,0 +1,78 @@
+{
+  "status": "MAXIMUM_PLANAR_PACKAGE_ENVELOPE_CONTAINED_IN_EXISTING_COURTYARD",
+  "source": "docs/procurement/evidence/DMN2056U-DS38480-rev2-2.pdf page7",
+  "pcb_sha256": "61498be19440afb6830a9f17f8568268e5987578d10d6fef85bffd0cdb5ac19f",
+  "maximum_height_mm": 1.15,
+  "rows": [
+    {
+      "ref": "Q7",
+      "courtyard_layer": "F.Courtyard",
+      "outside_area_mm2": 0.0,
+      "contained": true,
+      "envelope_rectangles_local_mm": [
+        [
+          -0.7,
+          -1.5,
+          0.7,
+          1.5
+        ],
+        [
+          -1.275,
+          -1.285,
+          0,
+          -0.635
+        ],
+        [
+          -1.275,
+          0.635,
+          0,
+          1.285
+        ],
+        [
+          0,
+          -0.255,
+          1.275,
+          0.255
+        ]
+      ]
+    },
+    {
+      "ref": "Q6",
+      "courtyard_layer": "B.Courtyard",
+      "outside_area_mm2": 0.0,
+      "contained": true,
+      "envelope_rectangles_local_mm": [
+        [
+          -0.7,
+          -1.5,
+          0.7,
+          1.5
+        ],
+        [
+          -1.275,
+          -1.285,
+          0,
+          -0.635
+        ],
+        [
+          -1.275,
+          0.635,
+          0,
+          1.285
+        ],
+        [
+          0,
+          -0.255,
+          1.275,
+          0.255
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Footprint courtyard is layout clearance, not proof of solder quality or placement capability",
+    "Package placement tolerance and body-to-lead eccentricity not separately added",
+    "Height1.15mm must be used for updated whole-device case check; generic STEP not qualified",
+    "Pin function orientation and electrical temperature behavior require separate confirmation"
+  ]
+}

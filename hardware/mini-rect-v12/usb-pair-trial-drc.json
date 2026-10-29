@@ -1,0 +1,796 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:01:19",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-pair-trial.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.4369 mm )",
+                    "pos": {
+                        "x": 11.9036,
+                        "y": 16.45
+                    },
+                    "uuid": "11ce0e1b-2016-4767-8b2f-995335bc667b"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 0.7775 mm )",
+                    "pos": {
+                        "x": 12.15,
+                        "y": 16.21
+                    },
+                    "uuid": "ac039dbe-7830-4b5d-9433-e043c3047578"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /V3V3)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 0.5100 mm )",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 15.31
+                    },
+                    "uuid": "0571c5da-bb7f-4e3e-a35a-1e30fc780696"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - C4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.475,
+                        "y": 14.5
+                    },
+                    "uuid": "78adcb80-ea10-4445-8f59-c12dfaf4f55b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 0.4500 mm )",
+                    "pos": {
+                        "x": 12.15,
+                        "y": 16.9875
+                    },
+                    "uuid": "153a3d6a-d0d4-4af2-845d-4c7574d4fec1"
+                },
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.5272 mm )",
+                    "pos": {
+                        "x": 12.2125,
+                        "y": 16.7589
+                    },
+                    "uuid": "d8f3309a-569b-4741-ac2c-a9458735641a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /USB_DP)",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - C4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.475,
+                        "y": 14.5
+                    },
+                    "uuid": "78adcb80-ea10-4445-8f59-c12dfaf4f55b"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 1.0000 mm )",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 14.8
+                    },
+                    "uuid": "c0306fd8-a880-4abd-a67e-242f0e205242"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /CHG_GUARD_GATE)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 15.31
+                    },
+                    "uuid": "8b15ce11-220e-4d82-938e-3a3b9637e0d6"
+                },
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( In2.Cu 上、長さ: 6.0004 mm )",
+                    "pos": {
+                        "x": 6.7193,
+                        "y": 18.8573
+                    },
+                    "uuid": "f5d17948-b783-4b02-a87d-e4096d3528aa"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /CC1)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 1.7000 mm )",
+                    "pos": {
+                        "x": 11.7,
+                        "y": 16.9875
+                    },
+                    "uuid": "a90ee679-6b30-412d-840c-ce6eeabe79d7"
+                },
+                {
+                    "description": "ビア [/CC1] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.622,
+                        "y": 17.1231
+                    },
+                    "uuid": "e329f7dd-bfc8-42c3-bce9-daa075a092d0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 0.7775 mm )",
+                    "pos": {
+                        "x": 12.15,
+                        "y": 16.21
+                    },
+                    "uuid": "ac039dbe-7830-4b5d-9433-e043c3047578"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.775,
+                        "y": 16.45
+                    },
+                    "uuid": "ddf6e8fc-0414-4dbe-b6f0-eb2facbb6c23"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.4950 mm )",
+                    "pos": {
+                        "x": 9.9,
+                        "y": 14.55
+                    },
+                    "uuid": "4420e224-30ec-4199-b89b-5bd4a1d03a10"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 7.8,
+                        "y": 14.8
+                    },
+                    "uuid": "6275a472-d6d2-4a51-b6f0-68a4f50f6911"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.2021 mm )",
+                    "pos": {
+                        "x": 7.05,
+                        "y": 13.7
+                    },
+                    "uuid": "14dd943c-6bb7-4b82-a99a-b8ead02723e5"
+                },
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 1.1824 mm )",
+                    "pos": {
+                        "x": 8.3846,
+                        "y": 13.9529
+                    },
+                    "uuid": "7fe236de-6f52-40a0-9095-509052ad2571"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CC2 と /USB_DP)",
+            "items": [
+                {
+                    "description": "配線 [/CC2] ( In2.Cu 上、長さ: 0.6514 mm )",
+                    "pos": {
+                        "x": 11.2889,
+                        "y": 14.4506
+                    },
+                    "uuid": "7363cabd-e217-435c-aefb-6af66017f564"
+                },
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 15.31
+                    },
+                    "uuid": "e05c0215-5327-4370-9083-cf15efdba26a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0702 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.9500 mm )",
+                    "pos": {
+                        "x": 7.05,
+                        "y": 11.75
+                    },
+                    "uuid": "985e6e53-7f07-4f84-a352-d11be8719666"
+                },
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.2022,
+                        "y": 13.9529
+                    },
+                    "uuid": "c5caec8e-e09e-47cc-8522-5bfd8e2ba761"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0078 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( B.Cu 上、長さ: 0.9500 mm )",
+                    "pos": {
+                        "x": 10.75,
+                        "y": 15.9125
+                    },
+                    "uuid": "5151d074-da5c-4c3d-9cfb-623b4768b7f7"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 1.2728 mm )",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 15.31
+                    },
+                    "uuid": "8415c830-ac75-4b52-84ab-980bfa7f7d49"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0820 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 1.2728 mm )",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 15.31
+                    },
+                    "uuid": "8415c830-ac75-4b52-84ab-980bfa7f7d49"
+                },
+                {
+                    "description": "パッド 5 [/VBUS] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.775,
+                        "y": 16.45
+                    },
+                    "uuid": "ddf6e8fc-0414-4dbe-b6f0-eb2facbb6c23"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0356 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CC1] ( B.Cu 上、長さ: 0.2728 mm )",
+                    "pos": {
+                        "x": 10.4291,
+                        "y": 17.316
+                    },
+                    "uuid": "a05549c5-c17a-41a1-8ef2-69fa3d5d73c8"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 1.7000 mm )",
+                    "pos": {
+                        "x": 11.7,
+                        "y": 16.9875
+                    },
+                    "uuid": "a90ee679-6b30-412d-840c-ce6eeabe79d7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0090 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CC2] ( In2.Cu 上、長さ: 1.4716 mm )",
+                    "pos": {
+                        "x": 11.2889,
+                        "y": 15.102
+                    },
+                    "uuid": "699bf477-93ff-46dc-bfdf-2f3ce95414ad"
+                },
+                {
+                    "description": "ビア [/USB_DM] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.75,
+                        "y": 15.31
+                    },
+                    "uuid": "f1589c1f-f6c8-4da8-acad-26b843450157"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DM と /SWCLK)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 1.4142 mm )",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 13.8
+                    },
+                    "uuid": "b09eaa8b-32b6-42a2-9f55-c4c4cbe1efbe"
+                },
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.2022,
+                        "y": 13.9529
+                    },
+                    "uuid": "c5caec8e-e09e-47cc-8522-5bfd8e2ba761"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DM と /USB_DP)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 7.8,
+                        "y": 14.8
+                    },
+                    "uuid": "6275a472-d6d2-4a51-b6f0-68a4f50f6911"
+                },
+                {
+                    "description": "パッド A6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 15.31
+                    },
+                    "uuid": "faf34051-e63c-46cb-9c0b-48c4c03b1e02"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DM と /USB_DP)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.7778 mm )",
+                    "pos": {
+                        "x": 10.2,
+                        "y": 14.8
+                    },
+                    "uuid": "76a21951-23fb-41b0-83da-389f99c2240b"
+                },
+                {
+                    "description": "パッド A6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 15.31
+                    },
+                    "uuid": "faf34051-e63c-46cb-9c0b-48c4c03b1e02"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_OUT と /USB_DM)",
+            "items": [
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.25,
+                        "y": 11.8
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.6500 mm )",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 11.15
+                    },
+                    "uuid": "5d4768a7-0b3f-427e-83e4-b08ee10f62ab"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0763 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( F.Cu 上、長さ: 1.1824 mm )",
+                    "pos": {
+                        "x": 8.3846,
+                        "y": 13.9529
+                    },
+                    "uuid": "7fe236de-6f52-40a0-9095-509052ad2571"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 1.4142 mm )",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 13.8
+                    },
+                    "uuid": "b09eaa8b-32b6-42a2-9f55-c4c4cbe1efbe"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.6500 mm )",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 11.15
+                    },
+                    "uuid": "5d4768a7-0b3f-427e-83e4-b08ee10f62ab"
+                },
+                {
+                    "description": "パッド 1 [/LSE_IN] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.25,
+                        "y": 13.2
+                    },
+                    "uuid": "a97e5ed0-7322-4c4e-924b-21540370ad6c"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.6500 mm )",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 11.15
+                    },
+                    "uuid": "5d4768a7-0b3f-427e-83e4-b08ee10f62ab"
+                },
+                {
+                    "description": "パッド 2 [/LSE_OUT] - Y1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 6.25,
+                        "y": 11.8
+                    },
+                    "uuid": "29e941d4-4ec9-44bd-af95-ef0d0a058b01"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 7.8,
+                        "y": 14.8
+                    },
+                    "uuid": "6275a472-d6d2-4a51-b6f0-68a4f50f6911"
+                },
+                {
+                    "description": "パッド A4 [/VBUS] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.1,
+                        "y": 15.31
+                    },
+                    "uuid": "87db57a9-1e0d-4ce5-805e-dc44f1753482"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 7.8,
+                        "y": 14.8
+                    },
+                    "uuid": "6275a472-d6d2-4a51-b6f0-68a4f50f6911"
+                },
+                {
+                    "description": "パッド B8 [unconnected-(J1-SBU2-PadB8)] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.75,
+                        "y": 15.31
+                    },
+                    "uuid": "930c2919-c5b9-4360-aa47-6eb131bf96cd"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 7.8,
+                        "y": 14.8
+                    },
+                    "uuid": "6275a472-d6d2-4a51-b6f0-68a4f50f6911"
+                },
+                {
+                    "description": "パッド B9 [/VBUS] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.1,
+                        "y": 15.31
+                    },
+                    "uuid": "2d41a6a9-be8b-49b2-96e5-c32180119ef0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 7.8,
+                        "y": 14.8
+                    },
+                    "uuid": "6275a472-d6d2-4a51-b6f0-68a4f50f6911"
+                },
+                {
+                    "description": "パッド A5 [/CC1] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.25,
+                        "y": 15.31
+                    },
+                    "uuid": "fe621ed1-85b3-4a44-b4c5-971a5737b734"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4000 mm )",
+                    "pos": {
+                        "x": 7.8,
+                        "y": 14.8
+                    },
+                    "uuid": "6275a472-d6d2-4a51-b6f0-68a4f50f6911"
+                },
+                {
+                    "description": "パッド A6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 15.31
+                    },
+                    "uuid": "faf34051-e63c-46cb-9c0b-48c4c03b1e02"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.7778 mm )",
+                    "pos": {
+                        "x": 10.2,
+                        "y": 14.8
+                    },
+                    "uuid": "76a21951-23fb-41b0-83da-389f99c2240b"
+                },
+                {
+                    "description": "パッド A6 [/USB_DP] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 15.31
+                    },
+                    "uuid": "faf34051-e63c-46cb-9c0b-48c4c03b1e02"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 1.4142 mm )",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 13.8
+                    },
+                    "uuid": "b09eaa8b-32b6-42a2-9f55-c4c4cbe1efbe"
+                },
+                {
+                    "description": "パッド A4 [/VBUS] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.1,
+                        "y": 15.31
+                    },
+                    "uuid": "87db57a9-1e0d-4ce5-805e-dc44f1753482"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 1.4142 mm )",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 13.8
+                    },
+                    "uuid": "b09eaa8b-32b6-42a2-9f55-c4c4cbe1efbe"
+                },
+                {
+                    "description": "パッド B9 [/VBUS] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.1,
+                        "y": 15.31
+                    },
+                    "uuid": "2d41a6a9-be8b-49b2-96e5-c32180119ef0"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 0.5100 mm )",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 15.31
+                    },
+                    "uuid": "0571c5da-bb7f-4e3e-a35a-1e30fc780696"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - C4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.475,
+                        "y": 14.5
+                    },
+                    "uuid": "78adcb80-ea10-4445-8f59-c12dfaf4f55b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 1.2728 mm )",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 15.31
+                    },
+                    "uuid": "8415c830-ac75-4b52-84ab-980bfa7f7d49"
+                },
+                {
+                    "description": "パッド 4 [/USB_DM] - U2 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.7,
+                        "y": 15.9125
+                    },
+                    "uuid": "a5897d63-1768-41ee-8a7f-7fadb523bb9e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( B.Cu 上、長さ: 1.0000 mm )",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 14.8
+                    },
+                    "uuid": "c0306fd8-a880-4abd-a67e-242f0e205242"
+                },
+                {
+                    "description": "パッド 1 [/V3V3] - C4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.475,
+                        "y": 14.5
+                    },
+                    "uuid": "78adcb80-ea10-4445-8f59-c12dfaf4f55b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

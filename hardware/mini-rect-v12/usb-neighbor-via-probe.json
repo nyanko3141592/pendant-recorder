@@ -1,0 +1,214 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T19:03:47",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "usb-neighbor-via-probe.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 37 [/SWCLK] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "f048dcc7-b4c3-464d-a0a0-7a3c29384f12"
+                },
+                {
+                    "description": "パッド 4 [/SWCLK] - J3 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 2.865
+                    },
+                    "uuid": "15ce9535-4bb1-420a-a4d4-cba0c40738fb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 39 [/PDM_CLK_MCU] - U1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "02a82097-150f-4163-9ad6-7bed85560545"
+                },
+                {
+                    "description": "パッド 1 [/PDM_CLK_MCU] - R21 ( B.Cu 上)",
+                    "pos": {
+                        "x": 17.24,
+                        "y": 13.0
+                    },
+                    "uuid": "225f1c21-a62a-4819-b694-8442168e23d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /V3V3 と /SWCLK)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In3.Cu 上、長さ: 7.0205 mm )",
+                    "pos": {
+                        "x": 7.897,
+                        "y": 13.0655
+                    },
+                    "uuid": "40b05783-548f-442d-aa13-e642564a42ed"
+                },
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "6595b663-1c12-4df5-9782-766060e8f719"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0093 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.9739 mm )",
+                    "pos": {
+                        "x": 9.7632,
+                        "y": 13.6468
+                    },
+                    "uuid": "650c7c1e-ec3f-4472-895d-9a3270f2f655"
+                },
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "6595b663-1c12-4df5-9782-766060e8f719"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /LSE_IN と /SWCLK)",
+            "items": [
+                {
+                    "description": "配線 [/LSE_IN] ( In3.Cu 上、長さ: 9.5237 mm )",
+                    "pos": {
+                        "x": 6.3542,
+                        "y": 13.5202
+                    },
+                    "uuid": "2a6bc83d-f84e-40a1-a10d-dd3cfe0190a0"
+                },
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "6595b663-1c12-4df5-9782-766060e8f719"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "クリアランス違反 ( クリアランス 0.1000 mm; 現状 0.0895 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "364d6004-9425-4a19-9550-caaed6dce6ab"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.0066 mm )",
+                    "pos": {
+                        "x": 10.475,
+                        "y": 14.3586
+                    },
+                    "uuid": "8a45338a-adb7-439a-a6b3-edddb988caab"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_CLK_MCU と /V3V3)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 13.3375
+                    },
+                    "uuid": "364d6004-9425-4a19-9550-caaed6dce6ab"
+                },
+                {
+                    "description": "配線 [/V3V3] ( In3.Cu 上、長さ: 7.0205 mm )",
+                    "pos": {
+                        "x": 7.897,
+                        "y": 13.0655
+                    },
+                    "uuid": "40b05783-548f-442d-aa13-e642564a42ed"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 8.3225 mm )",
+                    "pos": {
+                        "x": 8.0244,
+                        "y": 3.7399
+                    },
+                    "uuid": "2bf13173-74bb-4e56-a1d4-3c960fac3870"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

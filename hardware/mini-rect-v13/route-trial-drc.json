@@ -1,0 +1,1947 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T01:22:45",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "route-trial.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 2.7743 mm )",
+                    "pos": {
+                        "x": 17.0743,
+                        "y": 7.33
+                    },
+                    "uuid": "2cbc44ae-ca2d-41c8-88f5-a7768d458f06"
+                },
+                {
+                    "description": "パッド A1 [/SD_V3] - U10 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.23,
+                        "y": 13.38
+                    },
+                    "uuid": "34d6c143-b602-4afd-b7a0-be272e8921df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHG_ALLOW] - R43 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.245,
+                        "y": 14.215
+                    },
+                    "uuid": "2821c9db-e500-46fe-b02c-efd866e6e67d"
+                },
+                {
+                    "description": "配線 [/CHG_ALLOW] ( B.Cu 上、長さ: 0.7183 mm )",
+                    "pos": {
+                        "x": 12.905,
+                        "y": 4.4675
+                    },
+                    "uuid": "f1c1141d-0684-4db2-af0c-59a707cce6d0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/BAT_ADC] - R34 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.945,
+                        "y": 5.495
+                    },
+                    "uuid": "e6a3862e-861a-4090-af3d-4b92e3749da0"
+                },
+                {
+                    "description": "配線 [/BAT_ADC] ( In2.Cu 上、長さ: 4.5384 mm )",
+                    "pos": {
+                        "x": 10.2985,
+                        "y": 8.6931
+                    },
+                    "uuid": "e58ee865-ee0b-4cc5-b7af-17bd23faceac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( F.Cu 上、長さ: 0.9594 mm )",
+                    "pos": {
+                        "x": 17.0168,
+                        "y": 12.6223
+                    },
+                    "uuid": "1da38a4e-317b-4829-8e4c-070014ac9096"
+                },
+                {
+                    "description": "パッド 40 [/PDM_DATA] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.405,
+                        "y": 11.3425
+                    },
+                    "uuid": "5a0b78b0-1752-4061-a1b1-2cd04306db2a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/SWCLK] ( B.Cu 上、長さ: 0.2500 mm )",
+                    "pos": {
+                        "x": 5.4519,
+                        "y": 18.5669
+                    },
+                    "uuid": "02f17676-0b3c-4be3-aaae-48c25ea3e9d4"
+                },
+                {
+                    "description": "パッド 37 [/SWCLK] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 14.905,
+                        "y": 11.3425
+                    },
+                    "uuid": "f048dcc7-b4c3-464d-a0a0-7a3c29384f12"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/CHG_INHIBIT_GATE] - Q4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.8925,
+                        "y": 15.975
+                    },
+                    "uuid": "39e1da35-765b-4190-836c-3f6d4bc685d2"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 2.3345 mm )",
+                    "pos": {
+                        "x": 0.943,
+                        "y": 10.6625
+                    },
+                    "uuid": "443197a7-b0a7-4065-b75b-ae3a9fe3d4f5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.4845 mm )",
+                    "pos": {
+                        "x": 2.945,
+                        "y": 12.495
+                    },
+                    "uuid": "12417d0f-bfba-434a-ad91-2e53716a9b1c"
+                },
+                {
+                    "description": "パッド 7 [/ILIM_VSET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 8.875
+                    },
+                    "uuid": "7a5b716b-e1ed-40a6-9670-be93e77ed407"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.4145 mm )",
+                    "pos": {
+                        "x": 2.115,
+                        "y": 16.215
+                    },
+                    "uuid": "7d00d447-786f-4c8f-8bae-9fe7eee9a446"
+                },
+                {
+                    "description": "パッド 8 [/ISET] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 9.275
+                    },
+                    "uuid": "5fe31b2d-1c4f-461a-9933-ddbfb9513004"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.0666 mm )",
+                    "pos": {
+                        "x": 0.7124,
+                        "y": 8.4284
+                    },
+                    "uuid": "158754d3-5463-4bfd-ae18-1482f5e59b6a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.2622 mm )",
+                    "pos": {
+                        "x": 20.3287,
+                        "y": 17.3021
+                    },
+                    "uuid": "190b6824-2dcb-4715-9453-eac77aeb74ad"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.5613 mm )",
+                    "pos": {
+                        "x": 0.7595,
+                        "y": 8.3813
+                    },
+                    "uuid": "2095cafa-be52-4864-8cff-cc694930656d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.5332 mm )",
+                    "pos": {
+                        "x": 17.7643,
+                        "y": 21.4412
+                    },
+                    "uuid": "615a0e98-812c-4139-9271-5f6954133867"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 2.4976 mm )",
+                    "pos": {
+                        "x": 20.3287,
+                        "y": 14.8045
+                    },
+                    "uuid": "64274dc9-e052-44f8-8a9d-cf874e3802ea"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.3851 mm )",
+                    "pos": {
+                        "x": 17.7643,
+                        "y": 20.908
+                    },
+                    "uuid": "73cccaa4-adfb-4055-bc62-3b8a8252a795"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.2274 mm )",
+                    "pos": {
+                        "x": 0.3254,
+                        "y": 8.9762
+                    },
+                    "uuid": "91671752-2069-41de-99a7-a3301ef34166"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( F.Cu 上、長さ: 0.4531 mm )",
+                    "pos": {
+                        "x": 0.3254,
+                        "y": 8.7488
+                    },
+                    "uuid": "d41305c1-24bb-4a8b-9165-861fc3605625"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.3267 mm )",
+                    "pos": {
+                        "x": 14.374,
+                        "y": 14.2641
+                    },
+                    "uuid": "2ddbc68a-532f-48ed-bb9f-3c9640e7c1fb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.2275 mm )",
+                    "pos": {
+                        "x": 14.6015,
+                        "y": 14.2641
+                    },
+                    "uuid": "fa2e6fe7-250c-4438-a775-dead354d3e77"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 8.5064,
+                        "y": 7.8661
+                    },
+                    "uuid": "72138fd1-a765-4a8e-9fdf-3855f3ce2197"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 0.5335 mm )",
+                    "pos": {
+                        "x": 7.9729,
+                        "y": 7.8661
+                    },
+                    "uuid": "e28a8c6e-d124-4ef5-9770-a1681031e846"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( In2.Cu 上、長さ: 0.8759 mm )",
+                    "pos": {
+                        "x": 4.4104,
+                        "y": 13.3894
+                    },
+                    "uuid": "00be5470-f938-4139-9648-f0775aa329fe"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( In2.Cu 上、長さ: 0.2614 mm )",
+                    "pos": {
+                        "x": 3.9238,
+                        "y": 14.1374
+                    },
+                    "uuid": "274e2f8d-31a2-4a39-b590-6edf885fe8c4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( In2.Cu 上、長さ: 0.6211 mm )",
+                    "pos": {
+                        "x": 3.4846,
+                        "y": 14.5766
+                    },
+                    "uuid": "50b843cc-5af5-4219-8f9f-99ffeed1e1e2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 0.3585 mm )",
+                    "pos": {
+                        "x": 20.6746,
+                        "y": 10.1315
+                    },
+                    "uuid": "80c02453-7375-4818-af69-350949887a82"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 0.1608 mm )",
+                    "pos": {
+                        "x": 20.6746,
+                        "y": 10.2923
+                    },
+                    "uuid": "b52673d2-12b5-45be-bf95-8de6bc4ce625"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 0.1608 mm )",
+                    "pos": {
+                        "x": 20.6746,
+                        "y": 14.9899
+                    },
+                    "uuid": "c50a9202-b74e-41d5-a2a2-17f903f8bbc5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 0.1608 mm )",
+                    "pos": {
+                        "x": 20.6746,
+                        "y": 10.7141
+                    },
+                    "uuid": "f2d4f4dd-1a1f-4a56-b1c7-a645f407cdee"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.0750 mm )",
+                    "pos": {
+                        "x": 17.2214,
+                        "y": 6.7323
+                    },
+                    "uuid": "1a94f82f-f8d1-4dbb-ac6a-71a06fc70c1b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.2386 mm )",
+                    "pos": {
+                        "x": 17.6982,
+                        "y": 6.6793
+                    },
+                    "uuid": "3353fe47-ee16-466f-bc75-42a9a6852ecd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.1609 mm )",
+                    "pos": {
+                        "x": 20.5347,
+                        "y": 20.4877
+                    },
+                    "uuid": "942fa99c-8aab-489e-99eb-373307fd634c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.2085 mm )",
+                    "pos": {
+                        "x": 16.955,
+                        "y": 6.7608
+                    },
+                    "uuid": "a4c227ad-c713-4a1c-9945-50d2bc547246"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.0304 mm )",
+                    "pos": {
+                        "x": 20.5347,
+                        "y": 20.3268
+                    },
+                    "uuid": "a71cde2b-1602-4ac1-aaf0-14a2a85a7325"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.1151 mm )",
+                    "pos": {
+                        "x": 17.9368,
+                        "y": 6.6793
+                    },
+                    "uuid": "b782678f-e7cc-4796-bdd5-c739f6d17480"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( B.Cu 上、長さ: 0.2578 mm )",
+                    "pos": {
+                        "x": 15.8503,
+                        "y": 5.655
+                    },
+                    "uuid": "c211ea60-dda2-46a1-850c-3d3becb2f95d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( B.Cu 上、長さ: 0.9341 mm )",
+                    "pos": {
+                        "x": 16.5108,
+                        "y": 4.9945
+                    },
+                    "uuid": "db5857a0-0e79-4c4d-b12f-6e3b09bfdfe2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.8260 mm )",
+                    "pos": {
+                        "x": 18.3857,
+                        "y": 18.8588
+                    },
+                    "uuid": "22d0c91a-8d1b-40c1-90d2-59064e286665"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.9313 mm )",
+                    "pos": {
+                        "x": 18.1524,
+                        "y": 15.4363
+                    },
+                    "uuid": "2abf668d-ffc2-4e17-a001-88b7b84321e2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.1570 mm )",
+                    "pos": {
+                        "x": 17.0945,
+                        "y": 20.15
+                    },
+                    "uuid": "62a1547c-3e25-488b-abec-7a377b14a017"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.0655 mm )",
+                    "pos": {
+                        "x": 19.0837,
+                        "y": 15.4363
+                    },
+                    "uuid": "f9e20066-c89e-470b-b6f3-f1323bccd257"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.9736 mm )",
+                    "pos": {
+                        "x": 1.4292,
+                        "y": 14.6204
+                    },
+                    "uuid": "01b98864-7862-436c-a362-6f3e339be3cc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.0052 mm )",
+                    "pos": {
+                        "x": 1.2345,
+                        "y": 15.594
+                    },
+                    "uuid": "05458be0-06ef-4a1c-bfb2-23708771cc85"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.0324 mm )",
+                    "pos": {
+                        "x": 2.1592,
+                        "y": 13.8904
+                    },
+                    "uuid": "0cd1d066-e53e-4353-a0c0-43be48d0af04"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6556 mm )",
+                    "pos": {
+                        "x": 2.89,
+                        "y": 15.5485
+                    },
+                    "uuid": "122aa222-3e7d-4ec8-af9d-73cc67432bbf"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.9544 mm )",
+                    "pos": {
+                        "x": 2.7455,
+                        "y": 8.6111
+                    },
+                    "uuid": "15913a45-f8c3-4a5b-aa46-94aa59187a10"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6997 mm )",
+                    "pos": {
+                        "x": 2.8589,
+                        "y": 13.8904
+                    },
+                    "uuid": "164a1908-2dff-4442-b42e-8952bb29a533"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.2677 mm )",
+                    "pos": {
+                        "x": 14.5108,
+                        "y": 4.3155
+                    },
+                    "uuid": "225ae525-2ac0-4713-8db7-ac47421e1922"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6177 mm )",
+                    "pos": {
+                        "x": 6.1055,
+                        "y": 8.7078
+                    },
+                    "uuid": "23610f64-e7b5-49be-ac80-18959d5c6a3b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 3.2204 mm )",
+                    "pos": {
+                        "x": 12.149,
+                        "y": 7.3661
+                    },
+                    "uuid": "2515d108-d028-41ce-83a4-7b932c5d7818"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.0942 mm )",
+                    "pos": {
+                        "x": 20.6746,
+                        "y": 6.9859
+                    },
+                    "uuid": "269ffbab-7c15-4544-9cd2-19f88fa17a98"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.0024 mm )",
+                    "pos": {
+                        "x": 1.2292,
+                        "y": 15.594
+                    },
+                    "uuid": "40d4ceb8-ea41-4674-8640-1fdc1d06018f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.0001 mm )",
+                    "pos": {
+                        "x": 1.2969,
+                        "y": 15.594
+                    },
+                    "uuid": "49d5e23f-9695-4f5e-8dca-fbf566e9d6b5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.0025 mm )",
+                    "pos": {
+                        "x": 1.2318,
+                        "y": 15.594
+                    },
+                    "uuid": "5eb8cf7b-270c-4773-b14d-2ebe0452b4a3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.4565 mm )",
+                    "pos": {
+                        "x": 2.89,
+                        "y": 16.005
+                    },
+                    "uuid": "9aa1d81a-0c30-4b58-b4b4-6c9292b32134"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.1608 mm )",
+                    "pos": {
+                        "x": 20.6746,
+                        "y": 7.1467
+                    },
+                    "uuid": "a7c62201-0698-4d59-8958-32650842ee00"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 8.9286,
+                        "y": 7.3661
+                    },
+                    "uuid": "a8e78163-6c15-4ea5-966f-e91260b19bfb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.0107 mm )",
+                    "pos": {
+                        "x": 1.2399,
+                        "y": 15.594
+                    },
+                    "uuid": "bdd551bb-070d-44fb-a50b-d514ea41ddcc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.8207 mm )",
+                    "pos": {
+                        "x": 14.3215,
+                        "y": 4.1262
+                    },
+                    "uuid": "c4153686-5597-49cf-8e28-addb95dd0ea9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.1925 mm )",
+                    "pos": {
+                        "x": 1.7911,
+                        "y": 8.6111
+                    },
+                    "uuid": "c6088166-9b59-4477-8e40-e57dbe35394f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.3575 mm )",
+                    "pos": {
+                        "x": 5.4878,
+                        "y": 8.7078
+                    },
+                    "uuid": "cc2ddf4e-1f03-414c-8332-cf3100776d14"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6998 mm )",
+                    "pos": {
+                        "x": 3.3536,
+                        "y": 15.0849
+                    },
+                    "uuid": "cd0d749d-6d0d-4366-b0f7-d39a690ea88a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6996 mm )",
+                    "pos": {
+                        "x": 3.3536,
+                        "y": 14.3851
+                    },
+                    "uuid": "f65c3f78-17da-4757-bd03-ab7d841adbc7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.0404 mm )",
+                    "pos": {
+                        "x": 14.1446,
+                        "y": 3.3055
+                    },
+                    "uuid": "f6849e7f-a4e2-4697-befa-a19ba7c6b6dc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.1951 mm )",
+                    "pos": {
+                        "x": 3.5445,
+                        "y": 10.165
+                    },
+                    "uuid": "1e5fa220-a476-4842-9e9a-175f6654d243"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.3898 mm )",
+                    "pos": {
+                        "x": 7.4887,
+                        "y": 13.5438
+                    },
+                    "uuid": "4e8ba5eb-c128-4f6a-8775-21f3fdbe37e8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.3437 mm )",
+                    "pos": {
+                        "x": 4.515,
+                        "y": 11.3306
+                    },
+                    "uuid": "7559edf7-7a55-4371-88fe-894003cb6715"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 2.8158 mm )",
+                    "pos": {
+                        "x": 8.436,
+                        "y": 16.237
+                    },
+                    "uuid": "94c41cdf-b3ee-4a1d-8e9b-78d17c4391fb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.2615 mm )",
+                    "pos": {
+                        "x": 8.2987,
+                        "y": 19.3143
+                    },
+                    "uuid": "94dcf738-f5e6-43be-8d3f-ca4bddaaf632"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.3725 mm )",
+                    "pos": {
+                        "x": 3.5445,
+                        "y": 10.3601
+                    },
+                    "uuid": "ad49894d-5c2d-444e-91e6-e6e1c3113b97"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.9702 mm )",
+                    "pos": {
+                        "x": 7.4887,
+                        "y": 12.5736
+                    },
+                    "uuid": "e63f8628-31f6-440e-b2da-852cae90c1d3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.0651 mm )",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 10.075
+                    },
+                    "uuid": "67215b12-c9f5-4b03-9661-b228272f1517"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.6716 mm )",
+                    "pos": {
+                        "x": 3.901,
+                        "y": 10.029
+                    },
+                    "uuid": "8b2dc225-7e34-4936-822b-1d4949775d8d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.5381 mm )",
+                    "pos": {
+                        "x": 5.1107,
+                        "y": 9.9389
+                    },
+                    "uuid": "9e650352-14ef-48ee-8b12-8a16f25ce481"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.1608 mm )",
+                    "pos": {
+                        "x": 3.685,
+                        "y": 11.3345
+                    },
+                    "uuid": "b12a2f8b-8659-4e11-80cc-8e5d6d150450"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.3741 mm )",
+                    "pos": {
+                        "x": 3.685,
+                        "y": 11.4953
+                    },
+                    "uuid": "f7c81836-455b-49bb-918f-9d5acabc8070"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0762 mm)",
+            "items": [
+                {
+                    "description": "配線 [/TS_COLD_REF] ( B.Cu 上、長さ: 0.1137 mm )",
+                    "pos": {
+                        "x": 15.4425,
+                        "y": 1.8337
+                    },
+                    "uuid": "f92e63e0-8704-415d-b1e9-9828dad934b3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( F.Cu 上、長さ: 0.0160 mm )",
+                    "pos": {
+                        "x": 8.8299,
+                        "y": 12.305
+                    },
+                    "uuid": "096e2d0e-986c-41f3-821f-9b6bbbda7970"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( F.Cu 上、長さ: 1.4744 mm )",
+                    "pos": {
+                        "x": 13.2757,
+                        "y": 11.73
+                    },
+                    "uuid": "1f6d3548-bf83-49f9-b14a-d02e9ceca36a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( F.Cu 上、長さ: 2.0972 mm )",
+                    "pos": {
+                        "x": 8.8412,
+                        "y": 12.2937
+                    },
+                    "uuid": "5a0a4709-a02d-49b3-ae40-6aaf7e7b707a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( F.Cu 上、長さ: 0.5463 mm )",
+                    "pos": {
+                        "x": 11.8013,
+                        "y": 11.73
+                    },
+                    "uuid": "6988616b-ec52-48a6-8e9c-04efdbfb418a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( F.Cu 上、長さ: 1.0243 mm )",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 11.73
+                    },
+                    "uuid": "719f317b-defc-4aa2-9ae0-8f894c224696"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( F.Cu 上、長さ: 0.0160 mm )",
+                    "pos": {
+                        "x": 7.4152,
+                        "y": 12.2937
+                    },
+                    "uuid": "76ecb6e1-c7c3-4109-b324-bf3bea45e3ad"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_DAT1] ( F.Cu 上、長さ: 0.1382 mm )",
+                    "pos": {
+                        "x": 7.277,
+                        "y": 12.2937
+                    },
+                    "uuid": "ac9dbb6a-319d-4768-b0b0-1c8762a09d67"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( B.Cu 上、長さ: 0.3161 mm )",
+                    "pos": {
+                        "x": 13.9515,
+                        "y": 13.061
+                    },
+                    "uuid": "6b295dd8-3d40-4581-ad18-92e728d8b79b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( B.Cu 上、長さ: 0.5928 mm )",
+                    "pos": {
+                        "x": 13.3587,
+                        "y": 13.061
+                    },
+                    "uuid": "b87aca29-284d-4cb5-82f0-5d32bd79e133"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( B.Cu 上、長さ: 0.5564 mm )",
+                    "pos": {
+                        "x": 7.0784,
+                        "y": 17.3259
+                    },
+                    "uuid": "0bf232e0-5d79-4813-9fd8-478b31f73e57"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( B.Cu 上、長さ: 0.0791 mm )",
+                    "pos": {
+                        "x": 6.522,
+                        "y": 17.3259
+                    },
+                    "uuid": "584eab5c-29a9-4216-8d8f-ec59daf2d494"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( B.Cu 上、長さ: 1.6731 mm )",
+                    "pos": {
+                        "x": 9.0175,
+                        "y": 17.0737
+                    },
+                    "uuid": "b33d3dd8-8420-46ec-b0a1-8f32efb318ab"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( B.Cu 上、長さ: 0.2865 mm )",
+                    "pos": {
+                        "x": 7.3444,
+                        "y": 17.0737
+                    },
+                    "uuid": "b9bb2286-2d79-4750-99bf-1784db9eae52"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( B.Cu 上、長さ: 0.5254 mm )",
+                    "pos": {
+                        "x": 6.0022,
+                        "y": 17.602
+                    },
+                    "uuid": "d9f852a4-d169-4fa7-9d61-1eafb9e1865b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.3487 mm )",
+                    "pos": {
+                        "x": 4.7853,
+                        "y": 13.5395
+                    },
+                    "uuid": "b5c8d6eb-8459-40c1-8587-866170d145e0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.7881 mm )",
+                    "pos": {
+                        "x": 5.134,
+                        "y": 13.5395
+                    },
+                    "uuid": "c8c3757e-f00f-427b-8c50-59d8da7ccc9e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.3844 mm )",
+                    "pos": {
+                        "x": 16.0674,
+                        "y": 20.6143
+                    },
+                    "uuid": "6ec53d72-08ec-4c3b-b767-bfdb966337c2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.0666 mm )",
+                    "pos": {
+                        "x": 16.1145,
+                        "y": 19.7994
+                    },
+                    "uuid": "c3c4bdae-c2ac-4415-9e8f-7962d0107098"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.6869 mm )",
+                    "pos": {
+                        "x": 16.4518,
+                        "y": 20.6143
+                    },
+                    "uuid": "c768e678-265a-4817-89db-5f5808c6c2e6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.0666 mm )",
+                    "pos": {
+                        "x": 16.1145,
+                        "y": 19.866
+                    },
+                    "uuid": "efaa4681-6288-4a6f-b5f9-7d81f2af3098"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 0.1608 mm )",
+                    "pos": {
+                        "x": 0.3254,
+                        "y": 10.0449
+                    },
+                    "uuid": "4a550769-6828-4bb0-955e-e9d3574b5c4d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 1.1082 mm )",
+                    "pos": {
+                        "x": 0.4107,
+                        "y": 9.0111
+                    },
+                    "uuid": "5a0252ec-3217-4f6d-b953-b0b85f4dc7b2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 0.1206 mm )",
+                    "pos": {
+                        "x": 0.3254,
+                        "y": 9.8841
+                    },
+                    "uuid": "67e78e96-4be1-453c-9691-e052bbe40f7c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 0.1925 mm )",
+                    "pos": {
+                        "x": 1.5189,
+                        "y": 9.0111
+                    },
+                    "uuid": "70738910-8c71-4af2-a96d-f77515c4548a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 0.5226 mm )",
+                    "pos": {
+                        "x": 19.1102,
+                        "y": 15.4363
+                    },
+                    "uuid": "ba343abf-2b61-4b27-8488-0f4283f433f4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( B.Cu 上、長さ: 1.0616 mm )",
+                    "pos": {
+                        "x": 20.1718,
+                        "y": 15.4363
+                    },
+                    "uuid": "ddb1b8d5-5caa-4ba8-bc3d-7264aab4da5e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 0.2450 mm )",
+                    "pos": {
+                        "x": 10.5642,
+                        "y": 3.1967
+                    },
+                    "uuid": "1b594c73-a585-4b27-b501-22624112ae3b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 0.2835 mm )",
+                    "pos": {
+                        "x": 10.7647,
+                        "y": 2.9962
+                    },
+                    "uuid": "1ecb6f5c-beeb-4637-b438-197c3b798e66"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 0.3216 mm )",
+                    "pos": {
+                        "x": 10.6417,
+                        "y": 2.5516
+                    },
+                    "uuid": "462aec27-472e-4488-981c-24f638bf5325"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 0.0602 mm )",
+                    "pos": {
+                        "x": 10.6417,
+                        "y": 2.8732
+                    },
+                    "uuid": "a66af07e-a407-4746-8711-1468e124168e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/LSE_IN] ( B.Cu 上、長さ: 0.6472 mm )",
+                    "pos": {
+                        "x": 7.8592,
+                        "y": 9.8661
+                    },
+                    "uuid": "9dc21c4e-edf3-4fdd-95ec-dd6ab5e24aba"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/LSE_IN] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 8.5064,
+                        "y": 9.8661
+                    },
+                    "uuid": "fe28d0c1-fe7d-41be-b83c-e2313aecb873"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 0.1001 mm )",
+                    "pos": {
+                        "x": 7.9302,
+                        "y": 7.5785
+                    },
+                    "uuid": "cdf27056-d682-4dae-ad56-bb44d1489148"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 3.8724 mm )",
+                    "pos": {
+                        "x": 20.6492,
+                        "y": 13.725
+                    },
+                    "uuid": "2c7759e3-5e41-40d6-b985-e24d7096b054"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( B.Cu 上、長さ: 0.0256 mm )",
+                    "pos": {
+                        "x": 20.6492,
+                        "y": 17.5974
+                    },
+                    "uuid": "7eaa6448-213e-4281-8f47-96f9c4c087a5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 0.1170 mm )",
+                    "pos": {
+                        "x": 15.5308,
+                        "y": 19.7634
+                    },
+                    "uuid": "9c41736c-619c-4c7b-b375-2b1666365437"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In2.Cu 上、長さ: 0.7730 mm )",
+                    "pos": {
+                        "x": 15.5308,
+                        "y": 20.5364
+                    },
+                    "uuid": "edf9dc26-dd22-4145-8ec0-e8161c077a89"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.3128 mm )",
+                    "pos": {
+                        "x": 15.5925,
+                        "y": 6.155
+                    },
+                    "uuid": "97fa3aed-983e-4398-8146-54c99d6f5de8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( B.Cu 上、長さ: 0.2701 mm )",
+                    "pos": {
+                        "x": 15.8137,
+                        "y": 5.9338
+                    },
+                    "uuid": "d3404c0e-f89f-492e-b221-7689645b0409"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.2813 mm )",
+                    "pos": {
+                        "x": 19.7971,
+                        "y": 16.6511
+                    },
+                    "uuid": "6ddd43e2-3064-4bb7-9e4d-178ee36e6031"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.0511 mm )",
+                    "pos": {
+                        "x": 6.9213,
+                        "y": 15.8461
+                    },
+                    "uuid": "74be11a5-126c-4c8d-bb1d-7c0b4e6c54e3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "トラック幅 (基板の設定の制約 最小幅 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 0.9454 mm )",
+                    "pos": {
+                        "x": 6.9213,
+                        "y": 16.7915
+                    },
+                    "uuid": "84f08fa8-33b0-421a-9244-dd4d21ccc5cc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 7.8287,
+                        "y": 1.399
+                    },
+                    "uuid": "6432081d-ba7f-4651-9823-cd39031d3247"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/CHG_ALLOW] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.9722,
+                        "y": 3.682
+                    },
+                    "uuid": "dd3f48f2-6533-4fe8-be2d-2e6c27c0a1dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.3384,
+                        "y": 11.9439
+                    },
+                    "uuid": "473cc1f4-276b-4ebd-8571-6c2a81f48323"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/SWCLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 5.7019,
+                        "y": 18.5669
+                    },
+                    "uuid": "56d7e9ba-3d00-4b25-9dd2-b72fd9f6d7db"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 2.2143,
+                        "y": 12.7412
+                    },
+                    "uuid": "dfe4fe4a-fbb7-4d1f-8502-ec9f6eba3cff"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/ISET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 2.1041,
+                        "y": 17.8195
+                    },
+                    "uuid": "9243818a-2834-471c-81b0-b498c0de6c11"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

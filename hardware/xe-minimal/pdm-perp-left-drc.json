@@ -1,0 +1,270 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T03:40:26",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pdm-perp-left.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_EN と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.7225 mm )",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "9c7bf416-c10e-4d3c-8d2f-0a8ebf74a584"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /CHG_N と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( In1.Cu 上、長さ: 6.9340 mm )",
+                    "pos": {
+                        "x": 21.0,
+                        "y": 5.8
+                    },
+                    "uuid": "984a2608-8d53-459d-98f6-9cb9b6ec1a14"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_EN と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "パッド 41 [/SD_EN] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( B.Cu 上、長さ: 0.5805 mm )",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.5
+                    },
+                    "uuid": "cb3b65c7-15cf-4d32-8e4e-ae338fb19f16"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /PDM_DATA と /BAT_ADC)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                },
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 1.0814 mm )",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 11.1
+                    },
+                    "uuid": "e234ee71-95e6-4e34-ae2e-2ffc3eed4788"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /SD_EN と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "パッド 41 [/SD_EN] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /BAT_ADC と /PDM_DATA)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 1.5097 mm )",
+                    "pos": {
+                        "x": 16.795,
+                        "y": 9.765
+                    },
+                    "uuid": "b9f07248-0626-4b3a-be82-fc3a2ed887a9"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "パッド 41 [/SD_EN] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                },
+                {
+                    "description": "パッド 41 [/SD_EN] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが裏面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [/PDM_DATA] ( B.Cu 上、長さ: 0.5805 mm )",
+                    "pos": {
+                        "x": 18.1,
+                        "y": 11.5
+                    },
+                    "uuid": "cb3b65c7-15cf-4d32-8e4e-ae338fb19f16"
+                },
+                {
+                    "description": "パッド 41 [/SD_EN] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 17.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "878bbd33-7315-411b-9462-c9c4c126d5d5"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 1.5097 mm )",
+                    "pos": {
+                        "x": 16.795,
+                        "y": 9.765
+                    },
+                    "uuid": "b9f07248-0626-4b3a-be82-fc3a2ed887a9"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 1.0814 mm )",
+                    "pos": {
+                        "x": 17.5,
+                        "y": 11.1
+                    },
+                    "uuid": "e234ee71-95e6-4e34-ae2e-2ffc3eed4788"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 11.205
+                    },
+                    "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_not_centered_on_via"
+        }
+    ]
+}

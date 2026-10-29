@@ -1,0 +1,52 @@
+{
+  "status": "PRINTED_JOINT_BUDGET_SCREEN_NOT_INSULATION_QUALIFICATION",
+  "sources": {
+    "lower": {
+      "source_sha256": "cb3e11bc0664f14e27b75f263665a91d96cfd46c8eeba3a17edcecf273a25e69",
+      "gcode_sha256": "f81883bfcc3bf608500a70f4983d9f28e0adb673d24442c6f4502706b560af8c",
+      "3mf_sha256": "38b2e50dc7e0de271ef97f143a03e23c2520d4b13faca39d7dd8d6b87689b886"
+    },
+    "separator": {
+      "source_sha256": "99b7b5e69afc88be071a53b090fe9b6eb747a0cfce406cd9126a7ad35c14d2d2",
+      "gcode_sha256": "ea992b830e62ed5c1efa73c84956b419f51f52d42c93364bdf53a0a55ab794c8",
+      "3mf_sha256": "d579cba4d19c08cf3154a5ee2ea520cf5ed338635a433848f8ae653afcfc97a5"
+    }
+  },
+  "joint_envelope_mm": [
+    1.1,
+    2.8,
+    1.1
+  ],
+  "joint_center_z_mm": -1.92,
+  "rows": [
+    {
+      "joint_center_local_x_mm": -0.9,
+      "part": "lower",
+      "collisions": [],
+      "minimum_xy_gap_over_shared_z_mm": 0.06766749583596662
+    },
+    {
+      "joint_center_local_x_mm": -0.9,
+      "part": "separator",
+      "collisions": [],
+      "minimum_xy_gap_over_shared_z_mm": 0.06335121512739378
+    },
+    {
+      "joint_center_local_x_mm": 0.9,
+      "part": "lower",
+      "collisions": [],
+      "minimum_xy_gap_over_shared_z_mm": 0.06800389821650824
+    },
+    {
+      "joint_center_local_x_mm": 0.9,
+      "part": "separator",
+      "collisions": [],
+      "minimum_xy_gap_over_shared_z_mm": 0.06288937130252807
+    }
+  ],
+  "limits": [
+    "Joint is a maximum process budget, not modeled actual tape/solder.",
+    "Rectangular bead sections and commanded widths are nominal.",
+    "Supports are excluded; removal residue, warping and joint tolerances untested."
+  ]
+}

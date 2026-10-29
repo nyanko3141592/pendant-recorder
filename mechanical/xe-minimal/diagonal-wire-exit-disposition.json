@@ -1,0 +1,30 @@
+{
+  "status": "EXIT_TANGENT_ROUTE_NOT_READY_FOR_ADOPTION",
+  "studies": [
+    {
+      "file": "diagonal-wire-tangent-review.json",
+      "clear_count": 3,
+      "selected_radius_mm": 0.75,
+      "wire_gap_mm": 0.06405814625096255
+    },
+    {
+      "file": "diagonal-wire-height-separated-review.json",
+      "clear_count": 0,
+      "selected_radius_mm": null,
+      "wire_gap_mm": null
+    },
+    {
+      "file": "diagonal-wire-wide-lanes-review.json",
+      "clear_count": 3,
+      "selected_radius_mm": 0.75,
+      "wire_gap_mm": 0.09893206683667187
+    }
+  ],
+  "finding": "Adding a forward sensor exit invalidates the previous 0.264 mm wire-gap claim for the updated geometry. Current best selected route gap is 0.099 mm, without wire diameter/placement tolerance.",
+  "next_action": "Redesign the terminal holder and route exit together; do not continue treating provisional boxes and free wire paths as an assembled harness.",
+  "limits": [
+    "Tangent bend can begin inside the provisional holder; holder exit wall has not been checked.",
+    "No actual stripped conductor, solder, tape wrap or strain relief geometry.",
+    "No completed assembly or manufacturing release."
+  ]
+}

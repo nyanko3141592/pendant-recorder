@@ -1,0 +1,267 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T13:41:23",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "input-route-neck.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( F.Cu 上、長さ: 0.2397 mm )",
+                    "pos": {
+                        "x": 2.0705,
+                        "y": 9.6292
+                    },
+                    "uuid": "62fb4817-cb52-4088-864e-c8b0fe579366"
+                },
+                {
+                    "description": "パッド 1 [/VBUS_LIMITED] - R12 ( B.Cu 上)",
+                    "pos": {
+                        "x": 0.745,
+                        "y": 7.465
+                    },
+                    "uuid": "289a623a-499f-49b9-b3d5-c1dfbf8a3997"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 10 [/VBUS_LIMITED] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.855,
+                        "y": 10.075
+                    },
+                    "uuid": "8ad07815-2552-467d-a791-960abfbe85d0"
+                },
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( F.Cu 上、長さ: 2.5062 mm )",
+                    "pos": {
+                        "x": 5.2086,
+                        "y": 9.6276
+                    },
+                    "uuid": "4cf1e2db-8c8b-4a61-bf45-17a9897146b3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( F.Cu 上、長さ: 0.3187 mm )",
+                    "pos": {
+                        "x": 7.7577,
+                        "y": 12.7203
+                    },
+                    "uuid": "2424109f-8cab-40a2-9bb9-dd514c2d6367"
+                },
+                {
+                    "description": "配線 [/VBUS_LIMITED] ( In2.Cu 上、長さ: 3.3217 mm )",
+                    "pos": {
+                        "x": 20.7864,
+                        "y": 7.3955
+                    },
+                    "uuid": "14375d0a-5cd7-4df6-a488-adaf015df983"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/USB_INPUT_ON] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 8.6375,
+                        "y": 17.45
+                    },
+                    "uuid": "1405c6b4-873d-456f-b095-f27e817a349e"
+                },
+                {
+                    "description": "パッド 6 [/USB_INPUT_ON] - U14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 7.0
+                    },
+                    "uuid": "4a75724f-5c21-418d-b901-886ae0d6b44a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.6532 mm )",
+                    "pos": {
+                        "x": 21.4869,
+                        "y": 11.6501
+                    },
+                    "uuid": "f74c5657-1ba2-4097-81fc-2b29d3920ec1"
+                },
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.5638 mm )",
+                    "pos": {
+                        "x": 22.0538,
+                        "y": 11.0
+                    },
+                    "uuid": "350bb684-f8d9-41eb-a16a-17611275d6c9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 4 [/VBUS] - U14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 8.0
+                    },
+                    "uuid": "9c53e719-20b4-471a-b2d0-f4c17bb8f9fc"
+                },
+                {
+                    "description": "パッド 2 [/VBUS] - U14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.5,
+                        "y": 9.0
+                    },
+                    "uuid": "b38c5b39-e9c6-4f3a-a8f6-ee8a410b62e0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_RESUME_PULSE] ( F.Cu 上、長さ: 0.9775 mm )",
+                    "pos": {
+                        "x": 21.49,
+                        "y": 2.4775
+                    },
+                    "uuid": "5dc3881e-b06b-4293-8754-5434634d0c90"
+                },
+                {
+                    "description": "パッド 19 [/USB_RESUME_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 12.405,
+                        "y": 4.4675
+                    },
+                    "uuid": "e3b3186d-9efa-4a7c-89c8-2a16de4add14"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 1 [/USB_HIGH_BUDGET] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.55,
+                        "y": 17.4375
+                    },
+                    "uuid": "70dc58a5-5e97-4a48-9a55-95fad2637a4d"
+                },
+                {
+                    "description": "パッド 13 [/USB_HIGH_BUDGET] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 9.405,
+                        "y": 4.4675
+                    },
+                    "uuid": "bc523ff5-4ff0-45c6-a001-ba9e054fa8d7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/USB_SUSPEND_PULSE] ( B.Cu 上、長さ: 1.2906 mm )",
+                    "pos": {
+                        "x": 22.0625,
+                        "y": 4.45
+                    },
+                    "uuid": "4acae404-8d62-4220-b077-bf75387d4659"
+                },
+                {
+                    "description": "パッド 12 [/USB_SUSPEND_PULSE] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 8.7175,
+                        "y": 5.155
+                    },
+                    "uuid": "416e95a4-97f8-4ab5-b554-3ed6e6f90a13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( B.Cu 上、長さ: 0.5173 mm )",
+                    "pos": {
+                        "x": 19.05,
+                        "y": 3.9452
+                    },
+                    "uuid": "bfd0b85d-d28d-4c65-a023-8d8ae5eb162e"
+                },
+                {
+                    "description": "配線 [/BAT_TS] ( B.Cu 上、長さ: 0.0707 mm )",
+                    "pos": {
+                        "x": 22.75,
+                        "y": 22.3
+                    },
+                    "uuid": "ca5af97b-bcf6-4de5-839d-1c2c9550ed51"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

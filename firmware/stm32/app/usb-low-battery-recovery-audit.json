@@ -1,0 +1,89 @@
+{
+  "status": "EXPORT_REPLUG_INTEGRATED_TESTED_ARM_LINK_PASS_NOT_HARDWARE_QUALIFIED",
+  "sources": {
+    "firmware/stm32/app/main.c": "b0491061054d9297efb7aea1561ff4bf5810d4f83674a5ee04aca2e67a02c0a3",
+    "firmware/stm32/board/recorder_boot.c": "266ee08da6323f0d12ff4f96a2f143bbeebd526a0ca038b0da06f9202b664660",
+    "firmware/stm32/board/recorder_runtime.c": "26c61c1eea461e59df6d1edd6b51e6224bd8315bb336baf8fc7ea2a41ea48e7f",
+    "firmware/stm32/core/storage_owner.c": "4849989d1d349e741d2657d3e647c8d619a5a778d0649f2d68421d38fe2bc750",
+    "firmware/stm32/board/usb_board.c": "898ab2ba73b0054588906abe5caea9bbf433414a4699052011b3f6f89e32d2e5",
+    "firmware/stm32/board/export_runtime.c": "85f5b545b2e9dc2f83cb81393ee362ea2b5f94b18b7e43d40d03d4cbb1c73e1a",
+    "firmware/stm32/board/export_runtime.h": "a11bc7a5e55aaa1c03bdecd602dcd6da3bf4166804874557c698d608cb2bdcef",
+    "firmware/stm32/tests/test_export_runtime.c": "23630436fbb45f132222485391a0b0ec7626b28c7bc79a4318d2bd8d166cc682",
+    "firmware/stm32/board/storage_probe.c": "1aa7ecf2be905bf8d268d3fc792785083c4f3f8a448b6ca20a5935898ec560f4",
+    "firmware/stm32/board/storage_probe.h": "ee79493459cf8d39685ccaf8159c739124b90992cb7d683c03e4d1731d8da6cf",
+    "firmware/stm32/tests/test_storage_probe.c": "a3fdee99eacee29c217765f5a8468109500730c3fff48c57a83519e592058c59",
+    "firmware/stm32/board/storage_power.c": "9703b3d880c80556923cfd6244449e43a319391f8dc6bff3d39e35c71ef08376",
+    "firmware/stm32/board/storage_power.h": "9a5d891801600dc09da7749bd4d734f874441af3e2441dad17349d52dbd5db50",
+    "firmware/stm32/tests/test_storage_power.c": "22a150f73767fb2ec6c4f507af9e3bc3c1187841f4fe295f2716f91c28e47e56",
+    "firmware/stm32/tests/test_application_export.c": "44dc44da06909a03057cc80bdcb81482082cbd262bd49dfae8f97a7307e2c2ac",
+    "firmware/stm32/tests/check_application_export.sh": "c12d9a2154806be5ffb3dcc2846572d0a8ea4b9f072ddd5ac98d9a958ac9e520"
+  },
+  "observed_blockers": [
+    "main startup voltage gate halts before USB initialization when battery is low, even if VBUS is present",
+    "recorder_boot_start always initializes RNG, filesystem and audio and starts capture; no storage-only export entry point",
+    "recorder_runtime_stop powers down storage and leaves OWN_STOPPED terminal; later USB insertion cannot enumerate MSC",
+    "USB disconnect from OWN_HOST currently requests filesystem recovery and potentially recording; export-only low-battery mode needs a stop path"
+  ],
+  "required_invariants": [
+    "Keep charge inhibit until NTC and battery conditions are qualified",
+    "USB-powered export must never start audio capture when battery is below recording threshold",
+    "Before exposing MSC, finish file sync/unmount and transfer storage ownership exactly once",
+    "On VBUS loss in low-battery export, revoke MSC before switching card power off; no record or filesystem recovery writes",
+    "Validate available system power and card current independently of mere VBUS detection",
+    "Preserve recordings and do not format media automatically"
+  ],
+  "next_implementation": "Introduce explicit export-only boot/runtime mode with tests for attach, disconnect, eject and VBUS loss during synchronous card access before wiring it into the application voltage gate.",
+  "implemented": [
+    "owner_prepare_export transitions non-recording device owner to inaccessible export-ready state; caller must unmount first",
+    "USB configuration exposes media without capture/flush path",
+    "Host disconnect/eject revokes MSC then HOST_RELEASED transitions terminal stopped without filesystem recovery",
+    "Reconnect during teardown cannot grant media access",
+    "export_runtime_start cold-probes card with charge inhibited, prepares export ownership, starts USB without filesystem/audio/RNG",
+    "export_runtime_poll handles configure, detach and eject; USB stops before card power, no automatic restart",
+    "Startup probe/USB-init/VBUS-loss failures tear down; USB-stop failure denies owner access and avoids cutting card power",
+    "Optional storage io_power_good callback checked before/after each SPI exchange and around probe; export runtime installs VBUS check",
+    "Supply loss returns failed operation, invalidates medium and owner; subsequent host requests denied",
+    "With explicit PENDANT_BATTERY_STOP_MV, valid startup voltage at/below threshold+100mV waits for USB then uses export runtime before recipient parsing/audio boot; invalid ADC and >4500mV still halt",
+    "Export completion remains terminal until reset",
+    "Storage power tracks successful shutdown; export restart rejected before shutdown, while powered or after failed shutdown",
+    "export_runtime_start_after_stop requires prior nonfault stopped recording owner with stop_requested",
+    "Main transitions directly from successful recorder_runtime_stop to USB wait/export and never polls old recorder runtime again",
+    "After clean export shutdown, observe physical VBUS low then high before starting fresh export session; eject with VBUS high stays stopped",
+    "Main keeps servicing export runtime after successful session stop; recording stays inhibited",
+    "Failed teardown remains terminal; no automatic retry after fault"
+  ],
+  "validation": [
+    "storage_owner test with address/undefined sanitizers PASS",
+    "check_recorder_runtime.sh normal and cooperative PASS",
+    "check_msc_storage.sh PASS",
+    "check_export_runtime.sh address/undefined sanitizers PASS; hardware mocked",
+    "check_storage_probe.sh ASan/UBSan: supply absent before probe/before transfer/during transfer PASS",
+    "check_export_runtime.sh, check_cooperative_storage.sh and check_msc_storage.sh PASS after guard addition",
+    "ARM application GC compile/link PASS using existing bench voltage config; nm retains export_runtime_start/poll",
+    "Export runtime, recorder boot and storage probe ASan/UBSan PASS",
+    "Storage power ordering/restart rejection and export-after-stop owner/fault tests PASS ASan/UBSan",
+    "Recorder runtime normal/cooperative regression PASS",
+    "ARM application link /tmp/pendant-export-after-stop-link PASS",
+    "check_application_export.sh real main plus real battery monitor/stop/indicator and owner; five scenarios PASS ASan/UBSan: cold low, recording low, ADC failure, overvoltage, stop failure; lifecycle/hardware mocked",
+    "Export runtime tests physical replug, eject-without-unplug, fresh-host-ownership barrier, repeated shutdown and fault retry rejection PASS",
+    "Real main continuous export servicing test PASS",
+    "ARM /tmp/pendant-export-replug-link compile/link PASS"
+  ],
+  "remaining": [
+    "End-to-end hardware USB enumeration, repeated plug cycles and host importer validation",
+    "Real VBUS loss, rail hold-up and interrupted-write recovery qualification",
+    "Power budget and USB-powered system rail qualification"
+  ],
+  "supply_guard_limits": [
+    "Does not interrupt an in-progress HAL SPI transfer (20ms timeout passed to HAL)",
+    "Does not roll back an interrupted card write or guarantee filesystem consistency",
+    "GPIO VBUS indication is not measured regulator output or available current",
+    "Callback is read-only, configured before probe; ordinary recording keeps NULL guard"
+  ],
+  "arm_build": {
+    "elf": "/tmp/pendant-export-replug-link/candidate-NOT-FOR-FLASH.elf",
+    "sha256": "becb6decbf2ea0173a325ab999c758fa41d23cc065abd918af08e7e1e62a3cf9",
+    "log": "/tmp/pendant-export-replug-link.log",
+    "limitations": "Synthetic USB IDs, disposable recipient, no flash"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "hardware_version": "HW-V1.0",
+  "version": "XE-PROTOTYPE-V1-27P5-PACK-NTC-CASE-V5-1GB-OVP-LATCH",
+  "date": "2026-10-28",
+  "status": "SINGLE_CANONICAL_PROTOTYPE_CANDIDATE_NOT_PHYSICALLY_RELEASED",
+  "requirements": {
+    "battery": "DTP401525-XE 3.7V 110mAh fixed",
+    "runtime": "continuous 16kHz mono including silence >=16h; physical NOT_RUN",
+    "storage": "1GB managed NAND; encrypted audio >=30h; physical NOT_RUN",
+    "io": "one USB-C for charge and read-only MSC/HID data",
+    "manufacturing": "68 JLC board placements; battery/case/cord final assembly only"
+  },
+  "architecture": [
+    {
+      "function": "MCU/audio/crypto/USB",
+      "reference": "U1",
+      "part": "STM32U585CIU6"
+    },
+    {
+      "function": "microphone",
+      "reference": "U8",
+      "part": "IM69D130V01"
+    },
+    {
+      "function": "managed storage",
+      "reference": "U11",
+      "part": "MKDV8GIL-AST"
+    },
+    {
+      "function": "storage rail switch",
+      "reference": "U10",
+      "part": "TPS22917DBVT"
+    },
+    {
+      "function": "4.1V/10mA charger and power path",
+      "reference": "U3",
+      "part": "BQ25185DLHR"
+    },
+    {
+      "function": "3.3V rail",
+      "reference": "U4",
+      "part": "TPS7A0233PDBVR"
+    },
+    {
+      "function": "20V USB overvoltage protection",
+      "reference": "U14",
+      "part": "NCP360SNT1G"
+    },
+    {
+      "function": "50-100mA guaranteed latch-off USB limiter",
+      "reference": "U13",
+      "part": "TPS2552DBVR-1"
+    },
+    {
+      "function": "USB-C connector",
+      "reference": "J1",
+      "part": "USB4105-GF-A"
+    },
+    {
+      "function": "USB ESD",
+      "reference": "U2",
+      "part": "USBLC6-2P6"
+    },
+    {
+      "function": "battery plus pack NTC connector",
+      "reference": "J2",
+      "part": "Molex781710003 / DTP401525-XE"
+    },
+    {
+      "function": "hardware temperature guard",
+      "reference": "U12",
+      "part": "TLV7042DDFR"
+    }
+  ],
+  "electrical_checks": {
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "schematic_parity_violations": 0,
+    "unconnected_items": 0,
+    "interpretation": "CAD connectivity only; physical EVT A-F remains NOT_RUN."
+  },
+  "manufacturing": {
+    "pcb_mm": [
+      27.5,
+      27.5
+    ],
+    "jlc_positions": 68,
+    "pofv": 4,
+    "local_cam_review": "fabrication-review-d0c7ca1c4a31",
+    "upload_or_order_performed": false
+  },
+  "release_blockers": [
+    "Physical 6/9/12/20V USB abnormal-input, TPS2552 latch/recovery and NCP360 thermal qualification",
+    "Physical safety and charge/thermal fault qualification",
+    "Measured 16h runtime from fixed 110mAh pack",
+    "Physical 30h encrypted recording and recovery",
+    "Three-OS USB interoperability",
+    "Case/cord/USB durability",
+    "Live stock, JLC DFM and factory-programming acceptance"
+  ],
+  "source_sha256": {
+    "hardware/xe-minimal/active-design.json": "98ac7830c4926b1c08cebe59725c8523a18d43c7e57052671fa63d936d2c69a1",
+    "hardware/xe-minimal/bom.csv": "b0869d82eba5d259555cc0163038ecdace3bc194696715d5c013a8615ad9c656",
+    "hardware/xe-minimal/pendant-xe-minimal.kicad_sch": "319354c1d3485c47e6379a3ca711706992938b790af50b5af0dd481d1f19f7e9",
+    "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb": "d0c7ca1c4a3180bb700d005242b71b9cc70660e3565ad4adf33134ce62aaaa1a",
+    "hardware/xe-minimal/current-erc.json": "c788112f5fbb96e283972ce63ea524bc47c3a3cdae941c6e2feba3befa60d790",
+    "hardware/xe-minimal/current-drc.json": "d4e7f1cb40822cddb8daace5d1fb64e5b5b7e3733c14cc2d0bc2218ac02e6717",
+    "docs/procurement/xe-production-bom-2026-10-28.csv": "4a0590a0d7db0025f8bd6100eb3820fc87f1c831c391a5ce7be22149e21ee942",
+    "firmware/stm32/tests/prototype-v1-regression.json": "131743967a0d51d693371a8c5b05acdc592e1a090d0c7e595399efe97b8e84ad",
+    "mechanical/xe-minimal/prototype-v1/case-pebble-v5-review.json": "0f6d2fe4d8d0a07e23aa983501159724d07576cc4437795a62e0aedc4de9497e"
+  }
+}

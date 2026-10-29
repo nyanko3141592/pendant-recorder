@@ -1,0 +1,41 @@
+{
+  "status": "PROVISIONAL_CASE_COMPARISON_NOT_FIT_APPROVAL",
+  "board_sha256": "31ebfc3b10417e6fc9de09c4847dfb462e195d9303b57f0c9475281781354e4f",
+  "case_envelope_mm": [
+    26.200000000000003,
+    29.6,
+    12.9714001
+  ],
+  "omi_sources": [
+    {
+      "file": "reference/omi/mechanical-size-check/case-a.step",
+      "sha256": "6a23a0693e3d0e0c3068474cb46931f32e7850d6e22266a902060762f165eb1b"
+    },
+    {
+      "file": "reference/omi/mechanical-size-check/case-b.step",
+      "sha256": "ddeba686dd58d06fc5f3b7934e32dd6d720d037b2a4c1828ee44973795fb7a11"
+    }
+  ],
+  "source_reference": "reference/omi/mechanical-size-check/dimension-review.json",
+  "equal_scale": true,
+  "alignment": "Both envelopes centered. Omi covers translated together, preserving relative source poses; assembled pose remains unconfirmed.",
+  "omi_shared_translation_mm": [
+    7.672932924140952e-05,
+    -2.964541738440001,
+    2.0623502905436908e-12
+  ],
+  "excluded": [
+    "Unresolved battery wiring/mated housing",
+    "Case closure and tolerance stack",
+    "Omi wrapper and attachment"
+  ],
+  "figures": [
+    "case-envelope-vs-omi-covers-study.png",
+    "case-envelope-vs-omi-covers-study.pdf"
+  ],
+  "visual_review": "PNG inspected: common center, equal axes, readable provisional and source limitations; no completed product claim.",
+  "figure_sha256": {
+    "case-envelope-vs-omi-covers-study.png": "1b099c8dbad2e7d6f4ce9e1e91d1ea05221637480052fe2a06274b30ca728e4e",
+    "case-envelope-vs-omi-covers-study.pdf": "a64ab5ec4b56d6f54397d90625feb992468f432ab09d8c4a34d55a541c4c15c6"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "status": "JOINING_SPACE_BUDGET_NOT_PART_SELECTION",
+  "sources_sha256": {
+    "board": "5965f500390e21538c1c89e39c8ef3a9e129709b5050e159d9ba0ecdc1fdc3a4",
+    "separator": "b7d1f4d2b4356a497543c208831ebac07a7ef0b1f5e6204a5e49904d07d3b649",
+    "lower": "e4d0bde292b5a6c517542001bf5fd13c179a215cac58bfc973c4273bb5ee9887",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e"
+  },
+  "rows": [
+    {
+      "joint_box_width_mm": 0.7,
+      "joint_box_height_mm": 0.6,
+      "length_mm": 3,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "battery": 0.0
+      },
+      "distance_to_board_mm": 0.5699999999999998
+    },
+    {
+      "joint_box_width_mm": 0.9,
+      "joint_box_height_mm": 0.8,
+      "length_mm": 3,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "battery": 0.0
+      },
+      "distance_to_board_mm": 0.3699999999999999
+    },
+    {
+      "joint_box_width_mm": 1.1,
+      "joint_box_height_mm": 1.0,
+      "length_mm": 3,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "board": 0.0,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "battery": 0.0
+      },
+      "distance_to_board_mm": 0.16999999999999993
+    },
+    {
+      "joint_box_width_mm": 1.3,
+      "joint_box_height_mm": 1.2,
+      "length_mm": 3,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "board": 0.11602500000000016,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "battery": 0.0
+      },
+      "distance_to_board_mm": 0.0
+    },
+    {
+      "joint_box_width_mm": 1.5,
+      "joint_box_height_mm": 1.4,
+      "length_mm": 3,
+      "bottom_z_mm": -2.32,
+      "overlap_mm3": {
+        "board": 1.026375,
+        "separator": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "battery": 0.0
+      },
+      "distance_to_board_mm": 0.0
+    }
+  ],
+  "joint_centers_x_mm": [
+    8.1,
+    9.9
+  ],
+  "joint_y_range_mm": [
+    -3.5,
+    -0.5
+  ],
+  "displayed_height_mm": 0.8,
+  "assembly_responsibility": "Seller solders, insulates and strain-relieves sensor; buyer performs no wiring operations.",
+  "assumptions": [
+    "Lead tips located atY-.5; sensing strip extends towardnegativeY.",
+    "3mm overlap length is design trial, not solder-process qualification.",
+    "Bottomdatum matches film placement hypothesis; exposed lead/joint transitions not yet shaped."
+  ],
+  "limits": [
+    "Boxes are packaging budgets, not selected tube/wire/solder dimensions.",
+    "Existing TH1 remains on board; no electrical substitution yet.",
+    "No solder meniscus, stripped-wire length, sleeve recovery, glue, bend radius or assembly tolerances.",
+    "Joining heat process must protect film; not performed with battery attached.",
+    "Wire routing to PCB pads, insulation material and strain relief remain to be designed.",
+    "Nominal zero overlap does not prove production clearance or assembly sequence."
+  ]
+}

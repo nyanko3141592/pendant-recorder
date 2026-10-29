@@ -1,0 +1,466 @@
+{
+  "status": "SUPERSEDED_HISTORICAL_BUDGET_DO_NOT_USE_FOR_XE_PROTOTYPE_V1",
+  "superseded_by": "docs/procurement/xe-production-readiness-2026-10-28.md",
+  "supersession_reason": "This table contains the former STM32U535, TH1, LED and pre-TPS22950 inventory boundary. It is retained only as historical cost evidence and is not a current BOM estimate.",
+  "prototype_count": 5,
+  "pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "sources_sha256": {
+    "docs/procurement/xe-power-mic-cost-scenario.json": "f2703c61b9ad1a7c75214e46651357888322a54b8a7f16cbe61db1b53c02a54e",
+    "docs/procurement/xe-current-assembly-cost.json": "15c11c27ca5c539083914701b8b14b591649f41c566e812519d5bb0f3bd69c68",
+    "docs/procurement/xe-dmn-jlc-availability.json": "be32dfed3b9213e9e1fd36a54ef453d11bcd7d3a89a9f4e3369f9b613a95602a",
+    "docs/procurement/xe-u11-jlc-availability.json": "699f6e646d00fa610fd853418cb1aee0e65f457d53f8ef4a73a8d6c5ba6c3bb7",
+    "docs/procurement/xe-mcu-jlc-availability.json": "8f4bf08cc191dce8b4930dad5edd01751751199797cf5fc3da90690d6819ff4e",
+    "docs/procurement/xe-ncu-jlc-availability.json": "064765e1e31dd07f02eacb30e979c2a60e0fe86e20ea48309d757da2471c865a",
+    "docs/procurement/xe-bq25185-jlc-availability.json": "0b8a8b541c5b4e2e18ab16b4b5638c7fb3fa011a51ae202cad73c0f9f2360ac2",
+    "docs/procurement/xe-tps22950-jlc-availability.json": "636432a4a5800c3c7f6b7679c77c909335b77309916cbfbe198b41fcd112b749",
+    "docs/procurement/xe-tps7a02-jlc-availability.json": "b19eed8b4a005b2ad1c7a16c526b2eb9838886676fec8ab982aca511a8f7d834",
+    "docs/procurement/xe-tps22916-jlc-availability.json": "3936fdbf4d91a13497297d129ae680ba13a2bb336fa2bc1a077794e9d18e9d6a",
+    "docs/procurement/xe-microphone-jlc-availability.json": "7e2d738aa0fdb72df81034e2c1cec263c8db15fb1a283f2a4801e46d65d73c55",
+    "docs/procurement/xe-tlv7042-jlc-availability.json": "3d3b2a6cd31d2b3ecbe10500882c6ec76317fcfab53aaf97255ad0e8b81eb0dd",
+    "docs/procurement/xe-dmn63-jlc-availability.json": "d3fe2197d57a96e0f9cb12fc550969ea84b5ecad9866a4db32cb49a61ee7a7c0",
+    "docs/procurement/xe-tlv803-jlc-availability.json": "c4fa3ec67afd3046d365ee2456e6d57d2025ebec064bc45bbaa0bdc55ca8e1b9",
+    "docs/procurement/xe-hcs74-jlc-availability.json": "63d2db02ee6dd05f318aee14b21fd51cd15c05d25e3b0d10a4ca764887d9ea6e",
+    "docs/procurement/xe-usblc6-jlc-availability.json": "1bbcbff9a68c6e7367b6f1ec67946d92221d25703a513a7115b1cc9f608bce69",
+    "docs/procurement/xe-battery-header-jlc-availability.json": "21769a63118a0aea4df2d81aa592bb6ce7fab7bad5bc0e0dbe5c6fbf68408f22",
+    "docs/procurement/xe-usb4105-jlc-availability.json": "13e181526b2cdf266f4bbd90dfa52399d3e3ce088342125e4225f4561f44b708",
+    "docs/procurement/xe-led-jlc-availability.json": "2b53cd6371293ae61787092ff668efbdb7a8299dfdeae09afe67f0adacb504da",
+    "docs/procurement/xe-r44-retail-availability.json": "1089dc3bbd0e9321642ef02b8aa4f48025e13e3069ab28e17addcf498775c782",
+    "docs/procurement/xe-led-retail-availability.json": "f6fa16e59d2405feb480ad9f326b3f978d09376d447d34d61c3bfc5f87e10c26",
+    "docs/procurement/xe-usb4105-retail-availability.json": "1eea7f3c25b3f48ca8c05dccf0a6124c11dff42beb019a79070030ab0883f52c",
+    "docs/procurement/xe-tlv7042-retail-availability.json": "eabbd55111d1c4a40113697ddf50a684f551e760cd868022acc43c94abcd66c5"
+  },
+  "assembly_count_transfer_basis": "Inverse TH1 value substitution exactly reproduces parent PCB; geometry unchanged. MPN feeder cost remains hypothetical.",
+  "conditional_scenarios": [
+    {
+      "feeder_load_assumption": 38,
+      "reference_parts_JPY": 13520.7,
+      "reference_parts_and_partial_assembly_USD": 375.722
+    },
+    {
+      "feeder_load_assumption": 46,
+      "reference_parts_JPY": 13520.7,
+      "reference_parts_and_partial_assembly_USD": 387.962
+    }
+  ],
+  "scenario_warning": "Not lower/upper bounds, quotation or fully procurable kit; currencies intentionally separate.",
+  "JLC_inventory_reconciliation": [
+    {
+      "mpn": "781710003",
+      "references": [
+        "J2"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-battery-header-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "APHHS1005LSYCK/J3-PF",
+      "references": [
+        "D6"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-led-jlc-availability.json",
+      "status": "OUT_OF_STOCK_PREORDER_ONLY"
+    },
+    {
+      "mpn": "BQ25185DLHR",
+      "references": [
+        "U3"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-bq25185-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "CC0402JRNPO9BN500",
+      "references": [
+        "C30"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CC0402KRX5R6BB105",
+      "references": [
+        "C16",
+        "C25",
+        "C7"
+      ],
+      "five_installed_quantity": 15,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CC0402KRX5R6BB225",
+      "references": [
+        "C13",
+        "C14"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CC0402KRX7R7BB104",
+      "references": [
+        "C1",
+        "C2",
+        "C22",
+        "C26",
+        "C29",
+        "C3",
+        "C32",
+        "C33",
+        "C6",
+        "C9"
+      ],
+      "five_installed_quantity": 50,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CC0402KRX7R9BB103",
+      "references": [
+        "C28"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CC0603KRX5R6BB106",
+      "references": [
+        "C15",
+        "C4"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CC0603KRX5R6BB475",
+      "references": [
+        "C27",
+        "C5"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CL05A105KP5NNNC",
+      "references": [
+        "C31"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "CSNP32GCR01-BOW",
+      "references": [
+        "U11"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-u11-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "DMN2056U-7",
+      "references": [
+        "Q6",
+        "Q7"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": "docs/procurement/xe-dmn-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "DMN63D8L-7",
+      "references": [
+        "Q3",
+        "Q4"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": "docs/procurement/xe-dmn63-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "ERJ2RKF1303X",
+      "references": [
+        "R42"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "IM69D130V01XTSA1",
+      "references": [
+        "U8"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-microphone-jlc-availability.json",
+      "status": "CONSIGNMENT_SERVICE_NOT_COMPONENT_STOCK"
+    },
+    {
+      "mpn": "NCU18XH103F60RB",
+      "references": [
+        "TH1"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-ncu-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "RC0402FR-07100KL",
+      "references": [
+        "R12",
+        "R13",
+        "R15",
+        "R22",
+        "R3",
+        "R36",
+        "R37",
+        "R38",
+        "R40",
+        "R49",
+        "R50"
+      ],
+      "five_installed_quantity": 55,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-0710KL",
+      "references": [
+        "R2",
+        "R35",
+        "R47",
+        "R48"
+      ],
+      "five_installed_quantity": 20,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-071ML",
+      "references": [
+        "R14",
+        "R33",
+        "R34"
+      ],
+      "five_installed_quantity": 15,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-0720KL",
+      "references": [
+        "R11",
+        "R39"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-0722RL",
+      "references": [
+        "R21",
+        "R23"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-0747KL",
+      "references": [
+        "R24",
+        "R25",
+        "R28"
+      ],
+      "five_installed_quantity": 15,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-074K7L",
+      "references": [
+        "R43"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-075K1L",
+      "references": [
+        "R6",
+        "R7"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-076K8L",
+      "references": [
+        "R10",
+        "R32"
+      ],
+      "five_installed_quantity": 10,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402FR-077K5L",
+      "references": [
+        "R41"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "RC0402JR-070RL",
+      "references": [
+        "R1"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "SN74HCS74DYYR",
+      "references": [
+        "U14"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-hcs74-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "STM32U535CEU6",
+      "references": [
+        "U1"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-mcu-jlc-availability.json",
+      "status": "OUT_OF_STOCK_PREORDER_ONLY"
+    },
+    {
+      "mpn": "TLV7042DDFR",
+      "references": [
+        "U12"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-tlv7042-jlc-availability.json",
+      "status": "OUT_OF_STOCK_PREORDER_ONLY"
+    },
+    {
+      "mpn": "TLV803EB29DBZR",
+      "references": [
+        "U15"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-tlv803-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "TNPW040219K1BEED",
+      "references": [
+        "R44"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": null,
+      "status": "NOT_VERIFIED_IN_THIS_RECONCILIATION"
+    },
+    {
+      "mpn": "TPS22916CYFPR",
+      "references": [
+        "U10"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-tps22916-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "TPS22950YBHR",
+      "references": [
+        "U13"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-tps22950-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "TPS7A0233PDBVR",
+      "references": [
+        "U4"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-tps7a02-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    },
+    {
+      "mpn": "USB4105-GF-A",
+      "references": [
+        "J1"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-usb4105-jlc-availability.json",
+      "status": "OUT_OF_STOCK_PREORDER_ONLY"
+    },
+    {
+      "mpn": "USBLC6-2P6",
+      "references": [
+        "U2"
+      ],
+      "five_installed_quantity": 5,
+      "JLC_stock_evidence": "docs/procurement/xe-usblc6-jlc-availability.json",
+      "status": "OBSERVED_NOT_RESERVED"
+    }
+  ],
+  "reviewed_JLC_unique_MPNs": 17,
+  "in_stock_JLC_unique_MPNs": 12,
+  "total_unique_MPNs": 38,
+  "unknown_cost_items": [
+    "Carrier removal / depanelization and edge finishing by seller or assembler (not buyer)",
+    "Bare PCB including six-layer stack and filled/capped vias",
+    "Assembly attrition and purchasing minimums for every part",
+    "Sourcing or consignment costs for other BOM entries",
+    "X-ray and required assembly inspection",
+    "Printed case material, adhesive, insulation and thermal contact material",
+    "Firmware programming and test fixture/labor",
+    "Shipping, tax and currency conversion"
+  ],
+  "purchase_quantity_review": "docs/procurement/xe-purchase-quantity-review.json",
+  "feeder_interpretation": "Published supplier article says per unique part per order; 38 is supported as the planning assumption. 46 remains an unconfirmed sensitivity, not required by per-side attrition.",
+  "inspection_sensitivity_review": "docs/procurement/xe-xray-cost-review.json",
+  "retail_fallbacks": {
+    "TNPW040219K1BEED": {
+      "evidence": "docs/procurement/xe-r44-retail-availability.json",
+      "status": "RETAIL_STOCK_OBSERVED_NOT_ASSEMBLER_RECEIPT",
+      "assembler_acceptance": null
+    },
+    "APHHS1005LSYCK/J3-PF": {
+      "evidence": "docs/procurement/xe-led-retail-availability.json",
+      "status": "RETAIL_STOCK_OBSERVED_NOT_ASSEMBLER_RECEIPT",
+      "assembler_acceptance": null
+    },
+    "USB4105-GF-A": {
+      "evidence": "docs/procurement/xe-usb4105-retail-availability.json",
+      "status": "RETAIL_STOCK_OBSERVED_NOT_ASSEMBLER_RECEIPT",
+      "assembler_acceptance": null
+    },
+    "TLV7042DDFR": {
+      "evidence": "docs/procurement/xe-tlv7042-retail-availability.json",
+      "status": "RETAIL_STOCK_OBSERVED_NOT_ASSEMBLER_RECEIPT",
+      "assembler_acceptance": null
+    }
+  },
+  "complete_five_unit_total": null
+}

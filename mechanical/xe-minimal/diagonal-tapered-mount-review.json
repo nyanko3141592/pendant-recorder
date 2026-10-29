@@ -1,0 +1,47 @@
+{
+  "status": "TAPERED_PEDESTAL_TRIAL_NOT_ADOPTED",
+  "sources_sha256": {
+    "lower": "54fd2bc82ec4af2bb6225e6b9eedbb01c9931416a7af20835af1fd835ea03d5b",
+    "tray": "0bb930788d7f5b0757461382a4a5c8b9c679e7d77653c76a6625b21b65e60c5c",
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e",
+    "battery": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "separator": "df558fab6a1a01fc8ad6445cc63220c5a8875c867a9da3b23d980405c248c5df",
+    "upper": "06b364e5de89097cbd42d9e4c40b0371823c94693ddb3d479d54d8a53c630d10"
+  },
+  "valid": true,
+  "solid_count": 1,
+  "taper_height_mm": 2.62,
+  "bottom_xy_mm": [
+    1.2,
+    1.2
+  ],
+  "top_xy_mm": [
+    3.7,
+    3.8
+  ],
+  "maximum_side_expansion_per_vertical_mm": 0.4961832061068702,
+  "checks": {
+    "board": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 1.9149999999999998
+    },
+    "battery": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.1766042721721206
+    },
+    "separator": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 0.7657675887631233
+    },
+    "upper": {
+      "overlap_mm3": 0.0,
+      "gap_mm": 3.682179975540599
+    }
+  },
+  "limits": [
+    "Nominal slope is not a print qualification.",
+    "Tray to existing lower geometry slit remains; slicer may merge close walls.",
+    "No cap/strain relief or physical load qualification.",
+    "Full harness clearance must be rechecked against changed mount."
+  ]
+}

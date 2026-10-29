@@ -1,0 +1,86 @@
+{
+  "status": "ALLOCATION_DECOMPOSED_NOT_MEASURED_NOT_RUNTIME_PROOF",
+  "scope": "Battery-side-equivalent average allocation during ordinary continuous recording",
+  "allocation_mA": {
+    "original_base_nonstorage": 2.8,
+    "published_maxima_deducted_from_base": 0.3865,
+    "remaining_for_mcu_codec_crypto_regulator_load_switch_and_misc": 2.4135,
+    "divider_short_case": 0.09672480620155037,
+    "comparator_engineering_reserve": 0.002,
+    "BOR_engineering_reserve": 0.002,
+    "explicit_guard_and_BOR_total": 0.10072480620155037,
+    "nonstorage_total": 2.9007248062015503
+  },
+  "published_rows": [
+    {
+      "reference": "U8",
+      "mpn": "IM69D130V01",
+      "value_mA": 0.38,
+      "kind": "maximum",
+      "condition": "VDD=3.3V, clock=768kHz, datasheet stated test conditions",
+      "source": "hardware/mini-rect-v13/reference/infineon-im69d130-v1-timing.pdf",
+      "source_location": "electrical characteristics IDD row",
+      "accounting": "deducted_from_base"
+    },
+    {
+      "reference": "U3",
+      "mpn": "BQ25185DLHR",
+      "value_mA": 0.005,
+      "kind": "maximum",
+      "condition": "VIN below UVLO, VBAT=3.6V, 0..85C",
+      "source": "hardware/mini-usb-v9/reference/bq25185.pdf",
+      "source_location": "battery quiescent current IBAT_Q row",
+      "accounting": "deducted_from_base"
+    },
+    {
+      "reference": "U12",
+      "mpn": "TLV7042DDFR",
+      "value_mA": 0.0015,
+      "kind": "maximum",
+      "condition": "two channels, VS=1.8V, datasheet stated test conditions",
+      "source": "hardware/xe-minimal/evidence/TLV7042-SLVSE13J.pdf",
+      "source_location": "supply current per channel maximum 750nA row",
+      "accounting": "deducted_from_base"
+    },
+    {
+      "reference": "U4",
+      "mpn": "TPS7A0233PDBVR",
+      "value_mA": 2.5e-05,
+      "kind": "typical_only_not_a_bound",
+      "condition": "TI published typical IQ; maximum at final operating condition not established here",
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+      "accounting": "not_deducted_remaining_allocation_covers_it"
+    },
+    {
+      "reference": "U10",
+      "mpn": "TPS22917DBVT",
+      "value_mA": 0.0005,
+      "kind": "typical_only_not_a_bound",
+      "condition": "ON-state typical supply current from TI documentation",
+      "source": "https://www.ti.com/lit/ds/symlink/tps22917.pdf",
+      "accounting": "not_deducted_remaining_allocation_covers_it"
+    },
+    {
+      "reference": "U1",
+      "mpn": "STM32U585CIU6",
+      "value_mA": null,
+      "kind": "unresolved_dynamic_average",
+      "condition": "actual clocks, MDF/PDM, DMA, IMA ADPCM, age encryption, USB-off recording build",
+      "source": "https://www.st.com/resource/en/datasheet/stm32u585ci.pdf",
+      "accounting": "remaining_allocation_and_physical_measurement_required",
+      "why_no_datasheet_scalar": "Average depends on final clock tree, peripheral duty and firmware workload; a mode-table value is not a completed-device measurement."
+    }
+  ],
+  "interpretation": {
+    "known_maxima_are_not_a_complete_sum": true,
+    "remaining_allocation_is_not_a_measurement": true,
+    "authoritative_acceptance": "Measured battery-side integral for a complete 16h continuous encrypted recording, plus rail diagnostics",
+    "failure_rule": "If the listed loads plus MCU/regulator/misc do not fit, optimize the design; do not relax battery, duration, safety or continuous recording."
+  },
+  "source_sha256": {
+    "hardware/xe-minimal/recording-current-budget.json": "1a97988fb333291125ab20e0be9711a384ec8ad64fbbe1e54e567fbde07ebb10",
+    "hardware/mini-rect-v13/reference/infineon-im69d130-v1-timing.pdf": "7d6c2bebd1da22cec7376747a6cad97b2d1548825e917f51ba3b73939bd8b541",
+    "hardware/mini-usb-v9/reference/bq25185.pdf": "c73ed7d63e6532bb05e26df30edd37c6ac2de310c1222a84a77625e15e133684",
+    "hardware/xe-minimal/evidence/TLV7042-SLVSE13J.pdf": "9d53a63c34e9ca14f68d3fb60bdd4ae81bbc91c101db01df985ed245d99fcacc"
+  }
+}

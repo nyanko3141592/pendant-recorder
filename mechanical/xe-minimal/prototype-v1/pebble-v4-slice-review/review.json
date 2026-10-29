@@ -1,0 +1,177 @@
+{
+  "status": "PEBBLE_V4_A1_MINI_PETG_SLICE_PASS_NOT_PRINTED",
+  "case_revision": "XE-PROTOTYPE-V1-CASE-PEBBLE-V4-PACK-NTC",
+  "process": "A1 mini, Bambu PETG Basic, 0.4mm nozzle, 0.16mm layer, six walls, 40% gyroid, supports enabled",
+  "orientation": {
+    "lower": "CAD X/hole axis rotated onto build Z; layer planes remain transverse to the primary cord load path",
+    "upper": "CAD Z is build Z; broad exterior face on plate"
+  },
+  "parts": [
+    {
+      "part": "case-pebble-v4-lower",
+      "rotation": {
+        "axis": "Y",
+        "degrees": -90
+      },
+      "source_sha256": "97dd4ce80274bb20e600a740af39cb7fe05d85ea291bca621f0c4d63ebeedb2b",
+      "stl_sha256": "97dd4ce80274bb20e600a740af39cb7fe05d85ea291bca621f0c4d63ebeedb2b",
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 377,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 19,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bridge": 3.8913872241973877,
+              "Brim": 91.01272583007812,
+              "Custom": 34.54231262207031,
+              "Gap infill": 78.90155029296875,
+              "Inner wall": 94.07816314697266,
+              "Internal solid infill": 10.760612487792969,
+              "Outer wall": 1035.58349609375,
+              "Overhang wall": 36.69179153442383,
+              "Support": 400.5414123535156,
+              "Support interface": 30.77924156188965,
+              "Top surface": 14.77132797241211,
+              "Travel": 219.9129180908203,
+              "Undefined": 204.47943115234375
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFG00",
+                "id": 1,
+                "main_used_g": 1.7897404432296753,
+                "total_used_g": 2.5095906257629395
+              }
+            ],
+            "generate_support_material_time": 170,
+            "id": 1,
+            "infill_time": 8,
+            "layer_filament_change": 0,
+            "main_predication": 2016.905029296875,
+            "make_perimeters_time": 31,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 36.349063873291016,
+                  "height": 29.899999618530273,
+                  "width": 8.119999885559082,
+                  "x": 85.94001007080078,
+                  "y": 71.82546997070312,
+                  "z": -7.22999906539917
+                },
+                "id": 5,
+                "name": "case-pebble-v4-lower.stl",
+                "triangle_count": 11774
+              }
+            ],
+            "sliced_time": 356,
+            "sliced_time_with_cache": 134,
+            "total_predication": 2035.983642578125,
+            "triangle_count": 11774,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 40.0,
+        "wall_loops": 6
+      },
+      "artifact_sha256": {
+        "case-pebble-v4-lower.3mf": "20d416948cf04bd8e484e571aa406bb9b4f0bb166209a2c7402c53827b6c2763",
+        "plate_1.gcode": "430bca04b30eff9b3b81b1f4b0b91260fc42a4dd3d156d271686c81077cab81a",
+        "result.json": "6034cc30514c00f45cb87d7ee419d563a8fb555e6e3283c47effb59b05ca004d"
+      }
+    },
+    {
+      "part": "case-pebble-v4-upper",
+      "rotation": {
+        "axis": null,
+        "degrees": 0
+      },
+      "source_sha256": "4fe0237ab028445c7ca74bed03908a7e45890478bc3d6aa489ba755f3c4efc14",
+      "stl_sha256": "4fe0237ab028445c7ca74bed03908a7e45890478bc3d6aa489ba755f3c4efc14",
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 342,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 18,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bridge": 27.727571487426758,
+              "Custom": 34.58426284790039,
+              "Gap infill": 0.586711049079895,
+              "Inner wall": 22.658885955810547,
+              "Internal solid infill": 34.97853088378906,
+              "Outer wall": 184.3233642578125,
+              "Overhang wall": 62.22916793823242,
+              "Support": 214.24903869628906,
+              "Support interface": 34.69866180419922,
+              "Top surface": 18.62811279296875,
+              "Travel": 112.4485855102539,
+              "Undefined": 96.9718246459961
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFG00",
+                "id": 1,
+                "main_used_g": 1.1963130235671997,
+                "total_used_g": 2.1503570079803467
+              }
+            ],
+            "generate_support_material_time": 166,
+            "id": 1,
+            "infill_time": 7,
+            "layer_filament_change": 0,
+            "main_predication": 712.5628051757812,
+            "make_perimeters_time": 17,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 30.299999237060547,
+                  "height": 4.851399898529053,
+                  "width": 29.899999618530273,
+                  "x": 75.05001068115234,
+                  "y": 74.84999084472656,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "case-pebble-v4-upper.stl",
+                "triangle_count": 10226
+              }
+            ],
+            "sliced_time": 293,
+            "sliced_time_with_cache": 94,
+            "total_predication": 731.6400756835938,
+            "triangle_count": 10226,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 40.0,
+        "wall_loops": 6
+      },
+      "artifact_sha256": {
+        "case-pebble-v4-upper.3mf": "754b9a628a8ea8e4fdeac8e4c4f6badcdd08f1ae4c387201b43461abf7103f5a",
+        "plate_1.gcode": "fb88a0eb534af08a4d14f8424af1c6ca4aa71e2da69a1f4307ccc8fee7e1183d",
+        "result.json": "8d8eed85a521b4cced38b13c856c878a12d5fb650cbcb940ff712f3a4e594dcd"
+      }
+    }
+  ],
+  "profile_sha256": {
+    "machine.json": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+    "process.json": "f395536fa41cecc6235d412b0ecbe76005d2140fc1d33b29a81d4c5ba06d58ad",
+    "filament-petg-a1.json": "d2dd5a3e684ba388b6bd38fa087e82e12de137a887b3d028891d92b6d2d7319d"
+  },
+  "limits": [
+    "Successful slicing proves toolpath generation, not printed strength or dimensional fit.",
+    "Physical proof-load, fatigue, wear, sweat, drop, USB-plug and pouch-swelling tests remain mandatory."
+  ]
+}

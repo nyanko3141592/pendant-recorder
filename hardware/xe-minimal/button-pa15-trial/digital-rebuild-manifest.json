@@ -1,0 +1,54 @@
+{
+  "source": "digital-rebuild-source",
+  "source_sha256": "14ce19f763111b5ef951d71e16998997f3992f366c62372a187b89e3b88d801a",
+  "purpose": "Rebuild digital routing from cleared digital nets, retaining all power/USB pair/RTC/temperature geometry and filled-capped vias. Isolated trial, not adopted.",
+  "movable_existing_nets": [
+    "/BUTTON_N",
+    "/CHG_N",
+    "/NRST",
+    "/PDM_CLK",
+    "/PDM_CLK_MCU",
+    "/PDM_DATA",
+    "/SD_CLK",
+    "/SD_CS_N",
+    "/SD_EN",
+    "/SD_MISO",
+    "/SD_MOSI",
+    "/STATUS_LED",
+    "/STATUS_LED_A",
+    "/SWCLK",
+    "/SWDIO",
+    "/USB_HIGH_BUDGET",
+    "/USB_HIGH_BUDGET_DRAIN",
+    "/USB_ILIM_SET",
+    "/USB_INPUT_ON",
+    "/USB_LATCH_CLEAR_N",
+    "/USB_LATCH_CLOCK",
+    "/USB_RESUME_PULSE",
+    "/USB_SUSPEND_PULSE",
+    "/VBUS_GATE",
+    "/VBUS_N"
+  ],
+  "fixed_existing_nets": "All others, including USB data pair, power, RTC and temperature guard",
+  "routing_width_mm": 0.15,
+  "via_diameter_drill_mm": [
+    0.35,
+    0.15
+  ],
+  "reserved_plane_layers": [
+    "In1.Cu",
+    "In3.Cu"
+  ],
+  "pending": [
+    "Inspect DSN defaults and fixed critical wires",
+    "Run local Freerouting",
+    "Import into copy and full KiCad DRC/parity",
+    "Check electrical routing and manufacturing constraints"
+  ],
+  "canonical_source_sha256": "337d9c5c6121f58c9a47e0f14d5fa4b0e18af633092b8fa4dbd73ebde4142c34",
+  "removed_digital_items": 281,
+  "keep_via_uuids": [
+    "58d8777e-5726-406c-9002-92c3cbdf22de",
+    "d5f838d5-49c4-4b63-814d-c51369fbaf3e"
+  ]
+}

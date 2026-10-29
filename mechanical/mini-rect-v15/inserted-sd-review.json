@@ -1,0 +1,112 @@
+{
+  "status": "INSERTED_CARD_CONTAINED_IN_EXISTING_J4_ENVELOPE",
+  "source_sha256": {
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.mechanical-handoff.json": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v15/input-control-pa2-pb5/usb-reference-power.kicad_pcb": "1ac1bd1963416e268129d396099b07fbd8534b751fb98a61a9f650e63a973fe2",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief/body-NOT-MANUFACTURING.step": "ca49adfd0c8e28f0ddf2fe3d25da31783b9f271e77130b6c0c14808a93e4f31e",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief/lid-NOT-MANUFACTURING.step": "8ee6e4ad9fb132b415134ce54cef164eeee758d581bbecf89fe4f8f2c3ef1807",
+    "/Users/takahashinaoki/Downloads/Pendant-v15-XE-usb-relief/key-NOT-MANUFACTURING.step": "66ac274bd045690497c25272de0c6dede28086adc5b17aa2115ba8e2f724908e",
+    "/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v13/reference/hirose-dm3-catalog.pdf": "c800484777481b563daacb741d32618a31fbb6775c8e09e8e30834e5260b2ef8",
+    "/Users/takahashinaoki/Dev/pendant-recorder/mechanical/mini-rect-v15/check_inserted_sd.py": "70519f48134646a2f4f6243ea91654a260a82d5f3e7f7154306b151c03d3394c"
+  },
+  "source_drawing": {
+    "author": "Hirose",
+    "catalog": "DM3",
+    "page": 9,
+    "printed_date": "Sep.1.2024",
+    "drawing_reference_only": true,
+    "inserted_card_length_width_mm": [
+      15,
+      11
+    ],
+    "socket_rear_to_card_far_edge_mm": 15.8
+  },
+  "card_allocation_case_mm": [
+    5.825,
+    3.0300000000000002,
+    9.53,
+    15,
+    11,
+    1.68
+  ],
+  "card_outside_existing_J4_allocation_mm3": 0.0,
+  "inserted_card_case_overlap_mm3": {
+    "body": 0.0,
+    "lid": 0.0,
+    "key": 0.0
+  },
+  "insertion_travel_mm": 15,
+  "insertion_direction_case": "+X",
+  "insertion_other_component_collisions": [
+    {
+      "reference": "R40",
+      "overlap_mm3": 0.5524200000000014
+    },
+    {
+      "reference": "R24",
+      "overlap_mm3": 1.1345400000000043
+    },
+    {
+      "reference": "R34",
+      "overlap_mm3": 1.1345400000000043
+    },
+    {
+      "reference": "R50",
+      "overlap_mm3": 0.06209999999999924
+    },
+    {
+      "reference": "C33",
+      "overlap_mm3": 0.3960000000000016
+    },
+    {
+      "reference": "R48",
+      "overlap_mm3": 0.44160000000000077
+    },
+    {
+      "reference": "R32",
+      "overlap_mm3": 1.1345400000000043
+    },
+    {
+      "reference": "U15",
+      "overlap_mm3": 6.089999999999991
+    },
+    {
+      "reference": "Q7",
+      "overlap_mm3": 6.089999999999991
+    },
+    {
+      "reference": "R25",
+      "overlap_mm3": 1.1345400000000043
+    },
+    {
+      "reference": "C22",
+      "overlap_mm3": 0.2793600000000007
+    }
+  ],
+  "uppermost_1mm_card_sweep_collisions": [
+    {
+      "reference": "U15",
+      "height_mm": 1.45,
+      "overlap_mm3": 3.2339999999999964
+    },
+    {
+      "reference": "Q7",
+      "height_mm": 1.45,
+      "overlap_mm3": 3.2339999999999964
+    }
+  ],
+  "insertion_case_overlap_mm3": {
+    "body": 18.479999999999997,
+    "lid": 0.0,
+    "key": 0.0
+  },
+  "assembly_requirement": "Do not freeze assembly instructions: straight insertion before case assembly has component-envelope conflicts. Resolve actual card/socket height and insertion approach or move obstructing components; closed-case access is also blocked.",
+  "limitations": [
+    "Card allocation uses full1.68mm socket height from PCB surface, conservatively covering nominal1mm card; card position/shape/tolerance is not manufacturer3D solid accuracy.",
+    "Hand/tool gripping clearance and card insertion forces are not modeled.",
+    "15mm sweep is an initial access screen, not a proof of every manual insertion motion.",
+    "Card removal while powered is not qualified. No hand/tool access or tilted insertion path has been approved.",
+    "Enclosure closure, battery harness and selected SD electrical qualification remain unresolved."
+  ],
+  "release_allowed": false
+}

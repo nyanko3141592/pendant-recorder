@@ -1,0 +1,45 @@
+{
+  "status": "DRC_CLEAN_REFERENCE_IMPROVEMENT_CANDIDATE",
+  "moves": [
+    {
+      "uuid": "f81dcbe3-21d8-4b10-801d-cb9fed3557d1",
+      "net": "/SD_EN",
+      "delta_mm": [
+        0.05,
+        0.04
+      ],
+      "track_ends_moved": 2
+    },
+    {
+      "uuid": "d5f838d5-49c4-4b63-814d-c51369fbaf3e",
+      "net": "/PDM_DATA",
+      "delta_mm": [
+        -0.05,
+        -0.04
+      ],
+      "track_ends_moved": 2
+    }
+  ],
+  "source_sha256": "edb2f0f5b5236b53b563c5e217be416efacdd068306df853df1b60de9869a402",
+  "output_sha256": "10f561cc51b6607472c4707a498bdfe15dab6a2218a55a7aa12a6c14edf36e5c",
+  "checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "violations": [],
+  "ground_screen": {
+    "file": "../usb-small-via-conductor-screen.json",
+    "shift_mm": 0,
+    "sample_count": 3168,
+    "missing_before": 24,
+    "missing_after": 0,
+    "scope": "Central paired straight segment, center and conductor edges, both reference planes"
+  },
+  "limits": [
+    "Finite samples do not prove continuous copper coverage or 90ohm impedance",
+    "Changed PDM/SD_EN routes require delta and return-path review",
+    "USB fanouts and layer transitions remain unqualified",
+    "Not adopted for fabrication"
+  ]
+}

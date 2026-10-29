@@ -1,0 +1,65 @@
+{
+  "status": "CANONICAL_FIXED_BATTERY_PURCHASE_SPEC_PHYSICAL_ACCEPTANCE_PENDING",
+  "date": "2026-10-28",
+  "manufacturer_model": "DTP401525-XE",
+  "capacity_mAh": 110,
+  "allowed_retail_skus": [
+    {
+      "seller": "Marutsu",
+      "sku": "DTP401525(EZ3)",
+      "contents": "DTP401525-XE finished pack plus loose 0781710003 board header; loose header is not installed by buyer",
+      "url": "https://www.marutsu.co.jp/pc/i/2228265/",
+      "stock_status": "RECHECK_AT_PURCHASE; 2026-10-26 observation is not current inventory"
+    },
+    {
+      "seller": "Sengoku Densyo",
+      "sku": "DTP401525-XE",
+      "url": "https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-5VAC",
+      "stock_status": "RECHECK_AT_PURCHASE"
+    }
+  ],
+  "pack": {
+    "maximum_mm": [15.5, 27.0, 4.2],
+    "lead_length_mm": 15,
+    "lead_tolerance_mm": 3,
+    "wire": "UL3302 AWG30",
+    "protection_and_finished_harness_required": true,
+    "connector": "Molex 781720003",
+    "mating_board_header": "Molex 781710003 installed as J2 by PCBA vendor",
+    "pinout": {"1": "red / BAT+", "2": "white / internal nominal 10k NTC", "3": "black / BAT-"}
+  },
+  "electrical_public_spec": {
+    "charge_limit_V": 4.2,
+    "maximum_charge_mA": 110,
+    "maximum_discharge_mA": 110,
+    "end_charge_mA": 1.1,
+    "discharge_cutoff_V": 2.4,
+    "standard_charge_table_discrepancy": "Published table says 0.2C (2mA), but 0.2 x 110mAh is 22mA. Do not infer or silently correct it; prototype uses 9-11mA and requires physical qualification."
+  },
+  "pack_protection_public_spec": {
+    "protection_IC": "DW01+",
+    "protection_MOSFET": "8205",
+    "overcharge_detection_V": "4.200 +/-0.050",
+    "overcharge_detection_delay_ms": 80,
+    "overdischarge_detection_V": "2.4 +/-0.100",
+    "overdischarge_detection_delay_ms": 20,
+    "overcurrent_detection_A": [2.5, 3.5],
+    "overcurrent_detection_delay_ms": 10,
+    "overcurrent_release": "remove load",
+    "short_detection": "external short circuit",
+    "short_detection_delay_us_max": 5,
+    "short_release": "remove short circuit",
+    "main_loop_resistance_mohm_max_at_3p6V": 60,
+    "manufacturer_short_test": "fully charged pack, 0.1 ohm across contacts for 1 hour; then remove resistor and charge at 1C for 5 seconds",
+    "manufacturer_short_acceptance": "OCV >=3.6V and no rupture, fire, smoke or leakage",
+    "safety_execution_limit": "Manufacturer states safety-characteristic tests are for specialized Li-ion personnel or work under detailed manufacturer instruction. Do not perform a real-pack short during ordinary EVT."
+  },
+  "buyer_actions": ["purchase exact listed finished pack", "insert unmodified keyed three-wire plug into J2", "place pack and harness in case route", "close case"],
+  "forbidden_substitutions": ["DTP401525(PHR)", "generic 110mAh pouch", "two-wire pack", "JST-labelled lookalike", "reversed-polarity pack", "bare cell", "spliced or re-terminated harness"],
+  "buyer_electronics_work_required": false,
+  "buyer_solder_crimp_or_wiring_required": false,
+  "physical_acceptance": "NOT_RUN",
+  "required_acceptance": ["five-pack polarity and connector inspection", "exact finished-pack identity and protection-board presence without disassembly", "0/10/25/35/45C NTC resistance and cell-surface response", "NTC open/short and charge cutoff/recovery", "current-limited battery-simulator fault injection on BAT SYS V3V3 and SD_V3 without a real cell", "real-pack short-circuit requalification only by a qualified Li-ion laboratory when required for production release", "pack fit, swelling allowance, harness bend and strain", "16h runtime and <=110mA peak"],
+  "sources": ["docs/sourcing/battery-first-selection.json", "manufacturer PDF recorded there", "Molex 781710003 drawing recorded there"],
+  "orders_payments_supplier_contacts_performed": false
+}

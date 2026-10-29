@@ -1,0 +1,41 @@
+{
+  "status": "COOPERATIVE_ARM_LINK_PASS_NOT_FOR_FLASH",
+  "elf": "/tmp/pendant-cooperative-link/candidate-NOT-FOR-FLASH.elf",
+  "sha256": "d0122edf86ee8539b243e02f79646589547b7763702dfe713b47b5def8357d43",
+  "configuration": {
+    "PENDANT_COOPERATIVE_SAVE": 1,
+    "WAV_CHUNK_SAMPLES": 80000
+  },
+  "main_ram": {
+    "data": 2573,
+    "bss": 194752,
+    "reserved_stack_heap": 25088,
+    "capacity": 262144,
+    "remaining": 39731
+  },
+  "sram4_bytes": 4192,
+  "verified_symbols": [
+    "capture_progress",
+    "cooperative_pipeline_pump",
+    "cooperative_pipeline_service",
+    "cooperative_pipeline_finish",
+    "board_storage_set_progress"
+  ],
+  "tests": [
+    "cooperative core delayed-DMA native sanitizer tests",
+    "legacy runtime and handoff regression",
+    "storage hook ownership/reentrancy sanitizer tests"
+  ],
+  "remaining": [
+    "cooperative runtime/handoff integrated tests",
+    "36h capacity/recovery at25920files",
+    "stack call chain through SD callback and encoder",
+    "crypto intervals before SD callback must fit raw PCM backlog",
+    "physical current/audio/USB/card tests",
+    "allocated USB IDs and recipient provisioning"
+  ],
+  "hook": "runtime binds after dispatch, including post-recovery; SD only invokes during OWN_DEVICE; draining occurs after capture stop so no pump required",
+  "storage_ceiling_bytes": 65536,
+  "stack_screen": "cooperative-stack-screen.json",
+  "spi_sleep_gating": "SPI1 APB clock gated during Sleep; blocking transfer only, no hardware energy measurement"
+}

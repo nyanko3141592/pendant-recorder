@@ -1,0 +1,58 @@
+{
+  "status": "C5_VCAP_REQUIREMENT_REVIEW_OPEN",
+  "source_design_sha256": "ddd0a7590c3a5d0b48b99e0171caf3e7cbdaa9718747d2160735e1ed48262fd1",
+  "ref": "C5",
+  "net": "VCAP",
+  "mpn": "CL10A475KP8NNNC",
+  "finding": "C5 is on MCU internal regulator VCAP, not the3.3V SD_V3 rail. Do not reuse C27 DC-bias calculations at3.3V for this part.",
+  "manufacturer_requirement": {
+    "source": "https://www.st.com/resource/en/datasheet/stm32u535vc.pdf",
+    "revision": "DS14217 Rev5",
+    "page": 127,
+    "capacitance_uF": 4.7,
+    "alternative": "2x2.2uF",
+    "tolerance_percent": 20,
+    "esr_max_ohm_at_3MHz": 0.02,
+    "voltage_rating_min_v": 10
+  },
+  "nominal_screen": {
+    "selected_capacitance_uF": 4.7,
+    "tolerance_percent": 10,
+    "rated_voltage_v": 10,
+    "result": "Nominal capacitance/tolerance/rating match; not full qualification"
+  },
+  "remaining": [
+    "Guaranteed ESR across intended operating conditions remains unproven by typical model",
+    "Actual VCAP voltage and temperature capacitance review",
+    "Loop layout and placement review"
+  ],
+  "no_bom_change": true,
+  "esr_typical_review": {
+    "source": "https://product.samsungsem.com/mlcc/CL10A475KP8NNN.do",
+    "units_source": "https://product.samsungsem.com/resources/js/datasheet/setting_mlcc_datasheet.js",
+    "units_source_sha256": "afafa4aa46c975b41454eff2c1de73189ef1e200870a9ec0293018c8cdd181b3",
+    "frequency_unit": "MHz",
+    "resistance_unit": "ohm",
+    "bracket": [
+      [
+        2.9811787044130984,
+        0.006443733630900349
+      ],
+      [
+        3.165205371213954,
+        0.006605838807576513
+      ]
+    ],
+    "interpolated_ohm_at3MHz": 0.006460312909868058,
+    "requirement_less_than_ohm": 0.02,
+    "typical_curve_below_limit": true,
+    "conditions": "Manufacturer Precise model,25C,zero DC bias; not guaranteed production maximum"
+  },
+  "vcap_route": {
+    "report": "hardware/mini-rect-v13/vcap-route-review.json",
+    "signal_trace_length_mm": 1.8531854249492383,
+    "signal_vias": 0,
+    "same_layer": "B.Cu",
+    "remaining": "Ground return loop and assembled regulator stability"
+  }
+}

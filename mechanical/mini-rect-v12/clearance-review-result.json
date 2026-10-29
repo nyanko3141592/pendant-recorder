@@ -1,0 +1,177 @@
+{
+  "status": "COMPARISON_FIT_MODEL_NOT_RELEASED",
+  "output": "/Users/takahashinaoki/Downloads/Pendant-mini-rect-v12-clearance-14_4",
+  "case_mm": [
+    23,
+    25,
+    14.4
+  ],
+  "pcb_bottom_mm": 8.8,
+  "nominal_battery_to_storage_gap_mm": 0.5,
+  "collision_checks": [
+    {
+      "bodies": 2,
+      "ms": 756.044208,
+      "near": [
+        {
+          "a": "case_body",
+          "b": "pcb_dummy",
+          "distance_mm": 0.0,
+          "from": [
+            12.500049708737583,
+            1.0999704279591136,
+            8.799999999999997
+          ],
+          "to": [
+            12.500049708737583,
+            1.0999704279591136,
+            8.799999999999997
+          ]
+        },
+        {
+          "a": "case_body",
+          "b": "battery_dummy",
+          "distance_mm": 0.0,
+          "from": [
+            4.4,
+            6.0,
+            1.4
+          ],
+          "to": [
+            4.4,
+            6.0,
+            1.4
+          ]
+        }
+      ],
+      "nearest": {},
+      "overlaps": [],
+      "pairs_checked": 79,
+      "pairs_pruned": 77,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    },
+    {
+      "bodies": 1,
+      "ms": 0.81925,
+      "near": [],
+      "nearest": {},
+      "overlaps": [],
+      "pairs_checked": 0,
+      "pairs_pruned": 77,
+      "pairs_reused": 0,
+      "truncated": false,
+      "unchecked": []
+    }
+  ],
+  "mesh_validation": {
+    "scope": "Closed edges/winding/connectedness/positive volume/bounds/3MF mm. No exhaustive triangle self-intersection test; no physical print.",
+    "results": [
+      {
+        "file": "print/01_hollow_case_body.stl",
+        "dimensions_mm": [
+          23.0,
+          25.0,
+          11.4
+        ],
+        "triangles": 15274,
+        "closed_manifold": true,
+        "consistent_winding": true,
+        "connected_components": 1,
+        "degenerate_triangles": 0,
+        "volume_mm3": 1369.336939284559,
+        "bed_z_min": 0.0,
+        "unit_3mf": "millimeter",
+        "sha256": "5a4cf1c2c106d232deb9fd04ad3cacefb46bd092552d42e185c8d8e85cc19fb1"
+      },
+      {
+        "file": "print/02_case_lid_open_side_up.stl",
+        "dimensions_mm": [
+          23.0,
+          25.0,
+          3.0
+        ],
+        "triangles": 9946,
+        "closed_manifold": true,
+        "consistent_winding": true,
+        "connected_components": 1,
+        "degenerate_triangles": 0,
+        "volume_mm3": 511.62747393883217,
+        "bed_z_min": 0.0,
+        "unit_3mf": "millimeter",
+        "sha256": "7c6869ec64e13f1ec4ed8fea62ef925bdd028fab8d120989e18505e232106b0a"
+      },
+      {
+        "file": "print/03_pcb_components_FIT_ONLY.stl",
+        "dimensions_mm": [
+          21.0,
+          23.195,
+          5.26
+        ],
+        "triangles": 7336,
+        "closed_manifold": true,
+        "consistent_winding": true,
+        "connected_components": 1,
+        "degenerate_triangles": 0,
+        "volume_mm3": 1124.3211673219646,
+        "bed_z_min": 0.0,
+        "unit_3mf": "millimeter",
+        "sha256": "287c0040545520d902f10b730e1d77f79d7321a1e78dd49ba0cae7ccf402e2f1"
+      },
+      {
+        "file": "print/04_battery_pack_15x17x6.stl",
+        "dimensions_mm": [
+          15.0,
+          17.0,
+          6.0
+        ],
+        "triangles": 828,
+        "closed_manifold": true,
+        "consistent_winding": true,
+        "connected_components": 1,
+        "degenerate_triangles": 0,
+        "volume_mm3": 1528.102041154396,
+        "bed_z_min": 0.0,
+        "unit_3mf": "millimeter",
+        "sha256": "82e221c26f15bffd4c149c702c8c4a1165ea6f54d268b0bb708ad298544576d5"
+      },
+      {
+        "file": "print/05_Omi_D25_5x15_REFERENCE_ONLY.stl",
+        "dimensions_mm": [
+          25.5,
+          25.5,
+          15.0
+        ],
+        "triangles": 1780,
+        "closed_manifold": true,
+        "consistent_winding": true,
+        "connected_components": 1,
+        "degenerate_triangles": 0,
+        "volume_mm3": 7657.810658830331,
+        "bed_z_min": 0.0,
+        "unit_3mf": "millimeter",
+        "sha256": "c6c6dd71245fa6506eedc9374e4a26306d08b219ab9730f0e67dfc24f7314780"
+      }
+    ]
+  },
+  "limitations": [
+    "Battery swelling, maximum finished dimensions and harness remain unqualified",
+    "No physical print or Bambu slicing verified",
+    "Tape closure; no production latch",
+    "No exhaustive mesh self-intersection test",
+    "Omi 25.5mm diameter x15mm is a dimensional reference only"
+  ],
+  "files_sha256": {
+    "print/01_hollow_case_body.3mf": "59e951f594fe7e5e923e8317110ed56a8a001e245446d80eac100745d495b825",
+    "print/01_hollow_case_body.stl": "5a4cf1c2c106d232deb9fd04ad3cacefb46bd092552d42e185c8d8e85cc19fb1",
+    "print/02_case_lid_open_side_up.3mf": "e6edd8ae130361cd1cf96e38cf1e5135c842ab87d0a2ff619e3aa9eea9c91266",
+    "print/02_case_lid_open_side_up.stl": "7c6869ec64e13f1ec4ed8fea62ef925bdd028fab8d120989e18505e232106b0a",
+    "print/03_pcb_components_FIT_ONLY.3mf": "5e88aa191602ec93a694a8d6f452f118745a31821613abcd2a9ebc534d80f52e",
+    "print/03_pcb_components_FIT_ONLY.stl": "287c0040545520d902f10b730e1d77f79d7321a1e78dd49ba0cae7ccf402e2f1",
+    "print/04_battery_pack_15x17x6.3mf": "d0af3e1f2c12f1151a4f0c98efb4d3ef9646f0effac19da812a7687ca77a2410",
+    "print/04_battery_pack_15x17x6.stl": "82e221c26f15bffd4c149c702c8c4a1165ea6f54d268b0bb708ad298544576d5",
+    "print/05_Omi_D25_5x15_REFERENCE_ONLY.3mf": "cb1dbd956c37d0e6041f85dbdab21e6c1bcb15780e2c8f1eb94f465555513006",
+    "print/05_Omi_D25_5x15_REFERENCE_ONLY.stl": "c6c6dd71245fa6506eedc9374e4a26306d08b219ab9730f0e67dfc24f7314780"
+  }
+}

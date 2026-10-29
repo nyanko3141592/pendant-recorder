@@ -1,0 +1,5381 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T21:45:25",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "hw-v1.1-evt-costdown-4layer-routed-v2.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0927 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( B.Cu 上、長さ: 0.3032 mm )",
+                    "pos": {
+                        "x": 21.005,
+                        "y": 12.5199
+                    },
+                    "uuid": "6a499a33-b3f5-4f9c-92ca-63bdb823a66a"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C30 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.525,
+                        "y": 12.785
+                    },
+                    "uuid": "a13c2cb2-8787-4063-a56d-fc4ce3807a1a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0903 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHARGER_TS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.996,
+                        "y": 13.9397
+                    },
+                    "uuid": "6f14bb29-effc-4ee5-bb7c-1a76dfae515e"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 3.2569 mm )",
+                    "pos": {
+                        "x": 10.2929,
+                        "y": 12.7886
+                    },
+                    "uuid": "cf50ae72-54a9-4afd-a5a7-1a85c001aedb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0903 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( B.Cu 上、長さ: 1.6613 mm )",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 12.765
+                    },
+                    "uuid": "0f783583-b342-4e61-8f2a-5cb864d2519f"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C27 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.375,
+                        "y": 14.58
+                    },
+                    "uuid": "c0e4ffc5-58b4-494e-98ba-0a0221798ba5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0912 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.5175 mm )",
+                    "pos": {
+                        "x": 21.898,
+                        "y": 14.6602
+                    },
+                    "uuid": "94c449dd-cceb-4a55-bc8b-a8927c71860c"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.2031,
+                        "y": 14.9083
+                    },
+                    "uuid": "f1b32112-eb1e-44d4-b59b-80da158af81c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0932 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.1118 mm )",
+                    "pos": {
+                        "x": 21.7862,
+                        "y": 14.6602
+                    },
+                    "uuid": "aa9afad5-8694-498d-8717-cbbf869fc67c"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.2031,
+                        "y": 14.9083
+                    },
+                    "uuid": "f1b32112-eb1e-44d4-b59b-80da158af81c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0945 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( B.Cu 上、長さ: 0.7553 mm )",
+                    "pos": {
+                        "x": 20.7906,
+                        "y": 12.3055
+                    },
+                    "uuid": "4244b81a-c5be-4d2d-b522-1935a00dfb6d"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C30 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.525,
+                        "y": 12.785
+                    },
+                    "uuid": "a13c2cb2-8787-4063-a56d-fc4ce3807a1a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( In1.Cu 上、長さ: 2.9243 mm )",
+                    "pos": {
+                        "x": 19.6238,
+                        "y": 18.3646
+                    },
+                    "uuid": "4f81f840-205d-4678-8ae4-0a200c5c037d"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( In1.Cu 上、長さ: 1.7328 mm )",
+                    "pos": {
+                        "x": 21.295,
+                        "y": 17.0168
+                    },
+                    "uuid": "54a288fa-825e-4a8f-875a-13ed2d638b3b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0832 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.7304 mm )",
+                    "pos": {
+                        "x": 22.2639,
+                        "y": 14.2943
+                    },
+                    "uuid": "879b752a-d057-4185-a220-61e723fc7172"
+                },
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.3432 mm )",
+                    "pos": {
+                        "x": 22.0307,
+                        "y": 14.1482
+                    },
+                    "uuid": "aad515c0-2185-46ec-9eb4-330c3c39bcf0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0903 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHARGER_TS] ( B.Cu 上、長さ: 0.5263 mm )",
+                    "pos": {
+                        "x": 11.4697,
+                        "y": 13.9397
+                    },
+                    "uuid": "100d32b7-8ab3-4aec-9a7c-225446564e83"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C27 ( B.Cu 上)",
+                    "pos": {
+                        "x": 11.375,
+                        "y": 14.58
+                    },
+                    "uuid": "c0e4ffc5-58b4-494e-98ba-0a0221798ba5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0929 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 2.0276 mm )",
+                    "pos": {
+                        "x": 18.7786,
+                        "y": 11.6683
+                    },
+                    "uuid": "70ce72f9-a3d9-4b30-8afa-d441790dd68d"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.8755 mm )",
+                    "pos": {
+                        "x": 18.5357,
+                        "y": 13.6292
+                    },
+                    "uuid": "89eea5df-d302-410c-bb4d-e019b8c0c281"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0901 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( In2.Cu 上、長さ: 0.3602 mm )",
+                    "pos": {
+                        "x": 19.2076,
+                        "y": 21.2379
+                    },
+                    "uuid": "27df5009-5976-409d-b77a-9b3449d78bf7"
+                },
+                {
+                    "description": "ビア [/ISET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 19.6238,
+                        "y": 21.1024
+                    },
+                    "uuid": "d0660224-3436-4480-b8bb-be61dc9db853"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( In2.Cu 上、長さ: 2.2963 mm )",
+                    "pos": {
+                        "x": 19.4623,
+                        "y": 21.4926
+                    },
+                    "uuid": "2c43ced9-47ef-43d5-b6f3-c8e3dd82ea5b"
+                },
+                {
+                    "description": "ビア [/ISET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 19.6238,
+                        "y": 21.1024
+                    },
+                    "uuid": "d0660224-3436-4480-b8bb-be61dc9db853"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0907 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHG_ALLOW] - R43 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.795,
+                        "y": 24.265
+                    },
+                    "uuid": "2821c9db-e500-46fe-b02c-efd866e6e67d"
+                },
+                {
+                    "description": "配線 [/CHG_GUARD_GATE] ( B.Cu 上、長さ: 0.8242 mm )",
+                    "pos": {
+                        "x": 3.4416,
+                        "y": 24.7007
+                    },
+                    "uuid": "83af61c9-266a-447b-8e76-5783bf42d961"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0887 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 1.8020 mm )",
+                    "pos": {
+                        "x": 18.7524,
+                        "y": 2.2352
+                    },
+                    "uuid": "4e2bdaab-222b-418b-842e-2629209cb574"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.9384,
+                        "y": 1.8465
+                    },
+                    "uuid": "d7b64f07-83e9-4b7f-9a79-7d462992017b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.0352 mm )",
+                    "pos": {
+                        "x": 14.8108,
+                        "y": 13.8133
+                    },
+                    "uuid": "ee0c9399-4695-48db-b2cf-11c8c3ee81ba"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 12.745
+                    },
+                    "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.6254 mm )",
+                    "pos": {
+                        "x": 15.8143,
+                        "y": 13.1792
+                    },
+                    "uuid": "eb703c3e-c4b7-4b74-a7e3-7c488b9a9708"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VBUS_GATE] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.765
+                    },
+                    "uuid": "24bb550c-3418-435e-b92c-28952a538953"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.5353 mm )",
+                    "pos": {
+                        "x": 14.8108,
+                        "y": 13.278
+                    },
+                    "uuid": "b04f5486-8c76-45e1-8b12-a85b99ac5d95"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.0297 mm )",
+                    "pos": {
+                        "x": 15.1889,
+                        "y": 13.1792
+                    },
+                    "uuid": "9dc4cc65-415a-4cfe-af7c-7e43fd5ef32f"
+                },
+                {
+                    "description": "パッド 2 [/GND] - R14 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 12.745
+                    },
+                    "uuid": "e894145b-04d1-47d4-af91-6adc24396122"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0842 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.6720 mm )",
+                    "pos": {
+                        "x": 15.8143,
+                        "y": 12.5072
+                    },
+                    "uuid": "510ebc29-5fd8-4d6c-b642-663f3b96c906"
+                },
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.2753 mm )",
+                    "pos": {
+                        "x": 16.2098,
+                        "y": 13.105
+                    },
+                    "uuid": "8b152ef6-4d22-451d-821e-c3178bb1319c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0936 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - U10 ( B.Cu 上)",
+                    "pos": {
+                        "x": 26.15,
+                        "y": 3.6375
+                    },
+                    "uuid": "6e077023-d1de-4bb2-9929-687994c103ae"
+                },
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.9931 mm )",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 3.4745
+                    },
+                    "uuid": "a13c533b-39d6-4975-910a-75b6e9fd0406"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.2793 mm )",
+                    "pos": {
+                        "x": 15.0901,
+                        "y": 13.278
+                    },
+                    "uuid": "08659b5a-9b54-419a-a909-e0f9a133c219"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.3354 mm )",
+                    "pos": {
+                        "x": 15.0468,
+                        "y": 12.7186
+                    },
+                    "uuid": "a656cfae-ddf2-4fda-a17f-0d09eb39f7e2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0842 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.3275 mm )",
+                    "pos": {
+                        "x": 16.0151,
+                        "y": 13.2997
+                    },
+                    "uuid": "2045d51b-2f16-49ca-9742-cd131193b729"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.6720 mm )",
+                    "pos": {
+                        "x": 15.8143,
+                        "y": 12.5072
+                    },
+                    "uuid": "510ebc29-5fd8-4d6c-b642-663f3b96c906"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0842 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_EN] ( B.Cu 上、長さ: 0.2753 mm )",
+                    "pos": {
+                        "x": 16.2098,
+                        "y": 13.105
+                    },
+                    "uuid": "8b152ef6-4d22-451d-821e-c3178bb1319c"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.6254 mm )",
+                    "pos": {
+                        "x": 15.8143,
+                        "y": 13.1792
+                    },
+                    "uuid": "eb703c3e-c4b7-4b74-a7e3-7c488b9a9708"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0975 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( In2.Cu 上、長さ: 1.5097 mm )",
+                    "pos": {
+                        "x": 9.5433,
+                        "y": 22.657
+                    },
+                    "uuid": "957610d2-b3e3-4792-873e-0eaf43a6449e"
+                },
+                {
+                    "description": "配線 [/V3V3] ( In2.Cu 上、長さ: 3.4347 mm )",
+                    "pos": {
+                        "x": 10.7956,
+                        "y": 23.2644
+                    },
+                    "uuid": "961d0c36-265b-4fdd-ac0d-72cf3ddf2295"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0975 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_N] ( In2.Cu 上、長さ: 10.3642 mm )",
+                    "pos": {
+                        "x": 11.053,
+                        "y": 22.657
+                    },
+                    "uuid": "1fa2166d-25fd-4a1c-b5d5-268bfa27c9e3"
+                },
+                {
+                    "description": "配線 [/V3V3] ( In2.Cu 上、長さ: 3.4347 mm )",
+                    "pos": {
+                        "x": 10.7956,
+                        "y": 23.2644
+                    },
+                    "uuid": "961d0c36-265b-4fdd-ac0d-72cf3ddf2295"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0986 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.2403,
+                        "y": 13.0431
+                    },
+                    "uuid": "269a1974-683e-4461-b75c-5919a0b3a137"
+                },
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( B.Cu 上、長さ: 0.8245 mm )",
+                    "pos": {
+                        "x": 16.6389,
+                        "y": 13.004
+                    },
+                    "uuid": "8f0fafe6-29ce-4a00-a209-ef7446a89804"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0905 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.7507,
+                        "y": 13.6473
+                    },
+                    "uuid": "6bacafeb-3445-4a17-b927-7c00b8576aa9"
+                },
+                {
+                    "description": "配線 [/NRST] ( In2.Cu 上、長さ: 3.2813 mm )",
+                    "pos": {
+                        "x": 23.7024,
+                        "y": 14.0468
+                    },
+                    "uuid": "abc9c8b9-535d-4346-938b-bc7ab12063c0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0887 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_ALLOW] ( In2.Cu 上、長さ: 0.5122 mm )",
+                    "pos": {
+                        "x": 7.1966,
+                        "y": 18.3848
+                    },
+                    "uuid": "344a65e9-8254-4696-b010-6849328ea7cc"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 7.68,
+                        "y": 19.39
+                    },
+                    "uuid": "4d3023cd-3e7c-41c1-85a5-39de19bfc09a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/CHG_ALLOW] ( In1.Cu 上、長さ: 1.9806 mm )",
+                    "pos": {
+                        "x": 15.9166,
+                        "y": 13.4194
+                    },
+                    "uuid": "d8acb6e8-f883-49c3-bd4a-357a58a50ee2"
+                },
+                {
+                    "description": "配線 [/SD_CS_N] ( In1.Cu 上、長さ: 1.3975 mm )",
+                    "pos": {
+                        "x": 14.6997,
+                        "y": 12.6468
+                    },
+                    "uuid": "f360a480-5111-43d7-8777-be319bf5ee83"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0890 mm)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 7.68,
+                        "y": 19.39
+                    },
+                    "uuid": "4d3023cd-3e7c-41c1-85a5-39de19bfc09a"
+                },
+                {
+                    "description": "配線 [/CHG_ALLOW] ( In2.Cu 上、長さ: 0.0666 mm )",
+                    "pos": {
+                        "x": 7.13,
+                        "y": 18.3848
+                    },
+                    "uuid": "5f85fe13-95c0-4ec2-a754-9240ef7560ea"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0952 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_EN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.2403,
+                        "y": 13.0431
+                    },
+                    "uuid": "269a1974-683e-4461-b75c-5919a0b3a137"
+                },
+                {
+                    "description": "配線 [/PDM_CLK] ( In1.Cu 上、長さ: 1.8634 mm )",
+                    "pos": {
+                        "x": 17.5196,
+                        "y": 12.3227
+                    },
+                    "uuid": "a880369c-eafa-41dd-ab11-0a1c37cdd39f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0786 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 1.6394 mm )",
+                    "pos": {
+                        "x": 14.0713,
+                        "y": 12.6652
+                    },
+                    "uuid": "d966890a-033b-4765-9f68-0d047376ab7f"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 10.0117 mm )",
+                    "pos": {
+                        "x": 14.3095,
+                        "y": 2.5684
+                    },
+                    "uuid": "f1b9c92b-41f8-4594-b575-5e747babf335"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0957 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 0.7027 mm )",
+                    "pos": {
+                        "x": 12.6265,
+                        "y": 3.5839
+                    },
+                    "uuid": "d0cefb97-3d5c-4e7e-866a-28f0146e9279"
+                },
+                {
+                    "description": "ビア [/VBUS_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.2781,
+                        "y": 3.4919
+                    },
+                    "uuid": "fdf35cd9-c457-4aa6-bc5e-12e4884c8525"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0882 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 0.7845 mm )",
+                    "pos": {
+                        "x": 13.5166,
+                        "y": 3.087
+                    },
+                    "uuid": "e7fa75a6-3062-4769-b75b-0addc6b1fccf"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 10.0117 mm )",
+                    "pos": {
+                        "x": 14.3095,
+                        "y": 2.5684
+                    },
+                    "uuid": "f1b9c92b-41f8-4594-b575-5e747babf335"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0686 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 2.9725 mm )",
+                    "pos": {
+                        "x": 10.5246,
+                        "y": 6.1187
+                    },
+                    "uuid": "0f22038d-941e-4f39-87f0-593a9b58d27e"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.511,
+                        "y": 5.611
+                    },
+                    "uuid": "c5b69fdd-6d92-47a7-9ad3-e5f5e87d8b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0462 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.0309,
+                        "y": 21.2528
+                    },
+                    "uuid": "a3506de9-1dfc-4d8d-9682-ff749fbc8981"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.2662 mm )",
+                    "pos": {
+                        "x": 23.3168,
+                        "y": 21.448
+                    },
+                    "uuid": "e432c039-afa2-47f8-87d2-c7f287cc26f8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 2.3685 mm )",
+                    "pos": {
+                        "x": 15.2305,
+                        "y": 17.0707
+                    },
+                    "uuid": "01099928-7ed8-43f6-96ec-bb145510df37"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 3.4824 mm )",
+                    "pos": {
+                        "x": 15.4592,
+                        "y": 13.7298
+                    },
+                    "uuid": "83f25339-0f13-4e03-ac98-367f30c3f75c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - C7 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.955,
+                        "y": 7.7675
+                    },
+                    "uuid": "c4436fa4-59a0-41ee-8bb3-4201eb029d5a"
+                },
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 0.9604 mm )",
+                    "pos": {
+                        "x": 10.2203,
+                        "y": 7.2933
+                    },
+                    "uuid": "cfc9a607-0cfd-4e70-bb36-edfb178798bd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0812 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.3547,
+                        "y": 6.1187
+                    },
+                    "uuid": "854f7f1e-f819-4d09-8b2b-d28d40a62d3e"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.511,
+                        "y": 5.611
+                    },
+                    "uuid": "c5b69fdd-6d92-47a7-9ad3-e5f5e87d8b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 8 [/GND] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 7.0175
+                    },
+                    "uuid": "8dbf569c-2e71-4081-b225-416a659c62ec"
+                },
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 13.2039,
+                        "y": 6.7286
+                    },
+                    "uuid": "ca934f19-4a9b-484b-8d01-53f204c35fe2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 8 [/GND] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 7.0175
+                    },
+                    "uuid": "8dbf569c-2e71-4081-b225-416a659c62ec"
+                },
+                {
+                    "description": "配線 [/VDDA] ( B.Cu 上、長さ: 0.4258 mm )",
+                    "pos": {
+                        "x": 12.7781,
+                        "y": 6.7286
+                    },
+                    "uuid": "c296e58d-d8b2-4f62-b70b-44ff7c938be1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0812 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.3547,
+                        "y": 6.1187
+                    },
+                    "uuid": "854f7f1e-f819-4d09-8b2b-d28d40a62d3e"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.511,
+                        "y": 5.611
+                    },
+                    "uuid": "c5b69fdd-6d92-47a7-9ad3-e5f5e87d8b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0812 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.3547,
+                        "y": 6.1187
+                    },
+                    "uuid": "854f7f1e-f819-4d09-8b2b-d28d40a62d3e"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.511,
+                        "y": 5.611
+                    },
+                    "uuid": "c5b69fdd-6d92-47a7-9ad3-e5f5e87d8b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0812 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.3547,
+                        "y": 6.1187
+                    },
+                    "uuid": "854f7f1e-f819-4d09-8b2b-d28d40a62d3e"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.511,
+                        "y": 5.611
+                    },
+                    "uuid": "c5b69fdd-6d92-47a7-9ad3-e5f5e87d8b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0903 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VDDA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.3578,
+                        "y": 9.0499
+                    },
+                    "uuid": "86781684-2c95-4aaa-9c6e-3eb1f4c82692"
+                },
+                {
+                    "description": "配線 [/SD_MISO] ( In1.Cu 上、長さ: 0.8598 mm )",
+                    "pos": {
+                        "x": 10.1189,
+                        "y": 8.6596
+                    },
+                    "uuid": "be1f6d40-3337-4dfe-a922-113b2e84e641"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0918 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VDDA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.3578,
+                        "y": 9.0499
+                    },
+                    "uuid": "86781684-2c95-4aaa-9c6e-3eb1f4c82692"
+                },
+                {
+                    "description": "配線 [/NRST] ( In2.Cu 上、長さ: 7.1436 mm )",
+                    "pos": {
+                        "x": 5.3361,
+                        "y": 8.6581
+                    },
+                    "uuid": "a1b82976-6c16-4f51-8283-12afaa13df10"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0934 mm)",
+            "items": [
+                {
+                    "description": "パッド 4 [/GND] - U12 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 21.99
+                    },
+                    "uuid": "577bcacb-d4ef-4e36-8bf1-9d9ae42b8821"
+                },
+                {
+                    "description": "配線 [/TS_COLD_REF] ( B.Cu 上、長さ: 1.5169 mm )",
+                    "pos": {
+                        "x": 20.1274,
+                        "y": 23.49
+                    },
+                    "uuid": "9cce620d-cd1e-4379-832b-8a4edb397403"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0979 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( In1.Cu 上、長さ: 5.7969 mm )",
+                    "pos": {
+                        "x": 1.2816,
+                        "y": 5.0649
+                    },
+                    "uuid": "7875ac47-fe03-4a4b-a040-bc4f5ee5d7e7"
+                },
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 2.9254,
+                        "y": 3.9838
+                    },
+                    "uuid": "c86bff7e-2ce4-4199-b49a-284ad9484c92"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0540 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( In1.Cu 上、長さ: 1.2992 mm )",
+                    "pos": {
+                        "x": 17.4027,
+                        "y": 0.8101
+                    },
+                    "uuid": "58f705f4-33cd-41db-aa13-d6c18e6dfab6"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.9384,
+                        "y": 1.8465
+                    },
+                    "uuid": "d7b64f07-83e9-4b7f-9a79-7d462992017b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0830 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( In1.Cu 上、長さ: 1.7434 mm )",
+                    "pos": {
+                        "x": 18.3214,
+                        "y": 1.7288
+                    },
+                    "uuid": "46f5b6ed-a3e4-4a22-af8b-51694ce007a6"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.9384,
+                        "y": 1.8465
+                    },
+                    "uuid": "d7b64f07-83e9-4b7f-9a79-7d462992017b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0936 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK_MCU] ( B.Cu 上、長さ: 1.0616 mm )",
+                    "pos": {
+                        "x": 18.335,
+                        "y": 12.3695
+                    },
+                    "uuid": "5cdb5cd7-742f-4e63-8711-2b7a3dd2e9fa"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 11.9759
+                    },
+                    "uuid": "6806749b-3201-4b06-ac12-2ecdf53237d0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0905 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.5644,
+                        "y": 16.7856
+                    },
+                    "uuid": "1fa05778-6513-4385-a8a0-054058520368"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( In1.Cu 上、長さ: 6.0921 mm )",
+                    "pos": {
+                        "x": 18.1739,
+                        "y": 14.9268
+                    },
+                    "uuid": "e861e0d1-5340-4961-9e26-e0cc3c970e4f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_CLK_MCU] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.3214,
+                        "y": 3.4722
+                    },
+                    "uuid": "08c60dbd-d83a-4527-92da-444087738947"
+                },
+                {
+                    "description": "配線 [/PDM_DATA] ( In1.Cu 上、長さ: 9.9509 mm )",
+                    "pos": {
+                        "x": 17.9312,
+                        "y": 1.8537
+                    },
+                    "uuid": "ee518588-b778-4920-afff-312e4bd287bc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0545 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 0.8451,
+                        "y": 14.1
+                    },
+                    "uuid": "87fddc42-c824-4f17-831e-f6da018f1e88"
+                },
+                {
+                    "description": "配線 [/SD_CS_N] ( B.Cu 上、長さ: 0.4402 mm )",
+                    "pos": {
+                        "x": 1.075,
+                        "y": 14.81
+                    },
+                    "uuid": "b96df76d-672d-4aec-ba4e-03e7ab3ebd6c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0989 mm)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 16.32,
+                        "y": 19.39
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/SD_CS_N] ( In1.Cu 上、長さ: 0.6884 mm )",
+                    "pos": {
+                        "x": 15.2814,
+                        "y": 18.94
+                    },
+                    "uuid": "492fef38-a428-4d41-be1b-e3d8b00f7d8b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0989 mm)",
+            "items": [
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 16.32,
+                        "y": 19.39
+                    },
+                    "uuid": "244c03d3-17d2-486e-b907-d3492858edca"
+                },
+                {
+                    "description": "配線 [/SD_CS_N] ( In1.Cu 上、長さ: 1.7129 mm )",
+                    "pos": {
+                        "x": 15.7682,
+                        "y": 18.4532
+                    },
+                    "uuid": "3b50a58d-2153-4987-8515-6f3a6d873b7c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CS_N] ( In1.Cu 上、長さ: 3.0250 mm )",
+                    "pos": {
+                        "x": 15.6879,
+                        "y": 13.635
+                    },
+                    "uuid": "9c355f44-acf5-47f4-bb10-df1fd4f106be"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 1.6259 mm )",
+                    "pos": {
+                        "x": 14.3095,
+                        "y": 12.5801
+                    },
+                    "uuid": "a6ed6206-5e95-4a9d-9311-34252ce1f863"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_CS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.6997,
+                        "y": 3.1473
+                    },
+                    "uuid": "d1f858dd-90fa-4a28-b71f-626bc08a3e65"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 10.0117 mm )",
+                    "pos": {
+                        "x": 14.3095,
+                        "y": 2.5684
+                    },
+                    "uuid": "f1b9c92b-41f8-4594-b575-5e747babf335"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0891 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( In2.Cu 上、長さ: 9.5218 mm )",
+                    "pos": {
+                        "x": 10.8856,
+                        "y": 21.7522
+                    },
+                    "uuid": "4a5ebd5b-8df3-4309-be01-6eb4c0a06210"
+                },
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.3414,
+                        "y": 19.7461
+                    },
+                    "uuid": "57b49734-d4cb-4743-9472-690cc14cdd12"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0957 mm)",
+            "items": [
+                {
+                    "description": "パッド 6 [/CHARGER_TS] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 13.985
+                    },
+                    "uuid": "5d16d42a-0b63-4662-a36f-403ce6f69ac5"
+                },
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.3432 mm )",
+                    "pos": {
+                        "x": 22.0307,
+                        "y": 14.1482
+                    },
+                    "uuid": "aad515c0-2185-46ec-9eb4-330c3c39bcf0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0832 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.4482 mm )",
+                    "pos": {
+                        "x": 22.0307,
+                        "y": 13.805
+                    },
+                    "uuid": "11a70d90-200d-4d13-8428-71ea23be21b6"
+                },
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.7304 mm )",
+                    "pos": {
+                        "x": 22.2639,
+                        "y": 14.2943
+                    },
+                    "uuid": "879b752a-d057-4185-a220-61e723fc7172"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0832 mm)",
+            "items": [
+                {
+                    "description": "配線 [/ILIM_VSET] ( B.Cu 上、長さ: 0.3349 mm )",
+                    "pos": {
+                        "x": 21.7939,
+                        "y": 14.385
+                    },
+                    "uuid": "84ab2de6-d0a4-4460-806a-85022d439b60"
+                },
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 0.7304 mm )",
+                    "pos": {
+                        "x": 22.2639,
+                        "y": 14.2943
+                    },
+                    "uuid": "879b752a-d057-4185-a220-61e723fc7172"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( In1.Cu 上、長さ: 1.9820 mm )",
+                    "pos": {
+                        "x": 13.4387,
+                        "y": 12.356
+                    },
+                    "uuid": "ae97127d-ebf3-497f-a903-d5bc8925fd44"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 9.0235 mm )",
+                    "pos": {
+                        "x": 14.0713,
+                        "y": 3.6417
+                    },
+                    "uuid": "f2f8cc84-5ade-465e-8e8c-359e30e125f2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_CS_N] ( In1.Cu 上、長さ: 9.4995 mm )",
+                    "pos": {
+                        "x": 14.6997,
+                        "y": 3.1473
+                    },
+                    "uuid": "1ae071d7-fff0-45bb-bfda-c0ecb3d33e05"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 1.6259 mm )",
+                    "pos": {
+                        "x": 14.3095,
+                        "y": 12.5801
+                    },
+                    "uuid": "a6ed6206-5e95-4a9d-9311-34252ce1f863"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( In1.Cu 上、長さ: 0.6187 mm )",
+                    "pos": {
+                        "x": 14.8402,
+                        "y": 13.7575
+                    },
+                    "uuid": "6afc9214-4e2f-4167-850a-00b4256e3593"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 1.6394 mm )",
+                    "pos": {
+                        "x": 14.0713,
+                        "y": 12.6652
+                    },
+                    "uuid": "d966890a-033b-4765-9f68-0d047376ab7f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0992 mm)",
+            "items": [
+                {
+                    "description": "パッド 5 [/BAT_TS] - U12 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.55,
+                        "y": 19.715
+                    },
+                    "uuid": "42c7d3f2-a6b9-4fe5-8b01-3ec4f70b087c"
+                },
+                {
+                    "description": "配線 [/TS_HOT_REF] ( B.Cu 上、長さ: 0.6191 mm )",
+                    "pos": {
+                        "x": 20.7622,
+                        "y": 18.8415
+                    },
+                    "uuid": "f5fd6fb2-69e5-4d3d-813f-58717bbda21f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0915 mm)",
+            "items": [
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.6344,
+                        "y": 13.4881
+                    },
+                    "uuid": "019c5098-2188-4086-aba2-93429cd581b1"
+                },
+                {
+                    "description": "配線 [/ISET] ( B.Cu 上、長さ: 1.1015 mm )",
+                    "pos": {
+                        "x": 22.2639,
+                        "y": 13.5639
+                    },
+                    "uuid": "062275ca-16eb-4005-ae29-b7f7d5a56a81"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( In1.Cu 上、長さ: 2.5288 mm )",
+                    "pos": {
+                        "x": 19.245,
+                        "y": 2.329
+                    },
+                    "uuid": "1c995fc4-cb29-42f3-aef3-0142f940e45b"
+                },
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( In1.Cu 上、長さ: 5.9131 mm )",
+                    "pos": {
+                        "x": 11.4896,
+                        "y": 0.8101
+                    },
+                    "uuid": "e296fce3-1a6a-468c-b234-549524591018"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_GATE] ( In1.Cu 上、長さ: 8.7035 mm )",
+                    "pos": {
+                        "x": 13.4387,
+                        "y": 3.6525
+                    },
+                    "uuid": "5b0304b9-a50d-44fc-b35c-244ea64d6d27"
+                },
+                {
+                    "description": "ビア [/SD_MISO] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.0485,
+                        "y": 4.3859
+                    },
+                    "uuid": "d2781c7f-3daa-40e8-9b69-ff3877523bb7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0903 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.8402,
+                        "y": 14.3762
+                    },
+                    "uuid": "b9491dd2-ef15-49b5-854a-e7d9981c8076"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 3.2463 mm )",
+                    "pos": {
+                        "x": 15.2305,
+                        "y": 13.8244
+                    },
+                    "uuid": "e1a56226-49c4-4e1e-b162-1028a6a0ba93"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                },
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( B.Cu 上、長さ: 0.8897 mm )",
+                    "pos": {
+                        "x": 22.5108,
+                        "y": 15.4489
+                    },
+                    "uuid": "dba48088-5b95-4e6f-88ec-d2cdf1cf26f9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0950 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - C28 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.64,
+                        "y": 3.8
+                    },
+                    "uuid": "0b7a6d53-d616-4e13-a209-4fd575f58ba4"
+                },
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 0.5811 mm )",
+                    "pos": {
+                        "x": 9.9073,
+                        "y": 4.28
+                    },
+                    "uuid": "a04abb0d-651c-4dd7-a495-e948be0b77ac"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0942 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( F.Cu 上、長さ: 0.3008 mm )",
+                    "pos": {
+                        "x": 10.12,
+                        "y": 4.0673
+                    },
+                    "uuid": "01128277-323a-47c7-aa9f-875675f4cb5b"
+                },
+                {
+                    "description": "パッド 2 [/GND] - C28 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.64,
+                        "y": 3.8
+                    },
+                    "uuid": "0b7a6d53-d616-4e13-a209-4fd575f58ba4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0836 mm)",
+            "items": [
+                {
+                    "description": "配線 [/PDM_CLK] ( In1.Cu 上、長さ: 9.1714 mm )",
+                    "pos": {
+                        "x": 17.5196,
+                        "y": 3.1513
+                    },
+                    "uuid": "1cddf869-89b7-439d-a614-04ee9ba8f5ae"
+                },
+                {
+                    "description": "配線 [/SD_MOSI] ( In1.Cu 上、長さ: 7.0369 mm )",
+                    "pos": {
+                        "x": 17.286,
+                        "y": 3.3014
+                    },
+                    "uuid": "713227b5-18d9-4c92-a618-4438a7b87287"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_CHARGER] ( B.Cu 上、長さ: 0.1925 mm )",
+                    "pos": {
+                        "x": 21.6211,
+                        "y": 15.4489
+                    },
+                    "uuid": "036c668d-ca24-47f9-96f5-7aac4f1c5496"
+                },
+                {
+                    "description": "パッド 9 [/CHG_N] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.485,
+                        "y": 15.185
+                    },
+                    "uuid": "59302211-45cd-45d7-9ec9-e6d3a26ac691"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS_CHARGER] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.3014,
+                        "y": 16.1352
+                    },
+                    "uuid": "115184fe-36fe-4813-8e32-7ea7b981ff8c"
+                },
+                {
+                    "description": "配線 [/ISET] ( In1.Cu 上、長さ: 2.9243 mm )",
+                    "pos": {
+                        "x": 19.6238,
+                        "y": 18.3646
+                    },
+                    "uuid": "4f81f840-205d-4678-8ae4-0a200c5c037d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0585 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VCAP] - C5 ( B.Cu 上)",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 2.58
+                    },
+                    "uuid": "2359c43a-2ac3-47d0-964c-c17c8c7f281e"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.9384,
+                        "y": 1.8465
+                    },
+                    "uuid": "d7b64f07-83e9-4b7f-9a79-7d462992017b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0908 mm)",
+            "items": [
+                {
+                    "description": "ビア [/PDM_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.7785,
+                        "y": 2.6245
+                    },
+                    "uuid": "7eb3329d-06f4-4bb9-832f-b54f11454b79"
+                },
+                {
+                    "description": "配線 [/SD_CLK_MCU] ( B.Cu 上、長さ: 0.5931 mm )",
+                    "pos": {
+                        "x": 16.5646,
+                        "y": 3.0153
+                    },
+                    "uuid": "9d8160a4-e221-4cd6-ba0d-ddcd337241dc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0922 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( In1.Cu 上、長さ: 0.6012 mm )",
+                    "pos": {
+                        "x": 12.6234,
+                        "y": 9.8318
+                    },
+                    "uuid": "1896d1f4-2c64-4de7-821f-a34341d8491a"
+                },
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.4648,
+                        "y": 9.4358
+                    },
+                    "uuid": "1c630e85-65b9-4f3d-9e51-0147d0ce7cd3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0989 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MISO] ( F.Cu 上、長さ: 0.7309 mm )",
+                    "pos": {
+                        "x": 17.0419,
+                        "y": 9.255
+                    },
+                    "uuid": "4c10b827-b8d2-4fcd-95df-9d5be6669ea2"
+                },
+                {
+                    "description": "パッド 2 [/GND] - R34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.795,
+                        "y": 8.745
+                    },
+                    "uuid": "7cf087ab-45b8-46d2-a1dd-c29b7c7f795e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0405 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 2.7596 mm )",
+                    "pos": {
+                        "x": 12.6024,
+                        "y": 7.2209
+                    },
+                    "uuid": "279e1fd2-a473-470b-bc60-834a9f8c182f"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.511,
+                        "y": 5.611
+                    },
+                    "uuid": "c5b69fdd-6d92-47a7-9ad3-e5f5e87d8b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0414 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( In2.Cu 上、長さ: 4.2778 mm )",
+                    "pos": {
+                        "x": 10.6511,
+                        "y": 5.2696
+                    },
+                    "uuid": "69ea99aa-3b91-40af-bd93-0050babe1d04"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.511,
+                        "y": 5.611
+                    },
+                    "uuid": "c5b69fdd-6d92-47a7-9ad3-e5f5e87d8b9e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0929 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SWDIO] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.4959,
+                        "y": 7.2209
+                    },
+                    "uuid": "097611ed-d1f5-45a1-991c-42d5c2548a2f"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( F.Cu 上、長さ: 0.1157 mm )",
+                    "pos": {
+                        "x": 21.6575,
+                        "y": 7.6111
+                    },
+                    "uuid": "a749f43d-cdd4-4168-84d2-e54832907763"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0880 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( B.Cu 上、長さ: 0.4401 mm )",
+                    "pos": {
+                        "x": 20.5559,
+                        "y": 9.5175
+                    },
+                    "uuid": "7a2b7ce9-3d1d-4146-893b-737c45db7b26"
+                },
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.017,
+                        "y": 9.4299
+                    },
+                    "uuid": "b7facf8b-57c3-4f7f-9fac-e0b4feb71672"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0988 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SWDIO] ( B.Cu 上、長さ: 0.2642 mm )",
+                    "pos": {
+                        "x": 20.8671,
+                        "y": 9.8287
+                    },
+                    "uuid": "8e6c57eb-df25-47af-b037-a0600922d529"
+                },
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.017,
+                        "y": 9.4299
+                    },
+                    "uuid": "b7facf8b-57c3-4f7f-9fac-e0b4feb71672"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0893 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.6375,
+                        "y": 0.95
+                    },
+                    "uuid": "7a303982-7a04-49de-a7a5-04f37d936eaa"
+                },
+                {
+                    "description": "配線 [/VBUS_OVP] ( F.Cu 上、長さ: 0.7552 mm )",
+                    "pos": {
+                        "x": 14.8784,
+                        "y": 1.4143
+                    },
+                    "uuid": "fb3eaaf8-f952-4fdd-a829-7206f92ac081"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0893 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS_OVP] ( F.Cu 上、長さ: 0.6869 mm )",
+                    "pos": {
+                        "x": 14.1232,
+                        "y": 1.4143
+                    },
+                    "uuid": "58f023e1-56d1-4957-a106-9fd92556c887"
+                },
+                {
+                    "description": "パッド 2 [/GND] - U13 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.6375,
+                        "y": 0.95
+                    },
+                    "uuid": "7a303982-7a04-49de-a7a5-04f37d936eaa"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0941 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CC2] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.75,
+                        "y": 17.758
+                    },
+                    "uuid": "c1f34a5a-5adf-481b-bb44-210b9b900b21"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 1.2977 mm )",
+                    "pos": {
+                        "x": 13.6676,
+                        "y": 17.2831
+                    },
+                    "uuid": "f8e24d7c-9426-4571-bb27-a33372aa03b1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0951 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SWDIO] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.4959,
+                        "y": 7.2209
+                    },
+                    "uuid": "097611ed-d1f5-45a1-991c-42d5c2548a2f"
+                },
+                {
+                    "description": "配線 [/BAT_TS] ( In2.Cu 上、長さ: 4.1908 mm )",
+                    "pos": {
+                        "x": 21.891,
+                        "y": 9.8634
+                    },
+                    "uuid": "144f983c-0d1d-4a47-a8e1-b64b727d74e1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0859 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.1548 mm )",
+                    "pos": {
+                        "x": 17.9166,
+                        "y": 14.2483
+                    },
+                    "uuid": "a2ddd0f3-bd70-4b28-a3dc-0e3f3829eb42"
+                },
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.5312,
+                        "y": 14.2289
+                    },
+                    "uuid": "a77a60a1-3cce-41b7-928a-380e4408d271"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0992 mm)",
+            "items": [
+                {
+                    "description": "パッド 33 [/USB_DP] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 9.0175
+                    },
+                    "uuid": "43a988d5-a5dd-41ae-b1ee-b1aaf90e09e4"
+                },
+                {
+                    "description": "ビア [/USB_DM] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 20.9963,
+                        "y": 8.7556
+                    },
+                    "uuid": "70291cf8-38c1-4065-86ef-88c0fdfcce2f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0957 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 3.3549 mm )",
+                    "pos": {
+                        "x": 17.9166,
+                        "y": 14.4031
+                    },
+                    "uuid": "91ee47c7-845a-4087-bb6d-13e9453d4dd4"
+                },
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.5312,
+                        "y": 14.2289
+                    },
+                    "uuid": "a77a60a1-3cce-41b7-928a-380e4408d271"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0859 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.8755 mm )",
+                    "pos": {
+                        "x": 18.5357,
+                        "y": 13.6292
+                    },
+                    "uuid": "89eea5df-d302-410c-bb4d-e019b8c0c281"
+                },
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.5312,
+                        "y": 14.2289
+                    },
+                    "uuid": "a77a60a1-3cce-41b7-928a-380e4408d271"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0442 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DM] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 17.6846
+                    },
+                    "uuid": "876602ca-448e-4866-8554-11657825b9db"
+                },
+                {
+                    "description": "配線 [/V3V3] ( In1.Cu 上、長さ: 2.1828 mm )",
+                    "pos": {
+                        "x": 10.9058,
+                        "y": 18.0058
+                    },
+                    "uuid": "d6279d4e-f1e7-43fe-b5dc-fbc16231a4e8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0948 mm)",
+            "items": [
+                {
+                    "description": "パッド A7 [/USB_DM] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.25,
+                        "y": 18.815
+                    },
+                    "uuid": "f7fc1e86-d74c-4ef5-8ab8-a5f0d4b91d36"
+                },
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.5244 mm )",
+                    "pos": {
+                        "x": 11.75,
+                        "y": 19.2362
+                    },
+                    "uuid": "fd7577b4-5423-4b54-adcd-ee0f8e00e9f7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0628 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.017,
+                        "y": 9.4299
+                    },
+                    "uuid": "b7facf8b-57c3-4f7f-9fac-e0b4feb71672"
+                },
+                {
+                    "description": "配線 [/SWDIO] ( B.Cu 上、長さ: 0.5156 mm )",
+                    "pos": {
+                        "x": 21.1313,
+                        "y": 9.8287
+                    },
+                    "uuid": "e16bb57d-0990-4986-86a3-ad4365b92113"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0990 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 3.9012 mm )",
+                    "pos": {
+                        "x": 18.1806,
+                        "y": 14.5245
+                    },
+                    "uuid": "addaad45-8be8-4e27-93ca-f78b21b85d79"
+                },
+                {
+                    "description": "ビア [/CHG_INHIBIT_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.5796,
+                        "y": 14.5211
+                    },
+                    "uuid": "cde82aa8-31a9-4f3a-9a55-621acda74e47"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0896 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.3414,
+                        "y": 19.7461
+                    },
+                    "uuid": "57b49734-d4cb-4743-9472-690cc14cdd12"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 2.9378 mm )",
+                    "pos": {
+                        "x": 10.643,
+                        "y": 20.1357
+                    },
+                    "uuid": "f04e83b4-4e17-4c1b-bc8d-14e01dbf00cc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0990 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.2306 mm )",
+                    "pos": {
+                        "x": 18.1806,
+                        "y": 14.2939
+                    },
+                    "uuid": "927f8621-08c6-44e8-b488-1bc1e7ebf633"
+                },
+                {
+                    "description": "ビア [/CHG_INHIBIT_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.5796,
+                        "y": 14.5211
+                    },
+                    "uuid": "cde82aa8-31a9-4f3a-9a55-621acda74e47"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0689 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 0.8457 mm )",
+                    "pos": {
+                        "x": 18.7786,
+                        "y": 13.6959
+                    },
+                    "uuid": "12f67b51-5981-4162-b032-ab15b3aed177"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 0.8755 mm )",
+                    "pos": {
+                        "x": 18.5357,
+                        "y": 13.6292
+                    },
+                    "uuid": "89eea5df-d302-410c-bb4d-e019b8c0c281"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0403 mm)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.3414,
+                        "y": 19.7461
+                    },
+                    "uuid": "57b49734-d4cb-4743-9472-690cc14cdd12"
+                },
+                {
+                    "description": "配線 [/VBUS_GATE] ( In1.Cu 上、長さ: 4.7939 mm )",
+                    "pos": {
+                        "x": 12.0011,
+                        "y": 17.7181
+                    },
+                    "uuid": "b97f7e62-e62b-401a-ac4a-d6cff2a90526"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0882 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 1.6259 mm )",
+                    "pos": {
+                        "x": 14.3095,
+                        "y": 12.5801
+                    },
+                    "uuid": "a6ed6206-5e95-4a9d-9311-34252ce1f863"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 9.0235 mm )",
+                    "pos": {
+                        "x": 14.0713,
+                        "y": 3.6417
+                    },
+                    "uuid": "f2f8cc84-5ade-465e-8e8c-359e30e125f2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0882 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 10.0117 mm )",
+                    "pos": {
+                        "x": 14.3095,
+                        "y": 2.5684
+                    },
+                    "uuid": "f1b9c92b-41f8-4594-b575-5e747babf335"
+                },
+                {
+                    "description": "配線 [/VBUS_N] ( In1.Cu 上、長さ: 9.0235 mm )",
+                    "pos": {
+                        "x": 14.0713,
+                        "y": 3.6417
+                    },
+                    "uuid": "f2f8cc84-5ade-465e-8e8c-359e30e125f2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'USB_FS_PAIR' クリアランス 0.1000 mm; 現状 0.0929 mm)",
+            "items": [
+                {
+                    "description": "配線 [/USB_DP] ( F.Cu 上、長さ: 3.1656 mm )",
+                    "pos": {
+                        "x": 21.017,
+                        "y": 9.4299
+                    },
+                    "uuid": "29fcab1d-94d5-46db-8e50-d21e61191a02"
+                },
+                {
+                    "description": "配線 [/USB_DM] ( F.Cu 上、長さ: 2.4130 mm )",
+                    "pos": {
+                        "x": 18.5357,
+                        "y": 11.2162
+                    },
+                    "uuid": "7185f69a-82ab-442b-8c72-7f5fd3a8bf50"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 3.4824 mm )",
+                    "pos": {
+                        "x": 15.4592,
+                        "y": 13.7298
+                    },
+                    "uuid": "83f25339-0f13-4e03-ac98-367f30c3f75c"
+                },
+                {
+                    "description": "配線 [/SD_CS_N] ( In1.Cu 上、長さ: 1.3975 mm )",
+                    "pos": {
+                        "x": 14.6997,
+                        "y": 12.6468
+                    },
+                    "uuid": "f360a480-5111-43d7-8777-be319bf5ee83"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0948 mm)",
+            "items": [
+                {
+                    "description": "ビア [/VBUS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 9.3872,
+                        "y": 7.2568
+                    },
+                    "uuid": "947350c9-2e92-4d80-ae86-b8fdaf806c98"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 2.3252 mm )",
+                    "pos": {
+                        "x": 7.9239,
+                        "y": 8.1617
+                    },
+                    "uuid": "ea2cd5ce-7595-41ab-994c-8cb091889202"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0994 mm)",
+            "items": [
+                {
+                    "description": "パッド B8 [unconnected-(J1-SBU2-PadB8)] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 18.815
+                    },
+                    "uuid": "930c2919-c5b9-4360-aa47-6eb131bf96cd"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.4750 mm )",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 19.0927
+                    },
+                    "uuid": "b4ff3444-7f5e-4805-8f5a-500f45ac4a4f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 4.0726 mm )",
+                    "pos": {
+                        "x": 12.5959,
+                        "y": 15.0916
+                    },
+                    "uuid": "d3856d78-bb1b-4a60-a82d-7414c0261caf"
+                },
+                {
+                    "description": "ビア [/BOOT0] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 14.385,
+                        "y": 14.7014
+                    },
+                    "uuid": "db82ac6f-d965-4141-80e4-44296701c9cb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0972 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/V3V3] - R2 ( F.Cu 上)",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 9.765
+                    },
+                    "uuid": "53643853-b007-4c66-a4f6-a37cd61cc64f"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 2.2750 mm )",
+                    "pos": {
+                        "x": 12.5778,
+                        "y": 9.3228
+                    },
+                    "uuid": "96e74130-5949-4767-b6ad-514dc5c94611"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.5312,
+                        "y": 14.2289
+                    },
+                    "uuid": "a77a60a1-3cce-41b7-928a-380e4408d271"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.4336 mm )",
+                    "pos": {
+                        "x": 17.141,
+                        "y": 14.0674
+                    },
+                    "uuid": "e7f0bf88-2890-44bd-b40e-45da99bd0f3e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0940 mm)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 2.6477 mm )",
+                    "pos": {
+                        "x": 9.3872,
+                        "y": 7.2586
+                    },
+                    "uuid": "46d6a1bf-de97-45f2-99e8-7206f668bf05"
+                },
+                {
+                    "description": "ビア [/SYS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 6.4444,
+                        "y": 6.9975
+                    },
+                    "uuid": "add868e9-066d-4f62-9f2c-dc11d193a8d0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.5312,
+                        "y": 14.2289
+                    },
+                    "uuid": "a77a60a1-3cce-41b7-928a-380e4408d271"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( In2.Cu 上、長さ: 2.2797 mm )",
+                    "pos": {
+                        "x": 18.4816,
+                        "y": 14.6191
+                    },
+                    "uuid": "d2a4c084-6fee-4860-a020-1a8668cfe610"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/STATUS_LED] ( B.Cu 上、長さ: 0.4703 mm )",
+                    "pos": {
+                        "x": 22.6084,
+                        "y": 6.6613
+                    },
+                    "uuid": "6171671a-df3b-4ff5-9e92-9ff9d6dafa6e"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 2.7347 mm )",
+                    "pos": {
+                        "x": 22.9328,
+                        "y": 6.6623
+                    },
+                    "uuid": "7e0433cd-cf73-4409-a45a-38ac80da1424"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 28 [unconnected-(U1-PB15-Pad28)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 6.5175
+                    },
+                    "uuid": "1634cdc6-e075-48c8-b440-65407eeb9be5"
+                },
+                {
+                    "description": "配線 [/STATUS_LED] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 20.5011,
+                        "y": 6.8064
+                    },
+                    "uuid": "6840e433-07fb-4638-a2e7-b97c54c8019f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0960 mm)",
+            "items": [
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.4648,
+                        "y": 9.4358
+                    },
+                    "uuid": "1c630e85-65b9-4f3d-9e51-0147d0ce7cd3"
+                },
+                {
+                    "description": "配線 [/SD_MISO] ( In1.Cu 上、長さ: 0.4725 mm )",
+                    "pos": {
+                        "x": 12.1509,
+                        "y": 9.8318
+                    },
+                    "uuid": "45ce6c16-c306-47ed-8cdc-e7b2e49d579d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 10 [/VBUS_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 6.0175
+                    },
+                    "uuid": "3a7f0ffb-7b79-4334-a26d-02755372c753"
+                },
+                {
+                    "description": "配線 [/BAT_ADC] ( B.Cu 上、長さ: 0.5714 mm )",
+                    "pos": {
+                        "x": 12.6325,
+                        "y": 5.7286
+                    },
+                    "uuid": "ba327447-6cc6-4985-8dfd-776721a26246"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 10 [/VBUS_N] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 6.0175
+                    },
+                    "uuid": "3a7f0ffb-7b79-4334-a26d-02755372c753"
+                },
+                {
+                    "description": "配線 [/BAT_ADC] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 13.2039,
+                        "y": 5.7286
+                    },
+                    "uuid": "a2fc3fd3-aa5b-4fd8-8bde-d6c56adac5b2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/STATUS_LED] ( B.Cu 上、長さ: 0.4825 mm )",
+                    "pos": {
+                        "x": 22.9496,
+                        "y": 7.0025
+                    },
+                    "uuid": "1d3ac18f-231f-467f-92d7-9636507f6e15"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 2.7347 mm )",
+                    "pos": {
+                        "x": 22.9328,
+                        "y": 6.6623
+                    },
+                    "uuid": "7e0433cd-cf73-4409-a45a-38ac80da1424"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 28 [unconnected-(U1-PB15-Pad28)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 6.5175
+                    },
+                    "uuid": "1634cdc6-e075-48c8-b440-65407eeb9be5"
+                },
+                {
+                    "description": "配線 [/STATUS_LED] ( B.Cu 上、長さ: 1.1602 mm )",
+                    "pos": {
+                        "x": 21.6613,
+                        "y": 6.8064
+                    },
+                    "uuid": "8f7cb411-0cd5-4fb5-b43e-d209c4348bee"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0903 mm)",
+            "items": [
+                {
+                    "description": "配線 [/STATUS_LED] ( F.Cu 上、長さ: 2.8514 mm )",
+                    "pos": {
+                        "x": 24.1424,
+                        "y": 5.9638
+                    },
+                    "uuid": "2180ae64-e262-48d9-8098-ab239decbee7"
+                },
+                {
+                    "description": "ビア [/SD_V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.7521,
+                        "y": 4.7395
+                    },
+                    "uuid": "2969e64e-0620-43bd-9a84-e464aa979f54"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0927 mm)",
+            "items": [
+                {
+                    "description": "ビア [/BAT_ADC] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.4861,
+                        "y": 4.2663
+                    },
+                    "uuid": "5fc44801-8210-4065-88ac-35251c09e029"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In1.Cu 上、長さ: 4.6755 mm )",
+                    "pos": {
+                        "x": 9.3872,
+                        "y": 5.8098
+                    },
+                    "uuid": "e2b06279-3c69-485d-9040-377fd5a5396f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 1.8310 mm )",
+                    "pos": {
+                        "x": 13.5877,
+                        "y": 3.9957
+                    },
+                    "uuid": "6e06ab23-d2f4-4596-adbc-46ca7c69cc26"
+                },
+                {
+                    "description": "ビア [/SD_MISO] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.0485,
+                        "y": 4.3859
+                    },
+                    "uuid": "d2781c7f-3daa-40e8-9b69-ff3877523bb7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0961 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BUTTON_N] - SW1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 14.025,
+                        "y": 5.975
+                    },
+                    "uuid": "1daca844-2575-4f61-8fc4-7d52952c4deb"
+                },
+                {
+                    "description": "配線 [/BAT_ADC] ( F.Cu 上、長さ: 2.4145 mm )",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 5.703
+                    },
+                    "uuid": "89bea6e2-7988-415b-a261-dcbbd612c29e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 7 [/NRST] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 7.5175
+                    },
+                    "uuid": "da5341f9-25dd-400b-b73b-02c17e3b9cdd"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 13.6261,
+                        "y": 7.2286
+                    },
+                    "uuid": "ef9ce661-828f-4bfa-b70d-2761ad8c0e84"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 13.2039,
+                        "y": 7.2286
+                    },
+                    "uuid": "cfb02863-b8b1-42be-8079-a100eb76cd12"
+                },
+                {
+                    "description": "パッド 7 [/NRST] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 7.5175
+                    },
+                    "uuid": "da5341f9-25dd-400b-b73b-02c17e3b9cdd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.3354 mm )",
+                    "pos": {
+                        "x": 15.0468,
+                        "y": 12.7186
+                    },
+                    "uuid": "a656cfae-ddf2-4fda-a17f-0d09eb39f7e2"
+                },
+                {
+                    "description": "配線 [/BOOT0] ( B.Cu 上、長さ: 0.5353 mm )",
+                    "pos": {
+                        "x": 14.8108,
+                        "y": 13.278
+                    },
+                    "uuid": "b04f5486-8c76-45e1-8b12-a85b99ac5d95"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 3.2204 mm )",
+                    "pos": {
+                        "x": 16.8465,
+                        "y": 7.2286
+                    },
+                    "uuid": "93627111-393d-4ac1-b6cd-d481590ad0d0"
+                },
+                {
+                    "description": "パッド 7 [/NRST] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 7.5175
+                    },
+                    "uuid": "da5341f9-25dd-400b-b73b-02c17e3b9cdd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0901 mm)",
+            "items": [
+                {
+                    "description": "パッド 43 [unconnected-(U1-PB7-Pad43)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 16.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "593c7cd6-e14b-4fc6-bd52-2e394d9fec73"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.4838 mm )",
+                    "pos": {
+                        "x": 16.5164,
+                        "y": 10.6036
+                    },
+                    "uuid": "7851b3c2-1ede-48f7-b028-200f11a91b02"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.7690 mm )",
+                    "pos": {
+                        "x": 19.1387,
+                        "y": 13.8387
+                    },
+                    "uuid": "6ded2a5f-eb4d-4ec3-94e2-3a17099411ec"
+                },
+                {
+                    "description": "ビア [/BAT] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.5312,
+                        "y": 14.2289
+                    },
+                    "uuid": "a77a60a1-3cce-41b7-928a-380e4408d271"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0988 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.3869 mm )",
+                    "pos": {
+                        "x": 9.5681,
+                        "y": 6.5175
+                    },
+                    "uuid": "4d982ad2-e43b-440d-b27c-9e2735208103"
+                },
+                {
+                    "description": "ビア [/VBUS_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.3547,
+                        "y": 6.1187
+                    },
+                    "uuid": "854f7f1e-f819-4d09-8b2b-d28d40a62d3e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 1.9139 mm )",
+                    "pos": {
+                        "x": 14.6025,
+                        "y": 10.6036
+                    },
+                    "uuid": "3ffa313d-cc98-46d5-a262-584e21889a80"
+                },
+                {
+                    "description": "パッド 46 [unconnected-(U1-PB9-Pad46)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 15.1025,
+                        "y": 11.205
+                    },
+                    "uuid": "8cf8c1a8-d870-4830-aadb-22cbf1e63094"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 0.6045 mm )",
+                    "pos": {
+                        "x": 12.5994,
+                        "y": 7.2286
+                    },
+                    "uuid": "2c7f1758-519c-4299-9674-febf6da7cd2f"
+                },
+                {
+                    "description": "パッド 7 [/NRST] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 7.5175
+                    },
+                    "uuid": "da5341f9-25dd-400b-b73b-02c17e3b9cdd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "パッド 3 [/PDM_CLK] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 19.75,
+                        "y": 5.415
+                    },
+                    "uuid": "69c2a13e-0866-4dbb-8a0f-fdd289918abd"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 2.0844 mm )",
+                    "pos": {
+                        "x": 18.1004,
+                        "y": 6.0352
+                    },
+                    "uuid": "f5d0583a-3ecc-438e-9c95-e52321e517a4"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0893 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.7375,
+                        "y": 2.535
+                    },
+                    "uuid": "df8a2cad-6856-453a-8a3c-4ca2b9c6febb"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.6869 mm )",
+                    "pos": {
+                        "x": 1.2518,
+                        "y": 2.9993
+                    },
+                    "uuid": "e3a2ec58-e475-4c7e-b8e1-51bda48ad1d2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 3.715
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                },
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.1587 mm )",
+                    "pos": {
+                        "x": 21.0324,
+                        "y": 3.8013
+                    },
+                    "uuid": "db2c6128-f46b-45c6-912e-4ecb733e4097"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.5015 mm )",
+                    "pos": {
+                        "x": 20.9202,
+                        "y": 3.9135
+                    },
+                    "uuid": "4d61578e-6cfa-4731-8b1a-ad7fb7839171"
+                },
+                {
+                    "description": "パッド 2 [/V3V3] - U8 ( F.Cu 上)",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 3.715
+                    },
+                    "uuid": "ccc5cc3e-87f3-4b9f-98b3-1ba4d61e0fbf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0893 mm)",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.3609 mm )",
+                    "pos": {
+                        "x": 0.8909,
+                        "y": 2.9993
+                    },
+                    "uuid": "05de1500-1199-4bd4-a5bf-4432a3edea43"
+                },
+                {
+                    "description": "パッド 1 [/SYS] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.7375,
+                        "y": 2.535
+                    },
+                    "uuid": "df8a2cad-6856-453a-8a3c-4ca2b9c6febb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0944 mm)",
+            "items": [
+                {
+                    "description": "配線 [/BUTTON_N] ( B.Cu 上、長さ: 0.5101 mm )",
+                    "pos": {
+                        "x": 19.1025,
+                        "y": 11.4704
+                    },
+                    "uuid": "db6f6aee-ca98-4a9b-b6a6-006820d1d218"
+                },
+                {
+                    "description": "パッド 37 [/SWCLK] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 19.6025,
+                        "y": 11.205
+                    },
+                    "uuid": "f048dcc7-b4c3-464d-a0a0-7a3c29384f12"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 3 [unconnected-(U3-STAT2-Pad3)] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 19.285,
+                        "y": 14.785
+                    },
+                    "uuid": "79d07cc8-9f50-4171-a9d0-0c5614953a2d"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 0.1925 mm )",
+                    "pos": {
+                        "x": 19.1489,
+                        "y": 14.5211
+                    },
+                    "uuid": "e01fe994-0ab3-4677-b67a-e4b1268279c7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "パッド 3 [unconnected-(U3-STAT2-Pad3)] - U3 ( B.Cu 上)",
+                    "pos": {
+                        "x": 19.285,
+                        "y": 14.785
+                    },
+                    "uuid": "79d07cc8-9f50-4171-a9d0-0c5614953a2d"
+                },
+                {
+                    "description": "配線 [/CHG_INHIBIT_GATE] ( B.Cu 上、長さ: 0.5693 mm )",
+                    "pos": {
+                        "x": 18.5796,
+                        "y": 14.5211
+                    },
+                    "uuid": "9e76d979-278c-42e0-a750-cd699b5d76ca"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0989 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 1.9964 mm )",
+                    "pos": {
+                        "x": 7.8561,
+                        "y": 8.4092
+                    },
+                    "uuid": "978144c1-3e2a-4cea-af5a-f175f990b678"
+                },
+                {
+                    "description": "配線 [/NRST] ( In2.Cu 上、長さ: 7.1436 mm )",
+                    "pos": {
+                        "x": 5.3361,
+                        "y": 8.6581
+                    },
+                    "uuid": "a1b82976-6c16-4f51-8283-12afaa13df10"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0901 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 3.7663 mm )",
+                    "pos": {
+                        "x": 20.9974,
+                        "y": 11.0724
+                    },
+                    "uuid": "8f559481-c905-4677-8a6b-dda050d95752"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.1589,
+                        "y": 10.6822
+                    },
+                    "uuid": "eaf034dd-0eb7-4c40-88bd-426420d1aaaf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0911 mm)",
+            "items": [
+                {
+                    "description": "ビア [/CHG_INHIBIT_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.795,
+                        "y": 21.64
+                    },
+                    "uuid": "0b3f3a94-a763-485f-917a-7145220af998"
+                },
+                {
+                    "description": "配線 [/TS_HOT_REF] ( B.Cu 上、長さ: 2.5839 mm )",
+                    "pos": {
+                        "x": 19.1861,
+                        "y": 19.24
+                    },
+                    "uuid": "7a407313-7f31-4499-aba3-b9338cdfdc72"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0989 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 10.4781 mm )",
+                    "pos": {
+                        "x": 18.3342,
+                        "y": 8.4092
+                    },
+                    "uuid": "036c1a4d-76d9-426a-ab21-0ba404a51102"
+                },
+                {
+                    "description": "配線 [/NRST] ( In2.Cu 上、長さ: 7.1436 mm )",
+                    "pos": {
+                        "x": 5.3361,
+                        "y": 8.6581
+                    },
+                    "uuid": "a1b82976-6c16-4f51-8283-12afaa13df10"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0907 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SYS] ( In2.Cu 上、長さ: 4.3162 mm )",
+                    "pos": {
+                        "x": 24.1034,
+                        "y": 14.1244
+                    },
+                    "uuid": "03168d79-8e4c-4950-9934-5fb7cc83175d"
+                },
+                {
+                    "description": "ビア [/NRST] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.7024,
+                        "y": 14.276
+                    },
+                    "uuid": "eb344f64-ccff-423b-8a1a-33cbdb6c75d3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0893 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.7375,
+                        "y": 3.485
+                    },
+                    "uuid": "297d6570-60b6-4a75-9d6d-8534a8536520"
+                },
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.3560 mm )",
+                    "pos": {
+                        "x": 2.5792,
+                        "y": 3.0207
+                    },
+                    "uuid": "e0dbec17-494d-4d30-84ec-12079cd76fd8"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0893 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/GND] - U4 ( F.Cu 上)",
+                    "pos": {
+                        "x": 1.7375,
+                        "y": 3.485
+                    },
+                    "uuid": "297d6570-60b6-4a75-9d6d-8534a8536520"
+                },
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 0.6869 mm )",
+                    "pos": {
+                        "x": 2.2232,
+                        "y": 3.0207
+                    },
+                    "uuid": "9120d3b3-9b75-45f3-a746-2339a64a52ed"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0904 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_MOSI] ( In1.Cu 上、長さ: 7.0369 mm )",
+                    "pos": {
+                        "x": 17.286,
+                        "y": 3.3014
+                    },
+                    "uuid": "713227b5-18d9-4c92-a618-4438a7b87287"
+                },
+                {
+                    "description": "ビア [/CHG_ALLOW] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 16.8956,
+                        "y": 3.5538
+                    },
+                    "uuid": "9e7ef5fb-f8d0-4334-92c5-60ca59acb2d5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0933 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SYS] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 6.4444,
+                        "y": 6.9975
+                    },
+                    "uuid": "add868e9-066d-4f62-9f2c-dc11d193a8d0"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 0.9751 mm )",
+                    "pos": {
+                        "x": 6.7395,
+                        "y": 7.2586
+                    },
+                    "uuid": "dd6142f5-c8bb-461b-890e-43b5b00f81c5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BAT_ADC] - R34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.795,
+                        "y": 9.765
+                    },
+                    "uuid": "e6a3862e-861a-4090-af3d-4b92e3749da0"
+                },
+                {
+                    "description": "配線 [/SD_MOSI] ( F.Cu 上、長さ: 0.2002 mm )",
+                    "pos": {
+                        "x": 17.2792,
+                        "y": 10.0377
+                    },
+                    "uuid": "f866e96b-a64a-4a4f-968f-bf55a445cac2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/BAT_ADC] - R34 ( F.Cu 上)",
+                    "pos": {
+                        "x": 16.795,
+                        "y": 9.765
+                    },
+                    "uuid": "e6a3862e-861a-4090-af3d-4b92e3749da0"
+                },
+                {
+                    "description": "配線 [/SD_MOSI] ( F.Cu 上、長さ: 0.7166 mm )",
+                    "pos": {
+                        "x": 17.2792,
+                        "y": 9.8375
+                    },
+                    "uuid": "f401df4c-c73c-442e-8238-154cfe743e1c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0817 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( In1.Cu 上、長さ: 0.3664 mm )",
+                    "pos": {
+                        "x": 22.7794,
+                        "y": 14.8615
+                    },
+                    "uuid": "6de205e6-6a56-47dc-80c2-065b6cbc1962"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.2031,
+                        "y": 14.9083
+                    },
+                    "uuid": "f1b32112-eb1e-44d4-b59b-80da158af81c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0817 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( In1.Cu 上、長さ: 0.0937 mm )",
+                    "pos": {
+                        "x": 22.5203,
+                        "y": 15.1206
+                    },
+                    "uuid": "69ba60f9-5035-4fec-b68b-4d4a54c28f1c"
+                },
+                {
+                    "description": "ビア [/CHG_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.2031,
+                        "y": 14.9083
+                    },
+                    "uuid": "f1b32112-eb1e-44d4-b59b-80da158af81c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( In1.Cu 上、長さ: 1.7328 mm )",
+                    "pos": {
+                        "x": 21.295,
+                        "y": 17.0168
+                    },
+                    "uuid": "54a288fa-825e-4a8f-875a-13ed2d638b3b"
+                },
+                {
+                    "description": "配線 [/BAT_TS] ( In1.Cu 上、長さ: 6.2066 mm )",
+                    "pos": {
+                        "x": 21.85,
+                        "y": 22.9918
+                    },
+                    "uuid": "b982c6e8-8765-4eac-9264-f4ec079d7999"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( In1.Cu 上、長さ: 0.5772 mm )",
+                    "pos": {
+                        "x": 22.5203,
+                        "y": 15.7915
+                    },
+                    "uuid": "513d36e6-1a83-4aa6-8030-100e5d1a871d"
+                },
+                {
+                    "description": "配線 [/BAT_TS] ( In1.Cu 上、長さ: 2.0277 mm )",
+                    "pos": {
+                        "x": 21.85,
+                        "y": 16.7852
+                    },
+                    "uuid": "565c226e-1056-458c-9804-810f5ad5a6c6"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( In1.Cu 上、長さ: 0.5924 mm )",
+                    "pos": {
+                        "x": 22.3605,
+                        "y": 14.4426
+                    },
+                    "uuid": "5baed159-788a-4fda-95a4-c679dcb1782b"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( In1.Cu 上、長さ: 6.3941 mm )",
+                    "pos": {
+                        "x": 22.1318,
+                        "y": 8.4429
+                    },
+                    "uuid": "8a2e8f7b-cc47-4247-988f-5628e56eaf45"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0787 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( In1.Cu 上、長さ: 6.2920 mm )",
+                    "pos": {
+                        "x": 22.3605,
+                        "y": 8.1506
+                    },
+                    "uuid": "222a117f-033e-4f75-a814-379c776d44ff"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( In1.Cu 上、長さ: 1.5597 mm )",
+                    "pos": {
+                        "x": 21.0289,
+                        "y": 7.34
+                    },
+                    "uuid": "e2be52b6-2df2-4978-9cb8-a57af4d7dd7e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0892 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHARGER_TS] - R35 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 12.765
+                    },
+                    "uuid": "55cd626d-5e2f-412c-b1ce-c70f8a507452"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.8411 mm )",
+                    "pos": {
+                        "x": 9.7678,
+                        "y": 12.3308
+                    },
+                    "uuid": "9c9b6c96-24e8-4752-8c77-ccf0ec640db7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0954 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHARGER_TS] - R35 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 12.765
+                    },
+                    "uuid": "55cd626d-5e2f-412c-b1ce-c70f8a507452"
+                },
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.0800 mm )",
+                    "pos": {
+                        "x": 10.6089,
+                        "y": 12.3308
+                    },
+                    "uuid": "5a6584e8-73a9-4ca1-98c5-26d7ebefec38"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0951 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.7521,
+                        "y": 4.7395
+                    },
+                    "uuid": "2969e64e-0620-43bd-9a84-e464aa979f54"
+                },
+                {
+                    "description": "配線 [/GND] ( B.Cu 上、長さ: 2.9810 mm )",
+                    "pos": {
+                        "x": 21.6921,
+                        "y": 3.2383
+                    },
+                    "uuid": "b36ee9a8-79d5-48b9-b7b0-eefaa6dd0e0d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0954 mm)",
+            "items": [
+                {
+                    "description": "配線 [/SD_V3] ( B.Cu 上、長さ: 0.7347 mm )",
+                    "pos": {
+                        "x": 10.6655,
+                        "y": 12.3874
+                    },
+                    "uuid": "016b0a00-daa4-44cd-a745-7132ca07cfef"
+                },
+                {
+                    "description": "パッド 1 [/CHARGER_TS] - R35 ( B.Cu 上)",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 12.765
+                    },
+                    "uuid": "55cd626d-5e2f-412c-b1ce-c70f8a507452"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0684 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.325,
+                        "y": 8.1151
+                    },
+                    "uuid": "0199bdb2-a1f7-4e99-bb01-f81e2edaac1a"
+                },
+                {
+                    "description": "配線 [/CHG_N] ( In1.Cu 上、長さ: 1.5597 mm )",
+                    "pos": {
+                        "x": 21.0289,
+                        "y": 7.34
+                    },
+                    "uuid": "e2be52b6-2df2-4978-9cb8-a57af4d7dd7e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0901 mm)",
+            "items": [
+                {
+                    "description": "ビア [/SD_V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.0216,
+                        "y": 14.0088
+                    },
+                    "uuid": "0011410e-455d-4b1b-95ce-fa70f121639c"
+                },
+                {
+                    "description": "配線 [/V3V3] ( In1.Cu 上、長さ: 0.9772 mm )",
+                    "pos": {
+                        "x": 12.6302,
+                        "y": 13.8485
+                    },
+                    "uuid": "15ccb5e8-6b98-42b3-8aa1-50739ffdf621"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0967 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/CHG_GUARD_GATE] - Q4 ( B.Cu 上)",
+                    "pos": {
+                        "x": 3.8175,
+                        "y": 9.475
+                    },
+                    "uuid": "1619b3e2-54b5-425e-a6a0-df5a32efefdf"
+                },
+                {
+                    "description": "ビア [/NRST] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 4.8434,
+                        "y": 9.1508
+                    },
+                    "uuid": "50cc3d66-91b3-4b6f-bcf1-896e20491465"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 0.2985 mm )",
+                    "pos": {
+                        "x": 13.2039,
+                        "y": 7.7286
+                    },
+                    "uuid": "4d0a4f7b-4d7e-4437-aa2c-3d7e502cafbc"
+                },
+                {
+                    "description": "パッド 6 [unconnected-(U1-PH1-Pad6)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 8.0175
+                    },
+                    "uuid": "770423b9-8ef8-400a-be90-ba663cb234d5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0924 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In2.Cu 上、長さ: 2.1770 mm )",
+                    "pos": {
+                        "x": 9.4226,
+                        "y": 24.6374
+                    },
+                    "uuid": "726be885-2317-41dd-a225-537e051cb301"
+                },
+                {
+                    "description": "PTHパッド SH [/GND] (J1)",
+                    "pos": {
+                        "x": 7.68,
+                        "y": 23.57
+                    },
+                    "uuid": "a95e97a2-5ac0-4533-8f05-ac6b6f6f0922"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0972 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In2.Cu 上、長さ: 3.7858 mm )",
+                    "pos": {
+                        "x": 22.7605,
+                        "y": 20.5387
+                    },
+                    "uuid": "53f7ea2a-95e6-4538-b113-7343f4c06968"
+                },
+                {
+                    "description": "ビア [/CHG_GUARD_GATE] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 22.3153,
+                        "y": 20.9359
+                    },
+                    "uuid": "c568287f-f5c4-4f35-89cc-6bf498657a35"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/NRST] ( B.Cu 上、長さ: 0.5626 mm )",
+                    "pos": {
+                        "x": 12.6413,
+                        "y": 7.7286
+                    },
+                    "uuid": "49a66d88-fc12-4193-b713-f17272f041ce"
+                },
+                {
+                    "description": "パッド 6 [unconnected-(U1-PH1-Pad6)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 13.415,
+                        "y": 8.0175
+                    },
+                    "uuid": "770423b9-8ef8-400a-be90-ba663cb234d5"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In2.Cu 上、長さ: 12.4955 mm )",
+                    "pos": {
+                        "x": 7.6731,
+                        "y": 4.7761
+                    },
+                    "uuid": "1061e7ba-d58a-4a73-adcc-885e49e7b609"
+                },
+                {
+                    "description": "ビア [/SD_MISO] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 13.0485,
+                        "y": 4.3859
+                    },
+                    "uuid": "d2781c7f-3daa-40e8-9b69-ff3877523bb7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.0853 mm )",
+                    "pos": {
+                        "x": 20.4995,
+                        "y": 4.7286
+                    },
+                    "uuid": "e149621f-a935-402f-a089-fd49b88509dd"
+                },
+                {
+                    "description": "パッド 25 [unconnected-(U1-PB12-Pad25)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 5.0175
+                    },
+                    "uuid": "f6cd9af4-601b-4711-89e6-235bc8340502"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0945 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( In1.Cu 上、長さ: 4.6066 mm )",
+                    "pos": {
+                        "x": 11.1767,
+                        "y": 22.8833
+                    },
+                    "uuid": "19ae04a7-e7d3-4fe3-9b2b-1c162b3cca9c"
+                },
+                {
+                    "description": "ビア [/ILIM_VSET] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 10.7822,
+                        "y": 21.7522
+                    },
+                    "uuid": "2a0b587b-6cda-43b5-8777-c5cea4de372f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0791 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/TS_COLD_REF] - R38 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 23.49
+                    },
+                    "uuid": "3c8a8887-c4d1-4eb8-b5f4-aeefc1fcd5bb"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.1165 mm )",
+                    "pos": {
+                        "x": 20.3629,
+                        "y": 23.8529
+                    },
+                    "uuid": "d2adc6d5-6f42-4501-b7f2-95db428773a0"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0901 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.3189 mm )",
+                    "pos": {
+                        "x": 20.9974,
+                        "y": 10.292
+                    },
+                    "uuid": "a3eaeb4c-4f6c-4b8c-8f3e-b93cf8abad48"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.1589,
+                        "y": 10.6822
+                    },
+                    "uuid": "eaf034dd-0eb7-4c40-88bd-426420d1aaaf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0791 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/TS_COLD_REF] - R38 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 23.49
+                    },
+                    "uuid": "3c8a8887-c4d1-4eb8-b5f4-aeefc1fcd5bb"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.1134 mm )",
+                    "pos": {
+                        "x": 20.2827,
+                        "y": 23.9331
+                    },
+                    "uuid": "befd757f-0dcd-4e45-8f21-c59e67b0ee2b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0894 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.5940 mm )",
+                    "pos": {
+                        "x": 21.2642,
+                        "y": 22.9711
+                    },
+                    "uuid": "9072a935-a90a-4e73-a8ad-fb93e5f1d821"
+                },
+                {
+                    "description": "パッド 2 [/SD_CS_N] - R28 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.295,
+                        "y": 23.745
+                    },
+                    "uuid": "a721c943-99c7-48cf-91c7-9f33b1a9c6e1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0894 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.0078 mm )",
+                    "pos": {
+                        "x": 21.6842,
+                        "y": 23.3911
+                    },
+                    "uuid": "882b84a2-2c96-41ed-a49d-bd6f4adab91d"
+                },
+                {
+                    "description": "パッド 2 [/SD_CS_N] - R28 ( B.Cu 上)",
+                    "pos": {
+                        "x": 21.295,
+                        "y": 23.745
+                    },
+                    "uuid": "a721c943-99c7-48cf-91c7-9f33b1a9c6e1"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0889 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.4975 mm )",
+                    "pos": {
+                        "x": 20.997,
+                        "y": 4.7286
+                    },
+                    "uuid": "627de5ac-3241-423a-950a-9c69923db049"
+                },
+                {
+                    "description": "パッド 25 [unconnected-(U1-PB12-Pad25)] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 5.0175
+                    },
+                    "uuid": "f6cd9af4-601b-4711-89e6-235bc8340502"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0902 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.5671 mm )",
+                    "pos": {
+                        "x": 21.5645,
+                        "y": 10.292
+                    },
+                    "uuid": "50594757-e109-4d94-a9f0-4b49ecf3c7cf"
+                },
+                {
+                    "description": "ビア [/BUTTON_N] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.1589,
+                        "y": 10.6822
+                    },
+                    "uuid": "eaf034dd-0eb7-4c40-88bd-426420d1aaaf"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0807 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 2.7347 mm )",
+                    "pos": {
+                        "x": 22.9328,
+                        "y": 6.6623
+                    },
+                    "uuid": "7e0433cd-cf73-4409-a45a-38ac80da1424"
+                },
+                {
+                    "description": "ビア [/STATUS_LED] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.1037,
+                        "y": 7.0025
+                    },
+                    "uuid": "af135614-12e4-4dac-b453-0b813a97619d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0934 mm)",
+            "items": [
+                {
+                    "description": "パッド 2 [/VBUS_N] - R15 ( B.Cu 上)",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 23.745
+                    },
+                    "uuid": "192bb373-f57a-43c7-800f-f82200538d1c"
+                },
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 1.5599 mm )",
+                    "pos": {
+                        "x": 21.692,
+                        "y": 23.3911
+                    },
+                    "uuid": "5532ff20-cfc1-464b-9852-1bef1c9a1c50"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0402 mm)",
+            "items": [
+                {
+                    "description": "配線 [/V3V3] ( B.Cu 上、長さ: 0.7350 mm )",
+                    "pos": {
+                        "x": 23.6678,
+                        "y": 6.6623
+                    },
+                    "uuid": "27891630-bdb3-4b51-8bfc-76302fc2f04f"
+                },
+                {
+                    "description": "ビア [/STATUS_LED] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 23.1037,
+                        "y": 7.0025
+                    },
+                    "uuid": "af135614-12e4-4dac-b453-0b813a97619d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "クリアランス違反 (ネットクラス 'Default' クリアランス 0.1000 mm; 現状 0.0953 mm)",
+            "items": [
+                {
+                    "description": "ビア [/V3V3] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 18.6777,
+                        "y": 20.8357
+                    },
+                    "uuid": "38035686-772d-460f-a8d0-d8e0296e0e27"
+                },
+                {
+                    "description": "配線 [/SYS] ( F.Cu 上、長さ: 3.6084 mm )",
+                    "pos": {
+                        "x": 18.2824,
+                        "y": 22.7524
+                    },
+                    "uuid": "a5603c59-9860-453c-be22-10f3984169ed"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1835 mm)",
+            "items": [
+                {
+                    "description": "パッド 1 [/VCAP] - C5 ( B.Cu 上)",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 2.58
+                    },
+                    "uuid": "2359c43a-2ac3-47d0-964c-c17c8c7f281e"
+                },
+                {
+                    "description": "ビア [/PDM_DATA] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 17.9384,
+                        "y": 1.8465
+                    },
+                    "uuid": "d7b64f07-83e9-4b7f-9a79-7d462992017b"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2000 mm; 現状 0.1904 mm)",
+            "items": [
+                {
+                    "description": "パッド 34 [/SWDIO] - U1 ( B.Cu 上)",
+                    "pos": {
+                        "x": 20.29,
+                        "y": 9.5175
+                    },
+                    "uuid": "59c29d1d-72fc-4acb-9d9b-eb412de38f57"
+                },
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 21.017,
+                        "y": 9.4299
+                    },
+                    "uuid": "b7facf8b-57c3-4f7f-9fac-e0b4feb71672"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "基板端クリアランス違反 (基板の設定の基板端の制約 クリアランス 0.2000 mm; 現状 0.1752 mm)",
+            "items": [
+                {
+                    "description": "セグメント (Edge.Cuts 上)",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 31.0
+                    },
+                    "uuid": "7486eb4a-26c4-4fe1-9d1d-51819cc87342"
+                },
+                {
+                    "description": "ビア [/SD_CLK] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 0.4002,
+                        "y": 18.3707
+                    },
+                    "uuid": "d3ea1fdd-8e34-483f-a036-4de142acfe94"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R2",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 9.255
+                    },
+                    "uuid": "02bed081-ba13-468f-a062-5b98e59aa675"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R24",
+                    "pos": {
+                        "x": 18.295,
+                        "y": 9.255
+                    },
+                    "uuid": "0e89aa03-cccb-4598-b470-506584306189"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R12",
+                    "pos": {
+                        "x": 18.795,
+                        "y": 22.755
+                    },
+                    "uuid": "1354bf05-ac31-4a86-9eea-e92246edba4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Button_Switch_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント SW1",
+                    "pos": {
+                        "x": 15.725,
+                        "y": 5.975
+                    },
+                    "uuid": "17fe3d35-bae8-48b2-9f30-165c4a343191"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R34",
+                    "pos": {
+                        "x": 16.795,
+                        "y": 9.255
+                    },
+                    "uuid": "38b60fa2-f803-487b-9227-ff6e1a382abf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C4",
+                    "pos": {
+                        "x": 25.5,
+                        "y": 7.5
+                    },
+                    "uuid": "61a46db0-6cc6-4ffa-846d-95051d6948d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C28",
+                    "pos": {
+                        "x": 10.12,
+                        "y": 3.8
+                    },
+                    "uuid": "61d05ac4-6847-475e-b06b-d34db0012fb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R32",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 1.255
+                    },
+                    "uuid": "63f07579-2878-421e-b87c-c0c4420665b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP1",
+                    "pos": {
+                        "x": 10.2929,
+                        "y": 10.7071
+                    },
+                    "uuid": "6cfa12de-20df-43a7-95b8-7b33b5fbe6d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'PendantD1' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J1",
+                    "pos": {
+                        "x": 12.0,
+                        "y": 22.495
+                    },
+                    "uuid": "7727b2fe-a090-4f44-8e0d-1481f25e6834"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C31",
+                    "pos": {
+                        "x": 15.5,
+                        "y": 0.95
+                    },
+                    "uuid": "826a6285-13ca-4daa-a92f-6dd0cecbd812"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U14",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 7.0
+                    },
+                    "uuid": "9d3088c0-da96-481d-9ec8-fcd99a60f92b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'PendantMinimal' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 2.71,
+                        "y": 7.845
+                    },
+                    "uuid": "a33299a6-9b49-48b8-a0f1-ed4ca11872ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R33",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 9.255
+                    },
+                    "uuid": "abe6f1a0-020d-42b3-82b2-e37612319166"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C16",
+                    "pos": {
+                        "x": 3.5325,
+                        "y": 0.785
+                    },
+                    "uuid": "acf3f213-6a6d-477d-b032-989210690aa9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C1",
+                    "pos": {
+                        "x": 25.3,
+                        "y": 1.0
+                    },
+                    "uuid": "b9e66c8d-8645-4600-937b-9c0b99c3ddb5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C29",
+                    "pos": {
+                        "x": 22.5,
+                        "y": 19.235
+                    },
+                    "uuid": "bc44f5c4-8bd3-4707-a64a-12b82378d2ef"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R25",
+                    "pos": {
+                        "x": 19.795,
+                        "y": 7.755
+                    },
+                    "uuid": "cbfb7bf4-4885-4ddc-a302-740955f43a47"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C33",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 8.0
+                    },
+                    "uuid": "d20c36b1-2f17-451d-bd1c-265a32c5f34c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U8",
+                    "pos": {
+                        "x": 21.25,
+                        "y": 4.565
+                    },
+                    "uuid": "d94a7b73-f065-4f9f-a619-ba29abe430e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U4",
+                    "pos": {
+                        "x": 2.875,
+                        "y": 3.485
+                    },
+                    "uuid": "ead05e45-bef2-42db-8080-689cb379405c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C22",
+                    "pos": {
+                        "x": 20.45,
+                        "y": 1.235
+                    },
+                    "uuid": "ed8036b5-5120-48a0-93cc-360bd2c7018d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U13",
+                    "pos": {
+                        "x": 12.5,
+                        "y": 0.95
+                    },
+                    "uuid": "f744f036-ebbd-4ec0-925d-2be225aaf3da"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C27",
+                    "pos": {
+                        "x": 10.6,
+                        "y": 14.58
+                    },
+                    "uuid": "0305d08d-cadf-4906-a8ba-da86d4d90dc3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R40",
+                    "pos": {
+                        "x": 17.75,
+                        "y": 19.75
+                    },
+                    "uuid": "0d5e0ead-d7b0-4fcb-8932-519c20d321a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP3",
+                    "pos": {
+                        "x": 1.325,
+                        "y": 7.825
+                    },
+                    "uuid": "0dd7bb33-205b-48c2-b3f8-eba02f819726"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C13",
+                    "pos": {
+                        "x": 22.985,
+                        "y": 15.665
+                    },
+                    "uuid": "0fdd8d60-fbe0-485f-8e0e-bf1e12968f20"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R13",
+                    "pos": {
+                        "x": 13.26,
+                        "y": 3.0
+                    },
+                    "uuid": "174f0989-4999-4bbf-b80d-329a82979e5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C15",
+                    "pos": {
+                        "x": 20.06,
+                        "y": 17.335
+                    },
+                    "uuid": "1cffa86b-0651-4138-9264-f4c0fc8c151e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R7",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 18.305
+                    },
+                    "uuid": "285e4e33-432d-414d-8028-016a8def1748"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R6",
+                    "pos": {
+                        "x": 9.76,
+                        "y": 18.815
+                    },
+                    "uuid": "2bc77aab-e423-40a2-9fe5-6a105c37851b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R42",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 20.755
+                    },
+                    "uuid": "336f6dbe-4ab3-4c4b-94bf-3b115ee5e19b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Pendant' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U11",
+                    "pos": {
+                        "x": 4.575,
+                        "y": 14.175
+                    },
+                    "uuid": "36be6cc9-a446-4db4-a3b0-ce16c16a683c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'LED_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント D6",
+                    "pos": {
+                        "x": 11.49,
+                        "y": 4.795
+                    },
+                    "uuid": "3830735a-7131-47ec-8018-817416eb2912"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R21",
+                    "pos": {
+                        "x": 17.795,
+                        "y": 17.755
+                    },
+                    "uuid": "3d5a4a03-5f67-4d81-85dd-40b199621dae"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R23",
+                    "pos": {
+                        "x": 1.295,
+                        "y": 21.255
+                    },
+                    "uuid": "411c8d9a-1148-4bde-be48-ff0843354c12"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R38",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 24.0
+                    },
+                    "uuid": "4547de91-f284-46c0-9d4d-66000fd7a8ac"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C2",
+                    "pos": {
+                        "x": 22.27,
+                        "y": 10.5175
+                    },
+                    "uuid": "4676bdc1-1c5e-461d-8302-6b77bcd92c50"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_DFN_QFN' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U1",
+                    "pos": {
+                        "x": 16.8525,
+                        "y": 7.7675
+                    },
+                    "uuid": "46cb4fcc-32a5-44db-b2ea-9ff65e2f596e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R37",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 12.255
+                    },
+                    "uuid": "4bbebe6d-394e-4f33-a5e7-c7960beebb22"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント Q4",
+                    "pos": {
+                        "x": 4.755,
+                        "y": 8.525
+                    },
+                    "uuid": "4fafec9e-035b-422f-ae67-b2502257aace"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP5",
+                    "pos": {
+                        "x": 22.325,
+                        "y": 7.325
+                    },
+                    "uuid": "512352c8-c8b2-4a47-a68f-4f6540069d22"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R41",
+                    "pos": {
+                        "x": 17.75,
+                        "y": 22.75
+                    },
+                    "uuid": "6734ab1b-70ba-4145-8631-357625c8db0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R15",
+                    "pos": {
+                        "x": 22.795,
+                        "y": 24.255
+                    },
+                    "uuid": "6ab7654f-464f-4762-a976-259d07a888d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C32",
+                    "pos": {
+                        "x": 10.8,
+                        "y": 1.8
+                    },
+                    "uuid": "6dbc13a8-645b-42c1-a506-3415fc7760bd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R3",
+                    "pos": {
+                        "x": 1.295,
+                        "y": 18.755
+                    },
+                    "uuid": "6e9a15e1-670d-485b-9e06-e70b806fc390"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C30",
+                    "pos": {
+                        "x": 21.005,
+                        "y": 12.785
+                    },
+                    "uuid": "7029692e-4cc9-4c87-b7a9-4067466c46a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R10",
+                    "pos": {
+                        "x": 16.755,
+                        "y": 21.295
+                    },
+                    "uuid": "76263337-8bfb-4d16-8c6e-5fce27d86bff"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C7",
+                    "pos": {
+                        "x": 10.475,
+                        "y": 7.7675
+                    },
+                    "uuid": "7cebc256-b404-403e-895c-57ab67f24f9d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_DFN_QFN' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U3",
+                    "pos": {
+                        "x": 20.385,
+                        "y": 14.785
+                    },
+                    "uuid": "7dd77aa3-d1f2-4794-94fa-08354f55d9d8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C5",
+                    "pos": {
+                        "x": 18.1025,
+                        "y": 1.805
+                    },
+                    "uuid": "81ba6b65-b15c-4d9d-a908-bf7fc0052a9b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R36",
+                    "pos": {
+                        "x": 1.755,
+                        "y": 23.295
+                    },
+                    "uuid": "865ed7d4-5ae8-48a3-bd65-df125fbeec82"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R35",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 12.255
+                    },
+                    "uuid": "888d5948-89b1-4e50-8d7e-a38df8ed8761"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP6",
+                    "pos": {
+                        "x": 17.325,
+                        "y": 13.325
+                    },
+                    "uuid": "89f295dc-feb5-4b59-a548-3882a8e6be1e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U12",
+                    "pos": {
+                        "x": 21.525,
+                        "y": 20.8525
+                    },
+                    "uuid": "8aa36003-7a9e-4f10-b357-be17753be618"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R43",
+                    "pos": {
+                        "x": 3.795,
+                        "y": 23.755
+                    },
+                    "uuid": "8d5938a4-6bc1-4d91-8fcf-5969856def95"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C3",
+                    "pos": {
+                        "x": 14.1025,
+                        "y": 13.185
+                    },
+                    "uuid": "8de967f4-1fb6-401e-ae03-abce2cf042b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Connector_Molex' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J2",
+                    "pos": {
+                        "x": 3.525,
+                        "y": 3.125
+                    },
+                    "uuid": "9e305891-2959-4cb4-b1f3-243fc53949aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C26",
+                    "pos": {
+                        "x": 10.055,
+                        "y": 16.08
+                    },
+                    "uuid": "a6e7a168-62eb-4e52-9b8d-3782f564783f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C14",
+                    "pos": {
+                        "x": 17.785,
+                        "y": 15.665
+                    },
+                    "uuid": "ae0251c8-899c-4837-bf4e-bae746fd0667"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R1",
+                    "pos": {
+                        "x": 10.295,
+                        "y": 23.255
+                    },
+                    "uuid": "b0ffc949-f80e-474a-b472-1228d8190830"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R11",
+                    "pos": {
+                        "x": 5.755,
+                        "y": 23.295
+                    },
+                    "uuid": "bab72dec-4668-48c3-a7e7-6554d05f2d4a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C9",
+                    "pos": {
+                        "x": 22.735,
+                        "y": 17.285
+                    },
+                    "uuid": "c780d252-f3db-4403-b36e-9c210cc45f04"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R14",
+                    "pos": {
+                        "x": 15.295,
+                        "y": 13.255
+                    },
+                    "uuid": "cf67d3ce-88e6-498c-ac98-3b0d7d795b04"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R22",
+                    "pos": {
+                        "x": 13.795,
+                        "y": 15.755
+                    },
+                    "uuid": "d1b99ad0-ffeb-44aa-bca6-2c25b35d5504"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U2",
+                    "pos": {
+                        "x": 12.6,
+                        "y": 18.815
+                    },
+                    "uuid": "d2017190-4f91-4628-9aa2-63606064002a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R4",
+                    "pos": {
+                        "x": 7.6,
+                        "y": 3.21
+                    },
+                    "uuid": "d2d04fe5-dca8-417f-bc78-07752fb87d17"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R28",
+                    "pos": {
+                        "x": 21.295,
+                        "y": 24.255
+                    },
+                    "uuid": "d94ea4a1-84a4-4106-a927-eaa29ec2fa15"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'TestPoint' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント TP2",
+                    "pos": {
+                        "x": 8.825,
+                        "y": 5.325
+                    },
+                    "uuid": "da9e5fc0-84d0-47d6-9aa1-f217927606f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U10",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 2.5
+                    },
+                    "uuid": "e4836b06-848d-4b6b-84d7-875f58e48625"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Resistor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント R39",
+                    "pos": {
+                        "x": 18.5,
+                        "y": 24.5
+                    },
+                    "uuid": "e91b6749-efc4-4d84-bc9b-d1ff19e7dd39"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Package_TO_SOT_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント Q3",
+                    "pos": {
+                        "x": 13.255,
+                        "y": 22.525
+                    },
+                    "uuid": "e9882674-9407-4ab5-a7a6-f3e5fbb5b1d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C6",
+                    "pos": {
+                        "x": 11.435,
+                        "y": 6.5175
+                    },
+                    "uuid": "ead018a5-d76b-4da3-9b23-b9c9fd720420"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'Capacitor_SMD' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C25",
+                    "pos": {
+                        "x": 23.8,
+                        "y": 6.2
+                    },
+                    "uuid": "f6f14ead-7162-4511-8572-fcb0e3b947fb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+  "status": "SLICED_NOT_PRINTED_OR_FIT_QUALIFIED",
+  "parts": [
+    {
+      "part": "four-wall-lower",
+      "source": "offset-pack-lower-trial.step",
+      "source_sha256": "fdde177c9919ab86c0484b1d2ade01ba0bf6b7ec6e91d10109e30a201f75a54b",
+      "stl_sha256": "f3049e4c3c521f97962d8e21a5db674a37e3913dead1f34f7df41433add1579b",
+      "3mf_sha256": "8b0bdfd0c83e5d24f65296c84dfd5a6b828ad10d38cc3cd189a06772c429ad71",
+      "first_layer_mm": 0.28,
+      "regular_layer_mm": 0.08,
+      "CAD_height_mm": 8.120000000000001,
+      "translation_mm": [
+        1.1000000000000014,
+        28.3,
+        7.720000000000001
+      ],
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 333,
+        "layer_height": 0.07999999821186066,
+        "plate_index": 0,
+        "prepare_time": 20,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 27.56146812438965,
+              "Custom": 34.72249984741211,
+              "Gap infill": 71.65210723876953,
+              "Inner wall": 16.756105422973633,
+              "Internal solid infill": 51.5677375793457,
+              "Outer wall": 652.5538330078125,
+              "Overhang wall": 0.9441586136817932,
+              "Top surface": 17.318782806396484,
+              "Travel": 110.45957946777344,
+              "Undefined": 94.86353302001953
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.6695291996002197,
+                "total_used_g": 1.6695291996002197
+              }
+            ],
+            "generate_support_material_time": 14,
+            "id": 1,
+            "infill_time": 15,
+            "layer_filament_change": 0,
+            "main_predication": 948.8488159179688,
+            "make_perimeters_time": 57,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 29.60000228881836,
+                  "height": 8.119999885559082,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 75.19999694824219,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "four-wall-lower.stl",
+                "triangle_count": 10700
+              }
+            ],
+            "sliced_time": 217,
+            "sliced_time_with_cache": 125,
+            "total_predication": 967.945068359375,
+            "triangle_count": 10700,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 4
+      },
+      "profile_sha256": {
+        "machine": "a834effa0499ae12b6d3ebe3555eef563cf4e690da94141250da743941a69ff8",
+        "process": "116838748458911449402b015ef84596bf6c0ed45006f50ffa72f0e2b932459e",
+        "filament": "71e7784fd5e6b27967b97c47e237691842683863144f7855d6bc1fe43e41e969"
+      }
+    }
+  ],
+  "limits": [
+    "Toolpath review still required",
+    "Separator0.3mm thickness and strength not physically verified",
+    "Current plug and original lead fit unresolved",
+    "No print job sent"
+  ]
+}

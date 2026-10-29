@@ -1,0 +1,22 @@
+{
+  "status": "ROUTED_CANDIDATE_NOT_RELEASED",
+  "board": "hardware/mini-rect-v14/domestic-pack-routed-candidate.kicad_pcb",
+  "sha256": "540e5c3361b85e0db4413245167e51a2cc7ece6ce24a8b5528e51cdf8c5d4ca8",
+  "drc_violations": 0,
+  "unconnected": 0,
+  "pad_net_count": 255,
+  "pad_net_parity": "PASS",
+  "new_power_route": "BAT via at18.9402,7.3652 to22,7.3652 on In4.Cu then0.3mm B.Cu branch toJ2; inherited upstream narrow traces still require power-path review",
+  "ground": "Added connected GND extension acrossF/In1/In3/In4/B;priority1 over oldpriority0, clearance unchanged",
+  "usb": "101 uncovered centerline samples before/after; no added samples and route lengths unchanged. Not SI approval.",
+  "remaining": [
+    "Battery PH polarity remains provisional; do not attach pack",
+    "Charge current/timer/termination design",
+    "NTC final supply and full R-T/thermal contact",
+    "Battery/SD/LDO peak and rail droop compatibility",
+    "Whole power-path resistance and wider battery current routing",
+    "Case design and actual mated plug/100mm harness envelope",
+    "JLC matching, final manufacturing and landed cost"
+  ],
+  "orders_payments_emails": false
+}

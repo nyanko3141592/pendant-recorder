@@ -1,0 +1,45 @@
+{
+  "status": "NO_QUALIFIED_DROP_IN_PACK_FOUND",
+  "current_pack_envelope_mm": [
+    15,
+    17,
+    6
+  ],
+  "candidates": [
+    {
+      "vendor": "FP Battery",
+      "model": "601115",
+      "listed_dimensions_mm": [
+        6,
+        11,
+        15
+      ],
+      "listed_capacity_mAh": 100,
+      "source": "https://www.fpbattery.com/3-7v-100mah-lithium-polymer-battery/",
+      "finding": "Table final <=5 column is WEIGHT(g), not discharge C-rate; no high-current qualification inferred.",
+      "unresolved": [
+        "Max continuous/pulse current",
+        "Completed protected pack dimensions",
+        "NTC and finished connector",
+        "MOQ/price/availability"
+      ],
+      "decision": "Size lead only; no replacement approval"
+    },
+    {
+      "vendor": "Honcell",
+      "model": "HCG431528",
+      "source": "https://www.honcell.com/Public/Uploads/uploadfile/files/20240809/DATASHEETHCG4315283.7V100mAhCELL2024.pdf",
+      "dimensions_max_mm": {
+        "thickness_delivery": 4.4,
+        "thickness_after_cycles": 4.75,
+        "width": 15.5,
+        "length_excluding_tabs": 29
+      },
+      "capacity_typ_mAh": 100,
+      "capacity_min_mAh": 95,
+      "form": "bare cell",
+      "decision": "Reject for current15x17x6 cavity; length29mm exceeds it before tabs/protection/harness. No DIY pack assembly proposed."
+    }
+  ],
+  "no_bom_change": true
+}

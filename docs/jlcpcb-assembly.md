@@ -1,6 +1,6 @@
 # JLCPCBで基板製造から実装まで依頼する方針
 
-> Rev A1更新: [実フットプリントでの配置検討と未解決項目](../hardware/rev-a/layout-review.md)。基板20×34mmは未配線の検討値。充電は6.19kΩで公称21.8mAへ変更。旧50mA設定や外形枠よりこの更新を優先する。
+> **方針の履歴資料。** Rev A1の20×34mm・21.8mA構成は失効済み。現行は27.5×27.5mm・6層・69実装位置のXE候補で、正本BOMは [`procurement/xe-production-bom-2026-10-28.csv`](procurement/xe-production-bom-2026-10-28.csv)、発注可否は [`prototype-v1-order-decision.json`](prototype-v1-order-decision.json)。以下の一般方針は参考にできるが、旧型番・旧工程を製造入力へ使用しない。
 
 2026-10-24。ユーザーがJLCPCBの利用を許可。基板だけを購入して微小部品を自分ではんだ付けする設計ではなく、**基板上の部品を実装して納品してもらう前提**で部品・パッケージを選ぶ。電池接続、ケース組立、ファーム書込み、実機検証は自分で行う。
 

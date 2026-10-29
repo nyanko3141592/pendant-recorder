@@ -1,0 +1,26 @@
+{
+  "status": "PLACEMENT_SEED_UNROUTED_NOT_ADOPTED",
+  "source_pcb_sha256": "0753b2e85892a530bba429b7b49dae4a322f1b8d5d0805760657e1b43a72a44d",
+  "replacement": "Q5 -> U16 TMUX1101DCKR plus C34 100n",
+  "placement": "U16 at former Q5 center/orientation/side; C34 provisionally +2mm board Y; no fit claim",
+  "old_track_stubs": "Retained deliberately for connection reconstruction; must remove/remap former Q5 endpoints",
+  "remaining": [
+    "Inspect DRC collisions and new net connectivity",
+    "Route VBUS/GND bypass and remap D/SEL",
+    "Check manufacturer DCK pad geometry and signal/power sequencing",
+    "Update inrush/suspend current model before adoption"
+  ],
+  "initial_drc": {
+    "violations_by_type": {
+      "clearance": 2,
+      "shorting_items": 7,
+      "hole_clearance": 5,
+      "solder_mask_bridge": 7,
+      "track_dangling": 3,
+      "silk_overlap": 6,
+      "silk_over_copper": 3
+    },
+    "unconnected": 7,
+    "parity": 0
+  }
+}

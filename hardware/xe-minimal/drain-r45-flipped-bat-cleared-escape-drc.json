@@ -1,0 +1,94 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-27T06:37:23",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "drain-r45-flipped-bat-cleared-escape-candidate.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "パッド 3 [/USB_HIGH_BUDGET_DRAIN] - Q5 ( F.Cu 上)",
+                    "pos": {
+                        "x": 11.025,
+                        "y": 5.3175
+                    },
+                    "uuid": "03148b0b-9695-4397-a9e4-921fd1353c9b"
+                },
+                {
+                    "description": "パッド 2 [/USB_HIGH_BUDGET_DRAIN] - R45 ( F.Cu 上)",
+                    "pos": {
+                        "x": 12.345,
+                        "y": 11.285
+                    },
+                    "uuid": "744c3868-ad69-438f-896b-3de31c05d06e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( B.Cu 上、長さ: 0.6500 mm )",
+                    "pos": {
+                        "x": 17.157149,
+                        "y": 15.353232
+                    },
+                    "uuid": "5d42fcfe-2d45-42bc-bd1a-ccd12fd99231"
+                },
+                {
+                    "description": "配線 [/BAT] ( F.Cu 上、長さ: 0.9899 mm )",
+                    "pos": {
+                        "x": 16.3,
+                        "y": 17.4
+                    },
+                    "uuid": "96f1cd4c-fd0a-4bfc-ae20-6de32b794977"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "ビア [/USB_HIGH_BUDGET_DRAIN] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.35,
+                        "y": 11.3
+                    },
+                    "uuid": "273b5c19-e25d-46c5-8169-447a8e4b0665"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/BAT] ( In4.Cu 上、長さ: 0.3886 mm )",
+                    "pos": {
+                        "x": 16.8,
+                        "y": 15.2
+                    },
+                    "uuid": "8288d200-a549-4c39-bcf0-29c52ec326ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

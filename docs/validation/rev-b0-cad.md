@@ -1,5 +1,7 @@
 # Rev B0 CAD検証 — 2026-10-24
 
+> **履歴資料・発注禁止。** Rev B0は現行XE候補ではない。このページの回路、ケース、BOM、寸法、残件を現行製造入力へ使用しない。現行判定は [`../prototype-v1-order-decision.json`](../prototype-v1-order-decision.json)。
+
 結果: **発注不可**。今回の成果はアンテナ内蔵nRF52840回路、配線試行、樹脂ケース構造案。
 
 - 68部品、219接続論理端子、37 NC、46ネット。KiCad書出しネットリストとdesign.json一致。ERC違反0。

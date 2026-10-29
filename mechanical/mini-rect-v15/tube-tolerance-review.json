@@ -1,0 +1,52 @@
+{
+  "status": "UNLOCATED_TUBE_RETENTION_REJECTED",
+  "source_sha256": "f37644037043c308e1c23ae152d9430320e41ac4a6d738cd5d3baa51a29f4823",
+  "guideline_source": "https://jlc3dp.com/help/article/3d-printing-design-guideline",
+  "model": "Tube remains straight and parallel but may translate to printed hole edge; tilted tube and PCB-to-case errors omitted, so this is an optimistic screen.",
+  "nominal_tube_OD_mm": 1.59,
+  "tube_OD_tolerance": null,
+  "nominal_hole_diameter_mm": 1.8,
+  "hole_diameter_tolerance_mm": 0.3,
+  "min_hole_diameter_mm": 1.5,
+  "max_hole_diameter_mm": 2.1,
+  "min_hole_fits_nominal_tube": false,
+  "nominal_radial_float_mm": 0.10499999999999998,
+  "max_hole_radial_float_mm": 0.255,
+  "nearby_parts": [
+    {
+      "ref": "R13",
+      "center_to_part_envelope_mm": 0.9000000000000024,
+      "nominal_centered_tube_clearance_mm": 0.10500000000000231,
+      "nominal_hole_floating_tube_clearance_mm": 2.3314683517128287e-15,
+      "max_hole_floating_tube_clearance_mm": -0.1499999999999977
+    },
+    {
+      "ref": "C15",
+      "center_to_part_envelope_mm": 2.3,
+      "nominal_centered_tube_clearance_mm": 1.505,
+      "nominal_hole_floating_tube_clearance_mm": 1.4,
+      "max_hole_floating_tube_clearance_mm": 1.2499999999999998
+    },
+    {
+      "ref": "C28",
+      "center_to_part_envelope_mm": 1.8376343488300382,
+      "nominal_centered_tube_clearance_mm": 1.0426343488300382,
+      "nominal_hole_floating_tube_clearance_mm": 0.9376343488300382,
+      "max_hole_floating_tube_clearance_mm": 0.7876343488300381
+    },
+    {
+      "ref": "Q3",
+      "center_to_part_envelope_mm": 0.9749999999999996,
+      "nominal_centered_tube_clearance_mm": 0.1799999999999996,
+      "nominal_hole_floating_tube_clearance_mm": 0.07499999999999962,
+      "max_hole_floating_tube_clearance_mm": -0.0750000000000004
+    }
+  ],
+  "requirements": [
+    "Tube must be located against the PCB/microphone datum rather than relying on an oversized case hole.",
+    "Account for tube OD, hole location, PCB positioning, tube tilt and thermal/adhesive movement before specifying a nonzero keepout.",
+    "Repositioning R13 or Q3 needs rerouting and neighboring component checks; no footprint movement is authorized by this calculation alone.",
+    "Printed-hole fit can require postprocessing or a separate precision guide; neither is currently specified."
+  ],
+  "release_allowed": false
+}

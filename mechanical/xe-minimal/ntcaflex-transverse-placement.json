@@ -1,0 +1,52 @@
+{
+  "status": "NOMINAL_TRANSVERSE_PLACEMENT_NOT_ADOPTED",
+  "source_sha256": {
+    "vendor/ntcaflex/NTCAFLEX05103HH.STEP": "d5e5c08a12972dd859328ad3827204877c32e1ef302d0606142bc965f6c703fe",
+    "offset-pack-assembly-trial.step": "e46ce8496aec3d1bb60f2b05b4fdd409e24aa43b3e2153efc60611955e8b535e",
+    "film-integration-integrated-board.step": "47184caa43207bfb7735828305cee70056ad76f13db67986512b63376b140fdc",
+    "film-sensor-clearance-200um-lower-trial.step": "2b0b0bf896f167fe059af1c1ae41a3dfa07e0d436455e5fe70b161c8f9430b97"
+  },
+  "cases": [
+    {
+      "head_xy_mm": [
+        5,
+        -23
+      ],
+      "rotation_deg": 180,
+      "overlap_mm3": {
+        "battery": 0.0,
+        "board": 0.16709812573204377,
+        "lower": 0.8629999999999989
+      }
+    },
+    {
+      "head_xy_mm": [
+        5,
+        -15
+      ],
+      "rotation_deg": 180,
+      "overlap_mm3": {
+        "battery": 0.0,
+        "board": 0.06828514554081025,
+        "lower": 1.0630000000000002
+      }
+    },
+    {
+      "head_xy_mm": [
+        5,
+        -7
+      ],
+      "rotation_deg": 180,
+      "overlap_mm3": {
+        "battery": 0.0,
+        "board": 1.5849402855785966,
+        "lower": 1.0968241934700182
+      }
+    }
+  ],
+  "limits": [
+    "Related HH nominal model only.",
+    "Head touching battery is not qualified thermal contact.",
+    "Separator, lid, harness, solder and supporting structure excluded."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-29",
+  "status": "ARCHITECTURE_DESIGN_IN_PROGRESS_NOT_RELEASED",
+  "objective": "固定DTP401525-XEで16時間録音・30時間保存を理論見積りで狙える、小型で費用を抑えた初号試作の設計と発注判断資料を揃え、実物で使い勝手を評価する。",
+  "battery": "DTP401525-XE 3.7V 110mAh; Marutsu DTP401525(EZ3) is same pack",
+  "sales": "Programmed assembled PCB and case; user purchases battery separately and assembles without soldering or wire modification.",
+  "constraints": {
+    "recording_hours": 16,
+    "sample_rate_Hz_min": 16000,
+    "channels": 1,
+    "encrypted_storage_hours": 30,
+    "interface": "USB-C charging and MSC; macOS/Windows/Linux importer",
+    "wireless": false,
+    "procurement": "JLCPCB one-stop PCB and all electronics assembly; prioritize ordinary available exact MPNs, no hand soldering or customer consignment.",
+    "size": "Board 27.5 x 27.5 mm fixed by user on 2026-10-29. Minimize complete case including battery impact protection, factory harness, insulation and assembly clearances; 27.5 mm is not the case limit.",
+    "board_outline_mm": [
+      27.5,
+      27.5
+    ],
+    "maximum_copper_layers": 4,
+    "compact_placement": "Placement changes authorized; minimize whole assembly by reducing overlapping battery/connector heights. Do not add PCB layers or special-via costs."
+  },
+  "optimization_order": [
+    "Basic safety measures are required",
+    "Usability: battery runtime, continuous recording and wearing comfort",
+    "Minimize complete assembled size; board27.5mm/max4layers/ordinary through vias",
+    "Limit first-prototype cost and assembly effort",
+    "Optimize mass-production continuity after first prototype evaluation"
+  ],
+  "deliverables": [
+    "Adopted circuit and BOM",
+    "Routed PCB and matching manufacturing files",
+    "Case CAD and unmodified-battery assembly instructions",
+    "Firmware and three-OS importer",
+    "Five-prototype cost",
+    "Verification plan distinguishing calculations from actual measurements",
+    "Complete exterior 3D model and internal/exploded assembly model including battery, original leads, connectors, insulation and retention",
+    "Same-scale Omi comparison models and front/side/overlay views, identifying reference product/version, dimension sources and uncertain geometry"
+  ],
+  "authorization": {
+    "design": true,
+    "purchase": false,
+    "payment": false,
+    "supplier_inquiry": false,
+    "production": false
+  },
+  "current_stage": "Current four-layer review package: preorder-20261029/release-review-20261029-aligned; geometric DRC/parity/unconnected zero. Captured-carrier case/dummy package30.8x30.8x14.2mm, unqualified harness/joint/physical tests. See release-gates.json for remaining pre-order work; no release.",
+  "storage_requirement_confirmation": {
+    "date": "2026-10-29",
+    "user_answer": "30時間以上でよい",
+    "minimum_hours": 30,
+    "recording_battery_hours_unchanged": 16
+  },
+  "prototype_acceptance": {
+    "theoretical_estimate_acceptable": true,
+    "assumptions_and_unmeasured_items_must_be_explicit": true,
+    "physical_runtime_proof_required_before_first_prototype": false,
+    "existing_power_allocation_is_proven": false,
+    "mass_production_qualification_required_now": false
+  }
+}

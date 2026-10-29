@@ -1,0 +1,65 @@
+{
+  "status": "SENSITIVITY_ONLY_NOT_CHARGE_RELEASE",
+  "source_sha256": "12216fe4c7bffdc11ae5ac357b00f7a60307e56d2f2de46191550c01d20261b9",
+  "corners": {
+    "cold": {
+      "corner_count": 128,
+      "resistance_ohms": [
+        18432.138660642453,
+        21633.90264635771
+      ],
+      "sensor_temperature_beta_model_C": [
+        5.585330892074637,
+        10.117603351919229
+      ]
+    },
+    "hot": {
+      "corner_count": 128,
+      "resistance_ohms": [
+        6491.205998245187,
+        8547.32901105509
+      ],
+      "sensor_temperature_beta_model_C": [
+        28.875332476528172,
+        37.22583847372573
+      ]
+    }
+  },
+  "excitation": {
+    "maximum_branch_uA": 53.03030303030303,
+    "maximum_ntc_power_uW": 69.60227272727273,
+    "approx_unmounted_self_heating_C": 0.06960227272727273
+  },
+  "faults": {
+    "open": {
+      "ideal_charge_permission": false
+    },
+    "short": {
+      "ideal_charge_permission": false
+    }
+  },
+  "sources": [
+    {
+      "url": "https://datasheet.octopart.com/NCP18XV103E03RB-Murata-datasheet-137871357.pdf",
+      "author": "Murata",
+      "page": 1,
+      "qualification": "Manufacturer-authored Reference Only sheet, exact NCP18XH103F03RB row; not current guaranteed full R-T table"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/tlv7042.pdf",
+      "page": 9,
+      "revision": "SLVSE13J",
+      "limits": "Dual comparator:8mV offset,25mV hysteresis maximum at stated test conditions"
+    }
+  ],
+  "limitations": [
+    "B25/50 constant approximation below25C is not a guaranteed R-T tolerance curve",
+    "33mV allowance adds full25mV hysteresis and8mV offset; not a manufacturer-guaranteed total error at the actual low common-mode voltage or5.25V",
+    "Input-bias/leakage maxima over actual conditions not established",
+    "Temperature is sensor temperature; pad compression, PCB heating, thermal lag and sensor detachment can invalidate cell temperature inference",
+    "NTC open/short detected ideally; detached but electrically intact sensor is not detected",
+    "Manufacturer lifecycle and JLC supply not confirmed; do not release legacy part solely from this calculation",
+    "No charger permission firmware changed; actual charge current and termination pending"
+  ],
+  "order_ready": false
+}

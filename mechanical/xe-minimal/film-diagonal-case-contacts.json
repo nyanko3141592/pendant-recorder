@@ -1,0 +1,79 @@
+{
+  "status": "INTERFERENCE_LOCALIZATION_NOT_MODIFIED_CASE",
+  "lower_sha256": "e4d0bde292b5a6c517542001bf5fd13c179a215cac58bfc973c4273bb5ee9887",
+  "head_xy_mm": [
+    8,
+    -25.5
+  ],
+  "angle_deg": 30,
+  "rows": [
+    {
+      "part": "film",
+      "contacts": [
+        {
+          "volume_mm3": 0.19265662155970892,
+          "bounds_mm": [
+            16.6,
+            -8.0,
+            -2.3200000000000003,
+            17.6,
+            -5.999999999999998,
+            -2.22
+          ]
+        },
+        {
+          "volume_mm3": 0.6403671676416594,
+          "bounds_mm": [
+            21.03,
+            -5.465000000000001,
+            -2.3200000000000003,
+            22.711591153936325,
+            -3.6650000000000005,
+            -1.8199999999999994
+          ]
+        }
+      ]
+    },
+    {
+      "part": "joints",
+      "contacts": [
+        {
+          "volume_mm3": 0.5423210969215564,
+          "bounds_mm": [
+            21.03,
+            -5.191567435698695,
+            -2.3200000000000003,
+            22.149585683814497,
+            -3.6650000000000005,
+            -1.5199999999999996
+          ]
+        }
+      ]
+    }
+  ],
+  "identified_features": [
+    {
+      "bounds_xy_mm": [
+        16.6,
+        -8,
+        17.6,
+        -6
+      ],
+      "feature": "Separator support post",
+      "source": "move_separator_posts_trial.py",
+      "implication": "Could relocate only with separator bearing and assembly revalidation."
+    },
+    {
+      "center_xy_mm": [
+        21.93,
+        -4.565
+      ],
+      "feature": "Microphone acoustic duct",
+      "sources": [
+        "build_rounded_glue_case.py",
+        "build_closure_acoustic_trial.py"
+      ],
+      "implication": "Do not notch away as generic support. Preserve acoustic path/seal; move sensor/joint or redesign duct with microphone validation."
+    }
+  ]
+}

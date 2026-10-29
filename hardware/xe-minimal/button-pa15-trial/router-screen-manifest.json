@@ -1,0 +1,29 @@
+{
+  "source": "pa15-button-complete-candidate",
+  "source_sha256": "ac70a1d3313078f7b48b336fabcabcb39a9513dc6e26c6e473b8c0bf5bb3686e",
+  "purpose": "Isolated routing experiment; no adoption. Existing wires preserved by exporter; verify fix types and rule translation before routing.",
+  "movable_existing_nets": [
+    "/BUTTON_N",
+    "/NRST",
+    "/SD_CS_N",
+    "/SD_EN",
+    "/SD_MISO",
+    "/SD_MOSI"
+  ],
+  "fixed_existing_nets": "All others, including USB, power, RTC, PDM and temperature guard",
+  "routing_width_mm": 0.15,
+  "via_diameter_drill_mm": [
+    0.35,
+    0.15
+  ],
+  "reserved_plane_layers": [
+    "In1.Cu",
+    "In3.Cu"
+  ],
+  "pending": [
+    "Inspect DSN defaults and fixed critical wires",
+    "Run local Freerouting",
+    "Import into copy and full KiCad DRC/parity",
+    "Check electrical routing and manufacturing constraints"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PROMISING_NOT_SELECTED_NOT_ROUTED",
+  "part": "USB4505-03-0-A",
+  "source": "https://gct.co/files/drawings/usb4505.pdf",
+  "drawing_revision": "A2 18/12/23",
+  "sha256": "b1ea604d8e579ee60bf3db78fc55a300bc107cb3bdb3ac3e6c881955898b52ad",
+  "verified_geometry_mm": {
+    "recommended_pcb_thickness": 0.8,
+    "shell_total_height_nominal": 3.16,
+    "mount_plane_above_shell_bottom_nominal": 1.0,
+    "derived_above_board_nominal": 2.16,
+    "derived_below_board_bottom_nominal": 0.2,
+    "body_length": 6.5,
+    "body_width": 8.94,
+    "stake_centers_span": 11.24,
+    "cutout_width": 9.24,
+    "mating_clearance_min": 2.05
+  },
+  "comparison": "Current USB4105 above-board nominal3.31 versus inferred USB4505 above-board2.16:1.15mm nominal headroom gained. Overall shell height is not the above-PCB height. Production tolerances and solder seating remain to be applied.",
+  "integration": [
+    "New footprint and board-edge cutout required; not pin-for-pin mechanical substitution",
+    "Pinout has paired ground/VBUS lands and sixteen contacts; reroute D+/D-, CC, power, ESD and shell ground",
+    "Cutout removes copper/return paths under USB; review all six layers and depanel support",
+    "At same PCB height nominal shell bottom8.3 is above battery top7.4; stake/solder extrema still unqualified",
+    "Can potentially raise PCB0.3mm to provide storage/battery nominal0.5mm gap while keeping23x25x14 exterior; detailed tolerance and collision model required",
+    "Wider anchors may conflict with Q3/Q4 and nearby copper; actual routed layout must be checked",
+    "JLC stock/price/assembly suitability and alternative sourcing not yet verified"
+  ],
+  "decision": "Advance a separate mid-mount layout feasibility study. Preserve current routed manufacturing data until footprint, routing and fit checks pass.",
+  "sourcing_review": {
+    "checked_date": "2026-10-25",
+    "jlc_part": "C5124501",
+    "jlc_url": "https://jlcpcb.com/partdetail/5719795-PCB_SMT_USB4505_03_0A/C5124501",
+    "jlc_catalog_conditions": [
+      "Extended",
+      "Standard Only",
+      "SMT Assembly: Fixture Required",
+      "Assembly Difficulty: High",
+      "Part title warns about sink-mount/PCB-slotting responsibility; exact terms require confirmation"
+    ],
+    "lcsc_part": "C6582300",
+    "lcsc_url": "https://www.lcsc.com/product-detail/C6582300.html",
+    "live_price": null,
+    "available_quantity": null,
+    "interpretation": "Catalog identity confirmed; listing does not establish stock, executable quote, or assembly approval. Fixture and slot tolerances may add cost. Keep current BOM unchanged pending separate review."
+  }
+}

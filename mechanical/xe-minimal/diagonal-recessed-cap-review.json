@@ -1,0 +1,48 @@
+{
+  "status": "RECESSED_CAP_TRIAL_NOT_ADOPTED",
+  "source_sha256": {
+    "lower": "7eaea3d141df0e929cf9b8edeb7a9c02fe2d2ff728e7942fc26d9690f9c05519",
+    "cap": "caf4e1a4106e32c854adf048953c5201ad32b436028996ba34ea7f0a45dd047b",
+    "board": "bf749eb7ec3015948c55ffd0bf45fc267b3c8363570cfe21060a8fcb6a15da4e"
+  },
+  "lower_valid": true,
+  "lower_solid_count": 1,
+  "recess_depth_mm": 0.2,
+  "cut_local_y_range_mm": [
+    22.7,
+    24.1
+  ],
+  "rows": [
+    {
+      "glue_thickness_hypothesis_mm": 0,
+      "cap_board_overlap_mm3": 0.0,
+      "cap_board_gap_mm": 0.31999999999999995,
+      "cap_lower_overlap_mm3": 0.0,
+      "cap_lower_gap_mm": 2.220446049250313e-16,
+      "nominal_joint_top_gap_mm": 0.2
+    },
+    {
+      "glue_thickness_hypothesis_mm": 0.05,
+      "cap_board_overlap_mm3": 0.0,
+      "cap_board_gap_mm": 0.27,
+      "cap_lower_overlap_mm3": 0.0,
+      "cap_lower_gap_mm": 0.04999999999999982,
+      "nominal_joint_top_gap_mm": 0.25
+    },
+    {
+      "glue_thickness_hypothesis_mm": 0.1,
+      "cap_board_overlap_mm3": 0.0,
+      "cap_board_gap_mm": 0.21999999999999997,
+      "cap_lower_overlap_mm3": 0.0,
+      "cap_lower_gap_mm": 0.09999999999927284,
+      "nominal_joint_top_gap_mm": 0.30000000000000004
+    }
+  ],
+  "limits": [
+    "Glue values are hypotheses; no adhesive or application process selected.",
+    "Cap is not axial strain relief.",
+    "Joint clearance calculated from nominal envelope, not an actual assembled joint.",
+    "Source cap must be the selected local-y22.8 candidate; full assembly and insertion still require recheck.",
+    "Retention load, print fit and tool access unqualified."
+  ]
+}

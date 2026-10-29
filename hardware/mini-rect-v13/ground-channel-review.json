@@ -1,0 +1,28 @@
+{
+  "status": "CHANNEL_REPAIR_EXPERIMENT_NOT_RELEASED",
+  "source": "ground-repair.kicad_pcb",
+  "sha256": "0c259407c2dfd1e73ab5c0e3d9c864c26691eae9addc0763e8555a4217db6d36",
+  "ground_segments_replaced": 221,
+  "signal_connections_added": [
+    "SD_V3",
+    "BAT_ADC",
+    "SWCLK"
+  ],
+  "remaining_signal_nets": [
+    "CHG_ALLOW",
+    "PDM_DATA",
+    "CHG_INHIBIT_GATE",
+    "ISET"
+  ],
+  "ground_unconnected_items": 7,
+  "total_unconnected": 11,
+  "drc_violations": 2,
+  "remaining": [
+    "Stitch disconnected surface GND islands into In1 with qualified0.45/0.20vias",
+    "Restore local microphone GND path",
+    "Complete4 remaining signal connections",
+    "Review new SD power trace width/length and supply droop",
+    "Do not promote merely because signal connectivity improved"
+  ],
+  "retained_baseline": "plane-clean-candidate.kicad_pcb"
+}

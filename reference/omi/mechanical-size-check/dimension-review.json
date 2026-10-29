@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-26",
+  "method": "CadQuery STEP import, OCP AddOptimal no triangulation/useShapeToleranceFalse; millimetres from STEP import",
+  "parts": [
+    {
+      "file": "case-a.step",
+      "source": "https://github.com/BasedHardware/omi/blob/main/omi/hardware/consumer/mechanical/parts/cnc/case-a.step",
+      "sha256": "6a23a0693e3d0e0c3068474cb46931f32e7850d6e22266a902060762f165eb1b",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -12.74976191881,
+        3.4999977926422536,
+        -12.749761918809998,
+        12.74976191881,
+        8.927010475534,
+        12.74976191881
+      ],
+      "xyz_extent_mm": [
+        25.49952383762,
+        5.427012682891747,
+        25.499523837619996
+      ]
+    },
+    {
+      "file": "case-b.step",
+      "source": "https://github.com/BasedHardware/omi/blob/main/omi/hardware/consumer/mechanical/parts/cnc/case-b.step",
+      "sha256": "ddeba686dd58d06fc5f3b7934e32dd6d720d037b2a4c1828ee44973795fb7a11",
+      "valid": true,
+      "solids": 1,
+      "bounds_mm": [
+        -12.749700538739999,
+        -2.9979269986535804,
+        -12.74970053874,
+        12.749700538739999,
+        2.5000001,
+        12.74970053874
+      ],
+      "xyz_extent_mm": [
+        25.499401077479998,
+        5.49792709865358,
+        25.49940107748
+      ]
+    },
+    {
+      "file": "wrapper.step",
+      "source": "https://github.com/BasedHardware/omi/blob/main/omi/hardware/consumer/mechanical/parts/injection-molding/wrapper.step",
+      "sha256": "4a0c2e9494f973fd6e37deea6c30ded2b52af40364d6e357b15f69722eb4cac8",
+      "valid": false,
+      "solids": 1,
+      "bounds_mm": [
+        -14.30724799832,
+        -2.514978732435,
+        -21.2000001,
+        14.3072479983183,
+        8.514978732434999,
+        14.350000099999999
+      ],
+      "xyz_extent_mm": [
+        28.614495996638297,
+        11.029957464869998,
+        35.5500002
+      ]
+    }
+  ],
+  "interpretation": [
+    "Both covers have approximately25.5mm X/Z diameter; thickness axisY.",
+    "Wrapper bounds approximately28.6145X,11.030Y,35.550Z including projection. Wrapper is invalid in OCCT; bounds are diagnostic, not manufacturing verification.",
+    "Files share coordinates but full assembly/revision association and delivered product identity are not established. Do not label wrapper internal or claim completed Omi size from cover diameter.",
+    "Keep25.5mm-class compact target and<=15mm thickness; evaluate necklace attachment separately but include it in completed product bounds. Do not enlarge target based on this discrepancy."
+  ],
+  "production_design_changed": false
+}

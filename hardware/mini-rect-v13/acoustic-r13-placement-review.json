@@ -1,0 +1,32 @@
+{
+  "status": "DRC_PARITY_PASS_MECHANICAL_RECHECK_PENDING",
+  "source_sha256": "857bf111f2589cf109364a7e5a5d92ea696b354293253d38f7d529d66855df53",
+  "candidate_sha256": "7d9aafb3b7bd40601e3839de6b2441c057eb66853b4f94f58f4cbc708d71563c",
+  "changes": [
+    {
+      "ref": "R13",
+      "delta_y_mm": 0.175,
+      "shifted_track_endpoints": [
+        [
+          "2044f6c5-c372-43bc-a0e1-60e39c7bea66",
+          "End"
+        ],
+        [
+          "83b28339-d44e-4bf9-acfa-f7dccfd401dd",
+          "End"
+        ],
+        [
+          "8e10453f-0698-4dc4-b4f0-8bac47fc3882",
+          "Start"
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Moves connected track ends only; DRC/parity and route review required",
+    "Mechanical model and design placement source not updated; candidate only",
+    "Goal is 0.30 mm nominal gap to existing acoustic riser"
+  ],
+  "drc_violations": 0,
+  "unconnected": 0
+}

@@ -1,6 +1,6 @@
 # カスタム基板設計（無線なし・USB-C 1本・16時間・ペンダント）
 
-> 2026-10-24 回路照合による訂正: 最新の回路原本は [hardware/rev-a/README.md](../hardware/rev-a/README.md)。48ピンSTM32U535CBU6はSDMMC端子がないため試作はSTM32U535RCT6（LQFP64）へ変更。T5838は底面音孔・1.8V専用でレベル変換が必須。BQ25101は50mA設定＋USB給電の負荷分離、USB PHYは専用3.3V。以下は初期調査/見積りを含み、矛盾時はRev A0を優先する。
+> **履歴資料・発注禁止。** 以下は2026-10-24の比較案で、Rev Aを含め失効済み。現行正本は [`requirements.md`](requirements.md)、[`hardware/xe-minimal/active-design.json`](../hardware/xe-minimal/active-design.json)、[`procurement/xe-production-bom-2026-10-28.csv`](procurement/xe-production-bom-2026-10-28.csv)。STM32U535、T5838、BQ25101、SDMMC 4bitの記述を現行構成へ流用しない。
 
 調査日: 2026-10-24。**[推定]** はデータシートの数字を組み合わせた見積りで、実測していない。出典は末尾。
 

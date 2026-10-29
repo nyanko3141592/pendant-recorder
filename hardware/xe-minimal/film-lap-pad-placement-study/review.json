@@ -1,0 +1,81 @@
+{
+  "status": "UNROUTED_PLACEMENT_STUDY_DO_NOT_MANUFACTURE",
+  "release_allowed": false,
+  "source_pcb_sha256": "d0b5c957bfb85e51c0269d719165832bf84a7ca4c466191ff84e536cf83cccd5",
+  "candidate_pcb_sha256": "46f4645e7690b1d5c197584422db404ac1a1aee7cb068fa43fb38143cb4b440c",
+  "selected_pair": {
+    "pads": [
+      {
+        "tracks_to_reroute": [
+          {
+            "item": "track:241",
+            "net": "/SD_MOSI",
+            "uuid": "151e9acd-b5c7-4376-94cf-3e6be925f6ac"
+          },
+          {
+            "item": "track:244",
+            "net": "/SD_MOSI",
+            "uuid": "58313890-2372-494d-90cd-ac1c5f7a0f61"
+          },
+          {
+            "item": "track:399",
+            "net": "/GND",
+            "uuid": "3dfd6012-f35d-40ec-9637-e70c660f6c2a"
+          }
+        ],
+        "net": "/BAT_TS",
+        "pcb_center_mm": [
+          15.5,
+          1.25
+        ],
+        "size_mm": [
+          1.8,
+          0.8
+        ],
+        "distance_from_old_pad_mm": 0.6594884381094173,
+        "existing_other_net_zones_to_refill": []
+      },
+      {
+        "tracks_to_reroute": [
+          {
+            "item": "track:245",
+            "net": "/SD_MOSI",
+            "uuid": "7277be34-5956-4f21-afe9-efd4b94bdee0"
+          },
+          {
+            "item": "track:246",
+            "net": "/SD_MOSI",
+            "uuid": "c5d7aa58-715f-4489-a6ec-0c37189d3dc4"
+          }
+        ],
+        "net": "/GND",
+        "pcb_center_mm": [
+          12.75,
+          1.5
+        ],
+        "size_mm": [
+          0.8,
+          1.8
+        ],
+        "distance_from_old_pad_mm": 1.7863160414663475,
+        "existing_other_net_zones_to_refill": []
+      }
+    ],
+    "sum_displacement_mm": 2.4458044795757647,
+    "pad_edge_distance_mm": 1.45
+  },
+  "track_segments_requiring_review": [
+    "151e9acd-b5c7-4376-94cf-3e6be925f6ac",
+    "3dfd6012-f35d-40ec-9637-e70c660f6c2a",
+    "58313890-2372-494d-90cd-ac1c5f7a0f61",
+    "7277be34-5956-4f21-afe9-efd4b94bdee0",
+    "c5d7aa58-715f-4489-a6ec-0c37189d3dc4"
+  ],
+  "limits": [
+    "Known copper conflicts remain; no routing removed or repaired.",
+    "No schematic, BOM or approved thermistor circuit substitution.",
+    "Old TH1 footprint replaced by dedicated wire pads; route endpoints may no longer connect.",
+    "No DRC, outline, mask, mechanical access or strain-relief acceptance.",
+    "Source board remains unchanged."
+  ]
+}

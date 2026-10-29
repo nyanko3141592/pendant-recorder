@@ -1,0 +1,82 @@
+{
+  "status": "FILM_PCB_RESISTIVE_STIMULUS_PLAN_NOT_THERMAL_QUALIFICATION",
+  "pcb_path": "hardware/xe-minimal/film-integration-trial/pendant-xe-minimal.kicad_pcb",
+  "pcb_sha256": "85721b062eadb1cf1309f0fda7117d65f9eda037e773e49d467361cdcd6254f6",
+  "verified_divider_nets": {
+    "R37": {
+      "value": "100k 1%",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/BAT_TS"
+      }
+    },
+    "TH1": {
+      "value": "103JT-025 external 10k 1% B3435 candidate",
+      "pads": {
+        "1": "/BAT_TS",
+        "2": "/GND"
+      }
+    },
+    "R38": {
+      "value": "100k 1%",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/TS_COLD_REF"
+      }
+    },
+    "R39": {
+      "value": "20k 1%",
+      "pads": {
+        "1": "/TS_COLD_REF",
+        "2": "/GND"
+      }
+    },
+    "R40": {
+      "value": "100k 1%",
+      "pads": {
+        "1": "/V3V3",
+        "2": "/TS_HOT_REF"
+      }
+    },
+    "R41": {
+      "value": "7.5k 1%",
+      "pads": {
+        "1": "/TS_HOT_REF",
+        "2": "/GND"
+      }
+    }
+  },
+  "boundaries": [
+    {
+      "boundary": "cold",
+      "ideal_sensor_resistance_ohm": 20000,
+      "resistor_only_corner_range_ohm": [
+        19407.920792079207,
+        20608.08080808081
+      ],
+      "ideal_reference_V_at_assumed3p3V": 0.55
+    },
+    {
+      "boundary": "hot",
+      "ideal_sensor_resistance_ohm": 7500,
+      "resistor_only_corner_range_ohm": [
+        7277.970297029703,
+        7728.030303030303
+      ],
+      "ideal_reference_V_at_assumed3p3V": 0.2302325581395349
+    }
+  ],
+  "test_sequence": [
+    "Use battery emulator and current-limited bench supply before any real battery.",
+    "Start with 10kohm at TH1; sweep upward through cold boundary and back.",
+    "Return to 10kohm; sweep downward through hot boundary and back.",
+    "Check sensor open/short and startup/brownout separately; record charge current and guard gate."
+  ],
+  "limits": [
+    "Boundary ranges include only three independent 1% divider resistor errors.",
+    "Comparator offset, hysteresis, common-mode dependence, leakage and rail variation excluded.",
+    "These are sweep starting points, not acceptance temperatures or guaranteed switching resistances.",
+    "No measured data; sensor thermal coupling and cell protection unqualified.",
+    "Alternative NTCAFLEX is not adopted by this output."
+  ]
+}

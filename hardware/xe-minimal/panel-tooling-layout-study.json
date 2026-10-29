@@ -1,0 +1,184 @@
+{
+  "status": "PROVISIONAL_TOOLING_GEOMETRY_NOT_ASSEMBLY_APPROVED",
+  "source_topology_sha256": "2d3298e42314d6b0457b59f3eb79a26bea358fca45edc6a74e154617034f77aa",
+  "source_url": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+  "required_corner_material_patches_mm": [
+    [
+      0,
+      0,
+      6,
+      6
+    ],
+    [
+      84,
+      0,
+      90,
+      6
+    ],
+    [
+      0,
+      71,
+      6,
+      77
+    ]
+  ],
+  "fiducials": [
+    {
+      "id": "FID1",
+      "center_mm": [
+        3.85,
+        3.85
+      ],
+      "copper_diameter_mm": 1.0,
+      "mask_opening_diameter_mm": 2.0,
+      "clearance_envelope_diameter_mm": 3.0,
+      "sides": [
+        "F",
+        "B"
+      ]
+    },
+    {
+      "id": "FID2",
+      "center_mm": [
+        86.15,
+        3.85
+      ],
+      "copper_diameter_mm": 1.0,
+      "mask_opening_diameter_mm": 2.0,
+      "clearance_envelope_diameter_mm": 3.0,
+      "sides": [
+        "F",
+        "B"
+      ]
+    },
+    {
+      "id": "FID3",
+      "center_mm": [
+        3.85,
+        73.15
+      ],
+      "copper_diameter_mm": 1.0,
+      "mask_opening_diameter_mm": 2.0,
+      "clearance_envelope_diameter_mm": 3.0,
+      "sides": [
+        "F",
+        "B"
+      ]
+    }
+  ],
+  "tooling_holes": [
+    {
+      "id": "TOOL1",
+      "center_mm": [
+        10,
+        2.5
+      ],
+      "drill_diameter_mm": 2.0
+    },
+    {
+      "id": "TOOL2",
+      "center_mm": [
+        80,
+        2.5
+      ],
+      "drill_diameter_mm": 2.0
+    },
+    {
+      "id": "TOOL3",
+      "center_mm": [
+        10,
+        74.5
+      ],
+      "drill_diameter_mm": 2.0
+    }
+  ],
+  "all_envelopes_inside_rails": true,
+  "minimum_feature_envelope_gap_mm": 3.7964275585446057,
+  "pair_clearances": [
+    {
+      "a": "FID1",
+      "b": "FID2",
+      "envelope_gap_mm": 79.30000000000001
+    },
+    {
+      "a": "FID1",
+      "b": "FID3",
+      "envelope_gap_mm": 66.30000000000001
+    },
+    {
+      "a": "FID1",
+      "b": "TOOL1",
+      "envelope_gap_mm": 3.7964275585446075
+    },
+    {
+      "a": "FID1",
+      "b": "TOOL2",
+      "envelope_gap_mm": 73.66196557337528
+    },
+    {
+      "a": "FID1",
+      "b": "TOOL3",
+      "envelope_gap_mm": 68.41716999429687
+    },
+    {
+      "a": "FID2",
+      "b": "FID3",
+      "envelope_gap_mm": 104.59079886309983
+    },
+    {
+      "a": "FID2",
+      "b": "TOOL1",
+      "envelope_gap_mm": 73.66196557337528
+    },
+    {
+      "a": "FID2",
+      "b": "TOOL2",
+      "envelope_gap_mm": 3.796427558544613
+    },
+    {
+      "a": "FID2",
+      "b": "TOOL3",
+      "envelope_gap_mm": 101.37610408558844
+    },
+    {
+      "a": "FID3",
+      "b": "TOOL1",
+      "envelope_gap_mm": 68.41716999429687
+    },
+    {
+      "a": "FID3",
+      "b": "TOOL2",
+      "envelope_gap_mm": 101.37610408558844
+    },
+    {
+      "a": "FID3",
+      "b": "TOOL3",
+      "envelope_gap_mm": 3.7964275585446057
+    },
+    {
+      "a": "TOOL1",
+      "b": "TOOL2",
+      "envelope_gap_mm": 68.0
+    },
+    {
+      "a": "TOOL1",
+      "b": "TOOL3",
+      "envelope_gap_mm": 70.0
+    },
+    {
+      "a": "TOOL2",
+      "b": "TOOL3",
+      "envelope_gap_mm": 98.41912168506553
+    }
+  ],
+  "assumptions": [
+    "Public dimensions: fiducial copper diameter 1 mm, tooling hole diameter 2 mm, corner fiducial center inset 3.85 mm.",
+    "Mask opening 2 mm and exclusion envelope 3 mm are design proposals, not sourced process approvals.",
+    "Three fiducials form an asymmetric triangle; same physical locations on both sides, bottom view must be mirrored.",
+    "Tooling holes proposed on horizontal rails; assembler fixture compatibility remains unverified."
+  ],
+  "limitations": [
+    "Corner patches are required for 3 mm fiducial envelopes; original nominal carrier STEP lacks these patches. Not yet integrated into electrical panel PCB or Gerbers.",
+    "No clamp, conveyor, camera field-of-view or registration tolerance qualification."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "date": "2026-10-29",
+  "inputs": {
+    "layers": 4,
+    "nominal_thickness_mm": 0.8,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "target_ohm": 90,
+    "type": "Differential Pair (Non coplanar)",
+    "signal": "L1",
+    "reference": "L2",
+    "soldermask": true
+  },
+  "observations": [
+    {
+      "gap_input_mm": 0.133,
+      "gap_reported_mm": 0.1331,
+      "width_mm": 0.1278,
+      "stackup": "JLC04081H-3313"
+    },
+    {
+      "gap_input_mm": 0.133,
+      "gap_reported_mm": 0.1331,
+      "width_mm": 0.1466,
+      "stackup": "JLC04081H-2116B"
+    },
+    {
+      "gap_input_mm": 0.125,
+      "gap_reported_mm": 0.125,
+      "width_mm": 0.1234,
+      "stackup": "JLC04081H-3313"
+    },
+    {
+      "gap_input_mm": 0.125,
+      "gap_reported_mm": 0.125,
+      "width_mm": 0.1392,
+      "stackup": "JLC04081H-2116B"
+    },
+    {
+      "gap_input_mm": 0.126,
+      "gap_reported_mm": 0.126,
+      "width_mm": 0.1234,
+      "stackup": "JLC04081H-3313"
+    }
+  ],
+  "current_main_traces": {
+    "width_mm": 0.1172,
+    "center_spacing_mm": 0.25003,
+    "gap_mm": 0.13283
+  },
+  "preferred_for_next_trial": "JLC04081H-3313, official Standard/finished0.80+-0.10mm",
+  "limitations": [
+    "Noncoplanar model assumes no nearby same-layer copper effect",
+    "Main diagonal only; escape and branch geometries still need review",
+    "Calculator tolerance0.5% is solver setting, not fabrication acceptance",
+    "No board adoption, no manufacturing submission"
+  ]
+}

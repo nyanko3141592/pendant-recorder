@@ -1,0 +1,298 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-28T01:28:24",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "pendant-xe-minimal.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                },
+                {
+                    "description": "パッド A4 [/VBUS] - J1 ( F.Cu 上)",
+                    "pos": {
+                        "x": 9.6,
+                        "y": 18.815
+                    },
+                    "uuid": "87db57a9-1e0d-4ce5-805e-dc44f1753482"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.1414 mm )",
+                    "pos": {
+                        "x": 13.9,
+                        "y": 18.9
+                    },
+                    "uuid": "83fa4b40-ee3d-4531-bbb9-7a1733e0480f"
+                },
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.5150 mm )",
+                    "pos": {
+                        "x": 14.4,
+                        "y": 18.814999
+                    },
+                    "uuid": "d52e7bb0-ec62-4c27-8228-cf11c3bd874c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.1414 mm )",
+                    "pos": {
+                        "x": 13.9,
+                        "y": 18.9
+                    },
+                    "uuid": "83fa4b40-ee3d-4531-bbb9-7a1733e0480f"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VDDA と /VBUS)",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( In4.Cu 上、長さ: 0.7211 mm )",
+                    "pos": {
+                        "x": 9.9,
+                        "y": 17.9
+                    },
+                    "uuid": "301f456b-d40e-40f4-9f61-6299156d7d2b"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "配線 [/VDDA] ( In4.Cu 上、長さ: 5.7454 mm )",
+                    "pos": {
+                        "x": 13.4,
+                        "y": 23.3
+                    },
+                    "uuid": "64449dfe-186f-432f-8039-fe014702f4fa"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /VBUS と /VDDA)",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                },
+                {
+                    "description": "配線 [/VDDA] ( In4.Cu 上、長さ: 0.7071 mm )",
+                    "pos": {
+                        "x": 10.4,
+                        "y": 18.4
+                    },
+                    "uuid": "e701be59-e03d-4ee1-ac5b-aae8bd5f151f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /USB_DP と /VBUS)",
+            "items": [
+                {
+                    "description": "ビア [/USB_DP] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 11.75,
+                        "y": 19.883749
+                    },
+                    "uuid": "28ad8aee-08e4-4004-8b2c-eee63521f5c3"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット /GND と /VBUS)",
+            "items": [
+                {
+                    "description": "ビア [/GND] (F.Cu - B.Cu 上)",
+                    "pos": {
+                        "x": 12.183012,
+                        "y": 20.133749
+                    },
+                    "uuid": "216a419e-cc2e-43b4-a2c2-ff3141f3fc1a"
+                },
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1703 mm )",
+                    "pos": {
+                        "x": 19.265,
+                        "y": 0.794999
+                    },
+                    "uuid": "31250e19-47da-4bc1-b31a-37cf64742543"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 0.8000 mm )",
+                    "pos": {
+                        "x": 1.765,
+                        "y": 0.794999
+                    },
+                    "uuid": "4e3bab4e-807e-48ae-907b-96f3f8b568f9"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/GND] ( F.Cu 上、長さ: 1.1000 mm )",
+                    "pos": {
+                        "x": 17.7225,
+                        "y": 2.199999
+                    },
+                    "uuid": "cdc51c14-ccfb-475b-9715-26b7e1aadb0e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( F.Cu 上、長さ: 1.6971 mm )",
+                    "pos": {
+                        "x": 18.9,
+                        "y": 8.3
+                    },
+                    "uuid": "713d4c03-e64f-4838-a87a-6216e28751c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( B.Cu 上、長さ: 0.1414 mm )",
+                    "pos": {
+                        "x": 13.9,
+                        "y": 18.9
+                    },
+                    "uuid": "83fa4b40-ee3d-4531-bbb9-7a1733e0480f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "配線 [/VBUS] ( In4.Cu 上、長さ: 5.7180 mm )",
+                    "pos": {
+                        "x": 9.289418,
+                        "y": 17.655889
+                    },
+                    "uuid": "cd9d1b81-d549-4bb9-b0b6-38f9a4e3a2b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "導体スライバー (In4.Cu)",
+            "items": [],
+            "severity": "warning",
+            "type": "copper_sliver"
+        }
+    ]
+}

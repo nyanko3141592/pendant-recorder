@@ -1,0 +1,67 @@
+2026-10-26 01:24:02.167 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-26 01:24:02.421 INFO   Hardware: 8 CPU cores, 497 CPU score, 6144 MB RAM
+2026-10-26 01:24:02.422 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-26 01:24:02.422 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-26 01:24:03.468 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-26 01:24:03.739 INFO   [FE5E2A\07CDC4] Loading board file 'plane-continuation.dsn'...
+2026-10-26 01:24:03.885 INFO   Layer 'In1.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-26 01:24:03.957 INFO   [FE5E2A\07CDC4] Job 'FE5E2A\07CDC4' started at 2026-10-25T16:24:03.957466Z.
+2026-10-26 01:24:04.220 INFO   [FE5E2A\07CDC4] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=4.
+2026-10-26 01:24:04.506 INFO   [FE5E2A\07CDC4] Fanout stage started on board 'e4a9c707a764bd475815de4ae4310ab1' with 52 of 252 SMD pins needing fanout (174 already connected, 26 netless).
+2026-10-26 01:24:05.312 INFO   [FE5E2A\07CDC4] Fanout pass #1 on board 'e4a9c707a764bd475815de4ae4310ab1' completed in 0.68 seconds with 3 SMD pins fanouted, 10 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-26 01:24:05.410 INFO   [FE5E2A\07CDC4] Fanout stage completed: started with 226 total SMD pins, completed in 0.81 seconds, escaped pins: 215/226 (95.1%), using 0.98 total CPU seconds, 0.68 GB total allocated, and 147.4 MB peak heap usage.
+2026-10-26 01:24:05.904 INFO   [FE5E2A\07CDC4] Auto-routing stage started on board 'e4a9c707a764bd475815de4ae4310ab1' with baseline score 906.81 for 13 unrouted items.
+2026-10-26 01:24:08.665 INFO   [FE5E2A\07CDC4] Auto-routing pass #1 on board 'e4a9c707a764bd475815de4ae4310ab1' was completed in 2.58 seconds with score 921.15 (11 unrouted and 0 violations), using 3.74 CPU seconds and the job allocated 3.59 GB of memory so far.
+2026-10-26 01:24:11.141 INFO   [FE5E2A\07CDC4] Auto-routing pass #2 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.29 seconds with score 921.15 (11 unrouted and 0 violations), using 6.74 CPU seconds and the job allocated 7.20 GB of memory so far.
+2026-10-26 01:24:13.360 INFO   [FE5E2A\07CDC4] Auto-routing pass #3 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.20 seconds with score 921.15 (11 unrouted and 0 violations), using 8.74 CPU seconds and the job allocated 9.86 GB of memory so far.
+2026-10-26 01:24:15.591 INFO   [FE5E2A\07CDC4] Auto-routing pass #4 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.22 seconds with score 921.15 (11 unrouted and 0 violations), using 10.74 CPU seconds and the job allocated 12.47 GB of memory so far.
+2026-10-26 01:24:17.776 INFO   [FE5E2A\07CDC4] Auto-routing pass #5 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.17 seconds with score 921.15 (11 unrouted and 0 violations), using 12.72 CPU seconds and the job allocated 15.06 GB of memory so far.
+2026-10-26 01:24:20.005 INFO   [FE5E2A\07CDC4] Auto-routing pass #6 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.21 seconds with score 921.15 (11 unrouted and 0 violations), using 14.72 CPU seconds and the job allocated 17.67 GB of memory so far.
+2026-10-26 01:24:22.190 INFO   [FE5E2A\07CDC4] Auto-routing pass #7 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.17 seconds with score 921.15 (11 unrouted and 0 violations), using 17.72 CPU seconds and the job allocated 21.36 GB of memory so far.
+2026-10-26 01:24:24.408 INFO   [FE5E2A\07CDC4] Auto-routing pass #8 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.20 seconds with score 921.15 (11 unrouted and 0 violations), using 19.73 CPU seconds and the job allocated 24.00 GB of memory so far.
+2026-10-26 01:24:26.614 INFO   [FE5E2A\07CDC4] Auto-routing pass #9 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.19 seconds with score 921.15 (11 unrouted and 0 violations), using 21.73 CPU seconds and the job allocated 26.67 GB of memory so far.
+2026-10-26 01:24:28.819 INFO   [FE5E2A\07CDC4] Auto-routing pass #10 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.19 seconds with score 921.15 (11 unrouted and 0 violations), using 23.73 CPU seconds and the job allocated 28.96 GB of memory so far.
+2026-10-26 01:24:31.026 INFO   [FE5E2A\07CDC4] Auto-routing pass #11 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.19 seconds with score 921.15 (11 unrouted and 0 violations), using 25.72 CPU seconds and the job allocated 31.75 GB of memory so far.
+2026-10-26 01:24:33.372 INFO   [FE5E2A\07CDC4] Auto-routing pass #12 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.17 seconds with score 921.15 (11 unrouted and 0 violations), using 28.73 CPU seconds and the job allocated 35.53 GB of memory so far.
+2026-10-26 01:24:35.657 INFO   [FE5E2A\07CDC4] Auto-routing pass #13 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.27 seconds with score 921.15 (11 unrouted and 0 violations), using 30.72 CPU seconds and the job allocated 38.06 GB of memory so far.
+2026-10-26 01:24:37.849 INFO   [FE5E2A\07CDC4] Auto-routing pass #14 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.18 seconds with score 921.15 (11 unrouted and 0 violations), using 32.72 CPU seconds and the job allocated 40.62 GB of memory so far.
+2026-10-26 01:24:40.036 INFO   [FE5E2A\07CDC4] Auto-routing pass #15 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.17 seconds with score 921.15 (11 unrouted and 0 violations), using 34.72 CPU seconds and the job allocated 43.30 GB of memory so far.
+2026-10-26 01:24:42.219 INFO   [FE5E2A\07CDC4] Auto-routing pass #16 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.17 seconds with score 921.15 (11 unrouted and 0 violations), using 36.72 CPU seconds and the job allocated 45.97 GB of memory so far.
+2026-10-26 01:24:44.828 INFO   [FE5E2A\07CDC4] Auto-routing pass #17 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.59 seconds with score 921.15 (11 unrouted and 0 violations), using 39.49 CPU seconds and the job allocated 49.32 GB of memory so far.
+2026-10-26 01:24:47.001 INFO   [FE5E2A\07CDC4] Auto-routing pass #18 on board 'eb07c70a0a1298e96ca6f5aaa4014e6e' was completed in 2.16 seconds with score 921.15 (11 unrouted and 0 violations), using 41.49 CPU seconds and the job allocated 51.88 GB of memory so far.
+2026-10-26 01:24:47.024 INFO   [FE5E2A\07CDC4] The router's best score (921.15) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (11 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net '/SD_V3' (2 unrouted connections):
+    - via  ->  C26-1
+    - J4-4  ->  U10-A1
+  Net '/VBUS' (1 unrouted connection):
+    - J1-B4  ->  J1-A4
+  Net '/USB_DP' (1 unrouted connection):
+    - J1-B6  ->  U2-1
+  Net '/CHG_ALLOW' (1 unrouted connection):
+    - U1-20  ->  R43-1
+  Net '/CHG_GUARD_GATE' (1 unrouted connection):
+    - U12-1  ->  via
+  Net '/BAT_ADC' (1 unrouted connection):
+    - U1-11  ->  R34-1
+  Net '/PDM_DATA' (1 unrouted connection):
+    - U8-1  ->  U1-40
+  Net '/SWCLK' (1 unrouted connection):
+    - J3-4  ->  U1-37
+  Net '/CHG_INHIBIT_GATE' (1 unrouted connection):
+    - Q4-3  ->  R12-2
+  Net '/ISET' (1 unrouted connection):
+    - U3-8  ->  R10-1
+2026-10-26 01:24:47.521 INFO   [FE5E2A\07CDC4] Auto-routing stage completed: started with 13 unrouted nets, completed in 43.13 seconds, final score: 921.15 (11 unrouted and 0 violations), using 42.49 total CPU seconds, 52.87 GB total allocated, and 322.8 MB peak heap usage.
+2026-10-26 01:24:47.698 INFO   [FE5E2A\07CDC4] Skipping optimization stage: the board has 11 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-26 01:24:47.718 INFO   [FE5E2A\07CDC4] Job 'FE5E2A\07CDC4' finished with state: COMPLETED (elapsed: 43.76 seconds, finished at UTC: 2026-10-25T16:24:47.718187Z).
+2026-10-26 01:24:47.722 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v13/plane-continuation.ses' (SES)...
+2026-10-26 01:24:47.723 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/mini-rect-v13/plane-continuation.ses' (156498 bytes).
+
+╔══════════════════════════════════════════════════════════════════╗
+║           Thank you for using Freerouting!                       ║
+║                                                                  ║
+║  If you would like to support the project, please visit          ║
+║  https://www.freerouting.app/donate.html                         ║
+║  Every contribution helps keep this project open and active!     ║
+╚══════════════════════════════════════════════════════════════════╝

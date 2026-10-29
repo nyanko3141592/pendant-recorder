@@ -1,0 +1,35 @@
+{
+  "status": "CONDITIONAL_JLC_U11_Q6_Q7_NCU_SCENARIO_NOT_QUOTE",
+  "sources_sha256": {
+    "docs/procurement/xe-u11-jlc-availability.json": "699f6e646d00fa610fd853418cb1aee0e65f457d53f8ef4a73a8d6c5ba6c3bb7",
+    "docs/procurement/xe-ncu-jlc-dmn-cost-scenario.json": "c86e013b16e82f198e94c780cf15024f438c02946cf942629cd71f509ff3ba16"
+  },
+  "replacement_USD": {
+    "old_LCSC_U11": 201.521,
+    "JLC_U11": 200.8285,
+    "difference": -0.6925
+  },
+  "subtotals": {
+    "mixed_date_parts_reference_subtotals_by_currency": {
+      "JPY": 19528.7,
+      "USD": 202.8065
+    },
+    "mixed_date_quantity_proposal_reference_subtotals_by_currency": {
+      "JPY": 19449.7,
+      "USD": 202.8065
+    }
+  },
+  "complete_five_unit_total_JPY": null,
+  "limits": [
+    "Availability is observed, not allocated or a binding quotation",
+    "This does not qualify the MOSFET circuit or whole BOM procurement",
+    "Do not substitute ElecSuper DMN2056U-7(ES)",
+    "All other historical mixed-date source limitations remain; no blanket current availability claim.",
+    "JLC assembly of the entire mixed-source BOM has not been confirmed.",
+    "Stock not allocated; no purchase or upload",
+    "PCBA inventory only; not a standalone shipment",
+    "Attrition, process, feeder, inspection, shipping and tax charges excluded",
+    "C9900196853 is a separate consignment/assembly-service entry, not equivalent component pricing",
+    "Full BOM, assembly process and footprint approval remain pending"
+  ]
+}

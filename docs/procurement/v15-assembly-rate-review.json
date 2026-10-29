@@ -1,0 +1,97 @@
+{
+  "status": "PUBLIC_RATE_CONDITIONAL_SCENARIOS_NOT_QUOTE",
+  "observed_date": "2026-10-26",
+  "source": "https://jlcpcb.com/help/article/pcb-assembly-price",
+  "source_updated_date": "2026-10-22",
+  "source_crawl_label": "today",
+  "currency": "USD",
+  "prototype_units": 5,
+  "assembly": "Standard double-sided rigid PCB",
+  "pad_count_source": "docs/procurement/v15-assembly-pad-counts.json",
+  "scenarios": [
+    {
+      "assumed_feeder_loads": 38,
+      "setup_USD": 51.12,
+      "stencil_USD": 16.42,
+      "two_fixtures_USD": 16.42,
+      "feeder_USD": 58.14,
+      "SMT_1610_pad_proxy_USD": 2.576,
+      "manual_20_pad_proxy_USD": 0.328,
+      "hand_solder_labor_USD": 3.58,
+      "modeled_partial_assembly_USD": 148.584,
+      "partial_assembly_with_20_aggregate_xray_components_USD": 164.984,
+      "partial_assembly_with_per_type_xray_sensitivity_USD": 181.384
+    },
+    {
+      "assumed_feeder_loads": 47,
+      "setup_USD": 51.12,
+      "stencil_USD": 16.42,
+      "two_fixtures_USD": 16.42,
+      "feeder_USD": 71.91,
+      "SMT_1610_pad_proxy_USD": 2.576,
+      "manual_20_pad_proxy_USD": 0.328,
+      "hand_solder_labor_USD": 3.58,
+      "modeled_partial_assembly_USD": 162.354,
+      "partial_assembly_with_20_aggregate_xray_components_USD": 178.754,
+      "partial_assembly_with_per_type_xray_sensitivity_USD": 195.154
+    }
+  ],
+  "exclusions": [
+    "PCB fabrication",
+    "Components and sourcing/attrition/consignment fees",
+    "X-ray amounts above are separate conditional scenarios; final supplier inspection classification and rate aggregation are unresolved.",
+    "Packaging, placement confirmation, storage and other applicable options",
+    "Shipping, destination taxes, payment FX"
+  ],
+  "uncertainties": [
+    "38 unique MPN versus47 MPN-side pairs is a feeder-count scenario, not a supplier-confirmed range. Repeated setup/handling can differ.",
+    "CAD322 SMD/4 PTH pads per board are pricing proxies, not vendor joint counts; exposed pads may be subdivided and shell pads classified differently.",
+    "Two rigid fixtures follow1-29 quantity row; applicability and panelization must be confirmed.",
+    "Handling>=14.93 is conditional on Economic versus Standard comparison, not automatically added to this double-sided scenario.",
+    "Bulk single-board surcharge not assumed applicable to this five-unit prototype.",
+    "Public rate card is not an accepted manufacturing or assembly quote."
+  ],
+  "complete_assembly_quote_USD": null,
+  "complete_prototype_total": null,
+  "xray_candidate_review": {
+    "status": "SUPPLIER_CLASSIFICATION_PENDING",
+    "candidates": [
+      {
+        "ref": "U1",
+        "mpn": "STM32U535CEU6",
+        "footprint": "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm",
+        "basis": "QFN/WSON or underside-contact package candidate; supplier must confirm X-ray process"
+      },
+      {
+        "ref": "U3",
+        "mpn": "BQ25185DLHR",
+        "footprint": "Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm",
+        "basis": "QFN/WSON or underside-contact package candidate; supplier must confirm X-ray process"
+      },
+      {
+        "ref": "U8",
+        "mpn": "IM69D130V01XTSA1",
+        "footprint": "Pendant:IM69D130_JLC_SMD_trial",
+        "basis": "QFN/WSON or underside-contact package candidate; supplier must confirm X-ray process"
+      },
+      {
+        "ref": "U10",
+        "mpn": "TPS22916CYFPR",
+        "footprint": "Pendant:TPS22916_YFP4",
+        "basis": "QFN/WSON or underside-contact package candidate; supplier must confirm X-ray process"
+      }
+    ],
+    "five_board_component_quantity": 20,
+    "aggregate_quantity_tier_unit_USD": 0.82,
+    "aggregate_quantity_scenario_USD": 16.4,
+    "per_type_tier_sensitivity_USD": 32.8,
+    "not_classified": [
+      "Y1 and connector hidden joints may require other inspection; excluded from these scenarios"
+    ],
+    "limitations": [
+      "Public table says component quantity but does not explicitly resolve aggregation across package types.",
+      "Four candidate references are not an approved or exhaustive supplier inspection list.",
+      "Microphone process restrictions must be reviewed before applying any inspection process."
+    ]
+  }
+}

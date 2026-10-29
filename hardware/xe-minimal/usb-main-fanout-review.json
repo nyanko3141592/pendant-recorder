@@ -1,0 +1,359 @@
+{
+  "status": "PARTIAL_USB_FANOUT_NOT_QUALIFIED",
+  "accepted": [
+    {
+      "ref": "U1",
+      "pins": [
+        "33",
+        "32"
+      ],
+      "via_mm": [
+        [
+          21.89,
+          8.6175
+        ],
+        [
+          21.89,
+          8.1175
+        ]
+      ],
+      "stub_length_each_mm": 1.6492422502470643,
+      "tested": 1
+    }
+  ],
+  "deferred": [
+    {
+      "ref": "U2",
+      "pins": [
+        "6",
+        "4"
+      ],
+      "tested": 4
+    }
+  ],
+  "failed_trials": [
+    {
+      "ref": "U2",
+      "offset_mm": [
+        0.6,
+        1.6
+      ],
+      "violations": [
+        {
+          "type": "shorting_items",
+          "items": [
+            "\u30d1\u30c3\u30c9 5 [/VBUS] - U2 ( B.Cu \u4e0a)",
+            "\u914d\u7dda [/USB_DM] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.6125 mm )"
+          ]
+        },
+        {
+          "type": "shorting_items",
+          "items": [
+            "\u914d\u7dda [/USB_DP] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.6125 mm )",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "clearance",
+          "items": [
+            "\u914d\u7dda [/USB_DP] ( B.Cu \u4e0a\u3001\u9577\u3055: 0.4000 mm )",
+            "\u914d\u7dda [/USB_DM] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.6125 mm )"
+          ]
+        },
+        {
+          "type": "solder_mask_bridge",
+          "items": [
+            "\u914d\u7dda [/USB_DM] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.6125 mm )",
+            "\u30d1\u30c3\u30c9 5 [/VBUS] - U2 ( B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DP] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "offset_mm": [
+        0.8,
+        1.6
+      ],
+      "violations": [
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "clearance",
+          "items": [
+            "\u914d\u7dda [/USB_DM] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.6492 mm )",
+            "\u30d1\u30c3\u30c9 5 [/VBUS] - U2 ( B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "clearance",
+          "items": [
+            "\u914d\u7dda [/USB_DP] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.6492 mm )",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DP] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_to_hole",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_to_hole",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "offset_mm": [
+        1.0,
+        -1.6
+      ],
+      "violations": [
+        {
+          "type": "clearance",
+          "items": [
+            "\u914d\u7dda [/USB_DP] ( B.Cu \u4e0a\u3001\u9577\u3055: 1.7088 mm )",
+            "\u30d1\u30c3\u30c9 5 [/VBUS] - U2 ( B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "clearance",
+          "items": [
+            "\u30d3\u30a2 [/USB_DP] (F.Cu - B.Cu \u4e0a)",
+            "\u30d1\u30c3\u30c9 2 [/GND] - R7 ( B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u30d1\u30c3\u30c9 2 [/GND] - R7 ( B.Cu \u4e0a)",
+            "\u30d3\u30a2 [/USB_DP] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DP] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "offset_mm": [
+        2.0,
+        1.6
+      ],
+      "violations": [
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u914d\u7dda [/USB_DM] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.2627 mm )",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "\u914d\u7dda [/USB_DP] ( B.Cu \u4e0a\u3001\u9577\u3055: 2.2627 mm )",
+            "J1\u306eNPTH\u30d1\u30c3\u30c9"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_clearance",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DP] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "via_dangling",
+          "items": [
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_to_hole",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        },
+        {
+          "type": "hole_to_hole",
+          "items": [
+            "J1\u306eNPTH\u30d1\u30c3\u30c9",
+            "\u30d3\u30a2 [/USB_DM] (F.Cu - B.Cu \u4e0a)"
+          ]
+        }
+      ]
+    }
+  ],
+  "physical_drc_violations": 2,
+  "temporary_via_dangling": 2,
+  "unconnected_items": 114,
+  "limits": [
+    "Main inner-layer pair is not yet routed",
+    "Reference stitching and impedance of layer changes remain unqualified",
+    "Not evidence of USB compliance or measured ESD immunity"
+  ]
+}

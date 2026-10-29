@@ -1,0 +1,2982 @@
+{
+  "status": "TERMINAL_COORDINATE_REVIEW_NOT_ASSEMBLER_ROTATION_APPROVAL",
+  "source_pcb_sha256": "d422d8bd227c07df80105b645c2fc55527e951c5a9cf8decd64e9083a6e8d735",
+  "component_count": 68,
+  "reference_source": "Production BOM references whose route starts with JLC_",
+  "excluded_non_jlc_features": [
+    "J3 programming pads",
+    "test pads",
+    "battery/case/cord final assembly"
+  ],
+  "external_sensor_positions": 0,
+  "battery_temperature_sensor": "DTP401525-XE pack NTC through J2; no TH1",
+  "coordinate_convention": "Board X right, board Y down, viewed from top; both sides use same XY frame. Position CSV Y is negated. No bottom mirroring applied.",
+  "placement_csv_center_side_rotation_match": true,
+  "components": [
+    {
+      "reference": "C1",
+      "value": "100n",
+      "side": "top",
+      "x_mm": 25.3,
+      "y_board_mm": 1.0,
+      "y_position_csv_mm": -1.0,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 25.3,
+          "y_board_mm": 1.48,
+          "y_position_csv_mm": -1.48
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 25.3,
+          "y_board_mm": 0.52,
+          "y_position_csv_mm": -0.52
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 25.3,
+        "y_board_mm": 1.48,
+        "y_position_csv_mm": -1.48
+      }
+    },
+    {
+      "reference": "C13",
+      "value": "2.2u 10V",
+      "side": "bottom",
+      "x_mm": 22.985,
+      "y_board_mm": 15.665,
+      "y_position_csv_mm": -15.665,
+      "kicad_orientation_degrees": -90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS_CHARGER",
+          "x_mm": 22.985,
+          "y_board_mm": 15.185,
+          "y_position_csv_mm": -15.185
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 22.985,
+          "y_board_mm": 16.145,
+          "y_position_csv_mm": -16.145
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS_CHARGER",
+        "x_mm": 22.985,
+        "y_board_mm": 15.185,
+        "y_position_csv_mm": -15.185
+      }
+    },
+    {
+      "reference": "C14",
+      "value": "2.2u",
+      "side": "bottom",
+      "x_mm": 17.785,
+      "y_board_mm": 15.665,
+      "y_position_csv_mm": -15.665,
+      "kicad_orientation_degrees": -90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/BAT",
+          "x_mm": 17.785,
+          "y_board_mm": 15.185,
+          "y_position_csv_mm": -15.185
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 17.785,
+          "y_board_mm": 16.145,
+          "y_position_csv_mm": -16.145
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/BAT",
+        "x_mm": 17.785,
+        "y_board_mm": 15.185,
+        "y_position_csv_mm": -15.185
+      }
+    },
+    {
+      "reference": "C15",
+      "value": "10u 10V effective >=1u",
+      "side": "bottom",
+      "x_mm": 20.06,
+      "y_board_mm": 17.335,
+      "y_position_csv_mm": -17.335,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SYS",
+          "x_mm": 19.285,
+          "y_board_mm": 17.335,
+          "y_position_csv_mm": -17.335
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 20.835,
+          "y_board_mm": 17.335,
+          "y_position_csv_mm": -17.335
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SYS",
+        "x_mm": 19.285,
+        "y_board_mm": 17.335,
+        "y_position_csv_mm": -17.335
+      }
+    },
+    {
+      "reference": "C16",
+      "value": "1u",
+      "side": "top",
+      "x_mm": 3.5325,
+      "y_board_mm": 0.785,
+      "y_position_csv_mm": -0.785,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 4.0125,
+          "y_board_mm": 0.785,
+          "y_position_csv_mm": -0.785
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 3.0525,
+          "y_board_mm": 0.785,
+          "y_position_csv_mm": -0.785
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 4.0125,
+        "y_board_mm": 0.785,
+        "y_position_csv_mm": -0.785
+      }
+    },
+    {
+      "reference": "C2",
+      "value": "100n",
+      "side": "bottom",
+      "x_mm": 22.27,
+      "y_board_mm": 10.5175,
+      "y_position_csv_mm": -10.5175,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 21.79,
+          "y_board_mm": 10.5175,
+          "y_position_csv_mm": -10.5175
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 22.75,
+          "y_board_mm": 10.5175,
+          "y_position_csv_mm": -10.5175
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 21.79,
+        "y_board_mm": 10.5175,
+        "y_position_csv_mm": -10.5175
+      }
+    },
+    {
+      "reference": "C22",
+      "value": "100n",
+      "side": "top",
+      "x_mm": 20.45,
+      "y_board_mm": 1.235,
+      "y_position_csv_mm": -1.235,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 20.45,
+          "y_board_mm": 1.715,
+          "y_position_csv_mm": -1.715
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 20.45,
+          "y_board_mm": 0.755,
+          "y_position_csv_mm": -0.755
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 20.45,
+        "y_board_mm": 1.715,
+        "y_position_csv_mm": -1.715
+      }
+    },
+    {
+      "reference": "C25",
+      "value": "1u",
+      "side": "bottom",
+      "x_mm": 23.8,
+      "y_board_mm": 6.2,
+      "y_position_csv_mm": -6.2,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 23.8,
+          "y_board_mm": 6.68,
+          "y_position_csv_mm": -6.68
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 23.8,
+          "y_board_mm": 5.72,
+          "y_position_csv_mm": -5.72
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 23.8,
+        "y_board_mm": 6.68,
+        "y_position_csv_mm": -6.68
+      }
+    },
+    {
+      "reference": "C26",
+      "value": "100n",
+      "side": "bottom",
+      "x_mm": 10.055,
+      "y_board_mm": 16.08,
+      "y_position_csv_mm": -16.08,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SD_V3",
+          "x_mm": 9.575,
+          "y_board_mm": 16.08,
+          "y_position_csv_mm": -16.08
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 10.535,
+          "y_board_mm": 16.08,
+          "y_position_csv_mm": -16.08
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SD_V3",
+        "x_mm": 9.575,
+        "y_board_mm": 16.08,
+        "y_position_csv_mm": -16.08
+      }
+    },
+    {
+      "reference": "C27",
+      "value": "4.7u",
+      "side": "bottom",
+      "x_mm": 10.6,
+      "y_board_mm": 14.58,
+      "y_position_csv_mm": -14.58,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SD_V3",
+          "x_mm": 9.825,
+          "y_board_mm": 14.58,
+          "y_position_csv_mm": -14.58
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 11.375,
+          "y_board_mm": 14.58,
+          "y_position_csv_mm": -14.58
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SD_V3",
+        "x_mm": 9.825,
+        "y_board_mm": 14.58,
+        "y_position_csv_mm": -14.58
+      }
+    },
+    {
+      "reference": "C28",
+      "value": "10n",
+      "side": "top",
+      "x_mm": 10.12,
+      "y_board_mm": 3.8,
+      "y_position_csv_mm": -3.8,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/BAT_ADC",
+          "x_mm": 10.6,
+          "y_board_mm": 3.8,
+          "y_position_csv_mm": -3.8
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 9.64,
+          "y_board_mm": 3.8,
+          "y_position_csv_mm": -3.8
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/BAT_ADC",
+        "x_mm": 10.6,
+        "y_board_mm": 3.8,
+        "y_position_csv_mm": -3.8
+      }
+    },
+    {
+      "reference": "C29",
+      "value": "100n 10V",
+      "side": "top",
+      "x_mm": 22.5,
+      "y_board_mm": 19.235,
+      "y_position_csv_mm": -19.235,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 22.5,
+          "y_board_mm": 19.715,
+          "y_position_csv_mm": -19.715
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 22.5,
+          "y_board_mm": 18.755,
+          "y_position_csv_mm": -18.755
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 22.5,
+        "y_board_mm": 19.715,
+        "y_position_csv_mm": -19.715
+      }
+    },
+    {
+      "reference": "C3",
+      "value": "100n",
+      "side": "bottom",
+      "x_mm": 14.1025,
+      "y_board_mm": 13.185,
+      "y_position_csv_mm": -13.185,
+      "kicad_orientation_degrees": -90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 14.1025,
+          "y_board_mm": 12.705,
+          "y_position_csv_mm": -12.705
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 14.1025,
+          "y_board_mm": 13.665,
+          "y_position_csv_mm": -13.665
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 14.1025,
+        "y_board_mm": 12.705,
+        "y_position_csv_mm": -12.705
+      }
+    },
+    {
+      "reference": "C30",
+      "value": "50p 50V C0G",
+      "side": "bottom",
+      "x_mm": 21.005,
+      "y_board_mm": 12.785,
+      "y_position_csv_mm": -12.785,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/ISET",
+          "x_mm": 21.485,
+          "y_board_mm": 12.785,
+          "y_position_csv_mm": -12.785
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 20.525,
+          "y_board_mm": 12.785,
+          "y_position_csv_mm": -12.785
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/ISET",
+        "x_mm": 21.485,
+        "y_board_mm": 12.785,
+        "y_position_csv_mm": -12.785
+      }
+    },
+    {
+      "reference": "C31",
+      "value": "1u 10V X5R",
+      "side": "top",
+      "x_mm": 15.5,
+      "y_board_mm": 0.95,
+      "y_position_csv_mm": -0.95,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS_OVP",
+          "x_mm": 15.02,
+          "y_board_mm": 0.95,
+          "y_position_csv_mm": -0.95
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 15.98,
+          "y_board_mm": 0.95,
+          "y_position_csv_mm": -0.95
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS_OVP",
+        "x_mm": 15.02,
+        "y_board_mm": 0.95,
+        "y_position_csv_mm": -0.95
+      }
+    },
+    {
+      "reference": "C32",
+      "value": "1u 10V X5R",
+      "side": "bottom",
+      "x_mm": 10.8,
+      "y_board_mm": 1.8,
+      "y_position_csv_mm": -1.8,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS_CHARGER",
+          "x_mm": 11.28,
+          "y_board_mm": 1.8,
+          "y_position_csv_mm": -1.8
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 10.32,
+          "y_board_mm": 1.8,
+          "y_position_csv_mm": -1.8
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS_CHARGER",
+        "x_mm": 11.28,
+        "y_board_mm": 1.8,
+        "y_position_csv_mm": -1.8
+      }
+    },
+    {
+      "reference": "C33",
+      "value": "1u 35V X5R",
+      "side": "top",
+      "x_mm": 10.0,
+      "y_board_mm": 8.0,
+      "y_position_csv_mm": -8.0,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS",
+          "x_mm": 10.48,
+          "y_board_mm": 8.0,
+          "y_position_csv_mm": -8.0
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 9.52,
+          "y_board_mm": 8.0,
+          "y_position_csv_mm": -8.0
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS",
+        "x_mm": 10.48,
+        "y_board_mm": 8.0,
+        "y_position_csv_mm": -8.0
+      }
+    },
+    {
+      "reference": "C4",
+      "value": "10u",
+      "side": "top",
+      "x_mm": 25.5,
+      "y_board_mm": 7.5,
+      "y_position_csv_mm": -7.5,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 26.275,
+          "y_board_mm": 7.5,
+          "y_position_csv_mm": -7.5
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 24.725,
+          "y_board_mm": 7.5,
+          "y_position_csv_mm": -7.5
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 26.275,
+        "y_board_mm": 7.5,
+        "y_position_csv_mm": -7.5
+      }
+    },
+    {
+      "reference": "C5",
+      "value": "4.7u",
+      "side": "bottom",
+      "x_mm": 18.1025,
+      "y_board_mm": 1.805,
+      "y_position_csv_mm": -1.805,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VCAP",
+          "x_mm": 18.1025,
+          "y_board_mm": 2.58,
+          "y_position_csv_mm": -2.58
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 18.1025,
+          "y_board_mm": 1.03,
+          "y_position_csv_mm": -1.03
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VCAP",
+        "x_mm": 18.1025,
+        "y_board_mm": 2.58,
+        "y_position_csv_mm": -2.58
+      }
+    },
+    {
+      "reference": "C6",
+      "value": "100n",
+      "side": "bottom",
+      "x_mm": 11.435,
+      "y_board_mm": 6.5175,
+      "y_position_csv_mm": -6.5175,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VDDA",
+          "x_mm": 11.915,
+          "y_board_mm": 6.5175,
+          "y_position_csv_mm": -6.5175
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 10.955,
+          "y_board_mm": 6.5175,
+          "y_position_csv_mm": -6.5175
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VDDA",
+        "x_mm": 11.915,
+        "y_board_mm": 6.5175,
+        "y_position_csv_mm": -6.5175
+      }
+    },
+    {
+      "reference": "C7",
+      "value": "1u",
+      "side": "bottom",
+      "x_mm": 10.475,
+      "y_board_mm": 7.7675,
+      "y_position_csv_mm": -7.7675,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VDDA",
+          "x_mm": 9.995,
+          "y_board_mm": 7.7675,
+          "y_position_csv_mm": -7.7675
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 10.955,
+          "y_board_mm": 7.7675,
+          "y_position_csv_mm": -7.7675
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VDDA",
+        "x_mm": 9.995,
+        "y_board_mm": 7.7675,
+        "y_position_csv_mm": -7.7675
+      }
+    },
+    {
+      "reference": "C9",
+      "value": "100n",
+      "side": "bottom",
+      "x_mm": 22.735,
+      "y_board_mm": 17.285,
+      "y_position_csv_mm": -17.285,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/NRST",
+          "x_mm": 23.215,
+          "y_board_mm": 17.285,
+          "y_position_csv_mm": -17.285
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 22.255,
+          "y_board_mm": 17.285,
+          "y_position_csv_mm": -17.285
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/NRST",
+        "x_mm": 23.215,
+        "y_board_mm": 17.285,
+        "y_position_csv_mm": -17.285
+      }
+    },
+    {
+      "reference": "D6",
+      "value": "TJ-S1005SW4TGLC9Y-A5 amber LED",
+      "side": "bottom",
+      "x_mm": 11.49,
+      "y_board_mm": 4.795,
+      "y_position_csv_mm": -4.795,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/GND",
+          "x_mm": 11.005,
+          "y_board_mm": 4.795,
+          "y_position_csv_mm": -4.795
+        },
+        {
+          "number": "2",
+          "net": "/STATUS_LED_A",
+          "x_mm": 11.975,
+          "y_board_mm": 4.795,
+          "y_position_csv_mm": -4.795
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/GND",
+        "x_mm": 11.005,
+        "y_board_mm": 4.795,
+        "y_position_csv_mm": -4.795
+      }
+    },
+    {
+      "reference": "J1",
+      "value": "USB4105-GF-A",
+      "side": "top",
+      "x_mm": 12.0,
+      "y_board_mm": 22.495,
+      "y_position_csv_mm": -22.495,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "A1",
+          "net": "/GND",
+          "x_mm": 8.8,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "A4",
+          "net": "/VBUS",
+          "x_mm": 9.6,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "A5",
+          "net": "/CC1",
+          "x_mm": 10.75,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "A6",
+          "net": "/USB_DP",
+          "x_mm": 11.75,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "A7",
+          "net": "/USB_DM",
+          "x_mm": 12.25,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "A8",
+          "net": "unconnected-(J1-SBU1-PadA8)",
+          "x_mm": 13.25,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "A9",
+          "net": "/VBUS",
+          "x_mm": 14.4,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "A12",
+          "net": "/GND",
+          "x_mm": 15.2,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B1",
+          "net": "/GND",
+          "x_mm": 15.2,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B4",
+          "net": "/VBUS",
+          "x_mm": 14.4,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B5",
+          "net": "/CC2",
+          "x_mm": 13.75,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B6",
+          "net": "/USB_DP",
+          "x_mm": 12.75,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B7",
+          "net": "/USB_DM",
+          "x_mm": 11.25,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B8",
+          "net": "unconnected-(J1-SBU2-PadB8)",
+          "x_mm": 10.25,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B9",
+          "net": "/VBUS",
+          "x_mm": 9.6,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "B12",
+          "net": "/GND",
+          "x_mm": 8.8,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "SH",
+          "net": "/GND",
+          "x_mm": 7.68,
+          "y_board_mm": 19.39,
+          "y_position_csv_mm": -19.39
+        },
+        {
+          "number": "SH",
+          "net": "/GND",
+          "x_mm": 7.68,
+          "y_board_mm": 23.57,
+          "y_position_csv_mm": -23.57
+        },
+        {
+          "number": "SH",
+          "net": "/GND",
+          "x_mm": 16.32,
+          "y_board_mm": 19.39,
+          "y_position_csv_mm": -19.39
+        },
+        {
+          "number": "SH",
+          "net": "/GND",
+          "x_mm": 16.32,
+          "y_board_mm": 23.57,
+          "y_position_csv_mm": -23.57
+        }
+      ],
+      "orientation_anchor": {
+        "number": "A1",
+        "net": "/GND",
+        "x_mm": 8.8,
+        "y_board_mm": 18.815,
+        "y_position_csv_mm": -18.815
+      }
+    },
+    {
+      "reference": "J2",
+      "value": "Molex781710003 / DTP401525-XE",
+      "side": "bottom",
+      "x_mm": 3.525,
+      "y_board_mm": 3.125,
+      "y_position_csv_mm": -3.125,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/BAT",
+          "x_mm": 4.725,
+          "y_board_mm": 1.25,
+          "y_position_csv_mm": -1.25
+        },
+        {
+          "number": "2",
+          "net": "/BAT_TS",
+          "x_mm": 3.525,
+          "y_board_mm": 1.25,
+          "y_position_csv_mm": -1.25
+        },
+        {
+          "number": "3",
+          "net": "/GND",
+          "x_mm": 2.325,
+          "y_board_mm": 1.25,
+          "y_position_csv_mm": -1.25
+        },
+        {
+          "number": "MP",
+          "net": "",
+          "x_mm": 5.875,
+          "y_board_mm": 5.025,
+          "y_position_csv_mm": -5.025
+        },
+        {
+          "number": "MP",
+          "net": "",
+          "x_mm": 1.175,
+          "y_board_mm": 5.025,
+          "y_position_csv_mm": -5.025
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/BAT",
+        "x_mm": 4.725,
+        "y_board_mm": 1.25,
+        "y_position_csv_mm": -1.25
+      }
+    },
+    {
+      "reference": "Q3",
+      "value": "DMN63D8L-7",
+      "side": "bottom",
+      "x_mm": 13.255,
+      "y_board_mm": 22.525,
+      "y_position_csv_mm": -22.525,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS_GATE",
+          "x_mm": 12.3175,
+          "y_board_mm": 23.475,
+          "y_position_csv_mm": -23.475
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 12.3175,
+          "y_board_mm": 21.575,
+          "y_position_csv_mm": -21.575
+        },
+        {
+          "number": "3",
+          "net": "/VBUS_N",
+          "x_mm": 14.1925,
+          "y_board_mm": 22.525,
+          "y_position_csv_mm": -22.525
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS_GATE",
+        "x_mm": 12.3175,
+        "y_board_mm": 23.475,
+        "y_position_csv_mm": -23.475
+      }
+    },
+    {
+      "reference": "Q4",
+      "value": "DMN63D8L-7",
+      "side": "bottom",
+      "x_mm": 4.755,
+      "y_board_mm": 8.525,
+      "y_position_csv_mm": -8.525,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/CHG_GUARD_GATE",
+          "x_mm": 3.8175,
+          "y_board_mm": 9.475,
+          "y_position_csv_mm": -9.475
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 3.8175,
+          "y_board_mm": 7.575,
+          "y_position_csv_mm": -7.575
+        },
+        {
+          "number": "3",
+          "net": "/CHG_INHIBIT_GATE",
+          "x_mm": 5.6925,
+          "y_board_mm": 8.525,
+          "y_position_csv_mm": -8.525
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/CHG_GUARD_GATE",
+        "x_mm": 3.8175,
+        "y_board_mm": 9.475,
+        "y_position_csv_mm": -9.475
+      }
+    },
+    {
+      "reference": "R1",
+      "value": "0R",
+      "side": "bottom",
+      "x_mm": 10.295,
+      "y_board_mm": 23.255,
+      "y_position_csv_mm": -23.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 10.295,
+          "y_board_mm": 23.765,
+          "y_position_csv_mm": -23.765
+        },
+        {
+          "number": "2",
+          "net": "/VDDA",
+          "x_mm": 10.295,
+          "y_board_mm": 22.745,
+          "y_position_csv_mm": -22.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 10.295,
+        "y_board_mm": 23.765,
+        "y_position_csv_mm": -23.765
+      }
+    },
+    {
+      "reference": "R10",
+      "value": "RC0402FR-0730KL 30k 1%",
+      "side": "bottom",
+      "x_mm": 16.755,
+      "y_board_mm": 21.295,
+      "y_position_csv_mm": -21.295,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/ISET",
+          "x_mm": 16.245,
+          "y_board_mm": 21.295,
+          "y_position_csv_mm": -21.295
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 17.265,
+          "y_board_mm": 21.295,
+          "y_position_csv_mm": -21.295
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/ISET",
+        "x_mm": 16.245,
+        "y_board_mm": 21.295,
+        "y_position_csv_mm": -21.295
+      }
+    },
+    {
+      "reference": "R11",
+      "value": "20k 1%",
+      "side": "bottom",
+      "x_mm": 5.755,
+      "y_board_mm": 23.295,
+      "y_position_csv_mm": -23.295,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 5.245,
+          "y_board_mm": 23.295,
+          "y_position_csv_mm": -23.295
+        },
+        {
+          "number": "2",
+          "net": "/CHG_N",
+          "x_mm": 6.265,
+          "y_board_mm": 23.295,
+          "y_position_csv_mm": -23.295
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 5.245,
+        "y_board_mm": 23.295,
+        "y_position_csv_mm": -23.295
+      }
+    },
+    {
+      "reference": "R12",
+      "value": "100k 1%",
+      "side": "top",
+      "x_mm": 18.795,
+      "y_board_mm": 22.755,
+      "y_position_csv_mm": -22.755,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SYS",
+          "x_mm": 18.795,
+          "y_board_mm": 23.265,
+          "y_position_csv_mm": -23.265
+        },
+        {
+          "number": "2",
+          "net": "/CHG_INHIBIT_GATE",
+          "x_mm": 18.795,
+          "y_board_mm": 22.245,
+          "y_position_csv_mm": -22.245
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SYS",
+        "x_mm": 18.795,
+        "y_board_mm": 23.265,
+        "y_position_csv_mm": -23.265
+      }
+    },
+    {
+      "reference": "R13",
+      "value": "100k",
+      "side": "bottom",
+      "x_mm": 13.26,
+      "y_board_mm": 3.0,
+      "y_position_csv_mm": -3.0,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS",
+          "x_mm": 12.75,
+          "y_board_mm": 3.0,
+          "y_position_csv_mm": -3.0
+        },
+        {
+          "number": "2",
+          "net": "/VBUS_GATE",
+          "x_mm": 13.77,
+          "y_board_mm": 3.0,
+          "y_position_csv_mm": -3.0
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS",
+        "x_mm": 12.75,
+        "y_board_mm": 3.0,
+        "y_position_csv_mm": -3.0
+      }
+    },
+    {
+      "reference": "R14",
+      "value": "1M",
+      "side": "bottom",
+      "x_mm": 15.295,
+      "y_board_mm": 13.255,
+      "y_position_csv_mm": -13.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS_GATE",
+          "x_mm": 15.295,
+          "y_board_mm": 13.765,
+          "y_position_csv_mm": -13.765
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 15.295,
+          "y_board_mm": 12.745,
+          "y_position_csv_mm": -12.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS_GATE",
+        "x_mm": 15.295,
+        "y_board_mm": 13.765,
+        "y_position_csv_mm": -13.765
+      }
+    },
+    {
+      "reference": "R15",
+      "value": "100k",
+      "side": "bottom",
+      "x_mm": 22.795,
+      "y_board_mm": 24.255,
+      "y_position_csv_mm": -24.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 22.795,
+          "y_board_mm": 24.765,
+          "y_position_csv_mm": -24.765
+        },
+        {
+          "number": "2",
+          "net": "/VBUS_N",
+          "x_mm": 22.795,
+          "y_board_mm": 23.745,
+          "y_position_csv_mm": -23.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 22.795,
+        "y_board_mm": 24.765,
+        "y_position_csv_mm": -24.765
+      }
+    },
+    {
+      "reference": "R2",
+      "value": "10k",
+      "side": "top",
+      "x_mm": 13.795,
+      "y_board_mm": 9.255,
+      "y_position_csv_mm": -9.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 13.795,
+          "y_board_mm": 9.765,
+          "y_position_csv_mm": -9.765
+        },
+        {
+          "number": "2",
+          "net": "/NRST",
+          "x_mm": 13.795,
+          "y_board_mm": 8.745,
+          "y_position_csv_mm": -8.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 13.795,
+        "y_board_mm": 9.765,
+        "y_position_csv_mm": -9.765
+      }
+    },
+    {
+      "reference": "R21",
+      "value": "22R tentative",
+      "side": "bottom",
+      "x_mm": 17.795,
+      "y_board_mm": 17.755,
+      "y_position_csv_mm": -17.755,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/PDM_CLK_MCU",
+          "x_mm": 17.795,
+          "y_board_mm": 18.265,
+          "y_position_csv_mm": -18.265
+        },
+        {
+          "number": "2",
+          "net": "/PDM_CLK",
+          "x_mm": 17.795,
+          "y_board_mm": 17.245,
+          "y_position_csv_mm": -17.245
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/PDM_CLK_MCU",
+        "x_mm": 17.795,
+        "y_board_mm": 18.265,
+        "y_position_csv_mm": -18.265
+      }
+    },
+    {
+      "reference": "R22",
+      "value": "100k",
+      "side": "bottom",
+      "x_mm": 13.795,
+      "y_board_mm": 15.755,
+      "y_position_csv_mm": -15.755,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SD_EN",
+          "x_mm": 13.795,
+          "y_board_mm": 16.265,
+          "y_position_csv_mm": -16.265
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 13.795,
+          "y_board_mm": 15.245,
+          "y_position_csv_mm": -15.245
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SD_EN",
+        "x_mm": 13.795,
+        "y_board_mm": 16.265,
+        "y_position_csv_mm": -16.265
+      }
+    },
+    {
+      "reference": "R23",
+      "value": "22R tentative",
+      "side": "bottom",
+      "x_mm": 1.295,
+      "y_board_mm": 21.255,
+      "y_position_csv_mm": -21.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SD_CLK_MCU",
+          "x_mm": 1.295,
+          "y_board_mm": 21.765,
+          "y_position_csv_mm": -21.765
+        },
+        {
+          "number": "2",
+          "net": "/SD_CLK",
+          "x_mm": 1.295,
+          "y_board_mm": 20.745,
+          "y_position_csv_mm": -20.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SD_CLK_MCU",
+        "x_mm": 1.295,
+        "y_board_mm": 21.765,
+        "y_position_csv_mm": -21.765
+      }
+    },
+    {
+      "reference": "R24",
+      "value": "47k",
+      "side": "top",
+      "x_mm": 18.295,
+      "y_board_mm": 9.255,
+      "y_position_csv_mm": -9.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SD_V3",
+          "x_mm": 18.295,
+          "y_board_mm": 9.765,
+          "y_position_csv_mm": -9.765
+        },
+        {
+          "number": "2",
+          "net": "/SD_MOSI",
+          "x_mm": 18.295,
+          "y_board_mm": 8.745,
+          "y_position_csv_mm": -8.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SD_V3",
+        "x_mm": 18.295,
+        "y_board_mm": 9.765,
+        "y_position_csv_mm": -9.765
+      }
+    },
+    {
+      "reference": "R25",
+      "value": "47k",
+      "side": "top",
+      "x_mm": 19.795,
+      "y_board_mm": 7.755,
+      "y_position_csv_mm": -7.755,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SD_V3",
+          "x_mm": 19.795,
+          "y_board_mm": 8.265,
+          "y_position_csv_mm": -8.265
+        },
+        {
+          "number": "2",
+          "net": "/SD_MISO",
+          "x_mm": 19.795,
+          "y_board_mm": 7.245,
+          "y_position_csv_mm": -7.245
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SD_V3",
+        "x_mm": 19.795,
+        "y_board_mm": 8.265,
+        "y_position_csv_mm": -8.265
+      }
+    },
+    {
+      "reference": "R28",
+      "value": "47k",
+      "side": "bottom",
+      "x_mm": 21.295,
+      "y_board_mm": 24.255,
+      "y_position_csv_mm": -24.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SD_V3",
+          "x_mm": 21.295,
+          "y_board_mm": 24.765,
+          "y_position_csv_mm": -24.765
+        },
+        {
+          "number": "2",
+          "net": "/SD_CS_N",
+          "x_mm": 21.295,
+          "y_board_mm": 23.745,
+          "y_position_csv_mm": -23.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SD_V3",
+        "x_mm": 21.295,
+        "y_board_mm": 24.765,
+        "y_position_csv_mm": -24.765
+      }
+    },
+    {
+      "reference": "R3",
+      "value": "100k",
+      "side": "bottom",
+      "x_mm": 1.295,
+      "y_board_mm": 18.755,
+      "y_position_csv_mm": -18.755,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/BOOT0",
+          "x_mm": 1.295,
+          "y_board_mm": 19.265,
+          "y_position_csv_mm": -19.265
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 1.295,
+          "y_board_mm": 18.245,
+          "y_position_csv_mm": -18.245
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/BOOT0",
+        "x_mm": 1.295,
+        "y_board_mm": 19.265,
+        "y_position_csv_mm": -19.265
+      }
+    },
+    {
+      "reference": "R32",
+      "value": "6.8k tentative",
+      "side": "top",
+      "x_mm": 22.795,
+      "y_board_mm": 1.255,
+      "y_position_csv_mm": -1.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/STATUS_LED",
+          "x_mm": 22.795,
+          "y_board_mm": 1.765,
+          "y_position_csv_mm": -1.765
+        },
+        {
+          "number": "2",
+          "net": "/STATUS_LED_A",
+          "x_mm": 22.795,
+          "y_board_mm": 0.745,
+          "y_position_csv_mm": -0.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/STATUS_LED",
+        "x_mm": 22.795,
+        "y_board_mm": 1.765,
+        "y_position_csv_mm": -1.765
+      }
+    },
+    {
+      "reference": "R33",
+      "value": "1M 1%",
+      "side": "top",
+      "x_mm": 15.295,
+      "y_board_mm": 9.255,
+      "y_position_csv_mm": -9.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/BAT",
+          "x_mm": 15.295,
+          "y_board_mm": 9.765,
+          "y_position_csv_mm": -9.765
+        },
+        {
+          "number": "2",
+          "net": "/BAT_ADC",
+          "x_mm": 15.295,
+          "y_board_mm": 8.745,
+          "y_position_csv_mm": -8.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/BAT",
+        "x_mm": 15.295,
+        "y_board_mm": 9.765,
+        "y_position_csv_mm": -9.765
+      }
+    },
+    {
+      "reference": "R34",
+      "value": "1M 1%",
+      "side": "top",
+      "x_mm": 16.795,
+      "y_board_mm": 9.255,
+      "y_position_csv_mm": -9.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/BAT_ADC",
+          "x_mm": 16.795,
+          "y_board_mm": 9.765,
+          "y_position_csv_mm": -9.765
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 16.795,
+          "y_board_mm": 8.745,
+          "y_position_csv_mm": -8.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/BAT_ADC",
+        "x_mm": 16.795,
+        "y_board_mm": 9.765,
+        "y_position_csv_mm": -9.765
+      }
+    },
+    {
+      "reference": "R35",
+      "value": "10k 1%",
+      "side": "bottom",
+      "x_mm": 10.295,
+      "y_board_mm": 12.255,
+      "y_position_csv_mm": -12.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/CHARGER_TS",
+          "x_mm": 10.295,
+          "y_board_mm": 12.765,
+          "y_position_csv_mm": -12.765
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 10.295,
+          "y_board_mm": 11.745,
+          "y_position_csv_mm": -11.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/CHARGER_TS",
+        "x_mm": 10.295,
+        "y_board_mm": 12.765,
+        "y_position_csv_mm": -12.765
+      }
+    },
+    {
+      "reference": "R36",
+      "value": "100k 1%",
+      "side": "bottom",
+      "x_mm": 1.755,
+      "y_board_mm": 23.295,
+      "y_position_csv_mm": -23.295,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/CHG_GUARD_GATE",
+          "x_mm": 1.245,
+          "y_board_mm": 23.295,
+          "y_position_csv_mm": -23.295
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 2.265,
+          "y_board_mm": 23.295,
+          "y_position_csv_mm": -23.295
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/CHG_GUARD_GATE",
+        "x_mm": 1.245,
+        "y_board_mm": 23.295,
+        "y_position_csv_mm": -23.295
+      }
+    },
+    {
+      "reference": "R37",
+      "value": "100k 1%",
+      "side": "bottom",
+      "x_mm": 22.795,
+      "y_board_mm": 12.255,
+      "y_position_csv_mm": -12.255,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 22.795,
+          "y_board_mm": 12.765,
+          "y_position_csv_mm": -12.765
+        },
+        {
+          "number": "2",
+          "net": "/BAT_TS",
+          "x_mm": 22.795,
+          "y_board_mm": 11.745,
+          "y_position_csv_mm": -11.745
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 22.795,
+        "y_board_mm": 12.765,
+        "y_position_csv_mm": -12.765
+      }
+    },
+    {
+      "reference": "R38",
+      "value": "100k 1%",
+      "side": "bottom",
+      "x_mm": 20.0,
+      "y_board_mm": 24.0,
+      "y_position_csv_mm": -24.0,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 20.0,
+          "y_board_mm": 24.51,
+          "y_position_csv_mm": -24.51
+        },
+        {
+          "number": "2",
+          "net": "/TS_COLD_REF",
+          "x_mm": 20.0,
+          "y_board_mm": 23.49,
+          "y_position_csv_mm": -23.49
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 20.0,
+        "y_board_mm": 24.51,
+        "y_position_csv_mm": -24.51
+      }
+    },
+    {
+      "reference": "R39",
+      "value": "20k 1%",
+      "side": "bottom",
+      "x_mm": 18.5,
+      "y_board_mm": 24.5,
+      "y_position_csv_mm": -24.5,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/TS_COLD_REF",
+          "x_mm": 19.01,
+          "y_board_mm": 24.5,
+          "y_position_csv_mm": -24.5
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 17.99,
+          "y_board_mm": 24.5,
+          "y_position_csv_mm": -24.5
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/TS_COLD_REF",
+        "x_mm": 19.01,
+        "y_board_mm": 24.5,
+        "y_position_csv_mm": -24.5
+      }
+    },
+    {
+      "reference": "R4",
+      "value": "100k",
+      "side": "bottom",
+      "x_mm": 7.6,
+      "y_board_mm": 3.21,
+      "y_position_csv_mm": -3.21,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 7.6,
+          "y_board_mm": 3.72,
+          "y_position_csv_mm": -3.72
+        },
+        {
+          "number": "2",
+          "net": "/BUTTON_N",
+          "x_mm": 7.6,
+          "y_board_mm": 2.7,
+          "y_position_csv_mm": -2.7
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 7.6,
+        "y_board_mm": 3.72,
+        "y_position_csv_mm": -3.72
+      }
+    },
+    {
+      "reference": "R40",
+      "value": "100k 1%",
+      "side": "bottom",
+      "x_mm": 17.75,
+      "y_board_mm": 19.75,
+      "y_position_csv_mm": -19.75,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 17.75,
+          "y_board_mm": 20.26,
+          "y_position_csv_mm": -20.26
+        },
+        {
+          "number": "2",
+          "net": "/TS_HOT_REF",
+          "x_mm": 17.75,
+          "y_board_mm": 19.24,
+          "y_position_csv_mm": -19.24
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 17.75,
+        "y_board_mm": 20.26,
+        "y_position_csv_mm": -20.26
+      }
+    },
+    {
+      "reference": "R41",
+      "value": "7.5k 1%",
+      "side": "bottom",
+      "x_mm": 17.75,
+      "y_board_mm": 22.75,
+      "y_position_csv_mm": -22.75,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/TS_HOT_REF",
+          "x_mm": 17.75,
+          "y_board_mm": 23.26,
+          "y_position_csv_mm": -23.26
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 17.75,
+          "y_board_mm": 22.24,
+          "y_position_csv_mm": -22.24
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/TS_HOT_REF",
+        "x_mm": 17.75,
+        "y_board_mm": 23.26,
+        "y_position_csv_mm": -23.26
+      }
+    },
+    {
+      "reference": "R42",
+      "value": "RC0402FR-07130KL 130k 1%",
+      "side": "bottom",
+      "x_mm": 10.295,
+      "y_board_mm": 20.755,
+      "y_position_csv_mm": -20.755,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/ILIM_VSET",
+          "x_mm": 10.295,
+          "y_board_mm": 21.265,
+          "y_position_csv_mm": -21.265
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 10.295,
+          "y_board_mm": 20.245,
+          "y_position_csv_mm": -20.245
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/ILIM_VSET",
+        "x_mm": 10.295,
+        "y_board_mm": 21.265,
+        "y_position_csv_mm": -21.265
+      }
+    },
+    {
+      "reference": "R43",
+      "value": "4.7k 1%",
+      "side": "bottom",
+      "x_mm": 3.795,
+      "y_board_mm": 23.755,
+      "y_position_csv_mm": -23.755,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/CHG_ALLOW",
+          "x_mm": 3.795,
+          "y_board_mm": 24.265,
+          "y_position_csv_mm": -24.265
+        },
+        {
+          "number": "2",
+          "net": "/CHG_GUARD_GATE",
+          "x_mm": 3.795,
+          "y_board_mm": 23.245,
+          "y_position_csv_mm": -23.245
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/CHG_ALLOW",
+        "x_mm": 3.795,
+        "y_board_mm": 24.265,
+        "y_position_csv_mm": -24.265
+      }
+    },
+    {
+      "reference": "R6",
+      "value": "5.1k 1%",
+      "side": "bottom",
+      "x_mm": 9.76,
+      "y_board_mm": 18.815,
+      "y_position_csv_mm": -18.815,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/CC1",
+          "x_mm": 9.25,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 10.27,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/CC1",
+        "x_mm": 9.25,
+        "y_board_mm": 18.815,
+        "y_position_csv_mm": -18.815
+      }
+    },
+    {
+      "reference": "R7",
+      "value": "5.1k 1%",
+      "side": "bottom",
+      "x_mm": 15.0,
+      "y_board_mm": 18.305,
+      "y_position_csv_mm": -18.305,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/CC2",
+          "x_mm": 15.0,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 15.0,
+          "y_board_mm": 17.795,
+          "y_position_csv_mm": -17.795
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/CC2",
+        "x_mm": 15.0,
+        "y_board_mm": 18.815,
+        "y_position_csv_mm": -18.815
+      }
+    },
+    {
+      "reference": "SW1",
+      "value": "B3U-1000P",
+      "side": "top",
+      "x_mm": 15.725,
+      "y_board_mm": 5.975,
+      "y_position_csv_mm": -5.975,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/BUTTON_N",
+          "x_mm": 14.025,
+          "y_board_mm": 5.975,
+          "y_position_csv_mm": -5.975
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 17.425,
+          "y_board_mm": 5.975,
+          "y_position_csv_mm": -5.975
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/BUTTON_N",
+        "x_mm": 14.025,
+        "y_board_mm": 5.975,
+        "y_position_csv_mm": -5.975
+      }
+    },
+    {
+      "reference": "U1",
+      "value": "STM32U585CIU6",
+      "side": "bottom",
+      "x_mm": 16.8525,
+      "y_board_mm": 7.7675,
+      "y_position_csv_mm": -7.7675,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 13.415,
+          "y_board_mm": 10.5175,
+          "y_position_csv_mm": -10.5175
+        },
+        {
+          "number": "2",
+          "net": "unconnected-(U1-PC13-Pad2)",
+          "x_mm": 13.415,
+          "y_board_mm": 10.0175,
+          "y_position_csv_mm": -10.0175
+        },
+        {
+          "number": "3",
+          "net": "unconnected-(U1-PC14-Pad3)",
+          "x_mm": 13.415,
+          "y_board_mm": 9.5175,
+          "y_position_csv_mm": -9.5175
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U1-PC15-Pad4)",
+          "x_mm": 13.415,
+          "y_board_mm": 9.0175,
+          "y_position_csv_mm": -9.0175
+        },
+        {
+          "number": "5",
+          "net": "unconnected-(U1-PH0-Pad5)",
+          "x_mm": 13.415,
+          "y_board_mm": 8.5175,
+          "y_position_csv_mm": -8.5175
+        },
+        {
+          "number": "6",
+          "net": "unconnected-(U1-PH1-Pad6)",
+          "x_mm": 13.415,
+          "y_board_mm": 8.0175,
+          "y_position_csv_mm": -8.0175
+        },
+        {
+          "number": "7",
+          "net": "/NRST",
+          "x_mm": 13.415,
+          "y_board_mm": 7.5175,
+          "y_position_csv_mm": -7.5175
+        },
+        {
+          "number": "8",
+          "net": "/GND",
+          "x_mm": 13.415,
+          "y_board_mm": 7.0175,
+          "y_position_csv_mm": -7.0175
+        },
+        {
+          "number": "9",
+          "net": "/VDDA",
+          "x_mm": 13.415,
+          "y_board_mm": 6.5175,
+          "y_position_csv_mm": -6.5175
+        },
+        {
+          "number": "10",
+          "net": "/VBUS_N",
+          "x_mm": 13.415,
+          "y_board_mm": 6.0175,
+          "y_position_csv_mm": -6.0175
+        },
+        {
+          "number": "11",
+          "net": "/BAT_ADC",
+          "x_mm": 13.415,
+          "y_board_mm": 5.5175,
+          "y_position_csv_mm": -5.5175
+        },
+        {
+          "number": "12",
+          "net": "unconnected-(U1-PA2-Pad12)",
+          "x_mm": 13.415,
+          "y_board_mm": 5.0175,
+          "y_position_csv_mm": -5.0175
+        },
+        {
+          "number": "13",
+          "net": "unconnected-(U1-PA3-Pad13)",
+          "x_mm": 14.1025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "14",
+          "net": "/SD_CS_N",
+          "x_mm": 14.6025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "15",
+          "net": "/SD_CLK_MCU",
+          "x_mm": 15.1025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "16",
+          "net": "/SD_MISO",
+          "x_mm": 15.6025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "17",
+          "net": "/SD_MOSI",
+          "x_mm": 16.1025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "18",
+          "net": "unconnected-(U1-PB0-Pad18)",
+          "x_mm": 16.6025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "19",
+          "net": "unconnected-(U1-PB1-Pad19)",
+          "x_mm": 17.1025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "20",
+          "net": "/CHG_ALLOW",
+          "x_mm": 17.6025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "21",
+          "net": "unconnected-(U1-PB10-Pad21)",
+          "x_mm": 18.1025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "22",
+          "net": "/VCAP",
+          "x_mm": 18.6025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "23",
+          "net": "/GND",
+          "x_mm": 19.1025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "24",
+          "net": "/V3V3",
+          "x_mm": 19.6025,
+          "y_board_mm": 4.33,
+          "y_position_csv_mm": -4.33
+        },
+        {
+          "number": "25",
+          "net": "unconnected-(U1-PB12-Pad25)",
+          "x_mm": 20.29,
+          "y_board_mm": 5.0175,
+          "y_position_csv_mm": -5.0175
+        },
+        {
+          "number": "26",
+          "net": "unconnected-(U1-PB13-Pad26)",
+          "x_mm": 20.29,
+          "y_board_mm": 5.5175,
+          "y_position_csv_mm": -5.5175
+        },
+        {
+          "number": "27",
+          "net": "/CHG_N",
+          "x_mm": 20.29,
+          "y_board_mm": 6.0175,
+          "y_position_csv_mm": -6.0175
+        },
+        {
+          "number": "28",
+          "net": "unconnected-(U1-PB15-Pad28)",
+          "x_mm": 20.29,
+          "y_board_mm": 6.5175,
+          "y_position_csv_mm": -6.5175
+        },
+        {
+          "number": "29",
+          "net": "/STATUS_LED",
+          "x_mm": 20.29,
+          "y_board_mm": 7.0175,
+          "y_position_csv_mm": -7.0175
+        },
+        {
+          "number": "30",
+          "net": "unconnected-(U1-PA9-Pad30)",
+          "x_mm": 20.29,
+          "y_board_mm": 7.5175,
+          "y_position_csv_mm": -7.5175
+        },
+        {
+          "number": "31",
+          "net": "unconnected-(U1-PA10-Pad31)",
+          "x_mm": 20.29,
+          "y_board_mm": 8.0175,
+          "y_position_csv_mm": -8.0175
+        },
+        {
+          "number": "32",
+          "net": "/USB_DM",
+          "x_mm": 20.29,
+          "y_board_mm": 8.5175,
+          "y_position_csv_mm": -8.5175
+        },
+        {
+          "number": "33",
+          "net": "/USB_DP",
+          "x_mm": 20.29,
+          "y_board_mm": 9.0175,
+          "y_position_csv_mm": -9.0175
+        },
+        {
+          "number": "34",
+          "net": "/SWDIO",
+          "x_mm": 20.29,
+          "y_board_mm": 9.5175,
+          "y_position_csv_mm": -9.5175
+        },
+        {
+          "number": "35",
+          "net": "/GND",
+          "x_mm": 20.29,
+          "y_board_mm": 10.0175,
+          "y_position_csv_mm": -10.0175
+        },
+        {
+          "number": "36",
+          "net": "/V3V3",
+          "x_mm": 20.29,
+          "y_board_mm": 10.5175,
+          "y_position_csv_mm": -10.5175
+        },
+        {
+          "number": "37",
+          "net": "/SWCLK",
+          "x_mm": 19.6025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "38",
+          "net": "/BUTTON_N",
+          "x_mm": 19.1025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "39",
+          "net": "/PDM_CLK_MCU",
+          "x_mm": 18.6025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "40",
+          "net": "/PDM_DATA",
+          "x_mm": 18.1025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "41",
+          "net": "/SD_EN",
+          "x_mm": 17.6025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "42",
+          "net": "unconnected-(U1-PB6-Pad42)",
+          "x_mm": 17.1025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "43",
+          "net": "unconnected-(U1-PB7-Pad43)",
+          "x_mm": 16.6025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "44",
+          "net": "/BOOT0",
+          "x_mm": 16.1025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "45",
+          "net": "unconnected-(U1-PB8-Pad45)",
+          "x_mm": 15.6025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "46",
+          "net": "unconnected-(U1-PB9-Pad46)",
+          "x_mm": 15.1025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "47",
+          "net": "/GND",
+          "x_mm": 14.6025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "48",
+          "net": "/V3V3",
+          "x_mm": 14.1025,
+          "y_board_mm": 11.205,
+          "y_position_csv_mm": -11.205
+        },
+        {
+          "number": "49",
+          "net": "/GND",
+          "x_mm": 16.8525,
+          "y_board_mm": 7.7675,
+          "y_position_csv_mm": -7.7675
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 13.415,
+        "y_board_mm": 10.5175,
+        "y_position_csv_mm": -10.5175
+      }
+    },
+    {
+      "reference": "U10",
+      "value": "TPS22917DBVT",
+      "side": "bottom",
+      "x_mm": 25.2,
+      "y_board_mm": 2.5,
+      "y_position_csv_mm": -2.5,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/V3V3",
+          "x_mm": 26.15,
+          "y_board_mm": 3.6375,
+          "y_position_csv_mm": -3.6375
+        },
+        {
+          "number": "2",
+          "net": "/SD_EN",
+          "x_mm": 25.2,
+          "y_board_mm": 3.6375,
+          "y_position_csv_mm": -3.6375
+        },
+        {
+          "number": "3",
+          "net": "/GND",
+          "x_mm": 24.25,
+          "y_board_mm": 3.6375,
+          "y_position_csv_mm": -3.6375
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U10-CT-Pad4)",
+          "x_mm": 24.25,
+          "y_board_mm": 1.3625,
+          "y_position_csv_mm": -1.3625
+        },
+        {
+          "number": "5",
+          "net": "/SD_V3",
+          "x_mm": 25.2,
+          "y_board_mm": 1.3625,
+          "y_position_csv_mm": -1.3625
+        },
+        {
+          "number": "6",
+          "net": "/SD_V3",
+          "x_mm": 26.15,
+          "y_board_mm": 1.3625,
+          "y_position_csv_mm": -1.3625
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/V3V3",
+        "x_mm": 26.15,
+        "y_board_mm": 3.6375,
+        "y_position_csv_mm": -3.6375
+      }
+    },
+    {
+      "reference": "U11",
+      "value": "CSNP32GCR01-BOW",
+      "side": "bottom",
+      "x_mm": 4.575,
+      "y_board_mm": 14.175,
+      "y_position_csv_mm": -14.175,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "unconnected-(U11-RSV-Pad1)",
+          "x_mm": 1.075,
+          "y_board_mm": 16.08,
+          "y_position_csv_mm": -16.08
+        },
+        {
+          "number": "2",
+          "net": "/SD_CS_N",
+          "x_mm": 1.075,
+          "y_board_mm": 14.81,
+          "y_position_csv_mm": -14.81
+        },
+        {
+          "number": "3",
+          "net": "/SD_CLK",
+          "x_mm": 1.075,
+          "y_board_mm": 13.54,
+          "y_position_csv_mm": -13.54
+        },
+        {
+          "number": "4",
+          "net": "/GND",
+          "x_mm": 1.075,
+          "y_board_mm": 12.27,
+          "y_position_csv_mm": -12.27
+        },
+        {
+          "number": "5",
+          "net": "/SD_MOSI",
+          "x_mm": 8.075,
+          "y_board_mm": 12.27,
+          "y_position_csv_mm": -12.27
+        },
+        {
+          "number": "6",
+          "net": "/SD_MISO",
+          "x_mm": 8.075,
+          "y_board_mm": 13.54,
+          "y_position_csv_mm": -13.54
+        },
+        {
+          "number": "7",
+          "net": "unconnected-(U11-RSV-Pad7)",
+          "x_mm": 8.075,
+          "y_board_mm": 14.81,
+          "y_position_csv_mm": -14.81
+        },
+        {
+          "number": "8",
+          "net": "/SD_V3",
+          "x_mm": 8.075,
+          "y_board_mm": 16.08,
+          "y_position_csv_mm": -16.08
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "unconnected-(U11-RSV-Pad1)",
+        "x_mm": 1.075,
+        "y_board_mm": 16.08,
+        "y_position_csv_mm": -16.08
+      }
+    },
+    {
+      "reference": "U12",
+      "value": "TLV7042DDFR",
+      "side": "bottom",
+      "x_mm": 21.525,
+      "y_board_mm": 20.8525,
+      "y_position_csv_mm": -20.8525,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/CHG_GUARD_GATE",
+          "x_mm": 22.5,
+          "y_board_mm": 21.99,
+          "y_position_csv_mm": -21.99
+        },
+        {
+          "number": "2",
+          "net": "/BAT_TS",
+          "x_mm": 21.85,
+          "y_board_mm": 21.99,
+          "y_position_csv_mm": -21.99
+        },
+        {
+          "number": "3",
+          "net": "/TS_COLD_REF",
+          "x_mm": 21.2,
+          "y_board_mm": 21.99,
+          "y_position_csv_mm": -21.99
+        },
+        {
+          "number": "4",
+          "net": "/GND",
+          "x_mm": 20.55,
+          "y_board_mm": 21.99,
+          "y_position_csv_mm": -21.99
+        },
+        {
+          "number": "5",
+          "net": "/BAT_TS",
+          "x_mm": 20.55,
+          "y_board_mm": 19.715,
+          "y_position_csv_mm": -19.715
+        },
+        {
+          "number": "6",
+          "net": "/TS_HOT_REF",
+          "x_mm": 21.2,
+          "y_board_mm": 19.715,
+          "y_position_csv_mm": -19.715
+        },
+        {
+          "number": "7",
+          "net": "/CHG_GUARD_GATE",
+          "x_mm": 21.85,
+          "y_board_mm": 19.715,
+          "y_position_csv_mm": -19.715
+        },
+        {
+          "number": "8",
+          "net": "/V3V3",
+          "x_mm": 22.5,
+          "y_board_mm": 19.715,
+          "y_position_csv_mm": -19.715
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/CHG_GUARD_GATE",
+        "x_mm": 22.5,
+        "y_board_mm": 21.99,
+        "y_position_csv_mm": -21.99
+      }
+    },
+    {
+      "reference": "U13",
+      "value": "TPS2552DBVR-1",
+      "side": "top",
+      "x_mm": 12.5,
+      "y_board_mm": 0.95,
+      "y_position_csv_mm": -0.95,
+      "kicad_orientation_degrees": 180.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS_OVP",
+          "x_mm": 13.6375,
+          "y_board_mm": 1.9,
+          "y_position_csv_mm": -1.9
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 13.6375,
+          "y_board_mm": 0.95,
+          "y_position_csv_mm": -0.95
+        },
+        {
+          "number": "3",
+          "net": "/GND",
+          "x_mm": 13.6375,
+          "y_board_mm": 0.0,
+          "y_position_csv_mm": -0.0
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U13-FAULT-Pad4)",
+          "x_mm": 11.3625,
+          "y_board_mm": 0.0,
+          "y_position_csv_mm": -0.0
+        },
+        {
+          "number": "5",
+          "net": "/VBUS_OVP",
+          "x_mm": 11.3625,
+          "y_board_mm": 0.95,
+          "y_position_csv_mm": -0.95
+        },
+        {
+          "number": "6",
+          "net": "/VBUS_CHARGER",
+          "x_mm": 11.3625,
+          "y_board_mm": 1.9,
+          "y_position_csv_mm": -1.9
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS_OVP",
+        "x_mm": 13.6375,
+        "y_board_mm": 1.9,
+        "y_position_csv_mm": -1.9
+      }
+    },
+    {
+      "reference": "U14",
+      "value": "NCP360SNT1G",
+      "side": "top",
+      "x_mm": 7.0,
+      "y_board_mm": 7.0,
+      "y_position_csv_mm": -7.0,
+      "kicad_orientation_degrees": 90.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/VBUS",
+          "x_mm": 6.05,
+          "y_board_mm": 8.1375,
+          "y_position_csv_mm": -8.1375
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 7.0,
+          "y_board_mm": 8.1375,
+          "y_position_csv_mm": -8.1375
+        },
+        {
+          "number": "3",
+          "net": "/GND",
+          "x_mm": 7.95,
+          "y_board_mm": 8.1375,
+          "y_position_csv_mm": -8.1375
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U14-FLAG-Pad4)",
+          "x_mm": 7.95,
+          "y_board_mm": 5.8625,
+          "y_position_csv_mm": -5.8625
+        },
+        {
+          "number": "5",
+          "net": "/VBUS_OVP",
+          "x_mm": 6.05,
+          "y_board_mm": 5.8625,
+          "y_position_csv_mm": -5.8625
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/VBUS",
+        "x_mm": 6.05,
+        "y_board_mm": 8.1375,
+        "y_position_csv_mm": -8.1375
+      }
+    },
+    {
+      "reference": "U2",
+      "value": "USBLC6-2P6",
+      "side": "bottom",
+      "x_mm": 12.6,
+      "y_board_mm": 18.815,
+      "y_position_csv_mm": -18.815,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/USB_DP",
+          "x_mm": 11.75,
+          "y_board_mm": 19.3525,
+          "y_position_csv_mm": -19.3525
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 11.675,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "3",
+          "net": "/USB_DM",
+          "x_mm": 11.75,
+          "y_board_mm": 18.2775,
+          "y_position_csv_mm": -18.2775
+        },
+        {
+          "number": "4",
+          "net": "/USB_DM",
+          "x_mm": 13.45,
+          "y_board_mm": 18.2775,
+          "y_position_csv_mm": -18.2775
+        },
+        {
+          "number": "5",
+          "net": "/VBUS",
+          "x_mm": 13.525,
+          "y_board_mm": 18.815,
+          "y_position_csv_mm": -18.815
+        },
+        {
+          "number": "6",
+          "net": "/USB_DP",
+          "x_mm": 13.45,
+          "y_board_mm": 19.3525,
+          "y_position_csv_mm": -19.3525
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/USB_DP",
+        "x_mm": 11.75,
+        "y_board_mm": 19.3525,
+        "y_position_csv_mm": -19.3525
+      }
+    },
+    {
+      "reference": "U3",
+      "value": "BQ25185DLHR",
+      "side": "bottom",
+      "x_mm": 20.385,
+      "y_board_mm": 14.785,
+      "y_position_csv_mm": -14.785,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SYS",
+          "x_mm": 19.285,
+          "y_board_mm": 15.585,
+          "y_position_csv_mm": -15.585
+        },
+        {
+          "number": "2",
+          "net": "/BAT",
+          "x_mm": 19.285,
+          "y_board_mm": 15.185,
+          "y_position_csv_mm": -15.185
+        },
+        {
+          "number": "3",
+          "net": "unconnected-(U3-STAT2-Pad3)",
+          "x_mm": 19.285,
+          "y_board_mm": 14.785,
+          "y_position_csv_mm": -14.785
+        },
+        {
+          "number": "4",
+          "net": "/CHG_INHIBIT_GATE",
+          "x_mm": 19.285,
+          "y_board_mm": 14.385,
+          "y_position_csv_mm": -14.385
+        },
+        {
+          "number": "5",
+          "net": "/GND",
+          "x_mm": 19.285,
+          "y_board_mm": 13.985,
+          "y_position_csv_mm": -13.985
+        },
+        {
+          "number": "6",
+          "net": "/CHARGER_TS",
+          "x_mm": 21.485,
+          "y_board_mm": 13.985,
+          "y_position_csv_mm": -13.985
+        },
+        {
+          "number": "7",
+          "net": "/ILIM_VSET",
+          "x_mm": 21.485,
+          "y_board_mm": 14.385,
+          "y_position_csv_mm": -14.385
+        },
+        {
+          "number": "8",
+          "net": "/ISET",
+          "x_mm": 21.485,
+          "y_board_mm": 14.785,
+          "y_position_csv_mm": -14.785
+        },
+        {
+          "number": "9",
+          "net": "/CHG_N",
+          "x_mm": 21.485,
+          "y_board_mm": 15.185,
+          "y_position_csv_mm": -15.185
+        },
+        {
+          "number": "10",
+          "net": "/VBUS_CHARGER",
+          "x_mm": 21.485,
+          "y_board_mm": 15.585,
+          "y_position_csv_mm": -15.585
+        },
+        {
+          "number": "11",
+          "net": "/GND",
+          "x_mm": 20.385,
+          "y_board_mm": 14.785,
+          "y_position_csv_mm": -14.785
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SYS",
+        "x_mm": 19.285,
+        "y_board_mm": 15.585,
+        "y_position_csv_mm": -15.585
+      }
+    },
+    {
+      "reference": "U4",
+      "value": "TPS7A0233PDBVR",
+      "side": "top",
+      "x_mm": 2.875,
+      "y_board_mm": 3.485,
+      "y_position_csv_mm": -3.485,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/SYS",
+          "x_mm": 1.7375,
+          "y_board_mm": 2.535,
+          "y_position_csv_mm": -2.535
+        },
+        {
+          "number": "2",
+          "net": "/GND",
+          "x_mm": 1.7375,
+          "y_board_mm": 3.485,
+          "y_position_csv_mm": -3.485
+        },
+        {
+          "number": "3",
+          "net": "/SYS",
+          "x_mm": 1.7375,
+          "y_board_mm": 4.435,
+          "y_position_csv_mm": -4.435
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U4-NC-Pad4)",
+          "x_mm": 4.0125,
+          "y_board_mm": 4.435,
+          "y_position_csv_mm": -4.435
+        },
+        {
+          "number": "5",
+          "net": "/V3V3",
+          "x_mm": 4.0125,
+          "y_board_mm": 2.535,
+          "y_position_csv_mm": -2.535
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/SYS",
+        "x_mm": 1.7375,
+        "y_board_mm": 2.535,
+        "y_position_csv_mm": -2.535
+      }
+    },
+    {
+      "reference": "U8",
+      "value": "IM69D130V01",
+      "side": "top",
+      "x_mm": 21.25,
+      "y_board_mm": 4.565,
+      "y_position_csv_mm": -4.565,
+      "kicad_orientation_degrees": 0.0,
+      "terminals": [
+        {
+          "number": "1",
+          "net": "/PDM_DATA",
+          "x_mm": 19.75,
+          "y_board_mm": 3.715,
+          "y_position_csv_mm": -3.715
+        },
+        {
+          "number": "2",
+          "net": "/V3V3",
+          "x_mm": 20.45,
+          "y_board_mm": 3.715,
+          "y_position_csv_mm": -3.715
+        },
+        {
+          "number": "3",
+          "net": "/PDM_CLK",
+          "x_mm": 19.75,
+          "y_board_mm": 5.415,
+          "y_position_csv_mm": -5.415
+        },
+        {
+          "number": "4",
+          "net": "/GND",
+          "x_mm": 20.45,
+          "y_board_mm": 5.415,
+          "y_position_csv_mm": -5.415
+        },
+        {
+          "number": "5",
+          "net": "/GND",
+          "x_mm": 21.93,
+          "y_board_mm": 3.755,
+          "y_position_csv_mm": -3.755
+        }
+      ],
+      "orientation_anchor": {
+        "number": "1",
+        "net": "/PDM_DATA",
+        "x_mm": 19.75,
+        "y_board_mm": 3.715,
+        "y_position_csv_mm": -3.715
+      }
+    }
+  ],
+  "limitations": [
+    "Pin numbers reflect design footprint; supplier tape orientation and physical pin-1 marking require independent comparison.",
+    "Diode/LED/FET polarity cannot be inferred from pad number 1 alone.",
+    "Do not use top-view bottom coordinates as a bottom-view assembly drawing without mirroring."
+  ]
+}

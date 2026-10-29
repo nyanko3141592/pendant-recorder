@@ -1,0 +1,73 @@
+{
+  "status": "PRIMARY_ACTIVE_AND_PUBLICLY_ORDERABLE_ALTERNATES_FAIL_CLOSED",
+  "observed_at": "2026-10-28",
+  "canonical": {
+    "reference": "U13",
+    "manufacturer": "Texas Instruments",
+    "mpn": "TPS2552DBVR-1",
+    "lcsc": "C140331",
+    "package": "SOT-23-6 DBV",
+    "enable_polarity": "active_low",
+    "overcurrent_response": "latch_off",
+    "jlc_public_stock": 2443,
+    "jlc_minimum_order_quantity": 1,
+    "jlc_pcba": ["Economic", "Standard"],
+    "prototype_release_policy": "ONLY_THIS_EXACT_LCSC_LINE_UNTIL_PHYSICAL_EVT_AND_LIVE_BOM_TOOL_REVIEW_PASS"
+  },
+  "manufacturer_orderable_variants": [
+    {
+      "mpn": "TPS2552DBVR-1.B",
+      "ti_status": "ACTIVE_PRODUCTION",
+      "classification": "MANUFACTURER_ORDERABLE_VARIANT_NOT_YET_JLC_QUALIFIED",
+      "allowed_substitution": false,
+      "reason": "TI lists the same DBV-6 active-low latch-off family option, but current JLC recognition, stock and exact BOM mapping have not been verified."
+    },
+    {
+      "mpn": "TPS2552DBVR1G4",
+      "ti_status": "ACTIVE_PRODUCTION",
+      "classification": "MANUFACTURER_ORDERABLE_VARIANT_NOT_YET_JLC_QUALIFIED",
+      "allowed_substitution": false,
+      "reason": "TI lists this orderable DBV-6 option, but suffix equivalence and current JLC assembly mapping must be re-established before use."
+    }
+  ],
+  "explicitly_not_drop_in": [
+    {
+      "mpn": "TPS2553DBVR-1",
+      "lcsc": "C111738",
+      "package_pinout": "same DBV-6 signal positions",
+      "enable_polarity": "active_high",
+      "overcurrent_response": "latch_off",
+      "allowed_substitution": false,
+      "reason": "Canonical U13 pin 3 is tied to GND to enable the active-low TPS2552. TPS2553 is active-high, so a part-only substitution would hold the switch off. It requires a controlled schematic/PCB revision and complete safety requalification."
+    }
+  ],
+  "sources": [
+    {
+      "kind": "manufacturer_datasheet",
+      "url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "supports": "common DBV-6 pinout, TPS2552 active-low, TPS2553 active-high, -1 latch-off"
+    },
+    {
+      "kind": "manufacturer_packaging",
+      "url": "https://www.ti.com/lit/gpn/tps2552",
+      "supports": "TPS2552DBVR-1 and listed orderable variants are Active and Production"
+    },
+    {
+      "kind": "jlc_public_part_page",
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS2552DBVR1/C140331",
+      "supports": "exact MPN/LCSC/package, public stock, MOQ and Economic/Standard assembly"
+    },
+    {
+      "kind": "jlc_public_part_page",
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS2553DBVR1/C111738",
+      "supports": "TPS2553 active-high distinction and JLC assembly listing"
+    }
+  ],
+  "release_rules": [
+    "No automatic alternate is permitted for the safety limiter.",
+    "A suffix variant requires exact datasheet identity, live JLC BOM-tool recognition, footprint/pin-one review and the full Gate B safety suite.",
+    "TPS2553 or any active-high alternative requires a new hardware revision; it is not a purchasing substitution.",
+    "Fresh stock and assembly eligibility must be checked immediately before any future order."
+  ],
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

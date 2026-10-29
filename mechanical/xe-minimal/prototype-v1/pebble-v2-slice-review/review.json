@@ -1,0 +1,160 @@
+{
+  "status": "PEBBLE_V2_A1_MINI_SLICE_PASS_NOT_PRINTED",
+  "process": "A1 mini, PLA, 0.4mm nozzle, 0.16mm layer, four walls, no support",
+  "orientation": "lower broad exterior face down; upper rotated X 180 degrees",
+  "parts": [
+    {
+      "part": "case-pebble-v2-lower",
+      "valid_single_solid": true,
+      "rotation_x_deg": 0,
+      "bounds_mm": [
+        26.2000001,
+        35.65,
+        8.120000000000001
+      ],
+      "source_sha256": "8116ebebe8a0680c815ce00b85da8de6c4aae012dc6bd43d2325b0614a2e4b7e",
+      "stl_sha256": "f19c5f03fc57ead74a369e9b8a0930b50d04080b4eb2de2c182f1d1884133678",
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 345,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 18,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 23.137126922607422,
+              "Bridge": 0.4123627245426178,
+              "Custom": 34.55685806274414,
+              "Gap infill": 35.23509979248047,
+              "Inner wall": 40.56707763671875,
+              "Internal solid infill": 36.9941291809082,
+              "Outer wall": 325.0926208496094,
+              "Overhang wall": 2.355285167694092,
+              "Top surface": 22.516359329223633,
+              "Travel": 90.0831527709961,
+              "Undefined": 74.65352630615234
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.71334969997406,
+                "total_used_g": 1.71334969997406
+              }
+            ],
+            "generate_support_material_time": 8,
+            "id": 1,
+            "infill_time": 11,
+            "layer_filament_change": 0,
+            "main_predication": 576.4257202148438,
+            "make_perimeters_time": 34,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 35.649070739746094,
+                  "height": 8.119999885559082,
+                  "width": 26.19999885559082,
+                  "x": 76.9000015258789,
+                  "y": 72.17546081542969,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "case-pebble-v2-lower.stl",
+                "triangle_count": 11762
+              }
+            ],
+            "sliced_time": 221,
+            "sliced_time_with_cache": 162,
+            "total_predication": 595.522705078125,
+            "triangle_count": 11762,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 4
+      }
+    },
+    {
+      "part": "case-pebble-v2-upper",
+      "valid_single_solid": true,
+      "rotation_x_deg": 180,
+      "bounds_mm": [
+        26.2000001,
+        29.600000100000003,
+        4.851400200000004
+      ],
+      "source_sha256": "a054486fbfedbd1b041fe01f1d49b98d76259b2ed3d02b2ec915da979b9e6b48",
+      "stl_sha256": "974283df254ca3c5c72fa6756c5105a38e72aec5539f4fb784bbbfd9e62ba9d7",
+      "slice_result": {
+        "error_string": "Success.",
+        "export_time": 346,
+        "layer_height": 0.1599999964237213,
+        "plate_index": 0,
+        "prepare_time": 19,
+        "return_code": 0,
+        "sliced_plates": [
+          {
+            "feature_type_times": {
+              "Bottom surface": 23.945138931274414,
+              "Custom": 34.65946578979492,
+              "Gap infill": 0.48882225155830383,
+              "Inner wall": 16.045957565307617,
+              "Internal solid infill": 33.02778244018555,
+              "Outer wall": 219.30859375,
+              "Overhang wall": 1.4349108934402466,
+              "Top surface": 19.954387664794922,
+              "Travel": 45.51530075073242,
+              "Undefined": 29.97014808654785
+            },
+            "filament_change_times": 0,
+            "filaments": [
+              {
+                "filament_id": "GFL99",
+                "id": 1,
+                "main_used_g": 1.1168466806411743,
+                "total_used_g": 1.1168466806411743
+              }
+            ],
+            "generate_support_material_time": 5,
+            "id": 1,
+            "infill_time": 8,
+            "layer_filament_change": 0,
+            "main_predication": 359.7527770996094,
+            "make_perimeters_time": 14,
+            "obj_cached_cnt": 0,
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 26.19999885559082,
+                  "height": 4.851400375366211,
+                  "width": 29.600004196166992,
+                  "x": 75.19999694824219,
+                  "y": 76.9000015258789,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "case-pebble-v2-upper.stl",
+                "triangle_count": 10306
+              }
+            ],
+            "sliced_time": 118,
+            "sliced_time_with_cache": 87,
+            "total_predication": 378.8368835449219,
+            "triangle_count": 10306,
+            "warning_message": ""
+          }
+        ],
+        "sparse_infill_density": 15.0,
+        "wall_loops": 4
+      }
+    }
+  ],
+  "limits": [
+    "No physical cable, print-fit, wall-strength, seam or cord-load validation.",
+    "14mm outer USB bay width is an engineering allowance, not a universal USB-C guarantee."
+  ]
+}

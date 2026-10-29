@@ -1,0 +1,21 @@
+{
+  "status": "TRAVEL_ACCESS_SCREEN_NOT_MECHANISM_QUALIFICATION",
+  "initial_protrusion_mm": 0.2,
+  "required_travel_bound_from_switch_only_mm": 0.75,
+  "initial_button_height_relative_case_at_actuation_mm": -0.55,
+  "result": "Initial tip is0.55mm below case plane at worst independent switch-height/pretravel corner; a broad flat pressing surface cannot guarantee activation. Finger deformation is not treated as specified travel.",
+  "alternative": {
+    "file": "button-accessible-assembly-trial.step",
+    "protrusion_mm": 0.9,
+    "remaining_above_case_at_actuation_mm": 0.15,
+    "case_body_thickness_mm": 12.9714001,
+    "maximum_model_thickness_including_released_button_mm": 13.8714001
+  },
+  "pending": [
+    "Full solder/PCB/case/button tolerance budget",
+    "Return and retention system",
+    "Compliant force or overtravel protection",
+    "Operating force and durability tests"
+  ],
+  "adopted": false
+}

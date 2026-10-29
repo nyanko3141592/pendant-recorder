@@ -1,0 +1,40 @@
+{
+  "status": "PLACEMENT_CANDIDATE_NOT_ROUTED",
+  "changes": [
+    {
+      "ref": "R40",
+      "old_position_mm": [
+        21.295,
+        7.755
+      ],
+      "new_position_mm": [
+        17.75,
+        19.75
+      ],
+      "new_side": "B",
+      "rotation": 90,
+      "removed_tracks": 0,
+      "tested": 1
+    },
+    {
+      "ref": "R41",
+      "old_position_mm": [
+        8.295,
+        7.755
+      ],
+      "new_position_mm": [
+        17.75,
+        22.75
+      ],
+      "new_side": "B",
+      "rotation": 90,
+      "removed_tracks": 1,
+      "tested": 1
+    }
+  ],
+  "limits": [
+    "Ground connection on moved resistor must be restored",
+    "Reference network still needs complete routing and thermal/noise validation",
+    "Front/back assembly and battery clearances remain unqualified"
+  ]
+}

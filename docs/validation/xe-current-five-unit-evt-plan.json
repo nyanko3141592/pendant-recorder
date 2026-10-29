@@ -1,0 +1,105 @@
+{
+  "plan_id": "XE-27P5-PACK-NTC-NCP360-TPS2552-LATCH-CASE-V4-EVT1",
+  "status": "READY_FOR_PHYSICAL_EXECUTION_NOT_RUN",
+  "prototype_count": 5,
+  "canonical_inputs": {
+    "active_design": "hardware/xe-minimal/active-design.json",
+    "pcb": "hardware/xe-minimal/pendant-xe-minimal.kicad_pcb",
+    "bom": "docs/procurement/xe-production-bom-2026-10-28.csv",
+    "firmware_regression": "firmware/stm32/tests/prototype-v1-regression.json",
+    "case": "mechanical/xe-minimal/prototype-v1/case-pebble-v5-assembly.step",
+    "battery": "DTP401525-XE 110mAh with factory 781720003 plug and internal 10k NTC",
+    "detailed_procedure": "docs/prototype-v1-assembly-and-test.md"
+  },
+  "common_evidence_fields": [
+    "unit_id",
+    "pcb_serial_unique_and_bound_to_unit_id",
+    "STM32_96bit_mcu_uid_unique_and_bound_to_unit_id",
+    "pcb_sha256",
+    "firmware_sha256",
+    "bom_revision",
+    "case_revision_material_lower_X_axis_print_orientation_upper_Z_axis_orientation_layer_wall_support_and_lot",
+    "battery_serial_or_lot",
+    "cord_material_diameter_and_lot",
+    "instrument_model_serial_calibration_due_date",
+    "ambient_temperature_and_humidity",
+    "raw_data_paths_and_sha256",
+    "operator",
+    "start_and_end_utc",
+    "result_PASS_FAIL_NOT_RUN",
+    "deviation_and_failure_notes"
+  ],
+  "execution_order": [
+    "A_receiving_unpowered_and_current_limited_non_destructive_fault_screen_all_5",
+    "B_charge_temperature_and_USB_fault_safety_all_5_without_real_cell_for_abnormal_voltage",
+    "C_three_16h_temperature_runs_all_5_before_any_mechanical_destructive_test",
+    "D_36h_storage_and_controlled_power_loss_then_E_three_OS_USB",
+    "F_mechanical_proof_fatigue_wear_and_drop_last"
+  ],
+  "stop_rule": "stop_the_affected_unit_immediately_on_damage_abnormal_heating_smoke_odor_leakage_or_out_of_limit_measurement; record_FAIL; never_reuse_a_failed_or_mechanically_destructively_tested_unit_for_gate_C",
+  "gates": [
+    {
+      "id": "A",
+      "name": "unpowered_and_fail_safe_electrical_safety",
+      "sample_scope": "all_5_units",
+      "required_measurements": ["rail_resistances", "current_limited_0_to_5p25V_startup", "rail_voltages", "thermal_images", "charge_permission_logic", "current_limited_battery_simulator_faults_on_BAT_SYS_V3V3_and_SD_V3_without_real_cell"],
+      "faults": ["MCU_held_reset", "brownout", "firmware_absent", "pack_NTC_open", "pack_NTC_short", "comparator_input_open", "comparator_input_short", "Q4_gate_stuck_low_equivalent", "current_limited_battery_simulator_BAT_to_GND_short", "current_limited_battery_simulator_SYS_to_GND_short", "current_limited_battery_simulator_V3V3_to_GND_short", "current_limited_battery_simulator_SD_V3_to_GND_short"],
+      "acceptance": ["no_unintended_short", "no_smoke_odor_damage_or_abnormal_heating", "no_current_limit_trip_during_nominal_0_to_5p25V_startup_only", "no_rail_overvoltage", "no_charge_permission_in_any_fault", "all_four_current_limited_rail_faults_recover_without_damage_and_never_use_a_real_pack", "real_pack_short_requalification_is_not_substituted_by_this_device_fault_test_and_requires_qualified_Li_ion_personnel_if_required"],
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "B",
+      "name": "charge_temperature_and_USB_fault_safety",
+      "sample_scope": "all_5_units",
+      "required_measurements": ["pack_NTC_ohms_at_0_10_25_35_45C", "cold_and_hot_bidirectional_temperature_sweep_stop_and_recovery_thresholds", "temperature_sweep_charge_enable_chatter_count", "battery_surface_temperature", "charger_IC_temperature", "NCP360_temperature", "TPS2552_temperature", "USB_input_current", "NCP360_VIN_and_VOUT_oscilloscope_waveforms_at_0p1_1_and_10V_per_us_input_slew", "TPS2552_VIN_and_VOUT_oscilloscope_waveforms", "peak_VBUS_OVP_and_VBUS_CHARGER_plus_measurement_uncertainty", "C31_C32_5p25V_effective_capacitance_evidence", "C33_20V_DC_bias_effective_capacitance_and_voltage_rating_evidence", "battery_charge_current", "battery_voltage", "SYS_V3V3_CHG_ALLOW_CHG_GUARD_GATE_and_BQ25185_CE_dead_pack_startup_waveform", "BQ25185_CE_peak_plus_measurement_uncertainty", "comparator_outputs", "charge_enable"],
+      "USB_conditions_V": [4.75, 5.0, 5.25, 6.0, 9.0, 12.0, 20.0],
+      "faults": ["USB_insert_remove_and_brownout", "NCP360_abnormal_input_6V_current_limited_battery_simulator", "NCP360_abnormal_input_9V_current_limited_battery_simulator", "NCP360_abnormal_input_12V_current_limited_battery_simulator", "NCP360_abnormal_input_20V_current_limited_battery_simulator", "USB_attached_before_configuration", "USB_deconfigured", "USB_detached", "USB_suspended", "power_only_USB_C_to_C_adapter", "power_only_USB_A_to_C_adapter", "TPS2552_output_short_latch_and_USB_power_cycle_recovery", "dead_battery_startup", "low_battery_controlled_stop_no_VBUS", "low_battery_USB_attach_wakeup", "terminal_recording_fault_no_VBUS", "runtime_battery_ADC_three_consecutive_failures", "runtime_battery_measurement_starved", "J2_empty_USB_power_for_factory_programming", "charge_start_stop_transient", "Dplus_Dminus_short", "CC_open", "suspend_resume", "MCU_reset", "NTC_open", "NTC_short"],
+      "acceptance": ["dead_battery_startup_holds_BQ25185_CE_at_or_above_1p4V_after_SYS_reaches_1p8V_until_firmware_grant_with_zero_charge_current_and_at_least_10ms_grant_delay", "BQ25185_CE_peak_plus_measurement_uncertainty_strictly_below_5p5V_during_dead_battery_and_charge_start_stop_transients", "J2_empty_USB_power_provides_stable_VTREF_without_charge_permission", "fixed_100mA_path_charges_at_9_to_11mA_before_configuration_and_when_deconfigured", "power_only_C_to_C_and_A_to_C_adapters_charge_without_USB_enumeration", "charge_current_zero_when_USB_detached_or_suspended", "low_battery_standby_current_le_150uA_and_VBUS_reset_wake_to_9_11mA_charge_le_1000ms", "terminal_fault_forces_SD_EN_low_then_standby_current_le_150uA_and_preserves_completed_files", "runtime_ADC_failure_or_measurement_starvation_enters_terminal_standby_within_bound_and_preserves_completed_files", "charge_current_zero_at_battery_surface_le_0C", "charge_current_zero_at_battery_surface_ge_45C", "automatic_recovery_only_inside_5_to_40C", "no_chatter", "input_current_between_50_and_100mA_during_forced_current_limit_at_5p25V", "TPS2552_latches_off_on_sustained_short_and_does_not_restart_until_USB_power_cycle", "C33_35V_rating_and_20V_DC_bias_effective_capacitance_are_supported_by_lot_specific_evidence", "peak_VBUS_OVP_and_VBUS_CHARGER_plus_measurement_uncertainty_strictly_below_6p5V_for_0p1_1_and_10V_per_us_slew", "NCP360_disconnects_VBUS_OVP_and_VBUS_CHARGER_at_6_9_12_20V_without_real_cell", "no_downstream_recommended_or_absolute_maximum_violation_at_6_9_12_20V", "no_damage_smoke_odor_or_abnormal_heating_at_6_9_12_20V", "no_sustained_oscillation_or_dangerous_VOUT_overshoot", "dead_battery_recovery_passes_without_firmware", "no_pack_rating_violation", "no_abnormal_case_temperature"],
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "C",
+      "name": "fixed_110mAh_16h_continuous_recording",
+      "sample_scope": "all_5_completed_units_each_retaining_its_same_non_destructively_characterized_P1_to_P5_pack",
+      "duration_s_min": 57600,
+      "cutoff_pack_to_completed_unit_assignment": {"U1": "P1", "U2": "P2", "U3": "P3", "U4": "P4", "U5": "P5"},
+      "temperature_run_order_by_unit": {"U1": [25, 10, 35], "U2": [10, 35, 25], "U3": [35, 25, 10], "U4": [25, 35, 10], "U5": [10, 25, 35]},
+      "pre_run_conditioning": {"recharge_temperature_C": "25 +/-2", "charger": "same_completed_device_onboard_BQ25185_only", "charge_current_mA": "9_to_11", "termination_must_be_observed": true, "USB_removed_before_conditioning": true, "target_ambient_stabilization_s_min": 1800, "battery_surface_temperature_must_be_within_target_C": 2, "pre_run_OCV_and_pack_cycle_count_recorded": true},
+      "ambient_runs": ["25C +/-2C primary run on all 5 units", "10C +/-2C endpoint repeat on all 5 units", "35C +/-2C endpoint repeat on all 5 units"],
+      "audio": {"sample_rate_Hz_min": 16000, "channels": 1, "schedule": "8h_silence_4h_reference_audio_or_noise_4h_silence", "VAD_or_pause": false},
+      "electrical_limits": {"average_battery_current_mA_max": 4.4, "integrated_charge_mAh_max": 70.4, "instantaneous_battery_current_mA_max": 110},
+      "acceptance": ["all_three_temperature_runs_pass_on_all_5_units_with_the_same_firmware_image_and_each_unit_retaining_the_same_P1_to_P5_pack_used_for_cutoff_characterization", "temperature_order_is_the_declared_per_unit_order_so_cycle_age_is_not_confounded_with_one_temperature", "every_run_uses_only_the_onboard_4p1V_9_to_11mA_charge_profile_with_observed_termination_then_at_least_1800s_target_temperature_stabilization", "recording_never_stops", "no_reset", "no_missing_or_duplicate_samples", "no_file_sequence_gap", "no_unfinished_file", "no_storage_reinitialization", "external_time_reference_matches_full_duration"],
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "D",
+      "name": "36h_cumulative_encrypted_storage_and_power_loss_recovery",
+      "sample_scope": "one_same_device_same_pack_three_battery_only_recording_sessions_accumulating_36h_plus_all_5_units_functional_confirmation",
+      "duration_s_min": 129600,
+      "acceptance": ["exactly_three_battery_only_recording_sessions_accumulate_at_least_36h_on_one_unchanged_storage_device", "same_pack_is_recharged_while_recording_is_stopped_and_not_replaced", "no_format_delete_or_import_cleanup_between_sessions", "all_files_decrypt_with_standard_age", "decoded_sample_count_and_sequence_match", "no_persistent_plaintext_audio_on_device", "completed_files_survive_capacity_limit", "completed_files_survive_injected_write_power_loss", "only_incomplete_tail_may_be_lost"],
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "E",
+      "name": "single_USB_C_port_three_OS_interoperability",
+      "sample_scope": "macOS_Windows_Linux_each_at_least_one_unit_and_USB_enumeration_on_all_5",
+      "cables": "at_least_6_including_C_to_C_and_A_adapter_with_different_overmolds",
+      "acceptance": ["enumerate_composite_read_only_MSC_and_HID_with_OS_standard_drivers", "first_use_public_recipient_requires_continuous_two_second_button_hold_then_write_once_and_readback", "unprovisioned_device_never_records_plaintext", "enumerate_import_eject_reconnect_decrypt_and_play", "verified_cleanup_is_rejected_without_a_continuous_two_second_button_hold_and_requires_release_before_rearming", "verified_cleanup_is_queued_over_HID_and_applied_only_after_device_ownership_returns", "unverified_failed_or_incomplete_recordings_are_preserved", "charge_and_data_same_port", "MSC_WRITE_and_format_are_rejected", "no_dual_mount", "source_preserved_on_failure", "recording_resumes_only_after_storage_ownership_returns"],
+      "result": "NOT_RUN"
+    },
+    {
+      "id": "F",
+      "name": "case_USB_and_necklace_durability",
+      "sample_scope": "all_5_units_with_destructive_units_excluded_from_gate_C_afterward",
+      "loads": {"proof_N": 50, "proof_duration_s": 10, "proof_directions": 3, "fatigue_N": 15, "fatigue_cycles": 10000, "cord_sliding_cycles": 10000, "drop_height_m": 1.0},
+      "cord_diameters_mm": [2, 2.5, 3],
+      "cord_diameter_assignment_mm": {"U1": 2.0, "U2": 2.0, "U3": 3.0, "U4": 3.0, "U5": 2.5},
+      "wearable_cord_safety": {"prototype_users": "adults_only", "children_sleep_machinery_use": "prohibited_without_separate_safety_qualification", "production_cord": "RNST04BK_single_retail_candidate_selected_not_adopted", "release_force_window": "must_match_traceable_product_claim_and_documented_product_risk_assessment_not_yet_set", "release_repeats_per_state_per_unit": 10, "states": ["new", "after_sweat_equivalent", "after_10000_hole_slides"], "structural_proof_fixture": "bypass_breakaway_clasp_for_case_lug_test_only"},
+      "USB_fit": {"cables_per_unit_min": 6, "required_types": ["USB_C_to_C", "USB_A_to_C"], "record_each_overmold_width_and_height": true, "universal_USB_C_fit_claimed": false},
+      "acceptance": ["no_crack_whitening_delamination_or_case_opening", "no_dangerous_hole_wear", "no_load_transfer_to_pouch_or_harness", "all_six_declared_cables_per_unit_fully_seat_without_case_or_overmold_interference_and_pass_charge_and_data", "no_USB_half_insertion", "finished_breakaway_cord_exact_SKU_claim_and_risk_assessment_are_traceable", "all_breakaway_releases_in_new_sweat_and_worn_states_are_inside_the_approved_window_without_dangerous_detached_parts", "50N_case_lug_proof_bypasses_the_breakaway_clasp_and_is_not_a_wearable_cord_requirement", "no_persistent_sideways_or_backwards_hanging", "USB_long_axis_parallel_to_body_when_worn"],
+      "result": "NOT_RUN"
+    }
+  ],
+  "release_rule": "release_false_if_any_gate_or_required_evidence_is_NOT_RUN_FAIL_or_missing",
+  "orders_payments_uploads_vendor_contacts_performed": false
+}

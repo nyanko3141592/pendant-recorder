@@ -1,0 +1,35 @@
+{
+  "status": "TRIALS_NOT_ADOPTED",
+  "original": "PB13/U1.26",
+  "trials": [
+    {
+      "gpio": "PB10",
+      "pin": 21,
+      "folder": "button-pb10-trial",
+      "physical_drc": 0,
+      "parity": 0,
+      "escape_visited": 32,
+      "escape_found": false
+    },
+    {
+      "gpio": "PA3",
+      "pin": 13,
+      "folder": "button-pa3-trial",
+      "physical_drc": 0,
+      "parity": 0,
+      "escape_visited": 25,
+      "escape_found": false
+    },
+    {
+      "gpio": "PB9",
+      "pin": 46,
+      "folder": "button-pb9-trial",
+      "physical_drc": 0,
+      "parity": 0,
+      "escape_visited": 28,
+      "escape_found": false
+    }
+  ],
+  "limitation": "0.1mm grid, conservative pad/via clearance; no-route is not impossibility proof. Candidate GPIO electrical applicability must be verified before adopting; firmware still PB13.",
+  "next_action": "Inspect surface blocking tracks for promising alternate GPIO; compare local ground/power reroute against original PB13 multi-layer barrier."
+}

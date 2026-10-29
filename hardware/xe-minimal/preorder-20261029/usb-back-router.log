@@ -1,0 +1,50 @@
+2026-10-29 11:15:17.519 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+WARNING: Final field userProfileSettings in class app.freerouting.settings.GlobalSettings has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @78186a70 (file:/private/tmp/pendant-router/freerouting-2.5.0.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+2026-10-29 11:15:17.775 INFO   Hardware: 8 CPU cores, 503 CPU score, 4096 MB RAM
+2026-10-29 11:15:17.776 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:15:17.778 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 11:15:18.924 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 11:15:19.188 INFO   [A6CA4C\E59D4E] Loading board file 'usb-back-corridor-unrouted.dsn'...
+2026-10-29 11:15:19.318 INFO   Layer 'In1.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-29 11:15:19.318 INFO   Layer 'In2.Cu' contains a power plane / large copper pour covering >=30% of the board; associated net(s) configured for plane routing.
+2026-10-29 11:15:19.341 INFO   [A6CA4C\E59D4E] Job 'A6CA4C\E59D4E' started at 2026-10-29T02:15:19.341753Z.
+2026-10-29 11:15:19.503 WARN   Design Warning: Board has 96 pre-existing clearance violation(s) in the loaded design (before routing):
+  - 96 unfixable violation(s) (cannot be resolved by Freerouting):
+      * 96 fixed trace/via clearance violations (first 5 shown):
+          - FixedVia#1637 [net /ISET] <-> FixedTrace#700 [net /V3V3]
+          - FixedVia#1637 [net /ISET] <-> FixedTrace#691 [net /V3V3]
+          - FixedVia#1629 [net /BOOT0] <-> ObstacleArea#25
+          - FixedVia#1629 [net /BOOT0] <-> ObstacleArea#20
+          - FixedVia#1629 [net /BOOT0] <-> ObstacleArea#19
+          ... and 91 more
+  - 0 potentially fixable violations
+Notice: Freerouting does not modify component placement, board outlines, or fixed items.
+Resolving these 96 unfixable violation(s) is the responsibility of the board author in their EDA tool (e.g. KiCad).
+2026-10-29 11:15:19.538 INFO   [A6CA4C\E59D4E] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=7.
+2026-10-29 11:15:19.749 INFO   [A6CA4C\E59D4E] Fanout stage started on board 'e7065a2dc438c3466ea4ac05b1677cab' with 86 of 255 SMD pins needing fanout (166 already connected, 3 netless).
+2026-10-29 11:15:20.367 INFO   [A6CA4C\E59D4E] Fanout pass #1 on board 'e7065a2dc438c3466ea4ac05b1677cab' completed in 0.50 seconds with 6 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 11:15:20.453 INFO   [A6CA4C\E59D4E] Fanout stage completed: started with 252 total SMD pins, completed in 0.61 seconds, escaped pins: 221/252 (87.7%), using 0.77 total CPU seconds, 0.42 GB total allocated, and 116.6 MB peak heap usage.
+2026-10-29 11:15:20.703 INFO   [A6CA4C\E59D4E] Auto-routing stage started on board 'e7065a2dc438c3466ea4ac05b1677cab' with baseline score 931.33 for 9 unrouted items.
+2026-10-29 11:15:21.767 INFO   [A6CA4C\E59D4E] Auto-routing pass #1 on board 'e7065a2dc438c3466ea4ac05b1677cab' was completed in 0.96 seconds with score 952.72 (6 unrouted and 96 violations), using 1.83 CPU seconds and the job allocated 1.04 GB of memory so far.
+2026-10-29 11:15:22.442 INFO   [A6CA4C\E59D4E] Auto-routing pass #2 on board 'b8a8aeafe0ffcfc6931c41a32f69ed82' was completed in 0.57 seconds with score 952.72 (6 unrouted and 96 violations), using 2.82 CPU seconds and the job allocated 1.72 GB of memory so far.
+2026-10-29 11:15:23.076 INFO   [A6CA4C\E59D4E] Auto-routing pass #3 on board 'ba6316b659691400b7ae2ebd0bb66055' was completed in 0.53 seconds with score 952.72 (6 unrouted and 96 violations), using 2.82 CPU seconds and the job allocated 1.72 GB of memory so far.
+2026-10-29 11:15:23.735 INFO   [A6CA4C\E59D4E] Auto-routing pass #4 on board '451d29af4e8a9d469fee7594aa918e6d' was completed in 0.56 seconds with score 945.59 (7 unrouted and 96 violations), using 3.82 CPU seconds and the job allocated 2.45 GB of memory so far.
+2026-10-29 11:15:24.385 INFO   [A6CA4C\E59D4E] Auto-routing pass #5 on board 'df8aa3abe48a6a7661f66daec64d01e1' was completed in 0.56 seconds with score 945.59 (7 unrouted and 96 violations), using 4.83 CPU seconds and the job allocated 3.22 GB of memory so far.
+2026-10-29 11:15:25.038 INFO   [A6CA4C\E59D4E] Auto-routing pass #6 on board '7897ac35ce39d3657911839cefce0649' was completed in 0.56 seconds with score 945.59 (7 unrouted and 96 violations), using 4.83 CPU seconds and the job allocated 3.22 GB of memory so far.
+2026-10-29 11:15:25.684 INFO   [A6CA4C\E59D4E] Auto-routing pass #7 on board '825f18d08f30250b49952e9d672ad8b1' was completed in 0.55 seconds with score 945.59 (7 unrouted and 96 violations), using 5.83 CPU seconds and the job allocated 4.03 GB of memory so far.
+2026-10-29 11:15:26.439 INFO   [A6CA4C\E59D4E] Auto-routing pass #8 on board 'b8a8aeafe0ffcfc6931c41a32f69ed82' was completed in 0.00 seconds with score 952.72 (6 unrouted and 96 violations), using 6.83 CPU seconds and the job allocated 4.78 GB of memory so far.
+2026-10-29 11:15:26.978 INFO   [A6CA4C\E59D4E] Auto-routing pass #9 on board 'b8a8aeafe0ffcfc6931c41a32f69ed82' was completed in 0.53 seconds with score 952.72 (6 unrouted and 96 violations), using 6.83 CPU seconds and the job allocated 4.78 GB of memory so far.
+2026-10-29 11:15:27.516 INFO   [A6CA4C\E59D4E] Auto-routing pass #10 on board '903d92e063e3c157e862efa8746c586a' was completed in 0.45 seconds with score 952.72 (6 unrouted and 96 violations), using 7.82 CPU seconds and the job allocated 5.57 GB of memory so far.
+2026-10-29 11:15:28.125 INFO   [A6CA4C\E59D4E] Auto-routing pass #11 on board '7b4a2d7477de6b6d0983c7eef25a1044' was completed in 0.45 seconds with score 952.72 (6 unrouted and 96 violations), using 7.82 CPU seconds and the job allocated 5.57 GB of memory so far.
+2026-10-29 11:15:28.782 INFO   [A6CA4C\E59D4E] Auto-routing pass #12 on board 'b8a8aeafe0ffcfc6931c41a32f69ed82' was completed in 0.00 seconds with score 952.72 (6 unrouted and 96 violations), using 8.82 CPU seconds and the job allocated 6.43 GB of memory so far.
+2026-10-29 11:15:29.246 INFO   [A6CA4C\E59D4E] Auto-routing pass #13 on board 'b8a8aeafe0ffcfc6931c41a32f69ed82' was completed in 0.45 seconds with score 952.72 (6 unrouted and 96 violations), using 8.82 CPU seconds and the job allocated 6.43 GB of memory so far.
+2026-10-29 11:15:29.701 INFO   [A6CA4C\E59D4E] Auto-routing pass #14 on board '903d92e063e3c157e862efa8746c586a' was completed in 0.45 seconds with score 952.72 (6 unrouted and 96 violations), using 9.83 CPU seconds and the job allocated 7.27 GB of memory so far.
+2026-10-29 11:15:29.789 INFO   [A6CA4C\E59D4E] Last-mile rip-up removed 16 blocking trace(s) or via(s) around 6 remaining connection(s).
+2026-10-29 11:15:30.471 INFO   [A6CA4C\E59D4E] Auto-routing pass #15 on board '5acea82ba710508223c12f40ff253d0f' was completed in 0.60 seconds with score 959.85 (5 unrouted and 96 violations), using 10.82 CPU seconds and the job allocated 8.13 GB of memory so far.
+2026-10-29 11:15:30.712 INFO   [A6CA4C\E59D4E] Auto-routing stage completed: started with 9 unrouted nets, completed in 11.10 seconds, final score: 959.85 (5 unrouted and 96 violations), using 10.82 total CPU seconds, 8.13 GB total allocated, and 121.4 MB peak heap usage.
+2026-10-29 11:15:30.808 INFO   [A6CA4C\E59D4E] Skipping optimization stage: the board has 5 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 11:15:30.824 INFO   [A6CA4C\E59D4E] Job 'A6CA4C\E59D4E' finished with state: COMPLETED (elapsed: 11.48 seconds, finished at UTC: 2026-10-29T02:15:30.823956Z).
+2026-10-29 11:15:30.843 INFO   Saving output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/usb-back-corridor-routed.ses' (SES)...
+2026-10-29 11:15:30.845 INFO   Successfully saved output file '/Users/takahashinaoki/Dev/pendant-recorder/hardware/xe-minimal/preorder-20261029/usb-back-corridor-routed.ses' (144520 bytes).

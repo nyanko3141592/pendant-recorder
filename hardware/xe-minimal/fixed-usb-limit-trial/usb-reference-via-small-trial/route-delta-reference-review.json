@@ -1,0 +1,323 @@
+{
+  "status": "ROUTE_DELTA_AND_REFERENCE_AREA_COMPARISON_NOT_SI_APPROVAL",
+  "source_sha256": {
+    "usb-pair-far-extension-trial": "edb2f0f5b5236b53b563c5e217be416efacdd068306df853df1b60de9869a402",
+    "usb-reference-via-small-trial": "10f561cc51b6607472c4707a498bdfe15dab6a2218a55a7aa12a6c14edf36e5c"
+  },
+  "changed": {
+    "d5f838d5-49c4-4b63-814d-c51369fbaf3e": {
+      "before": {
+        "net": "/PDM_DATA",
+        "layer": 0,
+        "a": [
+          18100000,
+          11500000
+        ],
+        "b": [
+          18100000,
+          11500000
+        ],
+        "width": 350000,
+        "via": true,
+        "drill": 150000,
+        "fill": 1,
+        "cap": 1
+      },
+      "after": {
+        "net": "/PDM_DATA",
+        "layer": 0,
+        "a": [
+          18050000,
+          11460000
+        ],
+        "b": [
+          18050000,
+          11460000
+        ],
+        "width": 350000,
+        "via": true,
+        "drill": 150000,
+        "fill": 1,
+        "cap": 1
+      }
+    },
+    "7e4c4d22-b554-4137-b568-d037d7eec773": {
+      "before": {
+        "net": "/PDM_DATA",
+        "layer": 2,
+        "a": [
+          18102500,
+          11205000
+        ],
+        "b": [
+          18100000,
+          11500000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      },
+      "after": {
+        "net": "/PDM_DATA",
+        "layer": 2,
+        "a": [
+          18102500,
+          11205000
+        ],
+        "b": [
+          18050000,
+          11460000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      }
+    },
+    "6c38d58f-1247-4b27-9c24-01ab55f845ea": {
+      "before": {
+        "net": "/PDM_DATA",
+        "layer": 6,
+        "a": [
+          18100000,
+          11500000
+        ],
+        "b": [
+          13500000,
+          11700000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      },
+      "after": {
+        "net": "/PDM_DATA",
+        "layer": 6,
+        "a": [
+          18050000,
+          11460000
+        ],
+        "b": [
+          13500000,
+          11700000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      }
+    },
+    "f81dcbe3-21d8-4b10-801d-cb9fed3557d1": {
+      "before": {
+        "net": "/SD_EN",
+        "layer": 0,
+        "a": [
+          18500000,
+          12600000
+        ],
+        "b": [
+          18500000,
+          12600000
+        ],
+        "width": 350000,
+        "via": true,
+        "drill": 150000,
+        "fill": 0,
+        "cap": 0
+      },
+      "after": {
+        "net": "/SD_EN",
+        "layer": 0,
+        "a": [
+          18550000,
+          12640000
+        ],
+        "b": [
+          18550000,
+          12640000
+        ],
+        "width": 350000,
+        "via": true,
+        "drill": 150000,
+        "fill": 0,
+        "cap": 0
+      }
+    },
+    "07a53b51-4648-42d9-82cb-028ea0a6d032": {
+      "before": {
+        "net": "/SD_EN",
+        "layer": 2,
+        "a": [
+          17800000,
+          11900000
+        ],
+        "b": [
+          18500000,
+          12600000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      },
+      "after": {
+        "net": "/SD_EN",
+        "layer": 2,
+        "a": [
+          17800000,
+          11900000
+        ],
+        "b": [
+          18550000,
+          12640000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      }
+    },
+    "5ae4772e-6668-4b48-9d97-11e42953da99": {
+      "before": {
+        "net": "/SD_EN",
+        "layer": 10,
+        "a": [
+          18500000,
+          12600000
+        ],
+        "b": [
+          17300000,
+          12600000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      },
+      "after": {
+        "net": "/SD_EN",
+        "layer": 10,
+        "a": [
+          18550000,
+          12640000
+        ],
+        "b": [
+          17300000,
+          12600000
+        ],
+        "width": 150000,
+        "via": false,
+        "drill": null,
+        "fill": null,
+        "cap": null
+      }
+    }
+  },
+  "reference_rows": [
+    {
+      "board": "usb-pair-far-extension-trial",
+      "uuid": "7e4c4d22-b554-4137-b568-d037d7eec773",
+      "net": "/PDM_DATA",
+      "signal_layer": "B.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 0.29501059303014865,
+      "uncovered_area_mm2": 0.04425141
+    },
+    {
+      "board": "usb-pair-far-extension-trial",
+      "uuid": "6c38d58f-1247-4b27-9c24-01ab55f845ea",
+      "net": "/PDM_DATA",
+      "signal_layer": "In2.Cu",
+      "reference": "In1.Cu",
+      "length_mm": 4.604345773288535,
+      "uncovered_area_mm2": 0.1420627046515
+    },
+    {
+      "board": "usb-pair-far-extension-trial",
+      "uuid": "6c38d58f-1247-4b27-9c24-01ab55f845ea",
+      "net": "/PDM_DATA",
+      "signal_layer": "In2.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 4.604345773288535,
+      "uncovered_area_mm2": 0.1508650267695
+    },
+    {
+      "board": "usb-pair-far-extension-trial",
+      "uuid": "07a53b51-4648-42d9-82cb-028ea0a6d032",
+      "net": "/SD_EN",
+      "signal_layer": "B.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 0.9899494936611666,
+      "uncovered_area_mm2": 0.0485482132865
+    },
+    {
+      "board": "usb-pair-far-extension-trial",
+      "uuid": "5ae4772e-6668-4b48-9d97-11e42953da99",
+      "net": "/SD_EN",
+      "signal_layer": "In4.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 1.2,
+      "uncovered_area_mm2": 0.0485481480345
+    },
+    {
+      "board": "usb-reference-via-small-trial",
+      "uuid": "7e4c4d22-b554-4137-b568-d037d7eec773",
+      "net": "/PDM_DATA",
+      "signal_layer": "B.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 0.2603483243656467,
+      "uncovered_area_mm2": 0.03905211
+    },
+    {
+      "board": "usb-reference-via-small-trial",
+      "uuid": "6c38d58f-1247-4b27-9c24-01ab55f845ea",
+      "net": "/PDM_DATA",
+      "signal_layer": "In2.Cu",
+      "reference": "In1.Cu",
+      "length_mm": 4.556325273726625,
+      "uncovered_area_mm2": 0.1347168523655
+    },
+    {
+      "board": "usb-reference-via-small-trial",
+      "uuid": "6c38d58f-1247-4b27-9c24-01ab55f845ea",
+      "net": "/PDM_DATA",
+      "signal_layer": "In2.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 4.556325273726625,
+      "uncovered_area_mm2": 0.142553962755
+    },
+    {
+      "board": "usb-reference-via-small-trial",
+      "uuid": "07a53b51-4648-42d9-82cb-028ea0a6d032",
+      "net": "/SD_EN",
+      "signal_layer": "B.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 1.0536128321162381,
+      "uncovered_area_mm2": 0.048548271764
+    },
+    {
+      "board": "usb-reference-via-small-trial",
+      "uuid": "5ae4772e-6668-4b48-9d97-11e42953da99",
+      "net": "/SD_EN",
+      "signal_layer": "In4.Cu",
+      "reference": "In3.Cu",
+      "length_mm": 1.2506398362438322,
+      "uncovered_area_mm2": 0.0485452453705
+    }
+  ],
+  "limits": [
+    "Rectangle excludes endpoint semicircles",
+    "B.Cu uses In3.Cu ground as screening reference with intervening In4.Cu; not a field model",
+    "Own signal via antipads legitimately appear in uncovered area; aggregate area is not acceptance criterion",
+    "Footprint pose and pad geometry checked, not all serialized properties"
+  ]
+}

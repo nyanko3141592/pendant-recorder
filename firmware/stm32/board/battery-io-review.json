@@ -1,0 +1,108 @@
+{
+  "status": "GPIO_INIT_ONLY_ADC_PENDING",
+  "pins": {
+    "PA1": "BAT_ADC analog no pull",
+    "PA8": "STATUS_LED output initially low"
+  },
+  "divider_ohms": [
+    1000000,
+    1000000
+  ],
+  "capacitor_f": 1e-08,
+  "divider_current_ua_at_4v2": 2.1,
+  "nominal_rc_time_constant_ms": 5,
+  "settling_note": "Five nominal time constants=25ms from a voltage step, not proof of ADC accuracy. Include ADC sample capacitor, leakage, resistor/cap tolerances and VREFINT calibration.",
+  "adc_sampling_implemented": "Candidate adapter compiled/linked; not yet called by app or validated with mocked HAL/physical MCU",
+  "soc_estimation_implemented": false,
+  "validation": "Actual app ARM link passed with analog-switch workaround; no physical execution. /tmp/pendant-battery-io-link is NOT FOR FLASH.",
+  "adc_mapping": {
+    "pin": "PA1",
+    "channel": "ADC1_IN6",
+    "source": "https://www.st.com/resource/en/datasheet/stm32u535nc.pdf"
+  },
+  "errata": {
+    "source": "https://www.st.com/content/st_com/en/technical-documents/es0587-stm32u535xx-and-stm32u545xx-device-errata-stmicroelectronics_asset/chunk-003-topic-function-es-sdmmc.html",
+    "workaround_implemented": "SYSCFG clock enabled, BOOSTEN=0, ANASWVDD=1 via pinned HAL APIs",
+    "limitations": "External-input-impedance table excludes external capacitors. 500kohm Thevenin plus10nF must be checked against charge sharing, leakage and conversion spacing; do not infer ADC accuracy from25ms nominal RC delay."
+  },
+  "factory_calibration": {
+    "source": "https://www.st.com/resource/en/datasheet/stm32u535nc.pdf",
+    "document": "DS14217 Rev5, page60 Table17",
+    "resolution_bits": 14,
+    "voltage_mv": 3000,
+    "addresses": [
+      "0x0BFA07A5",
+      "0x0BFA07A6"
+    ],
+    "implementation": "Two volatile byte loads, little-endian combine, reject0 or>=16383, output unchanged on failure",
+    "validation": "ARM link passed; objdump confirms two LDRB instructions. No physical factory-memory read performed.",
+    "sdk_comment_conflict": "Resolved against device datasheet:14bits. LL helper arithmetic agrees;16bit prose not used."
+  },
+  "acquisition_candidate": {
+    "api": "board_battery_measure_mv",
+    "clock": "HCLK16MHz selected via RCC ADCDAC; async /2 gives8MHz",
+    "resolution_bits": 14,
+    "sample_cycles": 814,
+    "sequence": "HAL init, offset calibration, PA1 channel6 single sample, VREFINT single sample, integer voltage conversion, HAL deinit and ADC12 clock disable",
+    "error_behavior": "false; caller output unchanged",
+    "preconditions": [
+      "Main context and interrupts enabled",
+      "Exclusive ADC12/ADC4/DAC clock ownership",
+      "battery_io initialization and stable divider/rails beforehand"
+    ],
+    "remaining": [
+      "Mock failure paths and cleanup verification",
+      "VREFINT channel startup timing review",
+      "High impedance capacitor/ADC settling measurement",
+      "Call scheduling and indicator behavior",
+      "Actual voltage accuracy and power measurement"
+    ]
+  },
+  "mock_validation": {
+    "command": "sh firmware/stm32/tests/check_battery_adc.sh",
+    "status": "PASS_ASAN_UBSAN",
+    "scope": [
+      "successful4000mV conversion",
+      "failure injection at all12 HAL operation positions",
+      "deinit attempted and clock disabled after any post-enable failure",
+      "output unchanged on failures",
+      "ISR/masked IRQ/wrong HCLK/calibration failure/null output rejected"
+    ],
+    "not_proven": [
+      "Physical ADC cleanup if HAL deinit fails",
+      "Reference startup timing and input settling",
+      "Real factory-memory read or physical accuracy"
+    ]
+  },
+  "vrefint_startup": {
+    "pinned_sdk_requirement_us": 5,
+    "implemented_wait": "HAL_Delay(1) after ConfigChannel and before ADC_Start only for VREFINT",
+    "evidence": "stm32u5xx_ll_adc.h LL_ADC_DELAY_VREFINT_STAB_US=5; HAL ConfigChannel enables internal path without delay",
+    "verification": "Mock asserts VREFINT wait before Start; all failure tests and ARM app link pass",
+    "limitations": "Tick IRQ must run; function remains blocking. Physical timing and total calibration latency need measurement."
+  },
+  "scheduling": {
+    "implemented": true,
+    "startup_wait_ms": 100,
+    "minimum_attempt_interval_ms": 60000,
+    "reading_expiry_ms": 120000,
+    "integration": "app main after recording service; DEVICE owner and empty PCM queue only",
+    "failure": "invalidate previous reading; no rapid retry",
+    "validation": "ASAN/UBSAN native initial wait, deferred acquisition,60s rate limit,failure invalidation,expiry and tick wrap; full app ARM link",
+    "remaining": "LED/button presentation and physical ADC/capture latency qualification"
+  },
+  "indicator": {
+    "implemented": "app connected PB13 button/PA8 LED",
+    "debounce_ms": 30,
+    "normally_off": true,
+    "held_button_repeats": false,
+    "valid_voltage_bands": "1 pulse<3600mV;2 pulses3600..3899;3 pulses>=3900; provisional voltage only, not SOC",
+    "pulse_on_off_ms": [
+      150,
+      150
+    ],
+    "unknown_pattern": "600ms solid",
+    "validation": "Native ASANUBSAN debounce/pulse counts/held-button/no-repeat/release/repress/tick-wrap; full app ARM link",
+    "remaining": "Physical readability/current/button behavior; loaded voltage thresholds; scheduler latency while encrypting/writing may stretch pulses"
+  }
+}

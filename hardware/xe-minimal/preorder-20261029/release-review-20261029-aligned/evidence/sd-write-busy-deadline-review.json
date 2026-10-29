@@ -1,0 +1,27 @@
+{
+  "status": "PASS_SD_WRITE_BUSY_DEADLINE_HOST_REGRESSION",
+  "change": "Replace20000-byte poll guard with3125001; preserve500ms monotonic deadline and finite stopped-timer watchdog. No CRC/status/sync removal.",
+  "before": "At4MHz,20000 byte clocks consume40ms minimum, so fast transports can prematurely fail a valid write below500ms. Actual HAL overhead changes the early-cutoff time.",
+  "tests": [
+    "existing init/read/write CRC and per-exchange failures",
+    "100ms busy at simulated4MHz succeeds after50000 busy bytes",
+    "500ms busy deadline fails after250000 busy bytes",
+    "stopped timer fails after3125001 busy bytes",
+    "all exits deselect card"
+  ],
+  "command": "sh firmware/stm32/tests/check_sd_transfer.sh",
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "limits": [
+    "Mock transport only; no real media latency, power or16h runtime claim",
+    "Read token polling has a separate iteration limit requiring review",
+    "Full firmware release build/source lock must be refreshed before flashing"
+  ],
+  "source_sha256": {
+    "firmware/stm32/core/sd_init.c": "e778610ab13f1196c0814ec8b25ecfd3156cfaa7d6640300745156a37b7d477b",
+    "firmware/stm32/tests/test_sd_write.c": "b99ef37c2b68f0be7e01aad1b8aef5b7f955361e1dd373c01c4de0f23387f11a"
+  },
+  "superseded_by": "sd-io-deadline-review.json covers subsequent shared read-token change"
+}
