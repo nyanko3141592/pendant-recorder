@@ -1,3 +1,11 @@
+# 最新：初号試作の条件付き設計と配線bayを一案に集約（2026-10-29）
+
+入口はrelease-review-20261029-aligned/first-prototype/README.md。PCB b3cdfc不変、C30だけ同定格FH0402CG500J500NT/C501830へBOM置換（公開実装可能45731）。U1/U12/J1は通常Pre-order選択、入庫後の基板注文が条件。室温条件付き3.863mA、70%容量で19.93h、SPI電流/活動時間/周辺分は仮定。未実測を合格にしない。
+
+現機構mechanical-first-prototypeは旧captured-carrierへ配線bay/0.15mm接着6pocket/絶縁0.1mm追加、約30.8×37.5×14.2mm。12/15/18mm線のU字半径2.887mm、根元直線を別確保。線径/出口/嵌合包絡は仮定。CAD干渉/挿入配置samples0、5objectSTEP/STL/3MF対応pass、A1miniPETGオフラインslice警告なし（下ケースX→buildZ）。実物fit/接着/印刷未。新源はmechanical/xe-minimal/preorder-20261029/build_prototype_case.py。旧候補保全。
+
+正式ID/cutoff/初回通電/実媒体format・identity/readback/通常工場工程確認は書込みと購入者納品前の残件。全体の書込み済み製品完成・物理性能保証・量産releaseとは呼ばない。初号判断に全USBfield solverや実測16hを前置しない。基板/ファーム未変更の回帰はsourcehash一致を確認して再利用。注文・支払・製造upload・業者連絡・実印刷禁止。
+
 # 最優先：低コスト・小型の初号試作へ方針修正（2026-10-29）
 
 ユーザー最新指示：今回は1回目の試作で、ある程度コストを抑え、小型の実物を使って評価する。使い勝手（特に電池持ち）が小型化より優先し、その範囲で小型化を最重視。基本安全対策を前提に、使い勝手→小型化→初回費用。根拠ある理論見積りでスペックを狙えれば試作判断可。実機もログもないため、実測4.4mA/16hや量産認定を発注前の進行条件にしない。仮定・未実測は明示、現電力配分を無条件に合格へ変えない。固定電池・27.5mm・最大4層・通常through via・16h/30hは維持。旧critical-path-external-evidence-auditの「実測待ちで設計停止」は失効。現ケースの配線/接合、電気設計、調達の不足は引き続き解く。注文・支払・製造upload・業者連絡・実印刷は禁止。リポジトリ整理・commit/pushは明示許可済み。

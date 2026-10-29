@@ -33,8 +33,8 @@ assert budget["record_encrypt_store_path"]["encrypted_30h_bytes"] == 876657600
 assert current["storage_payload_only_lower_bound_under_published_CSNP32_maxima"] is None
 assert current["storage_headroom_for_commands_metadata_busy_startup_amortization"] is None
 assert "No 16h runtime has been measured." in budget["not_claimed"]
-assert budget["status"] == "RUNTIME_FEASIBILITY_UNCONFIRMED_DESIGN_OPTIMIZED_MEASUREMENT_REQUIRED"
-assert budget["stage1_gate"]["proceed"] is False
-assert budget["stage1_gate"]["blocking_evidence"] == "docs/sourcing/xe-u585-runtime-feasibility-audit.json"
+assert budget["status"] == "ALLOCATION_UNMEASURED_WITH_SEPARATE_CONDITIONAL_PROTOTYPE_ESTIMATE"
+assert budget["stage1_gate"]["proceed"] == "CONDITIONAL_PROTOTYPE_DESIGN"
+assert budget["stage1_gate"]["blocking_evidence"] is None
 
 print("PASS_CANONICAL_RUNTIME_BUDGET_UNMEASURED")

@@ -197,13 +197,21 @@ assert abs(nonstorage_recording_mA + storage_allocation_at_design_target_mA - 4.
 assert reserve_inside_70pct_mAh > 0
 assert storage_unmodeled_headroom_mA is None
 
+# First-prototype policy: retain allocation numbers; physical proof is a later qualification.
+report["status"] = "ALLOCATION_UNMEASURED_WITH_SEPARATE_CONDITIONAL_PROTOTYPE_ESTIMATE"
+report["decision"] = "4.4mA remains an allocation target. Use first-prototype/performance.json for the component-based conditional scenario; physical measurement absence alone does not block prototype design."
+report["stage1_gate"]["proceed"] = "CONDITIONAL_PROTOTYPE_DESIGN"
+report["stage1_gate"]["why"] = "The previous completed-device-maximum-or-measurement pre-order rule is superseded by the2026-10-29 user instruction. No existing allocation is thereby proven."
+report["stage1_gate"]["blocking_evidence"] = None
+report["stage1_gate"]["qualification_stage"] = "after_prototype_before_performance_claim"
+report["prototype_estimate"] = "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/first-prototype/performance.json"
 OUT_JSON.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
 
 md = f"""# DTP401525-XE 統合16時間電流予算
 
-状態: **成立性未確認。設計上の無駄は削減したが、実測前に16時間を通過扱いしない。**
+状態: **配分値は未実測。初号試作の条件付き見積りは first-prototype/performance.json。実機性能合格とは別。**
 
-## 段階1の判断
+## 配分値の扱い（初号試作判断は別の部品別見積りを参照）
 
 DTP401525-XE（110mAh）と要件は維持する。最終機の録音中平均電池電流を **4.4mA以下**、かつ本体充電後から録音停止電圧までに使える容量を **70.4mAh以上**にできれば16時間に届く。ただし現状の2.8mA非ストレージ値は配分仮説で、完成品の保守的上限計算はない。CPUをMSIS 16MHz、SPIをPCLK2へ移して録音中の不要なHSI16常時動作を削除したが、削減量と16時間は未実測である。
 

@@ -1,6 +1,6 @@
 {
-  "status": "RUNTIME_FEASIBILITY_UNCONFIRMED_DESIGN_OPTIMIZED_MEASUREMENT_REQUIRED",
-  "decision": "Keep the fixed 110mAh battery and requirements. The arithmetic target is <=4.4mA, but the current design has neither a conservative completed-device upper bound nor a physical 16h result. An unnecessary continuous HSI16 clock was removed; feasibility remains unconfirmed until measurement.",
+  "status": "ALLOCATION_UNMEASURED_WITH_SEPARATE_CONDITIONAL_PROTOTYPE_ESTIMATE",
+  "decision": "4.4mA remains an allocation target. Use first-prototype/performance.json for the component-based conditional scenario; physical measurement absence alone does not block prototype design.",
   "battery": {
     "model": "DTP401525-XE",
     "nominal_capacity_mAh": 110,
@@ -71,9 +71,9 @@
     }
   ],
   "stage1_gate": {
-    "proceed": false,
-    "why": "The 2.8mA non-storage value is only an allocation and the selected LDO MCU's datasheet maximum can itself exceed the whole-device target at elevated temperature. No completed-device upper bound or physical integral exists.",
-    "blocking_evidence": "docs/sourcing/xe-u585-runtime-feasibility-audit.json",
+    "proceed": "CONDITIONAL_PROTOTYPE_DESIGN",
+    "why": "The previous completed-device-maximum-or-measurement pre-order rule is superseded by the2026-10-29 user instruction. No existing allocation is thereby proven.",
+    "blocking_evidence": null,
     "must_be_true_before_release": [
       "Measured battery-side charge over each complete 16h recording run is <=70.4mAh and the device remains recording through16h.",
       "At least the qualified worst-case on-board-charge/temperature/age condition delivers >=70.4mAh to the recording stop threshold, or measured average is reduced so runtime still passes.",
@@ -86,7 +86,8 @@
       "3.3V storage-rail integral and peak waveform: diagnoses storage allocation/inrush.",
       "3.3V nonstorage integral while capture+IMA+age run: replaces the unmeasured2.8mA allocation.",
       "Usable pack capacity after on-board charge to loaded stop: validates the capacity envelope."
-    ]
+    ],
+    "qualification_stage": "after_prototype_before_performance_claim"
   },
   "not_claimed": [
     "No 16h runtime has been measured.",
@@ -133,5 +134,6 @@
       "firmware/stm32/tests/test_storage_36h.c": "2371c86409852622c3e6e2eba232725a62424d600631fdc0c887aaf1bfd33138",
       "firmware/stm32/tests/check_storage_36h.sh": "5584f0465710f576fa8baff94d9e9878416e4cf28ef6a46d547ba60e070b5224"
     }
-  }
+  },
+  "prototype_estimate": "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/first-prototype/performance.json"
 }

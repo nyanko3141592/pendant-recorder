@@ -1,0 +1,219 @@
+{
+  "status": "PASS_DESIGN_ARTIFACT_CONSISTENCY_NOT_PHYSICAL_RELEASE",
+  "pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "firmware_source_files_checked": 347,
+  "firmware_prior_checks_passed": 40,
+  "firmware_reexecuted": false,
+  "firmware_source_changed": false,
+  "pcb_geometry_changed": false,
+  "bom_placements": 68,
+  "bom_unique_parts": 36,
+  "bom_substitution": "C30 equivalent C501830",
+  "mechanical_checks": {
+    "lower_valid": true,
+    "lower_solids": 1,
+    "lower_battery_overlap_mm3": 0.0,
+    "lower_gauge_overlap_mm3": 0.0,
+    "lower_wire_overlap_mm3": 0.0,
+    "lower_insulation_overlap_mm3": 0.0,
+    "upper_valid": true,
+    "upper_solids": 1,
+    "upper_battery_overlap_mm3": 0.0,
+    "upper_gauge_overlap_mm3": 0.0,
+    "upper_wire_overlap_mm3": 0.0,
+    "upper_insulation_overlap_mm3": 0.0,
+    "carrier_valid": true,
+    "carrier_solids": 1,
+    "carrier_battery_overlap_mm3": 0.0,
+    "carrier_gauge_overlap_mm3": 0.0,
+    "carrier_wire_overlap_mm3": 0.0,
+    "carrier_insulation_overlap_mm3": 0.0,
+    "lower_upper_overlap_mm3": 0.0,
+    "lower_carrier_overlap_mm3": 0.0,
+    "wire_battery_overlap_mm3": 0.0,
+    "wire_pcb_overlap_mm3": 0.0,
+    "plug_carrier_overlap_mm3": 0.0,
+    "connected_stack_vertical_insertion_samples_mm3": {
+      "0": 0.0,
+      "0.1": 0.0,
+      "0.5": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0,
+      "12": 0.0
+    }
+  },
+  "kit_correspondence": "PASS_OFFLINE_GEOMETRY_SCALE_AND_MESH_CORRESPONDENCE",
+  "slice": {
+    "error_string": "Success.",
+    "export_time": 433,
+    "layer_height": 0.1599999964237213,
+    "plate_index": 0,
+    "prepare_time": 40,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 53.19065856933594,
+          "Bridge": 47.51150131225586,
+          "Custom": 34.60468292236328,
+          "Gap infill": 352.39447021484375,
+          "Inner wall": 395.3565368652344,
+          "Internal solid infill": 166.5830078125,
+          "Outer wall": 1186.2232666015625,
+          "Overhang wall": 178.7787322998047,
+          "Sparse infill": 54.51982498168945,
+          "Support": 627.3800048828125,
+          "Support interface": 86.50731658935547,
+          "Top surface": 107.77549743652344,
+          "Travel": 658.8726196289062,
+          "Undefined": 643.4385375976562
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG00",
+            "id": 1,
+            "main_used_g": 7.737762928009033,
+            "total_used_g": 9.763745307922363
+          }
+        ],
+        "generate_support_material_time": 400,
+        "id": 1,
+        "infill_time": 47,
+        "layer_filament_change": 0,
+        "main_predication": 3914.923095703125,
+        "make_perimeters_time": 91,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 37.45000076293945,
+              "height": 30.799999237060547,
+              "width": 8.750000953674316,
+              "x": 138.77500915527344,
+              "y": 97.02500915527344,
+              "z": 0.0
+            },
+            "id": 95,
+            "name": "case-lower.stl",
+            "triangle_count": 7298
+          },
+          {
+            "bbox": {
+              "depth": 37.45000076293945,
+              "height": 6.079999923706055,
+              "width": 30.80000114440918,
+              "x": 83.9749984741211,
+              "y": 97.02500915527344,
+              "z": 0.0
+            },
+            "id": 106,
+            "name": "case-upper.stl",
+            "triangle_count": 12770
+          },
+          {
+            "bbox": {
+              "depth": 27.499998092651367,
+              "height": 5.980000019073486,
+              "width": 27.500003814697266,
+              "x": 120.02498626708984,
+              "y": 45.525001525878906,
+              "z": 0.0
+            },
+            "id": 117,
+            "name": "pcba-max-gauge.stl",
+            "triangle_count": 6032
+          },
+          {
+            "bbox": {
+              "depth": 27.700000762939453,
+              "height": 2.184999942779541,
+              "width": 27.5,
+              "x": 32.47500991821289,
+              "y": 106.77500915527344,
+              "z": 0.0
+            },
+            "id": 139,
+            "name": "carrier.stl",
+            "triangle_count": 512
+          },
+          {
+            "bbox": {
+              "depth": 27.0,
+              "height": 4.199999809265137,
+              "width": 15.500000953674316,
+              "x": 80.52500915527344,
+              "y": 46.02499008178711,
+              "z": 0.0
+            },
+            "id": 128,
+            "name": "battery-max.stl",
+            "triangle_count": 12
+          }
+        ],
+        "sliced_time": 1079,
+        "sliced_time_with_cache": 492,
+        "total_predication": 3934.063232421875,
+        "triangle_count": 26624,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 40.0,
+    "wall_loops": 6
+  },
+  "ERC_violations": 0,
+  "DRC_violations": 0,
+  "unconnected": 0,
+  "parity": 0,
+  "unchanged_from_checked_handoff": [
+    "design/pendant-review.kicad_pcb",
+    "design/pendant-review.kicad_sch",
+    "design/pendant-review.kicad_pro",
+    "design/pendant-review.kicad_dru",
+    "gerbers/pendant-review-F_Mask.gts",
+    "gerbers/pendant-review-In2_Cu.g2",
+    "gerbers/pendant-review-job.gbrjob",
+    "gerbers/pendant-review-F_Paste.gtp",
+    "gerbers/pendant-review-F_Cu.gtl",
+    "gerbers/pendant-review-B_Cu.gbl",
+    "gerbers/pendant-review-Edge_Cuts.gm1",
+    "gerbers/pendant-review-B_Mask.gbs",
+    "gerbers/pendant-review-In1_Cu.g1",
+    "gerbers/pendant-review-B_Paste.gbp",
+    "gerbers/pendant-review-B_Silkscreen.gbo",
+    "gerbers/pendant-review-F_Silkscreen.gto",
+    "drills/pendant-review-PTH.drl",
+    "drills/pendant-review-NPTH.drl",
+    "cpl-review-unverified-rotation.csv"
+  ],
+  "ERC_ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "physical_tests_performed": false,
+  "flashable_product_image": null,
+  "source_sha256": {
+    "hardware/xe-minimal/preorder-20261029/finalize_first_prototype.py": "b09a0f6bbc8a421e8a78d627be0133d5c62dca990fc89e20339ade6ffe63387a",
+    "mechanical/xe-minimal/preorder-20261029/build_prototype_case.py": "e35417b25e9cfac2b77c84a74d207e7fe32208b7c1923c14d99a9ac1a8ae76c3",
+    "mechanical/xe-minimal/preorder-20261029/slice_prototype_fit_kit.py": "4832c8c4a55fe8a4ecca2cfc480812ad8c46850795948384333dda279356e618",
+    "mechanical/xe-minimal/preorder-20261029/audit_prototype_fit_kit.py": "acc2d47c0969c7e273c0f37bbd0edb3cad8df0304df0ef8ab1a6c5e52178f1b7",
+    "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/first-prototype/performance.json": "32260d14bc0481a742c639eac9e6065d02044bd69d66171ac8e53cff208b23c0",
+    "hardware/xe-minimal/preorder-20261029/release-review-20261029-aligned/first-prototype/cost-and-supply.json": "8b34a35c0d8e813b4641a5c4d5d934db9f734a5771f8eafd4db34033e6086671"
+  }
+}

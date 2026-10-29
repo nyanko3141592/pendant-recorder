@@ -1,0 +1,135 @@
+{
+  "status": "ENGINEERING_PROTOTYPE_CONDITIONAL_ENVELOPES",
+  "pcb_sha256": "b3cdfc064b4321aa6d32c2ff579efeaaf709f36dbfe7255380feec880741eee0",
+  "bbox_mm": [
+    30.807941211077733,
+    37.45439231789854,
+    14.207941211077733
+  ],
+  "harness": [
+    {
+      "lead_length_mm": 12,
+      "modeled_centerline_mm": 12.000000000000004,
+      "straight_battery_root_mm": 1.1145024094122409,
+      "straight_plug_root_mm": 1.8145024094122408,
+      "bend_radius_mm": 2.8873874436936933,
+      "note": "Bundle routing corridor, translated curves are envelope samples, not exact simultaneous conductor placement."
+    },
+    {
+      "lead_length_mm": 15,
+      "modeled_centerline_mm": 15.000000000000004,
+      "straight_battery_root_mm": 2.614502409412241,
+      "straight_plug_root_mm": 3.314502409412241,
+      "bend_radius_mm": 2.8873874436936933,
+      "note": "Bundle routing corridor, translated curves are envelope samples, not exact simultaneous conductor placement."
+    },
+    {
+      "lead_length_mm": 18,
+      "modeled_centerline_mm": 18.000000000000004,
+      "straight_battery_root_mm": 4.114502409412241,
+      "straight_plug_root_mm": 4.814502409412241,
+      "bend_radius_mm": 2.8873874436936933,
+      "note": "Bundle routing corridor, translated curves are envelope samples, not exact simultaneous conductor placement."
+    }
+  ],
+  "checks": {
+    "lower_valid": true,
+    "lower_solids": 1,
+    "lower_battery_overlap_mm3": 0.0,
+    "lower_gauge_overlap_mm3": 0.0,
+    "lower_wire_overlap_mm3": 0.0,
+    "lower_insulation_overlap_mm3": 0.0,
+    "upper_valid": true,
+    "upper_solids": 1,
+    "upper_battery_overlap_mm3": 0.0,
+    "upper_gauge_overlap_mm3": 0.0,
+    "upper_wire_overlap_mm3": 0.0,
+    "upper_insulation_overlap_mm3": 0.0,
+    "carrier_valid": true,
+    "carrier_solids": 1,
+    "carrier_battery_overlap_mm3": 0.0,
+    "carrier_gauge_overlap_mm3": 0.0,
+    "carrier_wire_overlap_mm3": 0.0,
+    "carrier_insulation_overlap_mm3": 0.0,
+    "lower_upper_overlap_mm3": 0.0,
+    "lower_carrier_overlap_mm3": 0.0,
+    "wire_battery_overlap_mm3": 0.0,
+    "wire_pcb_overlap_mm3": 0.0,
+    "plug_carrier_overlap_mm3": 0.0,
+    "connected_stack_vertical_insertion_samples_mm3": {
+      "0": 0.0,
+      "0.1": 0.0,
+      "0.5": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "8": 0.0,
+      "12": 0.0
+    }
+  },
+  "assumptions": {
+    "wire_OD_mm": 0.8,
+    "wire_radial_clearance_mm": 0.2,
+    "minimum_root_straight_assumption_mm": 1.0,
+    "battery_exit_xyz_mm": [
+      8.25,
+      0,
+      -4.82
+    ],
+    "plug_entry_xyz_mm": [
+      3.525,
+      -0.7,
+      -1.5
+    ],
+    "mated_envelope_is_manufacturer_maximum": false,
+    "root_datum_is_dimensioned_by_manufacturer": false
+  },
+  "joint": {
+    "method": "six recessed adhesive pads, untouched seam is hard stop",
+    "pocket_depth_mm": 0.15,
+    "pockets_xy_mm": [
+      [
+        -1.1,
+        -0.45,
+        -22,
+        -17
+      ],
+      [
+        -1.1,
+        -0.45,
+        -13,
+        -8
+      ],
+      [
+        27.95,
+        28.6,
+        -23,
+        -18
+      ],
+      [
+        27.95,
+        28.6,
+        -13,
+        -8
+      ],
+      [
+        18,
+        23,
+        0.9,
+        1.55
+      ],
+      [
+        1,
+        6,
+        -28.4,
+        -27.75
+      ]
+    ],
+    "adhesive": "Cemedine Super X2 Clear AX-083; PETG coupon and unpopulated-case qualification before populated closure",
+    "physical_strength_verified": false
+  },
+  "insulation_thickness_mm": 0.1,
+  "remaining_growth_reservation_mm": 0.4,
+  "physical_print_performed": false,
+  "order_allowed": false
+}
